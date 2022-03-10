@@ -1,0 +1,68 @@
+- type: dataset
+  name: Name of the dataset.
+  modality: Modalities (e.g., text)
+  version: Version of the dataset.
+  parent: Any asset that this was derived from (if applicable).
+  organization: Organization that curated the dataset.
+  paper: Link of the paper that introduces the dataset.
+  datasheet: Link to the datasheet describing the dataset.
+  size: How big (uncompressed) the dataset is.
+  examples: List of examples from the dataset.
+  analysis: Description of any analysis that was done on the dataset.
+  construction:
+    included: What kind of data is included.
+    excluded: What kind of data is excluded (filtered out) and why.
+    harm_mitigation: What measures were taken to reduce harm.
+  downstream:
+    availability: Who can download the dataset.
+    license: What is the license of the dataset.
+    terms_of_service: Link to the terms of service.
+    allowed_uses: Description of what the dataset can be used for.
+    prohibited_uses: Description of what the model should not be used for.
+    monitoring: What measures are used to measure
+    feedback: How problems with this dataset should be reported.
+
+- type: model
+  name: Name of the model.
+  organization: Organization that created the model.
+  url: Link to a detailed description of the model.
+  analysis: Description of any analysis that was done on the model.
+  parent: Asset (dataset, model, application) that this was derived from.
+  paper: Link to the paper
+  model_card: Link to the model card describing this model.
+  basics:
+    type: Type of model
+    size: Number of parameters in the model
+  training:
+    emissions: How many .
+    time: How much time it took to train this model.
+    hardware: What the hardware used to train the mdoel.
+    harm_mitigation: What measures were taken to mitigate harms.
+  downstream:
+    availability: Who can get acess to this model and how.
+    terms_of_service: Link to the terms of service.
+    allowed_uses: Description of what the model can be used for.
+    prohibited_uses: Description of what the model should not be used for.
+    monitoring: Description of how the organization will monitor downstream uses of the model.
+    feedback: How downstream users can report problems with the model.
+
+- type: application
+  name: Name of the product or service.
+  organization: Organization that created the application.
+  parent: Asset (dataset, model, application) that this was derived from.
+  construction:
+    adaptation: How the model was adapted to produce the derived task model.
+    output_processing: How the task model output is treated.
+    harm_mitigation: What measures were taken to mitigate harms.
+  downstream:
+    availability: Who can use this application.
+    cost: How much it costs to use this application.
+    terms_of_service: Link to the terms of service.
+    allowed_uses: Description of what the application can be used for.
+    prohibited_uses: Description of what the application should not be used for.
+    monitoring: Description of how the organization will monitor downstream uses of the application.
+    feedback: How downstream users can report problems with the application.
+  deployment:
+    monthly_active_users: Rough order of magnitude of number of active users.
+    user_distribution: Demographic and geographic diversity.
+    failures: List of known errors / failures.
