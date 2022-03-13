@@ -1,0 +1,20 @@
+.dataset {
+  color: darkgreen;
+}
+
+.model {
+  color: darkred;
+}
+
+.application {
+  color: darkblue;
+}
+
+.help-icon {
+  margin-left: 3px;
+  margin-right: 3px;
+}
+
+.block {
+  margin: 10px;
+}

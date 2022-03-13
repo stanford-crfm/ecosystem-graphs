@@ -1,68 +1,136 @@
-- type: dataset
-  name: Name of the dataset.
-  modality: Modalities (e.g., text)
-  version: Version of the dataset.
-  parent: Any asset that this was derived from (if applicable).
-  organization: Organization that curated the dataset.
-  paper: Link of the paper that introduces the dataset.
-  datasheet: Link to the datasheet describing the dataset.
-  size: How big (uncompressed) the dataset is.
-  examples: List of examples from the dataset.
-  analysis: Description of any analysis that was done on the dataset.
-  construction:
-    included: What kind of data is included.
-    excluded: What kind of data is excluded (filtered out) and why.
-    harm_mitigation: What measures were taken to reduce harm.
-  downstream:
-    availability: Who can download the dataset.
-    license: What is the license of the dataset.
-    terms_of_service: Link to the terms of service.
-    allowed_uses: Description of what the dataset can be used for.
-    prohibited_uses: Description of what the model should not be used for.
-    monitoring: What measures are used to measure
-    feedback: How problems with this dataset should be reported.
+dataset:
+- name: name
+  description: Name of the dataset (must be a unique identifier).
+# General
+- name: organization
+  description: Organization that curated the dataset.
+- name: release_date
+  description: When the dataset was released.
+- name: url
+  type: url
+  description: Link to website or paper that provides a detailed description of the dataset.
+- name: datasheet
+  type: url
+  description: Link to the datasheet describing the dataset.
+- name: modality
+  description: Modalities represented in the dataset (e.g., text, images, videos).
+- name: size
+  description: How big (uncompressed) the dataset is.
+- name: examples
+  type: list
+  description: List of examples from the dataset.
+- name: analysis
+  description: Description of any analysis (evaluation) that was done on the dataset.
+# Construction
+- name: dependencies
+  type: list
+  description: A list of assets (e.g., datasets, models, applications) that were used to create this dataset.
+- name: included
+  description: Description of what data is included.
+- name: excluded
+  description: Description of what data is excluded (e.g., filtered out) and why.
+- name: harm_mitigation
+  description: What measures were taken to reduce harm.
+# Downstream
+- name: access
+  description: Who can access (and use) the dataset.
+- name: license
+  description: License of the dataset.
+- name: allowed_uses
+  description: Description of what the dataset can be used for downstream.
+- name: prohibited_uses
+  description: Description of what the dataset should not be used for downstream.
+- name: monitoring
+  description: Description of measures taken to monitor downstream uses of this dataset.
+- name: feedback
+  description: How downstream problems with this dataset should be reported.
 
-- type: model
-  name: Name of the model.
-  organization: Organization that created the model.
-  url: Link to a detailed description of the model.
-  analysis: Description of any analysis that was done on the model.
-  parent: Asset (dataset, model, application) that this was derived from.
-  paper: Link to the paper
-  model_card: Link to the model card describing this model.
-  basics:
-    type: Type of model
-    size: Number of parameters in the model
-  training:
-    emissions: How many .
-    time: How much time it took to train this model.
-    hardware: What the hardware used to train the mdoel.
-    harm_mitigation: What measures were taken to mitigate harms.
-  downstream:
-    availability: Who can get acess to this model and how.
-    terms_of_service: Link to the terms of service.
-    allowed_uses: Description of what the model can be used for.
-    prohibited_uses: Description of what the model should not be used for.
-    monitoring: Description of how the organization will monitor downstream uses of the model.
-    feedback: How downstream users can report problems with the model.
+model:
+- name: name
+  description: Name of the model (must be a unique identifier).
+# General
+- name: organization
+  description: Organization that created the model.
+- name: release_date
+  description: When the model was released.
+- name: url
+  type: url
+  description: Link to website or paper that provides a detailed description of the model.
+- name: model_card
+  type: url
+  description: Link to the model card describing this model.
+- name: modality
+  description: Modalities represented in the model (e.g., text, images, videos).
+- name: analysis
+  description: Description of any analysis that was done on the model.
+- name: size
+  description: Size (and shape) of the model (e.g., number of parameters in the model)
+# Construction
+- name: dependencies
+  type: list
+  description: A list of assets (e.g., datasets, models, applications) that were used to create this model.
+- name: training_emissions
+  description: Estimate of the carbon emissions used to create this model.
+- name: training_time
+  description: How much time it took to train this model.
+- name: training_hardware
+  description: What hardware was used to train the model.
+- name: harm_mitigation
+  description: What measures were taken to reduce harm.
+# Downstream
+- name: access
+  description: Who can access (and use) this model.
+- name: license
+  description: License of the model.
+- name: allowed_uses
+  description: Description of what the model can be used for downstream.
+- name: prohibited_uses
+  description: Description of what the model should not be used for downstream.
+- name: monitoring
+  description: Description of measures taken to monitor downstream uses of this model.
+- name: feedback
+  description: How downstream problems with this model should be reported.
 
-- type: application
-  name: Name of the product or service.
-  organization: Organization that created the application.
-  parent: Asset (dataset, model, application) that this was derived from.
-  construction:
-    adaptation: How the model was adapted to produce the derived task model.
-    output_processing: How the task model output is treated.
-    harm_mitigation: What measures were taken to mitigate harms.
-  downstream:
-    availability: Who can use this application.
-    cost: How much it costs to use this application.
-    terms_of_service: Link to the terms of service.
-    allowed_uses: Description of what the application can be used for.
-    prohibited_uses: Description of what the application should not be used for.
-    monitoring: Description of how the organization will monitor downstream uses of the application.
-    feedback: How downstream users can report problems with the application.
-  deployment:
-    monthly_active_users: Rough order of magnitude of number of active users.
-    user_distribution: Demographic and geographic diversity.
-    failures: List of known errors / failures.
+application:
+- name: name
+  description: Name of the product or service.
+- name: organization
+  description: Organization that created the application.
+- name: release_date
+  description: When the application was released.
+- name: url
+  type: url
+  description: Link to website describing the application.
+# Construction
+- name: dependencies
+  type: list
+  description: A list of assets (e.g., datasets, models, applications) that were used to create this application.
+- name: adaptation
+  description: How the model was adapted (e.g., fine-tuned) to produce the derived task model.
+- name: output_space
+  description: Description of the output space (e.g., generation, ranking, etc.).
+- name: harm_mitigation
+  description: What measures were taken to reduce harm.
+# Downstream
+- name: access
+  description: Who can access (and use) the application.
+- name: license
+  description: License of the application.
+- name: terms_of_service
+  type: url
+  description: Link to the terms of service.
+- name: allowed_uses
+  description: Description of what the application can be used for downstream.
+- name: prohibited_uses
+  description: Description of what the application should not be used for downstream.
+- name: monitoring
+  description: Description of measures taken to monitor downstream uses of this application.
+- name: feedback
+  description: How downstream problems with this application should be reported.
+# Deployment
+- name: monthly_active_users
+  description: Rough order of magnitude of number of active users.
+- name: user_distribution
+  description: Demographic and geographic diversity.
+- name: failures
+  description: description of known failures (and errors).

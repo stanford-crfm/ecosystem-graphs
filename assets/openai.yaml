@@ -1,0 +1,127 @@
+# Datasets
+
+- type: dataset
+  name: GPT-3 dataset
+  # General
+  organization: OpenAI
+  release_date: none
+  url: https://arxiv.org/pdf/2005.14165.pdf
+  datasheet: none
+  modality: text (English)
+  size: 570GB
+  examples: []
+  analysis: See the paper (Section 2.2).
+  # Construction
+  dependencies: []
+  license: none
+  included: WebText2, Books1, Books2, Wikipedia, Common Crawl (filtered)
+  excluded: parts of Common Crawl that look less like Wikipedia
+  harm_mitigation: TODO
+  # Downstream
+  access: none
+  allowed_uses: none
+  prohibited_uses: none
+  monitoring: none
+  feedback: none
+
+- type: model
+  name: GPT-3
+  # General
+  organization: OpenAI
+  release_date: 2020-06-11
+  url: https://arxiv.org/pdf/2005.14165.pdf
+  model_card: https://github.com/openai/gpt-3/blob/master/model-card.md
+  modality: text (English)
+  size: Autoregressive Transformer with 175B parameters
+  analysis: Evaluated on language modeling, closed-book question answering, translation, Winograd-style tasks, commonsense reasoning, reading comprehension, SuperGLUE, NLI, synthetic tasks, generation
+  # Construction
+  dependencies:
+  - GPT-3 dataset
+  training_emissions: TODO
+  training_time: TODO
+  training_hardware: Trained on [Azure supercomputer](https://blogs.microsoft.com/ai/openai-azure-supercomputer/), which has 10000 GPUs with 400 Gbps
+  harm_mitigation: The model is not released.
+  # Downstream
+  access: Open to anyone via [API access](https://openai.com/api/); full model access to Microsoft
+  license: exclusive license to Microsoft
+  allowed_uses: TODO
+  prohibited_uses: TODO
+  monitoring: TODO
+  feedback: https://docs.google.com/forms/d/e/1FAIpQLSf1-7D2eiOcxz9KJSQ0Ie_R6ST_TsNXOvJE9MUyGax1NYkMfQ/viewform
+
+- type: model
+  name: Codex
+  # General
+  organization: OpenAI
+  release_date: 2021-08-10
+  url: https://arxiv.org/pdf/2107.03374.pdf
+  model_card: TODO
+  modality: text (English and code)
+  size: TODO
+  analysis: TODO
+  # Construction
+  dependencies:
+  - GPT-3
+  training_emissions: TODO
+  training_time: TODO
+  training_hardware: TODO
+  harm_mitigation: The model is not released.
+  # Downstream
+  access: Available via the [OpenAI API](https://openai.com/api/)
+  license: exclusive license to Microsoft
+  allowed_uses: TODO
+  prohibited_uses: TODO
+  monitoring: TODO
+  feedback: TODO
+
+- type: model
+  name: InstructGPT
+  # General
+  organization: OpenAI
+  release_date: TODO
+  url: TODO
+  model_card: TODO
+  modality: text (English and code)
+  size: TODO
+  analysis: TODO
+  # Construction
+  dependencies:
+  - GPT-3
+  training_emissions: TODO
+  training_time: TODO
+  training_hardware: TODO
+  harm_mitigation: The model is not released.
+  # Downstream
+  access: Available via the [OpenAI API](https://openai.com/api/)
+  license: exclusive license to Microsoft
+  allowed_uses: TODO
+  prohibited_uses: TODO
+  monitoring: TODO
+  feedback: TODO
+
+- type: application
+  name: OpenAPI API
+  # General
+  organization: OpenAI
+  release_date: 2020-06-11
+  url: https://openai.com/api/
+  # Construction
+  dependencies:
+  - GPT-3
+  - Codex
+  - InstructGPT
+  adaptation: none?
+  output_space: text completions, log probabilities, and embeddings
+  harm_mitigation: TODO
+  # Downstream
+  access: Available to everyone excluding those in [embargoed countries](https://beta.openai.com/docs/supported-countries)
+  license: TODO
+  terms_of_service: https://openai.com/api/policies/terms/
+  allowed_uses: TODO
+  prohibited_uses: illegal activities (child pornography, gambling, cybercrime, piracy, violating copyright, trademark or other intellectual property laws) and threatening, stalking, defaming, defrauding, degrading, victimizing or intimidating anyone [terms of service]
+  monitoring: TODO
+  feedback: TODO
+  # Deployment
+  monthly_active_users: TODO
+  user_distribution: TODO
+  failures: TODO
