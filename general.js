@@ -22,6 +22,11 @@ function updateBrowserLocation(params) {
   window.history.pushState({}, '', window.location.pathname + encodeUrlParams(params));
 }
 
+function openBrowserLocation(params) {
+  // Update the address bar
+  window.open(window.location.pathname + encodeUrlParams(params), 'blank_');
+}
+
 function renderError(e) {
   return $('<div>').addClass('alert alert-danger').append(multilineHtml(e));
 }

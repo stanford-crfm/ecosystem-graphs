@@ -2,7 +2,7 @@
   name: The Pile
   # General
   organization: EleutherAI
-  release_date: 2021-01-01
+  release_date: "2021-01-01"
   url: https://arxiv.org/pdf/2101.00027.pdf
   datasheet: https://arxiv.org/pdf/2201.07311.pdf
   modality: text (English, code)
@@ -30,7 +30,7 @@
   name: GPT-NeoX-20B
   # General
   organization: EleutherAI
-  release_date: 2021-02-02
+  release_date: "2021-02-02"
   url: http://eaidata.bmk.sh/data/GPT_NeoX_20B.pdf
   model_card: https://mystic.the-eye.eu/public/AI/models/GPT-NeoX-20B/20B_model_card.md
   modality: text (English, code)

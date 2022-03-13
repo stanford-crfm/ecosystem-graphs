@@ -47,141 +47,225 @@ class Asset {
   }
 }
 
+////////////////////////////////////////////////////////////
+
+function helpIcon(help, link) {
+  // Show a ?
+  return $('<a>', {href: link, target: 'blank_', class: 'help-icon'}).append($('<img>', {src: 'info-icon.png', width: 15, title: help}));
+}
+
+function renderList(items) {
+  const $list = $('<span>');
+  items.forEach((item, i) => {
+    if (i > 0) {
+      $list.append(' | ');
+    }
+    $list.append(item);
+  });
+  return $list;
+}
+
+function renderField(field) {
+  const text = field.name.replace(/_/g, ' ');
+  return $('<div>').append(text).append(helpIcon(field.description, '#'));
+}
+
+function renderValue(type, value) {
+  const converter = new showdown.Converter();
+  if (type === 'list') {
+    return renderList(value.map((elemValue) => renderValue(null, elemValue)));
+  } else if (type === 'url') {
+    return $('<a>', {href: value, target: 'blank_'}).append(value);
+  } else {
+    // Default: render string as markdown
+    if (typeof(value) === 'string') {
+      return converter.makeHtml(value);
+    } else {
+      return value;
+    }
+  }
+}
+
+function renderAssetLink(nameToAsset, assetName) {
+  const asset = getField(nameToAsset, assetName);
+  if (!asset) {
+    return assetName;
+  }
+  const href = encodeUrlParams({asset: asset.name});
+  return $('<a>', {href, target: 'blank_'}).append(assetName);
+}
+
+function renderAssetLinks(nameToAsset, assetNames) {
+  return renderList(assetNames.map((name) => renderAssetLink(nameToAsset, name)));
+}
+
+function renderAsset(nameToAsset, assetName) {
+  const asset = getField(nameToAsset, assetName);
+  if (!asset) {
+    return renderError('Invalid asset: ' + assetName);
+  }
+
+  const $card = $('<div>');
+
+  $card.append($('<h3>').append(asset.name));
+
+  // Render upstream and downstream assets
+  $card.append($('<div>', {class: 'block'}).append('Upstream: ').append(renderAssetLinks(nameToAsset, asset.dependencies)));
+  $card.append($('<div>', {class: 'block'}).append('Downstream: ').append(renderAssetLinks(nameToAsset, asset.downstreamAssets)));
+
+  // Render a single asset
+  const $table = $('<table>', {class: 'table'});
+  const $tbody = $('<tbody>');
+  asset.schema.fields.forEach((field) => {
+    const value = asset[field.name];
+
+    $tbody.append($('<tr>')
+      .append($('<td>').append(renderField(field)))
+      .append($('<td>').append(field.name === 'dependencies' ? renderAssetLinks(nameToAsset, value) : renderValue(field.type, value)))
+    );
+  });
+
+  $table.append($tbody);
+  $card.append($table);
+
+  return $card;
+}
+
+function renderAssetsTable(nameToAsset) {
+  // Render a list of assets
+  const $table = $('<table>', {class: 'table'});
+  $table.append($('<thead>').append($('<tr>')
+    .append($('<td>').append('Type'))
+    .append($('<td>').append('Name'))
+    .append($('<td>').append('Organization'))
+    .append($('<td>').append('Release date'))
+    .append($('<td>').append('Size'))
+    .append($('<td>').append('Dependencies'))
+  ));
+  const $tbody = $('<tbody>');
+  for (let name in nameToAsset) {
+    const asset = nameToAsset[name];
+    const href = encodeUrlParams({asset: asset.name});
+    $tbody.append($('<tr>')
+      .append($('<td>').append(asset.type))
+      .append($('<td>').append($('<a>', {href, target: 'blank_'}).append(asset.name)))
+      .append($('<td>').append(asset.organization))
+      .append($('<td>').append(asset.release_date))
+      .append($('<td>').append(asset.size))
+      .append($('<td>').append(renderAssetLinks(nameToAsset, asset.dependencies)))
+    );
+  }
+  $table.append($tbody);
+  return $table;
+}
+
+function renderAssetsGraph(nameToAsset) {
+  // Render the ecosystem graph
+  const $graph = $('<div>', {class: 'graph'});
+
+  const nodes = [];
+  const edges = [];
+
+  const typeToShape = {
+    'dataset': 'ellipse',
+    'model': 'square',
+    'application': 'hexagon',
+  };
+
+  const typeToColor = {
+    'dataset': 'green',
+    'model': 'purple',
+    'application': 'orange',
+  };
+
+  Object.values(nameToAsset).forEach((asset) => {
+    nodes.push({
+      data: {
+        id: asset.name,
+        shape: typeToShape[asset.type],
+        color: typeToColor[asset.type],
+      },
+    });
+
+    asset.dependencies.forEach((dep) => {
+      edges.push({
+        data: {
+          id: asset.name + '->' + dep,
+          source: dep,
+          target: asset.name,
+        },
+      });
+    });
+  });
+
+  $graph.ready(() => {
+    const cy = cytoscape({
+      container: $graph.get(0),
+      elements: {nodes, edges},
+      layout: {
+        name: 'grid',
+      },
+      style: [
+        {
+          selector: 'node',
+          style: {
+            label: 'data(id)',
+            shape: 'data(shape)',
+            'background-color': 'data(color)',
+          },
+        },
+        {
+          selector: 'edge',
+          style: {
+            'width': 1,
+            'curve-style': 'straight',
+            'target-arrow-shape': 'triangle',
+          },
+        },
+      ],
+    });
+
+    cy.on('click', (e) => {
+      const data = e.target._private.data;
+      const assetName = data.id;
+      if (assetName && !data.source) {
+        openBrowserLocation({asset: assetName});
+      }
+    });
+  });
+
+  return $graph;
+}
+
+function render(urlParams, nameToAsset) {
+  if (urlParams.asset) {
+    return renderAsset(nameToAsset, urlParams.asset);
+  } else if (urlParams.mode === 'graph') {
+    return renderAssetsGraph(nameToAsset);
+  } else {
+    return renderAssetsTable(nameToAsset);
+  }
+}
+
+function updateDownstreamAssets(nameToAsset) {
+  // Use each asset's dependencies (upstream pointers) to update the corresponding downstream pointers.
+  Object.values(nameToAsset).forEach((asset) => {
+    asset.dependencies.forEach((dep) => {
+      const depAsset = nameToAsset[dep];
+      if (depAsset) {
+        depAsset.downstreamAssets.push(asset.name);
+      }
+    });
+  });
+}
+
+
 $(() => {
   const urlParams = decodeUrlParams(window.location.search);
-  const converter = new showdown.Converter();
 
   const $main = $('#main');
   const typeToSchema = {};  // asset type (e.g., "model") => schema
   const nameToAsset = {};  // asset name (e.g., "GPT-3") => asset
-
-  function renderAssetsTable() {
-    // Render a list of assets
-    const $table = $('<table>', {class: 'table'});
-    $table.append($('<thead>').append($('<tr>')
-      .append($('<td>').append('Type'))
-      .append($('<td>').append('Name'))
-      .append($('<td>').append('Organization'))
-      .append($('<td>').append('Size'))
-      .append($('<td>').append('Dependencies'))
-    ));
-    const $tbody = $('<tbody>');
-    for (let name in nameToAsset) {
-      const asset = nameToAsset[name];
-      const href = encodeUrlParams({asset: asset.name});
-      $tbody.append($('<tr>')
-        .append($('<td>').append(asset.type))
-        .append($('<td>').append($('<a>', {href, target: 'blank_'}).append(asset.name)))
-        .append($('<td>').append(asset.organization))
-        .append($('<td>').append(asset.size))
-        .append($('<td>').append(renderList(asset.dependencies.map(renderAssetLink))))
-      );
-    }
-    $table.append($tbody);
-    return $table;
-  }
-
-  function helpIcon(help, link) {
-    // Show a ?
-    return $('<a>', {href: link, target: 'blank_', class: 'help-icon'}).append($('<img>', {src: 'info-icon.png', width: 15, title: help}));
-  }
-
-  function renderList(items) {
-    const $list = $('<span>');
-    items.forEach((item, i) => {
-      if (i > 0) {
-        $list.append(' | ');
-      }
-      $list.append(item);
-    });
-    return $list;
-  }
-
-  function renderField(field) {
-    const text = field.name.replace(/_/g, ' ');
-    return $('<div>').append(text).append(helpIcon(field.description, '#'));
-  }
-
-  function renderValue(type, value) {
-    if (type === 'list') {
-      return renderList(value.map((elemValue) => renderValue(null, elemValue)));
-    } else if (type === 'url') {
-      return $('<a>', {href: value, target: 'blank_'}).append(value);
-    } else {
-      // Default: render string as markdown
-      if (typeof(value) === 'string') {
-        return converter.makeHtml(value);
-      } else {
-        return value;
-      }
-    }
-  }
-
-  function renderAssetLink(assetName) {
-    const asset = getField(nameToAsset, assetName);
-    if (!asset) {
-      return assetName;
-    }
-    const href = encodeUrlParams({asset: asset.name});
-    return $('<a>', {href, target: 'blank_'}).append(assetName);
-  }
-
-  function renderAsset(assetName) {
-    const asset = getField(nameToAsset, assetName);
-    if (!asset) {
-      return renderError('Invalid asset: ' + assetName);
-    }
-
-    const $card = $('<div>');
-
-    // Render upstream and downstream assets
-    $card.append($('<div>', {class: 'block'}).append('Upstream: ').append(renderList(asset.dependencies.map(renderAssetLink))));
-    $card.append($('<div>', {class: 'block'}).append('Downstream: ').append(renderList(asset.downstreamAssets.map(renderAssetLink))));
-
-    // Render a single asset
-    const $table = $('<table>', {class: 'table'});
-    const $tbody = $('<tbody>');
-    asset.schema.fields.forEach((field) => {
-      const value = asset[field.name];
-
-      $tbody.append($('<tr>')
-        .append($('<td>').append(renderField(field)))
-        .append($('<td>').append(renderValue(field.type, value)))
-      );
-    });
-
-    $table.append($tbody);
-    $card.append($table);
-
-    return $card;
-  }
-
-  function renderAssetsGraph() {
-    // Render the ecosystem graph
-    return 'Under construction.';
-  }
-
-  function render() {
-    if (urlParams.asset) {
-      $main.append(renderAsset(urlParams.asset));
-    } else if (urlParams.mode === 'graph') {
-      $main.append(renderAssetsGraph());
-    } else {
-      $main.append(renderAssetsTable());
-    }
-  }
-
-  function updateDownstreamAssets() {
-    // Use each asset's dependencies (upstream pointers) to update the corresponding downstream pointers.
-    Object.values(nameToAsset).forEach((asset) => {
-      asset.dependencies.forEach((dep) => {
-        const depAsset = nameToAsset[dep];
-        if (depAsset) {
-          depAsset.downstreamAssets.push(asset.name);
-        }
-      });
-    });
-  }
 
   const paths = [
     'assets/openai.yaml',
@@ -210,8 +294,8 @@ $(() => {
         })
       })
     ).then(() => {
-      updateDownstreamAssets();
-      render();
+      updateDownstreamAssets(nameToAsset);
+      $main.append(render(urlParams, nameToAsset));
     });
   });
 });
