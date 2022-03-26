@@ -16,7 +16,7 @@
   license: none
   included: WebText2, Books1, Books2, Wikipedia, Common Crawl (filtered)
   excluded: parts of Common Crawl that look less like Wikipedia
-  harm_mitigation: TODO
+  quality_control: TODO
   # Downstream
   access: none
   allowed_uses: none
@@ -40,7 +40,7 @@
   training_emissions: TODO
   training_time: TODO
   training_hardware: Trained on [Azure supercomputer](https://blogs.microsoft.com/ai/openai-azure-supercomputer/), which has 10000 GPUs with 400 Gbps
-  harm_mitigation: The model is not released.
+  quality_control: The model is not released.
   # Downstream
   access: Open to anyone via [API access](https://openai.com/api/); full model access to Microsoft
   license: exclusive license to Microsoft
@@ -65,7 +65,7 @@
   training_emissions: TODO
   training_time: TODO
   training_hardware: TODO
-  harm_mitigation: The model is not released.
+  quality_control: The model is not released.
   # Downstream
   access: Available via the [OpenAI API](https://openai.com/api/)
   license: exclusive license to Microsoft
@@ -90,7 +90,7 @@
   training_emissions: TODO
   training_time: TODO
   training_hardware: TODO
-  harm_mitigation: The model is not released.
+  quality_control: The model is not released.
   # Downstream
   access: Available via the [OpenAI API](https://openai.com/api/)
   license: exclusive license to Microsoft
@@ -112,7 +112,7 @@
   - InstructGPT
   adaptation: none?
   output_space: text completions, log probabilities, and embeddings
-  harm_mitigation: TODO
+  quality_control: TODO
   # Downstream
   access: Available to everyone excluding those in [embargoed countries](https://beta.openai.com/docs/supported-countries)
   license: TODO

@@ -18,7 +18,7 @@
   license: TODO
   included: 22 diverse sources (Pile-CC, PubMed Central, PubMed Abstracts, Books3, BookCorpus2, OpenWebText2, ArXiv, Github, FreeLaw, Stack Exchange, USPTO, PG-19, OpenSubtitles, Wikipedia, DM Math, Ubuntu IRC, EuroParl, HackerNews, YTSubtitles, PhilPapers, NIH, Enron Emails)
   excluded: US congressional record, fanfiction, literotica
-  harm_mitigation: TODO
+  quality_control: TODO
   # Downstream
   access: Can be downloaded for free from [The Eye](https://mystic.the-eye.eu/public/AI/pile/)
   allowed_uses: Training large-scale language models
@@ -42,7 +42,7 @@
   training_emissions: 31.73 tCO2 eq [Section 6.4]
   training_time: 1830 hours [Section 6.4]
   training_hardware: 12 x 8 A100s [Section 2.3]
-  harm_mitigation: TODO
+  quality_control: TODO
   # Downstream
   access: Can be downloaded for free from [The Eye](https://mystic.the-eye.eu/public/AI/models/GPT-NeoX-20B/)
   license: Apache 2.0

@@ -13,7 +13,7 @@
   training_emissions: TODO
   training_time: TODO
   training_hardware: TODO
-  harm_mitigation: TODO
+  quality_control: TODO
   # Downstream
   access: none
   license: none

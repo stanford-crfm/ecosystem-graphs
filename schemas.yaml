@@ -29,8 +29,8 @@ dataset:
   description: Description of what data is included.
 - name: excluded
   description: Description of what data is excluded (e.g., filtered out) and why.
-- name: harm_mitigation
-  description: What measures were taken to reduce harm.
+- name: quality_control
+  description: What measures were taken to ensure quality, safety, and mitigate harms.
 # Downstream
 - name: access
   description: Who can access (and use) the dataset.
@@ -75,8 +75,8 @@ model:
   description: How much time it took to train this model.
 - name: training_hardware
   description: What hardware was used to train the model.
-- name: harm_mitigation
-  description: What measures were taken to reduce harm.
+- name: quality_control
+  description: What measures were taken to ensure quality, safety, and mitigate harms.
 # Downstream
 - name: access
   description: Who can access (and use) this model.
@@ -109,8 +109,8 @@ application:
   description: How the model was adapted (e.g., fine-tuned) to produce the derived task model.
 - name: output_space
   description: Description of the output space (e.g., generation, ranking, etc.).
-- name: harm_mitigation
-  description: What measures were taken to reduce harm.
+- name: quality_control
+  description: What measures were taken to ensure quality, safety, and mitigate harms.
 # Downstream
 - name: access
   description: Who can access (and use) the application.
