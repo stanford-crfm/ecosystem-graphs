@@ -4,8 +4,8 @@ dataset:
 # General
 - name: organization
   description: Organization that curated the dataset.
-- name: release_date
-  description: When the dataset was released.
+- name: created_date
+  description: When the dataset was created.
 - name: url
   type: url
   description: Link to website or paper that provides a detailed description of the dataset.
@@ -51,8 +51,8 @@ model:
 # General
 - name: organization
   description: Organization that created the model.
-- name: release_date
-  description: When the model was released.
+- name: created_date
+  description: When the model was created.
 - name: url
   type: url
   description: Link to website or paper that provides a detailed description of the model.
@@ -96,8 +96,8 @@ application:
   description: Name of the product or service.
 - name: organization
   description: Organization that created the application.
-- name: release_date
-  description: When the application was released.
+- name: created_date
+  description: When the application was created.
 - name: url
   type: url
   description: Link to website describing the application.

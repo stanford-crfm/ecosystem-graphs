@@ -2,7 +2,7 @@
   name: Gopher
   # General
   organization: DeepMind
-  release_date: TODO
+  created_date: TODO
   url: https://arxiv.org/pdf/2112.11446.pdf
   model_card: TODO
   modality: text

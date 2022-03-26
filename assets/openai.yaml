@@ -4,7 +4,7 @@
   name: GPT-3 dataset
   # General
   organization: OpenAI
-  release_date: none
+  created_date: none
   url: https://arxiv.org/pdf/2005.14165.pdf
   datasheet: none
   modality: text (English)
@@ -28,7 +28,7 @@
   name: GPT-3
   # General
   organization: OpenAI
-  release_date: "2020-06-11"
+  created_date: "2020-06-11"
   url: https://arxiv.org/pdf/2005.14165.pdf
   model_card: https://github.com/openai/gpt-3/blob/master/model-card.md
   modality: text (English)
@@ -53,7 +53,7 @@
   name: Codex
   # General
   organization: OpenAI
-  release_date: "2021-08-10"
+  created_date: "2021-08-10"
   url: https://arxiv.org/pdf/2107.03374.pdf
   model_card: TODO
   modality: text (English and code)
@@ -78,7 +78,7 @@
   name: InstructGPT
   # General
   organization: OpenAI
-  release_date: TODO
+  created_date: TODO
   url: TODO
   model_card: TODO
   modality: text (English and code)
@@ -103,7 +103,7 @@
   name: OpenAPI API
   # General
   organization: OpenAI
-  release_date: "2020-06-11"
+  created_date: "2020-06-11"
   url: https://openai.com/api/
   # Construction
   dependencies:
