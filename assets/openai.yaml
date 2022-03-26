@@ -9,7 +9,7 @@
   datasheet: none
   modality: text (English)
   size: 570GB
-  examples: []
+  sample: []
   analysis: See the paper (Section 2.2).
   # Construction
   dependencies: []

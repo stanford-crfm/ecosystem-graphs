@@ -16,9 +16,9 @@ dataset:
   description: Modalities represented in the dataset (e.g., text, images, videos).
 - name: size
   description: How big (uncompressed) the dataset is.
-- name: examples
+- name: sample
   type: list
-  description: List of examples from the dataset.
+  description: Small sample of content from the dataset.
 - name: analysis
   description: Description of any analysis (evaluation) that was done on the dataset.
 # Construction
@@ -133,4 +133,4 @@ application:
 - name: user_distribution
   description: Demographic and geographic diversity.
 - name: failures
-  description: description of known failures (and errors).
+  description: Description of known failures (and errors).

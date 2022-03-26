@@ -7,7 +7,7 @@
   datasheet: https://arxiv.org/pdf/2201.07311.pdf
   modality: text (English, code)
   size: 825GB
-  examples:
+  sample:
   - ...pot trending topics and the coverage around them. First up, there’s a bit of a visual redesign. Previously, clicking on a trending topic would highlight a story from one publication, and you’d have to scroll down past a live video section to view related stories. Facebook is replacing that system with a simple carousel, which does a better job of showing you different coverage options. To be clear, the change doesn’t affect how stories are sourced, according to Facebook. It’s still the same algorithm pickin...
   - Total knee arthroplasty (TKA) is a promising treatment for endstage osteoarthritis (OA) of the knee for alleviating pain and restoring the function of the knee. Some of the cases with bilateral TKA are symptomatic, necessitating revision arthroplasty in both the knees. A bilateral revision TKA can be done ei
   - On the converse, the set-valued map $\Phi:[0,3]\rightrightarrows [0,3]$ $$\Phi(x):=\left\{\begin{array}{ll} \{1\} & \mbox{ if } 0\leq x<1\\ {}[1,2] & \mbox{ if } 1\leq x\leq 2\\ \{2\} &
