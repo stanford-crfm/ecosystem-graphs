@@ -178,16 +178,16 @@
   user_distribution: unknown
   failures: unknown
   
-   - type: application
+ - type: application
   name: Viable
   # General
   organization: Viable
-  created_date: "2020-06-11"
-  url: https://openai.com/api/
+  created_date: unknown
+  url: https://www.askviable.com/
   # Construction
   dependencies:
   - GPT-3
-  - Curie embeddings
+  - Curie 
   adaptation: none
   output_space: question and answer, summarization, sentiment analysis, topic identification
   quality_control: unknown
@@ -195,6 +195,31 @@
   access: none
   license: none
   terms_of_service: https://www.askviable.com/terms-of-service
+  allowed_uses: none
+  prohibited_uses: none
+  monitoring: unknown
+  feedback: unknown
+  # Deployment
+  monthly_active_users: unknown
+  user_distribution: unknown
+  failures: unknown
+
+- type: application
+  name: HyperWrite
+  # General
+  organization: OthersideAI
+  created_date: unknown
+  url: https://hyperwriteai.com/
+  # Construction
+  dependencies:
+  - GPT-3
+  adaptation: none
+  output_space: generation
+  quality_control: unknown
+  # Downstream
+  access: none
+  license: none
+  terms_of_service: https://hyperwriteai.com/terms
   allowed_uses: none
   prohibited_uses: none
   monitoring: unknown
