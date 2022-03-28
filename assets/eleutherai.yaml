@@ -42,7 +42,7 @@
   training_emissions: 31.73 tCO2 eq [Section 6.4]
   training_time: 1830 hours [Section 6.4]
   training_hardware: 12 x 8 A100s [Section 2.3]
-  quality_control: TODO
+  quality_control: Trained on a dataset (The Pile) containing data from diverse set of sources.
   # Downstream
   access: Can be downloaded for free from [The Eye](https://mystic.the-eye.eu/public/AI/models/GPT-NeoX-20B/)
   license: Apache 2.0

@@ -1,0 +1,24 @@
+- type: application
+  name: GitHub Copilot
+  # General
+  organization: GitHub
+  created_date: "2021-06-29"
+  url: https://copilot.github.com/
+  # Construction
+  dependencies:
+  - Codex
+  adaptation: unknown
+  output_space: text completions
+  quality_control: GitHub is working on a filter to detect and suppress code generations that are verbatim from the training set, more information [here](https://docs.github.com/en/github/copilot/research-recitation). GitHub implemented a simple filter that blocks emails in standard formats to protect personally identifiable data that may be present in the training data.
+  # Downstream
+  access: Available in a restricted technical preview.
+  license: unknown
+  terms_of_service: https://docs.github.com/en/site-policy/github-terms/github-terms-of-service
+  allowed_uses: Coding assistant
+  prohibited_uses: unknown
+  monitoring: unknown
+  feedback: https://github.com/github/feedback/discussions/categories/copilot-feedback
+  # Deployment
+  monthly_active_users: unknown
+  user_distribution: unknown
+  failures: generating code that doesn't compile, generating unsafe code
