@@ -23,7 +23,7 @@
   prohibited_uses: none
   monitoring: none
   feedback: none
-  
+
 - type: dataset
   name: Codex dataset
   # General
@@ -47,7 +47,7 @@
   prohibited_uses: none
   monitoring: none
   feedback: none
-  
+
 # Models
 
 - type: model
@@ -63,8 +63,8 @@
   # Construction
   dependencies:
   - GPT-3 dataset
-  training_emissions: 552.1 tCO2e (estimate from https://arxiv.org/abs/2104.10350) 
-  training_time: 3.64E+03 PF-days 
+  training_emissions: 552.1 tCO2e (estimate from https://arxiv.org/abs/2104.10350)
+  training_time: 3.64E+03 PF-days
   training_hardware: Trained on [Azure supercomputer](https://blogs.microsoft.com/ai/openai-azure-supercomputer/), which has 10000 GPUs with 400 Gbps
   quality_control: The model is not released.
   # Downstream
@@ -73,7 +73,7 @@
   allowed_uses: unknown
   prohibited_uses: OpenAI prohibits the use of the model to generate restricted content per their [content policy](https://beta.openai.com/docs/usage-guidelines/content-policy). Other disallowed applications are listed in the [disallowed applications](https://beta.openai.com/docs/usage-guidelines/disallowed-applications) list.
   monitoring: OpenAI reviews all use cases of the model.
-  feedback: [Feedback form](https://docs.google.com/forms/d/e/1FAIpQLSf1-7D2eiOcxz9KJSQ0Ie_R6ST_TsNXOvJE9MUyGax1NYkMfQ/viewform)
+  feedback: Feedback form is [here](https://docs.google.com/forms/d/e/1FAIpQLSf1-7D2eiOcxz9KJSQ0Ie_R6ST_TsNXOvJE9MUyGax1NYkMfQ/viewform)
 
 - type: model
   name: Codex
@@ -107,9 +107,9 @@
   organization: OpenAI
   created_date: "2022-01-27"
   url: https://openai.com/blog/instruction-following/
-  model_card: [InstructGPT Model Card](https://github.com/openai/following-instructions-human-feedback/blob/main/model-card.md)
+  model_card: https://github.com/openai/following-instructions-human-feedback/blob/main/model-card.md
   modality: text (English and code)
-  size: 175B parameters, fine-tuned with supervised fine-tuning, reward modeling, reinforcement learning 
+  size: 175B parameters, fine-tuned with supervised fine-tuning, reward modeling, reinforcement learning
   analysis: https://arxiv.org/abs/2203.02155
   # Construction
   dependencies:
@@ -145,15 +145,15 @@
   license: Section 2a of [Terms of Use](https://openai.com/api/policies/terms/)
   terms_of_service: https://openai.com/api/policies/terms/
   allowed_uses: TODO
-  prohibited_uses: illegal activities (child pornography, gambling, cybercrime, piracy, violating copyright, trademark or other intellectual property laws) and threatening, stalking, defaming, defrauding, degrading, victimizing or intimidating anyone [terms of service](https://openai.com/api/policies/terms/) API cannot be used to generate these kinds of content: hate speech, harassment, violence, self-harm, adult, political, spam, deception, malware [Usage Guidelines](https://beta.openai.com/docs/usage-guidelines)
+  prohibited_uses: illegal activities (child pornography, gambling, cybercrime, piracy, violating copyright, trademark or other intellectual property laws) and threatening, stalking, defaming, defrauding, degrading, victimizing or intimidating anyone [terms of service](https://openai.com/api/policies/terms/) API cannot be used to generate these kinds of content hate speech, harassment, violence, self-harm, adult, political, spam, deception, malware [Usage Guidelines](https://beta.openai.com/docs/usage-guidelines)
   monitoring: Use of API is monitored, per Section 5b of [Terms of Use](https://openai.com/api/policies/terms/)
   feedback: private feedback at support @ openai.com
   # Deployment
   monthly_active_users: unknown
   user_distribution: unknown
   failures: unknown
-  
- - type: application
+
+- type: application
   name: Duolingo
   # General
   organization: Duolingo
@@ -177,8 +177,8 @@
   monthly_active_users: 42 million (all languages)
   user_distribution: unknown
   failures: unknown
-  
- - type: application
+
+- type: application
   name: Viable
   # General
   organization: Viable
@@ -187,7 +187,6 @@
   # Construction
   dependencies:
   - GPT-3
-  - Curie 
   adaptation: none
   output_space: question and answer, summarization, sentiment analysis, topic identification
   quality_control: unknown
