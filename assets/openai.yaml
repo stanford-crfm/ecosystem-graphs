@@ -152,3 +152,55 @@
   monthly_active_users: unknown
   user_distribution: unknown
   failures: unknown
+  
+ - type: application
+  name: Duolingo
+  # General
+  organization: Duolingo
+  created_date: "2020-06-11"
+  url: https://openai.com/api/
+  # Construction
+  dependencies:
+  - GPT-3
+  adaptation: unknown
+  output_space: French grammar corrections
+  quality_control: unknown
+  # Downstream
+  access: none
+  license: none
+  terms_of_service: https://www.duolingo.com/terms
+  allowed_uses: none
+  prohibited_uses: none
+  monitoring: unknown
+  feedback: none
+  # Deployment
+  monthly_active_users: 42 million (all languages)
+  user_distribution: unknown
+  failures: unknown
+  
+   - type: application
+  name: Viable
+  # General
+  organization: Viable
+  created_date: "2020-06-11"
+  url: https://openai.com/api/
+  # Construction
+  dependencies:
+  - GPT-3
+  - Curie embeddings
+  adaptation: none
+  output_space: question and answer, summarization, sentiment analysis, topic identification
+  quality_control: unknown
+  # Downstream
+  access: none
+  license: none
+  terms_of_service: https://www.askviable.com/terms-of-service
+  allowed_uses: none
+  prohibited_uses: none
+  monitoring: unknown
+  feedback: unknown
+  # Deployment
+  monthly_active_users: unknown
+  user_distribution: unknown
+  failures: unknown
+
