@@ -90,12 +90,12 @@
   - GPT-3
   - Codex dataset
   training_emissions: unknown
-  training_time: authors estimate hundreds of petaflop/s-days of compute; see the paper (Section 7.6).
+  training_time: Authors estimate hundreds of petaflop/s-days of compute; see the paper (Section 7.6).
   training_hardware: Azure
   quality_control: The model is not released; see the paper for legal implications (Section 7.7) and risk mitigation (Section 7.8).
   # Downstream
-  access: Available via the [OpenAI API](https://openai.com/api/); full model access to Microsoft for [GitHub Copilot](https://copilot.github.com/)
-  license: exclusive license to Microsoft
+  access: Available via the [OpenAI API](https://openai.com/api/); full model access to Microsoft for [GitHub Copilot](https://copilot.github.com/).
+  license: Exclusive license to Microsoft.
   allowed_uses: unknown
   prohibited_uses: unknown
   monitoring: none
@@ -120,7 +120,7 @@
   quality_control: The model is not released.
   # Downstream
   access: Available via the [OpenAI API](https://openai.com/api/)
-  license: exclusive license to Microsoft
+  license: Exclusive license to Microsoft
   allowed_uses: unknown
   prohibited_uses: OpenAI prohibits the use of the model to generate restricted content per their [content policy](https://beta.openai.com/docs/usage-guidelines/content-policy). Other disallowed applications are listed in the [disallowed applications](https://beta.openai.com/docs/usage-guidelines/disallowed-applications) list.
   monitoring: OpenAI reviews all use cases of the model.
@@ -227,4 +227,3 @@
   monthly_active_users: unknown
   user_distribution: unknown
   failures: unknown
-
