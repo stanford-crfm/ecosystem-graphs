@@ -19,7 +19,7 @@
   quality_control: fuzzy deduplication, removing WebText from CommonCrawl, filtered Common Crawl for similarity to Wikipedia, WebText, or books corpus
   # Downstream
   access: Not released to the public, full dataset access to OpenAI
-  allowed_uses: none
+  intended_uses: Training language models.
   prohibited_uses: none
   monitoring: none
   feedback: none
@@ -43,7 +43,7 @@
   quality_control: unknown
   # Downstream
   access: none
-  allowed_uses: none
+  intended_uses: Training language models.
   prohibited_uses: none
   monitoring: none
   feedback: none
@@ -70,7 +70,7 @@
   # Downstream
   access: Open to anyone in [supported countries](https://beta.openai.com/docs/supported-countries) via [API access](https://openai.com/api/); full model access to Microsoft
   license: exclusive license to Microsoft
-  allowed_uses: unknown
+  intended_uses: unknown
   prohibited_uses: OpenAI prohibits the use of the model to generate restricted content per their [content policy](https://beta.openai.com/docs/usage-guidelines/content-policy). Other disallowed applications are listed in the [disallowed applications](https://beta.openai.com/docs/usage-guidelines/disallowed-applications) list.
   monitoring: OpenAI reviews all use cases of the model.
   feedback: Feedback form is [here](https://docs.google.com/forms/d/e/1FAIpQLSf1-7D2eiOcxz9KJSQ0Ie_R6ST_TsNXOvJE9MUyGax1NYkMfQ/viewform)
@@ -96,7 +96,7 @@
   # Downstream
   access: Available via the [OpenAI API](https://openai.com/api/); full model access to Microsoft for [GitHub Copilot](https://copilot.github.com/).
   license: Exclusive license to Microsoft.
-  allowed_uses: unknown
+  intended_uses: Coding assistant.
   prohibited_uses: unknown
   monitoring: none
   feedback: none
@@ -121,7 +121,7 @@
   # Downstream
   access: Available via the [OpenAI API](https://openai.com/api/)
   license: Exclusive license to Microsoft
-  allowed_uses: unknown
+  intended_uses: Performing tasks through instructions in plain language.
   prohibited_uses: OpenAI prohibits the use of the model to generate restricted content per their [content policy](https://beta.openai.com/docs/usage-guidelines/content-policy). Other disallowed applications are listed in the [disallowed applications](https://beta.openai.com/docs/usage-guidelines/disallowed-applications) list.
   monitoring: OpenAI reviews all use cases of the model.
   feedback: none
@@ -144,7 +144,7 @@
   access: Available to everyone excluding those in [embargoed countries](https://beta.openai.com/docs/supported-countries)
   license: Section 2a of [Terms of Use](https://openai.com/api/policies/terms/)
   terms_of_service: https://openai.com/api/policies/terms/
-  allowed_uses: TODO
+  intended_uses: TODO
   prohibited_uses: illegal activities (child pornography, gambling, cybercrime, piracy, violating copyright, trademark or other intellectual property laws) and threatening, stalking, defaming, defrauding, degrading, victimizing or intimidating anyone [terms of service](https://openai.com/api/policies/terms/) API cannot be used to generate these kinds of content hate speech, harassment, violence, self-harm, adult, political, spam, deception, malware [Usage Guidelines](https://beta.openai.com/docs/usage-guidelines)
   monitoring: Use of API is monitored, per Section 5b of [Terms of Use](https://openai.com/api/policies/terms/)
   feedback: private feedback at support @ openai.com
@@ -169,7 +169,7 @@
   access: none
   license: none
   terms_of_service: https://www.duolingo.com/terms
-  allowed_uses: none
+  intended_uses: none
   prohibited_uses: none
   monitoring: unknown
   feedback: none
@@ -194,7 +194,7 @@
   access: none
   license: none
   terms_of_service: https://www.askviable.com/terms-of-service
-  allowed_uses: none
+  intended_uses: none
   prohibited_uses: none
   monitoring: unknown
   feedback: unknown
@@ -219,7 +219,7 @@
   access: none
   license: none
   terms_of_service: https://hyperwriteai.com/terms
-  allowed_uses: none
+  intended_uses: none
   prohibited_uses: none
   monitoring: unknown
   feedback: unknown

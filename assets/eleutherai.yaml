@@ -21,7 +21,7 @@
   quality_control: TODO
   # Downstream
   access: Can be downloaded for free from [The Eye](https://mystic.the-eye.eu/public/AI/pile/)
-  allowed_uses: Training large-scale language models
+  intended_uses: Training large-scale language models
   prohibited_uses: none
   monitoring: none
   feedback: Email the authors
@@ -46,7 +46,7 @@
   # Downstream
   access: Can be downloaded for free from [The Eye](https://mystic.the-eye.eu/public/AI/models/GPT-NeoX-20B/)
   license: Apache 2.0
-  allowed_uses: Research towards the safe use of AI
+  intended_uses: Research towards the safe use of AI
   prohibited_uses: none
   monitoring: none
   feedback: Email the authors

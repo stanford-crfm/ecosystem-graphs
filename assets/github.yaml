@@ -16,7 +16,7 @@
   access: Available in a restricted technical preview.
   license: unknown
   terms_of_service: https://docs.github.com/en/site-policy/github-terms/github-terms-of-service
-  allowed_uses: Coding assistant
+  intended_uses: Coding assistant.
   prohibited_uses: unknown
   monitoring: unknown
   feedback: https://github.com/github/feedback/discussions/categories/copilot-feedback

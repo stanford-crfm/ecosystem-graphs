@@ -17,7 +17,7 @@
   quality_control: unknown
   # Downstream
   access: none
-  allowed_uses: none
+  intended_uses: none
   prohibited_uses: none
   monitoring: none
   feedback: none
@@ -42,7 +42,7 @@
   # Downstream
   access: none
   license: none
-  allowed_uses: none
+  intended_uses: none
   prohibited_uses: none
   monitoring: none
   feedback: none
@@ -64,7 +64,7 @@
   access: TODO
   license: TODO
   terms_of_service: TODO
-  allowed_uses: TODO
+  intended_uses: TODO
   prohibited_uses: TODO
   monitoring: TODO
   feedback: TODO
@@ -92,7 +92,7 @@
   # Downstream
   access: none
   license: none
-  allowed_uses: none
+  intended_uses: none
   prohibited_uses: none
   monitoring: none
   feedback: none

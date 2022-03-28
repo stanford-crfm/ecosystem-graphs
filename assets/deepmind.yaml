@@ -17,7 +17,7 @@
   # Downstream
   access: none
   license: none
-  allowed_uses: none
+  intended_uses: none
   prohibited_uses: none
   monitoring: none
   feedback: none

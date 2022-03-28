@@ -36,7 +36,7 @@ dataset:
   description: Who can access (and use) the dataset.
 - name: license
   description: License of the dataset.
-- name: allowed_uses
+- name: intended_uses
   description: Description of what the dataset can be used for downstream.
 - name: prohibited_uses
   description: Description of what the dataset should not be used for downstream.
@@ -82,7 +82,7 @@ model:
   description: Who can access (and use) this model.
 - name: license
   description: License of the model.
-- name: allowed_uses
+- name: intended_uses
   description: Description of what the model can be used for downstream.
 - name: prohibited_uses
   description: Description of what the model should not be used for downstream.
@@ -119,7 +119,7 @@ application:
 - name: terms_of_service
   type: url
   description: Link to the terms of service.
-- name: allowed_uses
+- name: intended_uses
   description: Description of what the application can be used for downstream.
 - name: prohibited_uses
   description: Description of what the application should not be used for downstream.
