@@ -1,2 +1,6 @@
+# Mac Specific
+.DS_Store
+
+# Group specific
 nav
 tags
