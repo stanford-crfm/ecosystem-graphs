@@ -1,0 +1,22 @@
+---
+name: Test
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  format:
+    name: Format YAML files
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Set up Python 3.8
+        uses: actions/setup-python@v1
+        with:
+          python-version: 3.8
+
+      - name: Validate format
+        run: sh ./pre-commit.sh && git diff --exit-code
