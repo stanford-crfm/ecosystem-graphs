@@ -3,13 +3,13 @@
 # This script fails when any of its commands fail.
 set -e
 
-#if ! [ -e venv ]; then
-#  python3 -m pip install virtualenv
-#  python3 -m virtualenv -p python3 venv
-#fi
-#
-#venv/bin/pip install -r requirements.txt
-#venv/bin/pip check
+if ! [ -e venv ]; then
+  python3 -m pip install virtualenv
+  python3 -m virtualenv -p python3 venv
+fi
+
+venv/bin/pip install -r requirements.txt
+venv/bin/pip check
 
 # YAML style checks and linting
 echo ""
