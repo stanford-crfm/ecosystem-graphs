@@ -1,3 +1,5 @@
+---
+
 # Applications
 
 - type: application
@@ -11,15 +13,23 @@
   - Codex
   adaptation: unknown
   output_space: text completions
-  quality_control: GitHub is working on a filter to detect and suppress code generations that are verbatim from the training set, more information [here](https://docs.github.com/en/github/copilot/research-recitation). GitHub implemented a simple filter that blocks emails in standard formats to protect personally identifiable data that may be present in the training data.
+  quality_control:
+    GitHub is working on a filter to detect and suppress code generations that
+    are verbatim from the training set, more information
+    [here](https://docs.github.com/en/github/copilot/research-recitation).
+    GitHub implemented a simple filter that blocks emails in standard formats
+    to protect personally identifiable data that may be present in the training
+    data.
   # Downstream
   access: Available in a restricted technical preview.
   license: unknown
-  terms_of_service: https://docs.github.com/en/site-policy/github-terms/github-terms-of-service
+  terms_of_service:
+    https://docs.github.com/en/site-policy/github-terms/github-terms-of-service
   intended_uses: Coding assistant.
   prohibited_uses: unknown
   monitoring: unknown
-  feedback: https://github.com/github/feedback/discussions/categories/copilot-feedback
+  feedback:
+    https://github.com/github/feedback/discussions/categories/copilot-feedback
   # Deployment
   monthly_active_users: unknown
   user_distribution: unknown

@@ -1,136 +1,138 @@
+---
+
 dataset:
-- name: name
-  description: Name of the dataset (must be a unique identifier).
-# General
-- name: organization
-  description: Organization that curated the dataset.
-- name: created_date
-  description: When the dataset was created.
-- name: url
-  type: url
-  description: Link to website or paper that provides a detailed description of the dataset.
-- name: datasheet
-  type: url
-  description: Link to the datasheet describing the dataset.
-- name: modality
-  description: Modalities represented in the dataset (e.g., text, images, videos).
-- name: size
-  description: How big (uncompressed) the dataset is.
-- name: sample
-  type: list
-  description: Small sample of content from the dataset.
-- name: analysis
-  description: Description of any analysis (evaluation) that was done on the dataset.
-# Construction
-- name: dependencies
-  type: list
-  description: A list of assets (e.g., datasets, models, applications) that were used to create this dataset.
-- name: included
-  description: Description of what data is included.
-- name: excluded
-  description: Description of what data is excluded (e.g., filtered out) and why.
-- name: quality_control
-  description: What measures were taken to ensure quality, safety, and mitigate harms.
-# Downstream
-- name: access
-  description: Who can access (and use) the dataset.
-- name: license
-  description: License of the dataset.
-- name: intended_uses
-  description: Description of what the dataset can be used for downstream.
-- name: prohibited_uses
-  description: Description of what the dataset should not be used for downstream.
-- name: monitoring
-  description: Description of measures taken to monitor downstream uses of this dataset.
-- name: feedback
-  description: How downstream problems with this dataset should be reported.
+  - name: name
+    description: Name of the dataset (must be a unique identifier).
+  # General
+  - name: organization
+    description: Organization that curated the dataset.
+  - name: created_date
+    description: When the dataset was created.
+  - name: url
+    type: url
+    description: Link to website or paper that provides a detailed description of the dataset.
+  - name: datasheet
+    type: url
+    description: Link to the datasheet describing the dataset.
+  - name: modality
+    description: Modalities represented in the dataset (e.g., text, images, videos).
+  - name: size
+    description: How big (uncompressed) the dataset is.
+  - name: sample
+    type: list
+    description: Small sample of content from the dataset.
+  - name: analysis
+    description: Description of any analysis (evaluation) that was done on the dataset.
+  # Construction
+  - name: dependencies
+    type: list
+    description: A list of assets (e.g., datasets, models, applications) that were used to create this dataset.
+  - name: included
+    description: Description of what data is included.
+  - name: excluded
+    description: Description of what data is excluded (e.g., filtered out) and why.
+  - name: quality_control
+    description: What measures were taken to ensure quality, safety, and mitigate harms.
+  # Downstream
+  - name: access
+    description: Who can access (and use) the dataset.
+  - name: license
+    description: License of the dataset.
+  - name: intended_uses
+    description: Description of what the dataset can be used for downstream.
+  - name: prohibited_uses
+    description: Description of what the dataset should not be used for downstream.
+  - name: monitoring
+    description: Description of measures taken to monitor downstream uses of this dataset.
+  - name: feedback
+    description: How downstream problems with this dataset should be reported.
 
 model:
-- name: name
-  description: Name of the model (must be a unique identifier).
-# General
-- name: organization
-  description: Organization that created the model.
-- name: created_date
-  description: When the model was created.
-- name: url
-  type: url
-  description: Link to website or paper that provides a detailed description of the model.
-- name: model_card
-  type: url
-  description: Link to the model card describing this model.
-- name: modality
-  description: Modalities represented in the model (e.g., text, images, videos).
-- name: analysis
-  description: Description of any analysis that was done on the model.
-- name: size
-  description: Size (and shape) of the model (e.g., number of parameters in the model)
-# Construction
-- name: dependencies
-  type: list
-  description: A list of assets (e.g., datasets, models, applications) that were used to create this model.
-- name: training_emissions
-  description: Estimate of the carbon emissions used to create this model.
-- name: training_time
-  description: How much time it took to train this model.
-- name: training_hardware
-  description: What hardware was used to train the model.
-- name: quality_control
-  description: What measures were taken to ensure quality, safety, and mitigate harms.
-# Downstream
-- name: access
-  description: Who can access (and use) this model.
-- name: license
-  description: License of the model.
-- name: intended_uses
-  description: Description of what the model can be used for downstream.
-- name: prohibited_uses
-  description: Description of what the model should not be used for downstream.
-- name: monitoring
-  description: Description of measures taken to monitor downstream uses of this model.
-- name: feedback
-  description: How downstream problems with this model should be reported.
+  - name: name
+    description: Name of the model (must be a unique identifier).
+  # General
+  - name: organization
+    description: Organization that created the model.
+  - name: created_date
+    description: When the model was created.
+  - name: url
+    type: url
+    description: Link to website or paper that provides a detailed description of the model.
+  - name: model_card
+    type: url
+    description: Link to the model card describing this model.
+  - name: modality
+    description: Modalities represented in the model (e.g., text, images, videos).
+  - name: analysis
+    description: Description of any analysis that was done on the model.
+  - name: size
+    description: Size (and shape) of the model (e.g., number of parameters in the model)
+  # Construction
+  - name: dependencies
+    type: list
+    description: A list of assets (e.g., datasets, models, applications) that were used to create this model.
+  - name: training_emissions
+    description: Estimate of the carbon emissions used to create this model.
+  - name: training_time
+    description: How much time it took to train this model.
+  - name: training_hardware
+    description: What hardware was used to train the model.
+  - name: quality_control
+    description: What measures were taken to ensure quality, safety, and mitigate harms.
+  # Downstream
+  - name: access
+    description: Who can access (and use) this model.
+  - name: license
+    description: License of the model.
+  - name: intended_uses
+    description: Description of what the model can be used for downstream.
+  - name: prohibited_uses
+    description: Description of what the model should not be used for downstream.
+  - name: monitoring
+    description: Description of measures taken to monitor downstream uses of this model.
+  - name: feedback
+    description: How downstream problems with this model should be reported.
 
 application:
-- name: name
-  description: Name of the product or service.
-- name: organization
-  description: Organization that created the application.
-- name: created_date
-  description: When the application was created.
-- name: url
-  type: url
-  description: Link to website describing the application.
-# Construction
-- name: dependencies
-  type: list
-  description: A list of assets (e.g., datasets, models, applications) that were used to create this application.
-- name: adaptation
-  description: How the model was adapted (e.g., fine-tuned) to produce the derived task model.
-- name: output_space
-  description: Description of the output space (e.g., generation, ranking, etc.).
-- name: quality_control
-  description: What measures were taken to ensure quality, safety, and mitigate harms.
-# Downstream
-- name: access
-  description: Who can access (and use) the application.
-- name: license
-  description: License of the application.
-- name: terms_of_service
-  type: url
-  description: Link to the terms of service.
-- name: intended_uses
-  description: Description of what the application can be used for downstream.
-- name: prohibited_uses
-  description: Description of what the application should not be used for downstream.
-- name: monitoring
-  description: Description of measures taken to monitor downstream uses of this application.
-- name: feedback
-  description: How downstream problems with this application should be reported.
-# Deployment
-- name: monthly_active_users
-  description: Rough order of magnitude of number of active users.
-- name: user_distribution
-  description: Demographic and geographic diversity.
-- name: failures
-  description: Description of known failures (and errors).
+  - name: name
+    description: Name of the product or service.
+  - name: organization
+    description: Organization that created the application.
+  - name: created_date
+    description: When the application was created.
+  - name: url
+    type: url
+    description: Link to website describing the application.
+  # Construction
+  - name: dependencies
+    type: list
+    description: A list of assets (e.g., datasets, models, applications) that were used to create this application.
+  - name: adaptation
+    description: How the model was adapted (e.g., fine-tuned) to produce the derived task model.
+  - name: output_space
+    description: Description of the output space (e.g., generation, ranking, etc.).
+  - name: quality_control
+    description: What measures were taken to ensure quality, safety, and mitigate harms.
+  # Downstream
+  - name: access
+    description: Who can access (and use) the application.
+  - name: license
+    description: License of the application.
+  - name: terms_of_service
+    type: url
+    description: Link to the terms of service.
+  - name: intended_uses
+    description: Description of what the application can be used for downstream.
+  - name: prohibited_uses
+    description: Description of what the application should not be used for downstream.
+  - name: monitoring
+    description: Description of measures taken to monitor downstream uses of this application.
+  - name: feedback
+    description: How downstream problems with this application should be reported.
+  # Deployment
+  - name: monthly_active_users
+    description: Rough order of magnitude of number of active users.
+  - name: user_distribution
+    description: Demographic and geographic diversity.
+  - name: failures
+    description: Description of known failures (and errors).
