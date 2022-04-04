@@ -218,7 +218,7 @@ function renderAssetsGraph(nameToAsset) {
           selector: 'edge',
           style: {
             'width': 1,
-            'curve-style': 'straight',
+            'curve-style': 'unbundled-bezier',
             'target-arrow-shape': 'triangle',
           },
         },
