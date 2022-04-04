@@ -5,7 +5,7 @@
 - type: application
   name: GitHub Copilot
   # General
-  organization: GitHub
+  organization: Microsoft
   created_date: "2021-06-29"
   url: https://copilot.github.com/
   # Construction

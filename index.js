@@ -268,11 +268,11 @@ $(() => {
   const nameToAsset = {};  // asset name (e.g., "GPT-3") => asset
 
   const paths = [
-    'assets/github.yaml',
-    'assets/openai.yaml',
     'assets/eleutherai.yaml',
-    'assets/google.yaml',
     'assets/deepmind.yaml',
+    'assets/google.yaml',
+    'assets/microsoft.yaml',
+    'assets/openai.yaml',
   ];
 
   $.get('schemas.yaml', {}, (response) => {
