@@ -203,7 +203,10 @@ function renderAssetsGraph(nameToAsset) {
       container: $graph.get(0),
       elements: {nodes, edges},
       layout: {
-        name: 'grid',
+        name: 'cose',
+        randomize: false,
+        componentSpacing: 100,
+        nodeOverlap: 4,
       },
       style: [
         {
@@ -218,7 +221,7 @@ function renderAssetsGraph(nameToAsset) {
           selector: 'edge',
           style: {
             'width': 1,
-            'curve-style': 'unbundled-bezier',
+            'curve-style': 'straight',
             'target-arrow-shape': 'triangle',
           },
         },
