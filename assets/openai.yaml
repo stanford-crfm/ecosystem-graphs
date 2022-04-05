@@ -144,8 +144,8 @@
     parameters.
   training_hardware: >
     Azure; The original paper doesn't specify the training hardware for GPT-3,
-    but a follow up blog post indicates that it was trained on an Azure machine,
-    using 10000 GPUs with 400 Gbps
+    but a follow up blog post indicates that it was trained on a cluster on
+    Azure cluster, using 10000 GPUs with 400 Gbps
     [[Microsoft Blog Post]]
     (https://blogs.microsoft.com/ai/openai-azure-supercomputer/).
   quality_control: >
