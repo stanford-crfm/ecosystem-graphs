@@ -359,7 +359,7 @@
   url: https://openai.com/api/
   # Construction
   dependencies:
-  - GPT-3
+  - OpenAPI API
   adaptation: unknown
   output_space: French grammar corrections
   quality_control: unknown
@@ -384,7 +384,7 @@
   url: https://www.askviable.com/
   # Construction
   dependencies:
-  - GPT-3
+  - OpenAPI API
   adaptation: none
   output_space: question and answer, summarization, sentiment analysis,topic identification
   quality_control: unknown
@@ -409,7 +409,7 @@
   url: https://hyperwriteai.com/
   # Construction
   dependencies:
-  - GPT-3
+  - OpenAPI API
   adaptation: none
   output_space: generation
   quality_control: unknown
