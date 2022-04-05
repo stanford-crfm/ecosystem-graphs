@@ -1,7 +1,7 @@
 ---
 
 - type: dataset
-  name: MassiveText dataset
+  name: MassiveText
   # General
   organization: DeepMind
   description: >
@@ -49,19 +49,34 @@
     models in the Gopher family can be seen in the paper
     [[Table 1]](https://arxiv.org/pdf/2112.11446.pdf#table.caption.1).
   analysis: >
-    todo
+    Model performance was evaluated and analyzed on 152 NLP tasks including:
+    Language Modelling (20), Reading Comprehension (3), Fact Checking (3),
+    Question Answering (3), Common Sense (4), MMLU (57), BIG-bench (62)
+    [[Section 4]](https://arxiv.org/pdf/2112.11446.pdf#section.4); on toxicity
+    and bias datasets
+    [[Section 5]](https://arxiv.org/pdf/2112.11446.pdf#section.5); and on
+    dialogue tasks
+    [[Section 6]](https://arxiv.org/pdf/2112.11446.pdf#section.6).
   # Construction
   dependencies:
-    - MassiveText dataset
+    - MassiveText
   training_emissions: >
     380 tCO2e; The training emission estimate from the paper
     [[Section F.]](https://arxiv.org/pdf/2112.11446.pdf#appendix.F)
   training_time: 920 hours
-  training_hardware: TODO
-  quality_control: TODO
+  training_hardware: >
+    TPUv3 pods
+  quality_control: >
+    None; Last updated 2022-04-05.
   # Downstream
-  access: todo
-  license: todo
+  access: >
+    The model access is limited to DeepMind researchers. The model won't be
+    released to the public
+    [[Model Card]](https://arxiv.org/pdf/2112.11446.pdf#appendix.B).
+  license: >
+    Unknown; The model likely has a license specifically for DeepMind's use,
+    based on the information provided in the model card
+    [[Model Card]](https://arxiv.org/pdf/2112.11446.pdf#appendix.B).
   intended_uses: >
     The intended uses are stated in the Gopher model card: "The primary use is
     research on language models, including: research on NLP applications like
@@ -69,6 +84,16 @@
     language models can contribute to AGI, advancing fairness and safety
     research, and understanding limitations of current LLMs"
     [[Model Card]](https://arxiv.org/pdf/2112.11446.pdf#appendix.B).
-  prohibited_uses: todo
-  monitoring: todo
-  feedback: todo
+  prohibited_uses: >
+    The model card lists the following as out of scope uses of the model: "for
+    language generation in harmful or deceitful settings. More generally, the
+    model should not be used for downstream applications without further safety
+    and fairness mitigations"
+    [[Model Card]](https://arxiv.org/pdf/2112.11446.pdf#appendix.B).
+  monitoring: >
+    Unknown; There is no information on how DeepMind is internally monitoring
+    the use of the model.
+  feedback: >
+    The feedback for the model can be provided at the email linked in the model
+    card, geoffreyi at google.com
+    [[Model Card]](https://arxiv.org/pdf/2112.11446.pdf#appendix.B).
