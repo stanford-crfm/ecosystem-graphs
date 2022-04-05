@@ -7,48 +7,59 @@
   created_date: "2021-01-01"
   url: https://arxiv.org/pdf/2101.00027.pdf
   datasheet: https://arxiv.org/pdf/2201.07311.pdf
-  modality: text (English, code)
+  modality: text (English) and code
   size: 825GB
   sample:
   - ...pot trending topics and the coverage around them. First up, there’s a bit of a visual redesign. Previously, clicking on a trending topic would highlight a story from one publication, and you’d have to scroll down past a live video section to view related stories. Facebook is replacing that system with a simple carousel, which does a better job of showing you different coverage options. To be clear, the change doesn’t affect how stories are sourced, according to Facebook. It’s still the same algorithm pickin...
   - Total knee arthroplasty (TKA) is a promising treatment for endstage osteoarthritis (OA) of the knee for alleviating pain and restoring the function of the knee. Some of the cases with bilateral TKA are symptomatic, necessitating revision arthroplasty in both the knees. A bilateral revision TKA can be done ei
   - On the converse, the set-valued map $\Phi:[0,3]\rightrightarrows [0,3]$ $$\Phi(x):=\left\{\begin{array}{ll} \{1\} & \mbox{ if } 0\leq x<1\\ {}[1,2] & \mbox{ if } 1\leq x\leq 2\\ \{2\} &
   - This Court thus uses the same interpretation of V.R.C.P. 52(a) as it did *487 under the previous statutory requirement found in 12 V.S.A. § 2385.  In essense, the defendants urge that this Court should reconsider the case of Green Mountain Marble Co. v. Highway Board, supra, and follow the Federal practice of looking to the evide
-  analysis: See the paper.
+  analysis: Analyses of the data's composition, document statistics, language/dialectal coverage, topical distribution, and biases are conducted in the [paper](https://arxiv.org/pdf/2101.00027.pdf).
   # Construction
   dependencies: []
-  license: TODO
-  included: 22 diverse sources (Pile-CC, PubMed Central, PubMed Abstracts, Books3, BookCorpus2, OpenWebText2, ArXiv, Github, FreeLaw, Stack Exchange, USPTO, PG-19, OpenSubtitles, Wikipedia, DM Math, Ubuntu IRC, EuroParl, HackerNews, YTSubtitles, PhilPapers, NIH, Enron Emails)
-  excluded: US congressional record, fanfiction, literotica
-  quality_control: TODO
+  license: >
+    The Pile uses the [MIT License](https://arxiv.org/pdf/2201.07311.pdf).
+  included: 22 sources with over half of the data being from Common Crawl (Pile-CC; 227GB), fiction and nonfiction books (Books3; 101GB), biomedical articles (PubMed Central; 90GB), and code (Github; 95 GB). See [Table 1](https://arxiv.org/pdf/2101.00027.pdf) for the full decomposition.
+  excluded: US congressional records, fanfiction, literotica were explicitly excluded; justification is provided in [Appendix B](https://arxiv.org/pdf/2101.00027.pdf).
+  quality_control: In addition to data inclusion/exclusion decisions, quality was controlled through filtering for English (pycld2 language classifier), filtering for documents similar to OpenWebText2 (classifier on CommonCrawl), and several forms of dedupplication as detailed in [Appendices C and D](https://arxiv.org/pdf/2101.00027.pdf).
   # Downstream
   access: Can be downloaded for free from [The Eye](https://mystic.the-eye.eu/public/AI/pile/)
-  intended_uses: Training large-scale language models
-  prohibited_uses: none
+  intended_uses: >
+    The intended uses are explained in the paper
+    [Training large-scale language models]
+    (https://arxiv.org/pdf/2101.00027.pdf).
+  prohibited_uses: none as of 4/4/2022
   monitoring: none
-  feedback: Email the authors
+  feedback: >
+    Feedback can be given by emailing the authors at contact at eleuther.ai.
 
 - type: model
   name: GPT-NeoX-20B
   # General
   organization: EleutherAI
-  created_date: "2021-02-02"
+  created_date: "2022-02-02"
   url: http://eaidata.bmk.sh/data/GPT_NeoX_20B.pdf
   model_card: https://mystic.the-eye.eu/public/AI/models/GPT-NeoX-20B/20B_model_card.md
-  modality: text (English, code)
-  size: Autoregressive Transformer with 20B parameters
-  analysis: Evaluated on LAMBDA, ANLI, HellaSwag, MMLU, etc.
+  modality: text (English) and code
+  size: 20B parameters (dense model)
+  analysis: >
+    Evaluated on standard NLP benchmarks: LAMBADA, ANLI, HellaSwag, MMLU with performance reported [here](https://blog.eleuther.ai/announcing-20b/).
   # Construction
   dependencies:
   - The Pile
-  training_emissions: 31.73 tCO2 eq [Section 6.4]
-  training_time: 1830 hours [Section 6.4]
-  training_hardware: 12 x 8 A100s [Section 2.3]
-  quality_control: Trained on a dataset (The Pile) containing data from diverse set of sources.
+  training_emissions: 31.73 tCO2 eq [Section 6.4](http://eaidata.bmk.sh/data/GPT_NeoX_20B.pdf)
+  training_time: 1830 hours [Section 6.4](http://eaidata.bmk.sh/data/GPT_NeoX_20B.pdf)
+  training_hardware: 12 x 8 A100s [Section 2.3](http://eaidata.bmk.sh/data/GPT_NeoX_20B.pdf)
+  quality_control: none known as of 4/4/2022
   # Downstream
   access: Can be downloaded for free from [The Eye](https://mystic.the-eye.eu/public/AI/models/GPT-NeoX-20B/)
-  license: Apache 2.0
-  intended_uses: Research towards the safe use of AI
-  prohibited_uses: none
-  monitoring: none
+  license: >
+    GPT-NeoX-20B uses the [Apache 2.0](https://blog.eleuther.ai/announcing-20b/)
+    license.
+  intended_uses: >
+    Intended uses are outlined in the research paper
+    [Research towards the safe use of AI]
+    (https://blog.eleuther.ai/announcing-20b/).
+  prohibited_uses: none known as of 4/4/2022
+  monitoring: none known as of 4/4/2022
   feedback: Email the authors
