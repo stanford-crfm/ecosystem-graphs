@@ -251,6 +251,9 @@ function updateDownstreamAssets(nameToAsset) {
   // Use each asset's dependencies (upstream pointers) to update the corresponding downstream pointers.
   Object.values(nameToAsset).forEach((asset) => {
     asset.dependencies.forEach((dep) => {
+      if (!(dep in nameToAsset)) {
+        console.error('The node ', dep, 'does not exist in the graph.');
+      }
       const depAsset = nameToAsset[dep];
       if (depAsset) {
         depAsset.downstreamAssets.push(asset.name);
