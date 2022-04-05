@@ -3,28 +3,28 @@
 - type: dataset
   name: MassiveText dataset
   # General
-  organization: none
+  organization: DeepMind
   description: >
     The MassiveText dataset was used to train the Gopher model.
-  created_date: none
-  url: none
-  datasheet: none
-  modality: none
-  size: none
+  created_date: todo
+  url: todo
+  datasheet: todo
+  modality: todo
+  size: todo
   sample: []
-  analysis: none
+  analysis: todo
   # Construction
   dependencies: []
-  license: none
-  included: none
-  excluded: none
-  quality_control: none
+  license: todo
+  included: todo
+  excluded: todo
+  quality_control: todo
   # Downstream
-  access: none
-  intended_uses: none
-  prohibited_uses: none
-  monitoring: none
-  feedback: none
+  access: todo
+  intended_uses: todo
+  prohibited_uses: todo
+  monitoring: todo
+  feedback: todo
 
 - type: model
   name: Gopher
@@ -49,7 +49,7 @@
     models in the Gopher family can be seen in the paper
     [[Table 1]](https://arxiv.org/pdf/2112.11446.pdf#table.caption.1).
   analysis: >
-    TODO
+    todo
   # Construction
   dependencies:
     - MassiveText dataset
@@ -60,8 +60,8 @@
   training_hardware: TODO
   quality_control: TODO
   # Downstream
-  access: none
-  license: none
+  access: todo
+  license: todo
   intended_uses: >
     The intended uses are stated in the Gopher model card: "The primary use is
     research on language models, including: research on NLP applications like
@@ -69,6 +69,6 @@
     language models can contribute to AGI, advancing fairness and safety
     research, and understanding limitations of current LLMs"
     [[Model Card]](https://arxiv.org/pdf/2112.11446.pdf#appendix.B).
-  prohibited_uses: none
-  monitoring: none
-  feedback: none
+  prohibited_uses: todo
+  monitoring: todo
+  feedback: todo
