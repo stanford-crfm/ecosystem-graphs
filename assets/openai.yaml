@@ -8,24 +8,22 @@
   organization: OpenAI
   description: >
     The GPT-3 dataset is the text corpus that was used to train the GPT-3
-    model. The dataset isn't released to the public, and the information on it
-    is limited to those provided in a section in the paper introducing the
-    GPT-3 model
+    model. Information on the GPT-3 dataset is limited to discussion in the
+    paper introducing GPT-3
     [[Section 2.2]](https://arxiv.org/pdf/2005.14165.pdf#subsection.2.2).
   created_date: >
-    2020-06-11; The GPT-3 dataset doesn't have a release date specified, but
-    the acompanying model, GPT-3 was released to the public as part of a
-    blog post introducing the OpenAI API at the date specified
+    2020-06-11; The date for the public announcement of GPT-3. The GPT-3
+    dataset didn't have a specific release date separate from the model
     [[Open AI Blog Post]](https://openai.com/blog/openai-api/).
   url: https://arxiv.org/pdf/2005.14165.pdf
-  datasheet: none
+  datasheet: None; No datasheet available as of 2022-04-04.
   modality: Text (English)
   size: 570 GB
   sample: []
   analysis: >
-    The GPT-3 paper, which also introduces the GPT-3 dataset, provide a limited
+    The GPT-3 paper, which also introduces the GPT-3 dataset, provides a limited
     analysis on the GPT-3 dataset, reporting the dirtiness of the dataset after
-    the it was filtered for text occuring in common benchmarking tasks.
+    the it was filtered for text occurring in common benchmarking tasks.
     The authors report that "as the dataset becomes more contaminated, the
     variance of the clean/all fraction increases, but there is no apparent bias
     towards improved or degraded performance"
@@ -33,21 +31,19 @@
   # Construction
   dependencies: []
   license: >
-    unknown; There is no known license specific to the GPT-3 dataset, however,
+    Unknown; There is no known license specific to the GPT-3 dataset, however,
     the governing organization, OpenAI, licensed GPT-3 to Microsoft, which
     makes it likely that the GPT-3 dataset was also licensed
     [[OpenAI Blog Post]]
     (https://openai.com/blog/openai-licenses-gpt-3-technology-to-microsoft/).
   included: >
-    The GPT-3 dataset is a combination of several corpora that are commonly
-    used for NLP model training tasks, which are as follows, along with their
-    representation percentage in the GPT-3 dataset: Common Crawl
-    (filtered, 60%), WebText2 (22%), Books1 (8%), Books2 (8%), Wikipedia (3%)
+    The dataset is composed several NLP corpora: Common Crawl (filtered, 60%),
+    WebText2 (22%), Books1 (8%), Books2 (8%), Wikipedia (3%)
     [[Section 2.2]](https://arxiv.org/pdf/2005.14165.pdf#subsection.2.2).
   excluded: >
-    Low quality documents in the Common Crawl dataset, which are less like
-    Wikipedia, Webtext or Books corpora, were filtered out using automatic
-    filters and not included in the GPT-3 dataset
+    The Common Crawl dataset was processed using a classifier that kept high
+    quality documents and filtered low quality documents. WebText was used as a
+    proxy for high quality documents 
     [[Appendix A]](https://arxiv.org/pdf/2005.14165.pdf#appendix.A).
   quality_control: >
     In addition to excluding low quality documents from the Common Crawl
@@ -64,13 +60,11 @@
     Microsoft [[OpenAI Blog Post]]
     (https://openai.com/blog/openai-licenses-gpt-3-technology-to-microsoft/).
   intended_uses: >
-    The intended use of the GPT-3 dataset was to train GPT-3. Since the dataset
-    wasn't released to the public, we think that it wasn't meant to be a
-    general purpose language model training dataset.
+    The intended use of the GPT-3 dataset is to train large language models.
   prohibited_uses: >
-    unknown; OpenAI didn't provide a list of prohibited uses specifically for
+    Unknown; OpenAI didn't provide a list of prohibited uses specifically for
     the GPT-3 dataset. However, public OpenAI products are governed by the
-    OpenAI Terms of Use, which can also apply to the OpenAI dataset.
+    OpenAI Terms of Use, which may also apply to the OpenAI dataset.
     The OpenAI Terms of Use prohibit the following:
     (i) Illegal activities, such as child pornography, gambling, cybercrime,
     piracy, violating copyright, trademark or other intellectual property laws;
@@ -80,19 +74,21 @@
     or intimidating anyone for any reason
     [[Open AI Terms of Use]](https://openai.com/api/policies/terms/).
   monitoring: >
-    unknown; There are no known monitoring mechanisms are in place for the use
-    of the GPT-3 dataset.
+    Unknown; There are no known (internal or external) monitoring mechanisms
+    that are in place for the use of the GPT-3 dataset as of 2022-04-04.
   feedback: >
-    unknown; There are no known feedback mechanisms for the GPT-3 dataset.
+    Unknown; There are no known (internal or external) feedback mechanisms for
+    the GPT-3 dataset as of 2022-04-04.
 
 - type: dataset
   name: Codex dataset
   # General
   organization: OpenAI
+  description: none
   created_date: none
   url: https://arxiv.org/pdf/2107.03374.pdf
   datasheet: none
-  modality: text (English)
+  modality: Text (English)
   size: 159GB
   sample: []
   analysis: See the paper (Section 3.1).
@@ -115,26 +111,94 @@
   name: GPT-3
   # General
   organization: OpenAI
-  created_date: "2020-06-11"
+  description: >
+    GPT-3 is an autoregressive large language model.
+  created_date: >
+    2020-06-11; The date that GPT-3 was announced to the public
+    [[Open AI Blog Post]](https://openai.com/blog/openai-api/).
   url: https://arxiv.org/pdf/2005.14165.pdf
   model_card: https://github.com/openai/gpt-3/blob/master/model-card.md
-  modality: text (English)
-  size: Autoregressive Transformer with 175B parameters
-  analysis: Evaluated on language modeling, closed-book question answering, translation, Winograd-style tasks, commonsense reasoning, reading comprehension, SuperGLUE, NLI, synthetic tasks, generation
+  modality: Text (English)
+  size: > 
+    175B parameters; GPT-3 comes in several sizes. Here we report the largest
+    GPT-3 model size. All the model sizes of GPT-3 can be seen in the paper
+    [[Table 2.1]](https://arxiv.org/pdf/2005.14165.pdf#table.caption.7).
+  analysis: >
+    The GPT-3 model was evaluated on language modeling, closed-book question
+    answering, translation, Winograd-style tasks, commonsense reasoning,
+    reading comprehension, SuperGLUE, NLI, synthetic tasks, and generation;
+    as well as fairness and biases
+    [[Section 4]](https://arxiv.org/pdf/2005.14165.pdf#section.2.4)
+    [[Section 6]](https://arxiv.org/pdf/2005.14165.pdf#section.6).
   # Construction
   dependencies:
   - GPT-3 dataset
-  training_emissions: 552.1 tCO2e (estimate from https://arxiv.org/abs/2104.10350)
-  training_time: 3.64E+03 PF-days
-  training_hardware: Trained on [Azure supercomputer](https://blogs.microsoft.com/ai/openai-azure-supercomputer/), which has 10000 GPUs with 400 Gbps
-  quality_control: The model is not released.
+  training_emissions: >
+    552.1 tCO2e; Estimate of the CO2(e) emissions for GPT-3 were not provided
+    by OpenAI, but they were provided by a follow up work investigating the CO2
+    equivalent emissions (CO2e) of GPT-3
+    [[Patterson et al.]]
+    (https://arxiv.org/ftp/arxiv/papers/2104/2104.10350.pdf).
+  training_time: >
+    3.64E+03 PF-days; The time required to train the GPT-3 model with 175B
+    parameters.
+  training_hardware: >
+    Azure; The original paper doesn't specify the training hardware for GPT-3,
+    but a follow up blog post indicates that it was trained on an Azure machine,
+    using 10000 GPUs with 400 Gbps
+    [[Microsoft Blog Post]]
+    (https://blogs.microsoft.com/ai/openai-azure-supercomputer/).
+  quality_control: >
+    One quality control method OpenAI employed was releasing GPT-3 only through
+    the OpenAI API. OpenAI states that it is easier to respond to misuse when
+    the access to the model is gated through the API. It also hints that it
+    plans to broaden the API access over time based on the amount of misuse
+    [[OpenAI API Blog Post]](https://openai.com/blog/openai-api/). 
+    The authors identify potential misuses of GPT-3 in the paper and analyze
+    it for fairness, bias and representation issues, but do not identify 
+    mitigation strategies
+    [[Section 6]](https://arxiv.org/pdf/2005.14165.pdf#section.6).
+    This section was last updated on 2022-04-04.
   # Downstream
-  access: Open to anyone in [supported countries](https://beta.openai.com/docs/supported-countries) via [API access](https://openai.com/api/); full model access to Microsoft
-  license: exclusive license to Microsoft
-  intended_uses: unknown
-  prohibited_uses: OpenAI prohibits the use of the model to generate restricted content per their [content policy](https://beta.openai.com/docs/usage-guidelines/content-policy). Other disallowed applications are listed in the [disallowed applications](https://beta.openai.com/docs/usage-guidelines/disallowed-applications) list.
-  monitoring: OpenAI reviews all use cases of the model.
-  feedback: Feedback form is [here](https://docs.google.com/forms/d/e/1FAIpQLSf1-7D2eiOcxz9KJSQ0Ie_R6ST_TsNXOvJE9MUyGax1NYkMfQ/viewform)
+  access: >
+    The GPT-3 model isn't fully released to the public, but
+    it was made available to Microsoft through the licencing agreement between
+    OpenAI and Microsoft
+    [[OpenAI Blog Post]]
+    (https://openai.com/blog/openai-licenses-gpt-3-technology-to-microsoft/).
+    The public can access the model through the Open AI API, which is available
+    in supported countries
+    [[Supported Countries]](https://beta.openai.com/docs/supported-countries)
+    [[OpenAI API]](https://openai.com/api/).
+    This field was last updated on 04-04-2022.
+  license: >
+    GPT-3 is exclusively licensed to OpenAI and Microsoft
+    [[OpenAI Blog Post]]
+    (https://openai.com/blog/openai-licenses-gpt-3-technology-to-microsoft/).
+    This field was last updated on 04-04-2022.
+  intended_uses: >
+    GPT-3 was intended to be use through the OpenAI API by developers for
+    language applications. Other intended use of GPT-3 include researchers
+    accessing the model through the API to study its paradigms
+    [[Model Card]](https://github.com/openai/gpt-3/blob/master/model-card.md).
+  prohibited_uses: > 
+    Access to GPT-3 is governed by Open AI API Usage Guidelines and API Terms
+    of Use, prohibiting the use of the API in a way that causes societal harm.
+    [[Usage Guidelines]]
+    (https://beta.openai.com/docs/usage-guidelines/content-policy)
+    [[Terms of Use]](https://openai.com/api/policies/terms/).
+    The list of disallowed applications can be found in the usage guidelines
+    [[Disallowed Applications]]
+    (https://beta.openai.com/docs/usage-guidelines/disallowed-applications).
+  monitoring: > 
+    OpenAI reviews all use cases of the model
+    [[Model Card]](https://github.com/openai/gpt-3/blob/master/model-card.md).
+  feedback: >
+    Feedback for GPT-3 can be provided on the feedback form linked in the 
+    model card
+    [[Model Card]](https://github.com/openai/gpt-3/blob/master/model-card.md).
+    The form is especially meant to collect feedback on concerns about misuse,
+    synthetic text detection, bias, and risk of generative language models.
 
 - type: model
   name: Codex
