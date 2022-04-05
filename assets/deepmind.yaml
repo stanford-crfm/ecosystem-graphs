@@ -1,25 +1,74 @@
 ---
 
+- type: dataset
+  name: MassiveText dataset
+  # General
+  organization: none
+  description: >
+    The MassiveText dataset was used to train the Gopher model.
+  created_date: none
+  url: none
+  datasheet: none
+  modality: none
+  size: none
+  sample: []
+  analysis: none
+  # Construction
+  dependencies: []
+  license: none
+  included: none
+  excluded: none
+  quality_control: none
+  # Downstream
+  access: none
+  intended_uses: none
+  prohibited_uses: none
+  monitoring: none
+  feedback: none
+
 - type: model
   name: Gopher
   # General
   organization: DeepMind
-  created_date: TODO
+  description: >
+    Gopher is an autoregressive large language model based on the Transformer
+    architecture with two modifications: using RMSNorm instead of LayerNorm and
+    using relative positional encoding scheme instead of absolute positional
+    encodings
+    [[Section 3]](https://arxiv.org/pdf/2112.11446.pdf#subsection.3.1).
+  created_date: >
+    2021-12-08; The date that Gopher was announced
+    [[DeepMind Blog Post]]
+    (https://www.deepmind.com/blog/language-modelling-at-scale-gopher-ethical-considerations-and-retrieval).
   url: https://arxiv.org/pdf/2112.11446.pdf
-  model_card: TODO
-  modality: text
-  size: TODO
-  analysis: TODO
+  model_card: https://arxiv.org/pdf/2112.11446.pdf#appendix.B
+  modality: Text (English) and Code
+  size: >
+    280B parameters; Gopher family has models of several sizes, but the name
+    Gopher uniquely identify the 280B parameter version. Sizes for the other
+    models in the Gopher family can be seen in the paper
+    [[Table 1]](https://arxiv.org/pdf/2112.11446.pdf#table.caption.1).
+  analysis: >
+    TODO
   # Construction
-  dependencies: []
-  training_emissions: TODO
-  training_time: TODO
+  dependencies:
+    - MassiveText dataset
+  training_emissions: >
+    380 tCO2e; The training emission estimate from the paper
+    [[Section F.]](https://arxiv.org/pdf/2112.11446.pdf#appendix.F)
+  training_time: 920 hours
   training_hardware: TODO
   quality_control: TODO
   # Downstream
   access: none
   license: none
-  intended_uses: none
+  intended_uses: >
+    The intended uses are stated in the Gopher model card: "The primary use is
+    research on language models, including: research on NLP applications like
+    machine translation and question answering, understanding how strong
+    language models can contribute to AGI, advancing fairness and safety
+    research, and understanding limitations of current LLMs"
+    [[Model Card]](https://arxiv.org/pdf/2112.11446.pdf#appendix.B).
   prohibited_uses: none
   monitoring: none
   feedback: none
