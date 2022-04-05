@@ -6,25 +6,84 @@
   name: GPT-3 dataset
   # General
   organization: OpenAI
-  created_date: none
+  description: >
+    The GPT-3 dataset is the text corpus that was used to train the GPT-3
+    model. The dataset isn't released to the public, and the information on it
+    is limited to those provided in a section in the paper introducing the
+    GPT-3 model
+    [[Section 2.2]](https://arxiv.org/pdf/2005.14165.pdf#subsection.2.2).
+  created_date: >
+    2020-06-11; The GPT-3 dataset doesn't have a release date specified, but
+    the acompanying model, GPT-3 was released to the public as part of a
+    blog post introducing the OpenAI API at the date specified
+    [[Open AI Blog Post]](https://openai.com/blog/openai-api/).
   url: https://arxiv.org/pdf/2005.14165.pdf
   datasheet: none
-  modality: text (English)
-  size: 570GB
+  modality: Text (English)
+  size: 570 GB
   sample: []
-  analysis: See the paper (Section 2.2).
+  analysis: >
+    The GPT-3 paper, which also introduces the GPT-3 dataset, provide a limited
+    analysis on the GPT-3 dataset, reporting the dirtiness of the dataset after
+    the it was filtered for text occuring in common benchmarking tasks.
+    The authors report that "as the dataset becomes more contaminated, the
+    variance of the clean/all fraction increases, but there is no apparent bias
+    towards improved or degraded performance"
+    [[Appendix C]](https://arxiv.org/pdf/2005.14165.pdf#appendix.C).
   # Construction
   dependencies: []
-  license: none
-  included: WebText2, Books1, Books2, Wikipedia, Common Crawl (filtered)
-  excluded: parts of Common Crawl that look less like Wikipedia, WebText, or books corpus; some duplicates
-  quality_control: fuzzy deduplication, removing WebText from CommonCrawl, filtered Common Crawl for similarity to Wikipedia, WebText, or books corpus
+  license: >
+    unknown; There is no known license specific to the GPT-3 dataset, however,
+    the governing organization, OpenAI, licensed GPT-3 to Microsoft, which
+    makes it likely that the GPT-3 dataset was also licensed
+    [[OpenAI Blog Post]]
+    (https://openai.com/blog/openai-licenses-gpt-3-technology-to-microsoft/).
+  included: >
+    The GPT-3 dataset is a combination of several corpora that are commonly
+    used for NLP model training tasks, which are as follows, along with their
+    representation percentage in the GPT-3 dataset: Common Crawl
+    (filtered, 60%), WebText2 (22%), Books1 (8%), Books2 (8%), Wikipedia (3%)
+    [[Section 2.2]](https://arxiv.org/pdf/2005.14165.pdf#subsection.2.2).
+  excluded: >
+    Low quality documents in the Common Crawl dataset, which are less like
+    Wikipedia, Webtext or Books corpora, were filtered out using automatic
+    filters and not included in the GPT-3 dataset
+    [[Appendix A]](https://arxiv.org/pdf/2005.14165.pdf#appendix.A).
+  quality_control: >
+    In addition to excluding low quality documents from the Common Crawl
+    dataset, the authors fuzzily deduplicated documents within each dataset, by
+    removing documents that have high overlap with each other. The same
+    procedure was followed to fuzzily deduplicate WebText from Common Crawl
+    [[Appendix A]](https://arxiv.org/pdf/2005.14165.pdf#appendix.A).
+    Text occuring in benchmark datasets were also partially removed
+    [[Appendix C]](https://arxiv.org/pdf/2005.14165.pdf#appendix.C).
   # Downstream
-  access: Not released to the public, full dataset access to OpenAI
-  intended_uses: Training language models.
-  prohibited_uses: none
-  monitoring: none
-  feedback: none
+  access: >
+    The GPT-3 dataset isn't released to the public, but it may be available
+    to Microsoft through the GPT-3 licencing agreement between OpenAI and
+    Microsoft [[OpenAI Blog Post]]
+    (https://openai.com/blog/openai-licenses-gpt-3-technology-to-microsoft/).
+  intended_uses: >
+    The intended use of the GPT-3 dataset was to train GPT-3. Since the dataset
+    wasn't released to the public, we think that it wasn't meant to be a
+    general purpose language model training dataset.
+  prohibited_uses: >
+    unknown; OpenAI didn't provide a list of prohibited uses specifically for
+    the GPT-3 dataset. However, public OpenAI products are governed by the
+    OpenAI Terms of Use, which can also apply to the OpenAI dataset.
+    The OpenAI Terms of Use prohibit the following:
+    (i) Illegal activities, such as child pornography, gambling, cybercrime,
+    piracy, violating copyright, trademark or other intellectual property laws;
+    (ii) Accessing or authorizing anyone to access the APIs from an embargoed
+    country, region, or territory as prohibited by the U.S. government;
+    (iii) Threatening, stalking, defaming, defrauding, degrading, victimizing
+    or intimidating anyone for any reason
+    [[Open AI Terms of Use]](https://openai.com/api/policies/terms/).
+  monitoring: >
+    unknown; There are no known monitoring mechanisms are in place for the use
+    of the GPT-3 dataset.
+  feedback: >
+    unknown; There are no known feedback mechanisms for the GPT-3 dataset.
 
 - type: dataset
   name: Codex dataset

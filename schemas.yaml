@@ -6,6 +6,8 @@ dataset:
   # General
   - name: organization
     description: Organization that curated the dataset.
+  - name: description
+    description: Description of the dataset.
   - name: created_date
     description: When the dataset was created.
   - name: url
