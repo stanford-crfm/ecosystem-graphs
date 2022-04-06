@@ -127,7 +127,7 @@
     The GPT-3 model was evaluated on language modeling, closed-book question
     answering, translation, Winograd-style tasks, commonsense reasoning,
     reading comprehension, SuperGLUE, NLI, synthetic tasks, and generation
-    [[Section 4]](https://arxiv.org/pdf/2005.14165.pdf#section.2.4);
+    [[Section 4]](https://arxiv.org/pdf/2005.14165.pdf#section.4);
     as well as on fairness and biases
     [[Section 6]](https://arxiv.org/pdf/2005.14165.pdf#section.6).
   # Construction
