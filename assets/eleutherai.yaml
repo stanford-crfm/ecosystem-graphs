@@ -4,6 +4,8 @@
   name: The Pile
   # General
   organization: EleutherAI
+  description: >
+    A latge language model training dataset, used to train GPT-NeoX-20B.
   created_date: "2021-01-01"
   url: https://arxiv.org/pdf/2101.00027.pdf
   datasheet: https://arxiv.org/pdf/2201.07311.pdf
@@ -70,8 +72,9 @@
     [[Appendix D]](https://arxiv.org/pdf/2101.00027.pdf#appendix.1.D).
   # Downstream
   access: >
-    The dataset is freely available to the public and can be downloaded from
-    [[The Eye]](https://mystic.the-eye.eu/public/AI/pile/).
+    Unlimited public access; The dataset is freely available to the public and
+    can be downloaded from The Eye
+    [[The Pile]](https://mystic.the-eye.eu/public/AI/pile/).
   intended_uses: >
     The Pile was intended to be used as a high quality large text dataset for
     language modeling tasks, explained in more detail in the paper
@@ -87,29 +90,55 @@
   name: GPT-NeoX-20B
   # General
   organization: EleutherAI
+  description: >
+    GPT-NeoX-20B is an open-sourced autoregressive large language model.
   created_date: "2022-02-02"
   url: http://eaidata.bmk.sh/data/GPT_NeoX_20B.pdf
   model_card: https://mystic.the-eye.eu/public/AI/models/GPT-NeoX-20B/20B_model_card.md
-  modality: text (English) and code
+  modality: Text (English) and Code
   size: 20B parameters (dense model)
   analysis: >
-    Evaluated on standard NLP benchmarks: LAMBADA, ANLI, HellaSwag, MMLU with performance reported [here](https://blog.eleuther.ai/announcing-20b/).
+    The model was evaluated on standard NLP benchmarks: LAMBADA, ANLI,
+    HellaSwag, MMLU among others
+    [[Section 4]](http://eaidata.bmk.sh/data/GPT_NeoX_20B.pdf#section.4).
   # Construction
   dependencies:
     - The Pile
-  training_emissions: 31.73 tCO2 eq [Section 6.4](http://eaidata.bmk.sh/data/GPT_NeoX_20B.pdf)
-  training_time: 1830 hours [Section 6.4](http://eaidata.bmk.sh/data/GPT_NeoX_20B.pdf)
-  training_hardware: 12 x 8 A100s [Section 2.3](http://eaidata.bmk.sh/data/GPT_NeoX_20B.pdf)
-  quality_control: none known as of 4/4/2022
+  training_emissions: >
+    31.73 tCO2e; The amount of emission during the development and training of
+    the model based on the author's estimation
+    [[Section 6.4]](http://eaidata.bmk.sh/data/GPT_NeoX_20B.pdf#subsection.6.4).
+  training_time: >
+    1830 hours; Training time as reported by the authors
+    [[Section 6.4]](http://eaidata.bmk.sh/data/GPT_NeoX_20B.pdf#subsection.6.4).
+  training_hardware: >
+    12 x 8 A100 GPUs; As outline by the authors
+    [[Section 2.3]](http://eaidata.bmk.sh/data/GPT_NeoX_20B.pdf#subsection.2.3)
+  quality_control: >
+    None; Last updated 2022-04-11.
   # Downstream
-  access: Can be downloaded for free from [The Eye](https://mystic.the-eye.eu/public/AI/models/GPT-NeoX-20B/)
+  access: >
+    Unlimited public access; The model can be downloaded for free The Eye
+    [[GPT-NeoX-20B]](https://mystic.the-eye.eu/public/AI/models/GPT-NeoX-20B/).
   license: >
-    GPT-NeoX-20B uses the [Apache 2.0](https://blog.eleuther.ai/announcing-20b/)
-    license.
+    Apache 2.0; As indicated in the accompanying blog post
+    [[EleutherAI Blog Post]](https://blog.eleuther.ai/announcing-20b/).
   intended_uses: >
-    Intended uses are outlined in the research paper
-    [Research towards the safe use of AI]
-    (https://blog.eleuther.ai/announcing-20b/).
-  prohibited_uses: none known as of 4/4/2022
-  monitoring: none known as of 4/4/2022
-  feedback: Email the authors
+    As stated in the model card: "GPT-NeoX-20B learns an inner representation
+    of the English language that can be used to extract features useful for
+    downstream tasks. The model is best at what it was pretrained for however,
+    which is generating text from a prompt.
+    Due to the generality of the pretraining set, it has acquired the ability
+    to generate completions across a wide range of tasks - from programming to
+    fiction writing
+    [[Model Card]](https://mystic.the-eye.eu/public/AI/models/GPT-NeoX-20B/20B_model_card.md).
+  prohibited_uses: >
+    None; Last updated 2022-04-11.
+  monitoring: >
+    None; Last updated 2022-04-11.
+  feedback: >
+    Feedback can be provided using the #20b channel in EleutherAI Discord
+    group
+    [[EleutherAI Blog Post]](https://blog.eleuther.ai/announcing-20b/).
+    Find the Discord link in the FAQ page
+    [[FAQ]](https://www.eleuther.ai/faq/).
