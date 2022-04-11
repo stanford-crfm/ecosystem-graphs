@@ -6,31 +6,60 @@
   name: GitHub Copilot
   # General
   organization: Microsoft
-  created_date: "2021-06-29"
+  description: >
+    GitHub copilot is a coding pair programmer assisting programmers as they
+    write code.
+  created_date: >
+    2021-06-29; Date of the blog post introducing Copilot
+    [[GitHub Blog Post]]
+    (https://github.blog/2021-06-29-introducing-github-copilot-ai-pair-programmer/).
   url: https://copilot.github.com/
   # Construction
   dependencies:
   - Codex
-  adaptation: unknown
-  output_space: text completions
+  adaptation: >
+    Unknown
+  output_space: Code completions
   quality_control:
     GitHub is working on a filter to detect and suppress code generations that
-    are verbatim from the training set, more information
-    [here](https://docs.github.com/en/github/copilot/research-recitation).
-    GitHub implemented a simple filter that blocks emails in standard formats
-    to protect personally identifiable data that may be present in the training
-    data.
+    are verbatim from the training set
+    [[GitHub Research Recitation]]
+    (https://docs.github.com/en/github/copilot/research-recitation).
+    According to the FAQ, GitHub implemented a simple filter that blocks emails
+    in standard formats to protect personally identifiable data that may be
+    present in the training data
+    [[GitHub Copilot]](https://copilot.github.com/).
   # Downstream
-  access: Available in a restricted technical preview.
-  license: unknown
+  access: >
+    Limited access; The feature is available to developers in a restricted
+    technical preview 
+    [[GitHub Copilot]](https://copilot.github.com/).
+    Last updated on 2022-04-10.
+  license: Unknown
   terms_of_service:
-    https://docs.github.com/en/site-policy/github-terms/github-terms-of-service
-  intended_uses: Coding assistant.
-  prohibited_uses: unknown
-  monitoring: unknown
+    GitHub Copilot is bound by the GitHub terms of service
+    [[Terms of Service]]
+    (https://docs.github.com/en/site-policy/github-terms/github-terms-of-service).
+  intended_uses: >
+    GitHub Copilot is intended to be used as a coding assistant.
+  prohibited_uses: >
+    Access to GPT-3 is governed by GitHub Acceptable Use Policies and Terms of
+    Service, both of which list a set of prohibited uses
+    [[Use Policies]]
+    (https://docs.github.com/en/site-policy/acceptable-use-policies/github-acceptable-use-policies)
+    [[Terms of Service]]
+    (https://docs.github.com/en/site-policy/github-terms/github-terms-of-service).
+  monitoring: >
+    Unknown; None, but there may be internal monitoring mechanisms unknown to
+    the public. Last updated on 2022-04-10.
   feedback:
-    https://github.com/github/feedback/discussions/categories/copilot-feedback
+    Feedback can be provided in the Copilot feedback project
+    [[Copilot feedback]]
+    (https://github.com/github/feedback/discussions/categories/copilot-feedback).
   # Deployment
-  monthly_active_users: unknown
-  user_distribution: unknown
-  failures: Generating code that doesn't compile, generating unsafe code.
+  monthly_active_users: >
+    Unknown; Last updated on 2022-04-10.
+  user_distribution: >
+    Unknown; Last updated on 2022-04-10.
+  failures: >
+    Unknown; Last updated on 2022-04-10.
