@@ -1,0 +1,215 @@
+---
+
+- type: dataset
+  name: coheretext
+  # General
+  organization: Cohere
+  description: >
+    The family of datasets used to train Cohere models, which come in two forms:
+    coheretext-filtered, coheretext-unfiltered. The former is used to train the
+    Representation models, while the latter one is used to train the Generation
+    models.
+  created_date:
+    2021-11-15; The date the Cohere API was announced on the news
+    [[News Article]]
+    (https://venturebeat.com/2021/11/15/openai-rival-cohere-launches-language-model-api/).
+  url:
+  datasheet: https://docs.cohere.ai/data-statement
+  modality: Text (English)
+  size: ~200GB filtered, ~3TB unfiltered
+  sample: []
+  analysis: >
+    Unknown; The analysis performed on the dataset is not released.
+  # Construction
+  dependencies: []
+  license: >
+    Unknown; The dataset likely has a license specifically for Cohere's use.
+  included: >
+    As stated in the datasheet, the dataset "includes the Google Books dataset,
+    CommonCrawl, and text from the internet scraped by the Cohere infrastructure
+    team." The top ten domains scraped were: wordpress.com, medium.com,
+    stackexchange.com, tumblr.com, elsevier.com, genius.com, bbc.co.uk,
+    libsyn.com, yahoo.com, nytimes.com
+    [[Datasheet]](https://docs.cohere.ai/data-statement).
+  excluded: >
+    Documents that are not in English are excluded.
+  quality_control: >
+    In the datasheet, it is implied that Cohere employs filtration methods for
+    removing racist, biased and toxic content, but the details are not provided.
+    These filtration methods take both the context and the language, as opposed
+    to using a list of blockwords
+    [[Datasheet]](https://docs.cohere.ai/data-statement).
+  # Downstream
+  access: >
+    No public access; The dataset isn't provided to the public.
+  intended_uses: >
+    The intended use of the dataset is to train Cohere's language models.
+  prohibited_uses: >
+    Unknown; There are no known prohibited uses of the dataset, but the Cohere
+    API is bound by the Cohere usage guidelines, which may also apply to this
+    dataset
+    [[Usage Guidelines]](https://docs.cohere.ai/usage-guidelines).
+  monitoring: >
+    Unknown; There is no information on how Cohere is internally monitoring
+    the use of the dataset.
+  feedback: >
+    Unknown; The internal feedback mechanisms for Cohere are unknown.
+
+- type: model
+  name: Cohere Generations model
+  # General
+  organization: Cohere
+  description: >
+    The Generations model is a large language model trained by Cohere for
+    generation tasks.
+  created_date:
+    2021-11-15; The date the Cohere API was announced on the news
+    [[News Article]]
+    (https://venturebeat.com/2021/11/15/openai-rival-cohere-launches-language-model-api/).
+  url:
+  model_card: https://docs.cohere.ai/generation-card
+  modality: Text (English)
+  size: >
+    Unknown; The exact sizes of the generation models are unknown, but we know
+    that they come in three sizes: small, medium, and large
+    [[Model Card]](https://docs.cohere.ai/generation-card).
+  analysis: >
+    The model's performance was analyzed on Hellaswag and COPA, as well as
+    several safety benchmarks
+    [[Model Card]](https://docs.cohere.ai/generation-card).
+  # Construction
+  dependencies:
+    - coheretext
+  training_emissions: >
+    Unknown; The emissions of the models are unknown.
+  training_time: >
+    Unknown; The training time for the models are unknown.
+  training_hardware: >
+    Unknown; The training hardware wasn't explicitly announced, but it was
+    reported that Google Cloud teamed up with Cohere on a TPU partnership
+    [[TechCrunch Article]]
+    (https://techcrunch.com/2021/11/17/google-cloud-teams-up-with-nlp-startup-cohere-on-multi-year-partnership/).
+  quality_control: >
+    Unknown; The quality control measures taken are unknown, but it is implied
+    that Cohere performed mitigation strategies for toxic degeneration
+    [[Model Card]](https://docs.cohere.ai/generation-card).
+  # Downstream
+  access: >
+    Limited public access; The model is available to the public through the
+    Cohere Platform
+    [[Cohere Platform]](https://os.cohere.ai/login).
+  license: >
+    Unknown; The model likely has a license specifically for Cohere's use.
+  intended_uses: >
+    On the model card, the intended uses are stated as "interactive
+    autocomplete, augmenting human writing processes, summarization,
+    text rephrasing, and other text-to-text tasks in non-sensitive domains"
+    [[Model Card]](https://docs.cohere.ai/generation-card).
+  prohibited_uses: >
+    The usage of the model is bound by the Cohere usage guidelines
+    [[Usage Guidelines]](https://docs.cohere.ai/usage-guidelines).
+    A non-comprehensive list of specific application violating these guidelines
+    are: astroturfing, generation of misinformation and other harmful content,
+    and "generation of text about people, places, or events without a
+    human-in-the-loop"
+    [[Model Card]](https://docs.cohere.ai/generation-card).
+  monitoring: >
+    The usage of the model is monitored by Cohere
+    [[Model Card]](https://docs.cohere.ai/generation-card).
+  feedback: >
+    Unknown; There are no specific feedback mechanisms for the Generation model,
+    but a generic contact email is provided on Cohere website, which is
+    support at cohere.ai.
+
+- type: model
+  name: Cohere Representation model
+  # General
+  organization: Cohere
+  description: >
+    The Representation model is a large language model trained by Cohere for
+    tasks requiring embeddings.
+  created_date:
+    2021-11-15; The date the Cohere API was announced on the news
+    [[News Article]]
+    (https://venturebeat.com/2021/11/15/openai-rival-cohere-launches-language-model-api/).
+  url:
+  model_card: https://docs.cohere.ai/representation-card
+  modality: Text (English)
+  size: >
+    Unknown; The exact sizes of the generation models are unknown, but we know
+    that they come in three sizes: small, medium, and large
+    [[Model Card]](https://docs.cohere.ai/representation-card).
+  analysis: >
+    The model's performance was analyzed on several safety benchmarks 
+    [[Model Card]](https://docs.cohere.ai/representation-card).
+  # Construction
+  dependencies:
+    - coheretext
+  training_emissions: >
+    Unknown; The emissions of the models are unknown.
+  training_time: >
+    Unknown; The training time for the models are unknown.
+  training_hardware: >
+    Unknown; The training hardware wasn't explicitly announced, but it was
+    reported that Google Cloud teamed up with Cohere on a TPU partnership
+    [[TechCrunch Article]]
+    (https://techcrunch.com/2021/11/17/google-cloud-teams-up-with-nlp-startup-cohere-on-multi-year-partnership/).
+  quality_control: >
+    Unknown
+  # Downstream
+  access: >
+    Limited public access; The model is available to the public through the
+    Cohere Platform
+    [[Cohere Platform]](https://os.cohere.ai/login).
+  license: >
+    Unknown; The model likely has a license specifically for Cohere's use.
+  intended_uses: >
+    On the model card, the intended uses are stated as "estimating semantic
+    similarity between two sentences, choosing a sentence which is most likely
+    to follow another sentence, sentiment analysis, topic extraction, or
+    categorizing user feedback"
+    [[Model Card]](https://docs.cohere.ai/representation-card).
+  prohibited_uses: >
+    The usage of the model is bound by the Cohere usage guidelines
+    [[Usage Guidelines]](https://docs.cohere.ai/usage-guidelines).
+    A non-comprehensive list of specific application violating these guidelines
+    are: extraction of identity and demographic information, building
+    purposefully opaque text classification systems, and "building downstream
+    classifiers that serve as automated decision-making systems that have
+    real-world consequences on people, where those decisions are made without a
+    human-in-the-loop"
+    [[Model Card]](https://docs.cohere.ai/representation-card).
+  monitoring: >
+    The usage of the model is monitored by Cohere
+    [[Model Card]](https://docs.cohere.ai/representation-card).
+  feedback: >
+    Unknown; There are no specific feedback mechanisms for the Generation model,
+    but a generic contact email is provided on Cohere website, which is
+    support at cohere.ai.
+
+- type: application
+  name: Cohere Platform
+  # General
+  organization: Cohere
+  description: todo
+  created_date: todo
+  url: todo
+  # Construction
+  dependencies:
+  - Cohere Generations model
+  - Cohere Representation model
+  adaptation: todo
+  output_space: todo
+  quality_control: todo
+  # Downstream
+  access: todo
+  license: todo
+  terms_of_service: todo
+  intended_uses: todo
+  prohibited_uses: todo
+  monitoring: todo
+  feedback: todo
+  # Deployment
+  monthly_active_users: todo
+  user_distribution: todo
+  failures: todo
