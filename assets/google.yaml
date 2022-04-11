@@ -4,6 +4,7 @@
   name: Internal Google BERT dataset
   # General
   organization: Google
+  description: todo
   created_date: none
   url: none
   datasheet: none
@@ -28,6 +29,7 @@
   name: Internal Google BERT
   # General
   organization: Google
+  description: todo
   created_date: TODO
   url: TODO
   model_card: TODO
@@ -54,6 +56,7 @@
   name: Google search
   # General
   organization: Google
+  description: todo
   created_date: 2019
   url: https://searchengineland.com/google-bert-used-on-almost-every-english-query-342193
   # Construction
@@ -79,6 +82,7 @@
   name: LamDA
   # General
   organization: Google
+  description: todo
   created_date: TODO
   url: https://arxiv.org/pdf/2201.08239.pdf
   model_card: TODO
