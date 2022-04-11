@@ -279,6 +279,7 @@ $(() => {
     'assets/google.yaml',
     'assets/microsoft.yaml',
     'assets/openai.yaml',
+    'assets/deepmind.yaml',
   ];
 
   $.get('schemas.yaml', {}, (response) => {
