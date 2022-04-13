@@ -173,9 +173,9 @@ function renderAssetsGraph(nameToAsset) {
   };
 
   const typeToColor = {
-    'dataset': 'green',
-    'model': 'purple',
-    'application': 'orange',
+    'dataset': 'orange',
+    'model': 'dodgerblue',
+    'application': 'firebrick',
   };
 
   Object.values(nameToAsset).forEach((asset) => {
@@ -206,7 +206,11 @@ function renderAssetsGraph(nameToAsset) {
         name: 'cose',
         randomize: false,
         componentSpacing: 100,
-        nodeOverlap: 4,
+        nodeOverlap: 10,
+        //nodeDimensionsIncludeLabels: true,
+        nodeRepulsion: function( node ){ return 4096; },
+        //padding: 30,
+        gravity: 0.5
       },
       style: [
         {
@@ -215,12 +219,18 @@ function renderAssetsGraph(nameToAsset) {
             label: 'data(id)',
             shape: 'data(shape)',
             'background-color': 'data(color)',
+            'text-wrap': 'wrap',
+            'text-max-width': 70,
+            'size': 100,
+            'color': 'dimgrey',
+            'text-size': 20,
+            'padding': 10,
           },
         },
         {
           selector: 'edge',
           style: {
-            'width': 1,
+            'width': 3,
             'curve-style': 'straight',
             'target-arrow-shape': 'triangle',
           },
