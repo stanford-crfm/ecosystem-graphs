@@ -79,7 +79,7 @@
   model_card: https://arxiv.org/pdf/2112.11446.pdf#appendix.B
   modality: Text (English) and Code
   size: >
-    280B parameters; Gopher family has models of several sizes, but the name
+    280B parameters (dense model); Gopher family has models of several sizes, but the name
     Gopher uniquely identify the 280B parameter version. Sizes for the other
     models in the Gopher family can be seen in the paper
     [[Table 1]](https://arxiv.org/pdf/2112.11446.pdf#table.caption.1).

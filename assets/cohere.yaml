@@ -16,7 +16,7 @@
   url:
   datasheet: https://docs.cohere.ai/data-statement
   modality: Text (English)
-  size: ~200GB filtered, ~3TB unfiltered
+  size: ~200 GB filtered, ~3 TB unfiltered
   sample: []
   analysis: >
     Unknown; The analysis performed on the dataset is not released.

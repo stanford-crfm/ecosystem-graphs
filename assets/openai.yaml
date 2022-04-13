@@ -273,7 +273,7 @@
   model_card: https://github.com/openai/gpt-3/blob/master/model-card.md
   modality: Text (English)
   size: >
-    175B parameters; GPT-3 comes in several sizes. Here we report the largest
+    175B parameters (dense model); GPT-3 comes in several sizes. Here we report the largest
     GPT-3 model size. All the model sizes of GPT-3 can be seen in the paper
     [[Table 2.1]](https://arxiv.org/pdf/2005.14165.pdf#table.caption.7).
   analysis: >
@@ -367,7 +367,7 @@
   model_card: >
     None; Last updated on 2022-04-10.
   modality: Text (English) and Code
-  size: 12B parameters
+  size: 12B parameters (dense model)
   analysis: >
     The model was evaluated using the HumanEval dataset with pass@k metric and
     BLEU scores
@@ -427,7 +427,7 @@
   url: https://arxiv.org/pdf/2203.02155.pdf
   model_card: https://github.com/openai/following-instructions-human-feedback/blob/main/model-card.md
   modality: Text (English) and Code
-  size: 175B parameters; Size of the largest InstructGPT model.
+  size: 175B parameters (dense model); Size of the largest InstructGPT model.
   analysis: >
     The model was evaluated on human ratings to the InstructGPT answers
     to the prompts submitted to the OpenAI API as well as on public NLP
