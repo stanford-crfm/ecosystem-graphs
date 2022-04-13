@@ -139,7 +139,7 @@
   description: >
     The dataset used to train the Codex model.
   created_date: >
-    "2021-08-10"; The date that Codex, the model trained on the Codex dataset,
+    2021-08-10; The date that Codex, the model trained on the Codex dataset,
     was announced to the public
     [[OpenAI Blog Post]](https://openai.com/blog/openai-codex/).
   url: https://arxiv.org/pdf/2107.03374.pdf
@@ -189,74 +189,74 @@
   # General
   organization: OpenAI
   description: >
-    todo
+    TODO
   created_date: >
-    todo
+    TODO
   url: https://arxiv.org/pdf/2103.00020.pdf
   datasheet: >
-    todo
-  modality: todo
-  size: todo
+    TODO
+  modality: TODO
+  size: TODO
   sample: []
-  analysis: todo
+  analysis: TODO
   # Construction
   dependencies: []
   license: >
-    todo
+    TODO
   included: >
-    todo
+    TODO
   excluded: >
-    todo
+    TODO
   quality_control: >
-    todo
+    TODO
   # Downstream
   access: >
-    todo
+    TODO
   intended_uses: >
-    todo
+    TODO
   prohibited_uses: >
-    todo
+    TODO
   monitoring: >
-    todo
+    TODO
   feedback: >
-    todo
+    TODO
 
 - type: dataset
   name: DALL-E dataset
   # General
   organization: OpenAI
   description: >
-    todo
+    TODO
   created_date: >
-    todo
-  url: todo
+    TODO
+  url: TODO
   datasheet: >
-    todo
-  modality: todo
-  size: todo
+    TODO
+  modality: TODO
+  size: TODO
   sample: []
-  analysis: todo
+  analysis: TODO
   # Construction
   dependencies: []
   license: >
-    todo
+    TODO
   included: >
-    todo
+    TODO
   excluded: >
-    todo
+    TODO
   quality_control: >
-    todo
+    TODO
   # Downstream
   access: >
-    todo
+    TODO
   intended_uses: >
-    todo
+    TODO
   prohibited_uses: >
-    todo
+    TODO
   monitoring: >
-    todo
+    TODO
   feedback: >
-    todo
+    TODO
 
 # Models
 
@@ -487,118 +487,118 @@
   # General
   organization: OpenAI
   description: >
-    todo
+    TODO
   created_date: >
-    todo
-  url: todo
-  model_card: todo
-  modality: todo
-  size: todo
+    TODO
+  url: TODO
+  model_card: TODO
+  modality: TODO
+  size: TODO
   analysis: >
-    todo
+    TODO
   # Construction
   dependencies:
     - CLIP dataset
   training_emissions: >
-    todo
+    TODO
   training_time: >
-    todo
+    TODO
   training_hardware: >
-    todo
+    TODO
   quality_control: >
-    todo
+    TODO
   # Downstream
   access: >
-    todo
+    TODO
   license: >
-    todo
+    TODO
   intended_uses: >
-    todo
+    TODO
   prohibited_uses: >
-    todo
+    TODO
   monitoring: >
-    todo
+    TODO
   feedback: >
-    todo
+    TODO
 
 - type: model
   name: DALL-E
   # General
   organization: OpenAI
   description: >
-    todo
+    TODO
   created_date: >
-    todo
-  url: todo
-  model_card: todo
-  modality: todo
-  size: todo
+    TODO
+  url: TODO
+  model_card: TODO
+  modality: TODO
+  size: TODO
   analysis: >
-    todo
+    TODO
   # Construction
   dependencies:
     - DALL-E dataset
   training_emissions: >
-    todo
+    TODO
   training_time: >
-    todo
+    TODO
   training_hardware: >
-    todo
+    TODO
   quality_control: >
-    todo
+    TODO
   # Downstream
   access: >
-    todo
+    TODO
   license: >
-    todo
+    TODO
   intended_uses: >
-    todo
+    TODO
   prohibited_uses: >
-    todo
+    TODO
   monitoring: >
-    todo
+    TODO
   feedback: >
-    todo
+    TODO
 
 - type: model
   name: DALL-E 2
   # General
   organization: OpenAI
   description: >
-    todo
+    TODO
   created_date: >
-    todo
-  url: todo
-  model_card: todo
-  modality: todo
-  size: todo
+    TODO
+  url: TODO
+  model_card: TODO
+  modality: TODO
+  size: TODO
   analysis: >
-    todo
+    TODO
   # Construction
   dependencies:
     - DALL-E dataset
     - CLIP dataset
   training_emissions: >
-    todo
+    TODO
   training_time: >
-    todo
+    TODO
   training_hardware: >
-    todo
+    TODO
   quality_control: >
-    todo
+    TODO
   # Downstream
   access: >
-    todo
+    TODO
   license: >
-    todo
+    TODO
   intended_uses: >
-    todo
+    TODO
   prohibited_uses: >
-    todo
+    TODO
   monitoring: >
-    todo
+    TODO
   feedback: >
-    todo
+    TODO
 
 - type: application
   name: OpenAI API
@@ -704,7 +704,7 @@
   name: Duolingo
   # General
   organization: Duolingo
-  description: todo
+  description: TODO
   created_date: "2020-06-11"
   url: https://openai.com/api/
   # Construction
@@ -714,66 +714,66 @@
   output_space: French grammar corrections
   quality_control: unknown
   # Downstream
-  access: none
-  license: none
+  access: None
+  license: None
   terms_of_service: https://www.duolingo.com/terms
-  intended_uses: none
-  prohibited_uses: none
-  monitoring: unknown
-  feedback: none
+  intended_uses: None
+  prohibited_uses: None
+  monitoring: Unknown
+  feedback: None
   # Deployment
   monthly_active_users: 42 million (all languages)
-  user_distribution: unknown
-  failures: unknown
+  user_distribution: Unknown
+  failures: Unknown
 
 - type: application
   name: Viable
   # General
   organization: Viable
-  description: todo
-  created_date: unknown
+  description: TODO
+  created_date: Unknown
   url: https://www.askviable.com/
   # Construction
   dependencies:
   - OpenAI API
-  adaptation: none
+  adaptation: None
   output_space: question and answer, summarization, sentiment analysis,topic identification
-  quality_control: unknown
+  quality_control: Unknown
   # Downstream
-  access: none
-  license: none
+  access: None
+  license: None
   terms_of_service: https://www.askviable.com/terms-of-service
-  intended_uses: none
-  prohibited_uses: none
-  monitoring: unknown
-  feedback: unknown
+  intended_uses: None
+  prohibited_uses: None
+  monitoring: Unknown
+  feedback: Unknown
   # Deployment
-  monthly_active_users: unknown
-  user_distribution: unknown
-  failures: unknown
+  monthly_active_users: Unknown
+  user_distribution: Unknown
+  failures: Unknown
 
 - type: application
   name: HyperWrite
   # General
   organization: OthersideAI
-  description: todo
-  created_date: unknown
+  description: TODO
+  created_date: Unknown
   url: https://hyperwriteai.com/
   # Construction
   dependencies:
   - OpenAI API
-  adaptation: none
+  adaptation: None
   output_space: generation
-  quality_control: unknown
+  quality_control: Unknown
   # Downstream
-  access: none
-  license: none
+  access: None
+  license: None
   terms_of_service: https://hyperwriteai.com/terms
-  intended_uses: none
-  prohibited_uses: none
-  monitoring: unknown
-  feedback: unknown
+  intended_uses: None
+  prohibited_uses: None
+  monitoring: Unknown
+  feedback: Unknown
   # Deployment
-  monthly_active_users: unknown
-  user_distribution: unknown
-  failures: unknown
+  monthly_active_users: Unknown
+  user_distribution: Unknown
+  failures: Unknown

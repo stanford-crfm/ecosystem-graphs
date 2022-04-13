@@ -4,32 +4,32 @@
   name: Internal Google BERT dataset
   # General
   organization: Google
-  description: todo
-  created_date: none
-  url: none
-  datasheet: none
+  description: TODO
+  created_date: None
+  url: None
+  datasheet: None
   modality: text
-  size: unknown
+  size: Unknown
   sample: []
-  analysis: unknown
+  analysis: Unknown
   # Construction
   dependencies: []
-  license: none
+  license: None
   included: Web pages
-  excluded: unknown
-  quality_control: unknown
+  excluded: Unknown
+  quality_control: Unknown
   # Downstream
-  access: none
-  intended_uses: none
-  prohibited_uses: none
-  monitoring: none
-  feedback: none
+  access: None
+  intended_uses: None
+  prohibited_uses: None
+  monitoring: None
+  feedback: None
 
 - type: model
   name: Internal Google BERT
   # General
   organization: Google
-  description: todo
+  description: TODO
   created_date: TODO
   url: TODO
   model_card: TODO
@@ -42,27 +42,27 @@
   training_emissions: TODO
   training_time: TODO
   training_hardware: TODO
-  quality_control: unknown
+  quality_control: Unknown
   # Downstream
-  access: none
-  license: none
-  intended_uses: none
-  prohibited_uses: none
-  monitoring: none
-  feedback: none
+  access: None
+  license: None
+  intended_uses: None
+  prohibited_uses: None
+  monitoring: None
+  feedback: None
 
 
 - type: application
   name: Google search
   # General
   organization: Google
-  description: todo
+  description: TODO
   created_date: 2019
   url: https://searchengineland.com/google-bert-used-on-almost-every-english-query-342193
   # Construction
   dependencies:
   - Internal Google BERT
-  adaptation: none?
+  adaptation: None?
   output_space: web page ranking
   quality_control: TODO
   # Downstream
@@ -82,7 +82,7 @@
   name: LamDA
   # General
   organization: Google
-  description: todo
+  description: TODO
   created_date: TODO
   url: https://arxiv.org/pdf/2201.08239.pdf
   model_card: TODO
@@ -96,9 +96,9 @@
   training_hardware: TODO
   quality_control: TODO
   # Downstream
-  access: none
-  license: none
-  intended_uses: none
-  prohibited_uses: none
-  monitoring: none
-  feedback: none
+  access: None
+  license: None
+  intended_uses: None
+  prohibited_uses: None
+  monitoring: None
+  feedback: None

@@ -191,25 +191,25 @@
   name: Cohere Platform
   # General
   organization: Cohere
-  description: todo
-  created_date: todo
-  url: todo
+  description: TODO
+  created_date: TODO
+  url: TODO
   # Construction
   dependencies:
   - Cohere Generations model
   - Cohere Representation model
-  adaptation: todo
-  output_space: todo
-  quality_control: todo
+  adaptation: TODO
+  output_space: TODO
+  quality_control: TODO
   # Downstream
-  access: todo
-  license: todo
-  terms_of_service: todo
-  intended_uses: todo
-  prohibited_uses: todo
-  monitoring: todo
-  feedback: todo
+  access: TODO
+  license: TODO
+  terms_of_service: TODO
+  intended_uses: TODO
+  prohibited_uses: TODO
+  monitoring: TODO
+  feedback: TODO
   # Deployment
-  monthly_active_users: todo
-  user_distribution: todo
-  failures: todo
+  monthly_active_users: TODO
+  user_distribution: TODO
+  failures: TODO
