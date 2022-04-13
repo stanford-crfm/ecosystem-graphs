@@ -74,7 +74,7 @@ function renderValue(type, value) {
   const converter = new showdown.Converter();
   if (type === 'list') {
     return renderList(value.map((elemValue) => renderValue(null, elemValue)));
-  } else if (type === 'url') {
+  } else if (type === 'url' && value.indexOf('None') == -1 && value.indexOf('TODO') == -1) {
     return $('<a>', {href: value, target: 'blank_'}).append(value);
   } else {
     // Default: render string as markdown

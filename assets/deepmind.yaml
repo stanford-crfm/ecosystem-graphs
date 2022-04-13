@@ -97,13 +97,13 @@
     - MassiveText
   training_emissions: >
     380 tCO2e; The training emission estimate from the paper
-    [[Section F.]](https://arxiv.org/pdf/2112.11446.pdf#appendix.F)
+    [[Section F]](https://arxiv.org/pdf/2112.11446.pdf#appendix.F)
   training_time: >
     920 hours; Reported in the paper
-    [[Section F.]](https://arxiv.org/pdf/2112.11446.pdf#appendix.F).
+    [[Section F]](https://arxiv.org/pdf/2112.11446.pdf#appendix.F).
   training_hardware: >
     TPUv3 pods; Reported in the paper
-    [[Section F.]](https://arxiv.org/pdf/2112.11446.pdf#appendix.F).
+    [[Section F]](https://arxiv.org/pdf/2112.11446.pdf#appendix.F).
   quality_control: >
     None; Last updated 2022-04-05.
   # Downstream

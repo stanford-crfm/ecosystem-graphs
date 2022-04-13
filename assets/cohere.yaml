@@ -13,7 +13,7 @@
     2021-11-15; The date the Cohere API was announced on the news
     [[News Article]]
     (https://venturebeat.com/2021/11/15/openai-rival-cohere-launches-language-model-api/).
-  url:
+  url: None
   datasheet: https://docs.cohere.ai/data-statement
   modality: Text (English)
   size: ~200 GB filtered, ~3 TB unfiltered
@@ -66,7 +66,7 @@
     2021-11-15; The date the Cohere API was announced on the news
     [[News Article]]
     (https://venturebeat.com/2021/11/15/openai-rival-cohere-launches-language-model-api/).
-  url:
+  url: None
   model_card: https://docs.cohere.ai/generation-card
   modality: Text (English)
   size: >
@@ -132,7 +132,7 @@
     2021-11-15; The date the Cohere API was announced on the news
     [[News Article]]
     (https://venturebeat.com/2021/11/15/openai-rival-cohere-launches-language-model-api/).
-  url:
+  url: None
   model_card: https://docs.cohere.ai/representation-card
   modality: Text (English)
   size: >
@@ -160,7 +160,7 @@
   access: >
     Limited public access; The model is available to the public through the
     Cohere Platform
-    [[Cohere Platform]](https://os.cohere.ai/login).
+    [[Cohere Platform]](https://cohere.ai/).
   license: >
     Unknown; The model likely has a license specifically for Cohere's use.
   intended_uses: >
@@ -193,7 +193,7 @@
   organization: Cohere
   description: TODO
   created_date: TODO
-  url: TODO
+  url: https://cohere.ai/
   # Construction
   dependencies:
   - Cohere Generations model
