@@ -150,8 +150,8 @@ function renderAssetsTable(nameToAsset) {
       .append($('<td>').append(asset.type))
       .append($('<td>').append($('<a>', {href, target: 'blank_'}).append(asset.name)))
       .append($('<td>').append(asset.organization))
-      .append($('<td>').append(asset.created_date))
-      .append($('<td>').append(asset.size))
+      .append($('<td>').append(renderValue('', asset.created_date)))
+      .append($('<td>').append(renderValue('', asset.size)))
       .append($('<td>').append(renderAssetLinks(nameToAsset, asset.dependencies)))
     );
   }
