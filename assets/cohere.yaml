@@ -128,7 +128,7 @@
   description: >
     The Representation model is a large language model trained by Cohere for
     tasks requiring embeddings.
-  created_date:
+  created_date: >
     2021-11-15; The date the Cohere API was announced on the news
     [[News Article]]
     (https://venturebeat.com/2021/11/15/openai-rival-cohere-launches-language-model-api/).
@@ -164,10 +164,10 @@
   license: >
     Unknown; The model likely has a license specifically for Cohere's use.
   intended_uses: >
-    On the model card, the intended uses are stated as "estimating semantic
-    similarity between two sentences, choosing a sentence which is most likely
-    to follow another sentence, sentiment analysis, topic extraction, or
-    categorizing user feedback"
+    The intended uses are stated as "estimating semantic similarity between two
+    sentences, choosing a sentence which is most likely to follow another
+    sentence, sentiment analysis, topic extraction, or categorizing user
+    feedback" on the Cohere model card
     [[Model Card]](https://docs.cohere.ai/representation-card).
   prohibited_uses: >
     The usage of the model is bound by the Cohere usage guidelines
@@ -188,28 +188,60 @@
     support at cohere.ai.
 
 - type: application
-  name: Cohere Platform
+  name: Cohere API
   # General
   organization: Cohere
-  description: TODO
-  created_date: TODO
+  description: >
+    Cohere API allows users to access the cohere language models and utilize
+    them in their applications.
+  created_date: >
+    2021-11-15; The date the Cohere API was announced on the news
+    [[News Article]]
+    (https://venturebeat.com/2021/11/15/openai-rival-cohere-launches-language-model-api/).
   url: https://cohere.ai/
   # Construction
   dependencies:
   - Cohere Generations model
   - Cohere Representation model
-  adaptation: TODO
-  output_space: TODO
-  quality_control: TODO
+  adaptation: >
+    Unknown; Last updated 2022-04-11.
+  output_space: >
+    Generation and embeddings.
+  quality_control: >
+    The new users of the API get a limited access restricting the sizes of the
+    models as well as the number of tokens that can be used. Users are required
+    to go through an internal application to upgrade to full access
+    [[Limited Access]](https://docs.cohere.ai/limited-access).
   # Downstream
-  access: TODO
-  license: TODO
-  terms_of_service: TODO
-  intended_uses: TODO
-  prohibited_uses: TODO
-  monitoring: TODO
-  feedback: TODO
+  access: >
+    Limited public access; Users can access the Cohere API by signing up on
+    the Cohere website
+    [[Cohere Website]](https://cohere.ai/).
+  license: >
+    Limited use license to Cohere platform users
+    [[Terms of Use]](https://cohere.ai/terms-of-use).
+  terms_of_service: https://cohere.ai/terms-of-use
+  intended_uses: >
+    Intended to be used by developers who would like to incorporate NLP into
+    their applications
+    [[Cohere Website]](https://cohere.ai/).
+  prohibited_uses: >
+    The usage of the API is bound by the Cohere usage guidelines.
+    Disallowed use cases include violence and threats, antisocial and
+    antidemocratic uses, deceit, attacks on security or privacy, unsafe
+    unsupervised uses, decision-making, high-Risk generations among others
+    [[Usage Guidelines]](https://docs.cohere.ai/usage-guidelines).
+  monitoring: >
+    All applications developed using the Cohere API is subject to review by
+    Cohere.
+  feedback: >
+    General feedback as well as the violations of the usage guidelines can
+    be reported to Cohere at responsibility at cohere.ai
+    [[Usage Guidelines]](https://docs.cohere.ai/usage-guidelines).
   # Deployment
-  monthly_active_users: TODO
-  user_distribution: TODO
-  failures: TODO
+  monthly_active_users:
+    Unknown; Last updated 2022-04-11.
+  user_distribution:
+    Unknown; Last updated 2022-04-11.
+  failures:
+    Unknown; Last updated 2022-04-11.
