@@ -167,7 +167,7 @@
     characters
     [[Section 3.1]](https://arxiv.org/pdf/2107.03374.pdf#subsection.3.1).
   quality_control: >
-    Dataset was filtered using simple heuristics, as outlined in the exclued
+    Dataset was filtered using simple heuristics, as outlined in the excluded
     field.
   # Downstream
   access: >
