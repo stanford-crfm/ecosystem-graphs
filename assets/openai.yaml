@@ -189,74 +189,109 @@
   # General
   organization: OpenAI
   description: >
-    TODO
+    CLIP dataset contains text-image pairs crawled from the internet.
   created_date: >
-    TODO
+    2021-01-05; The date of the blog post announcing CLIP
+    [[OpenAI Blog Post]](https://openai.com/blog/clip/).
   url: https://arxiv.org/pdf/2103.00020.pdf
   datasheet: >
-    TODO
-  modality: TODO
-  size: TODO
+    None; Last updated on 2022-04-13.
+  modality: Text (English) and Image
+  size: 400M (image, text) pairs
   sample: []
-  analysis: TODO
+  analysis: >
+    The dataset contained some overlap with the test sets of the benchmarks used
+    for evaluation, but the authors determined the impact to be small: "There
+    is a median overlap of 2.2% and an average overlap of 3.2%. Due to this
+    small amount of overlap, overall accuracy is rarely shifted by more than
+    0.1% with only 7 datasets above this threshold"
+    [[Section 5]](https://arxiv.org/pdf/2103.00020.pdf#section.5).
   # Construction
   dependencies: []
   license: >
-    TODO
+    Unknown; The dataset doesn't have known license as it hasn't been publicly
+    released.
   included: >
-    TODO
+    Data crawled from the internet, without any filtering (including 
+    de-duplication) or curation.
   excluded: >
-    TODO
+    None;
   quality_control: >
-    TODO
+    The data was "only crawled websites that had policies against excessively
+    violent and adult images and allowed us to filter out such content"
+    [[Model Card]](https://github.com/openai/CLIP/blob/main/model-card.md).
   # Downstream
   access: >
-    TODO
+    No public access; The dataset wasn't released to the public.
   intended_uses: >
-    TODO
+    Training multimodal vision models.
   prohibited_uses: >
-    TODO
+    Unknown; The prohibited uses of the dataset are unknown. Last updated
+    2022-04-13.
   monitoring: >
-    TODO
+    Unknown; The monitoring mechanisms in place are unknown. Last updated
+    2022-04-15.
   feedback: >
-    TODO
+    Unknown; The feedback mechanisms in place are unknown. Last updated
+    2022-04-15.
 
 - type: dataset
-  name: DALL-E dataset
+  name: DALL·E dataset
   # General
   organization: OpenAI
   description: >
-    TODO
+    DALL·E dataset is the training set consisting of image and text pairs
+    collected to train the DALL·E model.
   created_date: >
-    TODO
-  url: TODO
-  datasheet: >
-    TODO
-  modality: TODO
-  size: TODO
+    2021-01-05; The date of the blog post announcing DALL·E
+    [[OpenAI Blog Post]](https://openai.com/blog/dall-e/).
+  url: https://arxiv.org/abs/2102.12092
+  datasheet: None
+  modality: Text (English) and Image
+  size: >
+    250M text-images pairs
   sample: []
-  analysis: TODO
+  analysis: >
+    The authors found that the dataset contained 21% of the images in the
+    MS-COCO validation set, but observed no significant changes in the
+    performance of the accompanying DALL·E when tested on MS-COCO evaluation
+    set with and without the said images
+    [[Section 3.1]](https://arxiv.org/pdf/2102.12092.pdf#subsection.3.1).
   # Construction
   dependencies: []
   license: >
-    TODO
+    Unknown
   included: >
-    TODO
+    Data from the internet, including Conceptual Captions and a filtered subset
+    of YFCC100M.
   excluded: >
-    TODO
+    MS-COCO was excluded from the dataset, but because MS-COCO was created from
+    YFCC100M, some of the test images (not the captions) were included.
   quality_control: >
-    TODO
+    The data was de-duplicated
+    [[Section 3.2]](https://arxiv.org/pdf/2102.12092.pdf#subsection.3.2).
+    The data collected from the internet was filtered using image, text and
+    joint image and text filters, which included: "discarding instances whose
+    captions are too short, are classified as non-English by the Python package
+    cld3, or that consist primarily of boilerplate phrases such as “photographed
+    on <date>”, where <date> matches various formats for dates that we found in
+    the data". The authors also discard "instances whose images have aspect
+    ratios not in [1/2, 2]"
+    [[Appendix C]](https://arxiv.org/pdf/2102.12092.pdf#appendix.C).
   # Downstream
   access: >
-    TODO
+    No public access; The dataset wasn't released to the public.
   intended_uses: >
-    TODO
+    Training multimodal vision models.
   prohibited_uses: >
-    TODO
+    Unknown; The prohibited uses of the dataset are unknown. Last updated
+    2022-04-13.
   monitoring: >
-    TODO
+    Unknown; The monitoring mechanisms in place are unknown. Last updated
+    2022-04-15.
   feedback: >
-    TODO
+    Unknown; The feedback mechanisms in place are unknown. Last updated
+    2022-04-15.
 
 # Models
 
@@ -487,118 +522,222 @@
   # General
   organization: OpenAI
   description: >
-    TODO
+    "CLIP (Contrastive Language-Image Pre-Training) is a neural network trained
+    on a variety of (image, text) pairs. It can be instructed in natural
+    language to predict the most relevant text snippet, given an image,
+    without directly optimizing for the task, similarly to the zero-shot
+    capabilities of GPT-2 and 3. We found CLIP matches the performance of the
+    original ResNet50 on ImageNet “zero-shot” without using any of the original
+    1.28M labeled examples, overcoming several major challenges in computer
+    vision"
+    [[CLIP Repository]](https://github.com/openai/CLIP).
   created_date: >
-    TODO
-  url: TODO
-  model_card: TODO
-  modality: TODO
-  size: TODO
+    2021-01-05; The date of the blog post announcing CLIP
+    [[OpenAI Blog Post]](https://openai.com/blog/clip/).
+  url: https://arxiv.org/pdf/2103.00020.pdf
+  model_card: https://github.com/openai/CLIP/blob/main/model-card.md
+  modality: Text (English) and Image
+  size: >
+    Unknown; The total size is unknown, but the largest CLIP model is a
+    a combination of 63M-parameter (dense) text encoder and a 307M-parameter
+    vision encoder.
   analysis: >
-    TODO
+    The model was evaluated on standard vision datasets (e.g. CIFAR10, ImageNet)
+    and showed robust state of the art results.
   # Construction
   dependencies:
     - CLIP dataset
   training_emissions: >
-    TODO
+    Unknown; Last updated 2022-04-13.
   training_time: >
-    TODO
+    30 days; The exact training time of CLIP depends on the vision and language
+    encoders used: "The largest ResNet model, RN50x64, took 18 days to train
+    on 592 V100 GPUs while the largest Vision Transformer took 12 days on 256
+    V100 GPUs. For the ViT-L/14 we also pre-train at a higher 336 pixel
+    resolution for one additional epoch to boost performance ... Unless
+    otherwise specified, all results reported in this paper as “CLIP” use this
+    model which we found to perform best"
+    [[CLIP paper]](https://arxiv.org/pdf/2103.00020.pdf).
   training_hardware: >
-    TODO
+    NVIDIA V100 GPUs
   quality_control: >
-    TODO
+    The authors found that the performance of the model depended heavily on
+    which classes are included (and excluded) for a given task. They reported
+    significant race and gender based disparities on the Fairface dataset,
+    depending on how the classes were constructed. The authors also demonstrated
+    that the model was capable of racial profiling with high accuracy
+    [[Section 7]](https://arxiv.org/pdf/2103.00020.pdf#section.7).
   # Downstream
   access: >
-    TODO
+    Full public access; Model checkpoints and the helper code can be accessed
+    at the official CLIP repository
+    [[CLIP Repository]](https://github.com/openai/CLIP).
   license: >
-    TODO
+    MIT License
   intended_uses: >
-    TODO
+    The model is intended to be used by AI researchers to better understand
+    "robustness, generalization, and other capabilities, biases, and constraints
+    of computer vision models"
+    [[CLIP Model Card]](https://github.com/openai/CLIP/blob/main/model-card.md).
   prohibited_uses: >
-    TODO
+    "Any deployed use case of the model - whether commercial or not - is
+    currently out of scope. Non-deployed use cases such as image search in a
+    constrained environment, are also not recommended unless there is thorough
+    in-domain testing of the model with a specific, fixed class taxonomy.
+    This is because our safety assessment demonstrated a high need for task
+    specific testing especially given the variability of CLIP’s performance
+    with different class taxonomies. This makes untested and unconstrained
+    deployment of the model in any use case currently potentially harmful.
+    
+    Certain use cases which would fall under the domain of surveillance and
+    facial recognition are always out-of-scope regardless of performance of the
+    model. This is because the use of artificial intelligence for tasks such as
+    these can be premature currently given the lack of testing norms and checks
+    to ensure its fair use.
+
+    Since the model has not been purposefully trained in or evaluated on any
+    languages other than English, its use should be limited to English language
+    use cases"
+    [[Model Card]](https://github.com/openai/CLIP/blob/main/model-card.mdlicen).
   monitoring: >
-    TODO
+    None; There are no monitoring mechanisms in place for CLIP. Last updated
+    2022-04-13.
   feedback: >
-    TODO
+    Questions can be shared at the feedback form linked in the CLIP model card
+    [[Model Card]](https://github.com/openai/CLIP/blob/main/model-card.mdlicen).
 
 - type: model
-  name: DALL-E
+  name: DALL·E
   # General
   organization: OpenAI
   description: >
-    TODO
+    DALL·E is a GPT-3 based model trained to generate images from text
+    descriptions. The authors found that it had "a diverse set of capabilities,
+    including creating anthropomorphized versions of animals and objects,
+    combining unrelated concepts in plausible ways, rendering text, and
+    applying transformations to existing images"
+    [[OpenAI Blog Post]](https://openai.com/blog/dall-e/).
   created_date: >
-    TODO
-  url: TODO
-  model_card: TODO
-  modality: TODO
-  size: TODO
+    2021-01-05; The date of the blog post announcing DALL·E
+    [[OpenAI Blog Post]](https://openai.com/blog/dall-e/).
+  url: https://arxiv.org/pdf/2102.12092.pdf
+  model_card: https://github.com/openai/DALL-E/blob/master/model_card.md
+  modality: Text (English) and Image
+  size: 12B parameters (dense)
   analysis: >
-    TODO
+    The model was evaluated against three prior approaches, AttnGAN, DM-GAN, and
+    DF-GAN using Inception Score and Fréchet Inception Distance on MS-COCO as
+    metrics. The model was also evaluated by humans and received the majority
+    of the votes in generating images that look realistic and better match the
+    caption when compared to the images generated by DF-GAN
+    [[Section]](https://arxiv.org/pdf/2102.12092.pdf#section.3).
   # Construction
   dependencies:
-    - DALL-E dataset
+    - DALL·E dataset
   training_emissions: >
-    TODO
+    Unknown; The training emissions were not reported. Last updated 2020-04-13.
   training_time: >
-    TODO
+    Unknown; The training emissions were not reported. Last updated 2020-04-13.
   training_hardware: >
-    TODO
+    NVIDIA V100 GPUs
   quality_control: >
-    TODO
+    Unknown
   # Downstream
   access: >
-    TODO
+    No public access
   license: >
-    TODO
+    Unknown; The license used for the model is unknown as the model isn't
+    made public.
   intended_uses: >
-    TODO
+    "The model is intended for others to use for training their own generative
+    models"
+    [[Model Card]](https://github.com/openai/DALL-E/blob/master/model_card.md).
   prohibited_uses: >
-    TODO
+    Unknown; The prohibited uses of the model are unknown. Last updated
+    2022-04-13.
   monitoring: >
-    TODO
+    None; There are no monitoring mechanisms in place for DALL·E. Last updated
+    2022-04-13.
   feedback: >
-    TODO
+    Contact the paper author(s) specified on the paper
+    [[Paper]](https://arxiv.org/pdf/2102.12092.pdf).
 
 - type: model
-  name: DALL-E 2
+  name: DALL·E 2
   # General
   organization: OpenAI
   description: >
-    TODO
+    "DALL·E 2 is an artificial intelligence model that takes a text prompt
+    and/or existing image as an input and generates a new image as an output"
+    [[System Card]]
+    (https://github.com/openai/dalle-2-preview/blob/main/system-card.md).
+    The model wasn't fully released, but OpenAI released a version of the model
+    (DALL·E 2 Preview) to a select group of testers.
   created_date: >
-    TODO
-  url: TODO
-  model_card: TODO
-  modality: TODO
-  size: TODO
+    2022-04; OpenAI released in a blog post in April 2020
+    [[OpenAI Blog Post]](https://openai.com/dall-e-2/).
+  url: https://arxiv.org/abs/2204.06125
+  model_card: https://github.com/openai/dalle-2-preview/blob/main/system-card.md
+  modality: Text (English) and Image
+  size: >
+    Unknown;
   analysis: >
-    TODO
+    The model is capable of generating explicit content and the researchers
+    found limited amount of spurious content generated. The researchers also
+    found that visual synonyms can be used to prompt the model to surface
+    unwanted generations
+    [[Probes and Evaluations]]
+    (https://github.com/openai/dalle-2-preview/blob/main/system-card.md#probes-and-evaluations).
   # Construction
   dependencies:
-    - DALL-E dataset
+    - DALL·E dataset
     - CLIP dataset
   training_emissions: >
-    TODO
+    Unknown
   training_time: >
-    TODO
+    Unknown
   training_hardware: >
-    TODO
+    Unknown
   quality_control: >
-    TODO
+    The model isn't fully released to the public as part of a quality control
+    measure. The usage of the model by testers is monitored and user provided
+    prompts are filtered
+    [[Input filters]]
+    (https://github.com/openai/dalle-2-preview/blob/main/system-card.md#input-filters).
   # Downstream
   access: >
-    TODO
+    Limited private access; The model is available to a select set of OpenAI
+    employees, researchers, creatives and company friends. OpenAI opened a
+    waitlist for DALL·E 2 access. Last updated 2022-04-13
+    [[System Card]]
+    (https://github.com/openai/dalle-2-preview/blob/main/system-card.md#access).
   license: >
-    TODO
+    Unknown; The DALL·E 2 license is not known, but the system card stated that
+    the use of generated images for commercial purposes was not allowed
+    [[Additional Policies]]
+    (https://github.com/openai/dalle-2-preview/blob/main/system-card.md#additional-policies).
   intended_uses: >
-    TODO
+    "The intended use of the DALL·E 2 Preview at this time is for personal,
+    non-commercial exploration and research purposes by people who are
+    interested in understanding the potential uses of these capabilities"
+    [[Use]]
+    (https://github.com/openai/dalle-2-preview/blob/main/system-card.md#use).
   prohibited_uses: >
-    TODO
+    Use of the model is governed by the OpenAI Content Policy, which prohibits
+    posting of G rated content.
+    Users are not allowed to utilize the model in commercial products in the
+    preview version
+    [[Content Policy]]
+    (https://github.com/openai/dalle-2-preview/blob/main/system-card.md#policies-and-enforcement).
   monitoring: >
-    TODO
+    Uses of the model are monitored. In the preview version, any user can flag
+    content. The specific policies for monitoring are not disclosed, but
+    possible measures include disabling of accounts violating the content
+    policies
+    [[Monitoring and Reporting]]
+    (https://github.com/openai/dalle-2-preview/blob/main/system-card.md#monitoring-and-reporting).
   feedback: >
-    TODO
+    Feedback can be provided at support at openai.com.
 
 - type: application
   name: OpenAI API
