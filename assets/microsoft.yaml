@@ -3,14 +3,14 @@
 # Applications
 
 - type: application
-  name: GitHub Copilot
+  name: GitHub CoPilot
   # General
   organization: Microsoft
   description: >
-    GitHub copilot is a coding pair programmer assisting programmers as they
+    GitHub CoPilot is a coding pair programmer assisting programmers as they
     write code.
   created_date: >
-    2021-06-29; Date of the blog post introducing Copilot
+    2021-06-29; Date of the blog post introducing CoPilot
     [[GitHub Blog Post]]
     (https://github.blog/2021-06-29-introducing-github-copilot-ai-pair-programmer/).
   url: https://copilot.github.com/
@@ -28,20 +28,20 @@
     According to the FAQ, GitHub implemented a simple filter that blocks emails
     in standard formats to protect personally identifiable data that may be
     present in the training data
-    [[GitHub Copilot]](https://copilot.github.com/).
+    [[GitHub CoPilot]](https://copilot.github.com/).
   # Downstream
   access: >
     Limited access; The feature is available to developers in a restricted
     technical preview 
-    [[GitHub Copilot]](https://copilot.github.com/).
+    [[GitHub CoPilot]](https://copilot.github.com/).
     Last updated on 2022-04-10.
   license: Unknown
   terms_of_service:
-    GitHub Copilot is bound by the GitHub terms of service
+    GitHub CoPilot is bound by the GitHub terms of service
     [[Terms of Service]]
     (https://docs.github.com/en/site-policy/github-terms/github-terms-of-service).
   intended_uses: >
-    GitHub Copilot is intended to be used as a coding assistant.
+    GitHub CoPilot is intended to be used as a coding assistant.
   prohibited_uses: >
     Access to GPT-3 is governed by GitHub Acceptable Use Policies and Terms of
     Service, both of which list a set of prohibited uses
@@ -53,8 +53,8 @@
     Unknown; None, but there may be internal monitoring mechanisms unknown to
     the public. Last updated on 2022-04-10.
   feedback:
-    Feedback can be provided in the Copilot feedback project
-    [[Copilot feedback]]
+    Feedback can be provided in the CoPilot feedback project
+    [[CoPilot feedback]]
     (https://github.com/github/feedback/discussions/categories/copilot-feedback).
   # Deployment
   monthly_active_users: >
