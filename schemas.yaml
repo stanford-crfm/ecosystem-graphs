@@ -55,6 +55,8 @@ model:
   # General
   - name: organization
     description: Organization that created the model.
+  - name: description
+    description: Description of the model.
   - name: created_date
     description: When the model was created.
   - name: url
@@ -100,6 +102,8 @@ application:
     description: Name of the product or service.
   - name: organization
     description: Organization that created the application.
+  - name: description
+    description: Description of the application.
   - name: created_date
     description: When the application was created.
   - name: url

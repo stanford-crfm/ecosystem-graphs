@@ -74,7 +74,7 @@ function renderValue(type, value) {
   const converter = new showdown.Converter();
   if (type === 'list') {
     return renderList(value.map((elemValue) => renderValue(null, elemValue)));
-  } else if (type === 'url') {
+  } else if (type === 'url' && value.indexOf('None') == -1 && value.indexOf('TODO') == -1) {
     return $('<a>', {href: value, target: 'blank_'}).append(value);
   } else {
     // Default: render string as markdown
@@ -150,8 +150,8 @@ function renderAssetsTable(nameToAsset) {
       .append($('<td>').append(asset.type))
       .append($('<td>').append($('<a>', {href, target: 'blank_'}).append(asset.name)))
       .append($('<td>').append(asset.organization))
-      .append($('<td>').append(asset.created_date))
-      .append($('<td>').append(asset.size))
+      .append($('<td>').append(renderValue('', asset.created_date)))
+      .append($('<td>').append(renderValue('', asset.size)))
       .append($('<td>').append(renderAssetLinks(nameToAsset, asset.dependencies)))
     );
   }
@@ -173,9 +173,9 @@ function renderAssetsGraph(nameToAsset) {
   };
 
   const typeToColor = {
-    'dataset': 'green',
-    'model': 'purple',
-    'application': 'orange',
+    'dataset': 'orange',
+    'model': 'dodgerblue',
+    'application': 'firebrick',
   };
 
   Object.values(nameToAsset).forEach((asset) => {
@@ -206,7 +206,11 @@ function renderAssetsGraph(nameToAsset) {
         name: 'cose',
         randomize: false,
         componentSpacing: 100,
-        nodeOverlap: 4,
+        nodeOverlap: 10,
+        //nodeDimensionsIncludeLabels: true,
+        nodeRepulsion: function( node ){ return 4096; },
+        //padding: 30,
+        gravity: 0.5
       },
       style: [
         {
@@ -215,12 +219,18 @@ function renderAssetsGraph(nameToAsset) {
             label: 'data(id)',
             shape: 'data(shape)',
             'background-color': 'data(color)',
+            'text-wrap': 'wrap',
+            'text-max-width': 70,
+            'size': 100,
+            'color': 'dimgrey',
+            'text-size': 20,
+            'padding': 10,
           },
         },
         {
           selector: 'edge',
           style: {
-            'width': 1,
+            'width': 3,
             'curve-style': 'straight',
             'target-arrow-shape': 'triangle',
           },
@@ -274,12 +284,12 @@ $(() => {
   const nameToAsset = {};  // asset name (e.g., "GPT-3") => asset
 
   const paths = [
-    'assets/eleutherai.yaml',
+    'assets/cohere.yaml',
     'assets/deepmind.yaml',
+    'assets/eleutherai.yaml',
     'assets/google.yaml',
     'assets/microsoft.yaml',
     'assets/openai.yaml',
-    'assets/deepmind.yaml',
   ];
 
   $.get('schemas.yaml', {}, (response) => {
