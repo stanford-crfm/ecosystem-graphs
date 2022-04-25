@@ -34,7 +34,6 @@
     Limited access; The feature is available to developers in a restricted
     technical preview
     [[GitHub CoPilot]](https://copilot.github.com/).
-    Last updated on 2022-04-10.
   license: Unknown
   terms_of_service:
     GitHub CoPilot is bound by the GitHub terms of service
@@ -51,15 +50,15 @@
     (https://docs.github.com/en/site-policy/github-terms/github-terms-of-service).
   monitoring: >
     Unknown; None, but there may be internal monitoring mechanisms unknown to
-    the public. Last updated on 2022-04-10.
+    the public.
   feedback:
     Feedback can be provided in the CoPilot feedback project
     [[CoPilot feedback]]
     (https://github.com/github/feedback/discussions/categories/copilot-feedback).
   # Deployment
   monthly_active_users: >
-    Unknown; Last updated on 2022-04-10.
+    Unknown
   user_distribution: >
-    Unknown; Last updated on 2022-04-10.
+    Unknown
   failures: >
-    Unknown; Last updated on 2022-04-10.
+    Unknown

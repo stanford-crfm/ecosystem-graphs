@@ -105,7 +105,7 @@
     TPUv3 pods; Reported in the paper
     [[Section F]](https://arxiv.org/pdf/2112.11446.pdf#appendix.F).
   quality_control: >
-    None; Last updated 2022-04-05.
+    None
   # Downstream
   access: >
     The model access is limited to DeepMind researchers. The model won't be

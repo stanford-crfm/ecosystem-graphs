@@ -125,9 +125,9 @@
   intended_uses: >
     Evaluating code generation capabilities of models.
   prohibited_uses: >
-    None; Last updated on 2022-04-10.
+    None
   monitoring: >
-    None; Last updated on 2022-04-10.
+    None
   feedback: >
     Email the authors
     [[Codex Paper]](https://arxiv.org/pdf/2107.03374.pdf).
@@ -144,19 +144,18 @@
     [[OpenAI Blog Post]](https://openai.com/blog/openai-codex/).
   url: https://arxiv.org/pdf/2107.03374.pdf
   datasheet: >
-    None; Last updated on 2022-04-10.
+    None
   modality: Code
   size: >
     159 GB; As reported by the authors
     [[Section 3.1]](https://arxiv.org/pdf/2107.03374.pdf#subsection.3.1).
   sample: []
   analysis: >
-    None; The paper doesn't provide an analysis on the training dataset. Last
-    updated on 2022-04-10.
+    None; The paper doesn't provide an analysis on the training dataset.
   # Construction
   dependencies: []
   license: >
-    Unknown; Last updated on 2022-04-10.
+    Unknown
   included: >
     The dataset includes 54 million public software repositories hosted on
     GitHub as of an unspecified date in May 2020
@@ -177,9 +176,9 @@
   intended_uses: >
     Training large language models on code.
   prohibited_uses: >
-    Unknown; Last updated on 2022-04-10.
+    Unknown
   monitoring: >
-    Unknown; Last updated on 2022-04-10.
+    Unknown
   feedback: >
     Email the authors
     [[Codex Paper]](https://arxiv.org/pdf/2107.03374.pdf).
@@ -195,7 +194,7 @@
     [[OpenAI Blog Post]](https://openai.com/blog/clip/).
   url: https://arxiv.org/pdf/2103.00020.pdf
   datasheet: >
-    None; Last updated on 2022-04-13.
+    None
   modality: Text (English) and Image
   size: 400M (image, text) pairs
   sample: []
@@ -226,14 +225,11 @@
   intended_uses: >
     Training multimodal vision models.
   prohibited_uses: >
-    Unknown; The prohibited uses of the dataset are unknown. Last updated
-    2022-04-13.
+    Unknown; The prohibited uses of the dataset are unknown.
   monitoring: >
-    Unknown; The monitoring mechanisms in place are unknown. Last updated
-    2022-04-15.
+    Unknown; The monitoring mechanisms in place are unknown.
   feedback: >
-    Unknown; The feedback mechanisms in place are unknown. Last updated
-    2022-04-15.
+    Unknown; The feedback mechanisms in place are unknown.
 
 - type: dataset
   name: DALL·E dataset
@@ -284,14 +280,11 @@
   intended_uses: >
     Training multimodal vision models.
   prohibited_uses: >
-    Unknown; The prohibited uses of the dataset are unknown. Last updated
-    2022-04-13.
+    Unknown; The prohibited uses of the dataset are unknown.
   monitoring: >
-    Unknown; The monitoring mechanisms in place are unknown. Last updated
-    2022-04-15.
+    Unknown; The monitoring mechanisms in place are unknown.
   feedback: >
-    Unknown; The feedback mechanisms in place are unknown. Last updated
-    2022-04-15.
+    Unknown; The feedback mechanisms in place are unknown.
 
 # Models
 
@@ -346,7 +339,6 @@
     it for fairness, bias and representation issues, but do not identify
     mitigation strategies
     [[Section 6]](https://arxiv.org/pdf/2005.14165.pdf#section.6).
-    This section was last updated on 2022-04-04.
   # Downstream
   access: >
     The GPT-3 model isn't fully released to the public, but
@@ -358,12 +350,10 @@
     in supported countries
     [[Supported Countries]](https://beta.openai.com/docs/supported-countries)
     [[OpenAI API]](https://openai.com/api/).
-    This field was last updated on 04-04-2022.
   license: >
     GPT-3 is exclusively licensed to OpenAI and Microsoft
     [[OpenAI Blog Post]]
     (https://openai.com/blog/openai-licenses-gpt-3-technology-to-microsoft/).
-    This field was last updated on 04-04-2022.
   intended_uses: >
     GPT-3 was intended to be use through the OpenAI API by developers for
     language applications. Other intended use of GPT-3 include researchers
@@ -400,7 +390,7 @@
     [[OpenAI Blog Post]](https://openai.com/blog/openai-codex/).
   url: https://arxiv.org/pdf/2107.03374.pdf
   model_card: >
-    None; Last updated on 2022-04-10.
+    None
   modality: Text (English) and Code
   size: 12B parameters (dense model)
   analysis: >
@@ -548,7 +538,7 @@
   dependencies:
     - CLIP dataset
   training_emissions: >
-    Unknown; Last updated 2022-04-13.
+    Unknown
   training_time: >
     30 days; The exact training time of CLIP depends on the vision and language
     encoders used: "The largest ResNet model, RN50x64, took 18 days to train
@@ -600,8 +590,7 @@
     use cases"
     [[Model Card]](https://github.com/openai/CLIP/blob/main/model-card.mdlicen).
   monitoring: >
-    None; There are no monitoring mechanisms in place for CLIP. Last updated
-    2022-04-13.
+    None; There are no monitoring mechanisms in place for CLIP.
   feedback: >
     Questions can be shared at the feedback form linked in the CLIP model card
     [[Model Card]](https://github.com/openai/CLIP/blob/main/model-card.mdlicen).
@@ -635,9 +624,9 @@
   dependencies:
     - DALL·E dataset
   training_emissions: >
-    Unknown; The training emissions were not reported. Last updated 2020-04-13.
+    Unknown; The training emissions were not reported.
   training_time: >
-    Unknown; The training emissions were not reported. Last updated 2020-04-13.
+    Unknown; The training emissions were not reported.
   training_hardware: >
     NVIDIA V100 GPUs
   quality_control: >
@@ -653,11 +642,9 @@
     models"
     [[Model Card]](https://github.com/openai/DALL-E/blob/master/model_card.md).
   prohibited_uses: >
-    Unknown; The prohibited uses of the model are unknown. Last updated
-    2022-04-13.
+    Unknown; The prohibited uses of the model are unknown.
   monitoring: >
-    None; There are no monitoring mechanisms in place for DALL·E. Last updated
-    2022-04-13.
+    None; There are no monitoring mechanisms in place for DALL·E.
   feedback: >
     Contact the paper author(s) specified on the paper
     [[Paper]](https://arxiv.org/pdf/2102.12092.pdf).
@@ -708,7 +695,7 @@
   access: >
     Limited private access; The model is available to a select set of OpenAI
     employees, researchers, creatives and company friends. OpenAI opened a
-    waitlist for DALL·E 2 access. Last updated 2022-04-13
+    waitlist for DALL·E 2 access.
     [[System Card]]
     (https://github.com/openai/dalle-2-preview/blob/main/system-card.md#access).
   license: >
@@ -747,8 +734,8 @@
     OpenAI API is a general purpose "text in, text out" interface connecting
     users with a suite of large language models. The API was initially released
     as a gateway to GPT-3, but it now supports access to other, more
-    specialized OpenAI models. This field was last updated on 2022-04-05
-    [[Open AI Blog Post]](https://openai.com/blog/openai-api/).
+    specialized OpenAI models.
+    [[Open AI Blog Post]](https://openai.com/blog/openai-api/)
   created_date: >
     2020-06-11; The date that OpenAI API was announced to the public
     [[Open AI Blog Post]](https://openai.com/blog/openai-api/).
@@ -778,13 +765,11 @@
     API usage. OpenAI also developed user guidelines to help developers
     understand safety issues
     [[OpenAI API]](https://openai.com/api/).
-    This field was last updated on 2022-04-04.
   # Downstream
   access: >
     The OpenAI API is available to the public in supported countries
     [[Supported Countries]](https://beta.openai.com/docs/supported-countries)
     [[OpenAI API]](https://openai.com/api/).
-    This field was last updated on 2022-04-04.
   terms_of_service: https://openai.com/api/policies/terms/
   license: >
     Per the Terms of Use, a limited license is provided to the users during
@@ -819,25 +804,21 @@
     days
     [[App Review Guidelines]]
     (https://beta.openai.com/docs/usage-guidelines/app-review).
-    This field was last updated on 2022-04-05.
   feedback: >
     Unknown; There is no known specific feedback channel for the OpenAI API,
     but OpenAI support theme can be reached via email at support at openai.com.
-    This field was last updated on 2022-04-05.
   # Deployment
   monthly_active_users: >
     Unknown; The number of monthly active users is not known publicly, but
     OpenAI mentioned that the API was being used by tens of thousands of
     developers in a blog post from 2021-11-18
     [[OpenAI Blog Post]](https://openai.com/blog/api-no-waitlist/).
-    This field was last updated on 2022-04-05.
   user_distribution: >
     Unknown; The distribution of the users is not known, but we estimate
     majority of the users to be developers based in the United States.
-    This field was last updated on 2022-04-05.
   failures: >
     Unknown; There are no known documented failures of the OpenAI API at the
-    time of writing. This field was last updated on 2022-04-05.
+    time of writing.
 
 - type: application
   name: Duolingo

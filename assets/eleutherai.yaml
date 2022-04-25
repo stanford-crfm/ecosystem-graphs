@@ -80,9 +80,9 @@
     language modeling tasks, explained in more detail in the paper
     [[Section 1]](https://arxiv.org/pdf/2101.00027.pdf#section.1).
   prohibited_uses: >
-    None; Last updated of 2022-04-05.
+    None
   monitoring: >
-    None; Last updated of 2022-04-05.
+    None
   feedback: >
     Feedback can be given by emailing the authors at contact at eleuther.ai.
 
@@ -115,7 +115,7 @@
     12 x 8 A100 GPUs; As outline by the authors
     [[Section 2.3]](http://eaidata.bmk.sh/data/GPT_NeoX_20B.pdf#subsection.2.3)
   quality_control: >
-    None; Last updated 2022-04-11.
+    None
   # Downstream
   access: >
     Unlimited public access; The model can be downloaded for free The Eye
@@ -133,9 +133,9 @@
     fiction writing
     [[Model Card]](https://mystic.the-eye.eu/public/AI/models/GPT-NeoX-20B/20B_model_card.md).
   prohibited_uses: >
-    None; Last updated 2022-04-11.
+    None
   monitoring: >
-    None; Last updated 2022-04-11.
+    None
   feedback: >
     Feedback can be provided using the #20b channel in EleutherAI Discord
     group

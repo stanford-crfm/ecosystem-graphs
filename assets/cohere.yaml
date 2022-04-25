@@ -204,7 +204,7 @@
     - Cohere Generations model
     - Cohere Representation model
   adaptation: >
-    Unknown; Last updated 2022-04-11.
+    Unknown
   output_space: >
     Generation and embeddings.
   quality_control: >
@@ -240,8 +240,8 @@
     [[Usage Guidelines]](https://docs.cohere.ai/usage-guidelines).
   # Deployment
   monthly_active_users:
-    Unknown; Last updated 2022-04-11.
+    Unknown
   user_distribution:
-    Unknown; Last updated 2022-04-11.
+    Unknown
   failures:
-    Unknown; Last updated 2022-04-11.
+    Unknown
