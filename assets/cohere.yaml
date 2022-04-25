@@ -140,7 +140,7 @@
     that they come in three sizes: small, medium, and large
     [[Model Card]](https://docs.cohere.ai/representation-card).
   analysis: >
-    The model's performance was analyzed on several safety benchmarks 
+    The model's performance was analyzed on several safety benchmarks
     [[Model Card]](https://docs.cohere.ai/representation-card).
   # Construction
   dependencies:
@@ -201,8 +201,8 @@
   url: https://cohere.ai/
   # Construction
   dependencies:
-  - Cohere Generations model
-  - Cohere Representation model
+    - Cohere Generations model
+    - Cohere Representation model
   adaptation: >
     Unknown; Last updated 2022-04-11.
   output_space: >

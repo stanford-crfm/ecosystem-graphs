@@ -143,7 +143,7 @@
     was announced to the public
     [[OpenAI Blog Post]](https://openai.com/blog/openai-codex/).
   url: https://arxiv.org/pdf/2107.03374.pdf
-  datasheet:  >
+  datasheet: >
     None; Last updated on 2022-04-10.
   modality: Code
   size: >
@@ -174,7 +174,7 @@
     No public access; The dataset might have been made available to Microsoft
     as part of OpenAI giving Microsoft access to its Codex model
     [GitHub Copilot](https://copilot.github.com/).
-  intended_uses:  >
+  intended_uses: >
     Training large language models on code.
   prohibited_uses: >
     Unknown; Last updated on 2022-04-10.
@@ -212,7 +212,7 @@
     Unknown; The dataset doesn't have known license as it hasn't been publicly
     released.
   included: >
-    Data crawled from the internet, without any filtering (including 
+    Data crawled from the internet, without any filtering (including
     de-duplication) or curation.
   excluded: >
     None;
@@ -588,7 +588,7 @@
     specific testing especially given the variability of CLIP’s performance
     with different class taxonomies. This makes untested and unconstrained
     deployment of the model in any use case currently potentially harmful.
-    
+
     Certain use cases which would fall under the domain of surveillance and
     facial recognition are always out-of-scope regardless of performance of the
     model. This is because the use of artificial intelligence for tasks such as
@@ -755,9 +755,9 @@
   url: https://openai.com/api/
   # Construction
   dependencies:
-  - GPT-3
-  - Codex
-  - InstructGPT
+    - GPT-3
+    - Codex
+    - InstructGPT
   adaptation: >
     Although initially started with GPT-3, soon after the API was made public,
     OpenAI deployed the InstructGPT models, and made them the default models on
@@ -848,7 +848,7 @@
   url: https://openai.com/api/
   # Construction
   dependencies:
-  - OpenAI API
+    - OpenAI API
   adaptation: unknown
   output_space: French grammar corrections
   quality_control: unknown
@@ -874,7 +874,7 @@
   url: https://www.askviable.com/
   # Construction
   dependencies:
-  - OpenAI API
+    - OpenAI API
   adaptation: None
   output_space: question and answer, summarization, sentiment analysis,topic identification
   quality_control: Unknown
@@ -900,7 +900,7 @@
   url: https://hyperwriteai.com/
   # Construction
   dependencies:
-  - OpenAI API
+    - OpenAI API
   adaptation: None
   output_space: generation
   quality_control: Unknown
