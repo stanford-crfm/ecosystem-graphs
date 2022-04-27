@@ -58,14 +58,14 @@ class Asset {
       *     explanation field be null.
       */
       const schemaFieldValue = getField(item, schemaField.name);
-      const is_object = typeof schemaFieldValue === 'object';
-      const has_value = is_object && 'value' in schemaFieldValue;
-      const has_explanation = is_object && 'explanation' in schemaFieldValue;
-      const object_form1 = Object.keys(schemaFieldValue).length === 2 && 
-                           has_value && has_explanation;
-      const object_form2 = Object.keys(schemaFieldValue).length === 1 && 
-                           has_value;
-      if ( object_form1 || object_form2 ) {
+      const isObject = typeof schemaFieldValue === 'object';
+      const hasValue = isObject && 'value' in schemaFieldValue;
+      const hasExplanation = isObject && 'explanation' in schemaFieldValue;
+      const isObjectForm1 = Object.keys(schemaFieldValue).length === 2 && 
+                            hasValue && hasExplanation;
+      const isObjectForm2 = Object.keys(schemaFieldValue).length === 1 && 
+                            hasValue;
+      if ( isObjectForm1 || isObjectForm2 ) {
         assetField.value = schemaFieldValue['value'];
         assetField.explanation = schemaFieldValue['explanation'];
       } else {
