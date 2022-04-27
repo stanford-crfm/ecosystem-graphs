@@ -2,7 +2,6 @@
 
 dataset:
   - name: name
-    type: string
     description: Name of the dataset (must be a unique identifier).
   # General
   - name: organization
