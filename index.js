@@ -18,10 +18,10 @@ class Schema {
 }
 
 /**
- * AssetField of an Asset.
+ * AssetField represents a field of an Asset. Each AssetField has a value and
+ * an optional explanation for the value.
  */
- class AssetField {
-
+class AssetField {
   constructor(value, explanation) {
     this.value = value;
     this.explanation = explanation;
@@ -42,7 +42,7 @@ class Asset {
     schema.fields.forEach((schemaField) => {
 
       /* The assset field we will populate */
-      var assetField = new AssetField();
+      const assetField = new AssetField();
 
       /*
       * We expect each assetField to have a value and an explanation field.
