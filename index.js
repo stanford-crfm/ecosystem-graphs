@@ -34,50 +34,37 @@ class AssetField {
 class Asset {
 
   constructor(item, schema) {
-    /* Set the parameters */ 
+    // Set the parameters
     this.schema = schema;
     this.type = getField(item, 'type');
 
-    /* Loop through the schema to populate the asset fields */ 
+    // Loop through the schema to populate the asset fields
     schema.fields.forEach((schemaField) => {
 
-      /* The assset field we will populate */
+      // The assset field we will populate */
       const assetField = new AssetField();
 
-      /*
-      * We expect each assetField to have a value and an explanation field.
-      * When reading the field from the schemaFieldValue, we populate each of
-      * these fields as follows: 
-      * (1) If the schemaFieldValue is an object with exactly two fields, 
-      *     'value' and 'explanation', we directly read these into the assetField.
-      * (2) If the schemaFieldValue is an object with only the 'value' field, we
-      *     read it to the corresponding field of the assetField, and let the
-      *     explanation field be null.
-      * (3) If the schemaFieldValue doesn't conform to the rules in (1) and (2), 
-      *     we directly assign it to the value field of the assetField, and let the
-      *     explanation field be null.
-      */
+    
+      // We expect each assetField to have a value and an explanation.
+      // When reading the field from the schemaFieldValue, we populate each of
+      // these fields as follows: 
+      // (1) If the schemaFieldValue is an object that is not an Array, we try
+      //     to read 'value' and 'explanation' fields to the respective fields
+      //     in the AssetField. If the explanation field is not provided, we
+      //     would read null.
+      // (2) Otheriwise, we directly read schemaFieldValue to the value of 
+      //     AssetField, and leave the explanation as null.
       const schemaFieldValue = getField(item, schemaField.name);
-      const isObject = typeof schemaFieldValue === 'object';
-      const hasValue = isObject && 'value' in schemaFieldValue;
-      const hasExplanation = isObject && 'explanation' in schemaFieldValue;
-      const isObjectForm1 = Object.keys(schemaFieldValue).length === 2 && 
-                            hasValue && hasExplanation;
-      const isObjectForm2 = Object.keys(schemaFieldValue).length === 1 && 
-                            hasValue;
-      if ( isObjectForm1 || isObjectForm2 ) {
-        assetField.value = schemaFieldValue['value'];
-        assetField.explanation = schemaFieldValue['explanation'];
+      if ((typeof schemaFieldValue === 'object') && !(schemaFieldValue instanceof Array)) {
+        assetField.value = getField(schemaFieldValue, 'value');
+        assetField.explanation = schemaFieldValue.explanation
       } else {
         assetField.value = schemaFieldValue;
       }
 
-      /*
-      * Once we have the value field extracted, we perform type checking
-      * against the schema types.
-      */
+      // Once value is extracted, we perform type checking.
       if (schemaField.type === 'list') {
-        if ( !(assetField.value instanceof Array) ) {
+        if (!(assetField.value instanceof Array)) {
           console.error('Expected list for', schemaField.name, 'but got', assetField.value);
         }
       } else {
@@ -86,7 +73,7 @@ class Asset {
         }
       }
 
-      /* Assigning the assetField value to be a field of this asset */
+      // Assigning the assetField value to be a field of this asset
       // @TODO Refactor the code to work with the AssetField object.
       this[schemaField.name] = assetField.value;
     });
