@@ -26,6 +26,14 @@ class AssetField {
     this.value = value;
     this.explanation = explanation;
   }
+
+  getValue() {
+    return this.value;
+  }
+
+  getExplanation() {
+    return this.explanation;
+  }
  }
 
 /**
@@ -35,15 +43,14 @@ class Asset {
 
   constructor(item, schema) {
     // Set the parameters
-    this.schema = schema;
-    this.type = getField(item, 'type');
+    this.schema = new AssetField(schema, null);
+    this.type = new AssetField(getField(item, 'type'), null);
 
     // Loop through the schema to populate the asset fields
     schema.fields.forEach((schemaField) => {
 
       // The assset field we will populate */
       const assetField = new AssetField();
-
     
       // We expect each assetField to have a value and an explanation.
       // When reading the field from the schemaFieldValue, we populate each of
@@ -75,7 +82,7 @@ class Asset {
 
       // Assigning the assetField value to be a field of this asset
       // @TODO Refactor the code to work with the AssetField object.
-      this[schemaField.name] = assetField.value;
+      this[schemaField.name] = assetField;
     });
 
     // Print warnings about any extraneous fields
@@ -86,7 +93,7 @@ class Asset {
     }
 
     // To be filled out later
-    this.downstreamAssets = [];
+    this.downstreamAssets = new AssetField([], null);
   }
 }
 
@@ -109,8 +116,8 @@ function renderList(items) {
 }
 
 function renderField(field) {
-  const text = field.name.replace(/_/g, ' ');
-  return $('<div>').append(text).append(helpIcon(field.description, '#'));
+  const text = field.name.getValue().replace(/_/g, ' ');
+  return $('<div>').append(text).append(helpIcon(field.description.getValue(), '#'));
 }
 
 function renderValue(type, value) {
@@ -134,7 +141,7 @@ function renderAssetLink(nameToAsset, assetName) {
   if (!asset) {
     return assetName;
   }
-  const href = encodeUrlParams({asset: asset.name});
+  const href = encodeUrlParams({asset: asset.name.getValue()});
   return $('<a>', {href, target: 'blank_'}).append(assetName);
 }
 
@@ -150,21 +157,21 @@ function renderAsset(nameToAsset, assetName) {
 
   const $card = $('<div>');
 
-  $card.append($('<h3>').append(asset.name));
+  $card.append($('<h3>').append(asset.name.getValue()));
 
   // Render upstream and downstream assets
-  $card.append($('<div>', {class: 'block'}).append('Upstream: ').append(renderAssetLinks(nameToAsset, asset.dependencies)));
-  $card.append($('<div>', {class: 'block'}).append('Downstream: ').append(renderAssetLinks(nameToAsset, asset.downstreamAssets)));
+  $card.append($('<div>', {class: 'block'}).append('Upstream: ').append(renderAssetLinks(nameToAsset, asset.dependencies.getValue())));
+  $card.append($('<div>', {class: 'block'}).append('Downstream: ').append(renderAssetLinks(nameToAsset, asset.downstreamAssets.getValue())));
 
   // Render a single asset
   const $table = $('<table>', {class: 'table'});
   const $tbody = $('<tbody>');
   asset.schema.fields.forEach((field) => {
-    const value = asset[field.name];
+    const value = asset[field.name.getValue()];
 
     $tbody.append($('<tr>')
       .append($('<td>').append(renderField(field)))
-      .append($('<td>').append(field.name === 'dependencies' ? renderAssetLinks(nameToAsset, value) : renderValue(field.type, value)))
+      .append($('<td>').append(field.name.getValue() === 'dependencies' ? renderAssetLinks(nameToAsset, value) : renderValue(field.type.getValue(), value)))
     );
   });
 
@@ -188,14 +195,15 @@ function renderAssetsTable(nameToAsset) {
   const $tbody = $('<tbody>');
   for (let name in nameToAsset) {
     const asset = nameToAsset[name];
-    const href = encodeUrlParams({asset: asset.name});
+    const href = encodeUrlParams({asset: asset.name.getValue()});
+    const size = 'size' in asset ? asset.size.getValue() : null;
     $tbody.append($('<tr>')
-      .append($('<td>').append(asset.type))
-      .append($('<td>').append($('<a>', {href, target: 'blank_'}).append(asset.name)))
-      .append($('<td>').append(asset.organization))
-      .append($('<td>').append(renderValue('', asset.created_date)))
-      .append($('<td>').append(renderValue('', asset.size)))
-      .append($('<td>').append(renderAssetLinks(nameToAsset, asset.dependencies)))
+      .append($('<td>').append(asset.type.getValue()))
+      .append($('<td>').append($('<a>', {href, target: 'blank_'}).append(asset.name.getValue())))
+      .append($('<td>').append(asset.organization.getValue()))
+      .append($('<td>').append(renderValue('', asset.created_date.getValue())))
+      .append($('<td>').append(renderValue('', size)))
+      .append($('<td>').append(renderAssetLinks(nameToAsset, asset.dependencies.getValue())))
     );
   }
   $table.append($tbody);
@@ -224,18 +232,18 @@ function renderAssetsGraph(nameToAsset) {
   Object.values(nameToAsset).forEach((asset) => {
     nodes.push({
       data: {
-        id: asset.name,
-        shape: typeToShape[asset.type],
-        color: typeToColor[asset.type],
+        id: asset.name.getValue(),
+        shape: typeToShape[asset.type.getValue()],
+        color: typeToColor[asset.type.getValue()],
       },
     });
 
-    asset.dependencies.forEach((dep) => {
+    asset.dependencies.getValue().forEach((dep) => {
       edges.push({
         data: {
-          id: asset.name + '->' + dep,
+          id: asset.name.getValue() + '->' + dep,
           source: dep,
-          target: asset.name,
+          target: asset.name.getValue(),
         },
       });
     });
@@ -306,13 +314,13 @@ function render(urlParams, nameToAsset) {
 function updateDownstreamAssets(nameToAsset) {
   // Use each asset's dependencies (upstream pointers) to update the corresponding downstream pointers.
   Object.values(nameToAsset).forEach((asset) => {
-    asset.dependencies.forEach((dep) => {
+    asset.dependencies.getValue().forEach((dep) => {
       if (!(dep in nameToAsset)) {
         console.error('The node ', dep, 'does not exist in the graph.');
       }
       const depAsset = nameToAsset[dep];
       if (depAsset) {
-        depAsset.downstreamAssets.push(asset.name);
+        depAsset.downstreamAssets.value.push(asset.name.getValue());
       }
     });
   });
