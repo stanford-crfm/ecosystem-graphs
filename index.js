@@ -191,12 +191,12 @@ function renderCustomTable(selectedNameToAsset, allNameToAsset, columnProperties
     columnProperties.forEach( (columnName) => {
       let tdValue = null;
       if (columnName === 'name') {
-        const href = encodeUrlParams({asset: asset.name.getValue()});
-        tdValue = $('<a>', {href, target: 'blank_'}).append(asset.name.getValue());
+        const href = encodeUrlParams({asset: asset.fields.name.value});
+        tdValue = $('<a>', {href, target: 'blank_'}).append(asset.fields.name.value);
       } else if (columnName === 'dependencies') {
-        tdValue = renderAssetLinks(allNameToAsset, asset.dependencies.getValue());
+        tdValue = renderAssetLinks(allNameToAsset, asset.fields.dependencies.value);
       } else {
-        tdValue = renderValue('', asset[columnName].getValue());
+        tdValue = renderValue('', asset.fields[columnName].value);
       }
       $tbody.append($('<td>').append(tdValue));
     });
