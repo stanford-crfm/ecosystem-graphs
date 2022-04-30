@@ -37,12 +37,13 @@ class Asset {
     // Set the parameters
     this.schema = schema;
     this.type = getField(item, 'type');
+    // This field is an object matching field_name => AssetField
     this.fields = {};
 
     // Loop through the schema to populate the asset fields
     schema.fields.forEach((schemaField) => {
 
-      // The assset fields we will populate */
+      // The assset fields we will populate
       let value = null, explanation = null;
     
       // We expect each assetField to have a value and an explanation.
