@@ -26,14 +26,6 @@ class AssetField {
     this.value = value;
     this.explanation = explanation;
   }
-
-  getValue() {
-    return this.value;
-  }
-
-  getExplanation() {
-    return this.explanation;
-  }
  }
 
 /**
@@ -43,14 +35,16 @@ class Asset {
 
   constructor(item, schema) {
     // Set the parameters
-    this.schema = new AssetField(schema, null);
-    this.type = new AssetField(getField(item, 'type'), null);
+    this.schema = schema;
+    this.type = getField(item, 'type');
+    // This field is an object matching field_name => AssetField
+    this.fields = {};
 
     // Loop through the schema to populate the asset fields
     schema.fields.forEach((schemaField) => {
 
-      // The assset field we will populate */
-      const assetField = new AssetField();
+      // The assset fields we will populate
+      let value = null, explanation = null;
     
       // We expect each assetField to have a value and an explanation.
       // When reading the field from the schemaFieldValue, we populate each of
@@ -63,26 +57,24 @@ class Asset {
       //     AssetField, and leave the explanation as null.
       const schemaFieldValue = getField(item, schemaField.name);
       if ((typeof schemaFieldValue === 'object') && !(schemaFieldValue instanceof Array)) {
-        assetField.value = getField(schemaFieldValue, 'value');
-        assetField.explanation = schemaFieldValue.explanation
+        value = getField(schemaFieldValue, 'value');
+        explanation = schemaFieldValue.explanation;
       } else {
-        assetField.value = schemaFieldValue;
+        value = schemaFieldValue;
       }
 
       // Once value is extracted, we perform type checking.
       if (schemaField.type === 'list') {
-        if (!(assetField.value instanceof Array)) {
-          console.error('Expected list for', schemaField.name, 'but got', assetField.value);
+        if (!(value instanceof Array)) {
+          console.error('Expected list for', schemaField.name, 'but got', value);
         }
       } else {
-        if (!['string', 'number', 'boolean'].includes(typeof(assetField.value)) && !(assetField.value instanceof Date)) {
-          console.error('Expected string, number, boolean, or date for', schemaField.name, 'but got', assetField.value);
+        if (!['string', 'number', 'boolean'].includes(typeof(value)) && !(value instanceof Date)) {
+          console.error('Expected string, number, boolean, or date for', schemaField.name, 'but got', value);
         }
       }
 
-      // Assigning the assetField value to be a field of this asset
-      // @TODO Refactor the code to work with the AssetField object.
-      this[schemaField.name] = assetField;
+      this.fields[schemaField.name] = new AssetField(value, explanation);
     });
 
     // Print warnings about any extraneous fields
@@ -93,7 +85,7 @@ class Asset {
     }
 
     // To be filled out later
-    this.downstreamAssets = new AssetField([], null);
+    this.downstreamAssets = [];
   }
 }
 
@@ -141,7 +133,7 @@ function renderAssetLink(nameToAsset, assetName) {
   if (!asset) {
     return assetName;
   }
-  const href = encodeUrlParams({asset: asset.name.getValue()});
+  const href = encodeUrlParams({asset: asset.fields.name.value});
   return $('<a>', {href, target: 'blank_'}).append(assetName);
 }
 
@@ -157,17 +149,17 @@ function renderAsset(nameToAsset, assetName) {
 
   const $card = $('<div>');
 
-  $card.append($('<h3>').append(asset.name.getValue()));
+  $card.append($('<h3>').append(asset.fields.name.value));
 
   // Render upstream and downstream assets
-  $card.append($('<div>', {class: 'block'}).append('Upstream: ').append(renderAssetLinks(nameToAsset, asset.dependencies.getValue())));
-  $card.append($('<div>', {class: 'block'}).append('Downstream: ').append(renderAssetLinks(nameToAsset, asset.downstreamAssets.getValue())));
+  $card.append($('<div>', {class: 'block'}).append('Upstream: ').append(renderAssetLinks(nameToAsset, asset.fields.dependencies.value)));
+  $card.append($('<div>', {class: 'block'}).append('Downstream: ').append(renderAssetLinks(nameToAsset, asset.downstreamAssets)));
 
   // Render a single asset
   const $table = $('<table>', {class: 'table'});
   const $tbody = $('<tbody>');
-  asset.schema.getValue().fields.forEach((schemaField) => {
-    const value = asset[schemaField.name].getValue();
+  asset.schema.fields.forEach((schemaField) => {
+    const value = asset.fields[schemaField.name].value;
 
     $tbody.append($('<tr>')
       .append($('<td>').append(renderField(schemaField)))
@@ -236,15 +228,15 @@ function renderAssetsTable(nameToAsset) {
   const $tbody = $('<tbody>');
   for (let name in nameToAsset) {
     const asset = nameToAsset[name];
-    const href = encodeUrlParams({asset: asset.name.getValue()});
-    const size = 'size' in asset ? asset.size.getValue() : null;
+    const href = encodeUrlParams({asset: asset.fields.name.value});
+    const size = 'size' in asset ? asset.fields.size.value : null;
     $tbody.append($('<tr>')
-      .append($('<td>').append(asset.type.getValue()))
-      .append($('<td>').append($('<a>', {href, target: 'blank_'}).append(asset.name.getValue())))
-      .append($('<td>').append(renderValue('', asset.organization.getValue())))
-      .append($('<td>').append(renderValue('', asset.created_date.getValue())))
+      .append($('<td>').append(asset.type))
+      .append($('<td>').append($('<a>', {href, target: 'blank_'}).append(asset.fields.name.value)))
+      .append($('<td>').append(renderValue('', asset.fields.organization.value)))
+      .append($('<td>').append(renderValue('', asset.fields.created_date.value)))
       .append($('<td>').append(renderValue('', size)))
-      .append($('<td>').append(renderAssetLinks(nameToAsset, asset.dependencies.getValue())))
+      .append($('<td>').append(renderAssetLinks(nameToAsset, asset.fields.dependencies.value)))
     );
   }
   $table.append($tbody);
@@ -273,18 +265,18 @@ function renderAssetsGraph(nameToAsset) {
   Object.values(nameToAsset).forEach((asset) => {
     nodes.push({
       data: {
-        id: asset.name.getValue(),
-        shape: typeToShape[asset.type.getValue()],
-        color: typeToColor[asset.type.getValue()],
+        id: asset.fields.name.value,
+        shape: typeToShape[asset.type],
+        color: typeToColor[asset.type],
       },
     });
 
-    asset.dependencies.getValue().forEach((dep) => {
+    asset.fields.dependencies.value.forEach((dep) => {
       edges.push({
         data: {
-          id: asset.name.getValue() + '->' + dep,
+          id: asset.fields.name.value + '->' + dep,
           source: dep,
-          target: asset.name.getValue(),
+          target: asset.fields.name.value,
         },
       });
     });
@@ -356,13 +348,13 @@ function render(urlParams, nameToAsset) {
 function updateDownstreamAssets(nameToAsset) {
   // Use each asset's dependencies (upstream pointers) to update the corresponding downstream pointers.
   Object.values(nameToAsset).forEach((asset) => {
-    asset.dependencies.getValue().forEach((dep) => {
+    asset.fields.dependencies.value.forEach((dep) => {
       if (!(dep in nameToAsset)) {
         console.error('The node ', dep, 'does not exist in the graph.');
       }
       const depAsset = nameToAsset[dep];
       if (depAsset) {
-        depAsset.downstreamAssets.value.push(asset.name.getValue());
+        depAsset.downstreamAssets.push(asset.fields.name.value);
       }
     });
   });
