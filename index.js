@@ -181,6 +181,47 @@ function renderAsset(nameToAsset, assetName) {
   return $card;
 }
 
+function turnToDisplayName(name) {
+  const capitalized = name.charAt(0).toUpperCase() + name.slice(1);
+  return capitalized.replace('_', ' ');
+}
+
+function renderCustomTable(selectedNameToAsset, allNameToAsset, columnProperties) {
+  const $table = $('<table>', {class: 'table'});
+  $table.append($('<thead>').append($('<tr>')));
+  columnProperties.forEach( (columnName) => {
+    $table.append($('<td>').append(turnToDisplayName(columnName)));
+  });
+  const $tbody = $('<tbody>');
+  for (let name in selectedNameToAsset) {
+    const asset = selectedNameToAsset[name];
+    $tbody.append($('<tr>'));
+    columnProperties.forEach( (columnName) => {
+      let tdValue = null;
+      if (columnName === 'name') {
+        const href = encodeUrlParams({asset: asset.name.getValue()});
+        tdValue = $('<a>', {href, target: 'blank_'}).append(asset.name.getValue());
+      } else if (columnName === 'dependencies') {
+        tdValue = renderAssetLinks(allNameToAsset, asset.dependencies.getValue());
+      } else {
+        tdValue = renderValue('', asset[columnName].getValue());
+      }
+      $tbody.append($('<td>').append(tdValue));
+    });
+  }
+  $table.append($tbody);
+  return $table;
+}
+
+function renderHome(allNameToAsset) {
+  // Render the home page
+  // @TODO once all the date values are refactored, pick the latest 5
+  const latestModelNames = ["DALL·E 2", "Codex", "InstructGPT", "GPT-NeoX-20B"];
+  const columnProperties = ['name', 'organization', 'created_date', 'access', 'size', 'dependencies'];
+  const latestNameToAsset = latestModelNames.reduce((obj, key) => (obj[key] = allNameToAsset[key], obj), {});
+  return renderCustomTable(latestNameToAsset, allNameToAsset, columnProperties);
+}
+
 function renderAssetsTable(nameToAsset) {
   // Render a list of assets
   const $table = $('<table>', {class: 'table'});
@@ -305,10 +346,12 @@ function render(urlParams, nameToAsset) {
     return renderAsset(nameToAsset, urlParams.asset);
   } else if (urlParams.mode === 'graph') {
     return renderAssetsGraph(nameToAsset);
-  } else {
+  } else if (urlParams.mode === 'table') {
     return renderAssetsTable(nameToAsset);
+  } else {
+    return renderHome(nameToAsset);
   }
-}
+ } 
 
 function updateDownstreamAssets(nameToAsset) {
   // Use each asset's dependencies (upstream pointers) to update the corresponding downstream pointers.
