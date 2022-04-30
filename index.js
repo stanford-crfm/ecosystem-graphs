@@ -17,28 +17,70 @@ class Schema {
   }
 }
 
-class Asset {
-  constructor(raw, schema) {
-    this.schema = schema;
+/**
+ * AssetField represents a field of an Asset. Each AssetField has a value and
+ * an optional explanation for the value.
+ */
+class AssetField {
+  constructor(value, explanation) {
+    this.value = value;
+    this.explanation = explanation;
+  }
+ }
 
-    this.type = getField(raw, 'type');
-    schema.fields.forEach((field) => {
-      const value = getField(raw, field.name);
-      if (field.type === 'list') {
+/**
+ * An Asset in the ecosystem.
+ */
+class Asset {
+
+  constructor(item, schema) {
+    // Set the parameters
+    this.schema = schema;
+    this.type = getField(item, 'type');
+    // This field is an object matching field_name => AssetField
+    this.fields = {};
+
+    // Loop through the schema to populate the asset fields
+    schema.fields.forEach((schemaField) => {
+
+      // The assset fields we will populate
+      let value = null, explanation = null;
+    
+      // We expect each assetField to have a value and an explanation.
+      // When reading the field from the schemaFieldValue, we populate each of
+      // these fields as follows: 
+      // (1) If the schemaFieldValue is an object that is not an Array, we try
+      //     to read 'value' and 'explanation' fields to the respective fields
+      //     in the AssetField. If the explanation field is not provided, we
+      //     would read null.
+      // (2) Otheriwise, we directly read schemaFieldValue to the value of 
+      //     AssetField, and leave the explanation as null.
+      const schemaFieldValue = getField(item, schemaField.name);
+      if ((typeof schemaFieldValue === 'object') && !(schemaFieldValue instanceof Array)) {
+        value = getField(schemaFieldValue, 'value');
+        explanation = schemaFieldValue.explanation;
+      } else {
+        value = schemaFieldValue;
+      }
+
+      // Once value is extracted, we perform type checking.
+      if (schemaField.type === 'list') {
         if (!(value instanceof Array)) {
-          console.error('Expected list for', field.name, 'but got', value);
+          console.error('Expected list for', schemaField.name, 'but got', value);
         }
       } else {
         if (!['string', 'number', 'boolean'].includes(typeof(value)) && !(value instanceof Date)) {
-          console.error('Expected string, number, or boolean for', field.name, 'but got', value);
+          console.error('Expected string, number, boolean, or date for', schemaField.name, 'but got', value);
         }
       }
-      this[field.name] = value;
+
+      this.fields[schemaField.name] = new AssetField(value, explanation);
     });
+
     // Print warnings about any extraneous fields
-    for (let key in raw) {
+    for (let key in item) {
       if (key != 'type' && !schema.hasField(key)) {
-        console.error('Extra key', key, 'in', raw);
+        console.error('Extra key', key, 'in', item);
       }
     }
 
@@ -65,9 +107,9 @@ function renderList(items) {
   return $list;
 }
 
-function renderField(field) {
-  const text = field.name.replace(/_/g, ' ');
-  return $('<div>').append(text).append(helpIcon(field.description, '#'));
+function renderField(schemaField) {
+  const text = schemaField.name.replace(/_/g, ' ');
+  return $('<div>').append(text).append(helpIcon(schemaField.description, '#'));
 }
 
 function renderValue(type, value) {
@@ -91,7 +133,7 @@ function renderAssetLink(nameToAsset, assetName) {
   if (!asset) {
     return assetName;
   }
-  const href = encodeUrlParams({asset: asset.name});
+  const href = encodeUrlParams({asset: asset.fields.name.value});
   return $('<a>', {href, target: 'blank_'}).append(assetName);
 }
 
@@ -107,21 +149,21 @@ function renderAsset(nameToAsset, assetName) {
 
   const $card = $('<div>');
 
-  $card.append($('<h3>').append(asset.name));
+  $card.append($('<h3>').append(asset.fields.name.value));
 
   // Render upstream and downstream assets
-  $card.append($('<div>', {class: 'block'}).append('Upstream: ').append(renderAssetLinks(nameToAsset, asset.dependencies)));
+  $card.append($('<div>', {class: 'block'}).append('Upstream: ').append(renderAssetLinks(nameToAsset, asset.fields.dependencies.value)));
   $card.append($('<div>', {class: 'block'}).append('Downstream: ').append(renderAssetLinks(nameToAsset, asset.downstreamAssets)));
 
   // Render a single asset
   const $table = $('<table>', {class: 'table'});
   const $tbody = $('<tbody>');
-  asset.schema.fields.forEach((field) => {
-    const value = asset[field.name];
+  asset.schema.fields.forEach((schemaField) => {
+    const value = asset.fields[schemaField.name].value;
 
     $tbody.append($('<tr>')
-      .append($('<td>').append(renderField(field)))
-      .append($('<td>').append(field.name === 'dependencies' ? renderAssetLinks(nameToAsset, value) : renderValue(field.type, value)))
+      .append($('<td>').append(renderField(schemaField)))
+      .append($('<td>').append(schemaField.name === 'dependencies' ? renderAssetLinks(nameToAsset, value) : renderValue(schemaField.type, value)))
     );
   });
 
@@ -145,14 +187,15 @@ function renderAssetsTable(nameToAsset) {
   const $tbody = $('<tbody>');
   for (let name in nameToAsset) {
     const asset = nameToAsset[name];
-    const href = encodeUrlParams({asset: asset.name});
+    const href = encodeUrlParams({asset: asset.fields.name.value});
+    const size = 'size' in asset ? asset.fields.size.value : null;
     $tbody.append($('<tr>')
       .append($('<td>').append(asset.type))
-      .append($('<td>').append($('<a>', {href, target: 'blank_'}).append(asset.name)))
-      .append($('<td>').append(asset.organization))
-      .append($('<td>').append(renderValue('', asset.created_date)))
-      .append($('<td>').append(renderValue('', asset.size)))
-      .append($('<td>').append(renderAssetLinks(nameToAsset, asset.dependencies)))
+      .append($('<td>').append($('<a>', {href, target: 'blank_'}).append(asset.fields.name.value)))
+      .append($('<td>').append(renderValue('', asset.fields.organization.value)))
+      .append($('<td>').append(renderValue('', asset.fields.created_date.value)))
+      .append($('<td>').append(renderValue('', size)))
+      .append($('<td>').append(renderAssetLinks(nameToAsset, asset.fields.dependencies.value)))
     );
   }
   $table.append($tbody);
@@ -181,18 +224,18 @@ function renderAssetsGraph(nameToAsset) {
   Object.values(nameToAsset).forEach((asset) => {
     nodes.push({
       data: {
-        id: asset.name,
+        id: asset.fields.name.value,
         shape: typeToShape[asset.type],
         color: typeToColor[asset.type],
       },
     });
 
-    asset.dependencies.forEach((dep) => {
+    asset.fields.dependencies.value.forEach((dep) => {
       edges.push({
         data: {
-          id: asset.name + '->' + dep,
+          id: asset.fields.name.value + '->' + dep,
           source: dep,
-          target: asset.name,
+          target: asset.fields.name.value,
         },
       });
     });
@@ -223,7 +266,6 @@ function renderAssetsGraph(nameToAsset) {
             'text-max-width': 30,
             'text-valign': 'center',
             'color': 'white',
-            'text-size': 20,
             'padding': 40,
           },
         },
@@ -263,13 +305,13 @@ function render(urlParams, nameToAsset) {
 function updateDownstreamAssets(nameToAsset) {
   // Use each asset's dependencies (upstream pointers) to update the corresponding downstream pointers.
   Object.values(nameToAsset).forEach((asset) => {
-    asset.dependencies.forEach((dep) => {
+    asset.fields.dependencies.value.forEach((dep) => {
       if (!(dep in nameToAsset)) {
         console.error('The node ', dep, 'does not exist in the graph.');
       }
       const depAsset = nameToAsset[dep];
       if (depAsset) {
-        depAsset.downstreamAssets.push(asset.name);
+        depAsset.downstreamAssets.push(asset.fields.name.value);
       }
     });
   });
