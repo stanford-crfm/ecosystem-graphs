@@ -115,9 +115,9 @@ function renderList(items) {
   return $list;
 }
 
-function renderField(field) {
-  const text = field.name.getValue().replace(/_/g, ' ');
-  return $('<div>').append(text).append(helpIcon(field.description.getValue(), '#'));
+function renderField(schemaField) {
+  const text = schemaField.name.replace(/_/g, ' ');
+  return $('<div>').append(text).append(helpIcon(schemaField.description, '#'));
 }
 
 function renderValue(type, value) {
@@ -166,12 +166,12 @@ function renderAsset(nameToAsset, assetName) {
   // Render a single asset
   const $table = $('<table>', {class: 'table'});
   const $tbody = $('<tbody>');
-  asset.schema.fields.forEach((field) => {
-    const value = asset[field.name.getValue()];
+  asset.schema.getValue().fields.forEach((schemaField) => {
+    const value = asset[schemaField.name].getValue();
 
     $tbody.append($('<tr>')
-      .append($('<td>').append(renderField(field)))
-      .append($('<td>').append(field.name.getValue() === 'dependencies' ? renderAssetLinks(nameToAsset, value) : renderValue(field.type.getValue(), value)))
+      .append($('<td>').append(renderField(schemaField)))
+      .append($('<td>').append(schemaField.name === 'dependencies' ? renderAssetLinks(nameToAsset, value) : renderValue(schemaField.type, value)))
     );
   });
 
@@ -200,7 +200,7 @@ function renderAssetsTable(nameToAsset) {
     $tbody.append($('<tr>')
       .append($('<td>').append(asset.type.getValue()))
       .append($('<td>').append($('<a>', {href, target: 'blank_'}).append(asset.name.getValue())))
-      .append($('<td>').append(asset.organization.getValue()))
+      .append($('<td>').append(renderValue('', asset.organization.getValue())))
       .append($('<td>').append(renderValue('', asset.created_date.getValue())))
       .append($('<td>').append(renderValue('', size)))
       .append($('<td>').append(renderAssetLinks(nameToAsset, asset.dependencies.getValue())))
@@ -274,7 +274,6 @@ function renderAssetsGraph(nameToAsset) {
             'text-max-width': 30,
             'text-valign': 'center',
             'color': 'white',
-            'text-size': 20,
             'padding': 40,
           },
         },
