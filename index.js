@@ -198,9 +198,6 @@ function renderCustomTable(selectedAssets, allNameToAsset, columnNames) {
   selectedAssets.forEach( (asset) => {
     $tbody.append($('<tr>'));
     columnNames.forEach( (columnName) => {
-      console.log("asset");
-      console.log(asset);
-      console.log(columnName);
       let tdValue = null;
       if (columnName === 'type') {
         tdValue = renderValue('', asset.type);
