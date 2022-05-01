@@ -198,12 +198,20 @@ function renderCustomTable(selectedAssets, allNameToAsset, columnNames) {
   selectedAssets.forEach( (asset) => {
     $tbody.append($('<tr>'));
     columnNames.forEach( (columnName) => {
+      console.log("asset");
+      console.log(asset);
+      console.log(columnName);
       let tdValue = null;
-      if (columnName === 'name') {
+      if (columnName === 'type') {
+        tdValue = renderValue('', asset.type);
+      } else if (columnName === 'name') {
         const href = encodeUrlParams({asset: asset.fields.name.value});
         tdValue = $('<a>', {href, target: 'blank_'}).append(asset.fields.name.value);
       } else if (columnName === 'dependencies') {
         tdValue = renderAssetLinks(allNameToAsset, asset.fields.dependencies.value);
+      } else if (columnName === 'size') {
+        const size = 'size' in asset.fields ? asset.fields.size.value : null;
+        tdValue = renderValue('', size);
       } else {
         tdValue = renderValue(asset.fields[columnName].type, asset.fields[columnName].value);
       }
@@ -218,38 +226,16 @@ function renderHome(allNameToAsset) {
   // Render the home page
   // @TODO once all the date values are refactored, pick the latest 5
   const latestModelNames = ["DALL·E 2", "Codex", "InstructGPT", "GPT-NeoX-20B"];
-  const columnProperties = ['name', 'organization', 'created_date', 'access', 'size', 'dependencies'];
-  const selectedAssets = latestModelNames.map( (key) => (allNameToAsset[key]) );
-  return renderCustomTable(selectedAssets, allNameToAsset, columnProperties);
+  const columnNames = ['name', 'organization', 'created_date', 'access', 'size', 'dependencies'];
+  const selectedAssets = latestModelNames.map((key) => (allNameToAsset[key]));
+  return renderCustomTable(selectedAssets, allNameToAsset, columnNames);
 }
 
 function renderAssetsTable(nameToAsset) {
   // Render a list of assets
-  const $table = $('<table>', {class: 'table'});
-  $table.append($('<thead>').append($('<tr>')
-    .append($('<td>').append('Type'))
-    .append($('<td>').append('Name'))
-    .append($('<td>').append('Organization'))
-    .append($('<td>').append('Created date'))
-    .append($('<td>').append('Size'))
-    .append($('<td>').append('Dependencies'))
-  ));
-  const $tbody = $('<tbody>');
-  for (let name in nameToAsset) {
-    const asset = nameToAsset[name];
-    const href = encodeUrlParams({asset: asset.fields.name.value});
-    const size = 'size' in asset ? asset.fields.size.value : null;
-    $tbody.append($('<tr>')
-      .append($('<td>').append(asset.type))
-      .append($('<td>').append($('<a>', {href, target: 'blank_'}).append(asset.fields.name.value)))
-      .append($('<td>').append(renderValue('', asset.fields.organization.value)))
-      .append($('<td>').append(renderValue('', asset.fields.created_date.value)))
-      .append($('<td>').append(renderValue('', size)))
-      .append($('<td>').append(renderAssetLinks(nameToAsset, asset.fields.dependencies.value)))
-    );
-  }
-  $table.append($tbody);
-  return $table;
+  const columnNames = ['type', 'name', 'organization', 'created_date', 'size', 'dependencies'];
+  const assets = Object.keys(nameToAsset).map((key) => (nameToAsset[key]));
+  return renderCustomTable(assets, nameToAsset, columnNames);
 }
 
 function renderAssetsGraph(nameToAsset) {
