@@ -173,22 +173,31 @@ function renderAsset(nameToAsset, assetName) {
   return $card;
 }
 
-function turnToDisplayName(name) {
-  const capitalized = name.charAt(0).toUpperCase() + name.slice(1);
+function renderFieldName(fieldName) {
+  // Capitalizes and removes '_' from a fieldName (which should be a field name
+  // from the schema, such as created_date, name, etc.)
+  const capitalized = fieldName.charAt(0).toUpperCase() + fieldName.slice(1);
   return capitalized.replace('_', ' ');
 }
-
-function renderCustomTable(selectedNameToAsset, allNameToAsset, columnProperties) {
+/**
+ * Renders a table given the column properties.
+ * @param {Array.<Asset>} selectedAssets - Array of the assets that will be
+ *   rendered in the custom table.
+ * @param {Object.<string, Asset>} allNameToAsset - Object mapping the names of
+ *   all the assets in the ecosystem to their Asset representation.
+ * @param {Array.<string>} columnNames - Columns that will be included in the
+ *   table.
+ */
+function renderCustomTable(selectedAssets, allNameToAsset, columnNames) {
   const $table = $('<table>', {class: 'table'});
   $table.append($('<thead>').append($('<tr>')));
-  columnProperties.forEach( (columnName) => {
-    $table.append($('<td>').append(turnToDisplayName(columnName)));
+  columnNames.forEach( (columnName) => {
+    $table.append($('<td>').append(renderFieldName(columnName)));
   });
   const $tbody = $('<tbody>');
-  for (let name in selectedNameToAsset) {
-    const asset = selectedNameToAsset[name];
+  selectedAssets.forEach( (asset) => {
     $tbody.append($('<tr>'));
-    columnProperties.forEach( (columnName) => {
+    columnNames.forEach( (columnName) => {
       let tdValue = null;
       if (columnName === 'name') {
         const href = encodeUrlParams({asset: asset.fields.name.value});
@@ -196,11 +205,11 @@ function renderCustomTable(selectedNameToAsset, allNameToAsset, columnProperties
       } else if (columnName === 'dependencies') {
         tdValue = renderAssetLinks(allNameToAsset, asset.fields.dependencies.value);
       } else {
-        tdValue = renderValue('', asset.fields[columnName].value);
+        tdValue = renderValue(asset.fields[columnName].type, asset.fields[columnName].value);
       }
       $tbody.append($('<td>').append(tdValue));
     });
-  }
+  });
   $table.append($tbody);
   return $table;
 }
@@ -210,8 +219,8 @@ function renderHome(allNameToAsset) {
   // @TODO once all the date values are refactored, pick the latest 5
   const latestModelNames = ["DALL·E 2", "Codex", "InstructGPT", "GPT-NeoX-20B"];
   const columnProperties = ['name', 'organization', 'created_date', 'access', 'size', 'dependencies'];
-  const latestNameToAsset = latestModelNames.reduce((obj, key) => (obj[key] = allNameToAsset[key], obj), {});
-  return renderCustomTable(latestNameToAsset, allNameToAsset, columnProperties);
+  const selectedAssets = latestModelNames.map( (key) => (allNameToAsset[key]) );
+  return renderCustomTable(selectedAssets, allNameToAsset, columnProperties);
 }
 
 function renderAssetsTable(nameToAsset) {
@@ -341,7 +350,12 @@ function render(urlParams, nameToAsset) {
   } else if (urlParams.mode === 'table') {
     return renderAssetsTable(nameToAsset);
   } else {
-    return renderHome(nameToAsset);
+    const mode = urlParams.mode || 'home';
+    if (urlParams.mode === 'home') {
+      return renderHome(nameToAsset);
+    } else {
+      console.error('Unrecognized mode: ', mode, '.');
+    }
   }
  } 
 
