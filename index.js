@@ -336,7 +336,7 @@ function render(urlParams, nameToAsset) {
   } else if (urlParams.mode === 'table') {
     return renderAssetsTable(nameToAsset);
   } else {
-    renderError('Unrecognized mode: ', mode, '.');
+    return renderError('Unrecognized mode: ' + mode + '.');
   }
 } 
 
