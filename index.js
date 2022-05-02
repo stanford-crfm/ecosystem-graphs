@@ -191,13 +191,13 @@ function renderFieldName(fieldName) {
 function renderCustomTable(selectedAssets, allNameToAsset, columnNames) {
   const $table = $('<table>', {class: 'table'});
   $table.append($('<thead>').append($('<tr>')));
-  columnNames.forEach( (columnName) => {
+  columnNames.forEach((columnName) => {
     $table.append($('<td>').append(renderFieldName(columnName)));
   });
   const $tbody = $('<tbody>');
-  selectedAssets.forEach( (asset) => {
+  selectedAssets.forEach((asset) => {
     $tbody.append($('<tr>'));
-    columnNames.forEach( (columnName) => {
+    columnNames.forEach((columnName) => {
       let tdValue = null;
       if (columnName === 'type') {
         tdValue = renderValue('', asset.type);
@@ -337,10 +337,10 @@ function render(urlParams, nameToAsset) {
     if (urlParams.mode === 'home') {
       return renderHome(nameToAsset);
     } else {
-      console.error('Unrecognized mode: ', mode, '.');
+      renderError('Unrecognized mode: ', mode, '.');
     }
   }
- } 
+} 
 
 function updateDownstreamAssets(nameToAsset) {
   // Use each asset's dependencies (upstream pointers) to update the corresponding downstream pointers.
