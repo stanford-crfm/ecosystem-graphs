@@ -4,9 +4,14 @@
   name: Internal Google BERT dataset
   # General
   organization: Google
-  description: TODO
-  created_date: None
-  url: None
+  description: >
+    The dataset used to train BERT for internal applications at Google.
+  created_date:
+    value: 2019-11-25
+    explanation: >
+      The date of the Google product update blog announcing that BERT models
+      were for ranking and featured snippets in Search.
+  url: https://blog.google/products/search/search-language-understanding-bert/
   datasheet: None
   modality: text
   size: Unknown
@@ -14,91 +19,368 @@
   analysis: Unknown
   # Construction
   dependencies: []
-  license: None
-  included: Web pages
+  license: Unknown
+  included:
+    value: >
+      Although we don't exactly know the contents of the Internal Google BERT
+      dataset, it likely includes contents from web pages and search queries.
   excluded: Unknown
   quality_control: Unknown
   # Downstream
-  access: None
-  intended_uses: None
-  prohibited_uses: None
-  monitoring: None
-  feedback: None
+  access: No public access
+  intended_uses:
+    value: Unknown
+    explanation: >
+      We don't have an exhaustive list of the intended use cases for the
+      Internal Google BERT dataset, but we know that Google Search was powered
+      by a fine-tuned BERT.
+  prohibited_uses: Unknown
+  monitoring: Unknown
+  feedback: Unknown
 
 - type: model
   name: Internal Google BERT
   # General
   organization: Google
-  description: TODO
-  created_date: TODO
-  url: TODO
-  model_card: TODO
+  description: >
+    Internal Google BERT model used to power Google Search products.
+  created_date:
+    value: 2019-11-25
+    explanation: >
+      The date of the Google product update blog announcing that BERT models
+      were for ranking and featured snippets in Search.
+  url: https://blog.google/products/search/search-language-understanding-bert/
+  model_card: Unknown
   modality: text
-  size: TODO
-  analysis: TODO
+  size: Unknown
+  analysis: Unknown
   # Construction
   dependencies:
-  - Internal Google BERT dataset
-  training_emissions: TODO
-  training_time: TODO
-  training_hardware: TODO
+    - Internal Google BERT dataset
+  training_emissions: Unknown
+  training_time: Unknown
+  training_hardware: Unknown
   quality_control: Unknown
   # Downstream
-  access: None
-  license: None
-  intended_uses: None
-  prohibited_uses: None
-  monitoring: None
-  feedback: None
-
+  access: No public access
+  license: Unknown
+  intended_uses:
+    value: Unknown
+    explanation: >
+      We don't have an exhaustive list of the intended use cases for the
+      Internal Google BERT model, but we know that Google Search was powered
+      by a fine-tuned BERT.
+  prohibited_uses: Unknown
+  monitoring: Unknown
+  feedback: Unknown
 
 - type: application
-  name: Google search
+  name: Google Search
   # General
   organization: Google
-  description: TODO
-  created_date: 2019
-  url: https://searchengineland.com/google-bert-used-on-almost-every-english-query-342193
+  description: >
+    Google Search is Google's search engine, which allows searching the
+    internet using natural language queries.
+  created_date:
+    value: 2019-11-25
+    explanation: >
+      The date of the Google product update blog announcing that BERT models
+      were for ranking and featured snippets in Search.
+  url: https://blog.google/products/search/search-language-understanding-bert/
   # Construction
   dependencies:
-  - Internal Google BERT
-  adaptation: None?
+    - Internal Google BERT
+  adaptation: None
   output_space: web page ranking
-  quality_control: TODO
+  quality_control: Unknown
   # Downstream
-  access: TODO
-  license: TODO
-  terms_of_service: TODO
-  intended_uses: TODO
-  prohibited_uses: TODO
-  monitoring: TODO
-  feedback: TODO
+  access: Full public access
+  license: >
+    As listed in the [[Term of Service]](https://policies.google.com/terms),
+    Google search is bounded by the Google license terms. Users get to keep the
+    license to their own content, but any information provided that can be
+    considered public information isn't licensed to the users.
+  terms_of_service: https://policies.google.com/terms
+  intended_uses: Searching the web using text, voice or image
+  prohibited_uses: >
+    Prohibited use cases aren't specifically spelled out for Google search, but
+    several illegal and discouraged use cases are shared in the Respect Others
+    section of the [[Term of Service]](https://policies.google.com/terms).
+  monitoring: >
+    It is implied that Google scan uses of its products for spam,
+    malware and illegal content in the
+    [[Term of Service]](https://policies.google.com/terms).
+  feedback: >
+    Feedback can be sent to Google Feedback using the product interface
+    [[Google Feedback]](https://www.google.com/tools/feedback).
   # Deployment
-  monthly_active_users: TODO
-  user_distribution: TODO
-  failures: TODO
+  monthly_active_users: Unknown
+  user_distribution: Unknown
+  failures: Unknown
 
-- type: model
-  name: LamDA
+- type: dataset
+  name: Infiniset
   # General
   organization: Google
-  description: TODO
-  created_date: TODO
+  description: >
+    Infiniset "is a combination of dialog data from public dialog data and
+    other public web documents"
+    [[Appendix E]](https://arxiv.org/pdf/2201.08239.pdf#appendix.E).
+  created_date:
+    value: 2021-06-18
+    explanation: >
+      The date of the Google company news blog announcing LaMDA
+      [[Google News Blog]](https://blog.google/technology/ai/lamda/).
   url: https://arxiv.org/pdf/2201.08239.pdf
-  model_card: TODO
-  modality: text
-  size: TODO
-  analysis: TODO
+  datasheet: None
+  modality: Text and code
+  size:
+    value: Unknown
+    explanation: >
+      The size of the dataset is unclear, but it is reported that the dataset
+      "consists of 2.97B documents and 1.12B dialogs with 13.39B utterances"
+      [[Appendix E]](https://arxiv.org/pdf/2201.08239.pdf#appendix.E).
+  sample: []
+  analysis: Unknown
   # Construction
   dependencies: []
-  training_emissions: TODO
-  training_time: TODO
-  training_hardware: TODO
-  quality_control: TODO
+  license: Unknown
+  included: >
+    Included in the dataset are data from "public forums (0%); C4 data (12.5% );
+    code documents from sites related to programming like Q&A sites tutorials,
+    etc (12.5%); Wikipedia (English) (12.5%); English web documents (6.25%);
+    and Non-English web documents (6.25%).
+  excluded: Unknown
+  quality_control: Unknown
   # Downstream
-  access: None
-  license: None
-  intended_uses: None
-  prohibited_uses: None
-  monitoring: None
-  feedback: None
+  access: No public access
+  intended_uses:
+    value: Unknown
+    explanation: >
+      Intended uses of the dataset wasn't explicitly linked, but it is likely
+      intended for training language models specialized in dialogue.
+  prohibited_uses: >
+    The prohibited uses for Infiniset weren't specifically listed, but the
+    Google AI principles inspired safety objectives in
+    [[Appendix A.1]](https://arxiv.org/pdf/2201.08239.pdf#subsection.A.1)
+    advises avoiding harm, unjust impact and misinformation, among others.
+  monitoring: Unknown
+  feedback:
+    value: None
+    explanation: >
+      Author contact information was not provided.
+
+- type: model
+  name: LaMDA
+  # General
+  organization: Google
+  description: >
+    LaMDA stands for Language Models for Dialog Application. It is a transformer
+    based language model trained on dialogue data.
+  created_date:
+    value: 2021-06-18
+    explanation: >
+      The date of the Google company news blog announcing LaMDA
+      [[Google News Blog]](https://blog.google/technology/ai/lamda/).
+  url: https://arxiv.org/pdf/2201.08239.pdf
+  model_card: None
+  modality: text
+  size:
+    value: 137B parameters (dense model)
+    explanation: >
+      Along with the 137B model, the authors also trained 2B and 8B LaMDA
+      models.
+  analysis: >
+    The model performance was analyzed on sensibleness, specificity and
+    interestingness.
+    The model was also analyzed on safety, following
+    metrics derived from Google AI Principles
+    [[Appendix A.1]](https://arxiv.org/pdf/2201.08239.pdf#subsection.A.1).
+    Finally, the model was analyzed on groundedness, testing its ability to
+    produce responses that can be associated with "known sources whenever
+    possible
+    [[Section 4.1]](https://arxiv.org/pdf/2201.08239.pdf#subsection.4.1).
+  # Construction
+  dependencies:
+    - Infiniset
+  training_emissions:
+    value: 26 tCO2e
+    explanation: >
+      "...total carbon footprint of LaMDA’s pre-training of the largest model
+      is approximately 25.2 tCO2e. The carbon footprint of pre-training of
+      smaller models and fine-tuning of all models is approximately 0.7 tCO2e
+      ... which brings the total footprint of LaMDA to approximately 26
+      tCO2e
+      [[Section 10]](https://arxiv.org/pdf/2201.08239.pdf#section.10)"
+  training_time:
+    value: 4108.80
+    explanation: >
+      The total number of training flops of LaMDA was reported as 3.55E+23
+      (3.55E+8 petaflops)
+      [[Section 10]](https://arxiv.org/pdf/2201.08239.pdf#section.10), which is
+      equal to 4108.80 = 3.55E+8 / (60 * 60 * 24) petaflop/s-day.
+  training_hardware:
+    value: 1024 TPU-V3 chips
+    explanation: >
+      Reported in [[Section 10]](https://arxiv.org/pdf/2201.08239.pdf#section.10).
+  quality_control: >
+    LaMDA was fine-tuned to predict sensibleness, specificity and
+    interestingness as well as safety. Then, the candidates were filtered out
+    if the model safety predictions were below a certain threshold. The next
+    candidates in the conversation were selected as a combination of these
+    predictions. The model was also fine-tuned for groundedness. The results
+    are shown in
+    [[Figure 5]](https://arxiv.org/pdf/2201.08239.pdf#figure.caption.23).
+  # Downstream
+  access: No public access
+  license: Unknown
+  intended_uses: >
+    LaMDA is a language model, so it can be used for regular langauge modelling
+    tasks without fine-tuning, but its fine-tuned for dialogue tasks.
+  prohibited_uses: >
+    The prohibited uses of LaMDA weren't specifically listed, but the Google
+    AI principles inspired safety objectives in
+    [[Appendix A.1]](https://arxiv.org/pdf/2201.08239.pdf#subsection.A.1)
+    advises avoiding harm, unjust impact and misinformation, among others.
+  monitoring: Unknown
+  feedback:
+    value: None
+    explanation: >
+      Author contact information was not provided.
+
+- type: dataset
+  name: PaLM dataset
+  # General
+  organization: Google
+  description: >
+    PaLM dataset "was created for pre-training language models"
+    [[Datasheet]](https://arxiv.org/pdf/2204.02311.pdf#appendix.D).
+  created_date:
+    value: 2022-04-04
+    explanation: >
+      The date of the Google AI blog announcing the details of PaLM
+      [[Google AI Blog]](https://ai.googleblog.com/2022/04/pathways-language-model-palm-scaling-to.html).
+  url: https://arxiv.org/pdf/2204.02311.pdf
+  datasheet: https://arxiv.org/pdf/2204.02311.pdf#appendix.D
+  modality: Text and code
+  size:
+    value: 3.92 TB
+    explanation: >
+      Dataset size in GB is not reported, but the dataset is reported to have
+      780 billion tokens
+      [[Datasheet]](https://arxiv.org/pdf/2204.02311.pdf#appendix.D).
+      The code portion of the dataset is reported to be 5% totaling a 196GB
+      of source code
+      [[Section 3]](https://arxiv.org/pdf/2204.02311.pdf#section.3).
+      It is unclear whether the reported size is before or after de-duplication.
+      Nonetheless, one can estimate the dataset size by multiplying 196GB with
+      20 = 3.92 TB.
+  sample: []
+  analysis: Unknown
+  # Construction
+  dependencies:
+    - Infiniset
+  license: Unknown
+  included: >
+    The dataset is based on Infiniset. It included multilingual text containing
+    text from over 100 languages. The breakdown of the data included is as
+    follows: Social media conversations (multilingual) 50, Filtered webpages
+    (multilingual) 27%, Books (English) 13%, GitHub (code) 5%, Wikipedia
+    (multilingual) 4%, and News (English) 1%.
+    Code was collected from GitHub repositories with appropriate licenses,
+    totalling 96GB of source code
+    [[Section 3]](https://arxiv.org/pdf/2204.02311.pdf#section.3).
+  excluded: >
+    GitHub repositories with copyleft licenses were excluded. Programming
+    languageges other than the most common 24 were excluded
+    [[Section 3]](https://arxiv.org/pdf/2204.02311.pdf#section.3).
+  quality_control: >
+    In order to reduce low quality web pages, the web pages were sampled
+    according to a "quality score" classifier.
+    Code files were de-duplicated using Levenshtein distance
+    [[Section 3]](https://arxiv.org/pdf/2204.02311.pdf#section.3).
+  # Downstream
+  access: No public access
+  intended_uses:
+    value: >
+      "The dataset was created for pre-training language models by a team of
+      researchers at Google".
+    explanation: >
+      As stated in
+      [[Datasheet]](https://arxiv.org/pdf/2204.02311.pdf#appendix.D).
+  prohibited_uses: >
+    "... should not be used for any of the unacceptable language model use
+    cases, e.g., generation of toxic speech"
+    [[Datasheet]](https://arxiv.org/pdf/2204.02311.pdf#appendix.D).
+  monitoring: Unknown
+  feedback:
+    value: Contact the authors.
+    explanation: >
+      Author contact information is shared in the paper
+      [[Paper]](https://arxiv.org/pdf/2204.02311.pdf).
+
+- type: model
+  name: PaLM
+  # General
+  organization: Google
+  description: >
+    PaLM stands Pathways Language Model, "dense decoder-only Transformer model
+    trained with the Pathways system"
+    [[Google ai Blog]](https://ai.googleblog.com/2022/04/pathways-language-model-palm-scaling-to.html).
+  created_date:
+    value: 2022-04-04
+    explanation: >
+      The date of the Google AI blog announcing the details of PaLM
+      [[Google AI Blog]](https://ai.googleblog.com/2022/04/pathways-language-model-palm-scaling-to.html).
+  url: https://arxiv.org/pdf/2204.02311.pdf
+  model_card: https://arxiv.org/pdf/2204.02311.pdf#appendix.E
+  modality: Text and Code
+  size: 540B parameters (dense model)
+  analysis: >
+    "PaLM is evaluated on English Natural Language Processing (NLP) tasks, tasks
+    from BIG-bench, reasoning tasks, code completion tasks, multilingual
+    generation and question answering tasks, translation tasks, and bias and
+    toxicity benchmarks"
+    [[Model Card]](https://arxiv.org/pdf/2204.02311.pdf#appendix.E).
+  # Construction
+  dependencies:
+    - PaLM dataset
+  training_emissions:
+    value: 271.43 tCO2
+    explanation: >
+      Reported in
+      [[Appendix B]](https://arxiv.org/pdf/2204.02311.pdf#appendix.A)
+  training_time:
+    value: 29600 petaflop/s-days
+    explanation: >
+      Reported in
+      [[Appendix B]](https://arxiv.org/pdf/2204.02311.pdf#appendix.A)
+  training_hardware:
+    value: 6144 TPU v4 chips
+    explanation: >
+      Reported in [[Section 4]](https://arxiv.org/pdf/2204.02311.pdf#section.4).
+  quality_control: Unknown
+  # Downstream
+  access: No public access
+  license: Unknown
+  intended_uses: >
+    "The primary use is research on language models, including: research
+    on NLP applications like machine translation and question answering,
+    advancing fairness and safety research, and understanding limitations of
+    current LLMs.
+    Within Google, PaLM is being used for research on a variety of open-
+    ended text and code generation tasks, including reasoning
+    [[Section 6.3]](https://arxiv.org/pdf/2204.02311.pdf#subsection.6.3)
+    and code synthesis and understanding
+    [[Section 6.4]](https://arxiv.org/pdf/2204.02311.pdf#subsection.6.4)"
+    [[Model Card]](https://arxiv.org/pdf/2204.02311.pdf#appendix.E).
+  prohibited_uses: >
+    The model "should not be used for downstream applications without further
+    analysis on factors in the proposed downstream application
+    [[Model Card]](https://arxiv.org/pdf/2204.02311.pdf#appendix.E).
+  monitoring: Unknown
+  feedback:
+    value: Contact the authors.
+    explanation: >
+      Author contact information is shared in the paper
+      [[Paper]](https://arxiv.org/pdf/2204.02311.pdf).
