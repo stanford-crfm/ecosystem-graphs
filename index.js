@@ -22,9 +22,10 @@ class Schema {
  * an optional explanation for the value.
  */
 class AssetField {
-  constructor(value, explanation) {
+  constructor(value, explanation, type) {
     this.value = value;
     this.explanation = explanation;
+    this.type = type;
   }
  }
 
@@ -44,7 +45,7 @@ class Asset {
     schema.fields.forEach((schemaField) => {
 
       // The assset fields we will populate
-      let value = null, explanation = null;
+      let value = null, explanation = null, type = schemaField.type;
     
       // We expect each assetField to have a value and an explanation.
       // When reading the field from the schemaFieldValue, we populate each of
@@ -74,7 +75,7 @@ class Asset {
         }
       }
 
-      this.fields[schemaField.name] = new AssetField(value, explanation);
+      this.fields[schemaField.name] = new AssetField(value, explanation, type);
     });
 
     // Print warnings about any extraneous fields
@@ -116,6 +117,8 @@ function renderValue(type, value) {
   const converter = new showdown.Converter();
   if (type === 'list') {
     return renderList(value.map((elemValue) => renderValue(null, elemValue)));
+  } else if (type == 'date') {
+    return value.toLocaleDateString();
   } else if (type === 'url' && value.indexOf('None') == -1 && value.indexOf('TODO') == -1) {
     return $('<a>', {href: value, target: 'blank_'}).append(value);
   } else {
@@ -207,6 +210,7 @@ function renderCustomTable(selectedAssets, allNameToAsset, columnNames) {
       } else if (columnName === 'dependencies') {
         tdValue = renderAssetLinks(allNameToAsset, asset.fields.dependencies.value);
       } else {
+        console.log(columnName);
         const type = columnName in asset.fields ? asset.fields[columnName].type : '';
         const value = columnName in asset.fields ? asset.fields[columnName].value : null;
         tdValue = renderValue(type, value);
