@@ -76,7 +76,7 @@
       [[Appendix D]](https://arxiv.org/pdf/2101.00027.pdf#appendix.1.D).
   # Downstream
   access:
-    value: Unlimited public access
+    value: Full public access
     explanation: >
       The dataset is freely available to the public and
       can be downloaded from The Eye
@@ -134,7 +134,7 @@
     value:  None
   # Downstream
   access:
-    value: Unlimited public access
+    value: Full public access
     explanation: >
       The model can be downloaded for free The Eye
       [[GPT-NeoX-20B]](https://mystic.the-eye.eu/public/AI/models/GPT-NeoX-20B/).

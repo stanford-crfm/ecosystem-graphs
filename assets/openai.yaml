@@ -138,7 +138,7 @@
       [[Section 2.2]](https://arxiv.org/pdf/2107.03374.pdf#subsection.2.2).
   # Downstream
   access:
-    value: Unlimited public access
+    value: Full public access
     explanation: >
       HumanEval dataset is publicly available and comes
       with a an evaluation framework
@@ -401,7 +401,7 @@
       [[Section 6]](https://arxiv.org/pdf/2005.14165.pdf#section.6).
   # Downstream
   access:
-    value: Limited API Access
+    value: Limited API access
     explanation: >
       The GPT-3 model isn't fully released to the public, but
       it was made available to Microsoft through the licencing agreement between
@@ -494,8 +494,8 @@
       implement them in Codex
       [[Section 7]](https://arxiv.org/pdf/2107.03374.pdf#section.7).
   # Downstream
-  access: >
-    value: Limited API Access
+  access:
+    value: Limited API access
     explanation: >
       The model is made available via the OpenAI API
       [[OpenAI API]](https://openai.com/api/). Full model access was granted to
@@ -797,7 +797,7 @@
   model_card: https://github.com/openai/dalle-2-preview/blob/main/system-card.md
   modality: Text (English) and Image
   size:
-    value: Unknown;
+    value: Unknown
   analysis:
     value: >
       The model is capable of generating explicit content and the researchers
@@ -825,8 +825,9 @@
       (https://github.com/openai/dalle-2-preview/blob/main/system-card.md#input-filters).
   # Downstream
   access:
-    value: >
-      Limited private access; The model is available to a select set of OpenAI
+    value: Limited private access
+    explanation: >
+      The model is available to a select set of OpenAI
       employees, researchers, creatives and company friends. OpenAI opened a
       waitlist for DALL·E 2 access.
       [[System Card]]
@@ -908,7 +909,7 @@
       [[OpenAI API]](https://openai.com/api/).
   # Downstream
   access:
-    value: Limited API Access
+    value: Limited API access
     explanation: >
       The OpenAI API is available to the public in supported countries
       [[Supported Countries]](https://beta.openai.com/docs/supported-countries)

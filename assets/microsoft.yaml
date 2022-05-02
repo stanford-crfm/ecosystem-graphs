@@ -34,7 +34,7 @@
       [[GitHub CoPilot]](https://copilot.github.com/).
   # Downstream
   access:
-    value: Limited API Access
+    value: Limited API access
     explanation: >
       The feature is available to developers in a restricted
       technical preview
