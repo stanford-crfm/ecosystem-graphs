@@ -326,19 +326,17 @@ function renderAssetsGraph(nameToAsset) {
 }
 
 function render(urlParams, nameToAsset) {
+  const mode = urlParams.mode || 'home';
   if (urlParams.asset) {
     return renderAsset(nameToAsset, urlParams.asset);
+  } else if (urlParams.mode === 'home') {
+    return renderHome(nameToAsset);
   } else if (urlParams.mode === 'graph') {
     return renderAssetsGraph(nameToAsset);
   } else if (urlParams.mode === 'table') {
     return renderAssetsTable(nameToAsset);
   } else {
-    const mode = urlParams.mode || 'home';
-    if (urlParams.mode === 'home') {
-      return renderHome(nameToAsset);
-    } else {
-      renderError('Unrecognized mode: ', mode, '.');
-    }
+    renderError('Unrecognized mode: ', mode, '.');
   }
 } 
 
