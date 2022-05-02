@@ -206,11 +206,10 @@ function renderCustomTable(selectedAssets, allNameToAsset, columnNames) {
         tdValue = $('<a>', {href, target: 'blank_'}).append(asset.fields.name.value);
       } else if (columnName === 'dependencies') {
         tdValue = renderAssetLinks(allNameToAsset, asset.fields.dependencies.value);
-      } else if (columnName === 'size') {
-        const size = 'size' in asset.fields ? asset.fields.size.value : null;
-        tdValue = renderValue('', size);
       } else {
-        tdValue = renderValue(asset.fields[columnName].type, asset.fields[columnName].value);
+        const type = columnName in asset.fields ? asset.fields[columnName].type : '';
+        const value = columnName in asset.fields ? asset.fields[columnName].value : null;
+        tdValue = renderValue(type, value);
       }
       $tbody.append($('<td>').append(tdValue));
     });
