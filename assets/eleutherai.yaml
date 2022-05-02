@@ -34,16 +34,18 @@
     the case of Green Mountain Marble Co. v. Highway Board, supra, and follow
     the Federal practice of looking to the evide
   analysis:
-    Analyses of the data's composition, document statistics,
-    language/dialectal coverage, topical distribution, and biases are
-    conducted are conducted in the paper
-    [[The Pile Paper]](https://arxiv.org/pdf/2101.00027.pdf).
+    value: >
+      Analyses of the data's composition, document statistics,
+      language/dialectal coverage, topical distribution, and biases are
+      conducted are conducted in the paper
+      [[The Pile Paper]](https://arxiv.org/pdf/2101.00027.pdf).
   # Construction
   dependencies: []
-  license: >
-    The Pile uses the MIT License, allowing proprietary or open source use
-    on the condition that the terms of the license as well as a copyright
-    notice [[MIT License]](https://arxiv.org/pdf/2201.07311.pdf).
+  license:
+    value: >
+      The Pile uses the MIT License, allowing proprietary or open source use
+      on the condition that the terms of the license as well as a copyright
+      notice [[MIT License]](https://arxiv.org/pdf/2201.07311.pdf).
   included: >
     The Pile data come from 22 sources, with over half of the data being from
     Common Crawl (Pile-CC; 227GB), fiction and nonfiction books (Books3; 101GB),
@@ -63,28 +65,33 @@
     corpus would require significant investigation, and corpus contain
     significant amount of stereotyping
     [[Appendix B]](https://arxiv.org/pdf/2101.00027.pdf).
-  quality_control: >
-    In addition to the data inclusion and exclusion decisions, the quality was
-    controlled through filtering for English (pycld2 language classifier),
-    filtering for documents similar to OpenWebText2 (classifier on CommonCrawl),
-    and several forms of deduplication as detailed in the paper
-    [[Appendix C]](https://arxiv.org/pdf/2101.00027.pdf#appendix.1.C)
-    [[Appendix D]](https://arxiv.org/pdf/2101.00027.pdf#appendix.1.D).
+  quality_control:
+    value: >
+      In addition to the data inclusion and exclusion decisions, the quality was
+      controlled through filtering for English (pycld2 language classifier),
+      filtering for documents similar to OpenWebText2 (classifier on CommonCrawl),
+      and several forms of deduplication as detailed in the paper
+      [[Appendix C]](https://arxiv.org/pdf/2101.00027.pdf#appendix.1.C)
+      [[Appendix D]](https://arxiv.org/pdf/2101.00027.pdf#appendix.1.D).
   # Downstream
-  access: >
-    Unlimited public access; The dataset is freely available to the public and
-    can be downloaded from The Eye
-    [[The Pile]](https://mystic.the-eye.eu/public/AI/pile/).
-  intended_uses: >
-    The Pile was intended to be used as a high quality large text dataset for
-    language modeling tasks, explained in more detail in the paper
-    [[Section 1]](https://arxiv.org/pdf/2101.00027.pdf#section.1).
-  prohibited_uses: >
-    None
-  monitoring: >
-    None
-  feedback: >
-    Feedback can be given by emailing the authors at contact at eleuther.ai.
+  access:
+    value: Unlimited public access
+    explanation: >
+      The dataset is freely available to the public and
+      can be downloaded from The Eye
+      [[The Pile]](https://mystic.the-eye.eu/public/AI/pile/).
+  intended_uses:
+    value: >
+      The Pile was intended to be used as a high quality large text dataset for
+      language modeling tasks, explained in more detail in the paper
+      [[Section 1]](https://arxiv.org/pdf/2101.00027.pdf#section.1).
+  prohibited_uses:
+    value: None
+  monitoring:
+    value: None
+  feedback:
+    value: >
+      Feedback can be given by emailing the authors at contact at eleuther.ai.
 
 - type: model
   name: GPT-NeoX-20B
@@ -97,48 +104,61 @@
   model_card: https://mystic.the-eye.eu/public/AI/models/GPT-NeoX-20B/20B_model_card.md
   modality: Text (English) and Code
   size: 20B parameters (dense model)
-  analysis: >
-    The model was evaluated on standard NLP benchmarks: LAMBADA, ANLI,
-    HellaSwag, MMLU among others
-    [[Section 4]](http://eaidata.bmk.sh/data/GPT_NeoX_20B.pdf#section.4).
+  analysis:
+    value: >
+      The model was evaluated on standard NLP benchmarks: LAMBADA, ANLI,
+      HellaSwag, MMLU among others
+      [[Section 4]](http://eaidata.bmk.sh/data/GPT_NeoX_20B.pdf#section.4).
   # Construction
   dependencies:
     - The Pile
-  training_emissions: >
-    31.73 tCO2e; The amount of emission during the development and training of
-    the model based on the author's estimation
-    [[Section 6.4]](http://eaidata.bmk.sh/data/GPT_NeoX_20B.pdf#subsection.6.4).
-  training_time: >
-    1830 hours; Training time as reported by the authors
-    [[Section 6.4]](http://eaidata.bmk.sh/data/GPT_NeoX_20B.pdf#subsection.6.4).
-  training_hardware: >
-    12 x 8 A100 GPUs; As outline by the authors
-    [[Section 2.3]](http://eaidata.bmk.sh/data/GPT_NeoX_20B.pdf#subsection.2.3)
+  training_emissions:
+    value: 31.73 tCO2e
+    explanation: >
+      The amount of emission during the development and training of
+      the model based on the author's estimation
+      [[Section 6.4]](http://eaidata.bmk.sh/data/GPT_NeoX_20B.pdf#subsection.6.4).
+  training_time:
+    value: 1830 hours
+    explanation: >
+      Training time as reported by the authors
+      [[Section 6.4]](http://eaidata.bmk.sh/data/GPT_NeoX_20B.pdf#subsection.6.4).
+  training_hardware:
+    value: 12 x 8 A100 GPUs
+    explanation: >
+      As outline by the authors
+      [[Section 2.3]](http://eaidata.bmk.sh/data/GPT_NeoX_20B.pdf#subsection.2.3)
   quality_control: >
-    None
+    value:  None
   # Downstream
-  access: >
-    Unlimited public access; The model can be downloaded for free The Eye
-    [[GPT-NeoX-20B]](https://mystic.the-eye.eu/public/AI/models/GPT-NeoX-20B/).
-  license: >
-    Apache 2.0; As indicated in the accompanying blog post
-    [[EleutherAI Blog Post]](https://blog.eleuther.ai/announcing-20b/).
-  intended_uses: >
-    As stated in the model card: "GPT-NeoX-20B learns an inner representation
-    of the English language that can be used to extract features useful for
-    downstream tasks. The model is best at what it was pretrained for however,
-    which is generating text from a prompt.
-    Due to the generality of the pretraining set, it has acquired the ability
-    to generate completions across a wide range of tasks - from programming to
-    fiction writing
-    [[Model Card]](https://mystic.the-eye.eu/public/AI/models/GPT-NeoX-20B/20B_model_card.md).
-  prohibited_uses: >
-    None
-  monitoring: >
-    None
-  feedback: >
-    Feedback can be provided using the #20b channel in EleutherAI Discord
-    group
-    [[EleutherAI Blog Post]](https://blog.eleuther.ai/announcing-20b/).
-    Find the Discord link in the FAQ page
-    [[FAQ]](https://www.eleuther.ai/faq/).
+  access:
+    value: Unlimited public access
+    explanation: >
+      The model can be downloaded for free The Eye
+      [[GPT-NeoX-20B]](https://mystic.the-eye.eu/public/AI/models/GPT-NeoX-20B/).
+  license:
+    value: Apache 2.0
+    explanation: >
+      As indicated in the accompanying blog post
+      [[EleutherAI Blog Post]](https://blog.eleuther.ai/announcing-20b/).
+  intended_uses:
+    value: >
+      As stated in the model card: "GPT-NeoX-20B learns an inner representation
+      of the English language that can be used to extract features useful for
+      downstream tasks. The model is best at what it was pretrained for however,
+      which is generating text from a prompt.
+      Due to the generality of the pretraining set, it has acquired the ability
+      to generate completions across a wide range of tasks - from programming to
+      fiction writing
+      [[Model Card]](https://mystic.the-eye.eu/public/AI/models/GPT-NeoX-20B/20B_model_card.md).
+  prohibited_uses:
+    value: None
+  monitoring:
+    value: None
+  feedback:
+    value: >
+      Feedback can be provided using the #20b channel in EleutherAI Discord
+      group
+      [[EleutherAI Blog Post]](https://blog.eleuther.ai/announcing-20b/).
+      Find the Discord link in the FAQ page
+      [[FAQ]](https://www.eleuther.ai/faq/).

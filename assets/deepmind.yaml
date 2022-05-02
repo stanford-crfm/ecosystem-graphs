@@ -7,59 +7,74 @@
   description: >
     The MassiveText dataset was used to train the Gopher model.
   created_date:
-    2021-12-08; The date that Gopher was announced
-    [[DeepMind Blog Post]]
-    (https://www.deepmind.com/blog/language-modelling-at-scale-gopher-ethical-considerations-and-retrieval).
+    value: 2021-12-08
+    explanation: >
+      The date that Gopher was announced
+      [[DeepMind Blog Post]]
+      (https://www.deepmind.com/blog/language-modelling-at-scale-gopher-ethical-considerations-and-retrieval).
   url: https://arxiv.org/pdf/2112.11446.pdf
   datasheet: https://arxiv.org/pdf/2112.11446.pdf#subsection.A.5
   modality: Text (English) and Code
   size: 10.5 TB
   sample: []
-  analysis: >
-    MassiveText data was analyzed for toxicity, language distribution, URL
-    breakdown, and tokenizer compression rates on the subsets
-    [[Section A.2]](https://arxiv.org/pdf/2112.11446.pdf#subsection.A.2).
+  analysis:
+    value: >
+      MassiveText data was analyzed for toxicity, language distribution, URL
+      breakdown, and tokenizer compression rates on the subsets
+      [[Section A.2]](https://arxiv.org/pdf/2112.11446.pdf#subsection.A.2).
   # Construction
   dependencies: []
-  license: >
-    Unknown; The model likely has a license specifically for DeepMind's use,
-    based on the information provided in the datasheet
-    [[Model Card]](https://arxiv.org/pdf/2112.11446.pdf#subsection.A.5).
+  license:
+    value: Unknown
+    explanation: >
+      The model likely has a license specifically for DeepMind's use,
+      based on the information provided in the datasheet
+      [[Model Card]](https://arxiv.org/pdf/2112.11446.pdf#subsection.A.5).
   included: >
     MassiveText data come from 6 sources: MassiveWeb (48%), Books (27%),
     C4 (10%), News (10%), GitHub (3%), and Wikipedia (2%). MassiveWeb is a
     web text corpus curated for MassiveText.
   excluded: >
     Documents that are not in English are excluded.
-  quality_control: >
-    The authors use simple heuristics for filtering low quality documents as
-    opposed to relying on a classifier based on a "gold" set such as the English
-    Wikipedia, which could "inadvertently bias towards a certain demographic or
-    erase certain dialects or sociolects from representation." MassiveWeb
-    subset was filtered using Google’s SafeSearch filter, preferring it over
-    to word filters that "disproportinately filter out inoffensive content
-    associated with minority groups. MassiveWeb was filtered
-    further for word or phrase repetitions. All the subsets were filtered for
-    document deduplication and test set contamination
-    [[Appendix A]](https://arxiv.org/pdf/2112.11446.pdf#appendix.A).
+  quality_control:
+    value: >
+      The authors use simple heuristics for filtering low quality documents as
+      opposed to relying on a classifier based on a "gold" set such as the English
+      Wikipedia, which could "inadvertently bias towards a certain demographic or
+      erase certain dialects or sociolects from representation." MassiveWeb
+      subset was filtered using Google’s SafeSearch filter, preferring it over
+      to word filters that "disproportinately filter out inoffensive content
+      associated with minority groups. MassiveWeb was filtered
+      further for word or phrase repetitions. All the subsets were filtered for
+      document deduplication and test set contamination
+      [[Appendix A]](https://arxiv.org/pdf/2112.11446.pdf#appendix.A).
   # Downstream
-  access: >
-    The dataset access is limited to DeepMind researchers
-    [[Model Card]](https://arxiv.org/pdf/2112.11446.pdf#appendix.C).
-  intended_uses: >
-    Pre-training of language models by DeepMind researchers
-    [[Model Card]](https://arxiv.org/pdf/2112.11446.pdf#appendix.C).
-  prohibited_uses: >
-    Unknown; There are no known prohibited uses of the dataset, but the authors
-    state that it should not be used for training models with multilingual
-    capabilities as it only contains the English language
-    [[Model Card]](https://arxiv.org/pdf/2112.11446.pdf#appendix.C).
-  monitoring: >
-    Unknown; There is no information on how DeepMind is internally monitoring
-    the use of the dataset.
+  access:
+    value: No public access
+    explanation: >
+      The dataset access is limited to DeepMind researchers
+      [[Model Card]](https://arxiv.org/pdf/2112.11446.pdf#appendix.C).
+  intended_uses:
+    value: >
+      Pre-training of language models by DeepMind researchers
+      [[Model Card]](https://arxiv.org/pdf/2112.11446.pdf#appendix.C).
+  prohibited_uses:
+    value: Unknown
+    explanation: >
+      There are no known prohibited uses of the dataset, but the authors
+      state that it should not be used for training models with multilingual
+      capabilities as it only contains the English language
+      [[Model Card]](https://arxiv.org/pdf/2112.11446.pdf#appendix.C).
+  monitoring:
+    value: Unknown
+    explanation: >
+      There is no information on how DeepMind is internally monitoring
+      the use of the dataset.
   feedback: >
-    Unknown; The internal feedback mechanisms for WebText are unknown
-    [[Model Card]](https://arxiv.org/pdf/2112.11446.pdf#appendix.C).
+    value: Unknown
+    explanation: >
+      The internal feedback mechanisms for WebText are unknown
+      [[Model Card]](https://arxiv.org/pdf/2112.11446.pdf#appendix.C).
 
 - type: model
   name: Gopher
@@ -71,67 +86,87 @@
     using relative positional encoding scheme instead of absolute positional
     encodings
     [[Section 3]](https://arxiv.org/pdf/2112.11446.pdf#subsection.3.1).
-  created_date: >
-    2021-12-08; The date that Gopher was announced
-    [[DeepMind Blog Post]]
-    (https://www.deepmind.com/blog/language-modelling-at-scale-gopher-ethical-considerations-and-retrieval).
+  created_date:
+    value: 2021-12-08
+    explanation: >
+      The date that Gopher was announced
+      [[DeepMind Blog Post]]
+      (https://www.deepmind.com/bl og/language-modelling-at-scale-gopher-ethical-considerations-and-retrieval).
   url: https://arxiv.org/pdf/2112.11446.pdf
   model_card: https://arxiv.org/pdf/2112.11446.pdf#appendix.B
   modality: Text (English) and Code
-  size: >
-    280B parameters (dense model); Gopher family has models of several sizes, but the name
-    Gopher uniquely identify the 280B parameter version. Sizes for the other
-    models in the Gopher family can be seen in the paper
-    [[Table 1]](https://arxiv.org/pdf/2112.11446.pdf#table.caption.1).
-  analysis: >
-    Model performance was evaluated and analyzed on 152 NLP tasks including:
-    Language Modelling (20), Reading Comprehension (3), Fact Checking (3),
-    Question Answering (3), Common Sense (4), MMLU (57), BIG-bench (62)
-    [[Section 4]](https://arxiv.org/pdf/2112.11446.pdf#section.4); on toxicity
-    and bias datasets
-    [[Section 5]](https://arxiv.org/pdf/2112.11446.pdf#section.5); and on
-    dialogue tasks
-    [[Section 6]](https://arxiv.org/pdf/2112.11446.pdf#section.6).
+  size:
+    value: 280B parameters (dense model)
+    explanation: >
+      Gopher family has models of several sizes, but the name
+      Gopher uniquely identify the 280B parameter version. Sizes for the other
+      models in the Gopher family can be seen in the paper
+      [[Table 1]](https://arxiv.org/pdf/2112.11446.pdf#table.caption.1).
+  analysis:
+    value: >
+      Model performance was evaluated and analyzed on 152 NLP tasks including:
+      Language Modelling (20), Reading Comprehension (3), Fact Checking (3),
+      Question Answering (3), Common Sense (4), MMLU (57), BIG-bench (62)
+      [[Section 4]](https://arxiv.org/pdf/2112.11446.pdf#section.4); on toxicity
+      and bias datasets
+      [[Section 5]](https://arxiv.org/pdf/2112.11446.pdf#section.5); and on
+      dialogue tasks
+      [[Section 6]](https://arxiv.org/pdf/2112.11446.pdf#section.6).
   # Construction
   dependencies:
     - MassiveText
-  training_emissions: >
-    380 tCO2e; The training emission estimate from the paper
-    [[Section F]](https://arxiv.org/pdf/2112.11446.pdf#appendix.F)
-  training_time: >
-    920 hours; Reported in the paper
-    [[Section F]](https://arxiv.org/pdf/2112.11446.pdf#appendix.F).
+  training_emissions:
+    value: 380 tCO2e
+    explanation: >
+      The training emission estimate from the paper
+      [[Section F]](https://arxiv.org/pdf/2112.11446.pdf#appendix.F)
+  training_time:
+    value: 920 hours
+    explanation: >
+      Reported in the paper
+      [[Section F]](https://arxiv.org/pdf/2112.11446.pdf#appendix.F).
   training_hardware: >
-    TPUv3 pods; Reported in the paper
-    [[Section F]](https://arxiv.org/pdf/2112.11446.pdf#appendix.F).
-  quality_control: >
-    None
+    value: TPUv3 pods
+    explanation: >
+      Reported in the paper
+      [[Section F]](https://arxiv.org/pdf/2112.11446.pdf#appendix.F).
+  quality_control:
+    value: None
   # Downstream
-  access: >
-    The model access is limited to DeepMind researchers. The model won't be
-    released to the public
-    [[Model Card]](https://arxiv.org/pdf/2112.11446.pdf#appendix.B).
-  license: >
-    Unknown; The model likely has a license specifically for DeepMind's use,
-    based on the information provided in the model card
-    [[Model Card]](https://arxiv.org/pdf/2112.11446.pdf#appendix.B).
-  intended_uses: >
-    The intended uses are stated in the Gopher model card: "The primary use is
-    research on language models, including: research on NLP applications like
-    machine translation and question answering, understanding how strong
-    language models can contribute to AGI, advancing fairness and safety
-    research, and understanding limitations of current LLMs"
-    [[Model Card]](https://arxiv.org/pdf/2112.11446.pdf#appendix.B).
-  prohibited_uses: >
-    The model card lists the following as out of scope uses of the model: "for
-    language generation in harmful or deceitful settings. More generally, the
-    model should not be used for downstream applications without further safety
-    and fairness mitigations"
-    [[Model Card]](https://arxiv.org/pdf/2112.11446.pdf#appendix.B).
-  monitoring: >
-    Unknown; There is no information on how DeepMind is internally monitoring
-    the use of the model.
-  feedback: >
-    The feedback for the model can be provided at the email linked in the model
-    card, geoffreyi at google.com
-    [[Model Card]](https://arxiv.org/pdf/2112.11446.pdf#appendix.B).
+  access:
+    value: No public access
+    explanation: >
+      The model access is limited to DeepMind researchers. The model won't be
+      released to the public
+      [[Model Card]](https://arxiv.org/pdf/2112.11446.pdf#appendix.B).
+  license:
+    value: Unknown
+    explanation: >
+      The model likely has a license specifically for DeepMind's use,
+      based on the information provided in the model card
+      [[Model Card]](https://arxiv.org/pdf/2112.11446.pdf#appendix.B).
+  intended_uses:
+    value: >
+      The intended uses are stated in the Gopher model card: "The primary use is
+      research on language models, including: research on NLP applications like
+      machine translation and question answering, understanding how strong
+      language models can contribute to AGI, advancing fairness and safety
+      research, and understanding limitations of current LLMs"
+      [[Model Card]](https://arxiv.org/pdf/2112.11446.pdf#appendix.B).
+  prohibited_uses:
+    value: >
+      The model card lists the following as out of scope uses of the model: "for
+      language generation in harmful or deceitful settings. More generally, the
+      model should not be used for downstream applications without further safety
+      and fairness mitigations"
+      [[Model Card]](https://arxiv.org/pdf/2112.11446.pdf#appendix.B).
+  monitoring:
+    value: Unknown
+    explanation: >
+      There is no information on how DeepMind is internally monitoring
+      the use of the model.
+  feedback:
+    value: >
+      The feedback for the model can be provided at the email linked in the model
+      card, geoffreyi at google.com
+      [[Model Card]](https://arxiv.org/pdf/2112.11446.pdf#appendix.B).
