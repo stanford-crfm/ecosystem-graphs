@@ -232,13 +232,13 @@ function renderHome(allNameToAsset) {
   // Render the home page
   const numModels = 5
   const latestModelNames = Object.keys(allNameToAsset)
-                                 //.filter((key) => allNameToAsset[key].fields.created_date != null
-                                 //                 && allNameToAsset[key].type === 'model')
-                                 //.sort((a, b) => allNameToAsset[b].fields.created_date.value 
-                                 //                - allNameToAsset[a].fields.created_date.value)
-                                 //.slice(0, numModels);
+                                 .filter((key) => allNameToAsset[key].fields.created_date != null
+                                                 && allNameToAsset[key].type === 'model')
+                                 .sort((a, b) => allNameToAsset[b].fields.created_date.value 
+                                                - allNameToAsset[a].fields.created_date.value)
+                                 .slice(0, numModels);
   console.log(allNameToAsset['Codex'].schema.fields)
-  const columnNames = allNameToAsset['Codex'].schema.fields.map(field => field.name);
+  columnNames = ['name', 'created_date', 'size', 'access', 'dependencies'];
   const selectedAssets = latestModelNames.map((key) => (allNameToAsset[key]));
   return renderCustomTable(selectedAssets, allNameToAsset, columnNames);
 }
