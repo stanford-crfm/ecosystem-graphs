@@ -791,7 +791,7 @@
     explanation: >
       OpenAI released in a blog post in April 2020
       [[OpenAI Blog Post]](https://openai.com/dall-e-2/).
-      The blog post does not specify the date of the monght, so we approximate
+      The blog post does not specify the date of the month, so we approximate
       it as the 1st day.
   url: https://arxiv.org/abs/2204.06125
   model_card: https://github.com/openai/dalle-2-preview/blob/main/system-card.md

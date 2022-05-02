@@ -22,10 +22,9 @@ class Schema {
  * an optional explanation for the value.
  */
 class AssetField {
-  constructor(value, explanation, type) {
+  constructor(value, explanation) {
     this.value = value;
     this.explanation = explanation;
-    this.type = type;
   }
  }
 
@@ -45,7 +44,7 @@ class Asset {
     schema.fields.forEach((schemaField) => {
 
       // The assset fields we will populate
-      let value = null, explanation = null, type = schemaField.type;
+      let value = null, explanation = null;
     
       // We expect each assetField to have a value and an explanation.
       // When reading the field from the schemaFieldValue, we populate each of
@@ -75,7 +74,7 @@ class Asset {
         }
       }
 
-      this.fields[schemaField.name] = new AssetField(value, explanation, type);
+      this.fields[schemaField.name] = new AssetField(value, explanation);
     });
 
     // Print warnings about any extraneous fields
@@ -117,12 +116,10 @@ function renderValueExplanation(type, value, explanation) {
   const converter = new showdown.Converter();
   // Render value
   let renderedValue = value;
-  if (value == null || value === 'Unknown' || value === 'TODO' || value === 'None') {
+  if (value === 'Unknown' || value === 'TODO' || value === 'None') {
     renderedValue = converter.makeHtml(value);
   } else if (type === 'list') {
     renderedValue = renderList(value.map((elemValue) => renderValueExplanation(null, elemValue, null)));
-  } else if (type == 'date') {
-    renderedValue = value.toLocaleDateString();
   } else if (type === 'url') {
     renderedValue = $('<a>', {href: value, target: 'blank_'}).append(value);
   } else if (typeof(value) === 'string') {
@@ -132,8 +129,9 @@ function renderValueExplanation(type, value, explanation) {
   if (explanation != null) {
     return $('<div>').append(renderedValue)
                      .append(converter.makeHtml(explanation));
+  } else {
+    return renderedValue;
   }
-  return renderedValue;
 }
 
 function renderAssetLink(nameToAsset, assetName) {
@@ -216,7 +214,9 @@ function renderCustomTable(selectedAssets, allNameToAsset, columnNames) {
       } else if (columnName === 'dependencies') {
         tdValue = renderAssetLinks(allNameToAsset, asset.fields.dependencies.value);
       } else {
-        const type = columnName in asset.fields ? asset.fields[columnName].type : '';
+        //
+        let type = '';
+        asset.schema.fields.forEach(item => item.name === columnName ? type = item.type : '');
         const value = columnName in asset.fields ? asset.fields[columnName].value : null;
         const explanation = columnName in asset.fields ? asset.fields[columnName].explanation : null;
         tdValue = renderValueExplanation(type, value, explanation);
@@ -228,19 +228,18 @@ function renderCustomTable(selectedAssets, allNameToAsset, columnNames) {
   return $table;
 }
 
-function renderHome(allNameToAsset) {
+function renderHome(nameToAsset) {
   // Render the home page
-  const numModels = 5
-  const latestModelNames = Object.keys(allNameToAsset)
-                                 .filter((key) => allNameToAsset[key].fields.created_date != null
-                                                 && allNameToAsset[key].type === 'model')
-                                 .sort((a, b) => allNameToAsset[b].fields.created_date.value 
-                                                - allNameToAsset[a].fields.created_date.value)
+  const numModels = 5;
+  const latestModelNames = Object.keys(nameToAsset)
+                                 .filter((key) => nameToAsset[key].fields.created_date.value instanceof Date
+                                                  && nameToAsset[key].type === 'model')
+                                 .sort((a, b) => nameToAsset[b].fields.created_date.value 
+                                                - nameToAsset[a].fields.created_date.value)
                                  .slice(0, numModels);
-  console.log(allNameToAsset['Codex'].schema.fields)
-  columnNames = ['name', 'created_date', 'size', 'access', 'dependencies'];
-  const selectedAssets = latestModelNames.map((key) => (allNameToAsset[key]));
-  return renderCustomTable(selectedAssets, allNameToAsset, columnNames);
+  columnNames = ['name', 'created_date', 'size', 'access', 'dependencies', 'url'];
+  const selectedAssets = latestModelNames.map((key) => (nameToAsset[key]));
+  return renderCustomTable(selectedAssets, nameToAsset, columnNames);
 }
 
 function renderAssetsTable(nameToAsset) {
@@ -382,6 +381,7 @@ $(() => {
     'assets/cohere.yaml',
     'assets/deepmind.yaml',
     'assets/eleutherai.yaml',
+    'assets/google.yaml',
     'assets/microsoft.yaml',
     'assets/openai.yaml',
   ];
