@@ -377,9 +377,13 @@
       [[Patterson et al.]]
       (https://arxiv.org/ftp/arxiv/papers/2104/2104.10350.pdf).
   training_time:
-    value: 3.64E+03 PF-days
+    value: 3640 petaflop/s-days
     explanation: >
-      The time required to train the GPT-3 model with 175B parameters.
+      The time required to train different sized GPT-3 models are listed in
+      [[Table D.1]](https://arxiv.org/pdf/2005.14165.pdf#table.caption.50).
+      The time required to train the GPT-3 model with 175B parameters is
+      reported as 3.64E+03 petaflop days, which is the same as 3640 petaflop
+      days.
   training_hardware:
     value: Azure
     explanation: >
@@ -476,9 +480,11 @@
     value: Unknown
     explanation: Authors do not report the training emissions.
   training_time:
-    value: >
+    value: Unknown
+    explanation: >
       Authors estimate hundreds of petaflop/s-days of compute
-      [[Section 7.6]](https://arxiv.org/pdf/2107.03374.pdf#subsection.7.6).
+      [[Section 7.6]](https://arxiv.org/pdf/2107.03374.pdf#subsection.7.6), but
+      don't provide an exact number.
   training_hardware:
     value: Azure
     explanation: >
@@ -646,7 +652,7 @@
   training_emissions: >
     Unknown
   training_time:
-    value: 30 days
+    value: 71.12 petaflop/s-day
     explanation: >
       The exact training time of CLIP depends on the vision and language
       encoders used: "The largest ResNet model, RN50x64, took 18 days to train
@@ -656,7 +662,29 @@
       otherwise specified, all results reported in this paper as “CLIP” use this
       model which we found to perform best"
       [[CLIP paper]](https://arxiv.org/pdf/2103.00020.pdf).
-  training_hardware: >
+
+      Using the GPU Time method outlined in the
+      [[OpenAI AI and Computer Blog]](https://openai.com/blog/ai-and-compute/#addendum),
+      we can compute the training time in petaflop/s-day for RN50x64 and
+      ViT-L/14 with the following equation: Number of GPUs * (peta-flops/GPU) *
+      days trained * estimated utilization.
+      We will assume that estimated utilization is 33%, following
+      [[OpenAI AI and Computer Blog]](https://openai.com/blog/ai-and-compute/#addendum).
+      The specific V100 GPU used isn't cleared from the paper, so we will assume
+      that V100 PCle was used. The V100 PCle GPUs have a single precision
+      performance of 15.7 teraflops
+      [[V100 Datasheet]](https://images.nvidia.com/content/technologies/volta/pdf/volta-v100-datasheet-update-us-1165301-r5.pdf),
+      which is equal to 15.7 / 1000 = 0.0157 petaflops.
+
+      Following the formula "Number of GPUs * (peta-flops/GPU) * days trained *
+      estimated utilization", we can compute the petaflop/s-day for RN50x64 as
+      follows:
+      592 * 0.0157 * 18 * 0.33.
+      Similarly, for ViT-L/14, we can compute the same as:
+      256 * 0.0157 * 12 * 0.33.
+      Adding the two, we estimate the total training time as 71.12
+      petaflop/s-day.
+  training_hardware:
     value: NVIDIA V100 GPUs
   quality_control:
     value: >
