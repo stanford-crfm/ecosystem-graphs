@@ -787,10 +787,12 @@
     The model wasn't fully released, but OpenAI released a version of the model
     (DALL·E 2 Preview) to a select group of testers.
   created_date:
-    value: 2022-04
+    value: 2022-04-01
     explanation: >
       OpenAI released in a blog post in April 2020
       [[OpenAI Blog Post]](https://openai.com/dall-e-2/).
+      The blog post does not specify the date of the monght, so we approximate
+      it as the 1st day.
   url: https://arxiv.org/abs/2204.06125
   model_card: https://github.com/openai/dalle-2-preview/blob/main/system-card.md
   modality: Text (English) and Image

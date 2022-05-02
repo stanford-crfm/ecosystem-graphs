@@ -115,19 +115,18 @@ function renderField(schemaField) {
 
 function renderValue(type, value) {
   const converter = new showdown.Converter();
-  if (type === 'list') {
+  if (value == null || value === 'TODO' || value === 'Unknown') {
+    return converter.makeHtml(value);
+  } else if (type === 'list') {
     return renderList(value.map((elemValue) => renderValue(null, elemValue)));
   } else if (type == 'date') {
     return value.toLocaleDateString();
-  } else if (type === 'url' && value.indexOf('None') == -1 && value.indexOf('TODO') == -1) {
+  } else if (type === 'url') {
     return $('<a>', {href: value, target: 'blank_'}).append(value);
+  } else if (typeof(value) === 'string') {
+    return converter.makeHtml(value);
   } else {
-    // Default: render string as markdown
-    if (typeof(value) === 'string') {
-      return converter.makeHtml(value);
-    } else {
-      return value;
-    }
+    return value;
   }
 }
 
@@ -210,7 +209,6 @@ function renderCustomTable(selectedAssets, allNameToAsset, columnNames) {
       } else if (columnName === 'dependencies') {
         tdValue = renderAssetLinks(allNameToAsset, asset.fields.dependencies.value);
       } else {
-        console.log(columnName);
         const type = columnName in asset.fields ? asset.fields[columnName].type : '';
         const value = columnName in asset.fields ? asset.fields[columnName].value : null;
         tdValue = renderValue(type, value);
@@ -224,8 +222,13 @@ function renderCustomTable(selectedAssets, allNameToAsset, columnNames) {
 
 function renderHome(allNameToAsset) {
   // Render the home page
-  // @TODO once all the date values are refactored, pick the latest 5
-  const latestModelNames = ["DALL·E 2", "Codex", "InstructGPT", "GPT-NeoX-20B"];
+  const numModels = 5
+  const latestModelNames = Object.keys(allNameToAsset)
+                                 .filter((key) => allNameToAsset[key].fields.created_date != null
+                                                  && allNameToAsset[key].type === 'model')
+                                 .sort((a, b) => allNameToAsset[b].fields.created_date.value 
+                                                 - allNameToAsset[a].fields.created_date.value)
+                                 .slice(0, numModels);
   const columnNames = ['name', 'organization', 'created_date', 'access', 'size', 'dependencies'];
   const selectedAssets = latestModelNames.map((key) => (allNameToAsset[key]));
   return renderCustomTable(selectedAssets, allNameToAsset, columnNames);
@@ -370,7 +373,6 @@ $(() => {
     'assets/cohere.yaml',
     'assets/deepmind.yaml',
     'assets/eleutherai.yaml',
-    'assets/google.yaml',
     'assets/microsoft.yaml',
     'assets/openai.yaml',
   ];

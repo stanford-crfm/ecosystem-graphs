@@ -6,7 +6,8 @@
   organization: EleutherAI
   description: >
     A latge language model training dataset, used to train GPT-NeoX-20B.
-  created_date: "2021-01-01"
+  created_date:
+    value: 2021-01-01
   url: https://arxiv.org/pdf/2101.00027.pdf
   datasheet: https://arxiv.org/pdf/2201.07311.pdf
   modality: Text (English) and code
@@ -99,7 +100,8 @@
   organization: EleutherAI
   description: >
     GPT-NeoX-20B is an open-sourced autoregressive large language model.
-  created_date: "2022-02-02"
+  created_date:
+    value: 2022-02-02
   url: http://eaidata.bmk.sh/data/GPT_NeoX_20B.pdf
   model_card: https://mystic.the-eye.eu/public/AI/models/GPT-NeoX-20B/20B_model_card.md
   modality: Text (English) and Code
