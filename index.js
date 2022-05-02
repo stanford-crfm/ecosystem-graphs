@@ -113,21 +113,27 @@ function renderField(schemaField) {
   return $('<div>').append(text).append(helpIcon(schemaField.description, '#'));
 }
 
-function renderValue(type, value) {
+function renderValueExplanation(type, value, explanation) {
   const converter = new showdown.Converter();
-  if (value == null || value === 'TODO' || value === 'Unknown') {
-    return converter.makeHtml(value);
+  // Render value
+  let renderedValue = value;
+  if (value == null || value === 'Unknown' || value === 'TODO' || value === 'None') {
+    renderedValue = converter.makeHtml(value);
   } else if (type === 'list') {
-    return renderList(value.map((elemValue) => renderValue(null, elemValue)));
+    renderedValue = renderList(value.map((elemValue) => renderValueExplanation(null, elemValue, null)));
   } else if (type == 'date') {
-    return value.toLocaleDateString();
+    renderedValue = value.toLocaleDateString();
   } else if (type === 'url') {
-    return $('<a>', {href: value, target: 'blank_'}).append(value);
+    renderedValue = $('<a>', {href: value, target: 'blank_'}).append(value);
   } else if (typeof(value) === 'string') {
-    return converter.makeHtml(value);
-  } else {
-    return value;
+    renderedValue = converter.makeHtml(value);
   }
+  // Render explanation, if provided
+  if (explanation != null) {
+    return $('<div>').append(renderedValue)
+                     .append(converter.makeHtml(explanation));
+  }
+  return renderedValue;
 }
 
 function renderAssetLink(nameToAsset, assetName) {
@@ -162,10 +168,11 @@ function renderAsset(nameToAsset, assetName) {
   const $tbody = $('<tbody>');
   asset.schema.fields.forEach((schemaField) => {
     const value = asset.fields[schemaField.name].value;
+    const explanation = asset.fields[schemaField.name].explanation;
 
     $tbody.append($('<tr>')
       .append($('<td>').append(renderField(schemaField)))
-      .append($('<td>').append(schemaField.name === 'dependencies' ? renderAssetLinks(nameToAsset, value) : renderValue(schemaField.type, value)))
+      .append($('<td>').append(schemaField.name === 'dependencies' ? renderAssetLinks(nameToAsset, value) : renderValueExplanation(schemaField.type, value, explanation)))
     );
   });
 
@@ -202,7 +209,7 @@ function renderCustomTable(selectedAssets, allNameToAsset, columnNames) {
     columnNames.forEach((columnName) => {
       let tdValue = null;
       if (columnName === 'type') {
-        tdValue = renderValue('', asset.type);
+        tdValue = renderValueExplanation('', asset.type, null);
       } else if (columnName === 'name') {
         const href = encodeUrlParams({asset: asset.fields.name.value});
         tdValue = $('<a>', {href, target: 'blank_'}).append(asset.fields.name.value);
@@ -211,7 +218,8 @@ function renderCustomTable(selectedAssets, allNameToAsset, columnNames) {
       } else {
         const type = columnName in asset.fields ? asset.fields[columnName].type : '';
         const value = columnName in asset.fields ? asset.fields[columnName].value : null;
-        tdValue = renderValue(type, value);
+        const explanation = columnName in asset.fields ? asset.fields[columnName].explanation : null;
+        tdValue = renderValueExplanation(type, value, explanation);
       }
       $tbody.append($('<td>').append(tdValue));
     });
@@ -224,12 +232,13 @@ function renderHome(allNameToAsset) {
   // Render the home page
   const numModels = 5
   const latestModelNames = Object.keys(allNameToAsset)
-                                 .filter((key) => allNameToAsset[key].fields.created_date != null
-                                                  && allNameToAsset[key].type === 'model')
-                                 .sort((a, b) => allNameToAsset[b].fields.created_date.value 
-                                                 - allNameToAsset[a].fields.created_date.value)
-                                 .slice(0, numModels);
-  const columnNames = ['name', 'organization', 'created_date', 'access', 'size', 'dependencies'];
+                                 //.filter((key) => allNameToAsset[key].fields.created_date != null
+                                 //                 && allNameToAsset[key].type === 'model')
+                                 //.sort((a, b) => allNameToAsset[b].fields.created_date.value 
+                                 //                - allNameToAsset[a].fields.created_date.value)
+                                 //.slice(0, numModels);
+  console.log(allNameToAsset['Codex'].schema.fields)
+  const columnNames = allNameToAsset['Codex'].schema.fields.map(field => field.name);
   const selectedAssets = latestModelNames.map((key) => (allNameToAsset[key]));
   return renderCustomTable(selectedAssets, allNameToAsset, columnNames);
 }
