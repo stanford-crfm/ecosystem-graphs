@@ -9,7 +9,6 @@ dataset:
   - name: description
     description: Description of the dataset.
   - name: created_date
-    type: date
     description: When the dataset was created.
   - name: url
     type: url
@@ -59,7 +58,6 @@ model:
   - name: description
     description: Description of the model.
   - name: created_date
-    type: date
     description: When the model was created.
   - name: url
     type: url
@@ -107,7 +105,6 @@ application:
   - name: description
     description: Description of the application.
   - name: created_date
-    type: date
     description: When the application was created.
   - name: url
     type: url

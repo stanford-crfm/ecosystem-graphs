@@ -91,7 +91,7 @@
     explanation: >
       The date that Gopher was announced
       [[DeepMind Blog Post]]
-      (https://www.deepmind.com/bl og/language-modelling-at-scale-gopher-ethical-considerations-and-retrieval).
+      (https://www.deepmind.com/blog/language-modelling-at-scale-gopher-ethical-considerations-and-retrieval).
   url: https://arxiv.org/pdf/2112.11446.pdf
   model_card: https://arxiv.org/pdf/2112.11446.pdf#appendix.B
   modality: Text (English) and Code

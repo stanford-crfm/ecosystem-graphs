@@ -112,19 +112,25 @@ function renderField(schemaField) {
   return $('<div>').append(text).append(helpIcon(schemaField.description, '#'));
 }
 
-function renderValue(type, value) {
+function renderValueExplanation(type, value, explanation) {
   const converter = new showdown.Converter();
-  if (type === 'list') {
-    return renderList(value.map((elemValue) => renderValue(null, elemValue)));
-  } else if (type === 'url' && value.indexOf('None') == -1 && value.indexOf('TODO') == -1) {
-    return $('<a>', {href: value, target: 'blank_'}).append(value);
+  // Render value
+  let renderedValue = value;
+  if (value === 'Unknown' || value === 'TODO' || value === 'None') {
+    renderedValue = converter.makeHtml(value);
+  } else if (type === 'list') {
+    renderedValue = renderList(value.map((elemValue) => renderValueExplanation(null, elemValue, null)));
+  } else if (type === 'url') {
+    renderedValue = $('<a>', {href: value, target: 'blank_'}).append(value);
+  } else if (typeof(value) === 'string') {
+    renderedValue = converter.makeHtml(value);
+  }
+  // Render explanation, if provided
+  if (explanation != null) {
+    return $('<div>').append(renderedValue)
+                     .append(converter.makeHtml(explanation));
   } else {
-    // Default: render string as markdown
-    if (typeof(value) === 'string') {
-      return converter.makeHtml(value);
-    } else {
-      return value;
-    }
+    return renderedValue;
   }
 }
 
@@ -160,10 +166,11 @@ function renderAsset(nameToAsset, assetName) {
   const $tbody = $('<tbody>');
   asset.schema.fields.forEach((schemaField) => {
     const value = asset.fields[schemaField.name].value;
+    const explanation = asset.fields[schemaField.name].explanation;
 
     $tbody.append($('<tr>')
       .append($('<td>').append(renderField(schemaField)))
-      .append($('<td>').append(schemaField.name === 'dependencies' ? renderAssetLinks(nameToAsset, value) : renderValue(schemaField.type, value)))
+      .append($('<td>').append(schemaField.name === 'dependencies' ? renderAssetLinks(nameToAsset, value) : renderValueExplanation(schemaField.type, value, explanation)))
     );
   });
 
@@ -173,33 +180,73 @@ function renderAsset(nameToAsset, assetName) {
   return $card;
 }
 
-function renderAssetsTable(nameToAsset) {
-  // Render a list of assets
+function renderFieldName(fieldName) {
+  // Capitalizes and removes '_' from a fieldName (which should be a field name
+  // from the schema, such as created_date, name, etc.)
+  const capitalized = fieldName.charAt(0).toUpperCase() + fieldName.slice(1);
+  return capitalized.replace('_', ' ');
+}
+/**
+ * Renders a table given the column properties.
+ * @param {Array.<Asset>} selectedAssets - Array of the assets that will be
+ *   rendered in the custom table.
+ * @param {Object.<string, Asset>} allNameToAsset - Object mapping the names of
+ *   all the assets in the ecosystem to their Asset representation.
+ * @param {Array.<string>} columnNames - Columns that will be included in the
+ *   table.
+ */
+function renderCustomTable(selectedAssets, allNameToAsset, columnNames) {
   const $table = $('<table>', {class: 'table'});
-  $table.append($('<thead>').append($('<tr>')
-    .append($('<td>').append('Type'))
-    .append($('<td>').append('Name'))
-    .append($('<td>').append('Organization'))
-    .append($('<td>').append('Created date'))
-    .append($('<td>').append('Size'))
-    .append($('<td>').append('Dependencies'))
-  ));
+  $table.append($('<thead>').append($('<tr>')));
+  columnNames.forEach((columnName) => {
+    $table.append($('<td>').append(renderFieldName(columnName)));
+  });
   const $tbody = $('<tbody>');
-  for (let name in nameToAsset) {
-    const asset = nameToAsset[name];
-    const href = encodeUrlParams({asset: asset.fields.name.value});
-    const size = 'size' in asset ? asset.fields.size.value : null;
-    $tbody.append($('<tr>')
-      .append($('<td>').append(asset.type))
-      .append($('<td>').append($('<a>', {href, target: 'blank_'}).append(asset.fields.name.value)))
-      .append($('<td>').append(renderValue('', asset.fields.organization.value)))
-      .append($('<td>').append(renderValue('', asset.fields.created_date.value)))
-      .append($('<td>').append(renderValue('', size)))
-      .append($('<td>').append(renderAssetLinks(nameToAsset, asset.fields.dependencies.value)))
-    );
-  }
+  selectedAssets.forEach((asset) => {
+    $tbody.append($('<tr>'));
+    columnNames.forEach((columnName) => {
+      let tdValue = null;
+      if (columnName === 'type') {
+        tdValue = renderValueExplanation('', asset.type, null);
+      } else if (columnName === 'name') {
+        const href = encodeUrlParams({asset: asset.fields.name.value});
+        tdValue = $('<a>', {href, target: 'blank_'}).append(asset.fields.name.value);
+      } else if (columnName === 'dependencies') {
+        tdValue = renderAssetLinks(allNameToAsset, asset.fields.dependencies.value);
+      } else {
+        //
+        let type = '';
+        asset.schema.fields.forEach(item => item.name === columnName ? type = item.type : '');
+        const value = columnName in asset.fields ? asset.fields[columnName].value : null;
+        const explanation = columnName in asset.fields ? asset.fields[columnName].explanation : null;
+        tdValue = renderValueExplanation(type, value, explanation);
+      }
+      $tbody.append($('<td>').append(tdValue));
+    });
+  });
   $table.append($tbody);
   return $table;
+}
+
+function renderHome(nameToAsset) {
+  // Render the home page
+  const numModels = 5;
+  const latestModelNames = Object.keys(nameToAsset)
+                                 .filter((key) => nameToAsset[key].fields.created_date.value instanceof Date
+                                                  && nameToAsset[key].type === 'model')
+                                 .sort((a, b) => nameToAsset[b].fields.created_date.value 
+                                                - nameToAsset[a].fields.created_date.value)
+                                 .slice(0, numModels);
+  columnNames = ['name', 'created_date', 'size', 'access', 'dependencies', 'url'];
+  const selectedAssets = latestModelNames.map((key) => (nameToAsset[key]));
+  return renderCustomTable(selectedAssets, nameToAsset, columnNames);
+}
+
+function renderAssetsTable(nameToAsset) {
+  // Render a list of assets
+  const columnNames = ['type', 'name', 'organization', 'created_date', 'size', 'dependencies'];
+  const assets = Object.keys(nameToAsset).map((key) => (nameToAsset[key]));
+  return renderCustomTable(assets, nameToAsset, columnNames);
 }
 
 function renderAssetsGraph(nameToAsset) {
@@ -293,14 +340,19 @@ function renderAssetsGraph(nameToAsset) {
 }
 
 function render(urlParams, nameToAsset) {
+  const mode = urlParams.mode || 'home';
   if (urlParams.asset) {
     return renderAsset(nameToAsset, urlParams.asset);
+  } else if (urlParams.mode === 'home') {
+    return renderHome(nameToAsset);
   } else if (urlParams.mode === 'graph') {
     return renderAssetsGraph(nameToAsset);
-  } else {
+  } else if (urlParams.mode === 'table') {
     return renderAssetsTable(nameToAsset);
+  } else {
+    return renderError('Unrecognized mode: ' + mode + '.');
   }
-}
+} 
 
 function updateDownstreamAssets(nameToAsset) {
   // Use each asset's dependencies (upstream pointers) to update the corresponding downstream pointers.

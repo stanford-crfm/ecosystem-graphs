@@ -27,6 +27,10 @@ function openBrowserLocation(params) {
   window.open(window.location.pathname + encodeUrlParams(params), 'blank_');
 }
 
+function multilineHtml(s) {
+  return s.replace(/\n/g, '<br>');
+}
+
 function renderError(e) {
   return $('<div>').addClass('alert alert-danger').append(multilineHtml(e));
 }
