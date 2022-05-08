@@ -5,7 +5,7 @@
   # General
   organization: Google
   description: >
-    The dataset used to train BERT for internal applications at Google.
+    The dataset used to train Internal Google BERT models.
   created_date:
     value: 2019-11-25
     explanation: >
@@ -21,7 +21,8 @@
   dependencies: []
   license: Unknown
   included:
-    value: >
+    value: Web pages, and search queries
+    explanation: >
       Although we don't exactly know the contents of the Internal Google BERT
       dataset, it likely includes contents from web pages and search queries.
   excluded: Unknown
@@ -32,8 +33,8 @@
     value: Unknown
     explanation: >
       We don't have an exhaustive list of the intended use cases for the
-      Internal Google BERT dataset, but we know that Google Search was powered
-      by a fine-tuned BERT.
+      Internal Google BERT dataset, but we know that BERT was used in Google
+      Search.
   prohibited_uses: Unknown
   monitoring: Unknown
   feedback: Unknown
@@ -79,8 +80,7 @@
   # General
   organization: Google
   description: >
-    Google Search is Google's search engine, which allows searching the
-    internet using natural language queries.
+    Google Search is Google's search engine.
   created_date:
     value: 2019-11-25
     explanation: >
@@ -90,7 +90,7 @@
   # Construction
   dependencies:
     - Internal Google BERT
-  adaptation: None
+  adaptation: Unknown
   output_space: web page ranking
   quality_control: Unknown
   # Downstream
