@@ -378,6 +378,7 @@ $(() => {
   const nameToAsset = {};  // asset name (e.g., "GPT-3") => asset
 
   const paths = [
+    'assets/anthropic.yaml',
     'assets/cohere.yaml',
     'assets/deepmind.yaml',
     'assets/eleutherai.yaml',
