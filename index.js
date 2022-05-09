@@ -250,6 +250,12 @@ function renderHome(nameToAsset) {
   return renderCustomTable(selectedAssets, nameToAsset, columnNames);
 }
 
+function renderHelp() {
+  let help = $('<div>');
+  help.append($('<h1>').append('Help'));
+  return help;
+}
+
 function renderAssetsTable(nameToAsset) {
   // Render a list of assets
   const columnNames = ['type', 'name', 'organization', 'created_date', 'size', 'dependencies'];
@@ -353,6 +359,8 @@ function render(urlParams, nameToAsset) {
     return renderAsset(nameToAsset, urlParams.asset);
   } else if (mode === 'home') {
     return renderHome(nameToAsset);
+  } else if (mode === 'help') {
+    return renderHelp();
   } else if (mode === 'graph') {
     return renderAssetsGraph(nameToAsset);
   } else if (mode === 'table') {
