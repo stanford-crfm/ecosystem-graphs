@@ -343,11 +343,11 @@ function render(urlParams, nameToAsset) {
   const mode = urlParams.mode || 'home';
   if (urlParams.asset) {
     return renderAsset(nameToAsset, urlParams.asset);
-  } else if (urlParams.mode === 'home') {
+  } else if (mode === 'home') {
     return renderHome(nameToAsset);
-  } else if (urlParams.mode === 'graph') {
+  } else if (mode === 'graph') {
     return renderAssetsGraph(nameToAsset);
-  } else if (urlParams.mode === 'table') {
+  } else if (mode === 'table') {
     return renderAssetsTable(nameToAsset);
   } else {
     return renderError('Unrecognized mode: ' + mode + '.');
