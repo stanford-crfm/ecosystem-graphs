@@ -230,7 +230,7 @@ function renderCustomTable(selectedAssets, allNameToAsset, columnNames) {
 
 function renderHome(nameToAsset) {
   // Render the home page
-  const numModels = 5;
+  const numModels = 10;
   const latestModelNames = Object.keys(nameToAsset)
                                  .filter((key) => nameToAsset[key].fields.created_date.value instanceof Date
                                                   && nameToAsset[key].type === 'model')
