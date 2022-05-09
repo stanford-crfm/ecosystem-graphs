@@ -121,11 +121,13 @@
       The training emission estimate from the paper
       [[Section F]](https://arxiv.org/pdf/2112.11446.pdf#appendix.F)
   training_time:
-    value: 920 hours
+    value: 7303.24 petaflop/s-day
     explanation: >
-      Reported in the paper
-      [[Section F]](https://arxiv.org/pdf/2112.11446.pdf#appendix.F).
-  training_hardware: >
+      The authors reported the training petaflops for all of the 4 different
+      sizes of the model. For the 280B parameter model, the petaflops was
+      reported as 6.31E+08. We compute the Gopher's training time in
+      petaflop/s-day as 6.31E+08 / (60*60*24) = 7303.24 petaflop/s-day.
+  training_hardware:
     value: TPUv3 pods
     explanation: >
       Reported in the paper
