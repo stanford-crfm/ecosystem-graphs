@@ -118,6 +118,8 @@ function renderValueExplanation(type, value, explanation) {
   let renderedValue = value;
   if (value === 'Unknown' || value === 'TODO' || value === 'None') {
     renderedValue = converter.makeHtml(value);
+  } else if (value instanceof Date) {
+    renderedValue = value.toLocaleDateString('en-us', { weekday:"long", year:"numeric", month:"short", day:"numeric"});
   } else if (type === 'list') {
     renderedValue = renderList(value.map((elemValue) => renderValueExplanation(null, elemValue, null)));
   } else if (type === 'url') {
@@ -230,7 +232,7 @@ function renderCustomTable(selectedAssets, allNameToAsset, columnNames) {
 
 function renderHome(nameToAsset) {
   // Render the home page
-  const numModels = 5;
+  const numModels = 10;
   const latestModelNames = Object.keys(nameToAsset)
                                  .filter((key) => nameToAsset[key].fields.created_date.value instanceof Date
                                                   && nameToAsset[key].type === 'model')
