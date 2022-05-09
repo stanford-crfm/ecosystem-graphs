@@ -121,23 +121,16 @@
   training_time:
     value: 47.10 petaflop/s-day
     explanation: >
-      Training time was reported as 1830 hours reported by the authors
+      Training time was reported as 1830 hours reported by the authors, equaling
+      76.25 days.
       [[Section 6.4]](http://eaidata.bmk.sh/data/GPT_NeoX_20B.pdf#subsection.6.4).
-      Using the GPU Time method outlined in the
+      The authors report that 96 (12 * 8) A100 GPUs were used during the
+      training.
+      The A100 GPUs have a single precision performance of 0.0195 petaflops
+      [[A100 Datasheet]](https://www.nvidia.com/content/dam/en-zz/Solutions/Data-Center/a100/pdf/nvidia-a100-datasheet-us-nvidia-1758950-r4-web.pdf).
+      Assuming the estimated utilization is 33%, following
       [[OpenAI AI and Computer Blog]](https://openai.com/blog/ai-and-compute/#addendum),
-      we can compute the training time in petaflop/s-day using the following
-      equation: Number of GPUs * (peta-flops/GPU) * days trained *
-      estimated utilization. The authors of the paper reports that 12 * 8 = 96
-      A100 GPUs were used to train GPT-NeoX-20B. The A100 GPUs have a single
-      precision performance of 19.5 teraflops
-      [[A100 Datasheet]](https://www.nvidia.com/content/dam/en-zz/Solutions/Data-Center/a100/pdf/nvidia-a100-datasheet-us-nvidia-1758950-r4-web.pdf),
-      which is equal to 19.5 / 1000 = 0.0195 petaflops. We can compute the
-      number of days trained as 1830 / 24 = 76.25. Finally, we assume that the
-      estimated utilization is 33%, following
-      [[OpenAI AI and Computer Blog]](https://openai.com/blog/ai-and-compute/#addendum).
-      This leaves us with: "Number of GPUs" = 96, "peta-flops/GPU" = 0.0195,
-      "days trained" = 76.25, and "estimated utilization" = 0.33. Multiplying
-      all together gives us 96 * 0.0195 * 76.25 * 0.33 = 47.10 petaflop/s-day.
+      the training time is 47.10 petaflop/s-day (76.25 * 96 * 0.0195 * 0.33).
   training_hardware:
     value: 12 x 8 A100 GPUs
     explanation: >

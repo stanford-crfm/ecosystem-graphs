@@ -382,8 +382,7 @@
       The time required to train different sized GPT-3 models are listed in
       [[Table D.1]](https://arxiv.org/pdf/2005.14165.pdf#table.caption.50).
       The time required to train the GPT-3 model with 175B parameters is
-      reported as 3.64E+03 petaflop days, which is the same as 3640 petaflop
-      days.
+      reported as 3.64E+03 petaflop/s-days.
   training_hardware:
     value: Azure
     explanation: >
@@ -480,7 +479,7 @@
     value: Unknown
     explanation: Authors do not report the training emissions.
   training_time:
-    value: Unknown
+    value: 100-1000 petaflop/s-days
     explanation: >
       Authors estimate hundreds of petaflop/s-days of compute
       [[Section 7.6]](https://arxiv.org/pdf/2107.03374.pdf#subsection.7.6), but
