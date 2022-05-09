@@ -119,7 +119,8 @@ function renderValueExplanation(type, value, explanation) {
   if (value === 'Unknown' || value === 'TODO' || value === 'None') {
     renderedValue = converter.makeHtml(value);
   } else if (value instanceof Date) {
-    renderedValue = value.toLocaleDateString('en-us', { weekday:"long", year:"numeric", month:"short", day:"numeric"});
+    let dateString = value.toLocaleDateString('en-us', { weekday:"long", year:"numeric", month:"short", day:"numeric"});
+    renderedValue = converter.makeHtml(dateString);
   } else if (type === 'list') {
     renderedValue = renderList(value.map((elemValue) => renderValueExplanation(null, elemValue, null)));
   } else if (type === 'url') {
@@ -127,12 +128,17 @@ function renderValueExplanation(type, value, explanation) {
   } else if (typeof(value) === 'string') {
     renderedValue = converter.makeHtml(value);
   }
+  // Wrap the value in a custom element
+  const fieldValue = $('<div>', {class: 'field-value'}).append(renderedValue);
+
   // Render explanation, if provided
   if (explanation != null) {
-    return $('<div>').append(renderedValue)
-                     .append(converter.makeHtml(explanation));
+    let renderedExplanation = converter.makeHtml(explanation);
+    const fieldExplanation = $('<div>', {class: 'field-explanation'}).append(renderedExplanation);
+    return $('<div>').append(fieldValue)
+                     .append(fieldExplanation);
   } else {
-    return renderedValue;
+    return fieldValue;
   }
 }
 
