@@ -354,8 +354,9 @@
   size:
     value: 175B parameters (dense model)
     explanation: >
-      GPT-3 comes in several sizes. Here we report the largest
-      GPT-3 model size. All the model sizes of GPT-3 can be seen in the paper
+      GPT-3 comes in several sizes. Here we report the size of the Davinci
+      model, the largest GPT-3 model served through the OpenAI API. Sizes of the
+      other models can be found in the paper
       [[Table 2.1]](https://arxiv.org/pdf/2005.14165.pdf#table.caption.7).
   analysis:
     value: >
