@@ -119,7 +119,7 @@ function renderValueExplanation(type, value, explanation) {
   if (value === 'Unknown' || value === 'TODO' || value === 'None') {
     renderedValue = converter.makeHtml(value);
   } else if (value instanceof Date) {
-    let dateString = value.toLocaleDateString('en-us', {weekday:"long", year:"numeric", month:"short", day:"numeric"});
+    let dateString = value.toLocaleDateString('en-us', {year:"numeric", month:"short", day:"numeric"});
     renderedValue = converter.makeHtml(dateString);
   } else if (type === 'list') {
     renderedValue = renderList(value.map((elemValue) => renderValueExplanation(null, elemValue, null)));
