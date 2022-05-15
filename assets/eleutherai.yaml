@@ -10,7 +10,7 @@
     value: 2021-01-01
   url: https://arxiv.org/pdf/2101.00027.pdf
   datasheet: https://arxiv.org/pdf/2201.07311.pdf
-  modality: Text (English) and code
+  modality: Text (English) and Code
   size: 825 GB
   sample:
     - ...pot trending topics and the coverage around them. First up, there’s a

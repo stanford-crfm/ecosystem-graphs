@@ -45,15 +45,15 @@ class Asset {
 
       // The assset fields we will populate
       let value = null, explanation = null;
-    
+
       // We expect each assetField to have a value and an explanation.
       // When reading the field from the schemaFieldValue, we populate each of
-      // these fields as follows: 
+      // these fields as follows:
       // (1) If the schemaFieldValue is an object that is not an Array, we try
       //     to read 'value' and 'explanation' fields to the respective fields
       //     in the AssetField. If the explanation field is not provided, we
       //     would read null.
-      // (2) Otheriwise, we directly read schemaFieldValue to the value of 
+      // (2) Otheriwise, we directly read schemaFieldValue to the value of
       //     AssetField, and leave the explanation as null.
       const schemaFieldValue = getField(item, schemaField.name);
       if ((typeof schemaFieldValue === 'object') && !(schemaFieldValue instanceof Array)) {
@@ -119,7 +119,7 @@ function renderValueExplanation(type, value, explanation) {
   if (value === 'Unknown' || value === 'TODO' || value === 'None') {
     renderedValue = converter.makeHtml(value);
   } else if (value instanceof Date) {
-    let dateString = value.toLocaleDateString('en-us', { weekday:"long", year:"numeric", month:"short", day:"numeric"});
+    let dateString = value.toLocaleDateString('en-us', {weekday:"long", year:"numeric", month:"short", day:"numeric"});
     renderedValue = converter.makeHtml(dateString);
   } else if (type === 'list') {
     renderedValue = renderList(value.map((elemValue) => renderValueExplanation(null, elemValue, null)));
@@ -242,10 +242,10 @@ function renderHome(nameToAsset) {
   const latestModelNames = Object.keys(nameToAsset)
                                  .filter((key) => nameToAsset[key].fields.created_date.value instanceof Date
                                                   && nameToAsset[key].type === 'model')
-                                 .sort((a, b) => nameToAsset[b].fields.created_date.value 
+                                 .sort((a, b) => nameToAsset[b].fields.created_date.value
                                                 - nameToAsset[a].fields.created_date.value)
                                  .slice(0, numModels);
-  columnNames = ['name', 'created_date', 'size', 'access', 'dependencies', 'url'];
+  columnNames = ['name', 'created_date', 'size', 'access', 'dependencies'];
   const selectedAssets = latestModelNames.map((key) => (nameToAsset[key]));
   return renderCustomTable(selectedAssets, nameToAsset, columnNames);
 }
@@ -257,8 +257,10 @@ function renderHelp() {
 }
 
 function renderAssetsTable(nameToAsset) {
-  // Render a list of assets
-  const columnNames = ['type', 'name', 'organization', 'created_date', 'size', 'dependencies'];
+  const columnNames = [
+    'type', 'name', 'organization', 'created_date', 'size', 'access',
+    'dependencies',
+  ];
   const assets = Object.keys(nameToAsset).map((key) => (nameToAsset[key]));
   return renderCustomTable(assets, nameToAsset, columnNames);
 }
@@ -368,7 +370,7 @@ function render(urlParams, nameToAsset) {
   } else {
     return renderError('Unrecognized mode: ' + mode + '.');
   }
-} 
+}
 
 function updateDownstreamAssets(nameToAsset) {
   // Use each asset's dependencies (upstream pointers) to update the corresponding downstream pointers.

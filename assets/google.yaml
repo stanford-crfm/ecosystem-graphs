@@ -13,7 +13,7 @@
       were for ranking and featured snippets in Search.
   url: https://blog.google/products/search/search-language-understanding-bert/
   datasheet: None
-  modality: text
+  modality: Text
   size: Unknown
   sample: []
   analysis: Unknown
@@ -52,7 +52,7 @@
       were for ranking and featured snippets in Search.
   url: https://blog.google/products/search/search-language-understanding-bert/
   model_card: Unknown
-  modality: text
+  modality: Text
   size: Unknown
   analysis: Unknown
   # Construction
@@ -133,7 +133,7 @@
       [[Google News Blog]](https://blog.google/technology/ai/lamda/).
   url: https://arxiv.org/pdf/2201.08239.pdf
   datasheet: None
-  modality: Text and code
+  modality: Text and Code
   size:
     value: Unknown
     explanation: >
@@ -184,7 +184,7 @@
       [[Google News Blog]](https://blog.google/technology/ai/lamda/).
   url: https://arxiv.org/pdf/2201.08239.pdf
   model_card: None
-  modality: text
+  modality: Text
   size:
     value: 137B parameters (dense model)
     explanation: >
@@ -262,7 +262,7 @@
       [[Google AI Blog]](https://ai.googleblog.com/2022/04/pathways-language-model-palm-scaling-to.html).
   url: https://arxiv.org/pdf/2204.02311.pdf
   datasheet: https://arxiv.org/pdf/2204.02311.pdf#appendix.D
-  modality: Text and code
+  modality: Text and Code
   size:
     value: 3.92 TB
     explanation: >
