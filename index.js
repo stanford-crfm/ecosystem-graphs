@@ -402,6 +402,7 @@ $(() => {
     'assets/eleutherai.yaml',
     'assets/google.yaml',
     'assets/microsoft.yaml',
+    'assets/meta.yaml',
     'assets/openai.yaml',
   ];
 

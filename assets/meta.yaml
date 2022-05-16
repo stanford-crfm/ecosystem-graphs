@@ -1,0 +1,26 @@
+---
+
+- type: model
+  name: Fairseq
+  # General
+  organization: Meta
+  description: todo
+  created_date: todo
+  url: todo
+  model_card: todo
+  modality: todo
+  size: todo
+  analysis: todo
+  # Construction
+  dependencies: []
+  training_emissions: todo
+  training_time: todo
+  training_hardware: todo
+  quality_control: todo
+  # Downstream
+  access: todo
+  license: todo
+  intended_uses: todo
+  prohibited_uses: todo
+  monitoring: todo
+  feedback: todo

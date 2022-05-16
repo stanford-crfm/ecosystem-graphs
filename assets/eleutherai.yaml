@@ -95,6 +95,56 @@
       Feedback can be given by emailing the authors at contact at eleuther.ai.
 
 - type: model
+  name: GPT-J
+  # General
+  organization: EleutherAI
+  description: todo
+  created_date: todo
+  url: todo
+  model_card: todo
+  modality: todo
+  size: todo
+  analysis: todo
+  # Construction
+  dependencies: []
+  training_emissions: todo
+  training_time: todo
+  training_hardware: todo
+  quality_control: todo
+  # Downstream
+  access: todo
+  license: todo
+  intended_uses: todo
+  prohibited_uses: todo
+  monitoring: todo
+  feedback: todo
+
+- type: model
+  name: GPT-Neo
+  # General
+  organization: EleutherAI
+  description: todo
+  created_date: todo
+  url: todo
+  model_card: todo
+  modality: todo
+  size: todo
+  analysis: todo
+  # Construction
+  dependencies: []
+  training_emissions: todo
+  training_time: todo
+  training_hardware: todo
+  quality_control: todo
+  # Downstream
+  access: todo
+  license: todo
+  intended_uses: todo
+  prohibited_uses: todo
+  monitoring: todo
+  feedback: todo
+
+- type: model
   name: GPT-NeoX-20B
   # General
   organization: EleutherAI
@@ -172,3 +222,63 @@
       [[EleutherAI Blog Post]](https://blog.eleuther.ai/announcing-20b/).
       Find the Discord link in the FAQ page
       [[FAQ]](https://www.eleuther.ai/faq/).
+
+
+- type: application
+  name: GooseAI API
+  # General
+  organization: GooseAI
+  description: >
+    GooseAI API is an API service providing access to NLP services.
+  created_date: Unknown
+  url: goose.ai
+  # Construction
+  dependencies:
+    - GPT-NeoX-20B
+    - GPT-Neo
+    - GPT-J
+    - Fairseq
+  adaptation: Unknown
+  output_space:
+    value: Text Generation, Text Completion
+    explanation: >
+      Question/Answer and Classification tasks are coming soon according to
+      GooseAI
+      [[Main Page]](goose.ai).
+  quality_control: Unknown
+  # Downstream
+  access:
+    value: Limited public access
+    explanation: >
+      GooseAI API can be accessed by signing up on the goose.ai website.
+  license:
+    value: Limited use license
+    explanation: >
+      Customers are granted limited use license as stated in the GooseAI
+      Terms of Service
+      [[GooseAI Terms of Service]](https://goose.ai/docs/tos).
+  terms_of_service: https://goose.ai/docs/tos
+  intended_uses: Training counselors
+  prohibited_uses:
+    value: >
+      Illegal or abusive activity, security violations, network abuse
+    explanation: >
+      Prohibited uses are detailed in the Acceptable Use Policy
+      [[GooseAI Acceptable Use Policy]](https://goose.ai/docs/aup).
+  monitoring:
+    value: At will monitoring by the provider
+    explanation: >
+      In the "GooseAI Monitoring and Enforcement" section of GooseAI's
+      Acceptable Use Policy (AUP), it is stated that Goose.AI has the right to
+      investigate any suspected violation of its AUP
+      [[GooseAI Acceptable Use Policy]](https://goose.ai/docs/aup).
+  feedback:
+    value: Email support
+    explanation: >
+      In the "Error Reporting and Feedback" section of the Goose.ai Terms of
+      Service, GooseAI asks all the feedback to be sent to support at goose.ai
+      [[GooseAI Terms of Service]](https://goose.ai/docs/tos).
+  # Deployment
+  monthly_active_users: Unknown
+  user_distribution: Unknown
+  failures: Unknown
