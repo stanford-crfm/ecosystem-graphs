@@ -1076,7 +1076,7 @@
   # General
   organization: Duolingo
   description: >
-    Duolingo is a language acquisition application, helping users learn new
+    Duolingo is a language learning application, helping users learn new
     languagese through completing a series of activities. Duolingo uses
     GPT-3 to provide French grammer correction
     [[OpenAI API Use Cases]](https://openai.com/api/).

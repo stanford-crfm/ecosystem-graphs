@@ -254,11 +254,14 @@
   license:
     value: Limited use license
     explanation: >
-      Customers are granted limited use license as stated in the GooseAI
-      Terms of Service
-      [[GooseAI Terms of Service]](https://goose.ai/docs/tos).
+      "Subject to Customer’s strict compliance with this TOS, GooseAI grants
+      Customer a limited, non-exclusive, non-transferable, non-sublicensable,
+      revocable license to access and use the Platform as described in and
+      subject to this TOS"
+      [[GooseAI Terms of Service]](https://goose.ai/docs/tos)
   terms_of_service: https://goose.ai/docs/tos
-  intended_uses: Training counselors
+  intended_uses: >
+    Intended to be used as an NLP infrastructure.
   prohibited_uses:
     value: >
       Illegal or abusive activity, security violations, network abuse
