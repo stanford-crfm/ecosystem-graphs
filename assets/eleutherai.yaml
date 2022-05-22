@@ -95,56 +95,6 @@
       Feedback can be given by emailing the authors at contact at eleuther.ai.
 
 - type: model
-  name: GPT-J
-  # General
-  organization: EleutherAI
-  description: todo
-  created_date: todo
-  url: todo
-  model_card: todo
-  modality: todo
-  size: todo
-  analysis: todo
-  # Construction
-  dependencies: []
-  training_emissions: todo
-  training_time: todo
-  training_hardware: todo
-  quality_control: todo
-  # Downstream
-  access: todo
-  license: todo
-  intended_uses: todo
-  prohibited_uses: todo
-  monitoring: todo
-  feedback: todo
-
-- type: model
-  name: GPT-Neo
-  # General
-  organization: EleutherAI
-  description: todo
-  created_date: todo
-  url: todo
-  model_card: todo
-  modality: todo
-  size: todo
-  analysis: todo
-  # Construction
-  dependencies: []
-  training_emissions: todo
-  training_time: todo
-  training_hardware: todo
-  quality_control: todo
-  # Downstream
-  access: todo
-  license: todo
-  intended_uses: todo
-  prohibited_uses: todo
-  monitoring: todo
-  feedback: todo
-
-- type: model
   name: GPT-NeoX-20B
   # General
   organization: EleutherAI
@@ -235,9 +185,6 @@
   # Construction
   dependencies:
     - GPT-NeoX-20B
-    - GPT-Neo
-    - GPT-J
-    - Fairseq
   adaptation: Unknown
   output_space:
     value: Text Generation, Text Completion
