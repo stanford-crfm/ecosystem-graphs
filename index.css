@@ -24,3 +24,9 @@
   height: 600px;
   display: block;
 }
+
+.field-explanation {
+  color: gray;
+  font-size: smaller;
+  font-style: italic;
+}
