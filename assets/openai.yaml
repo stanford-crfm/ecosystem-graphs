@@ -430,7 +430,7 @@
       [[Section 6]](https://arxiv.org/pdf/2005.14165.pdf#section.6).
   # Downstream
   access:
-    value: Limited API access
+    value: Limited public access
     explanation: >
       The GPT-3 model isn't fully released to the public, but
       it was made available to Microsoft through the licencing agreement between
@@ -526,7 +526,7 @@
       [[Section 7]](https://arxiv.org/pdf/2107.03374.pdf#section.7).
   # Downstream
   access:
-    value: Limited API access
+    value: Limited public access
     explanation: >
       The model is made available via the OpenAI API
       [[OpenAI API]](https://openai.com/api/). Full model access was granted to
@@ -597,7 +597,7 @@
     value: The model wasn't fully released to the public as a quality control measure.
   # Downstream
   access:
-    value: Limited API access
+    value: Limited public access
     explanation: >
       The model is made available via the OpenAI API
       [[OpenAI API]](https://openai.com/api/).
@@ -876,7 +876,7 @@
       (https://github.com/openai/dalle-2-preview/blob/main/system-card.md#input-filters).
   # Downstream
   access:
-    value: Limited private access
+    value: Limited public access
     explanation: >
       The model is available to OpenAI employees, researchers, creatives
       and company friends. OpenAI opened a waitlist for DALL·E 2 access.
@@ -959,7 +959,7 @@
       [[OpenAI API]](https://openai.com/api/).
   # Downstream
   access:
-    value: Limited API access
+    value: Limited public access
     explanation: >
       The OpenAI API is available to the public in supported countries
       [[Supported Countries]](https://beta.openai.com/docs/supported-countries)
@@ -1051,7 +1051,7 @@
   output_space: question and answer, summarization, sentiment analysis,topic identification
   quality_control: Unknown
   # Downstream
-  access: Limited platform access
+  access: Limited public access
   license: https://www.sanalabs.com/legal/
   terms_of_service: https://www.sanalabs.com/legal/
   intended_uses: >

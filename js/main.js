@@ -43,7 +43,7 @@ class Asset {
     // Loop through the schema to populate the asset fields
     schema.fields.forEach((schemaField) => {
 
-      // The assset fields we will populate
+      // The asset fields we will populate
       let value = null, explanation = null;
 
       // We expect each assetField to have a value and an explanation.
@@ -53,7 +53,7 @@ class Asset {
       //     to read 'value' and 'explanation' fields to the respective fields
       //     in the AssetField. If the explanation field is not provided, we
       //     would read null.
-      // (2) Otheriwise, we directly read schemaFieldValue to the value of
+      // (2) Otherwise, we directly read schemaFieldValue to the value of
       //     AssetField, and leave the explanation as null.
       const schemaFieldValue = getField(item, schemaField.name);
       if ((typeof schemaFieldValue === 'object') && !(schemaFieldValue instanceof Array)) {
@@ -89,11 +89,147 @@ class Asset {
   }
 }
 
+function updateDownstreamAssets(nameToAsset) {
+  // Use each asset's dependencies (upstream pointers) to update the corresponding downstream pointers.
+  Object.values(nameToAsset).forEach((asset) => {
+    asset.fields.dependencies.value.forEach((dep) => {
+      if (!(dep in nameToAsset)) {
+        console.error('The node ', dep, 'does not exist in the graph.');
+      }
+      const depAsset = nameToAsset[dep];
+      if (depAsset) {
+        depAsset.downstreamAssets.push(asset.fields.name.value);
+      }
+    });
+  });
+}
+
+////////////////////////////////////////////////////////////
+
+function getStandardSize(value) {
+  const thousand = 1000;
+  const dataSizeDict = {'B': 0, 'KB': 1, 'MB': 2, 'GB': 3, 'TB': 4, 'PB': 5};
+  const modelSizeDict = {'M': 2, 'B': 3, 'T': 4};
+  if (value.includes('parameters')) {
+    var size = value.split(' ')[0];
+    const unit = size.slice(-1);
+    const exp = modelSizeDict[unit];
+    size = size.substring(0, size.length - 1);
+    value = Math.pow(thousand, exp);
+  } else {
+    const arr = value.split(' ');
+    const num = parseInt(arr[0]);
+    const unit = arr[2];
+    const exp = dataSizeDict[unit];
+    value = Math.pow(thousand, exp);
+  }
+  return value
+}
+
+function getCorrectedDate(value) {
+  if (!(value instanceof Date)) {
+    // Year case
+    value = String(value)
+    console.log(value);
+    if (value.length === 4) {
+      value = new Date(value, 1);
+    }
+    // Year and month
+    if (value.length === 7) {
+      const arr = value.split('-')
+      value = new Date(parseInt(arr[0]), parseInt(arr[1]));
+    // Default to oldest date
+    } else {
+      value = new Date(-8640000000000000)
+    }
+  }
+  return value;
+}
+
+function compareValues(valueA, valueB, columnName) {
+  // Filter for unknown, null and todo values
+  const genericValues = ["Unknown", "todo", null];
+  if (valueA === null) {
+    return -1;
+  } else if (valueB === null) {
+    return 1;
+  } else if (valueA === "todo") {
+    return -1;
+  } else if (valueB === "todo") {
+    return 1;
+  } else if (valueA === "Unknown") {
+    return -1;
+  } else if (valueB === "Unknown") {
+    return 1;
+  }
+
+  // Standardize the value
+  if (columnName === "created_date") {
+    valueA = getCorrectedDate(valueA);
+    valueB = getCorrectedDate(valueB);
+    return valueA - valueB;
+  } else if (columnName === "size") {
+    valueA = getStandardSize(valueA);
+    valueB = getStandardSize(valueB);
+  } 
+  // @TODO Decide how to sort the the "dependencies" column
+  
+  // Compare the values
+  if (valueA > valueB) {
+    return 1;
+  } else if (valueA < valueB) {
+    return -1;
+  } else {
+    return 0;
+  }
+}
+
+function sortColumn(columnName, index) {
+
+  // Get the current direction
+  const direction = globalThis.tableDirections[index] || 'asc';
+
+
+  console.log(direction);
+
+  // A factor based on the direction
+  const multiplier = (direction === 'asc') ? 1 : -1;
+
+  // Get body
+  const tbody = $('tbody');
+
+  // Get rows
+  const rows = $('tr').slice(1); // Skip the header row
+
+  // Sort rows
+  rows.sort((rowA, rowB) => {
+    const fvA = $(rowA).find("td .field-value")[index];
+    const fvB = $(rowB).find("td .field-value")[index];
+    const valueA = $(fvA).children()[0].innerHTML;
+    const valueB = $(fvB).children()[0].innerHTML;
+    return multiplier * compareValues(valueA, valueB, columnName);
+  });
+
+  // Create a new tbody
+  const newTBody = $('<tbody>');
+
+  // // // Append new rows
+  [].forEach.call(rows, function (row) {
+    newTBody.append(row);
+  });
+
+  // Replace the tbody
+  tbody.replaceWith(newTBody);
+
+  // Reverse the direction
+  globalThis.tableDirections[index] = direction === 'asc' ? 'desc' : 'asc';
+}
+
 ////////////////////////////////////////////////////////////
 
 function helpIcon(help, link) {
   // Show a ?
-  return $('<a>', {href: link, target: 'blank_', class: 'help-icon'}).append($('<img>', {src: 'info-icon.png', width: 15, title: help}));
+  return $('<a>', {href: link, target: 'blank_', class: 'help-icon'}).append($('<img>', {src: 'img/info-icon.png', width: 15, title: help}));
 }
 
 function renderList(items) {
@@ -107,6 +243,18 @@ function renderList(items) {
   return $list;
 }
 
+function renderAccessType(value) {
+  const converter = new showdown.Converter();
+  const valueToColor = {
+    'Full public access': '#c0eec0',  // Slightly lighter than lightgreen
+    'Limited public access': 'papayawhip',
+    'No public access': '#f0b0b0'  // Slightly lighter than lightcoral
+  }
+  const color = value in valueToColor ? valueToColor[value] : 'mistyrose';
+  const textElement = $('<span>').css("background-color", color).append(value);
+  return textElement;
+}
+
 function renderField(schemaField) {
   const text = schemaField.name.replace(/_/g, ' ');
   return $('<div>').append(text).append(helpIcon(schemaField.description, '#'));
@@ -115,7 +263,7 @@ function renderField(schemaField) {
 function renderValueExplanation(type, value, explanation) {
   const converter = new showdown.Converter();
   // Render value
-  let renderedValue = value;
+  let renderedValue = $('<div>').append(value);
   if (value === 'Unknown' || value === 'TODO' || value === 'None') {
     renderedValue = converter.makeHtml(value);
   } else if (value instanceof Date) {
@@ -125,6 +273,8 @@ function renderValueExplanation(type, value, explanation) {
     renderedValue = renderList(value.map((elemValue) => renderValueExplanation(null, elemValue, null)));
   } else if (type === 'url') {
     renderedValue = $('<a>', {href: value, target: 'blank_'}).append(value);
+  } else if (type === 'access_type') {
+    renderedValue = renderAccessType(value);
   } else if (typeof(value) === 'string') {
     renderedValue = converter.makeHtml(value);
   }
@@ -194,6 +344,7 @@ function renderFieldName(fieldName) {
   const capitalized = fieldName.charAt(0).toUpperCase() + fieldName.slice(1);
   return capitalized.replace('_', ' ');
 }
+
 /**
  * Renders a table given the column properties.
  * @param {Array.<Asset>} selectedAssets - Array of the assets that will be
@@ -205,22 +356,34 @@ function renderFieldName(fieldName) {
  */
 function renderCustomTable(selectedAssets, allNameToAsset, columnNames) {
   const $table = $('<table>', {class: 'table'});
-  $table.append($('<thead>').append($('<tr>')));
-  columnNames.forEach((columnName) => {
-    $table.append($('<td>').append(renderFieldName(columnName)));
+  const $thead = $('<thead>');
+  const $headRow = $('<tr>');
+  // Add column names
+  columnNames.forEach((columnName, index) => {
+    const onclickString = 'sortColumn(\'' + columnName + '\', ' + index + ')';
+    $headRow.append($('<th>', {onClick: onclickString}).append(renderFieldName(columnName)));
   });
+  $thead.append($headRow);
+  $table.append($thead);
+  // Keep track of the directions, used to sort asc and desc
+  globalThis.tableDirections = Array.from(columnNames).map(function (header) {
+    return '';
+  });
+  // Add body
   const $tbody = $('<tbody>');
   selectedAssets.forEach((asset) => {
-    $tbody.append($('<tr>'));
+    const $bodyRow = $('<tr>');
     columnNames.forEach((columnName) => {
       let tdValue = null;
       if (columnName === 'type') {
         tdValue = renderValueExplanation('', asset.type, null);
       } else if (columnName === 'name') {
         const href = encodeUrlParams({asset: asset.fields.name.value});
-        tdValue = $('<a>', {href, target: 'blank_'}).append(asset.fields.name.value);
+        const fieldValue = $('<a>', {href, target: 'blank_'}).append(asset.fields.name.value);
+        tdValue = $('<div>', {class: 'field-value'}).append(fieldValue);
       } else if (columnName === 'dependencies') {
-        tdValue = renderAssetLinks(allNameToAsset, asset.fields.dependencies.value);
+        const fieldValue = renderAssetLinks(allNameToAsset, asset.fields.dependencies.value);
+        tdValue = $('<div>', {class: 'field-value'}).append(fieldValue);
       } else {
         //
         let type = '';
@@ -229,31 +392,12 @@ function renderCustomTable(selectedAssets, allNameToAsset, columnNames) {
         const explanation = columnName in asset.fields ? asset.fields[columnName].explanation : null;
         tdValue = renderValueExplanation(type, value, explanation);
       }
-      $tbody.append($('<td>').append(tdValue));
+      $bodyRow.append($('<td>').append(tdValue));
     });
+    $tbody.append($bodyRow);
   });
   $table.append($tbody);
   return $table;
-}
-
-function renderHome(nameToAsset) {
-  // Render the home page
-  const numModels = 10;
-  const latestModelNames = Object.keys(nameToAsset)
-                                 .filter((key) => nameToAsset[key].fields.created_date.value instanceof Date
-                                                  && nameToAsset[key].type === 'model')
-                                 .sort((a, b) => nameToAsset[b].fields.created_date.value
-                                                - nameToAsset[a].fields.created_date.value)
-                                 .slice(0, numModels);
-  columnNames = ['name', 'created_date', 'size', 'access', 'dependencies'];
-  const selectedAssets = latestModelNames.map((key) => (nameToAsset[key]));
-  return renderCustomTable(selectedAssets, nameToAsset, columnNames);
-}
-
-function renderHelp() {
-  let help = $('<div>');
-  help.append($('<h1>').append('Help'));
-  return help;
 }
 
 function renderAssetsTable(nameToAsset) {
@@ -261,7 +405,10 @@ function renderAssetsTable(nameToAsset) {
     'type', 'name', 'organization', 'created_date', 'size', 'access',
     'dependencies',
   ];
-  const assets = Object.keys(nameToAsset).map((key) => (nameToAsset[key]));
+  const assets = Object.keys(nameToAsset)
+                       .sort((a, b) => compareValues(nameToAsset[a].fields.created_date.value, nameToAsset[b].fields.created_date.value, "created_date"))
+                       .map((key) => (nameToAsset[key]));
+
   return renderCustomTable(assets, nameToAsset, columnNames);
 }
 
@@ -355,45 +502,76 @@ function renderAssetsGraph(nameToAsset) {
   return $graph;
 }
 
-function render(urlParams, nameToAsset) {
-  const mode = urlParams.mode || 'home';
-  if (urlParams.asset) {
-    return renderAsset(nameToAsset, urlParams.asset);
-  } else if (mode === 'home') {
-    return renderHome(nameToAsset);
-  } else if (mode === 'help') {
-    return renderHelp();
-  } else if (mode === 'graph') {
-    return renderAssetsGraph(nameToAsset);
-  } else if (mode === 'table') {
-    return renderAssetsTable(nameToAsset);
-  } else {
-    return renderError('Unrecognized mode: ' + mode + '.');
-  }
+////////////////////////////////////////////////////////////
+
+// UI Helpers
+
+function toggleExplanation() {
+  $(".field-explanation").toggle();
 }
 
-function updateDownstreamAssets(nameToAsset) {
-  // Use each asset's dependencies (upstream pointers) to update the corresponding downstream pointers.
-  Object.values(nameToAsset).forEach((asset) => {
-    asset.fields.dependencies.value.forEach((dep) => {
-      if (!(dep in nameToAsset)) {
-        console.error('The node ', dep, 'does not exist in the graph.');
-      }
-      const depAsset = nameToAsset[dep];
-      if (depAsset) {
-        depAsset.downstreamAssets.push(asset.fields.name.value);
-      }
-    });
+////////////////////////////////////////////////////////////
+
+// Home Page
+function renderHomePage(pageContainer) {
+  $("nav").hide();
+  $.get("components/home.html", function(data){
+    pageContainer.append(data);
   });
 }
 
+// Table Page
+function renderTablePage(pageContainer, nameToAsset) {
+  $.get("components/table.html", function(data){
+    pageContainer.append(data);
+    const tableContainer = $("#table-container");
+    const table = renderAssetsTable(nameToAsset);
+    tableContainer.append(table);
+  });
 
-$(() => {
+}
+
+// Graph Page
+function renderGraphPage(pageContainer, nameToAsset) {
+  const graph = renderAssetsGraph(nameToAsset);
+  pageContainer.append(graph);
+}
+
+// Help Page
+function renderHelpPage(pageContainer) {
+  $.get("components/help.html", function(data){
+    pageContainer.append(data);
+  });
+}
+
+function renderPageContent(nameToAsset) {
   const urlParams = decodeUrlParams(window.location.search);
+  const pageContainer = $('#main');
+  const mode = urlParams.mode || 'home';
+  if (urlParams.asset) {
+    const content = renderAsset(nameToAsset, urlParams.asset);
+    pageContainer.append(content);
+  } else if (mode === 'home') {
+    renderHomePage(pageContainer);
+  } else if (mode === 'table') {
+    renderTablePage(pageContainer, nameToAsset);
+  } else if (mode === 'graph') {
+    renderGraphPage(pageContainer, nameToAsset);
+  } else if (mode === 'help') {
+    renderHelpPage(pageContainer);
+  } else {
+    const content = renderError('Unrecognized mode: ' + mode + '.');
+    pageContainer.append(content);
+  }
+}
 
-  const $main = $('#main');
-  const typeToSchema = {};  // asset type (e.g., "model") => schema
-  const nameToAsset = {};  // asset name (e.g., "GPT-3") => asset
+function renderNavBar() {
+  $.get("components/nav.html", function(data){
+    $("#nav-placeholder").replaceWith(data);
+  });
+}
+
+function loadAssetsAndRenderPageContent() {
 
   const paths = [
     'assets/anthropic.yaml',
@@ -405,8 +583,9 @@ $(() => {
     'assets/openai.yaml',
   ];
 
-  $.get('schemas.yaml', {}, (response) => {
+  $.get('js/schemas.yaml', {}, (response) => {
     // First read the schema...
+    const typeToSchema = {};  // asset type (e.g., "model") => schema
     const raw = jsyaml.load(response);
     console.log('Read schemas', raw);
     for (const name in raw) {
@@ -414,6 +593,7 @@ $(() => {
     }
 
     // Then read all the assets in parallel
+    const nameToAsset = {};  // asset name (e.g., "GPT-3") => asset
     $.when(
       ...paths.map((path) => {
         return $.get(path, {}, (response) => {
@@ -426,7 +606,7 @@ $(() => {
       })
     ).then(() => {
       updateDownstreamAssets(nameToAsset);
-      $main.append(render(urlParams, nameToAsset));
+      renderPageContent(nameToAsset);
     });
   });
-});
+};

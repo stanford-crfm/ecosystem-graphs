@@ -37,6 +37,7 @@ dataset:
     description: What measures were taken to ensure quality, safety, and mitigate harms.
   # Downstream
   - name: access
+    type: access_type
     description: Who can access (and use) the dataset.
   - name: license
     description: License of the dataset.
@@ -85,6 +86,7 @@ model:
     description: What measures were taken to ensure quality, safety, and mitigate harms.
   # Downstream
   - name: access
+    type: access_type
     description: Who can access (and use) this model.
   - name: license
     description: License of the model.
@@ -121,6 +123,7 @@ application:
     description: What measures were taken to ensure quality, safety, and mitigate harms.
   # Downstream
   - name: access
+    type: access_type
     description: Who can access (and use) the application.
   - name: license
     description: License of the application.
