@@ -406,7 +406,7 @@ function renderAssetsTable(nameToAsset) {
     'dependencies',
   ];
   const assets = Object.keys(nameToAsset)
-                       .sort((a, b) => compareValues(nameToAsset[a].fields.created_date.value, nameToAsset[b].fields.created_date.value, "created_date"))
+                       .sort((a, b) => compareValues(nameToAsset[b].fields.created_date.value, nameToAsset[a].fields.created_date.value, "created_date"))
                        .map((key) => (nameToAsset[key]));
 
   return renderCustomTable(assets, nameToAsset, columnNames);
