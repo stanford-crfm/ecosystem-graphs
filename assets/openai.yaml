@@ -90,7 +90,7 @@
     explanation: >
       There are no known (internal or external) monitoring mechanisms
       that are in place for the use of the GPT-3 dataset as of 2022-04-04.
-  feedback: >
+  feedback:
     value: Unknown
     explanation: >
       There are no known (internal or external) feedback mechanisms for

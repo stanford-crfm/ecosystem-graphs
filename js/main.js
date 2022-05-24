@@ -355,14 +355,10 @@ function renderValueExplanation(type, value, explanation) {
   const fieldValue = $('<div>', {class: 'field-value'}).append(renderedValue);
 
   // Render explanation, if provided
-  if (explanation != null) {
-    let renderedExplanation = converter.makeHtml(explanation);
-    const fieldExplanation = $('<div>', {class: 'field-explanation'}).append(renderedExplanation);
-    return $('<div>').append(fieldValue)
-                     .append(fieldExplanation);
-  } else {
-    return fieldValue;
-  }
+  let renderedExplanation = converter.makeHtml(explanation);
+  const fieldExplanation = $('<div>', {class: 'field-explanation'}).append(renderedExplanation);
+  return $('<div>').append(fieldValue)
+                    .append(fieldExplanation);
 }
 
 function renderAssetLink(nameToAsset, assetName) {
