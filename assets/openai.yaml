@@ -975,7 +975,7 @@
       OpenAI API was designed to be used by developers to empower applications,
       and researchers to study language models
       [[Section 3]](https://openai.com/api/policies/terms/).
-  prohibited_uses: >
+  prohibited_uses:
     value: >
       OpenAI API Terms of Use prohibits the use of the API in a way violating
       the applicable law, including: (i) "Illegal activities, such as child
@@ -1003,13 +1003,15 @@
       [[App Review Guidelines]]
       (https://beta.openai.com/docs/usage-guidelines/app-review).
   feedback:
-    value: >
-      Unknown; There is no known specific feedback channel for the OpenAI API,
+    value: Unknown
+    explanation: >
+      There is no known specific feedback channel for the OpenAI API,
       but OpenAI support theme can be reached via email at support at openai.com.
   # Deployment
   monthly_active_users:
-    value: >
-      Unknown; The number of monthly active users is not known publicly, but
+    value: Unknown
+    explanation: >
+      The number of monthly active users is not known publicly, but
       OpenAI mentioned that the API was being used by tens of thousands of
       developers in a blog post from 2021-11-18
       [[OpenAI Blog Post]](https://openai.com/blog/api-no-waitlist/).
