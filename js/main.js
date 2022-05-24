@@ -358,7 +358,6 @@ function renderValueExplanation(type, value, explanation) {
   if (explanation != null) {
     let renderedExplanation = converter.makeHtml(explanation);
     const fieldExplanation = $('<div>', {class: 'field-explanation'}).append(renderedExplanation);
-    fieldExplanation.toggle();
     return $('<div>').append(fieldValue)
                      .append(fieldExplanation);
   } else {
@@ -616,6 +615,7 @@ function renderTablePage(pageContainer, nameToAsset) {
     setUpSearch();
     const table = renderAssetsTable(nameToAsset);
     tableContainer.append(table);
+    $(".field-explanation").toggle();
   });
 
 }
