@@ -244,7 +244,6 @@ function renderList(items) {
 }
 
 function renderAccessType(value) {
-  const converter = new showdown.Converter();
   const valueToColor = {
     'Full public access': '#c0eec0',  // Slightly lighter than lightgreen
     'Limited public access': 'papayawhip',
@@ -274,7 +273,8 @@ function renderValueExplanation(type, value, explanation) {
   } else if (type === 'url') {
     renderedValue = $('<a>', {href: value, target: 'blank_'}).append(value);
   } else if (type === 'access_type') {
-    renderedValue = renderAccessType(value);
+    renderedValue = converter.makeHtml(value);
+    // renderedValue = renderAccessType(value);
   } else if (typeof(value) === 'string') {
     renderedValue = converter.makeHtml(value);
   }
