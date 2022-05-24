@@ -184,6 +184,77 @@ function compareValues(valueA, valueB, columnName) {
   }
 }
 
+// const $search = $('<input>', {type: 'text', size: 40, placeholder: 'Enter regex query (enter to open all)'});
+// $search.keyup((e) => {
+//   // Open up all match specs
+//   if (e.keyCode === 13) {
+//     const href = encodeUrlParams(Object.assign(urlParams, {runSpec: '.*' + query + '.*'}));
+//     window.open(href);
+//   }
+//   query = $search.val();
+//   renderTable();
+// });
+
+function filterTable(query) {
+
+  // // Get the current direction
+  // index = 0
+  // columnName = 'hi'
+
+  // // Get body
+  // const tbody = $('tbody');
+
+  // Get rows
+  const rows = $('tr').slice(1); // Skip the header row
+
+  if (query.includes('=')) {
+    // Filter columns
+    // @TODO placeholder comment
+    let a = 2;
+  } else {
+    // Filter all values
+    [].forEach.call(rows, function (row) {
+      const fieldValue = $(row).find("td .field-value");
+      const values = $(fieldValue).children().not(":last");
+
+      let found = false;
+      [].forEach.call(values, function (value) {
+        const innerHTML = value.innerHTML;
+        if (innerHTML.includes(query)) {
+          found = true;
+        }
+      });
+
+      if (found) {
+        $(row).show();
+      } else {
+        $(row).hide();
+      }
+
+    });
+  }
+
+  // // Sort rows
+  // rows.sort((rowA, rowB) => {
+  //   const fvA = $(rowA).find("td .field-value")[index];
+  //   const fvB = $(rowB).find("td .field-value")[index];
+  //   const valueA = $(fvA).children()[0].innerHTML;
+  //   const valueB = $(fvB).children()[0].innerHTML;
+  //   return multiplier * compareValues(valueA, valueB, columnName);
+  // });
+
+  // // Create a new tbody
+  // const newTBody = $('<tbody>');
+
+  // // Append new rows
+  // [].forEach.call(rows, function (row) {
+  //   newTBody.append(row);
+  // });
+
+  // // Replace the tbody
+  // tbody.replaceWith(newTBody);
+}
+
 function sortColumn(columnName, index) {
 
   // Get the current direction
@@ -513,6 +584,18 @@ function toggleExplanation(button) {
   $(button).text(newText);
 }
 
+function setUpSearch() {
+  const $search = $('#table-search');
+  let query = '';
+  $search.keyup((e) => {
+    if (e.keyCode === 13) {
+      // Enter @TODO
+    }
+    query = $search.val();
+    filterTable(query);
+  });
+}
+
 ////////////////////////////////////////////////////////////
 
 // Home Page
@@ -528,6 +611,7 @@ function renderTablePage(pageContainer, nameToAsset) {
   $.get("components/table.html", function(data){
     pageContainer.append(data);
     const tableContainer = $("#table-container");
+    setUpSearch();
     const table = renderAssetsTable(nameToAsset);
     tableContainer.append(table);
   });
