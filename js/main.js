@@ -207,6 +207,8 @@ function filterTable(query) {
   // Get rows
   const rows = $('tr').slice(1); // Skip the header row
 
+  query = query.toLowerCase();
+
   if (query.includes('=')) {
     // Filter columns
     // @TODO placeholder comment
@@ -219,7 +221,7 @@ function filterTable(query) {
 
       let found = false;
       [].forEach.call(values, function (value) {
-        const innerHTML = value.innerHTML;
+        const innerHTML = value.innerHTML.toLowerCase();
         if (innerHTML.includes(query)) {
           found = true;
         }
