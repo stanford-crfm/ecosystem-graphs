@@ -337,30 +337,30 @@
 
 # Models
 
-- type: model
-  name: GPT-2
-  # General
-  organization: OpenAI
-  description: todo
-  created_date: todo
-  url: todo
-  model_card: todo
-  modality: todo
-  size: todo
-  analysis: todo
-  # Construction
-  dependencies: []
-  training_emissions: todo
-  training_time: todo
-  training_hardware: todo
-  quality_control: todo
-  # Downstream
-  access: todo
-  license: todo
-  intended_uses: todo
-  prohibited_uses: todo
-  monitoring: todo
-  feedback: todo
+# - type: model
+#   name: GPT-2
+#   # General
+#   organization: OpenAI
+#   description: todo
+#   created_date: todo
+#   url: todo
+#   model_card: todo
+#   modality: todo
+#   size: todo
+#   analysis: todo
+#   # Construction
+#   dependencies: []
+#   training_emissions: todo
+#   training_time: todo
+#   training_hardware: todo
+#   quality_control: todo
+#   # Downstream
+#   access: todo
+#   license: todo
+#   intended_uses: todo
+#   prohibited_uses: todo
+#   monitoring: todo
+#   feedback: todo
 
 - type: model
   name: GPT-3
@@ -1206,8 +1206,7 @@
       [[Trevor Project Blog]](https://www.thetrevorproject.org/blog/the-trevor-project-launches-new-ai-tool-to-support-crisis-counselor-training/).
   url: https://www.thetrevorproject.org/
   # Construction
-  dependencies:
-    - GPT-2
+  dependencies: []  # @TODO This should be GPT-2
   adaptation:
     value: Fine-tuning
     explanation: >
