@@ -57,9 +57,13 @@ nav {
   font-family: var(--title-font) !important;
 }
 
-.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
-  background-color: var(--primary-color) !important;
+*:focus {
   border-color: var(--primary-color-light) !important;
+  box-shadow: none !important;
+}
+
+.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited, .btn-primary:hover {
+  background-color: var(--primary-color) !important;
 }
 
 /* Custom CSS styles */
