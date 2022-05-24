@@ -9,6 +9,7 @@
   --primary-color: #7CB342;
   --primary-color-light: #DCEDC8;
   --primary-color-dark: #4b6c27;
+  --primary-color-slightly-darker: #587f2f;
   --secondary-color: #070605;
   --secondary-color-light: #d4bfb4;
   --secondary-color-dark: #76462c;
@@ -45,7 +46,7 @@ h1 {
 }
 
 a, a:hover {
-  color: var(--primary-color)
+  color: var(--primary-color-slightly-darker)
 }
 
 nav {
