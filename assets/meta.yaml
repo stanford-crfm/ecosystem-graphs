@@ -1,1 +1,47 @@
 ---
+
+- type: model
+  name: OPT
+  organization: Meta AI
+  description: OPT is a family of autoregressive large language models.
+  created_date:
+    value: 2022-05-01
+    explanation: >
+      The date the OPT paper was submitted to Arxiv
+  url: https://arxiv.org/abs/2205.01068
+  model_card: https://arxiv.org/pdf/2205.01068.pdf
+  modality: Text (English)
+  analysis: ''
+  size: 175B parameters (dense model)
+  dependencies:
+    - BookCorpus
+    - Stories
+    - CCNews v2
+    - Pile-CommonCrawl
+    - Pile-DM Mathematics
+    - Pile-Gutenberg
+    - Pile-Hacker News
+    - Pile-OpenSubtitles
+    - Pile-OpenWebText2
+    - Pile-USPTO
+    - Pile-Wikipedia
+    - PushShift Reddit
+  training_emissions:
+      value: 75 tCO2e
+      explanation: >
+          Estimate by authors for the OPT-175B model only. Not including ablations and baselines.
+  training_time: ''
+  training_hardware:
+      value: Meta AI cluster
+      explanation: Trained on 992 80GB A100 GPUs
+  quality_control: ''
+  access: 
+    value: Limited public access
+    explanation: The 175B model requires manual approval to access. Other models are available through HuggingFace.
+  license:
+    value: OPT-175B LICENSE
+    explanation: All released except 66B (TBD) and 17B (requires manual approval)
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''

@@ -1,5 +1,31 @@
 ---
 
+- type: model
+  name: T-ULRv5
+  organization: Microsoft
+  description: T-ULRv5 is a large language model trained with two unique pretraining objectives
+  created_date:
+    value: 2022-09-28
+    explanation: Date model blog post was released
+  url: https://www.microsoft.com/en-us/research/blog/microsoft-turing-universal-language-representation-model-t-ulrv5-tops-xtreme-leaderboard-and-trains-100x-faster/
+  model_card: ''
+  modality: Text (English, 93 other languages)
+  size: 2.2B parameters (dense model)
+  analysis: ''
+  dependencies: ''
+  training_emissions: ''
+  training_time: Less than two weeks
+  training_hardware: 256 A100
+  quality_control: ''
+  access: 
+    value: Limited public access
+    explanation: Manual approval through early access request form required.
+  license: n/a
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+
 # Applications
 
 - type: application

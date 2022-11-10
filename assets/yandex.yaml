@@ -1,0 +1,30 @@
+---
+# Models
+#
+- type: model
+  name: YaLM
+  organization: Yandex
+  description: YaLM is a 100B parameter autoregressive model trained on 25% English and 75% Russian text.
+  created_date:
+    value: 2022-06-22
+    explanation: The date the blog post about YaLM was published.
+  url: https://medium.com/yandex/yandex-publishes-yalm-100b-its-the-largest-gpt-like-neural-network-in-open-source-d1df53d0e9a6
+  model_card: ''
+  modality: "Text (English, Russian)"
+  analysis: ''
+  size: 100B parameters (dense model)
+  dependencies:
+    - Pile
+    - Yandex Russian Pretraining Dataset
+  training_emissions: ''
+  training_time: ''
+  training_hardware: Yandex 800 A100 Cluster
+  quality_control: ''
+  access: Full public access
+  license:
+    value: Apache 2.0
+    explanation: ''
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''

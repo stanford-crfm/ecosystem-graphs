@@ -1,0 +1,31 @@
+---
+
+- type: model
+  name: BLOOM
+  organization: BigScience
+  description: BLOOM is an autoregressive large language model.
+  created_date:
+    value: 2022-07-12
+    explanation: The date the model was released
+  url: https://arxiv.org/abs/2211.05100
+  model_card: ''
+  modality: Text (A lot of languages, English) and Code
+  size: 176B parameters (dense model)
+  analysis: ''
+  dependencies: ''
+  training_emissions: 
+    value: 25 tCO2e
+    explanation: Sourced from estimates in https://arxiv.org/abs/2211.02001
+  training_time:
+    value:  7039 petaflop/s-days
+    explanation: 1082990 A100 hours at 156 TFLOP/s maximum utilization
+  training_hardware: Jean Zay (48 * 8xA100 80GB nodes)
+  quality_control: ''
+  access: Full public access (CHECKME)
+  license:
+    value: BigScience RAIL v1.0
+    explanation: Model is licensed under https://huggingface.co/spaces/bigscience/license
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
