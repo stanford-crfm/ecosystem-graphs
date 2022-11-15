@@ -1,6 +1,71 @@
 ---
 
 - type: model
+  name: Galactica
+  organization: Meta AI
+  description: Galactica is a family of autoregressive large language models.
+  created_data:
+    value: 2022-11-15
+    explanation: >
+        The date the Galactica paper was released
+  url: https://galactica.org/static/paper.pdf
+  model_card: n/a
+  modality: Text (English), Code, Math, Chemistry, Biology
+  analysis: ''
+  size: 120B parameters (dense model)
+  dependencies:
+    - arXiv
+    - PMC
+    - Semantic Scholar
+    - PubMed Abstracts
+    - Semantic Scholar Abstracts
+    - bioRxiv
+    - OSF
+    - medRxiv
+    - ACL
+    - PubAg Abstracts
+    - ChemRxiv
+    - Wikipedia
+    - StackExchange
+    - LibreText
+    - Wikibooks
+    - Open Textbooks
+    - MIT OCW
+    - Wikiversity
+    - ProofWiki
+    - Khan Academy
+    - Papers with Code
+    - IUPAC Goldbook
+    - PubChem Compound
+    - UniProt
+    - RefSeq Genome
+    - OEIS
+    - Ribosome
+    - LIPID MAPS
+    - Reactome
+    - NASA Exoplanet
+    - Scientific Common Crawl
+    - Academic Common Crawl
+  training_emission: n/a
+  training_time: n/a
+  training_hardware:
+    value: Meta AI Cluster
+    explanation: Trained on 1024 80GB A100 GPUs (128 8xA100 80GB nodes)
+  quality_control: ''
+  access: 
+    value: Full public access
+    explanation: Model checkpoints freely available at https://github.com/paperswithcode/galai
+  license:
+    value: CC-BY NC 4.0
+    explanation: https://github.com/paperswithcode/galai/blob/main/LICENSE-MODEL.md
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+
+
+
+- type: model
   name: OPT
   organization: Meta AI
   description: OPT is a family of autoregressive large language models.
