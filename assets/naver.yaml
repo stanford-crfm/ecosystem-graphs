@@ -21,7 +21,9 @@
   training_time: 130.4 days
   training_hardware: 1024 A100 GPUs
   quality_control: ''
-  access: No public access
+  access: 
+    value: No public access
+    explanation: The model is not available for download or direct API use
   license: n/a
   intended_uses: ''
   prohibited_uses: ''

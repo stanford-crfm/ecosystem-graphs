@@ -26,6 +26,32 @@
   monitoring: ''
   feedback: ''
 
+- type: model
+  name: Turing NLR-v5
+  organization: Microsoft
+  description: ''
+  created_date:
+    value: 2021-12-02
+    explanation: Date model blog post was released
+  url: https://www.microsoft.com/en-us/research/blog/efficiently-and-effectively-scaling-up-language-model-pretraining-for-best-language-representation-model-on-glue-and-superglue/?OCID=msr_blog_TNLRV5_tw
+  model_card: ''
+  modality: Text (English)
+  analysis: ''
+  size: 5B parameters (dense model)
+  dependencies: ''
+  training_emissions: ''
+  training_time: ''
+  training_hardware: .nan
+  quality_control: ''
+  access: 
+    value: Limited public access
+    explanation: Manual approval through early access request form required.
+  license: n/a
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+
 # Applications
 
 - type: application

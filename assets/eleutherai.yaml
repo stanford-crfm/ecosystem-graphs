@@ -95,6 +95,65 @@
       Feedback can be given by emailing the authors at contact at eleuther.ai.
 
 - type: model
+  name: GPT-J 6B
+  organization: EleutherAI
+  description: GPT-J is an open-source autoregressive large language model.
+  created_date:
+    value: 2021-06-04
+    explanation: Date model blog post was published 
+  url: https://arankomatsuzaki.wordpress.com/2021/06/04/gpt-j/
+  model_card: ''
+  modality: Text (English)
+  analysis: ''
+  size: 6B parameters (dense model)
+  dependencies: ''
+  training_emissions: ''
+  training_time: ''
+  training_hardware: 'TRC (Unspecified # of TPU v3-8s)'
+  quality_control: ''
+  access: 
+    value: Full public access
+    explanation: >
+        The model can be downloaded for free from [[The Eye]](https://mystic.the-eye.eu/public/AI/GPT-J-6B/step_383500.tar.zstd)
+  license:
+    value: Apache 2.0
+    explanation: >
+        As indicated in the Github repository https://github.com/kingoflolz/mesh-transformer-jax
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+
+- type: model
+  name: GPT-Neo
+  organization: EleutherAI
+  description: ''
+  created_date:
+    value: 2021-03-21
+    explanation: Date Github repo was update
+  url: https://github.com/EleutherAI/gpt-neo
+  model_card: ''
+  modality: Text (English)
+  analysis: ''
+  size: 2.7B parameters (dense model)
+  dependencies: ''
+  training_emissions: ''
+  training_time: ''
+  training_hardware: .nan
+  quality_control: ''
+  access: 
+    value: Full public access
+    explanation: >
+        The model can be downloaded for free from [[The Eye]](https://mystic.the-eye.eu/public/AI/gptneo-release/GPT3_2-7B/)
+  license:
+    value: MIT
+    explanation: .nan
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+
+- type: model
   name: GPT-NeoX-20B
   # General
   organization: EleutherAI
