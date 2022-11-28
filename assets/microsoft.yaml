@@ -1,6 +1,40 @@
 ---
 
 - type: model
+  name: VLMo
+  organization: Microsoft
+  description: VLMo is a model for text-to-image generation
+  created_date:
+    value: 2021-11-03
+    explanation: The date the model paper was released
+  url: https://arxiv.org/abs/2111.02358
+  model_card: 
+  modality: Text (English) and Image
+  size:
+  analysis: ""
+  dependencies:
+    - Conceptual Captions
+    - SBU Captions
+    - COCO
+    - Visual Genome
+    - Wikipedia
+    - BookCorpus
+  training_emissions: ""
+  training_time: ""
+  training_hardware: ""
+  quality_control: ""
+  access: 
+    value: No public access
+    explanation: Microsoft does not provide VLMo to external researchers. One author commented that code would be pushed "soon" in [[November of 2021]](https://github.com/microsoft/unilm/issues/532), but the repository does not contain relevant changes.
+  license:
+    value: n/a
+    explanation: No 
+  intended_uses: ""
+  prohibited_uses: ""
+  monitoring: ""
+  feedback: ""
+
+- type: model
   name: T-ULRv5
   organization: Microsoft
   description: T-ULRv5 is a large language model trained with two unique pretraining objectives

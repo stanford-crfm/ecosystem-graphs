@@ -1,5 +1,47 @@
 ---
 
+
+- type: model
+  name: FLAVA
+  organization: Meta AI (Facebook AI Research)
+  description: FLAVA is a multimodal model composed of an image encoder, text encoder, and multimodal encoder.
+  created_date:
+    value: 2021-12-08
+    explanation: The date the model paper was released
+  url: https://arxiv.org/abs/2112.04482
+  model_card: https://huggingface.co/facebook/flava-full
+  modality: Text (English) and Image
+  size: TODO
+  analysis: ""
+  dependencies:
+    - COCO
+    - SBU Captions
+    - Localized Narratives
+    - Conceptual Captions
+    - Visual Genome
+    - Wikipedia Image Text
+    - Conceptual Captions 12M
+    - Red Caps
+    - YFCC100M
+    - CCNews
+    - BookCorpus
+    - ImageNet-1k
+  training_emissions: ""
+  training_time: ""
+  training_hardware: ""
+  quality_control: ""
+  access: 
+    value: Full public access
+    explanation: Model checkpoints are available for download from the [[HuggingFace repository]](https://huggingface.co/facebook/flava-full)
+  license:
+    value: BSD 3-Clause
+    explanation: >
+        The license is provided in the [[HuggingFace repository]](https://huggingface.co/facebook/flava-full)
+  intended_uses: "The primary intended users of these models are AI researchers."
+  prohibited_uses: "Any deployed use case of the model - whether commercial or not - is currently out of scope."
+  monitoring: ""
+  feedback: ""
+
 - type: model
   name: Galactica
   organization: Meta AI
@@ -64,6 +106,33 @@
   feedback: ''
 
 
+- type: model
+  name: InCoder
+  organization: CMU, Meta AI (FAIR), TTI-Chicago, UC Berkeley, University of Washington
+  description: InCoder is a large language model trained on code with a causal masking objective
+  created_date:
+    value: 2022-04-12
+    explanation: The date the model paper was released
+  url: https://arxiv.org/abs/2204.05999
+  model_card:
+  modality: Text (English) and Code
+  analysis:
+  size: 6B parameters (dense model)
+  dependencies:
+  training_emissions:
+  training_time:
+  training_hardware: 248 V100 GPUs
+  quality_control:
+  access:
+    value: Full public access
+    explanation:
+  license:
+    value: CC-BY-NC 4.0
+    explanation: The license is provided in the [[HuggingFace repository]](https://huggingface.co/facebook/incoder-6B?text=My+name+is+Lewis+and+I+like+to)
+  intended_uses:
+  prohibited_uses:
+  monitoring:
+  feedback:
 
 - type: model
   name: OPT
