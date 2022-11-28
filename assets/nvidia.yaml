@@ -41,3 +41,31 @@
   prohibited_uses: ''
   monitoring: ''
   feedback: ''
+
+- type: model
+  name: Megatron-LM
+  organization: NVIDIA
+  description: Megatron-LM is an autoregressive large language model
+  created_date:
+    value: 2021-04-09
+    explanation: The date the paper for the 1 trillion parameter model was published
+  url: https://arxiv.org/abs/2104.04473
+  model_card:
+  modality: Text (English)
+  analysis:
+  size: 1000B parameters (dense model)
+  dependencies:
+  training_emissions:
+  training_time:
+  training_hardware: .nan
+  quality_control:
+  access:
+    value: No public access
+    explanation: >
+        Neither the 8.3B parameter model trained to convergence nor the 1 trillion paramter model is available for download
+  license:
+    value: n/a
+  intended_uses:
+  prohibited_uses:
+  monitoring:
+  feedback:

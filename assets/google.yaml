@@ -345,7 +345,7 @@
     explanation: Weights can be downloaded from [Github](https://github.com/google-research/t5x/blob/main/docs/models.md)
   license:
     value: Apache 2.0
-    explanation: .nan
+    explanation: License on the [[Github repository]](https://github.com/google-research/google-research)
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
@@ -429,6 +429,37 @@
   quality_control: ''
   access: No public access
   license: n/a
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+
+- type: model
+  name: VATT
+  organization: Google
+  description: VATT is a family of models trained on multimodal data
+  created_date:
+    value: 2022-04-22
+    explanation: Date the model paper was made public
+  url: https://arxiv.org/abs/2104.11178
+  model_card: ''
+  modality: Text (English), Video, and Audio
+  size: > 
+    14B parameters total. 2B parameters (U-Net model), 11B parameters (T5-XXL), and 600M and 400M parameter models for super resolution
+  analysis: ''
+  dependencies:
+    - AudioSet
+    - HowTo100M
+  training_emissions:
+  training_time: 3 days
+  training_hardware: 256 TPU-v3
+  quality_control: ''
+  access: 
+    value: Full public access
+    explanation: Model checkpoints can be downloaded from the [[Github repository]](https://github.com/google-research/google-research/tree/master/vatt)
+  license:
+    value: Apache 2.0
+    explanation: License on the [[Github repository]](https://github.com/google-research/google-research)
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
