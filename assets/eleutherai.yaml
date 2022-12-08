@@ -100,7 +100,7 @@
   description: GPT-J is an open-source autoregressive large language model.
   created_date:
     value: 2021-06-04
-    explanation: Date model blog post was published 
+    explanation: Date model blog post was published
   url: https://arankomatsuzaki.wordpress.com/2021/06/04/gpt-j/
   model_card: ''
   modality: Text (English)
@@ -111,7 +111,7 @@
   training_time: ''
   training_hardware: 'TRC (Unspecified # of TPU v3-8s)'
   quality_control: ''
-  access: 
+  access:
     value: Full public access
     explanation: >
         The model can be downloaded for free from [[The Eye]](https://mystic.the-eye.eu/public/AI/GPT-J-6B/step_383500.tar.zstd)
@@ -141,7 +141,7 @@
   training_time: ''
   training_hardware: .nan
   quality_control: ''
-  access: 
+  access:
     value: Full public access
     explanation: >
         The model can be downloaded for free from [[The Eye]](https://mystic.the-eye.eu/public/AI/gptneo-release/GPT3_2-7B/)

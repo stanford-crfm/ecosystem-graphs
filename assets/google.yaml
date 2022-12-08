@@ -332,15 +332,15 @@
   analysis: ''
   size: 11B parameters (dense model)
   dependencies:
-      - C4
-      - Muffin dataset
-      - Natural Instructions v2
-      - Flan chain of thought data
+    - C4
+    - Muffin dataset
+    - Natural Instructions v2
+    - Flan chain of thought data
   training_emissions: ''
   training_time: ''
   training_hardware: .nan
   quality_control: ''
-  access: 
+  access:
     value: Full public access
     explanation: Weights can be downloaded from [Github](https://github.com/google-research/t5x/blob/main/docs/models.md)
   license:
@@ -369,8 +369,8 @@
   training_hardware: 128 TPUv4
   quality_control: ''
   access:
-      value: Full public access
-      explanation: Model weights available for download in the [[Github repo]](https://github.com/google-research/google-research/tree/master/ul2)
+    value: Full public access
+    explanation: Model weights available for download in the [[Github repo]](https://github.com/google-research/google-research/tree/master/ul2)
   license:
     value: Apache 2.0
     explanation: 20B checkpoints only for three different iteration steps
@@ -392,12 +392,12 @@
   size: 20B parameters
   analysis: ''
   dependencies:
-      - C4
-      - LAION-400M
-      - FIT400M
-      - JFT-4B
+    - C4
+    - LAION-400M
+    - FIT400M
+    - JFT-4B
   training_emissions: ''
-  training_time: 
+  training_time:
   training_hardware:
   quality_control: ''
   access: No public access
@@ -417,14 +417,14 @@
   url: https://imagen.research.google/
   model_card: ''
   modality: Text (English) and Image
-  size: > 
+  size: >
     14B parameters total. 2B parameters (U-Net model), 11B parameters (T5-XXL), and 600M and 400M parameter models for super resolution
   analysis: ''
   dependencies:
-      - LAION-400M
-      - Google internal image-text dataset
+    - LAION-400M
+    - Google internal image-text dataset
   training_emissions:
-  training_time: 
+  training_time:
   training_hardware: 128 TPU-v4
   quality_control: ''
   access: No public access
@@ -444,7 +444,7 @@
   url: https://arxiv.org/abs/2104.11178
   model_card: ''
   modality: Text (English), Video, and Audio
-  size: > 
+  size: >
     14B parameters total. 2B parameters (U-Net model), 11B parameters (T5-XXL), and 600M and 400M parameter models for super resolution
   analysis: ''
   dependencies:
@@ -454,7 +454,7 @@
   training_time: 3 days
   training_hardware: 256 TPU-v3
   quality_control: ''
-  access: 
+  access:
     value: Full public access
     explanation: Model checkpoints can be downloaded from the [[Github repository]](https://github.com/google-research/google-research/tree/master/vatt)
   license:

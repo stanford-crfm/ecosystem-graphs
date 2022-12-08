@@ -8,7 +8,7 @@
     value: 2021-11-03
     explanation: The date the model paper was released
   url: https://arxiv.org/abs/2111.02358
-  model_card: 
+  model_card:
   modality: Text (English) and Image
   size:
   analysis: ""
@@ -23,12 +23,12 @@
   training_time: ""
   training_hardware: ""
   quality_control: ""
-  access: 
+  access:
     value: No public access
     explanation: Microsoft does not provide VLMo to external researchers. One author commented that code would be pushed "soon" in [[November of 2021]](https://github.com/microsoft/unilm/issues/532), but the repository does not contain relevant changes.
   license:
-    value: n/a
-    explanation: No 
+    value: Unknown
+    explanation: No discussion of license is provided.
   intended_uses: ""
   prohibited_uses: ""
   monitoring: ""
@@ -51,7 +51,7 @@
   training_time: Less than two weeks
   training_hardware: 256 A100
   quality_control: ''
-  access: 
+  access:
     value: Limited public access
     explanation: Manual approval through early access request form required.
   license: n/a
@@ -77,7 +77,7 @@
   training_time: ''
   training_hardware: .nan
   quality_control: ''
-  access: 
+  access:
     value: Limited public access
     explanation: Manual approval through early access request form required.
   license: n/a

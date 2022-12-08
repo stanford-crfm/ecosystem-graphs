@@ -1,3 +1,5 @@
+---
+
 type: model
 name: Luminous
 organization: Aleph Alpha
@@ -16,7 +18,7 @@ training_emissions: ''
 training_time: ''
 training_hardware: .nan
 quality_control: ''
-access: 
+access:
   value: Limited public access
   explanation: Paid API product
 license:

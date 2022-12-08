@@ -30,7 +30,7 @@
   training_time: ""
   training_hardware: ""
   quality_control: ""
-  access: 
+  access:
     value: Full public access
     explanation: Model checkpoints are available for download from the [[HuggingFace repository]](https://huggingface.co/facebook/flava-full)
   license:
@@ -94,7 +94,7 @@
     value: Meta AI Cluster
     explanation: Trained on 1024 80GB A100 GPUs (128 8xA100 80GB nodes)
   quality_control: ''
-  access: 
+  access:
     value: Full public access
     explanation: Model checkpoints freely available at https://github.com/paperswithcode/galai
   license:
@@ -161,15 +161,15 @@
     - Pile-Wikipedia
     - PushShift Reddit
   training_emissions:
-      value: 75 tCO2e
-      explanation: >
-          Estimate by authors for the OPT-175B model only. Not including ablations and baselines.
+    value: 75 tCO2e
+    explanation: >
+      Estimate by authors for the OPT-175B model only. Not including ablations and baselines.
   training_time: ''
   training_hardware:
-      value: Meta AI cluster
-      explanation: Trained on 992 80GB A100 GPUs
+    value: Meta AI cluster
+    explanation: Trained on 992 80GB A100 GPUs
   quality_control: ''
-  access: 
+  access:
     value: Limited public access
     explanation: The 175B model requires manual approval to access. Other models are available through HuggingFace.
   license:
