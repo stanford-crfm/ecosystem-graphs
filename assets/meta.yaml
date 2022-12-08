@@ -1,1 +1,181 @@
 ---
+
+
+- type: model
+  name: FLAVA
+  organization: Meta AI (Facebook AI Research)
+  description: FLAVA is a multimodal model composed of an image encoder, text encoder, and multimodal encoder.
+  created_date:
+    value: 2021-12-08
+    explanation: The date the model paper was released
+  url: https://arxiv.org/abs/2112.04482
+  model_card: https://huggingface.co/facebook/flava-full
+  modality: Text (English) and Image
+  size: TODO
+  analysis: ""
+  dependencies:
+    - COCO
+    - SBU Captions
+    - Localized Narratives
+    - Conceptual Captions
+    - Visual Genome
+    - Wikipedia Image Text
+    - Conceptual Captions 12M
+    - Red Caps
+    - YFCC100M
+    - CCNews
+    - BookCorpus
+    - ImageNet-1k
+  training_emissions: ""
+  training_time: ""
+  training_hardware: ""
+  quality_control: ""
+  access:
+    value: Full public access
+    explanation: Model checkpoints are available for download from the [[HuggingFace repository]](https://huggingface.co/facebook/flava-full)
+  license:
+    value: BSD 3-Clause
+    explanation: >
+        The license is provided in the [[HuggingFace repository]](https://huggingface.co/facebook/flava-full)
+  intended_uses: "The primary intended users of these models are AI researchers."
+  prohibited_uses: "Any deployed use case of the model - whether commercial or not - is currently out of scope."
+  monitoring: ""
+  feedback: ""
+
+- type: model
+  name: Galactica
+  organization: Meta AI
+  description: Galactica is a family of autoregressive large language models.
+  created_data:
+    value: 2022-11-15
+    explanation: >
+        The date the Galactica paper was released
+  url: https://galactica.org/static/paper.pdf
+  model_card: n/a
+  modality: Text (English), Code, Math, Chemistry, Biology
+  analysis: ''
+  size: 120B parameters (dense model)
+  dependencies:
+    - arXiv
+    - PMC
+    - Semantic Scholar
+    - PubMed Abstracts
+    - Semantic Scholar Abstracts
+    - bioRxiv
+    - OSF
+    - medRxiv
+    - ACL
+    - PubAg Abstracts
+    - ChemRxiv
+    - Wikipedia
+    - StackExchange
+    - LibreText
+    - Wikibooks
+    - Open Textbooks
+    - MIT OCW
+    - Wikiversity
+    - ProofWiki
+    - Khan Academy
+    - Papers with Code
+    - IUPAC Goldbook
+    - PubChem Compound
+    - UniProt
+    - RefSeq Genome
+    - OEIS
+    - Ribosome
+    - LIPID MAPS
+    - Reactome
+    - NASA Exoplanet
+    - Scientific Common Crawl
+    - Academic Common Crawl
+  training_emission: n/a
+  training_time: n/a
+  training_hardware:
+    value: Meta AI Cluster
+    explanation: Trained on 1024 80GB A100 GPUs (128 8xA100 80GB nodes)
+  quality_control: ''
+  access:
+    value: Full public access
+    explanation: Model checkpoints freely available at https://github.com/paperswithcode/galai
+  license:
+    value: CC-BY NC 4.0
+    explanation: https://github.com/paperswithcode/galai/blob/main/LICENSE-MODEL.md
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+
+
+- type: model
+  name: InCoder
+  organization: CMU, Meta AI (FAIR), TTI-Chicago, UC Berkeley, University of Washington
+  description: InCoder is a large language model trained on code with a causal masking objective
+  created_date:
+    value: 2022-04-12
+    explanation: The date the model paper was released
+  url: https://arxiv.org/abs/2204.05999
+  model_card:
+  modality: Text (English) and Code
+  analysis:
+  size: 6B parameters (dense model)
+  dependencies:
+  training_emissions:
+  training_time:
+  training_hardware: 248 V100 GPUs
+  quality_control:
+  access:
+    value: Full public access
+    explanation:
+  license:
+    value: CC-BY-NC 4.0
+    explanation: The license is provided in the [[HuggingFace repository]](https://huggingface.co/facebook/incoder-6B?text=My+name+is+Lewis+and+I+like+to)
+  intended_uses:
+  prohibited_uses:
+  monitoring:
+  feedback:
+
+- type: model
+  name: OPT
+  organization: Meta AI
+  description: OPT is a family of autoregressive large language models.
+  created_date:
+    value: 2022-05-01
+    explanation: >
+      The date the OPT paper was submitted to Arxiv
+  url: https://arxiv.org/abs/2205.01068
+  model_card: https://arxiv.org/pdf/2205.01068.pdf
+  modality: Text (English)
+  analysis: ''
+  size: 175B parameters (dense model)
+  dependencies:
+    - BookCorpus
+    - Stories
+    - CCNews v2
+    - Pile-CommonCrawl
+    - Pile-DM Mathematics
+    - Pile-Gutenberg
+    - Pile-Hacker News
+    - Pile-OpenSubtitles
+    - Pile-OpenWebText2
+    - Pile-USPTO
+    - Pile-Wikipedia
+    - PushShift Reddit
+  training_emissions:
+    value: 75 tCO2e
+    explanation: >
+      Estimate by authors for the OPT-175B model only. Not including ablations and baselines.
+  training_time: ''
+  training_hardware:
+    value: Meta AI cluster
+    explanation: Trained on 992 80GB A100 GPUs
+  quality_control: ''
+  access:
+    value: Limited public access
+    explanation: The 175B model requires manual approval to access. Other models are available through HuggingFace.
+  license:
+    value: OPT-175B LICENSE
+    explanation: All released except 66B (TBD) and 17B (requires manual approval)
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''

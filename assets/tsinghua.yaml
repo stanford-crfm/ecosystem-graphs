@@ -67,7 +67,7 @@
 
 - type: model
   name: CogView
-  organization: Tsinghua 
+  organization: Tsinghua
   description: CogView is a transformer model for text-to-image generation
   created_date:
     value: 2021-05-26
@@ -82,7 +82,7 @@
   training_time: ""
   training_hardware: ""
   quality_control: ""
-  access: 
+  access:
     value: Full public access
     explanation: Model checkpoints available from [[Wudao-Wenhui]](https://resource.wudaoai.cn/home?ind=2&name=WuDao%20WenHui&id=1399364355975327744)
   license:
@@ -111,7 +111,7 @@
   training_time: ""
   training_hardware: ""
   quality_control: ""
-  access: 
+  access:
     value: Full public access
     explanation: The model checkpoints are available for download from [[BAAI]](https://model.baai.ac.cn/model-detail/100041)
   license:
@@ -140,7 +140,7 @@
   training_time: ""
   training_hardware: ""
   quality_control: ""
-  access: 
+  access:
     value: Full public access
     explanation: Model checkpoints are available for download from https://github.com/THUDM/CogVideo
   license:

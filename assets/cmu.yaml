@@ -1,4 +1,6 @@
-  type: model
+---
+
+- type: model
   name: PolyCoder
   organization: CMU (Neubig and Hellendoorn groups)
   description: PolyCoder is a large language model trained on code
@@ -17,10 +19,10 @@
   quality_control: ''
   access:
     value: Full public access
-    explanation: Model checkpoints are available for download at https://github.com/VHellendoorn/Code-LMs 
+    explanation: Model checkpoints are available for download at https://github.com/VHellendoorn/Code-LMs
   license:
     value: MIT
-    explanation: > 
+    explanation: >
         The license is provided in the [[Github repository]](https://github.com/VHellendoorn/Code-LMs)
   intended_uses: ''
   prohibited_uses: ''

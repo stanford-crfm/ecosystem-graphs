@@ -1,5 +1,91 @@
 ---
 
+- type: model
+  name: VLMo
+  organization: Microsoft
+  description: VLMo is a model for text-to-image generation
+  created_date:
+    value: 2021-11-03
+    explanation: The date the model paper was released
+  url: https://arxiv.org/abs/2111.02358
+  model_card:
+  modality: Text (English) and Image
+  size:
+  analysis: ""
+  dependencies:
+    - Conceptual Captions
+    - SBU Captions
+    - COCO
+    - Visual Genome
+    - Wikipedia
+    - BookCorpus
+  training_emissions: ""
+  training_time: ""
+  training_hardware: ""
+  quality_control: ""
+  access:
+    value: No public access
+    explanation: Microsoft does not provide VLMo to external researchers. One author commented that code would be pushed "soon" in [[November of 2021]](https://github.com/microsoft/unilm/issues/532), but the repository does not contain relevant changes.
+  license:
+    value: Unknown
+    explanation: No discussion of license is provided.
+  intended_uses: ""
+  prohibited_uses: ""
+  monitoring: ""
+  feedback: ""
+
+- type: model
+  name: T-ULRv5
+  organization: Microsoft
+  description: T-ULRv5 is a large language model trained with two unique pretraining objectives
+  created_date:
+    value: 2022-09-28
+    explanation: Date model blog post was released
+  url: https://www.microsoft.com/en-us/research/blog/microsoft-turing-universal-language-representation-model-t-ulrv5-tops-xtreme-leaderboard-and-trains-100x-faster/
+  model_card: ''
+  modality: Text (English, 93 other languages)
+  size: 2.2B parameters (dense model)
+  analysis: ''
+  dependencies: ''
+  training_emissions: ''
+  training_time: Less than two weeks
+  training_hardware: 256 A100
+  quality_control: ''
+  access:
+    value: Limited public access
+    explanation: Manual approval through early access request form required.
+  license: n/a
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+
+- type: model
+  name: Turing NLR-v5
+  organization: Microsoft
+  description: ''
+  created_date:
+    value: 2021-12-02
+    explanation: Date model blog post was released
+  url: https://www.microsoft.com/en-us/research/blog/efficiently-and-effectively-scaling-up-language-model-pretraining-for-best-language-representation-model-on-glue-and-superglue/?OCID=msr_blog_TNLRV5_tw
+  model_card: ''
+  modality: Text (English)
+  analysis: ''
+  size: 5B parameters (dense model)
+  dependencies: ''
+  training_emissions: ''
+  training_time: ''
+  training_hardware: .nan
+  quality_control: ''
+  access:
+    value: Limited public access
+    explanation: Manual approval through early access request form required.
+  license: n/a
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+
 # Applications
 
 - type: application
