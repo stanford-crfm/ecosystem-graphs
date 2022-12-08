@@ -1,7 +1,6 @@
 ---
 
 # Datasets
-
 - type: dataset
   name: GPT-3 dataset
   # General
@@ -363,6 +362,121 @@
 #   feedback: todo
 
 - type: model
+  name: davinci-instruct-beta
+  organization: OpenAI
+  description: davinci-instruct-beta is a large language model finetuned to follow human instructions
+  created_date:
+    value: 2022-03-04
+    explanation: The date the [[model paper]](https://arxiv.org/abs/2203.02155) was released
+  url: https://beta.openai.com/docs/models/finding-the-right-model
+  model_card:
+  modality: Text (English) and code
+  size:
+  analysis: ""
+  dependencies:
+  training_emissions: ""
+  training_time: ""
+  training_hardware: ""
+  quality_control: ""
+  access:
+    value: Limited public access
+    explanation: davinci-instruct-beta is available via the OpenAI API
+  license:
+    value:
+    explanation:
+  intended_uses: ""
+  prohibited_uses: ""
+  monitoring: ""
+  feedback: ""
+
+- type: model
+  name: code-davinci-002
+  organization: OpenAI
+  description: code-davinci-002 is an autoregressive large language model trained on text and code
+  created_date:
+    value: Q4 2021
+    explanation: >
+        [[OpenAI documentation]] says that `code-davinci-002` was trained before Q4 2021. [[Other documentation]](https://beta.openai.com/docs/models/finding-the-right-model) indicates that the training data stops after June 2021
+  url: https://beta.openai.com/docs/model-index-for-researchers
+  model_card:
+  modality: Text (English) and code
+  size:
+  analysis: ""
+  dependencies:
+  training_emissions: ""
+  training_time: ""
+  training_hardware: ""
+  quality_control: ""
+  access:
+    value: Limited public access
+    explanation: code-davinci-002 is available via the OpenAI API
+  license:
+    value:
+    explanation:
+  intended_uses: ""
+  prohibited_uses: ""
+  monitoring: ""
+  feedback: ""
+
+- type: model
+  name: text-davinci-002
+  organization: OpenAI
+  description: text-davinci-002 is an autoregressive large language model finetuned to follow human instructions
+  created_date:
+    value: Q4 2021
+    explanation: >
+        [[OpenAI documentation]] says that `text-davinci-002` was trained before Q4 2021.
+  url: https://beta.openai.com/docs/model-index-for-researchers
+  model_card:
+  modality: Text (English) and code
+  size:
+  analysis: ""
+  dependencies:
+  training_emissions: ""
+  training_time: ""
+  training_hardware: ""
+  quality_control: ""
+  access:
+    value: Limited public access
+    explanation: text-davinci-002 is available via the OpenAI API
+  license:
+    value:
+    explanation:
+  intended_uses: ""
+  prohibited_uses: ""
+  monitoring: ""
+  feedback: ""
+
+- type: model
+  name: text-davinci-003
+  organization: OpenAI
+  description: text-davinci-003 is an autoregressive large language model, additionally trained to follow human instructions using reinforcement learning
+  created_date:
+    value: Q4 2021
+    explanation: >
+        [[OpenAI documentation]] says that `text-davinci-003` was trained before Q4 2021.
+  url: https://beta.openai.com/docs/model-index-for-researchers
+  model_card:
+  modality: Text (English) and code
+  size:
+  analysis: ""
+  dependencies:
+  training_emissions: ""
+  training_time: ""
+  training_hardware: ""
+  quality_control: ""
+  access:
+    value: Limited public access
+    explanation: text-davinci-003 is available via the OpenAI API
+  license:
+    value:
+    explanation:
+  intended_uses: ""
+  prohibited_uses: ""
+  monitoring: ""
+  feedback: ""
+
+- type: model
   name: GPT-3
   # General
   organization: OpenAI
@@ -579,7 +693,7 @@
       reading comprehension, and summarization tasks.
   # Construction
   dependencies:
-    - GPT-3
+    - code-davinci-002
     - OpenAI API
   training_emissions: >
     value: Unknown
@@ -1025,6 +1139,78 @@
     explanation: >
       There are no known documented failures of the OpenAI API at the
       time of writing.
+
+- type: application
+  name: Perplexity Ask
+  # General
+  organization: Perplexity AI
+  description: Perplexity is a search interface powered by OpenAI GPT-3.5 and Microsoft Bing
+  created_date:
+    value: 2022-12-07
+    explanation: > Date the [[anouncement]](https://twitter.com/perplexity_ai/status/1600551871554338816) was tweeted
+  url: http://perplexity.ai
+  # Construction
+  dependencies: 
+    - GPT 3.5
+  adaptation: ''
+  output_space: ''
+  quality_control: ''
+  # Downstream
+  access:
+    value: Full public access
+    explanation: The Perplexity Ask beta can be accessed at http://perplexity.ai
+  license:
+    value: n/a
+    explanation: We did not locate a license
+  terms_of_service:
+  intended_uses: 
+  prohibited_uses:
+  monitoring:
+  feedback:
+  # Deployment
+  monthly_active_users:
+    value: Unknown
+  user_distribution:
+    value: Unknown
+  failures:
+    value: Unknown
+
+
+- type: application
+  name: ChatGPT
+  # General
+  organization: OpenAI
+  description: ChatGPT is a chatbot released by OpenAI
+  created_date:
+    value: 2022-11-30
+    explanation: > 
+        The date the [[model blog post]](https://openai.com/blog/chatgpt/) was published
+  url: https://chat.openai.com/chat
+  # Construction
+  dependencies: GPT 3.5
+  adaptation: >
+  output_space:
+  quality_control:
+  # Downstream
+  access:
+    value: Full public access
+    explanation: ChatGPT can be accessed at https://chat.openai.com/chat
+  license:
+    value:
+    explanation:
+  terms_of_service: https://openai.com/api/policies/terms/
+  intended_uses:
+    value:
+  prohibited_uses:
+  monitoring:
+  feedback:
+  # Deployment
+  monthly_active_users:
+    value: 1,000,000
+  user_distribution:
+    value: Unknown
+  failures:
+    value: Unknown
 
 - type: application
   name: Sana
