@@ -46,7 +46,7 @@
       to word filters that "disproportinately filter out inoffensive content
       associated with minority groups. MassiveWeb was filtered
       further for word or phrase repetitions. All the subsets were filtered for
-      document deduplication and test set contamination
+      document deduplication and test set contamination"
       [[Appendix A]](https://arxiv.org/pdf/2112.11446.pdf#appendix.A).
   # Downstream
   access:
@@ -75,6 +75,93 @@
     explanation: >
       The internal feedback mechanisms for WebText are unknown
       [[Model Card]](https://arxiv.org/pdf/2112.11446.pdf#appendix.C).
+
+- type: model
+  name: Flamingo
+  organization: DeepMind
+  description: Flamingo is a multimodal model trained on multimodal web data
+  created_date:
+    value: 2022-04-28
+    explanation: The date the model [[blog post]](https://www.deepmind.com/blog/tackling-multiple-tasks-with-a-single-visual-language-model) was published
+  url: https://arxiv.org/abs/2204.14198
+  model_card:
+  modality: Text () and Image
+  size:
+  analysis: ""
+  dependencies:
+    - MultiModal MassiveWeb (M3W)
+    - ALIGN
+    - LTIP
+    - VTP
+  training_emissions: ""
+  training_time: 15 days
+  training_hardware: 1536 TPU chips
+  quality_control: ""
+  access: 
+    value: No public access
+    explanation: Deepmind does not provide access to Flamingo to external researchers.
+  license: n/a
+  intended_uses: ""
+  prohibited_uses: ""
+  monitoring: ""
+  feedback: ""
+
+- type: model
+  name: AlphaCode
+  organization: DeepMind
+  description: AlphaCode is an autoregressive large language model trained on code
+  created_date:
+    value: 2022-02-02
+    explanation:  The date the model paper was released
+  url: https://arxiv.org/abs/2203.07814
+  model_card: ''
+  modality: Code
+  analysis: ''
+  size: 41B parameters (dense model)
+  dependencies: ''
+  training_emissions: ''
+  training_time: ''
+  training_hardware: .nan
+  quality_control: ''
+  access: 
+    value: No public access
+    explanation: DeepMind does not provide access to AlphaCode to external researchers
+  license:
+    value: .nan
+    explanation: .nan
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+
+# - type: model
+#   name: Perceiver IO 
+#   organization: DeepMind
+#   description: Perceiver IO is an architecture for diverse domains, including text, image, video.
+#   created_date:
+#     value: 2021-07-30
+#     explanation: The date the model paper was released
+#   url: https://arxiv.org/abs/2107.14795
+#   model_card:
+#   modality: Text () and Image
+#   size:
+#   analysis: ""
+#   dependencies:
+#   training_emissions: ""
+#   training_time: ""
+#   training_hardware: ""
+#   quality_control: ""
+#   access: 
+#     value:
+#     explanation: Model checkpoints are available for download
+#   license:
+#     value:
+#     explanation: >
+#         The license is provided in the [[Github repository]]()
+#   intended_uses: ""
+#   prohibited_uses: ""
+#   monitoring: ""
+#   feedback: ""
 
 - type: model
   name: Gopher
