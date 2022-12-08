@@ -84,9 +84,9 @@
     value: 2022-04-28
     explanation: The date the model [[blog post]](https://www.deepmind.com/blog/tackling-multiple-tasks-with-a-single-visual-language-model) was published
   url: https://arxiv.org/abs/2204.14198
-  model_card:
+  model_card: ''
   modality: Text () and Image
-  size:
+  size: 80B
   analysis: ""
   dependencies:
     - MultiModal MassiveWeb (M3W)
@@ -109,7 +109,7 @@
 - type: model
   name: AlphaCode
   organization: DeepMind
-  description: AlphaCode is an autoregressive large language model trained on code
+  description: AlphaCode is an autoregressive language model trained on code
   created_date:
     value: 2022-02-02
     explanation: The date the model paper was released
@@ -118,7 +118,7 @@
   modality: Code
   analysis: ''
   size: 41B parameters (dense model)
-  dependencies: ''
+  dependencies: []
   training_emissions: ''
   training_time: ''
   training_hardware: .nan
@@ -139,7 +139,7 @@
   # General
   organization: DeepMind
   description: >
-    Gopher is an autoregressive large language model based on the Transformer
+    Gopher is an autoregressive language model based on the Transformer
     architecture with two modifications: using RMSNorm instead of LayerNorm and
     using relative positional encoding scheme instead of absolute positional
     encodings
