@@ -664,6 +664,7 @@ function loadAssetsAndRenderPageContent() {
     'assets/deepmind.yaml',
     'assets/eleutherai.yaml',
     'assets/google.yaml',
+    'assets/meta.yaml',
     'assets/microsoft.yaml',
     'assets/openai.yaml',
   ];
