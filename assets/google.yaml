@@ -523,10 +523,60 @@
   prohibited_uses: >
     The model "should not be used for downstream applications without further
     analysis on factors in the proposed downstream application
-    [[Model Card]](https://arxiv.org/pdf/2204.02311.pdf#appendix.E).
+    [[Model Card]](https://arxiv.org/pdf/2204.02311.pdf#appendix.E)"
   monitoring: Unknown
   feedback:
     value: Contact the authors.
     explanation: >
       Author contact information is shared in the paper
       [[Paper]](https://arxiv.org/pdf/2204.02311.pdf).
+
+
+- type: dataset
+  name: C4
+  # General
+  organization: Google
+  description: C4 is a text dataset derived from Common Crawl data.
+  created_date:
+    value: 2021-10-23
+    explanation: > C4 was introduced in the T5 paper
+  url: https://www.tensorflow.org/datasets/catalog/c4
+  datasheet: None found.
+  modality: Text (English)
+  size: 13TB of text
+  sample:
+  analysis:
+  # Construction
+  dependencies:
+    - Common Crawl
+  included: >
+      Per the paper -
+      "- We only retained lines that ended in a terminal punctuation mark (i.e. a period,
+exclamation mark, question mark, or end quotation mark).
+occurring more than once in the data set"
+  excluded: >
+      Per the paper - 
+    "- We discarded any page with fewer than 5 sentences and only retained lines that
+    contained at least 3 words.
+    - We removed any page that contained any word on the “List of Dirty, Naughty, Obscene
+    or Otherwise Bad Words”.6
+    - Many of the scraped pages contained warnings stating that Javascript should be
+    enabled so we removed any line with the word Javascript.
+    - Some pages had placeholder “lorem ipsum” text; we removed any page where the
+    phrase “lorem ipsum” appeared.
+    - Some pages inadvertently contained code. Since the curly bracket “{” appears in
+    many programming languages (such as Javascript, widely used on the web) but not in
+    natural text, we removed any pages that contained a curly bracket.
+    - To deduplicate the data set, we discarded all but one of any three-sentence span"
+  quality_control:
+  # Downstream
+  access:
+    value: Full public access
+    explanation: Google does not provide C4 for direct download, but rather provides tools to build it from Common Crawl data. However, AllenAI provides a direct download, which is available from GCP. Instructions here: https://github.com/allenai/allennlp/discussions/5056?
+  license: 
+    value: Open Data Commons BY
+    explanation: This is the license provided by AllenAI for their release of C4. According to AllenAI, "you are also bound by the Common Crawl terms of use in respect of the content contained in the dataset."
+  intended_uses:
+  prohibited_uses:
+  monitoring:
+  feedback:
