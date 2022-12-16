@@ -8,10 +8,10 @@
     value: 2021-11-03
     explanation: The date the model paper was released
   url: https://arxiv.org/abs/2111.02358
-  model_card: ''
+  model_card:
   modality: Text (English) and Image
-  size: ''
-  analysis: ''
+  size:
+  analysis: ""
   dependencies:
     - Conceptual Captions
     - SBU Captions
@@ -37,7 +37,7 @@
 - type: model
   name: T-ULRv5
   organization: Microsoft
-  description: T-ULRv5 is a language model trained with two unique pretraining objectives
+  description: T-ULRv5 is a large language model trained with two unique pretraining objectives
   created_date:
     value: 2022-09-28
     explanation: Date model blog post was released
@@ -46,7 +46,7 @@
   modality: Text (English, 93 other languages)
   size: 2.2B parameters (dense model)
   analysis: ''
-  dependencies: []
+  dependencies: ''
   training_emissions: ''
   training_time: Less than two weeks
   training_hardware: 256 A100
@@ -72,7 +72,7 @@
   modality: Text (English)
   analysis: ''
   size: 5B parameters (dense model)
-  dependencies: []
+  dependencies: ''
   training_emissions: ''
   training_time: ''
   training_hardware: .nan

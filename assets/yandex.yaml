@@ -14,7 +14,7 @@
   analysis: ''
   size: 100B parameters (dense model)
   dependencies:
-    - The Pile
+    - Pile
     - Yandex Russian Pretraining Dataset
   training_emissions: ''
   training_time: ''
