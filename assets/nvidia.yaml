@@ -5,7 +5,7 @@
 - type: model
   name: Megatron-Turing NLG
   organization: NVIDIA
-  description: Megatron-Turing NLG is a 530B parameter autoregressive language model.
+  description: Megatron-Turing NLG is a 530B parameter autoregressive large language model.
   created_date:
     value: 2022-01-28
     explanation: The date the model paper was submitted to Arxiv
@@ -45,27 +45,27 @@
 - type: model
   name: Megatron-LM
   organization: NVIDIA
-  description: Megatron-LM is an autoregressive language model
+  description: Megatron-LM is an autoregressive large language model
   created_date:
     value: 2021-04-09
     explanation: The date the paper for the 1 trillion parameter model was published
   url: https://arxiv.org/abs/2104.04473
-  model_card: ''
+  model_card:
   modality: Text (English)
-  analysis: ''
+  analysis:
   size: 1000B parameters (dense model)
-  dependencies: []
-  training_emissions: ''
-  training_time: ''
+  dependencies:
+  training_emissions:
+  training_time:
   training_hardware: .nan
-  quality_control: ''
+  quality_control:
   access:
     value: No public access
     explanation: >
         Neither the 8.3B parameter model trained to convergence nor the 1 trillion paramter model is available for download
   license:
     value: n/a
-  intended_uses: ''
-  prohibited_uses: ''
-  monitoring: ''
-  feedback: ''
+  intended_uses:
+  prohibited_uses:
+  monitoring:
+  feedback:

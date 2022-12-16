@@ -7,18 +7,18 @@
   name: GLM-130B
   # General
   organization: Tsinghua (THUDM)
-  description: GLM-130B is a 130B parameter bidirectional language model trained on half English and half Chinese data.
+  description: GLM-130B is a 130B parameter bidirectional large language model trained on half English and half Chinese data.
   created_date:
     value: 2022-08-04
     explanation: The date the model website was made public
   url: https://keg.cs.tsinghua.edu.cn/glm-130b/
   model_card: None found
-  modality: 'Text (Chinese | English)'
+  modality: "Text (Chinese | English)"
   size: 130B parameters (dense model)
   analysis: ''
   # Construction
-  dependencies: 
-    - The Pile
+  dependencies: >
+    - Pile
     - GLM-130B Chinese corpora
     - TO++ finetuning dataset
     - DeepStruct finetuning dataset
@@ -40,30 +40,30 @@
 - type: model
   name: CodeGeeX
   organization: Tsinghua (THUDM)
-  description: CodeGeeX is an autoregressive language model trained on code
+  description: CodeGeeX is an autoregressive large language model trained on code
   created_date:
     value: 2022-09-20
     explanation: ''
   url: https://github.com/THUDM/CodeGeeX
-  model_card: ''
+  model_card:
   modality: Code
-  analysis: ''
+  analysis:
   size: 13B parameters (dense model)
-  dependencies: []
-  training_emissions: ''
-  training_time: ''
+  dependencies:
+  training_emissions:
+  training_time:
   training_hardware: THUDM 1536 Ascend 910 (32GB) Cluster
-  quality_control: ''
+  quality_control:
   access:
-    value: ''
-    explanation: ''
+    value:
+    explanation:
   license:
     value: Apache 2.0
     explanation: The license is provided in the [[Github repository]](https://github.com/THUDM/CodeGeeX)
-  intended_uses: ''
-  prohibited_uses: ''
-  monitoring: ''
-  feedback: ''
+  intended_uses:
+  prohibited_uses:
+  monitoring:
+  feedback:
 
 - type: model
   name: CogView
@@ -73,15 +73,15 @@
     value: 2021-05-26
     explanation: The date the model paper was released
   url: https://arxiv.org/abs/2105.13290
-  model_card: ''
+  model_card:
   modality: Text (Chinese) and Image
   size: 4B parameters
-  analysis: ''
-  dependencies: []
-  training_emissions: ''
-  training_time: ''
-  training_hardware: ''
-  quality_control: ''
+  analysis: ""
+  dependencies:
+  training_emissions: ""
+  training_time: ""
+  training_hardware: ""
+  quality_control: ""
   access:
     value: Full public access
     explanation: Model checkpoints available from [[Wudao-Wenhui]](https://resource.wudaoai.cn/home?ind=2&name=WuDao%20WenHui&id=1399364355975327744)
@@ -89,10 +89,10 @@
     value: Apache 2.0
     explanation: >
         The license is provided in the [[Github repository]](https://github.com/THUDM/CogView)
-  intended_uses: ''
-  prohibited_uses: ''
-  monitoring: ''
-  feedback: ''
+  intended_uses: ""
+  prohibited_uses: ""
+  monitoring: ""
+  feedback: ""
 
 - type: model
   name: CogView 2
@@ -102,15 +102,15 @@
     value: 2022-04-28
     explanation: The date the model paper was released
   url: https://arxiv.org/abs/2204.14217
-  model_card: ''
+  model_card:
   modality: Text (Chinese, English) and Image
   size: 6B parameters
-  analysis: ''
-  dependencies: []
-  training_emissions: ''
-  training_time: ''
-  training_hardware: ''
-  quality_control: ''
+  analysis: ""
+  dependencies:
+  training_emissions: ""
+  training_time: ""
+  training_hardware: ""
+  quality_control: ""
   access:
     value: Full public access
     explanation: The model checkpoints are available for download from [[BAAI]](https://model.baai.ac.cn/model-detail/100041)
@@ -118,10 +118,10 @@
     value: Apache 2.0
     explanation: >
         The license is provided in the [[Github repository]](https://github.com/THUDM/CogView2)
-  intended_uses: ''
-  prohibited_uses: ''
-  monitoring: ''
-  feedback: ''
+  intended_uses: ""
+  prohibited_uses: ""
+  monitoring: ""
+  feedback: ""
 
 - type: model
   name: CogVideo
@@ -131,15 +131,15 @@
     value: 2022-05-29
     explanation: The date the model paper was released
   url: https://arxiv.org/abs/2205.15868
-  model_card: ''
+  model_card:
   modality: Text (Chinese) and Video
-  size: ''
-  analysis: ''
-  dependencies: []
-  training_emissions: ''
-  training_time: ''
-  training_hardware: ''
-  quality_control: ''
+  size:
+  analysis: ""
+  dependencies:
+  training_emissions: ""
+  training_time: ""
+  training_hardware: ""
+  quality_control: ""
   access:
     value: Full public access
     explanation: Model checkpoints are available for download from https://github.com/THUDM/CogVideo
@@ -147,7 +147,7 @@
     value: Apache 2.0
     explanation: >
         The license is provided in the [[Github repository]](https://github.com/THUDM/CogVideo)
-  intended_uses: ''
-  prohibited_uses: ''
-  monitoring: ''
-  feedback: ''
+  intended_uses: ""
+  prohibited_uses: ""
+  monitoring: ""
+  feedback: ""

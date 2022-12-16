@@ -1,0 +1,38 @@
+---
+
+- type: dataset
+  name: ImageNet
+  # General
+  organization: OpenAI
+  description: >
+    TODO
+  created_date: >
+    TODO
+  url: TODO
+  datasheet: >
+    TODO
+  modality: TODO
+  size: TODO
+  sample: []
+  analysis: TODO
+  # Construction
+  dependencies: []
+  license: >
+    TODO
+  included: >
+    TODO
+  excluded: >
+    TODO
+  quality_control: >
+    TODO
+  # Downstream
+  access: >
+    TODO
+  intended_uses: >
+    TODO
+  prohibited_uses: >
+    TODO
+  monitoring: >
+    TODO
+  feedback: >
+    TODO

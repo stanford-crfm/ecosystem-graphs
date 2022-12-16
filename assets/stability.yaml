@@ -15,8 +15,8 @@
   dependencies:
     - LAION 5B
   training_emissions: ''
-  training_time: ''
-  training_hardware: ''
+  training_time:
+  training_hardware:
   quality_control: ''
   access:
     value: Full public access

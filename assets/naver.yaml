@@ -4,7 +4,7 @@
 - type: model
   name: HyperCLOVA
   organization: Naver
-  description: HyperClova is an autoregressive language model
+  description: HyperClova is an autoregressive large language model
   created_date:
     value: 2021-05-21
     explanation: The date the model paper was submitted to arxiv
@@ -13,7 +13,7 @@
   modality: "Text (Korean | \uD55C\uAD6D\uC5B4)"
   size: 82B parameters (dense model)
   analysis: ''
-  dependencies: []
+  dependencies: ''
   training_emissions: ''
   training_time: 130.4 days
   training_hardware: 1024 A100 GPUs
