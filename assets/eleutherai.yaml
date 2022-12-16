@@ -95,9 +95,9 @@
       Feedback can be given by emailing the authors at contact at eleuther.ai.
 
 - type: model
-  name: GPT-J 6B
+  name: GPT-J
   organization: EleutherAI
-  description: GPT-J is an open-source autoregressive large language model.
+  description: GPT-J is an open-source autoregressive language model.
   created_date:
     value: 2021-06-04
     explanation: Date model blog post was published
@@ -106,7 +106,8 @@
   modality: Text (English)
   analysis: ''
   size: 6B parameters (dense model)
-  dependencies: ''
+  dependencies: 
+    - The Pile
   training_emissions: ''
   training_time: ''
   training_hardware: 'TRC (Unspecified # of TPU v3-8s)'
@@ -136,7 +137,8 @@
   modality: Text (English)
   analysis: ''
   size: 2.7B parameters (dense model)
-  dependencies: ''
+  dependencies: 
+    - The Pile
   training_emissions: ''
   training_time: ''
   training_hardware: .nan
@@ -158,7 +160,7 @@
   # General
   organization: EleutherAI
   description: >
-    GPT-NeoX-20B is an open-sourced autoregressive large language model.
+    GPT-NeoX-20B is an open-sourced autoregressive language model.
   created_date:
     value: 2022-02-02
   url: http://eaidata.bmk.sh/data/GPT_NeoX_20B.pdf

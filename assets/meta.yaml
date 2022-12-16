@@ -1,6 +1,5 @@
 ---
 
-
 - type: model
   name: FLAVA
   organization: Meta AI (Facebook AI Research)
@@ -12,7 +11,7 @@
   model_card: https://huggingface.co/facebook/flava-full
   modality: Text (English) and Image
   size: TODO
-  analysis: ""
+  analysis: ''
   dependencies:
     - COCO
     - SBU Captions
@@ -26,10 +25,10 @@
     - CCNews
     - BookCorpus
     - ImageNet-1k
-  training_emissions: ""
-  training_time: ""
-  training_hardware: ""
-  quality_control: ""
+  training_emissions: ''
+  training_time: ''
+  training_hardware: ''
+  quality_control: ''
   access:
     value: Full public access
     explanation: Model checkpoints are available for download from the [[HuggingFace repository]](https://huggingface.co/facebook/flava-full)
@@ -37,21 +36,21 @@
     value: BSD 3-Clause
     explanation: >
         The license is provided in the [[HuggingFace repository]](https://huggingface.co/facebook/flava-full)
-  intended_uses: "The primary intended users of these models are AI researchers."
-  prohibited_uses: "Any deployed use case of the model - whether commercial or not - is currently out of scope."
-  monitoring: ""
-  feedback: ""
+  intended_uses: The primary intended users of these models are AI researchers.
+  prohibited_uses: Any deployed use case of the model - whether commercial or not - is currently out of scope.
+  monitoring: ''
+  feedback: ''
 
 - type: model
   name: Galactica
   organization: Meta AI
-  description: Galactica is a family of autoregressive large language models.
-  created_data:
+  description: Galactica is a family of autoregressive language models.
+  created_date:
     value: 2022-11-15
     explanation: >
         The date the Galactica paper was released
   url: https://galactica.org/static/paper.pdf
-  model_card: n/a
+  model_card: ''
   modality: Text (English), Code, Math, Chemistry, Biology
   analysis: ''
   size: 120B parameters (dense model)
@@ -88,8 +87,8 @@
     - NASA Exoplanet
     - Scientific Common Crawl
     - Academic Common Crawl
-  training_emission: n/a
-  training_time: n/a
+  training_emissions: ''
+  training_time: ''
   training_hardware:
     value: Meta AI Cluster
     explanation: Trained on 1024 80GB A100 GPUs (128 8xA100 80GB nodes)
@@ -105,39 +104,38 @@
   monitoring: ''
   feedback: ''
 
-
 - type: model
   name: InCoder
   organization: CMU, Meta AI (FAIR), TTI-Chicago, UC Berkeley, University of Washington
-  description: InCoder is a large language model trained on code with a causal masking objective
+  description: InCoder is a language model trained on code with a causal masking objective
   created_date:
     value: 2022-04-12
     explanation: The date the model paper was released
   url: https://arxiv.org/abs/2204.05999
-  model_card:
+  model_card: ''
   modality: Text (English) and Code
-  analysis:
+  analysis: ''
   size: 6B parameters (dense model)
-  dependencies:
-  training_emissions:
-  training_time:
+  dependencies: []
+  training_emissions: ''
+  training_time: ''
   training_hardware: 248 V100 GPUs
-  quality_control:
+  quality_control: ''
   access:
     value: Full public access
-    explanation:
+    explanation: ''
   license:
     value: CC-BY-NC 4.0
     explanation: The license is provided in the [[HuggingFace repository]](https://huggingface.co/facebook/incoder-6B?text=My+name+is+Lewis+and+I+like+to)
-  intended_uses:
-  prohibited_uses:
-  monitoring:
-  feedback:
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
 
 - type: model
   name: OPT
   organization: Meta AI
-  description: OPT is a family of autoregressive large language models.
+  description: OPT is a family of autoregressive language models.
   created_date:
     value: 2022-05-01
     explanation: >
@@ -179,3 +177,127 @@
   prohibited_uses: ''
   monitoring: ''
   feedback: ''
+
+- type: dataset
+  name: Make-A-Video dataset
+  # General
+  organization: Meta
+  description: >
+    The Make-A-Video dataset is the dataset used to train Make-A-Video, which includes both image-text and video-only datasets with specific and significant filtering.
+  created_date:
+    value: 2022-09-29
+    explanation: >
+      The date that Make-A-Video was posted to arXiv
+      [[arXiv]]
+      (https://arxiv.org/abs/2209.14792).
+  url: https://arxiv.org/pdf/2209.14792.pdf
+  datasheet: None
+  modality: Video, Image-Text
+  size: 20M video clips, 2.3B image-text pairs
+  sample: []
+  analysis:
+    value: TODO
+  # Construction
+  dependencies:
+    - LAION-5B
+    - WebVid-10M
+    - HD-VILA-100M
+  license:
+    value: Unknown
+    explanation: >
+      No license is discussed, though the underlying datasets are public and have licenses.
+  included:
+    value: None
+    explanation: >
+      Data from the three underlying datasets is filtered, but nothing is included beyond this.
+  excluded: >
+    The LAION-5B dataset is filtered to 2.3B by removing NSFW images using [https://github.com/GantMan/nsfw](https://github.com/GantMan/nsfw), toxic words in text, and images with watermark probability > 0.5. The HD-VILA-100M is randomly subsampled to 10M video clips.
+  quality_control:
+    value: >
+      The authors exclude NSFW, toxic, and likely watermarked data from LAION-5B.
+  # Downstream
+  access:
+    value: Limited public access
+    explanation: >
+      The datasets involved are public, but the full dataset is not directly available, nor are filtering scripts.
+  intended_uses:
+    value: Unknown
+  prohibited_uses:
+    value: Unknown
+  monitoring:
+    value: Unknown
+    explanation: >
+      There is no information on how Meta is internally monitoring
+      the use of the dataset.
+  feedback:
+    value: None
+    explanation: >
+      No feedback mechanism is mentioned by the authors.
+
+- type: model
+  name: Make-A-Video
+  # General
+  organization: Meta
+  description: >
+    Make-A-Video is a model for Text-to-Video Generation without Text-Video Data.
+  created_date:
+    value: 2022-09-29
+    explanation: >
+      The date that Make-A-Video was posted to arXiv
+      [[arXiv]]
+      (https://arxiv.org/abs/2209.14792).
+  url: https://arxiv.org/pdf/2209.14792.pdf
+  model_card: None
+  modality: Video, Text
+  size:
+    value: Unknown
+    explanation: >
+      The authors do not state the model size in the paper.
+  analysis:
+    value: >
+      Model performance was evaluated using automated (Frechet Video Distance; Frechet Inception Distance) and human evaluation on two datasets (UCF-101, MSR-VTT) in the zero-shot setting.
+  # Construction
+  dependencies:
+    - Make-A-Video dataset
+  training_emissions:
+    value: Unknown
+    explanation: >
+      Authors do not report the training emissions.
+  training_time:
+    value: Unknown
+    explanation: >
+      Authors do not report the training time.
+  training_hardware:
+    value: Unknown
+    explanation: >
+      Authors do not report the training hardware or provider.
+  quality_control:
+    value: None
+    explanation: >
+      Authors do not report specific quality control steps taken in modeling, though filtering is done in producing the Make-A-Video dataset.
+  # Downstream
+  access:
+    value: No public access
+    explanation: >
+      The model has not been released; a form existed to potentially acquire access but is now closed as of 2022-12-07
+      [[Access Form]](https://docs.google.com/forms/u/0/d/e/1FAIpQLSfMjC57wcXWUDV0UbS2Tn6VhjLEiCXaHvWZuWgWRa-Zx8-Few/closedform).
+  license:
+    value: Unknown
+    explanation: >
+      Authors do not report the license.
+  intended_uses:
+    value: Unknown
+    explanation: >
+      Authors do not report the intended uses.
+  prohibited_uses:
+    value: Unknown
+    explanation: >
+      Authors do not report the prohibited uses.
+  monitoring:
+    value: Unknown
+    explanation: >
+      Authors do not report the monitoring process for Make-A-Video internally at Meta.
+  feedback:
+    value: None
+    explanation: >
+      Authors do not mention or provide a feedback mechanism.
