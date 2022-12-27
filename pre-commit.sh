@@ -16,7 +16,7 @@ echo ""
 echo "Running yamlfix"
 venv/bin/yamlfix --config-file ./yamlfix.toml ./assets/*.yaml
 echo "Checking for YAML formatting."
-venv/bin/yamllint -c .yamllint . || (
+venv/bin/yamllint -c .yamllint --no-warnings . || (
   echo ""
   echo "YAML formatting failed. Fix the errors and run the check again."
   echo ""
