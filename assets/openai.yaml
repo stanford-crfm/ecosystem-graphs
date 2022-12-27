@@ -1208,7 +1208,8 @@
       [[Trevor Project Blog]](https://www.thetrevorproject.org/blog/the-trevor-project-launches-new-ai-tool-to-support-crisis-counselor-training/).
   url: https://www.thetrevorproject.org/
   # Construction
-  dependencies: []  # @TODO This should be GPT-2
+  dependencies: []
+  # @TODO This should be GPT-2
   adaptation:
     value: Fine-tuning
     explanation: >
