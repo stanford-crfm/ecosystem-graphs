@@ -3,3 +3,4 @@ line_length         = 80
 none_representation = "None"
 flow_style_sequence = "false"
 explicit_start      = "true"
+quote_representation= '"'

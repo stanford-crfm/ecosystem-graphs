@@ -37,23 +37,24 @@
   model_card:
   modality: Text (Chinese) and Image
   size: 10B parameters
-  analysis: ""
+  analysis: ''
   dependencies:
-  training_emissions: ""
-  training_time: ""
-  training_hardware: ""
-  quality_control: ""
+  training_emissions: ''
+  training_time: ''
+  training_hardware: ''
+  quality_control: ''
   access:
     value: Limited public access
-    explanation: API access is available through PaddleHub. Instructions on [[Github repository]](https://github.com/PaddlePaddle/PaddleHub/blob/develop/modules/image/text_to_image/ernie_vilg/README.md)
+    explanation: API access is available through PaddleHub. Instructions on [[Github
+      repository]](https://github.com/PaddlePaddle/PaddleHub/blob/develop/modules/image/text_to_image/ernie_vilg/README.md)
   license:
     value: unclear
     explanation: >
-        No explicit license for the ERNIE-ViLG model is provided in the [[Github repository]](https://github.com/PaddlePaddle/PaddleHub)
-  intended_uses: ""
-  prohibited_uses: ""
-  monitoring: ""
-  feedback: ""
+      No explicit license for the ERNIE-ViLG model is provided in the [[Github repository]](https://github.com/PaddlePaddle/PaddleHub)
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
 
 - type: model
   name: ERNIE-ViLG 2.0
@@ -66,17 +67,17 @@
   model_card:
   modality: Text (Chinese) and Image
   size: 10B parameters
-  analysis: ""
+  analysis: ''
   dependencies:
-  training_emissions: ""
-  training_time: ""
-  training_hardware: ""
-  quality_control: ""
+  training_emissions: ''
+  training_time: ''
+  training_hardware: ''
+  quality_control: ''
   access:
     value: No public access
     explanation: Baidu does not provide ERNIE-ViLG 2.0 to external researchers
   license: n/a
-  intended_uses: ""
-  prohibited_uses: ""
-  monitoring: ""
-  feedback: ""
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''

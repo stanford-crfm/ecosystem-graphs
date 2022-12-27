@@ -9,8 +9,8 @@ created_date:
   explanation: ''
 url: https://twitter.com/Aleph__Alpha/status/1514576711492542477
 model_card: ''
-modality: "Text (English, French | fran\xE7ais, German | Deutsch, Italian | italiano,\
-  \ Spanish | Espa\xF1ol)"
+modality: Text (English, French | français, German | Deutsch, Italian | italiano,
+  Spanish | Español)
 analysis: ''
 size: 200B parameters (dense model)
 dependencies: ''
