@@ -116,11 +116,31 @@
   modality: Code (Python)
   size: 214 KB
   sample:
-    - "\n\ndef string_sequence(n: int) -> str:\n    \"\"\" Return a string containing space-delimited numbers starting from 0 upto n inclusive.\n    >>> string_sequence(0)\n    '0'\n    >>> string_sequence(5)\n    '0 1 2 3 4 5'\n    \"\"\"\n"
-    - "\n\ndef count_distinct_characters(string: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> count_distinct_characters('xyzXYZ')\n    3\n    >>> count_distinct_characters('Jerry')\n    4\n    \"\"\"\n"
-    - "from typing import List\n\n\ndef parse_music(music_string: str) -> List[int]:\n    \"\"\" Input to this function is a string representing musical notes in a special ASCII format.\n    Your task is to parse this string and return list of integers corresponding to how many beats does each\n    not last.\n\n    Here is a legend:\n    'o' - whole note, lasts four beats\n    'o|' - half note, lasts two beats\n    '.|' - quater note, lasts one beat\n\n    >>> parse_music('o o| .| o| o| .| .| .| .| o o')\n    [4, 2, 1, 2, 2, 1, 1, 1, 1, 4, 4]\n    \"\"\"\n"
-    - "\n\ndef how_many_times(string: str, substring: str) -> int:\n    \"\"\" Find how many times a given substring can be found in the original string. Count overlaping cases.\n    >>> how_many_times('', 'a')\n    0\n    >>> how_many_times('aaa', 'a')\n    3\n    >>> how_many_times('aaaa', 'aa')\n    3\n    \"\"\"\n"
-    - "from typing import List\n\n\ndef sort_numbers(numbers: str) -> str:\n    \"\"\" Input is a space-delimited string of numberals from 'zero' to 'nine'.\n    Valid choices are 'zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight' and 'nine'.\n    Return the string with numbers sorted from smallest to largest\n    >>> sort_numbers('three one five')\n    'one three five'\n    \"\"\"\n"
+    - "\n\ndef string_sequence(n: int) -> str:\n    \"\"\" Return a string containing\
+      \ space-delimited numbers starting from 0 upto n inclusive.\n    >>> string_sequence(0)\n\
+      \    '0'\n    >>> string_sequence(5)\n    '0 1 2 3 4 5'\n    \"\"\"\n"
+    - "\n\ndef count_distinct_characters(string: str) -> int:\n    \"\"\" Given\
+      \ a string, find out how many distinct characters (regardless of case) does\
+      \ it consist of\n    >>> count_distinct_characters('xyzXYZ')\n    3\n    >>>\
+      \ count_distinct_characters('Jerry')\n    4\n    \"\"\"\n"
+    - "from typing import List\n\n\ndef parse_music(music_string: str) -> List[int]:\n\
+      \    \"\"\" Input to this function is a string representing musical notes\
+      \ in a special ASCII format.\n    Your task is to parse this string and return\
+      \ list of integers corresponding to how many beats does each\n    not last.\n\
+      \n    Here is a legend:\n    'o' - whole note, lasts four beats\n    'o|'\
+      \ - half note, lasts two beats\n    '.|' - quater note, lasts one beat\n\n\
+      \    >>> parse_music('o o| .| o| o| .| .| .| .| o o')\n    [4, 2, 1, 2, 2,\
+      \ 1, 1, 1, 1, 4, 4]\n    \"\"\"\n"
+    - "\n\ndef how_many_times(string: str, substring: str) -> int:\n    \"\"\" Find\
+      \ how many times a given substring can be found in the original string. Count\
+      \ overlaping cases.\n    >>> how_many_times('', 'a')\n    0\n    >>> how_many_times('aaa',\
+      \ 'a')\n    3\n    >>> how_many_times('aaaa', 'aa')\n    3\n    \"\"\"\n"
+    - "from typing import List\n\n\ndef sort_numbers(numbers: str) -> str:\n   \
+      \ \"\"\" Input is a space-delimited string of numberals from 'zero' to 'nine'.\n\
+      \    Valid choices are 'zero', 'one', 'two', 'three', 'four', 'five', 'six',\
+      \ 'seven', 'eight' and 'nine'.\n    Return the string with numbers sorted\
+      \ from smallest to largest\n    >>> sort_numbers('three one five')\n    'one\
+      \ three five'\n    \"\"\"\n"
   analysis: None
   # Construction
   dependencies: []
@@ -172,9 +192,7 @@
   modality: Code
   size:
     value: 159 GB
-    explanation:
-      As reported by the authors
-      [[Section 3.1]](https://arxiv.org/pdf/2107.03374.pdf#subsection.3.1).
+    explanation: As reported by the authors [[Section 3.1]](https://arxiv.org/pdf/2107.03374.pdf#subsection.3.1).
   sample: []
   analysis:
     value: None
@@ -620,7 +638,8 @@
       [[Model Card]](https://github.com/openai/following-instructions-human-feedback/blob/main/model-card.md).
   prohibited_uses:
     value: >
-      Access to InstructGPT is governed by Open AI API Usage Guidelines and API Terms
+      Access to InstructGPT is governed by Open AI API Usage Guidelines and API
+      Terms
       of Use, prohibiting the use of the API in a way that causes societal harm.
       [[Usage Guidelines]]
       (https://beta.openai.com/docs/usage-guidelines/content-policy)
@@ -1208,7 +1227,8 @@
       [[Trevor Project Blog]](https://www.thetrevorproject.org/blog/the-trevor-project-launches-new-ai-tool-to-support-crisis-counselor-training/).
   url: https://www.thetrevorproject.org/
   # Construction
-  dependencies: []  # @TODO This should be GPT-2
+  # @TODO This should be GPT-2
+  dependencies: []
   adaptation:
     value: Fine-tuning
     explanation: >
@@ -1222,10 +1242,15 @@
       The tool can only be accessed by the Trevor Project will be counsolors
       for training purposes.
   # Downstream
-  access: No public access
+  access:
+    value: No public access
+    explanation: >
+      The tool can only be accessed by the Trevor Project will be counsolors
+      for training purposes.
   license: Unknown
   terms_of_service: Unknown
-  intended_uses: Training counselors
+  intended_uses: >
+    Training counselors
   prohibited_uses: Unknown
   monitoring: Unknown
   feedback: Unknown

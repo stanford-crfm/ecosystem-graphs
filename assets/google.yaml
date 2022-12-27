@@ -149,7 +149,7 @@
     Included in the dataset are data from "public forums (0%); C4 data (12.5% );
     code documents from sites related to programming like Q&A sites tutorials,
     etc (12.5%); Wikipedia (English) (12.5%); English web documents (6.25%);
-    and Non-English web documents (6.25%).
+    and Non-English web documents (6.25%)."
   excluded: Unknown
   quality_control: Unknown
   # Downstream
@@ -199,7 +199,7 @@
     Finally, the model was analyzed on groundedness, testing its ability to
     produce responses that can be associated with "known sources whenever
     possible
-    [[Section 4.1]](https://arxiv.org/pdf/2201.08239.pdf#subsection.4.1).
+    [[Section 4.1]](https://arxiv.org/pdf/2201.08239.pdf#subsection.4.1)."
   # Construction
   dependencies:
     - Infiniset
@@ -322,7 +322,8 @@
 - type: model
   name: Flan-T5
   organization: Google
-  description: Flan-T5 is a version of the T5 large language model fine-tuned on instruction data
+  description: Flan-T5 is a version of the T5 large language model fine-tuned on
+    instruction data
   created_date:
     value: 2022-10-20
     explanation: Date paper was released
@@ -363,7 +364,7 @@
   modality: Text (English)
   analysis: ''
   size: 20B parameters (dense model)
-  dependencies: ''
+  dependencies: []
   training_emissions: ''
   training_time: ''
   training_hardware: 128 TPUv4
@@ -397,11 +398,13 @@
     - FIT400M
     - JFT-4B
   training_emissions: ''
-  training_time:
-  training_hardware:
+  training_time: None
+  training_hardware: None
   quality_control: ''
-  access: No public access
-  license: n/a
+  access:
+    value: No public access
+    explanation: Google does not provide access to Parti for external researchers.
+  license: None
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
@@ -418,13 +421,14 @@
   model_card: ''
   modality: Text (English) and Image
   size: >
-    14B parameters total. 2B parameters (U-Net model), 11B parameters (T5-XXL), and 600M and 400M parameter models for super resolution
+    14B parameters total. 2B parameters (U-Net model), 11B parameters (T5-XXL),
+    and 600M and 400M parameter models for super resolution
   analysis: ''
   dependencies:
     - LAION-400M
     - Google internal image-text dataset
-  training_emissions:
-  training_time:
+  training_emissions: None
+  training_time: None
   training_hardware: 128 TPU-v4
   quality_control: ''
   access: No public access
@@ -445,12 +449,13 @@
   model_card: ''
   modality: Text (English), Video, and Audio
   size: >
-    14B parameters total. 2B parameters (U-Net model), 11B parameters (T5-XXL), and 600M and 400M parameter models for super resolution
+    14B parameters total. 2B parameters (U-Net model), 11B parameters (T5-XXL),
+    and 600M and 400M parameter models for super resolution
   analysis: ''
   dependencies:
     - AudioSet
     - HowTo100M
-  training_emissions:
+  training_emissions: None
   training_time: 3 days
   training_hardware: 256 TPU-v3
   quality_control: ''
@@ -527,6 +532,6 @@
   monitoring: Unknown
   feedback:
     value: Contact the authors.
-    explanation: >
+    explanation: >-
       Author contact information is shared in the paper
       [[Paper]](https://arxiv.org/pdf/2204.02311.pdf).

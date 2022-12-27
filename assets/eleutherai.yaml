@@ -13,27 +13,25 @@
   modality: Text (English) and Code
   size: 825 GB
   sample:
-    - ...pot trending topics and the coverage around them. First up, there’s a
-      bit of a visual redesign. Previously, clicking on a trending topic would
-      highlight a story from one publication, and you’d have to scroll down past
-      a live video section to view related stories. Facebook is replacing that
-      system with a simple carousel, which does a better job of showing you
-      different coverage options. To be clear, the change doesn’t affect how
-      stories are sourced, according to Facebook. It’s still the same algorithm
-      pickin...
-    - Total knee arthroplasty (TKA) is a promising treatment for endstage
-      osteoarthritis (OA) of the knee for alleviating pain and restoring the
-      function of the knee. Some of the cases with bilateral TKA are symptomatic,
-      necessitating revision arthroplasty in both the knees. A bilateral revision
-      TKA can be done ei
-    - On the converse, the set-valued map $\Phi:[0,3]\rightrightarrows [0,3]$
-      $$\Phi(x):=\left\{\begin{array}{ll} \{1\} & \mbox{ if } 0\leq x<1\\ {}[1,2]
-      & \mbox{ if } 1\leq x\leq 2\\ \{2\} &
-    - This Court thus uses the same interpretation of V.R.C.P. 52(a) as it did
-      *487 under the previous statutory requirement found in 12 V.S.A. §
-      2385.  In essense, the defendants urge that this Court should reconsider
-      the case of Green Mountain Marble Co. v. Highway Board, supra, and follow
-      the Federal practice of looking to the evide
+    - '...pot trending topics and the coverage around them. First up, there’s a
+      bit of a visual redesign. Previously, clicking on a trending topic would highlight
+      a story from one publication, and you’d have to scroll down past a live video
+      section to view related stories. Facebook is replacing that system with a
+      simple carousel, which does a better job of showing you different coverage
+      options. To be clear, the change doesn’t affect how stories are sourced, according
+      to Facebook. It’s still the same algorithm pickin...'
+    - Total knee arthroplasty (TKA) is a promising treatment for endstage osteoarthritis
+      (OA) of the knee for alleviating pain and restoring the function of the knee.
+      Some of the cases with bilateral TKA are symptomatic, necessitating revision
+      arthroplasty in both the knees. A bilateral revision TKA can be done ei
+    - On the converse, the set-valued map $\Phi:[0,3]\rightrightarrows [0,3]$ $$\Phi(x):=\left\{\begin{array}{ll}
+      \{1\} & \mbox{ if } 0\leq x<1\\ {}[1,2] & \mbox{ if } 1\leq x\leq 2\\ \{2\}
+      &
+    - This Court thus uses the same interpretation of V.R.C.P. 52(a) as it did *487
+      under the previous statutory requirement found in 12 V.S.A. § 2385.  In essense,
+      the defendants urge that this Court should reconsider the case of Green Mountain
+      Marble Co. v. Highway Board, supra, and follow the Federal practice of looking
+      to the evide
   analysis:
     value: >
       Analyses of the data's composition, document statistics,
@@ -106,7 +104,7 @@
   modality: Text (English)
   analysis: ''
   size: 6B parameters (dense model)
-  dependencies: ''
+  dependencies: []
   training_emissions: ''
   training_time: ''
   training_hardware: 'TRC (Unspecified # of TPU v3-8s)'
@@ -114,11 +112,11 @@
   access:
     value: Full public access
     explanation: >
-        The model can be downloaded for free from [[The Eye]](https://mystic.the-eye.eu/public/AI/GPT-J-6B/step_383500.tar.zstd)
+      The model can be downloaded for free from [[The Eye]](https://mystic.the-eye.eu/public/AI/GPT-J-6B/step_383500.tar.zstd)
   license:
     value: Apache 2.0
     explanation: >
-        As indicated in the Github repository https://github.com/kingoflolz/mesh-transformer-jax
+      As indicated in the Github repository https://github.com/kingoflolz/mesh-transformer-jax
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
@@ -136,7 +134,7 @@
   modality: Text (English)
   analysis: ''
   size: 2.7B parameters (dense model)
-  dependencies: ''
+  dependencies: []
   training_emissions: ''
   training_time: ''
   training_hardware: .nan
@@ -144,7 +142,7 @@
   access:
     value: Full public access
     explanation: >
-        The model can be downloaded for free from [[The Eye]](https://mystic.the-eye.eu/public/AI/gptneo-release/GPT3_2-7B/)
+      The model can be downloaded for free from [[The Eye]](https://mystic.the-eye.eu/public/AI/gptneo-release/GPT3_2-7B/)
   license:
     value: MIT
     explanation: .nan
@@ -219,14 +217,14 @@
       Due to the generality of the pretraining set, it has acquired the ability
       to generate completions across a wide range of tasks - from programming to
       fiction writing
-      [[Model Card]](https://mystic.the-eye.eu/public/AI/models/GPT-NeoX-20B/20B_model_card.md).
+      [[Model Card]](https://mystic.the-eye.eu/public/AI/models/GPT-NeoX-20B/20B_model_card.md)."
   prohibited_uses:
     value: None
   monitoring:
     value: None
   feedback:
     value: >
-      Feedback can be provided using the #20b channel in EleutherAI Discord
+      Feedback can be provided using the  # 20b channel in EleutherAI Discord
       group
       [[EleutherAI Blog Post]](https://blog.eleuther.ai/announcing-20b/).
       Find the Discord link in the FAQ page

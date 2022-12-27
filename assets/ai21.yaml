@@ -17,11 +17,11 @@
   modality: Text (English)
   size: 178B parameters (dense model)
   analysis: ''
-  dependencies: >
-    n/a. training dataset not disclosed
+  dependencies:
+    - n/a. training dataset not disclosed
   training_emissions: ''
   training_time: ''
-  training_hardware: "Over 800 [A100] GPUs over several months"
+  training_hardware: Over 800 [A100] GPUs over several months
   quality_control: ''
   access:
     value: Limited public access

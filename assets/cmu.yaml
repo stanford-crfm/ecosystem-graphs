@@ -12,7 +12,7 @@
   modality: Code
   analysis: ''
   size: 2B parameters (dense model)
-  dependencies: ''
+  dependencies: []
   training_emissions: ''
   training_time: ''
   training_hardware: 8 RTX 8000
@@ -23,7 +23,7 @@
   license:
     value: MIT
     explanation: >
-        The license is provided in the [[Github repository]](https://github.com/VHellendoorn/Code-LMs)
+      The license is provided in the [[Github repository]](https://github.com/VHellendoorn/Code-LMs)
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
