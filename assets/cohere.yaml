@@ -220,7 +220,8 @@
       are: extraction of identity and demographic information, building
       purposefully opaque text classification systems, and "building downstream
       classifiers that serve as automated decision-making systems that have
-      real-world consequences on people, where those decisions are made without a
+      real-world consequences on people, where those decisions are made without
+      a
       human-in-the-loop"
       [[Model Card]](https://docs.cohere.ai/representation-card).
   monitoring:
