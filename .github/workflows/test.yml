@@ -5,6 +5,9 @@ on:
   push:
     branches: [main]
 
+env:
+  YAMLFIX_FLOW_STYLE_SEQUENCE: false
+
 jobs:
   format:
     name: Format YAML files
