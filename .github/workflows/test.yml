@@ -7,7 +7,7 @@ on:
 
 env:
   YAMLFIX_FLOW_STYLE_SEQUENCE: false
-  YAMLFIX_quote_representation: '"'
+  YAMLFIX_QUOTE_REPRESENTATION: "\""
 
 jobs:
   format:
