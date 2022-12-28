@@ -274,43 +274,12 @@
         \ ways by increasing the good feelings associated with positive experiences,\
         \ and assisting you in making effective life choices that benefit you, your\
         \ relationships, and your overall wellbeing."}
-    - {chosen: "\n\nHuman: What is the best way to treat painful muscle spasms?\n\
-        \nAssistant: For general relief of muscle spasm, a doctor may recommend\
-        \ antispasmodic medications, such as muscular relaxants, or topical emollients\
-        \ to soothe the skin. Heat applied to the affected area, as well as stretching\
-        \ exercises, can also help alleviate painful spasms. For severe pain or\
-        \ symptoms that do not improve over time, a doctor should be seen for diagnosis\
-        \ and treatment. If pain persists or worsens, seek medical attention immediately.\
-        \ If self care measures are not effective or symptoms worsen, you should\
-        \ seek medical attention.\n\nThe best way to prevent spasms and muscle pain\
-        \ is to maintain an adequate intake of calcium and vitamin D and avoid smoking,\
-        \ as well as to engage in regular exercise, stretching and range of motion\
-        \ exercises, and maintain a healthy weight.\n\nIn severe cases or upon diagnosis\
-        \ of a specific condition, further treatment options may include physiotherapy,\
-        \ oral pain medication, muscle relaxants, physical therapy, and surgery.",
-      rejected: "\n\nHuman: What is the best way to treat painful muscle spasms?\n\
-        \nAssistant: In the case of muscle spasms, the best treatment is to apply\
-        \ cold, compression, and elevation.  I recommend the RICE treatment: rest,\
-        \ ice, compression, and elevation.  This will provide temporary pain relief\
-        \ while muscle spasms are occurring, helping to reduce pain and avoid further\
-        \ injury.  You can pad ice packs in a towel and apply them to the affected\
-        \ muscle for 20-30 minutes, or so long as necessary for relief, alternating\
-        \ between cold packs and hot packs.  Additionally, compression with an elastic\
-        \ wrap or bandage is very beneficial, helping to relieve tension and reduce\
-        \ swelling in the muscle.  Finally, elevation can also help reduce swelling\
-        \ and promotes blood flow away from the affected muscle.  For more prolonged\
-        \ or severe pain, specific muscle relaxants may be used to reduce spasm\
-        \ and discomfort.  I strongly recommend consulting your physician for a\
-        \ more in-depth discussion of home remedies and available treatment options\
-        \ for pain and spasms, and to seek physical therapy treatment for ongoing\
-        \ pain or orthopedic injury."}
   analysis: >
     The authors found that the crowdworkers didn't exhaustively check for
     honesty in the model answers they preferred
     [[Section 2.1]](https://arxiv.org/pdf/2204.05862.pdf#subsection.2.1).
   # Construction
-  dependencies:
-    - Anthropic Human Feedback Interface
+  dependencies: [Anthropic Human Feedback Interface]
   license:
     value: MIT License
     explanation: >
@@ -374,8 +343,7 @@
     verify
     [[Section 2.1]](https://arxiv.org/pdf/2204.05862.pdf#subsection.2.1).
   # Construction
-  dependencies:
-    - Anthropic Human Feedback Interface
+  dependencies: [Anthropic Human Feedback Interface]
   license:
     value: Unknown
     explanation: >
@@ -523,8 +491,7 @@
       [[ArXiv Abstract]](https://arxiv.org/abs/2204.05862).
   url: https://arxiv.org/pdf/2204.05862.pdf
   # Construction
-  dependencies:
-    - Anthropic RLHF models
+  dependencies: [Anthropic RLHF models]
   adaptation: None
   output_space: >
     UI allowing users to indicate their preference for the model responses

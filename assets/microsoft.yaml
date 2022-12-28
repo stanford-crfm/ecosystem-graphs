@@ -106,8 +106,7 @@
       (https://github.blog/2021-06-29-introducing-github-copilot-ai-pair-programmer/).
   url: https://copilot.github.com/
   # Construction
-  dependencies:
-    - Codex
+  dependencies: [Codex]
   adaptation: >
     Unknown
   output_space: Code completions

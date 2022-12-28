@@ -56,8 +56,7 @@
   size: Unknown
   analysis: Unknown
   # Construction
-  dependencies:
-    - Internal Google BERT dataset
+  dependencies: [Internal Google BERT dataset]
   training_emissions: Unknown
   training_time: Unknown
   training_hardware: Unknown
@@ -88,8 +87,7 @@
       were for ranking and featured snippets in Search.
   url: https://blog.google/products/search/search-language-understanding-bert/
   # Construction
-  dependencies:
-    - Internal Google BERT
+  dependencies: [Internal Google BERT]
   adaptation: Unknown
   output_space: web page ranking
   quality_control: Unknown
@@ -201,8 +199,7 @@
     possible
     [[Section 4.1]](https://arxiv.org/pdf/2201.08239.pdf#subsection.4.1)."
   # Construction
-  dependencies:
-    - Infiniset
+  dependencies: [Infiniset]
   training_emissions:
     value: 26 tCO2e
     explanation: >
@@ -278,8 +275,7 @@
   sample: []
   analysis: Unknown
   # Construction
-  dependencies:
-    - Infiniset
+  dependencies: [Infiniset]
   license: Unknown
   included: >
     The dataset is based on Infiniset. It included multilingual text containing
@@ -392,11 +388,7 @@
   modality: Text (English) and Image
   size: 20B parameters
   analysis: ''
-  dependencies:
-    - C4
-    - LAION-400M
-    - FIT400M
-    - JFT-4B
+  dependencies: [C4, LAION-400M, FIT400M, JFT-4B]
   training_emissions: ''
   training_time: None
   training_hardware: None
@@ -424,9 +416,7 @@
     14B parameters total. 2B parameters (U-Net model), 11B parameters (T5-XXL),
     and 600M and 400M parameter models for super resolution
   analysis: ''
-  dependencies:
-    - LAION-400M
-    - Google internal image-text dataset
+  dependencies: [LAION-400M, Google internal image-text dataset]
   training_emissions: None
   training_time: None
   training_hardware: 128 TPU-v4
@@ -452,9 +442,7 @@
     14B parameters total. 2B parameters (U-Net model), 11B parameters (T5-XXL),
     and 600M and 400M parameter models for super resolution
   analysis: ''
-  dependencies:
-    - AudioSet
-    - HowTo100M
+  dependencies: [AudioSet, HowTo100M]
   training_emissions: None
   training_time: 3 days
   training_hardware: 256 TPU-v3
@@ -494,8 +482,7 @@
     toxicity benchmarks"
     [[Model Card]](https://arxiv.org/pdf/2204.02311.pdf#appendix.E).
   # Construction
-  dependencies:
-    - PaLM dataset
+  dependencies: [PaLM dataset]
   training_emissions:
     value: 271.43 tCO2
     explanation: >

@@ -1,10 +1,6 @@
 ---
 
 # models
-
-
-
-
 - type: model
   name: CodeGeeX
   organization: Tsinghua (THUDM)
@@ -123,7 +119,8 @@
 - type: model
   name: GLM-130B
   organization: Tsinghua (THUDM)
-  description: GLM-130B is a bidirectional large language model trained on English and Chinese
+  description: GLM-130B is a bidirectional large language model trained on English
+    and Chinese
   created_date:
     value: 2022-08-04
     explanation: The date the model website was made public

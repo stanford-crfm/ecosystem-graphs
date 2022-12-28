@@ -169,8 +169,7 @@
       HellaSwag, MMLU among others
       [[Section 4]](http://eaidata.bmk.sh/data/GPT_NeoX_20B.pdf#section.4).
   # Construction
-  dependencies:
-    - The Pile
+  dependencies: [The Pile]
   training_emissions:
     value: 31.73 tCO2e
     explanation: >
@@ -240,8 +239,7 @@
   created_date: Unknown
   url: goose.ai
   # Construction
-  dependencies:
-    - GPT-NeoX-20B
+  dependencies: [GPT-NeoX-20B]
   adaptation: Unknown
   output_space:
     value: Text Generation, Text Completion

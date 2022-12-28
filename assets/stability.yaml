@@ -12,8 +12,7 @@
   modality: Text and Image
   size: 890M parameters
   analysis: ''
-  dependencies:
-    - LAION 5B
+  dependencies: [LAION 5B]
   training_emissions: ''
   training_time: None
   training_hardware: None

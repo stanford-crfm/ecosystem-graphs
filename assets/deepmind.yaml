@@ -89,11 +89,7 @@
   modality: Text () and Image
   size: None
   analysis: ''
-  dependencies:
-    - MultiModal MassiveWeb (M3W)
-    - ALIGN
-    - LTIP
-    - VTP
+  dependencies: [MultiModal MassiveWeb (M3W), ALIGN, LTIP, VTP]
   training_emissions: ''
   training_time: 15 days
   training_hardware: 1536 TPU chips
@@ -172,8 +168,7 @@
       dialogue tasks
       [[Section 6]](https://arxiv.org/pdf/2112.11446.pdf#section.6).
   # Construction
-  dependencies:
-    - MassiveText
+  dependencies: [MassiveText]
   training_emissions:
     value: 380 tCO2e
     explanation: >
