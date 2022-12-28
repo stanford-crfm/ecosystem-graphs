@@ -14,7 +14,9 @@ venv/bin/pip check
 # YAML style checks and linting
 echo ""
 echo "Running yamlfix"
-venv/bin/yamlfix --config-file ./yamlfix.toml ./assets/*.yaml
+echo "yamlfix config:"
+echo $YAMLFIX_FLOW_STYLE_SEQUENCE
+venv/bin/yamlfix ./assets/*.yaml
 echo "Checking for YAML formatting."
 venv/bin/yamllint -c .yamllint --no-warnings . || (
   echo ""
