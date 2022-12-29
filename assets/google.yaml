@@ -448,9 +448,7 @@
   url: https://arxiv.org/abs/2104.11178
   model_card: ''
   modality: Text (English), Video, and Audio
-  size: >
-    14B parameters total. 2B parameters (U-Net model), 11B parameters (T5-XXL),
-    and 600M and 400M parameter models for super resolution
+  size: 155M
   analysis: ''
   dependencies:
     - AudioSet

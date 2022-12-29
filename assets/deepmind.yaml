@@ -87,7 +87,7 @@
   url: https://arxiv.org/abs/2204.14198
   model_card: None
   modality: Text () and Image
-  size: None
+  size: 80B
   analysis: ''
   dependencies:
     - MultiModal MassiveWeb (M3W)
