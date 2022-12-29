@@ -339,7 +339,7 @@
     - Flan chain of thought data
   training_emissions: ''
   training_time: ''
-  training_hardware: .nan
+  training_hardware: ""
   quality_control: ''
   access:
     value: Full public access

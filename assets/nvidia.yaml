@@ -58,7 +58,7 @@
   dependencies: []
   training_emissions: None
   training_time: None
-  training_hardware: .nan
+  training_hardware: ""
   quality_control: None
   access:
     value: No public access
