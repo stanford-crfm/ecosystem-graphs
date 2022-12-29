@@ -116,7 +116,7 @@
   license:
     value: Apache 2.0
     explanation: >
-      As indicated in the Github repository https://github.com/kingoflolz/mesh-transformer-jax
+      As indicated in the [[Github repository]](https://github.com/kingoflolz/mesh-transformer-jax)
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''

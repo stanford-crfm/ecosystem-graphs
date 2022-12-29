@@ -173,7 +173,7 @@
   quality_control: ''
   access:
     value: Limited public access
-    explanation: The 175B model requires manual approval to access. Other models
+    explanation: The 175B model requires manual approval from Meta to access. Other models
       are available through HuggingFace.
   license:
     value: OPT-175B LICENSE
