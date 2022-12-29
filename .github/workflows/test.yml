@@ -1,8 +1,7 @@
-# yamllint disable-file
 ---
 name: Test
 
-on:
+"on":
   push:
     branches: [main]
 
