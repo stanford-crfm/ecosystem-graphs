@@ -16,14 +16,14 @@
   dependencies: []
   training_emissions: ''
   training_time: ''
-  training_hardware: .nan
+  training_hardware: ""
   quality_control: ''
   access:
     value: Limited public access
     explanation: Paid API product
   license:
-    value: .nan
-    explanation: .nan
+    value: ""
+    explanation: ""
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''

@@ -118,14 +118,14 @@
   dependencies: []
   training_emissions: ''
   training_time: ''
-  training_hardware: .nan
+  training_hardware: ""
   quality_control: ''
   access:
     value: No public access
     explanation: DeepMind does not provide access to AlphaCode to external researchers
   license:
-    value: .nan
-    explanation: .nan
+    value: ""
+    explanation: ""
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''

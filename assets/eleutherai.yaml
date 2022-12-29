@@ -137,7 +137,7 @@
   dependencies: []
   training_emissions: ''
   training_time: ''
-  training_hardware: .nan
+  training_hardware: ""
   quality_control: ''
   access:
     value: Full public access
@@ -145,7 +145,7 @@
       The model can be downloaded for free from [[The Eye]](https://mystic.the-eye.eu/public/AI/gptneo-release/GPT3_2-7B/)
   license:
     value: MIT
-    explanation: .nan
+    explanation: ""
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
