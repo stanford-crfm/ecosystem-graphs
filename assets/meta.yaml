@@ -48,7 +48,7 @@
 - type: model
   name: Galactica
   organization: Meta AI
-  description: Galactica is a family of autoregressive large language models.
+  description: Galactica is a family of autoregressive language models.
   created_date:
     value: 2022-11-15
     explanation: >
@@ -111,7 +111,7 @@
 - type: model
   name: InCoder
   organization: CMU, Meta AI (FAIR), TTI-Chicago, UC Berkeley, University of Washington
-  description: InCoder is a large language model trained on code with a causal masking
+  description: InCoder is a language model trained on code with a causal masking
     objective
   created_date:
     value: 2022-04-12
@@ -140,7 +140,7 @@
 - type: model
   name: OPT
   organization: Meta AI
-  description: OPT is a family of autoregressive large language models.
+  description: OPT is a family of autoregressive language models.
   created_date:
     value: 2022-05-01
     explanation: >

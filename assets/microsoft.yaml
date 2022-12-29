@@ -39,7 +39,7 @@
 - type: model
   name: T-ULRv5
   organization: Microsoft
-  description: T-ULRv5 is a large language model trained with two unique pretraining
+  description: T-ULRv5 is a language model trained with two unique pretraining
     objectives
   created_date:
     value: 2022-09-28

@@ -7,7 +7,7 @@
   name: Jurassic-1
   organization: AI21
   description: >
-    Jurassic-1 is a family of autoregressive large language models (Jumbo and Large).
+    Jurassic-1 is a family of autoregressive language models (Jumbo and Large).
   created_date:
     value: 2021-08-11
     explanation: >

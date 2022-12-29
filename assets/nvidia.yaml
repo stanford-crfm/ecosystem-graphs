@@ -46,7 +46,7 @@
 - type: model
   name: Megatron-LM
   organization: NVIDIA
-  description: Megatron-LM is an autoregressive large language model
+  description: Megatron-LM is an autoregressive language model
   created_date:
     value: 2021-04-09
     explanation: The date the paper for the 1 trillion parameter model was published

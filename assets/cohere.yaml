@@ -73,7 +73,7 @@
   # General
   organization: Cohere
   description: >
-    The Generations model is a large language model trained by Cohere for
+    The Generations model is a language model trained by Cohere for
     generation tasks.
   created_date:
     value: 2021-11-15
@@ -156,7 +156,7 @@
   # General
   organization: Cohere
   description: >
-    The Representation model is a large language model trained by Cohere for
+    The Representation model is a language model trained by Cohere for
     tasks requiring embeddings.
   created_date:
     value: 2021-11-15
