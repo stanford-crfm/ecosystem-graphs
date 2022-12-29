@@ -70,7 +70,7 @@
       Microsoft [[OpenAI Blog Post]]
       (https://openai.com/blog/openai-licenses-gpt-3-technology-to-microsoft/).
   intended_uses:
-    value: The intended use of the GPT-3 dataset is to train large language models.
+    value: The intended use of the GPT-3 dataset is to train language models.
   prohibited_uses:
     value: Unknown
     explanation: >
@@ -222,7 +222,7 @@
       as part of OpenAI giving Microsoft access to its Codex model
       [GitHub Copilot](https://copilot.github.com/).
   intended_uses:
-    value: Training large language models on code.
+    value: Training language models on code.
   prohibited_uses:
     value: Unknown
   monitoring:
@@ -385,7 +385,7 @@
   # General
   organization: OpenAI
   description: >
-    GPT-3 is an autoregressive large language model.
+    GPT-3 is an autoregressive language model.
   created_date:
     value: 2020-06-11
     explanation: >
@@ -940,7 +940,7 @@
   organization: OpenAI
   description: >
     OpenAI API is a general purpose "text in, text out" interface connecting
-    users with a suite of large language models. The API was initially released
+    users with a suite of language models. The API was initially released
     as a gateway to GPT-3, but it now supports access to other, more
     specialized OpenAI models.
     [[Open AI Blog Post]](https://openai.com/blog/openai-api/)

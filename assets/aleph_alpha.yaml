@@ -3,7 +3,7 @@
 - type: model
   name: Luminous
   organization: Aleph Alpha
-  description: Luminous is a family of multilingual large language models
+  description: Luminous is a family of multilingual language models
   created_date:
     value: 2022-04-14
     explanation: ''

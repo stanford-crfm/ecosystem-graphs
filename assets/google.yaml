@@ -322,7 +322,7 @@
 - type: model
   name: Flan-T5
   organization: Google
-  description: Flan-T5 is a version of the T5 large language model fine-tuned on
+  description: Flan-T5 is a version of the T5 language model fine-tuned on
     instruction data
   created_date:
     value: 2022-10-20
@@ -355,7 +355,7 @@
 - type: model
   name: UL2
   organization: Google
-  description: UL2 is a large language model trained with a new pretraining objective
+  description: UL2 is a language model trained with a new pretraining objective
   created_date:
     value: 2022-05-10
     explanation: Date mdoel paper was released

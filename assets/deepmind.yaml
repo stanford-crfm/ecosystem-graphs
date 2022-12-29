@@ -110,7 +110,7 @@
 - type: model
   name: AlphaCode
   organization: DeepMind
-  description: AlphaCode is an autoregressive large language model trained on code
+  description: AlphaCode is an autoregressive language model trained on code
   created_date:
     value: 2022-02-02
     explanation: The date the model paper was released
@@ -140,7 +140,7 @@
   # General
   organization: DeepMind
   description: >
-    Gopher is an autoregressive large language model based on the Transformer
+    Gopher is an autoregressive language model based on the Transformer
     architecture with two modifications: using RMSNorm instead of LayerNorm and
     using relative positional encoding scheme instead of absolute positional
     encodings

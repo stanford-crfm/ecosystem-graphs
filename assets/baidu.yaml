@@ -3,7 +3,7 @@
 - type: model
   name: ERNIE 3.0 Titan
   organization: Baidu, PengCheng Laboratory
-  description: ERNIE 3.0 Titan is a large language model
+  description: ERNIE 3.0 Titan is a language model
   created_date:
     value: 2021-12-23
     explanation: The date the model paper was released
