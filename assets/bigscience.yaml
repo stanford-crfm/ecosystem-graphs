@@ -12,7 +12,7 @@
   modality: Text (A lot of languages, English) and Code
   size: 176B parameters (dense model)
   analysis: ''
-  dependencies: ''
+  dependencies: []
   training_emissions:
     value: 25 tCO2e
     explanation: Sourced from estimates in https://arxiv.org/abs/2211.02001

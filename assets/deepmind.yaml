@@ -82,29 +82,26 @@
   description: Flamingo is a multimodal model trained on multimodal web data
   created_date:
     value: 2022-04-28
-    explanation: The date the model [[blog post]](https://www.deepmind.com/blog/tackling-multiple-tasks-with-a-single-visual-language-model) was published
+    explanation: The date the model [[blog post]](https://www.deepmind.com/blog/tackling-multiple-tasks-with-a-single-visual-language-model)
+      was published
   url: https://arxiv.org/abs/2204.14198
-  model_card:
+  model_card: None
   modality: Text () and Image
-  size:
-  analysis: ""
-  dependencies:
-    - MultiModal MassiveWeb (M3W)
-    - ALIGN
-    - LTIP
-    - VTP
-  training_emissions: ""
+  size: None
+  analysis: ''
+  dependencies: [MultiModal MassiveWeb (M3W), ALIGN, LTIP, VTP]
+  training_emissions: ''
   training_time: 15 days
   training_hardware: 1536 TPU chips
-  quality_control: ""
+  quality_control: ''
   access:
     value: No public access
     explanation: Deepmind does not provide access to Flamingo to external researchers.
   license: n/a
-  intended_uses: ""
-  prohibited_uses: ""
-  monitoring: ""
-  feedback: ""
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
 
 - type: model
   name: AlphaCode
@@ -118,7 +115,7 @@
   modality: Code
   analysis: ''
   size: 41B parameters (dense model)
-  dependencies: ''
+  dependencies: []
   training_emissions: ''
   training_time: ''
   training_hardware: .nan
@@ -171,8 +168,7 @@
       dialogue tasks
       [[Section 6]](https://arxiv.org/pdf/2112.11446.pdf#section.6).
   # Construction
-  dependencies:
-    - MassiveText
+  dependencies: [MassiveText]
   training_emissions:
     value: 380 tCO2e
     explanation: >
@@ -226,7 +222,7 @@
       There is no information on how DeepMind is internally monitoring
       the use of the model.
   feedback:
-    value: >
+    value: >-
       The feedback for the model can be provided at the email linked in the model
       card, geoffreyi at google.com
       [[Model Card]](https://arxiv.org/pdf/2112.11446.pdf#appendix.B).

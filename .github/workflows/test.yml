@@ -1,7 +1,7 @@
 ---
 name: Test
 
-on:
+"on":
   push:
     branches: main
   pull_request:

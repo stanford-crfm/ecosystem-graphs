@@ -12,7 +12,8 @@ dataset:
     description: When the dataset was created.
   - name: url
     type: url
-    description: Link to website or paper that provides a detailed description of the dataset.
+    description: Link to website or paper that provides a detailed description of
+      the dataset.
   - name: datasheet
     type: url
     description: Link to the datasheet describing the dataset.
@@ -28,13 +29,15 @@ dataset:
   # Construction
   - name: dependencies
     type: list
-    description: A list of assets (e.g., datasets, models, applications) that were used to create this dataset.
+    description: A list of assets (e.g., datasets, models, applications) that were
+      used to create this dataset.
   - name: included
     description: Description of what data is included.
   - name: excluded
     description: Description of what data is excluded (e.g., filtered out) and why.
   - name: quality_control
-    description: What measures were taken to ensure quality, safety, and mitigate harms.
+    description: What measures were taken to ensure quality, safety, and mitigate
+      harms.
   # Downstream
   - name: access
     type: access_type
@@ -46,7 +49,8 @@ dataset:
   - name: prohibited_uses
     description: Description of what the dataset should not be used for downstream.
   - name: monitoring
-    description: Description of measures taken to monitor downstream uses of this dataset.
+    description: Description of measures taken to monitor downstream uses of this
+      dataset.
   - name: feedback
     description: How downstream problems with this dataset should be reported.
 
@@ -62,20 +66,24 @@ model:
     description: When the model was created.
   - name: url
     type: url
-    description: Link to website or paper that provides a detailed description of the model.
+    description: Link to website or paper that provides a detailed description of
+      the model.
   - name: model_card
     type: url
     description: Link to the model card describing this model.
   - name: modality
-    description: Modalities represented in the model (e.g., Text, Text (English), Code, Code (Python), Video, Image).
+    description: Modalities represented in the model (e.g., Text, Text (English),
+      Code, Code (Python), Video, Image).
   - name: analysis
     description: Description of any analysis that was done on the model.
   - name: size
-    description: Size (and shape) of the model (e.g., number of parameters in the model)
+    description: Size (and shape) of the model (e.g., number of parameters in the
+      model)
   # Construction
   - name: dependencies
     type: list
-    description: A list of assets (e.g., datasets, models, applications) that were used to create this model.
+    description: A list of assets (e.g., datasets, models, applications) that were
+      used to create this model.
   - name: training_emissions
     description: Estimate of the carbon emissions used to create this model.
   - name: training_time
@@ -83,7 +91,8 @@ model:
   - name: training_hardware
     description: What hardware was used to train the model.
   - name: quality_control
-    description: What measures were taken to ensure quality, safety, and mitigate harms.
+    description: What measures were taken to ensure quality, safety, and mitigate
+      harms.
   # Downstream
   - name: access
     type: access_type
@@ -95,7 +104,8 @@ model:
   - name: prohibited_uses
     description: Description of what the model should not be used for downstream.
   - name: monitoring
-    description: Description of measures taken to monitor downstream uses of this model.
+    description: Description of measures taken to monitor downstream uses of this
+      model.
   - name: feedback
     description: How downstream problems with this model should be reported.
 
@@ -114,13 +124,16 @@ application:
   # Construction
   - name: dependencies
     type: list
-    description: A list of assets (e.g., datasets, models, applications) that were used to create this application.
+    description: A list of assets (e.g., datasets, models, applications) that were
+      used to create this application.
   - name: adaptation
-    description: How the model was adapted (e.g., fine-tuned) to produce the derived task model.
+    description: How the model was adapted (e.g., fine-tuned) to produce the derived
+      task model.
   - name: output_space
     description: Description of the output space (e.g., generation, ranking, etc.).
   - name: quality_control
-    description: What measures were taken to ensure quality, safety, and mitigate harms.
+    description: What measures were taken to ensure quality, safety, and mitigate
+      harms.
   # Downstream
   - name: access
     type: access_type
@@ -135,7 +148,8 @@ application:
   - name: prohibited_uses
     description: Description of what the application should not be used for downstream.
   - name: monitoring
-    description: Description of measures taken to monitor downstream uses of this application.
+    description: Description of measures taken to monitor downstream uses of this
+      application.
   - name: feedback
     description: How downstream problems with this application should be reported.
   # Deployment
