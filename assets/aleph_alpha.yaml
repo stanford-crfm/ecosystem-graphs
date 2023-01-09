@@ -6,7 +6,7 @@
   description: Luminous is a family of multilingual language models
   created_date:
     value: 2022-04-14
-    explanation: ''
+    explanation: Date the models were announced by the Aleph Alpha twitter account
   url: https://twitter.com/Aleph__Alpha/status/1514576711492542477
   model_card: ''
   modality: Text (English, French | français, German | Deutsch, Italian | italiano,
@@ -28,3 +28,41 @@
   prohibited_uses: ''
   monitoring: ''
   feedback: ''
+
+- type: application
+  name: Aleph Alpha API
+  # General
+  organization: Aleph Alpha
+  description: >
+      The Aleph Alpha API serves a family of text-only language models (Luminous) and multimodal text-and-image models (Magma).
+  created_date:
+    value: 2021-09-30
+    explanation: > Date the Aleph Alpha Python API client was first available based on to the [PyPi package history](https://pypi.org/project/aleph-alpha-client/1.0.0/)
+  url:
+  # Construction
+  dependencies:
+    - Luminous
+  adaptation: ''
+  output_space: >
+      The text models provide text outputs given text inputs. The multimodal models provide text completions given text and image inputs.
+  quality_control:
+  # Downstream
+  access:
+    value:
+    explanation:
+  license:
+    value:
+    explanation:
+  terms_of_service:
+  intended_uses:
+    value:
+  prohibited_uses:
+  monitoring:
+  feedback:
+  # Deployment
+  monthly_active_users:
+    value: Unknown
+  user_distribution:
+    value: Unknown
+  failures:
+    value: Unknown
