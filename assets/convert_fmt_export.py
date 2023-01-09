@@ -37,6 +37,30 @@ def size_converter(size, llm_type) -> str:
     )
 
 
+MODEL_SCHEMA = [
+    "type",
+    "name",
+    "organization",
+    "description",
+    "created_date",
+    "url",
+    "model_card",
+    "modality",
+    "analysis",
+    "size",
+    "dependencies",
+    "training_emissions",
+    "training_time",
+    "training_hardware",
+    "quality_control",
+    "access",
+    "license",
+    "intended_uses",
+    "prohibited_uses",
+    "monitoring",
+    "feedback",
+]
+
 def fmt_to_eco_entry(fmt_entry: pd.Series) -> str:
     if fmt_entry["_HIDEME"] == True or pd.isnull(fmt_entry["Name"]):
         return {}
@@ -68,30 +92,7 @@ def fmt_to_eco_entry(fmt_entry: pd.Series) -> str:
     ret["license"] = license
 
     # Reorder keys (suboptimal performance, better code legibility)
-    eco_schema = [
-        "type",
-        "name",
-        "organization",
-        "description",
-        "created_date",
-        "url",
-        "model_card",
-        "modality",
-        "analysis",
-        "size",
-        "dependencies",
-        "training_emissions",
-        "training_time",
-        "training_hardware",
-        "quality_control",
-        "access",
-        "license",
-        "intended_uses",
-        "prohibited_uses",
-        "monitoring",
-        "feedback",
-    ]
-    final = {k: ret.get(k, "") for k in eco_schema}
+    final = {k: ret.get(k, "") for k in MODEL_SCHEMA}
 
     return yaml.dump(final, sort_keys=False)
 

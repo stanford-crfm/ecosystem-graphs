@@ -659,13 +659,28 @@ function renderNavBar() {
 function loadAssetsAndRenderPageContent() {
 
   const paths = [
+    'assets/ai21.yaml',
+    'assets/aleph_alpha.yaml',
     'assets/anthropic.yaml',
+    'assets/baidu.yaml',
+    'assets/bigscience.yaml',
     'assets/cohere.yaml',
+    'assets/cmu.yaml',
+    'assets/craiyon.yaml',
     'assets/deepmind.yaml',
     'assets/eleutherai.yaml',
     'assets/google.yaml',
+    'assets/huggingface.yaml',
+    'assets/meta.yaml',
     'assets/microsoft.yaml',
+    'assets/naver.yaml',
+    'assets/nvidia.yaml',
     'assets/openai.yaml',
+    'assets/perplexity.yaml',
+    'assets/salesforce.yaml',
+    'assets/stability.yaml',
+    'assets/tsinghua.yaml',
+    'assets/yandex.yaml',
   ];
 
   $.get('js/schemas.yaml', {}, (response) => {

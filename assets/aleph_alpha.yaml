@@ -1,30 +1,30 @@
 ---
 
-type: model
-name: Luminous
-organization: Aleph Alpha
-description: Luminous is a family of multilingual large language models
-created_date:
-  value: 2022-04-14
-  explanation: ''
-url: https://twitter.com/Aleph__Alpha/status/1514576711492542477
-model_card: ''
-modality: "Text (English, French | fran\xE7ais, German | Deutsch, Italian | italiano,\
-  \ Spanish | Espa\xF1ol)"
-analysis: ''
-size: 200B parameters (dense model)
-dependencies: ''
-training_emissions: ''
-training_time: ''
-training_hardware: .nan
-quality_control: ''
-access:
-  value: Limited public access
-  explanation: Paid API product
-license:
-  value: .nan
-  explanation: .nan
-intended_uses: ''
-prohibited_uses: ''
-monitoring: ''
-feedback: ''
+- type: model
+  name: Luminous
+  organization: Aleph Alpha
+  description: Luminous is a family of multilingual large language models
+  created_date:
+    value: 2022-04-14
+    explanation: ''
+  url: https://twitter.com/Aleph__Alpha/status/1514576711492542477
+  model_card: ''
+  modality: Text (English, French | français, German | Deutsch, Italian | italiano,
+    Spanish | Español)
+  analysis: ''
+  size: 200B parameters (dense model)
+  dependencies: []
+  training_emissions: ''
+  training_time: ''
+  training_hardware: .nan
+  quality_control: ''
+  access:
+    value: Limited public access
+    explanation: Paid API product
+  license:
+    value: .nan
+    explanation: .nan
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''

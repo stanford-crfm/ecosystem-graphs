@@ -96,8 +96,7 @@
       several safety benchmarks
       [[Model Card]](https://docs.cohere.ai/generation-card).
   # Construction
-  dependencies:
-    - coheretext
+  dependencies: [coheretext]
   training_emissions:
     value: Unknown
     explanation: The emissions of the models are unknown.
@@ -179,8 +178,7 @@
       The model's performance was analyzed on several safety benchmarks
       [[Model Card]](https://docs.cohere.ai/representation-card).
   # Construction
-  dependencies:
-    - coheretext
+  dependencies: [coheretext]
   training_emissions:
     value: Unknown
     explanation: The emissions of the models are unknown.
@@ -220,7 +218,8 @@
       are: extraction of identity and demographic information, building
       purposefully opaque text classification systems, and "building downstream
       classifiers that serve as automated decision-making systems that have
-      real-world consequences on people, where those decisions are made without a
+      real-world consequences on people, where those decisions are made without
+      a
       human-in-the-loop"
       [[Model Card]](https://docs.cohere.ai/representation-card).
   monitoring:
@@ -249,9 +248,7 @@
       (https://venturebeat.com/2021/11/15/openai-rival-cohere-launches-language-model-api/).
   url: https://cohere.ai/
   # Construction
-  dependencies:
-    - Cohere Generations model
-    - Cohere Representation model
+  dependencies: [Cohere Generations model, Cohere Representation model]
   adaptation:
     value: Unknown
   output_space:
