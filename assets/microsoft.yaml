@@ -88,6 +88,35 @@
   monitoring: ''
   feedback: ''
 
+- type: model
+  name: VALL-E
+  organization: Microsoft
+  description: Vall-E is a neural code model for text-to-speech synthesis
+  created_date:
+    value: 2023-01-05
+    explanation: The date the [[model paper]](https://arxiv.org/abs/2301.02111)
+      was released
+  url: https://valle-demo.github.io/
+  model_card: None found as of 2023-01-10
+  modality: Text, Audio
+  size: Unclear
+  analysis: ''
+  dependencies: []
+  training_emissions: ''
+  training_time: ''
+  training_hardware: 16 V100 32GB GPUs
+  quality_control: ''
+  access:
+    value: No public access
+    explanation: Microsoft does not provide public access to VALL-E
+  license:
+    value: n/a
+    explanation: The model si not publicly available
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+
 # Applications
 
 - type: application
