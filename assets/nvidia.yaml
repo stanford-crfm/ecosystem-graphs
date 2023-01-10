@@ -34,7 +34,9 @@
   training_time: ''
   training_hardware: 4480 A100s (560 x 8)
   quality_control: ''
-  access: No public access
+  access:
+    value: Limited public access
+    explanation: Megatron-Turing NLG can be accessed through the [[Turing Academic Program]](https://www.microsoft.com/en-us/research/collaboration/microsoft-turing-academic-program/) 
   license:
     value: n/a
     explanation: n/a

@@ -125,7 +125,7 @@
     value: 2022-08-04
     explanation: The date the model website was made public
   url: https://keg.cs.tsinghua.edu.cn/glm-130b/
-  model_card: None found
+  model_card: None found as of 2023-01-09
   modality: Text (Chinese | English)
   size: 130B parameters (dense model)
   analysis: ''

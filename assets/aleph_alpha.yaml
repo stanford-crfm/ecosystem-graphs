@@ -12,11 +12,11 @@
   modality: Text (English, French | français, German | Deutsch, Italian | italiano,
     Spanish | Español)
   analysis: ''
-  size: 200B parameters (dense model)
+  size: 200B parameters (dense model) according to [[this news article]](https://www-heise-de.translate.goog/news/Machine-Learning-Aleph-Alpha-feilt-mit-Oracle-und-Nvidia-an-transformativer-KI-6269269.html?_x_tr_sl=de&_x_tr_tl=en&_x_tr_hl=en&_x_tr_pto=sc)
   dependencies: []
-  training_emissions: ''
-  training_time: ''
-  training_hardware: ''
+  training_emissions: Unknown
+  training_time: Unknown
+  training_hardware: Unknown
   quality_control: ''
   access:
     value: Limited public access
@@ -41,7 +41,7 @@
     explanation: >
       Date the Aleph Alpha Python API client was first available based on to the
       [PyPi package history](https://pypi.org/project/aleph-alpha-client/1.0.0/)
-  url:
+  url: https://www.aleph-alpha.com/
   # Construction
   dependencies: [Luminous]
   adaptation: ''
@@ -51,21 +51,17 @@
   quality_control: ''
   # Downstream
   access:
-    value:
-    explanation:
+    value: Limited public access
+    explanation: The API is a paid product. Refer to the [[API documentation]](https://docs.aleph-alpha.com/docs/introduction/luminous/) for further details.
   license:
-    value:
-    explanation:
-  terms_of_service:
-  intended_uses:
-    value:
-  prohibited_uses:
-  monitoring:
-  feedback:
+    value: Unknown
+    explanation: Unable to locate a specific license for the API as of 2021-01-09. See Terms of Service for additional information.
+  terms_of_service: https://www.aleph-alpha.com/terms-conditions
+  intended_uses: Unknown
+  prohibited_uses: Unknown
+  monitoring: Unknown
+  feedback: Unknown
   # Deployment
-  monthly_active_users:
-    value: Unknown
-  user_distribution:
-    value: Unknown
-  failures:
-    value: Unknown
+  monthly_active_users: Unknown
+  user_distribution: Unknown
+  failures: Unknown

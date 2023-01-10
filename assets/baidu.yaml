@@ -48,7 +48,7 @@
     explanation: API access is available through PaddleHub. Instructions on [[Github
       repository]](https://github.com/PaddlePaddle/PaddleHub/blob/develop/modules/image/text_to_image/ernie_vilg/README.md)
   license:
-    value: unclear
+    value: Unknown
     explanation: >
       No explicit license for the ERNIE-ViLG model is provided in the [[Github repository]](https://github.com/PaddlePaddle/PaddleHub)
   intended_uses: ''
