@@ -36,7 +36,8 @@
   quality_control: ''
   access:
     value: Limited public access
-    explanation: Megatron-Turing NLG can be accessed through the [[Turing Academic Program]](https://www.microsoft.com/en-us/research/collaboration/microsoft-turing-academic-program/) 
+    explanation: Megatron-Turing NLG can be accessed through the [[Turing Academic
+      Program]](https://www.microsoft.com/en-us/research/collaboration/microsoft-turing-academic-program/)
   license:
     value: n/a
     explanation: n/a

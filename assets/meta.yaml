@@ -12,8 +12,7 @@
   url: https://arxiv.org/abs/2112.04482
   model_card: https://huggingface.co/facebook/flava-full
   modality: Text (English) and Image
-  size: 306M - 110M (Language encoder) + 86M (Vision encoder) + 110M (multimodal
-    encoder)
+  size: 306M - 110M (Language encoder) + 86M (Vision encoder) + 110M (mul encoder)
   analysis: ''
   dependencies:
     - COCO
@@ -34,15 +33,22 @@
   quality_control: ''
   access:
     value: Full public access
-    explanation: Model checkpoints are available for download from the [[HuggingFace
+    explanation: >
+      Model checkpoints are available for download from the [[HuggingFace
       repository]](https://huggingface.co/facebook/flava-full)
   license:
     value: BSD 3-Clause
     explanation: >
       The license is provided in the [[HuggingFace repository]](https://huggingface.co/facebook/flava-full)
-    intended_uses: Per the [[HuggingFace repository]](https://huggingface.co/facebook/flava-full) - "The model is intended to serve as a reproducible research artifact for research communities in the light of models whose exact reproduction details are never released such as CLIP and SimVLM."
-  prohibited_uses: Per the [[HuggingFace repository]](https://huggingface.co/facebook/flava-full) - "Any deployed use case of the model - whether commercial or not"
-    - is currently out of scope.
+  intended_uses: >
+    Per the [[HuggingFace repository]](https://huggingface.co/facebook/flava-full),
+    "The model is intended to serve as a reproducible research artifact for research
+    communities in the light of models whose exact reproduction details are never
+    released such as CLIP and SimVLM."
+  prohibited_uses: >
+    Per the [[HuggingFace repository]](https://huggingface.co/facebook/flava-full),
+    "Any deployed use case of the model - whether commercial or not" - is currently
+    out of scope.
   monitoring: ''
   feedback: ''
 
