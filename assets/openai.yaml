@@ -852,8 +852,7 @@
   modality: Audio
   size: 5B parameters
   analysis: ''
-  dependencies:
-      - Jukebox Dataset
+  dependencies: [Jukebox Dataset]
   training_emissions: Unknown
   training_time: 4 weeks
   training_hardware: 510 V100s
