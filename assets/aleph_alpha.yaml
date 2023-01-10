@@ -52,10 +52,12 @@
   # Downstream
   access:
     value: Limited public access
-    explanation: The API is a paid product. Refer to the [[API documentation]](https://docs.aleph-alpha.com/docs/introduction/luminous/) for further details.
+    explanation: The API is a paid product. Refer to the [[API documentation]](https://docs.aleph-alpha.com/docs/introduction/luminous/)
+      for further details.
   license:
     value: Unknown
-    explanation: Unable to locate a specific license for the API as of 2021-01-09. See Terms of Service for additional information.
+    explanation: Unable to locate a specific license for the API as of 2021-01-09.
+      See Terms of Service for additional information.
   terms_of_service: https://www.aleph-alpha.com/terms-conditions
   intended_uses: Unknown
   prohibited_uses: Unknown
