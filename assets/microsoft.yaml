@@ -10,7 +10,7 @@
   url: https://arxiv.org/abs/2111.02358
   model_card: None
   modality: Text (English) and Image
-  size: None
+  size: 562M
   analysis: ''
   dependencies:
     - Conceptual Captions

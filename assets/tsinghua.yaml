@@ -14,13 +14,13 @@
   analysis: None
   size: 13B parameters (dense model)
   dependencies: []
-  training_emissions: None
-  training_time: None
+  training_emissions: Unknown
+  training_time: Unknown
   training_hardware: THUDM 1536 Ascend 910 (32GB) Cluster
   quality_control: None
   access:
-    value: None
-    explanation: None
+    value: Restricted
+    explanation: Model weights are available but gated via an [[application form]](https://models.aminer.cn/codegeex/download/request)
   license:
     value: Apache 2.0
     explanation: The license is provided in the [[Github repository]](https://github.com/THUDM/CodeGeeX)

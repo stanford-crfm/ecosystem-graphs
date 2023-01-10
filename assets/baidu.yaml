@@ -14,7 +14,7 @@
   size: 260B parameters (dense model)
   dependencies: []
   training_emissions: None
-  training_time: None
+  training_time: Unknown
   training_hardware: Baidu V100 Cluster, PengCheng Lab Ascend 910 NPU cluster
   quality_control: None
   access:
@@ -39,9 +39,9 @@
   size: 10B parameters
   analysis: ''
   dependencies: []
-  training_emissions: ''
-  training_time: ''
-  training_hardware: ''
+  training_emissions: Unknown
+  training_time: Unknown
+  training_hardware: Unknown
   quality_control: ''
   access:
     value: Limited public access
@@ -69,9 +69,9 @@
   size: 10B parameters
   analysis: ''
   dependencies: []
-  training_emissions: ''
-  training_time: ''
-  training_hardware: ''
+  training_emissions: Unknown
+  training_time: 18 days according to [[the paper]](https://arxiv.org/abs/2210.15257)
+  training_hardware: 320 A100 GPUs according to [[the paper]](https://arxiv.org/abs/2210.15257)
   quality_control: ''
   access:
     value: No public access

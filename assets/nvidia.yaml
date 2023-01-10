@@ -53,13 +53,13 @@
   url: https://arxiv.org/abs/2104.04473
   model_card: None
   modality: Text (English)
-  analysis: None
+  analysis: ""
   size: 1000B parameters (dense model)
   dependencies: []
-  training_emissions: None
-  training_time: None
-  training_hardware: ""
-  quality_control: None
+  training_emissions: Unknown
+  training_time: 84 days
+  training_hardware: 3072 A100 GPUs
+  quality_control: Unknown
   access:
     value: No public access
     explanation: >

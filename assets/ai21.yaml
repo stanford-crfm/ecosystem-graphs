@@ -30,7 +30,7 @@
   access:
     value: Limited public access
     explanation: Jurassic-1 is available through AI21's paid API.
-  license: n/a
+  license: See [AI21 API Terms of Use](https://www.ai21.com/terms-of-use)
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''

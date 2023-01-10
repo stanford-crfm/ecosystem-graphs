@@ -390,13 +390,13 @@
   analysis: ''
   dependencies: [C4, LAION-400M, FIT400M, JFT-4B]
   training_emissions: ''
-  training_time: None
-  training_hardware: None
+  training_time: Unknown
+  training_hardware: Unknown
   quality_control: ''
   access:
     value: No public access
     explanation: Google does not provide access to Parti for external researchers.
-  license: None
+  license: n/a
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
@@ -417,8 +417,8 @@
     and 600M and 400M parameter models for super resolution
   analysis: ''
   dependencies: [LAION-400M, Google internal image-text dataset]
-  training_emissions: None
-  training_time: None
+  training_emissions: Unknown
+  training_time: Unknown
   training_hardware: 128 TPU-v4
   quality_control: ''
   access: No public access
@@ -441,7 +441,7 @@
   size: 155M
   analysis: ''
   dependencies: [AudioSet, HowTo100M]
-  training_emissions: None
+  training_emissions: Unknown
   training_time: 3 days
   training_hardware: 256 TPU-v3
   quality_control: ''

@@ -45,7 +45,7 @@
   adaptation: ''
   output_space: >
       The text models provide text outputs given text inputs. The multimodal models provide text completions given text and image inputs.
-  quality_control:
+  quality_control: ''
   # Downstream
   access:
     value:
