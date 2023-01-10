@@ -12,7 +12,8 @@
   url: https://arxiv.org/abs/2112.04482
   model_card: https://huggingface.co/facebook/flava-full
   modality: Text (English) and Image
-  size: 306M: 110M (Language encoder) + 86M (Vision encoder) + 110M (multimodal encoder)
+  size: 306M - 110M (Language encoder) + 86M (Vision encoder) + 110M (multimodal
+    encoder)
   analysis: ''
   dependencies:
     - COCO
@@ -173,8 +174,8 @@
   quality_control: ''
   access:
     value: Limited public access
-    explanation: The 175B model requires manual approval from Meta to access. Other models
-      are available through HuggingFace.
+    explanation: The 175B model requires manual approval from Meta to access. Other
+      models are available through HuggingFace.
   license:
     value: OPT-175B LICENSE
     explanation: All released except 66B (TBD) and 17B (requires manual approval)

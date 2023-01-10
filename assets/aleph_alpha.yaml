@@ -16,14 +16,14 @@
   dependencies: []
   training_emissions: ''
   training_time: ''
-  training_hardware: ""
+  training_hardware: ''
   quality_control: ''
   access:
     value: Limited public access
     explanation: Paid API product
   license:
-    value: ""
-    explanation: ""
+    value: ''
+    explanation: ''
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
@@ -34,17 +34,20 @@
   # General
   organization: Aleph Alpha
   description: >
-      The Aleph Alpha API serves a family of text-only language models (Luminous) and multimodal text-and-image models (Magma).
+    The Aleph Alpha API serves a family of text-only language models (Luminous)
+    and multimodal text-and-image models (Magma).
   created_date:
     value: 2021-09-30
-    explanation: > Date the Aleph Alpha Python API client was first available based on to the [PyPi package history](https://pypi.org/project/aleph-alpha-client/1.0.0/)
+    explanation: >
+      Date the Aleph Alpha Python API client was first available based on to the
+      [PyPi package history](https://pypi.org/project/aleph-alpha-client/1.0.0/)
   url:
   # Construction
-  dependencies:
-    - Luminous
+  dependencies: [Luminous]
   adaptation: ''
   output_space: >
-      The text models provide text outputs given text inputs. The multimodal models provide text completions given text and image inputs.
+    The text models provide text outputs given text inputs. The multimodal models
+    provide text completions given text and image inputs.
   quality_control: ''
   # Downstream
   access:

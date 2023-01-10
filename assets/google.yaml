@@ -318,8 +318,8 @@
 - type: model
   name: Flan-T5
   organization: Google
-  description: Flan-T5 is a version of the T5 language model fine-tuned on
-    instruction data
+  description: Flan-T5 is a version of the T5 language model fine-tuned on instruction
+    data
   created_date:
     value: 2022-10-20
     explanation: Date paper was released
@@ -335,7 +335,7 @@
     - Flan chain of thought data
   training_emissions: ''
   training_time: ''
-  training_hardware: ""
+  training_hardware: ''
   quality_control: ''
   access:
     value: Full public access

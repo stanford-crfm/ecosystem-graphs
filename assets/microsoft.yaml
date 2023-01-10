@@ -77,7 +77,7 @@
   dependencies: []
   training_emissions: ''
   training_time: ''
-  training_hardware: ""
+  training_hardware: ''
   quality_control: ''
   access:
     value: Limited public access

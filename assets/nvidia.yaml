@@ -53,7 +53,7 @@
   url: https://arxiv.org/abs/2104.04473
   model_card: None
   modality: Text (English)
-  analysis: ""
+  analysis: ''
   size: 1000B parameters (dense model)
   dependencies: []
   training_emissions: Unknown
