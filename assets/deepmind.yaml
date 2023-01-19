@@ -81,7 +81,8 @@
   # General
   organization: DeepMind
   description: >
-    M3W (MassiveWeb) is dataset used to train Flamingo, and other vision-language models and was created by researchers and engineers.
+    M3W (MassiveWeb) is dataset used to train Flamingo, and other vision-language
+    models and was created by researchers and engineers.
   created_date:
     value: 2022-04-29
     explanation: >
@@ -149,20 +150,23 @@
   url: https://www.deepmind.com/blog/a-generalist-agent
   datasheet: None
   modality: Text, Text-Image pairs, simulated control tasks, robotics simulations
-  size: 10.5 TB Text, 2.2B Text-Image pairs, 1.5T tokens of simulated control, 500k robotics trajectories
+  size: 10.5 TB Text, 2.2B Text-Image pairs, 1.5T tokens of simulated control, 500k
+    robotics trajectories
   sample: []
   analysis:
     value: >
-      The Gato dataset compiles many datasets introduced in prior works, with associated analyses.
+      The Gato dataset compiles many datasets introduced in prior works, with associated
+      analyses.
   # Construction
-  dependencies:
-    - MassiveText
+  dependencies: [MassiveText]
   license:
     value: Unknown
     explanation: >
-      The datasets have individual licenses, but no overall license is mentioned by the authors.
+      The datasets have individual licenses, but no overall license is mentioned
+      by the authors.
   included: >
-    The full composition of the dataset across individual sources can be found in the paper.
+    The full composition of the dataset across individual sources can be found in
+    the paper.
   excluded:
     value: None
     explanation: >
@@ -173,11 +177,13 @@
   access:
     value: No public access
     explanation: >
-      The full dataset is not directly provided by the authors, though some underlying data is public whereas others (e.g. MassiveText) is not.
+      The full dataset is not directly provided by the authors, though some underlying
+      data is public whereas others (e.g. MassiveText) is not.
   intended_uses:
     value: Unknown
     explanation: >
-      There are no known intended uses of the dataset stated by authors beyond training Gato.
+      There are no known intended uses of the dataset stated by authors beyond training
+      Gato.
   prohibited_uses:
     value: Unknown
     explanation: >
@@ -197,7 +203,8 @@
   # General
   organization: DeepMind
   description: >
-    Flamingo is a Visual Language Model using the Transformer architecture that is intended for few-shot learning.
+    Flamingo is a Visual Language Model using the Transformer architecture that
+    is intended for few-shot learning.
   created_date:
     value: 2022-04-29
     explanation: >
@@ -210,18 +217,15 @@
   size:
     value: 80B parameters (dense model)
     explanation: >
-      Gato family has models of several sizes (3.2B, 9.3B, 80B) which involve frozen language, vision, and trainable parameters
+      Gato family has models of several sizes (3.2B, 9.3B, 80B) which involve frozen
+      language, vision, and trainable parameters
       [[Table 5]](https://arxiv.org/pdf/2204.14198.pdf).
   analysis:
     value: >
-      Model performance was evaluated on image and video datasets primarily, including dialogue.
+      Model performance was evaluated on image and video datasets primarily, including
+      dialogue.
   # Construction
-  dependencies:
-    - M3W
-    - ALIGN
-    - LTIP
-    - VTP
-    - Chinchilla
+  dependencies: [M3W, ALIGN, LTIP, VTP, Chinchilla]
   training_emissions:
     value: Unknown
     explanation: >
@@ -245,7 +249,8 @@
   access:
     value: No public access
     explanation: >
-      The model has not been released and no discussion of release is stated in the model card
+      The model has not been released and no discussion of release is stated in
+      the model card
       [[Model Card]](https://arxiv.org/pdf/2204.14198.pdf#appendix.E).
   license:
     value: Unknown
@@ -254,12 +259,18 @@
       [[Model Card]](https://arxiv.org/pdf/2204.14198.pdf#appendix.E).
   intended_uses:
     value: >
-      The intended uses are stated in the model card: "The primary use is research on visual language models (VLM), including: research on VLM applications like classification, captioning or visual question answering, understanding how strong VLMs can contribute to AGI, advancing
-      fairness and safety research in the area of multimodal research, and understanding limitations of current large VLMs."
+      The intended uses are stated in the model card: "The primary use is research
+      on visual language models (VLM), including: research on VLM applications like
+      classification, captioning or visual question answering, understanding how
+      strong VLMs can contribute to AGI, advancing
+      fairness and safety research in the area of multimodal research, and understanding
+      limitations of current large VLMs."
       [[Model Card]](https://arxiv.org/pdf/2204.14198.pdf#appendix.E).
   prohibited_uses:
     value: >
-      The model card lists the following as out of scope uses of the model: "Uses of the model for visually conditioned language generation in harmful or deceitful settings. Broadly speaking,
+      The model card lists the following as out of scope uses of the model: "Uses
+      of the model for visually conditioned language generation in harmful or deceitful
+      settings. Broadly speaking,
       the model should not be used for downstream applications
       without further safety and fairness mitigations specific to
       each application."
@@ -394,7 +405,8 @@
       There is no information on how DeepMind is internally monitoring
       the use of the model.
   feedback:
-    value: The feedback for the model can be provided at the email linked in the model card, geoffreyi at google.com [[Model Card]](https://arxiv.org/pdf/2112.11446.pdf#appendix.B).
+    value: The feedback for the model can be provided at the email linked in the
+      model card, geoffreyi at google.com [[Model Card]](https://arxiv.org/pdf/2112.11446.pdf#appendix.B).
 
 - type: model
   name: Chinchilla
@@ -415,13 +427,15 @@
   size:
     value: 70B parameters (dense model)
     explanation: >
-      Chinchilla family has many models, but the primary model is the 70B parameter model.
+      Chinchilla family has many models, but the primary model is the 70B parameter
+      model.
   analysis:
     value: >
-      Model performance was evaluated and analyzed on many NLP tasks including language modeling, reading comprehension, question answering, commonsense-intensive tasks, and the BIG-Bench and MMLU meta-benchmarks.
+      Model performance was evaluated and analyzed on many NLP tasks including language
+      modeling, reading comprehension, question answering, commonsense-intensive
+      tasks, and the BIG-Bench and MMLU meta-benchmarks.
   # Construction
-  dependencies:
-    - MassiveText
+  dependencies: [MassiveText]
   training_emissions:
     value: Unknown
     explanation: >
@@ -429,7 +443,8 @@
   training_time:
     value: 7303.24 petaflop/s-day
     explanation: >
-      The authors reported the training petaflops for all models, including hypothetical larger models.
+      The authors reported the training petaflops for all models, including hypothetical
+      larger models.
       For the 70B parameter model, the petaflops was
       reported as 5.76E+08. We compute the Gopher's training time in
       petaflop/s-day as 5.76E+08 / (60*60*24) = 6666.66 petaflop/s-day.
@@ -455,8 +470,10 @@
       [[Model Card]](https://arxiv.org/pdf/2203.15556.pdf#appendix.I).
   intended_uses:
     value: >
-      The intended uses are stated in the Chinchilla model card: "The primary use is research on language models, including:
-      research on the scaling behaviour of language models along with those listed in Gopher paper"
+      The intended uses are stated in the Chinchilla model card: "The primary use
+      is research on language models, including:
+      research on the scaling behaviour of language models along with those listed
+      in Gopher paper"
       [[Model Card]](https://arxiv.org/pdf/2203.15556.pdf#appendix.I).
   prohibited_uses:
     value: >
@@ -481,7 +498,8 @@
   organization: DeepMind
   description: >
     Gato is a generalist agent based on sequence modeling using the Transformer
-    architecture to implement multi-modal, multi-task, multi-embodiment generalist policy.
+    architecture to implement multi-modal, multi-task, multi-embodiment generalist
+    policy.
   created_date:
     value: 2022-05-12
     explanation: >
@@ -498,10 +516,10 @@
       [[Table 6]](https://openreview.net/pdf?id=1ikK0kHjvj).
   analysis:
     value: >
-      Model performance was evaluated on simulated and robotics task primarily, including out-of-distribution and skill generalization.
+      Model performance was evaluated on simulated and robotics task primarily,
+      including out-of-distribution and skill generalization.
   # Construction
-  dependencies:
-    - Gato dataset
+  dependencies: [Gato dataset]
   training_emissions:
     value: Unknown
     explanation: >
@@ -536,12 +554,15 @@
       [[Model Card]](https://openreview.net/pdf?id=1ikK0kHjvj#appendix.A).
   intended_uses:
     value: >
-      The intended uses are stated in the Gopher model card: "Learn to accomplish a wide variety of tasks from expert demonstrations, such as playing video games, controlling simulated embodiments,
+      The intended uses are stated in the Gopher model card: "Learn to accomplish
+      a wide variety of tasks from expert demonstrations, such as playing video
+      games, controlling simulated embodiments,
       and real world block stacking."
       [[Model Card]](https://openreview.net/pdf?id=1ikK0kHjvj#appendix.A).
   prohibited_uses:
     value: >
-      The model card lists the following as out of scope uses of the model: "Not intended for commercial or production use. Military uses are
+      The model card lists the following as out of scope uses of the model: "Not
+      intended for commercial or production use. Military uses are
       strictly prohibited."
       [[Model Card]](https://openreview.net/pdf?id=1ikK0kHjvj#appendix.A).
   monitoring:
@@ -550,7 +571,7 @@
       There is no information on how DeepMind is internally monitoring
       the use of the model.
   feedback:
-    value: >
+    value: >-
       The feedback for the model can be provided at the email linked in the model
       card, reedscot at google.com
       [[Model Card]](https://openreview.net/pdf?id=1ikK0kHjvj#appendix.A).

@@ -101,8 +101,7 @@
   modality: Text (English)
   size: 530B parameters (dense model)
   analysis: ''
-  dependencies:
-    - The Pile
+  dependencies: [The Pile]
   training_emissions: ''
   training_time: ''
   training_hardware: 4480 A100s (560 x 8)

@@ -328,16 +328,13 @@
   modality: Text (English)
   analysis: Evaluated on a variety of standard language datasets.
   size: 11B parameters (dense model)
-  dependencies:
-    - T5
-    - Muffin
-    - P3
-    - Natural Instructions v2
-    - Flan CoT
+  dependencies: [T5, Muffin, P3, Natural Instructions v2, Flan CoT]
   training_emissions: Unknown
   training_time: Unknown
-  training_hardware: 512 v4 TPU Chips 
-  quality_control: Across different multitask datasets, templates and formatting were maintained. For the chain-of-thoughts (CoT) data, specific exemplars were used.
+  training_hardware: 512 v4 TPU Chips
+  quality_control: Across different multitask datasets, templates and formatting
+    were maintained. For the chain-of-thoughts (CoT) data, specific exemplars were
+    used.
   access:
     value: Full public access
     explanation: Weights can be downloaded from [Github](https://github.com/google-research/t5x/blob/main/docs/models.md)

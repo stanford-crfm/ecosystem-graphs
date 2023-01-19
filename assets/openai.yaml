@@ -385,7 +385,8 @@
     explanation: >
       There is no known license specific to the dataset.
   included: >
-    The dataset is composed three major sources: multilingual speech recognition (17%), translation (18%), and English speech recognition (65%).
+    The dataset is composed three major sources: multilingual speech recognition
+    (17%), translation (18%), and English speech recognition (65%).
     [[Figure 11]](https://cdn.openai.com/papers/whisper.pdf).
   excluded: >
     Automated filtering was conducted.
@@ -730,14 +731,15 @@
   size:
     value: 1.5B parameters (dense model)
     explanation: >
-      Whisper comes in several sizes (39M, 74M, 244M, 769M, 1.55B). Here we report the size of the largest
+      Whisper comes in several sizes (39M, 74M, 244M, 769M, 1.55B). Here we report
+      the size of the largest
       model [[Table 1]](https://cdn.openai.com/papers/whisper.pdf).
   analysis:
     value: >
-      The model was evaluated for zero-shot English and multingual speech recognition, translation, language identification and robustness to noise.
+      The model was evaluated for zero-shot English and multingual speech recognition,
+      translation, language identification and robustness to noise.
   # Construction
-  dependencies:
-    - Whisper dataset
+  dependencies: [Whisper dataset]
   training_emissions:
     value: Unknown
     explanation: >
@@ -750,7 +752,8 @@
     value: Azure
     explanation: >
       The original paper doesn't specify the training hardware for Whisper,
-      but we expect it is trained on Azure given other models from OpenAI are trained using Azure
+      but we expect it is trained on Azure given other models from OpenAI are trained
+      using Azure
       [[Microsoft Blog Post]]
       (https://blogs.microsoft.com/ai/openai-azure-supercomputer/).
   quality_control:
@@ -766,7 +769,9 @@
       MIT License at [https://github.com/openai/whisper](https://github.com/openai/whisper).
   intended_uses:
     value: >
-      Whisper is a general-purpose speech recognition model; it is a multi-task model that can perform multilingual speech recognition as well as speech translation and language identification.
+      Whisper is a general-purpose speech recognition model; it is a multi-task
+      model that can perform multilingual speech recognition as well as speech translation
+      and language identification.
   prohibited_uses:
     value: Unknown
   monitoring:
@@ -774,7 +779,8 @@
     explanation: >
       No monitoring is mentioned by the authors.
   feedback:
-    value: The discussions page of the codebase is not formally cited as a place for feedback, but is being used in this way [[Discussions page]](https://github.com/openai/whisper/discussions)
+    value: The discussions page of the codebase is not formally cited as a place
+      for feedback, but is being used in this way [[Discussions page]](https://github.com/openai/whisper/discussions)
 
 - type: model
   name: CLIP
@@ -1395,4 +1401,3 @@
   monthly_active_users: Unknown
   user_distribution: Unknown
   failures: Unknown
-
