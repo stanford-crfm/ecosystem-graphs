@@ -43,7 +43,7 @@
     Spanish | Español)
   analysis: ''
   size: 200B parameters (dense model) according to [[this news article]](https://www-heise-de.translate.goog/news/Machine-Learning-Aleph-Alpha-feilt-mit-Oracle-und-Nvidia-an-transformativer-KI-6269269.html?_x_tr_sl=de&_x_tr_tl=en&_x_tr_hl=en&_x_tr_pto=sc)
-  dependencies: []
+  dependencies: [Luminous dataset]
   training_emissions: Unknown
   training_time: Unknown
   training_hardware: Unknown

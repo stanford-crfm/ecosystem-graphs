@@ -1,5 +1,39 @@
 ---
 
+# Datasets
+- type: dataset
+  name: C4
+  # General
+  organization: Google
+  description: The Colossal Clean Crawled Corpus (C4) is a processed version of
+    Common Crawl to facilitate transfer learning in NLP.
+  created_date:
+    value: 2019-10-23
+    explanation: The date the T5 paper was made public.
+  url: https://arxiv.org/abs/1910.10683
+  datasheet: https://huggingface.co/datasets/c4
+  modality: Text (English)
+  size: 750GB
+  sample: [https://huggingface.co/datasets/c4/viewer/en/train]
+  analysis: https://arxiv.org/abs/2104.08758
+  # Construction
+  dependencies: [Common Crawl]
+  license: ODC-BY
+  included: None
+  excluded: Data was filtered for English using langdetect. Further, data was filtered
+    to end in terminal punctuation, to remove short pages (less than 5 sentences),
+    and to remove "Dirty, Naughty, Obscene or Otherwise Bad Words".
+  quality_control: Data filtering excluded obscene words from a block list as well
+    as short documents and some deduplication was done based on string overlap.
+  # Downstream
+  access:
+    value: Full public access
+    explanation: https://huggingface.co/datasets/c4
+  intended_uses: To faciliate transfer learning research in NLP.
+  prohibited_uses: None
+  monitoring: None
+  feedback: https://huggingface.co/datasets/c4/discussions
+
 - type: dataset
   name: Internal Google BERT dataset
   # General
@@ -38,6 +72,37 @@
   prohibited_uses: Unknown
   monitoring: Unknown
   feedback: Unknown
+
+# Models
+- type: model
+  name: T5
+  organization: Google
+  description: Text-To-Text Transfer Transformer (T5) is a model that unifies all
+    NLP tasks under the text-to-text format.
+  created_date:
+    value: 2019-10-23
+    explanation: The date the T5 paper was made public.
+  url: https://arxiv.org/abs/1910.10683
+  model_card: https://huggingface.co/t5-base
+  modality: Text (English)
+  size:
+    value: 11B parameters (dense)
+    explanation: T5 models were trained on several sizes including 3B and 11B parameters.
+  analysis: https://huggingface.co/t5-base#evaluation
+  dependencies: [C4]
+  training_emissions: Unknown
+  training_time: Unknown
+  training_hardware: 1,024 TPU v3 chips (Cloud TPU Pods)
+  quality_control: The T5 paper documents many analyses/ablations that were considered
+    before arriving at the final architecture/training procedure.
+  access:
+    value: Full public access
+    explanation: https://huggingface.co/t5-large
+  license: Apache 2.0
+  intended_uses: NLP tasks
+  prohibited_uses: Unknown
+  monitoring: None
+  feedback: https://huggingface.co/t5-large/discussions
 
 - type: model
   name: Internal Google BERT

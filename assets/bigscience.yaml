@@ -13,7 +13,7 @@
   datasheet: https://huggingface.co/spaces/bigscience-data/bigscience-corpus
   modality: Text (46 languages) and Code (13 programming languages)
   size: 1.6TB
-  sample: https://huggingface.co/spaces/bigscience-data/roots-search
+  sample: [https://huggingface.co/spaces/bigscience-data/roots-search]
   analysis: https://huggingface.co/spaces/bigscience-data/roots-search
   # Construction
   dependencies: []
@@ -49,7 +49,7 @@
   datasheet: https://huggingface.co/datasets/bigscience/P3
   modality: Text (English)
   size: 2000 prompts
-  sample: https://huggingface.co/datasets/bigscience/P3/viewer
+  sample: [https://huggingface.co/datasets/bigscience/P3/viewer]
   analysis: See the paper.
   # Construction
   dependencies: []
@@ -74,7 +74,7 @@
   # General
   organization: BigScience
   description: xP3 (Crosslingual Public Pool of Prompts) is a collection of prompts
-    & datasets across 46 of languages & 16 NLP tasks. It is used for the training
+    and datasets across 46 of languages & 16 NLP tasks. It is used for the training
     of BLOOMZ and mT0, multilingual language models capable of following human instructions
     in dozens of languages zero-shot.
   created_date: 2022-11-03
@@ -82,7 +82,7 @@
   datasheet: https://huggingface.co/datasets/bigscience/xP3
   modality: Text (46 languages) and Code (13 programming languages)
   size: 9.4GB
-  sample: https://huggingface.co/datasets/bigscience/xP3/viewer
+  sample: [https://huggingface.co/datasets/bigscience/xP3/viewer]
   analysis: See the paper.
   # Construction
   dependencies: [P3]
