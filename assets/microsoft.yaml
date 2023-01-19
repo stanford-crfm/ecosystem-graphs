@@ -89,6 +89,37 @@
   feedback: ''
 
 - type: model
+  name: Megatron-Turing NLG
+  organization: Microsoft, NVIDIA
+  description: Megatron-Turing NLG is a 530B parameter autoregressive large language
+    model.
+  created_date:
+    value: 2022-01-28
+    explanation: The date the model paper was submitted to Arxiv
+  url: https://arxiv.org/abs/2201.11990
+  model_card: ''
+  modality: Text (English)
+  size: 530B parameters (dense model)
+  analysis: ''
+  dependencies:
+    - The Pile
+  training_emissions: ''
+  training_time: ''
+  training_hardware: 4480 A100s (560 x 8)
+  quality_control: ''
+  access:
+    value: Limited public access
+    explanation: Megatron-Turing NLG can be accessed through the [[Turing Academic
+      Program]](https://www.microsoft.com/en-us/research/collaboration/microsoft-turing-academic-program/)
+  license:
+    value: n/a
+    explanation: n/a
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+
+- type: model
   name: VALL-E
   organization: Microsoft
   description: Vall-E is a neural code model for text-to-speech synthesis

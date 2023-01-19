@@ -1,5 +1,35 @@
 ---
 
+# Datasets
+- type: dataset
+  name: Luminous dataset
+  # General
+  organization: Aleph Alpha
+  description: The dataset used to train the Luminous models.
+  created_date:
+    value: 2022-04-14
+    explanation: Date the models were announced by the Aleph Alpha twitter account
+  url: None
+  datasheet: None
+  modality: Text (English, French | français, German | Deutsch, Italian | italiano,
+    Spanish | Español)
+  size:
+    value: Unknown
+  sample: []
+  analysis: Unknown
+  # Construction
+  dependencies: []
+  license: Unknown
+  included: Unknown
+  excluded: Unknown
+  quality_control: Unknown
+  # Downstream
+  access: No public access
+  intended_uses: Unknown
+  prohibited_uses: Unknown
+  monitoring: None
+  feedback: None
+
 - type: model
   name: Luminous
   organization: Aleph Alpha

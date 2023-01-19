@@ -3,7 +3,7 @@
 # models
 - type: model
   name: CodeGeeX
-  organization: Tsinghua (THUDM)
+  organization: Tsinghua
   description: CodeGeeX is an autoregressive language model trained on code
   created_date:
     value: 2022-09-20
@@ -118,7 +118,7 @@
 
 - type: model
   name: GLM-130B
-  organization: Tsinghua (THUDM)
+  organization: Tsinghua
   description: GLM-130B is a bidirectional language model trained on English and
     Chinese
   created_date:
@@ -130,9 +130,9 @@
   size: 130B parameters (dense model)
   analysis: ''
   dependencies:
-    - Pile
+    - The Pile
     - GLM-130B Chinese corpora
-    - TO++ finetuning dataset
+    - P3
     - DeepStruct finetuning dataset
   training_emissions: ''
   training_time: ''

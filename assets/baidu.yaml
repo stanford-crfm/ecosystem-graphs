@@ -10,19 +10,19 @@
   url: https://arxiv.org/abs/2112.12731
   model_card: None
   modality: Text (Chinese)
-  analysis: None
+  analysis: ''
   size: 260B parameters (dense model)
   dependencies: []
-  training_emissions: None
+  training_emissions: Unknown
   training_time: Unknown
   training_hardware: Baidu V100 Cluster, PengCheng Lab Ascend 910 NPU cluster
   quality_control: None
   access:
     value: No public access
     explanation: Baidu does not provide ERNIE 3.0 for external researchers
-  license: n/a
-  intended_uses: None
-  prohibited_uses: None
+  license: None
+  intended_uses: Unknown
+  prohibited_uses: Unknown
   monitoring: None
   feedback: None
 
@@ -48,13 +48,13 @@
     explanation: API access is available through PaddleHub. Instructions on [[Github
       repository]](https://github.com/PaddlePaddle/PaddleHub/blob/develop/modules/image/text_to_image/ernie_vilg/README.md)
   license:
-    value: Unknown
+    value: None
     explanation: >
       No explicit license for the ERNIE-ViLG model is provided in the [[Github repository]](https://github.com/PaddlePaddle/PaddleHub)
-  intended_uses: ''
-  prohibited_uses: ''
-  monitoring: ''
-  feedback: ''
+  intended_uses: Unknown
+  prohibited_uses: Unknown
+  monitoring: None
+  feedback: None
 
 - type: model
   name: ERNIE-ViLG 2.0
@@ -76,8 +76,8 @@
   access:
     value: No public access
     explanation: Baidu does not provide ERNIE-ViLG 2.0 to external researchers
-  license: n/a
-  intended_uses: ''
-  prohibited_uses: ''
-  monitoring: ''
-  feedback: ''
+  license: None
+  intended_uses: Unknown
+  prohibited_uses: Unknown
+  monitoring: None
+  feedback: None

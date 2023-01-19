@@ -210,7 +210,7 @@
       tCO2e
       [[Section 10]](https://arxiv.org/pdf/2201.08239.pdf#section.10)"
   training_time:
-    value: 4108.80
+    value: 4108.80 petaflop/s-day
     explanation: >
       The total number of training flops of LaMDA was reported as 3.55E+23
       (3.55E+8 petaflops)
@@ -325,28 +325,29 @@
     explanation: Date paper was released
   url: https://arxiv.org/abs/2210.11416
   model_card: https://arxiv.org/pdf/2210.11416.pdf
-  modality: Text (A lot of languages, English)
-  analysis: ''
+  modality: Text (English)
+  analysis: Evaluated on a variety of standard language datasets.
   size: 11B parameters (dense model)
   dependencies:
-    - C4
-    - Muffin dataset
+    - T5
+    - Muffin
+    - P3
     - Natural Instructions v2
-    - Flan chain of thought data
-  training_emissions: ''
-  training_time: ''
-  training_hardware: ''
-  quality_control: ''
+    - Flan CoT
+  training_emissions: Unknown
+  training_time: Unknown
+  training_hardware: 512 v4 TPU Chips 
+  quality_control: Across different multitask datasets, templates and formatting were maintained. For the chain-of-thoughts (CoT) data, specific exemplars were used.
   access:
     value: Full public access
     explanation: Weights can be downloaded from [Github](https://github.com/google-research/t5x/blob/main/docs/models.md)
   license:
     value: Apache 2.0
     explanation: License on the [[Github repository]](https://github.com/google-research/google-research)
-  intended_uses: ''
-  prohibited_uses: ''
-  monitoring: ''
-  feedback: ''
+  intended_uses: Unknown
+  prohibited_uses: None
+  monitoring: None
+  feedback: https://huggingface.co/google/flan-t5-xxl/discussions
 
 - type: model
   name: UL2
@@ -360,7 +361,7 @@
   modality: Text (English)
   analysis: ''
   size: 20B parameters (dense model)
-  dependencies: []
+  dependencies: [C4]
   training_emissions: ''
   training_time: ''
   training_hardware: 128 TPUv4

@@ -353,6 +353,67 @@
     value: Unknown
     explanation: The feedback mechanisms in place are unknown.
 
+- type: dataset
+  name: Whisper dataset
+  # General
+  organization: OpenAI
+  description: >
+    The Whisper dataset is the speech corpus that was used to train the Whisper
+    model. Information on the dataset is limited to discussion in the
+    paper introducing Whisper.
+    [[Section 2.1]](https://cdn.openai.com/papers/whisper.pdf).
+  created_date:
+    value: 2022-09-21
+    explanation: >
+      The date for the public announcement of Whisper. The
+      dataset didn't have a specific release date separate from the model
+      [[Open AI Blog Post]](https://openai.com/blog/whisper/).
+  url: https://cdn.openai.com/papers/whisper.pdf
+  datasheet:
+    value: None
+    explanation: No datasheet available as of 2022-12-07.
+  modality: Speech
+  size: 680k hours
+  sample: []
+  analysis:
+    value: >
+      The Whisper paper provides limited details on preprocessing.
+  # Construction
+  dependencies: []
+  license:
+    value: Unknown
+    explanation: >
+      There is no known license specific to the dataset.
+  included: >
+    The dataset is composed three major sources: multilingual speech recognition (17%), translation (18%), and English speech recognition (65%).
+    [[Figure 11]](https://cdn.openai.com/papers/whisper.pdf).
+  excluded: >
+    Automated filtering was conducted.
+  quality_control:
+    value: >
+      In addition to filtering, basic text standardization was done.
+  # Downstream
+  access:
+    value: No public access
+    explanation: >
+      The dataset isn't released to the public.
+  intended_uses:
+    value: The intended use is to train speech models.
+  prohibited_uses:
+    value: None
+    explanation: >
+      No uses are explicitly prohibited.
+  monitoring:
+    value: None
+    explanation: >
+      There are no known (internal or external) monitoring mechanisms
+      that are in place for the use of the dataset as of 2022-12-07.
+  feedback:
+    value: Unknown
+    explanation: >
+      There are no known (internal or external) feedback mechanisms for
+      the dataset as of 2022-12-07.
+
 # Models
 
 # - type: model
@@ -651,6 +712,69 @@
     value: >
       Email the authors
       [[InstructGPT Paper]](https://arxiv.org/pdf/2203.02155.pdf).
+
+- type: model
+  name: Whisper
+  # General
+  organization: OpenAI
+  description: >
+    GPT-3 is a speech recognition model.
+  created_date:
+    value: 2022-09-21
+    explanation: >
+      The date that Whisper was announced to the public
+      [[OpenAI Blog Post]](https://openai.com/blog/whisper/).
+  url: https://cdn.openai.com/papers/whisper.pdf
+  model_card: https://github.com/openai/whisper/blob/main/model-card.md
+  modality: Speech (multilingual, though primarily English)
+  size:
+    value: 1.5B parameters (dense model)
+    explanation: >
+      Whisper comes in several sizes (39M, 74M, 244M, 769M, 1.55B). Here we report the size of the largest
+      model [[Table 1]](https://cdn.openai.com/papers/whisper.pdf).
+  analysis:
+    value: >
+      The model was evaluated for zero-shot English and multingual speech recognition, translation, language identification and robustness to noise.
+  # Construction
+  dependencies:
+    - Whisper dataset
+  training_emissions:
+    value: Unknown
+    explanation: >
+      Authors do not report the training emissions.
+  training_time:
+    value: Unknown
+    explanation: >
+      Authors do not report the training time.
+  training_hardware:
+    value: Azure
+    explanation: >
+      The original paper doesn't specify the training hardware for Whisper,
+      but we expect it is trained on Azure given other models from OpenAI are trained using Azure
+      [[Microsoft Blog Post]]
+      (https://blogs.microsoft.com/ai/openai-azure-supercomputer/).
+  quality_control:
+    value: >
+      No specific quality control methods are documented.
+  # Downstream
+  access:
+    value: Full public access
+    explanation: >
+      Models are available at [https://github.com/openai/whisper](https://github.com/openai/whisper).
+  license:
+    value: >
+      MIT License at [https://github.com/openai/whisper](https://github.com/openai/whisper).
+  intended_uses:
+    value: >
+      Whisper is a general-purpose speech recognition model; it is a multi-task model that can perform multilingual speech recognition as well as speech translation and language identification.
+  prohibited_uses:
+    value: Unknown
+  monitoring:
+    value: None
+    explanation: >
+      No monitoring is mentioned by the authors.
+  feedback:
+    value: The discussions page of the codebase is not formally cited as a place for feedback, but is being used in this way [[Discussions page]](https://github.com/openai/whisper/discussions)
 
 - type: model
   name: CLIP
@@ -1271,3 +1395,4 @@
   monthly_active_users: Unknown
   user_distribution: Unknown
   failures: Unknown
+
