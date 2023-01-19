@@ -34,7 +34,10 @@
   training_time: ''
   training_hardware: 4480 A100s (560 x 8)
   quality_control: ''
-  access: No public access
+  access:
+    value: Limited public access
+    explanation: Megatron-Turing NLG can be accessed through the [[Turing Academic
+      Program]](https://www.microsoft.com/en-us/research/collaboration/microsoft-turing-academic-program/)
   license:
     value: n/a
     explanation: n/a
@@ -46,20 +49,20 @@
 - type: model
   name: Megatron-LM
   organization: NVIDIA
-  description: Megatron-LM is an autoregressive large language model
+  description: Megatron-LM is an autoregressive language model
   created_date:
     value: 2021-04-09
     explanation: The date the paper for the 1 trillion parameter model was published
   url: https://arxiv.org/abs/2104.04473
   model_card: None
   modality: Text (English)
-  analysis: None
+  analysis: ''
   size: 1000B parameters (dense model)
   dependencies: []
-  training_emissions: None
-  training_time: None
-  training_hardware: .nan
-  quality_control: None
+  training_emissions: Unknown
+  training_time: 84 days
+  training_hardware: 3072 A100 GPUs
+  quality_control: Unknown
   access:
     value: No public access
     explanation: >

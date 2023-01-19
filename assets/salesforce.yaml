@@ -3,7 +3,7 @@
 - type: model
   name: CodeGen
   organization: Salesforce
-  description: CodeGen is a large language model for code
+  description: CodeGen is a language model for code
   created_date:
     value: 2022-03-25
     explanation: Date model paper was released

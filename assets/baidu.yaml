@@ -3,7 +3,7 @@
 - type: model
   name: ERNIE 3.0 Titan
   organization: Baidu, PengCheng Laboratory
-  description: ERNIE 3.0 Titan is a large language model
+  description: ERNIE 3.0 Titan is a language model
   created_date:
     value: 2021-12-23
     explanation: The date the model paper was released
@@ -14,7 +14,7 @@
   size: 260B parameters (dense model)
   dependencies: []
   training_emissions: None
-  training_time: None
+  training_time: Unknown
   training_hardware: Baidu V100 Cluster, PengCheng Lab Ascend 910 NPU cluster
   quality_control: None
   access:
@@ -39,16 +39,16 @@
   size: 10B parameters
   analysis: ''
   dependencies: []
-  training_emissions: ''
-  training_time: ''
-  training_hardware: ''
+  training_emissions: Unknown
+  training_time: Unknown
+  training_hardware: Unknown
   quality_control: ''
   access:
     value: Limited public access
     explanation: API access is available through PaddleHub. Instructions on [[Github
       repository]](https://github.com/PaddlePaddle/PaddleHub/blob/develop/modules/image/text_to_image/ernie_vilg/README.md)
   license:
-    value: unclear
+    value: Unknown
     explanation: >
       No explicit license for the ERNIE-ViLG model is provided in the [[Github repository]](https://github.com/PaddlePaddle/PaddleHub)
   intended_uses: ''
@@ -69,9 +69,9 @@
   size: 10B parameters
   analysis: ''
   dependencies: []
-  training_emissions: ''
-  training_time: ''
-  training_hardware: ''
+  training_emissions: Unknown
+  training_time: 18 days according to [[the paper]](https://arxiv.org/abs/2210.15257)
+  training_hardware: 320 A100 GPUs according to [[the paper]](https://arxiv.org/abs/2210.15257)
   quality_control: ''
   access:
     value: No public access

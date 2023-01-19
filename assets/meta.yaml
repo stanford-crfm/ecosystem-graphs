@@ -12,7 +12,7 @@
   url: https://arxiv.org/abs/2112.04482
   model_card: https://huggingface.co/facebook/flava-full
   modality: Text (English) and Image
-  size: TODO
+  size: 306M - 110M (Language encoder) + 86M (Vision encoder) + 110M (mul encoder)
   analysis: ''
   dependencies:
     - COCO
@@ -27,34 +27,41 @@
     - CCNews
     - BookCorpus
     - ImageNet-1k
-  training_emissions: ''
-  training_time: ''
-  training_hardware: ''
+  training_emissions: Unknown
+  training_time: Unknown
+  training_hardware: Unknown
   quality_control: ''
   access:
     value: Full public access
-    explanation: Model checkpoints are available for download from the [[HuggingFace
+    explanation: >
+      Model checkpoints are available for download from the [[HuggingFace
       repository]](https://huggingface.co/facebook/flava-full)
   license:
     value: BSD 3-Clause
     explanation: >
       The license is provided in the [[HuggingFace repository]](https://huggingface.co/facebook/flava-full)
-  intended_uses: The primary intended users of these models are AI researchers.
-  prohibited_uses: Any deployed use case of the model - whether commercial or not
-    - is currently out of scope.
+  intended_uses: >
+    Per the [[HuggingFace repository]](https://huggingface.co/facebook/flava-full),
+    "The model is intended to serve as a reproducible research artifact for research
+    communities in the light of models whose exact reproduction details are never
+    released such as CLIP and SimVLM."
+  prohibited_uses: >
+    Per the [[HuggingFace repository]](https://huggingface.co/facebook/flava-full),
+    "Any deployed use case of the model - whether commercial or not" - is currently
+    out of scope.
   monitoring: ''
   feedback: ''
 
 - type: model
   name: Galactica
   organization: Meta AI
-  description: Galactica is a family of autoregressive large language models.
+  description: Galactica is a family of autoregressive language models.
   created_date:
     value: 2022-11-15
     explanation: >
       The date the Galactica paper was released
   url: https://galactica.org/static/paper.pdf
-  model_card: None
+  model_card: https://huggingface.co/facebook/galactica-6.7b
   modality: Text (English), Code, Math, Chemistry, Biology
   analysis: ''
   size: 120B parameters (dense model)
@@ -91,8 +98,8 @@
     - NASA Exoplanet
     - Scientific Common Crawl
     - Academic Common Crawl
-  training_emissions: None
-  training_time: None
+  training_emissions: Unknown
+  training_time: Unknown
   training_hardware: Meta AI Cluster. Trained on 1024 80GB A100 GPUs (128 8xA100
     80GB nodes)
   quality_control: ''
@@ -111,7 +118,7 @@
 - type: model
   name: InCoder
   organization: CMU, Meta AI (FAIR), TTI-Chicago, UC Berkeley, University of Washington
-  description: InCoder is a large language model trained on code with a causal masking
+  description: InCoder is a language model trained on code with a causal masking
     objective
   created_date:
     value: 2022-04-12
@@ -122,25 +129,25 @@
   analysis: None
   size: 6B parameters (dense model)
   dependencies: []
-  training_emissions: None
-  training_time: None
-  training_hardware: 248 V100 GPUs
-  quality_control: None
+  training_emissions: Unknown
+  training_time: 24 days, according to [[the paper]](https://arxiv.org/pdf/2204.05999.pdf)
+  training_hardware: 248 V100 GPUs, according to [[the paper]](https://arxiv.org/pdf/2204.05999.pdf)
+  quality_control: Unknown
   access:
-    value: Full public access
+    value: Model weights are available via the [[HuggingFace repository]](https://huggingface.co/facebook/incoder-6B)
     explanation: None
   license:
     value: CC-BY-NC 4.0
     explanation: The license is provided in the [[HuggingFace repository]](https://huggingface.co/facebook/incoder-6B?text=My+name+is+Lewis+and+I+like+to)
-  intended_uses: None
-  prohibited_uses: None
-  monitoring: None
-  feedback: None
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
 
 - type: model
   name: OPT
   organization: Meta AI
-  description: OPT is a family of autoregressive large language models.
+  description: OPT is a family of autoregressive language models.
   created_date:
     value: 2022-05-01
     explanation: >
@@ -173,8 +180,8 @@
   quality_control: ''
   access:
     value: Limited public access
-    explanation: The 175B model requires manual approval to access. Other models
-      are available through HuggingFace.
+    explanation: The 175B model requires manual approval from Meta to access. Other
+      models are available through HuggingFace.
   license:
     value: OPT-175B LICENSE
     explanation: All released except 66B (TBD) and 17B (requires manual approval)

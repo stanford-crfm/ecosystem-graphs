@@ -70,7 +70,7 @@
       Microsoft [[OpenAI Blog Post]]
       (https://openai.com/blog/openai-licenses-gpt-3-technology-to-microsoft/).
   intended_uses:
-    value: The intended use of the GPT-3 dataset is to train large language models.
+    value: The intended use of the GPT-3 dataset is to train language models.
   prohibited_uses:
     value: Unknown
     explanation: >
@@ -222,7 +222,7 @@
       as part of OpenAI giving Microsoft access to its Codex model
       [GitHub Copilot](https://copilot.github.com/).
   intended_uses:
-    value: Training large language models on code.
+    value: Training language models on code.
   prohibited_uses:
     value: Unknown
   monitoring:
@@ -385,7 +385,7 @@
   # General
   organization: OpenAI
   description: >
-    GPT-3 is an autoregressive large language model.
+    GPT-3 is an autoregressive language model.
   created_date:
     value: 2020-06-11
     explanation: >
@@ -839,6 +839,36 @@
       Contact the paper author(s) specified on the paper
       [[Paper]](https://arxiv.org/pdf/2102.12092.pdf).
 
+
+- type: model
+  name: Jukebox
+  organization: OpenAI
+  description: Jukebox is a generate model that produces music
+  created_date:
+    value: 2020-04-30
+    explanation: The date the model paper was released
+  url: https://arxiv.org/abs/2005.00341
+  model_card: None found as of 2023-01-09
+  modality: Audio
+  size: 5B parameters
+  analysis: ''
+  dependencies: [Jukebox Dataset]
+  training_emissions: Unknown
+  training_time: 4 weeks
+  training_hardware: 510 V100s
+  quality_control: ''
+  access:
+    value: Full public access
+    explanation: The model can be downloaded from the [[Github repository]](https://github.com/openai/jukebox)
+  license:
+    value: Noncmmercial use license
+    explanation: >
+      The license is provided in the [[Github repository]](https://github.com/openai/jukebox)
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+
 - type: model
   name: DALL·E 2
   # General
@@ -930,7 +960,7 @@
   organization: OpenAI
   description: >
     OpenAI API is a general purpose "text in, text out" interface connecting
-    users with a suite of large language models. The API was initially released
+    users with a suite of language models. The API was initially released
     as a gateway to GPT-3, but it now supports access to other, more
     specialized OpenAI models.
     [[Open AI Blog Post]](https://openai.com/blog/openai-api/)

@@ -10,7 +10,7 @@
   url: https://arxiv.org/abs/2111.02358
   model_card: None
   modality: Text (English) and Image
-  size: None
+  size: 562M
   analysis: ''
   dependencies:
     - Conceptual Captions
@@ -39,8 +39,7 @@
 - type: model
   name: T-ULRv5
   organization: Microsoft
-  description: T-ULRv5 is a large language model trained with two unique pretraining
-    objectives
+  description: T-ULRv5 is a language model trained with two unique training objectives
   created_date:
     value: 2022-09-28
     explanation: Date model blog post was released
@@ -78,12 +77,41 @@
   dependencies: []
   training_emissions: ''
   training_time: ''
-  training_hardware: .nan
+  training_hardware: ''
   quality_control: ''
   access:
     value: Limited public access
     explanation: Manual approval through early access request form required.
   license: n/a
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+
+- type: model
+  name: VALL-E
+  organization: Microsoft
+  description: Vall-E is a neural code model for text-to-speech synthesis
+  created_date:
+    value: 2023-01-05
+    explanation: The date the [[model paper]](https://arxiv.org/abs/2301.02111)
+      was released
+  url: https://valle-demo.github.io/
+  model_card: None found as of 2023-01-10
+  modality: Text, Audio
+  size: Unclear
+  analysis: ''
+  dependencies: []
+  training_emissions: ''
+  training_time: ''
+  training_hardware: 16 V100 32GB GPUs
+  quality_control: ''
+  access:
+    value: No public access
+    explanation: Microsoft does not provide public access to VALL-E
+  license:
+    value: n/a
+    explanation: The model si not publicly available
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
