@@ -25,7 +25,7 @@
   license:
     value: MIT
     explanation: >
-        The license is provided in the [[Github repository]]()
+        The license is provided in the [[Github repository]](https://github.com/facebookresearch/esm#available-models)
   intended_uses: ""
   prohibited_uses: ""
   monitoring: ""

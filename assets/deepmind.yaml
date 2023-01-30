@@ -1,4 +1,4 @@
----
+
 
 - type: dataset
   name: MassiveText
@@ -91,8 +91,12 @@
   dependencies:
     - Protein Data Bank
   training_emissions: ""
-  training_time: ""
-  training_hardware: ""
+  training_time:
+    value: 11 days
+    explanation: Described in the paper: pretraining takes "approximately 1 week" and finetuning takes "approximately 4 days"
+  training_hardware: 
+    value: 128 TPUv3 cores
+    explanation: Described in paper
   quality_control: ""
   access: 
     value: Full public access
@@ -100,7 +104,7 @@
   license:
     value: Apache 2.0
     explanation: >
-        The license is provided in the [[Github repository]]()
+        The license is provided in the [[Github repository]](https://github.com/deepmind/alphafold)
   intended_uses: ""
   prohibited_uses: ""
   monitoring: ""
