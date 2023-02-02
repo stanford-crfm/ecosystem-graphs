@@ -6,7 +6,8 @@
   # General
   organization: AI21 Labs
   description: >
-    The dataset used to train the Jurassic-1 models, based on publicly available data.
+    The dataset used to train the Jurassic-1 models, based on publicly available
+    data.
   created_date:
     value: 2021-08-11
     explanation: >
