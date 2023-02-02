@@ -690,7 +690,6 @@ function loadAssetsAndRenderPageContent() {
     'assets/eleutherai.yaml',
     'assets/google.yaml',
     'assets/huggingface.yaml',
-    'assets/imagenet.yaml',
     'assets/meta.yaml',
     'assets/microsoft.yaml',
     'assets/naver.yaml',
