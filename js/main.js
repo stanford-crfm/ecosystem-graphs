@@ -492,12 +492,14 @@ function renderAssetsGraph(nameToAsset) {
     'dataset': 'ellipse',
     'model': 'square',
     'application': 'hexagon',
+    'undocumented': 'ellipse',
   };
 
   const typeToColor = {
     'dataset': 'orange',
     'model': 'dodgerblue',
     'application': 'firebrick',
+    'undocumented': 'gray',
   };
 
   Object.values(nameToAsset).forEach((asset) => {
@@ -517,6 +519,24 @@ function renderAssetsGraph(nameToAsset) {
           target: asset.fields.name.value,
         },
       });
+    });
+  });
+
+  undocumentedDeps = Array.from(new Set(
+    edges.map(edge => edge.data.source)
+         .filter(dep => !(dep in nameToAsset))
+  )).sort();
+
+  console.log("The following dependencies are undocumented.");
+  console.log(undocumentedDeps);
+
+  undocumentedDeps.forEach(dep => {
+    nodes.push({
+      data: {
+        id: dep,
+        shape: typeToShape["undocumented"],
+        color: typeToColor["undocumented"],
+      },
     });
   });
 
@@ -664,12 +684,13 @@ function loadAssetsAndRenderPageContent() {
     'assets/anthropic.yaml',
     'assets/baidu.yaml',
     'assets/bigscience.yaml',
-    'assets/cohere.yaml',
     'assets/cmu.yaml',
+    'assets/cohere.yaml',
     'assets/deepmind.yaml',
     'assets/eleutherai.yaml',
     'assets/google.yaml',
     'assets/huggingface.yaml',
+    'assets/imagenet.yaml',
     'assets/meta.yaml',
     'assets/microsoft.yaml',
     'assets/naver.yaml',
