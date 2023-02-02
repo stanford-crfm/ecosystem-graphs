@@ -1,5 +1,41 @@
 ---
 
+# Datasets
+
+- type: dataset
+  name: PMD
+  # General
+  organization: Meta
+  description: PMD (Public Multimodal Datasets) is a collection of image-text datasets introduced in the FLAVA work.
+  created_date:
+    value: 2021-12-08
+    explanation: The date the model paper was released
+  url: https://arxiv.org/abs/2112.04482
+  datasheet: None
+  modality: Image-Text
+  size: 70M
+  sample: []
+  analysis: None
+  # Construction
+  dependencies:
+    - COCO
+    - YFCC100M
+    - SBU Captions
+    - Localized Narratives
+    - Visual Genome
+    - Wikipedia Image Textbooks
+    - Conceptual Captions
+    - Red Caps
+  license: Unknown
+  included: None
+  excluded: YFCC100M is filtered for non-English captions and very short (< 2 word) captions.
+  quality_control: Beyond filtering mentioned in excluded, nothing further is done.
+  # Downstream
+  access: No public access
+  intended_uses: Unknown
+  prohibited_uses: Unknown
+  monitoring: None
+  feedback: None
 
 - type: model
   name: FLAVA
@@ -12,25 +48,17 @@
   url: https://arxiv.org/abs/2112.04482
   model_card: https://huggingface.co/facebook/flava-full
   modality: Text (English) and Image
-  size: 306M - 110M (Language encoder) + 86M (Vision encoder) + 110M (mul encoder)
-  analysis: ''
+  size:
+    value: 306M
+    explanation: >
+      110M (Language encoder) + 86M (Vision encoder) + 110M (mul encoder)
+  analysis: FLAVA is benchmarked on a range of vision-only (e.g. CIFAR-10), language-only (e.g. GLUE), and multimodal (e.g. Hateful Memes) standard evaluations.
   dependencies:
-    - COCO
-    - SBU Captions
-    - Localized Narratives
-    - Conceptual Captions
-    - Visual Genome
-    - Wikipedia Image Text
-    - Conceptual Captions 12M
-    - Red Caps
-    - YFCC100M
-    - CCNews
-    - BookCorpus
-    - ImageNet-1k
+    - PMD
   training_emissions: Unknown
   training_time: Unknown
   training_hardware: Unknown
-  quality_control: ''
+  quality_control: FLAVA introduces a variety of new modeling techniques, specifically with an interest in improved text-image alignment through contrastive objectives.
   access:
     value: Full public access
     explanation: >
@@ -49,8 +77,39 @@
     Per the [[HuggingFace repository]](https://huggingface.co/facebook/flava-full),
     "Any deployed use case of the model - whether commercial or not" - is currently
     out of scope.
-  monitoring: ''
-  feedback: ''
+  monitoring: None
+  feedback: https://huggingface.co/facebook/flava-full/discussions
+
+- type: dataset
+  name: The Galactica Corpus
+  # General
+  organization: Meta
+  description: The Galactica Corpus is a collection of scientific datasets introduced in the Galactica work.
+  created_date:
+    value: 2022-11-15
+    explanation: >
+      The date the Galactica paper was released
+  url: https://galactica.org/static/paper.pdf
+  datasheet: None
+  modality: Text
+  size: 106B tokens
+  sample: []
+  analysis: None
+  # Construction
+  dependencies:
+    - CommonCrawl
+    - Wikipedia
+    - arXiv
+  license: Unknown
+  included: Prompts and reasoning data is explicitly included to improve model capabilities derived from this data.
+  excluded: ''
+  quality_control: ''
+  # Downstream
+  access: No public access
+  intended_uses: Unknown
+  prohibited_uses: Unknown
+  monitoring: None
+  feedback: None
 
 - type: model
   name: Galactica
@@ -66,38 +125,7 @@
   analysis: ''
   size: 120B parameters (dense model)
   dependencies:
-    - arXiv
-    - PMC
-    - Semantic Scholar
-    - PubMed Abstracts
-    - Semantic Scholar Abstracts
-    - bioRxiv
-    - OSF
-    - medRxiv
-    - ACL
-    - PubAg Abstracts
-    - ChemRxiv
-    - Wikipedia
-    - StackExchange
-    - LibreText
-    - Wikibooks
-    - Open Textbooks
-    - MIT OCW
-    - Wikiversity
-    - ProofWiki
-    - Khan Academy
-    - Papers with Code
-    - IUPAC Goldbook
-    - PubChem Compound
-    - UniProt
-    - RefSeq Genome
-    - OEIS
-    - Ribosome
-    - LIPID MAPS
-    - Reactome
-    - NASA Exoplanet
-    - Scientific Common Crawl
-    - Academic Common Crawl
+    - The Galactica Corpus
   training_emissions: Unknown
   training_time: Unknown
   training_hardware: Meta AI Cluster. Trained on 1024 80GB A100 GPUs (128 8xA100
