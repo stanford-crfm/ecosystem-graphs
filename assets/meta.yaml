@@ -6,7 +6,8 @@
   name: PMD
   # General
   organization: Meta
-  description: PMD (Public Multimodal Datasets) is a collection of image-text datasets introduced in the FLAVA work.
+  description: PMD (Public Multimodal Datasets) is a collection of image-text datasets
+    introduced in the FLAVA work.
   created_date:
     value: 2021-12-08
     explanation: The date the model paper was released
@@ -28,7 +29,8 @@
     - Red Caps
   license: Unknown
   included: None
-  excluded: YFCC100M is filtered for non-English captions and very short (< 2 word) captions.
+  excluded: YFCC100M is filtered for non-English captions and very short (< 2 word)
+    captions.
   quality_control: Beyond filtering mentioned in excluded, nothing further is done.
   # Downstream
   access: No public access
@@ -52,13 +54,14 @@
     value: 306M
     explanation: >
       110M (Language encoder) + 86M (Vision encoder) + 110M (mul encoder)
-  analysis: FLAVA is benchmarked on a range of vision-only (e.g. CIFAR-10), language-only (e.g. GLUE), and multimodal (e.g. Hateful Memes) standard evaluations.
-  dependencies:
-    - PMD
+  analysis: FLAVA is benchmarked on a range of vision-only (e.g. CIFAR-10), language-only
+    (e.g. GLUE), and multimodal (e.g. Hateful Memes) standard evaluations.
+  dependencies: [PMD]
   training_emissions: Unknown
   training_time: Unknown
   training_hardware: Unknown
-  quality_control: FLAVA introduces a variety of new modeling techniques, specifically with an interest in improved text-image alignment through contrastive objectives.
+  quality_control: FLAVA introduces a variety of new modeling techniques, specifically
+    with an interest in improved text-image alignment through contrastive objectives.
   access:
     value: Full public access
     explanation: >
@@ -84,7 +87,8 @@
   name: The Galactica Corpus
   # General
   organization: Meta
-  description: The Galactica Corpus is a collection of scientific datasets introduced in the Galactica work.
+  description: The Galactica Corpus is a collection of scientific datasets introduced
+    in the Galactica work.
   created_date:
     value: 2022-11-15
     explanation: >
@@ -96,12 +100,10 @@
   sample: []
   analysis: None
   # Construction
-  dependencies:
-    - CommonCrawl
-    - Wikipedia
-    - arXiv
+  dependencies: [CommonCrawl, Wikipedia, arXiv]
   license: Unknown
-  included: Prompts and reasoning data is explicitly included to improve model capabilities derived from this data.
+  included: Prompts and reasoning data is explicitly included to improve model capabilities
+    derived from this data.
   excluded: ''
   quality_control: ''
   # Downstream
@@ -124,8 +126,7 @@
   modality: Text (English), Code, Math, Chemistry, Biology
   analysis: ''
   size: 120B parameters (dense model)
-  dependencies:
-    - The Galactica Corpus
+  dependencies: [The Galactica Corpus]
   training_emissions: Unknown
   training_time: Unknown
   training_hardware: Meta AI Cluster. Trained on 1024 80GB A100 GPUs (128 8xA100
