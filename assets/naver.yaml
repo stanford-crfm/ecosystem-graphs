@@ -21,7 +21,7 @@
   access:
     value: No public access
     explanation: The model is not available for download or direct API use
-  license: n/a
+  license: Unknown
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''

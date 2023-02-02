@@ -6,7 +6,7 @@
   # General
   organization: AI21 Labs
   description: >
-    The dataset used to train the Jurassic-1 models.
+    The dataset used to train the Jurassic-1 models, based on publicly available data.
   created_date:
     value: 2021-08-11
     explanation: >
@@ -14,21 +14,25 @@
   url: https://uploads-ssl.webflow.com/60fd4503684b466578c0d307/61138924626a6981ee09caf6_jurassic_tech_paper.pdf
   datasheet: None
   modality: Text
-  size:
-    value: Unknown
-    explanation: Details about the dataset were not disclosed in the paper.
+  size: 300B tokens
   sample: []
-  analysis: Unknown
+  analysis:
+    value: None
+    explanation: No analysis is provided in the paper.
   # Construction
   dependencies: []
   license: Unknown
   included: Unknown
   excluded: Unknown
-  quality_control: Unknown
+  quality_control:
+    value: None
+    explanation: No quality control is provided in the paper.
   # Downstream
   access: No public access
   intended_uses: Unknown
-  prohibited_uses: Unknown
+  prohibited_uses:
+    value: None
+    explanation: No uses are prohibited in the paper.
   monitoring: None
   feedback: None
 

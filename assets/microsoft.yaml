@@ -56,7 +56,7 @@
   access:
     value: Limited public access
     explanation: Manual approval through early access request form required.
-  license: n/a
+  license: Unknown
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
@@ -82,7 +82,7 @@
   access:
     value: Limited public access
     explanation: Manual approval through early access request form required.
-  license: n/a
+  license: Unknown
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
@@ -111,8 +111,8 @@
     explanation: Megatron-Turing NLG can be accessed through the [[Turing Academic
       Program]](https://www.microsoft.com/en-us/research/collaboration/microsoft-turing-academic-program/)
   license:
-    value: n/a
-    explanation: n/a
+    value: Unknown
+    explanation: Unknown
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
@@ -140,7 +140,7 @@
     value: No public access
     explanation: Microsoft does not provide public access to VALL-E
   license:
-    value: n/a
+    value: Unknown
     explanation: The model si not publicly available
   intended_uses: ''
   prohibited_uses: ''

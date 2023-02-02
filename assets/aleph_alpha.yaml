@@ -51,9 +51,7 @@
   access:
     value: Limited public access
     explanation: Paid API product
-  license:
-    value: ''
-    explanation: ''
+  license: Unknown
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''

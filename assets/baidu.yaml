@@ -20,7 +20,7 @@
   access:
     value: No public access
     explanation: Baidu does not provide ERNIE 3.0 for external researchers
-  license: None
+  license: Unknown
   intended_uses: Unknown
   prohibited_uses: Unknown
   monitoring: None
@@ -76,7 +76,7 @@
   access:
     value: No public access
     explanation: Baidu does not provide ERNIE-ViLG 2.0 to external researchers
-  license: None
+  license: Unknown
   intended_uses: Unknown
   prohibited_uses: Unknown
   monitoring: None

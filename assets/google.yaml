@@ -459,7 +459,7 @@
   access:
     value: No public access
     explanation: Google does not provide access to Parti for external researchers.
-  license: n/a
+  license: Unknown
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
@@ -485,7 +485,7 @@
   training_hardware: 128 TPU-v4
   quality_control: ''
   access: No public access
-  license: n/a
+  license: Unknown
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''

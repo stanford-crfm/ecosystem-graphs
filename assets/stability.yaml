@@ -21,7 +21,7 @@
   access:
     value: Full public access
     explanation: Model weights are available for download from the [[Github repo]](https://github.com/CompVis/stable-diffusion)
-  license: n/a
+  license: Unknown
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''

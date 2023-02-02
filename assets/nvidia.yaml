@@ -24,7 +24,7 @@
       Neither the 8.3B parameter model trained to convergence nor the 1 trillion
       paramter model is available for download
   license:
-    value: n/a
+    value: Unknown
   intended_uses: None
   prohibited_uses: None
   monitoring: None
