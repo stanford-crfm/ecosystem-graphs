@@ -172,7 +172,7 @@ function compareValues(valueA, valueB, columnName) {
     valueA = getStandardSize(valueA);
     valueB = getStandardSize(valueB);
   } 
-  // @TODO Decide how to sort the the "dependencies" column
+  // @TODO Decide how to sort the "dependencies" column
   
   // Compare the values
   if (valueA > valueB) {

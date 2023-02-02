@@ -14,7 +14,7 @@
   modality: Text (English, Russian)
   analysis: ''
   size: 100B parameters (dense model)
-  dependencies: [Pile, Yandex Russian Pretraining Dataset]
+  dependencies: [The Pile, Yandex Russian Pretraining Dataset]
   training_emissions: ''
   training_time: ''
   training_hardware: Yandex 800 A100 Cluster

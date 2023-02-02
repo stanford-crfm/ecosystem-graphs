@@ -104,7 +104,7 @@
   modality: Text (English)
   analysis: ''
   size: 6B parameters (dense model)
-  dependencies: []
+  dependencies: [The Pile]
   training_emissions: ''
   training_time: ''
   training_hardware: 'TRC (Unspecified # of TPU v3-8s)'
@@ -134,7 +134,7 @@
   modality: Text (English)
   analysis: ''
   size: 2.7B parameters (dense model)
-  dependencies: []
+  dependencies: [The Pile]
   training_emissions: ''
   training_time: ''
   training_hardware: ''
