@@ -30,7 +30,7 @@
       analysis on the GPT-3 dataset, reporting the dirtiness of the dataset after
       the it was filtered for text occurring in common benchmarking tasks.
       The authors report that "as the dataset becomes more contaminated, the
-      variance of the cleaUnknownll fraction increases, but there is no apparent
+      variance of the clean over all fraction increases, but there is no apparent
       bias
       towards improved or degraded performance"
       [[Appendix C]](https://arxiv.org/pdf/2005.14165.pdf#appendix.C).
@@ -1374,7 +1374,7 @@
       [[Trevor Project Blog]](https://www.thetrevorproject.org/blog/the-trevor-project-launches-new-ai-tool-to-support-crisis-counselor-training/).
   url: https://www.thetrevorproject.org/
   # Construction
-  dependencies: []
+  dependencies: [OpenAI API]
   adaptation:
     value: Fine-tuning
     explanation: >
