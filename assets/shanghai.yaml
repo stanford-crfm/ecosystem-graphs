@@ -11,7 +11,14 @@
   modality: Video, Text
   analysis: ''
   size: 1.3B parameters (dense)
-  dependencies: [Kinetics-400, WebVid-2M, WebVid-10M, HowTo-100M, AVA, Something-Something-v2, Kinetics-710]
+  dependencies:
+    - Kinetics-400
+    - WebVid-2M
+    - WebVid-10M
+    - HowTo-100M
+    - AVA
+    - Something-Something-v2
+    - Kinetics-710
   training_emissions: ''
   training_time: ''
   training_hardware: ''
@@ -22,4 +29,3 @@
   prohibited_uses: ''
   monitoring: ''
   feedback: ''
-  

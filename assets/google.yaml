@@ -618,7 +618,14 @@
   modality: Text
   analysis: ''
   size: Unknown
-  dependencies: [MedQA, MedMCQA, PubMedQA, MMLU, LiveQA, Medication QA, HealthSearchQA]
+  dependencies:
+    - MedQA
+    - MedMCQA
+    - PubMedQA
+    - MMLU
+    - LiveQA
+    - Medication QA
+    - HealthSearchQA
   training_emissions: ''
   training_time: ''
   training_hardware: ''
@@ -756,7 +763,13 @@
   modality: Text
   analysis: ''
   size: 1.2T parameters (sparse)
-  dependencies: [GLaM Web dataset, Wikipedia, GLaM Conversations dataset, GLaM Forums dataset, BooksCorpus, GLaM News dataset]
+  dependencies:
+    - GLaM Web dataset
+    - Wikipedia
+    - GLaM Conversations dataset
+    - GLaM Forums dataset
+    - BooksCorpus
+    - GLaM News dataset
   training_emissions: ''
   training_time: ''
   training_hardware: ''

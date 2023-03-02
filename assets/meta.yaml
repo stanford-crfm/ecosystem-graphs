@@ -348,7 +348,14 @@
   modality: Text
   analysis: ''
   size: 65B parameters (dense)
-  dependencies: [CommonCrawl, C4, Github, Wikipedia, BooksCorpus, arXiv, StackExchange]
+  dependencies:
+    - CommonCrawl
+    - C4
+    - Github
+    - Wikipedia
+    - BooksCorpus
+    - arXiv
+    - StackExchange
   training_emissions: ''
   training_time: ''
   training_hardware: ''
@@ -371,7 +378,7 @@
   modality: Text
   analysis: ''
   size: 175B parameters (dense)
-  dependencies: [OPT,  OPT-IML Bench]
+  dependencies: [OPT, OPT-IML Bench]
   training_emissions: ''
   training_time: ''
   training_hardware: ''

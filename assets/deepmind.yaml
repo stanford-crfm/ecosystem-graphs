@@ -587,7 +587,11 @@
   modality: Text
   analysis: ''
   size: 70B
-  dependencies: [Chinchilla, Google Search, Sparrow Rule reward model, Sparrow Preference reward model]
+  dependencies:
+    - Chinchilla
+    - Google Search
+    - Sparrow Rule reward model
+    - Sparrow Preference reward model
   training_emissions: ''
   training_time: ''
   training_hardware: ''
@@ -782,4 +786,3 @@
   prohibited_uses: ''
   monitoring: ''
   feedback: ''
-  
