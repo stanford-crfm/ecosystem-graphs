@@ -17,7 +17,7 @@
   sample: [https://huggingface.co/datasets/c4/viewer/en/train]
   analysis: https://arxiv.org/abs/2104.08758
   # Construction
-  dependencies: [Common Crawl]
+  dependencies: [CommonCrawl]
   license: ODC-BY
   included: None
   excluded: Data was filtered for English using langdetect. Further, data was filtered
@@ -580,6 +580,6 @@
   monitoring: Unknown
   feedback:
     value: Contact the authors.
-    explanation: >-
+    explanation: >
       Author contact information is shared in the paper
       [[Paper]](https://arxiv.org/pdf/2204.02311.pdf).
