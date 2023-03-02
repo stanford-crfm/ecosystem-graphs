@@ -8,7 +8,8 @@
   description: The Responsible Open-science Open-collaboration Text Sources (ROOTS)
     corpus, a 1.6TB dataset spanning 59 languages that was used to train the 176-billion-parameter
     BigScience Large Open-science Open-access Multilingual (BLOOM) language model.
-  created_date: 2022-06-06
+  created_date:
+    value: 2022-06-06
   url: https://openreview.net/forum?id=UoEw6KigkUn
   datasheet: https://huggingface.co/spaces/bigscience-data/bigscience-corpus
   modality: Text (46 languages) and Code (13 programming languages)
@@ -28,7 +29,7 @@
     remove menus, HTML tags. Further, a quality improvement pipeline was implemented.
   # Downstream
   access:
-    value: Public Access
+    value: Open
     explanation: While not all of the ROOTS corpus is publicly accessible, the majority
       is through [this form](https://docs.google.com/forms/d/e/1FAIpQLSdq50O1x4dkdGI4dwsmchFuNI0KCWEDiKUYxvd0r0_sl6FfAQ/viewform?usp=send_form)
   intended_uses: To empower large-scale monolingual and multilingual modeling projects
@@ -44,7 +45,8 @@
   organization: BigScience
   description: The Public Pool of Prompts (P3) are prompts written in an unified
     format use to train T0++.
-  created_date: 2022-10-15
+  created_date:
+    value: 2022-10-15
   url: https://arxiv.org/pdf/2110.08207.pdf
   datasheet: https://huggingface.co/datasets/bigscience/P3
   modality: Text (English)
@@ -63,7 +65,7 @@
   quality_control: Data collection involved merging and deduplicating searches to
     remove menus, HTML tags. Further, a quality improvement pipeline was implemented.
   # Downstream
-  access: Public Access
+  access: Open
   intended_uses: Multitask finetuning of language models.
   prohibited_uses: None
   monitoring: None
@@ -77,7 +79,8 @@
     and datasets across 46 of languages & 16 NLP tasks. It is used for the training
     of BLOOMZ and mT0, multilingual language models capable of following human instructions
     in dozens of languages zero-shot.
-  created_date: 2022-11-03
+  created_date:
+    value: 2022-11-03
   url: https://arxiv.org/abs/2211.01786
   datasheet: https://huggingface.co/datasets/bigscience/xP3
   modality: Text (46 languages) and Code (13 programming languages)
@@ -93,7 +96,7 @@
   quality_control: Data collection involved merging and deduplicating searches to
     remove menus, HTML tags. Further, a quality improvement pipeline was implemented.
   # Downstream
-  access: Public Access
+  access: Open
   intended_uses: Multitask finetuning of language models.
   prohibited_uses: None
   monitoring: None
@@ -121,7 +124,7 @@
     explanation: Sourced from estimates in https://arxiv.org/pdf/2110.08207.pdf
   training_hardware: Jean Zay (v3-512)
   quality_control: https://arxiv.org/pdf/2110.08207.pdf
-  access: Full public access
+  access: Open
   license:
     value: Apache 2.0
   intended_uses: You can use the models to perform inference on tasks by specifying
@@ -151,7 +154,7 @@
     explanation: 1082990 A100 hours at 156 TFLOP/s maximum utilization
   training_hardware: Jean Zay (48 * 8xA100 80GB nodes)
   quality_control: ''
-  access: Full public access
+  access: Open
   license:
     value: BigScience RAIL v1.0
     explanation: Model is licensed under https://huggingface.co/spaces/bigscience/license
@@ -189,7 +192,7 @@
   training_hardware: Jean Zay (288 A100 80GB GPUs with 8 GPUs per node (36 nodes)
     using NVLink 4 inter-gpu connects, 4 OmniPath links)
   quality_control: https://arxiv.org/pdf/2211.01786.pdf
-  access: Full public access
+  access: Open
   license:
     value: BigScience RAIL v1.0
     explanation: Model is licensed under https://huggingface.co/spaces/bigscience/license
@@ -217,7 +220,7 @@
   training_hardware: Jean Zay (288 A100 80GB GPUs with 8 GPUs per node (36 nodes)
     using NVLink 4 inter-gpu connects, 4 OmniPath links)
   quality_control: https://arxiv.org/pdf/2211.01786.pdf
-  access: Full public access
+  access: Open
   license:
     value: BigScience RAIL v1.0
     explanation: Model is licensed under https://huggingface.co/spaces/bigscience/license

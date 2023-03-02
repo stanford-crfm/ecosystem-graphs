@@ -19,7 +19,7 @@
   training_hardware: 3072 A100 GPUs
   quality_control: Unknown
   access:
-    value: No public access
+    value: Closed
     explanation: >
       Neither the 8.3B parameter model trained to convergence nor the 1 trillion
       paramter model is available for download
@@ -29,3 +29,26 @@
   prohibited_uses: None
   monitoring: None
   feedback: None
+
+- type: dataset
+  name: MineDojo
+  organization: NVIDIA
+  description: ''
+  created_date:
+    value: 2022-06-17
+  url: https://arxiv.org/abs/2206.08853
+  datasheet: ''
+  modality: Videos, Text
+  size: 730k videos, 6k Wikipedia pages, 340k reddit posts
+  sample: ''
+  analysis: ''
+  dependencies: [YouTube, Wikipedia, Reddit]
+  included: ''
+  excluded: ''
+  quality_control: ''
+  access: Open
+  license: MIT License
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''

@@ -50,7 +50,7 @@
       [[Appendix A]](https://arxiv.org/pdf/2112.11446.pdf#appendix.A).
   # Downstream
   access:
-    value: No public access
+    value: Closed
     explanation: >
       The dataset access is limited to DeepMind researchers
       [[Model Card]](https://arxiv.org/pdf/2112.11446.pdf#appendix.C).
@@ -112,7 +112,7 @@
       The authors provide a basic description of data processing and cleaning.
   # Downstream
   access:
-    value: No public access
+    value: Closed
     explanation: >
       The dataset access is limited to DeepMind researchers
       [[Datasheet]](https://arxiv.org/pdf/2204.14198.pdf#appendix.F).
@@ -175,7 +175,7 @@
     value: Unknown
   # Downstream
   access:
-    value: No public access
+    value: Closed
     explanation: >
       The full dataset is not directly provided by the authors, though some underlying
       data is public whereas others (e.g. MassiveText) is not.
@@ -247,7 +247,7 @@
       [[Model Card]](https://openreview.net/pdf?id=1ikK0kHjvj#appendix.A).
   # Downstream
   access:
-    value: No public access
+    value: Closed
     explanation: >
       The model has not been released and no discussion of release is stated in
       the model card
@@ -304,7 +304,7 @@
   training_hardware: ''
   quality_control: ''
   access:
-    value: No public access
+    value: Closed
     explanation: DeepMind does not provide access to AlphaCode to external researchers
   license:
     value: Unknown
@@ -373,7 +373,7 @@
     value: None
   # Downstream
   access:
-    value: No public access
+    value: Closed
     explanation: >
       The model access is limited to DeepMind researchers. The model won't be
       released to the public
@@ -457,7 +457,7 @@
     value: None
   # Downstream
   access:
-    value: No public access
+    value: Closed
     explanation: >
       The model access is limited to DeepMind researchers. The model won't be
       released to the public
@@ -541,7 +541,7 @@
       [[Model Card]](https://openreview.net/pdf?id=1ikK0kHjvj#appendix.A).
   # Downstream
   access:
-    value: No public access
+    value: Closed
     explanation: >
       The model access is limited to DeepMind researchers. The model won't be
       released to the public
@@ -571,7 +571,215 @@
       There is no information on how DeepMind is internally monitoring
       the use of the model.
   feedback:
-    value: >-
+    value: >
       The feedback for the model can be provided at the email linked in the model
       card, reedscot at google.com
       [[Model Card]](https://openreview.net/pdf?id=1ikK0kHjvj#appendix.A).
+
+- type: model
+  name: Sparrow
+  organization: DeepMind
+  description: ''
+  created_date:
+    value: 2022-09-28
+  url: https://arxiv.org/abs/2209.14375
+  model_card: ''
+  modality: Text
+  analysis: ''
+  size: 70B
+  dependencies: [Chinchilla, Google Search, Sparrow Rule reward model, Sparrow Preference reward model]
+  training_emissions: ''
+  training_time: ''
+  training_hardware: ''
+  quality_control: ''
+  access: Closed
+  license: Unknown
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+
+- type: model
+  name: RETRO
+  organization: DeepMind
+  description: ''
+  created_date:
+    value: 2021-12-08
+  url: https://arxiv.org/abs/2112.04426
+  model_card: ''
+  modality: Text
+  analysis: ''
+  size: 7.5B
+  dependencies: [MassiveText]
+  training_emissions: ''
+  training_time: ''
+  training_hardware: ''
+  quality_control: ''
+  access: Closed
+  license: Unknown
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+
+- type: model
+  name: Sparrow Rule reward model
+  organization: DeepMind
+  description: ''
+  created_date:
+    value: 2022-09-28
+  url: https://arxiv.org/abs/2209.14375
+  model_card: ''
+  modality: Text
+  analysis: ''
+  size: 70B
+  dependencies: [Chinchilla, Sparrow adversarial probing dataset]
+  training_emissions: ''
+  training_time: ''
+  training_hardware: ''
+  quality_control: ''
+  access: Closed
+  license: Unknown
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+
+- type: model
+  name: Sparrow Preference reward model
+  organization: DeepMind
+  description: ''
+  created_date:
+    value: 2022-09-28
+  url: https://arxiv.org/abs/2209.14375
+  model_card: ''
+  modality: Text
+  analysis: ''
+  size: 70B
+  dependencies: [Chinchilla, Sparrow response preference dataset]
+  training_emissions: ''
+  training_time: ''
+  training_hardware: ''
+  quality_control: ''
+  access: Closed
+  license: Unknown
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+
+- type: dataset
+  name: Sparrow adversarial probing dataset
+  organization: DeepMind
+  description: ''
+  created_date:
+    value: 2022-09-28
+  url: https://arxiv.org/abs/2209.14375
+  datasheet: ''
+  modality: Text
+  size: 27k ratings
+  sample: ''
+  analysis: ''
+  dependencies: [Chinchilla]
+  included: ''
+  excluded: ''
+  quality_control: ''
+  access: Closed
+  license: Unknown
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+
+- type: dataset
+  name: Sparrow response preference dataset
+  organization: DeepMind
+  description: ''
+  created_date:
+    value: 2022-09-28
+  url: https://arxiv.org/abs/2209.14375
+  datasheet: ''
+  modality: Text
+  size: 72k comparisons
+  sample: ''
+  analysis: ''
+  dependencies: [Chinchilla]
+  included: ''
+  excluded: ''
+  quality_control: ''
+  access: Closed
+  license: Unknown
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+
+- type: model
+  name: GopherCite
+  organization: DeepMind
+  description: ''
+  created_date:
+    value: 2022-03-16
+  url: https://storage.googleapis.com/deepmind-media/Teaching%20language%20models%20to%20support%20answers%20with%20verified%20quotes/Teaching%20language%20models%20to%20support%20answers%20with%20verified%20quotes.pdf
+  model_card: ''
+  modality: Text
+  analysis: ''
+  size: 280B
+  dependencies: [Gopher, Google Search, GopherCite reward model]
+  training_emissions: ''
+  training_time: ''
+  training_hardware: ''
+  quality_control: ''
+  access: Closed
+  license: Unknown
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+
+- type: model
+  name: GopherCite reward model
+  organization: DeepMind
+  description: ''
+  created_date:
+    value: 2022-03-16
+  url: https://storage.googleapis.com/deepmind-media/Teaching%20language%20models%20to%20support%20answers%20with%20verified%20quotes/Teaching%20language%20models%20to%20support%20answers%20with%20verified%20quotes.pdf
+  model_card: ''
+  modality: Text
+  analysis: ''
+  size: 7B
+  dependencies: [Gopher, GopherCite Preference dataset]
+  training_emissions: ''
+  training_time: ''
+  training_hardware: ''
+  quality_control: ''
+  access: Closed
+  license: Unknown
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+
+- type: dataset
+  name: GopherCite Preference dataset
+  organization: DeepMind
+  description: ''
+  created_date:
+    value: 2022-03-16
+  url: https://storage.googleapis.com/deepmind-media/Teaching%20language%20models%20to%20support%20answers%20with%20verified%20quotes/Teaching%20language%20models%20to%20support%20answers%20with%20verified%20quotes.pdf
+  datasheet: ''
+  modality: Text
+  size: 33k response pairs
+  sample: ''
+  analysis: ''
+  dependencies: [Gopher, Google Search]
+  included: ''
+  excluded: ''
+  quality_control: ''
+  access: Closed
+  license: Unknown
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+  

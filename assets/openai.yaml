@@ -64,7 +64,7 @@
       [[Appendix C]](https://arxiv.org/pdf/2005.14165.pdf#appendix.C).
   # Downstream
   access:
-    value: No public access
+    value: Closed
     explanation: >
       The GPT-3 dataset isn't released to the public, but it may be available
       to Microsoft through the GPT-3 licencing agreement between OpenAI and
@@ -159,7 +159,7 @@
       [[Section 2.2]](https://arxiv.org/pdf/2107.03374.pdf#subsection.2.2).
   # Downstream
   access:
-    value: Full public access
+    value: Open
     explanation: >
       HumanEval dataset is publicly available and comes
       with a an evaluation framework
@@ -217,7 +217,7 @@
       field.
   # Downstream
   access:
-    value: No public access
+    value: Closed
     explanation: >
       The dataset might have been made available to Microsoft
       as part of OpenAI giving Microsoft access to its Codex model
@@ -277,7 +277,7 @@
       [[Model Card]](https://github.com/openai/CLIP/blob/main/model-card.md).
   # Downstream
   access:
-    value: No public access
+    value: Closed
     explanation: The dataset wasn't released to the public.
   intended_uses:
     value: Training multimodal vision models.
@@ -340,7 +340,7 @@
       [[Appendix C]](https://arxiv.org/pdf/2102.12092.pdf#appendix.C).
   # Downstream
   access:
-    value: No public access
+    value: Closed
     explanation: The dataset wasn't released to the public.
   intended_uses:
     value: Training multimodal vision models.
@@ -396,7 +396,7 @@
       In addition to filtering, basic text standardization was done.
   # Downstream
   access:
-    value: No public access
+    value: Closed
     explanation: >
       The dataset isn't released to the public.
   intended_uses:
@@ -510,7 +510,7 @@
       [[Section 6]](https://arxiv.org/pdf/2005.14165.pdf#section.6).
   # Downstream
   access:
-    value: Limited public access
+    value: Limited
     explanation: >
       The GPT-3 model isn't fully released to the public, but
       it was made available to Microsoft through the licencing agreement between
@@ -603,7 +603,7 @@
       [[Section 7]](https://arxiv.org/pdf/2107.03374.pdf#section.7).
   # Downstream
   access:
-    value: Limited public access
+    value: Limited
     explanation: >
       The model is made available via the OpenAI API
       [[OpenAI API]](https://openai.com/api/). Full model access was granted to
@@ -672,7 +672,7 @@
     value: The model wasn't fully released to the public as a quality control measure.
   # Downstream
   access:
-    value: Limited public access
+    value: Limited
     explanation: >
       The model is made available via the OpenAI API
       [[OpenAI API]](https://openai.com/api/).
@@ -762,7 +762,7 @@
       No specific quality control methods are documented.
   # Downstream
   access:
-    value: Full public access
+    value: Open
     explanation: >
       Models are available at [https://github.com/openai/whisper](https://github.com/openai/whisper).
   license:
@@ -864,7 +864,7 @@
       [[Section 7]](https://arxiv.org/pdf/2103.00020.pdf#section.7).
   # Downstream
   access:
-    value: Full public access
+    value: Open
     explanation: >
       Model checkpoints and the helper code can be accessed
       at the official CLIP repository
@@ -948,7 +948,7 @@
     value: Unknown
   # Downstream
   access:
-    value: No public access
+    value: Closed
   license:
     value: Unknown
     explanation: >
@@ -992,7 +992,7 @@
   training_hardware: 510 V100s
   quality_control: ''
   access:
-    value: Full public access
+    value: Open
     explanation: The model can be downloaded from the [Github repository](https://github.com/openai/jukebox)
   license:
     value: Noncmmercial use license
@@ -1015,7 +1015,7 @@
     The model wasn't fully released, but OpenAI released a version of the model
     (DALL·E 2 Preview) to a select group of testers.
   created_date:
-    value: 2022-04
+    value: 2022-04-13
     explanation: >
       OpenAI released in a blog post in April 2020
       [[OpenAI Blog Post]](https://openai.com/dall-e-2/).
@@ -1049,7 +1049,7 @@
       (https://github.com/openai/dalle-2-preview/blob/main/system-card.md#input-filters).
   # Downstream
   access:
-    value: Limited public access
+    value: Limited
     explanation: >
       The model is available to OpenAI employees, researchers, creatives
       and company friends. OpenAI opened a waitlist for DALL·E 2 access.
@@ -1129,7 +1129,7 @@
       [[OpenAI API]](https://openai.com/api/).
   # Downstream
   access:
-    value: Limited public access
+    value: Limited
     explanation: >
       The OpenAI API is available to the public in supported countries
       [[Supported Countries]](https://beta.openai.com/docs/supported-countries)
@@ -1222,7 +1222,7 @@
   output_space: question and answer, summarization, sentiment analysis,topic identification
   quality_control: Unknown
   # Downstream
-  access: Limited public access
+  access: Limited
   license: https://www.sanalabs.com/legal/
   terms_of_service: https://www.sanalabs.com/legal/
   intended_uses: >
@@ -1259,7 +1259,7 @@
   output_space: French grammar corrections
   quality_control: Unknown
   # Downstream
-  access: Limited public access
+  access: Limited
   license:
     value: Limited use license
     explanation: >
@@ -1290,7 +1290,8 @@
   description: >
     Viable analyzes qualitative consumer feedback and provides summary feedback
     to companies.
-  created_date: 2021
+  created_date:
+    value: 2021
   url: https://www.askviable.com/
   # Construction
   dependencies: [OpenAI API]
@@ -1298,7 +1299,7 @@
   output_space: Question and answer, summarization, sentiment analysis, topic identification
   quality_control: Unknown
   # Downstream
-  access: Limited public access
+  access: Limited
   license: Unknown
   terms_of_service: https://www.askviable.com/terms-of-service
   intended_uses: >
@@ -1342,7 +1343,7 @@
       [[HyperWrite Blog]]
       (https://blog.hyperwrite.ai/what-are-the-risks-of-ai-writing/).
   # Downstream
-  access: Limited public access
+  access: Limited
   license: https://hyperwriteai.com/terms
   terms_of_service: https://hyperwriteai.com/terms
   intended_uses: >
@@ -1389,7 +1390,7 @@
       for training purposes.
   # Downstream
   access:
-    value: No public access
+    value: Closed
     explanation: >
       The tool can only be accessed by the Trevor Project will be counsolors
       for training purposes.
@@ -1404,3 +1405,49 @@
   monthly_active_users: Unknown
   user_distribution: Unknown
   failures: Unknown
+
+- type: model
+  name: VPT
+  organization: OpenAI
+  description: ''
+  created_date:
+    value: 2022-06-23
+  url: https://arxiv.org/abs/2206.11795
+  model_card: ''
+  modality: Video
+  analysis: ''
+  size: 500M parameters (dense)
+  dependencies: [web_clean]
+  training_emissions: ''
+  training_time: ''
+  training_hardware: ''
+  quality_control: ''
+  access: Open
+  license: MIT License
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+
+- type: dataset
+  name: web_clean
+  organization: OpenAI
+  description: ''
+  created_date:
+    value: 2022-06-23
+  url: https://arxiv.org/abs/2206.11795
+  datasheet: ''
+  modality: Video
+  size: 70k hours
+  sample: ''
+  analysis: ''
+  dependencies: []
+  included: ''
+  excluded: ''
+  quality_control: ''
+  access: Closed
+  license: Unknown
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''

@@ -49,7 +49,7 @@
       [[Datasheet]](https://docs.cohere.ai/data-statement).
   # Downstream
   access:
-    value: No public access
+    value: Closed
     explanation: The dataset isn't provided to the public.
   intended_uses:
     value: The intended use of the dataset is to train Cohere's language models.
@@ -118,7 +118,7 @@
       [[Model Card]](https://docs.cohere.ai/generation-card).
   # Downstream
   access:
-    value: Limited public access
+    value: Limited
     explanation: >
       The model is available to the public through the Cohere Platform
       [[Cohere Platform]](https://os.cohere.ai/login).
@@ -196,7 +196,7 @@
     value: Unknown
   # Downstream
   access:
-    value: Limited public access
+    value: Limited
     explanation: >
       The model is available to the public through the Cohere Platform
       [[Cohere Platform]](https://cohere.ai/).
@@ -261,7 +261,7 @@
       [[Limited Access]](https://docs.cohere.ai/limited-access).
   # Downstream
   access:
-    value: Limited public access
+    value: Limited
     explanation: >
       Users can access the Cohere API by signing up on the Cohere website
       [[Cohere Website]](https://cohere.ai/).

@@ -24,7 +24,7 @@
   excluded: Unknown
   quality_control: Unknown
   # Downstream
-  access: No public access
+  access: Closed
   intended_uses: Unknown
   prohibited_uses: Unknown
   monitoring: None
@@ -49,7 +49,7 @@
   training_hardware: Unknown
   quality_control: ''
   access:
-    value: Limited public access
+    value: Limited
     explanation: Paid API product
   license: Unknown
   intended_uses: ''
@@ -79,7 +79,7 @@
   quality_control: ''
   # Downstream
   access:
-    value: Limited public access
+    value: Limited
     explanation: The API is a paid product. Refer to the [[API documentation]](https://docs.aleph-alpha.com/docs/introduction/luminous/)
       for further details.
   license:

@@ -1,0 +1,25 @@
+---
+
+- type: dataset
+  name: NaturalInstructions-v2
+  organization: AI2
+  description: ''
+  created_date:
+    value: 2022-04-16
+  url: https://arxiv.org/abs/2204.07705
+  datasheet: ''
+  modality: Text
+  size: 1600 tasks
+  sample: ''
+  analysis: ''
+  dependencies: []
+  included: ''
+  excluded: ''
+  quality_control: ''
+  access: Open
+  license: Apache 2.0
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+  

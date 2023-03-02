@@ -74,7 +74,7 @@
       [[Appendix D]](https://arxiv.org/pdf/2101.00027.pdf#appendix.1.D).
   # Downstream
   access:
-    value: Full public access
+    value: Open
     explanation: >
       The dataset is freely available to the public and
       can be downloaded from The Eye
@@ -110,7 +110,7 @@
   training_hardware: 'TRC (Unspecified # of TPU v3-8s)'
   quality_control: ''
   access:
-    value: Full public access
+    value: Open
     explanation: >
       The model can be downloaded for free from [[The Eye]](https://mystic.the-eye.eu/public/AI/GPT-J-6B/step_383500.tar.zstd)
   license:
@@ -140,7 +140,7 @@
   training_hardware: ''
   quality_control: ''
   access:
-    value: Full public access
+    value: Open
     explanation: >
       The model can be downloaded for free from [[The Eye]](https://mystic.the-eye.eu/public/AI/gptneo-release/GPT3_2-7B/)
   license:
@@ -198,7 +198,7 @@
     value:  None
   # Downstream
   access:
-    value: Full public access
+    value: Open
     explanation: >
       The model can be downloaded for free The Eye
       [[GPT-NeoX-20B]](https://mystic.the-eye.eu/public/AI/models/GPT-NeoX-20B/).
@@ -250,7 +250,7 @@
   quality_control: Unknown
   # Downstream
   access:
-    value: Limited public access
+    value: Limited
     explanation: >
       GooseAI API can be accessed by signing up on the goose.ai website.
   license:
