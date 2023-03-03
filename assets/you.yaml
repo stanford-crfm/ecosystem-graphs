@@ -47,7 +47,9 @@
 - type: application
   name: You Search
   organization: You
-  description: You.com is a search engine built on artificial intelligence that provides users with a customized search experience while keeping their data 100% private.
+  description: You.com is a search engine built on artificial intelligence that
+    provides users with a customized search experience while keeping their data
+    100% private.
   created_date: Unknown
   url: https://you.com/
   dependencies: [You model]
