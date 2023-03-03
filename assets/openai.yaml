@@ -418,31 +418,6 @@
 
 # Models
 
-# - type: model
-#   name: GPT-2
-#   # General
-#   organization: OpenAI
-#   description: todo
-#   created_date: todo
-#   url: todo
-#   model_card: todo
-#   modality: todo
-#   size: todo
-#   analysis: todo
-#   # Construction
-#   dependencies: []
-#   training_emissions: todo
-#   training_time: todo
-#   training_hardware: todo
-#   quality_control: todo
-#   # Downstream
-#   access: todo
-#   license: todo
-#   intended_uses: todo
-#   prohibited_uses: todo
-#   monitoring: todo
-#   feedback: todo
-
 - type: model
   name: GPT-3
   # General
@@ -1105,7 +1080,7 @@
       [[Open AI Blog Post]](https://openai.com/blog/openai-api/).
   url: https://openai.com/api/
   # Construction
-  dependencies: [GPT-3, Codex, InstructGPT]
+  dependencies: [GPT-3, Codex, code-davinci-002, text-davinci-002, text-davinci-003, gpt-3.5-turbo, Whisper]
   adaptation: >
     Although initially started with GPT-3, soon after the API was made public,
     OpenAI deployed the InstructGPT models, and made them the default models on
@@ -1439,6 +1414,266 @@
   datasheet: ''
   modality: Video
   size: 70k hours
+  sample: ''
+  analysis: ''
+  dependencies: []
+  included: ''
+  excluded: ''
+  quality_control: ''
+  access: Closed
+  license: Unknown
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+
+- type: application
+  name: ChatGPT
+  organization: OpenAI
+  description: ChatGPT is an artificial intelligence chatbot developed by OpenAI
+  created_date: 2022-11-30
+  url: https://openai.com/blog/chatgpt
+  dependencies: [gpt-3.5-turbo, OpenAI toxicity classifier]
+  adaptation: ''
+  output_space: ''
+  quality_control: ''
+  access: Open
+  license: ''
+  terms_of_service: ''
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+  monthly_active_users: ''
+  user_distribution: ''
+  failures: ''
+
+- type: model
+  name: gpt-3.5-turbo
+  organization: OpenAI
+  description: ''
+  created_date: 2023-03-01
+  url: https://platform.openai.com/docs/models/gpt-3-5
+  model_card: ''
+  modality: Text
+  analysis: ''
+  size: Unknown
+  dependencies: [gpt-3.5-turbo dataset, OpenAI toxicity model]
+  training_emissions: ''
+  training_time: ''
+  training_hardware: ''
+  quality_control: ''
+  access: Limited
+  license: ''
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+
+- type: dataset
+  name: gpt-3.5-turbo datatset
+  organization: OpenAI
+  description: ''
+  created_date: 2023-03-01
+  url: https://platform.openai.com/docs/models/gpt-3-5
+  datasheet: ''
+  modality: Text
+  size: Unknown
+  sample: ''
+  analysis: ''
+  dependencies: []
+  included: ''
+  excluded: ''
+  quality_control: ''
+  access: Limited
+  license: ''
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+
+- type: dataset
+  name: code-davinci-002 dataset
+  organization: OpenAI
+  description: ''
+  created_date: 2022-05-01
+  url: https://platform.openai.com/docs/model-index-for-researchers
+  datasheet: ''
+  modality: Code, Text
+  size: Unknown
+  sample: ''
+  analysis: ''
+  dependencies: []
+  included: ''
+  excluded: ''
+  quality_control: ''
+  access: Limited
+  license: ''
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+
+- type: model
+  name: code-davinci-002
+  organization: OpenAI
+  description: ''
+  created_date: 2022-05-01
+  url: https://platform.openai.com/docs/model-index-for-researchers
+  model_card: ''
+  modality: Code, Text
+  analysis: ''
+  size: Unknown
+  dependencies: [code-davinci-002 dataset]
+  training_emissions: ''
+  training_time: ''
+  training_hardware: ''
+  quality_control: ''
+  access: Limited
+  license: ''
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+
+- type: model
+  name: text-davinci-002
+  organization: OpenAI
+  description: ''
+  created_date: 2022-05-01
+  url: https://platform.openai.com/docs/model-index-for-researchers
+  model_card: ''
+  modality: Text
+  analysis: ''
+  size: Unknown
+  dependencies: [code-davinci-002]
+  training_emissions: ''
+  training_time: ''
+  training_hardware: ''
+  quality_control: ''
+  access: Limited
+  license: ''
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+
+- type: model
+  name: text-davinci-003
+  organization: OpenAI
+  description: ''
+  created_date: 2022-11-30
+  url: https://platform.openai.com/docs/model-index-for-researchers
+  model_card: ''
+  modality: Text
+  analysis: ''
+  size: Unknown
+  dependencies: [text-davinci-002]
+  training_emissions: ''
+  training_time: ''
+  training_hardware: ''
+  quality_control: ''
+  access: Limited
+  license: ''
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+
+- type: application
+  name: WhisperAPI
+  organization: OpenAI
+  description: API to query OpenAI's Whisper model.
+  created_date: 2023-03-01
+  url: https://openai.com/blog/introducing-chatgpt-and-whisper-apis
+  dependencies: [Whisper]
+  adaptation: ''
+  output_space: ''
+  quality_control: ''
+  access: Open
+  license: ''
+  terms_of_service: ''
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+  monthly_active_users: ''
+  user_distribution: ''
+  failures: ''
+
+- type: application
+  name: ChatGPT API
+  organization: OpenAI
+  description: API to query OpenAI's ChatGPT model.
+  created_date: 2023-03-01
+  url: https://openai.com/blog/introducing-chatgpt-and-whisper-apis
+  dependencies: [gpt-3.5-turbo]
+  adaptation: ''
+  output_space: ''
+  quality_control: ''
+  access: Open
+  license: ''
+  terms_of_service: ''
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+  monthly_active_users: ''
+  user_distribution: ''
+  failures: ''
+
+- type: application
+  name: OpenAI Moderation API
+  organization: OpenAI
+  description: This endpoint provides OpenAI API developers with free access to GPT-based classifiers that detect undesired content—an instance of using AI systems to assist with human supervision of these systems.
+  created_date: 2022-08-10
+  url: https://openai.com/blog/new-and-improved-content-moderation-tooling
+  dependencies: [OpenAI toxicity model]
+  adaptation: ''
+  output_space: ''
+  quality_control: ''
+  access: Open
+  license: ''
+  terms_of_service: ''
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+  monthly_active_users: ''
+  user_distribution: ''
+  failures: ''
+
+- type: model
+  name: OpenAI toxicity classifier
+  organization: OpenAI
+  description: ''
+  created_date: 2023-01-18
+  url: https://time.com/6247678/openai-chatgpt-kenya-workers/#:~:text=In%20a%20statement%2C%20an%20OpenAI,datasets%20of%20tools%20like%20ChatGPT.
+  model_card: ''
+  modality: Text
+  analysis: ''
+  size: Unknown
+  dependencies: [OpenAI toxicity dataset]
+  training_emissions: ''
+  training_time: ''
+  training_hardware: ''
+  quality_control: ''
+  access: Closed
+  license: Unknown
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+
+- type: dataset
+  name: OpenAI toxicity dataset
+  organization: OpenAI
+  description: ''
+  created_date: 2023-01-18
+  url: https://time.com/6247678/openai-chatgpt-kenya-workers/#:~:text=In%20a%20statement%2C%20an%20OpenAI,datasets%20of%20tools%20like%20ChatGPT.
+  datasheet: ''
+  modality: Text
+  size: Unknown
   sample: ''
   analysis: ''
   dependencies: []
