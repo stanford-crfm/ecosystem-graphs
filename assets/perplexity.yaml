@@ -1,0 +1,87 @@
+---
+
+- type: dataset
+  name: Perplexity dataset
+  organization: Perplexity
+  description: ''
+  created_date: Unknown
+  url: https://www.perplexity.ai/
+  datasheet: ''
+  modality: Text
+  size: Unknown
+  sample: ''
+  analysis: ''
+  dependencies: []
+  included: ''
+  excluded: ''
+  quality_control: ''
+  access: Closed
+  license: Unknown
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+
+- type: model
+  name: Perplexity model
+  organization: Perplexity
+  description: ''
+  created_date: Unknown
+  url: https://www.perplexity.ai/
+  model_card: ''
+  modality: Text
+  analysis: ''
+  size: Unknown
+  dependencies: [Perplexity dataset]
+  training_emissions: ''
+  training_time: ''
+  training_hardware: ''
+  quality_control: ''
+  access: Closed
+  license: Unknown
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+
+- type: application
+  name: Perplexity Ask
+  organization: Perplexity
+  description: Perplexity Ask is a new search interface that uses advanced artificial intelligence technologies
+  created_date: Unknown
+  url: https://www.perplexity.ai/
+  dependencies: [Perplexity model]
+  adaptation: ''
+  output_space: ''
+  quality_control: ''
+  access: Open
+  license: ''
+  terms_of_service: ''
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+  monthly_active_users: ''
+  user_distribution: ''
+  failures: ''
+
+- type: application
+  name: Bird SQL
+  organization: Perplexity
+  description: Twitter search interface that is powered by Perplexity's structured search engine.
+  created_date: 2022-12-15
+  url: https://www.perplexity.ai/sql
+  dependencies: [Perplexity Search, OpenAI API]
+  adaptation: ''
+  output_space: ''
+  quality_control: ''
+  access: Deprecated
+  license: ''
+  terms_of_service: ''
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+  monthly_active_users: ''
+  user_distribution: ''
+  failures: ''
