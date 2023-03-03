@@ -30,7 +30,8 @@
 - type: application
   name: Yandex Search
   organization: Yandex
-  description: Yandex is a search engine and web portal. Yandex offers internet search and other services
+  description: Yandex is a search engine and web portal. Yandex offers internet
+    search and other services
   created_date: 2022-06-23
   url: https://medium.com/yandex/yandex-publishes-yalm-100b-its-the-largest-gpt-like-neural-network-in-open-source-d1df53d0e9a6
   dependencies: [YaLM]

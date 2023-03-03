@@ -47,7 +47,8 @@
 - type: application
   name: Perplexity Ask
   organization: Perplexity
-  description: Perplexity Ask is a new search interface that uses advanced artificial intelligence technologies
+  description: Perplexity Ask is a new search interface that uses advanced artificial
+    intelligence technologies
   created_date: Unknown
   url: https://www.perplexity.ai/
   dependencies: [Perplexity model]
@@ -68,7 +69,8 @@
 - type: application
   name: Bird SQL
   organization: Perplexity
-  description: Twitter search interface that is powered by Perplexity's structured search engine.
+  description: Twitter search interface that is powered by Perplexity's structured
+    search engine.
   created_date: 2022-12-15
   url: https://www.perplexity.ai/sql
   dependencies: [Perplexity Search, OpenAI API]
