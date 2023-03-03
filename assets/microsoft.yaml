@@ -244,7 +244,11 @@
 - type: application
   name: Microsoft Teams
   organization: Microsoft
-  description: Microsoft Teams Premium is generally available. Built on the familiar, all-in-one collaborative experience of Microsoft Teams, Teams Premium brings the latest technologies, powered by OpenAI’s GPT-3.5, to make meetings more intelligent, personalized, and protected—whether it’s one-on-one, large meetings, virtual appointments, or webinars.
+  description: Microsoft Teams Premium is generally available. Built on the familiar,
+    all-in-one collaborative experience of Microsoft Teams, Teams Premium brings
+    the latest technologies, powered by OpenAI’s GPT-3.5, to make meetings more
+    intelligent, personalized, and protected—whether it’s one-on-one, large meetings,
+    virtual appointments, or webinars.
   created_date: 2023-02-01
   url: https://www.microsoft.com/en-us/microsoft-365/blog/2023/02/01/microsoft-teams-premium-cut-costs-and-add-ai-powered-productivity/
   dependencies: [ChatGPT API]
@@ -265,7 +269,10 @@
 - type: application
   name: Bing Search
   organization: Microsoft
-  description: AI-powered Bing search engine and Edge browser, available in preview now at Bing.com, to deliver better search, more complete answers, a new chat experience and the ability to generate content. We think of these tools as an AI copilot for the web.
+  description: AI-powered Bing search engine and Edge browser, available in preview
+    now at Bing.com, to deliver better search, more complete answers, a new chat
+    experience and the ability to generate content. We think of these tools as an
+    AI copilot for the web.
   created_date: 2023-02-07
   url: https://blogs.microsoft.com/blog/2023/02/07/reinventing-search-with-a-new-ai-powered-microsoft-bing-and-edge-your-copilot-for-the-web/
   dependencies: [ChatGPT API]
@@ -282,4 +289,3 @@
   monthly_active_users: ''
   user_distribution: ''
   failures: ''
-  

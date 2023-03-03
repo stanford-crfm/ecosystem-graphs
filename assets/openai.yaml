@@ -1080,7 +1080,14 @@
       [[Open AI Blog Post]](https://openai.com/blog/openai-api/).
   url: https://openai.com/api/
   # Construction
-  dependencies: [GPT-3, Codex, code-davinci-002, text-davinci-002, text-davinci-003, gpt-3.5-turbo, Whisper]
+  dependencies:
+    - GPT-3
+    - Codex
+    - code-davinci-002
+    - text-davinci-002
+    - text-davinci-003
+    - gpt-3.5-turbo
+    - Whisper
   adaptation: >
     Although initially started with GPT-3, soon after the API was made public,
     OpenAI deployed the InstructGPT models, and made them the default models on
@@ -1625,7 +1632,9 @@
 - type: application
   name: OpenAI Moderation API
   organization: OpenAI
-  description: This endpoint provides OpenAI API developers with free access to GPT-based classifiers that detect undesired content—an instance of using AI systems to assist with human supervision of these systems.
+  description: This endpoint provides OpenAI API developers with free access to
+    GPT-based classifiers that detect undesired content—an instance of using AI
+    systems to assist with human supervision of these systems.
   created_date: 2022-08-10
   url: https://openai.com/blog/new-and-improved-content-moderation-tooling
   dependencies: [OpenAI toxicity model]

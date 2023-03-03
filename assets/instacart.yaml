@@ -3,7 +3,12 @@
 - type: application
   name: Ask Instacart
   organization: Instacart
-  description: Instacart is augmenting the Instacart app to enable customers to ask about food and get inspirational, shoppable answers. This uses ChatGPT alongside Instacart’s own AI and product data from their 75,000+ retail partner store locations to help customers discover ideas for open-ended shopping goals, such as “How do I make great fish tacos?” or “What’s a healthy lunch for my kids?” Instacart plans to launch “Ask Instacart” later this year.
+  description: Instacart is augmenting the Instacart app to enable customers to
+    ask about food and get inspirational, shoppable answers. This uses ChatGPT alongside
+    Instacart’s own AI and product data from their 75,000+ retail partner store
+    locations to help customers discover ideas for open-ended shopping goals, such
+    as “How do I make great fish tacos?” or “What’s a healthy lunch for my kids?”
+    Instacart plans to launch “Ask Instacart” later this year.
   created_date: 2023-03-01
   url: https://openai.com/blog/introducing-chatgpt-and-whisper-apis
   dependencies: [ChatGPT API]
@@ -20,4 +25,3 @@
   monthly_active_users: ''
   user_distribution: ''
   failures: ''
-  

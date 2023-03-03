@@ -47,7 +47,8 @@
 - type: application
   name: Neeva Search
   organization: Neeva
-  description: Neeva is a search engine powered by AI with personalization and without ads/tracking.
+  description: Neeva is a search engine powered by AI with personalization and without
+    ads/tracking.
   created_date: Unknown
   url: https://neeva.com/index
   dependencies: [Neeva model]

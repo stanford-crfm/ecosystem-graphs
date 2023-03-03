@@ -3,7 +3,9 @@
 - type: application
   name: Notion AI
   organization: Notion
-  description: Notion AI is a connected assistant that helps you think bigger, work faster, and augments your creativity, right inside the functional workspace you’re already familiar with.
+  description: Notion AI is a connected assistant that helps you think bigger, work
+    faster, and augments your creativity, right inside the functional workspace
+    you’re already familiar with.
   created_date: 2023-02-22
   url: https://www.notion.so/help/guides/notion-ai-for-docs
   dependencies: []
