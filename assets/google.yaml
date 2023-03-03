@@ -1178,7 +1178,7 @@
   feedback: ''
 
 - type: model
-  name: MusicLM acoustive model
+  name: MusicLM acoustic model
   organization: Google
   description: ''
   created_date:
