@@ -52,3 +52,47 @@
   prohibited_uses: ''
   monitoring: ''
   feedback: ''
+
+- type: dataset
+  name: VIMA dataset
+  organization: NVIDIA, Stanford
+  description: ''
+  created_date: 2022-10-06
+  url: https://vimalabs.github.io/
+  datasheet: ''
+  modality: Text, Image
+  size: 200M parameters (dense model)
+  sample: ''
+  analysis: ''
+  dependencies: [T5, Mask R-CNN, VIMA dataset]
+  included: ''
+  excluded: ''
+  quality_control: ''
+  access: Open
+  license: MIT license
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+
+- type: model
+  name: VIMA
+  organization: NVIDIA, Stanford
+  description: ''
+  created_date: 2022-10-06
+  url: https://vimalabs.github.io/
+  model_card: ''
+  modality: Simulation
+  analysis: ''
+  size: 650K successful trajectories
+  dependencies: []
+  training_emissions: ''
+  training_time: ''
+  training_hardware: ''
+  quality_control: ''
+  access: Open
+  license: MIT license
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
