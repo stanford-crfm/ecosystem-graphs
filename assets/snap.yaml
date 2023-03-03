@@ -7,7 +7,8 @@
     fingertips that offers recommendations, and can even write a haiku for friends
     in seconds. Snapchat, where communication and messaging is a daily behavior,
     has 750 million monthly Snapchatters.
-  created_date: 2023-03-01
+  created_date:
+    value: 2023-03-01
   url: https://openai.com/blog/introducing-chatgpt-and-whisper-apis
   dependencies: [ChatGPT API]
   adaptation: ''

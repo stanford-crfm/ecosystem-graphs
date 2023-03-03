@@ -8,7 +8,7 @@
     Viable analyzes qualitative consumer feedback and provides summary feedback
     to companies.
   created_date:
-    value: 2021
+    value: Unknown
   url: https://www.askviable.com/
   # Construction
   dependencies: [OpenAI API]

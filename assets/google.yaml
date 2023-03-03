@@ -969,7 +969,8 @@
   name: Flan-UL2
   organization: Google
   description: ''
-  created_date: 2023-03-02
+  created_date:
+    value: 2023-03-02
   url: https://arxiv.org/abs/2205.05131
   model_card: ''
   modality: Text
@@ -991,7 +992,8 @@
   name: Flan Collection
   organization: Google
   description: ''
-  created_date: 2023-01-31
+  created_date:
+    value: 2023-01-31
   url: https://arxiv.org/abs/2301.13688
   datasheet: ''
   modality: Text
@@ -1013,7 +1015,8 @@
   name: MusicLM
   organization: Google
   description: ''
-  created_date: 2023-01-26
+  created_date:
+    value: 2023-01-26
   url: https://arxiv.org/pdf/2301.11325.pdf
   model_card: ''
   modality: Audio (music), text
@@ -1040,7 +1043,8 @@
   name: SoundStream
   organization: Google
   description: ''
-  created_date: 2023-01-26
+  created_date:
+    value: 2023-01-26
   url: https://arxiv.org/pdf/2301.11325.pdf
   model_card: ''
   modality: Audio (music)
@@ -1062,7 +1066,8 @@
   name: w2v-BERT
   organization: Google
   description: ''
-  created_date: 2023-01-26
+  created_date:
+    value: 2023-01-26
   url: https://arxiv.org/pdf/2301.11325.pdf
   model_card: ''
   modality: Audio (music)
@@ -1084,7 +1089,8 @@
   name: MuLan
   organization: Google
   description: ''
-  created_date: 2022-08-26
+  created_date:
+    value: 2022-08-26
   url: https://arxiv.org/abs/2208.12415
   model_card: ''
   modality: Audio (music), text
@@ -1106,7 +1112,8 @@
   name: MuLan dataset
   organization: Google
   description: ''
-  created_date: 2022-08-26
+  created_date:
+    value: 2022-08-26
   url: https://arxiv.org/abs/2208.12415
   datasheet: ''
   modality: Audio (music), text
@@ -1128,7 +1135,8 @@
   name: MusicLM dataset
   organization: Google
   description: ''
-  created_date: 2023-01-26
+  created_date:
+    value: 2023-01-26
   url: https://arxiv.org/pdf/2301.11325.pdf
   datasheet: ''
   modality: Audio (music)
@@ -1150,7 +1158,8 @@
   name: MusicLM semantic model
   organization: Google
   description: ''
-  created_date: 2023-01-26
+  created_date:
+    value: 2023-01-26
   url: https://arxiv.org/pdf/2301.11325.pdf
   model_card: ''
   modality: Audio (music)
@@ -1172,7 +1181,8 @@
   name: MusicLM acoustive model
   organization: Google
   description: ''
-  created_date: 2023-01-26
+  created_date:
+    value: 2023-01-26
   url: https://arxiv.org/pdf/2301.11325.pdf
   model_card: ''
   modality: Audio (music)
@@ -1194,7 +1204,8 @@
   name: Noise2Music
   organization: Google
   description: ''
-  created_date: 2023-02-08
+  created_date:
+    value: 2023-02-08
   url: https://google-research.github.io/noise2music/noise2music.pdf
   model_card: ''
   modality: Audio (music), text
@@ -1216,7 +1227,8 @@
   name: LaMDA-LF
   organization: Google
   description: ''
-  created_date: 2023-02-08
+  created_date:
+    value: 2023-02-08
   url: https://google-research.github.io/noise2music/noise2music.pdf
   datasheet: ''
   modality: Text
@@ -1238,7 +1250,8 @@
   name: Rater-LF
   organization: Google
   description: ''
-  created_date: 2023-02-08
+  created_date:
+    value: 2023-02-08
   url: https://google-research.github.io/noise2music/noise2music.pdf
   datasheet: ''
   modality: Text
@@ -1260,7 +1273,8 @@
   name: Rater-SF
   organization: Google
   description: ''
-  created_date: 2023-02-08
+  created_date:
+    value: 2023-02-08
   url: https://google-research.github.io/noise2music/noise2music.pdf
   datasheet: ''
   modality: Text
@@ -1282,7 +1296,8 @@
   name: Noise2Music pseudolabeler
   organization: Google
   description: ''
-  created_date: 2023-02-08
+  created_date:
+    value: 2023-02-08
   url: https://google-research.github.io/noise2music/noise2music.pdf
   model_card: ''
   modality: Audio (music), text
@@ -1304,7 +1319,8 @@
   name: Noise2Music audio dataset
   organization: Google
   description: ''
-  created_date: 2023-02-08
+  created_date:
+    value: 2023-02-08
   url: https://google-research.github.io/noise2music/noise2music.pdf
   datasheet: ''
   modality: Audio (music)
@@ -1326,7 +1342,8 @@
   name: Noise2Music pseudolabel dataset
   organization: Google
   description: ''
-  created_date: 2023-02-08
+  created_date:
+    value: 2023-02-08
   url: https://google-research.github.io/noise2music/noise2music.pdf
   datasheet: ''
   modality: Audio (music), text
@@ -1349,7 +1366,8 @@
   organization: Google
   description: AI Test Kitchen provides a new way for people to learn about, experience,
     and give feedback on emerging AI technology, like LaMDA.
-  created_date: 2022-08-25
+  created_date:
+    value: 2022-08-25
   url: https://blog.google/technology/ai/join-us-in-the-ai-test-kitchen/
   dependencies: [LaMDA]
   adaptation: ''
@@ -1370,7 +1388,8 @@
   name: Bard
   organization: Google
   description: Conversational AI service, powered by LaMDA
-  created_date: 2023-02-06
+  created_date:
+    value: 2023-02-06
   url: https://blog.google/technology/ai/bard-google-ai-search-updates/
   dependencies: [LaMDA]
   adaptation: ''
@@ -1391,7 +1410,8 @@
   name: Minerva
   organization: Google
   description: ''
-  created_date: 2022-06-29
+  created_date:
+    value: 2022-06-29
   url: https://arxiv.org/abs/2206.14858
   model_card: ''
   modality: Text
@@ -1417,7 +1437,8 @@
   name: Minerva Math Web Pages dataset
   organization: Google
   description: ''
-  created_date: 2022-06-29
+  created_date:
+    value: 2022-06-29
   url: https://arxiv.org/abs/2206.14858
   datasheet: ''
   modality: Text

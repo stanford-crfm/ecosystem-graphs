@@ -1228,7 +1228,8 @@
   name: ChatGPT
   organization: OpenAI
   description: ChatGPT is an artificial intelligence chatbot developed by OpenAI
-  created_date: 2022-11-30
+  created_date:
+    value: 2022-11-30
   url: https://openai.com/blog/chatgpt
   dependencies: [gpt-3.5-turbo, OpenAI toxicity classifier]
   adaptation: ''
@@ -1249,7 +1250,8 @@
   name: gpt-3.5-turbo
   organization: OpenAI
   description: ''
-  created_date: 2023-03-01
+  created_date:
+    value: 2023-03-01
   url: https://platform.openai.com/docs/models/gpt-3-5
   model_card: ''
   modality: Text
@@ -1271,7 +1273,8 @@
   name: gpt-3.5-turbo datatset
   organization: OpenAI
   description: ''
-  created_date: 2023-03-01
+  created_date:
+    value: 2023-03-01
   url: https://platform.openai.com/docs/models/gpt-3-5
   datasheet: ''
   modality: Text
@@ -1293,7 +1296,8 @@
   name: code-davinci-002 dataset
   organization: OpenAI
   description: ''
-  created_date: 2022-05-01
+  created_date:
+    value: 2022-05-01
   url: https://platform.openai.com/docs/model-index-for-researchers
   datasheet: ''
   modality: Code, Text
@@ -1315,7 +1319,8 @@
   name: code-davinci-002
   organization: OpenAI
   description: ''
-  created_date: 2022-05-01
+  created_date:
+    value: 2022-05-01
   url: https://platform.openai.com/docs/model-index-for-researchers
   model_card: ''
   modality: Code, Text
@@ -1337,7 +1342,8 @@
   name: text-davinci-002
   organization: OpenAI
   description: ''
-  created_date: 2022-05-01
+  created_date:
+    value: 2022-05-01
   url: https://platform.openai.com/docs/model-index-for-researchers
   model_card: ''
   modality: Text
@@ -1359,7 +1365,8 @@
   name: text-davinci-003
   organization: OpenAI
   description: ''
-  created_date: 2022-11-30
+  created_date:
+    value: 2022-11-30
   url: https://platform.openai.com/docs/model-index-for-researchers
   model_card: ''
   modality: Text
@@ -1381,7 +1388,8 @@
   name: WhisperAPI
   organization: OpenAI
   description: API to query OpenAI's Whisper model.
-  created_date: 2023-03-01
+  created_date:
+    value: 2023-03-01
   url: https://openai.com/blog/introducing-chatgpt-and-whisper-apis
   dependencies: [Whisper]
   adaptation: ''
@@ -1402,7 +1410,8 @@
   name: ChatGPT API
   organization: OpenAI
   description: API to query OpenAI's ChatGPT model.
-  created_date: 2023-03-01
+  created_date:
+    value: 2023-03-01
   url: https://openai.com/blog/introducing-chatgpt-and-whisper-apis
   dependencies: [gpt-3.5-turbo]
   adaptation: ''
@@ -1425,7 +1434,8 @@
   description: This endpoint provides OpenAI API developers with free access to
     GPT-based classifiers that detect undesired content—an instance of using AI
     systems to assist with human supervision of these systems.
-  created_date: 2022-08-10
+  created_date:
+    value: 2022-08-10
   url: https://openai.com/blog/new-and-improved-content-moderation-tooling
   dependencies: [OpenAI toxicity model]
   adaptation: ''
@@ -1446,7 +1456,8 @@
   name: OpenAI toxicity classifier
   organization: OpenAI
   description: ''
-  created_date: 2023-01-18
+  created_date:
+    value: 2023-01-18
   url: https://time.com/6247678/openai-chatgpt-kenya-workers/#:~:text=In%20a%20statement%2C%20an%20OpenAI,datasets%20of%20tools%20like%20ChatGPT.
   model_card: ''
   modality: Text
@@ -1468,7 +1479,8 @@
   name: OpenAI toxicity dataset
   organization: OpenAI
   description: ''
-  created_date: 2023-01-18
+  created_date:
+    value: 2023-01-18
   url: https://time.com/6247678/openai-chatgpt-kenya-workers/#:~:text=In%20a%20statement%2C%20an%20OpenAI,datasets%20of%20tools%20like%20ChatGPT.
   datasheet: ''
   modality: Text

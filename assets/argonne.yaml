@@ -4,7 +4,8 @@
   name: GenSLM
   organization: Argonne National Laboratory
   description: ''
-  created_date: 2022-10-11
+  created_date:
+    value: 2022-10-11
   url: https://www.biorxiv.org/content/10.1101/2022.10.10.511571v1
   model_card: ''
   modality: Genome sequences

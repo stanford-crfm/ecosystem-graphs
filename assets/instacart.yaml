@@ -9,7 +9,8 @@
     locations to help customers discover ideas for open-ended shopping goals, such
     as “How do I make great fish tacos?” or “What’s a healthy lunch for my kids?”
     Instacart plans to launch “Ask Instacart” later this year.
-  created_date: 2023-03-01
+  created_date:
+    value: 2023-03-01
   url: https://openai.com/blog/introducing-chatgpt-and-whisper-apis
   dependencies: [ChatGPT API]
   adaptation: ''

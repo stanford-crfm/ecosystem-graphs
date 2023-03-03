@@ -57,7 +57,8 @@
   name: VIMA dataset
   organization: NVIDIA, Stanford
   description: ''
-  created_date: 2022-10-06
+  created_date:
+    value: 2022-10-06
   url: https://vimalabs.github.io/
   datasheet: ''
   modality: Text, Image
@@ -79,7 +80,8 @@
   name: VIMA
   organization: NVIDIA, Stanford
   description: ''
-  created_date: 2022-10-06
+  created_date:
+    value: 2022-10-06
   url: https://vimalabs.github.io/
   model_card: ''
   modality: Simulation

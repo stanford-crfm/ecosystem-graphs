@@ -223,7 +223,8 @@
   name: BioGPT
   organization: Microsoft
   description: ''
-  created_date: 2022-09-24
+  created_date:
+    value: 2022-09-24
   url: https://academic.oup.com/bib/article/23/6/bbac409/6713511?guestAccessKey=a66d9b5d-4f83-4017-bb52-405815c907b9&login=true
   model_card: ''
   modality: Text
@@ -249,7 +250,8 @@
     the latest technologies, powered by OpenAI’s GPT-3.5, to make meetings more
     intelligent, personalized, and protected—whether it’s one-on-one, large meetings,
     virtual appointments, or webinars.
-  created_date: 2023-02-01
+  created_date:
+    value: 2023-02-01
   url: https://www.microsoft.com/en-us/microsoft-365/blog/2023/02/01/microsoft-teams-premium-cut-costs-and-add-ai-powered-productivity/
   dependencies: [ChatGPT API]
   adaptation: ''
@@ -273,7 +275,8 @@
     now at Bing.com, to deliver better search, more complete answers, a new chat
     experience and the ability to generate content. We think of these tools as an
     AI copilot for the web.
-  created_date: 2023-02-07
+  created_date:
+    value: 2023-02-07
   url: https://blogs.microsoft.com/blog/2023/02/07/reinventing-search-with-a-new-ai-powered-microsoft-bing-and-edge-your-copilot-for-the-web/
   dependencies: [ChatGPT API]
   adaptation: ''

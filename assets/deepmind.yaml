@@ -791,7 +791,8 @@
   name: Dramatron
   organization: DeepMind
   description: ''
-  created_date: 2022-09-29
+  created_date:
+    value: 2022-09-29
   url: https://arxiv.org/abs/2209.14958
   model_card: ''
   modality: Text

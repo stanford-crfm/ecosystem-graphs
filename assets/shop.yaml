@@ -7,7 +7,8 @@
     recommendations based on their requests. Shop’s new AI-powered shopping assistant
     will streamline in-app shopping by scanning millions of products to quickly
     find what buyers are looking for—or help them discover something new.
-  created_date: 2023-03-01
+  created_date:
+    value: 2023-03-01
   url: https://openai.com/blog/introducing-chatgpt-and-whisper-apis
   dependencies: [ChatGPT API]
   adaptation: ''
