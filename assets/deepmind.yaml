@@ -786,3 +786,25 @@
   prohibited_uses: ''
   monitoring: ''
   feedback: ''
+
+- type: model
+  name: Dramatron
+  organization: DeepMind
+  description: ''
+  created_date: 2022-09-29
+  url: https://arxiv.org/abs/2209.14958
+  model_card: ''
+  modality: Text
+  analysis: ''
+  size: 70B parameters (dense model)
+  dependencies: [Chinchilla]
+  training_emissions: ''
+  training_time: ''
+  training_hardware: ''
+  quality_control: ''
+  access: Closed
+  license: Unknown
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
