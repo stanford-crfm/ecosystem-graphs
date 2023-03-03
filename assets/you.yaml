@@ -1,0 +1,66 @@
+---
+
+- type: dataset
+  name: You dataset
+  organization: You
+  description: ''
+  created_date: Unknown
+  url: https://you.com/
+  datasheet: ''
+  modality: Text
+  size: Unknown
+  sample: ''
+  analysis: ''
+  dependencies: []
+  included: ''
+  excluded: ''
+  quality_control: ''
+  access: Closed
+  license: Unknown
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+
+- type: model
+  name: You model
+  organization: You
+  description: ''
+  created_date: Unknown
+  url: https://you.com/
+  model_card: ''
+  modality: Text
+  analysis: ''
+  size: Unknown
+  dependencies: [You dataset]
+  training_emissions: ''
+  training_time: ''
+  training_hardware: ''
+  quality_control: ''
+  access: Closed
+  license: Unknown
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+
+- type: application
+  name: You Search
+  organization: You
+  description: You.com is a search engine built on artificial intelligence that provides users with a customized search experience while keeping their data 100% private.
+  created_date: Unknown
+  url: https://you.com/
+  dependencies: [You model]
+  adaptation: ''
+  output_space: ''
+  quality_control: ''
+  access: Open
+  license: ''
+  terms_of_service: ''
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+  monthly_active_users: ''
+  user_distribution: ''
+  failures: ''
