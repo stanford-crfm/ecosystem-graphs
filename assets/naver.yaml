@@ -19,7 +19,7 @@
   training_hardware: 1024 A100 GPUs
   quality_control: ''
   access:
-    value: No public access
+    value: Closed
     explanation: The model is not available for download or direct API use
   license: Unknown
   intended_uses: ''

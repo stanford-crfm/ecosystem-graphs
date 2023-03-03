@@ -679,6 +679,7 @@ function renderNavBar() {
 function loadAssetsAndRenderPageContent() {
 
   const paths = [
+    'assets/ai2.yaml',
     'assets/ai21.yaml',
     'assets/aleph_alpha.yaml',
     'assets/anthropic.yaml',
@@ -696,6 +697,7 @@ function loadAssetsAndRenderPageContent() {
     'assets/nvidia.yaml',
     'assets/openai.yaml',
     'assets/salesforce.yaml',
+    'assets/shanghai.yaml',
     'assets/stability.yaml',
     'assets/tsinghua.yaml',
     'assets/yandex.yaml',

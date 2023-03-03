@@ -23,7 +23,7 @@
     details on data processing and how the tokenizer was trained are provided in
     the paper.
   access:
-    value: Full public access
+    value: Open
     explanation: Model checkpoints are available for download at https://github.com/VHellendoorn/Code-LMs
   license:
     value: MIT

@@ -18,13 +18,13 @@
     - COCO
     - Visual Genome
     - Wikipedia
-    - BookCorpus
+    - BooksCorpus
   training_emissions: ''
   training_time: ''
   training_hardware: ''
   quality_control: ''
   access:
-    value: No public access
+    value: Closed
     explanation: Microsoft does not provide VLMo to external researchers. One author
       commented that code would be pushed "soon" in [[November of 2021]](https://github.com/microsoft/unilm/issues/532),
       but the repository does not contain relevant changes.
@@ -54,7 +54,7 @@
   training_hardware: 256 A100
   quality_control: ''
   access:
-    value: Limited public access
+    value: Limited
     explanation: Manual approval through early access request form required.
   license: Unknown
   intended_uses: ''
@@ -80,7 +80,7 @@
   training_hardware: ''
   quality_control: ''
   access:
-    value: Limited public access
+    value: Limited
     explanation: Manual approval through early access request form required.
   license: Unknown
   intended_uses: ''
@@ -107,7 +107,7 @@
   training_hardware: 4480 A100s (560 x 8)
   quality_control: ''
   access:
-    value: Limited public access
+    value: Limited
     explanation: Megatron-Turing NLG can be accessed through the [[Turing Academic
       Program]](https://www.microsoft.com/en-us/research/collaboration/microsoft-turing-academic-program/)
   license:
@@ -137,7 +137,7 @@
   training_hardware: 16 V100 32GB GPUs
   quality_control: ''
   access:
-    value: No public access
+    value: Closed
     explanation: Microsoft does not provide public access to VALL-E
   license:
     value: Unknown
@@ -180,7 +180,7 @@
       [[GitHub CoPilot]](https://copilot.github.com/).
   # Downstream
   access:
-    value: Limited public access
+    value: Limited
     explanation: >
       The feature is available to developers in a restricted
       technical preview

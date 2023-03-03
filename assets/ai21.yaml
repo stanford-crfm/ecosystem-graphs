@@ -29,7 +29,7 @@
     value: None
     explanation: No quality control is provided in the paper.
   # Downstream
-  access: No public access
+  access: Closed
   intended_uses: Unknown
   prohibited_uses:
     value: None
@@ -60,7 +60,7 @@
   excluded: Unknown
   quality_control: Unknown
   # Downstream
-  access: No public access
+  access: Closed
   intended_uses: Unknown
   prohibited_uses: Unknown
   monitoring: None
@@ -96,7 +96,7 @@
     explanation: Training details from [the paper](https://uploads-ssl.webflow.com/60fd4503684b466578c0d307/61138924626a6981ee09caf6_jurassic_tech_paper.pdf)
   quality_control: None
   access:
-    value: Limited public access
+    value: Limited
     explanation: Jurassic-1 is available through AI21's paid API.
   license: See [AI21 API Terms of Use](https://www.ai21.com/terms-of-use)
   intended_uses: Unknown
@@ -129,7 +129,7 @@
   training_hardware: Unknown
   quality_control: Unknown
   access:
-    value: Limited public access
+    value: Limited
     explanation: Jurassic-1 Instruct is available through AI21's paid API.
   license: See [AI21 API Terms of Use](https://www.ai21.com/terms-of-use)
   intended_uses: Jurassic-1 Instruct was trained specifically to handle instructions-only
@@ -167,7 +167,7 @@
   quality_control: Unknown
   # Downstream
   access:
-    value: Limited public access
+    value: Limited
   terms_of_service: https://www.ai21.com/terms-of-use
   license: See [AI21 API Terms of Use](https://www.ai21.com/terms-of-use)
   intended_uses: The intended uses are text completion, rewriting, and summarization.
@@ -205,7 +205,7 @@
   quality_control: Unknown
   # Downstream
   access:
-    value: Limited public access
+    value: Limited
   terms_of_service: https://www.ai21.com/terms-of-use
   license: See [AI21 API Terms of Use](https://www.ai21.com/terms-of-use)
   intended_uses: The intended uses are text completion, rewriting, and summarization.

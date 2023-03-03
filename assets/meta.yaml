@@ -24,7 +24,7 @@
     - SBU Captions
     - Localized Narratives
     - Visual Genome
-    - Wikipedia Image Textbooks
+    - Wikipedia
     - Conceptual Captions
     - Red Caps
   license: Unknown
@@ -33,7 +33,7 @@
     captions.
   quality_control: Beyond filtering mentioned in excluded, nothing further is done.
   # Downstream
-  access: No public access
+  access: Closed
   intended_uses: Unknown
   prohibited_uses: Unknown
   monitoring: None
@@ -63,7 +63,7 @@
   quality_control: FLAVA introduces a variety of new modeling techniques, specifically
     with an interest in improved text-image alignment through contrastive objectives.
   access:
-    value: Full public access
+    value: Open
     explanation: >
       Model checkpoints are available for download from the [[HuggingFace
       repository]](https://huggingface.co/facebook/flava-full)
@@ -107,7 +107,7 @@
   excluded: ''
   quality_control: ''
   # Downstream
-  access: No public access
+  access: Closed
   intended_uses: Unknown
   prohibited_uses: Unknown
   monitoring: None
@@ -133,7 +133,7 @@
     80GB nodes)
   quality_control: ''
   access:
-    value: Full public access
+    value: Open
     explanation: Model checkpoints freely available at https://github.com/paperswithcode/galai
   license:
     value: CC-BY NC 4.0
@@ -146,7 +146,7 @@
 
 - type: model
   name: InCoder
-  organization: CMU, Meta AI (FAIR), TTI-Chicago, UC Berkeley, University of Washington
+  organization: Meta, CMU, TTI-Chicago, UC Berkeley, University of Washington
   description: InCoder is a language model trained on code with a causal masking
     objective
   created_date:
@@ -163,8 +163,8 @@
   training_hardware: 248 V100 GPUs, according to [[the paper]](https://arxiv.org/pdf/2204.05999.pdf)
   quality_control: Unknown
   access:
-    value: Model weights are available via the [[HuggingFace repository]](https://huggingface.co/facebook/incoder-6B)
-    explanation: None
+    value: Open
+    explanation: Model weights are available via the [[HuggingFace repository]](https://huggingface.co/facebook/incoder-6B)
   license:
     value: CC-BY-NC 4.0
     explanation: The license is provided in the [[HuggingFace repository]](https://huggingface.co/facebook/incoder-6B?text=My+name+is+Lewis+and+I+like+to)
@@ -196,7 +196,7 @@
   training_hardware: Meta AI cluster. Trained on 992 80GB A100 GPUs
   quality_control: ''
   access:
-    value: Limited public access
+    value: Limited
     explanation: The 175B model requires manual approval from Meta to access. Other
       models are available through HuggingFace.
   license:
@@ -248,7 +248,7 @@
       The authors exclude NSFW, toxic, and likely watermarked data from LAION-5B.
   # Downstream
   access:
-    value: Limited public access
+    value: Limited
     explanation: >
       The datasets involved are public, but the full dataset is not directly available,
       nor are filtering scripts.
@@ -310,7 +310,7 @@
       filtering is done in producing the Make-A-Video dataset.
   # Downstream
   access:
-    value: No public access
+    value: Closed
     explanation: >
       The model has not been released; a form existed to potentially acquire access
       but is now closed as of 2022-12-07
@@ -336,3 +336,56 @@
     value: None
     explanation: >
       Authors do not mention or provide a feedback mechanism.
+
+- type: model
+  name: LLaMa
+  organization: Meta
+  description: ''
+  created_date:
+    value: 2023-02-24
+  url: https://arxiv.org/abs/2302.13971
+  model_card: ''
+  modality: Text
+  analysis: ''
+  size: 65B parameters (dense)
+  dependencies:
+    - CommonCrawl
+    - C4
+    - Github
+    - Wikipedia
+    - BooksCorpus
+    - arXiv
+    - StackExchange
+  training_emissions: ''
+  training_time: ''
+  training_hardware: ''
+  quality_control: ''
+  access: Open
+  license: LLaMa License (model weights), GPL-3.0 License (code)
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+
+- type: model
+  name: OPT-IML
+  organization: Meta
+  description: ''
+  created_date:
+    value: 2022-12-22
+  url: https://arxiv.org/abs/2212.12017
+  model_card: ''
+  modality: Text
+  analysis: ''
+  size: 175B parameters (dense)
+  dependencies: [OPT, OPT-IML Bench]
+  training_emissions: ''
+  training_time: ''
+  training_hardware: ''
+  quality_control: ''
+  access: Open
+  license: OPT Model License
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''

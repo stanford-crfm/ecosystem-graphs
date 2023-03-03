@@ -19,7 +19,7 @@
   training_time: ''
   training_hardware: Yandex 800 A100 Cluster
   quality_control: ''
-  access: Full public access
+  access: Open
   license:
     value: Apache 2.0
     explanation: ''

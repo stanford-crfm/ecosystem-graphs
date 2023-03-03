@@ -18,7 +18,7 @@
   training_hardware: Baidu V100 Cluster, PengCheng Lab Ascend 910 NPU cluster
   quality_control: None
   access:
-    value: No public access
+    value: Closed
     explanation: Baidu does not provide ERNIE 3.0 for external researchers
   license: Unknown
   intended_uses: Unknown
@@ -44,7 +44,7 @@
   training_hardware: Unknown
   quality_control: ''
   access:
-    value: Limited public access
+    value: Limited
     explanation: API access is available through PaddleHub. Instructions on [[Github
       repository]](https://github.com/PaddlePaddle/PaddleHub/blob/develop/modules/image/text_to_image/ernie_vilg/README.md)
   license:
@@ -74,7 +74,7 @@
   training_hardware: 320 A100 GPUs according to [[the paper]](https://arxiv.org/abs/2210.15257)
   quality_control: ''
   access:
-    value: No public access
+    value: Closed
     explanation: Baidu does not provide ERNIE-ViLG 2.0 to external researchers
   license: Unknown
   intended_uses: Unknown

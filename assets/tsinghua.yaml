@@ -19,7 +19,7 @@
   training_hardware: THUDM 1536 Ascend 910 (32GB) Cluster
   quality_control: None
   access:
-    value: Restricted
+    value: Limited
     explanation: Model weights are available but gated via an [[application form]](https://models.aminer.cn/codegeex/download/request)
   license:
     value: Apache 2.0
@@ -47,7 +47,7 @@
   training_hardware: ''
   quality_control: ''
   access:
-    value: Full public access
+    value: Open
     explanation: Model checkpoints available from [[Wudao-Wenhui]](https://resource.wudaoai.cn/home?ind=2&name=WuDao%20WenHui&id=1399364355975327744)
   license:
     value: Apache 2.0
@@ -76,7 +76,7 @@
   training_hardware: ''
   quality_control: ''
   access:
-    value: Full public access
+    value: Open
     explanation: The model checkpoints are available for download from [[BAAI]](https://model.baai.ac.cn/model-detail/100041)
   license:
     value: Apache 2.0
@@ -105,7 +105,7 @@
   training_hardware: ''
   quality_control: ''
   access:
-    value: Full public access
+    value: Open
     explanation: Model checkpoints are available for download from https://github.com/THUDM/CogVideo
   license:
     value: Apache 2.0
@@ -139,7 +139,7 @@
   training_hardware: THUDM 96 DGX-A100 (40G) cluster
   quality_control: ''
   access:
-    value: Full public access
+    value: Open
     explanation: Model checkpoints are available from the [[GitHub repository]](https://github.com/THUDM/GLM-130B/blob/main/MODEL_LICENSE)
   license:
     value: GLM-130B License

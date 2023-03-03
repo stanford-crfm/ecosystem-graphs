@@ -296,7 +296,7 @@
     [[Appendix D]](https://arxiv.org/pdf/2204.05862.pdf#appendix.D).
   # Downstream
   access:
-    value: Full public access
+    value: Open
     explanation: >
       The dataset is freely shared on GitHub
       [[hh-rlhf]](https://github.com/anthropics/hh-rlhf).
@@ -359,7 +359,7 @@
     [[Appendix D]](https://arxiv.org/pdf/2204.05862.pdf#appendix.D).
   # Downstream
   access:
-    value: No public access
+    value: Closed
     explanation: >
       Unlike its helpfulness, this dataset isn't released
       [[hh-rlhf]](https://github.com/anthropics/hh-rlhf).
@@ -446,7 +446,7 @@
     Unknown
   # Downstream
   access:
-    value: No public access
+    value: Closed
     explanation: >
       The model wasn't released.
   license:
@@ -499,7 +499,7 @@
   quality_control: Unknown
   # Downstream
   access:
-    value: No public access
+    value: Closed
     explanation: >
       The interface was made available to a select set of crowd workers.
   terms_of_service:

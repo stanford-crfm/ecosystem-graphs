@@ -18,7 +18,7 @@
   training_hardware: Unspecified Salesforce Compute (TPU-V4s)
   quality_control: ''
   access:
-    value: Full public access
+    value: Open
     explanation: Model weights are available for download with links in the [[GitHub
       repo]](https://github.com/salesforce/CodeGen)
   license:
