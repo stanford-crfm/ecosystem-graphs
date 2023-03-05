@@ -144,10 +144,10 @@ function compareValues(valueA, valueB, columnName) {
   }
 
   // Standardize the value
-  if (columnName === "created_date") {
+  if (columnName === "Created date") {
     valueA = Date.parse(valueA);
     valueB = Date.parse(valueB);
-  } else if (columnName === "size") {
+  } else if (columnName === "Size") {
     valueA = getStandardSize(valueA);
     valueB = getStandardSize(valueB);
   } 
@@ -209,16 +209,16 @@ function filterTable(query) {
   }
 }
 
-function sortColumn(columnName, index) {
+function sortColumn(columnName) {
+  // Get the index for the column
+  const headerRow = $('tr').slice(0)[0];
+  const index = headerRow.innerText.split('\t').indexOf(columnName);
 
   // Get the current direction
   const direction = globalThis.tableDirections[index] || 'desc';
 
   // A factor based on the direction
   const multiplier = (direction === 'asc') ? 1 : -1;
-
-  // Get body
-  const tbody = $('tbody');
 
   // Get rows
   const rows = $('tr').slice(1); // Skip the header row
@@ -240,7 +240,8 @@ function sortColumn(columnName, index) {
     newTBody.append(row);
   });
 
-  // Replace the tbody
+  // Replace the table body with the newly created table body
+  const tbody = $('tbody');
   tbody.replaceWith(newTBody);
 
   // Reverse the direction
@@ -378,8 +379,9 @@ function renderCustomTable(selectedAssets, allNameToAsset, columnNames) {
   const $headRow = $('<tr>');
   // Add column names
   columnNames.forEach((columnName, index) => {
-    const onclickString = 'sortColumn(\'' + columnName + '\', ' + index + ')';
-    $headRow.append($('<th>', {onClick: onclickString}).append(renderFieldName(columnName)));
+    const renderedName = renderFieldName(columnName);
+    const onclickString = 'sortColumn(\'' + renderedName + '\')';
+    $headRow.append($('<th>', {onClick: onclickString}).append(renderedName));
   });
   $thead.append($headRow);
   $table.append($thead);
@@ -582,8 +584,8 @@ function renderTablePage(pageContainer, nameToAsset) {
     tableContainer.append(table);
     $(".field-explanation").toggle();
     // Sort by created_date, name
-    sortColumn("name", 0);  // TODO: We should infer the index
-    sortColumn("created_date", 3);  // TODO: We should infer the index
+    sortColumn("Name");
+    sortColumn("Created date");
   });
 
 }
