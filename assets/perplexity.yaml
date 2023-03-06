@@ -74,7 +74,7 @@
   created_date:
     value: 2022-12-15
   url: https://www.perplexity.ai/sql
-  dependencies: [Perplexity Search, OpenAI API]
+  dependencies: [Perplexity Ask, OpenAI API]
   adaptation: ''
   output_space: ''
   quality_control: ''
