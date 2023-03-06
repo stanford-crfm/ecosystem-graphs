@@ -1257,7 +1257,7 @@
   modality: Text
   analysis: ''
   size: Unknown
-  dependencies: [gpt-3.5-turbo dataset, OpenAI toxicity model]
+  dependencies: [gpt-3.5-turbo dataset]
   training_emissions: ''
   training_time: ''
   training_hardware: ''
@@ -1270,7 +1270,7 @@
   feedback: ''
 
 - type: dataset
-  name: gpt-3.5-turbo datatset
+  name: gpt-3.5-turbo dataset
   organization: OpenAI
   description: ''
   created_date:
@@ -1413,7 +1413,7 @@
   created_date:
     value: 2023-03-01
   url: https://openai.com/blog/introducing-chatgpt-and-whisper-apis
-  dependencies: [gpt-3.5-turbo]
+  dependencies: [ChatGPT]
   adaptation: ''
   output_space: ''
   quality_control: ''
@@ -1437,7 +1437,7 @@
   created_date:
     value: 2022-08-10
   url: https://openai.com/blog/new-and-improved-content-moderation-tooling
-  dependencies: [OpenAI toxicity model]
+  dependencies: [OpenAI toxicity classifier]
   adaptation: ''
   output_space: ''
   quality_control: ''
