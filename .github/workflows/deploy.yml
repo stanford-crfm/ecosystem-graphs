@@ -16,7 +16,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
         with:
-          path: main
           fetch-depth: 0
 
       - name: Update the main branch of the website repository
