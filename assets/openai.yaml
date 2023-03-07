@@ -30,7 +30,8 @@
       analysis on the GPT-3 dataset, reporting the dirtiness of the dataset after
       the it was filtered for text occurring in common benchmarking tasks.
       The authors report that "as the dataset becomes more contaminated, the
-      variance of the clean/all fraction increases, but there is no apparent bias
+      variance of the clean over all fraction increases, but there is no apparent
+      bias
       towards improved or degraded performance"
       [[Appendix C]](https://arxiv.org/pdf/2005.14165.pdf#appendix.C).
   # Construction
@@ -63,14 +64,14 @@
       [[Appendix C]](https://arxiv.org/pdf/2005.14165.pdf#appendix.C).
   # Downstream
   access:
-    value: No public access
+    value: Closed
     explanation: >
       The GPT-3 dataset isn't released to the public, but it may be available
       to Microsoft through the GPT-3 licencing agreement between OpenAI and
       Microsoft [[OpenAI Blog Post]]
       (https://openai.com/blog/openai-licenses-gpt-3-technology-to-microsoft/).
   intended_uses:
-    value: The intended use of the GPT-3 dataset is to train large language models.
+    value: The intended use of the GPT-3 dataset is to train language models.
   prohibited_uses:
     value: Unknown
     explanation: >
@@ -116,11 +117,31 @@
   modality: Code (Python)
   size: 214 KB
   sample:
-    - "\n\ndef string_sequence(n: int) -> str:\n    \"\"\" Return a string containing space-delimited numbers starting from 0 upto n inclusive.\n    >>> string_sequence(0)\n    '0'\n    >>> string_sequence(5)\n    '0 1 2 3 4 5'\n    \"\"\"\n"
-    - "\n\ndef count_distinct_characters(string: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> count_distinct_characters('xyzXYZ')\n    3\n    >>> count_distinct_characters('Jerry')\n    4\n    \"\"\"\n"
-    - "from typing import List\n\n\ndef parse_music(music_string: str) -> List[int]:\n    \"\"\" Input to this function is a string representing musical notes in a special ASCII format.\n    Your task is to parse this string and return list of integers corresponding to how many beats does each\n    not last.\n\n    Here is a legend:\n    'o' - whole note, lasts four beats\n    'o|' - half note, lasts two beats\n    '.|' - quater note, lasts one beat\n\n    >>> parse_music('o o| .| o| o| .| .| .| .| o o')\n    [4, 2, 1, 2, 2, 1, 1, 1, 1, 4, 4]\n    \"\"\"\n"
-    - "\n\ndef how_many_times(string: str, substring: str) -> int:\n    \"\"\" Find how many times a given substring can be found in the original string. Count overlaping cases.\n    >>> how_many_times('', 'a')\n    0\n    >>> how_many_times('aaa', 'a')\n    3\n    >>> how_many_times('aaaa', 'aa')\n    3\n    \"\"\"\n"
-    - "from typing import List\n\n\ndef sort_numbers(numbers: str) -> str:\n    \"\"\" Input is a space-delimited string of numberals from 'zero' to 'nine'.\n    Valid choices are 'zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight' and 'nine'.\n    Return the string with numbers sorted from smallest to largest\n    >>> sort_numbers('three one five')\n    'one three five'\n    \"\"\"\n"
+    - "\n\ndef string_sequence(n: int) -> str:\n    \"\"\" Return a string containing\
+      \ space-delimited numbers starting from 0 upto n inclusive.\n    >>> string_sequence(0)\n\
+      \    '0'\n    >>> string_sequence(5)\n    '0 1 2 3 4 5'\n    \"\"\"\n"
+    - "\n\ndef count_distinct_characters(string: str) -> int:\n    \"\"\" Given\
+      \ a string, find out how many distinct characters (regardless of case) does\
+      \ it consist of\n    >>> count_distinct_characters('xyzXYZ')\n    3\n    >>>\
+      \ count_distinct_characters('Jerry')\n    4\n    \"\"\"\n"
+    - "from typing import List\n\n\ndef parse_music(music_string: str) -> List[int]:\n\
+      \    \"\"\" Input to this function is a string representing musical notes\
+      \ in a special ASCII format.\n    Your task is to parse this string and return\
+      \ list of integers corresponding to how many beats does each\n    not last.\n\
+      \n    Here is a legend:\n    'o' - whole note, lasts four beats\n    'o|'\
+      \ - half note, lasts two beats\n    '.|' - quater note, lasts one beat\n\n\
+      \    >>> parse_music('o o| .| o| o| .| .| .| .| o o')\n    [4, 2, 1, 2, 2,\
+      \ 1, 1, 1, 1, 4, 4]\n    \"\"\"\n"
+    - "\n\ndef how_many_times(string: str, substring: str) -> int:\n    \"\"\" Find\
+      \ how many times a given substring can be found in the original string. Count\
+      \ overlaping cases.\n    >>> how_many_times('', 'a')\n    0\n    >>> how_many_times('aaa',\
+      \ 'a')\n    3\n    >>> how_many_times('aaaa', 'aa')\n    3\n    \"\"\"\n"
+    - "from typing import List\n\n\ndef sort_numbers(numbers: str) -> str:\n   \
+      \ \"\"\" Input is a space-delimited string of numberals from 'zero' to 'nine'.\n\
+      \    Valid choices are 'zero', 'one', 'two', 'three', 'four', 'five', 'six',\
+      \ 'seven', 'eight' and 'nine'.\n    Return the string with numbers sorted\
+      \ from smallest to largest\n    >>> sort_numbers('three one five')\n    'one\
+      \ three five'\n    \"\"\"\n"
   analysis: None
   # Construction
   dependencies: []
@@ -138,7 +159,7 @@
       [[Section 2.2]](https://arxiv.org/pdf/2107.03374.pdf#subsection.2.2).
   # Downstream
   access:
-    value: Full public access
+    value: Open
     explanation: >
       HumanEval dataset is publicly available and comes
       with a an evaluation framework
@@ -172,9 +193,7 @@
   modality: Code
   size:
     value: 159 GB
-    explanation:
-      As reported by the authors
-      [[Section 3.1]](https://arxiv.org/pdf/2107.03374.pdf#subsection.3.1).
+    explanation: As reported by the authors [[Section 3.1]](https://arxiv.org/pdf/2107.03374.pdf#subsection.3.1).
   sample: []
   analysis:
     value: None
@@ -198,13 +217,13 @@
       field.
   # Downstream
   access:
-    value: No public access
+    value: Closed
     explanation: >
       The dataset might have been made available to Microsoft
       as part of OpenAI giving Microsoft access to its Codex model
       [GitHub Copilot](https://copilot.github.com/).
   intended_uses:
-    value: Training large language models on code.
+    value: Training language models on code.
   prohibited_uses:
     value: Unknown
   monitoring:
@@ -258,7 +277,7 @@
       [[Model Card]](https://github.com/openai/CLIP/blob/main/model-card.md).
   # Downstream
   access:
-    value: No public access
+    value: Closed
     explanation: The dataset wasn't released to the public.
   intended_uses:
     value: Training multimodal vision models.
@@ -321,7 +340,7 @@
       [[Appendix C]](https://arxiv.org/pdf/2102.12092.pdf#appendix.C).
   # Downstream
   access:
-    value: No public access
+    value: Closed
     explanation: The dataset wasn't released to the public.
   intended_uses:
     value: Training multimodal vision models.
@@ -335,39 +354,76 @@
     value: Unknown
     explanation: The feedback mechanisms in place are unknown.
 
-# Models
+- type: dataset
+  name: Whisper dataset
+  # General
+  organization: OpenAI
+  description: >
+    The Whisper dataset is the speech corpus that was used to train the Whisper
+    model. Information on the dataset is limited to discussion in the
+    paper introducing Whisper.
+    [[Section 2.1]](https://cdn.openai.com/papers/whisper.pdf).
+  created_date:
+    value: 2022-09-21
+    explanation: >
+      The date for the public announcement of Whisper. The
+      dataset didn't have a specific release date separate from the model
+      [[Open AI Blog Post]](https://openai.com/blog/whisper/).
+  url: https://cdn.openai.com/papers/whisper.pdf
+  datasheet:
+    value: None
+    explanation: No datasheet available as of 2022-12-07.
+  modality: Speech
+  size: 680k hours
+  sample: []
+  analysis:
+    value: >
+      The Whisper paper provides limited details on preprocessing.
+  # Construction
+  dependencies: []
+  license:
+    value: Unknown
+    explanation: >
+      There is no known license specific to the dataset.
+  included: >
+    The dataset is composed three major sources: multilingual speech recognition
+    (17%), translation (18%), and English speech recognition (65%).
+    [[Figure 11]](https://cdn.openai.com/papers/whisper.pdf).
+  excluded: >
+    Automated filtering was conducted.
+  quality_control:
+    value: >
+      In addition to filtering, basic text standardization was done.
+  # Downstream
+  access:
+    value: Closed
+    explanation: >
+      The dataset isn't released to the public.
+  intended_uses:
+    value: The intended use is to train speech models.
+  prohibited_uses:
+    value: None
+    explanation: >
+      No uses are explicitly prohibited.
+  monitoring:
+    value: None
+    explanation: >
+      There are no known (internal or external) monitoring mechanisms
+      that are in place for the use of the dataset as of 2022-12-07.
+  feedback:
+    value: Unknown
+    explanation: >
+      There are no known (internal or external) feedback mechanisms for
+      the dataset as of 2022-12-07.
 
-# - type: model
-#   name: GPT-2
-#   # General
-#   organization: OpenAI
-#   description: todo
-#   created_date: todo
-#   url: todo
-#   model_card: todo
-#   modality: todo
-#   size: todo
-#   analysis: todo
-#   # Construction
-#   dependencies: []
-#   training_emissions: todo
-#   training_time: todo
-#   training_hardware: todo
-#   quality_control: todo
-#   # Downstream
-#   access: todo
-#   license: todo
-#   intended_uses: todo
-#   prohibited_uses: todo
-#   monitoring: todo
-#   feedback: todo
+# Models
 
 - type: model
   name: GPT-3
   # General
   organization: OpenAI
   description: >
-    GPT-3 is an autoregressive large language model.
+    GPT-3 is an autoregressive language model.
   created_date:
     value: 2020-06-11
     explanation: >
@@ -392,8 +448,7 @@
       as well as on fairness and biases
       [[Section 6]](https://arxiv.org/pdf/2005.14165.pdf#section.6).
   # Construction
-  dependencies:
-    - GPT-3 dataset
+  dependencies: [GPT-3 dataset]
   training_emissions:
     value: 552.1 tCO2e
     explanation: >
@@ -430,7 +485,7 @@
       [[Section 6]](https://arxiv.org/pdf/2005.14165.pdf#section.6).
   # Downstream
   access:
-    value: Limited public access
+    value: Limited
     explanation: >
       The GPT-3 model isn't fully released to the public, but
       it was made available to Microsoft through the licencing agreement between
@@ -497,10 +552,7 @@
       BLEU scores
       [[Section 2]](https://arxiv.org/pdf/2107.03374.pdf#section.2).
   # Construction
-  dependencies:
-    - GPT-3
-    - Codex dataset
-    - HumanEval
+  dependencies: [GPT-3, Codex dataset, HumanEval]
   training_emissions:
     value: Unknown
     explanation: Authors do not report the training emissions.
@@ -526,7 +578,7 @@
       [[Section 7]](https://arxiv.org/pdf/2107.03374.pdf#section.7).
   # Downstream
   access:
-    value: Limited public access
+    value: Limited
     explanation: >
       The model is made available via the OpenAI API
       [[OpenAI API]](https://openai.com/api/). Full model access was granted to
@@ -578,9 +630,7 @@
       datasets spanning truthfulness, toxicity, and bias, question answering,
       reading comprehension, and summarization tasks.
   # Construction
-  dependencies:
-    - GPT-3
-    - OpenAI API
+  dependencies: [GPT-3, OpenAI API]
   training_emissions: >
     value: Unknown
     explanation: The authors do not estimate the emissions of the model.
@@ -597,7 +647,7 @@
     value: The model wasn't fully released to the public as a quality control measure.
   # Downstream
   access:
-    value: Limited public access
+    value: Limited
     explanation: >
       The model is made available via the OpenAI API
       [[OpenAI API]](https://openai.com/api/).
@@ -620,7 +670,8 @@
       [[Model Card]](https://github.com/openai/following-instructions-human-feedback/blob/main/model-card.md).
   prohibited_uses:
     value: >
-      Access to InstructGPT is governed by Open AI API Usage Guidelines and API Terms
+      Access to InstructGPT is governed by Open AI API Usage Guidelines and API
+      Terms
       of Use, prohibiting the use of the API in a way that causes societal harm.
       [[Usage Guidelines]]
       (https://beta.openai.com/docs/usage-guidelines/content-policy)
@@ -638,6 +689,74 @@
     value: >
       Email the authors
       [[InstructGPT Paper]](https://arxiv.org/pdf/2203.02155.pdf).
+
+- type: model
+  name: Whisper
+  # General
+  organization: OpenAI
+  description: >
+    GPT-3 is a speech recognition model.
+  created_date:
+    value: 2022-09-21
+    explanation: >
+      The date that Whisper was announced to the public
+      [[OpenAI Blog Post]](https://openai.com/blog/whisper/).
+  url: https://cdn.openai.com/papers/whisper.pdf
+  model_card: https://github.com/openai/whisper/blob/main/model-card.md
+  modality: Speech (multilingual, though primarily English)
+  size:
+    value: 1.5B parameters (dense model)
+    explanation: >
+      Whisper comes in several sizes (39M, 74M, 244M, 769M, 1.55B). Here we report
+      the size of the largest
+      model [[Table 1]](https://cdn.openai.com/papers/whisper.pdf).
+  analysis:
+    value: >
+      The model was evaluated for zero-shot English and multingual speech recognition,
+      translation, language identification and robustness to noise.
+  # Construction
+  dependencies: [Whisper dataset]
+  training_emissions:
+    value: Unknown
+    explanation: >
+      Authors do not report the training emissions.
+  training_time:
+    value: Unknown
+    explanation: >
+      Authors do not report the training time.
+  training_hardware:
+    value: Azure
+    explanation: >
+      The original paper doesn't specify the training hardware for Whisper,
+      but we expect it is trained on Azure given other models from OpenAI are trained
+      using Azure
+      [[Microsoft Blog Post]]
+      (https://blogs.microsoft.com/ai/openai-azure-supercomputer/).
+  quality_control:
+    value: >
+      No specific quality control methods are documented.
+  # Downstream
+  access:
+    value: Open
+    explanation: >
+      Models are available at [https://github.com/openai/whisper](https://github.com/openai/whisper).
+  license:
+    value: >
+      MIT License at [https://github.com/openai/whisper](https://github.com/openai/whisper).
+  intended_uses:
+    value: >
+      Whisper is a general-purpose speech recognition model; it is a multi-task
+      model that can perform multilingual speech recognition as well as speech translation
+      and language identification.
+  prohibited_uses:
+    value: Unknown
+  monitoring:
+    value: None
+    explanation: >
+      No monitoring is mentioned by the authors.
+  feedback:
+    value: The discussions page of the codebase is not formally cited as a place
+      for feedback, but is being used in this way [[Discussions page]](https://github.com/openai/whisper/discussions)
 
 - type: model
   name: CLIP
@@ -672,8 +791,7 @@
       The model was evaluated on standard vision datasets (e.g. CIFAR10, ImageNet)
       and showed robust state of the art results.
   # Construction
-  dependencies:
-    - CLIP dataset
+  dependencies: [CLIP dataset]
   training_emissions: >
     Unknown
   training_time:
@@ -721,7 +839,7 @@
       [[Section 7]](https://arxiv.org/pdf/2103.00020.pdf#section.7).
   # Downstream
   access:
-    value: Full public access
+    value: Open
     explanation: >
       Model checkpoints and the helper code can be accessed
       at the official CLIP repository
@@ -792,8 +910,7 @@
       caption when compared to the images generated by DF-GAN
       [[Section]](https://arxiv.org/pdf/2102.12092.pdf#section.3).
   # Construction
-  dependencies:
-    - DALL·E dataset
+  dependencies: [DALL·E dataset]
   training_emissions:
     value: Unknown
     explanation: The training emissions were not reported.
@@ -806,7 +923,7 @@
     value: Unknown
   # Downstream
   access:
-    value: No public access
+    value: Closed
   license:
     value: Unknown
     explanation: >
@@ -828,6 +945,39 @@
       Contact the paper author(s) specified on the paper
       [[Paper]](https://arxiv.org/pdf/2102.12092.pdf).
 
+
+- type: model
+  name: Jukebox
+  organization: OpenAI
+  description: Jukebox is a generate model that produces music
+  created_date:
+    value: 2020-04-30
+    explanation: The date the model paper was released
+  url: https://arxiv.org/abs/2005.00341
+  model_card:
+    value: None
+    explanation: No model card found as of 2023-01-09
+  modality: Audio (music)
+  size: 5B parameters
+  analysis: Evaluations in paper are primarily considering the fidelity and novelty
+    of samples from Jukebox.
+  dependencies: [Jukebox Dataset]
+  training_emissions: Unknown
+  training_time: 4 weeks
+  training_hardware: 510 V100s
+  quality_control: ''
+  access:
+    value: Open
+    explanation: The model can be downloaded from the [Github repository](https://github.com/openai/jukebox)
+  license:
+    value: Noncmmercial use license
+    explanation: >
+      The license is provided in the [Github repository](https://github.com/openai/jukebox).
+  intended_uses: ''
+  prohibited_uses: None
+  monitoring: None
+  feedback: None
+
 - type: model
   name: DALL·E 2
   # General
@@ -840,7 +990,7 @@
     The model wasn't fully released, but OpenAI released a version of the model
     (DALL·E 2 Preview) to a select group of testers.
   created_date:
-    value: 2022-04
+    value: 2022-04-13
     explanation: >
       OpenAI released in a blog post in April 2020
       [[OpenAI Blog Post]](https://openai.com/dall-e-2/).
@@ -858,9 +1008,7 @@
       [[Probes and Evaluations]]
       (https://github.com/openai/dalle-2-preview/blob/main/system-card.md#probes-and-evaluations).
   # Construction
-  dependencies:
-    - DALL·E dataset
-    - CLIP dataset
+  dependencies: [DALL·E dataset, CLIP dataset]
   training_emissions:
     value: Unknown
   training_time:
@@ -876,7 +1024,7 @@
       (https://github.com/openai/dalle-2-preview/blob/main/system-card.md#input-filters).
   # Downstream
   access:
-    value: Limited public access
+    value: Limited
     explanation: >
       The model is available to OpenAI employees, researchers, creatives
       and company friends. OpenAI opened a waitlist for DALL·E 2 access.
@@ -921,7 +1069,7 @@
   organization: OpenAI
   description: >
     OpenAI API is a general purpose "text in, text out" interface connecting
-    users with a suite of large language models. The API was initially released
+    users with a suite of language models. The API was initially released
     as a gateway to GPT-3, but it now supports access to other, more
     specialized OpenAI models.
     [[Open AI Blog Post]](https://openai.com/blog/openai-api/)
@@ -935,7 +1083,11 @@
   dependencies:
     - GPT-3
     - Codex
-    - InstructGPT
+    - code-davinci-002
+    - text-davinci-002
+    - text-davinci-003
+    - gpt-3.5-turbo
+    - Whisper
   adaptation: >
     Although initially started with GPT-3, soon after the API was made public,
     OpenAI deployed the InstructGPT models, and made them the default models on
@@ -959,7 +1111,7 @@
       [[OpenAI API]](https://openai.com/api/).
   # Downstream
   access:
-    value: Limited public access
+    value: Limited
     explanation: >
       The OpenAI API is available to the public in supported countries
       [[Supported Countries]](https://beta.openai.com/docs/supported-countries)
@@ -1026,210 +1178,322 @@
       There are no known documented failures of the OpenAI API at the
       time of writing.
 
-- type: application
-  name: Sana
-  # General
-  organization: Sana
-  description: >
-    "Sana is your all-in-one, AI-assisted, online learning platform (LMS).
-    Author employee training courses and measure team development with Sana's
-    powerful analytics. Sana partners with the world's most important
-    organizations and fastest-growing startups to make personalized, adaptive
-    learning available for everyone, everywhere"
-    [[Sana GPT-3 Demo]](https://gpt3demo.com/apps/sanalabs).
+- type: model
+  name: VPT
+  organization: OpenAI
+  description: ''
   created_date:
-    value: Unknown
-    explanation: >
-      The company was founded in 2016 according to
-      [[Crunchbase]](https://www.crunchbase.com/organization/sana-2). It is
-      unclear when Sana adapted the OpenAI API to their products.
-  url: https://www.sanalabs.com/
-  # Construction
-  dependencies:
-    - OpenAI API
-  adaptation: >
-    Customized GPT-3, fine-tuned on private data
-    [[Sana GPT-3 Demo]](https://gpt3demo.com/apps/sanalabs).
-  output_space: question and answer, summarization, sentiment analysis,topic identification
-  quality_control: Unknown
-  # Downstream
-  access: Limited public access
-  license: https://www.sanalabs.com/legal/
-  terms_of_service: https://www.sanalabs.com/legal/
-  intended_uses: >
-    Sana is intended to be used by employers to provide a learning service for
-    their employees.
-  prohibited_uses:
-    value: None
-    explanation: >
-      Sana provides an extensive set of legal documents
-      [[Sana Legal]](https://www.sanalabs.com/legal/), but missing from the
-      documents are prohibited uses of the Sana platform, beyond a mention of
-      what is impermissible under relevant law.
-  monitoring: Unknown
-  feedback: Unknown
-  # Deployment
-  monthly_active_users: Unknown
-  user_distribution: Unknown
-  failures: Unknown
+    value: 2022-06-23
+  url: https://arxiv.org/abs/2206.11795
+  model_card: ''
+  modality: Video
+  analysis: ''
+  size: 500M parameters (dense)
+  dependencies: [web_clean]
+  training_emissions: ''
+  training_time: ''
+  training_hardware: ''
+  quality_control: ''
+  access: Open
+  license: MIT License
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
 
-- type: application
-  name: Duolingo
-  # General
-  organization: Duolingo
-  description: >
-    Duolingo is a language learning application, helping users learn new
-    languagese through completing a series of activities. Duolingo uses
-    GPT-3 to provide French grammer correction
-    [[OpenAI API Use Cases]](https://openai.com/api/).
-  created_date: Unknown
-  url: https://www.duolingo.com/
-  # Construction
-  dependencies:
-    - OpenAI API
-  adaptation: Unknown
-  output_space: French grammar corrections
-  quality_control: Unknown
-  # Downstream
-  access: Limited public access
-  license:
-    value: Limited use license
-    explanation: >
-      License is granted to the useres to us the service, as outlined in the
-      'Registration; Submission of Content' section of the Terms
-      [[Terms]](https://www.duolingo.com/terms).
-  terms_of_service: https://www.duolingo.com/terms
-  intended_uses: >
-    Duolingo is intended to be used as a language learning app.
-  prohibited_uses: Unknown
-  monitoring: Unknown
-  feedback: >
-    Feedback can be provided at the help link in the contact page
-    [[Duolingo Contact]](https://www.duolingo.com/contact).
-  # Deployment
-  monthly_active_users:
-    value: 42 million (all languages)
-    explanation: >
-      The monthly active users as measured in 2021, reported by Statista
-      [[Source]](https://www.statista.com/statistics/1248008/duolingo-mau-worldwide/).
-  user_distribution: Unknown
-  failures: Unknown
-
-- type: application
-  name: Viable
-  # General
-  organization: Viable
-  description: >
-    Viable analyzes qualitative consumer feedback and provides summary feedback
-    to companies.
-  created_date: 2021
-  url: https://www.askviable.com/
-  # Construction
-  dependencies:
-    - OpenAI API
-  adaptation: Unknown
-  output_space: Question and answer, summarization, sentiment analysis, topic identification
-  quality_control: Unknown
-  # Downstream
-  access: Limited public access
-  license: Unknown
-  terms_of_service: https://www.askviable.com/terms-of-service
-  intended_uses: >
-    Intended to be used by companies to digest qualitative consumer feedback.
-  prohibited_uses: >
-    Prohibited uses are listed in the Terms of Service
-    [[Terms of Service]](https://www.askviable.com/terms-of-service).
-    The terms don't include statements specific to the use of the content
-    generated by the system or GPT-3.
-  monitoring: Unknown
-  feedback:
-    value: Unknown
-    explanation: >
-      The feedback mechanism isn't explicitly listed. Company contact
-      information is provided in the Terms of Service
-      [[Terms of Service]](https://www.askviable.com/terms-of-service).
-  # Deployment
-  monthly_active_users: Unknown
-  user_distribution: Unknown
-  failures: Unknown
-
-- type: application
-  name: HyperWrite
-  # General
-  organization: OthersideAI
-  description: >
-    HyperWrite is a writing assistant that generates text based on a user's
-    request, as well as style and tone choices.
-  created_date: Unknown
-  url: https://hyperwriteai.com/
-  # Construction
-  dependencies:
-    - OpenAI API
-  adaptation: Unknown
-  output_space: Generation
-  quality_control:
-    value: Unknown
-    explanation: >
-      There is a HyperWrite blog warning the users about the risks of writing
-      with an AI assistant, but the company doesn't list the quality control
-      measures taken to prevent the listed risks, if any
-      [[HyperWrite Blog]]
-      (https://blog.hyperwrite.ai/what-are-the-risks-of-ai-writing/).
-  # Downstream
-  access: Limited public access
-  license: https://hyperwriteai.com/terms
-  terms_of_service: https://hyperwriteai.com/terms
-  intended_uses: >
-    HyperWrite is intended to be used as a writing assistant.
-  prohibited_uses: Unknown
-  monitoring: Unknown
-  feedback: Unknown
-  # Deployment
-  monthly_active_users: Unknown
-  user_distribution: Unknown
-  failures: Unknown
-
-
-- type: application
-  name: Crisis Contact Simulator
-  # General
-  organization: The Trevor Project
-  description: >
-    Crisis Contact Simulator, developed as part of a collaboration with
-    Google.org, helps train The Trevor Project counselors by
-    mimicking to be a teen in crisis. Crisis Contact Simulator is used
-    as part of the training programs for the Trevor Project's 24/7 digital
-    crisis services that supports LGBTQ youth
-    [[Trevor Project Blog]](https://www.thetrevorproject.org/blog/the-trevor-project-launches-new-ai-tool-to-support-crisis-counselor-training/).
+- type: dataset
+  name: web_clean
+  organization: OpenAI
+  description: ''
   created_date:
-    value: 2021-03-24
-    explanation: >
-      The release date of the blog post introducing Crisis Contact Simulator
-      [[Trevor Project Blog]](https://www.thetrevorproject.org/blog/the-trevor-project-launches-new-ai-tool-to-support-crisis-counselor-training/).
-  url: https://www.thetrevorproject.org/
-  # Construction
-  dependencies: []  # @TODO This should be GPT-2
-  adaptation:
-    value: Fine-tuning
-    explanation: >
-      The base GPT-2 model was fine-tuned on the previous conversations between
-      new trainees and the Trevor Project counselors posing to be a fictional
-      persona in crisis.
-  output_space: Dialogue
-  quality_control:
-    value: Limited release
-    explanation: >
-      The tool can only be accessed by the Trevor Project will be counsolors
-      for training purposes.
-  # Downstream
-  access: No public access
+    value: 2022-06-23
+  url: https://arxiv.org/abs/2206.11795
+  datasheet: ''
+  modality: Video
+  size: 70k hours
+  sample: ''
+  analysis: ''
+  dependencies: []
+  included: ''
+  excluded: ''
+  quality_control: ''
+  access: Closed
   license: Unknown
-  terms_of_service: Unknown
-  intended_uses: Training counselors
-  prohibited_uses: Unknown
-  monitoring: Unknown
-  feedback: Unknown
-  # Deployment
-  monthly_active_users: Unknown
-  user_distribution: Unknown
-  failures: Unknown
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+
+- type: application
+  name: ChatGPT
+  organization: OpenAI
+  description: ChatGPT is an artificial intelligence chatbot developed by OpenAI
+  created_date:
+    value: 2022-11-30
+  url: https://openai.com/blog/chatgpt
+  dependencies: [gpt-3.5-turbo, OpenAI toxicity classifier]
+  adaptation: ''
+  output_space: ''
+  quality_control: ''
+  access: Open
+  license: ''
+  terms_of_service: ''
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+  monthly_active_users: ''
+  user_distribution: ''
+  failures: ''
+
+- type: model
+  name: gpt-3.5-turbo
+  organization: OpenAI
+  description: ''
+  created_date:
+    value: 2023-03-01
+  url: https://platform.openai.com/docs/models/gpt-3-5
+  model_card: ''
+  modality: Text
+  analysis: ''
+  size: Unknown
+  dependencies: [gpt-3.5-turbo dataset]
+  training_emissions: ''
+  training_time: ''
+  training_hardware: ''
+  quality_control: ''
+  access: Limited
+  license: ''
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+
+- type: dataset
+  name: gpt-3.5-turbo dataset
+  organization: OpenAI
+  description: ''
+  created_date:
+    value: 2023-03-01
+  url: https://platform.openai.com/docs/models/gpt-3-5
+  datasheet: ''
+  modality: Text
+  size: Unknown
+  sample: ''
+  analysis: ''
+  dependencies: []
+  included: ''
+  excluded: ''
+  quality_control: ''
+  access: Limited
+  license: ''
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+
+- type: dataset
+  name: code-davinci-002 dataset
+  organization: OpenAI
+  description: ''
+  created_date:
+    value: 2022-05-01
+  url: https://platform.openai.com/docs/model-index-for-researchers
+  datasheet: ''
+  modality: Code, Text
+  size: Unknown
+  sample: ''
+  analysis: ''
+  dependencies: []
+  included: ''
+  excluded: ''
+  quality_control: ''
+  access: Limited
+  license: ''
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+
+- type: model
+  name: code-davinci-002
+  organization: OpenAI
+  description: ''
+  created_date:
+    value: 2022-05-01
+  url: https://platform.openai.com/docs/model-index-for-researchers
+  model_card: ''
+  modality: Code, Text
+  analysis: ''
+  size: Unknown
+  dependencies: [code-davinci-002 dataset]
+  training_emissions: ''
+  training_time: ''
+  training_hardware: ''
+  quality_control: ''
+  access: Limited
+  license: ''
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+
+- type: model
+  name: text-davinci-002
+  organization: OpenAI
+  description: ''
+  created_date:
+    value: 2022-05-01
+  url: https://platform.openai.com/docs/model-index-for-researchers
+  model_card: ''
+  modality: Text
+  analysis: ''
+  size: Unknown
+  dependencies: [code-davinci-002]
+  training_emissions: ''
+  training_time: ''
+  training_hardware: ''
+  quality_control: ''
+  access: Limited
+  license: ''
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+
+- type: model
+  name: text-davinci-003
+  organization: OpenAI
+  description: ''
+  created_date:
+    value: 2022-11-30
+  url: https://platform.openai.com/docs/model-index-for-researchers
+  model_card: ''
+  modality: Text
+  analysis: ''
+  size: Unknown
+  dependencies: [text-davinci-002]
+  training_emissions: ''
+  training_time: ''
+  training_hardware: ''
+  quality_control: ''
+  access: Limited
+  license: ''
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+
+- type: application
+  name: WhisperAPI
+  organization: OpenAI
+  description: API to query OpenAI's Whisper model.
+  created_date:
+    value: 2023-03-01
+  url: https://openai.com/blog/introducing-chatgpt-and-whisper-apis
+  dependencies: [Whisper]
+  adaptation: ''
+  output_space: ''
+  quality_control: ''
+  access: Open
+  license: ''
+  terms_of_service: ''
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+  monthly_active_users: ''
+  user_distribution: ''
+  failures: ''
+
+- type: application
+  name: ChatGPT API
+  organization: OpenAI
+  description: API to query OpenAI's ChatGPT model.
+  created_date:
+    value: 2023-03-01
+  url: https://openai.com/blog/introducing-chatgpt-and-whisper-apis
+  dependencies: [ChatGPT]
+  adaptation: ''
+  output_space: ''
+  quality_control: ''
+  access: Open
+  license: ''
+  terms_of_service: ''
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+  monthly_active_users: ''
+  user_distribution: ''
+  failures: ''
+
+- type: application
+  name: OpenAI Moderation API
+  organization: OpenAI
+  description: This endpoint provides OpenAI API developers with free access to
+    GPT-based classifiers that detect undesired content—an instance of using AI
+    systems to assist with human supervision of these systems.
+  created_date:
+    value: 2022-08-10
+  url: https://openai.com/blog/new-and-improved-content-moderation-tooling
+  dependencies: [OpenAI toxicity classifier]
+  adaptation: ''
+  output_space: ''
+  quality_control: ''
+  access: Open
+  license: ''
+  terms_of_service: ''
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+  monthly_active_users: ''
+  user_distribution: ''
+  failures: ''
+
+- type: model
+  name: OpenAI toxicity classifier
+  organization: OpenAI
+  description: ''
+  created_date:
+    value: 2023-01-18
+  url: https://time.com/6247678/openai-chatgpt-kenya-workers/#:~:text=In%20a%20statement%2C%20an%20OpenAI,datasets%20of%20tools%20like%20ChatGPT.
+  model_card: ''
+  modality: Text
+  analysis: ''
+  size: Unknown
+  dependencies: [OpenAI toxicity dataset]
+  training_emissions: ''
+  training_time: ''
+  training_hardware: ''
+  quality_control: ''
+  access: Closed
+  license: Unknown
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+
+- type: dataset
+  name: OpenAI toxicity dataset
+  organization: OpenAI
+  description: ''
+  created_date:
+    value: 2023-01-18
+  url: https://time.com/6247678/openai-chatgpt-kenya-workers/#:~:text=In%20a%20statement%2C%20an%20OpenAI,datasets%20of%20tools%20like%20ChatGPT.
+  datasheet: ''
+  modality: Text
+  size: Unknown
+  sample: ''
+  analysis: ''
+  dependencies: []
+  included: ''
+  excluded: ''
+  quality_control: ''
+  access: Closed
+  license: Unknown
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''

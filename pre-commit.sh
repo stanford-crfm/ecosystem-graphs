@@ -11,16 +11,19 @@ fi
 venv/bin/pip install -r requirements.txt
 venv/bin/pip check
 
-# YAML style checks and linting
+# Run YAML formatter and linter.
 echo ""
-echo "Checking for YAML formatting."
+echo "Running yamlfix"
+venv/bin/yamlfix --config-file ./yamlfix.toml ./**/*.yaml
+echo ""
+echo "Checking for YAML formatting"
 venv/bin/yamllint . || (
-  echo ""
-  echo "YAML formatting failed. Fix the errors and run the check again."
+  echo "[-] YAML formatting failed. Fix the errors and run the check again."
   echo ""
   exit 1
 )
-echo "YAML formatting succeeded!"
+echo "[+] YAML formatting succeeded!"
 echo ""
 
-echo "Done."
+# Signal the end of the script.
+echo "Finished running pre-commit.sh"

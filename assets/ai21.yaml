@@ -1,33 +1,223 @@
 ---
 
-# Models
-
-
-- type: model
-  name: Jurassic-1
-  organization: AI21
+# Datasets
+- type: dataset
+  name: Jurassic-1 dataset
+  # General
+  organization: AI21 Labs
   description: >
-    Jurassic-1 is a family of autoregressive large language models (Jumbo and Large).
+    The dataset used to train the Jurassic-1 models, based on publicly available
+    data.
   created_date:
     value: 2021-08-11
     explanation: >
       The date the white paper was made public.
   url: https://uploads-ssl.webflow.com/60fd4503684b466578c0d307/61138924626a6981ee09caf6_jurassic_tech_paper.pdf
-  model_card: ''
+  datasheet: None
+  modality: Text
+  size: 300B tokens
+  sample: []
+  analysis:
+    value: None
+    explanation: No analysis is provided in the paper.
+  # Construction
+  dependencies: []
+  license: Unknown
+  included: Unknown
+  excluded: Unknown
+  quality_control:
+    value: None
+    explanation: No quality control is provided in the paper.
+  # Downstream
+  access: Closed
+  intended_uses: Unknown
+  prohibited_uses:
+    value: None
+    explanation: No uses are prohibited in the paper.
+  monitoring: None
+  feedback: None
+
+- type: dataset
+  name: Jurassic-1 Instruct dataset
+  # General
+  organization: AI21 Labs
+  description: >
+    The dataset used to instruction-tune the Jurassic-1 Instruct models.
+  created_date:
+    value: 2022-12-01
+    explanation: >
+      The date the model was [announced](https://docs.ai21.com/changelog/jurassic-1-instruct-is-now-available).
+  url: None
+  datasheet: None
+  modality: Text
+  size: Unknown
+  sample: []
+  analysis: Unknown
+  # Construction
+  dependencies: []
+  license: Unknown
+  included: Unknown
+  excluded: Unknown
+  quality_control: Unknown
+  # Downstream
+  access: Closed
+  intended_uses: Unknown
+  prohibited_uses: Unknown
+  monitoring: None
+  feedback: None
+
+# Models
+- type: model
+  name: Jurassic-1
+  organization: AI21 Labs
+  description: >
+    Jurassic-1 is a family of autoregressive language models (Large, Grande, Jumbo).
+  created_date:
+    value: 2021-08-11
+    explanation: >
+      The date the white paper was made public.
+  url: https://uploads-ssl.webflow.com/60fd4503684b466578c0d307/61138924626a6981ee09caf6_jurassic_tech_paper.pdf
+  model_card: None
   modality: Text (English)
-  size: 178B parameters (dense model)
-  analysis: ''
-  dependencies: >
-    n/a. training dataset not disclosed
-  training_emissions: ''
-  training_time: ''
-  training_hardware: "Over 800 [A100] GPUs over several months"
-  quality_control: ''
+  size:
+    value: 178B parameters (dense)
+    explanation: The model sizes are 7.5B (Large), 17B (Grande), and 178B (Jumbo).
+  analysis:
+    value: Evaluated on several standard benchmarks (e.g. ARC, BoolQ, HellaSwag,
+      RTE, Winogrande)
+    explanation: Results are reported in the [the paper](https://uploads-ssl.webflow.com/60fd4503684b466578c0d307/61138924626a6981ee09caf6_jurassic_tech_paper.pdf)
+  dependencies: [Jurassic-1 dataset]
+  training_emissions: Unknown
+  training_time:
+    value: Several months
+    explanation: Training details from [the paper](https://uploads-ssl.webflow.com/60fd4503684b466578c0d307/61138924626a6981ee09caf6_jurassic_tech_paper.pdf)
+  training_hardware:
+    value: Over 800 [A100] GPUs
+    explanation: Training details from [the paper](https://uploads-ssl.webflow.com/60fd4503684b466578c0d307/61138924626a6981ee09caf6_jurassic_tech_paper.pdf)
+  quality_control: None
   access:
-    value: Limited public access
+    value: Limited
     explanation: Jurassic-1 is available through AI21's paid API.
-  license: n/a
-  intended_uses: ''
-  prohibited_uses: ''
-  monitoring: ''
-  feedback: ''
+  license: See [AI21 API Terms of Use](https://www.ai21.com/terms-of-use)
+  intended_uses: Unknown
+  prohibited_uses:
+    value: Illegal activities, such as hate speech, gambling, child pornography
+      or violating intellectual property rights; Harassment, victimization, intimidation,
+      fraud or spam; Creation or dissemination of misinformation, promotion of self-harm,
+      glorification of violent events or incitement of violence.
+    explanation: https://docs.ai21.com/docs/responsible-use
+  monitoring: None
+  feedback: None
+
+- type: model
+  name: Jurassic-1 Instruct
+  organization: AI21 Labs
+  description: >
+    Jurassic-1 Instruct is an instruction-tuned autoregressive language model.
+  created_date:
+    value: 2022-12-01
+    explanation: >
+      The date the model was [announced](https://docs.ai21.com/changelog/jurassic-1-instruct-is-now-available).
+  url: https://docs.ai21.com/docs/jurassic-1-instruct-beta
+  model_card: None
+  modality: Text (English)
+  size: 17B parameters (dense)
+  analysis: None
+  dependencies: [Jurassic-1, Jurassic-1 Instruct dataset]
+  training_emissions: Unknown
+  training_time: Unknown
+  training_hardware: Unknown
+  quality_control: Unknown
+  access:
+    value: Limited
+    explanation: Jurassic-1 Instruct is available through AI21's paid API.
+  license: See [AI21 API Terms of Use](https://www.ai21.com/terms-of-use)
+  intended_uses: Jurassic-1 Instruct was trained specifically to handle instructions-only
+    prompts ("zero-shot") without examples ("few-shot"). It is the most natural
+    way to interact with language models, and it is the best way to get a sense
+    of the optimal output for your task without any examples.
+  prohibited_uses:
+    value: Illegal activities, such as hate speech, gambling, child pornography
+      or violating intellectual property rights; Harassment, victimization, intimidation,
+      fraud or spam; Creation or dissemination of misinformation, promotion of self-harm,
+      glorification of violent events or incitement of violence.
+    explanation: https://docs.ai21.com/docs/responsible-use
+  monitoring: None
+  feedback: None
+
+# Applications
+- type: application
+  name: AI21 Playground
+  # General
+  organization: AI21 Labs
+  description: The AI21 Labs Playground supports Complete, Rewrite, and Summarize
+    APIs based on a collection of language models.
+  created_date:
+    value: 2021-08-11
+    explanation: The date Jurassic-1 was made public.
+  url: https://studio.ai21.com/playground/
+  # Construction
+  dependencies: [Jurassic-1, Jurassic-1 Instruct]
+  adaptation: The Playground provides direct access to the language models (Complete
+    API) as well as wrapped for Rewrite and Summarize.
+  output_space:
+    value: text
+    explanation: The Playground supports different use cases that all involve text
+      generation.
+  quality_control: Unknown
+  # Downstream
+  access:
+    value: Limited
+  terms_of_service: https://www.ai21.com/terms-of-use
+  license: See [AI21 API Terms of Use](https://www.ai21.com/terms-of-use)
+  intended_uses: The intended uses are text completion, rewriting, and summarization.
+  prohibited_uses:
+    value: Illegal activities, such as hate speech, gambling, child pornography
+      or violating intellectual property rights; Harassment, victimization, intimidation,
+      fraud or spam; Creation or dissemination of misinformation, promotion of self-harm,
+      glorification of violent events or incitement of violence.
+    explanation: https://docs.ai21.com/docs/responsible-use
+  monitoring: Unknown
+  feedback: info@ai21.com
+  # Deployment
+  monthly_active_users: Unknown
+  user_distribution: Unknown
+  failures: Unknown
+
+- type: application
+  name: AI21 Playground
+  # General
+  organization: AI21 Labs
+  description: The AI21 Labs Playground supports Complete, Rewrite, and Summarize
+    APIs based on a collection of language models.
+  created_date:
+    value: 2021-08-11
+    explanation: The date Jurassic-1 was made public.
+  url: https://studio.ai21.com/playground/
+  # Construction
+  dependencies: [Jurassic-1, Jurassic-1 Instruct]
+  adaptation: The Playground provides direct access to the language models (Complete
+    API) as well as wrapped for Rewrite and Summarize.
+  output_space:
+    value: text
+    explanation: The Playground supports different use cases that all involve text
+      generation.
+  quality_control: Unknown
+  # Downstream
+  access:
+    value: Limited
+  terms_of_service: https://www.ai21.com/terms-of-use
+  license: See [AI21 API Terms of Use](https://www.ai21.com/terms-of-use)
+  intended_uses: The intended uses are text completion, rewriting, and summarization.
+  prohibited_uses:
+    value: Illegal activities, such as hate speech, gambling, child pornography
+      or violating intellectual property rights; Harassment, victimization, intimidation,
+      fraud or spam; Creation or dissemination of misinformation, promotion of self-harm,
+      glorification of violent events or incitement of violence.
+    explanation: https://docs.ai21.com/docs/responsible-use
+  monitoring: Unknown
+  feedback: info@ai21.com
+  # Deployment
+  monthly_active_users: Unknown
+  user_distribution: Unknown
+  failures: Unknown

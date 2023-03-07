@@ -126,26 +126,6 @@ function getStandardSize(value) {
   return value
 }
 
-function getCorrectedDate(value) {
-  if (!(value instanceof Date)) {
-    // Year case
-    value = String(value)
-    console.log(value);
-    if (value.length === 4) {
-      value = new Date(value, 1);
-    }
-    // Year and month
-    if (value.length === 7) {
-      const arr = value.split('-')
-      value = new Date(parseInt(arr[0]), parseInt(arr[1]));
-    // Default to oldest date
-    } else {
-      value = new Date(-8640000000000000)
-    }
-  }
-  return value;
-}
-
 function compareValues(valueA, valueB, columnName) {
   // Filter for unknown, null and todo values
   const genericValues = ["Unknown", "todo", null];
@@ -164,15 +144,14 @@ function compareValues(valueA, valueB, columnName) {
   }
 
   // Standardize the value
-  if (columnName === "created_date") {
-    valueA = getCorrectedDate(valueA);
-    valueB = getCorrectedDate(valueB);
-    return valueA - valueB;
-  } else if (columnName === "size") {
+  if (columnName === "Created date") {
+    valueA = Date.parse(valueA);
+    valueB = Date.parse(valueB);
+  } else if (columnName === "Size") {
     valueA = getStandardSize(valueA);
     valueB = getStandardSize(valueB);
   } 
-  // @TODO Decide how to sort the the "dependencies" column
+  // @TODO Decide how to sort the "dependencies" column
   
   // Compare the values
   if (valueA > valueB) {
@@ -196,13 +175,6 @@ function compareValues(valueA, valueB, columnName) {
 // });
 
 function filterTable(query) {
-
-  // // Get the current direction
-  // index = 0
-  // columnName = 'hi'
-
-  // // Get body
-  // const tbody = $('tbody');
 
   // Get rows
   const rows = $('tr').slice(1); // Skip the header row
@@ -235,41 +207,18 @@ function filterTable(query) {
 
     });
   }
-
-  // // Sort rows
-  // rows.sort((rowA, rowB) => {
-  //   const fvA = $(rowA).find("td .field-value")[index];
-  //   const fvB = $(rowB).find("td .field-value")[index];
-  //   const valueA = $(fvA).children()[0].innerHTML;
-  //   const valueB = $(fvB).children()[0].innerHTML;
-  //   return multiplier * compareValues(valueA, valueB, columnName);
-  // });
-
-  // // Create a new tbody
-  // const newTBody = $('<tbody>');
-
-  // // Append new rows
-  // [].forEach.call(rows, function (row) {
-  //   newTBody.append(row);
-  // });
-
-  // // Replace the tbody
-  // tbody.replaceWith(newTBody);
 }
 
-function sortColumn(columnName, index) {
+function sortColumn(columnName) {
+  // Get the index for the column
+  const headerRow = $('tr').slice(0)[0];
+  const index = headerRow.innerText.split('\t').indexOf(columnName);
 
   // Get the current direction
-  const direction = globalThis.tableDirections[index] || 'asc';
-
-
-  console.log(direction);
+  const direction = globalThis.tableDirections[index] || 'desc';
 
   // A factor based on the direction
   const multiplier = (direction === 'asc') ? 1 : -1;
-
-  // Get body
-  const tbody = $('tbody');
 
   // Get rows
   const rows = $('tr').slice(1); // Skip the header row
@@ -291,7 +240,8 @@ function sortColumn(columnName, index) {
     newTBody.append(row);
   });
 
-  // Replace the tbody
+  // Replace the table body with the newly created table body
+  const tbody = $('tbody');
   tbody.replaceWith(newTBody);
 
   // Reverse the direction
@@ -429,8 +379,9 @@ function renderCustomTable(selectedAssets, allNameToAsset, columnNames) {
   const $headRow = $('<tr>');
   // Add column names
   columnNames.forEach((columnName, index) => {
-    const onclickString = 'sortColumn(\'' + columnName + '\', ' + index + ')';
-    $headRow.append($('<th>', {onClick: onclickString}).append(renderFieldName(columnName)));
+    const renderedName = renderFieldName(columnName);
+    const onclickString = 'sortColumn(\'' + renderedName + '\')';
+    $headRow.append($('<th>', {onClick: onclickString}).append(renderedName));
   });
   $thead.append($headRow);
   $table.append($thead);
@@ -470,15 +421,15 @@ function renderCustomTable(selectedAssets, allNameToAsset, columnNames) {
 }
 
 function renderAssetsTable(nameToAsset) {
+  // Render the table
   const columnNames = [
     'type', 'name', 'organization', 'created_date', 'size', 'access',
     'dependencies',
   ];
-  const assets = Object.keys(nameToAsset)
-                       .sort((a, b) => compareValues(nameToAsset[b].fields.created_date.value, nameToAsset[a].fields.created_date.value, "created_date"))
-                       .map((key) => (nameToAsset[key]));
+  const assets = Object.keys(nameToAsset).map((key) => (nameToAsset[key]));
+  const $table = renderCustomTable(assets, nameToAsset, columnNames);
 
-  return renderCustomTable(assets, nameToAsset, columnNames);
+  return $table;
 }
 
 function renderAssetsGraph(nameToAsset) {
@@ -492,12 +443,14 @@ function renderAssetsGraph(nameToAsset) {
     'dataset': 'ellipse',
     'model': 'square',
     'application': 'hexagon',
+    'undocumented': 'ellipse',
   };
 
   const typeToColor = {
     'dataset': 'orange',
     'model': 'dodgerblue',
     'application': 'firebrick',
+    'undocumented': 'gray',
   };
 
   Object.values(nameToAsset).forEach((asset) => {
@@ -517,6 +470,24 @@ function renderAssetsGraph(nameToAsset) {
           target: asset.fields.name.value,
         },
       });
+    });
+  });
+
+  undocumentedDeps = Array.from(new Set(
+    edges.map(edge => edge.data.source)
+         .filter(dep => !(dep in nameToAsset))
+  )).sort();
+
+  console.log("The following dependencies are undocumented.");
+  console.log(undocumentedDeps);
+
+  undocumentedDeps.forEach(dep => {
+    nodes.push({
+      data: {
+        id: dep,
+        shape: typeToShape["undocumented"],
+        color: typeToColor["undocumented"],
+      },
     });
   });
 
@@ -612,6 +583,9 @@ function renderTablePage(pageContainer, nameToAsset) {
     const table = renderAssetsTable(nameToAsset);
     tableContainer.append(table);
     $(".field-explanation").toggle();
+    // Sort by created_date, name
+    sortColumn("Name");
+    sortColumn("Created date");
   });
 
 }
@@ -659,13 +633,43 @@ function renderNavBar() {
 function loadAssetsAndRenderPageContent() {
 
   const paths = [
+    'assets/ai2.yaml',
+    'assets/ai21.yaml',
+    'assets/aleph_alpha.yaml',
     'assets/anthropic.yaml',
+    'assets/argonne.yaml',
+    'assets/baidu.yaml',
+    'assets/bigscience.yaml',
+    'assets/cmu.yaml',
     'assets/cohere.yaml',
     'assets/deepmind.yaml',
+    'assets/duolingo.yaml',
     'assets/eleutherai.yaml',
     'assets/google.yaml',
+    'assets/huggingface.yaml',
+    'assets/instacart.yaml',
+    'assets/meta.yaml',
     'assets/microsoft.yaml',
+    'assets/naver.yaml',
+    'assets/neeva.yaml',
+    'assets/notion.yaml',
+    'assets/nvidia.yaml',
     'assets/openai.yaml',
+    'assets/othersideai.yaml',
+    'assets/perplexity.yaml',
+    'assets/quizlet.yaml',
+    'assets/salesforce.yaml',
+    'assets/sana.yaml',
+    'assets/shanghai.yaml',
+    'assets/shop.yaml',
+    'assets/snap.yaml',
+    'assets/speak.yaml',        
+    'assets/stability.yaml',
+    'assets/stanford.yaml',
+    'assets/trevor.yaml',  
+    'assets/tsinghua.yaml',
+    'assets/yandex.yaml',
+    'assets/you.yaml',
   ];
 
   $.get('js/schemas.yaml', {}, (response) => {

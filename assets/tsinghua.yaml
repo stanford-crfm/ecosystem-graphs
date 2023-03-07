@@ -1,69 +1,33 @@
 ---
 
 # models
-
-
-- type: model
-  name: GLM-130B
-  # General
-  organization: Tsinghua (THUDM)
-  description: GLM-130B is a 130B parameter bidirectional large language model trained on half English and half Chinese data.
-  created_date:
-    value: 2022-08-04
-    explanation: The date the model website was made public
-  url: https://keg.cs.tsinghua.edu.cn/glm-130b/
-  model_card: None found
-  modality: "Text (Chinese | English)"
-  size: 130B parameters (dense model)
-  analysis: ''
-  # Construction
-  dependencies: >
-    - Pile
-    - GLM-130B Chinese corpora
-    - TO++ finetuning dataset
-    - DeepStruct finetuning dataset
-  training_emissions: ''
-  training_time: ''
-  training_hardware: THUDM 96 DGX-A100 (40G) cluster
-  quality_control: ''
-  # Downstream
-  access: Full public access
-  license:
-    value: GLM-130B License
-    explanation: >
-      Unique model license. See https://github.com/THUDM/GLM-130B/blob/main/MODEL_LICENSE
-  intended_uses: ''
-  prohibited_uses: ''
-  monitoring: ''
-  feedback: ''
-
 - type: model
   name: CodeGeeX
-  organization: Tsinghua (THUDM)
-  description: CodeGeeX is an autoregressive large language model trained on code
+  organization: Tsinghua
+  description: CodeGeeX is an autoregressive language model trained on code
   created_date:
     value: 2022-09-20
     explanation: ''
   url: https://github.com/THUDM/CodeGeeX
-  model_card:
+  model_card: None
   modality: Code
-  analysis:
+  analysis: None
   size: 13B parameters (dense model)
-  dependencies:
-  training_emissions:
-  training_time:
+  dependencies: []
+  training_emissions: Unknown
+  training_time: Unknown
   training_hardware: THUDM 1536 Ascend 910 (32GB) Cluster
-  quality_control:
+  quality_control: None
   access:
-    value:
-    explanation:
+    value: Limited
+    explanation: Model weights are available but gated via an [[application form]](https://models.aminer.cn/codegeex/download/request)
   license:
     value: Apache 2.0
     explanation: The license is provided in the [[Github repository]](https://github.com/THUDM/CodeGeeX)
-  intended_uses:
-  prohibited_uses:
-  monitoring:
-  feedback:
+  intended_uses: None
+  prohibited_uses: None
+  monitoring: None
+  feedback: None
 
 - type: model
   name: CogView
@@ -73,26 +37,26 @@
     value: 2021-05-26
     explanation: The date the model paper was released
   url: https://arxiv.org/abs/2105.13290
-  model_card:
+  model_card: None
   modality: Text (Chinese) and Image
   size: 4B parameters
-  analysis: ""
-  dependencies:
-  training_emissions: ""
-  training_time: ""
-  training_hardware: ""
-  quality_control: ""
+  analysis: ''
+  dependencies: []
+  training_emissions: ''
+  training_time: ''
+  training_hardware: ''
+  quality_control: ''
   access:
-    value: Full public access
+    value: Open
     explanation: Model checkpoints available from [[Wudao-Wenhui]](https://resource.wudaoai.cn/home?ind=2&name=WuDao%20WenHui&id=1399364355975327744)
   license:
     value: Apache 2.0
     explanation: >
-        The license is provided in the [[Github repository]](https://github.com/THUDM/CogView)
-  intended_uses: ""
-  prohibited_uses: ""
-  monitoring: ""
-  feedback: ""
+      The license is provided in the [[Github repository]](https://github.com/THUDM/CogView)
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
 
 - type: model
   name: CogView 2
@@ -102,26 +66,26 @@
     value: 2022-04-28
     explanation: The date the model paper was released
   url: https://arxiv.org/abs/2204.14217
-  model_card:
+  model_card: None
   modality: Text (Chinese, English) and Image
   size: 6B parameters
-  analysis: ""
-  dependencies:
-  training_emissions: ""
-  training_time: ""
-  training_hardware: ""
-  quality_control: ""
+  analysis: ''
+  dependencies: []
+  training_emissions: ''
+  training_time: ''
+  training_hardware: ''
+  quality_control: ''
   access:
-    value: Full public access
+    value: Open
     explanation: The model checkpoints are available for download from [[BAAI]](https://model.baai.ac.cn/model-detail/100041)
   license:
     value: Apache 2.0
     explanation: >
-        The license is provided in the [[Github repository]](https://github.com/THUDM/CogView2)
-  intended_uses: ""
-  prohibited_uses: ""
-  monitoring: ""
-  feedback: ""
+      The license is provided in the [[Github repository]](https://github.com/THUDM/CogView2)
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
 
 - type: model
   name: CogVideo
@@ -131,23 +95,56 @@
     value: 2022-05-29
     explanation: The date the model paper was released
   url: https://arxiv.org/abs/2205.15868
-  model_card:
+  model_card: None
   modality: Text (Chinese) and Video
-  size:
-  analysis: ""
-  dependencies:
-  training_emissions: ""
-  training_time: ""
-  training_hardware: ""
-  quality_control: ""
+  size: None
+  analysis: ''
+  dependencies: []
+  training_emissions: ''
+  training_time: ''
+  training_hardware: ''
+  quality_control: ''
   access:
-    value: Full public access
+    value: Open
     explanation: Model checkpoints are available for download from https://github.com/THUDM/CogVideo
   license:
     value: Apache 2.0
     explanation: >
-        The license is provided in the [[Github repository]](https://github.com/THUDM/CogVideo)
-  intended_uses: ""
-  prohibited_uses: ""
-  monitoring: ""
-  feedback: ""
+      The license is provided in the [[Github repository]](https://github.com/THUDM/CogVideo)
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+
+- type: model
+  name: GLM-130B
+  organization: Tsinghua
+  description: GLM-130B is a bidirectional language model trained on English and
+    Chinese
+  created_date:
+    value: 2022-08-04
+    explanation: The date the model website was made public
+  url: https://keg.cs.tsinghua.edu.cn/glm-130b/
+  model_card: None found as of 2023-01-09
+  modality: Text (Chinese | English)
+  size: 130B parameters (dense model)
+  analysis: ''
+  dependencies:
+    - The Pile
+    - GLM-130B Chinese corpora
+    - P3
+    - DeepStruct finetuning dataset
+  training_emissions: ''
+  training_time: ''
+  training_hardware: THUDM 96 DGX-A100 (40G) cluster
+  quality_control: ''
+  access:
+    value: Open
+    explanation: Model checkpoints are available from the [[GitHub repository]](https://github.com/THUDM/GLM-130B/blob/main/MODEL_LICENSE)
+  license:
+    value: GLM-130B License
+    explanation: Unique model license. See the [[GitHub repository]](https://github.com/THUDM/GLM-130B/blob/main/MODEL_LICENSE)
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
