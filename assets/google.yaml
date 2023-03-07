@@ -964,3 +964,494 @@
   prohibited_uses: ''
   monitoring: ''
   feedback: ''
+
+- type: model
+  name: Flan-UL2
+  organization: Google
+  description: ''
+  created_date:
+    value: 2023-03-02
+  url: https://arxiv.org/abs/2205.05131
+  model_card: ''
+  modality: Text
+  analysis: ''
+  size: 20B parameters (dense model)
+  dependencies: [UL2, Flan Collection]
+  training_emissions: ''
+  training_time: ''
+  training_hardware: ''
+  quality_control: ''
+  access: Open
+  license: Apache 2.0
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+
+- type: dataset
+  name: Flan Collection
+  organization: Google
+  description: ''
+  created_date:
+    value: 2023-01-31
+  url: https://arxiv.org/abs/2301.13688
+  datasheet: ''
+  modality: Text
+  size: 1836 tasks
+  sample: ''
+  analysis: ''
+  dependencies: [Flan dataset, P3, NaturalInstructions-v2]
+  included: ''
+  excluded: ''
+  quality_control: ''
+  access: Open
+  license: Apache 2.0
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+
+- type: model
+  name: MusicLM
+  organization: Google
+  description: ''
+  created_date:
+    value: 2023-01-26
+  url: https://arxiv.org/pdf/2301.11325.pdf
+  model_card: ''
+  modality: Audio (music), text
+  analysis: ''
+  size: 1.4B parameters (430M semantic stage, 430M acoustic stage, 600M w2v-BERT)
+  dependencies:
+    - SoundStream
+    - w2v-BERT
+    - MuLan
+    - MusicLM semantic model
+    - MusicLM acoustic model
+  training_emissions: ''
+  training_time: ''
+  training_hardware: ''
+  quality_control: ''
+  access: Closed
+  license: Unknown
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+
+- type: model
+  name: SoundStream
+  organization: Google
+  description: ''
+  created_date:
+    value: 2023-01-26
+  url: https://arxiv.org/pdf/2301.11325.pdf
+  model_card: ''
+  modality: Audio (music)
+  analysis: ''
+  size: ''
+  dependencies: [Free Music Archive]
+  training_emissions: ''
+  training_time: ''
+  training_hardware: ''
+  quality_control: ''
+  access: Closed
+  license: Unknown
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+
+- type: model
+  name: w2v-BERT
+  organization: Google
+  description: ''
+  created_date:
+    value: 2023-01-26
+  url: https://arxiv.org/pdf/2301.11325.pdf
+  model_card: ''
+  modality: Audio (music)
+  analysis: ''
+  size: 600M parameter (dense model)
+  dependencies: [Free Music Archive]
+  training_emissions: ''
+  training_time: ''
+  training_hardware: ''
+  quality_control: ''
+  access: Closed
+  license: Unknown
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+
+- type: model
+  name: MuLan
+  organization: Google
+  description: ''
+  created_date:
+    value: 2022-08-26
+  url: https://arxiv.org/abs/2208.12415
+  model_card: ''
+  modality: Audio (music), text
+  analysis: ''
+  size: Unknown
+  dependencies: [AST, BERT, MuLan dataset]
+  training_emissions: ''
+  training_time: ''
+  training_hardware: ''
+  quality_control: ''
+  access: Closed
+  license: Unknown
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+
+- type: dataset
+  name: MuLan dataset
+  organization: Google
+  description: ''
+  created_date:
+    value: 2022-08-26
+  url: https://arxiv.org/abs/2208.12415
+  datasheet: ''
+  modality: Audio (music), text
+  size: 370K hours audio
+  sample: ''
+  analysis: ''
+  dependencies: []
+  included: ''
+  excluded: ''
+  quality_control: ''
+  access: Closed
+  license: Unknown
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+
+- type: dataset
+  name: MusicLM dataset
+  organization: Google
+  description: ''
+  created_date:
+    value: 2023-01-26
+  url: https://arxiv.org/pdf/2301.11325.pdf
+  datasheet: ''
+  modality: Audio (music)
+  size: 280K hours audio
+  sample: ''
+  analysis: ''
+  dependencies: []
+  included: ''
+  excluded: ''
+  quality_control: ''
+  access: Closed
+  license: Unknown
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+
+- type: model
+  name: MusicLM semantic model
+  organization: Google
+  description: ''
+  created_date:
+    value: 2023-01-26
+  url: https://arxiv.org/pdf/2301.11325.pdf
+  model_card: ''
+  modality: Audio (music)
+  analysis: ''
+  size: 430M parameters (dense model)
+  dependencies: [MusicLM dataset]
+  training_emissions: ''
+  training_time: ''
+  training_hardware: ''
+  quality_control: ''
+  access: Closed
+  license: Unknown
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+
+- type: model
+  name: MusicLM acoustic model
+  organization: Google
+  description: ''
+  created_date:
+    value: 2023-01-26
+  url: https://arxiv.org/pdf/2301.11325.pdf
+  model_card: ''
+  modality: Audio (music)
+  analysis: ''
+  size: 430M parameters (dense model)
+  dependencies: [MusicLM dataset]
+  training_emissions: ''
+  training_time: ''
+  training_hardware: ''
+  quality_control: ''
+  access: Closed
+  license: Unknown
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+
+- type: model
+  name: Noise2Music
+  organization: Google
+  description: ''
+  created_date:
+    value: 2023-02-08
+  url: https://google-research.github.io/noise2music/noise2music.pdf
+  model_card: ''
+  modality: Audio (music), text
+  analysis: ''
+  size: Unknown
+  dependencies: [Noise2Music pseudolabel dataset]
+  training_emissions: ''
+  training_time: ''
+  training_hardware: ''
+  quality_control: ''
+  access: Closed
+  license: Unknown
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+
+- type: dataset
+  name: LaMDA-LF
+  organization: Google
+  description: ''
+  created_date:
+    value: 2023-02-08
+  url: https://google-research.github.io/noise2music/noise2music.pdf
+  datasheet: ''
+  modality: Text
+  size: 150k songs
+  sample: ''
+  analysis: ''
+  dependencies: [LaMDA]
+  included: ''
+  excluded: ''
+  quality_control: ''
+  access: Closed
+  license: Unknown
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+
+- type: dataset
+  name: Rater-LF
+  organization: Google
+  description: ''
+  created_date:
+    value: 2023-02-08
+  url: https://google-research.github.io/noise2music/noise2music.pdf
+  datasheet: ''
+  modality: Text
+  size: 10k captions
+  sample: ''
+  analysis: ''
+  dependencies: [MusicCaps]
+  included: ''
+  excluded: ''
+  quality_control: ''
+  access: Closed
+  license: Unknown
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+
+- type: dataset
+  name: Rater-SF
+  organization: Google
+  description: ''
+  created_date:
+    value: 2023-02-08
+  url: https://google-research.github.io/noise2music/noise2music.pdf
+  datasheet: ''
+  modality: Text
+  size: 24k captions
+  sample: ''
+  analysis: ''
+  dependencies: [MusicCaps]
+  included: ''
+  excluded: ''
+  quality_control: ''
+  access: Closed
+  license: Unknown
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+
+- type: model
+  name: Noise2Music pseudolabeler
+  organization: Google
+  description: ''
+  created_date:
+    value: 2023-02-08
+  url: https://google-research.github.io/noise2music/noise2music.pdf
+  model_card: ''
+  modality: Audio (music), text
+  analysis: ''
+  size: Unknown
+  dependencies: [MuLan, MuLaMCap, LaMDA-LF, Rater-LF, Rater-SF]
+  training_emissions: ''
+  training_time: ''
+  training_hardware: ''
+  quality_control: ''
+  access: Closed
+  license: Unknown
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+
+- type: dataset
+  name: Noise2Music audio dataset
+  organization: Google
+  description: ''
+  created_date:
+    value: 2023-02-08
+  url: https://google-research.github.io/noise2music/noise2music.pdf
+  datasheet: ''
+  modality: Audio (music)
+  size: 340k hours audio
+  sample: ''
+  analysis: ''
+  dependencies: []
+  included: ''
+  excluded: ''
+  quality_control: ''
+  access: Closed
+  license: Unknown
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+
+- type: dataset
+  name: Noise2Music pseudolabel dataset
+  organization: Google
+  description: ''
+  created_date:
+    value: 2023-02-08
+  url: https://google-research.github.io/noise2music/noise2music.pdf
+  datasheet: ''
+  modality: Audio (music), text
+  size: 340k hours audio with pseudolabels
+  sample: ''
+  analysis: ''
+  dependencies: [Noise2Music audio dataset, Noise2Music pseudolabeler]
+  included: ''
+  excluded: ''
+  quality_control: ''
+  access: Closed
+  license: Unknown
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+
+- type: application
+  name: AI Test Kitchen
+  organization: Google
+  description: AI Test Kitchen provides a new way for people to learn about, experience,
+    and give feedback on emerging AI technology, like LaMDA.
+  created_date:
+    value: 2022-08-25
+  url: https://blog.google/technology/ai/join-us-in-the-ai-test-kitchen/
+  dependencies: [LaMDA]
+  adaptation: ''
+  output_space: ''
+  quality_control: ''
+  access: Limited
+  license: ''
+  terms_of_service: ''
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+  monthly_active_users: ''
+  user_distribution: ''
+  failures: ''
+
+- type: application
+  name: Bard
+  organization: Google
+  description: Conversational AI service, powered by LaMDA
+  created_date:
+    value: 2023-02-06
+  url: https://blog.google/technology/ai/bard-google-ai-search-updates/
+  dependencies: [LaMDA]
+  adaptation: ''
+  output_space: ''
+  quality_control: ''
+  access: Closed
+  license: ''
+  terms_of_service: ''
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+  monthly_active_users: ''
+  user_distribution: ''
+  failures: ''
+
+- type: model
+  name: Minerva
+  organization: Google
+  description: ''
+  created_date:
+    value: 2022-06-29
+  url: https://arxiv.org/abs/2206.14858
+  model_card: ''
+  modality: Text
+  analysis: ''
+  size: 540B parameters (dense model)
+  dependencies:
+    - PaLM
+    - arXiv
+    - PaLM dataset
+    - Minerva Math Web Pages dataset
+  training_emissions: ''
+  training_time: ''
+  training_hardware: ''
+  quality_control: ''
+  access: Closed
+  license: Unknown
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+
+- type: dataset
+  name: Minerva Math Web Pages dataset
+  organization: Google
+  description: ''
+  created_date:
+    value: 2022-06-29
+  url: https://arxiv.org/abs/2206.14858
+  datasheet: ''
+  modality: Text
+  size: 17.5B tokens
+  sample: ''
+  analysis: ''
+  dependencies: []
+  included: ''
+  excluded: ''
+  quality_control: ''
+  access: Closed
+  license: Unknown
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''

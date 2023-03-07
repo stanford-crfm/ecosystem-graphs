@@ -218,3 +218,77 @@
     value: Unknown
   failures:
     value: Unknown
+
+- type: model
+  name: BioGPT
+  organization: Microsoft
+  description: ''
+  created_date:
+    value: 2022-09-24
+  url: https://academic.oup.com/bib/article/23/6/bbac409/6713511?guestAccessKey=a66d9b5d-4f83-4017-bb52-405815c907b9&login=true
+  model_card: ''
+  modality: Text
+  analysis: ''
+  size: 1.5B parameters (dense model)
+  dependencies: [PubMed]
+  training_emissions: ''
+  training_time: ''
+  training_hardware: ''
+  quality_control: ''
+  access: Open
+  license: MIT license
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+
+- type: application
+  name: Microsoft Teams
+  organization: Microsoft
+  description: Microsoft Teams Premium is generally available. Built on the familiar,
+    all-in-one collaborative experience of Microsoft Teams, Teams Premium brings
+    the latest technologies, powered by OpenAI’s GPT-3.5, to make meetings more
+    intelligent, personalized, and protected—whether it’s one-on-one, large meetings,
+    virtual appointments, or webinars.
+  created_date:
+    value: 2023-02-01
+  url: https://www.microsoft.com/en-us/microsoft-365/blog/2023/02/01/microsoft-teams-premium-cut-costs-and-add-ai-powered-productivity/
+  dependencies: [ChatGPT API]
+  adaptation: ''
+  output_space: ''
+  quality_control: ''
+  access: Open
+  license: ''
+  terms_of_service: ''
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+  monthly_active_users: ''
+  user_distribution: ''
+  failures: ''
+
+- type: application
+  name: Bing Search
+  organization: Microsoft
+  description: AI-powered Bing search engine and Edge browser, available in preview
+    now at Bing.com, to deliver better search, more complete answers, a new chat
+    experience and the ability to generate content. We think of these tools as an
+    AI copilot for the web.
+  created_date:
+    value: 2023-02-07
+  url: https://blogs.microsoft.com/blog/2023/02/07/reinventing-search-with-a-new-ai-powered-microsoft-bing-and-edge-your-copilot-for-the-web/
+  dependencies: [ChatGPT API]
+  adaptation: ''
+  output_space: ''
+  quality_control: ''
+  access: Limited
+  license: ''
+  terms_of_service: ''
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+  monthly_active_users: ''
+  user_distribution: ''
+  failures: ''

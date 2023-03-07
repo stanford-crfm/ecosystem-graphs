@@ -418,31 +418,6 @@
 
 # Models
 
-# - type: model
-#   name: GPT-2
-#   # General
-#   organization: OpenAI
-#   description: todo
-#   created_date: todo
-#   url: todo
-#   model_card: todo
-#   modality: todo
-#   size: todo
-#   analysis: todo
-#   # Construction
-#   dependencies: []
-#   training_emissions: todo
-#   training_time: todo
-#   training_hardware: todo
-#   quality_control: todo
-#   # Downstream
-#   access: todo
-#   license: todo
-#   intended_uses: todo
-#   prohibited_uses: todo
-#   monitoring: todo
-#   feedback: todo
-
 - type: model
   name: GPT-3
   # General
@@ -1105,7 +1080,14 @@
       [[Open AI Blog Post]](https://openai.com/blog/openai-api/).
   url: https://openai.com/api/
   # Construction
-  dependencies: [GPT-3, Codex, InstructGPT]
+  dependencies:
+    - GPT-3
+    - Codex
+    - code-davinci-002
+    - text-davinci-002
+    - text-davinci-003
+    - gpt-3.5-turbo
+    - Whisper
   adaptation: >
     Although initially started with GPT-3, soon after the API was made public,
     OpenAI deployed the InstructGPT models, and made them the default models on
@@ -1196,216 +1178,6 @@
       There are no known documented failures of the OpenAI API at the
       time of writing.
 
-- type: application
-  name: Sana
-  # General
-  organization: Sana
-  description: >
-    "Sana is your all-in-one, AI-assisted, online learning platform (LMS).
-    Author employee training courses and measure team development with Sana's
-    powerful analytics. Sana partners with the world's most important
-    organizations and fastest-growing startups to make personalized, adaptive
-    learning available for everyone, everywhere"
-    [[Sana GPT-3 Demo]](https://gpt3demo.com/apps/sanalabs).
-  created_date:
-    value: Unknown
-    explanation: >
-      The company was founded in 2016 according to
-      [[Crunchbase]](https://www.crunchbase.com/organization/sana-2). It is
-      unclear when Sana adapted the OpenAI API to their products.
-  url: https://www.sanalabs.com/
-  # Construction
-  dependencies: [OpenAI API]
-  adaptation: >
-    Customized GPT-3, fine-tuned on private data
-    [[Sana GPT-3 Demo]](https://gpt3demo.com/apps/sanalabs).
-  output_space: question and answer, summarization, sentiment analysis,topic identification
-  quality_control: Unknown
-  # Downstream
-  access: Limited
-  license: https://www.sanalabs.com/legal/
-  terms_of_service: https://www.sanalabs.com/legal/
-  intended_uses: >
-    Sana is intended to be used by employers to provide a learning service for
-    their employees.
-  prohibited_uses:
-    value: None
-    explanation: >
-      Sana provides an extensive set of legal documents
-      [[Sana Legal]](https://www.sanalabs.com/legal/), but missing from the
-      documents are prohibited uses of the Sana platform, beyond a mention of
-      what is impermissible under relevant law.
-  monitoring: Unknown
-  feedback: Unknown
-  # Deployment
-  monthly_active_users: Unknown
-  user_distribution: Unknown
-  failures: Unknown
-
-- type: application
-  name: Duolingo
-  # General
-  organization: Duolingo
-  description: >
-    Duolingo is a language learning application, helping users learn new
-    languagese through completing a series of activities. Duolingo uses
-    GPT-3 to provide French grammer correction
-    [[OpenAI API Use Cases]](https://openai.com/api/).
-  created_date: Unknown
-  url: https://www.duolingo.com/
-  # Construction
-  dependencies: [OpenAI API]
-  adaptation: Unknown
-  output_space: French grammar corrections
-  quality_control: Unknown
-  # Downstream
-  access: Limited
-  license:
-    value: Limited use license
-    explanation: >
-      License is granted to the useres to us the service, as outlined in the
-      'Registration; Submission of Content' section of the Terms
-      [[Terms]](https://www.duolingo.com/terms).
-  terms_of_service: https://www.duolingo.com/terms
-  intended_uses: >
-    Duolingo is intended to be used as a language learning app.
-  prohibited_uses: Unknown
-  monitoring: Unknown
-  feedback: >
-    Feedback can be provided at the help link in the contact page
-    [[Duolingo Contact]](https://www.duolingo.com/contact).
-  # Deployment
-  monthly_active_users:
-    value: 42 million (all languages)
-    explanation: >
-      The monthly active users as measured in 2021, reported by Statista
-      [[Source]](https://www.statista.com/statistics/1248008/duolingo-mau-worldwide/).
-  user_distribution: Unknown
-  failures: Unknown
-
-- type: application
-  name: Viable
-  # General
-  organization: Viable
-  description: >
-    Viable analyzes qualitative consumer feedback and provides summary feedback
-    to companies.
-  created_date:
-    value: 2021
-  url: https://www.askviable.com/
-  # Construction
-  dependencies: [OpenAI API]
-  adaptation: Unknown
-  output_space: Question and answer, summarization, sentiment analysis, topic identification
-  quality_control: Unknown
-  # Downstream
-  access: Limited
-  license: Unknown
-  terms_of_service: https://www.askviable.com/terms-of-service
-  intended_uses: >
-    Intended to be used by companies to digest qualitative consumer feedback.
-  prohibited_uses: >
-    Prohibited uses are listed in the Terms of Service
-    [[Terms of Service]](https://www.askviable.com/terms-of-service).
-    The terms don't include statements specific to the use of the content
-    generated by the system or GPT-3.
-  monitoring: Unknown
-  feedback:
-    value: Unknown
-    explanation: >
-      The feedback mechanism isn't explicitly listed. Company contact
-      information is provided in the Terms of Service
-      [[Terms of Service]](https://www.askviable.com/terms-of-service).
-  # Deployment
-  monthly_active_users: Unknown
-  user_distribution: Unknown
-  failures: Unknown
-
-- type: application
-  name: HyperWrite
-  # General
-  organization: OthersideAI
-  description: >
-    HyperWrite is a writing assistant that generates text based on a user's
-    request, as well as style and tone choices.
-  created_date: Unknown
-  url: https://hyperwriteai.com/
-  # Construction
-  dependencies: [OpenAI API]
-  adaptation: Unknown
-  output_space: Generation
-  quality_control:
-    value: Unknown
-    explanation: >
-      There is a HyperWrite blog warning the users about the risks of writing
-      with an AI assistant, but the company doesn't list the quality control
-      measures taken to prevent the listed risks, if any
-      [[HyperWrite Blog]]
-      (https://blog.hyperwrite.ai/what-are-the-risks-of-ai-writing/).
-  # Downstream
-  access: Limited
-  license: https://hyperwriteai.com/terms
-  terms_of_service: https://hyperwriteai.com/terms
-  intended_uses: >
-    HyperWrite is intended to be used as a writing assistant.
-  prohibited_uses: Unknown
-  monitoring: Unknown
-  feedback: Unknown
-  # Deployment
-  monthly_active_users: Unknown
-  user_distribution: Unknown
-  failures: Unknown
-
-
-- type: application
-  name: Crisis Contact Simulator
-  # General
-  organization: The Trevor Project
-  description: >
-    Crisis Contact Simulator, developed as part of a collaboration with
-    Google.org, helps train The Trevor Project counselors by
-    mimicking to be a teen in crisis. Crisis Contact Simulator is used
-    as part of the training programs for the Trevor Project's 24/7 digital
-    crisis services that supports LGBTQ youth
-    [[Trevor Project Blog]](https://www.thetrevorproject.org/blog/the-trevor-project-launches-new-ai-tool-to-support-crisis-counselor-training/).
-  created_date:
-    value: 2021-03-24
-    explanation: >
-      The release date of the blog post introducing Crisis Contact Simulator
-      [[Trevor Project Blog]](https://www.thetrevorproject.org/blog/the-trevor-project-launches-new-ai-tool-to-support-crisis-counselor-training/).
-  url: https://www.thetrevorproject.org/
-  # Construction
-  dependencies: [OpenAI API]
-  adaptation:
-    value: Fine-tuning
-    explanation: >
-      The base GPT-2 model was fine-tuned on the previous conversations between
-      new trainees and the Trevor Project counselors posing to be a fictional
-      persona in crisis.
-  output_space: Dialogue
-  quality_control:
-    value: Limited release
-    explanation: >
-      The tool can only be accessed by the Trevor Project will be counsolors
-      for training purposes.
-  # Downstream
-  access:
-    value: Closed
-    explanation: >
-      The tool can only be accessed by the Trevor Project will be counsolors
-      for training purposes.
-  license: Unknown
-  terms_of_service: Unknown
-  intended_uses: >
-    Training counselors
-  prohibited_uses: Unknown
-  monitoring: Unknown
-  feedback: Unknown
-  # Deployment
-  monthly_active_users: Unknown
-  user_distribution: Unknown
-  failures: Unknown
-
 - type: model
   name: VPT
   organization: OpenAI
@@ -1439,6 +1211,280 @@
   datasheet: ''
   modality: Video
   size: 70k hours
+  sample: ''
+  analysis: ''
+  dependencies: []
+  included: ''
+  excluded: ''
+  quality_control: ''
+  access: Closed
+  license: Unknown
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+
+- type: application
+  name: ChatGPT
+  organization: OpenAI
+  description: ChatGPT is an artificial intelligence chatbot developed by OpenAI
+  created_date:
+    value: 2022-11-30
+  url: https://openai.com/blog/chatgpt
+  dependencies: [gpt-3.5-turbo, OpenAI toxicity classifier]
+  adaptation: ''
+  output_space: ''
+  quality_control: ''
+  access: Open
+  license: ''
+  terms_of_service: ''
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+  monthly_active_users: ''
+  user_distribution: ''
+  failures: ''
+
+- type: model
+  name: gpt-3.5-turbo
+  organization: OpenAI
+  description: ''
+  created_date:
+    value: 2023-03-01
+  url: https://platform.openai.com/docs/models/gpt-3-5
+  model_card: ''
+  modality: Text
+  analysis: ''
+  size: Unknown
+  dependencies: [gpt-3.5-turbo dataset]
+  training_emissions: ''
+  training_time: ''
+  training_hardware: ''
+  quality_control: ''
+  access: Limited
+  license: ''
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+
+- type: dataset
+  name: gpt-3.5-turbo dataset
+  organization: OpenAI
+  description: ''
+  created_date:
+    value: 2023-03-01
+  url: https://platform.openai.com/docs/models/gpt-3-5
+  datasheet: ''
+  modality: Text
+  size: Unknown
+  sample: ''
+  analysis: ''
+  dependencies: []
+  included: ''
+  excluded: ''
+  quality_control: ''
+  access: Limited
+  license: ''
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+
+- type: dataset
+  name: code-davinci-002 dataset
+  organization: OpenAI
+  description: ''
+  created_date:
+    value: 2022-05-01
+  url: https://platform.openai.com/docs/model-index-for-researchers
+  datasheet: ''
+  modality: Code, Text
+  size: Unknown
+  sample: ''
+  analysis: ''
+  dependencies: []
+  included: ''
+  excluded: ''
+  quality_control: ''
+  access: Limited
+  license: ''
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+
+- type: model
+  name: code-davinci-002
+  organization: OpenAI
+  description: ''
+  created_date:
+    value: 2022-05-01
+  url: https://platform.openai.com/docs/model-index-for-researchers
+  model_card: ''
+  modality: Code, Text
+  analysis: ''
+  size: Unknown
+  dependencies: [code-davinci-002 dataset]
+  training_emissions: ''
+  training_time: ''
+  training_hardware: ''
+  quality_control: ''
+  access: Limited
+  license: ''
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+
+- type: model
+  name: text-davinci-002
+  organization: OpenAI
+  description: ''
+  created_date:
+    value: 2022-05-01
+  url: https://platform.openai.com/docs/model-index-for-researchers
+  model_card: ''
+  modality: Text
+  analysis: ''
+  size: Unknown
+  dependencies: [code-davinci-002]
+  training_emissions: ''
+  training_time: ''
+  training_hardware: ''
+  quality_control: ''
+  access: Limited
+  license: ''
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+
+- type: model
+  name: text-davinci-003
+  organization: OpenAI
+  description: ''
+  created_date:
+    value: 2022-11-30
+  url: https://platform.openai.com/docs/model-index-for-researchers
+  model_card: ''
+  modality: Text
+  analysis: ''
+  size: Unknown
+  dependencies: [text-davinci-002]
+  training_emissions: ''
+  training_time: ''
+  training_hardware: ''
+  quality_control: ''
+  access: Limited
+  license: ''
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+
+- type: application
+  name: WhisperAPI
+  organization: OpenAI
+  description: API to query OpenAI's Whisper model.
+  created_date:
+    value: 2023-03-01
+  url: https://openai.com/blog/introducing-chatgpt-and-whisper-apis
+  dependencies: [Whisper]
+  adaptation: ''
+  output_space: ''
+  quality_control: ''
+  access: Open
+  license: ''
+  terms_of_service: ''
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+  monthly_active_users: ''
+  user_distribution: ''
+  failures: ''
+
+- type: application
+  name: ChatGPT API
+  organization: OpenAI
+  description: API to query OpenAI's ChatGPT model.
+  created_date:
+    value: 2023-03-01
+  url: https://openai.com/blog/introducing-chatgpt-and-whisper-apis
+  dependencies: [ChatGPT]
+  adaptation: ''
+  output_space: ''
+  quality_control: ''
+  access: Open
+  license: ''
+  terms_of_service: ''
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+  monthly_active_users: ''
+  user_distribution: ''
+  failures: ''
+
+- type: application
+  name: OpenAI Moderation API
+  organization: OpenAI
+  description: This endpoint provides OpenAI API developers with free access to
+    GPT-based classifiers that detect undesired content—an instance of using AI
+    systems to assist with human supervision of these systems.
+  created_date:
+    value: 2022-08-10
+  url: https://openai.com/blog/new-and-improved-content-moderation-tooling
+  dependencies: [OpenAI toxicity classifier]
+  adaptation: ''
+  output_space: ''
+  quality_control: ''
+  access: Open
+  license: ''
+  terms_of_service: ''
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+  monthly_active_users: ''
+  user_distribution: ''
+  failures: ''
+
+- type: model
+  name: OpenAI toxicity classifier
+  organization: OpenAI
+  description: ''
+  created_date:
+    value: 2023-01-18
+  url: https://time.com/6247678/openai-chatgpt-kenya-workers/#:~:text=In%20a%20statement%2C%20an%20OpenAI,datasets%20of%20tools%20like%20ChatGPT.
+  model_card: ''
+  modality: Text
+  analysis: ''
+  size: Unknown
+  dependencies: [OpenAI toxicity dataset]
+  training_emissions: ''
+  training_time: ''
+  training_hardware: ''
+  quality_control: ''
+  access: Closed
+  license: Unknown
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+
+- type: dataset
+  name: OpenAI toxicity dataset
+  organization: OpenAI
+  description: ''
+  created_date:
+    value: 2023-01-18
+  url: https://time.com/6247678/openai-chatgpt-kenya-workers/#:~:text=In%20a%20statement%2C%20an%20OpenAI,datasets%20of%20tools%20like%20ChatGPT.
+  datasheet: ''
+  modality: Text
+  size: Unknown
   sample: ''
   analysis: ''
   dependencies: []

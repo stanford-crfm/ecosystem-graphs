@@ -1,0 +1,67 @@
+---
+
+- type: dataset
+  name: Neeva dataset
+  organization: Neeva
+  description: ''
+  created_date: Unknown
+  url: https://neeva.com/index
+  datasheet: ''
+  modality: Text
+  size: Unknown
+  sample: ''
+  analysis: ''
+  dependencies: []
+  included: ''
+  excluded: ''
+  quality_control: ''
+  access: Closed
+  license: Unknown
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+
+- type: model
+  name: Neeva model
+  organization: Neeva
+  description: ''
+  created_date: Unknown
+  url: https://neeva.com/index
+  model_card: ''
+  modality: Text
+  analysis: ''
+  size: Unknown
+  dependencies: [Neeva dataset]
+  training_emissions: ''
+  training_time: ''
+  training_hardware: ''
+  quality_control: ''
+  access: Closed
+  license: Unknown
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+
+- type: application
+  name: Neeva Search
+  organization: Neeva
+  description: Neeva is a search engine powered by AI with personalization and without
+    ads/tracking.
+  created_date: Unknown
+  url: https://neeva.com/index
+  dependencies: [Neeva model]
+  adaptation: ''
+  output_space: ''
+  quality_control: ''
+  access: Open
+  license: ''
+  terms_of_service: ''
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+  monthly_active_users: ''
+  user_distribution: ''
+  failures: ''

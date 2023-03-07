@@ -1,0 +1,36 @@
+---
+
+- type: application
+  name: HyperWrite
+  # General
+  organization: OthersideAI
+  description: >
+    HyperWrite is a writing assistant that generates text based on a user's
+    request, as well as style and tone choices.
+  created_date: Unknown
+  url: https://hyperwriteai.com/
+  # Construction
+  dependencies: [OpenAI API]
+  adaptation: Unknown
+  output_space: Generation
+  quality_control:
+    value: Unknown
+    explanation: >
+      There is a HyperWrite blog warning the users about the risks of writing
+      with an AI assistant, but the company doesn't list the quality control
+      measures taken to prevent the listed risks, if any
+      [[HyperWrite Blog]]
+      (https://blog.hyperwrite.ai/what-are-the-risks-of-ai-writing/).
+  # Downstream
+  access: Limited
+  license: https://hyperwriteai.com/terms
+  terms_of_service: https://hyperwriteai.com/terms
+  intended_uses: >
+    HyperWrite is intended to be used as a writing assistant.
+  prohibited_uses: Unknown
+  monitoring: Unknown
+  feedback: Unknown
+  # Deployment
+  monthly_active_users: Unknown
+  user_distribution: Unknown
+  failures: Unknown
