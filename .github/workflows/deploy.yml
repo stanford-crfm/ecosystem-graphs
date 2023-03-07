@@ -13,11 +13,14 @@ jobs:
     name: Update Website
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout
+        uses: actions/checkout@v3
         with:
           token: ${{  secrets.WEBSITE_REPOSITORY_ACCESS_TOKEN  }}
           path: main
           fetch-depth: 0
+
+      - name: Update the main branch of the website repository
         env:
           COMMIT_MESSAGE: Sync with the development repository main
           COMMIT_AUTHOR: Development Repository Continuous Integration
