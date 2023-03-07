@@ -3,11 +3,11 @@
   name: LAION-5B
   # General
   organization: LAION
-  description: LAION is a dataset of 5 billion image-text pairs from the internet
+  description: LAION is a dataset of 5 billion image-text pairs from the Internet
   created_date:
     value: 2022-12-12
     explanation: The date the [[blog post]](https://laion.ai/blog/laion-5b/) was
-      released. Note that the dataset was already compiled earlier, eg. the Stable
+      released. Note that the dataset was already compiled earlier, e.g. the Stable
       Diffusion model released earlier was trained on a subset of LAION-5B
   url: https://laion.ai/blog/laion-5b/
   datasheet: https://laion.ai/blog/laion-5b/
@@ -44,7 +44,7 @@
     and "do not recommend using it for creating ready-to-go industrial products,
     as the basic research about general properties and safety of such large-scale
     models, which we would like to encourage with this release, is still in progress"
-  prohibited_uses: No uses are explicitly prohibited by the licens. Users are warned
+  prohibited_uses: No uses are explicitly prohibited by the license. Users are warned
     from using LAION-5B for non-research purposes.
   monitoring: ''
   feedback: ''
