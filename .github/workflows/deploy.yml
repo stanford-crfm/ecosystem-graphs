@@ -1,15 +1,9 @@
 ---
-# This workflow force updates the main branch of the website repository whenever
-# the main branch of this (development) repository is updated. This ensures
-# that our website repository always has the recent changes from this
-# repository.
-
 name: Deploy
 
 "on":
   push:
     branches: main
-
 
 jobs:
   # Check out the main branch of the development repository and force update the
