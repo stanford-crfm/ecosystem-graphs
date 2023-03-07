@@ -2,130 +2,166 @@
 
 - type: model
   name: ESM-2
-  organization: Meta AI (Facebook AI Research)
+  organization: Meta
   description: ESM-2 is a series of protein language models trained on protein sequences
   created_date:
     value: 2022-10-31
-    explanation: The date the [[model paper]](https://www.biorxiv.org/content/10.1101/2022.07.20.500902v2.full.pdf+html) was released
+    explanation: The date the [[model paper]](https://www.biorxiv.org/content/10.1101/2022.07.20.500902v2.full.pdf+html)
+      was released
   url: https://www.biorxiv.org/content/10.1101/2022.07.20.500902v2.full.pdf+html
-  model_card: None found
+  model_card: None
   modality: Protein sequences
-  size: 15B
-  analysis: ""
-  dependencies:
-    - UniRef50
-    - UniRef90
-  training_emissions: ""
-  training_time: ""
-  training_hardware: ""
-  quality_control: ""
-  access: 
+  size: 15B parameters (dense model)
+  analysis: ''
+  dependencies: [UniRef50, UniRef90]
+  training_emissions: ''
+  training_time: ''
+  training_hardware: ''
+  quality_control: ''
+  access:
     value: Full public access
     explanation: Models are available for download from [[GitHub repository]](https://github.com/facebookresearch/esm#available-models)
   license:
     value: MIT
     explanation: >
-        The license is provided in the [[Github repository]](https://github.com/facebookresearch/esm#available-models)
-  intended_uses: ""
-  prohibited_uses: ""
-  monitoring: ""
-  feedback: ""
+      The license is provided in the [[Github repository]](https://github.com/facebookresearch/esm#available-models)
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+
+- type: dataset
+  name: PMD
+  # General
+  organization: Meta
+  description: PMD (Public Multimodal Datasets) is a collection of image-text datasets
+    introduced in the FLAVA work.
+  created_date:
+    value: 2021-12-08
+    explanation: The date the model paper was released
+  url: https://arxiv.org/abs/2112.04482
+  datasheet: None
+  modality: Image-Text
+  size: 70M
+  sample: []
+  analysis: None
+  # Construction
+  dependencies:
+    - COCO
+    - YFCC100M
+    - SBU Captions
+    - Localized Narratives
+    - Visual Genome
+    - Wikipedia
+    - Conceptual Captions
+    - Red Caps
+  license: Unknown
+  included: None
+  excluded: YFCC100M is filtered for non-English captions and very short (< 2 word)
+    captions.
+  quality_control: Beyond filtering mentioned in excluded, nothing further is done.
+  # Downstream
+  access: Closed
+  intended_uses: Unknown
+  prohibited_uses: Unknown
+  monitoring: None
+  feedback: None
 
 - type: model
   name: FLAVA
-  organization: Meta AI (Facebook AI Research)
-  description: FLAVA is a multimodal model composed of an image encoder, text encoder, and multimodal encoder.
+  organization: Meta
+  description: FLAVA is a multimodal model composed of an image encoder, text encoder,
+    and multimodal encoder.
   created_date:
     value: 2021-12-08
     explanation: The date the model paper was released
   url: https://arxiv.org/abs/2112.04482
   model_card: https://huggingface.co/facebook/flava-full
   modality: Text (English) and Image
-  size: TODO
-  analysis: ""
-  dependencies:
-    - COCO
-    - SBU Captions
-    - Localized Narratives
-    - Conceptual Captions
-    - Visual Genome
-    - Wikipedia Image Text
-    - Conceptual Captions 12M
-    - Red Caps
-    - YFCC100M
-    - CCNews
-    - BookCorpus
-    - ImageNet-1k
-  training_emissions: ""
-  training_time: ""
-  training_hardware: ""
-  quality_control: ""
+  size:
+    value: 306M
+    explanation: >
+      110M (Language encoder) + 86M (Vision encoder) + 110M (mul encoder)
+  analysis: FLAVA is benchmarked on a range of vision-only (e.g. CIFAR-10), language-only
+    (e.g. GLUE), and multimodal (e.g. Hateful Memes) standard evaluations.
+  dependencies: [PMD]
+  training_emissions: Unknown
+  training_time: Unknown
+  training_hardware: Unknown
+  quality_control: FLAVA introduces a variety of new modeling techniques, specifically
+    with an interest in improved text-image alignment through contrastive objectives.
   access:
-    value: Full public access
-    explanation: Model checkpoints are available for download from the [[HuggingFace repository]](https://huggingface.co/facebook/flava-full)
+    value: Open
+    explanation: >
+      Model checkpoints are available for download from the [[HuggingFace
+      repository]](https://huggingface.co/facebook/flava-full)
   license:
     value: BSD 3-Clause
     explanation: >
-        The license is provided in the [[HuggingFace repository]](https://huggingface.co/facebook/flava-full)
-  intended_uses: "The primary intended users of these models are AI researchers."
-  prohibited_uses: "Any deployed use case of the model - whether commercial or not - is currently out of scope."
-  monitoring: ""
-  feedback: ""
+      The license is provided in the [[HuggingFace repository]](https://huggingface.co/facebook/flava-full)
+  intended_uses: >
+    Per the [[HuggingFace repository]](https://huggingface.co/facebook/flava-full),
+    "The model is intended to serve as a reproducible research artifact for research
+    communities in the light of models whose exact reproduction details are never
+    released such as CLIP and SimVLM."
+  prohibited_uses: >
+    Per the [[HuggingFace repository]](https://huggingface.co/facebook/flava-full),
+    "Any deployed use case of the model - whether commercial or not" - is currently
+    out of scope.
+  monitoring: None
+  feedback: https://huggingface.co/facebook/flava-full/discussions
+
+- type: dataset
+  name: The Galactica Corpus
+  # General
+  organization: Meta
+  description: The Galactica Corpus is a collection of scientific datasets introduced
+    in the Galactica work.
+  created_date:
+    value: 2022-11-15
+    explanation: >
+      The date the Galactica paper was released
+  url: https://galactica.org/static/paper.pdf
+  datasheet: None
+  modality: Text
+  size: 106B tokens
+  sample: []
+  analysis: None
+  # Construction
+  dependencies: [CommonCrawl, Wikipedia, arXiv]
+  license: Unknown
+  included: Prompts and reasoning data is explicitly included to improve model capabilities
+    derived from this data.
+  excluded: ''
+  quality_control: ''
+  # Downstream
+  access: Closed
+  intended_uses: Unknown
+  prohibited_uses: Unknown
+  monitoring: None
+  feedback: None
 
 - type: model
   name: Galactica
-  organization: Meta AI
-  description: Galactica is a family of autoregressive large language models.
-  created_data:
+  organization: Meta
+  description: Galactica is a family of autoregressive language models.
+  created_date:
     value: 2022-11-15
     explanation: >
-        The date the Galactica paper was released
+      The date the Galactica paper was released
   url: https://galactica.org/static/paper.pdf
-  model_card: n/a
+  model_card: https://huggingface.co/facebook/galactica-6.7b
   modality: Text (English), Code, Math, Chemistry, Biology
   analysis: ''
   size: 120B parameters (dense model)
-  dependencies:
-    - arXiv
-    - PMC
-    - Semantic Scholar
-    - PubMed Abstracts
-    - Semantic Scholar Abstracts
-    - bioRxiv
-    - OSF
-    - medRxiv
-    - ACL
-    - PubAg Abstracts
-    - ChemRxiv
-    - Wikipedia
-    - StackExchange
-    - LibreText
-    - Wikibooks
-    - Open Textbooks
-    - MIT OCW
-    - Wikiversity
-    - ProofWiki
-    - Khan Academy
-    - Papers with Code
-    - IUPAC Goldbook
-    - PubChem Compound
-    - UniProt
-    - RefSeq Genome
-    - OEIS
-    - Ribosome
-    - LIPID MAPS
-    - Reactome
-    - NASA Exoplanet
-    - Scientific Common Crawl
-    - Academic Common Crawl
-  training_emission: n/a
-  training_time: n/a
-  training_hardware:
-    value: Meta AI Cluster
-    explanation: Trained on 1024 80GB A100 GPUs (128 8xA100 80GB nodes)
+  dependencies: [The Galactica Corpus]
+  training_emissions: Unknown
+  training_time: Unknown
+  training_hardware: Meta AI Cluster. Trained on 1024 80GB A100 GPUs (128 8xA100
+    80GB nodes)
   quality_control: ''
   access:
-    value: Full public access
+    value: Open
     explanation: Model checkpoints freely available at https://github.com/paperswithcode/galai
   license:
     value: CC-BY NC 4.0
@@ -138,36 +174,37 @@
 
 - type: model
   name: InCoder
-  organization: CMU, Meta AI (FAIR), TTI-Chicago, UC Berkeley, University of Washington
-  description: InCoder is a large language model trained on code with a causal masking objective
+  organization: Meta, CMU, TTI-Chicago, UC Berkeley, University of Washington
+  description: InCoder is a language model trained on code with a causal masking
+    objective
   created_date:
     value: 2022-04-12
     explanation: The date the model paper was released
   url: https://arxiv.org/abs/2204.05999
-  model_card:
+  model_card: None
   modality: Text (English) and Code
-  analysis:
+  analysis: None
   size: 6B parameters (dense model)
-  dependencies:
-  training_emissions:
-  training_time:
-  training_hardware: 248 V100 GPUs
-  quality_control:
+  dependencies: []
+  training_emissions: Unknown
+  training_time: 24 days, according to [[the paper]](https://arxiv.org/pdf/2204.05999.pdf)
+  training_hardware: 248 V100 GPUs, according to [[the paper]](https://arxiv.org/pdf/2204.05999.pdf)
+  quality_control: Unknown
   access:
-    value: Full public access
-    explanation:
+    value: Open
+    explanation: Model weights are available via the [[HuggingFace repository]](https://huggingface.co/facebook/incoder-6B)
   license:
     value: CC-BY-NC 4.0
     explanation: The license is provided in the [[HuggingFace repository]](https://huggingface.co/facebook/incoder-6B?text=My+name+is+Lewis+and+I+like+to)
-  intended_uses:
-  prohibited_uses:
-  monitoring:
-  feedback:
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
 
 - type: model
   name: OPT
-  organization: Meta AI
-  description: OPT is a family of autoregressive large language models.
+  organization: Meta
+  description: OPT is a family of autoregressive language models.
   created_date:
     value: 2022-05-01
     explanation: >
@@ -177,34 +214,205 @@
   modality: Text (English)
   analysis: ''
   size: 175B parameters (dense model)
-  dependencies:
-    - BookCorpus
-    - Stories
-    - CCNews v2
-    - Pile-CommonCrawl
-    - Pile-DM Mathematics
-    - Pile-Gutenberg
-    - Pile-Hacker News
-    - Pile-OpenSubtitles
-    - Pile-OpenWebText2
-    - Pile-USPTO
-    - Pile-Wikipedia
-    - PushShift Reddit
+  dependencies: [RoBERTa dataset, The Pile, PushShift.io Reddit]
   training_emissions:
     value: 75 tCO2e
     explanation: >
-      Estimate by authors for the OPT-175B model only. Not including ablations and baselines.
+      Estimate by authors for the OPT-175B model only. Not including ablations and
+      baselines.
   training_time: ''
-  training_hardware:
-    value: Meta AI cluster
-    explanation: Trained on 992 80GB A100 GPUs
+  training_hardware: Meta AI cluster. Trained on 992 80GB A100 GPUs
   quality_control: ''
   access:
-    value: Limited public access
-    explanation: The 175B model requires manual approval to access. Other models are available through HuggingFace.
+    value: Limited
+    explanation: The 175B model requires manual approval from Meta to access. Other
+      models are available through HuggingFace.
   license:
     value: OPT-175B LICENSE
     explanation: All released except 66B (TBD) and 17B (requires manual approval)
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+
+- type: dataset
+  name: Make-A-Video dataset
+  # General
+  organization: Meta
+  description: >
+    The Make-A-Video dataset is the dataset used to train Make-A-Video, which includes
+    both image-text and video-only datasets with specific and significant filtering.
+  created_date:
+    value: 2022-09-29
+    explanation: >
+      The date that Make-A-Video was posted to arXiv
+      [[arXiv]]
+      (https://arxiv.org/abs/2209.14792).
+  url: https://arxiv.org/pdf/2209.14792.pdf
+  datasheet: None
+  modality: Video, Image-Text
+  size: 20M video clips, 2.3B image-text pairs
+  sample: []
+  analysis:
+    value: TODO
+  # Construction
+  dependencies: [LAION-5B, WebVid-10M, HD-VILA-100M]
+  license:
+    value: Unknown
+    explanation: >
+      No license is discussed, though the underlying datasets are public and have
+      licenses.
+  included:
+    value: None
+    explanation: >
+      Data from the three underlying datasets is filtered, but nothing is included
+      beyond this.
+  excluded: >
+    The LAION-5B dataset is filtered to 2.3B by removing NSFW images using [https://github.com/GantMan/nsfw](https://github.com/GantMan/nsfw),
+    toxic words in text, and images with watermark probability > 0.5. The HD-VILA-100M
+    is randomly subsampled to 10M video clips.
+  quality_control:
+    value: >
+      The authors exclude NSFW, toxic, and likely watermarked data from LAION-5B.
+  # Downstream
+  access:
+    value: Limited
+    explanation: >
+      The datasets involved are public, but the full dataset is not directly available,
+      nor are filtering scripts.
+  intended_uses:
+    value: Unknown
+  prohibited_uses:
+    value: Unknown
+  monitoring:
+    value: Unknown
+    explanation: >
+      There is no information on how Meta is internally monitoring
+      the use of the dataset.
+  feedback:
+    value: None
+    explanation: >
+      No feedback mechanism is mentioned by the authors.
+- type: model
+  name: Make-A-Video
+  # General
+  organization: Meta
+  description: >
+    Make-A-Video is a model for Text-to-Video Generation without Text-Video Data.
+  created_date:
+    value: 2022-09-29
+    explanation: >
+      The date that Make-A-Video was posted to arXiv
+      [[arXiv]]
+      (https://arxiv.org/abs/2209.14792).
+  url: https://arxiv.org/pdf/2209.14792.pdf
+  model_card: None
+  modality: Video, Text
+  size:
+    value: Unknown
+    explanation: >
+      The authors do not state the model size in the paper.
+  analysis:
+    value: >
+      Model performance was evaluated using automated (Frechet Video Distance; Frechet
+      Inception Distance) and human evaluation on two datasets (UCF-101, MSR-VTT)
+      in the zero-shot setting.
+  # Construction
+  dependencies: [Make-A-Video dataset]
+  training_emissions:
+    value: Unknown
+    explanation: >
+      Authors do not report the training emissions.
+  training_time:
+    value: Unknown
+    explanation: >
+      Authors do not report the training time.
+  training_hardware:
+    value: Unknown
+    explanation: >
+      Authors do not report the training hardware or provider.
+  quality_control:
+    value: None
+    explanation: >
+      Authors do not report specific quality control steps taken in modeling, though
+      filtering is done in producing the Make-A-Video dataset.
+  # Downstream
+  access:
+    value: Closed
+    explanation: >
+      The model has not been released; a form existed to potentially acquire access
+      but is now closed as of 2022-12-07
+      [[Access Form]](https://docs.google.com/forms/u/0/d/e/1FAIpQLSfMjC57wcXWUDV0UbS2Tn6VhjLEiCXaHvWZuWgWRa-Zx8-Few/closedform).
+  license:
+    value: Unknown
+    explanation: >
+      Authors do not report the license.
+  intended_uses:
+    value: Unknown
+    explanation: >
+      Authors do not report the intended uses.
+  prohibited_uses:
+    value: Unknown
+    explanation: >
+      Authors do not report the prohibited uses.
+  monitoring:
+    value: Unknown
+    explanation: >
+      Authors do not report the monitoring process for Make-A-Video internally at
+      Meta.
+  feedback:
+    value: None
+    explanation: >
+      Authors do not mention or provide a feedback mechanism.
+
+- type: model
+  name: LLaMa
+  organization: Meta
+  description: ''
+  created_date:
+    value: 2023-02-24
+  url: https://arxiv.org/abs/2302.13971
+  model_card: ''
+  modality: Text
+  analysis: ''
+  size: 65B parameters (dense)
+  dependencies:
+    - CommonCrawl
+    - C4
+    - Github
+    - Wikipedia
+    - BooksCorpus
+    - arXiv
+    - StackExchange
+  training_emissions: ''
+  training_time: ''
+  training_hardware: ''
+  quality_control: ''
+  access: Open
+  license: LLaMa License (model weights), GPL-3.0 License (code)
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+
+- type: model
+  name: OPT-IML
+  organization: Meta
+  description: ''
+  created_date:
+    value: 2022-12-22
+  url: https://arxiv.org/abs/2212.12017
+  model_card: ''
+  modality: Text
+  analysis: ''
+  size: 175B parameters (dense)
+  dependencies: [OPT, OPT-IML Bench]
+  training_emissions: ''
+  training_time: ''
+  training_hardware: ''
+  quality_control: ''
+  access: Open
+  license: OPT Model License
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''

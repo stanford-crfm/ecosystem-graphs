@@ -1,1 +1,2 @@
 yamllint==1.26.3
+yamlfix==1.2.0

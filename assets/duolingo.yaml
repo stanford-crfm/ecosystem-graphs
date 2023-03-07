@@ -1,0 +1,42 @@
+---
+
+- type: application
+  name: Duolingo
+  # General
+  organization: Duolingo
+  description: >
+    Duolingo is a language learning application, helping users learn new
+    languagese through completing a series of activities. Duolingo uses
+    GPT-3 to provide French grammer correction
+    [[OpenAI API Use Cases]](https://openai.com/api/).
+  created_date: Unknown
+  url: https://www.duolingo.com/
+  # Construction
+  dependencies: [OpenAI API]
+  adaptation: Unknown
+  output_space: French grammar corrections
+  quality_control: Unknown
+  # Downstream
+  access: Limited
+  license:
+    value: Limited use license
+    explanation: >
+      License is granted to the useres to us the service, as outlined in the
+      'Registration; Submission of Content' section of the Terms
+      [[Terms]](https://www.duolingo.com/terms).
+  terms_of_service: https://www.duolingo.com/terms
+  intended_uses: >
+    Duolingo is intended to be used as a language learning app.
+  prohibited_uses: Unknown
+  monitoring: Unknown
+  feedback: >
+    Feedback can be provided at the help link in the contact page
+    [[Duolingo Contact]](https://www.duolingo.com/contact).
+  # Deployment
+  monthly_active_users:
+    value: 42 million (all languages)
+    explanation: >
+      The monthly active users as measured in 2021, reported by Statista
+      [[Source]](https://www.statista.com/statistics/1248008/duolingo-mau-worldwide/).
+  user_distribution: Unknown
+  failures: Unknown

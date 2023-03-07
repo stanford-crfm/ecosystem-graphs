@@ -1,5 +1,39 @@
 ---
 
+# Datasets
+- type: dataset
+  name: C4
+  # General
+  organization: Google
+  description: The Colossal Clean Crawled Corpus (C4) is a processed version of
+    Common Crawl to facilitate transfer learning in NLP.
+  created_date:
+    value: 2019-10-23
+    explanation: The date the T5 paper was made public.
+  url: https://arxiv.org/abs/1910.10683
+  datasheet: https://huggingface.co/datasets/c4
+  modality: Text (English)
+  size: 750GB
+  sample: [https://huggingface.co/datasets/c4/viewer/en/train]
+  analysis: https://arxiv.org/abs/2104.08758
+  # Construction
+  dependencies: [CommonCrawl]
+  license: ODC-BY
+  included: None
+  excluded: Data was filtered for English using langdetect. Further, data was filtered
+    to end in terminal punctuation, to remove short pages (less than 5 sentences),
+    and to remove "Dirty, Naughty, Obscene or Otherwise Bad Words".
+  quality_control: Data filtering excluded obscene words from a block list as well
+    as short documents and some deduplication was done based on string overlap.
+  # Downstream
+  access:
+    value: Open
+    explanation: https://huggingface.co/datasets/c4
+  intended_uses: To faciliate transfer learning research in NLP.
+  prohibited_uses: None
+  monitoring: None
+  feedback: https://huggingface.co/datasets/c4/discussions
+
 - type: dataset
   name: Internal Google BERT dataset
   # General
@@ -28,7 +62,7 @@
   excluded: Unknown
   quality_control: Unknown
   # Downstream
-  access: No public access
+  access: Closed
   intended_uses:
     value: Unknown
     explanation: >
@@ -38,6 +72,37 @@
   prohibited_uses: Unknown
   monitoring: Unknown
   feedback: Unknown
+
+# Models
+- type: model
+  name: T5
+  organization: Google
+  description: Text-To-Text Transfer Transformer (T5) is a model that unifies all
+    NLP tasks under the text-to-text format.
+  created_date:
+    value: 2019-10-23
+    explanation: The date the T5 paper was made public.
+  url: https://arxiv.org/abs/1910.10683
+  model_card: https://huggingface.co/t5-base
+  modality: Text (English)
+  size:
+    value: 11B parameters (dense)
+    explanation: T5 models were trained on several sizes including 3B and 11B parameters.
+  analysis: https://huggingface.co/t5-base#evaluation
+  dependencies: [C4]
+  training_emissions: Unknown
+  training_time: Unknown
+  training_hardware: 1,024 TPU v3 chips (Cloud TPU Pods)
+  quality_control: The T5 paper documents many analyses/ablations that were considered
+    before arriving at the final architecture/training procedure.
+  access:
+    value: Open
+    explanation: https://huggingface.co/t5-large
+  license: Apache 2.0
+  intended_uses: NLP tasks
+  prohibited_uses: Unknown
+  monitoring: None
+  feedback: https://huggingface.co/t5-large/discussions
 
 - type: model
   name: Internal Google BERT
@@ -56,14 +121,13 @@
   size: Unknown
   analysis: Unknown
   # Construction
-  dependencies:
-    - Internal Google BERT dataset
+  dependencies: [Internal Google BERT dataset]
   training_emissions: Unknown
   training_time: Unknown
   training_hardware: Unknown
   quality_control: Unknown
   # Downstream
-  access: No public access
+  access: Closed
   license: Unknown
   intended_uses:
     value: Unknown
@@ -88,13 +152,12 @@
       were for ranking and featured snippets in Search.
   url: https://blog.google/products/search/search-language-understanding-bert/
   # Construction
-  dependencies:
-    - Internal Google BERT
+  dependencies: [Internal Google BERT]
   adaptation: Unknown
   output_space: web page ranking
   quality_control: Unknown
   # Downstream
-  access: Full public access
+  access: Open
   license: >
     As listed in the [[Term of Service]](https://policies.google.com/terms),
     Google search is bounded by the Google license terms. Users get to keep the
@@ -149,11 +212,11 @@
     Included in the dataset are data from "public forums (0%); C4 data (12.5% );
     code documents from sites related to programming like Q&A sites tutorials,
     etc (12.5%); Wikipedia (English) (12.5%); English web documents (6.25%);
-    and Non-English web documents (6.25%).
+    and Non-English web documents (6.25%)."
   excluded: Unknown
   quality_control: Unknown
   # Downstream
-  access: No public access
+  access: Closed
   intended_uses:
     value: Unknown
     explanation: >
@@ -199,10 +262,9 @@
     Finally, the model was analyzed on groundedness, testing its ability to
     produce responses that can be associated with "known sources whenever
     possible
-    [[Section 4.1]](https://arxiv.org/pdf/2201.08239.pdf#subsection.4.1).
+    [[Section 4.1]](https://arxiv.org/pdf/2201.08239.pdf#subsection.4.1)."
   # Construction
-  dependencies:
-    - Infiniset
+  dependencies: [Infiniset]
   training_emissions:
     value: 26 tCO2e
     explanation: >
@@ -213,7 +275,7 @@
       tCO2e
       [[Section 10]](https://arxiv.org/pdf/2201.08239.pdf#section.10)"
   training_time:
-    value: 4108.80
+    value: 4108.80 petaflop/s-day
     explanation: >
       The total number of training flops of LaMDA was reported as 3.55E+23
       (3.55E+8 petaflops)
@@ -232,7 +294,7 @@
     are shown in
     [[Figure 5]](https://arxiv.org/pdf/2201.08239.pdf#figure.caption.23).
   # Downstream
-  access: No public access
+  access: Closed
   license: Unknown
   intended_uses: >
     LaMDA is a language model, so it can be used for regular langauge modelling
@@ -278,14 +340,13 @@
   sample: []
   analysis: Unknown
   # Construction
-  dependencies:
-    - Infiniset
+  dependencies: [Infiniset]
   license: Unknown
   included: >
     The dataset is based on Infiniset. It included multilingual text containing
     text from over 100 languages. The breakdown of the data included is as
     follows: Social media conversations (multilingual) 50, Filtered webpages
-    (multilingual) 27%, Books (English) 13%, GitHub (code) 5%, Wikipedia
+    (multilingual) 27%, BooksCorpus (English) 13%, GitHub (code) 5%, Wikipedia
     (multilingual) 4%, and News (English) 1%.
     Code was collected from GitHub repositories with appropriate licenses,
     totalling 96GB of source code
@@ -300,7 +361,7 @@
     Code files were de-duplicated using Levenshtein distance
     [[Section 3]](https://arxiv.org/pdf/2204.02311.pdf#section.3).
   # Downstream
-  access: No public access
+  access: Closed
   intended_uses:
     value: >
       "The dataset was created for pre-training language models by a team of
@@ -322,39 +383,38 @@
 - type: model
   name: Flan-T5
   organization: Google
-  description: Flan-T5 is a version of the T5 large language model fine-tuned on instruction data
+  description: Flan-T5 is a version of the T5 language model fine-tuned on instruction
+    data
   created_date:
     value: 2022-10-20
     explanation: Date paper was released
   url: https://arxiv.org/abs/2210.11416
   model_card: https://arxiv.org/pdf/2210.11416.pdf
-  modality: Text (A lot of languages, English)
-  analysis: ''
+  modality: Text (English)
+  analysis: Evaluated on a variety of standard language datasets.
   size: 11B parameters (dense model)
-  dependencies:
-    - C4
-    - Muffin dataset
-    - Natural Instructions v2
-    - Flan chain of thought data
-  training_emissions: ''
-  training_time: ''
-  training_hardware: .nan
-  quality_control: ''
+  dependencies: [T5, Muffin, P3, NaturalInstructions-v2, Flan CoT]
+  training_emissions: Unknown
+  training_time: Unknown
+  training_hardware: 512 v4 TPU Chips
+  quality_control: Across different multitask datasets, templates and formatting
+    were maintained. For the chain-of-thoughts (CoT) data, specific exemplars were
+    used.
   access:
-    value: Full public access
+    value: Open
     explanation: Weights can be downloaded from [Github](https://github.com/google-research/t5x/blob/main/docs/models.md)
   license:
     value: Apache 2.0
     explanation: License on the [[Github repository]](https://github.com/google-research/google-research)
-  intended_uses: ''
-  prohibited_uses: ''
-  monitoring: ''
-  feedback: ''
+  intended_uses: Unknown
+  prohibited_uses: None
+  monitoring: None
+  feedback: https://huggingface.co/google/flan-t5-xxl/discussions
 
 - type: model
   name: UL2
   organization: Google
-  description: UL2 is a large language model trained with a new pretraining objective
+  description: UL2 is a language model trained with a new pretraining objective
   created_date:
     value: 2022-05-10
     explanation: Date mdoel paper was released
@@ -363,13 +423,13 @@
   modality: Text (English)
   analysis: ''
   size: 20B parameters (dense model)
-  dependencies: ''
+  dependencies: [C4]
   training_emissions: ''
   training_time: ''
   training_hardware: 128 TPUv4
   quality_control: ''
   access:
-    value: Full public access
+    value: Open
     explanation: Model weights available for download in the [[Github repo]](https://github.com/google-research/google-research/tree/master/ul2)
   license:
     value: Apache 2.0
@@ -391,17 +451,15 @@
   modality: Text (English) and Image
   size: 20B parameters
   analysis: ''
-  dependencies:
-    - C4
-    - LAION-400M
-    - FIT400M
-    - JFT-4B
+  dependencies: [C4, LAION-400M, FIT400M, JFT-4B]
   training_emissions: ''
-  training_time:
-  training_hardware:
+  training_time: Unknown
+  training_hardware: Unknown
   quality_control: ''
-  access: No public access
-  license: n/a
+  access:
+    value: Closed
+    explanation: Google does not provide access to Parti for external researchers.
+  license: Unknown
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
@@ -418,17 +476,16 @@
   model_card: ''
   modality: Text (English) and Image
   size: >
-    14B parameters total. 2B parameters (U-Net model), 11B parameters (T5-XXL), and 600M and 400M parameter models for super resolution
+    14B parameters total. 2B parameters (U-Net model), 11B parameters (T5-XXL),
+    and 600M and 400M parameter models for super resolution
   analysis: ''
-  dependencies:
-    - LAION-400M
-    - Google internal image-text dataset
-  training_emissions:
-  training_time:
+  dependencies: [LAION-400M, Google internal image-text dataset]
+  training_emissions: Unknown
+  training_time: Unknown
   training_hardware: 128 TPU-v4
   quality_control: ''
-  access: No public access
-  license: n/a
+  access: Closed
+  license: Unknown
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
@@ -444,18 +501,15 @@
   url: https://arxiv.org/abs/2104.11178
   model_card: ''
   modality: Text (English), Video, and Audio
-  size: >
-    14B parameters total. 2B parameters (U-Net model), 11B parameters (T5-XXL), and 600M and 400M parameter models for super resolution
+  size: 155M
   analysis: ''
-  dependencies:
-    - AudioSet
-    - HowTo100M
-  training_emissions:
+  dependencies: [AudioSet, HowTo100M]
+  training_emissions: Unknown
   training_time: 3 days
   training_hardware: 256 TPU-v3
   quality_control: ''
   access:
-    value: Full public access
+    value: Open
     explanation: Model checkpoints can be downloaded from the [[Github repository]](https://github.com/google-research/google-research/tree/master/vatt)
   license:
     value: Apache 2.0
@@ -489,8 +543,7 @@
     toxicity benchmarks"
     [[Model Card]](https://arxiv.org/pdf/2204.02311.pdf#appendix.E).
   # Construction
-  dependencies:
-    - PaLM dataset
+  dependencies: [PaLM dataset]
   training_emissions:
     value: 271.43 tCO2
     explanation: >
@@ -507,7 +560,7 @@
       Reported in [[Section 4]](https://arxiv.org/pdf/2204.02311.pdf#section.4).
   quality_control: Unknown
   # Downstream
-  access: No public access
+  access: Closed
   license: Unknown
   intended_uses: >
     "The primary use is research on language models, including: research
@@ -530,3 +583,875 @@
     explanation: >
       Author contact information is shared in the paper
       [[Paper]](https://arxiv.org/pdf/2204.02311.pdf).
+
+- type: model
+  name: Med-PaLM
+  organization: Google
+  description: ''
+  created_date:
+    value: 2022-12-26
+  url: https://arxiv.org/abs/2212.13138
+  model_card: ''
+  modality: Text
+  analysis: ''
+  size: 540B
+  dependencies: [Flan-PaLM, MultiMedQA]
+  training_emissions: ''
+  training_time: ''
+  training_hardware: ''
+  quality_control: ''
+  access: Closed
+  license: Unknown
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+
+- type: model
+  name: MultiMedQA
+  organization: Google
+  description: ''
+  created_date:
+    value: 2022-12-26
+  url: https://arxiv.org/abs/2212.13138
+  model_card: ''
+  modality: Text
+  analysis: ''
+  size: Unknown
+  dependencies:
+    - MedQA
+    - MedMCQA
+    - PubMedQA
+    - MMLU
+    - LiveQA
+    - Medication QA
+    - HealthSearchQA
+  training_emissions: ''
+  training_time: ''
+  training_hardware: ''
+  quality_control: ''
+  access: Closed
+  license: Unknown
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+
+- type: model
+  name: Flan-PaLM
+  organization: Google
+  description: ''
+  created_date:
+    value: 2022-10-20
+  url: https://arxiv.org/abs/2210.11416
+  model_card: ''
+  modality: Text
+  analysis: ''
+  size: 540B
+  dependencies: [PaLM, Muffin, P3, NaturalInstructions-v2]
+  training_emissions: ''
+  training_time: ''
+  training_hardware: ''
+  quality_control: ''
+  access: Closed
+  license: Unknown
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+
+- type: model
+  name: Flan-U-PaLM
+  organization: Google
+  description: ''
+  created_date:
+    value: 2022-10-20
+  url: https://arxiv.org/abs/2210.11416
+  model_card: ''
+  modality: Text
+  analysis: ''
+  size: 540B
+  dependencies: [U-PaLM, Muffin, P3, NaturalInstructions-v2]
+  training_emissions: ''
+  training_time: ''
+  training_hardware: ''
+  quality_control: ''
+  access: Closed
+  license: Unknown
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+
+- type: dataset
+  name: Muffin
+  organization: Google
+  description: ''
+  created_date:
+    value: 2021-09-03
+  url: https://arxiv.org/abs/2109.01652
+  datasheet: ''
+  modality: Text
+  size: 62 tasks
+  sample: ''
+  analysis: ''
+  dependencies: []
+  included: ''
+  excluded: ''
+  quality_control: ''
+  access: Open
+  license: Apache 2.0
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+
+- type: model
+  name: U-PaLM
+  organization: Google
+  description: ''
+  created_date:
+    value: 2022-10-20
+  url: https://arxiv.org/abs/2210.11399
+  model_card: ''
+  modality: Text
+  analysis: ''
+  size: 540B
+  dependencies: [PaLM, PaLM dataset]
+  training_emissions: ''
+  training_time: ''
+  training_hardware: ''
+  quality_control: ''
+  access: Closed
+  license: Unknown
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+
+- type: model
+  name: PaLM-SayCan
+  organization: Google
+  description: ''
+  created_date:
+    value: 2022-08-16
+  url: https://arxiv.org/abs/2204.01691
+  model_card: ''
+  modality: Text, Robotic Control
+  analysis: ''
+  size: 540B
+  dependencies: [PaLM]
+  training_emissions: ''
+  training_time: ''
+  training_hardware: ''
+  quality_control: ''
+  access: Closed
+  license: Unknown (model weights), Apache-2.0 (SayCan code)
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+
+- type: model
+  name: GLaM
+  organization: Google
+  description: ''
+  created_date:
+    value: 2021-12-13
+  url: https://arxiv.org/abs/2112.06905
+  model_card: ''
+  modality: Text
+  analysis: ''
+  size: 1.2T parameters (sparse)
+  dependencies:
+    - GLaM Web dataset
+    - Wikipedia
+    - GLaM Conversations dataset
+    - GLaM Forums dataset
+    - BooksCorpus
+    - GLaM News dataset
+  training_emissions: ''
+  training_time: ''
+  training_hardware: ''
+  quality_control: ''
+  access: Closed
+  license: Unknown
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+
+- type: dataset
+  name: GLaM Web dataset
+  organization: Google
+  description: ''
+  created_date:
+    value: 2021-12-13
+  url: https://arxiv.org/abs/2112.06905
+  datasheet: ''
+  modality: Text
+  size: Unknown
+  sample: ''
+  analysis: ''
+  dependencies: []
+  included: ''
+  excluded: ''
+  quality_control: ''
+  access: Closed
+  license: Unknown
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+
+- type: dataset
+  name: GLaM Conversations dataset
+  organization: Google
+  description: ''
+  created_date:
+    value: 2021-12-13
+  url: https://arxiv.org/abs/2112.06905
+  datasheet: ''
+  modality: Text
+  size: Unknown
+  sample: ''
+  analysis: ''
+  dependencies: []
+  included: ''
+  excluded: ''
+  quality_control: ''
+  access: Closed
+  license: Unknown
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+
+- type: dataset
+  name: GLaM Forums dataset
+  organization: Google
+  description: ''
+  created_date:
+    value: 2021-12-13
+  url: https://arxiv.org/abs/2112.06905
+  datasheet: ''
+  modality: Text
+  size: Unknown
+  sample: ''
+  analysis: ''
+  dependencies: []
+  included: ''
+  excluded: ''
+  quality_control: ''
+  access: Closed
+  license: Unknown
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+
+- type: dataset
+  name: GLaM News dataset
+  organization: Google
+  description: ''
+  created_date:
+    value: 2021-12-13
+  url: https://arxiv.org/abs/2112.06905
+  datasheet: ''
+  modality: Text
+  size: Unknown
+  sample: ''
+  analysis: ''
+  dependencies: []
+  included: ''
+  excluded: ''
+  quality_control: ''
+  access: Closed
+  license: Unknown
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+
+- type: model
+  name: MUM
+  organization: Google
+  description: ''
+  created_date:
+    value: 2021-05-18
+  url: https://blog.google/products/search/introducing-mum/
+  model_card: ''
+  modality: Images, Text
+  analysis: ''
+  size: Unknown
+  dependencies: [MUM dataset]
+  training_emissions: ''
+  training_time: ''
+  training_hardware: ''
+  quality_control: ''
+  access: Closed
+  license: Unknown
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+
+- type: dataset
+  name: MUM dataset
+  organization: Google
+  description: ''
+  created_date:
+    value: 2021-05-18
+  url: https://blog.google/products/search/introducing-mum/
+  datasheet: ''
+  modality: Images, Text
+  size: Unknown
+  sample: ''
+  analysis: ''
+  dependencies: []
+  included: ''
+  excluded: ''
+  quality_control: ''
+  access: Closed
+  license: Unknown
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+
+- type: model
+  name: Phenaki
+  organization: Google
+  description: ''
+  created_date:
+    value: 2023-02-01
+  url: https://openreview.net/pdf?id=vOEXS39nOF
+  model_card: ''
+  modality: Video, Text
+  analysis: ''
+  size: 1.8B parameters (dense)
+  dependencies: [LAION-400M, Phenaki Video-Text Corpus]
+  training_emissions: ''
+  training_time: ''
+  training_hardware: ''
+  quality_control: ''
+  access: Closed
+  license: Unknown
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+
+- type: dataset
+  name: Phenaki Video-Text Corpus
+  organization: Google
+  description: ''
+  created_date:
+    value: 2023-02-01
+  url: https://openreview.net/pdf?id=vOEXS39nOF
+  datasheet: ''
+  modality: Video, Text
+  size: 15M text-video pairs at 8FPS
+  sample: ''
+  analysis: ''
+  dependencies: []
+  included: ''
+  excluded: ''
+  quality_control: ''
+  access: Closed
+  license: Unknown
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+
+- type: model
+  name: Flan-UL2
+  organization: Google
+  description: ''
+  created_date:
+    value: 2023-03-02
+  url: https://arxiv.org/abs/2205.05131
+  model_card: ''
+  modality: Text
+  analysis: ''
+  size: 20B parameters (dense model)
+  dependencies: [UL2, Flan Collection]
+  training_emissions: ''
+  training_time: ''
+  training_hardware: ''
+  quality_control: ''
+  access: Open
+  license: Apache 2.0
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+
+- type: dataset
+  name: Flan Collection
+  organization: Google
+  description: ''
+  created_date:
+    value: 2023-01-31
+  url: https://arxiv.org/abs/2301.13688
+  datasheet: ''
+  modality: Text
+  size: 1836 tasks
+  sample: ''
+  analysis: ''
+  dependencies: [Flan dataset, P3, NaturalInstructions-v2]
+  included: ''
+  excluded: ''
+  quality_control: ''
+  access: Open
+  license: Apache 2.0
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+
+- type: model
+  name: MusicLM
+  organization: Google
+  description: ''
+  created_date:
+    value: 2023-01-26
+  url: https://arxiv.org/pdf/2301.11325.pdf
+  model_card: ''
+  modality: Audio (music), text
+  analysis: ''
+  size: 1.4B parameters (430M semantic stage, 430M acoustic stage, 600M w2v-BERT)
+  dependencies:
+    - SoundStream
+    - w2v-BERT
+    - MuLan
+    - MusicLM semantic model
+    - MusicLM acoustic model
+  training_emissions: ''
+  training_time: ''
+  training_hardware: ''
+  quality_control: ''
+  access: Closed
+  license: Unknown
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+
+- type: model
+  name: SoundStream
+  organization: Google
+  description: ''
+  created_date:
+    value: 2023-01-26
+  url: https://arxiv.org/pdf/2301.11325.pdf
+  model_card: ''
+  modality: Audio (music)
+  analysis: ''
+  size: ''
+  dependencies: [Free Music Archive]
+  training_emissions: ''
+  training_time: ''
+  training_hardware: ''
+  quality_control: ''
+  access: Closed
+  license: Unknown
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+
+- type: model
+  name: w2v-BERT
+  organization: Google
+  description: ''
+  created_date:
+    value: 2023-01-26
+  url: https://arxiv.org/pdf/2301.11325.pdf
+  model_card: ''
+  modality: Audio (music)
+  analysis: ''
+  size: 600M parameter (dense model)
+  dependencies: [Free Music Archive]
+  training_emissions: ''
+  training_time: ''
+  training_hardware: ''
+  quality_control: ''
+  access: Closed
+  license: Unknown
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+
+- type: model
+  name: MuLan
+  organization: Google
+  description: ''
+  created_date:
+    value: 2022-08-26
+  url: https://arxiv.org/abs/2208.12415
+  model_card: ''
+  modality: Audio (music), text
+  analysis: ''
+  size: Unknown
+  dependencies: [AST, BERT, MuLan dataset]
+  training_emissions: ''
+  training_time: ''
+  training_hardware: ''
+  quality_control: ''
+  access: Closed
+  license: Unknown
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+
+- type: dataset
+  name: MuLan dataset
+  organization: Google
+  description: ''
+  created_date:
+    value: 2022-08-26
+  url: https://arxiv.org/abs/2208.12415
+  datasheet: ''
+  modality: Audio (music), text
+  size: 370K hours audio
+  sample: ''
+  analysis: ''
+  dependencies: []
+  included: ''
+  excluded: ''
+  quality_control: ''
+  access: Closed
+  license: Unknown
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+
+- type: dataset
+  name: MusicLM dataset
+  organization: Google
+  description: ''
+  created_date:
+    value: 2023-01-26
+  url: https://arxiv.org/pdf/2301.11325.pdf
+  datasheet: ''
+  modality: Audio (music)
+  size: 280K hours audio
+  sample: ''
+  analysis: ''
+  dependencies: []
+  included: ''
+  excluded: ''
+  quality_control: ''
+  access: Closed
+  license: Unknown
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+
+- type: model
+  name: MusicLM semantic model
+  organization: Google
+  description: ''
+  created_date:
+    value: 2023-01-26
+  url: https://arxiv.org/pdf/2301.11325.pdf
+  model_card: ''
+  modality: Audio (music)
+  analysis: ''
+  size: 430M parameters (dense model)
+  dependencies: [MusicLM dataset]
+  training_emissions: ''
+  training_time: ''
+  training_hardware: ''
+  quality_control: ''
+  access: Closed
+  license: Unknown
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+
+- type: model
+  name: MusicLM acoustic model
+  organization: Google
+  description: ''
+  created_date:
+    value: 2023-01-26
+  url: https://arxiv.org/pdf/2301.11325.pdf
+  model_card: ''
+  modality: Audio (music)
+  analysis: ''
+  size: 430M parameters (dense model)
+  dependencies: [MusicLM dataset]
+  training_emissions: ''
+  training_time: ''
+  training_hardware: ''
+  quality_control: ''
+  access: Closed
+  license: Unknown
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+
+- type: model
+  name: Noise2Music
+  organization: Google
+  description: ''
+  created_date:
+    value: 2023-02-08
+  url: https://google-research.github.io/noise2music/noise2music.pdf
+  model_card: ''
+  modality: Audio (music), text
+  analysis: ''
+  size: Unknown
+  dependencies: [Noise2Music pseudolabel dataset]
+  training_emissions: ''
+  training_time: ''
+  training_hardware: ''
+  quality_control: ''
+  access: Closed
+  license: Unknown
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+
+- type: dataset
+  name: LaMDA-LF
+  organization: Google
+  description: ''
+  created_date:
+    value: 2023-02-08
+  url: https://google-research.github.io/noise2music/noise2music.pdf
+  datasheet: ''
+  modality: Text
+  size: 150k songs
+  sample: ''
+  analysis: ''
+  dependencies: [LaMDA]
+  included: ''
+  excluded: ''
+  quality_control: ''
+  access: Closed
+  license: Unknown
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+
+- type: dataset
+  name: Rater-LF
+  organization: Google
+  description: ''
+  created_date:
+    value: 2023-02-08
+  url: https://google-research.github.io/noise2music/noise2music.pdf
+  datasheet: ''
+  modality: Text
+  size: 10k captions
+  sample: ''
+  analysis: ''
+  dependencies: [MusicCaps]
+  included: ''
+  excluded: ''
+  quality_control: ''
+  access: Closed
+  license: Unknown
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+
+- type: dataset
+  name: Rater-SF
+  organization: Google
+  description: ''
+  created_date:
+    value: 2023-02-08
+  url: https://google-research.github.io/noise2music/noise2music.pdf
+  datasheet: ''
+  modality: Text
+  size: 24k captions
+  sample: ''
+  analysis: ''
+  dependencies: [MusicCaps]
+  included: ''
+  excluded: ''
+  quality_control: ''
+  access: Closed
+  license: Unknown
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+
+- type: model
+  name: Noise2Music pseudolabeler
+  organization: Google
+  description: ''
+  created_date:
+    value: 2023-02-08
+  url: https://google-research.github.io/noise2music/noise2music.pdf
+  model_card: ''
+  modality: Audio (music), text
+  analysis: ''
+  size: Unknown
+  dependencies: [MuLan, MuLaMCap, LaMDA-LF, Rater-LF, Rater-SF]
+  training_emissions: ''
+  training_time: ''
+  training_hardware: ''
+  quality_control: ''
+  access: Closed
+  license: Unknown
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+
+- type: dataset
+  name: Noise2Music audio dataset
+  organization: Google
+  description: ''
+  created_date:
+    value: 2023-02-08
+  url: https://google-research.github.io/noise2music/noise2music.pdf
+  datasheet: ''
+  modality: Audio (music)
+  size: 340k hours audio
+  sample: ''
+  analysis: ''
+  dependencies: []
+  included: ''
+  excluded: ''
+  quality_control: ''
+  access: Closed
+  license: Unknown
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+
+- type: dataset
+  name: Noise2Music pseudolabel dataset
+  organization: Google
+  description: ''
+  created_date:
+    value: 2023-02-08
+  url: https://google-research.github.io/noise2music/noise2music.pdf
+  datasheet: ''
+  modality: Audio (music), text
+  size: 340k hours audio with pseudolabels
+  sample: ''
+  analysis: ''
+  dependencies: [Noise2Music audio dataset, Noise2Music pseudolabeler]
+  included: ''
+  excluded: ''
+  quality_control: ''
+  access: Closed
+  license: Unknown
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+
+- type: application
+  name: AI Test Kitchen
+  organization: Google
+  description: AI Test Kitchen provides a new way for people to learn about, experience,
+    and give feedback on emerging AI technology, like LaMDA.
+  created_date:
+    value: 2022-08-25
+  url: https://blog.google/technology/ai/join-us-in-the-ai-test-kitchen/
+  dependencies: [LaMDA]
+  adaptation: ''
+  output_space: ''
+  quality_control: ''
+  access: Limited
+  license: ''
+  terms_of_service: ''
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+  monthly_active_users: ''
+  user_distribution: ''
+  failures: ''
+
+- type: application
+  name: Bard
+  organization: Google
+  description: Conversational AI service, powered by LaMDA
+  created_date:
+    value: 2023-02-06
+  url: https://blog.google/technology/ai/bard-google-ai-search-updates/
+  dependencies: [LaMDA]
+  adaptation: ''
+  output_space: ''
+  quality_control: ''
+  access: Closed
+  license: ''
+  terms_of_service: ''
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+  monthly_active_users: ''
+  user_distribution: ''
+  failures: ''
+
+- type: model
+  name: Minerva
+  organization: Google
+  description: ''
+  created_date:
+    value: 2022-06-29
+  url: https://arxiv.org/abs/2206.14858
+  model_card: ''
+  modality: Text
+  analysis: ''
+  size: 540B parameters (dense model)
+  dependencies:
+    - PaLM
+    - arXiv
+    - PaLM dataset
+    - Minerva Math Web Pages dataset
+  training_emissions: ''
+  training_time: ''
+  training_hardware: ''
+  quality_control: ''
+  access: Closed
+  license: Unknown
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+
+- type: dataset
+  name: Minerva Math Web Pages dataset
+  organization: Google
+  description: ''
+  created_date:
+    value: 2022-06-29
+  url: https://arxiv.org/abs/2206.14858
+  datasheet: ''
+  modality: Text
+  size: 17.5B tokens
+  sample: ''
+  analysis: ''
+  dependencies: []
+  included: ''
+  excluded: ''
+  quality_control: ''
+  access: Closed
+  license: Unknown
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''

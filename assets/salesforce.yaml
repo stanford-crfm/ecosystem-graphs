@@ -3,7 +3,7 @@
 - type: model
   name: CodeGen
   organization: Salesforce
-  description: CodeGen is a large language model for code
+  description: CodeGen is a language model for code
   created_date:
     value: 2022-03-25
     explanation: Date model paper was released
@@ -12,16 +12,17 @@
   modality: Text (English) and Code
   analysis: ''
   size: 16B parameters (dense model)
-  dependencies: ''
+  dependencies: []
   training_emissions: ''
   training_time: ''
   training_hardware: Unspecified Salesforce Compute (TPU-V4s)
   quality_control: ''
   access:
-    value: Full public access
-    explanation: Model weights are available for download with links in the [[GitHub repo]](https://github.com/salesforce/CodeGen)
+    value: Open
+    explanation: Model weights are available for download with links in the [[GitHub
+      repo]](https://github.com/salesforce/CodeGen)
   license:
-    value: '?'
+    value: Unknown
     explanation: Explicit license for code is provided, but none mentioned for models
   intended_uses: ''
   prohibited_uses: ''

@@ -1,5 +1,6 @@
-# Mac Specific
+# Development Environment
 .DS_Store
+.vscode
 
 # Group specific
 nav
