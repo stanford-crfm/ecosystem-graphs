@@ -1,0 +1,37 @@
+---
+# This workflow force updates the main branch of the website repository whenever
+# the main branch of this (development) repository is updated. This ensures
+# that our website repository always has the recent changes from this
+# repository.
+
+name: Deploy
+
+"on":
+  push:
+    branches: main
+
+
+jobs:
+  # Check out the main branch of the development repository and force update the
+  # main of the website repository. Setting fetch-depth to 0 allows us to
+  # retrieve all the history for the specified branch.
+  update-website:
+    name: Update Website
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          token: ${{  secrets.WEBSITE_REPOSITORY_ACCESS_TOKEN  }}
+          path: main
+          fetch-depth: 0
+        env: 
+          COMMIT_MESSAGE: Sync with the development repository main
+          COMMIT_AUTHOR: Development Repository Continuous Integration
+        run: |
+          # Set up Git configuration
+          git config --global user.name "${{ env.COMMIT_AUTHOR }}"
+          git config --global user.email "username@users.noreply.github.com"
+
+          # Update the website repository
+          git remote add website https://github.com/Stanford-CRFM-Website/ecosystem-graphs.git
+          git push --set-upstream website main
