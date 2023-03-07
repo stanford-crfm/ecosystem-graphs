@@ -1,0 +1,50 @@
+---
+- type: dataset
+  name: LAION-5B
+  # General
+  organization: LAION
+  description: LAION is a dataset of 5 billion image-text pairs from the Internet
+  created_date:
+    value: 2022-12-12
+    explanation: The date the [[blog post]](https://laion.ai/blog/laion-5b/) was
+      released. Note that the dataset was already compiled earlier, e.g. the Stable
+      Diffusion model released earlier was trained on a subset of LAION-5B
+  url: https://laion.ai/blog/laion-5b/
+  datasheet: https://laion.ai/blog/laion-5b/
+  modality: Text and Image
+  size: 5 billion image-text pairs
+  sample:
+  analysis:
+  # Construction
+  dependencies: [CommonCrawl]
+  included:
+  excluded:
+    value: All samples with less than 5 characters alt-text length or less than
+      5 KB image size are dropped. All images with the too big resolution, potentially
+      DOS bombs, were dropped before attempting to process them. Duplicate removal
+      is performed with a bloom filter based on URL. Future runs would include more
+      variate deduplication rules, such as URL + language for the multilanguage
+      dataset. We use CLIP respectively MCLIP to compute embeddings of the image
+      and alt-text. Then we compute the cosine similarity of both embeddings and
+      drop all samples with cosine similarity below 0.28 for the English language
+      ( with CLIP B/32) and 0.26 for the multilingual dataset (MCLIP). These thresholds
+      were selected based on human inspection of the test results. We use the CLIP
+      embeddings of images and texts to filter out to the possible extent the illegal
+      content.
+    explanation: See https://laion.ai/blog/laion-5b/
+  quality_control:
+  # Downstream
+  access:
+    value: Full public access
+    explanation: The dataset index is available from https://laion.ai/blog/laion-5b/
+  license:
+    value: CC-BY 4.0
+    explanation: The license is listed on the [[dataset blog post]](https://laion.ai/blog/laion-5b/)
+  intended_uses: The authors recommend using the dataset "for research purposes"
+    and "do not recommend using it for creating ready-to-go industrial products,
+    as the basic research about general properties and safety of such large-scale
+    models, which we would like to encourage with this release, is still in progress"
+  prohibited_uses: No uses are explicitly prohibited by the license. Users are warned
+    from using LAION-5B for non-research purposes.
+  monitoring: ''
+  feedback: ''

@@ -576,7 +576,7 @@
   prohibited_uses: >
     The model "should not be used for downstream applications without further
     analysis on factors in the proposed downstream application
-    [[Model Card]](https://arxiv.org/pdf/2204.02311.pdf#appendix.E).
+    [[Model Card]](https://arxiv.org/pdf/2204.02311.pdf#appendix.E)"
   monitoring: Unknown
   feedback:
     value: Contact the authors.
