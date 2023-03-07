@@ -29,6 +29,6 @@ jobs:
           git config --global user.email "username@users.noreply.github.com"
 
           # Update the website repository
-          git remote add website https://x-access-token:${{  secrets.WEBSITE_REPOSITORY_ACCESS_TOKEN  }}@github.com/Stanford-CRFM-Website/ecosystem-graphs.git
+          git remote add website https://x-access-token:${{  secrets.WEBSITE_REPOSITORY_ACCESS_TOKEN  }}@github.com/Stanford-CRFM-Website/ecosystem-graphs
           git commit -m "{{ env.COMMIT_MESSAGE }}"
           git push --set-upstream website main
