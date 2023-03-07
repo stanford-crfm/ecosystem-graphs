@@ -199,6 +199,39 @@
       There is no mention on feedback mechanisms either internally or externally.
 
 - type: model
+  name: AlphaFold2
+  organization: DeepMind
+  description: AlphaFold2 is a protein language model trained on protein sequences
+  created_date:
+    value: 2021-07-15
+    explanation: The date the model paper was released
+  url: https://www.nature.com/articles/s41586-021-03819-2
+  model_card: None
+  modality: Protein sequences
+  size: 93M parameters (dense model)
+  analysis: ''
+  dependencies: [Protein Data Bank]
+  training_emissions: ''
+  training_time:
+    value: 11 days
+    explanation: Training takes "approximately 1 week" and finetuning takes "approximately
+      4 days"
+  training_hardware:
+    value: 128 TPUv3 cores
+    explanation: Described in paper
+  quality_control: ''
+  access:
+    value: Full public access
+    explanation: Models are available for download from the [[Github repository]](https://github.com/deepmind/alphafold)
+  license:
+    value: Apache 2.0
+    explanation: The license is provided in the [[Github repository]](https://github.com/deepmind/alphafold)
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+
+- type: model
   name: Flamingo
   # General
   organization: DeepMind

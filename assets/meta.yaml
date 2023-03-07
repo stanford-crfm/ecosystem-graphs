@@ -1,6 +1,34 @@
 ---
 
-# Datasets
+- type: model
+  name: ESM-2
+  organization: Meta
+  description: ESM-2 is a series of protein language models trained on protein sequences
+  created_date:
+    value: 2022-10-31
+    explanation: The date the [[model paper]](https://www.biorxiv.org/content/10.1101/2022.07.20.500902v2.full.pdf+html)
+      was released
+  url: https://www.biorxiv.org/content/10.1101/2022.07.20.500902v2.full.pdf+html
+  model_card: None
+  modality: Protein sequences
+  size: 15B parameters (dense model)
+  analysis: ''
+  dependencies: [UniRef50, UniRef90]
+  training_emissions: ''
+  training_time: ''
+  training_hardware: ''
+  quality_control: ''
+  access:
+    value: Full public access
+    explanation: Models are available for download from [[GitHub repository]](https://github.com/facebookresearch/esm#available-models)
+  license:
+    value: MIT
+    explanation: >
+      The license is provided in the [[Github repository]](https://github.com/facebookresearch/esm#available-models)
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
 
 - type: dataset
   name: PMD
