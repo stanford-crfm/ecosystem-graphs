@@ -24,7 +24,7 @@ jobs:
           token: ${{  secrets.WEBSITE_REPOSITORY_ACCESS_TOKEN  }}
           path: main
           fetch-depth: 0
-        env: 
+        env:
           COMMIT_MESSAGE: Sync with the development repository main
           COMMIT_AUTHOR: Development Repository Continuous Integration
         run: |
