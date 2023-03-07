@@ -19,7 +19,7 @@ jobs:
           path: main
           fetch-depth: 0
 
-      - name: Update the main branch of the website repository  # Small test comment.
+      - name: Update the main branch of the website repository
         env:
           COMMIT_AUTHOR: Development Repository Continuous Integration
           COMMIT_MESSAGE: Sync with the development repository main
@@ -27,6 +27,10 @@ jobs:
           # Set up Git configuration
           git config --global user.name "${{ env.COMMIT_AUTHOR }}"
           git config --global user.email "username@users.noreply.github.com"
+
+          # Test output
+          echo "$PWD"
+          echo $(ls)
 
           # Update the website repository
           git remote add website https://x-access-token:${{  secrets.WEBSITE_REPOSITORY_ACCESS_TOKEN  }}@github.com/Stanford-CRFM-Website/ecosystem-graphs.git
