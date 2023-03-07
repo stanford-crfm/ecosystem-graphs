@@ -22,8 +22,8 @@ jobs:
 
       - name: Update the main branch of the website repository
         env:
-          COMMIT_MESSAGE: Sync with the development repository main
           COMMIT_AUTHOR: Development Repository Continuous Integration
+          COMMIT_MESSAGE: Sync with the development repository main
         run: |
           # Set up Git configuration
           git config --global user.name "${{ env.COMMIT_AUTHOR }}"
@@ -31,4 +31,5 @@ jobs:
 
           # Update the website repository
           git remote add website https://github.com/Stanford-CRFM-Website/ecosystem-graphs.git
+          git commit -m "{{ env.COMMIT_MESSAGE }}"
           git push --set-upstream website main
