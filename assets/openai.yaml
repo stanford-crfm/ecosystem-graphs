@@ -1,7 +1,6 @@
 ---
 
 # Datasets
-
 - type: dataset
   name: GPT-3 dataset
   # General
@@ -417,6 +416,99 @@
       the dataset as of 2022-12-07.
 
 # Models
+- type: model
+  name: code-davinci-002
+  organization: OpenAI
+  description: code-davinci-002 is an autoregressive large language model trained
+    on text and code
+  created_date:
+    value: Q4 2021
+    explanation: >
+      [[OpenAI documentation]] says that `code-davinci-002` was trained before Q4
+      2021. [[Other documentation]](https://beta.openai.com/docs/models/finding-the-right-model)
+      indicates that the training data stops after June 2021
+  url: https://beta.openai.com/docs/model-index-for-researchers
+  model_card:
+  modality: Text (English) and code
+  size:
+  analysis: ''
+  dependencies:
+  training_emissions: ''
+  training_time: ''
+  training_hardware: ''
+  quality_control: ''
+  access:
+    value: Limited public access
+    explanation: code-davinci-002 is available via the OpenAI API
+  license:
+    value:
+    explanation:
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+
+- type: model
+  name: text-davinci-002
+  organization: OpenAI
+  description: text-davinci-002 is an autoregressive large language model finetuned
+    to follow human instructions
+  created_date:
+    value: Q4 2021
+    explanation: >
+      [[OpenAI documentation]] says that `text-davinci-002` was trained before Q4
+      2021.
+  url: https://beta.openai.com/docs/model-index-for-researchers
+  model_card:
+  modality: Text (English) and code
+  size:
+  analysis: ''
+  dependencies:
+  training_emissions: ''
+  training_time: ''
+  training_hardware: ''
+  quality_control: ''
+  access:
+    value: Limited public access
+    explanation: text-davinci-002 is available via the OpenAI API
+  license:
+    value:
+    explanation:
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+
+- type: model
+  name: text-davinci-003
+  organization: OpenAI
+  description: text-davinci-003 is an autoregressive large language model, additionally
+    trained to follow human instructions using reinforcement learning
+  created_date:
+    value: Q4 2021
+    explanation: >
+      [[OpenAI documentation]] says that `text-davinci-003` was trained before Q4
+      2021.
+  url: https://beta.openai.com/docs/model-index-for-researchers
+  model_card:
+  modality: Text (English) and code
+  size:
+  analysis: ''
+  dependencies:
+  training_emissions: ''
+  training_time: ''
+  training_hardware: ''
+  quality_control: ''
+  access:
+    value: Limited public access
+    explanation: text-davinci-003 is available via the OpenAI API
+  license:
+    value:
+    explanation:
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
 
 - type: model
   name: GPT-3
@@ -534,7 +626,7 @@
   # General
   organization: OpenAI
   description: >
-    Codex is a a GPT language model fine-tuned on publicly available code from
+    Codex is a GPT language model fine-tuned on publicly available code from
     GitHub.
   created_date:
     value: 2021-08-10
@@ -581,9 +673,8 @@
     value: Limited
     explanation: >
       The model is made available via the OpenAI API
-      [[OpenAI API]](https://openai.com/api/). Full model access was granted to
-      Microsoft for GitHub Copilot
-      [[GitHub Copilot]](https://copilot.github.com/).
+      [[OpenAI API]](https://openai.com/api/) as code-cushman-001 according to the
+      [[Model Index]](https://platform.openai.com/docs/model-index-for-researchers).
   license:
     value: Unknown
     explanation: >
@@ -647,10 +738,11 @@
     value: The model wasn't fully released to the public as a quality control measure.
   # Downstream
   access:
-    value: Limited
+    value: Closed
     explanation: >
-      The model is made available via the OpenAI API
-      [[OpenAI API]](https://openai.com/api/).
+      The model is made available via the OpenAI API but the specific endpoint (davinci-instruct-beta)
+      is currently unavailable.
+      [[Model Index]](https://platform.openai.com/docs/model-index-for-researchers).
   license:
     value: Unknown
     explanation: >
@@ -1088,13 +1180,8 @@
     - text-davinci-003
     - gpt-3.5-turbo
     - Whisper
-  adaptation: >
-    Although initially started with GPT-3, soon after the API was made public,
-    OpenAI deployed the InstructGPT models, and made them the default models on
-    the API
-    [[OpenAI Blog Post]](https://openai.com/blog/instruction-following/).
-    Unlike their predecessors, these models are trained with humans in the loop,
-    are more truthful and less toxic.
+  adaptation: The API exposes the models fairly direclty with a range of hyperparameters
+    (e.g. temperature scaling).
   output_space: >
     Given a prompting text, the OpenAI API provides access to text completions,
     and log probabilities. The support for text and code embeddings were added
@@ -1242,7 +1329,9 @@
   prohibited_uses: ''
   monitoring: ''
   feedback: ''
-  monthly_active_users: ''
+  monthly_active_users:
+    value: 100000000
+    explanation: https://www.reuters.com/technology/chatgpt-sets-record-fastest-growing-user-base-analyst-note-2023-02-01/
   user_distribution: ''
   failures: ''
 
@@ -1385,7 +1474,7 @@
   feedback: ''
 
 - type: application
-  name: WhisperAPI
+  name: Whisper API
   organization: OpenAI
   description: API to query OpenAI's Whisper model.
   created_date:
