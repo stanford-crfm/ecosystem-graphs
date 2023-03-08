@@ -12,16 +12,16 @@
   modality: Text and Image
   size: 890M parameters
   analysis: ''
-  dependencies:
-    - LAION 5B
+  dependencies: [LAION-5B]
   training_emissions: ''
-  training_time:
-  training_hardware:
+  training_time: 25 days according to Emad Mostaque (CEO of Stability) on [[Twitter]](https://twitter.com/emostaque/status/1563870674111832066)
+  training_hardware: 256 A100 GPUs according to Emad Mostaque (CEO of Stability)
+    on [[Twitter]](https://twitter.com/emostaque/status/1563870674111832066)
   quality_control: ''
   access:
-    value: Full public access
+    value: Open
     explanation: Model weights are available for download from the [[Github repo]](https://github.com/CompVis/stable-diffusion)
-  license: n/a
+  license: Unknown
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''

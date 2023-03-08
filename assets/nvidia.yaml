@@ -1,71 +1,100 @@
 ---
 
 # models
-
 - type: model
-  name: Megatron-Turing NLG
+  name: Megatron-LM
   organization: NVIDIA
-  description: Megatron-Turing NLG is a 530B parameter autoregressive large language model.
+  description: Megatron-LM is an autoregressive language model
   created_date:
-    value: 2022-01-28
-    explanation: The date the model paper was submitted to Arxiv
-  url: https://arxiv.org/abs/2201.11990
-  model_card: ''
+    value: 2021-04-09
+    explanation: The date the paper for the 1 trillion parameter model was published
+  url: https://arxiv.org/abs/2104.04473
+  model_card: None
   modality: Text (English)
-  size: 530B parameters (dense model)
   analysis: ''
-  dependencies:
-    - Pile-Books3
-    - Pile-OpenWebText2
-    - Pile-Stack Exchange
-    - Pile-PubMed
-    - Pile-Wikipedia
-    - Pile-Gutenberg
-    - Pile-BookCorpus2
-    - Pile-NIH
-    - Pile-ArXiv
-    - Pile-GitHub
-    - Pile-CC
-    - Pile-CommonCrawl
-    - Pile-Realnews
-    - Pile-CC-Stories
-  training_emissions: ''
-  training_time: ''
-  training_hardware: 4480 A100s (560 x 8)
-  quality_control: ''
-  access: No public access
+  size: 1000B parameters (dense model)
+  dependencies: []
+  training_emissions: Unknown
+  training_time: 84 days
+  training_hardware: 3072 A100 GPUs
+  quality_control: Unknown
+  access:
+    value: Closed
+    explanation: >
+      Neither the 8.3B parameter model trained to convergence nor the 1 trillion
+      paramter model is available for download
   license:
-    value: n/a
-    explanation: n/a
+    value: Unknown
+  intended_uses: None
+  prohibited_uses: None
+  monitoring: None
+  feedback: None
+
+- type: dataset
+  name: MineDojo
+  organization: NVIDIA
+  description: ''
+  created_date:
+    value: 2022-06-17
+  url: https://arxiv.org/abs/2206.08853
+  datasheet: ''
+  modality: Videos, Text
+  size: 730k videos, 6k Wikipedia pages, 340k reddit posts
+  sample: ''
+  analysis: ''
+  dependencies: [YouTube, Wikipedia, Reddit]
+  included: ''
+  excluded: ''
+  quality_control: ''
+  access: Open
+  license: MIT License
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+
+- type: dataset
+  name: VIMA dataset
+  organization: NVIDIA, Stanford
+  description: ''
+  created_date:
+    value: 2022-10-06
+  url: https://vimalabs.github.io/
+  datasheet: ''
+  modality: Text, Image
+  size: 200M parameters (dense model)
+  sample: ''
+  analysis: ''
+  dependencies: [T5, Mask R-CNN, VIMA dataset]
+  included: ''
+  excluded: ''
+  quality_control: ''
+  access: Open
+  license: MIT license
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
   feedback: ''
 
 - type: model
-  name: Megatron-LM
-  organization: NVIDIA
-  description: Megatron-LM is an autoregressive large language model
+  name: VIMA
+  organization: NVIDIA, Stanford
+  description: ''
   created_date:
-    value: 2021-04-09
-    explanation: The date the paper for the 1 trillion parameter model was published
-  url: https://arxiv.org/abs/2104.04473
-  model_card:
-  modality: Text (English)
-  analysis:
-  size: 1000B parameters (dense model)
-  dependencies:
-  training_emissions:
-  training_time:
-  training_hardware: .nan
-  quality_control:
-  access:
-    value: No public access
-    explanation: >
-        Neither the 8.3B parameter model trained to convergence nor the 1 trillion paramter model is available for download
-  license:
-    value: n/a
-  intended_uses:
-  prohibited_uses:
-  monitoring:
-  feedback:
+    value: 2022-10-06
+  url: https://vimalabs.github.io/
+  model_card: ''
+  modality: Simulation
+  analysis: ''
+  size: 650K successful trajectories
+  dependencies: []
+  training_emissions: ''
+  training_time: ''
+  training_hardware: ''
+  quality_control: ''
+  access: Open
+  license: MIT license
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
