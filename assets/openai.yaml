@@ -416,37 +416,6 @@
       the dataset as of 2022-12-07.
 
 # Models
-
-- type: model
-  name: davinci-instruct-beta
-  organization: OpenAI
-  description: davinci-instruct-beta is a large language model finetuned to follow
-    human instructions
-  created_date:
-    value: 2022-03-04
-    explanation: The date the [[model paper]](https://arxiv.org/abs/2203.02155)
-      was released
-  url: https://beta.openai.com/docs/models/finding-the-right-model
-  model_card:
-  modality: Text (English) and code
-  size:
-  analysis: ''
-  dependencies:
-  training_emissions: ''
-  training_time: ''
-  training_hardware: ''
-  quality_control: ''
-  access:
-    value: Limited public access
-    explanation: davinci-instruct-beta is available via the OpenAI API
-  license:
-    value:
-    explanation:
-  intended_uses: ''
-  prohibited_uses: ''
-  monitoring: ''
-  feedback: ''
-
 - type: model
   name: code-davinci-002
   organization: OpenAI
@@ -657,7 +626,7 @@
   # General
   organization: OpenAI
   description: >
-    Codex is a a GPT language model fine-tuned on publicly available code from
+    Codex is a GPT language model fine-tuned on publicly available code from
     GitHub.
   created_date:
     value: 2021-08-10
@@ -704,9 +673,8 @@
     value: Limited
     explanation: >
       The model is made available via the OpenAI API
-      [[OpenAI API]](https://openai.com/api/). Full model access was granted to
-      Microsoft for GitHub Copilot
-      [[GitHub Copilot]](https://copilot.github.com/).
+      [[OpenAI API]](https://openai.com/api/) as code-cushman-001 according to the
+      [[Model Index]](https://platform.openai.com/docs/model-index-for-researchers).
   license:
     value: Unknown
     explanation: >
@@ -1212,13 +1180,8 @@
     - text-davinci-003
     - gpt-3.5-turbo
     - Whisper
-  adaptation: >
-    Although initially started with GPT-3, soon after the API was made public,
-    OpenAI deployed the InstructGPT models, and made them the default models on
-    the API
-    [[OpenAI Blog Post]](https://openai.com/blog/instruction-following/).
-    Unlike their predecessors, these models are trained with humans in the loop,
-    are more truthful and less toxic.
+  adaptation: The API exposes the models fairly direclty with a range of hyperparameters
+    (e.g. temperature scaling).
   output_space: >
     Given a prompting text, the OpenAI API provides access to text completions,
     and log probabilities. The support for text and code embeddings were added
