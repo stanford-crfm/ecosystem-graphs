@@ -21,8 +21,8 @@ jobs:
       - name: Setup SSH
         uses: MrSquaare/ssh-setup-action@v1
         with:
-            host: github.com
-            private-key: ${{ secrets.WEBSITE_DEPLOY_SSH_PRIVATE_KEY }}
+          host: github.com
+          private-key: ${{ secrets.WEBSITE_DEPLOY_SSH_PRIVATE_KEY }}
 
       - name: Update the github-pages branch of the website repository
         env:
@@ -34,4 +34,4 @@ jobs:
 
           # Update the website repository
           git remote add website git+ssh://git@github.com/Stanford-CRFM-Website/ecosystem-graphs.git
-          git push -u website github-pages
+          git push -u website main
