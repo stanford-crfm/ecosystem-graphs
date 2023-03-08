@@ -715,7 +715,7 @@
   datasheet: ''
   modality: Text
   size: 27k ratings
-  sample: ''
+  sample: []
   analysis: ''
   dependencies: [Chinchilla]
   included: ''
@@ -738,7 +738,7 @@
   datasheet: ''
   modality: Text
   size: 72k comparisons
-  sample: ''
+  sample: []
   analysis: ''
   dependencies: [Chinchilla]
   included: ''
@@ -807,7 +807,7 @@
   datasheet: ''
   modality: Text
   size: 33k response pairs
-  sample: ''
+  sample: []
   analysis: ''
   dependencies: [Gopher, Google Search]
   included: ''

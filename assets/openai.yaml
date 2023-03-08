@@ -1298,7 +1298,7 @@
   datasheet: ''
   modality: Video
   size: 70k hours
-  sample: ''
+  sample: []
   analysis: ''
   dependencies: []
   included: ''
@@ -1368,7 +1368,7 @@
   datasheet: ''
   modality: Text
   size: Unknown
-  sample: ''
+  sample: []
   analysis: ''
   dependencies: []
   included: ''
@@ -1391,7 +1391,7 @@
   datasheet: ''
   modality: Code, Text
   size: Unknown
-  sample: ''
+  sample: []
   analysis: ''
   dependencies: []
   included: ''
@@ -1574,7 +1574,7 @@
   datasheet: ''
   modality: Text
   size: Unknown
-  sample: ''
+  sample: []
   analysis: ''
   dependencies: []
   included: ''

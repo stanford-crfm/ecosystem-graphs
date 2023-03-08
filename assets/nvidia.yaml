@@ -40,7 +40,7 @@
   datasheet: ''
   modality: Videos, Text
   size: 730k videos, 6k Wikipedia pages, 340k reddit posts
-  sample: ''
+  sample: []
   analysis: ''
   dependencies: [YouTube, Wikipedia, Reddit]
   included: ''
@@ -63,7 +63,7 @@
   datasheet: ''
   modality: Text, Image
   size: 200M parameters (dense model)
-  sample: ''
+  sample: []
   analysis: ''
   dependencies: [T5, Mask R-CNN, VIMA dataset]
   included: ''
