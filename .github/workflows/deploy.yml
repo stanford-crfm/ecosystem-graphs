@@ -33,5 +33,5 @@ jobs:
           git config --global user.email "username@users.noreply.github.com"
 
           # Update the website repository
-          git remote add website git+ssh://git@github.com/Stanford-CRFM-Website/ecosystem-graphs.git
+          git remote add website git+ssh://git@github.com/stanford-crfm-website/ecosystem-graphs.git
           git push -u website main
