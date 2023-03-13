@@ -1,0 +1,62 @@
+---
+
+- type: dataset
+  name: Wu Dao dataset
+  # General
+  organization: Beijing Academy of Artificial Intelligence
+  description: ''
+  created_date:
+    value: 2021-01-12
+    explanation: >
+      The date that BAAI made a public announcement
+      [[News Link]](https://mp.weixin.qq.com/s/BUQWZ5EdR19i40GuFofpBg).
+  url: Unknown
+  datasheet: ''
+  modality: Text (Chinese, English) and Image
+  size: Unknown
+  sample: []
+  analysis: ''
+  # Construction
+  dependencies: []
+  license: ''
+  included: ''
+  excluded: ''
+  quality_control: ''
+  # Downstream
+  access: No public access
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+
+- type: model
+  name: Wu Dao 2.0
+  # General
+  organization: Beijing Academy of Artificial Intelligence
+  description: ''
+  created_date:
+    value: 2021-01-12
+    explanation: >
+      The date that BAAI made a public announcement
+      [[News Link]](https://mp.weixin.qq.com/s/BUQWZ5EdR19i40GuFofpBg).
+  url: Unknown
+  model_card: ''
+  modality: Text (Chinese, English) and Image
+  size: 1750B parameters (dense model)
+  analysis: ''
+  # Construction
+  dependencies: [Wu Dao dataset]
+  training_emissions: ''
+  training_time: ''
+  training_hardware: ''
+  quality_control: ''
+  # Downstream
+  access:
+    value: No public access
+    explanation: >
+      The model wasn't released.
+  license: ''
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''

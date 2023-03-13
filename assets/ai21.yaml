@@ -221,3 +221,71 @@
   monthly_active_users: Unknown
   user_distribution: Unknown
   failures: Unknown
+
+- type: application
+  name: Wordtune
+  # General
+  organization: AI21 Labs
+  description: ''
+  created_date:
+    value: 2020-10-27
+    explanation: >
+      The date that AI21 Labs made a public announcement
+      [[News Link]](https://www.businesswire.com/news/home/20201027005162/en/AI21-Labs-Comes-out-of-Stealth-and-Launches-First-Deep-Tech-Writing-Assistant-Wordtune).
+  url: https://www.wordtune.com/
+  # Construction
+  dependencies:
+    value: []
+    explanation: Unknown
+  adaptation: ''
+  output_space: ''
+  quality_control: ''
+  # Downstream
+  access:
+    value: Limited public access
+    explanation: >
+      Wordtune is available to public upon sign up.
+  terms_of_service: ''
+  license: ''
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+  # Deployment
+  monthly_active_users: ''
+  user_distribution: ''
+  failures: ''
+
+- type: application
+  name: Wordtune Read
+  # General
+  organization: AI21 Labs
+  description: ''
+  created_date:
+    value: 2021-11-16
+    explanation: >
+      Date of a news article introducing WordTune Read
+      [[News Link]](https://www.calcalistech.com/ctech/articles/0,7340,L-3922633,00.html).
+  url: https://www.wordtune.com/read
+  # Construction
+  dependencies:
+    value: []
+    explanation: Unknown
+  adaptation: ''
+  output_space: ''
+  quality_control: ''
+  # Downstream
+  access:
+    value: Limited public access
+    explanation: >
+      Wordtune Read is available to public upon sign up.
+  terms_of_service: ''
+  license: ''
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+  # Deployment
+  monthly_active_users: ''
+  user_distribution: ''
+  failures: ''

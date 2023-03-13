@@ -1,0 +1,33 @@
+---
+
+- type: application
+  name: AI Dungeon
+  # General
+  organization: Latitude
+  description: ''
+  created_date:
+    value: 2019-12-17
+    explanation: >
+      Release date of the game on iOS and Android platforms
+      [[Wikipedia]](https://en.wikipedia.org/wiki/AI_Dungeon).
+  url: https://play.aidungeon.io
+  # Construction
+  dependencies: [GPT-2, GPT-3]
+  adaptation: ''
+  output_space: ''
+  quality_control: ''
+  # Downstream
+  access:
+    value: Limited public access
+    explanation: >
+      The game is available to public upon sign up.
+  terms_of_service: ''
+  license: ''
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+  # Deployment
+  monthly_active_users: ''
+  user_distribution: ''
+  failures: ''
