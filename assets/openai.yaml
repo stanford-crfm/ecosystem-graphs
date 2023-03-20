@@ -921,7 +921,8 @@
     value: Unknown
   # Downstream
   access:
-    value: Closed
+    value: Limited
+    explanation: Available via the OpenAI API as of Q1 2023.
   license:
     value: Unknown
     explanation: >
@@ -1086,6 +1087,7 @@
     - text-davinci-003
     - gpt-3.5-turbo
     - Whisper
+    - DALL·E
   adaptation: The API exposes the models fairly direclty with a range of hyperparameters
     (e.g. temperature scaling).
   output_space: >

@@ -93,7 +93,7 @@
       Feedback can be given by emailing the authors at contact at eleuther.ai.
 
 - type: model
-  name: GPT-J 6B
+  name: GPT-J
   organization: EleutherAI
   description: GPT-J is an open-source autoregressive language model.
   created_date:
@@ -152,11 +152,11 @@
   feedback: ''
 
 - type: model
-  name: GPT-NeoX-20B
+  name: GPT-NeoX
   # General
   organization: EleutherAI
   description: >
-    GPT-NeoX-20B is an open-sourced autoregressive language model.
+    GPT-NeoX (20B) is an open-sourced autoregressive language model.
   created_date:
     value: 2022-02-02
   url: http://eaidata.bmk.sh/data/GPT_NeoX_20B.pdf
@@ -239,7 +239,7 @@
   created_date: Unknown
   url: goose.ai
   # Construction
-  dependencies: [GPT-NeoX-20B]
+  dependencies: [GPT-NeoX]
   adaptation: Unknown
   output_space:
     value: Text Generation, Text Completion
