@@ -429,3 +429,179 @@
   prohibited_uses: ''
   monitoring: ''
   feedback: ''
+
+- type: application
+  name: Microsoft 365 Copilot
+  organization: Microsoft
+  description: It combines the power of language models with your data in the Microsoft Graph and the Microsoft 365 apps to turn your words into the most powerful productivity tool on the planet.
+  created_date:
+    value: 2023-03-16
+  url: https://blogs.microsoft.com/blog/2023/03/16/introducing-microsoft-365-copilot-your-copilot-for-work/
+  dependencies: [GPT-4 API]
+  adaptation: ''
+  output_space: ''
+  quality_control: ''
+  access: limited
+  license: unknown
+  terms_of_service: ''
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+  monthly_active_users: ''
+  user_distribution: ''
+  failures: ''
+
+- type: application
+  name: Microsoft Business Chat
+  organization: Microsoft
+  description: Business Chat works across the langugae model, the Microsoft 365 apps, and your data — your calendar, emails, chats, documents, meetings and contacts — to do things you’ve never been able to do before. You can give it natural language prompts like “Tell my team how we updated the product strategy,” and it will generate a status update based on the morning’s meetings, emails and chat threads.
+  created_date:
+    value: 2023-03-16
+  url: https://blogs.microsoft.com/blog/2023/03/16/introducing-microsoft-365-copilot-your-copilot-for-work/
+  dependencies: [Microsoft 365 Copilot]
+  adaptation: ''
+  output_space: ''
+  quality_control: ''
+  access: limited 
+  license: unknown
+  terms_of_service: ''
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+  monthly_active_users: ''
+  user_distribution: ''
+  failures: ''
+
+- type: application
+  name: Microsoft Excel
+  organization: Microsoft
+  description: Microsoft Excel is the industry leading spreadsheet software program, a powerful data visualization and analysis tool.
+  created_date:
+    value: unknown
+  url: https://www.microsoft.com/en-us/microsoft-365/excel
+  dependencies: [Microsoft 365 Copilot]
+  adaptation: ''
+  output_space: ''
+  quality_control: ''
+  access: open
+  license: unknown
+  terms_of_service: ''
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+  monthly_active_users: ''
+  user_distribution: ''
+  failures: ''
+
+- type: application
+  name: Microsoft Outlook
+  organization: Microsoft
+  description: Microsoft Outlook is a personal information manager software system from Microsoft, available as a part of the Microsoft Office and Microsoft 365 software suites.
+  created_date:
+    value: unknown
+  url: https://www.microsoft.com/en-us/microsoft-365/outlook/email-and-calendar-software-microsoft-outlook
+  dependencies: [Microsoft 365 Copilot]
+  adaptation: ''
+  output_space: ''
+  quality_control: ''
+  access: open
+  license: unknown
+  terms_of_service: ''
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+  monthly_active_users: ''
+  user_distribution: ''
+  failures: ''
+
+- type: application
+  name: Microsoft Power Platform
+  organization: Microsoft
+  description: Microsoft Power Platform is a line of business intelligence, app development, and app connectivity software applications.
+  created_date:
+    value: unknown
+  url: https://powerplatform.microsoft.com/en-us/
+  dependencies: [Microsoft 365 Copilot]
+  adaptation: ''
+  output_space: ''
+  quality_control: ''
+  access: limited 
+  license: unknown
+  terms_of_service: ''
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+  monthly_active_users: ''
+  user_distribution: ''
+  failures: ''
+
+- type: application
+  name: Microsoft PowerPoint
+  organization: Microsoft
+  description: Microsoft PowerPoint empowers you to create clean slideshow presentations and intricate pitch decks and gives you a powerful presentation maker.
+  created_date:
+    value: unknown
+  url: https://www.microsoft.com/en-us/microsoft-365/powerpoint
+  dependencies: [Microsoft 365 Copilot]
+  adaptation: ''
+  output_space: ''
+  quality_control: ''
+  access: open
+  license: unknown
+  terms_of_service: ''
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+  monthly_active_users: ''
+  user_distribution: ''
+  failures: ''
+
+- type: application
+  name: Microsoft Teams
+  organization: Microsoft
+  description: Microsoft Teams is a proprietary business communication platform developed by Microsoft, as part of the Microsoft 365 family of products. 
+  created_date:
+    value: unknown
+  url: https://www.microsoft.com/en-us/microsoft-teams/group-chat-software
+  dependencies: [Microsoft 365 Copilot, Microsoft Business Chat]
+  adaptation: ''
+  output_space: ''
+  quality_control: ''
+  access: open
+  license: unknown
+  terms_of_service: ''
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+  monthly_active_users: ''
+  user_distribution: ''
+  failures: ''
+
+- type: application
+  name: Microsoft Word
+  organization: Microsoft
+  description: Microsoft Word is a word processing software developed by Microsoft
+  created_date:
+    value: unknown
+  url: https://www.microsoft.com/en-us/microsoft-365/word
+  dependencies: [Microsoft 365 Copilot]
+  adaptation: ''
+  output_space: ''
+  quality_control: ''
+  access: open
+  license: unknown
+  terms_of_service: ''
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+  monthly_active_users: ''
+  user_distribution: ''
+  failures: ''

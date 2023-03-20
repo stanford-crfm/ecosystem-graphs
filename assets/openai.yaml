@@ -1088,6 +1088,7 @@
     - gpt-3.5-turbo
     - Whisper
     - DALL·E
+    - GPT-4
   adaptation: The API exposes the models fairly direclty with a range of hyperparameters
     (e.g. temperature scaling).
   output_space: >
@@ -1598,6 +1599,51 @@
   quality_control: ''
   access: Limited
   license: unknown
+  terms_of_service: ''
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+  monthly_active_users: ''
+  user_distribution: ''
+  failures: ''
+
+- type: model
+  name: GPT-4
+  organization: OpenAI
+  description: ''
+  created_date:
+    value: 2023-03-14
+  url: https://arxiv.org/abs/2303.08774
+  model_card: ''
+  modality: text, images
+  analysis: ''
+  size: unknown
+  dependencies: []
+  training_emissions: ''
+  training_time: ''
+  training_hardware: ''
+  quality_control: ''
+  access: limited
+  license: unknown
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+
+- type: application
+  name: GPT-4 API
+  organization: OpenAI
+  description: GPT-4 is OpenAI’s most advanced system, producing safer and more useful responses
+  created_date:
+    value: 2023-03-14
+  url: https://openai.com/product/gpt-4
+  dependencies: [GPT-4]
+  adaptation: ''
+  output_space: ''
+  quality_control: ''
+  access: limited 
+  license: ''
   terms_of_service: ''
   intended_uses: ''
   prohibited_uses: ''

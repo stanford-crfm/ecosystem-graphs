@@ -1,0 +1,23 @@
+---
+
+- type: application
+  name: AssemblyAI
+  organization: AssemblyAI
+  description: AssemblyAI uses Claude and Anthropic's model to transcribe and understand audio data at scale.
+  created_date:
+    value: unknown
+  url: https://www.assemblyai.com/
+  dependencies: [Anthropic API]
+  adaptation: ''
+  output_space: ''
+  quality_control: ''
+  access: limited
+  license: unknown
+  terms_of_service: ''
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+  monthly_active_users: ''
+  user_distribution: ''
+  failures: ''

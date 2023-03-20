@@ -152,7 +152,7 @@
       were for ranking and featured snippets in Search.
   url: https://blog.google/products/search/search-language-understanding-bert/
   # Construction
-  dependencies: [Internal Google BERT]
+  dependencies: [Internal Google BERT, MUM]
   adaptation: Unknown
   output_space: web page ranking
   quality_control: Unknown

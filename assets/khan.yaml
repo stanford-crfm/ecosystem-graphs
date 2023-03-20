@@ -1,0 +1,23 @@
+---
+
+- type: application
+  name: Khanmigo
+  organization: Khan Academy
+  description: An AI-powered assistant that functions as both a virtual tutor for students and a classroom assistant for teachers.
+  created_date:
+    value: 2023-03-14
+  url: https://www.khanacademy.org/khan-labs#khanmigo
+  dependencies: [GPT-4 API]
+  adaptation: ''
+  output_space: ''
+  quality_control: ''
+  access: limited
+  license: unknown
+  terms_of_service: ''
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+  monthly_active_users: ''
+  user_distribution: ''
+  failures: ''
