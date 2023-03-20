@@ -562,7 +562,7 @@
   # Downstream
   access:
     value: Limited
-    explanation: Made available through the PaLM API as of March 14, 2023.  
+    explanation: Made available through the PaLM API as of March 14, 2023.
   license: Unknown
   intended_uses: >
     "The primary use is research on language models, including: research
@@ -589,7 +589,8 @@
 - type: application
   name: PaLM API
   organization: Google
-  description: a new developer offering that makes it easy and safe to experiment with Google’s language models.
+  description: a new developer offering that makes it easy and safe to experiment
+    with Google’s language models.
   created_date:
     value: 2023-03-14
   url: https://developers.googleblog.com/2023/03/announcing-palm-api-and-makersuite.html
@@ -1483,7 +1484,15 @@
 - type: model
   name: USM
   organization: Google
-  description: Universal Speech Model (USM) is a family of state-of-the-art speech models with 2B parameters trained on 12 million hours of speech and 28 billion sentences of text, spanning 300+ languages. USM, which is for use in YouTube (e.g., for closed captions), can perform automatic speech recognition (ASR) on widely-spoken languages like English and Mandarin, but also languages like Punjabi, Assamese, Santhali, Balinese, Shona, Malagasy, Luganda, Luo, Bambara, Soga, Maninka, Xhosa, Akan, Lingala, Chichewa, Nkore, Nzema to name a few. Some of these languages are spoken by fewer than twenty million people, making it very hard to find the necessary training data.
+  description: Universal Speech Model (USM) is a family of state-of-the-art speech
+    models with 2B parameters trained on 12 million hours of speech and 28 billion
+    sentences of text, spanning 300+ languages. USM, which is for use in YouTube
+    (e.g., for closed captions), can perform automatic speech recognition (ASR)
+    on widely-spoken languages like English and Mandarin, but also languages like
+    Punjabi, Assamese, Santhali, Balinese, Shona, Malagasy, Luganda, Luo, Bambara,
+    Soga, Maninka, Xhosa, Akan, Lingala, Chichewa, Nkore, Nzema to name a few. Some
+    of these languages are spoken by fewer than twenty million people, making it
+    very hard to find the necessary training data.
   created_date:
     value: 2023-03-06
   url: https://arxiv.org/abs/2303.01037
@@ -1582,7 +1591,7 @@
   modality: audio, text
   analysis: ''
   size: 1B parameters (dense model)
-  dependencies: [w2v-BERT, SoundStream] 
+  dependencies: [w2v-BERT, SoundStream]
   training_emissions: ''
   training_time: ''
   training_hardware: ''

@@ -3,7 +3,8 @@
 - type: application
   name: AssemblyAI
   organization: AssemblyAI
-  description: AssemblyAI uses Claude and Anthropic's model to transcribe and understand audio data at scale.
+  description: AssemblyAI uses Claude and Anthropic's model to transcribe and understand
+    audio data at scale.
   created_date:
     value: unknown
   url: https://www.assemblyai.com/

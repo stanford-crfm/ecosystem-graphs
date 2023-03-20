@@ -40,7 +40,15 @@
   modality: text, images
   analysis: ''
   size: unknown
-  dependencies: [ViT-B, BERT, COCO, Visual Genome, Conceptual Captions, Conceptual-12M, SBU, LAION-115M]
+  dependencies:
+    - ViT-B
+    - BERT
+    - COCO
+    - Visual Genome
+    - Conceptual Captions
+    - Conceptual-12M
+    - SBU
+    - LAION-115M
   training_emissions: ''
   training_time: ''
   training_hardware: ''
@@ -78,7 +86,8 @@
 - type: application
   name: EinsteinGPT
   organization: Salesforce
-  description: EinsteinGPT is generative AI for customer relationship management (CRFM).
+  description: EinsteinGPT is generative AI for customer relationship management
+    (CRFM).
   created_date:
     value: 2023-03-07
   url: https://www.salesforce.com/products/einstein/overview/?d=cta-body-promo-8

@@ -1589,7 +1589,9 @@
 - type: application
   name: ChatGPT for Slack
   organization: OpenAI, Salesforce
-  description: The app integrates ChatGPT’s powerful AI technology to deliver instant conversation summaries, research tools, and writing assistance directly in Slack to help millions of companies work more productively. 
+  description: The app integrates ChatGPT’s powerful AI technology to deliver instant
+    conversation summaries, research tools, and writing assistance directly in Slack
+    to help millions of companies work more productively.
   created_date:
     value: 2023-03-07
   url: https://www.salesforce.com/news/stories/chatgpt-app-for-slack/
@@ -1634,7 +1636,8 @@
 - type: application
   name: GPT-4 API
   organization: OpenAI
-  description: GPT-4 is OpenAI’s most advanced system, producing safer and more useful responses
+  description: GPT-4 is OpenAI’s most advanced system, producing safer and more
+    useful responses
   created_date:
     value: 2023-03-14
   url: https://openai.com/product/gpt-4
@@ -1642,7 +1645,7 @@
   adaptation: ''
   output_space: ''
   quality_control: ''
-  access: limited 
+  access: limited
   license: ''
   terms_of_service: ''
   intended_uses: ''

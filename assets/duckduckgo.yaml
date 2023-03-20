@@ -3,7 +3,9 @@
 - type: application
   name: DuckAssist
   organization: DuckDuckGo
-  description: The first Instant Answer in DuckDuckGo search results to use natural language technology to generate answers to search queries using Wikipedia and other related sources
+  description: The first Instant Answer in DuckDuckGo search results to use natural
+    language technology to generate answers to search queries using Wikipedia and
+    other related sources
   created_date:
     value: unknown
   url: http://www.duckduckgo.com/

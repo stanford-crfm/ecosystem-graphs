@@ -3,7 +3,11 @@
 - type: application
   name: Duolingo Explain My Answer
   organization: Duolingo
-  description: Explain My Answer offers learners the chance to learn more about their response in a lesson (whether their answer was correct or incorrect!) By tapping a button after certain exercise types, learners can enter a chat with Duo to get a simple explanation on why their answer was right or wrong, and ask for examples or further clarification.
+  description: Explain My Answer offers learners the chance to learn more about
+    their response in a lesson (whether their answer was correct or incorrect!)
+    By tapping a button after certain exercise types, learners can enter a chat
+    with Duo to get a simple explanation on why their answer was right or wrong,
+    and ask for examples or further clarification.
   created_date:
     value: 2023-03-14
   url: https://blog.duolingo.com/duolingo-max/
@@ -25,7 +29,9 @@
 - type: application
   name: Duolingo Max
   organization: Duolingo
-  description: Duolingo Max is a new subscription tier above Super Duolingo that gives learners access to two brand-new features and exercises: Explain My Answer and Roleplay.
+  description: Duolingo Max is a new subscription tier above Super Duolingo that
+    gives learners access to two brand-new features and exercises - Explain My Answer
+    and Roleplay.
   created_date:
     value: 2023-03-14
   url: https://blog.duolingo.com/duolingo-max/
@@ -47,7 +53,13 @@
 - type: application
   name: Duolingo Role Play
   organization: Duolingo
-  description: Roleplay allows learners to practice real-world conversation skills with world characters in the app. These challenges, which earn XP, will live alongside the path as one of the “Side Quests” learners can access by tapping on the character. What will you talk about? We’ll guide you through different scenarios! Learners might discuss future vacation plans with Lin, order coffee at a café in Paris, go furniture shopping with Eddy, or ask a friend to go for a hike.
+  description: Roleplay allows learners to practice real-world conversation skills
+    with world characters in the app. These challenges, which earn XP, will live
+    alongside the path as one of the “Side Quests” learners can access by tapping
+    on the character. What will you talk about? We’ll guide you through different
+    scenarios! Learners might discuss future vacation plans with Lin, order coffee
+    at a café in Paris, go furniture shopping with Eddy, or ask a friend to go for
+    a hike.
   created_date:
     value: 2023-03-14
   url: https://blog.duolingo.com/duolingo-max/

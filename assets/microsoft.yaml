@@ -296,7 +296,9 @@
 - type: model
   name: KOSMOS-1
   organization: Microsoft
-  description: KOSMOS-1 is a multimodal language model that is capable of perceiving multimodal input, following instructions, and performing in-context learning for not only language tasks but also multimodal tasks.
+  description: KOSMOS-1 is a multimodal language model that is capable of perceiving
+    multimodal input, following instructions, and performing in-context learning
+    for not only language tasks but also multimodal tasks.
   created_date:
     value: 2023-03-01
   url: https://arxiv.org/pdf/2302.14045.pdf
@@ -304,7 +306,13 @@
   modality: text, images
   analysis: ''
   size: 1.6B parameters (dense model)
-  dependencies: [The Pile, Common Crawl, LAION-2B, LAION-400M, COYO-700M, Conceptual Captions]
+  dependencies:
+    - The Pile
+    - Common Crawl
+    - LAION-2B
+    - LAION-400M
+    - COYO-700M
+    - Conceptual Captions
   training_emissions: ''
   training_time: ''
   training_hardware: ''
@@ -319,7 +327,10 @@
 - type: model
   name: Prometheus
   organization: Microsoft
-  description: In the context of Bing, we have developed a proprietary way of working with the OpenAI model that allows us to best leverage its power. We call this collection of capabilities and techniques the Prometheus model. This combination gives you more relevant, timely and targeted results, with improved safety.
+  description: In the context of Bing, we have developed a proprietary way of working
+    with the OpenAI model that allows us to best leverage its power. We call this
+    collection of capabilities and techniques the Prometheus model. This combination
+    gives you more relevant, timely and targeted results, with improved safety.
   created_date:
     value: 2023-02-07
   url: https://blogs.microsoft.com/blog/2023/02/07/reinventing-search-with-a-new-ai-powered-microsoft-bing-and-edge-your-copilot-for-the-web/
@@ -388,7 +399,10 @@
 - type: application
   name: Azure Cognitive Services for Vision
   organization: Microsoft
-  description: Cost-effective, production-ready computer vision services in Azure Cognitive Service for Vision. The improved Vision Services enables developers to create cutting-edge, market-ready, responsible computer vision applications across various industries.
+  description: Cost-effective, production-ready computer vision services in Azure
+    Cognitive Service for Vision. The improved Vision Services enables developers
+    to create cutting-edge, market-ready, responsible computer vision applications
+    across various industries.
   created_date:
     value: 2023-03-07
   url: https://azure.microsoft.com/en-us/blog/announcing-a-renaissance-in-computer-vision-ai-with-microsofts-florence-foundation-model/?utm_content=buffer16fa0&utm_medium=social&utm_source=twitter.com&utm_campaign=buffer
@@ -418,7 +432,7 @@
   modality: text, images
   analysis: ''
   size: unknown
-  dependencies: [OpenAI API] 
+  dependencies: [OpenAI API]
   training_emissions: ''
   training_time: ''
   training_hardware: ''
@@ -433,7 +447,9 @@
 - type: application
   name: Microsoft 365 Copilot
   organization: Microsoft
-  description: It combines the power of language models with your data in the Microsoft Graph and the Microsoft 365 apps to turn your words into the most powerful productivity tool on the planet.
+  description: It combines the power of language models with your data in the Microsoft
+    Graph and the Microsoft 365 apps to turn your words into the most powerful productivity
+    tool on the planet.
   created_date:
     value: 2023-03-16
   url: https://blogs.microsoft.com/blog/2023/03/16/introducing-microsoft-365-copilot-your-copilot-for-work/
@@ -455,7 +471,12 @@
 - type: application
   name: Microsoft Business Chat
   organization: Microsoft
-  description: Business Chat works across the langugae model, the Microsoft 365 apps, and your data — your calendar, emails, chats, documents, meetings and contacts — to do things you’ve never been able to do before. You can give it natural language prompts like “Tell my team how we updated the product strategy,” and it will generate a status update based on the morning’s meetings, emails and chat threads.
+  description: Business Chat works across the langugae model, the Microsoft 365
+    apps, and your data — your calendar, emails, chats, documents, meetings and
+    contacts — to do things you’ve never been able to do before. You can give it
+    natural language prompts like “Tell my team how we updated the product strategy,”
+    and it will generate a status update based on the morning’s meetings, emails
+    and chat threads.
   created_date:
     value: 2023-03-16
   url: https://blogs.microsoft.com/blog/2023/03/16/introducing-microsoft-365-copilot-your-copilot-for-work/
@@ -463,7 +484,7 @@
   adaptation: ''
   output_space: ''
   quality_control: ''
-  access: limited 
+  access: limited
   license: unknown
   terms_of_service: ''
   intended_uses: ''
@@ -477,7 +498,8 @@
 - type: application
   name: Microsoft Excel
   organization: Microsoft
-  description: Microsoft Excel is the industry leading spreadsheet software program, a powerful data visualization and analysis tool.
+  description: Microsoft Excel is the industry leading spreadsheet software program,
+    a powerful data visualization and analysis tool.
   created_date:
     value: unknown
   url: https://www.microsoft.com/en-us/microsoft-365/excel
@@ -499,7 +521,9 @@
 - type: application
   name: Microsoft Outlook
   organization: Microsoft
-  description: Microsoft Outlook is a personal information manager software system from Microsoft, available as a part of the Microsoft Office and Microsoft 365 software suites.
+  description: Microsoft Outlook is a personal information manager software system
+    from Microsoft, available as a part of the Microsoft Office and Microsoft 365
+    software suites.
   created_date:
     value: unknown
   url: https://www.microsoft.com/en-us/microsoft-365/outlook/email-and-calendar-software-microsoft-outlook
@@ -521,7 +545,8 @@
 - type: application
   name: Microsoft Power Platform
   organization: Microsoft
-  description: Microsoft Power Platform is a line of business intelligence, app development, and app connectivity software applications.
+  description: Microsoft Power Platform is a line of business intelligence, app
+    development, and app connectivity software applications.
   created_date:
     value: unknown
   url: https://powerplatform.microsoft.com/en-us/
@@ -529,7 +554,7 @@
   adaptation: ''
   output_space: ''
   quality_control: ''
-  access: limited 
+  access: limited
   license: unknown
   terms_of_service: ''
   intended_uses: ''
@@ -543,7 +568,8 @@
 - type: application
   name: Microsoft PowerPoint
   organization: Microsoft
-  description: Microsoft PowerPoint empowers you to create clean slideshow presentations and intricate pitch decks and gives you a powerful presentation maker.
+  description: Microsoft PowerPoint empowers you to create clean slideshow presentations
+    and intricate pitch decks and gives you a powerful presentation maker.
   created_date:
     value: unknown
   url: https://www.microsoft.com/en-us/microsoft-365/powerpoint
@@ -565,7 +591,8 @@
 - type: application
   name: Microsoft Teams
   organization: Microsoft
-  description: Microsoft Teams is a proprietary business communication platform developed by Microsoft, as part of the Microsoft 365 family of products. 
+  description: Microsoft Teams is a proprietary business communication platform
+    developed by Microsoft, as part of the Microsoft 365 family of products.
   created_date:
     value: unknown
   url: https://www.microsoft.com/en-us/microsoft-teams/group-chat-software

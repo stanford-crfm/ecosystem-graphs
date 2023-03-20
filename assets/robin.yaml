@@ -3,7 +3,10 @@
 - type: application
   name: Robin AI
   organization: Robin AI
-  description: Robin AI uses Claude and Anthropic's models to understand language - including in technical domains like legal language. It's also very confident at drafting, summarising, translations, and explaining complex concepts in simple terms
+  description: Robin AI uses Claude and Anthropic's models to understand language
+    - including in technical domains like legal language. It's also very confident
+    at drafting, summarising, translations, and explaining complex concepts in simple
+    terms
   created_date:
     value: unknown
   url: https://www.robinai.co.uk/

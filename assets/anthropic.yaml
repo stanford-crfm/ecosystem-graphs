@@ -524,7 +524,9 @@
 - type: application
   name: Anthropic API
   organization: Anthropic
-  description: API is designed to be a backend that incorporates Claude into any application you’ve developed. Our application sends text to our API, then receives a response via server-sent events, a streaming protocol for the web. 
+  description: API is designed to be a backend that incorporates Claude into any
+    application you’ve developed. Our application sends text to our API, then receives
+    a response via server-sent events, a streaming protocol for the web.
   created_date:
     value: 2023-03-14
   url: https://console.anthropic.com/docs/api
