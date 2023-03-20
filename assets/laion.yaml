@@ -1,4 +1,5 @@
 ---
+
 - type: dataset
   name: LAION-5B
   # General
@@ -13,11 +14,11 @@
   datasheet: https://laion.ai/blog/laion-5b/
   modality: Text and Image
   size: 5 billion image-text pairs
-  sample:
-  analysis:
+  sample: ''
+  analysis: ''
   # Construction
   dependencies: [CommonCrawl]
-  included:
+  included: ''
   excluded:
     value: All samples with less than 5 characters alt-text length or less than
       5 KB image size are dropped. All images with the too big resolution, potentially
@@ -32,7 +33,7 @@
       embeddings of images and texts to filter out to the possible extent the illegal
       content.
     explanation: See https://laion.ai/blog/laion-5b/
-  quality_control:
+  quality_control: ''
   # Downstream
   access:
     value: Full public access
