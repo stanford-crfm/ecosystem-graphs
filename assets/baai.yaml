@@ -4,13 +4,12 @@
   name: Wu Dao dataset
   # General
   organization: Beijing Academy of Artificial Intelligence
-  description: ''
   created_date:
     value: 2021-01-12
     explanation: >
       The date that BAAI made a public announcement
       [[News Link]](https://mp.weixin.qq.com/s/BUQWZ5EdR19i40GuFofpBg).
-  url: Unknown
+  url: https://www.tsinghua.edu.cn/en/info/1420/10473.htm
   datasheet: ''
   modality: Text (Chinese, English) and Image
   size: Unknown
@@ -23,7 +22,7 @@
   excluded: ''
   quality_control: ''
   # Downstream
-  access: No public access
+  access: Closed
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
@@ -39,10 +38,10 @@
     explanation: >
       The date that BAAI made a public announcement
       [[News Link]](https://mp.weixin.qq.com/s/BUQWZ5EdR19i40GuFofpBg).
-  url: Unknown
+  url: https://www.tsinghua.edu.cn/en/info/1420/10473.htm
   model_card: ''
   modality: Text (Chinese, English) and Image
-  size: 1750B parameters (dense model)
+  size: 1.75T parameters (dense model)
   analysis: ''
   # Construction
   dependencies: [Wu Dao dataset]
@@ -52,7 +51,7 @@
   quality_control: ''
   # Downstream
   access:
-    value: No public access
+    value: Closed
     explanation: >
       The model wasn't released.
   license: ''

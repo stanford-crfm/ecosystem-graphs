@@ -92,7 +92,7 @@
   name: Megatron-Turing NLG
   organization: Microsoft, NVIDIA
   description: >
-    Megatron-Turing NLG is a 530B parameter autoregressive large language model.
+    Megatron-Turing NLG is a 530B parameter autoregressive language model.
   created_date:
     value: 2022-01-28
     explanation: >

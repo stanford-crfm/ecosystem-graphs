@@ -4,7 +4,9 @@
   name: AI Dungeon
   # General
   organization: Latitude
-  description: ''
+  description: >
+    AI Dungeon is a single-player text adventure game that uses AI to generate
+    content.
   created_date:
     value: 2019-12-17
     explanation: >
@@ -12,13 +14,13 @@
       [[Wikipedia]](https://en.wikipedia.org/wiki/AI_Dungeon).
   url: https://play.aidungeon.io
   # Construction
-  dependencies: [GPT-2, GPT-3]
+  dependencies: [OpenAI API]
   adaptation: ''
   output_space: ''
   quality_control: ''
   # Downstream
   access:
-    value: Limited public access
+    value: Limited
     explanation: >
       The game is available to public upon sign up.
   terms_of_service: ''

@@ -226,7 +226,8 @@
   name: Wordtune
   # General
   organization: AI21 Labs
-  description: ''
+  description: >
+    Wordtune is an AI writing tool that rewrites and rephrases user's writing.
   created_date:
     value: 2020-10-27
     explanation: >
@@ -242,7 +243,7 @@
   quality_control: ''
   # Downstream
   access:
-    value: Limited public access
+    value: Limited
     explanation: >
       Wordtune is available to public upon sign up.
   terms_of_service: ''
@@ -260,7 +261,8 @@
   name: Wordtune Read
   # General
   organization: AI21 Labs
-  description: ''
+  description: >
+    Wordtine Read is an AI tool that summarizes long documents.
   created_date:
     value: 2021-11-16
     explanation: >
@@ -276,7 +278,7 @@
   quality_control: ''
   # Downstream
   access:
-    value: Limited public access
+    value: Limited
     explanation: >
       Wordtune Read is available to public upon sign up.
   terms_of_service: ''
