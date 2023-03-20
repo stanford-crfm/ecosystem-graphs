@@ -560,7 +560,9 @@
       Reported in [[Section 4]](https://arxiv.org/pdf/2204.02311.pdf#section.4).
   quality_control: Unknown
   # Downstream
-  access: Closed
+  access:
+    value: Limited
+    explanation: Made available through the PaLM API as of March 14, 2023.  
   license: Unknown
   intended_uses: >
     "The primary use is research on language models, including: research
@@ -583,6 +585,28 @@
     explanation: >
       Author contact information is shared in the paper
       [[Paper]](https://arxiv.org/pdf/2204.02311.pdf).
+
+- type: application
+  name: PaLM API
+  organization: Google
+  description: a new developer offering that makes it easy and safe to experiment with Google’s language models.
+  created_date:
+    value: 2023-03-14
+  url: https://developers.googleblog.com/2023/03/announcing-palm-api-and-makersuite.html
+  dependencies: [PaLM]
+  adaptation: ''
+  output_space: ''
+  quality_control: ''
+  access: limited
+  license: unknown
+  terms_of_service: ''
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+  monthly_active_users: ''
+  user_distribution: ''
+  failures: ''
 
 - type: model
   name: Med-PaLM

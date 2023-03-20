@@ -1,0 +1,23 @@
+---
+
+- type: application
+  name: Virtual Volunteer
+  organization: Be My Eyes
+  description: The first-ever digital visual assistant powered by OpenAI’s new GPT-4 language model.
+  created_date:
+    value: 2023-03-14
+  url: https://www.bemyeyes.com/blog/introducing-be-my-eyes-virtual-volunteer
+  dependencies: [GPT-4 API]
+  adaptation: ''
+  output_space: ''
+  quality_control: ''
+  access: limited
+  license: unknown
+  terms_of_service: ''
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+  monthly_active_users: ''
+  user_distribution: ''
+  failures: ''
