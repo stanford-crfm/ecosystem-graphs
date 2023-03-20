@@ -1494,3 +1494,115 @@
   prohibited_uses: ''
   monitoring: ''
   feedback: ''
+
+- type: application
+  name: Sage API
+  organization: OpenAI
+  description: A chatbot language model available via Quora's Poe
+  created_date:
+    value: 2023-02-03
+  url: https://quorablog.quora.com/Poe-1
+  dependencies: [Sage]
+  adaptation: ''
+  output_space: ''
+  quality_control: ''
+  access: Limited
+  license: unknown
+  terms_of_service: ''
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+  monthly_active_users: ''
+  user_distribution: ''
+  failures: ''
+
+- type: application
+  name: Dragonfly API
+  organization: OpenAI
+  description: A chatbot language model available via Quora's Poe
+  created_date:
+    value: 2023-02-03
+  url: https://quorablog.quora.com/Poe-1
+  dependencies: [Dragonfly]
+  adaptation: ''
+  output_space: ''
+  quality_control: ''
+  access: Limited
+  license: unknown
+  terms_of_service: ''
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+  monthly_active_users: ''
+  user_distribution: ''
+  failures: ''
+
+- type: model
+  name: Sage
+  organization: OpenAI
+  description: A chatbot language model available via Quora's Poe
+  created_date:
+    value: 2023-02-03
+  url: https://quorablog.quora.com/Poe-1
+  model_card: ''
+  modality: text
+  analysis: ''
+  size: unknown
+  dependencies: []
+  training_emissions: ''
+  training_time: ''
+  training_hardware: ''
+  quality_control: ''
+  access: Limited
+  license: unknown
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+
+- type: model
+  name: Dragonfly
+  organization: OpenAI
+  description: A chatbot language model available via Quora's Poe
+  created_date:
+    value: 2023-02-03
+  url: https://quorablog.quora.com/Poe-1
+  model_card: ''
+  modality: text
+  analysis: ''
+  size: unknown
+  dependencies: []
+  training_emissions: ''
+  training_time: ''
+  training_hardware: ''
+  quality_control: ''
+  access: Limited
+  license: unknown
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+
+- type: application
+  name: ChatGPT for Slack
+  organization: OpenAI, Salesforce
+  description: The app integrates ChatGPT’s powerful AI technology to deliver instant conversation summaries, research tools, and writing assistance directly in Slack to help millions of companies work more productively. 
+  created_date:
+    value: 2023-03-07
+  url: https://www.salesforce.com/news/stories/chatgpt-app-for-slack/
+  dependencies: [ChatGPT API]
+  adaptation: ''
+  output_space: ''
+  quality_control: ''
+  access: Limited
+  license: unknown
+  terms_of_service: ''
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+  monthly_active_users: ''
+  user_distribution: ''
+  failures: ''

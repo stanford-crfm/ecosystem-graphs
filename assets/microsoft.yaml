@@ -292,3 +292,140 @@
   monthly_active_users: ''
   user_distribution: ''
   failures: ''
+
+- type: model
+  name: KOSMOS-1
+  organization: Microsoft
+  description: KOSMOS-1 is a multimodal language model that is capable of perceiving multimodal input, following instructions, and performing in-context learning for not only language tasks but also multimodal tasks.
+  created_date:
+    value: 2023-03-01
+  url: https://arxiv.org/pdf/2302.14045.pdf
+  model_card: ''
+  modality: text, images
+  analysis: ''
+  size: 1.6B parameters (dense model)
+  dependencies: [The Pile, Common Crawl, LAION-2B, LAION-400M, COYO-700M, Conceptual Captions]
+  training_emissions: ''
+  training_time: ''
+  training_hardware: ''
+  quality_control: ''
+  access: Closed
+  license: MIT
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+
+- type: model
+  name: Prometheus
+  organization: Microsoft
+  description: In the context of Bing, we have developed a proprietary way of working with the OpenAI model that allows us to best leverage its power. We call this collection of capabilities and techniques the Prometheus model. This combination gives you more relevant, timely and targeted results, with improved safety.
+  created_date:
+    value: 2023-02-07
+  url: https://blogs.microsoft.com/blog/2023/02/07/reinventing-search-with-a-new-ai-powered-microsoft-bing-and-edge-your-copilot-for-the-web/
+  model_card: ''
+  modality: unknown
+  analysis: ''
+  size: unknown
+  dependencies: []
+  training_emissions: ''
+  training_time: ''
+  training_hardware: ''
+  quality_control: ''
+  access: Closed
+  license: unknown
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+
+- type: model
+  name: Florence
+  organization: Microsoft
+  description: ''
+  created_date:
+    value: 2022-11-23
+  url: https://arxiv.org/abs/2111.11432
+  model_card: ''
+  modality: images, text
+  analysis: ''
+  size: 900M parameters (637M image, 256M text)
+  dependencies: [FLD-900M]
+  training_emissions: ''
+  training_time: ''
+  training_hardware: ''
+  quality_control: ''
+  access: Closed
+  license: unknown
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+
+- type: dataset
+  name: FLD-900M
+  organization: Microsoft
+  description: ''
+  created_date:
+    value: 2022-11-23
+  url: https://arxiv.org/abs/2111.11432
+  datasheet: ''
+  modality: images, text
+  size: 900M image-text pairs
+  sample: ''
+  analysis: ''
+  dependencies: []
+  included: ''
+  excluded: ''
+  quality_control: ''
+  access: Closed
+  license: unknown
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+
+- type: application
+  name: Azure Cognitive Services for Vision
+  organization: Microsoft
+  description: Cost-effective, production-ready computer vision services in Azure Cognitive Service for Vision. The improved Vision Services enables developers to create cutting-edge, market-ready, responsible computer vision applications across various industries.
+  created_date:
+    value: 2023-03-07
+  url: https://azure.microsoft.com/en-us/blog/announcing-a-renaissance-in-computer-vision-ai-with-microsofts-florence-foundation-model/?utm_content=buffer16fa0&utm_medium=social&utm_source=twitter.com&utm_campaign=buffer
+  dependencies: [Florence]
+  adaptation: ''
+  output_space: ''
+  quality_control: ''
+  access: Limited
+  license: unknown
+  terms_of_service: ''
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+  monthly_active_users: ''
+  user_distribution: ''
+  failures: ''
+
+- type: model
+  name: VisualChatGPT
+  organization: Microsoft
+  description: ''
+  created_date:
+    value: 2023-03-08
+  url: https://arxiv.org/pdf/2303.04671.pdf
+  model_card: ''
+  modality: text, images
+  analysis: ''
+  size: unknown
+  dependencies: [OpenAI API] 
+  training_emissions: ''
+  training_time: ''
+  training_hardware: ''
+  quality_control: ''
+  access: Closed
+  license: unknown
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''

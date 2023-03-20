@@ -1,0 +1,116 @@
+---
+
+- type: model
+  name: GPT-JT
+  organization: Together
+  description: ''
+  created_date:
+    value: 2022-11-29
+  url: https://www.together.xyz/blog/releasing-v1-of-gpt-jt-powered-by-open-source-ai
+  model_card: ''
+  modality: text
+  analysis: ''
+  size: 6B parameters (dense model)
+  dependencies: [GPT-J, P3, NaturalInstructions-v2]
+  training_emissions: ''
+  training_time: ''
+  training_hardware: ''
+  quality_control: ''
+  access: Open
+  license: Apache 2.0
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+
+- type: model
+  name: GPT-NeoXT-Chat-Base
+  organization: Together
+  description: ''
+  created_date:
+    value: 2023-03-10
+  url: https://www.together.xyz/blog/openchatkit
+  model_card: ''
+  modality: text
+  analysis: ''
+  size: 20B parameters (dense model)
+  dependencies: [GPT-NeoX, OIG-43M]
+  training_emissions: ''
+  training_time: ''
+  training_hardware: ''
+  quality_control: ''
+  access: Open
+  license: Apache 2.0
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+
+- type: model
+  name: OpenChatKit moderation model
+  organization: Together
+  description: ''
+  created_date:
+    value: 2023-03-10
+  url: https://www.together.xyz/blog/openchatkit
+  model_card: ''
+  modality: text
+  analysis: ''
+  size: 6B parameters (dense model)
+  dependencies: [GPT-JT, OIG-moderation]
+  training_emissions: ''
+  training_time: ''
+  training_hardware: ''
+  quality_control: ''
+  access: Open
+  license: Apache 2.0
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+
+- type: dataset
+  name: OIG-43M
+  organization: Together, LAION, Ontocord
+  description: ''
+  created_date:
+    value: 2023-03-10
+  url: https://laion.ai/blog/oig-dataset/
+  datasheet: ''
+  modality: text
+  size: 43M instructions
+  sample: ''
+  analysis: ''
+  dependencies: [P3, NaturalInstructions-v2, FLAN dataset]
+  included: ''
+  excluded: ''
+  quality_control: ''
+  access: Open
+  license: Apache 2.0
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+
+- type: dataset
+  name: OIG-moderation
+  organization: Together, LAION, Ontocord
+  description: ''
+  created_date:
+    value: 2023-03-10
+  url: https://laion.ai/blog/oig-dataset/
+  datasheet: ''
+  modality: text
+  size: ''
+  sample: ''
+  analysis: ''
+  dependencies: []
+  included: ''
+  excluded: ''
+  quality_control: ''
+  access: Open
+  license: Apache 2.0
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
