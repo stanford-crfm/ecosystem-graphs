@@ -34,7 +34,7 @@
       towards improved or degraded performance"
       [[Appendix C]](https://arxiv.org/pdf/2005.14165.pdf#appendix.C).
   # Construction
-  dependencies: []
+  dependencies: [WebText]
   license:
     value: Unknown
     explanation: >
@@ -415,7 +415,57 @@
       There are no known (internal or external) feedback mechanisms for
       the dataset as of 2022-12-07.
 
+- type: dataset
+  name: WebText
+  # General
+  organization: OpenAI
+  description: ''
+  created_date: 2019-11
+  url: https://cdn.openai.com/better-language-models/language_models_are_unsupervised_multitask_learners.pdf
+  datasheet: ''
+  modality: Text (English)
+  size: 40 GB
+  sample: []
+  analysis: ''
+  # Construction
+  dependencies: []
+  license: ''
+  included: ''
+  excluded: ''
+  quality_control: ''
+  # Downstream
+  access: No public access
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+
 # Models
+- type: model
+  name: GPT-2
+  # General
+  organization: OpenAI
+  description: ''
+  created_date: 2019-11
+  url: https://cdn.openai.com/better-language-models/language_models_are_unsupervised_multitask_learners.pdf
+  model_card: https://github.com/openai/gpt-2/blob/master/model_card.md
+  modality: Text (English)
+  size: 1.5B parameters (dense)
+  analysis: ''
+  # Construction
+  dependencies: [WebText]
+  training_emissions: ''
+  training_time: ''
+  training_hardware: ''
+  quality_control: ''
+  # Downstream
+  access: Full public access
+  license: ''
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+
 - type: model
   name: GPT-3
   # General

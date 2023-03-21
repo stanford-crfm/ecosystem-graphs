@@ -317,7 +317,7 @@
   organization: AI21 Labs
   description: Wordtune Read is an AI reader that summarizes long documents so you can understand more, faster.
   created_date:
-    value: 2022-04-16
+    value: 2021-11-16
   url: https://www.wordtune.com/read
   # Construction
   dependencies: [AI21 Summarize API]
