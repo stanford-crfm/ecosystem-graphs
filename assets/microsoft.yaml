@@ -91,11 +91,13 @@
 - type: model
   name: Megatron-Turing NLG
   organization: Microsoft, NVIDIA
-  description: Megatron-Turing NLG is a 530B parameter autoregressive large language
-    model.
+  description: >
+    Megatron-Turing NLG is a 530B parameter autoregressive language model.
   created_date:
     value: 2022-01-28
-    explanation: The date the model paper was submitted to Arxiv
+    explanation: >
+      The date of the Microsoft Research blog announcing MT-NLG
+      [[Microsoft Research Blog]](https://www.microsoft.com/en-us/research/blog/using-deepspeed-and-megatron-to-train-megatron-turing-nlg-530b-the-worlds-largest-and-most-powerful-generative-language-model/).
   url: https://arxiv.org/abs/2201.11990
   model_card: ''
   modality: Text (English)
@@ -188,10 +190,7 @@
   license:
     value: Unknown
   terms_of_service:
-    value: >
-      GitHub CoPilot is bound by the GitHub terms of service
-      [[Terms of Service]]
-      (https://docs.github.com/en/site-policy/github-terms/github-terms-of-service).
+    value: https://docs.github.com/en/site-policy/github-terms/github-terms-of-service
   intended_uses:
     value: GitHub CoPilot is intended to be used as a coding assistant.
   prohibited_uses:
@@ -213,7 +212,9 @@
       (https://github.com/github/feedback/discussions/categories/copilot-feedback).
   # Deployment
   monthly_active_users:
-    value: Unknown
+    value: >
+      GitHub Copilot reportedly has over 1 million sign-ups
+      [[Tweet Source]](https://twitter.com/sama/status/1539737789310259200?s=21&t=YPaYd0ZueJzrR6rLslUqzg).
   user_distribution:
     value: Unknown
   failures:
@@ -279,16 +280,74 @@
     value: 2023-02-07
   url: https://blogs.microsoft.com/blog/2023/02/07/reinventing-search-with-a-new-ai-powered-microsoft-bing-and-edge-your-copilot-for-the-web/
   dependencies: [ChatGPT API]
-  adaptation: ''
-  output_space: ''
+  adaptation: Unknown
+  output_space: Search results
   quality_control: ''
   access: Limited
   license: ''
   terms_of_service: ''
-  intended_uses: ''
+  intended_uses: Search engine
   prohibited_uses: ''
   monitoring: ''
-  feedback: ''
+  feedback: >
+    Feedback can be submitted at [bing.com](bing.com).
   monthly_active_users: ''
   user_distribution: ''
   failures: ''
+
+- type: application
+  name: Microsoft Inside Look
+  # General
+  organization: Microsoft
+  description: >
+    Inside look is a Microsoft Office feature, composing document insights
+    highlighting key points, expected time to read, and popularity among others.
+  created_date:
+    value: Unknown
+  url: https://support.microsoft.com/en-us/office/see-file-insights-before-you-open-a-file-87a23bbc-a516-42e2-a7b6-0ecb8259e026
+  dependencies: []
+  adaptation: Unknown
+  output_space: Document level insights for users.
+  quality_control: Unknown
+  # Downstream
+  access: Limited public access
+  terms_of_service: https://www.microsoft.com/en-us/servicesagreement/
+  license: Unknown
+  intended_uses: Providing document insights to users.
+  prohibited_uses: Unknown
+  monitoring: Unknown
+  feedback: Unknown
+  # Deployment
+  monthly_active_users: Unknown
+  user_distribution: Unknown
+  failures: Unknown
+
+- type: application
+  name: Microsoft Suggested Replies
+  # General
+  organization: Microsoft
+  description: >
+    Suggested replies is a Microsoft Outlook feature that suggests responses
+    to emails, available in: English, Spanish, Italian, French, German,
+    Portuguese Chinese Simplified, Chinese Traditional, Swedish, Russian,
+    Korean, Czech, Hungarian, Arabic, Hebrew, Thai, Turkish, Japanese, Dutch,
+    Norwegian, Danish, and Polish.
+  created_date:
+    value: Unknown
+  url: https://support.microsoft.com/en-us/office/use-suggested-replies-in-outlook-19316194-0434-43ba-a742-6b5890157379
+  dependencies: []
+  adaptation: Unknown
+  output_space: Suggested emails.
+  quality_control: Unknown
+  # Downstream
+  access: Limited public access
+  terms_of_service: https://www.microsoft.com/en-us/servicesagreement/
+  license: Unknown
+  intended_uses: Suggesting email replies.
+  prohibited_uses: Unknown
+  monitoring: Unknown
+  feedback: Unknown
+  # Deployment
+  monthly_active_users: Unknown
+  user_distribution: Unknown
+  failures: Unknown

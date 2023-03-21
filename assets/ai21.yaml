@@ -157,7 +157,7 @@
     explanation: The date Jurassic-1 was made public.
   url: https://studio.ai21.com/playground/
   # Construction
-  dependencies: [Jurassic-1, Jurassic-1 Instruct]
+  dependencies: [AI21 Studio]
   adaptation: The Playground provides direct access to the language models (Complete
     API) as well as wrapped for Rewrite and Summarize.
   output_space:
@@ -185,6 +185,39 @@
   failures: Unknown
 
 - type: application
+  name: AI21 Studio
+  # General
+  organization: AI21 Labs
+  description: >
+    AI21 Studio connects users with with AI21's AI model offerings.
+  created_date:
+    value: 2021-08-11
+    explanation: >
+      The date that AI21 Labs made a public announcement
+      [[News Link]](https://www.businesswire.com/news/home/20201027005162/en/AI21-Labs-Comes-out-of-Stealth-and-Launches-First-Deep-Tech-Writing-Assistant-Wordtune).
+  url: https://www.ai21.com/studio
+  # Construction
+  dependencies: [Jurassic-1, Jurassic-1 Instruct]
+  adaptation: ''
+  output_space: ''
+  quality_control: ''
+  # Downstream
+  access:
+    value: Limited
+    explanation: >
+      AI21 Studio is available to public upon sign up.
+  terms_of_service: ''
+  license: ''
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+  # Deployment
+  monthly_active_users: ''
+  user_distribution: ''
+  failures: ''
+
+- type: application
   name: AI21 Playground
   # General
   organization: AI21 Labs
@@ -195,7 +228,7 @@
     explanation: The date Jurassic-1 was made public.
   url: https://studio.ai21.com/playground/
   # Construction
-  dependencies: [Jurassic-1, Jurassic-1 Instruct]
+  dependencies: [AI21 Studio]
   adaptation: The Playground provides direct access to the language models (Complete
     API) as well as wrapped for Rewrite and Summarize.
   output_space:
@@ -221,3 +254,69 @@
   monthly_active_users: Unknown
   user_distribution: Unknown
   failures: Unknown
+
+- type: application
+  name: Wordtune
+  # General
+  organization: AI21 Labs
+  description: >
+    Wordtune is an AI writing tool that rewrites and rephrases user's writing.
+  created_date:
+    value: 2020-10-27
+    explanation: >
+      The date that AI21 Labs made a public announcement
+      [[News Link]](https://www.businesswire.com/news/home/20201027005162/en/AI21-Labs-Comes-out-of-Stealth-and-Launches-First-Deep-Tech-Writing-Assistant-Wordtune).
+  url: https://www.wordtune.com/
+  # Construction
+  dependencies: [AI21 Studio]
+  adaptation: ''
+  output_space: ''
+  quality_control: ''
+  # Downstream
+  access:
+    value: Limited
+    explanation: >
+      Wordtune is available to public upon sign up.
+  terms_of_service: ''
+  license: ''
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+  # Deployment
+  monthly_active_users: ''
+  user_distribution: ''
+  failures: ''
+
+- type: application
+  name: Wordtune Read
+  # General
+  organization: AI21 Labs
+  description: >
+    Wordtine Read is an AI tool that summarizes long documents.
+  created_date:
+    value: 2021-11-16
+    explanation: >
+      Date of a news article introducing WordTune Read
+      [[News Link]](https://www.calcalistech.com/ctech/articles/0,7340,L-3922633,00.html).
+  url: https://www.wordtune.com/read
+  # Construction
+  dependencies: [AI21 Studio]
+  adaptation: ''
+  output_space: ''
+  quality_control: ''
+  # Downstream
+  access:
+    value: Limited
+    explanation: >
+      Wordtune Read is available to public upon sign up.
+  terms_of_service: ''
+  license: ''
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+  # Deployment
+  monthly_active_users: ''
+  user_distribution: ''
+  failures: ''
