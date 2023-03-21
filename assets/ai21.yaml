@@ -228,7 +228,7 @@
     engine. It has been specifically developed for suggesting alternative ways to
     convey the same message using different words.
   created_date:
-    value: 2023-03-9
+    value: 2023-03-09
     explanation: The date Jurassic-2 and Task-Specific APIs were released.
   url: https://docs.ai21.com/docs/paraphrase-api
   # Construction
@@ -264,7 +264,7 @@
     engine. It has been specifically developed for reading long texts and providing
     a faithful summary of the original document.
   created_date:
-    value: 2023-03-9
+    value: 2023-03-09
     explanation: The date Jurassic-2 and Task-Specific APIs were released.
   url: https://docs.ai21.com/docs/summarize-api
   # Construction
