@@ -4,6 +4,7 @@
   name: Wu Dao dataset
   # General
   organization: Beijing Academy of Artificial Intelligence
+  description: ''
   created_date:
     value: 2021-01-12
     explanation: >
