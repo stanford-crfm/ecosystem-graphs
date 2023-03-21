@@ -152,7 +152,7 @@
       were for ranking and featured snippets in Search.
   url: https://blog.google/products/search/search-language-understanding-bert/
   # Construction
-  dependencies: [Internal Google BERT]
+  dependencies: [Internal Google BERT, MUM]
   adaptation: Unknown
   output_space: web page ranking
   quality_control: Unknown
@@ -560,7 +560,9 @@
       Reported in [[Section 4]](https://arxiv.org/pdf/2204.02311.pdf#section.4).
   quality_control: Unknown
   # Downstream
-  access: Closed
+  access:
+    value: Limited
+    explanation: Made available through the PaLM API as of March 14, 2023.
   license: Unknown
   intended_uses: >
     "The primary use is research on language models, including: research
@@ -583,6 +585,29 @@
     explanation: >
       Author contact information is shared in the paper
       [[Paper]](https://arxiv.org/pdf/2204.02311.pdf).
+
+- type: application
+  name: PaLM API
+  organization: Google
+  description: a new developer offering that makes it easy and safe to experiment
+    with Google’s language models.
+  created_date:
+    value: 2023-03-14
+  url: https://developers.googleblog.com/2023/03/announcing-palm-api-and-makersuite.html
+  dependencies: [PaLM]
+  adaptation: ''
+  output_space: ''
+  quality_control: ''
+  access: limited
+  license: unknown
+  terms_of_service: ''
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+  monthly_active_users: ''
+  user_distribution: ''
+  failures: ''
 
 - type: model
   name: Med-PaLM
@@ -1451,6 +1476,220 @@
   quality_control: ''
   access: Closed
   license: Unknown
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+
+- type: model
+  name: USM
+  organization: Google
+  description: Universal Speech Model (USM) is a family of state-of-the-art speech
+    models with 2B parameters trained on 12 million hours of speech and 28 billion
+    sentences of text, spanning 300+ languages. USM, which is for use in YouTube
+    (e.g., for closed captions), can perform automatic speech recognition (ASR)
+    on widely-spoken languages like English and Mandarin, but also languages like
+    Punjabi, Assamese, Santhali, Balinese, Shona, Malagasy, Luganda, Luo, Bambara,
+    Soga, Maninka, Xhosa, Akan, Lingala, Chichewa, Nkore, Nzema to name a few. Some
+    of these languages are spoken by fewer than twenty million people, making it
+    very hard to find the necessary training data.
+  created_date:
+    value: 2023-03-06
+  url: https://arxiv.org/abs/2303.01037
+  model_card: ''
+  modality: speech, text (300+ languages)
+  analysis: ''
+  size: 2B parameters (dense model)
+  dependencies: [YT-NLU-U, Pub-U, Web-NTL, YT-SUP+, Pub-S]
+  training_emissions: ''
+  training_time: ''
+  training_hardware: ''
+  quality_control: ''
+  access: Limited
+  license: unknown
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+
+- type: application
+  name: YouTube
+  organization: Google
+  description: YouTube is a global online video sharing and social media platform
+  created_date:
+    value: Unknown
+  url: https://www.youtube.com/
+  dependencies: [USM]
+  adaptation: ''
+  output_space: ''
+  quality_control: ''
+  access: Open
+  license: ''
+  terms_of_service: ''
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+  monthly_active_users: ''
+  user_distribution: ''
+  failures: ''
+
+- type: model
+  name: PaLM-E
+  organization: Google
+  description: ''
+  created_date:
+    value: 2023-03-06
+  url: https://arxiv.org/abs/2303.03378
+  model_card: ''
+  modality: text, images
+  analysis: ''
+  size: 562B parameters (dense model)
+  dependencies: [PaLM, ViT-22B]
+  training_emissions: ''
+  training_time: ''
+  training_hardware: ''
+  quality_control: ''
+  access: Closed
+  license: unknown
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+
+- type: model
+  name: ViT-22B
+  organization: Google
+  description: ''
+  created_date:
+    value: 2023-02-10
+  url: https://arxiv.org/abs/2302.05442
+  model_card: ''
+  modality: images
+  analysis: ''
+  size: 22B parameters (dense model)
+  dependencies: [JFT]
+  training_emissions: ''
+  training_time: ''
+  training_hardware: ''
+  quality_control: ''
+  access: Closed
+  license: unknown
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+
+- type: model
+  name: AudioLM
+  organization: Google
+  description: ''
+  created_date:
+    value: 2022-09-07
+  url: https://arxiv.org/abs/2209.03143
+  model_card: ''
+  modality: audio, text
+  analysis: ''
+  size: 1B parameters (dense model)
+  dependencies: [w2v-BERT, SoundStream]
+  training_emissions: ''
+  training_time: ''
+  training_hardware: ''
+  quality_control: ''
+  access: Closed
+  license: unknown
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+
+- type: model
+  name: PaLI
+  organization: Google
+  description: ''
+  created_date:
+    value: 2022-09-14
+  url: https://arxiv.org/abs/2209.06794
+  model_card: ''
+  modality: text, images
+  analysis: ''
+  size: 17B parameters (13B text, 4B images)
+  dependencies: [mT5, ViT-e, WebLI]
+  training_emissions: ''
+  training_time: ''
+  training_hardware: ''
+  quality_control: ''
+  access: Closed
+  license: unknown
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+
+- type: model
+  name: ViT-e
+  organization: Google
+  description: ''
+  created_date:
+    value: 2022-09-14
+  url: https://arxiv.org/abs/2209.06794
+  model_card: ''
+  modality: images
+  analysis: ''
+  size: 3.9B parameters (dense model)
+  dependencies: [JFT]
+  training_emissions: ''
+  training_time: ''
+  training_hardware: ''
+  quality_control: ''
+  access: Closed
+  license: unknown
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+
+- type: dataset
+  name: WebLI
+  organization: Google
+  description: ''
+  created_date:
+    value: 2022-09-14
+  url: https://arxiv.org/abs/2209.06794
+  datasheet: ''
+  modality: text, images
+  size: 10B images, 12B alt-text
+  sample: ''
+  analysis: ''
+  dependencies: []
+  included: ''
+  excluded: ''
+  quality_control: ''
+  access: Closed
+  license: unknown
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+
+- type: model
+  name: Vid2Seq
+  organization: Google
+  description: ''
+  created_date:
+    value: 2023-02-27
+  url: https://arxiv.org/abs/2302.14115
+  model_card: ''
+  modality: videos, text
+  analysis: ''
+  size: 500M parameters (200M text, 300M video)
+  dependencies: [T5, CLIP, YT-Temporal-1B]
+  training_emissions: ''
+  training_time: ''
+  training_hardware: ''
+  quality_control: ''
+  access: Open
+  license: Apache 2.0
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''

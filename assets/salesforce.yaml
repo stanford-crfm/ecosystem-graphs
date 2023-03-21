@@ -28,3 +28,80 @@
   prohibited_uses: ''
   monitoring: ''
   feedback: ''
+
+- type: model
+  name: BLIP
+  organization: Salesforce
+  description: ''
+  created_date:
+    value: 2022-01-28
+  url: https://arxiv.org/abs/2201.12086
+  model_card: ''
+  modality: text, images
+  analysis: ''
+  size: unknown
+  dependencies:
+    - ViT-B
+    - BERT
+    - COCO
+    - Visual Genome
+    - Conceptual Captions
+    - Conceptual-12M
+    - SBU
+    - LAION-115M
+  training_emissions: ''
+  training_time: ''
+  training_hardware: ''
+  quality_control: ''
+  access: Open
+  license: BSD-3-Clause
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+
+- type: dataset
+  name: LAION-115M
+  organization: Salesforce
+  description: ''
+  created_date:
+    value: 2022-01-28
+  url: https://arxiv.org/abs/2201.12086
+  datasheet: ''
+  modality: text, images
+  size: 115M text-image pairs
+  sample: ''
+  analysis: ''
+  dependencies: [LAION-400M]
+  included: ''
+  excluded: ''
+  quality_control: ''
+  access: Open
+  license: BSD-3-Clause
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+
+- type: application
+  name: EinsteinGPT
+  organization: Salesforce
+  description: EinsteinGPT is generative AI for customer relationship management
+    (CRFM).
+  created_date:
+    value: 2023-03-07
+  url: https://www.salesforce.com/products/einstein/overview/?d=cta-body-promo-8
+  dependencies: [ChatGPT API]
+  adaptation: ''
+  output_space: ''
+  quality_control: ''
+  access: Limited
+  license: unknown
+  terms_of_service: ''
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+  monthly_active_users: ''
+  user_distribution: ''
+  failures: ''

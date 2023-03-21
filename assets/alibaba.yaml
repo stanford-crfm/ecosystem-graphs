@@ -1,0 +1,24 @@
+---
+
+- type: model
+  name: Composer
+  organization: Alibaba
+  description: ''
+  created_date:
+    value: 2023-02-20
+  url: https://arxiv.org/pdf/2302.09778.pdf
+  model_card: ''
+  modality: images
+  analysis: ''
+  size: 4.4B parameters (dense model)
+  dependencies: [ImageNet, WebVision, LAION-1B]
+  training_emissions: ''
+  training_time: ''
+  training_hardware: ''
+  quality_control: ''
+  access: Closed
+  license: unknown
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''

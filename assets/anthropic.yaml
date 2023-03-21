@@ -412,7 +412,7 @@
     value: >
       The authors analyzed the impact of the dataset mixture on the preference
       models (PM). In addition to human evaluation, RLHF model were evaluated on
-      MMMLU, Lambada, HellaSwag, OpenBookQA, ARC-Easy, ARC-Challenge, TriviaQA,
+      MMLU, Lambada, HellaSwag, OpenBookQA, ARC-Easy, ARC-Challenge, TriviaQA,
       code generation, summarization.
     explanation: >
       When tested on ability to generate responses that are both harmless and
@@ -520,3 +520,73 @@
     value: crowdworkers
     explanation: The demographics of the crowdworkers are unknown.
   failures: Unknown
+
+- type: application
+  name: Anthropic API
+  organization: Anthropic
+  description: API is designed to be a backend that incorporates Claude into any
+    application you’ve developed. Our application sends text to our API, then receives
+    a response via server-sent events, a streaming protocol for the web.
+  created_date:
+    value: 2023-03-14
+  url: https://console.anthropic.com/docs/api
+  dependencies: [Claude, Claude Instant]
+  adaptation: ''
+  output_space: ''
+  quality_control: ''
+  access: limited
+  license: unknown
+  terms_of_service: ''
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+  monthly_active_users: ''
+  user_distribution: ''
+  failures: ''
+
+- type: model
+  name: Claude
+  organization: Anthropic
+  description: ''
+  created_date:
+    value: 2023-03-14
+  url: https://www.anthropic.com/index/introducing-claude
+  model_card: ''
+  modality: text
+  analysis: ''
+  size: unknown
+  dependencies: []
+  training_emissions: ''
+  training_time: ''
+  training_hardware: ''
+  quality_control: ''
+  access: limited
+  license: unknown
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+
+- type: model
+  name: Claude Instant
+  organization: Anthropic
+  description: ''
+  created_date:
+    value: 2023-03-14
+  url: https://www.anthropic.com/index/introducing-claude
+  model_card: ''
+  modality: text
+  analysis: ''
+  size: unknown
+  dependencies: []
+  training_emissions: ''
+  training_time: ''
+  training_hardware: ''
+  quality_control: ''
+  access: limited
+  license: unknown
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''

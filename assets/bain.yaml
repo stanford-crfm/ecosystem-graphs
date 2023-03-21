@@ -1,0 +1,26 @@
+---
+
+- type: application
+  name: Bain Chat
+  organization: Bain
+  description: With the alliance, Bain will combine its deep digital implementation
+    capabilities and strategic expertise with OpenAI’s AI tools and platforms, including
+    ChatGPT, to help its clients around the world identify and implement the value
+    of AI to maximize business potential.
+  created_date:
+    value: 2023-02-21
+  url: https://www.bain.com/vector-digital/partnerships-alliance-ecosystem/openai-alliance/
+  dependencies: [ChatGPT API]
+  adaptation: ''
+  output_space: ''
+  quality_control: ''
+  access: Limited
+  license: unknown
+  terms_of_service: ''
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+  monthly_active_users: ''
+  user_distribution: ''
+  failures: ''
