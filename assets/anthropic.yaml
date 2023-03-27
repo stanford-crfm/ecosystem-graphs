@@ -556,7 +556,7 @@
   modality: text
   analysis: ''
   size: unknown
-  dependencies: []
+  dependencies: [Anthropic RLHF models]
   training_emissions: ''
   training_time: ''
   training_hardware: ''
@@ -579,7 +579,7 @@
   modality: text
   analysis: ''
   size: unknown
-  dependencies: []
+  dependencies: [Anthropic RLHF models]
   training_emissions: ''
   training_time: ''
   training_hardware: ''

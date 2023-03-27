@@ -13,7 +13,7 @@
   dependencies:
     - ChatGPT API
     - GPT-4 API
-    - Claude API
+    - Anthropic API
     - Dragonfly API
     - Sage API
   adaptation: ''
