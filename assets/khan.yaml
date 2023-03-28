@@ -5,8 +5,7 @@
   organization: Khan Academy
   description: An AI-powered assistant that functions as both a virtual tutor for
     students and a classroom assistant for teachers.
-  created_date:
-    value: 2023-03-14
+  created_date: 2023-03-14
   url: https://www.khanacademy.org/khan-labs#khanmigo
   dependencies: [GPT-4 API]
   adaptation: ''

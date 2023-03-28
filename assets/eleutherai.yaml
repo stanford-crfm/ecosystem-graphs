@@ -6,11 +6,10 @@
   organization: EleutherAI
   description: >
     A latge language model training dataset, used to train GPT-NeoX-20B.
-  created_date:
-    value: 2021-01-01
+  created_date: 2021-01-01
   url: https://arxiv.org/pdf/2101.00027.pdf
   datasheet: https://arxiv.org/pdf/2201.07311.pdf
-  modality: Text (English) and Code
+  modality: text (English) and code
   size: 825 GB
   sample:
     - '...pot trending topics and the coverage around them. First up, there’s a
@@ -32,19 +31,17 @@
       the defendants urge that this Court should reconsider the case of Green Mountain
       Marble Co. v. Highway Board, supra, and follow the Federal practice of looking
       to the evide
-  analysis:
-    value: >
-      Analyses of the data's composition, document statistics,
-      language/dialectal coverage, topical distribution, and biases are
-      conducted are conducted in the paper
-      [[The Pile Paper]](https://arxiv.org/pdf/2101.00027.pdf).
+  analysis: >
+    Analyses of the data's composition, document statistics,
+    language/dialectal coverage, topical distribution, and biases are
+    conducted are conducted in the paper
+    [[The Pile Paper]](https://arxiv.org/pdf/2101.00027.pdf).
   # Construction
   dependencies: []
-  license:
-    value: >
-      The Pile uses the MIT License, allowing proprietary or open source use
-      on the condition that the terms of the license as well as a copyright
-      notice [[MIT License]](https://arxiv.org/pdf/2201.07311.pdf).
+  license: >
+    The Pile uses the MIT License, allowing proprietary or open source use
+    on the condition that the terms of the license as well as a copyright
+    notice [[MIT License]](https://arxiv.org/pdf/2201.07311.pdf).
   included: >
     The Pile data come from 22 sources, with over half of the data being from
     Common Crawl (Pile-CC; 227GB), fiction and nonfiction books (Books3; 101GB),
@@ -64,33 +61,28 @@
     corpus would require significant investigation, and corpus contain
     significant amount of stereotyping
     [[Appendix B]](https://arxiv.org/pdf/2101.00027.pdf).
-  quality_control:
-    value: >
-      In addition to the data inclusion and exclusion decisions, the quality was
-      controlled through filtering for English (pycld2 language classifier),
-      filtering for documents similar to OpenWebText2 (classifier on CommonCrawl),
-      and several forms of deduplication as detailed in the paper
-      [[Appendix C]](https://arxiv.org/pdf/2101.00027.pdf#appendix.1.C)
-      [[Appendix D]](https://arxiv.org/pdf/2101.00027.pdf#appendix.1.D).
+  quality_control: >
+    In addition to the data inclusion and exclusion decisions, the quality was
+    controlled through filtering for English (pycld2 language classifier),
+    filtering for documents similar to OpenWebText2 (classifier on CommonCrawl),
+    and several forms of deduplication as detailed in the paper
+    [[Appendix C]](https://arxiv.org/pdf/2101.00027.pdf#appendix.1.C)
+    [[Appendix D]](https://arxiv.org/pdf/2101.00027.pdf#appendix.1.D).
   # Downstream
   access:
-    value: Open
+    value: open
     explanation: >
       The dataset is freely available to the public and
       can be downloaded from The Eye
       [[The Pile]](https://mystic.the-eye.eu/public/AI/pile/).
-  intended_uses:
-    value: >
-      The Pile was intended to be used as a high quality large text dataset for
-      language modeling tasks, explained in more detail in the paper
-      [[Section 1]](https://arxiv.org/pdf/2101.00027.pdf#section.1).
-  prohibited_uses:
-    value: None
-  monitoring:
-    value: None
-  feedback:
-    value: >
-      Feedback can be given by emailing the authors at contact at eleuther.ai.
+  intended_uses: >
+    The Pile was intended to be used as a high quality large text dataset for
+    language modeling tasks, explained in more detail in the paper
+    [[Section 1]](https://arxiv.org/pdf/2101.00027.pdf#section.1).
+  prohibited_uses: None
+  monitoring: None
+  feedback: >
+    Feedback can be given by emailing the authors at contact at eleuther.ai.
 
 - type: model
   name: GPT-J
@@ -101,7 +93,7 @@
     explanation: Date model blog post was published
   url: https://arankomatsuzaki.wordpress.com/2021/06/04/gpt-j/
   model_card: ''
-  modality: Text (English)
+  modality: text (English)
   analysis: ''
   size: 6B parameters (dense model)
   dependencies: [The Pile]
@@ -110,7 +102,7 @@
   training_hardware: 'TRC (Unspecified # of TPU v3-8s)'
   quality_control: ''
   access:
-    value: Open
+    value: open
     explanation: >
       The model can be downloaded for free from [[The Eye]](https://mystic.the-eye.eu/public/AI/GPT-J-6B/step_383500.tar.zstd)
   license:
@@ -140,7 +132,7 @@
   training_hardware: ''
   quality_control: ''
   access:
-    value: Open
+    value: open
     explanation: >
       The model can be downloaded for free from [[The Eye]](https://mystic.the-eye.eu/public/AI/gptneo-release/GPT3_2-7B/)
   license:
@@ -157,17 +149,15 @@
   organization: EleutherAI
   description: >
     GPT-NeoX (20B) is an open-sourced autoregressive language model.
-  created_date:
-    value: 2022-02-02
+  created_date: 2022-02-02
   url: http://eaidata.bmk.sh/data/GPT_NeoX_20B.pdf
   model_card: https://mystic.the-eye.eu/public/AI/models/GPT-NeoX-20B/20B_model_card.md
-  modality: Text (English) and Code
+  modality: text (English) and code
   size: 20B parameters (dense model)
-  analysis:
-    value: >
-      The model was evaluated on standard NLP benchmarks: LAMBADA, ANLI,
-      HellaSwag, MMLU among others
-      [[Section 4]](http://eaidata.bmk.sh/data/GPT_NeoX_20B.pdf#section.4).
+  analysis: >
+    The model was evaluated on standard NLP benchmarks: LAMBADA, ANLI,
+    HellaSwag, MMLU among others
+    [[Section 4]](http://eaidata.bmk.sh/data/GPT_NeoX_20B.pdf#section.4).
   # Construction
   dependencies: [The Pile]
   training_emissions:
@@ -194,11 +184,10 @@
     explanation: >
       As outline by the authors
       [[Section 2.3]](http://eaidata.bmk.sh/data/GPT_NeoX_20B.pdf#subsection.2.3)
-  quality_control: >
-    value:  None
+  quality_control: None
   # Downstream
   access:
-    value: Open
+    value: open
     explanation: >
       The model can be downloaded for free The Eye
       [[GPT-NeoX-20B]](https://mystic.the-eye.eu/public/AI/models/GPT-NeoX-20B/).
@@ -207,28 +196,23 @@
     explanation: >
       As indicated in the accompanying blog post
       [[EleutherAI Blog Post]](https://blog.eleuther.ai/announcing-20b/).
-  intended_uses:
-    value: >
-      As stated in the model card: "GPT-NeoX-20B learns an inner representation
-      of the English language that can be used to extract features useful for
-      downstream tasks. The model is best at what it was pretrained for however,
-      which is generating text from a prompt.
-      Due to the generality of the pretraining set, it has acquired the ability
-      to generate completions across a wide range of tasks - from programming to
-      fiction writing
-      [[Model Card]](https://mystic.the-eye.eu/public/AI/models/GPT-NeoX-20B/20B_model_card.md)."
-  prohibited_uses:
-    value: None
-  monitoring:
-    value: None
-  feedback:
-    value: >
-      Feedback can be provided using the  # 20b channel in EleutherAI Discord
-      group
-      [[EleutherAI Blog Post]](https://blog.eleuther.ai/announcing-20b/).
-      Find the Discord link in the FAQ page
-      [[FAQ]](https://www.eleuther.ai/faq/).
-
+  intended_uses: >
+    As stated in the model card: "GPT-NeoX-20B learns an inner representation
+    of the English language that can be used to extract features useful for
+    downstream tasks. The model is best at what it was pretrained for however,
+    which is generating text from a prompt.
+    Due to the generality of the pretraining set, it has acquired the ability
+    to generate completions across a wide range of tasks - from programming to
+    fiction writing
+    [[Model Card]](https://mystic.the-eye.eu/public/AI/models/GPT-NeoX-20B/20B_model_card.md)."
+  prohibited_uses: None
+  monitoring: None
+  feedback: >
+    Feedback can be provided using the  # 20b channel in EleutherAI Discord
+    group
+    [[EleutherAI Blog Post]](https://blog.eleuther.ai/announcing-20b/).
+    Find the Discord link in the FAQ page
+    [[FAQ]](https://www.eleuther.ai/faq/).
 
 - type: application
   name: GooseAI API
@@ -236,21 +220,21 @@
   organization: GooseAI
   description: >
     GooseAI API is an API service providing access to NLP services.
-  created_date: Unknown
+  created_date: unknown
   url: goose.ai
   # Construction
   dependencies: [GPT-NeoX]
-  adaptation: Unknown
+  adaptation: unknown
   output_space:
     value: Text Generation, Text Completion
     explanation: >
       Question/Answer and Classification tasks are coming soon according to
       GooseAI
       [[Main Page]](goose.ai).
-  quality_control: Unknown
+  quality_control: unknown
   # Downstream
   access:
-    value: Limited
+    value: limited
     explanation: >
       GooseAI API can be accessed by signing up on the goose.ai website.
   license:
@@ -284,6 +268,6 @@
       Service, GooseAI asks all the feedback to be sent to support at goose.ai
       [[GooseAI Terms of Service]](https://goose.ai/docs/tos).
   # Deployment
-  monthly_active_users: Unknown
-  user_distribution: Unknown
-  failures: Unknown
+  monthly_active_users: unknown
+  user_distribution: unknown
+  failures: unknown

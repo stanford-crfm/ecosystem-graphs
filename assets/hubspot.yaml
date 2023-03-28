@@ -7,14 +7,13 @@
     most powerful AI tools available - ChatGPT priority access, no timeout limits,
     company wide access managed through a single account, incorporate into your
     existing processes without leaving HubSpot
-  created_date:
-    value: 2023-01-31
+  created_date: 2023-01-31
   url: https://ecosystem.hubspot.com/marketplace/apps/sales/sales-enablement/the-obo-group-chatgpt-1398072
   dependencies: [ChatGPT API]
   adaptation: ''
   output_space: ''
   quality_control: ''
-  access: Limited
+  access: limited
   license: ''
   terms_of_service: ''
   intended_uses: ''

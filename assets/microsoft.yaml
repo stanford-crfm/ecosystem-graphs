@@ -9,7 +9,7 @@
     explanation: The date the model paper was released
   url: https://arxiv.org/abs/2111.02358
   model_card: None
-  modality: Text (English) and Image
+  modality: text (English) and image
   size: 562M
   analysis: ''
   dependencies:
@@ -24,12 +24,12 @@
   training_hardware: ''
   quality_control: ''
   access:
-    value: Closed
+    value: closed
     explanation: Microsoft does not provide VLMo to external researchers. One author
       commented that code would be pushed "soon" in [[November of 2021]](https://github.com/microsoft/unilm/issues/532),
       but the repository does not contain relevant changes.
   license:
-    value: Unknown
+    value: unknown
     explanation: No discussion of license is provided.
   intended_uses: ''
   prohibited_uses: ''
@@ -54,9 +54,9 @@
   training_hardware: 256 A100
   quality_control: ''
   access:
-    value: Limited
+    value: limited
     explanation: Manual approval through early access request form required.
-  license: Unknown
+  license: unknown
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
@@ -71,7 +71,7 @@
     explanation: Date model blog post was released
   url: https://www.microsoft.com/en-us/research/blog/efficiently-and-effectively-scaling-up-language-model-pretraining-for-best-language-representation-model-on-glue-and-superglue/?OCID=msr_blog_TNLRV5_tw
   model_card: ''
-  modality: Text (English)
+  modality: text (English)
   analysis: ''
   size: 5B parameters (dense model)
   dependencies: []
@@ -80,9 +80,9 @@
   training_hardware: ''
   quality_control: ''
   access:
-    value: Limited
+    value: limited
     explanation: Manual approval through early access request form required.
-  license: Unknown
+  license: unknown
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
@@ -100,7 +100,7 @@
       [[Microsoft Research Blog]](https://www.microsoft.com/en-us/research/blog/using-deepspeed-and-megatron-to-train-megatron-turing-nlg-530b-the-worlds-largest-and-most-powerful-generative-language-model/).
   url: https://arxiv.org/abs/2201.11990
   model_card: ''
-  modality: Text (English)
+  modality: text (English)
   size: 530B parameters (dense model)
   analysis: ''
   dependencies: [The Pile]
@@ -109,12 +109,10 @@
   training_hardware: 4480 A100s (560 x 8)
   quality_control: ''
   access:
-    value: Limited
+    value: limited
     explanation: Megatron-Turing NLG can be accessed through the [[Turing Academic
       Program]](https://www.microsoft.com/en-us/research/collaboration/microsoft-turing-academic-program/)
-  license:
-    value: Unknown
-    explanation: Unknown
+  license: ''
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
@@ -130,8 +128,8 @@
       was released
   url: https://valle-demo.github.io/
   model_card: None found as of 2023-01-10
-  modality: Text, Audio
-  size: Unclear
+  modality: text, audio
+  size: unknown
   analysis: ''
   dependencies: []
   training_emissions: ''
@@ -139,10 +137,10 @@
   training_hardware: 16 V100 32GB GPUs
   quality_control: ''
   access:
-    value: Closed
+    value: closed
     explanation: Microsoft does not provide public access to VALL-E
   license:
-    value: Unknown
+    value: unknown
     explanation: The model si not publicly available
   intended_uses: ''
   prohibited_uses: ''
@@ -167,58 +165,50 @@
   url: https://copilot.github.com/
   # Construction
   dependencies: [Codex]
-  adaptation: >
-    Unknown
+  adaptation: unknown
   output_space: Code completions
-  quality_control:
-    value: >
-      GitHub is working on a filter to detect and suppress code generations that
-      are verbatim from the training set
-      [[GitHub Research Recitation]]
-      (https://docs.github.com/en/github/copilot/research-recitation).
-      According to the FAQ, GitHub implemented a simple filter that blocks emails
-      in standard formats to protect personally identifiable data that may be
-      present in the training data
-      [[GitHub CoPilot]](https://copilot.github.com/).
+  quality_control: >
+    GitHub is working on a filter to detect and suppress code generations that
+    are verbatim from the training set
+    [[GitHub Research Recitation]]
+    (https://docs.github.com/en/github/copilot/research-recitation).
+    According to the FAQ, GitHub implemented a simple filter that blocks emails
+    in standard formats to protect personally identifiable data that may be
+    present in the training data
+    [[GitHub CoPilot]](https://copilot.github.com/).
   # Downstream
   access:
-    value: Limited
+    value: limited
     explanation: >
       The feature is available to developers in a restricted
       technical preview
       [[GitHub CoPilot]](https://copilot.github.com/).
-  license:
-    value: Unknown
-  terms_of_service:
-    value: https://docs.github.com/en/site-policy/github-terms/github-terms-of-service
-  intended_uses:
-    value: GitHub CoPilot is intended to be used as a coding assistant.
-  prohibited_uses:
-    value: >
-      Access to GPT-3 is governed by GitHub Acceptable Use Policies and Terms of
-      Service, both of which list a set of prohibited uses
-      [[Use Policies]]
-      (https://docs.github.com/en/site-policy/acceptable-use-policies/github-acceptable-use-policies)
-      [[Terms of Service]]
-      (https://docs.github.com/en/site-policy/github-terms/github-terms-of-service).
-  monitoring:
-    value: Unknown
+  license: unknown
+  terms_of_service: >
+    https://docs.github.com/en/site-policy/github-terms/github-terms-of-service
+  intended_uses: >
+    GitHub CoPilot is intended to be used as a coding assistant.
+  prohibited_uses: >
+    Access to GPT-3 is governed by GitHub Acceptable Use Policies and Terms of
+    Service, both of which list a set of prohibited uses
+    [[Use Policies]]
+    (https://docs.github.com/en/site-policy/acceptable-use-policies/github-acceptable-use-policies)
+    [[Terms of Service]]
+    (https://docs.github.com/en/site-policy/github-terms/github-terms-of-service).
+  monitoring: >
+    value: unknown
     explanation: >
       There may be internal monitoring mechanisms unknown to the public.
-  feedback:
-    value: >
-      Feedback can be provided in the CoPilot feedback project
-      [[CoPilot feedback]]
-      (https://github.com/github/feedback/discussions/categories/copilot-feedback).
+  feedback: >
+    Feedback can be provided in the CoPilot feedback project
+    [[CoPilot feedback]]
+    (https://github.com/github/feedback/discussions/categories/copilot-feedback).
   # Deployment
-  monthly_active_users:
-    value: >
-      GitHub Copilot reportedly has over 1 million sign-ups
-      [[Tweet Source]](https://twitter.com/sama/status/1539737789310259200?s=21&t=YPaYd0ZueJzrR6rLslUqzg).
-  user_distribution:
-    value: Unknown
-  failures:
-    value: Unknown
+  monthly_active_users: >
+    GitHub Copilot reportedly has over 1 million sign-ups
+    [[Tweet Source]](https://twitter.com/sama/status/1539737789310259200?s=21&t=YPaYd0ZueJzrR6rLslUqzg).
+  user_distribution: unknown
+  failures: unknown
 
 - type: model
   name: BioGPT
@@ -228,7 +218,7 @@
     value: 2022-09-24
   url: https://academic.oup.com/bib/article/23/6/bbac409/6713511?guestAccessKey=a66d9b5d-4f83-4017-bb52-405815c907b9&login=true
   model_card: ''
-  modality: Text
+  modality: text
   analysis: ''
   size: 1.5B parameters (dense model)
   dependencies: [PubMed]
@@ -236,7 +226,7 @@
   training_time: ''
   training_hardware: ''
   quality_control: ''
-  access: Open
+  access: open
   license: MIT license
   intended_uses: ''
   prohibited_uses: ''
@@ -251,14 +241,13 @@
     the latest technologies, powered by OpenAI’s GPT-3.5, to make meetings more
     intelligent, personalized, and protected—whether it’s one-on-one, large meetings,
     virtual appointments, or webinars.
-  created_date:
-    value: 2023-02-01
+  created_date: 2023-02-01
   url: https://www.microsoft.com/en-us/microsoft-365/blog/2023/02/01/microsoft-teams-premium-cut-costs-and-add-ai-powered-productivity/
   dependencies: [ChatGPT API]
   adaptation: ''
   output_space: ''
   quality_control: ''
-  access: Open
+  access: open
   license: ''
   terms_of_service: ''
   intended_uses: ''
@@ -276,14 +265,13 @@
     now at Bing.com, to deliver better search, more complete answers, a new chat
     experience and the ability to generate content. We think of these tools as an
     AI copilot for the web.
-  created_date:
-    value: 2023-02-07
+  created_date: 2023-02-07
   url: https://blogs.microsoft.com/blog/2023/02/07/reinventing-search-with-a-new-ai-powered-microsoft-bing-and-edge-your-copilot-for-the-web/
   dependencies: [ChatGPT API]
-  adaptation: Unknown
+  adaptation: unknown
   output_space: Search results
   quality_control: ''
-  access: Limited
+  access: limited
   license: ''
   terms_of_service: ''
   intended_uses: Search engine
@@ -305,7 +293,7 @@
     value: 2023-03-01
   url: https://arxiv.org/pdf/2302.14045.pdf
   model_card: ''
-  modality: text, images
+  modality: text, image
   analysis: ''
   size: 1.6B parameters (dense model)
   dependencies:
@@ -319,7 +307,7 @@
   training_time: ''
   training_hardware: ''
   quality_control: ''
-  access: Closed
+  access: closed
   license: MIT
   intended_uses: ''
   prohibited_uses: ''
@@ -333,8 +321,7 @@
     with the OpenAI model that allows us to best leverage its power. We call this
     collection of capabilities and techniques the Prometheus model. This combination
     gives you more relevant, timely and targeted results, with improved safety.
-  created_date:
-    value: 2023-02-07
+  created_date: 2023-02-07
   url: https://blogs.microsoft.com/blog/2023/02/07/reinventing-search-with-a-new-ai-powered-microsoft-bing-and-edge-your-copilot-for-the-web/
   model_card: ''
   modality: unknown
@@ -345,7 +332,7 @@
   training_time: ''
   training_hardware: ''
   quality_control: ''
-  access: Closed
+  access: closed
   license: unknown
   intended_uses: ''
   prohibited_uses: ''
@@ -356,11 +343,10 @@
   name: Florence
   organization: Microsoft
   description: ''
-  created_date:
-    value: 2022-11-23
+  created_date:  2022-11-23
   url: https://arxiv.org/abs/2111.11432
   model_card: ''
-  modality: images, text
+  modality: text, image
   analysis: ''
   size: 900M parameters (637M image, 256M text)
   dependencies: [FLD-900M]
@@ -368,7 +354,7 @@
   training_time: ''
   training_hardware: ''
   quality_control: ''
-  access: Closed
+  access: closed
   license: unknown
   intended_uses: ''
   prohibited_uses: ''
@@ -383,7 +369,7 @@
     value: 2022-11-23
   url: https://arxiv.org/abs/2111.11432
   datasheet: ''
-  modality: images, text
+  modality: text, image
   size: 900M image-text pairs
   sample: ''
   analysis: ''
@@ -391,7 +377,7 @@
   included: ''
   excluded: ''
   quality_control: ''
-  access: Closed
+  access: closed
   license: unknown
   intended_uses: ''
   prohibited_uses: ''
@@ -405,14 +391,13 @@
     Cognitive Service for Vision. The improved Vision Services enables developers
     to create cutting-edge, market-ready, responsible computer vision applications
     across various industries.
-  created_date:
-    value: 2023-03-07
+  created_date: 2023-03-07
   url: https://azure.microsoft.com/en-us/blog/announcing-a-renaissance-in-computer-vision-ai-with-microsofts-florence-foundation-model/?utm_content=buffer16fa0&utm_medium=social&utm_source=twitter.com&utm_campaign=buffer
   dependencies: [Florence]
   adaptation: ''
   output_space: ''
   quality_control: ''
-  access: Limited
+  access: limited
   license: unknown
   terms_of_service: ''
   intended_uses: ''
@@ -427,11 +412,10 @@
   name: VisualChatGPT
   organization: Microsoft
   description: ''
-  created_date:
-    value: 2023-03-08
+  created_date: 2023-03-08
   url: https://arxiv.org/pdf/2303.04671.pdf
   model_card: ''
-  modality: text, images
+  modality: text, image
   analysis: ''
   size: unknown
   dependencies: [OpenAI API]
@@ -439,7 +423,7 @@
   training_time: ''
   training_hardware: ''
   quality_control: ''
-  access: Closed
+  access: closed
   license: unknown
   intended_uses: ''
   prohibited_uses: ''
@@ -479,8 +463,7 @@
     natural language prompts like “Tell my team how we updated the product strategy,”
     and it will generate a status update based on the morning’s meetings, emails
     and chat threads.
-  created_date:
-    value: 2023-03-16
+  created_date: 2023-03-16
   url: https://blogs.microsoft.com/blog/2023/03/16/introducing-microsoft-365-copilot-your-copilot-for-work/
   dependencies: [Microsoft 365 Copilot]
   adaptation: ''
@@ -502,8 +485,7 @@
   organization: Microsoft
   description: Microsoft Excel is the industry leading spreadsheet software program,
     a powerful data visualization and analysis tool.
-  created_date:
-    value: unknown
+  created_date: unknown
   url: https://www.microsoft.com/en-us/microsoft-365/excel
   dependencies: [Microsoft 365 Copilot]
   adaptation: ''
@@ -526,8 +508,7 @@
   description: Microsoft Outlook is a personal information manager software system
     from Microsoft, available as a part of the Microsoft Office and Microsoft 365
     software suites.
-  created_date:
-    value: unknown
+  created_date: unknown
   url: https://www.microsoft.com/en-us/microsoft-365/outlook/email-and-calendar-software-microsoft-outlook
   dependencies: [Microsoft 365 Copilot]
   adaptation: ''
@@ -549,8 +530,7 @@
   organization: Microsoft
   description: Microsoft Power Platform is a line of business intelligence, app
     development, and app connectivity software applications.
-  created_date:
-    value: unknown
+  created_date: unknown
   url: https://powerplatform.microsoft.com/en-us/
   dependencies: [Microsoft 365 Copilot]
   adaptation: ''
@@ -572,8 +552,7 @@
   organization: Microsoft
   description: Microsoft PowerPoint empowers you to create clean slideshow presentations
     and intricate pitch decks and gives you a powerful presentation maker.
-  created_date:
-    value: unknown
+  created_date: unknown
   url: https://www.microsoft.com/en-us/microsoft-365/powerpoint
   dependencies: [Microsoft 365 Copilot]
   adaptation: ''
@@ -595,8 +574,7 @@
   organization: Microsoft
   description: Microsoft Teams is a proprietary business communication platform
     developed by Microsoft, as part of the Microsoft 365 family of products.
-  created_date:
-    value: unknown
+  created_date: unknown
   url: https://www.microsoft.com/en-us/microsoft-teams/group-chat-software
   dependencies: [Microsoft 365 Copilot, Microsoft Business Chat]
   adaptation: ''
@@ -617,8 +595,7 @@
   name: Microsoft Word
   organization: Microsoft
   description: Microsoft Word is a word processing software developed by Microsoft
-  created_date:
-    value: unknown
+  created_date: unknown
   url: https://www.microsoft.com/en-us/microsoft-365/word
   dependencies: [Microsoft 365 Copilot]
   adaptation: ''
@@ -642,25 +619,24 @@
   description: >
     Inside look is a Microsoft Office feature, composing document insights
     highlighting key points, expected time to read, and popularity among others.
-  created_date:
-    value: Unknown
+  created_date: unknown
   url: https://support.microsoft.com/en-us/office/see-file-insights-before-you-open-a-file-87a23bbc-a516-42e2-a7b6-0ecb8259e026
   dependencies: []
-  adaptation: Unknown
+  adaptation: unknown
   output_space: Document level insights for users.
-  quality_control: Unknown
+  quality_control: unknown
   # Downstream
-  access: Limited public access
+  access: limited
   terms_of_service: https://www.microsoft.com/en-us/servicesagreement/
-  license: Unknown
+  license: unknown
   intended_uses: Providing document insights to users.
-  prohibited_uses: Unknown
-  monitoring: Unknown
-  feedback: Unknown
+  prohibited_uses: unknown
+  monitoring: unknown
+  feedback: unknown
   # Deployment
-  monthly_active_users: Unknown
-  user_distribution: Unknown
-  failures: Unknown
+  monthly_active_users: unknown
+  user_distribution: unknown
+  failures: unknown
 
 - type: application
   name: Microsoft Suggested Replies
@@ -672,22 +648,21 @@
     Portuguese Chinese Simplified, Chinese Traditional, Swedish, Russian,
     Korean, Czech, Hungarian, Arabic, Hebrew, Thai, Turkish, Japanese, Dutch,
     Norwegian, Danish, and Polish.
-  created_date:
-    value: Unknown
+  created_date: unknown
   url: https://support.microsoft.com/en-us/office/use-suggested-replies-in-outlook-19316194-0434-43ba-a742-6b5890157379
   dependencies: []
-  adaptation: Unknown
+  adaptation: unknown
   output_space: Suggested emails.
-  quality_control: Unknown
+  quality_control: unknown
   # Downstream
-  access: Limited public access
+  access: limited
   terms_of_service: https://www.microsoft.com/en-us/servicesagreement/
-  license: Unknown
+  license: unknown
   intended_uses: Suggesting email replies.
-  prohibited_uses: Unknown
-  monitoring: Unknown
-  feedback: Unknown
+  prohibited_uses: unknown
+  monitoring: unknown
+  feedback: unknown
   # Deployment
-  monthly_active_users: Unknown
-  user_distribution: Unknown
-  failures: Unknown
+  monthly_active_users: unknown
+  user_distribution: unknown
+  failures: unknown

@@ -20,7 +20,7 @@
   quality_control: ''
   # Downstream
   access:
-    value: Limited
+    value: limited
     explanation: >
       The game is available to public upon sign up.
   terms_of_service: ''

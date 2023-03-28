@@ -10,7 +10,7 @@
     explanation: The date the model paper was submitted to arxiv
   url: https://arxiv.org/abs/2109.04650
   model_card: ''
-  modality: Text (Korean | 한국어)
+  modality: text (Korean | 한국어)
   size: 82B parameters (dense model)
   analysis: ''
   dependencies: []
@@ -19,9 +19,9 @@
   training_hardware: 1024 A100 GPUs
   quality_control: ''
   access:
-    value: Closed
+    value: closed
     explanation: The model is not available for download or direct API use
-  license: Unknown
+  license: unknown
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''

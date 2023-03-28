@@ -8,8 +8,7 @@
     By tapping a button after certain exercise types, learners can enter a chat
     with Duo to get a simple explanation on why their answer was right or wrong,
     and ask for examples or further clarification.
-  created_date:
-    value: 2023-03-14
+  created_date: 2023-03-14
   url: https://blog.duolingo.com/duolingo-max/
   dependencies: [GPT-4 API]
   adaptation: ''
@@ -32,8 +31,7 @@
   description: Duolingo Max is a new subscription tier above Super Duolingo that
     gives learners access to two brand-new features and exercises - Explain My Answer
     and Roleplay.
-  created_date:
-    value: 2023-03-14
+  created_date: 2023-03-14
   url: https://blog.duolingo.com/duolingo-max/
   dependencies: [Duolingo Role Play, Duolingo Explain My Answer]
   adaptation: ''
@@ -60,8 +58,7 @@
     scenarios! Learners might discuss future vacation plans with Lin, order coffee
     at a café in Paris, go furniture shopping with Eddy, or ask a friend to go for
     a hike.
-  created_date:
-    value: 2023-03-14
+  created_date: 2023-03-14
   url: https://blog.duolingo.com/duolingo-max/
   dependencies: [GPT-4 API]
   adaptation: ''
