@@ -7,14 +7,14 @@
   description: >
     HyperWrite is a writing assistant that generates text based on a user's
     request, as well as style and tone choices.
-  created_date: Unknown
+  created_date: unknown
   url: https://hyperwriteai.com/
   # Construction
   dependencies: [OpenAI API]
-  adaptation: Unknown
+  adaptation: unknown
   output_space: Generation
   quality_control:
-    value: Unknown
+    value: unknown
     explanation: >
       There is a HyperWrite blog warning the users about the risks of writing
       with an AI assistant, but the company doesn't list the quality control
@@ -27,10 +27,10 @@
   terms_of_service: https://hyperwriteai.com/terms
   intended_uses: >
     HyperWrite is intended to be used as a writing assistant.
-  prohibited_uses: Unknown
-  monitoring: Unknown
-  feedback: Unknown
+  prohibited_uses: unknown
+  monitoring: unknown
+  feedback: unknown
   # Deployment
-  monthly_active_users: Unknown
-  user_distribution: Unknown
-  failures: Unknown
+  monthly_active_users: unknown
+  user_distribution: unknown
+  failures: unknown

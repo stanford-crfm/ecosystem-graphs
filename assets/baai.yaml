@@ -12,8 +12,8 @@
       [[News Link]](https://mp.weixin.qq.com/s/BUQWZ5EdR19i40GuFofpBg).
   url: https://www.tsinghua.edu.cn/en/info/1420/10473.htm
   datasheet: ''
-  modality: Text (Chinese, English) and Image
-  size: Unknown
+  modality: text (Chinese, English) and image
+  size: unknown
   sample: []
   analysis: ''
   # Construction
@@ -23,7 +23,7 @@
   excluded: ''
   quality_control: ''
   # Downstream
-  access: Closed
+  access: closed
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
@@ -41,7 +41,7 @@
       [[News Link]](https://mp.weixin.qq.com/s/BUQWZ5EdR19i40GuFofpBg).
   url: https://www.tsinghua.edu.cn/en/info/1420/10473.htm
   model_card: ''
-  modality: Text (Chinese, English) and Image
+  modality: text (Chinese, English) and image
   size: 1.75T parameters (dense model)
   analysis: ''
   # Construction
@@ -52,7 +52,7 @@
   quality_control: ''
   # Downstream
   access:
-    value: Closed
+    value: closed
     explanation: >
       The model wasn't released.
   license: ''

@@ -11,22 +11,21 @@
     explanation: Date the models were announced by the Aleph Alpha twitter account
   url: None
   datasheet: None
-  modality: Text (English, French | français, German | Deutsch, Italian | italiano,
+  modality: text (English, French | français, German | Deutsch, Italian | italiano,
     Spanish | Español)
-  size:
-    value: Unknown
+  size: unknown
   sample: []
-  analysis: Unknown
+  analysis: unknown
   # Construction
   dependencies: []
-  license: Unknown
-  included: Unknown
-  excluded: Unknown
-  quality_control: Unknown
+  license: unknown
+  included: unknown
+  excluded: unknown
+  quality_control: unknown
   # Downstream
-  access: Closed
-  intended_uses: Unknown
-  prohibited_uses: Unknown
+  access: closed
+  intended_uses: unknown
+  prohibited_uses: unknown
   monitoring: None
   feedback: None
 
@@ -39,19 +38,19 @@
     explanation: Date the models were announced by the Aleph Alpha twitter account
   url: https://twitter.com/Aleph__Alpha/status/1514576711492542477
   model_card: ''
-  modality: Text (English, French | français, German | Deutsch, Italian | italiano,
+  modality: text (English, French | français, German | Deutsch, Italian | italiano,
     Spanish | Español)
   analysis: ''
   size: 200B parameters (dense model) according to [[this news article]](https://www-heise-de.translate.goog/news/Machine-Learning-Aleph-Alpha-feilt-mit-Oracle-und-Nvidia-an-transformativer-KI-6269269.html?_x_tr_sl=de&_x_tr_tl=en&_x_tr_hl=en&_x_tr_pto=sc)
   dependencies: [Luminous dataset]
-  training_emissions: Unknown
-  training_time: Unknown
-  training_hardware: Unknown
+  training_emissions: unknown
+  training_time: unknown
+  training_hardware: unknown
   quality_control: ''
   access:
-    value: Limited
+    value: limited
     explanation: Paid API product
-  license: Unknown
+  license: unknown
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
@@ -79,19 +78,19 @@
   quality_control: ''
   # Downstream
   access:
-    value: Limited
+    value: limited
     explanation: The API is a paid product. Refer to the [[API documentation]](https://docs.aleph-alpha.com/docs/introduction/luminous/)
       for further details.
   license:
-    value: Unknown
+    value: unknown
     explanation: Unable to locate a specific license for the API as of 2021-01-09.
       See Terms of Service for additional information.
   terms_of_service: https://www.aleph-alpha.com/terms-conditions
-  intended_uses: Unknown
-  prohibited_uses: Unknown
-  monitoring: Unknown
-  feedback: Unknown
+  intended_uses: unknown
+  prohibited_uses: unknown
+  monitoring: unknown
+  feedback: unknown
   # Deployment
-  monthly_active_users: Unknown
-  user_distribution: Unknown
-  failures: Unknown
+  monthly_active_users: unknown
+  user_distribution: unknown
+  failures: unknown

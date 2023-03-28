@@ -46,19 +46,20 @@ class Asset {
       // The asset fields we will populate
       let value = null, explanation = null;
 
-      // We expect each assetField to have a value and an explanation.
-      // When reading the field from the schemaFieldValue, we populate each of
-      // these fields as follows:
-      // (1) If the schemaFieldValue is an object that is not an Array, we try
-      //     to read 'value' and 'explanation' fields to the respective fields
-      //     in the AssetField. If the explanation field is not provided, we
-      //     would read null.
-      // (2) Otherwise, we directly read schemaFieldValue to the value of
-      //     AssetField, and leave the explanation as null.
+      // We expect each assetField to be an object with a "value" and an
+      // "explanation" key. In the absence of these keys, we read the object
+      // directly (e.g. arrays or dates)
       const schemaFieldValue = getField(item, schemaField.name);
-      if ((typeof schemaFieldValue === 'object') && !(schemaFieldValue instanceof Array)) {
+      const isObject = typeof schemaFieldValue === 'object';
+      const hasValue = isObject && 'value' in schemaFieldValue;
+      const hasExplanation = isObject && 'explanation' in schemaFieldValue;
+      if (hasValue && hasExplanation) {
         value = getField(schemaFieldValue, 'value');
         explanation = schemaFieldValue.explanation;
+      } else if (hasValue || hasExplanation) {
+        console.error(
+          'Error in schemaField', schemaField, 'Don\'t use value and explanation fields without one another. Couldn\'t read the asset, fix.'
+        );
       } else {
         value = schemaFieldValue;
       }
@@ -639,6 +640,7 @@ function loadAssetsAndRenderPageContent() {
     'assets/alibaba.yaml',
     'assets/anthropic.yaml',
     'assets/argonne.yaml',
+    'assets/assembly.yaml',
     'assets/baai.yaml',
     'assets/baidu.yaml',
     'assets/bain.yaml',
@@ -648,32 +650,32 @@ function loadAssetsAndRenderPageContent() {
     'assets/cmu.yaml',
     'assets/cohere.yaml',
     'assets/deepmind.yaml',
-    'assets/duckduckgo.yaml',
+    // 'assets/duckduckgo.yaml',
     'assets/duolingo.yaml',
-    'assets/eleutherai.yaml',
+    // 'assets/eleutherai.yaml',
     'assets/google.yaml',
     'assets/hubspot.yaml',
     'assets/huggingface.yaml',
     'assets/instacart.yaml',
-    'assets/juni.yaml',
+    // 'assets/juni.yaml',
     'assets/khan.yaml',
     'assets/laion.yaml',
-    'assets/linkedin.yaml',
     'assets/latitude.yaml',
+    'assets/linkedin.yaml',
     'assets/meta.yaml',
-    'assets/microsoft.yaml',
+    // 'assets/microsoft.yaml',
     'assets/naver.yaml',
-    'assets/neeva.yaml',
+    // 'assets/neeva.yaml',
     'assets/notion.yaml',
     'assets/nvidia.yaml',
     'assets/openai.yaml',
-    'assets/othersideai.yaml',
-    'assets/perplexity.yaml',
+    // 'assets/othersideai.yaml',
+    // 'assets/perplexity.yaml',
     'assets/quizlet.yaml',
     'assets/quora.yaml',
-    'assets/robin.yaml',
+    // 'assets/robin.yaml',
     'assets/salesforce.yaml',
-    'assets/sana.yaml',
+    // 'assets/sana.yaml',
     'assets/shanghai.yaml',
     'assets/shop.yaml',
     'assets/snap.yaml',
@@ -685,9 +687,9 @@ function loadAssetsAndRenderPageContent() {
     'assets/trevor.yaml',  
     'assets/tsinghua.yaml',
     'assets/uw.yaml',
-    'assets/viable.yaml',
+    // 'assets/viable.yaml',
     'assets/yandex.yaml',
-    'assets/you.yaml',
+    // 'assets/you.yaml',
   ];
 
   $.get('js/schemas.yaml', {}, (response) => {

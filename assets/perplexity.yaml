@@ -4,11 +4,11 @@
   name: Perplexity dataset
   organization: Perplexity
   description: ''
-  created_date: Unknown
+  created_date: unknown
   url: https://www.perplexity.ai/
   datasheet: ''
-  modality: Text
-  size: Unknown
+  modality: text
+  size: unknown
   sample: []
   analysis: ''
   dependencies: []
@@ -16,7 +16,7 @@
   excluded: ''
   quality_control: ''
   access: Closed
-  license: Unknown
+  license: unknown
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
@@ -26,19 +26,19 @@
   name: Perplexity model
   organization: Perplexity
   description: ''
-  created_date: Unknown
+  created_date: unknown
   url: https://www.perplexity.ai/
   model_card: ''
-  modality: Text
+  modality: text
   analysis: ''
-  size: Unknown
+  size: unknown
   dependencies: [Perplexity dataset]
   training_emissions: ''
   training_time: ''
   training_hardware: ''
   quality_control: ''
   access: Closed
-  license: Unknown
+  license: unknown
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
@@ -49,13 +49,13 @@
   organization: Perplexity
   description: Perplexity Ask is a new search interface that uses advanced artificial
     intelligence technologies
-  created_date: Unknown
+  created_date: unknown
   url: https://www.perplexity.ai/
   dependencies: [Perplexity model]
   adaptation: ''
   output_space: ''
   quality_control: ''
-  access: Open
+  access: open
   license: ''
   terms_of_service: ''
   intended_uses: ''
@@ -71,8 +71,7 @@
   organization: Perplexity
   description: Twitter search interface that is powered by Perplexity's structured
     search engine.
-  created_date:
-    value: 2022-12-15
+  created_date: 2022-12-15
   url: https://www.perplexity.ai/sql
   dependencies: [Perplexity Ask, OpenAI API]
   adaptation: ''

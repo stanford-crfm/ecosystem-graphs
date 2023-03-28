@@ -4,19 +4,19 @@
   name: You dataset
   organization: You
   description: ''
-  created_date: Unknown
+  created_date: unknown
   url: https://you.com/
   datasheet: ''
-  modality: Text
-  size: Unknown
+  modality: text
+  size: unknown
   sample: []
   analysis: ''
   dependencies: []
   included: ''
   excluded: ''
   quality_control: ''
-  access: Closed
-  license: Unknown
+  access: closed
+  license: unknown
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
@@ -26,19 +26,19 @@
   name: You model
   organization: You
   description: ''
-  created_date: Unknown
+  created_date: unknown
   url: https://you.com/
   model_card: ''
   modality: Text
   analysis: ''
-  size: Unknown
+  size: unknown
   dependencies: [You dataset]
   training_emissions: ''
   training_time: ''
   training_hardware: ''
   quality_control: ''
-  access: Closed
-  license: Unknown
+  access: closed
+  license: unknown
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
@@ -50,13 +50,13 @@
   description: You.com is a search engine built on artificial intelligence that
     provides users with a customized search experience while keeping their data
     100% private.
-  created_date: Unknown
+  created_date: unknown
   url: https://you.com/
   dependencies: [You model]
   adaptation: ''
   output_space: ''
   quality_control: ''
-  access: Open
+  access: open
   license: ''
   terms_of_service: ''
   intended_uses: ''

@@ -7,8 +7,7 @@
     conversations with several AI-powered bots. It is initially available on iOS,
     but we will be adding support for all major platforms in the next few months,
     along with more bots.
-  created_date:
-    value: 2023-02-03
+  created_date: 2023-02-03
   url: https://quorablog.quora.com/Poe-1
   dependencies:
     - ChatGPT API
@@ -19,7 +18,7 @@
   adaptation: ''
   output_space: ''
   quality_control: ''
-  access: Limited
+  access: limited
   license: unknown
   terms_of_service: ''
   intended_uses: ''

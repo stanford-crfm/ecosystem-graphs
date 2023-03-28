@@ -4,19 +4,18 @@
   name: YT-Temporal-1B
   organization: University of Washington
   description: ''
-  created_date:
-    value: 2022-01-07
+  created_date: 2022-01-07
   url: https://arxiv.org/abs/2201.02639
   datasheet: ''
-  modality: videos
+  modality: video
   size: 20M videos
-  sample: ''
+  sample: []
   analysis: ''
   dependencies: [YouTube]
   included: ''
   excluded: ''
   quality_control: ''
-  access: Open
+  access: open
   license: MIT
   intended_uses: ''
   prohibited_uses: ''

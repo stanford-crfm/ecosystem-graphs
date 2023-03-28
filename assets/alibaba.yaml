@@ -4,8 +4,7 @@
   name: Composer
   organization: Alibaba
   description: ''
-  created_date:
-    value: 2023-02-20
+  created_date: 2023-02-20
   url: https://arxiv.org/pdf/2302.09778.pdf
   model_card: ''
   modality: images
@@ -16,7 +15,7 @@
   training_time: ''
   training_hardware: ''
   quality_control: ''
-  access: Closed
+  access: closed
   license: unknown
   intended_uses: ''
   prohibited_uses: ''

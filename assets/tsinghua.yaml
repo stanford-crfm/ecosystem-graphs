@@ -5,21 +5,19 @@
   name: CodeGeeX
   organization: Tsinghua
   description: CodeGeeX is an autoregressive language model trained on code
-  created_date:
-    value: 2022-09-20
-    explanation: ''
+  created_date: 2022-09-20
   url: https://github.com/THUDM/CodeGeeX
   model_card: None
-  modality: Code
+  modality: code
   analysis: None
   size: 13B parameters (dense model)
   dependencies: []
-  training_emissions: Unknown
-  training_time: Unknown
+  training_emissions: unknown
+  training_time: unknown
   training_hardware: THUDM 1536 Ascend 910 (32GB) Cluster
   quality_control: None
   access:
-    value: Limited
+    value: limited
     explanation: Model weights are available but gated via an [[application form]](https://models.aminer.cn/codegeex/download/request)
   license:
     value: Apache 2.0
@@ -38,7 +36,7 @@
     explanation: The date the model paper was released
   url: https://arxiv.org/abs/2105.13290
   model_card: None
-  modality: Text (Chinese) and Image
+  modality: text (Chinese) and image
   size: 4B parameters
   analysis: ''
   dependencies: []
@@ -47,7 +45,7 @@
   training_hardware: ''
   quality_control: ''
   access:
-    value: Open
+    value: open
     explanation: Model checkpoints available from [[Wudao-Wenhui]](https://resource.wudaoai.cn/home?ind=2&name=WuDao%20WenHui&id=1399364355975327744)
   license:
     value: Apache 2.0
@@ -67,7 +65,7 @@
     explanation: The date the model paper was released
   url: https://arxiv.org/abs/2204.14217
   model_card: None
-  modality: Text (Chinese, English) and Image
+  modality: text (Chinese, English) and image
   size: 6B parameters
   analysis: ''
   dependencies: []
@@ -76,7 +74,7 @@
   training_hardware: ''
   quality_control: ''
   access:
-    value: Open
+    value: open
     explanation: The model checkpoints are available for download from [[BAAI]](https://model.baai.ac.cn/model-detail/100041)
   license:
     value: Apache 2.0
@@ -96,7 +94,7 @@
     explanation: The date the model paper was released
   url: https://arxiv.org/abs/2205.15868
   model_card: None
-  modality: Text (Chinese) and Video
+  modality: text (Chinese) and video
   size: None
   analysis: ''
   dependencies: []
@@ -105,7 +103,7 @@
   training_hardware: ''
   quality_control: ''
   access:
-    value: Open
+    value: open
     explanation: Model checkpoints are available for download from https://github.com/THUDM/CogVideo
   license:
     value: Apache 2.0
@@ -125,8 +123,8 @@
     value: 2022-08-04
     explanation: The date the model website was made public
   url: https://keg.cs.tsinghua.edu.cn/glm-130b/
-  model_card: None found as of 2023-01-09
-  modality: Text (Chinese | English)
+  model_card: None
+  modality: text (Chinese | English)
   size: 130B parameters (dense model)
   analysis: ''
   dependencies:
@@ -139,7 +137,7 @@
   training_hardware: THUDM 96 DGX-A100 (40G) cluster
   quality_control: ''
   access:
-    value: Open
+    value: open
     explanation: Model checkpoints are available from the [[GitHub repository]](https://github.com/THUDM/GLM-130B/blob/main/MODEL_LICENSE)
   license:
     value: GLM-130B License

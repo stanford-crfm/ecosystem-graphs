@@ -33,18 +33,18 @@
       for training purposes.
   # Downstream
   access:
-    value: Closed
+    value: closed
     explanation: >
       The tool can only be accessed by the Trevor Project will be counsolors
       for training purposes.
-  license: Unknown
-  terms_of_service: Unknown
+  license: unknown
+  terms_of_service: unknown
   intended_uses: >
     Training counselors
-  prohibited_uses: Unknown
-  monitoring: Unknown
-  feedback: Unknown
+  prohibited_uses: unknown
+  monitoring: unknown
+  feedback: unknown
   # Deployment
-  monthly_active_users: Unknown
-  user_distribution: Unknown
-  failures: Unknown
+  monthly_active_users: unknown
+  user_distribution: unknown
+  failures: unknown

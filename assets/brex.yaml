@@ -7,14 +7,13 @@
     professionals, is turning to the same artificial intelligence tool behind ChatGPT
     for a service that can answer questions about corporate budgets, policy and
     spending.
-  created_date:
-    value: 2023-03-07
+  created_date: 2023-03-07
   url: https://fortune.com/2023/03/07/cfo-chatbot-chatgpt-ai-brex-finance-software-startup-budgets-policies/
   dependencies: [ChatGPT API]
   adaptation: ''
   output_space: ''
   quality_control: ''
-  access: Limited
+  access: limited
   license: unknown
   terms_of_service: ''
   intended_uses: ''

@@ -9,7 +9,7 @@
     explanation: Date the model was made publicly available
   url: https://github.com/CompVis/stable-diffusion
   model_card: https://huggingface.co/CompVis/stable-diffusion-v1-4?text=A+mecha+robot+in+a+favela+in+expressionist+style
-  modality: Text and Image
+  modality: text and image
   size: 890M parameters
   analysis: ''
   dependencies: [LAION-5B]
@@ -19,9 +19,9 @@
     on [[Twitter]](https://twitter.com/emostaque/status/1563870674111832066)
   quality_control: ''
   access:
-    value: Open
+    value: open
     explanation: Model weights are available for download from the [[Github repo]](https://github.com/CompVis/stable-diffusion)
-  license: Unknown
+  license: unknown
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''

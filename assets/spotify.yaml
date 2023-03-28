@@ -7,14 +7,13 @@
     so well that it can choose what to play for you. This feature, first rolling
     out in beta, will deliver a curated lineup of music alongside commentary around
     the tracks and artists we think you’ll like in a stunningly realistic voice.
-  created_date:
-    value: 2023-02-23
+  created_date: 2023-02-23
   url: https://newsroom.spotify.com/2023-02-22/spotify-debuts-a-new-ai-dj-right-in-your-pocket/
   dependencies: [ChatGPT API, Sonantic AI]
   adaptation: ''
   output_space: ''
   quality_control: ''
-  access: Limited
+  access: limited
   license: unknown
   terms_of_service: ''
   intended_uses: ''
