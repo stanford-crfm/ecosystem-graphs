@@ -18,7 +18,7 @@
       [[Open AI Blog Post]](https://openai.com/blog/openai-api/).
   url: https://arxiv.org/pdf/2005.14165.pdf
   datasheet:
-    value: None
+    value: none
     explanation: No datasheet available as of 2022-04-04.
   modality: text (English)
   size: 570 GB
@@ -109,7 +109,7 @@
       [[OpenAI Blog Post]](https://openai.com/blog/openai-codex/).
   url: https://arxiv.org/pdf/2107.03374.pdf
   datasheet:
-    value: None
+    value: none
     explanation: No datasheet available as of 2022-04-10.
   modality: code (Python)
   size: 214 KB
@@ -139,7 +139,7 @@
       \ 'seven', 'eight' and 'nine'.\n    Return the string with numbers sorted\
       \ from smallest to largest\n    >>> sort_numbers('three one five')\n    'one\
       \ three five'\n    \"\"\"\n"
-  analysis: None
+  analysis: none
   # Construction
   dependencies: []
   license: >
@@ -162,8 +162,8 @@
       [[HumanEval GitHub Repository]](https://www.github.com/openai/human-eval).
   intended_uses: >
     Evaluating code generation capabilities of models.
-  prohibited_uses: None
-  monitoring: None
+  prohibited_uses: none
+  monitoring: none
   feedback: >
     Email the authors [[Codex Paper]](https://arxiv.org/pdf/2107.03374.pdf).
 
@@ -180,14 +180,14 @@
       was announced to the public
       [[OpenAI Blog Post]](https://openai.com/blog/openai-codex/).
   url: https://arxiv.org/pdf/2107.03374.pdf
-  datasheet: None
+  datasheet: none
   modality: code
   size:
     value: 159 GB
     explanation: As reported by the authors [[Section 3.1]](https://arxiv.org/pdf/2107.03374.pdf#subsection.3.1).
   sample: []
   analysis:
-    value: None
+    value: none
     explanation: The paper doesn't provide an analysis on the training dataset.
   # Construction
   dependencies: []
@@ -230,7 +230,7 @@
       The date of the blog post announcing CLIP
       [[OpenAI Blog Post]](https://openai.com/blog/clip/).
   url: https://arxiv.org/pdf/2103.00020.pdf
-  datasheet: None
+  datasheet: none
   modality: text (English) and image
   size: 400M (image, text) pairs
   sample: []
@@ -251,7 +251,7 @@
   included: >
     Data crawled from the internet, without any filtering (including
     de-duplication) or curation.
-  excluded: None
+  excluded: none
   quality_control: >
     The data was "only crawled websites that had policies against excessively
     violent and adult images and allowed us to filter out such content"
@@ -284,7 +284,7 @@
       The date of the blog post announcing DALL·E
       [[OpenAI Blog Post]](https://openai.com/blog/dall-e/).
   url: https://arxiv.org/abs/2102.12092
-  datasheet: None
+  datasheet: none
   modality: text (English) and image
   size: >
     250M (image, text) pairs
@@ -345,7 +345,7 @@
       [[Open AI Blog Post]](https://openai.com/blog/whisper/).
   url: https://cdn.openai.com/papers/whisper.pdf
   datasheet:
-    value: None
+    value: none
     explanation: No datasheet available as of 2022-12-07.
   modality: speech
   size: 680k hours
@@ -373,11 +373,11 @@
       The dataset isn't released to the public.
   intended_uses: The intended use is to train speech models.
   prohibited_uses:
-    value: None
+    value: none
     explanation: >
       No uses are explicitly prohibited.
   monitoring:
-    value: None
+    value: none
     explanation: >
       There are no known (internal or external) monitoring mechanisms
       that are in place for the use of the dataset as of 2022-12-07.
@@ -555,7 +555,7 @@
       The date that Codex was announced to the public
       [[OpenAI Blog Post]](https://openai.com/blog/openai-codex/).
   url: https://arxiv.org/pdf/2107.03374.pdf
-  model_card: None
+  model_card: none
   modality: text (English) and code
   size: 12B parameters (dense model)
   analysis: >
@@ -746,7 +746,7 @@
     translation and language identification.
   prohibited_uses: unknown
   monitoring:
-    value: None
+    value: none
     explanation: >
       No monitoring is mentioned by the authors.
   feedback: >
@@ -861,7 +861,7 @@
     use cases"
     [[Model Card]](https://github.com/openai/CLIP/blob/main/model-card.mdlicen).
   monitoring:
-    value: None
+    value: none
     explanation: There are no monitoring mechanisms in place for CLIP.
   feedback: Questions can be shared at the feedback form linked in the CLIP model
     card [[Model Card]](https://github.com/openai/CLIP/blob/main/model-card.mdlicen).
@@ -920,7 +920,7 @@
     value: unknown
     explanation: The prohibited uses of the model are unknown.
   monitoring:
-    value: None
+    value: none
     explanation: There are no monitoring mechanisms in place for DALL·E.
   feedback: >
     Contact the paper author(s) specified on the paper
@@ -936,7 +936,7 @@
     explanation: The date the model paper was released
   url: https://arxiv.org/abs/2005.00341
   model_card:
-    value: None
+    value: none
     explanation: No model card found as of 2023-01-09
   modality: Audio (music)
   size: 5B parameters
@@ -955,9 +955,9 @@
     explanation: >
       The license is provided in the [Github repository](https://github.com/openai/jukebox).
   intended_uses: ''
-  prohibited_uses: None
-  monitoring: None
-  feedback: None
+  prohibited_uses: none
+  monitoring: none
+  feedback: none
 
 - type: model
   name: DALL·E 2

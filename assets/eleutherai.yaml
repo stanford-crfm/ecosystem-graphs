@@ -79,8 +79,8 @@
     The Pile was intended to be used as a high quality large text dataset for
     language modeling tasks, explained in more detail in the paper
     [[Section 1]](https://arxiv.org/pdf/2101.00027.pdf#section.1).
-  prohibited_uses: None
-  monitoring: None
+  prohibited_uses: none
+  monitoring: none
   feedback: >
     Feedback can be given by emailing the authors at contact at eleuther.ai.
 
@@ -184,7 +184,7 @@
     explanation: >
       As outline by the authors
       [[Section 2.3]](http://eaidata.bmk.sh/data/GPT_NeoX_20B.pdf#subsection.2.3)
-  quality_control: None
+  quality_control: none
   # Downstream
   access:
     value: open
@@ -205,8 +205,8 @@
     to generate completions across a wide range of tasks - from programming to
     fiction writing
     [[Model Card]](https://mystic.the-eye.eu/public/AI/models/GPT-NeoX-20B/20B_model_card.md)."
-  prohibited_uses: None
-  monitoring: None
+  prohibited_uses: none
+  monitoring: none
   feedback: >
     Feedback can be provided using the  # 20b channel in EleutherAI Discord
     group

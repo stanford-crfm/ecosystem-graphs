@@ -8,7 +8,7 @@
     value: 2021-11-03
     explanation: The date the model paper was released
   url: https://arxiv.org/abs/2111.02358
-  model_card: None
+  model_card: none
   modality: text (English) and image
   size: 562M
   analysis: ''
@@ -127,7 +127,7 @@
     explanation: The date the [[model paper]](https://arxiv.org/abs/2301.02111)
       was released
   url: https://valle-demo.github.io/
-  model_card: None found as of 2023-01-10
+  model_card: none
   modality: text, audio
   size: unknown
   analysis: ''

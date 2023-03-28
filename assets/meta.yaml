@@ -9,7 +9,7 @@
     explanation: The date the [[model paper]](https://www.biorxiv.org/content/10.1101/2022.07.20.500902v2.full.pdf+html)
       was released
   url: https://www.biorxiv.org/content/10.1101/2022.07.20.500902v2.full.pdf+html
-  model_card: None
+  model_card: none
   modality: protein sequence
   size: 15B parameters (dense model)
   analysis: ''
@@ -40,11 +40,11 @@
     value: 2021-12-08
     explanation: The date the model paper was released
   url: https://arxiv.org/abs/2112.04482
-  datasheet: None
+  datasheet: none
   modality: text, image
   size: 70M
   sample: []
-  analysis: None
+  analysis: none
   # Construction
   dependencies:
     - COCO
@@ -56,7 +56,7 @@
     - Conceptual Captions
     - Red Caps
   license: unknown
-  included: None
+  included: none
   excluded: YFCC100M is filtered for non-English captions and very short (< 2 word)
     captions.
   quality_control: Beyond filtering mentioned in excluded, nothing further is done.
@@ -64,8 +64,8 @@
   access: closed
   intended_uses: unknown
   prohibited_uses: unknown
-  monitoring: None
-  feedback: None
+  monitoring: none
+  feedback: none
 
 - type: model
   name: FLAVA
@@ -108,7 +108,7 @@
     Per the [[HuggingFace repository]](https://huggingface.co/facebook/flava-full),
     "Any deployed use case of the model - whether commercial or not" - is currently
     out of scope.
-  monitoring: None
+  monitoring: none
   feedback: https://huggingface.co/facebook/flava-full/discussions
 
 - type: dataset
@@ -122,11 +122,11 @@
     explanation: >
       The date the Galactica paper was released
   url: https://galactica.org/static/paper.pdf
-  datasheet: None
+  datasheet: none
   modality: text
   size: 106B tokens
   sample: []
-  analysis: None
+  analysis: none
   # Construction
   dependencies: [CommonCrawl, Wikipedia, arXiv]
   license: unknown
@@ -138,8 +138,8 @@
   access: closed
   intended_uses: unknown
   prohibited_uses: unknown
-  monitoring: None
-  feedback: None
+  monitoring: none
+  feedback: none
 
 - type: model
   name: Galactica
@@ -180,9 +180,9 @@
     value: 2022-04-12
     explanation: The date the model paper was released
   url: https://arxiv.org/abs/2204.05999
-  model_card: None
+  model_card: none
   modality: text (English) and code
-  analysis: None
+  analysis: none
   size: 6B parameters (dense model)
   dependencies: []
   training_emissions: Unknown
@@ -248,7 +248,7 @@
       [[arXiv]]
       (https://arxiv.org/abs/2209.14792).
   url: https://arxiv.org/pdf/2209.14792.pdf
-  datasheet: None
+  datasheet: none
   modality: video, image-text
   size: 20M video clips, 2.3B image-text pairs
   sample: []
@@ -261,7 +261,7 @@
       No license is discussed, though the underlying datasets are public and have
       licenses.
   included:
-    value: None
+    value: none
     explanation: >
       Data from the three underlying datasets is filtered, but nothing is included
       beyond this.
@@ -285,7 +285,7 @@
       There is no information on how Meta is internally monitoring
       the use of the dataset.
   feedback:
-    value: None
+    value: none
     explanation: >
       No feedback mechanism is mentioned by the authors.
 
@@ -302,7 +302,7 @@
       [[arXiv]]
       (https://arxiv.org/abs/2209.14792).
   url: https://arxiv.org/pdf/2209.14792.pdf
-  model_card: None
+  model_card: none
   modality: text, video
   size:
     value: unknown
@@ -327,7 +327,7 @@
     explanation: >
       Authors do not report the training hardware or provider.
   quality_control:
-    value: None
+    value: none
     explanation: >
       Authors do not report specific quality control steps taken in modeling, though
       filtering is done in producing the Make-A-Video dataset.
@@ -356,7 +356,7 @@
       Authors do not report the monitoring process for Make-A-Video internally at
       Meta.
   feedback:
-    value: None
+    value: none
     explanation: >
       Authors do not mention or provide a feedback mechanism.
 

@@ -19,7 +19,7 @@
   # Construction
   dependencies: [CommonCrawl]
   license: ODC-BY
-  included: None
+  included: none
   excluded: >
     Data was filtered for English using langdetect. Further, data was filtered
     to end in terminal punctuation, to remove short pages (less than 5 sentences),
@@ -32,8 +32,8 @@
     value: open
     explanation: https://huggingface.co/datasets/c4
   intended_uses: To faciliate transfer learning research in NLP.
-  prohibited_uses: None
-  monitoring: None
+  prohibited_uses: none
+  monitoring: none
   feedback: https://huggingface.co/datasets/c4/discussions
 
 - type: dataset
@@ -48,7 +48,7 @@
       The date of the Google product update blog announcing that BERT models
       were for ranking and featured snippets in Search.
   url: https://blog.google/products/search/search-language-understanding-bert/
-  datasheet: None
+  datasheet: none
   modality: text
   size: unknown
   sample: []
@@ -103,7 +103,7 @@
   license: Apache 2.0
   intended_uses: NLP tasks
   prohibited_uses: unknown
-  monitoring: None
+  monitoring: none
   feedback: https://huggingface.co/t5-large/discussions
 
 - type: model
@@ -197,7 +197,7 @@
       The date of the Google company news blog announcing LaMDA
       [[Google News Blog]](https://blog.google/technology/ai/lamda/).
   url: https://arxiv.org/pdf/2201.08239.pdf
-  datasheet: None
+  datasheet: none
   modality: text and code
   size:
     value: unknown
@@ -231,7 +231,7 @@
     advises avoiding harm, unjust impact and misinformation, among others.
   monitoring: unknown
   feedback:
-    value: None
+    value: none
     explanation: >
       Author contact information was not provided.
 
@@ -248,7 +248,7 @@
       The date of the Google company news blog announcing LaMDA
       [[Google News Blog]](https://blog.google/technology/ai/lamda/).
   url: https://arxiv.org/pdf/2201.08239.pdf
-  model_card: None
+  model_card: none
   modality: text
   size:
     value: 137B parameters (dense model)
@@ -308,7 +308,7 @@
     advises avoiding harm, unjust impact and misinformation, among others.
   monitoring: unknown
   feedback:
-    value: None
+    value: none
     explanation: >
       Author contact information was not provided.
 
@@ -409,8 +409,8 @@
     value: Apache 2.0
     explanation: License on the [[Github repository]](https://github.com/google-research/google-research)
   intended_uses: unknown
-  prohibited_uses: None
-  monitoring: None
+  prohibited_uses: none
+  monitoring: none
   feedback: https://huggingface.co/google/flan-t5-xxl/discussions
 
 - type: model

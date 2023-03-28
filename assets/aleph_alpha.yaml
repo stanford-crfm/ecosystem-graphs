@@ -9,8 +9,8 @@
   created_date:
     value: 2022-04-14
     explanation: Date the models were announced by the Aleph Alpha twitter account
-  url: None
-  datasheet: None
+  url: none
+  datasheet: none
   modality: text (English, French | français, German | Deutsch, Italian | italiano,
     Spanish | Español)
   size: unknown
@@ -26,8 +26,8 @@
   access: closed
   intended_uses: unknown
   prohibited_uses: unknown
-  monitoring: None
-  feedback: None
+  monitoring: none
+  feedback: none
 
 - type: model
   name: Luminous

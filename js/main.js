@@ -128,8 +128,7 @@ function getStandardSize(value) {
 }
 
 function compareValues(valueA, valueB, columnName) {
-  // Filter for unknown, null and todo values
-  const genericValues = ["unknown", "", null];
+  // Filter for null, empty and unknown values
   if (valueA === null) {
     return -1;
   } else if (valueB === null) {
@@ -287,7 +286,7 @@ function renderValueExplanation(type, value, explanation) {
   const converter = new showdown.Converter();
   // Render value
   let renderedValue = $('<div>').append(value);
-  if (value === 'Unknown' || value === 'TODO' || value === 'None') {
+  if (value === 'unknown' || value === 'none') {
     renderedValue = converter.makeHtml(value);
   } else if (value instanceof Date) {
     let dateString = value.toLocaleDateString('en-us', {year:"numeric", month:"short", day:"numeric"});

@@ -33,7 +33,7 @@
     Sana is intended to be used by employers to provide a learning service for
     their employees.
   prohibited_uses:
-    value: None
+    value: none
     explanation: >
       Sana provides an extensive set of legal documents
       [[Sana Legal]](https://www.sanalabs.com/legal/), but missing from the

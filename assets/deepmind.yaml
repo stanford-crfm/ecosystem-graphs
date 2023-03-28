@@ -125,7 +125,7 @@
       There is no information on how DeepMind is internally monitoring
       the use of the dataset.
   feedback:
-    value: None
+    value: none
     explanation: >
       No feedback mechanism is mentioned in the datasheet
       [[Datasheet]](https://arxiv.org/pdf/2204.14198.pdf#appendix.F).
@@ -143,7 +143,7 @@
       [[DeepMind Blog Post]]
       (https://www.deepmind.com/blog/a-generalist-agent).
   url: https://www.deepmind.com/blog/a-generalist-agent
-  datasheet: None
+  datasheet: none
   modality: text, text-image pair, simulated control task, robotics simulation
   size: 10.5 TB Text, 2.2B Text-Image pairs, 1.5T tokens of simulated control, 500k
     robotics trajectories
@@ -162,7 +162,7 @@
     The full composition of the dataset across individual sources can be found in
     the paper.
   excluded:
-    value: None
+    value: none
     explanation: >
       No specific filtering is mentioned in the Gato paper.
   quality_control: unknown
@@ -182,12 +182,12 @@
     explanation: >
       There are no known prohibited uses of the dataset stated by authors.
   monitoring:
-    value: None
+    value: none
     explanation: >
       There is no mention on how DeepMind is internally monitoring
       the use of the dataset.
   feedback:
-    value: None
+    value: none
     explanation: >
       There is no mention on feedback mechanisms either internally or externally.
 
@@ -199,7 +199,7 @@
     value: 2021-07-15
     explanation: The date the model paper was released
   url: https://www.nature.com/articles/s41586-021-03819-2
-  model_card: None
+  model_card: none
   modality: protein sequence
   size: 93M parameters (dense model)
   analysis: ''
@@ -266,7 +266,7 @@
       Reported in the paper checklist
       [[Checklist]](https://arxiv.org/pdf/2204.14198.pdf).
   quality_control:
-    value: None
+    value: none
     explanation: >
       Reported in the mitigations in the model card
       [[Model Card]](https://openreview.net/pdf?id=1ikK0kHjvj#appendix.A).
@@ -304,7 +304,7 @@
       There is no information on how DeepMind is internally monitoring
       the use of the model.
   feedback:
-    value: None
+    value: none
     explanation: >
       No contact information is provided for feedback in the model card
       [[Model Card]](https://arxiv.org/pdf/2204.14198.pdf#appendix.E).
@@ -391,7 +391,7 @@
     explanation: >
       Reported in the paper
       [[Section F]](https://arxiv.org/pdf/2112.11446.pdf#appendix.F).
-  quality_control: None
+  quality_control: none
   # Downstream
   access:
     value: closed
@@ -471,7 +471,7 @@
     explanation: >
       Reported in the paper
       [[Section 4]](https://arxiv.org/pdf/2203.15556.pdf).
-  quality_control: None
+  quality_control: none
   # Downstream
   access:
     value: closed
@@ -549,7 +549,7 @@
       Reported in the paper
       [[Section 2.3]](https://openreview.net/pdf?id=1ikK0kHjvj).
   quality_control:
-    value: None
+    value: none
     explanation: >
       Reported in the mitigations in the model card
       [[Model Card]](https://openreview.net/pdf?id=1ikK0kHjvj#appendix.A).

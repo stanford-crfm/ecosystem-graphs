@@ -34,8 +34,8 @@
   intended_uses: To empower large-scale monolingual and multilingual modeling projects
     with both the data and the processing tools, as well as stimulate research around
     this large multilingual corpus.
-  prohibited_uses: None
-  monitoring: None
+  prohibited_uses: none
+  monitoring: none
   feedback: https://huggingface.co/spaces/bigscience-data/roots-search/discussions
 
 - type: dataset
@@ -65,8 +65,8 @@
   # Downstream
   access: open
   intended_uses: Multitask finetuning of language models.
-  prohibited_uses: None
-  monitoring: None
+  prohibited_uses: none
+  monitoring: none
   feedback: Point of Contact is [Victor Sanh](https://huggingface.co/datasets/bigscience/P3)
 
 - type: dataset
@@ -95,8 +95,8 @@
   # Downstream
   access: open
   intended_uses: Multitask finetuning of language models.
-  prohibited_uses: None
-  monitoring: None
+  prohibited_uses: none
+  monitoring: none
   feedback: Point of Contact is [Niklas Muennighoff](https://huggingface.co/datasets/bigscience/xP3)
 
 
@@ -125,8 +125,8 @@
   license: Apache 2.0
   intended_uses: You can use the models to perform inference on tasks by specifying
     your query in natural language, and the models will generate a prediction.
-  prohibited_uses: None
-  monitoring: None
+  prohibited_uses: none
+  monitoring: none
   feedback: https://huggingface.co/bigscience/T0pp/discussions
 
 - type: model
@@ -166,7 +166,7 @@
     using the model for harm, violating human rights, or other kinds of malicious
     activities, is a misuse of this model (e.g. spam generation, disinformation,
     disparagement, deception, surveillance).
-  monitoring: None
+  monitoring: none
   feedback: https://huggingface.co/bigscience/bloom/discussions
 
 - type: model
@@ -194,8 +194,8 @@
     explanation: Model is licensed under https://huggingface.co/spaces/bigscience/license
   intended_uses: We recommend using the model to perform tasks expressed in natural
     language.
-  prohibited_uses: None
-  monitoring: None
+  prohibited_uses: none
+  monitoring: none
   feedback: https://huggingface.co/bigscience/bloomz/discussions
 
 - type: model
@@ -221,6 +221,6 @@
     explanation: Model is licensed under https://huggingface.co/spaces/bigscience/license
   intended_uses: We recommend using the model to perform tasks expressed in natural
     language.
-  prohibited_uses: None
-  monitoring: None
+  prohibited_uses: none
+  monitoring: none
   feedback: https://huggingface.co/bigscience/bloomz/discussions

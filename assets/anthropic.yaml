@@ -17,7 +17,7 @@
       The date that the paper was uploaded to ArXiv
       [[ArXiv Abstract]](https://arxiv.org/abs/2204.05862).
   url: https://arxiv.org/pdf/2204.05862.pdf
-  datasheet: None
+  datasheet: none
   modality: text (English)
   size:
     value: 271.5 MB
@@ -288,8 +288,7 @@
   included: >
     The dataset included all the answers that the workers were asked to
     ranked against each other.
-  excluded: >
-    None
+  excluded: none
   quality_control: >
     Working with a screened set of crowdworkers, and employing simple data
     quality measures
@@ -307,7 +306,7 @@
     explanation: >
       The prohibited use cases of the dataset weren't specified.
   monitoring:
-    value: None
+    value: none
     explanation: >
       There is no monitoring process for the usages of the dataset.
   feedback: >
@@ -331,7 +330,7 @@
       The date that the paper was uploaded to ArXiv
       [[ArXiv Abstract]](https://arxiv.org/abs/2204.05862).
   url: https://arxiv.org/pdf/2204.05862.pdf
-  datasheet: None
+  datasheet: none
   modality: Text (English)
   size: unknown
   sample: []
@@ -351,8 +350,7 @@
   included: >
     The dataset included all the answers that the workers were asked to
     ranked against each other.
-  excluded: >
-    None
+  excluded: none
   quality_control: >
     Working with "select" crowdworkers or those screened for certain
     qualifications, and employing simple data quality measures
@@ -373,7 +371,7 @@
     explanation: >
       The prohibited use cases of the dataset weren't specified.
   monitoring:
-    value: None
+    value: none
     explanation: >
       There is no monitoring process for the usages of the dataset.
   feedback:
@@ -400,7 +398,7 @@
       The date that the paper was uploaded to ArXiv
       [[ArXiv Abstract]](https://arxiv.org/abs/2204.05862).
   url: https://arxiv.org/pdf/2204.05862.pdf
-  model_card: None
+  model_card: none
   modality: text (English) and Code
   size:
     value: 52B parameters (dense model)
@@ -492,7 +490,7 @@
   url: https://arxiv.org/pdf/2204.05862.pdf
   # Construction
   dependencies: [Anthropic RLHF models]
-  adaptation: None
+  adaptation: none
   output_space: >
     UI allowing users to indicate their preference for the model responses
     shown.

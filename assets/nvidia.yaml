@@ -9,7 +9,7 @@
     value: 2021-04-09
     explanation: The date the paper for the 1 trillion parameter model was published
   url: https://arxiv.org/abs/2104.04473
-  model_card: None
+  model_card: none
   modality: text (English)
   analysis: ''
   size: 1000B parameters (dense model)
@@ -24,10 +24,10 @@
       Neither the 8.3B parameter model trained to convergence nor the 1 trillion
       paramter model is available for download
   license: unknown
-  intended_uses: None
-  prohibited_uses: None
-  monitoring: None
-  feedback: None
+  intended_uses: none
+  prohibited_uses: none
+  monitoring: none
+  feedback: none
 
 - type: dataset
   name: MineDojo

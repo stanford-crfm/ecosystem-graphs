@@ -15,7 +15,7 @@
       The date the Cohere API was announced on the news
       [[News Article]]
       (https://venturebeat.com/2021/11/15/openai-rival-cohere-launches-language-model-api/).
-  url: None
+  url: none
   datasheet: https://docs.cohere.ai/data-statement
   modality: text (English)
   size:
@@ -80,7 +80,7 @@
       The date the Cohere API was announced on the news
       [[News Article]]
       (https://venturebeat.com/2021/11/15/openai-rival-cohere-launches-language-model-api/).
-  url: None
+  url: none
   model_card: https://docs.cohere.ai/generation-card
   modality: text (English)
   size:
@@ -157,7 +157,7 @@
       The date the Cohere API was announced on the news
       [[News Article]]
       (https://venturebeat.com/2021/11/15/openai-rival-cohere-launches-language-model-api/).
-  url: None
+  url: none
   model_card: https://docs.cohere.ai/representation-card
   modality: Text (English)
   size:
