@@ -89,10 +89,8 @@
       The exact sizes of the generation models are unknown, but we know
       that they come in three sizes: small, medium, and large
       [[Model Card]](https://docs.cohere.ai/generation-card).
-  analysis:
-    The model's performance was analyzed on Hellaswag and COPA, as well as
-    several safety benchmarks
-    [[Model Card]](https://docs.cohere.ai/generation-card).
+  analysis: The model's performance was analyzed on Hellaswag and COPA, as well
+    as several safety benchmarks [[Model Card]](https://docs.cohere.ai/generation-card).
   # Construction
   dependencies: [coheretext]
   training_emissions:

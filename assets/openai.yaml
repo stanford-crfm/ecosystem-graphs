@@ -289,12 +289,10 @@
   size: >
     250M (image, text) pairs
   sample: []
-  analysis:
-    The authors found that the dataset contained 21% of the images in the
-    MS-COCO validation set, but observed no significant changes in the
-    performance of the accompanying DALL·E when tested on MS-COCO evaluation
-    set with and without the said images
-    [[Section 3.1]](https://arxiv.org/pdf/2102.12092.pdf#subsection.3.1).
+  analysis: The authors found that the dataset contained 21% of the images in the
+    MS-COCO validation set, but observed no significant changes in the performance
+    of the accompanying DALL·E when tested on MS-COCO evaluation set with and without
+    the said images [[Section 3.1]](https://arxiv.org/pdf/2102.12092.pdf#subsection.3.1).
   # Construction
   dependencies: []
   license: unknown
@@ -633,11 +631,10 @@
   size:
     value: 175B parameters (dense model)
     explanation: Size of the largest InstructGPT model.
-  analysis:
-    The model was evaluated on human ratings to the InstructGPT answers
-    to the prompts submitted to the OpenAI API as well as on public NLP
-    datasets spanning truthfulness, toxicity, and bias, question answering,
-    reading comprehension, and summarization tasks.
+  analysis: The model was evaluated on human ratings to the InstructGPT answers
+    to the prompts submitted to the OpenAI API as well as on public NLP datasets
+    spanning truthfulness, toxicity, and bias, question answering, reading comprehension,
+    and summarization tasks.
   # Construction
   dependencies: [GPT-3, OpenAI API]
   training_emissions:
@@ -715,9 +712,8 @@
       Whisper comes in several sizes (39M, 74M, 244M, 769M, 1.55B). Here we report
       the size of the largest
       model [[Table 1]](https://cdn.openai.com/papers/whisper.pdf).
-  analysis:
-    The model was evaluated for zero-shot English and multingual speech recognition,
-    translation, language identification and robustness to noise.
+  analysis: The model was evaluated for zero-shot English and multingual speech
+    recognition, translation, language identification and robustness to noise.
   # Construction
   dependencies: [Whisper dataset]
   training_emissions:
@@ -785,8 +781,7 @@
       The total size is unknown, but the largest CLIP model is a
       a combination of 63M-parameter (dense) text encoder and a 307M-parameter
       vision encoder.
-  analysis:
-    The model was evaluated on standard vision datasets (e.g. CIFAR10, ImageNet)
+  analysis: The model was evaluated on standard vision datasets (e.g. CIFAR10, ImageNet)
     and showed robust state of the art results.
   # Construction
   dependencies: [CLIP dataset]
@@ -868,9 +863,8 @@
   monitoring:
     value: None
     explanation: There are no monitoring mechanisms in place for CLIP.
-  feedback:
-    Questions can be shared at the feedback form linked in the CLIP model card
-    [[Model Card]](https://github.com/openai/CLIP/blob/main/model-card.mdlicen).
+  feedback: Questions can be shared at the feedback form linked in the CLIP model
+    card [[Model Card]](https://github.com/openai/CLIP/blob/main/model-card.mdlicen).
 
 - type: model
   name: DALL·E

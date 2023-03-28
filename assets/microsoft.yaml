@@ -214,8 +214,7 @@
   name: BioGPT
   organization: Microsoft
   description: ''
-  created_date:
-    value: 2022-09-24
+  created_date: 2022-09-24
   url: https://academic.oup.com/bib/article/23/6/bbac409/6713511?guestAccessKey=a66d9b5d-4f83-4017-bb52-405815c907b9&login=true
   model_card: ''
   modality: text
@@ -289,8 +288,7 @@
   description: KOSMOS-1 is a multimodal language model that is capable of perceiving
     multimodal input, following instructions, and performing in-context learning
     for not only language tasks but also multimodal tasks.
-  created_date:
-    value: 2023-03-01
+  created_date: 2023-03-01
   url: https://arxiv.org/pdf/2302.14045.pdf
   model_card: ''
   modality: text, image
@@ -343,7 +341,7 @@
   name: Florence
   organization: Microsoft
   description: ''
-  created_date:  2022-11-23
+  created_date: 2022-11-23
   url: https://arxiv.org/abs/2111.11432
   model_card: ''
   modality: text, image
@@ -365,13 +363,12 @@
   name: FLD-900M
   organization: Microsoft
   description: ''
-  created_date:
-    value: 2022-11-23
+  created_date: 2022-11-23
   url: https://arxiv.org/abs/2111.11432
   datasheet: ''
   modality: text, image
   size: 900M image-text pairs
-  sample: ''
+  sample: []
   analysis: ''
   dependencies: []
   included: ''
@@ -436,8 +433,7 @@
   description: It combines the power of language models with your data in the Microsoft
     Graph and the Microsoft 365 apps to turn your words into the most powerful productivity
     tool on the planet.
-  created_date:
-    value: 2023-03-16
+  created_date: 2023-03-16
   url: https://blogs.microsoft.com/blog/2023/03/16/introducing-microsoft-365-copilot-your-copilot-for-work/
   dependencies: [GPT-4 API]
   adaptation: ''

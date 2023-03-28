@@ -129,18 +129,18 @@ function getStandardSize(value) {
 
 function compareValues(valueA, valueB, columnName) {
   // Filter for unknown, null and todo values
-  const genericValues = ["Unknown", "todo", null];
+  const genericValues = ["unknown", "", null];
   if (valueA === null) {
     return -1;
   } else if (valueB === null) {
     return 1;
-  } else if (valueA === "todo") {
+  } else if (valueA === "") {
     return -1;
-  } else if (valueB === "todo") {
+  } else if (valueB === "") {
     return 1;
-  } else if (valueA === "Unknown") {
+  } else if (valueA === "unknown") {
     return -1;
-  } else if (valueB === "Unknown") {
+  } else if (valueB === "unknown") {
     return 1;
   }
 
@@ -650,32 +650,32 @@ function loadAssetsAndRenderPageContent() {
     'assets/cmu.yaml',
     'assets/cohere.yaml',
     'assets/deepmind.yaml',
-    // 'assets/duckduckgo.yaml',
+    'assets/duckduckgo.yaml',
     'assets/duolingo.yaml',
-    // 'assets/eleutherai.yaml',
+    'assets/eleutherai.yaml',
     'assets/google.yaml',
     'assets/hubspot.yaml',
     'assets/huggingface.yaml',
     'assets/instacart.yaml',
-    // 'assets/juni.yaml',
+    'assets/juni.yaml',
     'assets/khan.yaml',
     'assets/laion.yaml',
     'assets/latitude.yaml',
     'assets/linkedin.yaml',
     'assets/meta.yaml',
-    // 'assets/microsoft.yaml',
+    'assets/microsoft.yaml',
     'assets/naver.yaml',
-    // 'assets/neeva.yaml',
+    'assets/neeva.yaml',
     'assets/notion.yaml',
     'assets/nvidia.yaml',
     'assets/openai.yaml',
-    // 'assets/othersideai.yaml',
-    // 'assets/perplexity.yaml',
+    'assets/othersideai.yaml',
+    'assets/perplexity.yaml',
     'assets/quizlet.yaml',
     'assets/quora.yaml',
-    // 'assets/robin.yaml',
+    'assets/robin.yaml',
     'assets/salesforce.yaml',
-    // 'assets/sana.yaml',
+    'assets/sana.yaml',
     'assets/shanghai.yaml',
     'assets/shop.yaml',
     'assets/snap.yaml',
@@ -687,9 +687,9 @@ function loadAssetsAndRenderPageContent() {
     'assets/trevor.yaml',  
     'assets/tsinghua.yaml',
     'assets/uw.yaml',
-    // 'assets/viable.yaml',
+    'assets/viable.yaml',
     'assets/yandex.yaml',
-    // 'assets/you.yaml',
+    'assets/you.yaml',
   ];
 
   $.get('js/schemas.yaml', {}, (response) => {
