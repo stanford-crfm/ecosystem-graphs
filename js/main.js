@@ -46,19 +46,20 @@ class Asset {
       // The asset fields we will populate
       let value = null, explanation = null;
 
-      // We expect each assetField to have a value and an explanation.
-      // When reading the field from the schemaFieldValue, we populate each of
-      // these fields as follows:
-      // (1) If the schemaFieldValue is an object that is not an Array, we try
-      //     to read 'value' and 'explanation' fields to the respective fields
-      //     in the AssetField. If the explanation field is not provided, we
-      //     would read null.
-      // (2) Otherwise, we directly read schemaFieldValue to the value of
-      //     AssetField, and leave the explanation as null.
+      // We expect each assetField to be an object with a "value" and an
+      // "explanation" key. In the absence of these keys, we read the object
+      // directly (e.g. arrays or dates)
       const schemaFieldValue = getField(item, schemaField.name);
-      if ((typeof schemaFieldValue === 'object') && !(schemaFieldValue instanceof Array)) {
+      const isObject = typeof schemaFieldValue === 'object';
+      const hasValue = isObject && 'value' in schemaFieldValue;
+      const hasExplanation = isObject && 'explanation' in schemaFieldValue;
+      if (hasValue && hasExplanation) {
         value = getField(schemaFieldValue, 'value');
         explanation = schemaFieldValue.explanation;
+      } else if (hasValue || hasExplanation) {
+        console.error(
+          'Error in schemaField', schemaField, 'Don\'t use value and explanation fields without one another. Couldn\'t read the asset, fix.'
+        );
       } else {
         value = schemaFieldValue;
       }
@@ -127,19 +128,18 @@ function getStandardSize(value) {
 }
 
 function compareValues(valueA, valueB, columnName) {
-  // Filter for unknown, null and todo values
-  const genericValues = ["Unknown", "todo", null];
+  // Filter for null, empty and unknown values
   if (valueA === null) {
     return -1;
   } else if (valueB === null) {
     return 1;
-  } else if (valueA === "todo") {
+  } else if (valueA === "") {
     return -1;
-  } else if (valueB === "todo") {
+  } else if (valueB === "") {
     return 1;
-  } else if (valueA === "Unknown") {
+  } else if (valueA === "unknown") {
     return -1;
-  } else if (valueB === "Unknown") {
+  } else if (valueB === "unknown") {
     return 1;
   }
 
@@ -286,7 +286,7 @@ function renderValueExplanation(type, value, explanation) {
   const converter = new showdown.Converter();
   // Render value
   let renderedValue = $('<div>').append(value);
-  if (value === 'Unknown' || value === 'TODO' || value === 'None') {
+  if (value === 'unknown' || value === 'none') {
     renderedValue = converter.makeHtml(value);
   } else if (value instanceof Date) {
     let dateString = value.toLocaleDateString('en-us', {year:"numeric", month:"short", day:"numeric"});
@@ -639,6 +639,7 @@ function loadAssetsAndRenderPageContent() {
     'assets/alibaba.yaml',
     'assets/anthropic.yaml',
     'assets/argonne.yaml',
+    'assets/assembly.yaml',
     'assets/baai.yaml',
     'assets/baidu.yaml',
     'assets/bain.yaml',
@@ -658,8 +659,8 @@ function loadAssetsAndRenderPageContent() {
     'assets/juni.yaml',
     'assets/khan.yaml',
     'assets/laion.yaml',
-    'assets/linkedin.yaml',
     'assets/latitude.yaml',
+    'assets/linkedin.yaml',
     'assets/meta.yaml',
     'assets/microsoft.yaml',
     'assets/naver.yaml',

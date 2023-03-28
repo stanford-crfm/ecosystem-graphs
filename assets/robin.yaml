@@ -7,8 +7,7 @@
     - including in technical domains like legal language. It's also very confident
     at drafting, summarising, translations, and explaining complex concepts in simple
     terms
-  created_date:
-    value: unknown
+  created_date: unknown
   url: https://www.robinai.co.uk/
   dependencies: [Anthropic API]
   adaptation: ''

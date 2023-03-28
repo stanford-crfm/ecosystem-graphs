@@ -9,8 +9,8 @@
     explanation: The date the [[model paper]](https://www.biorxiv.org/content/10.1101/2022.07.20.500902v2.full.pdf+html)
       was released
   url: https://www.biorxiv.org/content/10.1101/2022.07.20.500902v2.full.pdf+html
-  model_card: None
-  modality: Protein sequences
+  model_card: none
+  modality: protein sequence
   size: 15B parameters (dense model)
   analysis: ''
   dependencies: [UniRef50, UniRef90]
@@ -19,7 +19,7 @@
   training_hardware: ''
   quality_control: ''
   access:
-    value: Full public access
+    value: open
     explanation: Models are available for download from [[GitHub repository]](https://github.com/facebookresearch/esm#available-models)
   license:
     value: MIT
@@ -40,11 +40,11 @@
     value: 2021-12-08
     explanation: The date the model paper was released
   url: https://arxiv.org/abs/2112.04482
-  datasheet: None
-  modality: Image-Text
+  datasheet: none
+  modality: text, image
   size: 70M
   sample: []
-  analysis: None
+  analysis: none
   # Construction
   dependencies:
     - COCO
@@ -55,17 +55,17 @@
     - Wikipedia
     - Conceptual Captions
     - Red Caps
-  license: Unknown
-  included: None
+  license: unknown
+  included: none
   excluded: YFCC100M is filtered for non-English captions and very short (< 2 word)
     captions.
   quality_control: Beyond filtering mentioned in excluded, nothing further is done.
   # Downstream
-  access: Closed
-  intended_uses: Unknown
-  prohibited_uses: Unknown
-  monitoring: None
-  feedback: None
+  access: closed
+  intended_uses: unknown
+  prohibited_uses: unknown
+  monitoring: none
+  feedback: none
 
 - type: model
   name: FLAVA
@@ -85,13 +85,13 @@
   analysis: FLAVA is benchmarked on a range of vision-only (e.g. CIFAR-10), language-only
     (e.g. GLUE), and multimodal (e.g. Hateful Memes) standard evaluations.
   dependencies: [PMD]
-  training_emissions: Unknown
-  training_time: Unknown
-  training_hardware: Unknown
+  training_emissions: unknown
+  training_time: unknown
+  training_hardware: unknown
   quality_control: FLAVA introduces a variety of new modeling techniques, specifically
     with an interest in improved text-image alignment through contrastive objectives.
   access:
-    value: Open
+    value: open
     explanation: >
       Model checkpoints are available for download from the [[HuggingFace
       repository]](https://huggingface.co/facebook/flava-full)
@@ -108,7 +108,7 @@
     Per the [[HuggingFace repository]](https://huggingface.co/facebook/flava-full),
     "Any deployed use case of the model - whether commercial or not" - is currently
     out of scope.
-  monitoring: None
+  monitoring: none
   feedback: https://huggingface.co/facebook/flava-full/discussions
 
 - type: dataset
@@ -122,24 +122,24 @@
     explanation: >
       The date the Galactica paper was released
   url: https://galactica.org/static/paper.pdf
-  datasheet: None
-  modality: Text
+  datasheet: none
+  modality: text
   size: 106B tokens
   sample: []
-  analysis: None
+  analysis: none
   # Construction
   dependencies: [CommonCrawl, Wikipedia, arXiv]
-  license: Unknown
+  license: unknown
   included: Prompts and reasoning data is explicitly included to improve model capabilities
     derived from this data.
   excluded: ''
   quality_control: ''
   # Downstream
-  access: Closed
-  intended_uses: Unknown
-  prohibited_uses: Unknown
-  monitoring: None
-  feedback: None
+  access: closed
+  intended_uses: unknown
+  prohibited_uses: unknown
+  monitoring: none
+  feedback: none
 
 - type: model
   name: Galactica
@@ -155,13 +155,13 @@
   analysis: ''
   size: 120B parameters (dense model)
   dependencies: [The Galactica Corpus]
-  training_emissions: Unknown
-  training_time: Unknown
+  training_emissions: unknown
+  training_time: unknown
   training_hardware: Meta AI Cluster. Trained on 1024 80GB A100 GPUs (128 8xA100
     80GB nodes)
   quality_control: ''
   access:
-    value: Open
+    value: open
     explanation: Model checkpoints freely available at https://github.com/paperswithcode/galai
   license:
     value: CC-BY NC 4.0
@@ -170,7 +170,6 @@
   prohibited_uses: ''
   monitoring: ''
   feedback: ''
-
 
 - type: model
   name: InCoder
@@ -181,17 +180,17 @@
     value: 2022-04-12
     explanation: The date the model paper was released
   url: https://arxiv.org/abs/2204.05999
-  model_card: None
-  modality: Text (English) and Code
-  analysis: None
+  model_card: none
+  modality: text (English) and code
+  analysis: none
   size: 6B parameters (dense model)
   dependencies: []
   training_emissions: Unknown
   training_time: 24 days, according to [[the paper]](https://arxiv.org/pdf/2204.05999.pdf)
   training_hardware: 248 V100 GPUs, according to [[the paper]](https://arxiv.org/pdf/2204.05999.pdf)
-  quality_control: Unknown
+  quality_control: unknown
   access:
-    value: Open
+    value: open
     explanation: Model weights are available via the [[HuggingFace repository]](https://huggingface.co/facebook/incoder-6B)
   license:
     value: CC-BY-NC 4.0
@@ -211,7 +210,7 @@
       The date the OPT paper was submitted to Arxiv
   url: https://arxiv.org/abs/2205.01068
   model_card: https://arxiv.org/pdf/2205.01068.pdf
-  modality: Text (English)
+  modality: text (English)
   analysis: ''
   size: 175B parameters (dense model)
   dependencies: [RoBERTa dataset, The Pile, PushShift.io Reddit]
@@ -224,7 +223,7 @@
   training_hardware: Meta AI cluster. Trained on 992 80GB A100 GPUs
   quality_control: ''
   access:
-    value: Limited
+    value: limited
     explanation: The 175B model requires manual approval from Meta to access. Other
       models are available through HuggingFace.
   license:
@@ -249,21 +248,20 @@
       [[arXiv]]
       (https://arxiv.org/abs/2209.14792).
   url: https://arxiv.org/pdf/2209.14792.pdf
-  datasheet: None
-  modality: Video, Image-Text
+  datasheet: none
+  modality: video, image-text
   size: 20M video clips, 2.3B image-text pairs
   sample: []
-  analysis:
-    value: TODO
+  analysis: ''
   # Construction
   dependencies: [LAION-5B, WebVid-10M, HD-VILA-100M]
   license:
-    value: Unknown
+    value: unknown
     explanation: >
       No license is discussed, though the underlying datasets are public and have
       licenses.
   included:
-    value: None
+    value: none
     explanation: >
       Data from the three underlying datasets is filtered, but nothing is included
       beyond this.
@@ -271,28 +269,26 @@
     The LAION-5B dataset is filtered to 2.3B by removing NSFW images using [https://github.com/GantMan/nsfw](https://github.com/GantMan/nsfw),
     toxic words in text, and images with watermark probability > 0.5. The HD-VILA-100M
     is randomly subsampled to 10M video clips.
-  quality_control:
-    value: >
-      The authors exclude NSFW, toxic, and likely watermarked data from LAION-5B.
+  quality_control: >
+    The authors exclude NSFW, toxic, and likely watermarked data from LAION-5B.
   # Downstream
   access:
-    value: Limited
+    value: limited
     explanation: >
       The datasets involved are public, but the full dataset is not directly available,
       nor are filtering scripts.
-  intended_uses:
-    value: Unknown
-  prohibited_uses:
-    value: Unknown
+  intended_uses: unknown
+  prohibited_uses: unknown
   monitoring:
-    value: Unknown
+    value: unknown
     explanation: >
       There is no information on how Meta is internally monitoring
       the use of the dataset.
   feedback:
-    value: None
+    value: none
     explanation: >
       No feedback mechanism is mentioned by the authors.
+
 - type: model
   name: Make-A-Video
   # General
@@ -306,62 +302,61 @@
       [[arXiv]]
       (https://arxiv.org/abs/2209.14792).
   url: https://arxiv.org/pdf/2209.14792.pdf
-  model_card: None
-  modality: Video, Text
+  model_card: none
+  modality: text, video
   size:
-    value: Unknown
+    value: unknown
     explanation: >
       The authors do not state the model size in the paper.
-  analysis:
-    value: >
-      Model performance was evaluated using automated (Frechet Video Distance; Frechet
-      Inception Distance) and human evaluation on two datasets (UCF-101, MSR-VTT)
-      in the zero-shot setting.
+  analysis: >
+    Model performance was evaluated using automated (Frechet Video Distance; Frechet
+    Inception Distance) and human evaluation on two datasets (UCF-101, MSR-VTT)
+    in the zero-shot setting.
   # Construction
   dependencies: [Make-A-Video dataset]
   training_emissions:
-    value: Unknown
+    value: unknown
     explanation: >
       Authors do not report the training emissions.
   training_time:
-    value: Unknown
+    value: unknown
     explanation: >
       Authors do not report the training time.
   training_hardware:
-    value: Unknown
+    value: unknown
     explanation: >
       Authors do not report the training hardware or provider.
   quality_control:
-    value: None
+    value: none
     explanation: >
       Authors do not report specific quality control steps taken in modeling, though
       filtering is done in producing the Make-A-Video dataset.
   # Downstream
   access:
-    value: Closed
+    value: closed
     explanation: >
       The model has not been released; a form existed to potentially acquire access
       but is now closed as of 2022-12-07
       [[Access Form]](https://docs.google.com/forms/u/0/d/e/1FAIpQLSfMjC57wcXWUDV0UbS2Tn6VhjLEiCXaHvWZuWgWRa-Zx8-Few/closedform).
   license:
-    value: Unknown
+    value: unknown
     explanation: >
       Authors do not report the license.
   intended_uses:
-    value: Unknown
+    value: unknown
     explanation: >
       Authors do not report the intended uses.
   prohibited_uses:
-    value: Unknown
+    value: unknown
     explanation: >
       Authors do not report the prohibited uses.
   monitoring:
-    value: Unknown
+    value: unknown
     explanation: >
       Authors do not report the monitoring process for Make-A-Video internally at
       Meta.
   feedback:
-    value: None
+    value: none
     explanation: >
       Authors do not mention or provide a feedback mechanism.
 
@@ -369,8 +364,7 @@
   name: LLaMa
   organization: Meta
   description: ''
-  created_date:
-    value: 2023-02-24
+  created_date: 2023-02-24
   url: https://arxiv.org/abs/2302.13971
   model_card: ''
   modality: Text
@@ -388,7 +382,7 @@
   training_time: ''
   training_hardware: ''
   quality_control: ''
-  access: Open
+  access: open
   license: LLaMa License (model weights), GPL-3.0 License (code)
   intended_uses: ''
   prohibited_uses: ''
@@ -399,11 +393,10 @@
   name: OPT-IML
   organization: Meta
   description: ''
-  created_date:
-    value: 2022-12-22
+  created_date: 2022-12-22
   url: https://arxiv.org/abs/2212.12017
   model_card: ''
-  modality: Text
+  modality: text
   analysis: ''
   size: 175B parameters (dense)
   dependencies: [OPT, OPT-IML Bench]
@@ -411,7 +404,7 @@
   training_time: ''
   training_hardware: ''
   quality_control: ''
-  access: Open
+  access: open
   license: OPT Model License
   intended_uses: ''
   prohibited_uses: ''

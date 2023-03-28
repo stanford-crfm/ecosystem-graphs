@@ -9,7 +9,7 @@
     explanation: Date model paper was released
   url: https://arxiv.org/abs/2203.13474
   model_card: ''
-  modality: Text (English) and Code
+  modality: text (English) and code
   analysis: ''
   size: 16B parameters (dense model)
   dependencies: []
@@ -18,11 +18,11 @@
   training_hardware: Unspecified Salesforce Compute (TPU-V4s)
   quality_control: ''
   access:
-    value: Open
+    value: open
     explanation: Model weights are available for download with links in the [[GitHub
       repo]](https://github.com/salesforce/CodeGen)
   license:
-    value: Unknown
+    value: unknown
     explanation: Explicit license for code is provided, but none mentioned for models
   intended_uses: ''
   prohibited_uses: ''
@@ -33,11 +33,10 @@
   name: BLIP
   organization: Salesforce
   description: ''
-  created_date:
-    value: 2022-01-28
+  created_date: 2022-01-28
   url: https://arxiv.org/abs/2201.12086
   model_card: ''
-  modality: text, images
+  modality: text and image
   analysis: ''
   size: unknown
   dependencies:
@@ -53,7 +52,7 @@
   training_time: ''
   training_hardware: ''
   quality_control: ''
-  access: Open
+  access: open
   license: BSD-3-Clause
   intended_uses: ''
   prohibited_uses: ''
@@ -64,19 +63,18 @@
   name: LAION-115M
   organization: Salesforce
   description: ''
-  created_date:
-    value: 2022-01-28
+  created_date: 2022-01-28
   url: https://arxiv.org/abs/2201.12086
   datasheet: ''
-  modality: text, images
+  modality: text and image
   size: 115M text-image pairs
-  sample: ''
+  sample: []
   analysis: ''
   dependencies: [LAION-400M]
   included: ''
   excluded: ''
   quality_control: ''
-  access: Open
+  access: open
   license: BSD-3-Clause
   intended_uses: ''
   prohibited_uses: ''
@@ -88,14 +86,13 @@
   organization: Salesforce
   description: EinsteinGPT is generative AI for customer relationship management
     (CRFM).
-  created_date:
-    value: 2023-03-07
+  created_date: 2023-03-07
   url: https://www.salesforce.com/products/einstein/overview/?d=cta-body-promo-8
   dependencies: [ChatGPT API]
   adaptation: ''
   output_space: ''
   quality_control: ''
-  access: Limited
+  access: limited
   license: unknown
   terms_of_service: ''
   intended_uses: ''

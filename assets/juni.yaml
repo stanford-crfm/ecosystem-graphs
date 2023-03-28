@@ -4,8 +4,7 @@
   name: Juni Tutor Bot
   organization: Juni Learning
   description: An online tutoring solution to help students achieve academic success.
-  created_date:
-    value: unknown
+  created_date: unknown
   url: https://junilearning.com/
   dependencies: [Anthropic API]
   adaptation: ''

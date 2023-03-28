@@ -10,32 +10,31 @@
     data.
   created_date:
     value: 2021-08-11
-    explanation: >
-      The date the white paper was made public.
+    explanation: The date the white paper was made public.
   url: https://uploads-ssl.webflow.com/60fd4503684b466578c0d307/61138924626a6981ee09caf6_jurassic_tech_paper.pdf
-  datasheet: None
-  modality: Text
+  datasheet: none
+  modality: text
   size: 300B tokens
   sample: []
   analysis:
-    value: None
+    value: none
     explanation: No analysis is provided in the paper.
   # Construction
   dependencies: []
-  license: Unknown
-  included: Unknown
-  excluded: Unknown
+  license: unknown
+  included: unknown
+  excluded: unknown
   quality_control:
-    value: None
+    value: none
     explanation: No quality control is provided in the paper.
   # Downstream
-  access: Closed
-  intended_uses: Unknown
+  access: closed
+  intended_uses: unknown
   prohibited_uses:
-    value: None
+    value: none
     explanation: No uses are prohibited in the paper.
-  monitoring: None
-  feedback: None
+  monitoring: none
+  feedback: none
 
 - type: dataset
   name: Jurassic-1 Instruct dataset
@@ -47,24 +46,24 @@
     value: 2022-12-01
     explanation: >
       The date the model was [announced](https://docs.ai21.com/changelog/jurassic-1-instruct-is-now-available).
-  url: None
-  datasheet: None
-  modality: Text
-  size: Unknown
+  url: none
+  datasheet: none
+  modality: text
+  size: unknown
   sample: []
-  analysis: Unknown
+  analysis: unknown
   # Construction
   dependencies: []
-  license: Unknown
-  included: Unknown
-  excluded: Unknown
-  quality_control: Unknown
+  license: unknown
+  included: unknown
+  excluded: unknown
+  quality_control: unknown
   # Downstream
-  access: Closed
-  intended_uses: Unknown
-  prohibited_uses: Unknown
-  monitoring: None
-  feedback: None
+  access: closed
+  intended_uses: unknown
+  prohibited_uses: unknown
+  monitoring: none
+  feedback: none
 
 # Models
 - type: model
@@ -77,8 +76,8 @@
     explanation: >
       The date the white paper was made public.
   url: https://uploads-ssl.webflow.com/60fd4503684b466578c0d307/61138924626a6981ee09caf6_jurassic_tech_paper.pdf
-  model_card: None
-  modality: Text (English)
+  model_card: none
+  modality: text (English)
   size:
     value: 178B parameters (dense)
     explanation: The model sizes are 7.5B (Large), 17B (Grande), and 178B (Jumbo).
@@ -87,27 +86,27 @@
       RTE, Winogrande)
     explanation: Results are reported in the [the paper](https://uploads-ssl.webflow.com/60fd4503684b466578c0d307/61138924626a6981ee09caf6_jurassic_tech_paper.pdf)
   dependencies: [Jurassic-1 dataset]
-  training_emissions: Unknown
+  training_emissions: unknown
   training_time:
     value: Several months
     explanation: Training details from [the paper](https://uploads-ssl.webflow.com/60fd4503684b466578c0d307/61138924626a6981ee09caf6_jurassic_tech_paper.pdf)
   training_hardware:
     value: Over 800 [A100] GPUs
     explanation: Training details from [the paper](https://uploads-ssl.webflow.com/60fd4503684b466578c0d307/61138924626a6981ee09caf6_jurassic_tech_paper.pdf)
-  quality_control: None
+  quality_control: none
   access:
-    value: Limited
+    value: limited
     explanation: Jurassic-1 is available through AI21's paid API.
   license: See [AI21 API Terms of Use](https://www.ai21.com/terms-of-use)
-  intended_uses: Unknown
+  intended_uses: unknown
   prohibited_uses:
     value: Illegal activities, such as hate speech, gambling, child pornography
       or violating intellectual property rights; Harassment, victimization, intimidation,
       fraud or spam; Creation or dissemination of misinformation, promotion of self-harm,
       glorification of violent events or incitement of violence.
     explanation: https://docs.ai21.com/docs/responsible-use
-  monitoring: None
-  feedback: None
+  monitoring: none
+  feedback: none
 
 - type: model
   name: Jurassic-1 Instruct
@@ -119,17 +118,17 @@
     explanation: >
       The date the model was [announced](https://docs.ai21.com/changelog/jurassic-1-instruct-is-now-available).
   url: https://docs.ai21.com/docs/jurassic-1-instruct-beta
-  model_card: None
-  modality: Text (English)
+  model_card: none
+  modality: text (English)
   size: 17B parameters (dense)
-  analysis: None
+  analysis: none
   dependencies: [Jurassic-1, Jurassic-1 Instruct dataset]
-  training_emissions: Unknown
-  training_time: Unknown
-  training_hardware: Unknown
-  quality_control: Unknown
+  training_emissions: unknown
+  training_time: unknown
+  training_hardware: unknown
+  quality_control: unknown
   access:
-    value: Limited
+    value: limited
     explanation: Jurassic-1 Instruct is available through AI21's paid API.
   license: See [AI21 API Terms of Use](https://www.ai21.com/terms-of-use)
   intended_uses: Jurassic-1 Instruct was trained specifically to handle instructions-only
@@ -142,28 +141,27 @@
       fraud or spam; Creation or dissemination of misinformation, promotion of self-harm,
       glorification of violent events or incitement of violence.
     explanation: https://docs.ai21.com/docs/responsible-use
-  monitoring: None
-  feedback: None
+  monitoring: none
+  feedback: none
 
 - type: model
   name: Jurassic-2
   organization: AI21 Labs
   description: >
     Jurassic-2 a family of language model designed to replace Jurassic-1.
-  created_date:
-    value: 2023-03-09
+  created_date: 2023-03-09
   url: https://docs.ai21.com/docs/jurassic-2-models
-  model_card: None
-  modality: Text (English)
+  model_card: none
+  modality: text (English)
   size: unknown
   analysis: The model was evaluated on the HELM benchmark as discussed in https://www.ai21.com/blog/introducing-j2.
   dependencies: []
-  training_emissions: Unknown
-  training_time: Unknown
-  training_hardware: Unknown
-  quality_control: Unknown
+  training_emissions: unknown
+  training_time: unknown
+  training_hardware: unknown
+  quality_control: unknown
   access:
-    value: Limited
+    value: limited
     explanation: Jurassic-2 is available through AI21's paid API.
   license: See [AI21 API Terms of Use](https://www.ai21.com/terms-of-use)
   intended_uses: ''
@@ -173,8 +171,8 @@
       fraud or spam; Creation or dissemination of misinformation, promotion of self-harm,
       glorification of violent events or incitement of violence.
     explanation: https://docs.ai21.com/docs/responsible-use
-  monitoring: Unknown
-  feedback: None
+  monitoring: unknown
+  feedback: none
 
 # Applications
 - type: application
@@ -200,10 +198,9 @@
     value: text
     explanation: The Playground supports different use cases that all involve text
       generation.
-  quality_control: Unknown
+  quality_control: unknown
   # Downstream
-  access:
-    value: Limited
+  access: limited
   terms_of_service: https://www.ai21.com/terms-of-use
   license: See [AI21 API Terms of Use](https://www.ai21.com/terms-of-use)
   intended_uses: The intended uses are text completion, rewriting, and summarization.
@@ -213,12 +210,12 @@
       fraud or spam; Creation or dissemination of misinformation, promotion of self-harm,
       glorification of violent events or incitement of violence.
     explanation: https://docs.ai21.com/docs/responsible-use
-  monitoring: Unknown
+  monitoring: unknown
   feedback: info@ai21.com
   # Deployment
-  monthly_active_users: Unknown
-  user_distribution: Unknown
-  failures: Unknown
+  monthly_active_users: unknown
+  user_distribution: unknown
+  failures: unknown
 
 - type: application
   name: AI21 Paraphrase API
@@ -234,12 +231,10 @@
   # Construction
   dependencies: [Jurassic-2]
   adaptation: The AI21 language models are further specialized to the task of paraphrasing.
-  output_space:
-    value: text
-  quality_control: Unknown
+  output_space: text
+  quality_control: unknown
   # Downstream
-  access:
-    value: Limited
+  access: limited
   terms_of_service: https://www.ai21.com/terms-of-use
   license: See [AI21 API Terms of Use](https://www.ai21.com/terms-of-use)
   intended_uses: The intended uses are text paraphrasing.
@@ -249,12 +244,12 @@
       fraud or spam; Creation or dissemination of misinformation, promotion of self-harm,
       glorification of violent events or incitement of violence.
     explanation: https://docs.ai21.com/docs/responsible-use
-  monitoring: Unknown
+  monitoring: unknown
   feedback: info@ai21.com
   # Deployment
-  monthly_active_users: Unknown
-  user_distribution: Unknown
-  failures: Unknown
+  monthly_active_users: unknown
+  user_distribution: unknown
+  failures: unknown
 
 - type: application
   name: AI21 Summarization API
@@ -270,12 +265,10 @@
   # Construction
   dependencies: [Jurassic-2]
   adaptation: The AI21 language models are further specialized to the task of summarization.
-  output_space:
-    value: text
-  quality_control: Unknown
+  output_space: text
+  quality_control: unknown
   # Downstream
-  access:
-    value: Limited
+  access: limited
   terms_of_service: https://www.ai21.com/terms-of-use
   license: See [AI21 API Terms of Use](https://www.ai21.com/terms-of-use)
   intended_uses: The intended uses are text paraphrasing.
@@ -285,12 +278,12 @@
       fraud or spam; Creation or dissemination of misinformation, promotion of self-harm,
       glorification of violent events or incitement of violence.
     explanation: https://docs.ai21.com/docs/responsible-use
-  monitoring: Unknown
+  monitoring: unknown
   feedback: info@ai21.com
   # Deployment
-  monthly_active_users: Unknown
-  user_distribution: Unknown
-  failures: Unknown
+  monthly_active_users: unknown
+  user_distribution: unknown
+  failures: unknown
 
 - type: application
   name: Wordtune
@@ -304,23 +297,21 @@
   url: https://www.wordtune.com/
   # Construction
   dependencies: [AI21 Paraphrase API]
-  adaptation: Unknown
-  output_space:
-    value: text
-  quality_control: Unknown
+  adaptation: unknown
+  output_space: text
+  quality_control: unknown
   # Downstream
-  access:
-    value: Limited
+  access: limited
   terms_of_service: https://www.wordtune.com/terms-of-use
   license: https://www.wordtune.com/terms-of-use
   intended_uses: The Wordtune assistant is a writing assistant
   prohibited_uses: ''
-  monitoring: Unknown
+  monitoring: unknown
   feedback: ''
   # Deployment
-  monthly_active_users: Unknown
-  user_distribution: Unknown
-  failures: Unknown
+  monthly_active_users: unknown
+  user_distribution: unknown
+  failures: unknown
 
 - type: application
   name: Wordtune Read
@@ -328,25 +319,22 @@
   organization: AI21 Labs
   description: Wordtune Read is an AI reader that summarizes long documents so you
     can understand more, faster.
-  created_date:
-    value: 2021-11-16
+  created_date: 2021-11-16
   url: https://www.wordtune.com/read
   # Construction
   dependencies: [AI21 Summarize API]
-  adaptation: Unknown
-  output_space:
-    value: text
-  quality_control: Unknown
+  adaptation: unknown
+  output_space: text
+  quality_control: unknown
   # Downstream
-  access:
-    value: Limited
+  access: limited
   terms_of_service: https://www.wordtune.com/terms-of-use
   license: https://www.wordtune.com/terms-of-use
   intended_uses: ''
   prohibited_uses: ''
-  monitoring: Unknown
+  monitoring: unknown
   feedback: ''
   # Deployment
-  monthly_active_users: Unknown
-  user_distribution: Unknown
-  failures: Unknown
+  monthly_active_users: unknown
+  user_distribution: unknown
+  failures: unknown

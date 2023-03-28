@@ -17,8 +17,8 @@
       The date that the paper was uploaded to ArXiv
       [[ArXiv Abstract]](https://arxiv.org/abs/2204.05862).
   url: https://arxiv.org/pdf/2204.05862.pdf
-  datasheet: None
-  modality: Text (English)
+  datasheet: none
+  modality: text (English)
   size:
     value: 271.5 MB
     explanation: >
@@ -288,26 +288,25 @@
   included: >
     The dataset included all the answers that the workers were asked to
     ranked against each other.
-  excluded: >
-    None
+  excluded: none
   quality_control: >
     Working with a screened set of crowdworkers, and employing simple data
     quality measures
     [[Appendix D]](https://arxiv.org/pdf/2204.05862.pdf#appendix.D).
   # Downstream
   access:
-    value: Open
+    value: open
     explanation: >
       The dataset is freely shared on GitHub
       [[hh-rlhf]](https://github.com/anthropics/hh-rlhf).
   intended_uses: >
     The dataset was intended and released for research purposes.
   prohibited_uses:
-    value: Unknown
+    value: unknown
     explanation: >
       The prohibited use cases of the dataset weren't specified.
   monitoring:
-    value: None
+    value: none
     explanation: >
       There is no monitoring process for the usages of the dataset.
   feedback: >
@@ -331,9 +330,9 @@
       The date that the paper was uploaded to ArXiv
       [[ArXiv Abstract]](https://arxiv.org/abs/2204.05862).
   url: https://arxiv.org/pdf/2204.05862.pdf
-  datasheet: None
+  datasheet: none
   modality: Text (English)
-  size: Unknown
+  size: unknown
   sample: []
   analysis: >
     The crodworkers were told that "lying isn't helpful" and asked to prefer
@@ -345,39 +344,38 @@
   # Construction
   dependencies: [Anthropic Human Feedback Interface]
   license:
-    value: Unknown
+    value: unknown
     explanation: >
       The dataset isn't released, and hence the license is unknown.
   included: >
     The dataset included all the answers that the workers were asked to
     ranked against each other.
-  excluded: >
-    None
+  excluded: none
   quality_control: >
     Working with "select" crowdworkers or those screened for certain
     qualifications, and employing simple data quality measures
     [[Appendix D]](https://arxiv.org/pdf/2204.05862.pdf#appendix.D).
   # Downstream
   access:
-    value: Closed
+    value: closed
     explanation: >
       Unlike its helpfulness, this dataset isn't released
       [[hh-rlhf]](https://github.com/anthropics/hh-rlhf).
   intended_uses:
-    value: Unknown
-    intended_uses: >
+    value: unknown
+    explanation: >
       The intended uses of the dataset isn't specified, but it will likely be
       same as the helpfulness dataset, for which the intended use is research.
   prohibited_uses:
-    value: Unknown
+    value: unknown
     explanation: >
       The prohibited use cases of the dataset weren't specified.
   monitoring:
-    value: None
+    value: none
     explanation: >
       There is no monitoring process for the usages of the dataset.
   feedback:
-    value: Unknown
+    value: unknown
     explanation: >
       The feedback mechanism is unknown since the dataset isn't released, but
       it will likely be "emailing the authors"
@@ -400,8 +398,8 @@
       The date that the paper was uploaded to ArXiv
       [[ArXiv Abstract]](https://arxiv.org/abs/2204.05862).
   url: https://arxiv.org/pdf/2204.05862.pdf
-  model_card: None
-  modality: Text (English) and Code
+  model_card: none
+  modality: text (English) and Code
   size:
     value: 52B parameters (dense model)
     explanation: >
@@ -434,27 +432,27 @@
     - Anthropic Harmlessness dataset
     - Anthropic Helpfulness dataset
   training_emissions:
-    value: Unknown
+    value: unknown
     explanation: The authors do not provide data on the training emissions.
   training_time:
-    value: Unknown
+    value: unknown
     explanation: The authors do not provide data on the training time.
   training_hardware:
-    value: Unknown
+    value: unknown
     explanation: The authors do not provide data on the training hardware.
   quality_control: >
-    Unknown
+    unknown
   # Downstream
   access:
-    value: Closed
+    value: closed
     explanation: >
       The model wasn't released.
   license:
-    value: Unknown
+    value: unknown
     explanation: >
       The model wasn't released, and hence the license is unknown.
   intended_uses:
-    value: Unknown
+    value: unknown
     explanation: >
       The intended uses of the model aren't specified, but they will likely be
       the same as the released Anthropic helpfulness dataset, for which the
@@ -462,15 +460,15 @@
       generation, the authors also explored code generation capabilities of
       their models.
   prohibited_uses:
-    value: Unknown
+    value: unknown
     explanation: >
       The prohibited use cases of the model weren't specified.
   monitoring:
-    value: Unknown
+    value: unknown
     explanation: >
       There is no known monitoring process for the usages of the model.
   feedback:
-    value: Unknown
+    value: unknown
     explanation: >
       The feedback mechanism is unknown, but it will likely be "emailing the
       authors"
@@ -492,34 +490,34 @@
   url: https://arxiv.org/pdf/2204.05862.pdf
   # Construction
   dependencies: [Anthropic RLHF models]
-  adaptation: None
+  adaptation: none
   output_space: >
     UI allowing users to indicate their preference for the model responses
     shown.
-  quality_control: Unknown
+  quality_control: unknown
   # Downstream
   access:
-    value: Closed
+    value: closed
     explanation: >
       The interface was made available to a select set of crowd workers.
   terms_of_service:
-    value: Unknown
+    value: unknown
     explanation: The terms of service for the interaface is unknown.
   license:
-    value: Unknown
+    value: unknown
     explanation: The license for the interaface is unknown.
   intended_uses: >
     Intended to be used by crowdworkers who are tasked with ranking model
     answers.
-  prohibited_uses: Unknown
-  monitoring: Unknown
-  feedback: Unknown
+  prohibited_uses: unknown
+  monitoring: unknown
+  feedback: unknown
   # Deployment
-  monthly_active_users: Unknown
+  monthly_active_users: unknown
   user_distribution:
     value: crowdworkers
     explanation: The demographics of the crowdworkers are unknown.
-  failures: Unknown
+  failures: unknown
 
 - type: application
   name: Anthropic API
@@ -527,8 +525,7 @@
   description: API is designed to be a backend that incorporates Claude into any
     application you’ve developed. Our application sends text to our API, then receives
     a response via server-sent events, a streaming protocol for the web.
-  created_date:
-    value: 2023-03-14
+  created_date: 2023-03-14
   url: https://console.anthropic.com/docs/api
   dependencies: [Claude, Claude Instant]
   adaptation: ''
@@ -549,8 +546,7 @@
   name: Claude
   organization: Anthropic
   description: ''
-  created_date:
-    value: 2023-03-14
+  created_date: 2023-03-14
   url: https://www.anthropic.com/index/introducing-claude
   model_card: ''
   modality: text
@@ -572,8 +568,7 @@
   name: Claude Instant
   organization: Anthropic
   description: ''
-  created_date:
-    value: 2023-03-14
+  created_date: 2023-03-14
   url: https://www.anthropic.com/index/introducing-claude
   model_card: ''
   modality: text

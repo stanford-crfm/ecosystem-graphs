@@ -18,25 +18,24 @@
       [[Open AI Blog Post]](https://openai.com/blog/openai-api/).
   url: https://arxiv.org/pdf/2005.14165.pdf
   datasheet:
-    value: None
+    value: none
     explanation: No datasheet available as of 2022-04-04.
-  modality: Text (English)
+  modality: text (English)
   size: 570 GB
   sample: []
-  analysis:
-    value: >
-      The GPT-3 paper, which also introduces the GPT-3 dataset, provides a limited
-      analysis on the GPT-3 dataset, reporting the dirtiness of the dataset after
-      the it was filtered for text occurring in common benchmarking tasks.
-      The authors report that "as the dataset becomes more contaminated, the
-      variance of the clean over all fraction increases, but there is no apparent
-      bias
-      towards improved or degraded performance"
-      [[Appendix C]](https://arxiv.org/pdf/2005.14165.pdf#appendix.C).
+  analysis: >
+    The GPT-3 paper, which also introduces the GPT-3 dataset, provides a limited
+    analysis on the GPT-3 dataset, reporting the dirtiness of the dataset after
+    the it was filtered for text occurring in common benchmarking tasks.
+    The authors report that "as the dataset becomes more contaminated, the
+    variance of the clean over all fraction increases, but there is no apparent
+    bias
+    towards improved or degraded performance"
+    [[Appendix C]](https://arxiv.org/pdf/2005.14165.pdf#appendix.C).
   # Construction
   dependencies: [WebText]
   license:
-    value: Unknown
+    value: unknown
     explanation: >
       There is no known license specific to the GPT-3 dataset, however,
       the governing organization, OpenAI, licensed GPT-3 to Microsoft, which
@@ -52,27 +51,26 @@
     quality documents and filtered low quality documents. WebText was used as a
     proxy for high quality documents
     [[Appendix A]](https://arxiv.org/pdf/2005.14165.pdf#appendix.A).
-  quality_control:
-    value: >
-      In addition to excluding low quality documents from the Common Crawl
-      dataset, the authors fuzzily deduplicated documents within each dataset, by
-      removing documents that have high overlap with each other. The same
-      procedure was followed to fuzzily deduplicate WebText from Common Crawl
-      [[Appendix A]](https://arxiv.org/pdf/2005.14165.pdf#appendix.A).
-      Text occuring in benchmark datasets were also partially removed
-      [[Appendix C]](https://arxiv.org/pdf/2005.14165.pdf#appendix.C).
+  quality_control: >
+    In addition to excluding low quality documents from the Common Crawl
+    dataset, the authors fuzzily deduplicated documents within each dataset, by
+    removing documents that have high overlap with each other. The same
+    procedure was followed to fuzzily deduplicate WebText from Common Crawl
+    [[Appendix A]](https://arxiv.org/pdf/2005.14165.pdf#appendix.A).
+    Text occuring in benchmark datasets were also partially removed
+    [[Appendix C]](https://arxiv.org/pdf/2005.14165.pdf#appendix.C).
   # Downstream
   access:
-    value: Closed
+    value: closed
     explanation: >
       The GPT-3 dataset isn't released to the public, but it may be available
       to Microsoft through the GPT-3 licencing agreement between OpenAI and
       Microsoft [[OpenAI Blog Post]]
       (https://openai.com/blog/openai-licenses-gpt-3-technology-to-microsoft/).
-  intended_uses:
-    value: The intended use of the GPT-3 dataset is to train language models.
+  intended_uses: >
+    The intended use of the GPT-3 dataset is to train language models.
   prohibited_uses:
-    value: Unknown
+    value: unknown
     explanation: >
       OpenAI didn't provide a list of prohibited uses specifically for
       the GPT-3 dataset. However, public OpenAI products are governed by the
@@ -86,12 +84,12 @@
       or intimidating anyone for any reason
       [[Open AI Terms of Use]](https://openai.com/api/policies/terms/).
   monitoring:
-    value: Unknown
+    value: unknown
     explanation: >
       There are no known (internal or external) monitoring mechanisms
       that are in place for the use of the GPT-3 dataset as of 2022-04-04.
   feedback:
-    value: Unknown
+    value: unknown
     explanation: >
       There are no known (internal or external) feedback mechanisms for
       the GPT-3 dataset as of 2022-04-04.
@@ -111,9 +109,9 @@
       [[OpenAI Blog Post]](https://openai.com/blog/openai-codex/).
   url: https://arxiv.org/pdf/2107.03374.pdf
   datasheet:
-    value: None
+    value: none
     explanation: No datasheet available as of 2022-04-10.
-  modality: Code (Python)
+  modality: code (Python)
   size: 214 KB
   sample:
     - "\n\ndef string_sequence(n: int) -> str:\n    \"\"\" Return a string containing\
@@ -141,7 +139,7 @@
       \ 'seven', 'eight' and 'nine'.\n    Return the string with numbers sorted\
       \ from smallest to largest\n    >>> sort_numbers('three one five')\n    'one\
       \ three five'\n    \"\"\"\n"
-  analysis: None
+  analysis: none
   # Construction
   dependencies: []
   license: >
@@ -151,28 +149,23 @@
     164 hand-written questions.
   excluded: >
     Code problems easily found on the internet.
-  quality_control:
-    value: >
-      The evaluation dataset was handwritten to ensure that the evaluation
-      problems do not exist in the Codex dataset
-      [[Section 2.2]](https://arxiv.org/pdf/2107.03374.pdf#subsection.2.2).
+  quality_control: >
+    The evaluation dataset was handwritten to ensure that the evaluation
+    problems do not exist in the Codex dataset
+    [[Section 2.2]](https://arxiv.org/pdf/2107.03374.pdf#subsection.2.2).
   # Downstream
   access:
-    value: Open
+    value: open
     explanation: >
       HumanEval dataset is publicly available and comes
       with a an evaluation framework
       [[HumanEval GitHub Repository]](https://www.github.com/openai/human-eval).
-  intended_uses:
-    value: Evaluating code generation capabilities of models.
-  prohibited_uses:
-    value: None
-  monitoring:
-    value: None
-  feedback:
-    value: >
-      Email the authors
-      [[Codex Paper]](https://arxiv.org/pdf/2107.03374.pdf).
+  intended_uses: >
+    Evaluating code generation capabilities of models.
+  prohibited_uses: none
+  monitoring: none
+  feedback: >
+    Email the authors [[Codex Paper]](https://arxiv.org/pdf/2107.03374.pdf).
 
 - type: dataset
   name: Codex dataset
@@ -187,20 +180,18 @@
       was announced to the public
       [[OpenAI Blog Post]](https://openai.com/blog/openai-codex/).
   url: https://arxiv.org/pdf/2107.03374.pdf
-  datasheet:
-    value: None
-  modality: Code
+  datasheet: none
+  modality: code
   size:
     value: 159 GB
     explanation: As reported by the authors [[Section 3.1]](https://arxiv.org/pdf/2107.03374.pdf#subsection.3.1).
   sample: []
   analysis:
-    value: None
+    value: none
     explanation: The paper doesn't provide an analysis on the training dataset.
   # Construction
   dependencies: []
-  license:
-    value: Unknown
+  license: unknown
   included: >
     The dataset includes 54 million public software repositories hosted on
     GitHub as of an unspecified date in May 2020
@@ -210,27 +201,22 @@
     average line length > 100, maximum line length > 1000, or few alphanumeric
     characters
     [[Section 3.1]](https://arxiv.org/pdf/2107.03374.pdf#subsection.3.1).
-  quality_control:
-    value: >
-      Dataset was filtered using simple heuristics, as outlined in the excluded
-      field.
+  quality_control: >
+    Dataset was filtered using simple heuristics, as outlined in the excluded
+    field.
   # Downstream
   access:
-    value: Closed
+    value: closed
     explanation: >
       The dataset might have been made available to Microsoft
       as part of OpenAI giving Microsoft access to its Codex model
       [GitHub Copilot](https://copilot.github.com/).
-  intended_uses:
-    value: Training language models on code.
-  prohibited_uses:
-    value: Unknown
-  monitoring:
-    value: Unknown
-  feedback:
-    value: >
-      Email the authors
-      [[Codex Paper]](https://arxiv.org/pdf/2107.03374.pdf).
+  intended_uses: Training language models on code.
+  prohibited_uses: unknown
+  monitoring: unknown
+  feedback: >
+    Email the authors
+    [[Codex Paper]](https://arxiv.org/pdf/2107.03374.pdf).
 
 - type: dataset
   name: CLIP dataset
@@ -244,50 +230,45 @@
       The date of the blog post announcing CLIP
       [[OpenAI Blog Post]](https://openai.com/blog/clip/).
   url: https://arxiv.org/pdf/2103.00020.pdf
-  datasheet: >
-    None
-  modality: Text (English) and Image
+  datasheet: none
+  modality: text (English) and image
   size: 400M (image, text) pairs
   sample: []
   analysis: >
-    value: >
-      The dataset contained some overlap with the test sets of the benchmarks used
-      for evaluation, but the authors determined the impact to be small: "There
-      is a median overlap of 2.2% and an average overlap of 3.2%. Due to this
-      small amount of overlap, overall accuracy is rarely shifted by more than
-      0.1% with only 7 datasets above this threshold"
-      [[Section 5]](https://arxiv.org/pdf/2103.00020.pdf#section.5).
+    The dataset contained some overlap with the test sets of the benchmarks used
+    for evaluation, but the authors determined the impact to be small: "There
+    is a median overlap of 2.2% and an average overlap of 3.2%. Due to this
+    small amount of overlap, overall accuracy is rarely shifted by more than
+    0.1% with only 7 datasets above this threshold"
+    [[Section 5]](https://arxiv.org/pdf/2103.00020.pdf#section.5).
   # Construction
   dependencies: []
-  license: >
-    value: Unknown
+  license:
+    value: unknown
     explanation: >
       The dataset doesn't have known license as it hasn't been publicly
       released.
   included: >
     Data crawled from the internet, without any filtering (including
     de-duplication) or curation.
-  excluded: >
-    None;
+  excluded: none
   quality_control: >
-    value: >
-      The data was "only crawled websites that had policies against excessively
-      violent and adult images and allowed us to filter out such content"
-      [[Model Card]](https://github.com/openai/CLIP/blob/main/model-card.md).
+    The data was "only crawled websites that had policies against excessively
+    violent and adult images and allowed us to filter out such content"
+    [[Model Card]](https://github.com/openai/CLIP/blob/main/model-card.md).
   # Downstream
   access:
-    value: Closed
+    value: closed
     explanation: The dataset wasn't released to the public.
-  intended_uses:
-    value: Training multimodal vision models.
+  intended_uses: Training multimodal vision models.
   prohibited_uses:
-    value: Unknown
+    value: unknown
     explanation: The prohibited uses of the dataset are unknown.
   monitoring:
-    value: Unknown
+    value: unknown
     explanation: The monitoring mechanisms in place are unknown.
   feedback:
-    value: Unknown
+    value: unknown
     explanation: The feedback mechanisms in place are unknown.
 
 - type: dataset
@@ -303,54 +284,48 @@
       The date of the blog post announcing DALL·E
       [[OpenAI Blog Post]](https://openai.com/blog/dall-e/).
   url: https://arxiv.org/abs/2102.12092
-  datasheet: None
-  modality: Text (English) and Image
+  datasheet: none
+  modality: text (English) and image
   size: >
     250M (image, text) pairs
   sample: []
-  analysis:
-    value: >
-      The authors found that the dataset contained 21% of the images in the
-      MS-COCO validation set, but observed no significant changes in the
-      performance of the accompanying DALL·E when tested on MS-COCO evaluation
-      set with and without the said images
-      [[Section 3.1]](https://arxiv.org/pdf/2102.12092.pdf#subsection.3.1).
+  analysis: The authors found that the dataset contained 21% of the images in the
+    MS-COCO validation set, but observed no significant changes in the performance
+    of the accompanying DALL·E when tested on MS-COCO evaluation set with and without
+    the said images [[Section 3.1]](https://arxiv.org/pdf/2102.12092.pdf#subsection.3.1).
   # Construction
   dependencies: []
-  license: >
-    value: Unknown
+  license: unknown
   included: >
     Data from the internet, including Conceptual Captions and a filtered subset
     of YFCC100M.
   excluded: >
     MS-COCO was excluded from the dataset, but because MS-COCO was created from
     YFCC100M, some of the test images (not the captions) were included.
-  quality_control:
-    value: >
-      The data was de-duplicated
-      [[Section 3.2]](https://arxiv.org/pdf/2102.12092.pdf#subsection.3.2).
-      The data collected from the internet was filtered using image, text and
-      joint image and text filters, which included: "discarding instances whose
-      captions are too short, are classified as non-English by the Python package
-      cld3, or that consist primarily of boilerplate phrases such as “photographed
-      on <date>”, where <date> matches various formats for dates that we found in
-      the data". The authors also discard "instances whose images have aspect
-      ratios not in [1/2, 2]"
-      [[Appendix C]](https://arxiv.org/pdf/2102.12092.pdf#appendix.C).
+  quality_control: >
+    The data was de-duplicated
+    [[Section 3.2]](https://arxiv.org/pdf/2102.12092.pdf#subsection.3.2).
+    The data collected from the internet was filtered using image, text and
+    joint image and text filters, which included: "discarding instances whose
+    captions are too short, are classified as non-English by the Python package
+    cld3, or that consist primarily of boilerplate phrases such as “photographed
+    on <date>”, where <date> matches various formats for dates that we found in
+    the data". The authors also discard "instances whose images have aspect
+    ratios not in [1/2, 2]"
+    [[Appendix C]](https://arxiv.org/pdf/2102.12092.pdf#appendix.C).
   # Downstream
   access:
-    value: Closed
+    value: closed
     explanation: The dataset wasn't released to the public.
-  intended_uses:
-    value: Training multimodal vision models.
+  intended_uses: Training multimodal vision models.
   prohibited_uses:
-    value: Unknown
+    value: unknown
     explanation: The prohibited uses of the dataset are unknown.
   monitoring:
-    value: Unknown
+    value: unknown
     explanation: The monitoring mechanisms in place are unknown.
   feedback:
-    value: Unknown
+    value: unknown
     explanation: The feedback mechanisms in place are unknown.
 
 - type: dataset
@@ -370,18 +345,17 @@
       [[Open AI Blog Post]](https://openai.com/blog/whisper/).
   url: https://cdn.openai.com/papers/whisper.pdf
   datasheet:
-    value: None
+    value: none
     explanation: No datasheet available as of 2022-12-07.
-  modality: Speech
+  modality: speech
   size: 680k hours
   sample: []
-  analysis:
-    value: >
-      The Whisper paper provides limited details on preprocessing.
+  analysis: >
+    The Whisper paper provides limited details on preprocessing.
   # Construction
   dependencies: []
   license:
-    value: Unknown
+    value: unknown
     explanation: >
       There is no known license specific to the dataset.
   included: >
@@ -390,27 +364,25 @@
     [[Figure 11]](https://cdn.openai.com/papers/whisper.pdf).
   excluded: >
     Automated filtering was conducted.
-  quality_control:
-    value: >
-      In addition to filtering, basic text standardization was done.
+  quality_control: >
+    In addition to filtering, basic text standardization was done.
   # Downstream
   access:
-    value: Closed
+    value: closed
     explanation: >
       The dataset isn't released to the public.
-  intended_uses:
-    value: The intended use is to train speech models.
+  intended_uses: The intended use is to train speech models.
   prohibited_uses:
-    value: None
+    value: none
     explanation: >
       No uses are explicitly prohibited.
   monitoring:
-    value: None
+    value: none
     explanation: >
       There are no known (internal or external) monitoring mechanisms
       that are in place for the use of the dataset as of 2022-12-07.
   feedback:
-    value: Unknown
+    value: unknown
     explanation: >
       There are no known (internal or external) feedback mechanisms for
       the dataset as of 2022-12-07.
@@ -423,7 +395,7 @@
   created_date: 2019-11
   url: https://cdn.openai.com/better-language-models/language_models_are_unsupervised_multitask_learners.pdf
   datasheet: ''
-  modality: Text (English)
+  modality: text (English)
   size: 40 GB
   sample: []
   analysis: ''
@@ -434,7 +406,7 @@
   excluded: ''
   quality_control: ''
   # Downstream
-  access: No public access
+  access: closed
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
@@ -449,7 +421,7 @@
   created_date: 2019-11
   url: https://cdn.openai.com/better-language-models/language_models_are_unsupervised_multitask_learners.pdf
   model_card: https://github.com/openai/gpt-2/blob/master/model_card.md
-  modality: Text (English)
+  modality: text (English)
   size: 1.5B parameters (dense)
   analysis: ''
   # Construction
@@ -459,7 +431,7 @@
   training_hardware: ''
   quality_control: ''
   # Downstream
-  access: Full public access
+  access: open
   license: ''
   intended_uses: ''
   prohibited_uses: ''
@@ -479,7 +451,7 @@
       [[OpenAI Blog Post]](https://openai.com/blog/openai-api/).
   url: https://arxiv.org/pdf/2005.14165.pdf
   model_card: https://github.com/openai/gpt-3/blob/master/model-card.md
-  modality: Text (English)
+  modality: text (English)
   size:
     value: 175B parameters (dense model)
     explanation: >
@@ -487,14 +459,13 @@
       model, the largest GPT-3 model served through the OpenAI API. Sizes of the
       other models can be found in the paper
       [[Table 2.1]](https://arxiv.org/pdf/2005.14165.pdf#table.caption.7).
-  analysis:
-    value: >
-      The GPT-3 model was evaluated on language modeling, closed-book question
-      answering, translation, Winograd-style tasks, commonsense reasoning,
-      reading comprehension, SuperGLUE, NLI, synthetic tasks, and generation
-      [[Section 4]](https://arxiv.org/pdf/2005.14165.pdf#section.4);
-      as well as on fairness and biases
-      [[Section 6]](https://arxiv.org/pdf/2005.14165.pdf#section.6).
+  analysis: >
+    The GPT-3 model was evaluated on language modeling, closed-book question
+    answering, translation, Winograd-style tasks, commonsense reasoning,
+    reading comprehension, SuperGLUE, NLI, synthetic tasks, and generation
+    [[Section 4]](https://arxiv.org/pdf/2005.14165.pdf#section.4);
+    as well as on fairness and biases
+    [[Section 6]](https://arxiv.org/pdf/2005.14165.pdf#section.6).
   # Construction
   dependencies: [GPT-3 dataset]
   training_emissions:
@@ -520,20 +491,19 @@
       Azure cluster, using 10000 GPUs with 400 Gbps
       [[Microsoft Blog Post]]
       (https://blogs.microsoft.com/ai/openai-azure-supercomputer/).
-  quality_control:
-    value: >
-      One quality control method OpenAI employed was releasing GPT-3 only through
-      the OpenAI API. OpenAI states that it is easier to respond to misuse when
-      the access to the model is gated through the API. It also hints that it
-      plans to broaden the API access over time based on the amount of misuse
-      [[OpenAI API Blog Post]](https://openai.com/blog/openai-api/).
-      The authors identify potential misuses of GPT-3 in the paper and analyze
-      it for fairness, bias and representation issues, but do not identify
-      mitigation strategies
-      [[Section 6]](https://arxiv.org/pdf/2005.14165.pdf#section.6).
+  quality_control: >
+    One quality control method OpenAI employed was releasing GPT-3 only through
+    the OpenAI API. OpenAI states that it is easier to respond to misuse when
+    the access to the model is gated through the API. It also hints that it
+    plans to broaden the API access over time based on the amount of misuse
+    [[OpenAI API Blog Post]](https://openai.com/blog/openai-api/).
+    The authors identify potential misuses of GPT-3 in the paper and analyze
+    it for fairness, bias and representation issues, but do not identify
+    mitigation strategies
+    [[Section 6]](https://arxiv.org/pdf/2005.14165.pdf#section.6).
   # Downstream
   access:
-    value: Limited
+    value: limited
     explanation: >
       The GPT-3 model isn't fully released to the public, but
       it was made available to Microsoft through the licencing agreement between
@@ -544,38 +514,33 @@
       in supported countries
       [[Supported Countries]](https://beta.openai.com/docs/supported-countries)
       [[OpenAI API]](https://openai.com/api/).
-  license:
-    value: >
-      GPT-3 is exclusively licensed to OpenAI and Microsoft
-      [[OpenAI Blog Post]]
-      (https://openai.com/blog/openai-licenses-gpt-3-technology-to-microsoft/).
-  intended_uses:
-    value: >
-      GPT-3 was intended to be use through the OpenAI API by developers for
-      language applications. Other intended use of GPT-3 include researchers
-      accessing the model through the API to study its paradigms
-      [[Model Card]](https://github.com/openai/gpt-3/blob/master/model-card.md).
-  prohibited_uses:
-    value: >
-      Access to GPT-3 is governed by Open AI API Usage Guidelines and API Terms
-      of Use, prohibiting the use of the API in a way that causes societal harm.
-      [[Usage Guidelines]]
-      (https://beta.openai.com/docs/usage-guidelines/content-policy)
-      [[Terms of Use]](https://openai.com/api/policies/terms/).
-      The list of disallowed applications can be found in the usage guidelines
-      [[Disallowed Applications]]
-      (https://beta.openai.com/docs/usage-guidelines/disallowed-applications).
-  monitoring:
-    value: >
-      OpenAI reviews all use cases of the model
-      [[Model Card]](https://github.com/openai/gpt-3/blob/master/model-card.md).
-  feedback:
-    value: >
-      Feedback for GPT-3 can be provided on the feedback form linked in the
-      model card
-      [[Model Card]](https://github.com/openai/gpt-3/blob/master/model-card.md).
-      The form is especially meant to collect feedback on concerns about misuse,
-      synthetic text detection, bias, and risk of generative language models.
+  license: >
+    GPT-3 is exclusively licensed to OpenAI and Microsoft
+    [[OpenAI Blog Post]]
+    (https://openai.com/blog/openai-licenses-gpt-3-technology-to-microsoft/).
+  intended_uses: >
+    GPT-3 was intended to be use through the OpenAI API by developers for
+    language applications. Other intended use of GPT-3 include researchers
+    accessing the model through the API to study its paradigms
+    [[Model Card]](https://github.com/openai/gpt-3/blob/master/model-card.md).
+  prohibited_uses: >
+    Access to GPT-3 is governed by Open AI API Usage Guidelines and API Terms
+    of Use, prohibiting the use of the API in a way that causes societal harm.
+    [[Usage Guidelines]]
+    (https://beta.openai.com/docs/usage-guidelines/content-policy)
+    [[Terms of Use]](https://openai.com/api/policies/terms/).
+    The list of disallowed applications can be found in the usage guidelines
+    [[Disallowed Applications]]
+    (https://beta.openai.com/docs/usage-guidelines/disallowed-applications).
+  monitoring: >
+    OpenAI reviews all use cases of the model
+    [[Model Card]](https://github.com/openai/gpt-3/blob/master/model-card.md).
+  feedback: >
+    Feedback for GPT-3 can be provided on the feedback form linked in the
+    model card
+    [[Model Card]](https://github.com/openai/gpt-3/blob/master/model-card.md).
+    The form is especially meant to collect feedback on concerns about misuse,
+    synthetic text detection, bias, and risk of generative language models.
 
 - type: model
   name: Codex
@@ -590,19 +555,17 @@
       The date that Codex was announced to the public
       [[OpenAI Blog Post]](https://openai.com/blog/openai-codex/).
   url: https://arxiv.org/pdf/2107.03374.pdf
-  model_card:
-    value: None
-  modality: Text (English) and Code
+  model_card: none
+  modality: text (English) and code
   size: 12B parameters (dense model)
-  analysis:
-    value: >
-      The model was evaluated using the HumanEval dataset with pass@k metric and
-      BLEU scores
-      [[Section 2]](https://arxiv.org/pdf/2107.03374.pdf#section.2).
+  analysis: >
+    The model was evaluated using the HumanEval dataset with pass@k metric and
+    BLEU scores
+    [[Section 2]](https://arxiv.org/pdf/2107.03374.pdf#section.2).
   # Construction
   dependencies: [GPT-3, Codex dataset, HumanEval]
   training_emissions:
-    value: Unknown
+    value: unknown
     explanation: Authors do not report the training emissions.
   training_time:
     value: 100-1000 petaflop/s-days
@@ -615,42 +578,40 @@
     explanation: >
       The paper specifies that Azure was used, but the underlying
       architecture wasn't specified.
-  quality_control:
-    value: >
-      The model wasn't fully released to the public as a quality control measure.
-      The authors identify potential risks of Codex in their paper due to the
-      following: over-reliance, misalignment, bias and representation, economic
-      and labor market impacts, security implications, environmental impact and
-      legal implications. They also make suggestions for some of these, but do not
-      implement them in Codex
-      [[Section 7]](https://arxiv.org/pdf/2107.03374.pdf#section.7).
+  quality_control: >
+    The model wasn't fully released to the public as a quality control measure.
+    The authors identify potential risks of Codex in their paper due to the
+    following: over-reliance, misalignment, bias and representation, economic
+    and labor market impacts, security implications, environmental impact and
+    legal implications. They also make suggestions for some of these, but do not
+    implement them in Codex
+    [[Section 7]](https://arxiv.org/pdf/2107.03374.pdf#section.7).
   # Downstream
   access:
-    value: Limited
+    value: limited
     explanation: >
       The model is made available via the OpenAI API
       [[OpenAI API]](https://openai.com/api/) as code-cushman-001 according to the
       [[Model Index]](https://platform.openai.com/docs/model-index-for-researchers).
   license:
-    value: Unknown
+    value: unknown
     explanation: >
       The license is unknown, but the model was made available to
       Microsoft possibly through an exclusive license
       [[GitHub Copilot]](https://copilot.github.com/).
-  intended_uses:
-    value: Codex is intended to be used for coding related language modelling tasks.
+  intended_uses: >
+    Codex is intended to be used for coding related language modelling tasks.
   prohibited_uses:
-    value: Unknown
+    value: unknown
     explanation: The prohibited uses of the model aren't specified.
   monitoring:
-    value: Unknown
+    value: unknown
     explanation: >
       There isn't any known monitoring in place for the model, but there
       may be internal mechanisms.
-  feedback:
-    value: >
-      Email the authors
-      [[Codex Paper]](https://arxiv.org/pdf/2107.03374.pdf).
+  feedback: >
+    Email the authors
+    [[Codex Paper]](https://arxiv.org/pdf/2107.03374.pdf).
 
 - type: model
   name: InstructGPT
@@ -666,20 +627,18 @@
       [[OpenAI Blog Post]] (https://openai.com/blog/instruction-following/).
   url: https://arxiv.org/pdf/2203.02155.pdf
   model_card: https://github.com/openai/following-instructions-human-feedback/blob/main/model-card.md
-  modality: Text (English) and Code
+  modality: text (English) and code
   size:
     value: 175B parameters (dense model)
     explanation: Size of the largest InstructGPT model.
-  analysis:
-    value: >
-      The model was evaluated on human ratings to the InstructGPT answers
-      to the prompts submitted to the OpenAI API as well as on public NLP
-      datasets spanning truthfulness, toxicity, and bias, question answering,
-      reading comprehension, and summarization tasks.
+  analysis: The model was evaluated on human ratings to the InstructGPT answers
+    to the prompts submitted to the OpenAI API as well as on public NLP datasets
+    spanning truthfulness, toxicity, and bias, question answering, reading comprehension,
+    and summarization tasks.
   # Construction
   dependencies: [GPT-3, OpenAI API]
-  training_emissions: >
-    value: Unknown
+  training_emissions:
+    value: unknown
     explanation: The authors do not estimate the emissions of the model.
   training_time:
     value: 60 petaflops/s-days
@@ -688,55 +647,50 @@
       60 petaflops/s-days
       [[Section 5]](https://arxiv.org/pdf/2203.02155.pdf#section.5).
   training_hardware:
-    value: Unknown
+    value: unknown
     explanation: The authors do not disclose the training hardware used.
-  quality_control:
-    value: The model wasn't fully released to the public as a quality control measure.
+  quality_control: >
+    The model wasn't fully released to the public as a quality control measure.
   # Downstream
   access:
-    value: Closed
+    value: closed
     explanation: >
       The model is made available via the OpenAI API but the specific endpoint (davinci-instruct-beta)
       is currently unavailable.
       [[Model Index]](https://platform.openai.com/docs/model-index-for-researchers).
   license:
-    value: Unknown
+    value: unknown
     explanation: >
       The license is unknown, but the model is likely governed by
       OpenAI Terms of Use, which list license and ownership information in
       Section 2. Using the APIs
       [[Terms of Use]](https://openai.com/api/policies/terms/).
-  intended_uses:
-    value: >
-      As stated in the model card: "The intended direct users of InstructGPT are
-      developers who access its capabilities via the OpenAI API. Through the
-      OpenAI API, the model can be used by those who may not have AI development
-      experience, to build and explore language modeling systems across a wide
-      range of functions. We also anticipate that the model will continue to be
-      used by researchers to better understand the behaviors, capabilities,
-      biases, and constraints of large-scale language models"
-      [[Model Card]](https://github.com/openai/following-instructions-human-feedback/blob/main/model-card.md).
-  prohibited_uses:
-    value: >
-      Access to InstructGPT is governed by Open AI API Usage Guidelines and API
-      Terms
-      of Use, prohibiting the use of the API in a way that causes societal harm.
-      [[Usage Guidelines]]
-      (https://beta.openai.com/docs/usage-guidelines/content-policy)
-      [[Terms of Use]](https://openai.com/api/policies/terms/).
-      The list of disallowed applications can be found in the usage guidelines
-      [[Disallowed Applications]]
-      (https://beta.openai.com/docs/usage-guidelines/disallowed-applications).
-      monitoring: OpenAI reviews all use cases of the model.
+  intended_uses: >
+    As stated in the model card: "The intended direct users of InstructGPT are
+    developers who access its capabilities via the OpenAI API. Through the
+    OpenAI API, the model can be used by those who may not have AI development
+    experience, to build and explore language modeling systems across a wide
+    range of functions. We also anticipate that the model will continue to be
+    used by researchers to better understand the behaviors, capabilities,
+    biases, and constraints of large-scale language models"
+    [[Model Card]](https://github.com/openai/following-instructions-human-feedback/blob/main/model-card.md).
+  prohibited_uses: >
+    Access to InstructGPT is governed by Open AI API Usage Guidelines and API
+    Terms
+    of Use, prohibiting the use of the API in a way that causes societal harm.
+    [[Usage Guidelines]]
+    (https://beta.openai.com/docs/usage-guidelines/content-policy)
+    [[Terms of Use]](https://openai.com/api/policies/terms/).
+    The list of disallowed applications can be found in the usage guidelines
+    [[Disallowed Applications]]
+    (https://beta.openai.com/docs/usage-guidelines/disallowed-applications).
   monitoring:
-    value: Unknown
+    value: unknown
     explanation: >
       There isn't any known monitoring in place for the model, but there
       may be internal mechanisms.
-  feedback:
-    value: >
-      Email the authors
-      [[InstructGPT Paper]](https://arxiv.org/pdf/2203.02155.pdf).
+  feedback: >
+    Email the authors [[InstructGPT Paper]](https://arxiv.org/pdf/2203.02155.pdf).
 
 - type: model
   name: Whisper
@@ -758,18 +712,16 @@
       Whisper comes in several sizes (39M, 74M, 244M, 769M, 1.55B). Here we report
       the size of the largest
       model [[Table 1]](https://cdn.openai.com/papers/whisper.pdf).
-  analysis:
-    value: >
-      The model was evaluated for zero-shot English and multingual speech recognition,
-      translation, language identification and robustness to noise.
+  analysis: The model was evaluated for zero-shot English and multingual speech
+    recognition, translation, language identification and robustness to noise.
   # Construction
   dependencies: [Whisper dataset]
   training_emissions:
-    value: Unknown
+    value: unknown
     explanation: >
       Authors do not report the training emissions.
   training_time:
-    value: Unknown
+    value: unknown
     explanation: >
       Authors do not report the training time.
   training_hardware:
@@ -780,31 +732,26 @@
       using Azure
       [[Microsoft Blog Post]]
       (https://blogs.microsoft.com/ai/openai-azure-supercomputer/).
-  quality_control:
-    value: >
-      No specific quality control methods are documented.
+  quality_control: No specific quality control methods are documented.
   # Downstream
   access:
-    value: Open
+    value: open
     explanation: >
       Models are available at [https://github.com/openai/whisper](https://github.com/openai/whisper).
-  license:
-    value: >
-      MIT License at [https://github.com/openai/whisper](https://github.com/openai/whisper).
-  intended_uses:
-    value: >
-      Whisper is a general-purpose speech recognition model; it is a multi-task
-      model that can perform multilingual speech recognition as well as speech translation
-      and language identification.
-  prohibited_uses:
-    value: Unknown
+  license: >
+    MIT License at [https://github.com/openai/whisper](https://github.com/openai/whisper).
+  intended_uses: >
+    Whisper is a general-purpose speech recognition model; it is a multi-task
+    model that can perform multilingual speech recognition as well as speech
+    translation and language identification.
+  prohibited_uses: unknown
   monitoring:
-    value: None
+    value: none
     explanation: >
       No monitoring is mentioned by the authors.
-  feedback:
-    value: The discussions page of the codebase is not formally cited as a place
-      for feedback, but is being used in this way [[Discussions page]](https://github.com/openai/whisper/discussions)
+  feedback: >
+    The discussions page of the codebase is not formally cited as a place
+    for feedback, but is being used in this way [[Discussions page]](https://github.com/openai/whisper/discussions)
 
 - type: model
   name: CLIP
@@ -829,19 +776,16 @@
   model_card: https://github.com/openai/CLIP/blob/main/model-card.md
   modality: Text (English) and Image
   size:
-    value: Unknown
+    value: unknown
     explanation: >
       The total size is unknown, but the largest CLIP model is a
       a combination of 63M-parameter (dense) text encoder and a 307M-parameter
       vision encoder.
-  analysis:
-    value: >
-      The model was evaluated on standard vision datasets (e.g. CIFAR10, ImageNet)
-      and showed robust state of the art results.
+  analysis: The model was evaluated on standard vision datasets (e.g. CIFAR10, ImageNet)
+    and showed robust state of the art results.
   # Construction
   dependencies: [CLIP dataset]
-  training_emissions: >
-    Unknown
+  training_emissions: unknown
   training_time:
     value: 71.12 petaflop/s-day
     explanation: >
@@ -875,59 +819,52 @@
       256 * 0.0157 * 12 * 0.33.
       Adding the two, we estimate the total training time as 71.12
       petaflop/s-day.
-  training_hardware:
-    value: NVIDIA V100 GPUs
-  quality_control:
-    value: >
-      The authors found that the performance of the model depended heavily on
-      which classes are included (and excluded) for a given task. They reported
-      significant race and gender based disparities on the Fairface dataset,
-      depending on how the classes were constructed. The authors also demonstrated
-      that the model was capable of racial profiling with high accuracy
-      [[Section 7]](https://arxiv.org/pdf/2103.00020.pdf#section.7).
+  training_hardware: NVIDIA V100 GPUs
+  quality_control: >
+    The authors found that the performance of the model depended heavily on
+    which classes are included (and excluded) for a given task. They reported
+    significant race and gender based disparities on the Fairface dataset,
+    depending on how the classes were constructed. The authors also demonstrated
+    that the model was capable of racial profiling with high accuracy
+    [[Section 7]](https://arxiv.org/pdf/2103.00020.pdf#section.7).
   # Downstream
   access:
-    value: Open
+    value: open
     explanation: >
       Model checkpoints and the helper code can be accessed
       at the official CLIP repository
       [[CLIP Repository]](https://github.com/openai/CLIP).
-  license:
-    value: MIT License
-  intended_uses:
-    value: >
-      The model is intended to be used by AI researchers to better understand
-      "robustness, generalization, and other capabilities, biases, and constraints
-      of computer vision models"
-      [[CLIP Model Card]](https://github.com/openai/CLIP/blob/main/model-card.md).
-  prohibited_uses:
-    value: >
-      "Any deployed use case of the model - whether commercial or not - is
-      currently out of scope. Non-deployed use cases such as image search in a
-      constrained environment, are also not recommended unless there is thorough
-      in-domain testing of the model with a specific, fixed class taxonomy.
-      This is because our safety assessment demonstrated a high need for task
-      specific testing especially given the variability of CLIP’s performance
-      with different class taxonomies. This makes untested and unconstrained
-      deployment of the model in any use case currently potentially harmful.
+  license: MIT License
+  intended_uses: >
+    The model is intended to be used by AI researchers to better understand
+    "robustness, generalization, and other capabilities, biases, and constraints
+    of computer vision models"
+    [[CLIP Model Card]](https://github.com/openai/CLIP/blob/main/model-card.md).
+  prohibited_uses: >
+    "Any deployed use case of the model - whether commercial or not - is
+    currently out of scope. Non-deployed use cases such as image search in a
+    constrained environment, are also not recommended unless there is thorough
+    in-domain testing of the model with a specific, fixed class taxonomy.
+    This is because our safety assessment demonstrated a high need for task
+    specific testing especially given the variability of CLIP’s performance
+    with different class taxonomies. This makes untested and unconstrained
+    deployment of the model in any use case currently potentially harmful.
 
-      Certain use cases which would fall under the domain of surveillance and
-      facial recognition are always out-of-scope regardless of performance of the
-      model. This is because the use of artificial intelligence for tasks such as
-      these can be premature currently given the lack of testing norms and checks
-      to ensure its fair use.
+    Certain use cases which would fall under the domain of surveillance and
+    facial recognition are always out-of-scope regardless of performance of the
+    model. This is because the use of artificial intelligence for tasks such as
+    these can be premature currently given the lack of testing norms and checks
+    to ensure its fair use.
 
-      Since the model has not been purposefully trained in or evaluated on any
-      languages other than English, its use should be limited to English language
-      use cases"
-      [[Model Card]](https://github.com/openai/CLIP/blob/main/model-card.mdlicen).
+    Since the model has not been purposefully trained in or evaluated on any
+    languages other than English, its use should be limited to English language
+    use cases"
+    [[Model Card]](https://github.com/openai/CLIP/blob/main/model-card.mdlicen).
   monitoring:
-    value: None
+    value: none
     explanation: There are no monitoring mechanisms in place for CLIP.
-  feedback:
-    value: >
-      Questions can be shared at the feedback form linked in the CLIP model card
-      [[Model Card]](https://github.com/openai/CLIP/blob/main/model-card.mdlicen).
+  feedback: Questions can be shared at the feedback form linked in the CLIP model
+    card [[Model Card]](https://github.com/openai/CLIP/blob/main/model-card.mdlicen).
 
 - type: model
   name: DALL·E
@@ -949,50 +886,45 @@
   model_card: https://github.com/openai/DALL-E/blob/master/model_card.md
   modality: Text (English) and Image
   size: 12B parameters (dense model)
-  analysis:
-    value: >
-      The model was evaluated against three prior approaches, AttnGAN, DM-GAN, and
-      DF-GAN using Inception Score and Fréchet Inception Distance on MS-COCO as
-      metrics. The model was also evaluated by humans and received the majority
-      of the votes in generating images that look realistic and better match the
-      caption when compared to the images generated by DF-GAN
-      [[Section]](https://arxiv.org/pdf/2102.12092.pdf#section.3).
+  analysis: >
+    The model was evaluated against three prior approaches, AttnGAN, DM-GAN, and
+    DF-GAN using Inception Score and Fréchet Inception Distance on MS-COCO as
+    metrics. The model was also evaluated by humans and received the majority
+    of the votes in generating images that look realistic and better match the
+    caption when compared to the images generated by DF-GAN
+    [[Section]](https://arxiv.org/pdf/2102.12092.pdf#section.3).
   # Construction
   dependencies: [DALL·E dataset]
   training_emissions:
-    value: Unknown
+    value: unknown
     explanation: The training emissions were not reported.
   training_time:
-    value: Unknown
+    value: unknown
     explanation: The training emissions were not reported.
-  training_hardware:
-    value: NVIDIA V100 GPUs
-  quality_control:
-    value: Unknown
+  training_hardware: NVIDIA V100 GPUs
+  quality_control: unknown
   # Downstream
   access:
-    value: Limited
+    value: limited
     explanation: Available via the OpenAI API as of Q1 2023.
   license:
-    value: Unknown
+    value: unknown
     explanation: >
       The license used for the model is unknown as the model isn't
       made public.
-  intended_uses:
-    value: >
-      "The model is intended for others to use for training their own generative
-      models"
-      [[Model Card]](https://github.com/openai/DALL-E/blob/master/model_card.md).
+  intended_uses: >
+    "The model is intended for others to use for training their own generative
+    models"
+    [[Model Card]](https://github.com/openai/DALL-E/blob/master/model_card.md).
   prohibited_uses:
-    value: Unknown
+    value: unknown
     explanation: The prohibited uses of the model are unknown.
   monitoring:
-    value: None
+    value: none
     explanation: There are no monitoring mechanisms in place for DALL·E.
-  feedback:
-    value: >
-      Contact the paper author(s) specified on the paper
-      [[Paper]](https://arxiv.org/pdf/2102.12092.pdf).
+  feedback: >
+    Contact the paper author(s) specified on the paper
+    [[Paper]](https://arxiv.org/pdf/2102.12092.pdf).
 
 
 - type: model
@@ -1004,28 +936,28 @@
     explanation: The date the model paper was released
   url: https://arxiv.org/abs/2005.00341
   model_card:
-    value: None
+    value: none
     explanation: No model card found as of 2023-01-09
   modality: Audio (music)
   size: 5B parameters
   analysis: Evaluations in paper are primarily considering the fidelity and novelty
     of samples from Jukebox.
   dependencies: [Jukebox Dataset]
-  training_emissions: Unknown
+  training_emissions: unknown
   training_time: 4 weeks
   training_hardware: 510 V100s
   quality_control: ''
   access:
-    value: Open
+    value: open
     explanation: The model can be downloaded from the [Github repository](https://github.com/openai/jukebox)
   license:
-    value: Noncmmercial use license
+    value: Noncommercial use license
     explanation: >
       The license is provided in the [Github repository](https://github.com/openai/jukebox).
   intended_uses: ''
-  prohibited_uses: None
-  monitoring: None
-  feedback: None
+  prohibited_uses: none
+  monitoring: none
+  feedback: none
 
 - type: model
   name: DALL·E 2
@@ -1046,71 +978,61 @@
   url: https://arxiv.org/abs/2204.06125
   model_card: https://github.com/openai/dalle-2-preview/blob/main/system-card.md
   modality: Text (English) and Image
-  size:
-    value: Unknown
-  analysis:
-    value: >
-      The model is capable of generating explicit content and the researchers
-      found limited amount of spurious content generated. The researchers also
-      found that visual synonyms can be used to prompt the model to surface
-      unwanted generations
-      [[Probes and Evaluations]]
-      (https://github.com/openai/dalle-2-preview/blob/main/system-card.md#probes-and-evaluations).
+  size: unknown
+  analysis: >
+    The model is capable of generating explicit content and the researchers
+    found limited amount of spurious content generated. The researchers also
+    found that visual synonyms can be used to prompt the model to surface
+    unwanted generations
+    [[Probes and Evaluations]]
+    (https://github.com/openai/dalle-2-preview/blob/main/system-card.md#probes-and-evaluations).
   # Construction
   dependencies: [DALL·E dataset, CLIP dataset]
-  training_emissions:
-    value: Unknown
-  training_time:
-    value: Unknown
-  training_hardware:
-    value: Unknown
-  quality_control:
-    value: >
-      The model isn't fully released to the public as part of a quality control
-      measure. The usage of the model by testers is monitored and user provided
-      prompts are filtered
-      [[Input filters]]
-      (https://github.com/openai/dalle-2-preview/blob/main/system-card.md#input-filters).
+  training_emissions: unknown
+  training_time: unknown
+  training_hardware: unknown
+  quality_control: >
+    The model isn't fully released to the public as part of a quality control
+    measure. The usage of the model by testers is monitored and user provided
+    prompts are filtered
+    [[Input filters]]
+    (https://github.com/openai/dalle-2-preview/blob/main/system-card.md#input-filters).
   # Downstream
   access:
-    value: Limited
+    value: limited
     explanation: >
       The model is available to OpenAI employees, researchers, creatives
       and company friends. OpenAI opened a waitlist for DALL·E 2 access.
       [[System Card]]
       (https://github.com/openai/dalle-2-preview/blob/main/system-card.md#access).
   license:
-    value: Unknown
+    value: unknown
     explanation: >
       The DALL·E 2 license is not known, but the system card stated that
       the use of generated images for commercial purposes was not allowed
       [[Additional Policies]]
       (https://github.com/openai/dalle-2-preview/blob/main/system-card.md#additional-policies).
-  intended_uses:
-    value: >
-      "The intended use of the DALL·E 2 Preview at this time is for personal,
-      non-commercial exploration and research purposes by people who are
-      interested in understanding the potential uses of these capabilities"
-      [[Use]]
-      (https://github.com/openai/dalle-2-preview/blob/main/system-card.md#use).
-  prohibited_uses:
-    value: >
-      Use of the model is governed by the OpenAI Content Policy, which prohibits
-      posting of G rated content.
-      Users are not allowed to utilize the model in commercial products in the
-      preview version
-      [[Content Policy]]
-      (https://github.com/openai/dalle-2-preview/blob/main/system-card.md#policies-and-enforcement).
-  monitoring:
-    value: >
-      Uses of the model are monitored. In the preview version, any user can flag
-      content. The specific policies for monitoring are not disclosed, but
-      possible measures include disabling of accounts violating the content
-      policies
-      [[Monitoring and Reporting]]
-      (https://github.com/openai/dalle-2-preview/blob/main/system-card.md#monitoring-and-reporting).
-  feedback:
-    value: Feedback can be provided at support at openai.com.
+  intended_uses: >
+    "The intended use of the DALL·E 2 Preview at this time is for personal,
+    non-commercial exploration and research purposes by people who are
+    interested in understanding the potential uses of these capabilities"
+    [[Use]]
+    (https://github.com/openai/dalle-2-preview/blob/main/system-card.md#use).
+  prohibited_uses: >
+    Use of the model is governed by the OpenAI Content Policy, which prohibits
+    posting of G rated content.
+    Users are not allowed to utilize the model in commercial products in the
+    preview version
+    [[Content Policy]]
+    (https://github.com/openai/dalle-2-preview/blob/main/system-card.md#policies-and-enforcement).
+  monitoring: >
+    Uses of the model are monitored. In the preview version, any user can flag
+    content. The specific policies for monitoring are not disclosed, but
+    possible measures include disabling of accounts violating the content
+    policies
+    [[Monitoring and Reporting]]
+    (https://github.com/openai/dalle-2-preview/blob/main/system-card.md#monitoring-and-reporting).
+  feedback: Feedback can be provided at support at openai.com.
 
 - type: application
   name: OpenAI API
@@ -1147,79 +1069,74 @@
     on 2022-01-25
     [[OpenAI Blog Post]]
     (https://openai.com/blog/introducing-text-and-code-embeddings/).
-  quality_control:
-    value: >
-      Given a prompt, OpenAI API checks whether a completion contains unsafe
-      language using its filters and marks the completion accordingly if so.
-      The API also provides developers with special endpoints that scope the
-      API usage. OpenAI also developed user guidelines to help developers
-      understand safety issues
-      [[OpenAI API]](https://openai.com/api/).
+  quality_control: >
+    Given a prompt, OpenAI API checks whether a completion contains unsafe
+    language using its filters and marks the completion accordingly if so.
+    The API also provides developers with special endpoints that scope the
+    API usage. OpenAI also developed user guidelines to help developers
+    understand safety issues
+    [[OpenAI API]](https://openai.com/api/).
   # Downstream
   access:
-    value: Limited
+    value: limited
     explanation: >
       The OpenAI API is available to the public in supported countries
       [[Supported Countries]](https://beta.openai.com/docs/supported-countries)
       [[OpenAI API]](https://openai.com/api/).
   terms_of_service: https://openai.com/api/policies/terms/
-  license:
-    value: >
-      Per the Terms of Use, a limited license is provided to the users during
-      their use of the API
-      [[Section 2]](https://openai.com/api/policies/terms/).
-  intended_uses:
-    value: >
-      OpenAI API was designed to be used by developers to empower applications,
-      and researchers to study language models
-      [[Section 3]](https://openai.com/api/policies/terms/).
-  prohibited_uses:
-    value: >
-      OpenAI API Terms of Use prohibits the use of the API in a way violating
-      the applicable law, including: (i) "Illegal activities, such as child
-      pornography, gambling, cybercrime, piracy, violating copyright,
-      trademark or other intellectual property laws"; (ii) "Accessing or
-      authorizing anyone to access the APIs from an embargoed country, region, or
-      territory as prohibited by the U.S. government"; (iii) "Threatening,
-      stalking, defaming, defrauding, degrading, victimizing or intimidating
-      anyone for any reason".
-      The usage requirements are detailed in the Terms of Use
-      [[Section 3]](https://openai.com/api/policies/terms/).
-  monitoring:
-    value: >
-      OpenAI may monitor the API use to ensure "quality and improve OpenAI
-      systems, products and services; perform research; and ensure compliance"
-      with the Terms of Service and all applicable laws. Users of the API will
-      give OpenAI reasonable access to their application to monitor compliance
-      with the terms listed in the Terms of Service
-      [[Section 5(b)]](https://openai.com/api/policies/terms/).
-      Apps using the OpenAI API should submit an application once they are
-      deployed to real users. The review form takes 10 minutes to complete and
-      over 97% of the applications are directly accepted or conditionally
-      accepted. The applicants are notified of the decision within 2 business
-      days
-      [[App Review Guidelines]]
-      (https://beta.openai.com/docs/usage-guidelines/app-review).
+  license: >
+    Per the Terms of Use, a limited license is provided to the users during
+    their use of the API
+    [[Section 2]](https://openai.com/api/policies/terms/).
+  intended_uses: >
+    OpenAI API was designed to be used by developers to empower applications,
+    and researchers to study language models
+    [[Section 3]](https://openai.com/api/policies/terms/).
+  prohibited_uses: >
+    OpenAI API Terms of Use prohibits the use of the API in a way violating
+    the applicable law, including: (i) "Illegal activities, such as child
+    pornography, gambling, cybercrime, piracy, violating copyright,
+    trademark or other intellectual property laws"; (ii) "Accessing or
+    authorizing anyone to access the APIs from an embargoed country, region, or
+    territory as prohibited by the U.S. government"; (iii) "Threatening,
+    stalking, defaming, defrauding, degrading, victimizing or intimidating
+    anyone for any reason".
+    The usage requirements are detailed in the Terms of Use
+    [[Section 3]](https://openai.com/api/policies/terms/).
+  monitoring: >
+    OpenAI may monitor the API use to ensure "quality and improve OpenAI
+    systems, products and services; perform research; and ensure compliance"
+    with the Terms of Service and all applicable laws. Users of the API will
+    give OpenAI reasonable access to their application to monitor compliance
+    with the terms listed in the Terms of Service
+    [[Section 5(b)]](https://openai.com/api/policies/terms/).
+    Apps using the OpenAI API should submit an application once they are
+    deployed to real users. The review form takes 10 minutes to complete and
+    over 97% of the applications are directly accepted or conditionally
+    accepted. The applicants are notified of the decision within 2 business
+    days
+    [[App Review Guidelines]]
+    (https://beta.openai.com/docs/usage-guidelines/app-review).
   feedback:
-    value: Unknown
+    value: unknown
     explanation: >
       There is no known specific feedback channel for the OpenAI API,
       but OpenAI support theme can be reached via email at support at openai.com.
   # Deployment
   monthly_active_users:
-    value: Unknown
+    value: unknown
     explanation: >
       The number of monthly active users is not known publicly, but
       OpenAI mentioned that the API was being used by tens of thousands of
       developers in a blog post from 2021-11-18
       [[OpenAI Blog Post]](https://openai.com/blog/api-no-waitlist/).
   user_distribution:
-    value: Unknown
+    value: unknown
     explanation: >
       The distribution of the users is not known, but we estimate
       majority of the users to be developers based in the United States.
   failures:
-    value: Unknown
+    value: unknown
     explanation: >
       There are no known documented failures of the OpenAI API at the
       time of writing.
@@ -1228,11 +1145,10 @@
   name: VPT
   organization: OpenAI
   description: ''
-  created_date:
-    value: 2022-06-23
+  created_date: 2022-06-23
   url: https://arxiv.org/abs/2206.11795
   model_card: ''
-  modality: Video
+  modality: video
   analysis: ''
   size: 500M parameters (dense)
   dependencies: [web_clean]
@@ -1240,7 +1156,7 @@
   training_time: ''
   training_hardware: ''
   quality_control: ''
-  access: Open
+  access: open
   license: MIT License
   intended_uses: ''
   prohibited_uses: ''
@@ -1251,8 +1167,7 @@
   name: web_clean
   organization: OpenAI
   description: ''
-  created_date:
-    value: 2022-06-23
+  created_date: 2022-06-23
   url: https://arxiv.org/abs/2206.11795
   datasheet: ''
   modality: Video
@@ -1263,8 +1178,8 @@
   included: ''
   excluded: ''
   quality_control: ''
-  access: Closed
-  license: Unknown
+  access: closed
+  license: unknown
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
@@ -1274,14 +1189,13 @@
   name: ChatGPT
   organization: OpenAI
   description: ChatGPT is an artificial intelligence chatbot developed by OpenAI
-  created_date:
-    value: 2022-11-30
+  created_date: 2022-11-30
   url: https://openai.com/blog/chatgpt
   dependencies: [gpt-3.5-turbo, OpenAI toxicity classifier]
   adaptation: ''
   output_space: ''
   quality_control: ''
-  access: Open
+  access: open
   license: ''
   terms_of_service: ''
   intended_uses: ''
@@ -1298,19 +1212,18 @@
   name: gpt-3.5-turbo
   organization: OpenAI
   description: ''
-  created_date:
-    value: 2023-03-01
+  created_date: 2023-03-01
   url: https://platform.openai.com/docs/models/gpt-3-5
   model_card: ''
-  modality: Text
+  modality: text
   analysis: ''
-  size: Unknown
+  size: unknown
   dependencies: [gpt-3.5-turbo dataset]
   training_emissions: ''
   training_time: ''
   training_hardware: ''
   quality_control: ''
-  access: Limited
+  access: limited
   license: ''
   intended_uses: ''
   prohibited_uses: ''
@@ -1321,19 +1234,18 @@
   name: gpt-3.5-turbo dataset
   organization: OpenAI
   description: ''
-  created_date:
-    value: 2023-03-01
+  created_date: 2023-03-01
   url: https://platform.openai.com/docs/models/gpt-3-5
   datasheet: ''
-  modality: Text
-  size: Unknown
+  modality: text
+  size: unknown
   sample: []
   analysis: ''
   dependencies: []
   included: ''
   excluded: ''
   quality_control: ''
-  access: Limited
+  access: limited
   license: ''
   intended_uses: ''
   prohibited_uses: ''
@@ -1344,19 +1256,18 @@
   name: code-davinci-002 dataset
   organization: OpenAI
   description: ''
-  created_date:
-    value: 2022-05-01
+  created_date: 2022-05-01
   url: https://platform.openai.com/docs/model-index-for-researchers
   datasheet: ''
-  modality: Code, Text
-  size: Unknown
+  modality: code and text
+  size: unknown
   sample: []
   analysis: ''
   dependencies: []
   included: ''
   excluded: ''
   quality_control: ''
-  access: Limited
+  access: limited
   license: ''
   intended_uses: ''
   prohibited_uses: ''
@@ -1367,19 +1278,18 @@
   name: code-davinci-002
   organization: OpenAI
   description: ''
-  created_date:
-    value: 2022-05-01
+  created_date: 2022-05-01
   url: https://platform.openai.com/docs/model-index-for-researchers
   model_card: ''
-  modality: Code, Text
+  modality: code and text
   analysis: ''
-  size: Unknown
+  size: unknown
   dependencies: [code-davinci-002 dataset]
   training_emissions: ''
   training_time: ''
   training_hardware: ''
   quality_control: ''
-  access: Limited
+  access: limited
   license: ''
   intended_uses: ''
   prohibited_uses: ''
@@ -1390,19 +1300,18 @@
   name: text-davinci-002
   organization: OpenAI
   description: ''
-  created_date:
-    value: 2022-05-01
+  created_date: 2022-05-01
   url: https://platform.openai.com/docs/model-index-for-researchers
   model_card: ''
-  modality: Text
+  modality: text
   analysis: ''
-  size: Unknown
+  size: unknown
   dependencies: [code-davinci-002]
   training_emissions: ''
   training_time: ''
   training_hardware: ''
   quality_control: ''
-  access: Limited
+  access: limited
   license: ''
   intended_uses: ''
   prohibited_uses: ''
@@ -1413,19 +1322,18 @@
   name: text-davinci-003
   organization: OpenAI
   description: ''
-  created_date:
-    value: 2022-11-30
+  created_date: 2022-11-30
   url: https://platform.openai.com/docs/model-index-for-researchers
   model_card: ''
-  modality: Text
+  modality: text
   analysis: ''
-  size: Unknown
+  size: unknown
   dependencies: [text-davinci-002]
   training_emissions: ''
   training_time: ''
   training_hardware: ''
   quality_control: ''
-  access: Limited
+  access: limited
   license: ''
   intended_uses: ''
   prohibited_uses: ''
@@ -1436,14 +1344,13 @@
   name: Whisper API
   organization: OpenAI
   description: API to query OpenAI's Whisper model.
-  created_date:
-    value: 2023-03-01
+  created_date: 2023-03-01
   url: https://openai.com/blog/introducing-chatgpt-and-whisper-apis
   dependencies: [Whisper]
   adaptation: ''
   output_space: ''
   quality_control: ''
-  access: Open
+  access: open
   license: ''
   terms_of_service: ''
   intended_uses: ''
@@ -1458,14 +1365,13 @@
   name: ChatGPT API
   organization: OpenAI
   description: API to query OpenAI's ChatGPT model.
-  created_date:
-    value: 2023-03-01
+  created_date: 2023-03-01
   url: https://openai.com/blog/introducing-chatgpt-and-whisper-apis
   dependencies: [ChatGPT]
   adaptation: ''
   output_space: ''
   quality_control: ''
-  access: Open
+  access: open
   license: ''
   terms_of_service: ''
   intended_uses: ''
@@ -1482,14 +1388,13 @@
   description: This endpoint provides OpenAI API developers with free access to
     GPT-based classifiers that detect undesired content—an instance of using AI
     systems to assist with human supervision of these systems.
-  created_date:
-    value: 2022-08-10
+  created_date: 2022-08-10
   url: https://openai.com/blog/new-and-improved-content-moderation-tooling
   dependencies: [OpenAI toxicity classifier]
   adaptation: ''
   output_space: ''
   quality_control: ''
-  access: Open
+  access: open
   license: ''
   terms_of_service: ''
   intended_uses: ''
@@ -1504,20 +1409,19 @@
   name: OpenAI toxicity classifier
   organization: OpenAI
   description: ''
-  created_date:
-    value: 2023-01-18
+  created_date: 2023-01-18
   url: https://time.com/6247678/openai-chatgpt-kenya-workers/#:~:text=In%20a%20statement%2C%20an%20OpenAI,datasets%20of%20tools%20like%20ChatGPT.
   model_card: ''
   modality: Text
   analysis: ''
-  size: Unknown
+  size: unknown
   dependencies: [OpenAI toxicity dataset]
   training_emissions: ''
   training_time: ''
   training_hardware: ''
   quality_control: ''
-  access: Closed
-  license: Unknown
+  access: closed
+  license: unknown
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
@@ -1527,20 +1431,19 @@
   name: OpenAI toxicity dataset
   organization: OpenAI
   description: ''
-  created_date:
-    value: 2023-01-18
+  created_date: 2023-01-18
   url: https://time.com/6247678/openai-chatgpt-kenya-workers/#:~:text=In%20a%20statement%2C%20an%20OpenAI,datasets%20of%20tools%20like%20ChatGPT.
   datasheet: ''
-  modality: Text
-  size: Unknown
+  modality: text
+  size: unknown
   sample: []
   analysis: ''
   dependencies: []
   included: ''
   excluded: ''
   quality_control: ''
-  access: Closed
-  license: Unknown
+  access: closed
+  license: unknown
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
@@ -1550,14 +1453,13 @@
   name: Sage API
   organization: OpenAI
   description: A chatbot language model available via Quora's Poe
-  created_date:
-    value: 2023-02-03
+  created_date: 2023-02-03
   url: https://quorablog.quora.com/Poe-1
   dependencies: [Sage]
   adaptation: ''
   output_space: ''
   quality_control: ''
-  access: Limited
+  access: limited
   license: unknown
   terms_of_service: ''
   intended_uses: ''
@@ -1572,14 +1474,13 @@
   name: Dragonfly API
   organization: OpenAI
   description: A chatbot language model available via Quora's Poe
-  created_date:
-    value: 2023-02-03
+  created_date: 2023-02-03
   url: https://quorablog.quora.com/Poe-1
   dependencies: [Dragonfly]
   adaptation: ''
   output_space: ''
   quality_control: ''
-  access: Limited
+  access: limited
   license: unknown
   terms_of_service: ''
   intended_uses: ''
@@ -1594,8 +1495,7 @@
   name: Sage
   organization: OpenAI
   description: A chatbot language model available via Quora's Poe
-  created_date:
-    value: 2023-02-03
+  created_date: 2023-02-03
   url: https://quorablog.quora.com/Poe-1
   model_card: ''
   modality: text
@@ -1606,7 +1506,7 @@
   training_time: ''
   training_hardware: ''
   quality_control: ''
-  access: Limited
+  access: limited
   license: unknown
   intended_uses: ''
   prohibited_uses: ''
@@ -1617,8 +1517,7 @@
   name: Dragonfly
   organization: OpenAI
   description: A chatbot language model available via Quora's Poe
-  created_date:
-    value: 2023-02-03
+  created_date: 2023-02-03
   url: https://quorablog.quora.com/Poe-1
   model_card: ''
   modality: text
@@ -1629,7 +1528,7 @@
   training_time: ''
   training_hardware: ''
   quality_control: ''
-  access: Limited
+  access: limited
   license: unknown
   intended_uses: ''
   prohibited_uses: ''
@@ -1642,14 +1541,13 @@
   description: The app integrates ChatGPT’s powerful AI technology to deliver instant
     conversation summaries, research tools, and writing assistance directly in Slack
     to help millions of companies work more productively.
-  created_date:
-    value: 2023-03-07
+  created_date: 2023-03-07
   url: https://www.salesforce.com/news/stories/chatgpt-app-for-slack/
   dependencies: [ChatGPT API]
   adaptation: ''
   output_space: ''
   quality_control: ''
-  access: Limited
+  access: limited
   license: unknown
   terms_of_service: ''
   intended_uses: ''
@@ -1664,11 +1562,10 @@
   name: GPT-4
   organization: OpenAI
   description: ''
-  created_date:
-    value: 2023-03-14
+  created_date: 2023-03-14
   url: https://arxiv.org/abs/2303.08774
   model_card: ''
-  modality: text, images
+  modality: text and image
   analysis: ''
   size: unknown
   dependencies: []
@@ -1688,8 +1585,7 @@
   organization: OpenAI
   description: GPT-4 is OpenAI’s most advanced system, producing safer and more
     useful responses
-  created_date:
-    value: 2023-03-14
+  created_date: 2023-03-14
   url: https://openai.com/product/gpt-4
   dependencies: [GPT-4]
   adaptation: ''

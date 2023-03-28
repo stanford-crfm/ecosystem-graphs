@@ -12,9 +12,9 @@
       Diffusion model released earlier was trained on a subset of LAION-5B
   url: https://laion.ai/blog/laion-5b/
   datasheet: https://laion.ai/blog/laion-5b/
-  modality: Text and Image
+  modality: text, image
   size: 5 billion image-text pairs
-  sample: ''
+  sample: []
   analysis: ''
   # Construction
   dependencies: [CommonCrawl]
@@ -36,7 +36,7 @@
   quality_control: ''
   # Downstream
   access:
-    value: Full public access
+    value: open
     explanation: The dataset index is available from https://laion.ai/blog/laion-5b/
   license:
     value: CC-BY 4.0

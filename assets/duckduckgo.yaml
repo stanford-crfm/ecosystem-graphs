@@ -6,8 +6,7 @@
   description: The first Instant Answer in DuckDuckGo search results to use natural
     language technology to generate answers to search queries using Wikipedia and
     other related sources
-  created_date:
-    value: unknown
+  created_date: unknown
   url: http://www.duckduckgo.com/
   dependencies: [Anthropic API]
   adaptation: ''
