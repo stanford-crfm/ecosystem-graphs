@@ -3,7 +3,7 @@
 
 ## Overview
 Welcome! Ecosystem graphs is an ongoing effort to track the foundation model ecosystem.
-To explore the ecosystem, check out the [website](https://crfm.stanford.edu/ecosystem-graphs/).
+To explore the ecosystem, check out the [website](https://crfm.stanford.edu/ecosystem-graphs/) or read the [paper](https://arxiv.org/abs/2303.15772).
 
 Briefly, an ecosystem graph is defined by:
 - **Assets.** These are the nodes in the graph, which can be datasets (e.g. The Pile), models (e.g. Stable Diffusion), or applications (e.g. Microsoft Word).
@@ -24,7 +24,7 @@ and navigate to [http://localhost:8000](http://localhost:8000).
 ## Cite as
 
 ```
-@software{eval-harness,
+@article{bommasani2023ecosystem-graphs,
   author       = {Bommasani, Rishi and
                   Soylu, Dilara and
                   Liao, Thomas I. and
