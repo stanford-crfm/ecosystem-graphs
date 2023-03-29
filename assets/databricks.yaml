@@ -23,7 +23,8 @@
   modality: Text (English)
   size: 6B parameters (dense model)
   analysis: >
-    "We evaluated Dolly on the instruction-following capabilities described in the InstructGPT
+    "We evaluated Dolly on the instruction-following capabilities described in the
+    InstructGPT
     paper that ChatGPT is based on and found that it exhibits many of the same qualitative
     capabilities, including text generation, brainstorming and open Q&A."
     [[Databricks Blog Post]]
@@ -49,14 +50,20 @@
       [[Dolly Repository]](https://github.com/databrickslabs/dolly).
   license: Apache License 2.0
   intended_uses: >
-    "Dolly is intended exclusively for research purposes and is not licensed for commercial use."
+    "Dolly is intended exclusively for research purposes and is not licensed for
+    commercial use."
     [[Limitations]](https://github.com/databrickslabs/dolly#limitations).
   prohibited_uses: >
-    Authors note the following limitations of the model: "The Dolly model family is under active development,
-    and so any list of shortcomings is unlikely to be exhaustive, but we include known limitations and misfires
-    here as a means to document and share our preliminary findings with the community. In particular, dolly-6b
-    struggles with syntactically complex prompts, mathematical operations, factual errors, dates and times,
-    open-ended question answering, hallucination, enumerating lists of specific length, and stylistic mimicry."
+    Authors note the following limitations of the model: "The Dolly model family
+    is under active development,
+    and so any list of shortcomings is unlikely to be exhaustive, but we include
+    known limitations and misfires
+    here as a means to document and share our preliminary findings with the community.
+    In particular, dolly-6b
+    struggles with syntactically complex prompts, mathematical operations, factual
+    errors, dates and times,
+    open-ended question answering, hallucination, enumerating lists of specific
+    length, and stylistic mimicry."
     [[Limitations]](https://github.com/databrickslabs/dolly#limitations).
   monitoring: none
   feedback: https://github.com/databrickslabs/dolly/issues
