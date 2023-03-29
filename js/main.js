@@ -262,12 +262,12 @@ function renderList(items) {
 
 function renderAccessType(value) {
   const valueToColor = {
-    'Full public access': '#c0eec0',  // Slightly lighter than lightgreen
-    'Limited public access': 'papayawhip',
-    'No public access': '#f0b0b0'  // Slightly lighter than lightcoral
+    'open': 'lightgreen', // '#c0eec0',  // Slightly lighter than lightgreen
+    'limited': 'yellow', // 'papayawhip',
+    'closed': 'lightgray', // '#f0b0b0'  // Slightly lighter than lightcoral
   }
   const color = value in valueToColor ? valueToColor[value] : 'mistyrose';
-  const textElement = $('<span>').css("background-color", color).append(value);
+  const textElement = $('<span class="btn">').css("background-color", color).append(value);
   return textElement;
 }
 
@@ -290,8 +290,7 @@ function renderValueExplanation(type, value, explanation) {
   } else if (type === 'url') {
     renderedValue = $('<a>', {href: value, target: 'blank_'}).append(value);
   } else if (type === 'access_type') {
-    renderedValue = converter.makeHtml(value);
-    // renderedValue = renderAccessType(value);
+    renderedValue = renderAccessType(value);
   } else if (typeof(value) === 'string') {
     renderedValue = converter.makeHtml(value);
   }
