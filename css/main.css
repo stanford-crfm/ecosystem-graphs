@@ -53,6 +53,14 @@ nav {
   font-family: var(--title-font) !important;
 }
 
+.table td {
+  padding: 0.4rem 0.75rem;
+}
+
+.table p {
+  margin: 0;
+}
+
 .btn {
   font-family: var(--title-font) !important;
 }
