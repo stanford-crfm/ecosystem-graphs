@@ -5,11 +5,11 @@
   # General
   organization: Databricks
   description: >
-    "Databricks’ Dolly, a large language model trained on the Databricks 
+    "Databricks’ Dolly, a large language model trained on the Databricks
      Machine Learning Platform, demonstrates that a two-years-old open source
      model (GPT-J) can, when subjected to just 30 minutes of fine tuning on a
-     focused corpus of 50k records (Stanford Alpaca), exhibit surprisingly 
-     high quality instruction following behavior not characteristic of the 
+     focused corpus of 50k records (Stanford Alpaca dataset), exhibit surprisingly
+     high quality instruction following behavior not characteristic of the
      foundation model on which it is based."
      [[Dolly Repository]](https://github.com/databrickslabs/dolly).
   created_date:
@@ -19,17 +19,18 @@
       [[Databricks Blog Post]]
       (https://www.databricks.com/blog/2023/03/24/hello-dolly-democratizing-magic-chatgpt-open-models.html).
   url: https://www.databricks.com/blog/2023/03/24/hello-dolly-democratizing-magic-chatgpt-open-models.html
-  model_card: ''
+  model_card: none
   modality: Text (English)
-  size: 6B parameters
+  size: 6B parameters (dense model)
   analysis: >
-    "We evaluated Dolly on the instruction-following capabilities described in the InstructGPT
+    "We evaluated Dolly on the instruction-following capabilities described in the
+    InstructGPT
     paper that ChatGPT is based on and found that it exhibits many of the same qualitative
     capabilities, including text generation, brainstorming and open Q&A."
     [[Databricks Blog Post]]
-    (https://www.databricks.com/blog/2023/03/24/hello-dolly-democratizing-magic-chatgpt-open-models.html).    
+    (https://www.databricks.com/blog/2023/03/24/hello-dolly-democratizing-magic-chatgpt-open-models.html).
   # Construction
-  dependencies: [GPT-J, Alpaca]
+  dependencies: [GPT-J, Alpaca dataset]
   training_emissions: unknown
   training_time:
     value: 30 minutes
@@ -38,7 +39,7 @@
   training_hardware:
     value: A single NDasrA100_v4 machine with 8x A100 40GB GPUs
     explanation: >
-      According to [[Model Overview]](https://github.com/databrickslabs/dolly#model-overview)    
+      According to [[Model Overview]](https://github.com/databrickslabs/dolly#model-overview)
   quality_control: none
   # Downstream
   access:
@@ -49,14 +50,20 @@
       [[Dolly Repository]](https://github.com/databrickslabs/dolly).
   license: Apache License 2.0
   intended_uses: >
-    "Dolly is intended exclusively for research purposes and is not licensed for commercial use."
+    "Dolly is intended exclusively for research purposes and is not licensed for
+    commercial use."
     [[Limitations]](https://github.com/databrickslabs/dolly#limitations).
   prohibited_uses: >
-    Authors note the following limitaions of the model: "The Dolly model family is under active development,
-    and so any list of shortcomings is unlikely to be exhaustive, but we include known limitations and misfires
-    here as a means to document and share our preliminary findings with the community. In particular, dolly-6b
-    struggles with syntactically complex prompts, mathematical operations, factual errors, dates and times,
-    open-ended question answering, hallucination, enumerating lists of specific length, and stylistic mimicry."
+    Authors note the following limitations of the model: "The Dolly model family
+    is under active development,
+    and so any list of shortcomings is unlikely to be exhaustive, but we include
+    known limitations and misfires
+    here as a means to document and share our preliminary findings with the community.
+    In particular, dolly-6b
+    struggles with syntactically complex prompts, mathematical operations, factual
+    errors, dates and times,
+    open-ended question answering, hallucination, enumerating lists of specific
+    length, and stylistic mimicry."
     [[Limitations]](https://github.com/databrickslabs/dolly#limitations).
   monitoring: none
   feedback: https://github.com/databrickslabs/dolly/issues

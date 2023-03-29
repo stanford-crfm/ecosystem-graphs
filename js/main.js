@@ -639,6 +639,7 @@ function loadAssetsAndRenderPageContent() {
     'assets/brex.yaml',
     'assets/cmu.yaml',
     'assets/cohere.yaml',
+    'assets/databricks.yaml',
     'assets/deepmind.yaml',
     'assets/duckduckgo.yaml',
     'assets/duolingo.yaml',
