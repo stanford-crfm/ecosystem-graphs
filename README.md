@@ -16,7 +16,7 @@ We actively encourage community contributions. To contribute:
 - Add assets by filling out [this form](https://forms.gle/VqnSsZhv62hJ5rP36). No coding expertise required!
 - Submit a PR (run `precommit.sh` before submitting)
 
-To visualize and explore the ecosystem graphs, start a local server:
+To visualize and explore your changes, start a local server:
 
     python server.py
 
