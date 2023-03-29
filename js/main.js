@@ -640,6 +640,7 @@ function loadAssetsAndRenderPageContent() {
     'assets/cmu.yaml',
     'assets/cohere.yaml',
     'assets/deepmind.yaml',
+    'assets/databricks.yaml',
     'assets/duckduckgo.yaml',
     'assets/duolingo.yaml',
     'assets/eleutherai.yaml',
