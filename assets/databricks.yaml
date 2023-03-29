@@ -25,10 +25,7 @@
   analysis: >
     "We evaluated Dolly on the instruction-following capabilities described in the InstructGPT
     paper that ChatGPT is based on and found that it exhibits many of the same qualitative
-    capabilities, including text generation, brainstorming and open Q&A. Of particular note in
-    these examples is not the quality of the generated text, but rather the vast improvement
-    in instruction-following capability that results from fine tuning a years-old open source
-    model on a small, high quality dataset."
+    capabilities, including text generation, brainstorming and open Q&A."
     [[Databricks Blog Post]]
     (https://www.databricks.com/blog/2023/03/24/hello-dolly-democratizing-magic-chatgpt-open-models.html).    
   # Construction
