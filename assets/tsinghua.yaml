@@ -95,7 +95,7 @@
   url: https://arxiv.org/abs/2205.15868
   model_card: none
   modality: text (Chinese) and video
-  size: ''
+  size: unknown
   analysis: ''
   dependencies: []
   training_emissions: ''

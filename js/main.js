@@ -129,18 +129,12 @@ function getStandardSize(value) {
 
 function compareValues(valueA, valueB, columnName) {
   // Filter for null, empty and unknown values
-  if (valueA === null) {
-    return -1;
-  } else if (valueB === null) {
-    return 1;
-  } else if (valueA === "") {
-    return -1;
-  } else if (valueB === "") {
-    return 1;
-  } else if (valueA === "unknown") {
-    return -1;
-  } else if (valueB === "unknown") {
-    return 1;
+  const specialValues = [null, "", "unknown", "n/a"]
+  const valueAIndex = specialValues.indexOf(valueA);
+  const valueBIndex = specialValues.indexOf(valueB);
+  const bothNotFound = valueAIndex === -1 && valueBIndex === -1
+  if (!bothNotFound) {
+    return valueBIndex - valueAIndex;
   }
 
   // Standardize the value
@@ -268,12 +262,12 @@ function renderList(items) {
 
 function renderAccessType(value) {
   const valueToColor = {
-    'Full public access': '#c0eec0',  // Slightly lighter than lightgreen
-    'Limited public access': 'papayawhip',
-    'No public access': '#f0b0b0'  // Slightly lighter than lightcoral
+    'open': 'lightgreen', // '#c0eec0',  // Slightly lighter than lightgreen
+    'limited': 'yellow', // 'papayawhip',
+    'closed': 'lightgray', // '#f0b0b0'  // Slightly lighter than lightcoral
   }
   const color = value in valueToColor ? valueToColor[value] : 'mistyrose';
-  const textElement = $('<span>').css("background-color", color).append(value);
+  const textElement = $('<span class="btn">').css("background-color", color).append(value);
   return textElement;
 }
 
@@ -296,8 +290,7 @@ function renderValueExplanation(type, value, explanation) {
   } else if (type === 'url') {
     renderedValue = $('<a>', {href: value, target: 'blank_'}).append(value);
   } else if (type === 'access_type') {
-    renderedValue = converter.makeHtml(value);
-    // renderedValue = renderAccessType(value);
+    renderedValue = renderAccessType(value);
   } else if (typeof(value) === 'string') {
     renderedValue = converter.makeHtml(value);
   }
@@ -394,7 +387,10 @@ function renderCustomTable(selectedAssets, allNameToAsset, columnNames) {
   selectedAssets.forEach((asset) => {
     const $bodyRow = $('<tr>');
     columnNames.forEach((columnName) => {
-      let tdValue = null;
+      // Set the default value
+      let tdValue = 'n/a';
+
+      // Render the field value
       if (columnName === 'type') {
         tdValue = renderValueExplanation('', asset.type, null);
       } else if (columnName === 'name') {
@@ -408,8 +404,8 @@ function renderCustomTable(selectedAssets, allNameToAsset, columnNames) {
         //
         let type = '';
         asset.schema.fields.forEach(item => item.name === columnName ? type = item.type : '');
-        const value = columnName in asset.fields ? asset.fields[columnName].value : null;
-        const explanation = columnName in asset.fields ? asset.fields[columnName].explanation : null;
+        const value = columnName in asset.fields ? asset.fields[columnName].value : tdValue;
+        const explanation = columnName in asset.fields ? asset.fields[columnName].explanation : tdValue;
         tdValue = renderValueExplanation(type, value, explanation);
       }
       $bodyRow.append($('<td>').append(tdValue));
@@ -547,7 +543,7 @@ function renderAssetsGraph(nameToAsset) {
 // UI Helpers
 
 function toggleExplanation(button) {
-  const newText = $(button).text() === "Show Details" ? "Hide Details" : "Show Details"
+  const newText = $(button).text() === "Show Field Details" ? "Hide Field Details" : "Show Field Details"
   $(".field-explanation").toggle();
   $(button).text(newText);
 }

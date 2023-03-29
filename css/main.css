@@ -10,10 +10,12 @@
   --primary-color-light: #DCEDC8;
   --primary-color-dark: #4b6c27;
   --primary-color-slightly-darker: #587f2f;
-  --secondary-color: #070605;
+  --secondary-color: #76462c;
   --secondary-color-light: #d4bfb4;
-  --secondary-color-dark: #76462c;
+  --secondary-color-dark: #392215;
+  --light: #f8faf5;
   --dark: #0d1207;
+  --white: #ffffff;
   /* Fonts */
   --title-font: 'Montserrat';
   --body-font: 'Hahmlet';
@@ -26,13 +28,16 @@
 
 .search-box {
   font-family: var(--title-font);
-  border: 1px solid #ddd; /* Add a grey border */
-  border-radius: 10px;
+  border: 0.1rem solid #ddd; /* Add a grey border */
+  border-radius: 0.2rem;
+  margin: 0rem;
 }
 
 .search-box:focus {
-  outline: none !important;
-  border: 2px solid var(--primary-color);
+  outline-style: solid;
+  outline-width: 0.1rem;
+  outline-color: var(--primary-color);
+  margin: 0rem;
 }
 
 /* Modifications to bootstrap defaults */
@@ -53,6 +58,14 @@ nav {
   font-family: var(--title-font) !important;
 }
 
+.table td {
+  padding: 0.4rem 0.75rem;
+}
+
+.table p {
+  margin: 0;
+}
+
 .btn {
   font-family: var(--title-font) !important;
 }
@@ -65,6 +78,13 @@ nav {
 .btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited, .btn-primary:hover {
   background-color: var(--primary-color) !important;
   border-color: var(--primary-color) !important;
+}
+
+.btn-secondary, .btn-secondary:hover, .btn-secondary:active, .btn-secondary:visited, .btn-secondary:hover {
+  background-color: var(--white) !important;
+  border-color: var(--primary-color-dark) !important;
+  color: var(--primary-color-dark) !important;
+  border-width: 0.1rem;
 }
 
 /* Custom CSS styles */
