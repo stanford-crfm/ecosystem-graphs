@@ -129,18 +129,12 @@ function getStandardSize(value) {
 
 function compareValues(valueA, valueB, columnName) {
   // Filter for null, empty and unknown values
-  if (valueA === null) {
-    return -1;
-  } else if (valueB === null) {
-    return 1;
-  } else if (valueA === "") {
-    return -1;
-  } else if (valueB === "") {
-    return 1;
-  } else if (valueA === "unknown") {
-    return -1;
-  } else if (valueB === "unknown") {
-    return 1;
+  const specialValues = [null, "", "unknown", "n/a"]
+  const valueAIndex = specialValues.indexOf(valueA);
+  const valueBIndex = specialValues.indexOf(valueB);
+  const bothNotFound = valueAIndex === -1 && valueBIndex === -1
+  if (!bothNotFound) {
+    return valueBIndex - valueAIndex;
   }
 
   // Standardize the value
@@ -394,7 +388,10 @@ function renderCustomTable(selectedAssets, allNameToAsset, columnNames) {
   selectedAssets.forEach((asset) => {
     const $bodyRow = $('<tr>');
     columnNames.forEach((columnName) => {
-      let tdValue = null;
+      // Set the default value
+      let tdValue = 'n/a';
+
+      // Render the field value
       if (columnName === 'type') {
         tdValue = renderValueExplanation('', asset.type, null);
       } else if (columnName === 'name') {
@@ -408,8 +405,8 @@ function renderCustomTable(selectedAssets, allNameToAsset, columnNames) {
         //
         let type = '';
         asset.schema.fields.forEach(item => item.name === columnName ? type = item.type : '');
-        const value = columnName in asset.fields ? asset.fields[columnName].value : null;
-        const explanation = columnName in asset.fields ? asset.fields[columnName].explanation : null;
+        const value = columnName in asset.fields ? asset.fields[columnName].value : tdValue;
+        const explanation = columnName in asset.fields ? asset.fields[columnName].explanation : tdValue;
         tdValue = renderValueExplanation(type, value, explanation);
       }
       $bodyRow.append($('<td>').append(tdValue));

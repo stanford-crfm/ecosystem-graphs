@@ -1055,7 +1055,7 @@
   model_card: ''
   modality: audio (music)
   analysis: ''
-  size: ''
+  size: unknown
   dependencies: [Free Music Archive]
   training_emissions: ''
   training_time: ''

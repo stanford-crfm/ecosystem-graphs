@@ -96,7 +96,7 @@
   url: https://laion.ai/blog/oig-dataset/
   datasheet: ''
   modality: text
-  size: ''
+  size: unknown
   sample: []
   analysis: ''
   dependencies: []
