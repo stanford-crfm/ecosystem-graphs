@@ -15,7 +15,7 @@
   output_space: Question and answer, summarization, sentiment analysis, topic identification
   quality_control: unknown
   # Downstream
-  access: Limited
+  access: limited
   license: unknown
   terms_of_service: https://www.askviable.com/terms-of-service
   intended_uses: >
