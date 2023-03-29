@@ -39,9 +39,9 @@
   # Construction
   dependencies: []
   license: >
-    The Pile uses the MIT License, allowing proprietary or open source use
+    The Pile uses the MIT, allowing proprietary or open source use
     on the condition that the terms of the license as well as a copyright
-    notice [[MIT License]](https://arxiv.org/pdf/2201.07311.pdf).
+    notice [[MIT]](https://arxiv.org/pdf/2201.07311.pdf).
   included: >
     The Pile data come from 22 sources, with over half of the data being from
     Common Crawl (Pile-CC; 227GB), fiction and nonfiction books (Books3; 101GB),
