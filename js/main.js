@@ -544,7 +544,7 @@ function renderAssetsGraph(nameToAsset) {
 // UI Helpers
 
 function toggleExplanation(button) {
-  const newText = $(button).text() === "Show Details" ? "Hide Details" : "Show Details"
+  const newText = $(button).text() === "Show Field Details" ? "Hide Field Details" : "Show Field Details"
   $(".field-explanation").toggle();
   $(button).text(newText);
 }
