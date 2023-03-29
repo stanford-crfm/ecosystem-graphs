@@ -281,9 +281,9 @@
   # Construction
   dependencies: [Anthropic Human Feedback Interface]
   license:
-    value: MIT License
+    value: MIT
     explanation: >
-      The dataset was released on GitHub under MIT License
+      The dataset was released on GitHub under MIT
       [[hh-rlhf]](https://github.com/anthropics/hh-rlhf).
   included: >
     The dataset included all the answers that the workers were asked to
