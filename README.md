@@ -8,7 +8,7 @@ To explore the ecosystem, check out the [website](https://crfm.stanford.edu/ecos
 Briefly, an ecosystem graph is defined by:
 - **Assets.** These are the nodes in the graph, which can be datasets (e.g. The Pile), models (e.g. Stable Diffusion), or applications (e.g. Microsoft Word).
 - **Dependencies.** These are the edges in the graph, which indicate how assets are built (e.g. the BLOOM model is trained on the ROOTS dataset).
-- **Ecosystem cards.** These are structured cards that house metadata on each dataset (e.g. who built it, when, what is the license).
+- **Ecosystem cards.** These are structured cards that house metadata on each asset (e.g. who built it, when, what is the license).
 
 ## Contribute
 We actively encourage community contributions. To contribute:
