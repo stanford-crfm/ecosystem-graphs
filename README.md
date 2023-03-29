@@ -2,7 +2,7 @@
 
 
 ## Overview
-Welcome! Ecosystem Graphs is an ongoing effort to track the foundation model ecosystem: to document the foundation models ecosystem, namely both the assets (datasets, models, and applications) and their relationships. Using it, one can answer questions such as: What are the latest foundation models? Who builds them and where are they used downstream? What are the general trends over time? We hope that ecosystem graphs will be a useful resource for researchers, application developers, policymakers, and the public to better understand the foundation models ecosystem.
+Welcome! Ecosystem Graphs is an ongoing effort to track the foundation model ecosystem, namely both the assets (datasets, models, and applications) and their relationships. Using it, one can answer questions such as: What are the latest foundation models? Who builds them and where are they used downstream? What are the general trends over time? We hope that ecosystem graphs will be a useful resource for researchers, application developers, policymakers, and the public to better understand the foundation models ecosystem.
 
 To explore the ecosystem, check out the [website](https://crfm.stanford.edu/ecosystem-graphs/) or read the [paper](https://arxiv.org/abs/2303.15772).
 
