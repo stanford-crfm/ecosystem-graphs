@@ -596,13 +596,6 @@ function renderGraphPage(pageContainer, nameToAsset) {
   pageContainer.append(graph);
 }
 
-// Help Page
-function renderHelpPage(pageContainer) {
-  $.get("components/help.html", function(data){
-    pageContainer.append(data);
-  });
-}
-
 function renderPageContent(nameToAsset) {
   const urlParams = decodeUrlParams(window.location.search);
   const pageContainer = $('#main');
@@ -616,8 +609,6 @@ function renderPageContent(nameToAsset) {
     renderTablePage(pageContainer, nameToAsset);
   } else if (mode === 'graph') {
     renderGraphPage(pageContainer, nameToAsset);
-  } else if (mode === 'help') {
-    renderHelpPage(pageContainer);
   } else {
     const content = renderError('Unrecognized mode: ' + mode + '.');
     pageContainer.append(content);
