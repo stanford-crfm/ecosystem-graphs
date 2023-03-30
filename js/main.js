@@ -633,6 +633,7 @@ function loadAssetsAndRenderPageContent() {
     'assets/be_my_eyes.yaml',
     'assets/bigscience.yaml',
     'assets/brex.yaml',
+    'assets/cerebras.yaml',
     'assets/cmu.yaml',
     'assets/cohere.yaml',
     'assets/databricks.yaml',

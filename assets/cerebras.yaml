@@ -50,8 +50,11 @@
   access:
     value: open
     explanation: >
-      Model training code can be accessed at the official Dolly repository.
-      Cerebras CS-2 compatible checkpoints are available in [[Cerebras Model Zoo]](https://github.com/Cerebras/modelzoo).
+      The Pile is an open source dataset.
+      Hugging Face compatible checkpoints available on the [[Cerebras Hugging Face
+      page]](https://huggingface.co/cerebras/Cerebras-GPT-13B).
+      Cerebras systems checkpoints for pre-training and fine tuning are available
+      in the cloud via the [[Cerebras Model Studio]](https://www.cerebras.net/product-cloud/).
   license: Apache License 2.0
   intended_uses: >
     "The primary intended use is to further research into large language models.
@@ -69,5 +72,5 @@
     way to models that have received instruction tuning or reinforcement learning
     from human feedback (RLHF) like Flan-T5 or ChatGPT."
     [[Uses and Limitations]](https://github.com/Cerebras/modelzoo/tree/main/modelzoo/transformers/pytorch/gpt3/configs/Cerebras_GPT#out-of-scope-use).
-  monitoring: none
-  feedback: https://github.com/databrickslabs/dolly/issues
+  monitoring: ''
+  feedback: ''
