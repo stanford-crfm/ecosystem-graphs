@@ -20,7 +20,7 @@
       (https://www.databricks.com/blog/2023/03/24/hello-dolly-democratizing-magic-chatgpt-open-models.html).
   url: https://www.databricks.com/blog/2023/03/24/hello-dolly-democratizing-magic-chatgpt-open-models.html
   model_card: ''
-  modality: Text (English)
+  modality: text (English)
   size: 6B parameters (dense model)
   analysis: >
     "We evaluated Dolly on the instruction-following capabilities described in the

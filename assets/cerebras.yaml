@@ -1,0 +1,73 @@
+---
+
+- type: model
+  name: Cerebras-GPT
+  # General
+  organization: Cerebras
+  description: >
+    A Family of Open, Compute-efficient, Large Language Models. The family includes
+    111M, 256M, 590M, 1.3B, 2.7B, 6.7B, and 13B models. All models in the Cerebras-GPT
+    family have been trained in accordance with Chinchilla scaling laws (20 tokens
+    per model parameter).
+    [[Cerebras Blog Post]](https://www.cerebras.net/blog/cerebras-gpt-a-family-of-open-compute-efficient-large-language-models).
+  created_date:
+    value: 2023-03-28
+    explanation: >
+      The date of the blog post announcing Cerebras-GPT
+      [[Cerebras Blog Post]]
+      (https://www.cerebras.net/blog/cerebras-gpt-a-family-of-open-compute-efficient-large-language-models).
+  url: https://www.cerebras.net/blog/cerebras-gpt-a-family-of-open-compute-efficient-large-language-models/
+  model_card: https://huggingface.co/cerebras/Cerebras-GPT-13B
+  modality: text (English)
+  size: 13B parameters (dense model)
+  analysis: >
+    "We evaluate our models on the PILE validation set comprising 380M tokens. We
+    also evaluate the public checkpoints of Pythia, Eleuther (2022); OPT, Zhang
+    et al. (2022); GPT-NeoX 20B, Black et al. (2022); and GPT-J 6B, Wang & Komatsuzaki
+    (2021). We performed upstream (pre-training) evaluations of text prediction
+    cross-entropy using the Pile validation and test splits. We performed downstream
+    evaluations of text generation accuracy on standardized tasks using the Eleuther
+    lm-evaluation-harness."
+    [[Evaluations]]
+    (https://github.com/Cerebras/modelzoo/tree/main/modelzoo/transformers/pytorch/gpt3/configs/Cerebras_GPT#evaluations).
+  # Construction
+  dependencies: [The Pile]
+  training_emissions: ''
+  training_time:
+    value: ''
+    explanation: ''
+  training_hardware:
+    value: 16x Cerebras CS-2 wafer scale systems
+    explanation: >
+      According to [[Model Description]](https://huggingface.co/cerebras/Cerebras-GPT-13B#model-description)
+  quality_control: >
+    The Pile dataset has been thoroughly analyzed from various ethical standpoints
+    such as toxicity analysis, gender bias, pejorative content, racially sensitive
+    content etc. Only mitigations in standard Pile dataset pre-processing were employed
+    when pre-training Cerebras-GPT.
+    [[Risk, Bias, Ethical Considerations]](https://github.com/Cerebras/modelzoo/tree/main/modelzoo/transformers/pytorch/gpt3/configs/Cerebras_GPT#risk-bias-ethical-considerations)
+  # Downstream
+  access:
+    value: open
+    explanation: >
+      Model training code can be accessed at the official Dolly repository.
+      Cerebras CS-2 compatible checkpoints are available in [[Cerebras Model Zoo]](https://github.com/Cerebras/modelzoo).
+  license: Apache License 2.0
+  intended_uses: >
+    "The primary intended use is to further research into large language models.
+    These models can be used as a foundation model for NLP, applications, ethics,
+    and alignment research. Our primary intended users are researchers who are working
+    to improve LLMs and practitioners seeking reference implementations, training
+    setups, hyperparameters, or pre-trained models. We release these models with
+    a fully permissive Apache license for the community to use freely."
+    [[Uses and Limitations]](https://github.com/Cerebras/modelzoo/tree/main/modelzoo/transformers/pytorch/gpt3/configs/Cerebras_GPT#uses-and-limitations).
+  prohibited_uses: >
+    Authors note the following limitations of the model: "Cerebras-GPT models are
+    trained on the Pile, with English language only, and are not suitable for machine
+    translation tasks. Cerebras-GPT models have not been tuned for human-facing
+    dialog applications like chatbots and will not respond to prompts in a similar
+    way to models that have received instruction tuning or reinforcement learning
+    from human feedback (RLHF) like Flan-T5 or ChatGPT."
+    [[Uses and Limitations]](https://github.com/Cerebras/modelzoo/tree/main/modelzoo/transformers/pytorch/gpt3/configs/Cerebras_GPT#out-of-scope-use).
+  monitoring: none
+  feedback: https://github.com/databrickslabs/dolly/issues
