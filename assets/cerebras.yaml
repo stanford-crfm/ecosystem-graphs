@@ -19,7 +19,7 @@
   url: https://www.cerebras.net/blog/cerebras-gpt-a-family-of-open-compute-efficient-large-language-models/
   model_card: https://huggingface.co/cerebras/Cerebras-GPT-13B
   modality: text (English)
-  size: >
+  size:
     value: 13B parameters (dense model)
     explanation: Size of the largest model in the Cerebras-GPT family.
   analysis: >
