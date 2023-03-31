@@ -13,7 +13,8 @@
   analysis: ''
   dependencies: [LAION-5B]
   included: ''
-  excluded: "We eliminate duplicates, low resolution images, and images potentially contain harmful content from the LAION dataset."
+  excluded: We eliminate duplicates, low resolution images, and images potentially
+    contain harmful content from the LAION dataset.
   quality_control: ''
   access: closed
   license: unknown

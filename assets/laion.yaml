@@ -32,8 +32,9 @@
     explanation: See [[LAION-400M paper]](https://laion.ai/blog/laion-400-open-dataset/)
   quality_control:
     value: The authors use  CLIP embeddings of images and texts to filter out illegal
-      contents. They also use CLIP to tag image-text pairs as NSFW. They note that less than 1% of images were detected as NSFW, which can be filtered out by an user
-      with NSFW tag.
+      contents. They also use CLIP to tag image-text pairs as NSFW. They note that
+      less than 1% of images were detected as NSFW, which can be filtered out by
+      an user with NSFW tag.
     explanation: See [[LAION-400M paper]](https://laion.ai/blog/laion-400-open-dataset/)
   # Downstream
   access:
