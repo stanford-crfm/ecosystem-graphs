@@ -46,7 +46,7 @@
     - Visual Genome
     - Conceptual Captions
     - Conceptual-12M
-    - SBU
+    - SBU Captions
     - LAION-115M
   training_emissions: ''
   training_time: ''
@@ -67,7 +67,7 @@
   url: https://arxiv.org/abs/2201.12086
   datasheet: ''
   modality: text and image
-  size: 115M text-image pairs
+  size: 115M image-text pairs
   sample: []
   analysis: ''
   dependencies: [LAION-400M]

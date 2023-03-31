@@ -673,6 +673,7 @@ function loadAssetsAndRenderPageContent() {
     'assets/spotify.yaml',       
     'assets/stability.yaml',
     'assets/stanford.yaml',
+    'assets/stonybrook.yaml',
     'assets/together.yaml',
     'assets/trevor.yaml',  
     'assets/tsinghua.yaml',
