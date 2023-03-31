@@ -296,8 +296,8 @@
   size: 1.6B parameters (dense model)
   dependencies:
     - The Pile
-    - Common Crawl
-    - LAION-2B
+    - CommonCrawl
+    - LAION-2B-en
     - LAION-400M
     - COYO-700M
     - Conceptual Captions
