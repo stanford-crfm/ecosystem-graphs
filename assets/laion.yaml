@@ -21,21 +21,22 @@
   dependencies: [CommonCrawl]
   included: ''
   excluded:
-    value: Authors apply the following filtering conditions on the WAT files downloaded
-      from Common Crawl- "All samples with less than 5 character alt-text length
+    value: >
+      Authors apply the following filtering conditions on the WAT files downloaded
+      from Common Crawl: "All samples with less than 5 character alt-text length
       or less than 5 KB image size are dropped. Duplicate removal is performed with
       bloom filter based on URL and alt-text. We use CLIP to compute embeddings
       of the image and alt-text. Then we compute the cosine similarity of both embeddings
       and drop all samples with cosine similarity below 0.3. This threshold was
       selected based on human inspections. We use the CLIP embeddings of images
       and texts to filter out illegal contents."
-    explanation: See [[LAION-400M paper]](https://laion.ai/blog/laion-400-open-dataset/)
+    explanation: See [[Dataset and Methods]](https://arxiv.org/pdf/2111.02114.pdf#section.2)
   quality_control:
     value: The authors use  CLIP embeddings of images and texts to filter out illegal
       contents. They also use CLIP to tag image-text pairs as NSFW. They note that
       less than 1% of images were detected as NSFW, which can be filtered out by
       an user with NSFW tag.
-    explanation: See [[LAION-400M paper]](https://laion.ai/blog/laion-400-open-dataset/)
+    explanation: See [[Dataset and Methods]](https://arxiv.org/pdf/2111.02114.pdf#section.2)
   # Downstream
   access:
     value: open

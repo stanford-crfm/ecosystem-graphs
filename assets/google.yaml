@@ -105,7 +105,7 @@
   included: ''
   excluded:
     value: |
-      Authors apply the following filtering steps in the given order:
+      The following filtering steps are applied in the given order:
       1. Image-based Filtering - "It only keeps JPEG images where both dimensions are greater than 400 pixels, and the ratio of larger to smaller dimension is no more than 2. It excludes images that trigger pornography or profanity detectors. These filters discard more than 65% of the candidates."
       2. Text-based Filtering - "Candidates with no determiner, no noun, or no preposition are discarded; candidates with a high noun ratio are also discarded; candidates with a high rate of token repetition are discarded; candidates where the first word is not capitalized, or with too high capitalized-word ratio are discarded; we use a vocabulary VW of 1B token types, appearing at least 5 times in the English Wikipedia, and discard candidates that contain tokens that are not found in this vocabulary. candidates that score too high or too low on the polarity annotations, or trigger the pornography/profanity detectors, are discarded; predefined boiler-plate prefix/suffix sequences matching the text are cropped, e.g. “click to enlarge picture”, “stock photo”; we also drop text which begins/ends in certain patterns, e.g. “embedded image permalink”, “profile photo”. These filters only allow around 3% of the incoming candidates to pass to the later stages."
       3. Image&Text-based Filtering - "We filter out candidates for which none of the text tokens can be mapped to the content of the image. This filter discards around 60% of the incoming candidates."
@@ -124,7 +124,7 @@
   monitoring: unknown
   feedback: Feedback can be provided by creating an issue in the [[Conceptual Captions
     GitHub repository]](https://github.com/google-research-datasets/conceptual-captions)
-    or can be mailed at conceptual-captions@google.com
+    or by emailing at conceptual-captions at google.com
 
 - type: dataset
   name: Conceptual 12M
@@ -144,9 +144,9 @@
   sample: []
   analysis:
     value: >
-      Authors benchmark the dataset against CC3M on on two most fundamental V+L
+      The dataset is benchmarked against CC3M on two most fundamental V+L
       tasks: vision-to-language generation and vision-and-language matching, with
-      an emphasis on long-tail visual recognition. Their results illustrate the
+      an emphasis on long-tail visual recognition. The results illustrate the
       benefit of scaling up pre-training data for vision-and-language tasks, as
       indicated by the new state-of-the-art results on both the nocaps and Conceptual
       Captions benchmarks.
@@ -157,15 +157,16 @@
   included: ''
   excluded:
     value: |
-      Authors relax some of the filtering steps used in the preparation of Conceptual Captions dataset, to trade off high-recall for low-precision. They apply the following steps in the given order:
+      Some of the filtering steps used in the preparation of Conceptual Captions dataset are relaxed to trade off high-recall for low-precision. The following steps are applied in the given order:
       1. Image-based Filtering - Only keep JPEG images where both dimensions are greater than 400 pixels, and the ratio of larger to smaller dimension is no more than 2.5. Exclude images that trigger pornography or profanity detectors.
       2. Text-based Filtering - Allow text between 3 and 256 words in the alt-text. Discard candidates with no noun or no determiner, but permit ones without prepositions. Set the maximum fraction of word repetition allowed to 0.2. Increase the threshold for counting a word type as rare from 5 to 20.
       3. Image&Text-based Filtering - Filter out candidates for which none of the text tokens can be mapped to the content of the image.
     explanation: See [[Relaxing filters for higher recall]](https://arxiv.org/pdf/2102.08981.pdf#subsection.2.2)
   quality_control:
     value: Input candidate (image, caption) pairs pass through several stages of
-      filtering and processing to ensure quality. Authors perform person-name substitutions
-      in the alt-texts to protect the privacy of individuals in the associated images.
+      filtering and processing to ensure quality. Person-name substitutions are
+      performed in the alt-texts to protect the privacy of individuals in the associated
+      images.
     explanation: See [[Vision-and-Language Pre-Training Data]](https://arxiv.org/pdf/2102.08981.pdf#section.2)
   # Downstream
   access:
@@ -176,7 +177,7 @@
   monitoring: unknown
   feedback: Feedback can be provided by creating an issue in the [[Conceptual 12M
     GitHub repository]](https://github.com/google-research-datasets/conceptual-12m)
-    or can be mailed at conceptual-captions@google.com
+    or by emailing at conceptual-captions at google.com
 
 # Models
 - type: model

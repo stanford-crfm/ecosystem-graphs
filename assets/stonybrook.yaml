@@ -13,7 +13,7 @@
     explanation: >
       The date the [[paper]](https://papers.nips.cc/paper_files/paper/2011/hash/5dd9db5e033da9c6fb5ba83c7a7ebea9-Abstract.html)
       was published.
-  url: https://papers.nips.cc/paper_files/paper/2011/hash/5dd9db5e033da9c6fb5ba83c7a7ebea9-Abstract.html
+  url: https://proceedings.neurips.cc/paper/2011/file/5dd9db5e033da9c6fb5ba83c7a7ebea9-Paper.pdf
   datasheet: none
   modality: text (English) and image
   size: 1M image-text pairs
@@ -24,7 +24,7 @@
     "we propose a new evaluation task where a user is presented with two photographs
     and one caption. The user must assign the caption to the most relevant image.
     For evaluation we use a query image, a random image and a generated caption."
-    [[Results & Evaluation]](https://proceedings.neurips.cc/paper/2011/file/5dd9db5e033da9c6fb5ba83c7a7ebea9-Paper.pdf)
+    [[Section 5]](https://proceedings.neurips.cc/paper/2011/file/5dd9db5e033da9c6fb5ba83c7a7ebea9-Paper.pdf)
   # Construction
   dependencies: [Flickr]
   license: unknown
@@ -34,12 +34,12 @@
     visual descriptions. We also enforce that retained descriptions contain at least
     2 words belonging to our term lists and at least one prepositional word, e.g.
     “on”, “under” which often indicate visible spatial relationships."
-    [[Paper]](https://proceedings.neurips.cc/paper/2011/file/5dd9db5e033da9c6fb5ba83c7a7ebea9-Paper.pdf)
+    [[Section 2]](https://proceedings.neurips.cc/paper/2011/file/5dd9db5e033da9c6fb5ba83c7a7ebea9-Paper.pdf)
   excluded: >
     "This produces a very large, but noisy initial set of photographs with associated
     text. We filter this set of photos so that the descriptions attached to a picture
     are relevant and visually descriptive."
-    [[Paper]](https://proceedings.neurips.cc/paper/2011/file/5dd9db5e033da9c6fb5ba83c7a7ebea9-Paper.pdf)
+    [[Section 2]](https://proceedings.neurips.cc/paper/2011/file/5dd9db5e033da9c6fb5ba83c7a7ebea9-Paper.pdf)
   quality_control: unknown
   # Downstream
   access:

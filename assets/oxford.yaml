@@ -19,7 +19,7 @@
   analysis: unknown
   # Construction
   dependencies: []
-  license: unknown
+  license: See [[TERMS]](https://github.com/m-bain/webvid/blob/main/TERMS.md)
   included:
     value: Video URLs and textual description annotations
     explanation: Authors note in the paper:"We scrape the web for a new dataset
@@ -57,8 +57,9 @@
     sourced from the web may be prone to biases and may contain graphic content.
     Please be careful of unintended societal, gender, racial and other biases when
     training or deploying models trained on this data."
+    [[Disclaimer]](https://github.com/m-bain/webvid#disclaimer-%EF%B8%8F)
   monitoring: ''
-  feedback: Feedback can be mailed at maxbain@robots.ox.ac.uk
+  feedback: Feedback can be given by emailing at maxbain at robots.ox.ac.uk
 
 - type: dataset
   name: WebVid-2M
@@ -79,7 +80,7 @@
   analysis: unknown
   # Construction
   dependencies: [WebVid-10M]
-  license: unknown
+  license: See [[TERMS]](https://github.com/m-bain/webvid/blob/main/TERMS.md)
   included:
     value: Video URLs and textual description annotations
     explanation: Authors note in the paper:"We scrape the web for a new dataset
@@ -117,5 +118,6 @@
     sourced from the web may be prone to biases and may contain graphic content.
     Please be careful of unintended societal, gender, racial and other biases when
     training or deploying models trained on this data."
+    [[Disclaimer]](https://github.com/m-bain/webvid#disclaimer-%EF%B8%8F)
   monitoring: ''
-  feedback: Feedback can be mailed at maxbain@robots.ox.ac.uk
+  feedback: Feedback can be given by emailing at maxbain at robots.ox.ac.uk
