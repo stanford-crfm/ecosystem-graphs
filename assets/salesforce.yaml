@@ -45,7 +45,7 @@
     - COCO
     - Visual Genome
     - Conceptual Captions
-    - Conceptual-12M
+    - Conceptual 12M
     - SBU Captions
     - LAION-115M
   training_emissions: ''

@@ -392,7 +392,7 @@
   # General
   organization: OpenAI
   description: ''
-  created_date: 2019-11
+  created_date: Nov 2019
   url: https://cdn.openai.com/better-language-models/language_models_are_unsupervised_multitask_learners.pdf
   datasheet: ''
   modality: text (English)
@@ -418,7 +418,7 @@
   # General
   organization: OpenAI
   description: ''
-  created_date: 2019-11
+  created_date: Nov 2019
   url: https://cdn.openai.com/better-language-models/language_models_are_unsupervised_multitask_learners.pdf
   model_card: https://github.com/openai/gpt-2/blob/master/model_card.md
   modality: text (English)
