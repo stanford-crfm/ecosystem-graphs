@@ -40,7 +40,7 @@
       to the query task.
     explanation: See [[Data collection]](https://arxiv.org/pdf/1906.03327v2.pdf#subsection.3.1)
   excluded:
-    value: Categories such as Relationships and Finance and Business that may be
+    value: Categories such as Relationships and Finance and Business, that may be
       more abstract, are excluded. Videos with less than 100 views are removed.
       Authors also ignore videos that have less than 100 words. Videos longer than
       2,000 seconds are removed. As some videos may appear in several tasks, the

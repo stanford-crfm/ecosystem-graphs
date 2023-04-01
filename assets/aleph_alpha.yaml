@@ -41,7 +41,9 @@
   modality: text (English, French | français, German | Deutsch, Italian | italiano,
     Spanish | Español)
   analysis: ''
-  size: 200B parameters (dense model) according to [[this news article]](https://www-heise-de.translate.goog/news/Machine-Learning-Aleph-Alpha-feilt-mit-Oracle-und-Nvidia-an-transformativer-KI-6269269.html?_x_tr_sl=de&_x_tr_tl=en&_x_tr_hl=en&_x_tr_pto=sc)
+  size:
+    value: 200B parameters (dense model)
+    explanation: According to [[this news article]](https://www-heise-de.translate.goog/news/Machine-Learning-Aleph-Alpha-feilt-mit-Oracle-und-Nvidia-an-transformativer-KI-6269269.html?_x_tr_sl=de&_x_tr_tl=en&_x_tr_hl=en&_x_tr_pto=sc).
   dependencies: [Luminous dataset]
   training_emissions: unknown
   training_time: unknown

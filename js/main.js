@@ -632,6 +632,7 @@ function loadAssetsAndRenderPageContent() {
     'assets/bain.yaml',
     'assets/be_my_eyes.yaml',
     'assets/bigscience.yaml',
+    'assets/bloomberg.yaml',
     'assets/brex.yaml',
     'assets/cerebras.yaml',
     'assets/cmu.yaml',
