@@ -641,6 +641,7 @@ function loadAssetsAndRenderPageContent() {
     'assets/duckduckgo.yaml',
     'assets/duolingo.yaml',
     'assets/eleutherai.yaml',
+    'assets/ens.yaml',
     'assets/google.yaml',
     'assets/hubspot.yaml',
     'assets/huggingface.yaml',

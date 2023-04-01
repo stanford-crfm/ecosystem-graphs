@@ -7,14 +7,14 @@
   created_date: 2022-12-06
   url: https://arxiv.org/pdf/2212.03191.pdf
   model_card: ''
-  modality: video and text
+  modality: text and video
   analysis: ''
   size: 1.3B parameters (dense)
   dependencies:
     - Kinetics-400
     - WebVid-2M
     - WebVid-10M
-    - HowTo-100M
+    - HowTo100M
     - AVA
     - Something-Something-v2
     - Kinetics-710
