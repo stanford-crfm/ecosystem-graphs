@@ -45,12 +45,16 @@
   feedback: ''
 
 - type: application
-  name: Neeva Search
+  name: NeevaAI
   organization: Neeva
-  description: Neeva is a search engine powered by AI with personalization and without
-    ads/tracking.
-  created_date: unknown
-  url: https://neeva.com/index
+  description: NeevaAI is an AI-powered search tool that combines the capabilities
+    of LLMs with Neeva's independent in-house search stack to create a unique and
+    transformative search experience.
+  created_date:
+    value: 2023-01-06
+    explanation: The [[Blog post]](https://neeva.com/blog/introducing-neevaai) announcing
+      NeevaAI.
+  url: https://neeva.com/blog/introducing-neevaai
   dependencies: [Neeva model]
   adaptation: ''
   output_space: ''

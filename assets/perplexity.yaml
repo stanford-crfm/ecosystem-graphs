@@ -49,7 +49,10 @@
   organization: Perplexity
   description: Perplexity Ask is a new search interface that uses advanced artificial
     intelligence technologies
-  created_date: unknown
+  created_date:
+    value: 2022-12-07
+    explanation: Perplexity Ask was announced in a [[Twitter post]](https://twitter.com/perplexity_ai/status/1600551871554338816?s=20)
+      by the company.
   url: https://www.perplexity.ai/
   dependencies: [Perplexity model]
   adaptation: ''
