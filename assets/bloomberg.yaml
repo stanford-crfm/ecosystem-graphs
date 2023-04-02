@@ -10,7 +10,7 @@
     BloombergGPT model.
   created_date:
     value: 2023-03-30
-    explanation: The date the model was announced in the [[Bloomberg article]](https://www.bloomberg.com/company/press/bloomberggpt-50-billion-parameter-llm-tuned-finance/).
+    explanation: The date BloombergGPT was announced in the [[Bloomberg article]](https://www.bloomberg.com/company/press/bloomberggpt-50-billion-parameter-llm-tuned-finance/).
   url: https://arxiv.org/pdf/2303.17564.pdf#section.2
   datasheet:
     value: https://arxiv.org/pdf/2303.17564.pdf#section.2

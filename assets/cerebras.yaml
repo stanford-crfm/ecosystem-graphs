@@ -9,13 +9,11 @@
     111M, 256M, 590M, 1.3B, 2.7B, 6.7B, and 13B models. All models in the Cerebras-GPT
     family have been trained in accordance with Chinchilla scaling laws (20 tokens
     per model parameter).
-    [[Cerebras Blog Post]](https://www.cerebras.net/blog/cerebras-gpt-a-family-of-open-compute-efficient-large-language-models).
+    [[Cerebras Blog Post]](https://www.cerebras.net/blog/cerebras-gpt-a-family-of-open-compute-efficient-large-language-models)
   created_date:
     value: 2023-03-28
     explanation: >
-      The date of the blog post announcing Cerebras-GPT
-      [[Cerebras Blog Post]]
-      (https://www.cerebras.net/blog/cerebras-gpt-a-family-of-open-compute-efficient-large-language-models).
+      The date the model was announced in the [[Cerebras blog post]](https://www.cerebras.net/blog/cerebras-gpt-a-family-of-open-compute-efficient-large-language-models).
   url: https://www.cerebras.net/blog/cerebras-gpt-a-family-of-open-compute-efficient-large-language-models/
   model_card: https://huggingface.co/cerebras/Cerebras-GPT-13B
   modality: text (English)

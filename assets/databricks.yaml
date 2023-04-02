@@ -15,9 +15,7 @@
   created_date:
     value: 2023-03-24
     explanation: >
-      The date of the blog post announcing Dolly
-      [[Databricks Blog Post]]
-      (https://www.databricks.com/blog/2023/03/24/hello-dolly-democratizing-magic-chatgpt-open-models.html).
+      The date the model was announced in the [[Cerebras blog post]](https://www.databricks.com/blog/2023/03/24/hello-dolly-democratizing-magic-chatgpt-open-models.html).
   url: https://www.databricks.com/blog/2023/03/24/hello-dolly-democratizing-magic-chatgpt-open-models.html
   model_card: ''
   modality: text (English)

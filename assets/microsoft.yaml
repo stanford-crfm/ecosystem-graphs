@@ -662,3 +662,52 @@
   monthly_active_users: unknown
   user_distribution: unknown
   failures: unknown
+
+- type: application
+  name: Microsoft Security Copilot
+  # General
+  organization: Microsoft
+  description: >
+    Microsoft Security Copilot is an AI-powered security analysis tool that enables
+    analysts to respond to threats quickly, process signals at machine speed, and
+    assess risk exposure in minutes.
+  created_date:
+    value: 2023-03-28
+    explanation: The date Security Copilot was announced in the [[Microsoft blog post]](https://blogs.microsoft.com/blog/2023/03/28/introducing-microsoft-security-copilot-empowering-defenders-at-the-speed-of-ai/).
+  url: https://blogs.microsoft.com/blog/2023/03/28/introducing-microsoft-security-copilot-empowering-defenders-at-the-speed-of-ai/
+  # Construction
+  dependencies: [GPT-4, Microsoft security-specific model]
+  adaptation:
+    value: Security Copilot combines OpenAI's GPT-4 generative AI with a security-specific
+      model from Microsoft. This security-specific model in turn incorporates a
+      growing set of security-specific skills and is informed by Microsoft's unique
+      global threat intelligence and more than 65 trillion daily signals.
+    explanation: See [[blog post]](https://blogs.microsoft.com/blog/2023/03/28/introducing-microsoft-security-copilot-empowering-defenders-at-the-speed-of-ai/).
+  output_space:
+    value: Actionable responses to security-related questions (text and image).
+      Security event, incident or threat reports (PowerPoint slide).
+    explanation: See [[product demo]](https://www.microsoft.com/en-us/security/business/ai-machine-learning/microsoft-security-copilot).
+  quality_control:
+    value: Security Copilot employs a closed-loop learning system that learns from
+      user interactions and feedback, enabling it to provide more coherent, relevant,
+      and useful answers that continually improve over time. Security Copilot is
+      committed to delivering safe, secure, and responsible AI solutions, ensuring
+      that customers' data and AI models are protected with enterprise compliance
+      and security controls. Customer data is owned and controlled by them, and
+      not used to train AI models for anyone outside their organization.
+    explanation: See [[blog post]](https://blogs.microsoft.com/blog/2023/03/28/introducing-microsoft-security-copilot-empowering-defenders-at-the-speed-of-ai/).
+  # Downstream
+  access: limited
+  terms_of_service: unknown
+  license: unknown
+  intended_uses: Security Copilot is designed to enhance the capabilities of cybersecurity
+    professionals. It leverages machine speed and scale to accelerate response to
+    security incidents, discover and process threat signals, and assess risk exposure
+    within minutes.
+  prohibited_uses: unknown
+  monitoring: ''
+  feedback: unknown
+  # Deployment
+  monthly_active_users: unknown
+  user_distribution: unknown
+  failures: unknown
