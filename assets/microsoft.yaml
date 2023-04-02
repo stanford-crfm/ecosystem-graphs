@@ -673,7 +673,8 @@
     assess risk exposure in minutes.
   created_date:
     value: 2023-03-28
-    explanation: The date Security Copilot was announced in the [[Microsoft blog post]](https://blogs.microsoft.com/blog/2023/03/28/introducing-microsoft-security-copilot-empowering-defenders-at-the-speed-of-ai/).
+    explanation: The date Security Copilot was announced in the [[Microsoft blog
+      post]](https://blogs.microsoft.com/blog/2023/03/28/introducing-microsoft-security-copilot-empowering-defenders-at-the-speed-of-ai/).
   url: https://blogs.microsoft.com/blog/2023/03/28/introducing-microsoft-security-copilot-empowering-defenders-at-the-speed-of-ai/
   # Construction
   dependencies: [GPT-4, Microsoft security-specific model]
