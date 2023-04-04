@@ -34,12 +34,14 @@
     explanation: The captions and video url's can be found at the [[dataset page]](https://m-bain.github.io/webvid-dataset/).
       CLIP ViT-B/32 features of this dataset can be found at the [[WebVid github
       repository]](https://github.com/m-bain/webvid#download-clip-features-%EF%B8%8F).
-  intended_uses: >
-    "Provided you keep to these rules, the University grants you (the researcher)
-    a non-exclusive and non-transferable licence to use the content free of charge
-    strictly for non-commercial research (i.e., whose output artefacts are not incorporated
-    in commercial products) for 12 months."
-    [[Terms of Access]](https://github.com/m-bain/webvid/blob/main/TERMS.md)
+  intended_uses:
+    value: >
+      "Provided you keep to these rules, the University grants you (the researcher)
+      a non-exclusive and non-transferable licence to use the content free of charge
+      strictly for non-commercial research (i.e., whose output artefacts are not
+      incorporated
+      in commercial products) for 12 months."
+    explanation: See [[Terms of Access]](https://github.com/m-bain/webvid/blob/main/TERMS.md)
   prohibited_uses: >
     - Authors note the following prohibited uses: "You must not use the content
     other than for the Permitted Purpose in strict
@@ -95,12 +97,14 @@
     explanation: The captions and video url's can be found at the [[dataset page]](https://m-bain.github.io/webvid-dataset/).
       CLIP ViT-B/32 features of this dataset can be found at the [[WebVid github
       repository]](https://github.com/m-bain/webvid#download-clip-features-%EF%B8%8F).
-  intended_uses: >
-    "Provided you keep to these rules, the University grants you (the researcher)
-    a non-exclusive and non-transferable licence to use the content free of charge
-    strictly for non-commercial research (i.e., whose output artefacts are not incorporated
-    in commercial products) for 12 months."
-    [[Terms of Access]](https://github.com/m-bain/webvid/blob/main/TERMS.md)
+  intended_uses:
+    value: >
+      "Provided you keep to these rules, the University grants you (the researcher)
+      a non-exclusive and non-transferable licence to use the content free of charge
+      strictly for non-commercial research (i.e., whose output artefacts are not
+      incorporated
+      in commercial products) for 12 months."
+    explanation: See [[Terms of Access]](https://github.com/m-bain/webvid/blob/main/TERMS.md)
   prohibited_uses: >
     - Authors note the following prohibited uses: "You must not use the content
     other than for the Permitted Purpose in strict

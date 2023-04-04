@@ -620,6 +620,7 @@ function renderNavBar() {
 function loadAssetsAndRenderPageContent() {
 
   const paths = [
+    'assets/adept.yaml',
     'assets/ai2.yaml',
     'assets/ai21.yaml',
     'assets/aleph_alpha.yaml',
