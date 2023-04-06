@@ -9,7 +9,7 @@
   model_card: ''
   modality: text and video
   analysis: ''
-  size: 1.3B parameters (dense)
+  size: 1.3B parameters (dense model)
   dependencies:
     - Kinetics-400
     - WebVid-2M

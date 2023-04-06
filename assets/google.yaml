@@ -192,7 +192,7 @@
   model_card: https://huggingface.co/t5-base
   modality: text (English)
   size:
-    value: 11B parameters (dense)
+    value: 11B parameters (dense model)
     explanation: T5 models were trained on several sizes including 3B and 11B parameters.
   analysis: https://huggingface.co/t5-base#evaluation
   dependencies: [C4]
@@ -1044,7 +1044,7 @@
   model_card: ''
   modality: text, video
   analysis: ''
-  size: 1.8B parameters (dense)
+  size: 1.8B parameters (dense model)
   dependencies: [LAION-400M, Phenaki Video-Text Corpus]
   training_emissions: ''
   training_time: ''

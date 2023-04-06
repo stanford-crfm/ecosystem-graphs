@@ -79,7 +79,7 @@
   model_card: none
   modality: text (English)
   size:
-    value: 178B parameters (dense)
+    value: 178B parameters (dense model)
     explanation: The model sizes are 7.5B (Large), 17B (Grande), and 178B (Jumbo).
   analysis:
     value: Evaluated on several standard benchmarks (e.g. ARC, BoolQ, HellaSwag,
@@ -120,7 +120,7 @@
   url: https://docs.ai21.com/docs/jurassic-1-instruct-beta
   model_card: none
   modality: text (English)
-  size: 17B parameters (dense)
+  size: 17B parameters (dense model)
   analysis: none
   dependencies: [Jurassic-1, Jurassic-1 Instruct dataset]
   training_emissions: unknown

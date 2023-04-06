@@ -14,7 +14,7 @@
   modality: code (12 programming languages)
   analysis: Reports results on standard code benchmarks across a variety of programming
     languages.
-  size: 2.7B parameters (dense)
+  size: 2.7B parameters (dense model)
   dependencies: [Github]
   training_emissions: unknown
   training_time: 6 weeks
