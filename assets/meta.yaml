@@ -516,7 +516,10 @@
   name: SAM
   # General
   organization: Meta
-  description: A foundation model for image segmentation.
+  description: SAM (Segment Anything Model) is a foundation model for image segmentation.
+    The model is designed and trained to be promptable, and supports flexible prompts
+    (point, box, mask and free-form text) to compute masks in real-time to allow
+    interactive use.
   created_date:
     value: 2023-04-05
     explanation: The date the [[Meta blog post]](https://ai.facebook.com/blog/segment-anything-foundation-model-image-segmentation/)
@@ -525,7 +528,7 @@
   model_card:
     value: https://arxiv.org/pdf/2304.02643.pdf#page=28
     explanation: Model card can be found in the Appendix section of the paper.
-  modality: image, segmentation prompt (point, box, mask and text)
+  modality: image, text
   analysis:
     value: >
       "We extensively evaluate SAM.

@@ -82,7 +82,10 @@
   description: >
     A dataset containing 3 million (image-URL, caption) pairs designed for the
     training and evaluation of machine learned image captioning systems.
-  created_date: July 2018
+  created_date:
+    value: 2018-07-01
+    explanation: Due to the lack of information about the exact date, it is assumed
+      to be the 1st of the known month of creation.
   url: https://aclanthology.org/P18-1238/
   datasheet: none
   modality: text(English) and image

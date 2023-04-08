@@ -18,7 +18,7 @@
   sample: []
   analysis: ''
   # Construction
-  dependencies: [CommonCrawl]
+  dependencies: [CLIP, CommonCrawl]
   included: ''
   excluded:
     value: >
@@ -71,7 +71,7 @@
   sample: []
   analysis: ''
   # Construction
-  dependencies: [CommonCrawl]
+  dependencies: [CLIP, mCLIP, CommonCrawl]
   included: ''
   excluded:
     value: All samples with less than 5 characters alt-text length or less than
@@ -122,7 +122,7 @@
   sample: []
   analysis: ''
   # Construction
-  dependencies: [LAION-5B]
+  dependencies: [CLIP, LAION-5B]
   included: ''
   excluded:
     value: All samples with less than 5 characters alt-text length or less than
