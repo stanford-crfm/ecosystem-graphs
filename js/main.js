@@ -267,7 +267,7 @@ function renderAccessType(value) {
     'closed': 'lightgray', // '#f0b0b0'  // Slightly lighter than lightcoral
   }
   const color = value in valueToColor ? valueToColor[value] : 'mistyrose';
-  const textElement = $('<span class="btn">').css("background-color", color).append(value);
+  const textElement = $('<span class="btn">').css({"background-color": color, "min-width": 100}).append(value);
   return textElement;
 }
 
