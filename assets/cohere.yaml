@@ -145,30 +145,81 @@
       support at cohere.ai.
 
 - type: model
-  name: Command
+  name: Cohere Command
   # General
   organization: Cohere
   description: >
     This model is a generative model optimized to follow commands in the prompt.
-  dependencies: [Cohere Base]
-
-- type: model
-  name: Command-Nightly
-  # General
-  organization: Cohere
-  description: >
-    This model is a nightly version of Cohere's Command model. 
-    It is updated more frequently than Command. You can expect 
-    weekly performance improvements.
-  dependencies: [Cohere Command]
+  dependencies: [Cohere Base, coheretext]
+  created_date:
+    value: 2021-11-15
+    explanation: >
+      The date the Cohere API was announced on the news
+      [[News Article]]
+      (https://venturebeat.com/2021/11/15/openai-rival-cohere-launches-language-model-api/).
+  url: none
+  model_card: https://docs.cohere.ai/generation-card
   modality: text (English)
+  size:
+    value: unknown
+    explanation: >
+      The exact sizes of the generation models are unknown, but we know
+      that they come in three sizes: small, medium, and large
+      [[Model Card]](https://docs.cohere.ai/generation-card).
+  analysis: The model's performance was analyzed on Hellaswag and COPA, as well
+    as several safety benchmarks [[Model Card]](https://docs.cohere.ai/generation-card).
+  # Construction
+  training_emissions:
+    value: unknown
+    explanation: The emissions of the models are unknown.
+  training_time:
+    value: unknown
+    explanation: The training time for the models are unknown.
+  training_hardware:
+    value: unknown
+    explanation: unknown
+  quality_control:
+    value: unknown
+    explanation: unknown
+  # Downstream
+  access:
+    value: limited
+    explanation: >
+      The model is available to the public through the Cohere Platform
+      [[Cohere Platform]](https://os.cohere.ai/login).
+  license:
+    value: unknown
+    explanation: The model likely has a license specifically for Cohere's use.
+  intended_uses: >
+    On the model card, the intended uses are stated as "interactive
+    autocomplete, augmenting human writing processes, summarization,
+    text rephrasing, and other text-to-text tasks in non-sensitive domains"
+    [[Model Card]](https://docs.cohere.ai/generation-card).
+  prohibited_uses: >
+    The usage of the model is bound by the Cohere usage guidelines
+    [[Usage Guidelines]](https://docs.cohere.ai/usage-guidelines).
+    A non-comprehensive list of specific application violating these guidelines
+    are: astroturfing, generation of misinformation and other harmful content,
+    and "generation of text about people, places, or events without a
+    human-in-the-loop"
+    [[Model Card]](https://docs.cohere.ai/generation-card).
+  monitoring: >
+    The usage of the model is monitored by Cohere
+    [[Model Card]](https://docs.cohere.ai/generation-card).
+  feedback:
+    value: unknown
+    explanation: >
+      There are no specific feedback mechanisms for the Generation model,
+      but a generic contact email is provided on Cohere website, which is
+      support at cohere.ai.
+
   
 - type: model
-  name: Embed English
+  name: Embedding (English)
   # General
   organization: Cohere
   description: >
-    The Representation model is a language model trained by Cohere for
+    The Embedding Large (English) model is a language model trained by Cohere for
     tasks requiring embeddings.
   created_date:
     value: 2021-11-15
@@ -182,7 +233,7 @@
   size:
     value: unknown
     explanation: >
-      The exact sizes of the generation models are unknown, but we know
+      The exact sizes of the embedding models are unknown, but we know
       that they come in three sizes: small, medium, and large
       [[Model Card]](https://docs.cohere.ai/representation-card).
   analysis: >
@@ -241,7 +292,7 @@
       support at cohere.ai.
 
 - type: model
-  name: Embed Multilingual
+  name: Embedding (Multilingual)
   # General
   organization: Cohere
   description: >
@@ -250,6 +301,67 @@
     (regardless of language) in close proximity.
   modality: text (Multilingual)
   url: https://txt.cohere.ai/multilingual/
+  model_card: https://docs.cohere.ai/representation-card
+  size:
+    value: unknown
+    explanation: >
+      The exact sizes of the embedding models are unknown, but we know
+      that they come in three sizes: small, medium, and large
+      [[Model Card]](https://docs.cohere.ai/representation-card).
+  analysis: >
+    The model's performance was analyzed on several safety benchmarks
+    [[Model Card]](https://docs.cohere.ai/representation-card).
+  # Construction
+  dependencies: [coheretext]
+  training_emissions:
+    value: unknown
+    explanation: The emissions of the models are unknown.
+  training_time:
+    value: unknown
+    explanation: The training time for the models are unknown.
+  training_hardware:
+    value: unknown
+    explanation: >
+      The training hardware wasn't explicitly announced, but it was
+      reported that Google Cloud teamed up with Cohere on a TPU partnership
+      [[TechCrunch Article]]
+      (https://techcrunch.com/2021/11/17/google-cloud-teams-up-with-nlp-startup-cohere-on-multi-year-partnership/).
+  quality_control: unknown
+  # Downstream
+  access:
+    value: limited
+    explanation: >
+      The model is available to the public through the Cohere Platform
+      [[Cohere Platform]](https://cohere.ai/).
+  license:
+    value: unknown
+    explanation: The model likely has a license specifically for Cohere's use.
+  intended_uses: >
+    The intended uses are stated as "estimating semantic similarity between two
+    sentences, choosing a sentence which is most likely to follow another
+    sentence, sentiment analysis, topic extraction, or categorizing user
+    feedback" on the Cohere model card
+    [[Model Card]](https://docs.cohere.ai/representation-card).
+  prohibited_uses: >
+    The usage of the model is bound by the Cohere usage guidelines
+    [[Usage Guidelines]](https://docs.cohere.ai/usage-guidelines).
+    A non-comprehensive list of specific application violating these guidelines
+    are: extraction of identity and demographic information, building
+    purposefully opaque text classification systems, and "building downstream
+    classifiers that serve as automated decision-making systems that have
+    real-world consequences on people, where those decisions are made without
+    a
+    human-in-the-loop"
+    [[Model Card]](https://docs.cohere.ai/representation-card).
+  monitoring: >
+    The usage of the model is monitored by Cohere
+    [[Model Card]](https://docs.cohere.ai/representation-card).
+  feedback:
+    value: unknown
+    explanation: >
+      There are no specific feedback mechanisms for the Generation model,
+      but a generic contact email is provided on Cohere website, which is
+      support at cohere.ai.
 
 - type: application
   name: Cohere API
@@ -331,7 +443,7 @@
     captures semantic information about the text that it represents. 
   url: https://docs.cohere.ai/reference/embed
   # Construction
-  dependencies: [Embed-English, Embed-Multilingual]
+  dependencies: [Embedding (Multilingual), Embedding (English)]
   adaptation: unknown
   output_space: embedding
   # Downstream
@@ -349,6 +461,7 @@
     pairs as a reference.
   url: https://docs.cohere.ai/reference/classify
   # Construction
+  dependencies: [Embedding (Multilingual), Embedding (English)]
   adaptation: unknown
   output_space: embedding
   # Downstream
@@ -365,36 +478,12 @@
     the most important information.
   url: https://docs.cohere.ai/reference/summarize
   # Construction
+  dependencies: unknown
   adaptation: unknown
   output_space: generation
   # Downstream
   access:
     value: limited
-  
-- type: application
-  name: Tokenize Endpoint
-  # General
-  organization: Cohere
-  description: >
-    This endpoint splits input text into smaller units 
-    called tokens using byte-pair encoding (BPE).
-  url: https://docs.cohere.ai/reference/tokenize
-  # Downstream
-  access:
-    value: limited
-  
-- type: application
-  name: Detokenize Endpoint
-  # General
-  organization: Cohere
-  description: >
-    This endpoint takes tokens using byte-pair 
-    encoding and returns their text representation. 
-  url: https://docs.cohere.ai/reference/detokenize
-  # Downstream
-  access:
-    value: limited
-  
   
   
   
