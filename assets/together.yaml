@@ -109,3 +109,70 @@
   prohibited_uses: ''
   monitoring: ''
   feedback: ''
+
+- type: dataset
+  name: RedPajama-Data-1T
+  organization: Together
+  description: >
+    The RedPajama base dataset is a 1.2 trillion token fully-open dataset created
+    by following the recipe described in the LLaMA paper.
+  created_date:
+    value: 2023-04-17
+    explanation: The date the RedPajama project was announced in a [[blog post]](https://www.together.xyz/blog/redpajama).
+  url: https://www.together.xyz/blog/redpajama
+  datasheet: ''
+  modality:
+    value: text (English)
+    explanation: >
+      "Primarily English, though the Wikipedia slice contains multiple languages."
+      according to their [[Hugging Face page]](https://huggingface.co/datasets/togethercomputer/RedPajama-Data-1T#languages)
+  size:
+    value: 1.2T tokens (5TB)
+    explanation: The full RedPajama 1.2 trillion token dataset is ~5TB unzipped
+      on disk and ~3TB to download compressed.
+  sample: []
+  analysis: ''
+  dependencies:
+    - CommonCrawl
+    - C4
+    - GitHub
+    - arXiv
+    - Books
+    - Wikipedia
+    - StackExchange
+  included:
+    value: |
+      RedPajama-Data-1T consists of seven data slices:
+        - CommonCrawl (878B tokens): We download five dumps from CommonCrawl, and run the dumps through the official cc_net pipeline. We then deduplicate on the paragraph level, and filter out low quality text using a linear classifier trained to classify paragraphs as Wikipedia references or random CommonCrawl samples.
+        - C4 (175B tokens): C4 is downloaded from Huggingface. The only preprocessing step is to bring the data into our own format.
+        - GitHub (59B tokens): The raw GitHub data is downloaded from Google BigQuery. We deduplicate on the file level and filter out low quality files and only keep projects that are distributed under the MIT, BSD, or Apache license.
+        - arXiv (28B tokens): ArXiv data is downloaded from Amazon S3 in the arxiv requester pays bucket. We only keep latex source files and remove preambles, comments, macros and bibliographies.
+        - Books (26B tokens): The PG19 subset of the Gutenberg Project and Books3 datasets are downloaded from Huggingface. After downloading, we use simhash to remove near duplicates.
+        - Wikipedia (24B tokens): We use the Wikipedia dataset available on Huggingface, which is based on the Wikipedia dump from 2023-03-20 and contains text in 20 different languages. The dataset comes in preprocessed format, so that hyperlinks, comments and other formatting boilerplate has been removed.
+        - StackExchange (20B tokens): The Stack Exchange split of the dataset is download from the Internet Archive. Here we only keep the posts from the 28 largest sites, remove html tags, group the posts into question-answer pairs, and order answers by their score.
+    explanation: See their [[Hugging Face page]](https://huggingface.co/datasets/togethercomputer/RedPajama-Data-1T)
+  excluded: ''
+  quality_control: ''
+  access:
+    value: open
+    explanation: The full RedPajama 1.2T token dataset and a smaller, more consumable
+      random sample can be downloaded through their [[Hugging Face page]](https://huggingface.co/datasets/togethercomputer/RedPajama-Data-1T).
+      A full set of scripts to recreate the dataset from scratch can be found on
+      their [[GitHub page]](https://github.com/togethercomputer/RedPajama-Data).
+  license:
+    value: |
+      For the dataset itself, please refer to the licenses of the data subsets you use.
+        - [Common Crawl Foundation Terms of Use](https://commoncrawl.org/terms-of-use/full/)
+        - [C4 license](https://huggingface.co/datasets/allenai/c4#license)
+        - GitHub was limited to MIT, BSD, or Apache licenses only
+        - Books: [the\_pile_books3 license](https://huggingface.co/datasets/the_pile_books3#licensing-information) and [pg19 license](https://huggingface.co/datasets/pg19#licensing-information)
+        - [ArXiv Terms of Use](https://info.arxiv.org/help/api/tou.html)
+        - [Wikipedia License](https://huggingface.co/datasets/wikipedia#licensing-information)
+        - [StackExchange license on the Internet Archive](https://archive.org/details/stackexchange)
+
+      The code to recreate the dataset (available on their [GitHub repository](https://github.com/togethercomputer/RedPajama-Data)) is under Apache 2.0 license.
+    explanation: See License section of their [[GitHub page]](https://github.com/togethercomputer/RedPajama-Data#license)
+  intended_uses: Intended to be used for both research and commercial purposes.
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''

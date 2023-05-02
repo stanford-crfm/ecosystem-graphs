@@ -5,17 +5,16 @@
   # General
   organization: Databricks
   description: >
-    "Databricks’ Dolly, a large language model trained on the Databricks
-     Machine Learning Platform, demonstrates that a two-years-old open source
-     model (GPT-J) can, when subjected to just 30 minutes of fine tuning on a
-     focused corpus of 50k records (Stanford Alpaca), exhibit surprisingly
-     high quality instruction following behavior not characteristic of the
-     foundation model on which it is based."
-     [[Dolly Repository]](https://github.com/databrickslabs/dolly).
+    Databricks’ Dolly, a large language model trained on the Databricks
+    Machine Learning Platform, demonstrates that a two-years-old open source
+    model (GPT-J) can, when subjected to just 30 minutes of fine tuning on a
+    focused corpus of 50k records (Stanford Alpaca), exhibit surprisingly
+    high quality instruction following behavior not characteristic of the
+    foundation model on which it is based.
   created_date:
     value: 2023-03-24
     explanation: >
-      The date the model was announced in the [[Cerebras blog post]](https://www.databricks.com/blog/2023/03/24/hello-dolly-democratizing-magic-chatgpt-open-models.html).
+      The date the model was announced in the [[Databricks blog post]](https://www.databricks.com/blog/2023/03/24/hello-dolly-democratizing-magic-chatgpt-open-models.html).
   url: https://www.databricks.com/blog/2023/03/24/hello-dolly-democratizing-magic-chatgpt-open-models.html
   model_card: ''
   modality: text (English)
@@ -33,35 +32,168 @@
   training_time:
     value: 30 minutes
     explanation: >
-      According to [[Model Overview]](https://github.com/databrickslabs/dolly#model-overview)
+      According to [[Model Overview]](https://huggingface.co/databricks/dolly-v1-6b#model-overview)
   training_hardware:
     value: A single NDasrA100_v4 machine with 8x A100 40GB GPUs
     explanation: >
-      According to [[Model Overview]](https://github.com/databrickslabs/dolly#model-overview)
+      According to [[Model Overview]](https://huggingface.co/databricks/dolly-v1-6b#model-overview)
   quality_control: none
   # Downstream
   access:
     value: open
     explanation: >
-      Model training code can be accessed at the official Dolly repository.
-      Trained weights can be requested at hello-dolly@databricks.com.
-      [[Dolly Repository]](https://github.com/databrickslabs/dolly).
+      Model weights can be downloaded from the [[Hugging Face]](https://huggingface.co/databricks/dolly-v1-6b)
+      hub.
   license: Apache License 2.0
   intended_uses: >
-    "Dolly is intended exclusively for research purposes and is not licensed for
-    commercial use."
-    [[Limitations]](https://github.com/databrickslabs/dolly#limitations).
+    "dolly-v1-6b is intended exclusively for research purposes. We do not recommend
+    using dolly-v1-6b in high-risk applications (e.g., educational or vocational
+    training, product safety components, or other uses that may impact the well-being
+    of individuals.)"
+    [[Intended Uses]](https://huggingface.co/databricks/dolly-v1-6b#intended-uses).
   prohibited_uses: >
-    Authors note the following limitations of the model: "The Dolly model family
-    is under active development,
-    and so any list of shortcomings is unlikely to be exhaustive, but we include
-    known limitations and misfires
+    Authors note the following limitations of the model: "dolly-v1-6b is not a state-of-the-art
+    generative language model and, though quantitative benchmarking is ongoing,
+    is not designed to perform competitively with more modern model architectures
+    or models subject to larger pretraining corpuses. It is designed for academic
+    or research purposes, and to encourage model and engineering experimentation.
+    The Dolly model family is under active development, and so any list of shortcomings
+    is unlikely to be exhaustive, but we include known limitations and misfires
     here as a means to document and share our preliminary findings with the community.
-    In particular, dolly-6b
-    struggles with syntactically complex prompts, mathematical operations, factual
-    errors, dates and times,
-    open-ended question answering, hallucination, enumerating lists of specific
-    length, and stylistic mimicry."
-    [[Limitations]](https://github.com/databrickslabs/dolly#limitations).
+    In particular, dolly-v1-6b struggles with: syntactically complex prompts, programming
+    problems, mathematical operations, factual errors, dates and times, open-ended
+    question answering, hallucination, enumerating lists of specific length, stylistic
+    mimicry, having a sense of humor, etc."
+    [[Known Limitations]](https://huggingface.co/databricks/dolly-v1-6b#known-limitations).
   monitoring: none
+  feedback: https://github.com/databrickslabs/dolly/issues
+
+- type: dataset
+  name: databricks-dolly-15k
+  # General
+  organization: Databricks
+  description: >
+    databricks-dolly-15k dataset contains 15,000 high-quality human-generated prompt
+    / response pairs specifically designed for instruction tuning large language
+    models. Under the licensing terms for databricks-dolly-15k (CC BY-SA 3.0 license),
+    anyone can use, modify, or extend this dataset for any purpose, including commercial
+    applications.
+  created_date:
+    value: 2023-04-12
+    explanation: >
+      The date the dataset was announced in the [[Databricks blog post]](https://www.databricks.com/blog/2023/04/12/dolly-first-open-commercially-viable-instruction-tuned-llm).
+  url: https://github.com/databrickslabs/dolly/tree/master/data
+  datasheet: ''
+  modality: text (English)
+  size:
+    value: 15,000 prompt-response pairs
+    explanation: ''
+  sample: []
+  analysis: ''
+  # Construction
+  dependencies: []
+  license:
+    value: CC BY-SA 3.0 license
+    explanation: See [[License/Attribution]](https://github.com/databrickslabs/dolly/tree/master/data#licenseattribution)
+  included:
+    value: |
+      **Human-generated data**: Databricks employees were invited to create prompt / response pairs in each of eight different instruction categories, including the seven outlined in the InstructGPT paper (brainstorming, classification, closed QA, generation, information extraction, open QA, and summarization), as well as an open-ended free-form category.
+
+      **Wikipedia**: For instruction categories that require an annotator to consult a reference text (information extraction, closed QA, summarization) contributors selected passages from Wikipedia for particular subsets of instruction categories. No guidance was given to annotators as to how to select the target passages.
+    explanation: See [[Sources]](https://github.com/databrickslabs/dolly/tree/master/data#sources)
+  excluded: ''
+  quality_control:
+    value: |
+      The contributors were instructed to avoid using information from any source on the web with the exception of Wikipedia (for particular subsets of instruction categories), and explicitly instructed to avoid using generative AI in formulating instructions or responses. Examples of each behavior were provided to motivate the types of questions and instructions appropriate to each category.
+
+      Halfway through the data generation process, contributors were given the option of answering questions posed by other contributors. They were asked to rephrase the original question and only select questions they could be reasonably expected to answer correctly.
+
+      To create a record, employees were given a brief description of the annotation task as well as examples of the types of prompts typical of each annotation task. Guidelines were succinct by design so as to encourage a high task completion rate, possibly at the cost of rigorous compliance to an annotation rubric that concretely and reliably operationalizes the specific task.
+
+      This dataset contains public information (e.g., some information from Wikipedia). To our knowledge, there are no private person’s personal identifiers or sensitive information.
+    explanation: >
+      See [[Dataset Overview]](https://github.com/databrickslabs/dolly/tree/master/data#dataset-overview),
+      [[Annotator Guidelines]](https://github.com/databrickslabs/dolly/tree/master/data#annotator-guidelines),
+      [[Personal or Sensitive Data]](https://github.com/databrickslabs/dolly/tree/master/data#personal-or-sensitive-data)
+  # Downstream
+  access:
+    value: open
+    explanation: The dataset can be downloaded from their [[Hugging Face page]](https://huggingface.co/datasets/databricks/databricks-dolly-15k).
+  intended_uses:
+    value: |
+      This dataset can be used for any purpose, whether **academic** or **commercial**, under the terms of the CC BY-SA 3.0 license.
+
+      While immediately valuable for instruction fine-tuning large language models, as a corpus of human-generated instruction prompts, this dataset also presents a valuable opportunity for synthetic data generation in the methods outlined in the Self-Instruct paper. For example, contributor--generated prompts could be submitted as few-shot examples to a large open language model to generate a corpus of millions of examples of instructions in each of the respective InstructGPT categories.
+
+      Likewise, both the instructions and responses present fertile ground for data augmentation. A paraphrasing model might be used to restate each prompt or short responses, with the resulting text associated to the respective ground-truth sample. Such an approach might provide a form of regularization on the dataset that could allow for more robust instruction-following behavior in models derived from these synthetic datasets.
+    explanation: See [[Intended Uses]](https://github.com/databrickslabs/dolly/tree/master/data#intended-uses)
+  prohibited_uses:
+    value: |
+      Authors note the following limitations:
+        - Wikipedia is a crowdsourced corpus and the contents of this dataset may reflect the bias, factual errors and topical focus found in Wikipedia
+        - Some annotators may not be native English speakers
+        - Annotator demographics and subject matter may reflect the makeup of Databricks employees
+    explanation: See [[Known Limitations]](https://github.com/databrickslabs/dolly/tree/master/data#known-limitations)
+  monitoring: ''
+  feedback: Feedback can be provided at [Hugging Face Discussions](https://huggingface.co/datasets/databricks/databricks-dolly-15k/discussions)
+    or [GitHub Issues](https://github.com/databrickslabs/dolly/issues).
+
+- type: model
+  name: Dolly 2.0
+  # General
+  organization: Databricks
+  description: >
+    Dolly 2.0 is the first open source, instruction-following LLM, fine-tuned on
+    a human-generated instruction dataset licensed for research and commercial use.
+    It is a 12B parameter language model based on the EleutherAI's Pythia model
+    family and fine-tuned exclusively on a new ~15k instruction/response corpus
+    (databricks-dolly-15k) crowdsourced from over 5k Databricks employees. It is
+    noted that Dolly 2.0 is not a state-of-the-art model, but does exhibit surprisingly
+    high quality instruction following behavior not characteristic of the foundation
+    model on which it is based.
+  created_date:
+    value: 2023-04-12
+    explanation: >
+      The date the model was announced in the [[Databricks blog post]](https://www.databricks.com/blog/2023/04/12/dolly-first-open-commercially-viable-instruction-tuned-llm).
+  url: https://www.databricks.com/blog/2023/04/12/dolly-first-open-commercially-viable-instruction-tuned-llm
+  model_card: ''
+  modality: text (English)
+  size:
+    value: 12B parameters (dense model)
+    explanation: Dolly 2.0 is also available in smaller model sizes including 7B
+      and 3B parameter models.
+  analysis:
+    value: >
+      Dolly models are evaluated on the EleutherAI LLM Evaluation Harness. The results
+      demonstrate that dolly-v2-12b is not state of the art, and in fact underperforms
+      dolly-v1-6b in some evaluation benchmarks. We believe this owes to the composition
+      and size of the underlying fine tuning datasets, but a robust statement as
+      to the sources of these variations requires further study.
+    explanation: See [[Benchmark Metrics]](https://huggingface.co/databricks/dolly-v2-12b#benchmark-metrics)
+      for full results.
+  # Construction
+  dependencies: [Pythia, databricks-dolly-15k]
+  training_emissions: unknown
+  training_time: unknown
+  training_hardware: unknown
+  quality_control: ''
+  # Downstream
+  access:
+    value: open
+    explanation: >
+      Model weights are available on the [[Dolly Hugging Face page]](https://huggingface.co/databricks/dolly-v2-12b).
+      Training code can be found on the [[Dolly GitHub page]](https://github.com/databrickslabs/dolly).
+      Dataset can be downloaded from [[Hugging Face]](https://huggingface.co/datasets/databricks/databricks-dolly-15k).
+  license: ''
+  intended_uses:
+    value: Dolly 2.0 is intended to be used for research and commercial purposes.
+    explanation: See [[blog post]](https://www.databricks.com/blog/2023/04/12/dolly-first-open-commercially-viable-instruction-tuned-llm)
+  prohibited_uses:
+    value: |
+      Authors note the following limitations of the model:
+        - dolly-v2-12b is not a state-of-the-art generative language model and, though quantitative benchmarking is ongoing, is not designed to perform competitively with more modern model architectures or models subject to larger pretraining corpuses.
+        - In particular, dolly-v2-12b struggles with: syntactically complex prompts, programming problems, mathematical operations, factual errors, dates and times, open-ended question answering, hallucination, enumerating lists of specific length, stylistic mimicry, having a sense of humor, etc. Moreover, we find that dolly-v2-12b does not have some capabilities, such as well-formatted letter writing, present in the original model.
+        - Like all language models, dolly-v2-12b also reflects the content and limitations of its training corpuses: Th Pile and databricks-dolly-15k.
+    explanation: See [[Known Limitations]](https://github.com/databrickslabs/dolly)
+  monitoring: ''
   feedback: https://github.com/databrickslabs/dolly/issues
