@@ -625,6 +625,7 @@ function loadAssetsAndRenderPageContent() {
     'assets/ai21.yaml',
     'assets/aleph_alpha.yaml',
     'assets/alibaba.yaml',
+    'assets/amazon.yaml',
     'assets/anthropic.yaml',
     'assets/argonne.yaml',
     'assets/assembly.yaml',

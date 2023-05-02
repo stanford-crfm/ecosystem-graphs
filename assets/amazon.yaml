@@ -1,0 +1,95 @@
+---
+
+- type: model
+  name: Amazon Titan
+  # General
+  organization: Amazon
+  description: >
+    Amazon Titan FMs are a family of powerful, general-purpose models pretrained
+    on large datasets. They initially offer two Titan models - Titan Text and Titan
+    Embeddings. Titan Text is a generative LLM for tasks such as summarization,
+    text generation, classification, open-ended Q&A, and information extraction.
+    Titan Embeddings is an embeddings LLM that translates text inputs (words, phrases
+    or possibly large units of text) into numerical representations (known as embeddings)
+    that contain the semantic meaning of the text.
+  created_date:
+    value: 2023-04-13
+    explanation: >
+      The date the [[Amazon blog post]](https://aws.amazon.com/blogs/machine-learning/announcing-new-tools-for-building-with-generative-ai-on-aws/)
+      was released.
+  url: https://aws.amazon.com/bedrock/titan/
+  model_card: none
+  modality: text
+  size: unknown
+  analysis: unknown
+  # Construction
+  dependencies: []
+  training_emissions: unknown
+  training_time: unknown
+  training_hardware: unknown
+  quality_control:
+    value: >
+      "Titan FMs are built to detect and remove harmful content in the data, reject
+      inappropriate content in the user input, and filter model outputs that contain
+      inappropriate content (such as hate speech, profanity, and violence)."
+    explanation: >
+      According to the model's [[website]](https://aws.amazon.com/bedrock/titan/).
+  # Downstream
+  access:
+    value: limited
+    explanation: >
+      The models are accessible via Amazon Bedrock's API.
+  license: unknown
+  intended_uses: >
+    The models can be used as is or privately customized with the customer's own
+    data for a particular task. They are intended for natural language tasks such
+    as summarization, text generation, classification, open-ended Q&A, and information
+    extraction, and also to enhance search accuracy and improve personalized recommendations
+    using word embeddings.
+  prohibited_uses: unknown
+  monitoring: ''
+  feedback: ''
+
+- type: application
+  name: Amazon Bedrock
+  # General
+  organization: Amazon
+  description: >
+    Amazon Bedrock is a new service that makes Foundation Models from leading AI
+    startups (AI21 Labs, Anthropic, Stability AI), and Amazon accessible via an
+    API.
+  created_date:
+    value: 2023-04-13
+    explanation: >
+      The date the [[Amazon blog post]](https://aws.amazon.com/blogs/machine-learning/announcing-new-tools-for-building-with-generative-ai-on-aws/)
+      was released.
+  url: https://aws.amazon.com/bedrock/
+  # Construction
+  dependencies: [Jurassic-2, Claude, Stable Diffusion, Amazon Titan]
+  adaptation: ''
+  output_space: >
+    Generative AI applications
+  quality_control:
+    value: >
+      "None of the customer’s data is used to train the original base models, and
+      since all data is encrypted and does not leave a customer’s Virtual Private
+      Cloud (VPC), customers can trust that their data will remain private and confidential."
+    explanation: See [[blog post]](https://aws.amazon.com/blogs/machine-learning/announcing-new-tools-for-building-with-generative-ai-on-aws/)
+  # Downstream
+  access:
+    value: limited
+    explanation: Bedrock is now in limited preview and will be available more broadly
+      in the coming months.
+  terms_of_service: unknown
+  license: unknown
+  intended_uses: >
+    "Bedrock makes the power of FMs accessible to companies of all sizes so that
+    they can accelerate the use of ML across their organizations and build their
+    own generative AI applications because it will be easy for all developers."
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+  # Deployment
+  monthly_active_users: unknown
+  user_distribution: unknown
+  failures: unknown
