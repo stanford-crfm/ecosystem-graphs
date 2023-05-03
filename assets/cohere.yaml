@@ -92,7 +92,8 @@
   analysis: The model's performance was analyzed on Hellaswag and COPA, as well
     as several safety benchmarks [[Model Card]](https://docs.cohere.ai/generation-card).
   # Construction
-  dependencies: [coheretext]
+  
+  : [coheretext]
   training_emissions:
     value: unknown
     explanation: The emissions of the models are unknown.
@@ -150,14 +151,12 @@
   organization: Cohere
   description: >
     This model is a generative model optimized to follow commands in the prompt.
-  dependencies: [Cohere Base, coheretext]
+  dependencies: [Cohere Base]
   created_date:
-    value: 2021-11-15
+    value: 2023-01-01
     explanation: >
-      The date the Cohere API was announced on the news
-      [[News Article]]
-      (https://venturebeat.com/2021/11/15/openai-rival-cohere-launches-language-model-api/).
-  url: none
+      Cohere Command was in beta before this date
+  url: https://docs.cohere.com/docs/command-beta
   model_card: https://docs.cohere.ai/generation-card
   modality: text (English)
   size:
@@ -171,10 +170,10 @@
   # Construction
   training_emissions:
     value: unknown
-    explanation: The emissions of the models are unknown.
+    explanation: unknown
   training_time:
     value: unknown
-    explanation: The training time for the models are unknown.
+    explanation: unknown
   training_hardware:
     value: unknown
     explanation: unknown
@@ -215,7 +214,7 @@
 
   
 - type: model
-  name: Embedding (English)
+  name: Cohere Embed (English)
   # General
   organization: Cohere
   description: >
@@ -240,7 +239,7 @@
     The model's performance was analyzed on several safety benchmarks
     [[Model Card]](https://docs.cohere.ai/representation-card).
   # Construction
-  dependencies: [coheretext]
+  dependencies: []
   training_emissions:
     value: unknown
     explanation: The emissions of the models are unknown.
@@ -292,7 +291,7 @@
       support at cohere.ai.
 
 - type: model
-  name: Embedding (Multilingual)
+  name: Cohere Embed (Multilingual)
   # General
   organization: Cohere
   description: >
@@ -312,7 +311,7 @@
     The model's performance was analyzed on several safety benchmarks
     [[Model Card]](https://docs.cohere.ai/representation-card).
   # Construction
-  dependencies: [coheretext]
+  dependencies: []
   training_emissions:
     value: unknown
     explanation: The emissions of the models are unknown.
@@ -362,6 +361,8 @@
       There are no specific feedback mechanisms for the Generation model,
       but a generic contact email is provided on Cohere website, which is
       support at cohere.ai.
+
+
 
 - type: application
   name: Cohere API
@@ -478,7 +479,7 @@
     the most important information.
   url: https://docs.cohere.ai/reference/summarize
   # Construction
-  dependencies: unknown
+  dependencies: []
   adaptation: unknown
   output_space: generation
   # Downstream
