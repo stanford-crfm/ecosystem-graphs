@@ -92,8 +92,7 @@
   analysis: The model's performance was analyzed on Hellaswag and COPA, as well
     as several safety benchmarks [[Model Card]](https://docs.cohere.ai/generation-card).
   # Construction
-  
-  : [coheretext]
+  dependencies: [coheretext]
   training_emissions:
     value: unknown
     explanation: The emissions of the models are unknown.
