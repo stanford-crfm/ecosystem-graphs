@@ -302,7 +302,7 @@
     explanation: Training time for the Pythia-12B model. See [[Table 6 - Training
       Hardware and GPU Hours]](https://arxiv.org/pdf/2304.01373.pdf#page=20).
   training_hardware:
-    value: 256 A100 GPUs
+    value: 256 40GB A100 GPUs
     explanation: No. of GPUs used to train the Pythia-12B model. See [[Table 6 -
       Training Hardware and GPU Hours]](https://arxiv.org/pdf/2304.01373.pdf#page=20).
   quality_control: ''
@@ -318,12 +318,12 @@
     explanation: See License section of the [[Pythia GitHub page]](https://github.com/EleutherAI/pythia#license).
   intended_uses:
     value: |
-      - The primary intended use of Pythia is research on the behavior, functionality, and limitations of large language models. This suite is intended to provide a controlled setting for performing scientific experiments. We also provide 154 checkpoints per model: initial step0, 10 log-spaced checkpoints step{1,2,4...512}, and 143 evenly-spaced checkpoints from step1000 to step143000. These checkpoints are hosted on Hugging Face as branches. Note that branch 143000 corresponds exactly to the model checkpoint on the main branch of each model.
+      - The primary intended use of Pythia is **research** on the behavior, functionality, and limitations of large language models. This suite is intended to provide a controlled setting for performing scientific experiments. We also provide 154 checkpoints per model: initial step0, 10 log-spaced checkpoints step{1,2,4...512}, and 143 evenly-spaced checkpoints from step1000 to step143000. These checkpoints are hosted on Hugging Face as branches. Note that branch 143000 corresponds exactly to the model checkpoint on the main branch of each model.
       - You may also further fine-tune and adapt Pythia-12B for deployment, as long as your use is in accordance with the Apache 2.0 license. Pythia models work with the Hugging Face Transformers Library. If you decide to use pre-trained Pythia-12B as a basis for your fine-tuned model, please conduct your own risk and bias assessment.
     explanation: See [[Uses and Limitations]](https://huggingface.co/EleutherAI/pythia-12b#uses-and-limitations)
   prohibited_uses:
     value: |
-      Out-of-scope use:
+      Out-of-scope uses:
         - The Pythia Suite is not intended for deployment. It is not a in itself a product and cannot be used for human-facing interactions. For example, the model may generate harmful or offensive text. Please evaluate the risks associated with your particular use case.
         - Pythia models are English-language only, and are not suitable for translation or generating text in other languages.
         - Pythia-12B has not been fine-tuned for downstream contexts in which language models are commonly deployed, such as writing genre prose, or commercial chatbots. This means Pythia-12B will not respond to a given prompt the way a product like ChatGPT does. This is because, unlike this model, ChatGPT was fine-tuned using methods such as Reinforcement Learning from Human Feedback (RLHF) to better “follow” human instructions.

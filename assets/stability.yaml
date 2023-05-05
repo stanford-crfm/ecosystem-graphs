@@ -26,3 +26,116 @@
   prohibited_uses: ''
   monitoring: ''
   feedback: ''
+
+- type: model
+  name: StableLM-Base-Alpha
+  # General
+  organization: Stability AI
+  description: >
+    A suite of open-source large language models which can be freely used for commercial
+    and research purposes. The Alpha version of the model is available in 3B
+    and 7B parameters, with 15B to 65B parameter models to follow.
+  created_date:
+    value: 2023-04-19
+    explanation: >
+      The date the [[blog post]](https://stability.ai/blog/stability-ai-launches-the-first-of-its-stablelm-suite-of-language-models)
+      was released.
+  url: https://stability.ai/blog/stability-ai-launches-the-first-of-its-stablelm-suite-of-language-models
+  model_card: https://huggingface.co/stabilityai/stablelm-base-alpha-7b
+  modality: text (English)
+  size:
+    value: 7B parameters (dense model)
+    explanation: Currently available in 3B and 7B sizes, with 15B, 30B and 65B size models to follow. A 175B model is also planned in the future. See the [[GitHub repository]](https://github.com/stability-AI/stableLM/#stablelm-alpha).
+  analysis: ''
+  # Construction
+  dependencies: [StableLM dataset]
+  training_emissions: unknown
+  training_time: unknown
+  training_hardware: unknown
+  quality_control: ''
+  # Downstream
+  access:
+    value: open
+    explanation: Model weights available on [[Hugging Face]](https://huggingface.co/stabilityai/stablelm-base-alpha-7b)
+  license:
+    value: CC BY-SA-4.0 (base model checkpoints) and Apache License 2.0 (code)
+    explanation: See [[Licenses]](https://github.com/stability-AI/stableLM/#licenses)
+  intended_uses: Intended to be used for research and commercial purposes, subject to the terms of the CC BY-SA-4.0 license.
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+
+- type: model
+  name: StableLM-Tuned-Alpha
+  # General
+  organization: Stability AI
+  description: >
+    StableLM-Tuned-Alpha is a suite of decoder-only language models built on top of the StableLM-Base-Alpha models and further fine-tuned with Stanford Alpaca's procedure on a combination of five chat and instruction-following datasets: Stanford's Alpaca, Nomic-AI's gpt4all, RyokoAI's ShareGPT52K datasets, Databricks labs' Dolly, and Anthropic's HH.
+  created_date:
+    value: 2023-04-19
+    explanation: >
+      The date the [[blog post]](https://stability.ai/blog/stability-ai-launches-the-first-of-its-stablelm-suite-of-language-models)
+      was released.
+  url: https://stability.ai/blog/stability-ai-launches-the-first-of-its-stablelm-suite-of-language-models
+  model_card: https://huggingface.co/stabilityai/stablelm-tuned-alpha-7b
+  modality: text (English)
+  size:
+    value: 7B parameters (dense model)
+    explanation: Currently available in 3B and 7B sizes, with 15B, 30B and 65B size models to follow. A 175B model is also planned in the future. See the [[GitHub repository]](https://github.com/stability-AI/stableLM/#stablelm-alpha).
+  analysis: ''
+  # Construction
+  dependencies: [StableLM-Base-Alpha, Alpaca dataset, GPT4All Prompt Generations, ShareGPT52K, databricks-dolly-15k, Anthropic HH-RLHF]
+  training_emissions: unknown
+  training_time: unknown
+  training_hardware: unknown
+  quality_control: ''
+  # Downstream
+  access:
+    value: open
+    explanation: Model weights available on [[Hugging Face]](https://huggingface.co/stabilityai/stablelm-tuned-alpha-7b)
+  license:
+    value: CC BY-NC-SA-4.0 (fine-tuned checkpoints) and Apache License 2.0 (code)
+    explanation: See [[Licenses]](https://github.com/stability-AI/stableLM/#licenses)
+  intended_uses: Intended to be used for non-commercial purposes (in-line with the original non-commercial license specified by Stanford Alpaca).
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+  
+- type: model
+  name: StableVicuna
+  # General
+  organization: Stability AI
+  description: >
+    StableVicuna is the first large-scale open source RLHF LLM chatbot. It is an RLHF fine-tune of Vicuna-13B v0, which itself is a fine-tune of LLaMA-13B.
+  created_date:
+    value: 2023-04-28
+    explanation: >
+      The date the model was announced in the [[Stability AI blog post]](https://stability.ai/blog/stablevicuna-open-source-rlhf-chatbot).
+  url: https://stability.ai/blog/stablevicuna-open-source-rlhf-chatbot
+  model_card: https://huggingface.co/CarperAI/stable-vicuna-13b-delta
+  modality: text (English)
+  size: 13B parameters (dense model)
+  analysis: ''
+  # Construction
+  dependencies: [Vicuna, OASST1, GPT4All Prompt Generations, Alpaca dataset, Anthropic HH-RLHF, Stanford Human Preferences Dataset]
+  training_emissions: unknown
+  training_time: unknown
+  training_hardware: unknown
+  quality_control: ''
+  # Downstream
+  access:
+    value: open
+    explanation: StableVicuna's delta weights are available on [[Hugging Face]](https://huggingface.co/CarperAI/stable-vicuna-13b-delta). To obtain the correct model, one must add back the difference between LLaMA 13B and the delta weights.
+  license:
+    value: CC BY-NC-SA-4.0
+    explanation: >
+      "Due to the original non-commercial license of LLaMA, we can only release the weights of our model as deltas over the original model's weights. StableVicuna's delta weights are released under (CC BY-NC-SA-4.0)." See the [[Github repository]](https://github.com/stability-AI/stableLM#stablevicuna).
+  intended_uses:
+    value: This model is intended to be used for text generation with a focus on conversational tasks. Users may further fine-tune the model on their own data to improve the model's performance on their specific tasks in accordance with the non-commercial license.
+    explanation: See [[Use and Limitations]](https://huggingface.co/CarperAI/stable-vicuna-13b-delta#use-and-limitations)
+  prohibited_uses:
+    value: >
+      Authors note the following limitations and biases: The base LLaMA model is trained on various data, some of which may contain offensive, harmful, and biased content that can lead to toxic behavior. See Section 5.1 of the LLaMA paper. We have not performed any studies to determine how fine-tuning on the aforementioned datasets affect the model's behavior and toxicity. Do not treat chat responses from this model as a substitute for human judgment or as a source of truth. Please use responsibly.
+    explanation: See [[Use and Limitations]](https://huggingface.co/CarperAI/stable-vicuna-13b-delta#use-and-limitations)
+  monitoring: ''
+  feedback: ''
