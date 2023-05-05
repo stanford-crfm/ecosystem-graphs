@@ -61,7 +61,7 @@
   url: https://arxiv.org/pdf/2301.03988.pdf
   model_card: ''
   modality: code (Python, Java, JavaScript)
-  size: 1.1B parameters
+  size: 1.1B parameters (dense model)
   analysis: ''
   # Construction
   dependencies: [The Stack]
@@ -101,7 +101,7 @@
   url: ''
   model_card: ''
   modality: text (English), code (80+ programming languages)
-  size: 15.5B parameters
+  size: 15.5B parameters (dense model)
   analysis: ''
   # Construction
   dependencies: [The Stack]
