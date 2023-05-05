@@ -1,0 +1,43 @@
+---
+
+- type: model
+  name: replit-code-v1-3b
+  # General
+  organization: Replit
+  description: >
+    replit-code-v1-3b is a 2.7B Causal Language Model focused on Code Completion. The model has been trained on a subset of The Stack Dedup v1.2 dataset. The model supports 20 different programming languages.
+  created_date:
+    value: 2023-05-02
+    explanation: >
+      The date the model was released as mentioned in [[Releases]](https://github.com/replit/ReplitLM#releases).
+  url: https://github.com/replit/ReplitLM/tree/main/replit-code-v1-3b
+  model_card: ''
+  modality: code
+  size: 2.7B parameters
+  analysis: ''
+  # Construction
+  dependencies: [The Stack]
+  training_emissions: unknown
+  training_time:
+    value: 10 days
+    explanation: According to the [[announcement tweet]](https://twitter.com/Replit/status/1651344191660888066)
+  training_hardware:
+    value: 256 x A100-40GB GPUs
+    explanation: See [[Model Description]](https://github.com/replit/ReplitLM/tree/main/replit-code-v1-3b#model-description)
+  quality_control: ''
+  # Downstream
+  access:
+    value: open
+    explanation: The model weights can be downloaded from [[Hugging Face]](https://huggingface.co/replit/replit-code-v1-3b). See [[GitHub repository]](https://github.com/bigcode-project/starcoder) for code.
+  license: 
+    value: CC BY-SA-4.0 (model weights and vocabulary file) and Apache 2.0 (code)
+    explanation: See [[License]](https://github.com/replit/ReplitLM/tree/main/replit-code-v1-3b#license)
+  intended_uses:
+    value: Replit intends this model be used by anyone as a foundational model for application-specific fine-tuning without strict limitations on commercial use.
+    explanation: See [[Intended Use]](https://github.com/replit/ReplitLM/tree/main/replit-code-v1-3b#intended-use)
+  prohibited_uses:
+    value: >
+      Authors note the following limitations: The pre-training dataset may have contained offensive or inappropriate content even after applying data cleansing filters, and such content may be reflected in model generated text. We recommend that users exercise reasonable caution when using in production systems. Do not use for any applications that may cause harm or distress to individuals or groups.
+    explanation: See [[Limitations]](https://github.com/replit/ReplitLM/tree/main/replit-code-v1-3b#limitations)
+  monitoring: ''
+  feedback: https://huggingface.co/replit/replit-code-v1-3b/discussions
