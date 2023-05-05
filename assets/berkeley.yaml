@@ -1,0 +1,58 @@
+---
+
+- type: model
+  name: Koala
+  # General
+  organization: UC Berkeley
+  description: Koala is an open-source chat model trained by fine-tuning Meta’s
+    LLaMA model on dialogue data gathered from the web.
+  created_date:
+    value: 2023-04-03
+    explanation: >
+      The date the [[blog post]](https://bair.berkeley.edu/blog/2023/04/03/koala/)
+      was released.
+  url: https://bair.berkeley.edu/blog/2023/04/03/koala/
+  model_card: ''
+  modality: text (English)
+  size:
+    value: 13B parameters (dense model)
+    explanation: Available in 7B and 13B sizes.
+  analysis: ''
+  # Construction
+  dependencies:
+    - LLaMa
+    - ShareGPT
+    - Human ChatGPT Comparison Corpus
+    - OIG-43M
+    - Alpaca dataset
+    - Anthropic HH-RLHF
+    - OpenAI WebGPT dataset
+    - OpenAI summarization dataset
+  training_emissions: unknown
+  training_time:
+    value: 6 hours
+    explanation: It takes 6 hours to complete the training for 2 epochs. See [[blog
+      post]](https://bair.berkeley.edu/blog/2023/04/03/koala/).
+  training_hardware:
+    value: 8 A100 GPUs
+    explanation: We train our Koala model on a single Nvidia DGX server with 8 A100
+      GPUs. See [[blog post]](https://bair.berkeley.edu/blog/2023/04/03/koala/).
+  quality_control: ''
+  # Downstream
+  access:
+    value: open
+    explanation: Koala model weights diff against the base LLaMA model can be downloaded
+      from [[Hugging Face]](https://huggingface.co/young-geng/koala/tree/main).
+      To recover the original Alpaca-7B weights, follow the steps given [[here]](https://github.com/young-geng/EasyLM/blob/main/docs/koala.md#recovering-the-koala-model-weights).
+      Data processing code for Koala can be found in this [[GitHub repository]](https://github.com/young-geng/koala_data_pipeline).
+      An [[online demo]](https://chat.lmsys.org/?model=koala-13b) is also available.
+  license:
+    value: Apache License 2.0 (code)
+    explanation: See [[License]](https://huggingface.co/young-geng/koala#license)
+  intended_uses: We emphasize that Koala is a **research** prototype, and while
+    we hope that its release will provide a valuable community resource, it still
+    has major shortcomings in terms of content, safety, and reliability, and should
+    not be used outside of research.
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''

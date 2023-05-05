@@ -1,0 +1,64 @@
+---
+
+- type: model
+  name: Vicuna
+  # General
+  organization: LMSYS Org
+  description: >
+    Vicuna is an open-source chat model trained by fine-tuning LLaMA on 70k user-shared
+    conversations collected from ShareGPT.
+  created_date:
+    value: 2023-03-30
+    explanation: >
+      The date the [[blog post]](https://lmsys.org/blog/2023-03-30-vicuna/) was
+      released.
+  url: https://lmsys.org/blog/2023-03-30-vicuna/
+  model_card: ''
+  modality: text
+  size:
+    value: 13B parameters (dense model)
+    explanation: Available in 7B and 13B sizes.
+  analysis:
+    value: A preliminary evaluation of the model quality is conducted by creating
+      a set of 80 diverse questions and utilizing GPT-4 to judge the model outputs.
+    explanation: See [[blog post]](https://lmsys.org/blog/2023-03-30-vicuna/) for
+      more details.
+  # Construction
+  dependencies: [LLaMa, ShareGPT]
+  training_emissions: unknown
+  training_time:
+    value: 1 day
+    explanation: See [[Overview]](https://lmsys.org/blog/2023-03-30-vicuna/#overview)
+  training_hardware:
+    value: 8 A100 GPUs
+    explanation: See [[Overview]](https://lmsys.org/blog/2023-03-30-vicuna/#overview)
+  quality_control: ''
+  # Downstream
+  access:
+    value: open
+    explanation: Vicuna's delta model weights are available on [[Hugging Face]](https://huggingface.co/lmsys/vicuna-13b-delta-v1.1).
+      To obtain the actual Vicuna model, one must apply it on top of the original
+      LLaMA weights (see [instructions](https://github.com/lm-sys/FastChat#vicuna-weights)).
+      The training code is available on the [[GitHub repository]](https://github.com/lm-sys/FastChat).
+      An [[online demo]](https://chat.lmsys.org/) has also been made available.
+      There is no plan to release the dataset.
+  license:
+    value: Apache License 2.0
+    explanation: See [[License]](https://lmsys.org/blog/2023-03-30-vicuna/#license)
+  intended_uses:
+    value: |
+      **Primary intended uses:** The primary use of Vicuna is research on large language models and chatbots.
+
+      **Primary intended users:** The primary intended users of the model are researchers and hobbyists in natural language processing, machine learning, and artificial intelligence.
+    explanation: See [[Intended Use]](https://huggingface.co/lmsys/vicuna-13b-delta-v1.1#intended-use)
+  prohibited_uses:
+    value: >
+      Authors note the following limitations: "We have noticed that, similar to
+      other large language models, Vicuna has certain limitations. For instance,
+      it is not good at tasks involving reasoning or mathematics, and it may have
+      limitations in accurately identifying itself or ensuring the factual accuracy
+      of its outputs. Additionally, it has not been sufficiently optimized to guarantee
+      safety or mitigate potential toxicity or bias."
+    explanation: See [[Limitations]](https://lmsys.org/blog/2023-03-30-vicuna/#limitations)
+  monitoring: ''
+  feedback: Feedback can be provided on [[GitHub Issues]](https://github.com/lm-sys/FastChat/issues).

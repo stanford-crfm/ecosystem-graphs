@@ -5,7 +5,10 @@
   # General
   organization: Amazon
   description: >
-    AlexaTM 20B (Alexa Teacher Model) is a multilingual 20 billion parameter seq2seq model pre-trained for roughly 1 trillion tokens on a mix of denoising and Causal Language Modeling (CLM) tasks across 12 languages, using the Wikipedia and mC4 datasets.
+    AlexaTM 20B (Alexa Teacher Model) is a multilingual 20 billion parameter seq2seq
+    model pre-trained for roughly 1 trillion tokens on a mix of denoising and Causal
+    Language Modeling (CLM) tasks across 12 languages, using the Wikipedia and mC4
+    datasets.
   created_date:
     value: 2022-08-02
     explanation: >
@@ -13,7 +16,8 @@
       was released.
   url: https://arxiv.org/pdf/2208.01448.pdf
   model_card: none
-  modality: text (Arabic, English, French, German, Hindi, Italian, Japanese, Marathi, Portuguese, Spanish, Tamil, and Telugu)
+  modality: text (Arabic, English, French, German, Hindi, Italian, Japanese, Marathi,
+    Portuguese, Spanish, Tamil, and Telugu)
   size: 20B parameters (dense model)
   analysis: ''
   # Construction
@@ -31,7 +35,9 @@
   # Downstream
   access:
     value: limited
-    explanation: The model is currently available for non-commercial use via SageMaker JumpStart. Customers can access the AlexaTM 20B model programmatically to run inference using APIs available in SageMaker Python SDK. See [[article]](https://aws.amazon.com/about-aws/whats-new/2022/11/alexatm-20b-model-available-sagemaker-jumpstart/).
+    explanation: The model is currently available for non-commercial use via SageMaker
+      JumpStart. Customers can access the AlexaTM 20B model programmatically to
+      run inference using APIs available in SageMaker Python SDK. See [[article]](https://aws.amazon.com/about-aws/whats-new/2022/11/alexatm-20b-model-available-sagemaker-jumpstart/).
   license: See [[Alexa Teacher Model License Agreement]](https://github.com/amazon-science/alexa-teacher-models/blob/main/MODEL_LICENSE.md)
   intended_uses: ''
   prohibited_uses: ''
