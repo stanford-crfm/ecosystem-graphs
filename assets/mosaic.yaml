@@ -1,0 +1,217 @@
+---
+
+- type: dataset
+  name: dolly_hhrlhf
+  # General
+  organization: MosaicML
+  description: >
+    This dataset is a combination of Databrick's dolly-15k dataset and a filtered subset of Anthropic's HH-RLHF. It is used to finetune MPT-7B, resulting in the MPT-7B-Instruct model. The train set contains 59,310 samples: 15,014 - 200 = 14,814 from Dolly, and the remaining 44,496 from HH-RLHF. It is slightly larger and higher quality than the Alpaca dataset but is usable for commercial purposes, subject to the CC BY-SA 3.0 license.
+  created_date:
+    value: 2023-05-05
+    explanation: >
+      The date the [[blog post]](https://www.mosaicml.com/blog/mpt-7b)
+      was released.
+  url: https://huggingface.co/datasets/mosaicml/dolly_hhrlhf
+  datasheet: ''
+  modality: text (English)
+  size: 60k prompt-response pairs
+  sample: []
+  analysis: ''
+  # Construction
+  dependencies: [databricks-dolly-15k, Anthropic HH-RLHF]
+  license: CC BY-SA 3.0 license
+  included: ''
+  excluded:
+    value: |
+      The HH-RLHF data in this dataset is filtered. Specifically, we take the first turn of the convesation, then remove any samples where the assistant:
+      - uses the word "human", "thank", or "sorry"
+      - asks a question
+      - uses a first person pronoun
+
+      This leaves samples which look like instruction-following, as opposed to conversation.
+    explanation: See [[Filtering process]](https://huggingface.co/datasets/mosaicml/dolly_hhrlhf#filtering-process)
+  quality_control: ''
+  # Downstream
+  access:
+    value: open
+    explanation: The dataset can be downloaded from [[Hugging Face]](https://huggingface.co/datasets/mosaicml/dolly_hhrlhf).
+  intended_uses: Intended for research and commercial use.
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: Feedback can be provided on [[GitHub Issues]](https://github.com/tatsu-lab/stanford_alpaca/issues).
+
+- type: model
+  name: MPT-7B
+  # General
+  organization: MosaicML
+  description: |
+    MPT-7B is a GPT-style decoder-only transformer pretrained from scratch on 1T tokens of English text and code. This base model matches, and - in many ways - surpasses, the LLaMA-7B model.
+    
+    MPT-7B is part of the family of Mosaic Pretrained Transformer (MPT) models, which are a family of **open-source commercially usable** LLMs. MPT models use a modified transformer architecture optimized for efficient training and inference (via [FlashAttention](https://arxiv.org/abs/2205.14135) and [FasterTransformer](https://github.com/NVIDIA/FasterTransformer)). This architecture also eliminates context length limits by replacing positional embeddings with [ALiBi](https://arxiv.org/abs/2108.12409).
+  created_date:
+    value: 2023-05-05
+    explanation: >
+      The date the [[blog post]](https://www.mosaicml.com/blog/mpt-7b)
+      was released.
+  url: https://www.mosaicml.com/blog/mpt-7b
+  model_card: https://huggingface.co/mosaicml/mpt-7b
+  modality: text (English), code
+  size: 6.7B parameters (dense model)
+  analysis:
+    value: MPT-7B matches the quality of LLaMA-7B and outperforms other open source 7B - 20B models on standard academic tasks. To evaluate model quality, we compiled 11 open-source benchmarks commonly used for in-context learning (ICL) and formatted and evaluated them in an industry-standard manner. We also added our own self-curated Jeopardy benchmark to evaluate the model’s ability to produce factually correct answers to challenging questions.
+    explanation: See the [[blog post]] for more details.
+  # Construction
+  dependencies: [mC4, C4, RedPajama-Data-1T, The Stack, S2ORC]
+  training_emissions: unknown
+  training_time:
+    value: 9.5 days
+    explanation: See [[Training Configuration]](https://huggingface.co/mosaicml/mpt-7b#training-configuration)
+  training_hardware:
+    value: 440 A100-40GB GPUs
+    explanation: See [[Training Configuration]](https://huggingface.co/mosaicml/mpt-7b#training-configuration)
+  quality_control: ''
+  # Downstream
+  access:
+    value: open
+    explanation: Model weights, licensed for commercial use, are available on [[Hugging Face]](https://huggingface.co/mosaicml/mpt-7b). Code for pretraining, finetuning, and evaluating MPT can be found on the [[MosaicML LLM Foundry]](https://github.com/mosaicml/llm-foundry).
+  license:
+    value: Apache-2.0
+    explanation: See [[Model License]](https://huggingface.co/mosaicml/mpt-7b#model-license)
+  intended_uses: Intended for research and commercial use.
+  prohibited_uses:
+    value: |
+      Authors note the following limitations of the base model:
+      - MPT-7B (Base) is not intended for deployment without finetuning. It should not be used for human-facing interactions without further guardrails and user consent.
+      - MPT-7B can produce factually incorrect output, and should not be relied on to produce factually accurate information. MPT-7B was trained on various public datasets. While great efforts have been taken to clean the pretraining data, it is possible that this model could generate lewd, biased or otherwise offensive outputs.
+    explanation: See [[Limitations and Biases]](https://huggingface.co/mosaicml/mpt-7b#limitations-and-biases)
+  monitoring: ''
+  feedback: Feedback can be provided on [[GitHub Issues]](https://github.com/mosaicml/llm-foundry/issues) or at the [[Hugging Face Discussions]](https://huggingface.co/mosaicml/mpt-7b/discussions)..
+
+- type: model
+  name: MPT-7B-Instruct
+  # General
+  organization: MosaicML
+  description: >
+    MPT-7B-Instruct is a model for short-form instruction following, built by finetuning MPT-7B on 9.6M tokens of a combination of Databricks' Dolly-15k and Anthropic’s Helpful and Harmless datasets. It is open-source and licensed for commercial use.
+  created_date:
+    value: 2023-05-05
+    explanation: >
+      The date the [[blog post]](https://www.mosaicml.com/blog/mpt-7b)
+      was released.
+  url: https://www.mosaicml.com/blog/mpt-7b
+  model_card: https://huggingface.co/mosaicml/mpt-7b-instruct
+  modality: text (English)
+  size: 6.7B parameters (dense model)
+  analysis: ''
+  # Construction
+  dependencies: [MPT-7B, dolly_hhrlhf]
+  training_emissions: unknown
+  training_time:
+    value: 2.3 hours
+    explanation: See Training Compute section of [[the blog]](https://www.mosaicml.com/blog/mpt-7b).
+  training_hardware:
+    value: 8 A100-40GB GPUs
+    explanation: See Training Compute section of [[the blog]](https://www.mosaicml.com/blog/mpt-7b).
+  quality_control: ''
+  # Downstream
+  access:
+    value: open
+    explanation: Model weights, licensed for commercial use, are available on [[Hugging Face]](https://huggingface.co/mosaicml/mpt-7b-instruct). Code for pretraining, finetuning, and evaluating MPT can be found on the [[MosaicML LLM Foundry]](https://github.com/mosaicml/llm-foundry). A [[demo]](https://huggingface.co/spaces/mosaicml/mpt-7b-instruct) is also available.
+  license:
+    value: CC-By-SA-3.0
+    explanation: See [[Model License]](https://huggingface.co/mosaicml/mpt-7b-instruct#model-license)
+  intended_uses: Intended for research and commercial use.
+  prohibited_uses:
+    value: >
+      Authors note the following limitations:
+      MPT-7B-Instruct can produce factually incorrect output, and should not be relied on to produce factually accurate information. MPT-7B-Instruct was trained on various public datasets. While great efforts have been taken to clean the pretraining data, it is possible that this model could generate lewd, biased or otherwise offensive outputs.
+    explanation: See [[Limitations and Biases]](https://huggingface.co/mosaicml/mpt-7b-instruct#limitations-and-biases)
+  monitoring: ''
+  feedback: Feedback can be provided on [[GitHub Issues]](https://github.com/mosaicml/llm-foundry/issues) or at the [[Hugging Face Discussions]](https://huggingface.co/mosaicml/mpt-7b-instruct/discussions).
+
+- type: model
+  name: MPT-7B-Chat
+  # General
+  organization: MosaicML
+  description: >
+    MPT-7B-Chat is a chatbot-like model for dialogue generation, built by finetuning MPT-7B on the ShareGPT-Vicuna, HC3, Alpaca, Helpful and Harmless, and Evol-Instruct datasets. This model is open-source, but licensed for non-commercial use.
+  created_date:
+    value: 2023-05-05
+    explanation: >
+      The date the [[blog post]](https://www.mosaicml.com/blog/mpt-7b)
+      was released.
+  url: https://www.mosaicml.com/blog/mpt-7b
+  model_card: https://huggingface.co/mosaicml/mpt-7b-chat
+  modality: text (English)
+  size: 6.7B parameters (dense model)
+  analysis: ''
+  # Construction
+  dependencies: [MPT-7B, ShareGPT-Vicuna, HC3, Alpaca dataset, Anthropic HH-RLHF, Evol-Instruct]
+  training_emissions: unknown
+  training_time:
+    value: 14.9 hours
+    explanation: See Training Compute section of [[the blog]](https://www.mosaicml.com/blog/mpt-7b).
+  training_hardware:
+    value: 8 A100-80GB and 32 A100-40GB GPUs
+    explanation: See Training Compute section of [[the blog]](https://www.mosaicml.com/blog/mpt-7b).
+  quality_control: ''
+  # Downstream
+  access:
+    value: open
+    explanation: Model weights, licensed for non-commercial use, are available on [[Hugging Face]](https://huggingface.co/mosaicml/mpt-7b-chat). Code for pretraining, finetuning, and evaluating MPT can be found on the [[MosaicML LLM Foundry]](https://github.com/mosaicml/llm-foundry). A [[demo]](https://huggingface.co/spaces/mosaicml/mpt-7b-chat) is also available.
+  license:
+    value: CC-By-NC-SA-4.0
+    explanation: See [[Model License]](https://huggingface.co/mosaicml/mpt-7b-chat#model-license)
+  intended_uses:
+    value: Intended for non-commercial use only.
+    explanation: >
+      "To comply with the licenses of some of the datasets we finetuned on, note that MPT-7B-Chat is not usable for commercial purposes."
+  prohibited_uses:
+    value: >
+      Authors note the following limitations:
+      MPT-7B-Chat can produce factually incorrect output, and should not be relied on to produce factually accurate information. MPT-7B-Chat was trained on various public datasets. While great efforts have been taken to clean the pretraining data, it is possible that this model could generate lewd, biased or otherwise offensive outputs.
+    explanation: See [[Limitations and Biases]](https://huggingface.co/mosaicml/mpt-7b-chat#limitations-and-biases)
+  monitoring: ''
+  feedback: Feedback can be provided on [[GitHub Issues]](https://github.com/mosaicml/llm-foundry/issues) or at the [[Hugging Face Discussions]](https://huggingface.co/mosaicml/mpt-7b-chat/discussions).
+
+- type: model
+  name: MPT-7B-StoryWriter-65k+
+  # General
+  organization: MosaicML
+  description: >
+    MPT-7B-StoryWriter-65k+ is a model designed to read and write fictional stories with super long context lengths. It was built by finetuning MPT-7B with a context length of 65k tokens on a filtered fiction subset of the books3 dataset. At inference time, thanks to ALiBi, this model can extrapolate even beyond 65k tokens (generations of as long as 84k tokens are demostrated on the [blog post](https://www.mosaicml.com/blog/mpt-7b)). This model is open-source and licensed for commercial use.
+  created_date:
+    value: 2023-05-05
+    explanation: >
+      The date the [[blog post]](https://www.mosaicml.com/blog/mpt-7b)
+      was released.
+  url: https://www.mosaicml.com/blog/mpt-7b
+  model_card: https://huggingface.co/mosaicml/mpt-7b-storywriter
+  modality: text (English)
+  size: 6.7B parameters (dense model)
+  analysis: ''
+  # Construction
+  dependencies: [MPT-7B, the_pile_books3]
+  training_emissions: unknown
+  training_time:
+    value: 2.2 days
+    explanation: See Training Compute section of [[the blog]](https://www.mosaicml.com/blog/mpt-7b).
+  training_hardware:
+    value: 32 A100-80GB GPUs
+    explanation: See Training Compute section of [[the blog]](https://www.mosaicml.com/blog/mpt-7b).
+  quality_control: ''
+  # Downstream
+  access:
+    value: open
+    explanation: Model weights, licensed for commercial use, are available on [[Hugging Face]](https://huggingface.co/mosaicml/mpt-7b-storywriter). Code for pretraining, finetuning, and evaluating MPT can be found on the [[MosaicML LLM Foundry]](https://github.com/mosaicml/llm-foundry).
+  license:
+    value: Apache-2.0
+    explanation: See [[Model License]](https://huggingface.co/mosaicml/mpt-7b-storywriter#model-license)
+  intended_uses: Intended for research and commercial use.
+  prohibited_uses:
+    value: >
+      Authors note the following limitations:
+      MPT-7B-StoryWriter can produce factually incorrect output, and should not be relied on to produce factually accurate information. MPT-7B-StoryWriter was trained on various public datasets. While great efforts have been taken to clean the pretraining data, it is possible that this model could generate lewd, biased or otherwise offensive outputs.
+    explanation: See [[Limitations and Biases]](https://huggingface.co/mosaicml/mpt-7b-storywriter#limitations-and-biases)
+  monitoring: ''
+  feedback: Feedback can be provided on [[GitHub Issues]](https://github.com/mosaicml/llm-foundry/issues) or at the [[Hugging Face Discussions]](https://huggingface.co/mosaicml/mpt-7b-storywriter#limitations-and-biases).

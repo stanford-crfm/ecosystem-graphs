@@ -292,7 +292,7 @@
   modality: text (English)
   size:
     value: 12B parameters (dense model)
-    explanation: Size of the largest model of the Pythia suite.
+    explanation: Size of the largest model in the Pythia family.
   analysis: ''
   # Construction
   dependencies: [The Pile]

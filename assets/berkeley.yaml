@@ -22,7 +22,7 @@
   dependencies:
     - LLaMa
     - ShareGPT
-    - Human ChatGPT Comparison Corpus
+    - HC3
     - OIG-43M
     - Alpaca dataset
     - Anthropic HH-RLHF

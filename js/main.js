@@ -660,6 +660,7 @@ function loadAssetsAndRenderPageContent() {
     'assets/lmsys.yaml',
     'assets/meta.yaml',
     'assets/microsoft.yaml',
+    'assets/mosaic.yaml',
     'assets/naver.yaml',
     'assets/neeva.yaml',
     'assets/notion.yaml',
