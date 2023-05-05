@@ -362,7 +362,6 @@
       support at cohere.ai.
 
 
-
 - type: application
   name: Cohere API
   # General
@@ -423,7 +422,7 @@
   # General
   organization: Cohere
   description: >
-    This endpoint generates realistic text conditioned on a given input. 
+    This endpoint generates realistic text conditioned on a given input.
   url: https://docs.cohere.ai/reference/generate
   # Construction
   dependencies: [Cohere Base Model, Cohere Command Model]
@@ -440,7 +439,7 @@
   description: >
     This endpoint returns text embeddings. An 
     embedding is a list of floating point numbers that 
-    captures semantic information about the text that it represents. 
+    captures semantic information about the text that it represents.
   url: https://docs.cohere.ai/reference/embed
   # Construction
   dependencies: [Embedding (Multilingual), Embedding (English)]
