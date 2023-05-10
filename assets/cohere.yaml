@@ -150,7 +150,6 @@
   organization: Cohere
   description: >
     This model is a generative model optimized to follow commands in the prompt.
-  dependencies: [Cohere Base]
   created_date:
     value: 2023-01-01
     explanation: >
@@ -167,6 +166,7 @@
   analysis: The model's performance was analyzed on Hellaswag and COPA, as well
     as several safety benchmarks [[Model Card]](https://docs.cohere.ai/generation-card).
   # Construction
+  dependencies: [Cohere Base]
   training_emissions:
     value: unknown
     explanation: unknown
@@ -377,7 +377,7 @@
       (https://venturebeat.com/2021/11/15/openai-rival-cohere-launches-language-model-api/).
   url: https://cohere.ai/
   # Construction
-  dependencies: [Cohere Generations model, Cohere Representation model]
+  dependencies: [Cohere Command, Cohere Base]
   adaptation: unknown
   output_space: generation and embeddings
   quality_control: >
@@ -425,12 +425,46 @@
     This endpoint generates realistic text conditioned on a given input.
   url: https://docs.cohere.ai/reference/generate
   # Construction
-  dependencies: [Cohere Base Model, Cohere Command Model]
+  dependencies: [Cohere Base, Cohere Command]
   adaptation: unknown
   output_space: generation
+  quality_control: >
+    The new users of the API get a limited access restricting the sizes of the
+    models as well as the number of tokens that can be used. Users are required
+    to go through an internal application to upgrade to full access
+    [[Limited Access]](https://docs.cohere.ai/limited-access).
   # Downstream
   access:
     value: limited
+    explanation: >
+      Users can access the Cohere API by signing up on the Cohere website
+      [[Cohere Website]](https://cohere.ai/).
+  license: >
+    Limited use license to Cohere platform users
+    [[Terms of Use]](https://cohere.ai/terms-of-use).
+  terms_of_service: https://cohere.ai/terms-of-use
+  intended_uses: >
+    Intended to be used by developers who would like to incorporate NLP into
+    their applications
+    [[Cohere Website]](https://cohere.ai/).
+  prohibited_uses: >
+    The usage of the API is bound by the Cohere usage guidelines.
+    Disallowed use cases include violence and threats, antisocial and
+    antidemocratic uses, deceit, attacks on security or privacy, unsafe
+    unsupervised uses, decision-making, high-Risk generations among others
+    [[Usage Guidelines]](https://docs.cohere.ai/usage-guidelines).
+  monitoring: >
+    All applications developed using the Cohere API is subject to review by
+    Cohere.
+  feedback: >
+    General feedback as well as the violations of the usage guidelines can
+    be reported to Cohere at responsibility at cohere.ai
+    [[Usage Guidelines]](https://docs.cohere.ai/usage-guidelines).
+  # Deployment
+  monthly_active_users: unknown
+  user_distribution: unknown
+  failures: unknown
+  
     
 - type: application
   name: Cohere Embed Endpoint
@@ -445,9 +479,42 @@
   dependencies: [Embedding (Multilingual), Embedding (English)]
   adaptation: unknown
   output_space: embedding
+  quality_control: >
+    The new users of the API get a limited access restricting the sizes of the
+    models as well as the number of tokens that can be used. Users are required
+    to go through an internal application to upgrade to full access
+    [[Limited Access]](https://docs.cohere.ai/limited-access).
   # Downstream
   access:
     value: limited
+    explanation: >
+      Users can access the Cohere API by signing up on the Cohere website
+      [[Cohere Website]](https://cohere.ai/).
+  license: >
+    Limited use license to Cohere platform users
+    [[Terms of Use]](https://cohere.ai/terms-of-use).
+  terms_of_service: https://cohere.ai/terms-of-use
+  intended_uses: >
+    Intended to be used by developers who would like to incorporate NLP into
+    their applications
+    [[Cohere Website]](https://cohere.ai/).
+  prohibited_uses: >
+    The usage of the API is bound by the Cohere usage guidelines.
+    Disallowed use cases include violence and threats, antisocial and
+    antidemocratic uses, deceit, attacks on security or privacy, unsafe
+    unsupervised uses, decision-making, high-Risk generations among others
+    [[Usage Guidelines]](https://docs.cohere.ai/usage-guidelines).
+  monitoring: >
+    All applications developed using the Cohere API is subject to review by
+    Cohere.
+  feedback: >
+    General feedback as well as the violations of the usage guidelines can
+    be reported to Cohere at responsibility at cohere.ai
+    [[Usage Guidelines]](https://docs.cohere.ai/usage-guidelines).
+  # Deployment
+  monthly_active_users: unknown
+  user_distribution: unknown
+  failures: unknown
 
 - type: application
   name: Cohere Classify Endpoint
@@ -463,9 +530,42 @@
   dependencies: [Embedding (Multilingual), Embedding (English)]
   adaptation: unknown
   output_space: embedding
+  quality_control: >
+    The new users of the API get a limited access restricting the sizes of the
+    models as well as the number of tokens that can be used. Users are required
+    to go through an internal application to upgrade to full access
+    [[Limited Access]](https://docs.cohere.ai/limited-access).
   # Downstream
   access:
     value: limited
+    explanation: >
+      Users can access the Cohere API by signing up on the Cohere website
+      [[Cohere Website]](https://cohere.ai/).
+  license: >
+    Limited use license to Cohere platform users
+    [[Terms of Use]](https://cohere.ai/terms-of-use).
+  terms_of_service: https://cohere.ai/terms-of-use
+  intended_uses: >
+    Intended to be used by developers who would like to incorporate NLP into
+    their applications
+    [[Cohere Website]](https://cohere.ai/).
+  prohibited_uses: >
+    The usage of the API is bound by the Cohere usage guidelines.
+    Disallowed use cases include violence and threats, antisocial and
+    antidemocratic uses, deceit, attacks on security or privacy, unsafe
+    unsupervised uses, decision-making, high-Risk generations among others
+    [[Usage Guidelines]](https://docs.cohere.ai/usage-guidelines).
+  monitoring: >
+    All applications developed using the Cohere API is subject to review by
+    Cohere.
+  feedback: >
+    General feedback as well as the violations of the usage guidelines can
+    be reported to Cohere at responsibility at cohere.ai
+    [[Usage Guidelines]](https://docs.cohere.ai/usage-guidelines).
+  # Deployment
+  monthly_active_users: unknown
+  user_distribution: unknown
+  failures: unknown
 
 - type: application
   name: Cohere Summarize Endpoint
@@ -480,9 +580,42 @@
   dependencies: []
   adaptation: unknown
   output_space: generation
+  quality_control: >
+    The new users of the API get a limited access restricting the sizes of the
+    models as well as the number of tokens that can be used. Users are required
+    to go through an internal application to upgrade to full access
+    [[Limited Access]](https://docs.cohere.ai/limited-access).
   # Downstream
   access:
     value: limited
+    explanation: >
+      Users can access the Cohere API by signing up on the Cohere website
+      [[Cohere Website]](https://cohere.ai/).
+  license: >
+    Limited use license to Cohere platform users
+    [[Terms of Use]](https://cohere.ai/terms-of-use).
+  terms_of_service: https://cohere.ai/terms-of-use
+  intended_uses: >
+    Intended to be used by developers who would like to incorporate NLP into
+    their applications
+    [[Cohere Website]](https://cohere.ai/).
+  prohibited_uses: >
+    The usage of the API is bound by the Cohere usage guidelines.
+    Disallowed use cases include violence and threats, antisocial and
+    antidemocratic uses, deceit, attacks on security or privacy, unsafe
+    unsupervised uses, decision-making, high-Risk generations among others
+    [[Usage Guidelines]](https://docs.cohere.ai/usage-guidelines).
+  monitoring: >
+    All applications developed using the Cohere API is subject to review by
+    Cohere.
+  feedback: >
+    General feedback as well as the violations of the usage guidelines can
+    be reported to Cohere at responsibility at cohere.ai
+    [[Usage Guidelines]](https://docs.cohere.ai/usage-guidelines).
+  # Deployment
+  monthly_active_users: unknown
+  user_distribution: unknown
+  failures: unknown
   
   
   
