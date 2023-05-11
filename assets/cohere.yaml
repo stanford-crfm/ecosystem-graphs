@@ -211,7 +211,7 @@
       but a generic contact email is provided on Cohere website, which is
       support at cohere.ai.
 
-  
+
 - type: model
   name: Cohere Embed (English)
   # General
@@ -294,8 +294,8 @@
   # General
   organization: Cohere
   description: >
-    This model maps text from 100+ languages to a semantic 
-    vector space, positioning text with a similar meaning 
+    This model maps text from 100+ languages to a semantic
+    vector space, positioning text with a similar meaning
     (regardless of language) in close proximity.
   modality: text (Multilingual)
   created_date:
@@ -367,7 +367,6 @@
       but a generic contact email is provided on Cohere website, which is
       support at cohere.ai.
 
-
 - type: application
   name: Cohere API
   # General
@@ -383,7 +382,11 @@
       (https://venturebeat.com/2021/11/15/openai-rival-cohere-launches-language-model-api/).
   url: https://cohere.ai/
   # Construction
-  dependencies: [Cohere Command, Cohere Base]
+  dependencies:
+    - Cohere Generate Endpoint
+    - Cohere Embed Endpoint
+    - Cohere Classify Endpoint
+    - Cohere Summarize Endpoint
   adaptation: unknown
   output_space: generation and embeddings
   quality_control: >
@@ -422,7 +425,7 @@
   monthly_active_users: unknown
   user_distribution: unknown
   failures: unknown
-  
+
 - type: application
   name: Cohere Generate Endpoint
   # General
@@ -476,15 +479,14 @@
   monthly_active_users: unknown
   user_distribution: unknown
   failures: unknown
-  
-    
+
 - type: application
   name: Cohere Embed Endpoint
   # General
   organization: Cohere
   description: >
-    This endpoint returns text embeddings. An 
-    embedding is a list of floating point numbers that 
+    This endpoint returns text embeddings. An
+    embedding is a list of floating point numbers that
     captures semantic information about the text that it represents.
   created_date:
     value: 2021-11-15
@@ -494,7 +496,7 @@
       (https://venturebeat.com/uncategorized/openai-rival-cohere-launches-language-model-api/).
   url: https://docs.cohere.ai/reference/embed
   # Construction
-  dependencies: [Embedding (Multilingual), Embedding (English)]
+  dependencies: [Cohere Embed (Multilingual), Cohere Embed (English)]
   adaptation: unknown
   output_space: embedding
   quality_control: >
@@ -539,9 +541,9 @@
   # General
   organization: Cohere
   description: >
-    This endpoint makes a prediction about which label best 
-    fits a specified text input. To make a prediction, 
-    Classify uses the provided examples of text + label 
+    This endpoint makes a prediction about which label best
+    fits a specified text input. To make a prediction,
+    Classify uses the provided examples of text + label
     pairs as a reference.
   created_date:
     value: 2022-05-05
@@ -551,7 +553,7 @@
       (https://txt.cohere.com/classification-is-now-available/).
   url: https://docs.cohere.ai/reference/classify
   # Construction
-  dependencies: [Embedding (Multilingual), Embedding (English)]
+  dependencies: [Cohere Embed (Multilingual), Cohere Embed (English)]
   adaptation: unknown
   output_space: embedding
   quality_control: >
@@ -596,8 +598,8 @@
   # General
   organization: Cohere
   description: >
-    This endpoint generates a succinct 
-    version of the original text that relays 
+    This endpoint generates a succinct
+    version of the original text that relays
     the most important information.
   created_date:
     value: 2023-02-22
