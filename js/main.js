@@ -419,7 +419,7 @@ function renderCustomTable(selectedAssets, allNameToAsset, columnNames) {
 function renderAssetsTable(nameToAsset) {
   // Render the table
   const columnNames = [
-    'type', 'name', 'organization', 'created_date', 'size', 'access',
+    'type', 'name', 'organization', 'created_date', 'size', 'access', 'license',
     'dependencies',
   ];
   const assets = Object.keys(nameToAsset).map((key) => (nameToAsset[key]));
