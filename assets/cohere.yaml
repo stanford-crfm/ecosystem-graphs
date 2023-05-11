@@ -298,6 +298,12 @@
     vector space, positioning text with a similar meaning 
     (regardless of language) in close proximity.
   modality: text (Multilingual)
+  created_date:
+    value: 2022-12-12
+    explanation: >
+      The launch of the multilingual embedding model was announced in this
+      [[blog post]]
+      (https://txt.cohere.com/multilingual/).
   url: https://txt.cohere.ai/multilingual/
   model_card: https://docs.cohere.ai/representation-card
   size:
@@ -423,6 +429,12 @@
   organization: Cohere
   description: >
     This endpoint generates realistic text conditioned on a given input.
+  created_date:
+    value: 2021-11-15
+    explanation: >
+      The launch of Generate was announced in this
+      [[news article]]
+      (https://venturebeat.com/uncategorized/openai-rival-cohere-launches-language-model-api/).
   url: https://docs.cohere.ai/reference/generate
   # Construction
   dependencies: [Cohere Base, Cohere Command]
@@ -474,6 +486,12 @@
     This endpoint returns text embeddings. An 
     embedding is a list of floating point numbers that 
     captures semantic information about the text that it represents.
+  created_date:
+    value: 2021-11-15
+    explanation: >
+      The launch of Embed was announced in this
+      [[news article]]
+      (https://venturebeat.com/uncategorized/openai-rival-cohere-launches-language-model-api/).
   url: https://docs.cohere.ai/reference/embed
   # Construction
   dependencies: [Embedding (Multilingual), Embedding (English)]
@@ -525,6 +543,12 @@
     fits a specified text input. To make a prediction, 
     Classify uses the provided examples of text + label 
     pairs as a reference.
+  created_date:
+    value: 2022-05-05
+    explanation: >
+      The launch of Classify was announced in this
+      [[blog post]]
+      (https://txt.cohere.com/classification-is-now-available/).
   url: https://docs.cohere.ai/reference/classify
   # Construction
   dependencies: [Embedding (Multilingual), Embedding (English)]
@@ -575,6 +599,12 @@
     This endpoint generates a succinct 
     version of the original text that relays 
     the most important information.
+  created_date:
+    value: 2023-02-22
+    explanation: >
+      The beta launch of summarize was announced in this
+      [[blog post]]
+      (https://txt.cohere.com/summarize-beta/).
   url: https://docs.cohere.ai/reference/summarize
   # Construction
   dependencies: []
@@ -616,6 +646,3 @@
   monthly_active_users: unknown
   user_distribution: unknown
   failures: unknown
-  
-  
-  
