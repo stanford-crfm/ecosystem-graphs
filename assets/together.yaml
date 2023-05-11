@@ -109,3 +109,71 @@
   prohibited_uses: ''
   monitoring: ''
   feedback: ''
+
+- type: dataset
+  name: RedPajama-Data-1T
+  organization: Together, Stanford, ETH, LAION, Ontocord, EleutherAI
+  description: 'The reproduction of the LLaMA training dataset of over 1.2 trillion tokens'
+  created_date: 2023-04-17
+  url: https://huggingface.co/datasets/togethercomputer/RedPajama-Data-1T
+  datasheet: ''
+  modality: text
+  size: 1.2T tokens
+  sample: []
+  analysis: ''
+  dependencies: []
+  included: ''
+  excluded: ''
+  quality_control: ''
+  access: open
+  license: Apache 2.0
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+
+- type: model
+  name: RedPajama-INCITE-Base-3B-v1
+  organization: Together, Stanford, ETH, LAION, Ontocord, EleutherAI
+  description: 'Base model at 3B and trained at 800B tokens of RedPajama Dataset'
+  created_date: 2023-05-05
+  url: https://huggingface.co/togethercomputer/RedPajama-INCITE-Base-3B-v1
+  datasheet: ''
+  modality: text
+  analysis: ''
+  size: 3B parameters (dense model)
+  sample: []
+  analysis: ''
+  dependencies: [RedPajama-Data-1T]
+  included: ''
+  excluded: ''
+  quality_control: ''
+  access: open
+  license: Apache 2.0
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+
+- type: model
+  name: RedPajama-INCITE-Base-7B-v0.1
+  organization: Together, Stanford, ETH, LAION, Ontocord, EleutherAI
+  description: 'Base model at 7B and trained at 800B tokens of RedPajama Dataset'
+  created_date: 2023-05-05
+  url: https://huggingface.co/togethercomputer/RedPajama-INCITE-Base-7B-v0.1
+  datasheet: ''
+  modality: text
+  analysis: ''
+  size: 7B parameters (dense model)
+  sample: []
+  analysis: ''
+  dependencies: [RedPajama-Data-1T]
+  included: ''
+  excluded: ''
+  quality_control: ''
+  access: open
+  license: Apache 2.0
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
