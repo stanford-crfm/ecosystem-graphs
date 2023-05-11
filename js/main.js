@@ -267,7 +267,7 @@ function renderAccessType(value) {
     'closed': 'lightgray', // '#f0b0b0'  // Slightly lighter than lightcoral
   }
   const color = value in valueToColor ? valueToColor[value] : 'mistyrose';
-  const textElement = $('<span class="btn">').css("background-color", color).append(value);
+  const textElement = $('<span class="btn">').css({"background-color": color, "min-width": 100}).append(value);
   return textElement;
 }
 
@@ -512,6 +512,9 @@ function renderAssetsGraph(nameToAsset) {
             'text-max-width': 30,
             'text-valign': 'center',
             'color': 'white',
+            'text-outline-width': 3,
+            'text-outline-color': 'data(color)',
+            'text-outline-opacity': 1,
             'padding': 40,
           },
         },
@@ -521,6 +524,11 @@ function renderAssetsGraph(nameToAsset) {
             'width': 3,
             'curve-style': 'straight',
             'target-arrow-shape': 'triangle',
+            'target-arrow-color': '#7CB342',
+            'line-fill': 'linear-gradient',
+            'line-gradient-stop-colors': '#392215 #7CB342',
+            'target-endpoint': 'outside-to-node-or-label',
+            'line-cap': 'square'
           },
         },
       ],
