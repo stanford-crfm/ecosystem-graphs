@@ -563,9 +563,7 @@
   license:
     value: unknown
     explanation: >
-      The model likely has a license specifically for DeepMind's use,
-      based on the information provided in the model card
-      [[Model Card]](https://openreview.net/pdf?id=1ikK0kHjvj#appendix.A).
+      The asset isn't released, and hence the license is unknown.
   intended_uses: >
     The intended uses are stated in the Gopher model card: "Learn to accomplish
     a wide variety of tasks from expert demonstrations, such as playing video
@@ -607,7 +605,10 @@
   training_hardware: ''
   quality_control: ''
   access: closed
-  license: unknown
+  license:
+    value: unknown
+    explanation: >
+      The asset isn't released, and hence the license is unknown.
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
@@ -629,7 +630,10 @@
   training_hardware: ''
   quality_control: ''
   access: closed
-  license: unknown
+  license:
+    value: unknown
+    explanation: >
+      The asset isn't released, and hence the license is unknown.
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
@@ -651,7 +655,10 @@
   training_hardware: ''
   quality_control: ''
   access: closed
-  license: unknown
+  license:
+    value: unknown
+    explanation: >
+      The asset isn't released, and hence the license is unknown.
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
@@ -673,7 +680,10 @@
   training_hardware: ''
   quality_control: ''
   access: closed
-  license: unknown
+  license:
+    value: unknown
+    explanation: >
+      The asset isn't released, and hence the license is unknown.
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
@@ -695,7 +705,10 @@
   excluded: ''
   quality_control: ''
   access: closed
-  license: unknown
+  license:
+    value: unknown
+    explanation: >
+      The asset isn't released, and hence the license is unknown.
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
@@ -717,7 +730,10 @@
   excluded: ''
   quality_control: ''
   access: closed
-  license: unknown
+  license:
+    value: unknown
+    explanation: >
+      The asset isn't released, and hence the license is unknown.
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
@@ -739,7 +755,10 @@
   training_hardware: ''
   quality_control: ''
   access: closed
-  license: unknown
+  license:
+    value: unknown
+    explanation: >
+      The asset isn't released, and hence the license is unknown.
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
@@ -761,7 +780,10 @@
   training_hardware: ''
   quality_control: ''
   access: closed
-  license: unknown
+  license:
+    value: unknown
+    explanation: >
+      The asset isn't released, and hence the license is unknown.
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
@@ -783,7 +805,10 @@
   excluded: ''
   quality_control: ''
   access: closed
-  license: unknown
+  license:
+    value: unknown
+    explanation: >
+      The asset isn't released, and hence the license is unknown.
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
@@ -805,7 +830,10 @@
   training_hardware: ''
   quality_control: ''
   access: closed
-  license: unknown
+  license:
+    value: unknown
+    explanation: >
+      The asset isn't released, and hence the license is unknown.
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''

@@ -23,7 +23,10 @@
     explanation: >
       Neither the 8.3B parameter model trained to convergence nor the 1 trillion
       paramter model is available for download
-  license: unknown
+  license:
+    value: unknown
+    explanation: >
+      The asset isn't released, and hence the license is unknown.
   intended_uses: none
   prohibited_uses: none
   monitoring: none

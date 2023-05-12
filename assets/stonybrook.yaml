@@ -29,7 +29,9 @@
     explanation: See [[Section 5]](https://proceedings.neurips.cc/paper/2011/file/5dd9db5e033da9c6fb5ba83c7a7ebea9-Paper.pdf)
   # Construction
   dependencies: [Flickr]
-  license: unknown
+  license:
+    value: none
+    explanation: No license was found.
   included:
     value: >
       "To encourage visual descriptiveness in our collection, we select only those

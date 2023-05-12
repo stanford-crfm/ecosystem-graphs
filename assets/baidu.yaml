@@ -20,7 +20,10 @@
   access:
     value: closed
     explanation: Baidu does not provide ERNIE 3.0 for external researchers
-  license: unknown
+  license:
+    value: unknown
+    explanation: >
+      The asset isn't released, and hence the license is unknown.
   intended_uses: unknown
   prohibited_uses: unknown
   monitoring: none
@@ -76,7 +79,10 @@
   access:
     value: closed
     explanation: Baidu does not provide ERNIE-ViLG 2.0 to external researchers
-  license: unknown
+  license:
+    value: unknown
+    explanation: >
+      The asset isn't released, and hence the license is unknown.
   intended_uses: unknown
   prohibited_uses: unknown
   monitoring: none

@@ -39,7 +39,10 @@
   training_hardware: ''
   quality_control: ''
   access: closed
-  license: unknown
+  license:
+    value: unknown
+    explanation: >
+      The asset isn't released, and hence the license is unknown.
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''

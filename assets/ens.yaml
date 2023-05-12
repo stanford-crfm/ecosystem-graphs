@@ -51,7 +51,7 @@
     value: open
     explanation: Dataset, evaluation code and models are publicly available at the
       [[HowTo100M dataset webpage]](https://www.di.ens.fr/willow/research/howto100m/).
-  license: unknown
+  license: Apache 2.0
   intended_uses: ''
   prohibited_uses:
     value: >

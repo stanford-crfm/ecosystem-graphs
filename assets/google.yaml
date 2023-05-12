@@ -55,7 +55,10 @@
   analysis: unknown
   # Construction
   dependencies: []
-  license: unknown
+  license:
+    value: unknown
+    explanation: >
+      The asset isn't released, and hence the license is unknown.
   included:
     value: Web pages, and search queries
     explanation: >
@@ -104,7 +107,8 @@
     explanation: See [[Experimental Results]](https://aclanthology.org/P18-1238.pdf#section.5)
   # Construction
   dependencies: []
-  license: See [[LICENSE]](https://github.com/google-research-datasets/conceptual-captions/blob/master/LICENSE)
+  license: >
+    [[Conceptual Captions License]](https://github.com/google-research-datasets/conceptual-captions/blob/master/LICENSE)
   included: ''
   excluded:
     value: |
@@ -156,7 +160,8 @@
     explanation: See [[Evaluating Vision-and-Language PreTraining Data]](https://arxiv.org/pdf/2102.08981.pdf#section.3)
   # Construction
   dependencies: []
-  license: See [[LICENSE]](https://github.com/google-research-datasets/conceptual-12m/blob/main/LICENSE).
+  license: >
+    [[Conceptual Captions License]](https://github.com/google-research-datasets/conceptual-captions/blob/master/LICENSE)
   included: ''
   excluded:
     value: |
@@ -237,7 +242,10 @@
   quality_control: unknown
   # Downstream
   access: closed
-  license: unknown
+  license:
+    value: unknown
+    explanation: >
+      The asset isn't released, and hence the license is unknown.
   intended_uses:
     value: unknown
     explanation: >
@@ -267,11 +275,9 @@
   quality_control: unknown
   # Downstream
   access: open
-  license: >
-    As listed in the [[Term of Service]](https://policies.google.com/terms),
-    Google search is bounded by the Google license terms. Users get to keep the
-    license to their own content, but any information provided that can be
-    considered public information isn't licensed to the users.
+  license:
+    value: none
+    explanation: No license was found.
   terms_of_service: https://policies.google.com/terms
   intended_uses: Searching the web using text, voice or image
   prohibited_uses: >
@@ -316,7 +322,10 @@
   analysis: unknown
   # Construction
   dependencies: []
-  license: unknown
+  license:
+    value: unknown
+    explanation: >
+      The asset isn't released, and hence the license is unknown.
   included: >
     Included in the dataset are data from "public forums (0%); C4 data (12.5% );
     code documents from sites related to programming like Q&A sites tutorials,
@@ -404,7 +413,10 @@
     [[Figure 5]](https://arxiv.org/pdf/2201.08239.pdf#figure.caption.23).
   # Downstream
   access: closed
-  license: unknown
+  license:
+    value: unknown
+    explanation: >
+      The asset isn't released, and hence the license is unknown.
   intended_uses: >
     LaMDA is a language model, so it can be used for regular langauge modelling
     tasks without fine-tuning, but its fine-tuned for dialogue tasks.
@@ -450,7 +462,10 @@
   analysis: unknown
   # Construction
   dependencies: [Infiniset]
-  license: unknown
+  license:
+    value: unknown
+    explanation: >
+      The asset isn't released, and hence the license is unknown.
   included: >
     The dataset is based on Infiniset. It included multilingual text containing
     text from over 100 languages. The breakdown of the data included is as
@@ -568,7 +583,10 @@
   access:
     value: closed
     explanation: Google does not provide access to Parti for external researchers.
-  license: unknown
+  license:
+    value: unknown
+    explanation: >
+      The asset isn't released, and hence the license is unknown.
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
@@ -594,7 +612,10 @@
   training_hardware: 128 TPU-v4
   quality_control: ''
   access: closed
-  license: unknown
+  license:
+    value: unknown
+    explanation: >
+      The asset isn't released, and hence the license is unknown.
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
@@ -672,7 +693,10 @@
   access:
     value: limited
     explanation: Made available through the PaLM API as of March 14, 2023.
-  license: unknown
+  license:
+    value: unknown
+    explanation: >
+      The asset isn't released, and hence the license is unknown.
   intended_uses: >
     "The primary use is research on language models, including: research
     on NLP applications like machine translation and question answering,
@@ -733,7 +757,10 @@
   training_hardware: ''
   quality_control: ''
   access: closed
-  license: unknown
+  license:
+    value: unknown
+    explanation: >
+      The asset isn't released, and hence the license is unknown.
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
@@ -762,7 +789,10 @@
   training_hardware: ''
   quality_control: ''
   access: closed
-  license: unknown
+  license:
+    value: unknown
+    explanation: >
+      The asset isn't released, and hence the license is unknown.
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
@@ -784,7 +814,10 @@
   training_hardware: ''
   quality_control: ''
   access: closed
-  license: unknown
+  license:
+    value: unknown
+    explanation: >
+      The asset isn't released, and hence the license is unknown.
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
@@ -806,7 +839,10 @@
   training_hardware: ''
   quality_control: ''
   access: closed
-  license: unknown
+  license:
+    value: unknown
+    explanation: >
+      The asset isn't released, and hence the license is unknown.
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
@@ -850,7 +886,10 @@
   training_hardware: ''
   quality_control: ''
   access: closed
-  license: unknown
+  license:
+    value: unknown
+    explanation: >
+      The asset isn't released, and hence the license is unknown.
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
@@ -900,7 +939,10 @@
   training_hardware: ''
   quality_control: ''
   access: closed
-  license: unknown
+  license:
+    value: unknown
+    explanation: >
+      The asset isn't released, and hence the license is unknown.
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
@@ -922,7 +964,10 @@
   excluded: ''
   quality_control: ''
   access: closed
-  license: unknown
+  license:
+    value: unknown
+    explanation: >
+      The asset isn't released, and hence the license is unknown.
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
@@ -944,7 +989,10 @@
   excluded: ''
   quality_control: ''
   access: closed
-  license: unknown
+  license:
+    value: unknown
+    explanation: >
+      The asset isn't released, and hence the license is unknown.
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
@@ -966,7 +1014,10 @@
   excluded: ''
   quality_control: ''
   access: closed
-  license: unknown
+  license:
+    value: unknown
+    explanation: >
+      The asset isn't released, and hence the license is unknown.
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
@@ -988,7 +1039,10 @@
   excluded: ''
   quality_control: ''
   access: closed
-  license: unknown
+  license:
+    value: unknown
+    explanation: >
+      The asset isn't released, and hence the license is unknown.
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
@@ -1010,7 +1064,10 @@
   training_hardware: ''
   quality_control: ''
   access: closed
-  license: unknown
+  license:
+    value: unknown
+    explanation: >
+      The asset isn't released, and hence the license is unknown.
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
@@ -1032,7 +1089,10 @@
   excluded: ''
   quality_control: ''
   access: closed
-  license: unknown
+  license:
+    value: unknown
+    explanation: >
+      The asset isn't released, and hence the license is unknown.
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
@@ -1054,7 +1114,10 @@
   training_hardware: ''
   quality_control: ''
   access: closed
-  license: unknown
+  license:
+    value: unknown
+    explanation: >
+      The asset isn't released, and hence the license is unknown.
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
@@ -1076,7 +1139,10 @@
   excluded: ''
   quality_control: ''
   access: closed
-  license: unknown
+  license:
+    value: unknown
+    explanation: >
+      The asset isn't released, and hence the license is unknown.
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
@@ -1147,7 +1213,10 @@
   training_hardware: ''
   quality_control: ''
   access: closed
-  license: unknown
+  license:
+    value: unknown
+    explanation: >
+      The asset isn't released, and hence the license is unknown.
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
@@ -1169,7 +1238,10 @@
   training_hardware: ''
   quality_control: ''
   access: closed
-  license: unknown
+  license:
+    value: unknown
+    explanation: >
+      The asset isn't released, and hence the license is unknown.
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
@@ -1191,7 +1263,10 @@
   training_hardware: ''
   quality_control: ''
   access: closed
-  license: unknown
+  license:
+    value: unknown
+    explanation: >
+      The asset isn't released, and hence the license is unknown.
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
@@ -1213,7 +1288,10 @@
   training_hardware: ''
   quality_control: ''
   access: closed
-  license: unknown
+  license:
+    value: unknown
+    explanation: >
+      The asset isn't released, and hence the license is unknown.
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
@@ -1235,7 +1313,10 @@
   excluded: ''
   quality_control: ''
   access: closed
-  license: unknown
+  license:
+    value: unknown
+    explanation: >
+      The asset isn't released, and hence the license is unknown.
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
@@ -1257,7 +1338,10 @@
   excluded: ''
   quality_control: ''
   access: closed
-  license: unknown
+  license:
+    value: unknown
+    explanation: >
+      The asset isn't released, and hence the license is unknown.
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
@@ -1279,7 +1363,10 @@
   training_hardware: ''
   quality_control: ''
   access: closed
-  license: unknown
+  license:
+    value: unknown
+    explanation: >
+      The asset isn't released, and hence the license is unknown.
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
@@ -1301,7 +1388,10 @@
   training_hardware: ''
   quality_control: ''
   access: closed
-  license: unknown
+  license:
+    value: unknown
+    explanation: >
+      The asset isn't released, and hence the license is unknown.
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
@@ -1323,7 +1413,10 @@
   training_hardware: ''
   quality_control: ''
   access: closed
-  license: unknown
+  license:
+    value: unknown
+    explanation: >
+      The asset isn't released, and hence the license is unknown.
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
@@ -1345,7 +1438,10 @@
   excluded: ''
   quality_control: ''
   access: closed
-  license: unknown
+  license:
+    value: unknown
+    explanation: >
+      The asset isn't released, and hence the license is unknown.
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
@@ -1367,7 +1463,10 @@
   excluded: ''
   quality_control: ''
   access: closed
-  license: unknown
+  license:
+    value: unknown
+    explanation: >
+      The asset isn't released, and hence the license is unknown.
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
@@ -1389,7 +1488,10 @@
   excluded: ''
   quality_control: ''
   access: closed
-  license: unknown
+  license:
+    value: unknown
+    explanation: >
+      The asset isn't released, and hence the license is unknown.
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
@@ -1411,7 +1513,10 @@
   training_hardware: ''
   quality_control: ''
   access: closed
-  license: unknown
+  license:
+    value: unknown
+    explanation: >
+      The asset isn't released, and hence the license is unknown.
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
@@ -1433,7 +1538,10 @@
   excluded: ''
   quality_control: ''
   access: closed
-  license: unknown
+  license:
+    value: unknown
+    explanation: >
+      The asset isn't released, and hence the license is unknown.
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
@@ -1455,7 +1563,10 @@
   excluded: ''
   quality_control: ''
   access: closed
-  license: unknown
+  license:
+    value: unknown
+    explanation: >
+      The asset isn't released, and hence the license is unknown.
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
@@ -1473,7 +1584,10 @@
   output_space: ''
   quality_control: ''
   access: limited
-  license: ''
+  license:
+    value: unknown
+    explanation: >
+      The asset isn't released, and hence the license is unknown.
   terms_of_service: ''
   intended_uses: ''
   prohibited_uses: ''
@@ -1494,7 +1608,10 @@
   output_space: ''
   quality_control: ''
   access: closed
-  license: ''
+  license:
+    value: unknown
+    explanation: >
+      The asset isn't released, and hence the license is unknown.
   terms_of_service: ''
   intended_uses: ''
   prohibited_uses: ''
@@ -1524,7 +1641,10 @@
   training_hardware: ''
   quality_control: ''
   access: closed
-  license: unknown
+  license:
+    value: unknown
+    explanation: >
+      The asset isn't released, and hence the license is unknown.
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
@@ -1546,7 +1666,10 @@
   excluded: ''
   quality_control: ''
   access: closed
-  license: unknown
+  license:
+    value: unknown
+    explanation: >
+      The asset isn't released, and hence the license is unknown.
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
@@ -1576,7 +1699,10 @@
   training_hardware: ''
   quality_control: ''
   access: limited
-  license: unknown
+  license:
+    value: unknown
+    explanation: >
+      The asset isn't released, and hence the license is unknown.
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
@@ -1619,7 +1745,10 @@
   training_hardware: ''
   quality_control: ''
   access: closed
-  license: unknown
+  license:
+    value: unknown
+    explanation: >
+      The asset isn't released, and hence the license is unknown.
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
@@ -1641,7 +1770,10 @@
   training_hardware: ''
   quality_control: ''
   access: closed
-  license: unknown
+  license:
+    value: unknown
+    explanation: >
+      The asset isn't released, and hence the license is unknown.
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
@@ -1663,7 +1795,10 @@
   training_hardware: ''
   quality_control: ''
   access: closed
-  license: unknown
+  license:
+    value: unknown
+    explanation: >
+      The asset isn't released, and hence the license is unknown.
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
@@ -1685,7 +1820,10 @@
   training_hardware: ''
   quality_control: ''
   access: closed
-  license: unknown
+  license:
+    value: unknown
+    explanation: >
+      The asset isn't released, and hence the license is unknown.
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
@@ -1707,7 +1845,10 @@
   training_hardware: ''
   quality_control: ''
   access: closed
-  license: unknown
+  license:
+    value: unknown
+    explanation: >
+      The asset isn't released, and hence the license is unknown.
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
@@ -1729,7 +1870,10 @@
   excluded: ''
   quality_control: ''
   access: closed
-  license: unknown
+  license:
+    value: unknown
+    explanation: >
+      The asset isn't released, and hence the license is unknown.
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''

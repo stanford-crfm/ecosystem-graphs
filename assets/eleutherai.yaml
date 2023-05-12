@@ -38,10 +38,9 @@
     [[The Pile Paper]](https://arxiv.org/pdf/2101.00027.pdf).
   # Construction
   dependencies: []
-  license: >
-    The Pile uses the MIT, allowing proprietary or open source use
-    on the condition that the terms of the license as well as a copyright
-    notice [[MIT]](https://arxiv.org/pdf/2201.07311.pdf).
+  license:
+    value: MIT
+    explanation: As indicated in the paper.
   included: >
     The Pile data come from 22 sources, with over half of the data being from
     Common Crawl (Pile-CC; 227GB), fiction and nonfiction books (Books3; 101GB),
@@ -135,9 +134,7 @@
     value: open
     explanation: >
       The model can be downloaded for free from [[The Eye]](https://mystic.the-eye.eu/public/AI/gptneo-release/GPT3_2-7B/)
-  license:
-    value: MIT
-    explanation: ''
+  license: MIT
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
@@ -238,13 +235,12 @@
     explanation: >
       GooseAI API can be accessed by signing up on the goose.ai website.
   license:
-    value: Limited use license
+    value: Proprietary
     explanation: >
       "Subject to Customer’s strict compliance with this TOS, GooseAI grants
       Customer a limited, non-exclusive, non-transferable, non-sublicensable,
       revocable license to access and use the Platform as described in and
-      subject to this TOS"
-      [[GooseAI Terms of Service]](https://goose.ai/docs/tos)
+      subject to this TOS" - excerpt from the Terms of Service document.
   terms_of_service: https://goose.ai/docs/tos
   intended_uses: >
     Intended to be used as an NLP infrastructure.

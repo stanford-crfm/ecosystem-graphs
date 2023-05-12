@@ -13,8 +13,10 @@
   output_space: ''
   quality_control: ''
   access: open
-  license: ''
-  terms_of_service: ''
+  license:
+    value: none
+    explanation: No license was found.
+  terms_of_service: https://quizlet.com/tos
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
