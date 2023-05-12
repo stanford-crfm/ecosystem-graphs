@@ -267,7 +267,7 @@ function renderAccessType(value) {
     'closed': 'lightgray', // '#f0b0b0'  // Slightly lighter than lightcoral
   }
   const color = value in valueToColor ? valueToColor[value] : 'mistyrose';
-  const textElement = $('<span class="btn">').css("background-color", color).append(value);
+  const textElement = $('<span class="btn">').css({"background-color": color, "min-width": 100}).append(value);
   return textElement;
 }
 
@@ -512,6 +512,9 @@ function renderAssetsGraph(nameToAsset) {
             'text-max-width': 30,
             'text-valign': 'center',
             'color': 'white',
+            'text-outline-width': 3,
+            'text-outline-color': 'data(color)',
+            'text-outline-opacity': 1,
             'padding': 40,
           },
         },
@@ -521,6 +524,11 @@ function renderAssetsGraph(nameToAsset) {
             'width': 3,
             'curve-style': 'straight',
             'target-arrow-shape': 'triangle',
+            'target-arrow-color': '#7CB342',
+            'line-fill': 'linear-gradient',
+            'line-gradient-stop-colors': '#392215 #7CB342',
+            'target-endpoint': 'outside-to-node-or-label',
+            'line-cap': 'square'
           },
         },
       ],
@@ -620,6 +628,7 @@ function renderNavBar() {
 function loadAssetsAndRenderPageContent() {
 
   const paths = [
+    'assets/adept.yaml',
     'assets/ai2.yaml',
     'assets/ai21.yaml',
     'assets/aleph_alpha.yaml',
@@ -632,19 +641,23 @@ function loadAssetsAndRenderPageContent() {
     'assets/bain.yaml',
     'assets/be_my_eyes.yaml',
     'assets/bigscience.yaml',
+    'assets/bloomberg.yaml',
     'assets/brex.yaml',
+    'assets/cerebras.yaml',
     'assets/cmu.yaml',
     'assets/cohere.yaml',
-    'assets/deepmind.yaml',
     'assets/databricks.yaml',
+    'assets/deepmind.yaml',
     'assets/duckduckgo.yaml',
     'assets/duolingo.yaml',
     'assets/eleutherai.yaml',
+    'assets/ens.yaml',
     'assets/google.yaml',
     'assets/hubspot.yaml',
     'assets/huggingface.yaml',
     'assets/instacart.yaml',
     'assets/juni.yaml',
+    'assets/kakaobrain.yaml',
     'assets/khan.yaml',
     'assets/laion.yaml',
     'assets/latitude.yaml',
@@ -657,6 +670,7 @@ function loadAssetsAndRenderPageContent() {
     'assets/nvidia.yaml',
     'assets/openai.yaml',
     'assets/othersideai.yaml',
+    'assets/oxford.yaml',
     'assets/perplexity.yaml',
     'assets/quizlet.yaml',
     'assets/quora.yaml',
@@ -670,6 +684,7 @@ function loadAssetsAndRenderPageContent() {
     'assets/spotify.yaml',       
     'assets/stability.yaml',
     'assets/stanford.yaml',
+    'assets/stonybrook.yaml',
     'assets/together.yaml',
     'assets/trevor.yaml',  
     'assets/tsinghua.yaml',

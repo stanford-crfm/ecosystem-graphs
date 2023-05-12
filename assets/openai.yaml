@@ -392,7 +392,10 @@
   # General
   organization: OpenAI
   description: ''
-  created_date: 2019-11
+  created_date:
+    value: 2019-11-01
+    explanation: Due to the lack of information about the exact date, it is assumed
+      to be the 1st of the known month of creation.
   url: https://cdn.openai.com/better-language-models/language_models_are_unsupervised_multitask_learners.pdf
   datasheet: ''
   modality: text (English)
@@ -418,11 +421,14 @@
   # General
   organization: OpenAI
   description: ''
-  created_date: 2019-11
+  created_date:
+    value: 2019-11-01
+    explanation: Due to the lack of information about the exact date, it is assumed
+      to be the 1st of the known month of creation.
   url: https://cdn.openai.com/better-language-models/language_models_are_unsupervised_multitask_learners.pdf
   model_card: https://github.com/openai/gpt-2/blob/master/model_card.md
   modality: text (English)
-  size: 1.5B parameters (dense)
+  size: 1.5B parameters (dense model)
   analysis: ''
   # Construction
   dependencies: [WebText]
@@ -1151,7 +1157,7 @@
   model_card: ''
   modality: video
   analysis: ''
-  size: 500M parameters (dense)
+  size: 500M parameters (dense model)
   dependencies: [web_clean]
   training_emissions: ''
   training_time: ''

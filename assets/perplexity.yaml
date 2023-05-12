@@ -1,57 +1,16 @@
 ---
 
-- type: dataset
-  name: Perplexity dataset
-  organization: Perplexity
-  description: ''
-  created_date: unknown
-  url: https://www.perplexity.ai/
-  datasheet: ''
-  modality: text
-  size: unknown
-  sample: []
-  analysis: ''
-  dependencies: []
-  included: ''
-  excluded: ''
-  quality_control: ''
-  access: closed
-  license: unknown
-  intended_uses: ''
-  prohibited_uses: ''
-  monitoring: ''
-  feedback: ''
-
-- type: model
-  name: Perplexity model
-  organization: Perplexity
-  description: ''
-  created_date: unknown
-  url: https://www.perplexity.ai/
-  model_card: ''
-  modality: text
-  analysis: ''
-  size: unknown
-  dependencies: [Perplexity dataset]
-  training_emissions: ''
-  training_time: ''
-  training_hardware: ''
-  quality_control: ''
-  access: closed
-  license: unknown
-  intended_uses: ''
-  prohibited_uses: ''
-  monitoring: ''
-  feedback: ''
-
 - type: application
   name: Perplexity Ask
   organization: Perplexity
   description: Perplexity Ask is a new search interface that uses advanced artificial
     intelligence technologies
-  created_date: unknown
+  created_date:
+    value: 2022-12-07
+    explanation: Perplexity Ask was announced in a [[Twitter post]](https://twitter.com/perplexity_ai/status/1600551871554338816?s=20)
+      by the company.
   url: https://www.perplexity.ai/
-  dependencies: [Perplexity model]
+  dependencies: [GPT-3.5, Bing Search]
   adaptation: ''
   output_space: ''
   quality_control: ''

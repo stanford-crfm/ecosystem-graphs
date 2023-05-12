@@ -75,6 +75,113 @@
   monitoring: unknown
   feedback: unknown
 
+- type: dataset
+  name: Conceptual Captions
+  # General
+  organization: Google
+  description: >
+    A dataset containing 3 million (image-URL, caption) pairs designed for the
+    training and evaluation of machine learned image captioning systems.
+  created_date:
+    value: 2018-07-01
+    explanation: Due to the lack of information about the exact date, it is assumed
+      to be the 1st of the known month of creation.
+  url: https://aclanthology.org/P18-1238/
+  datasheet: none
+  modality: text(English) and image
+  size: 3.3M (image, text) pairs
+  sample: []
+  analysis:
+    value: Authors evaluate the dataset on two image captioning models - RNN-based
+      model and Transformer model, under two experimental conditions - using the
+      training & development sets provided by the MS COCO dataset, versus training
+      & development sets using the Conceptual dataset. They use three different
+      test sets- the blind COCO-C40 test set, the Conceptual test set and the Flickr
+      1K test set. They present both Human and Automatic evaluation results. Human
+      evaluations indicate that the Conceptual-based models are superior. Automatic
+      models fail to corroborate the human evaluation results. This highlights the
+      weakness of these automatic metrics.
+    explanation: See [[Experimental Results]](https://aclanthology.org/P18-1238.pdf#section.5)
+  # Construction
+  dependencies: []
+  license: See [[LICENSE]](https://github.com/google-research-datasets/conceptual-captions/blob/master/LICENSE)
+  included: ''
+  excluded:
+    value: |
+      The following filtering steps are applied in the given order:
+      1. Image-based Filtering - "It only keeps JPEG images where both dimensions are greater than 400 pixels, and the ratio of larger to smaller dimension is no more than 2. It excludes images that trigger pornography or profanity detectors. These filters discard more than 65% of the candidates."
+      2. Text-based Filtering - "Candidates with no determiner, no noun, or no preposition are discarded; candidates with a high noun ratio are also discarded; candidates with a high rate of token repetition are discarded; candidates where the first word is not capitalized, or with too high capitalized-word ratio are discarded; we use a vocabulary VW of 1B token types, appearing at least 5 times in the English Wikipedia, and discard candidates that contain tokens that are not found in this vocabulary. candidates that score too high or too low on the polarity annotations, or trigger the pornography/profanity detectors, are discarded; predefined boiler-plate prefix/suffix sequences matching the text are cropped, e.g. “click to enlarge picture”, “stock photo”; we also drop text which begins/ends in certain patterns, e.g. “embedded image permalink”, “profile photo”. These filters only allow around 3% of the incoming candidates to pass to the later stages."
+      3. Image&Text-based Filtering - "We filter out candidates for which none of the text tokens can be mapped to the content of the image. This filter discards around 60% of the incoming candidates."
+      4. Text Transformation with Hypernymization - "Noun modifiers of certain types (proper nouns, numbers, units) are removed; dates, durations, and preposition-based locations (e.g., "in Los Angeles") are removed; named-entities are identified, matched against the KG entries, and substitute with their hypernym; resulting coordination noun-phrases with the same head (e.g., "actor and actor") are resolved into a single-head, pluralized form (e.g., "actors"). Around 20% of samples are discarded during this transformation. We then cluster all resolved entities (e.g., 2560 "actor", "dog", "neighborhood", etc.) and keep only the candidates for which all detected types have a count of over 100 (around 55% of the candidates)."
+    explanation: See [[Conceptual Captions Dataset Creation]](https://aclanthology.org/P18-1238.pdf#section.3)
+  quality_control:
+    value: Input candidate (image, caption) pairs pass through several stages of
+      filtering and processing to ensure quality.
+    explanation: See [[Conceptual Captions Dataset Creation]](https://aclanthology.org/P18-1238.pdf#section.3)
+  # Downstream
+  access:
+    value: open
+    explanation: Dataset can be downloaded at [[Download]](https://ai.google.com/research/ConceptualCaptions/download)
+  intended_uses: ''
+  prohibited_uses: unknown
+  monitoring: unknown
+  feedback: Feedback can be provided by creating an issue in the [[Conceptual Captions
+    GitHub repository]](https://github.com/google-research-datasets/conceptual-captions)
+    or by emailing at conceptual-captions at google.com
+
+- type: dataset
+  name: Conceptual 12M
+  # General
+  organization: Google
+  description: >
+    A dataset with 12 million image-text pairs specifically meant to be used for
+    vision-and-language pre-training.
+  created_date:
+    value: 2021-02-17
+    explanation: >
+      The date the [[paper]](https://arxiv.org/abs/2102.08981) was submitted.
+  url: https://arxiv.org/pdf/2102.08981.pdf
+  datasheet: none
+  modality: text (English) and image
+  size: 12M (image, text) pairs
+  sample: []
+  analysis:
+    value: >
+      The dataset is benchmarked against CC3M on two most fundamental V+L
+      tasks: vision-to-language generation and vision-and-language matching, with
+      an emphasis on long-tail visual recognition. The results illustrate the
+      benefit of scaling up pre-training data for vision-and-language tasks, as
+      indicated by the new state-of-the-art results on both the nocaps and Conceptual
+      Captions benchmarks.
+    explanation: See [[Evaluating Vision-and-Language PreTraining Data]](https://arxiv.org/pdf/2102.08981.pdf#section.3)
+  # Construction
+  dependencies: []
+  license: See [[LICENSE]](https://github.com/google-research-datasets/conceptual-12m/blob/main/LICENSE).
+  included: ''
+  excluded:
+    value: |
+      Some of the filtering steps used in the preparation of Conceptual Captions dataset are relaxed to trade off high-recall for low-precision. The following steps are applied in the given order:
+      1. Image-based Filtering - Only keep JPEG images where both dimensions are greater than 400 pixels, and the ratio of larger to smaller dimension is no more than 2.5. Exclude images that trigger pornography or profanity detectors.
+      2. Text-based Filtering - Allow text between 3 and 256 words in the alt-text. Discard candidates with no noun or no determiner, but permit ones without prepositions. Set the maximum fraction of word repetition allowed to 0.2. Increase the threshold for counting a word type as rare from 5 to 20.
+      3. Image&Text-based Filtering - Filter out candidates for which none of the text tokens can be mapped to the content of the image.
+    explanation: See [[Relaxing filters for higher recall]](https://arxiv.org/pdf/2102.08981.pdf#subsection.2.2)
+  quality_control:
+    value: Input candidate (image, caption) pairs pass through several stages of
+      filtering and processing to ensure quality. Person-name substitutions are
+      performed in the alt-texts to protect the privacy of individuals in the associated
+      images.
+    explanation: See [[Vision-and-Language Pre-Training Data]](https://arxiv.org/pdf/2102.08981.pdf#section.2)
+  # Downstream
+  access:
+    value: open
+    explanation: Dataset is available at [[Conceptual 12M GitHub repository]](https://github.com/google-research-datasets/conceptual-12m).
+  intended_uses: ''
+  prohibited_uses: unknown
+  monitoring: unknown
+  feedback: Feedback can be provided by creating an issue in the [[Conceptual 12M
+    GitHub repository]](https://github.com/google-research-datasets/conceptual-12m)
+    or by emailing at conceptual-captions at google.com
+
 # Models
 - type: model
   name: T5
@@ -88,7 +195,7 @@
   model_card: https://huggingface.co/t5-base
   modality: text (English)
   size:
-    value: 11B parameters (dense)
+    value: 11B parameters (dense model)
     explanation: T5 models were trained on several sizes including 3B and 11B parameters.
   analysis: https://huggingface.co/t5-base#evaluation
   dependencies: [C4]
@@ -940,7 +1047,7 @@
   model_card: ''
   modality: text, video
   analysis: ''
-  size: 1.8B parameters (dense)
+  size: 1.8B parameters (dense model)
   dependencies: [LAION-400M, Phenaki Video-Text Corpus]
   training_emissions: ''
   training_time: ''

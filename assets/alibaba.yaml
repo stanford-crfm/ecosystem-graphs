@@ -1,5 +1,28 @@
 ---
 
+- type: dataset
+  name: LAION-1B
+  organization: Alibaba
+  description: ''
+  created_date: 2023-02-20
+  url: https://arxiv.org/pdf/2302.09778.pdf
+  datasheet: ''
+  modality: text and image
+  size: 1B image-text pairs
+  sample: []
+  analysis: ''
+  dependencies: [LAION-5B]
+  included: ''
+  excluded: We eliminate duplicates, low resolution images, and images potentially
+    contain harmful content from the LAION dataset.
+  quality_control: ''
+  access: closed
+  license: unknown
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+
 - type: model
   name: Composer
   organization: Alibaba
