@@ -254,7 +254,7 @@
       Users can access the Cohere API by signing up on the Cohere website
       [[Cohere Website]](https://cohere.ai/).
   license:
-    value: Proprietary
+    value: custom
     explanation: >
       "Subject to these Terms of Use, we grant you anon-exclusive,
       non-transferable, non-sublicensable and revocable licence to use the

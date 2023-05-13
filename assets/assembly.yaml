@@ -80,7 +80,7 @@
   quality_control: ''
   access: limited
   license:
-    value: Proprietary
+    value: custom
     explanation: >
       "AssemblyAI gives you a personal, worldwide, royalty-free,
       non-assignable and non-exclusive license to use the Site and Services
@@ -109,7 +109,7 @@
   quality_control: ''
   access: open
   license:
-    value: Proprietary
+    value: custom
     explanation: >
       "AssemblyAI gives you a personal, worldwide, royalty-free,
       non-assignable and non-exclusive license to use the Site and Services

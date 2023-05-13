@@ -55,7 +55,10 @@
     - Wikipedia
     - Conceptual Captions
     - Red Caps
-  license: unknown
+  license:
+    value: unknown
+    explanation: >
+      The asset isn't released, and hence the license is unknown.
   included: none
   excluded: YFCC100M is filtered for non-English captions and very short (< 2 word)
     captions.
@@ -96,7 +99,7 @@
       Model checkpoints are available for download from the [[HuggingFace
       repository]](https://huggingface.co/facebook/flava-full)
   license:
-    value: BSD 3-Clause
+    value: BSD-3-Clause
     explanation: >
       The license is provided in the [[HuggingFace repository]](https://huggingface.co/facebook/flava-full)
   intended_uses: >
@@ -129,7 +132,10 @@
   analysis: none
   # Construction
   dependencies: [CommonCrawl, Wikipedia, arXiv]
-  license: unknown
+  license:
+    value: unknown
+    explanation: >
+      The asset isn't released, and hence the license is unknown.
   included: Prompts and reasoning data is explicitly included to improve model capabilities
     derived from this data.
   excluded: ''
@@ -164,7 +170,7 @@
     value: open
     explanation: Model checkpoints freely available at https://github.com/paperswithcode/galai
   license:
-    value: CC-BY NC 4.0
+    value: CC BY-NC 4.0
     explanation: https://github.com/paperswithcode/galai/blob/main/LICENSE-MODEL.md
   intended_uses: ''
   prohibited_uses: ''
@@ -193,7 +199,7 @@
     value: open
     explanation: Model weights are available via the [[HuggingFace repository]](https://huggingface.co/facebook/incoder-6B)
   license:
-    value: CC-BY-NC 4.0
+    value: CC BY-NC 4.0
     explanation: The license is provided in the [[HuggingFace repository]](https://huggingface.co/facebook/incoder-6B?text=My+name+is+Lewis+and+I+like+to)
   intended_uses: ''
   prohibited_uses: ''
@@ -227,8 +233,11 @@
     explanation: The 175B model requires manual approval from Meta to access. Other
       models are available through HuggingFace.
   license:
-    value: OPT-175B LICENSE
-    explanation: All released except 66B (TBD) and 17B (requires manual approval)
+    value: OPT-175B License
+    explanation: >
+      All released with the
+      [[OPT-175B License]](https://github.com/facebookresearch/metaseq/blob/main/projects/OPT/MODEL_LICENSE.md),
+      except 66B (TBD) and 17B (requires manual approval)
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
@@ -256,9 +265,9 @@
   # Construction
   dependencies: [LAION-5B, WebVid-10M, HD-VILA-100M]
   license:
-    value: unknown
+    value: none
     explanation: >
-      No license is discussed, though the underlying datasets are public and have
+      No license was found, though the underlying datasets are public and have
       licenses.
   included:
     value: none
@@ -339,9 +348,8 @@
       but is now closed as of 2022-12-07
       [[Access Form]](https://docs.google.com/forms/u/0/d/e/1FAIpQLSfMjC57wcXWUDV0UbS2Tn6VhjLEiCXaHvWZuWgWRa-Zx8-Few/closedform).
   license:
-    value: unknown
-    explanation: >
-      Authors do not report the license.
+    value: none
+    explanation: No license was found.
   intended_uses:
     value: unknown
     explanation: >
@@ -383,7 +391,7 @@
   training_hardware: ''
   quality_control: ''
   access: open
-  license: LLaMa License (model weights), GPL-3.0 License (code)
+  license: LLaMa License (model weights), GPLv3 (code)
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
@@ -405,7 +413,7 @@
   training_hardware: ''
   quality_control: ''
   access: open
-  license: OPT Model License
+  license: OPT-IML 175B License
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
@@ -436,7 +444,7 @@
   # Construction
   dependencies: []
   license:
-    value: Limited
+    value: SA-1B Dataset Research License
     explanation: SA-1B is released under a favorable license agreement for certain
       research uses and with protections for researchers. See [[SA-1B Dataset Research
       License]](https://ai.facebook.com/datasets/segment-anything-downloads/).

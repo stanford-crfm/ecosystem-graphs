@@ -235,7 +235,7 @@
     explanation: >
       GooseAI API can be accessed by signing up on the goose.ai website.
   license:
-    value: Proprietary
+    value: custom
     explanation: >
       "Subject to Customer’s strict compliance with this TOS, GooseAI grants
       Customer a limited, non-exclusive, non-transferable, non-sublicensable,

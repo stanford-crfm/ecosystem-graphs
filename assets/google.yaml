@@ -18,7 +18,7 @@
   analysis: https://arxiv.org/abs/2104.08758
   # Construction
   dependencies: [CommonCrawl]
-  license: ODC-BY
+  license: ODC-By 1.0
   included: none
   excluded: >
     Data was filtered for English using langdetect. Further, data was filtered
@@ -107,8 +107,10 @@
     explanation: See [[Experimental Results]](https://aclanthology.org/P18-1238.pdf#section.5)
   # Construction
   dependencies: []
-  license: >
-    [[Conceptual Captions License]](https://github.com/google-research-datasets/conceptual-captions/blob/master/LICENSE)
+  license:
+    value: Conceptual Captions License
+    explanation: >
+      [[Conceptual Captions License]](https://github.com/google-research-datasets/conceptual-captions/blob/master/LICENSE)
   included: ''
   excluded:
     value: |
@@ -160,8 +162,10 @@
     explanation: See [[Evaluating Vision-and-Language PreTraining Data]](https://arxiv.org/pdf/2102.08981.pdf#section.3)
   # Construction
   dependencies: []
-  license: >
-    [[Conceptual Captions License]](https://github.com/google-research-datasets/conceptual-captions/blob/master/LICENSE)
+  license:
+    value: Conceptual Captions License
+    explanation: >
+      [[Conceptual Captions License]](https://github.com/google-research-datasets/conceptual-captions/blob/master/LICENSE)
   included: ''
   excluded:
     value: |
@@ -911,7 +915,7 @@
   training_hardware: ''
   quality_control: ''
   access: closed
-  license: Unknown (model weights), Apache-2.0 (SayCan code)
+  license: unknown (model weights), Apache 2.0 (SayCan code)
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''

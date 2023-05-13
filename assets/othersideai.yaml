@@ -24,7 +24,7 @@
   # Downstream
   access: limited
   license:
-    value: Proprietary
+    value: custom
     explanation: >
       "The Software, including software embedded in the Software, is licensed,
       not sold, to you by Otherside only under the terms of this Agreement; and

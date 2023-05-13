@@ -16,7 +16,7 @@
   quality_control: ''
   access: limited
   license:
-    value: Proprietary
+    value: custom
     explanation: >
       Users are granted a limited license per Duolingo Terms.
   terms_of_service: https://www.duolingo.com/terms
@@ -42,7 +42,7 @@
   quality_control: ''
   access: limited
   license:
-    value: Proprietary
+    value: custom
     explanation: >
       Users are granted a limited license per Duolingo Terms.
   terms_of_service: ''
@@ -72,7 +72,7 @@
   quality_control: ''
   access: limited
   license:
-    value: Proprietary
+    value: custom
     explanation: >
       "Subject to the terms of these Terms and Conditions, Duolingo grants you
       a non-transferable, non-exclusive license to download, install, and use

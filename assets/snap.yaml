@@ -15,7 +15,7 @@
   quality_control: ''
   access: open
   license:
-    value: Proprietary
+    value: custom
     explanation: >
       "Snap grants you a worldwide, royalty-free, non-assignable, non-exclusive,  revocable,
       and non-sublicensable license to use the Services." - excerpt

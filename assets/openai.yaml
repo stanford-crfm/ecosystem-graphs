@@ -191,7 +191,10 @@
     explanation: The paper doesn't provide an analysis on the training dataset.
   # Construction
   dependencies: []
-  license: unknown
+  license:
+    value: unknown
+    explanation: >
+      The asset isn't released, and hence the license is unknown.
   included: >
     The dataset includes 54 million public software repositories hosted on
     GitHub as of an unspecified date in May 2020
@@ -246,7 +249,7 @@
   license:
     value: unknown
     explanation: >
-      The dataset doesn't have known license as it hasn't been publicly
+      The asset doesn't have a known license as it hasn't been publicly
       released.
   included: >
     Data crawled from the internet, without any filtering (including
@@ -295,7 +298,11 @@
     the said images [[Section 3.1]](https://arxiv.org/pdf/2102.12092.pdf#subsection.3.1).
   # Construction
   dependencies: []
-  license: unknown
+  license:
+    value: unknown
+    explanation: >
+      The asset doesn't have a known license as it hasn't been publicly
+      released.
   included: >
     Data from the internet, including Conceptual Captions and a filtered subset
     of YFCC100M.
@@ -357,7 +364,8 @@
   license:
     value: unknown
     explanation: >
-      There is no known license specific to the dataset.
+      The asset doesn't have a known license as it hasn't been publicly
+      released.
   included: >
     The dataset is composed three major sources: multilingual speech recognition
     (17%), translation (18%), and English speech recognition (65%).
@@ -404,7 +412,11 @@
   analysis: ''
   # Construction
   dependencies: []
-  license: ''
+  license:
+    value: unknown
+    explanation: >
+      The asset doesn't have a known license as it hasn't been publicly
+      released.
   included: ''
   excluded: ''
   quality_control: ''
@@ -438,7 +450,11 @@
   quality_control: ''
   # Downstream
   access: open
-  license: ''
+  license:
+    value: Modified MIT License
+    explanation: >
+      GPT-2 uses a
+      [[modified MIT License]](https://github.com/openai/gpt-2/blob/master/LICENSE).
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
@@ -520,10 +536,11 @@
       in supported countries
       [[Supported Countries]](https://beta.openai.com/docs/supported-countries)
       [[OpenAI API]](https://openai.com/api/).
-  license: >
-    GPT-3 is exclusively licensed to OpenAI and Microsoft
-    [[OpenAI Blog Post]]
-    (https://openai.com/blog/openai-licenses-gpt-3-technology-to-microsoft/).
+  license:
+    value: unknown
+    explanation: >
+      The asset doesn't have a known license as it hasn't been publicly
+      released.
   intended_uses: >
     GPT-3 was intended to be use through the OpenAI API by developers for
     language applications. Other intended use of GPT-3 include researchers
@@ -602,9 +619,8 @@
   license:
     value: unknown
     explanation: >
-      The license is unknown, but the model was made available to
-      Microsoft possibly through an exclusive license
-      [[GitHub Copilot]](https://copilot.github.com/).
+      The asset doesn't have a known license as it hasn't been publicly
+      released.
   intended_uses: >
     Codex is intended to be used for coding related language modelling tasks.
   prohibited_uses:
@@ -667,10 +683,8 @@
   license:
     value: unknown
     explanation: >
-      The license is unknown, but the model is likely governed by
-      OpenAI Terms of Use, which list license and ownership information in
-      Section 2. Using the APIs
-      [[Terms of Use]](https://openai.com/api/policies/terms/).
+      The asset doesn't have a known license as it hasn't been publicly
+      released.
   intended_uses: >
     As stated in the model card: "The intended direct users of InstructGPT are
     developers who access its capabilities via the OpenAI API. Through the
@@ -917,8 +931,8 @@
   license:
     value: unknown
     explanation: >
-      The license used for the model is unknown as the model isn't
-      made public.
+      The asset doesn't have a known license as it hasn't been publicly
+      released.
   intended_uses: >
     "The model is intended for others to use for training their own generative
     models"
@@ -958,7 +972,7 @@
     value: open
     explanation: The model can be downloaded from the [Github repository](https://github.com/openai/jukebox)
   license:
-    value: Noncommercial use license
+    value: Noncommercial Use License
     explanation: >
       The license is provided in the [Github repository](https://github.com/openai/jukebox).
   intended_uses: ''
@@ -1015,10 +1029,7 @@
   license:
     value: unknown
     explanation: >
-      The DALL·E 2 license is not known, but the system card stated that
-      the use of generated images for commercial purposes was not allowed
-      [[Additional Policies]]
-      (https://github.com/openai/dalle-2-preview/blob/main/system-card.md#additional-policies).
+      The asset isn't released, and hence the license is unknown.
   intended_uses: >
     "The intended use of the DALL·E 2 Preview at this time is for personal,
     non-commercial exploration and research purposes by people who are
@@ -1091,10 +1102,10 @@
       [[Supported Countries]](https://beta.openai.com/docs/supported-countries)
       [[OpenAI API]](https://openai.com/api/).
   terms_of_service: https://openai.com/api/policies/terms/
-  license: >
-    Per the Terms of Use, a limited license is provided to the users during
-    their use of the API
-    [[Section 2]](https://openai.com/api/policies/terms/).
+  license:
+    value: custom
+    explanation: Per the Terms of Use, a limited license is provided to the users
+      during their use of the API [[Section 2]](https://openai.com/api/policies/terms/).
   intended_uses: >
     OpenAI API was designed to be used by developers to empower applications,
     and researchers to study language models
@@ -1186,7 +1197,10 @@
   excluded: ''
   quality_control: ''
   access: closed
-  license: unknown
+  license:
+    value: unknown
+    explanation: >
+      The asset isn't released, and hence the license is unknown.
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
@@ -1203,7 +1217,10 @@
   output_space: ''
   quality_control: ''
   access: open
-  license: ''
+  license:
+    value: custom
+    explanation: Per the Terms of Use, a limited license is provided to the users
+      during their use of the API [[Section 2]](https://openai.com/api/policies/terms/).
   terms_of_service: ''
   intended_uses: ''
   prohibited_uses: ''
@@ -1231,7 +1248,10 @@
   training_hardware: ''
   quality_control: ''
   access: limited
-  license: ''
+  license:
+    value: custom
+    explanation: Per the Terms of Use, a limited license is provided to the users
+      during their use of the API [[Section 2]](https://openai.com/api/policies/terms/).
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
@@ -1253,7 +1273,10 @@
   excluded: ''
   quality_control: ''
   access: limited
-  license: ''
+  license:
+    value: unknown
+    explanation: >
+      The asset isn't released, and hence the license is unknown.
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
@@ -1275,7 +1298,10 @@
   excluded: ''
   quality_control: ''
   access: limited
-  license: ''
+  license:
+    value: unknown
+    explanation: >
+      The asset isn't released, and hence the license is unknown.
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
@@ -1297,7 +1323,10 @@
   training_hardware: ''
   quality_control: ''
   access: limited
-  license: ''
+  license:
+    value: unknown
+    explanation: >
+      The asset isn't released, and hence the license is unknown.
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
@@ -1319,7 +1348,10 @@
   training_hardware: ''
   quality_control: ''
   access: limited
-  license: ''
+  license:
+    value: unknown
+    explanation: >
+      The asset isn't released, and hence the license is unknown.
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
@@ -1341,7 +1373,10 @@
   training_hardware: ''
   quality_control: ''
   access: limited
-  license: ''
+  license:
+    value: unknown
+    explanation: >
+      The asset isn't released, and hence the license is unknown.
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
@@ -1358,7 +1393,10 @@
   output_space: ''
   quality_control: ''
   access: open
-  license: ''
+  license:
+    value: custom
+    explanation: Per the Terms of Use, a limited license is provided to the users
+      during their use of the API [[Section 2]](https://openai.com/api/policies/terms/).
   terms_of_service: ''
   intended_uses: ''
   prohibited_uses: ''
@@ -1379,7 +1417,10 @@
   output_space: ''
   quality_control: ''
   access: open
-  license: ''
+  license:
+    value: custom
+    explanation: Per the Terms of Use, a limited license is provided to the users
+      during their use of the API [[Section 2]](https://openai.com/api/policies/terms/).
   terms_of_service: ''
   intended_uses: ''
   prohibited_uses: ''
@@ -1402,7 +1443,10 @@
   output_space: ''
   quality_control: ''
   access: open
-  license: ''
+  license:
+    value: custom
+    explanation: Per the Terms of Use, a limited license is provided to the users
+      during their use of the API [[Section 2]](https://openai.com/api/policies/terms/).
   terms_of_service: ''
   intended_uses: ''
   prohibited_uses: ''
@@ -1428,7 +1472,10 @@
   training_hardware: ''
   quality_control: ''
   access: closed
-  license: unknown
+  license:
+    value: unknown
+    explanation: >
+      The asset isn't released, and hence the license is unknown.
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
@@ -1450,7 +1497,10 @@
   excluded: ''
   quality_control: ''
   access: closed
-  license: unknown
+  license:
+    value: unknown
+    explanation: >
+      The asset isn't released, and hence the license is unknown.
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
@@ -1581,7 +1631,10 @@
   training_hardware: ''
   quality_control: ''
   access: limited
-  license: unknown
+  license:
+    value: unknown
+    explanation: >
+      The asset isn't released, and hence the license is unknown.
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
@@ -1599,7 +1652,10 @@
   output_space: ''
   quality_control: ''
   access: limited
-  license: ''
+  license:
+    value: custom
+    explanation: Per the Terms of Use, a limited license is provided to the users
+      during their use of the API [[Section 2]](https://openai.com/api/policies/terms/).
   terms_of_service: ''
   intended_uses: ''
   prohibited_uses: ''

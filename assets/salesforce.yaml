@@ -21,7 +21,7 @@
     value: open
     explanation: Model weights are available for download with links in the [[GitHub
       repo]](https://github.com/salesforce/CodeGen)
-  license: none (model weights), BSD 3-Clause (code)
+  license: none (model weights), BSD-3-Clause (code)
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''

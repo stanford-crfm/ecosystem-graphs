@@ -42,7 +42,7 @@
     value: open
     explanation: The dataset index is available from [[dataset blog post]](https://laion.ai/blog/laion-400-open-dataset/)
   license:
-    value: CC-BY 4.0
+    value: CC BY 4.0
     explanation: The license is listed on the [[dataset blog post]](https://laion.ai/blog/laion-400-open-dataset/)
   intended_uses: The authors recommend using the dataset "for research purposes"
     and warn that "this large-scale dataset is non-curated. It was built for research
@@ -93,7 +93,7 @@
     value: open
     explanation: The dataset index is available from [[dataset blog post]](https://laion.ai/blog/laion-5b/)
   license:
-    value: CC-BY 4.0
+    value: CC BY 4.0
     explanation: The license is listed on the [[dataset blog post]](https://laion.ai/blog/laion-5b/)
   intended_uses: The authors recommend using the dataset "for research purposes"
     and "do not recommend using it for creating ready-to-go industrial products,
@@ -144,7 +144,7 @@
     value: open
     explanation: The dataset index is available from [[dataset blog post]](https://laion.ai/blog/laion-5b/)
   license:
-    value: CC-BY 4.0
+    value: CC BY 4.0
     explanation: The license is listed on the [[dataset blog post]](https://laion.ai/blog/laion-5b/)
   intended_uses: The authors recommend using the dataset "for research purposes"
     and "do not recommend using it for creating ready-to-go industrial products,

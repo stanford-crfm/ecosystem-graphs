@@ -28,7 +28,7 @@
   # Downstream
   access: limited
   license:
-    value: Proprietary
+    value: custom
     explanation: >
       "Sana Labs grants Subscriber a limited non-exclusive, non-transferable,
       non-sublicensable license to use Sana Labs' web-based personalized and
