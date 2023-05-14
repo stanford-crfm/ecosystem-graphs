@@ -68,7 +68,7 @@
     explanation: The internal feedback mechanisms for Cohere are unknown.
 
 - type: model
-  name: Cohere Generations model
+  name: Cohere Base
   # General
   organization: Cohere
   description: >
@@ -145,11 +145,79 @@
       support at cohere.ai.
 
 - type: model
-  name: Cohere Representation model
+  name: Cohere Command
   # General
   organization: Cohere
   description: >
-    The Representation model is a language model trained by Cohere for
+    This model is a generative model optimized to follow commands in the prompt.
+  created_date:
+    value: 2023-01-01
+    explanation: >
+      Cohere Command was in beta before this date
+  url: https://docs.cohere.com/docs/command-beta
+  model_card: https://docs.cohere.ai/generation-card
+  modality: text (English)
+  size:
+    value: unknown
+    explanation: >
+      The exact sizes of the generation models are unknown, but we know
+      that they come in three sizes: small, medium, and large
+      [[Model Card]](https://docs.cohere.ai/generation-card).
+  analysis: The model's performance was analyzed on Hellaswag and COPA, as well
+    as several safety benchmarks [[Model Card]](https://docs.cohere.ai/generation-card).
+  # Construction
+  dependencies: [Cohere Base]
+  training_emissions:
+    value: unknown
+    explanation: unknown
+  training_time:
+    value: unknown
+    explanation: unknown
+  training_hardware:
+    value: unknown
+    explanation: unknown
+  quality_control:
+    value: unknown
+    explanation: unknown
+  # Downstream
+  access:
+    value: limited
+    explanation: >
+      The model is available to the public through the Cohere Platform
+      [[Cohere Platform]](https://os.cohere.ai/login).
+  license:
+    value: unknown
+    explanation: The model likely has a license specifically for Cohere's use.
+  intended_uses: >
+    On the model card, the intended uses are stated as "interactive
+    autocomplete, augmenting human writing processes, summarization,
+    text rephrasing, and other text-to-text tasks in non-sensitive domains"
+    [[Model Card]](https://docs.cohere.ai/generation-card).
+  prohibited_uses: >
+    The usage of the model is bound by the Cohere usage guidelines
+    [[Usage Guidelines]](https://docs.cohere.ai/usage-guidelines).
+    A non-comprehensive list of specific application violating these guidelines
+    are: astroturfing, generation of misinformation and other harmful content,
+    and "generation of text about people, places, or events without a
+    human-in-the-loop"
+    [[Model Card]](https://docs.cohere.ai/generation-card).
+  monitoring: >
+    The usage of the model is monitored by Cohere
+    [[Model Card]](https://docs.cohere.ai/generation-card).
+  feedback:
+    value: unknown
+    explanation: >
+      There are no specific feedback mechanisms for the Generation model,
+      but a generic contact email is provided on Cohere website, which is
+      support at cohere.ai.
+
+
+- type: model
+  name: Cohere Embed (English)
+  # General
+  organization: Cohere
+  description: >
+    The Embedding Large (English) model is a language model trained by Cohere for
     tasks requiring embeddings.
   created_date:
     value: 2021-11-15
@@ -163,14 +231,92 @@
   size:
     value: unknown
     explanation: >
-      The exact sizes of the generation models are unknown, but we know
+      The exact sizes of the embedding models are unknown, but we know
       that they come in three sizes: small, medium, and large
       [[Model Card]](https://docs.cohere.ai/representation-card).
   analysis: >
     The model's performance was analyzed on several safety benchmarks
     [[Model Card]](https://docs.cohere.ai/representation-card).
   # Construction
-  dependencies: [coheretext]
+  dependencies: []
+  training_emissions:
+    value: unknown
+    explanation: The emissions of the models are unknown.
+  training_time:
+    value: unknown
+    explanation: The training time for the models are unknown.
+  training_hardware:
+    value: unknown
+    explanation: >
+      The training hardware wasn't explicitly announced, but it was
+      reported that Google Cloud teamed up with Cohere on a TPU partnership
+      [[TechCrunch Article]]
+      (https://techcrunch.com/2021/11/17/google-cloud-teams-up-with-nlp-startup-cohere-on-multi-year-partnership/).
+  quality_control: unknown
+  # Downstream
+  access:
+    value: limited
+    explanation: >
+      The model is available to the public through the Cohere Platform
+      [[Cohere Platform]](https://cohere.ai/).
+  license:
+    value: unknown
+    explanation: The model likely has a license specifically for Cohere's use.
+  intended_uses: >
+    The intended uses are stated as "estimating semantic similarity between two
+    sentences, choosing a sentence which is most likely to follow another
+    sentence, sentiment analysis, topic extraction, or categorizing user
+    feedback" on the Cohere model card
+    [[Model Card]](https://docs.cohere.ai/representation-card).
+  prohibited_uses: >
+    The usage of the model is bound by the Cohere usage guidelines
+    [[Usage Guidelines]](https://docs.cohere.ai/usage-guidelines).
+    A non-comprehensive list of specific application violating these guidelines
+    are: extraction of identity and demographic information, building
+    purposefully opaque text classification systems, and "building downstream
+    classifiers that serve as automated decision-making systems that have
+    real-world consequences on people, where those decisions are made without
+    a
+    human-in-the-loop"
+    [[Model Card]](https://docs.cohere.ai/representation-card).
+  monitoring: >
+    The usage of the model is monitored by Cohere
+    [[Model Card]](https://docs.cohere.ai/representation-card).
+  feedback:
+    value: unknown
+    explanation: >
+      There are no specific feedback mechanisms for the Generation model,
+      but a generic contact email is provided on Cohere website, which is
+      support at cohere.ai.
+
+- type: model
+  name: Cohere Embed (Multilingual)
+  # General
+  organization: Cohere
+  description: >
+    This model maps text from 100+ languages to a semantic
+    vector space, positioning text with a similar meaning
+    (regardless of language) in close proximity.
+  modality: text (Multilingual)
+  created_date:
+    value: 2022-12-12
+    explanation: >
+      The launch of the multilingual embedding model was announced in this
+      [[blog post]]
+      (https://txt.cohere.com/multilingual/).
+  url: https://txt.cohere.ai/multilingual/
+  model_card: https://docs.cohere.ai/representation-card
+  size:
+    value: unknown
+    explanation: >
+      The exact sizes of the embedding models are unknown, but we know
+      that they come in three sizes: small, medium, and large
+      [[Model Card]](https://docs.cohere.ai/representation-card).
+  analysis: >
+    The model's performance was analyzed on several safety benchmarks
+    [[Model Card]](https://docs.cohere.ai/representation-card).
+  # Construction
+  dependencies: []
   training_emissions:
     value: unknown
     explanation: The emissions of the models are unknown.
@@ -236,9 +382,236 @@
       (https://venturebeat.com/2021/11/15/openai-rival-cohere-launches-language-model-api/).
   url: https://cohere.ai/
   # Construction
-  dependencies: [Cohere Generations model, Cohere Representation model]
+  dependencies:
+    - Cohere Generate Endpoint
+    - Cohere Embed Endpoint
+    - Cohere Classify Endpoint
+    - Cohere Summarize Endpoint
   adaptation: unknown
   output_space: generation and embeddings
+  quality_control: >
+    The new users of the API get a limited access restricting the sizes of the
+    models as well as the number of tokens that can be used. Users are required
+    to go through an internal application to upgrade to full access
+    [[Limited Access]](https://docs.cohere.ai/limited-access).
+  # Downstream
+  access:
+    value: limited
+    explanation: >
+      Users can access the Cohere API by signing up on the Cohere website
+      [[Cohere Website]](https://cohere.ai/).
+  license: >
+    Limited use license to Cohere platform users
+    [[Terms of Use]](https://cohere.ai/terms-of-use).
+  terms_of_service: https://cohere.ai/terms-of-use
+  intended_uses: >
+    Intended to be used by developers who would like to incorporate NLP into
+    their applications
+    [[Cohere Website]](https://cohere.ai/).
+  prohibited_uses: >
+    The usage of the API is bound by the Cohere usage guidelines.
+    Disallowed use cases include violence and threats, antisocial and
+    antidemocratic uses, deceit, attacks on security or privacy, unsafe
+    unsupervised uses, decision-making, high-Risk generations among others
+    [[Usage Guidelines]](https://docs.cohere.ai/usage-guidelines).
+  monitoring: >
+    All applications developed using the Cohere API is subject to review by
+    Cohere.
+  feedback: >
+    General feedback as well as the violations of the usage guidelines can
+    be reported to Cohere at responsibility at cohere.ai
+    [[Usage Guidelines]](https://docs.cohere.ai/usage-guidelines).
+  # Deployment
+  monthly_active_users: unknown
+  user_distribution: unknown
+  failures: unknown
+
+- type: application
+  name: Cohere Generate Endpoint
+  # General
+  organization: Cohere
+  description: >
+    This endpoint generates realistic text conditioned on a given input.
+  created_date:
+    value: 2021-11-15
+    explanation: >
+      The launch of Generate was announced in this
+      [[news article]]
+      (https://venturebeat.com/uncategorized/openai-rival-cohere-launches-language-model-api/).
+  url: https://docs.cohere.ai/reference/generate
+  # Construction
+  dependencies: [Cohere Base, Cohere Command]
+  adaptation: unknown
+  output_space: generation
+  quality_control: >
+    The new users of the API get a limited access restricting the sizes of the
+    models as well as the number of tokens that can be used. Users are required
+    to go through an internal application to upgrade to full access
+    [[Limited Access]](https://docs.cohere.ai/limited-access).
+  # Downstream
+  access:
+    value: limited
+    explanation: >
+      Users can access the Cohere API by signing up on the Cohere website
+      [[Cohere Website]](https://cohere.ai/).
+  license: >
+    Limited use license to Cohere platform users
+    [[Terms of Use]](https://cohere.ai/terms-of-use).
+  terms_of_service: https://cohere.ai/terms-of-use
+  intended_uses: >
+    Intended to be used by developers who would like to incorporate NLP into
+    their applications
+    [[Cohere Website]](https://cohere.ai/).
+  prohibited_uses: >
+    The usage of the API is bound by the Cohere usage guidelines.
+    Disallowed use cases include violence and threats, antisocial and
+    antidemocratic uses, deceit, attacks on security or privacy, unsafe
+    unsupervised uses, decision-making, high-Risk generations among others
+    [[Usage Guidelines]](https://docs.cohere.ai/usage-guidelines).
+  monitoring: >
+    All applications developed using the Cohere API is subject to review by
+    Cohere.
+  feedback: >
+    General feedback as well as the violations of the usage guidelines can
+    be reported to Cohere at responsibility at cohere.ai
+    [[Usage Guidelines]](https://docs.cohere.ai/usage-guidelines).
+  # Deployment
+  monthly_active_users: unknown
+  user_distribution: unknown
+  failures: unknown
+
+- type: application
+  name: Cohere Embed Endpoint
+  # General
+  organization: Cohere
+  description: >
+    This endpoint returns text embeddings. An
+    embedding is a list of floating point numbers that
+    captures semantic information about the text that it represents.
+  created_date:
+    value: 2021-11-15
+    explanation: >
+      The launch of Embed was announced in this
+      [[news article]]
+      (https://venturebeat.com/uncategorized/openai-rival-cohere-launches-language-model-api/).
+  url: https://docs.cohere.ai/reference/embed
+  # Construction
+  dependencies: [Cohere Embed (Multilingual), Cohere Embed (English)]
+  adaptation: unknown
+  output_space: embedding
+  quality_control: >
+    The new users of the API get a limited access restricting the sizes of the
+    models as well as the number of tokens that can be used. Users are required
+    to go through an internal application to upgrade to full access
+    [[Limited Access]](https://docs.cohere.ai/limited-access).
+  # Downstream
+  access:
+    value: limited
+    explanation: >
+      Users can access the Cohere API by signing up on the Cohere website
+      [[Cohere Website]](https://cohere.ai/).
+  license: >
+    Limited use license to Cohere platform users
+    [[Terms of Use]](https://cohere.ai/terms-of-use).
+  terms_of_service: https://cohere.ai/terms-of-use
+  intended_uses: >
+    Intended to be used by developers who would like to incorporate NLP into
+    their applications
+    [[Cohere Website]](https://cohere.ai/).
+  prohibited_uses: >
+    The usage of the API is bound by the Cohere usage guidelines.
+    Disallowed use cases include violence and threats, antisocial and
+    antidemocratic uses, deceit, attacks on security or privacy, unsafe
+    unsupervised uses, decision-making, high-Risk generations among others
+    [[Usage Guidelines]](https://docs.cohere.ai/usage-guidelines).
+  monitoring: >
+    All applications developed using the Cohere API is subject to review by
+    Cohere.
+  feedback: >
+    General feedback as well as the violations of the usage guidelines can
+    be reported to Cohere at responsibility at cohere.ai
+    [[Usage Guidelines]](https://docs.cohere.ai/usage-guidelines).
+  # Deployment
+  monthly_active_users: unknown
+  user_distribution: unknown
+  failures: unknown
+
+- type: application
+  name: Cohere Classify Endpoint
+  # General
+  organization: Cohere
+  description: >
+    This endpoint makes a prediction about which label best
+    fits a specified text input. To make a prediction,
+    Classify uses the provided examples of text + label
+    pairs as a reference.
+  created_date:
+    value: 2022-05-05
+    explanation: >
+      The launch of Classify was announced in this
+      [[blog post]]
+      (https://txt.cohere.com/classification-is-now-available/).
+  url: https://docs.cohere.ai/reference/classify
+  # Construction
+  dependencies: [Cohere Embed (Multilingual), Cohere Embed (English)]
+  adaptation: unknown
+  output_space: embedding
+  quality_control: >
+    The new users of the API get a limited access restricting the sizes of the
+    models as well as the number of tokens that can be used. Users are required
+    to go through an internal application to upgrade to full access
+    [[Limited Access]](https://docs.cohere.ai/limited-access).
+  # Downstream
+  access:
+    value: limited
+    explanation: >
+      Users can access the Cohere API by signing up on the Cohere website
+      [[Cohere Website]](https://cohere.ai/).
+  license: >
+    Limited use license to Cohere platform users
+    [[Terms of Use]](https://cohere.ai/terms-of-use).
+  terms_of_service: https://cohere.ai/terms-of-use
+  intended_uses: >
+    Intended to be used by developers who would like to incorporate NLP into
+    their applications
+    [[Cohere Website]](https://cohere.ai/).
+  prohibited_uses: >
+    The usage of the API is bound by the Cohere usage guidelines.
+    Disallowed use cases include violence and threats, antisocial and
+    antidemocratic uses, deceit, attacks on security or privacy, unsafe
+    unsupervised uses, decision-making, high-Risk generations among others
+    [[Usage Guidelines]](https://docs.cohere.ai/usage-guidelines).
+  monitoring: >
+    All applications developed using the Cohere API is subject to review by
+    Cohere.
+  feedback: >
+    General feedback as well as the violations of the usage guidelines can
+    be reported to Cohere at responsibility at cohere.ai
+    [[Usage Guidelines]](https://docs.cohere.ai/usage-guidelines).
+  # Deployment
+  monthly_active_users: unknown
+  user_distribution: unknown
+  failures: unknown
+
+- type: application
+  name: Cohere Summarize Endpoint
+  # General
+  organization: Cohere
+  description: >
+    This endpoint generates a succinct
+    version of the original text that relays
+    the most important information.
+  created_date:
+    value: 2023-02-22
+    explanation: >
+      The beta launch of summarize was announced in this
+      [[blog post]]
+      (https://txt.cohere.com/summarize-beta/).
+  url: https://docs.cohere.ai/reference/summarize
+  # Construction
+  dependencies: []
+  adaptation: unknown
+  output_space: generation
   quality_control: >
     The new users of the API get a limited access restricting the sizes of the
     models as well as the number of tokens that can be used. Users are required
