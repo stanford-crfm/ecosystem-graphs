@@ -346,7 +346,7 @@
   license:
     value: unknown
     explanation: >
-      The dataset isn't released, and hence the license is unknown.
+      The asset isn't released, and hence the license is unknown.
   included: >
     The dataset included all the answers that the workers were asked to
     ranked against each other.
@@ -450,7 +450,7 @@
   license:
     value: unknown
     explanation: >
-      The model wasn't released, and hence the license is unknown.
+      The asset isn't released, and hence the license is unknown.
   intended_uses:
     value: unknown
     explanation: >
@@ -505,7 +505,8 @@
     explanation: The terms of service for the interaface is unknown.
   license:
     value: unknown
-    explanation: The license for the interaface is unknown.
+    explanation: >
+      The asset isn't released, and hence the license is unknown.
   intended_uses: >
     Intended to be used by crowdworkers who are tasked with ranking model
     answers.
@@ -532,7 +533,9 @@
   output_space: ''
   quality_control: ''
   access: limited
-  license: unknown
+  license:
+    value: none
+    explanation: No license was found.
   terms_of_service: ''
   intended_uses: ''
   prohibited_uses: ''
@@ -558,7 +561,10 @@
   training_hardware: ''
   quality_control: ''
   access: limited
-  license: unknown
+  license:
+    value: unknown
+    explanation: >
+      The asset isn't released, and hence the license is unknown.
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
@@ -580,7 +586,10 @@
   training_hardware: ''
   quality_control: ''
   access: limited
-  license: unknown
+  license:
+    value: unknown
+    explanation: >
+      The asset isn't released, and hence the license is unknown.
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''

@@ -18,7 +18,7 @@
   # Construction
   dependencies: []
   license:
-    value: Several
+    value: custom
     explanation: Each constituent subset of the dataset will be released under the
       license that applies to it. ([See individual dataset page for specific license
       information](https://hf.co/bigscience-data))

@@ -30,7 +30,8 @@
   dependencies: []
   license:
     value: unknown
-    explanation: The dataset likely has a license specifically for Cohere's use.
+    explanation: >
+      The asset isn't released, and hence the license is unknown.
   included: >
     As stated in the datasheet, the dataset "includes the Google Books dataset,
     CommonCrawl, and text from the internet scraped by the Cohere infrastructure
@@ -120,7 +121,8 @@
       [[Cohere Platform]](https://os.cohere.ai/login).
   license:
     value: unknown
-    explanation: The model likely has a license specifically for Cohere's use.
+    explanation: >
+      The asset isn't released, and hence the license is unknown.
   intended_uses: >
     On the model card, the intended uses are stated as "interactive
     autocomplete, augmenting human writing processes, summarization,
@@ -339,7 +341,8 @@
       [[Cohere Platform]](https://cohere.ai/).
   license:
     value: unknown
-    explanation: The model likely has a license specifically for Cohere's use.
+    explanation: >
+      The asset isn't released, and hence the license is unknown.
   intended_uses: >
     The intended uses are stated as "estimating semantic similarity between two
     sentences, choosing a sentence which is most likely to follow another
@@ -400,9 +403,13 @@
     explanation: >
       Users can access the Cohere API by signing up on the Cohere website
       [[Cohere Website]](https://cohere.ai/).
-  license: >
-    Limited use license to Cohere platform users
-    [[Terms of Use]](https://cohere.ai/terms-of-use).
+  license:
+    value: custom
+    explanation: >
+      "Subject to these Terms of Use, we grant you anon-exclusive,
+      non-transferable, non-sublicensable and revocable licence to use the
+      Cohere Solution in accordance with these Terms of Use" - excerpt from the
+      Terms of Service document.
   terms_of_service: https://cohere.ai/terms-of-use
   intended_uses: >
     Intended to be used by developers who would like to incorporate NLP into

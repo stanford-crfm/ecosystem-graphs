@@ -21,8 +21,8 @@
     value: open
     explanation: The license is provided in the [[HuggingFace repository]](https://huggingface.co/codeparrot/codeparrot)
   license:
-    value: unknown
-    explanation: No license is explicitly provided for this model
+    value: none
+    explanation: No license is explicitly provided for this model.
   intended_uses: none
   prohibited_uses: none
   monitoring: none

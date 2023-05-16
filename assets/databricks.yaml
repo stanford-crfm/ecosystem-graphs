@@ -46,7 +46,7 @@
       Model training code can be accessed at the official Dolly repository.
       Trained weights can be requested at hello-dolly@databricks.com.
       [[Dolly Repository]](https://github.com/databrickslabs/dolly).
-  license: Apache License 2.0
+  license: Apache 2.0
   intended_uses: >
     "Dolly is intended exclusively for research purposes and is not licensed for
     commercial use."

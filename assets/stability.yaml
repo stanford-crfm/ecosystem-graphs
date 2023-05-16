@@ -21,7 +21,10 @@
   access:
     value: open
     explanation: Model weights are available for download from the [[Github repo]](https://github.com/CompVis/stable-diffusion)
-  license: unknown
+  license:
+    value: CreativeML Open RAIL-M
+    explanation: >
+      [[CreativeML Open RAIL-M]](https://github.com/CompVis/stable-diffusion/blob/main/LICENSE)
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''

@@ -27,7 +27,14 @@
   quality_control: unknown
   # Downstream
   access: limited
-  license: https://www.sanalabs.com/legal/
+  license:
+    value: custom
+    explanation: >
+      "Sana Labs grants Subscriber a limited non-exclusive, non-transferable,
+      non-sublicensable license to use Sana Labs' web-based personalized and
+      collaborative learning platform (“Sana Platform”) solely in connection
+      with the subscribed Services in accordance with the Agreement." -
+      excerpt from the Terms of Service.
   terms_of_service: https://www.sanalabs.com/legal/
   intended_uses: >
     Sana is intended to be used by employers to provide a learning service for
@@ -35,10 +42,11 @@
   prohibited_uses:
     value: none
     explanation: >
-      Sana provides an extensive set of legal documents
+      "Sana provides an extensive set of legal documents
       [[Sana Legal]](https://www.sanalabs.com/legal/), but missing from the
       documents are prohibited uses of the Sana platform, beyond a mention of
-      what is impermissible under relevant law.
+      what is impermissible under relevant law." - exceprt from the Terms of
+      Service document.
   monitoring: unknown
   feedback: unknown
   # Deployment

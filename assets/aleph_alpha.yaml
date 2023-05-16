@@ -18,7 +18,10 @@
   analysis: unknown
   # Construction
   dependencies: []
-  license: unknown
+  license:
+    value: unknown
+    explanation: >
+      The asset isn't released, and hence the license is unknown.
   included: unknown
   excluded: unknown
   quality_control: unknown
@@ -52,7 +55,9 @@
   access:
     value: limited
     explanation: Paid API product
-  license: unknown
+  license:
+    value: none
+    explanation: No license was found.
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
@@ -84,9 +89,8 @@
     explanation: The API is a paid product. Refer to the [[API documentation]](https://docs.aleph-alpha.com/docs/introduction/luminous/)
       for further details.
   license:
-    value: unknown
-    explanation: Unable to locate a specific license for the API as of 2021-01-09.
-      See Terms of Service for additional information.
+    value: none
+    explanation: No license was found.
   terms_of_service: https://www.aleph-alpha.com/terms-conditions
   intended_uses: unknown
   prohibited_uses: unknown

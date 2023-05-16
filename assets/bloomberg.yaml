@@ -23,7 +23,10 @@
   analysis: ''
   # Construction
   dependencies: []
-  license: unknown
+  license:
+    value: unknown
+    explanation: >
+      The asset isn't released, and hence the license is unknown.
   included:
     value: |
       FinPile consists of English financial documents. Authors utilize the The Bloomberg
@@ -116,7 +119,10 @@
   access:
     value: closed
     explanation: See [[Openness]](https://arxiv.org/pdf/2303.17564.pdf#subsection.8.2)
-  license: unknown
+  license:
+    value: unknown
+    explanation: >
+      The asset isn't released, and hence the license is unknown.
   intended_uses:
     value: >
       "This model will assist Bloomberg in improving existing financial NLP

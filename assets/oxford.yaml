@@ -19,7 +19,10 @@
   analysis: unknown
   # Construction
   dependencies: []
-  license: See [[TERMS]](https://github.com/m-bain/webvid/blob/main/TERMS.md)
+  license:
+    value: WebVid Dataset Terms
+    explanation: >
+      [WebVid Dataset Terms](https://github.com/m-bain/webvid/blob/main/TERMS.md)
   included:
     value: Video URLs and textual description annotations
     explanation: Authors note in the paper:"We scrape the web for a new dataset
@@ -82,7 +85,10 @@
   analysis: unknown
   # Construction
   dependencies: [WebVid-10M]
-  license: See [[TERMS]](https://github.com/m-bain/webvid/blob/main/TERMS.md)
+  license:
+    value: WebVid Dataset Terms
+    explanation: >
+      [WebVid Dataset Terms](https://github.com/m-bain/webvid/blob/main/TERMS.md)
   included:
     value: Video URLs and textual description annotations
     explanation: Authors note in the paper:"We scrape the web for a new dataset

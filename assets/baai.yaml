@@ -18,7 +18,10 @@
   analysis: ''
   # Construction
   dependencies: []
-  license: ''
+  license:
+    value: unknown
+    explanation: >
+      The asset isn't released, and hence the license is unknown.
   included: ''
   excluded: ''
   quality_control: ''
@@ -55,7 +58,10 @@
     value: closed
     explanation: >
       The model wasn't released.
-  license: ''
+  license:
+    value: unknown
+    explanation: >
+      The asset isn't released, and hence the license is unknown.
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''

@@ -21,7 +21,10 @@
     explanation: No analysis is provided in the paper.
   # Construction
   dependencies: []
-  license: unknown
+  license:
+    value: unknown
+    explanation: >
+      The asset isn't released, and hence the license is unknown.
   included: unknown
   excluded: unknown
   quality_control:
@@ -54,7 +57,10 @@
   analysis: unknown
   # Construction
   dependencies: []
-  license: unknown
+  license:
+    value: unknown
+    explanation: >
+      The asset isn't released, and hence the license is unknown.
   included: unknown
   excluded: unknown
   quality_control: unknown
@@ -97,7 +103,10 @@
   access:
     value: limited
     explanation: Jurassic-1 is available through AI21's paid API.
-  license: See [AI21 API Terms of Use](https://www.ai21.com/terms-of-use)
+  license:
+    value: unknown
+    explanation: >
+      The asset isn't released, and hence the license is unknown.
   intended_uses: unknown
   prohibited_uses:
     value: Illegal activities, such as hate speech, gambling, child pornography
@@ -130,7 +139,10 @@
   access:
     value: limited
     explanation: Jurassic-1 Instruct is available through AI21's paid API.
-  license: See [AI21 API Terms of Use](https://www.ai21.com/terms-of-use)
+  license:
+    value: unknown
+    explanation: >
+      The asset isn't released, and hence the license is unknown.
   intended_uses: Jurassic-1 Instruct was trained specifically to handle instructions-only
     prompts ("zero-shot") without examples ("few-shot"). It is the most natural
     way to interact with language models, and it is the best way to get a sense
@@ -163,7 +175,10 @@
   access:
     value: limited
     explanation: Jurassic-2 is available through AI21's paid API.
-  license: See [AI21 API Terms of Use](https://www.ai21.com/terms-of-use)
+  license:
+    value: unknown
+    explanation: >
+      The asset isn't released, and hence the license is unknown.
   intended_uses: ''
   prohibited_uses:
     value: Illegal activities, such as hate speech, gambling, child pornography
@@ -202,7 +217,9 @@
   # Downstream
   access: limited
   terms_of_service: https://www.ai21.com/terms-of-use
-  license: See [AI21 API Terms of Use](https://www.ai21.com/terms-of-use)
+  license:
+    value: none
+    explanation: No license was found.
   intended_uses: The intended uses are text completion, rewriting, and summarization.
   prohibited_uses:
     value: Illegal activities, such as hate speech, gambling, child pornography
@@ -236,7 +253,9 @@
   # Downstream
   access: limited
   terms_of_service: https://www.ai21.com/terms-of-use
-  license: See [AI21 API Terms of Use](https://www.ai21.com/terms-of-use)
+  license:
+    value: none
+    explanation: No license was found.
   intended_uses: The intended uses are text paraphrasing.
   prohibited_uses:
     value: Illegal activities, such as hate speech, gambling, child pornography
@@ -270,7 +289,9 @@
   # Downstream
   access: limited
   terms_of_service: https://www.ai21.com/terms-of-use
-  license: See [AI21 API Terms of Use](https://www.ai21.com/terms-of-use)
+  license:
+    value: none
+    explanation: No license was found.
   intended_uses: The intended uses are text paraphrasing.
   prohibited_uses:
     value: Illegal activities, such as hate speech, gambling, child pornography
@@ -303,7 +324,9 @@
   # Downstream
   access: limited
   terms_of_service: https://www.wordtune.com/terms-of-use
-  license: https://www.wordtune.com/terms-of-use
+  license:
+    value: Wordtune License
+    explanation: License can be found in the terms of service document.
   intended_uses: The Wordtune assistant is a writing assistant
   prohibited_uses: ''
   monitoring: unknown
@@ -329,7 +352,9 @@
   # Downstream
   access: limited
   terms_of_service: https://www.wordtune.com/terms-of-use
-  license: https://www.wordtune.com/terms-of-use
+  license:
+    value: Wordtune License
+    explanation: License can be found in the terms of service document.
   intended_uses: ''
   prohibited_uses: ''
   monitoring: unknown

@@ -55,7 +55,7 @@
       page]](https://huggingface.co/cerebras/Cerebras-GPT-13B).
       Cerebras systems checkpoints for pre-training and fine tuning are available
       in the cloud via the [[Cerebras Model Studio]](https://www.cerebras.net/product-cloud/).
-  license: Apache License 2.0
+  license: Apache 2.0
   intended_uses: >
     "The primary intended use is to further research into large language models.
     These models can be used as a foundation model for NLP, applications, ethics,
