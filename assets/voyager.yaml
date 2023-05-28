@@ -1,0 +1,32 @@
+---
+
+- type: model
+  name: VOYAGER
+  organization: NVIDIA
+  description: Voyager is the first LLM-powered embodied lifelong learning agent in Minecraft that works without human intervention. It interacts with GPT-4 via blackbox queries which bypasses the need for model parameter fine-tuning.
+  created_date:
+    value: 2023-05-25
+    explanation: The date the model paper was released
+  url: https://arxiv.org/pdf/2305.16291.pdf
+  model_card: https://huggingface.co/NinedayWang/PolyCoder-2.7B
+  modality: code (12 programming languages)
+  analysis: Reports results on standard code benchmarks across a variety of programming
+    languages.
+  size: 2.7B parameters (dense model)
+  dependencies: [Github]
+  training_emissions: unknown
+  training_time: 6 weeks
+  training_hardware: 8 NVIDIA RTX 8000
+  quality_control: No specific quality control is mentioned in model training, though
+    details on data processing and how the tokenizer was trained are provided in
+    the paper.
+  access:
+    value: open
+    explanation: Model checkpoints are available for download at https://github.com/VHellendoorn/Code-LMs
+  license:
+    value: MIT
+    explanation: The license is provided in the [[Github repository]](https://github.com/VHellendoorn/Code-LMs)
+  intended_uses: unknown
+  prohibited_uses: None
+  monitoring: None
+  feedback: https://huggingface.co/NinedayWang/PolyCoder-2.7B/discussion
