@@ -1,0 +1,27 @@
+---
+
+- type: model
+  name: Falcon
+  organization: TII
+  description: Falcon LLM is TII's flagship series of large language models, built from scratch using a custom data pipeline and distributed training library. 
+  created_date:
+    value: 2023-05-25
+    explanation: ''
+  url: https://huggingface.co/tiiuae/falcon-40b
+  model_card: 'https://huggingface.co/tiiuae/falcon-40b'
+  modality: English, German, Spanish, French (and limited capabilities in Italian, Portuguese, Polish, Dutch, Romanian, Czech, Swedish
+  analysis: ''
+  size: 7/40B parameters
+  dependencies: [The Pile, RefinedWeb]
+  training_emissions: ''
+  training_time: ''
+  training_hardware: 384 A100 40GB GPUs
+  quality_control: ''
+  access: open
+  license:
+    value: TII Falcon LLM License
+    explanation: Model is licensed under https://huggingface.co/tiiuae/falcon-7b/raw/main/LICENSE.txt
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''

@@ -688,6 +688,7 @@ function loadAssetsAndRenderPageContent() {
     'assets/together.yaml',
     'assets/trevor.yaml',  
     'assets/tsinghua.yaml',
+    'assets/tii.yaml',
     'assets/uw.yaml',
     'assets/viable.yaml',
     'assets/yandex.yaml',
