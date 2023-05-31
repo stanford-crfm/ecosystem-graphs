@@ -1,0 +1,15 @@
+---
+
+- type: external update
+  name: Written Testimony of Sam Altman Before the US Senate Committee on the Judiciary Subcommittee on Privacy, Technology, & the Law
+  involved parties: Sam Altman, OpenAI, US Senate
+  description: Written testimony before the US Senate Committee requesting greater regulation for AI models.
+  created_date:
+    value: 2023-05-16
+    explanation: The date of the Senate hearing
+  url: https://www.judiciary.senate.gov/imo/media/doc/2023-05-16%20-%20Bio%20&%20Testimony%20-%20Altman.pdf
+  potential impact: Government shows greater involvement within AI, may add regulations to development
+  intent: request for greater regulation of AI
+  scope of effect: entire foundation model ecosystem
+
+

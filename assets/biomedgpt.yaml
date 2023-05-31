@@ -1,0 +1,31 @@
+---
+
+- type: model
+  name: BiomedGPT
+  organization: Lehigh University
+  description: BiomedGPT leverages self-supervision on large and diverse datasets to accept multi-modal inputs and perform a range of downstream tasks. Our experiments demonstrate that BiomedGPT delivers expansive and inclusive representations of biomedical data.
+  created_date:
+    value: 2022-05-26
+    explanation: The date the model paper was released
+  url: https://huggingface.co/tiiuae/falcon-40b
+  model_card: none
+  modality: natural language text output for multimedia input
+  analysis: outperforms majority of preceding state-of-the-art models over 15 unique biomedical modalities.
+  size: 2.7B parameters (dense model)
+  dependencies: [Github]
+  training_emissions: unknown
+  training_time: unknown
+  training_hardware: 10 NVIDIA A5000 GPUs
+  quality_control: No specific quality control is mentioned in model training, though
+    details on data processing and how the model was trained are provided in
+    the paper.
+  access:
+    value: open
+    explanation: Model checkpoints are available for download at https://github.com/taokz/BiomedGPT
+  license:
+    value: Apache
+    explanation: The license is provided in the [[Github repository]](https://github.com/taokz/BiomedGPT)
+  intended_uses: furthering research in developing unified and generalist models for biomedicine.
+  prohibited_uses: None
+  monitoring: None
+  feedback: None
