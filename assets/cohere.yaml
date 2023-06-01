@@ -6,7 +6,7 @@
   organization: Cohere
   description: >
     The family of datasets used to train Cohere models, which come in two forms:
-    coheretext-filtered, coheretext-unfiltered. The former is used to train the
+    coheretext-filtered and coheretext-unfiltered. The former is used to train the
     Representation models, while the latter one is used to train the Generation
     models.
   created_date:
