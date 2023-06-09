@@ -4,26 +4,20 @@
   name: Guanaco
   organization: University of Washington
   description: Guanaco is a model family trained with QLORA, an efficient finetuning approach that reduces memory usage enough to finetune a 65B parameter model on a single 48GB GPU while preserving full 16-bit finetuning task performance.
-  created_date:
-    value: 2023-05-23
-    explanation: The date the model paper was released
+  created_date: 2023-05-23
   url: https://arxiv.org/pdf/2305.14314v1.pdf
-  model_card: none
+  model_card: ‘’
   modality: natural language text
   analysis: Reports results on the Vicuna benchmark and compares performance level and time expenditure with ChatGPT
   size: 33B parameters 
   dependencies: [Github]
-  training_emissions: unknown
-  training_time: unknown
+  training_emissions: ‘’
+  training_time: ‘’
   training_hardware: 24 GB GPUs
-  quality_control: No specific quality control is mentioned in model training.
-  access:
-    value: open
-    explanation: Model checkpoints are available for download at hhttps://github.com/artidoro/qlora
-  license:
-    value: MIT
-    explanation: The license is provided in the [[Github repository]](https://github.com/artidoro/qlora)
-  intended_uses: unknown
-  prohibited_uses: None
-  monitoring: None
-  feedback: None
+  quality_control: ‘’
+  access: open
+  license: MIT
+  intended_uses: ‘’
+  prohibited_uses: ‘’
+  monitoring: ‘’
+  feedback: ‘’

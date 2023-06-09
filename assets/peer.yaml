@@ -4,24 +4,20 @@
   name: PEER
   organization: Meta AI Research
   description: PEER is a collaborative language model that is trained to imitate the entire writing process itself. PEER can write drafts, add suggestions, propose edits and provide explanations for its actions.
-  created_date:
-    value: 2022-08-24
-    explanation: The date the model paper was released
+  created_date: 2022-08-24
   url: https://arxiv.org/pdf/2208.11663.pdf
-  model_card: none
+  model_card: ‘’
   modality: natural language text 
-  analysis: PEER is trained to infill various parts of the writing process and enable the use of self-training techniques.
+  analysis: PEER is evaluated on core research questions intended to gauge language understanding, proper use of citations, instruction following, and iterative use.
   size: 3B parameters
-  dependencies: none
-  training_emissions: unknown
-  training_time: unknown
+  dependencies: ‘’
+  training_emissions: ‘’
+  training_time: ‘’
   training_hardware: 64 GPUs
   quality_control: Heuristics and edit filtering was used on data set, which consisted mostly of Wikipedia pages.
-  access:
-    value: open
-    explanation: Project is inherently meant to be a collaborative endeavor.
-  license: unknown
+  access: open
+  license: ‘’
   intended_uses: adapting LLMs to work with collaborative writing and updating.
-  prohibited_uses: None
-  monitoring: None
-  feedback: None
+  prohibited_uses: ‘’
+  monitoring: ‘’
+  feedback: ‘’

@@ -4,26 +4,20 @@
   name: BigTrans
   organization: Institute of Automation Chinese Academy of Sciences
   description: BigTrans is a model which adapts LLaMA that covers only 20 languages and enhances it with multilingual translation capability on more than 100 languages
-  created_date:
-    value: 2022-05-29
-    explanation: The date the model paper was released
+  created_date: 2022-05-29
   url: https://arxiv.org/pdf/2305.18098v1.pdf
   model_card: https://huggingface.co/James-WYang/BigTrans
   modality: natural language text
   analysis: Reports results on standard translation benchmarks across 102 languages in comparison with Google Translate and ChatGPT
   size: 13B parameters
   dependencies: [Github]
-  training_emissions: unknown
-  training_time: unknown
+  training_emissions: ‘’
+  training_time: ‘’
   training_hardware: A100 GPU with 80 GB of RAM
-  quality_control: No specific quality control is mentioned in model training.
-  access:
-    value: open
-    explanation: Model checkpoints are available for download at https://github.com/ZNLP/BigTrans
-  license:
-    value: Apache
-    explanation: The license is provided in the [[Alpaca Github repository]](https://github.com/tatsu-lab/stanford_alpaca/blob/main/LICENSE)
+  quality_control: ‘’
+  access: open
+  license: Apache
   intended_uses: Advancing future research in multilingual LLMs
-  prohibited_uses: None
-  monitoring: None
+  prohibited_uses: ‘’
+  monitoring: ‘’
   feedback: https://huggingface.co/James-WYang/BigTrans/discussions

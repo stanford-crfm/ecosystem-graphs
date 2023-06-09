@@ -4,26 +4,20 @@
   name: WizardLM
   organization: Microsoft
   description: Starting with an initial set of instructions, we use our proposed Evol-Instruct to rewrite them step by step into more complex instructions. Then, we mix all generated instruction data to fine-tune LLaMA. We call the resulting model WizardLM.
-  created_date:
-    value: 2022-04-24
-    explanation: The date the model paper was released
+  created_date: 2022-04-24
   url: https://arxiv.org/pdf/2304.12244v1.pdf
   model_card: https://huggingface.co/WizardLM/WizardLM-13B-1.0
   modality: natural language text
-  analysis: Reports results on standard LLM benchmarks in comparison to other LLMs and testsets.
+  analysis: Reports results on standard LLM benchmarks in comparison to other LLMs and test sets.
   size: 13B parameters
   dependencies: [Github]
-  training_emissions: unknown
-  training_time: unknown
-  training_hardware: unknown
-  quality_control: No specific quality control is mentioned in model training.
-  access:
-    value: open
-    explanation: Model checkpoints are available for download at https://github.com/nlpxucan/WizardLM
-  license:
-    value: Apache
-    explanation: The license is provided in the [[Alpaca Github repository]](https://github.com/tatsu-lab/stanford_alpaca/blob/main/LICENSE)
+  training_emissions: ‘’
+  training_time: ‘’
+  training_hardware: ‘’
+  quality_control: ‘’
+  access: open
+  license: Apache
   intended_uses: Creating large amounts of instruction data, particularly with high complexity
-  prohibited_uses: None
-  monitoring: None
+  prohibited_uses: ‘’
+  monitoring: ‘’
   feedback: https://huggingface.co/datasets/WizardLM/evol_instruct_70k/discussions
