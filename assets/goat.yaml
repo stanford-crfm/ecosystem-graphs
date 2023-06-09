@@ -1,0 +1,23 @@
+---
+
+- type: model
+  name: GOAT
+  organization: National University of Singapore
+  description: GOAT is a fine-tuned LLaMA model that significantly outperforms GPT-4 on a range of arithmetic tasks.
+  created_date: 2023-05-23
+  url: https://arxiv.org/pdf/2305.14201.pdf
+  model_card: ‘’
+  modality: numerical data
+  analysis: Performance assessed on BIG-bench arithmetic sub-task, and various elementary arithmetic tasks.
+  size: 7B parameters
+  dependencies: [Github]
+  training_emissions: ‘’
+  training_time: ‘’
+  training_hardware: 24 GB VRAM GPU
+  quality_control: Randomly generated number data from log space to reduce likelihood of redundancy and range of magnitudes. 
+  access: open
+  license: ‘’
+  intended_uses: Integration into other instruction-tuned LLMs to further enhance arithmetic reasoning abilities in solving math word problems.
+  prohibited_uses: ‘’
+  monitoring: ‘’
+  feedback: ‘’
