@@ -1,0 +1,23 @@
+---
+
+- type: dataset
+  name: arXiv4TGC
+  organization: National University of Defense Technology in China
+  description: a set of novel academic datasets for large-scale temporal graph clustering
+  created_date: 2023-06-08
+  url: https://arxiv.org/pdf/2306.04962.pdf
+  datasheet: ''
+  modality: graphs
+  size: up to 1.3 million labeled available nodes and 10 million temporal edges
+  sample: []
+  analysis: Compared in respect to classic temporal graph learning models: HTNE, TGC, TGN, node2vec
+  dependencies: [arXiv]
+  included: ''
+  excluded: ''
+  quality_control: ''
+  access: open
+  license: MIT
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
