@@ -10,7 +10,7 @@
   modality: graphs
   size: up to 1.3 million labeled available nodes and 10 million temporal edges
   sample: []
-  analysis: Compared in respect to classic temporal graph learning models: HTNE, TGC, TGN, node2vec
+  analysis: Compared in respect to classic temporal graph learning models HTNE, TGC, TGN, node2vec
   dependencies: [arXiv]
   included: ''
   excluded: ''
