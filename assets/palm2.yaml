@@ -1,0 +1,23 @@
+---
+
+- type: model
+  name: PaLM 2
+  organization: Google
+  description: PaLM2 is a new state-of-the-art language model that has better multilingual and reasoning capabilities and is more compute-efficient than its predecessor PaLM. PaLM 2 is a Transformer-based model trained using a mixture of objectives similar to UL2.
+  created_date: 2023-05-10
+  url: https://blog.google/technology/ai/google-palm-2-ai-large-language-model/
+  model_card: https://ai.google/static/documents/palm2techreport.pdf
+  modality: text (input and output)
+  analysis: Reports results on standard code benchmarks across a variety of programming languages.
+  size: 3.6T parameters
+  dependencies: []
+  training_emissions: ‘’
+  training_time: ‘’
+  training_hardware: TPU v4
+  quality_control: Employed de-duplication, removal of sensitive-PII and filtering. Added control tokens marking toxicity of text.
+  access: closed
+  license: Google
+  intended_uses: general use large language model that can be used for language, reasoning, and code tasks.
+  prohibited_uses: becoming part of a general-purpose service or product or use within specific downstream applications without prior assessment
+  monitoring: Google internal monitoring
+  feedback: Specific queries provided by annotators
