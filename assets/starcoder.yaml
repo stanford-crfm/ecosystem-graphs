@@ -1,0 +1,25 @@
+---
+
+- type: model
+  name: StarCoder
+  organization: BigCode
+  description: StarCoder is a Large Language Model for Code (Code LLM) trained on permissively licensed data from GitHub, including from 80+ programming languages, Git commits, GitHub issues, and Jupyter notebooks.
+  created_date: 2023-05-04
+  url: https://huggingface.co/blog/starcoder
+  model_card: https://huggingface.co/bigcode/starcoder
+  modality: code (80+ programming languages)
+  analysis: Tested on several benchmarks, most notably Python benchmark HumanEval.
+  size: 15.5B parameters 
+  dependencies: [Github]
+  training_emissions: ‘’
+  training_time: 24 days
+  training_hardware: 512 Tesla A100 GPU
+  quality_control: No specific quality control is mentioned in model training, though
+    details on data processing and how the tokenizer was trained are provided in
+    the paper.
+  access: open
+  license: Apache
+  intended_uses: With a Tech Assistant prompt and not as an instruction model given training limitations.
+  prohibited_uses: ‘’
+  monitoring: ‘’
+  feedback: https://huggingface.co/bigcode/starcoder/discussions
