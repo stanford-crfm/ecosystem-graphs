@@ -1,0 +1,23 @@
+---
+
+- type: dataset
+  name: PyPOTS
+  organization: ‘’
+  description: PyPOTS is an open-source Python library dedicated to data mining and analysis on multivariate partially-observed time series, i.e. incomplete time series with missing values, A.K.A. irregularly sampled time series.
+  created_date: 2023-05-30
+  url: https://arxiv.org/pdf/2305.18811v1.pdf
+  datasheet: https://github.com/WenjieDu/PyPOTS
+  modality: code (Python)
+  size: 10 algorithms
+  sample: []
+  analysis: ‘’
+  dependencies: [numpy, scikit-learn, scipy, pytorch, pandas, h5py]
+  included: ''
+  excluded: ‘’
+  quality_control: ‘’
+  access: open
+  license: unknown
+  intended_uses: For academic researchers and industrial professionals
+  prohibited_uses: none
+  monitoring: none
+  feedback: none
