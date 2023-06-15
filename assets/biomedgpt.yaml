@@ -7,14 +7,17 @@
     to accept multi-modal inputs and perform a range of downstream tasks.
   created_date: 2023-05-26
   url: https://arxiv.org/pdf/2305.17100.pdf
-  model_card: ‘’
+  model_card: ''
   modality: multimedia input, natural language text output
   analysis: outperforms majority of preceding state-of-the-art models over 15 unique
     biomedical modalities.
   size: 472M parameters
-  dependencies: [BART, GPT-style autoregressive decoder, BiomedGPT biomedical datasets]
-  training_emissions: ‘’
-  training_time: ‘’
+  dependencies:
+    - BART
+    - GPT-style autoregressive decoder
+    - BiomedGPT biomedical datasets
+  training_emissions: unknown
+  training_time: unknown
   training_hardware: 10 NVIDIA A5000 GPUs
   quality_control: No specific quality control is mentioned in model training, though
     details on data processing and how the model was trained are provided in the
@@ -23,6 +26,6 @@
   license: Apache 2.0
   intended_uses: furthering research in developing unified and generalist models
     for biomedicine.
-  prohibited_uses: ‘’
-  monitoring: ‘’
-  feedback: ‘’
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
