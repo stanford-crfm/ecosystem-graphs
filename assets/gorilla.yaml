@@ -3,22 +3,25 @@
 - type: model
   name: Gorilla
   organization: UC Berkeley
-  description: Gorilla is a finetuned LLaMA-based model that surpasses the performance of GPT-4 on writing API calls.
+  description: Gorilla is a finetuned LLaMA-based model that surpasses the performance
+    of GPT-4 on writing API calls.
   created_date: 2023-05-24
   url: https://arxiv.org/pdf/2305.15334v1.pdf
-  model_card: https://huggingface.co/bigcode/starcoder
+  model_card: ''
   modality: outputs API from natural language input
-  analysis: Evaluated using AST sub-tree matching technique and compared to other models in terms of API functionality accuracy.
-  size: 7B parameters 
-  dependencies: [Github]
-  training_emissions: ‘’
-  training_time: ‘’
-  training_hardware: ‘’
+  analysis: Evaluated using AST sub-tree matching technique and compared to other
+    models in terms of API functionality accuracy.
+  size: 7B parameters
+  dependencies: [LLaMA, Gorilla document retriever]
+  training_emissions: ''
+  training_time: ''
+  training_hardware: ''
   quality_control: No specific quality control is mentioned in model training, though
     details on data processing and collection are provided in the paper.
   access: open
-  license: ‘’
-  intended_uses: In conjunction with a LLM to improve its capability for using API calls.
-  prohibited_uses: ‘’
-  monitoring: ‘’
-  feedback: ‘’
+  license: Apache 2.0
+  intended_uses: In conjunction with a LLM to improve its capability for using API
+    calls.
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
