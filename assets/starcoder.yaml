@@ -12,7 +12,7 @@
   modality: code (80+ programming languages)
   analysis: Tested on several benchmarks, most notably Python benchmark HumanEval.
   size: 15.5B parameters
-  dependencies: [The Stack Github repositories]
+  dependencies: [The Stack]
   training_emissions: ''
   training_time: 24 days
   training_hardware: 512 Tesla A100 GPU
