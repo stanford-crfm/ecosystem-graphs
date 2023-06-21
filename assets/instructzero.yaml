@@ -3,11 +3,13 @@
 - type: application
   name: InstructZero
   organization: University of Maryland
-  description: The first framework to conduct instruction optimization for black-box LLMs.
-  created_date: 2023-06-06
+  description: The first framework to conduct instruction optimization for black-box
+    LLMs.
+  created_date: 2023-06-05
   url: https://arxiv.org/pdf/2306.03082.pdf
   dependencies: [LLaMA, Stanford Alpaca, Vicuna]
-  adaptation: Open-source LLMs are first optimized on, and then instructions are given to a black-box LLM.
+  adaptation: Open-source LLMs are first optimized on, and then instructions are
+    given to a black-box LLM.
   output_space: instruction for training model
   quality_control: ''
   access: open
