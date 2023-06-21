@@ -3,13 +3,16 @@
 - type: model
   name: Guanaco
   organization: University of Washington
-  description: Guanaco is a model family trained with QLORA, an efficient finetuning approach that reduces memory usage enough to finetune a 65B parameter model on a single 48GB GPU while preserving full 16-bit finetuning task performance.
+  description: Guanaco is a model family trained with QLORA, an efficient finetuning
+    approach that reduces memory usage enough to finetune a 65B parameter model
+    on a single 48GB GPU while preserving full 16-bit finetuning task performance.
   created_date: 2023-05-23
   url: https://arxiv.org/pdf/2305.14314v1.pdf
   model_card: ''
   modality: natural language text
-  analysis: Reports results on the Vicuna benchmark and compares performance level and time expenditure with ChatGPT
-  size: 33B parameters 
+  analysis: Reports results on the Vicuna benchmark and compares performance level
+    and time expenditure with ChatGPT
+  size: 33B parameters
   dependencies: [QLoRA, OASST1]
   training_emissions: ''
   training_time: ''
