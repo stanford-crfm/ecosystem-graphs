@@ -12,7 +12,7 @@
   analysis: Performance assessed on BIG-bench arithmetic sub-task, and various elementary
     arithmetic tasks.
   size: 7B parameters
-  dependencies: [LLaMA, Synthetically generated GOAT dataset]
+  dependencies: [LLaMA, GOAT dataset]
   training_emissions: unknown
   training_time: unknown
   training_hardware: 24 GB VRAM GPU
