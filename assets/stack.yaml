@@ -1,0 +1,23 @@
+---
+
+- type: dataset
+  name: The Stack
+  organization: BigCode
+  description: The Stack is a 3.1 TB dataset consisting of permissively licensed source code inteded for use in creating code LLMs.
+  created_date: 2022-11-20
+  url: https://arxiv.org/pdf/2211.15533.pdf
+  datasheet: https://huggingface.co/datasets/bigcode/the-stack
+  modality: code (358 programming languages)
+  size: 3.1 TB
+  sample: []
+  analysis: Evaluated models trained on The Stack on HumanEval and MBPP and compared against similarly-sized models.
+  dependencies: [GitHub]
+  included: ''
+  excluded: ''
+  quality_control: allowed users whose data were part of The Stack's training data to opt-out
+  access: open
+  license: Apache 2.0
+  intended_uses: creating code LLMs
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''

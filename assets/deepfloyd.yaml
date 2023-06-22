@@ -1,0 +1,23 @@
+---
+
+- type: model
+  name: DeepFloyd IF
+  organization: Stability AI
+  description: A text-to-image cascaded pixel diffusion model released in conjunction with AI research lab DeepFloyd.
+  created_date: 2023-04-28
+  url: https://stability.ai/blog/deepfloyd-if-text-to-image-model
+  model_card: https://huggingface.co/DeepFloyd/IF-I-XL-v1.0
+  modality: textual input with image output
+  analysis: Evaluated on the COCO dataset.
+  size: 4.3B parameters
+  dependencies: [custom LAION-A dataset]
+  training_emissions: ''
+  training_time: ''
+  training_hardware: ''
+  quality_control: ''
+  access: open
+  license: DeepFloyd and Stability AI
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: https://huggingface.co/DeepFloyd/IF-I-XL-v1.0/discussions
