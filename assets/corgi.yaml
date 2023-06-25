@@ -15,7 +15,7 @@
   dependencies: [GPT-2, BABEL, text-davinci-003]
   training_emissions: ''
   training_time: 200 epochs
-  training_hardware: one NIVIDA A40 GPU
+  training_hardware: one NVIDIA A40 GPU
   quality_control: ''
   access: open
   license: MIT
