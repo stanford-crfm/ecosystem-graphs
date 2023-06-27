@@ -3,7 +3,8 @@
 - type: application
   name: PI
   organization: Inflection AI
-  description: Personal AI chatbot designed to be conversational and specialized in emotional intelligence.
+  description: Personal AI chatbot designed to be conversational and specialized
+    in emotional intelligence.
   created_date: 2023-05-02
   url: https://inflection.ai/press
   dependencies: []

@@ -3,7 +3,8 @@
 - type: dataset
   name: RedPajama-Data
   organization: Together
-  description: The RedPajama base dataset is a 1.2 trillion token fully-open dataset created by following the recipe described in the LLaMA paper
+  description: The RedPajama base dataset is a 1.2 trillion token fully-open dataset
+    created by following the recipe described in the LLaMA paper
   created_date: 2022-04-17
   url: https://www.together.xyz/blog/redpajama
   datasheet: https://huggingface.co/datasets/togethercomputer/RedPajama-Data-1T

@@ -3,7 +3,8 @@
 - type: model
   name: SantaCoder
   organization: BigCode
-  description: Multilingual code model derived from findings of BigCode Project analysis on Github stars' association to data quality.
+  description: Multilingual code model derived from findings of BigCode Project
+    analysis on Github stars' association to data quality.
   created_date: 2023-02-24
   url: https://arxiv.org/pdf/2301.03988.pdf
   model_card: ''

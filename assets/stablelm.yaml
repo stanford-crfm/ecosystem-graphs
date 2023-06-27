@@ -3,7 +3,7 @@
 - type: model
   name: StableLM
   organization: Stability AI
-  description: Large language models trained on up to 1.5 trillion tokens. 
+  description: Large language models trained on up to 1.5 trillion tokens.
   created_date: 2023-04-20
   url: https://github.com/Stability-AI/StableLM
   model_card: ''

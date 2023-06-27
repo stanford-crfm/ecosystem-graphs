@@ -3,7 +3,8 @@
 - type: model
   name: Vicuna
   organization: LMSYS
-  description: An open-source chatbot trained by fine-tuning LLaMA on user-shared conversations collected from ShareGPT.
+  description: An open-source chatbot trained by fine-tuning LLaMA on user-shared
+    conversations collected from ShareGPT.
   created_date: 2023-03-30
   url: https://lmsys.org/blog/2023-03-30-vicuna/
   model_card: https://huggingface.co/lmsys/vicuna-13b-delta-v0
