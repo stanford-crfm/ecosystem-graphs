@@ -1,0 +1,23 @@
+---
+
+- type: model
+  name: UniLM
+  organization: Microsoft
+  description: UniLM is a unified language model that can be fine-tuned for both natural language understanding and generation tasks.
+  created_date: 2019-10-01
+  url: https://proceedings.neurips.cc/paper_files/paper/2019/file/c20bb2d9a50d5ac1f713f8b34d9aac5a-Paper.pdf
+  model_card: ''
+  modality: text 
+  analysis: Evaluated on GLUE, SQuAD 2.0, and CoQA benchmarks. 
+  size: 340M parameters
+  dependencies: []
+  training_emissions: unknown
+  training_time: 10,000 steps in 7 hours
+  training_hardware: 8 NVIDIA Tesla V100 32GB GPUs
+  quality_control: ''
+  access: open
+  license: MIT
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
