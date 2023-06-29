@@ -1,0 +1,23 @@
+---
+
+- type: model
+  name: RoentGen
+  organization: Stanford University AIMI
+  description: RoentGen is a generative medical imaging model that can create visually convincing X-ray images. 
+  created_date: 2022-11-23
+  url: https://arxiv.org/pdf/2211.12737.pdf
+  model_card: ''
+  modality: text input and image output
+  analysis: Evaluated on own framework that tests domain-specific tasks in medical field.
+  size: 330M parameters
+  dependencies: [Stable Diffusion, RoentGen radiology dataset]
+  training_emissions: unknown
+  training_time: 60k training steps per day
+  training_hardware: 64 A100 GPUs
+  quality_control: ''
+  access: open
+  license: ''
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
