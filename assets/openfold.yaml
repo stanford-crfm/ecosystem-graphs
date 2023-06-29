@@ -1,0 +1,23 @@
+---
+
+- type: model
+  name: OpenFold
+  organization: Columbia University
+  description: OpenFold is an open source recreation of AlphaFold2.
+  created_date: 2022-11-20
+  url: https://www.biorxiv.org/content/10.1101/2022.11.20.517210v2
+  model_card: ''
+  modality: protein structures
+  analysis: Evaluated on wide range of tasks using own evaluation benchmarks.
+  size: ''
+  dependencies: [AlphaFold2, OpenProteinSet]
+  training_emissions: unknown
+  training_time: 50,000 GPU hours
+  training_hardware: Single A100 NVIDIA GPU
+  quality_control: ''
+  access: open
+  license: CC BY 4.0
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
