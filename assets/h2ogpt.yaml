@@ -1,0 +1,23 @@
+---
+
+- type: model
+  name: h2oGPT
+  organization: H2O AI
+  description: Series of models fine-tuned on well-known LLMs using the h2oGPT repositories.
+  created_date: 2023-06-16
+  url: https://arxiv.org/pdf/2306.08161.pdf
+  model_card: https://huggingface.co/h2oai/h2ogpt-oasst1-512-20b
+  modality: text 
+  analysis: Evaluated on EleutherAI evaluation harness. 
+  size: 20B parameters
+  dependencies: [GPT-NeoX, H2O AI OpenAssistant, h2oGPT Repositories]
+  training_emissions: unknown
+  training_time: unknown
+  training_hardware: unspecified number of 48GB A100 NVIDIA GPUs
+  quality_control: ''
+  access: open
+  license: Apache 2.0
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: https://huggingface.co/h2oai/h2ogpt-oasst1-512-20b/discussions
