@@ -1,7 +1,7 @@
 ---
 
 - type: application
-  name: Automate
+  name: Transformify Automate
   organization: Transformify
   description: Transformify Automate is a platform for automated task integration
     using natural language prompts.

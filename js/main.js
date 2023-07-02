@@ -678,6 +678,7 @@ function loadAssetsAndRenderPageContent() {
     'assets/openai.yaml',
     'assets/othersideai.yaml',
     'assets/oxford.yaml',
+    'assets/palmyra.yaml',
     'assets/perplexity.yaml',
     'assets/portkey.yaml',
     'assets/quizlet.yaml',

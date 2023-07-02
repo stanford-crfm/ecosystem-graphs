@@ -1,7 +1,7 @@
 ---
 
 - type: model
-  name: MPT-7B
+  name: MPT
   organization: Mosaic
   description: MPT is a series of large language models seeking to address the limitations
     of other open source models like LLaMA and Pythia.

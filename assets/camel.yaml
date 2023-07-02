@@ -1,9 +1,9 @@
 ---
 
 - type: model
-  name: Camel-5B
+  name: Camel
   organization: Writer
-  description: Camel-5B is an instruction-following large language model tailored
+  description: Camel is an instruction-following large language model tailored
     for advanced NLP and comprehension capabilities.
   created_date:
     value: 2023-04-01
@@ -14,7 +14,7 @@
   modality: text
   analysis: ''
   size: 5B parameters
-  dependencies: [Palmyra-Base, Camel dataset]
+  dependencies: [Palmyra, Camel dataset]
   training_emissions: unknown
   training_time: unknown
   training_hardware: ''
