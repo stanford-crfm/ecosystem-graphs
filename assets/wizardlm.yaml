@@ -1,0 +1,28 @@
+---
+
+- type: model
+  name: WizardLM
+  organization: Microsoft
+  description: Starting with an initial set of instructions, we use our proposed
+    Evol-Instruct to rewrite them step by step into more complex instructions. Then,
+    we mix all generated instruction data to fine-tune LLaMA. We call the resulting
+    model WizardLM.
+  created_date: 2023-04-24
+  url: https://arxiv.org/pdf/2304.12244v1.pdf
+  model_card: https://huggingface.co/WizardLM/WizardLM-13B-1.0
+  modality: natural language text
+  analysis: Reports results on standard LLM benchmarks in comparison to other LLMs
+    and test sets.
+  size: 7B parameters
+  dependencies: [LLaMA, Evol-Instruct, Alpaca dataset]
+  training_emissions: ''
+  training_time: 70 hours on 3 epochs
+  training_hardware: 8 V100 GPUs
+  quality_control: ''
+  access: open
+  license: Apache 2.0
+  intended_uses: Creating large amounts of instruction data, particularly with high
+    complexity
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: https://huggingface.co/datasets/WizardLM/evol_instruct_70k/discussions

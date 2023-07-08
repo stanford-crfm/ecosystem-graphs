@@ -1,0 +1,24 @@
+---
+
+- type: model
+  name: Koala
+  organization: Berkeley
+  description: A relatively small chatbot trained by fine-tuning Meta’s LLaMA on
+    dialogue data gathered from the web.
+  created_date: 2023-04-03
+  url: https://bair.berkeley.edu/blog/2023/04/03/koala/
+  model_card: https://huggingface.co/TheBloke/koala-7B-GPTQ-4bit-128g
+  modality: natural language text
+  analysis: Evaluated in comparison with ChatGPT and Stanford Alpaca.
+  size: 13B parameters
+  dependencies: [LLaMA, web-scraped dialogue data]
+  training_emissions: ''
+  training_time: 6 hours
+  training_hardware: 8 A100 GPUs
+  quality_control: ''
+  access: open
+  license: Apache 2.0
+  intended_uses: academic research
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: https://huggingface.co/TheBloke/koala-7B-GPTQ-4bit-128g/discussions

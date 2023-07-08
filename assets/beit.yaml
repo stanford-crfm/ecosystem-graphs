@@ -1,0 +1,25 @@
+---
+
+- type: model
+  name: BEiT-3
+  organization: Microsoft
+  description: BEiT-3 is a general-purpose multimodal foundation model for vision
+    and vision-language tasks.
+  created_date: 2022-08-31
+  url: https://arxiv.org/pdf/2208.10442.pdf
+  model_card: ''
+  modality: text and image input and output
+  analysis: Evaluated on a range of standardized vision benchmarks, and achieves
+    state of the art performance on all experimentally.
+  size: 1.9B parameters
+  dependencies: [Multiway Transformer network]
+  training_emissions: unknown
+  training_time: ''
+  training_hardware: ''
+  quality_control: ''
+  access: open
+  license: ''
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''

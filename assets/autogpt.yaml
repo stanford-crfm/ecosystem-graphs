@@ -1,0 +1,23 @@
+---
+
+- type: application
+  name: Auto-GPT
+  organization: Auto-GPT
+  description: Auto-GPT is an experimental open-source application showcasing the
+    capabilities of the GPT-4 language model.
+  created_date: 2023-04-16
+  url: https://news.agpt.co/
+  dependencies: [GPT-4 API]
+  adaptation: GPT-4 adapted to run autonomously by chaining together LLM "thoughts"
+  output_space: text
+  quality_control: ''
+  access: open
+  license: MIT
+  terms_of_service: ''
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+  monthly_active_users: ''
+  user_distribution: ''
+  failures: ''

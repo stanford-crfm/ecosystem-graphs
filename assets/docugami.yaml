@@ -1,0 +1,24 @@
+---
+
+- type: model
+  name: Docugami
+  organization: Microsoft
+  description: Docugami is a LLM focused on writing business documents and data
+    using generative AI.
+  created_date: 2021-04-12
+  url: https://www.docugami.com/generative-ai
+  model_card: ''
+  modality: text
+  analysis: ''
+  size: 20B parameters
+  dependencies: []
+  training_emissions: unknown
+  training_time: unknown
+  training_hardware: ''
+  quality_control: ''
+  access: limited
+  license: ''
+  intended_uses: analyzing, writing, and connecting business documents and data
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''

@@ -1,0 +1,25 @@
+---
+
+- type: model
+  name: Voicebox
+  organization: Meta AI
+  description: Voicebox is the first generative AI model for speech to generalize
+    across tasks with state-of-the-art performance.
+  created_date: 2023-06-16
+  url: https://research.facebook.com/publications/voicebox-text-guided-multilingual-universal-speech-generation-at-scale/
+  model_card: ''
+  modality: text and audio input and audio output
+  analysis: Evaluated on zero-shot text-to-speech benchmarks, with Voicebox outperforming
+    the current state-of-the-art English model VALL-E.
+  size: 330M parameters
+  dependencies: []
+  training_emissions: unknown
+  training_time: 750,000 iterations
+  training_hardware: 32 GPUs of unspecified type
+  quality_control: ''
+  access: closed
+  license: ''
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''

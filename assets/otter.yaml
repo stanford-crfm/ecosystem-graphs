@@ -1,0 +1,27 @@
+---
+
+- type: model
+  name: Otter
+  organization: Nanyang Technological University
+  description: Otter is a multi-modal model based on OpenFlamingo (open-sourced
+    version of DeepMind’s Flamingo), trained on MIMIC-IT and showcasing improved
+    instruction-following ability and in-context learning.
+  created_date: 2023-05-05
+  url: https://arxiv.org/pdf/2305.03726v1.pdf
+  model_card: https://github.com/Luodian/Otter/blob/main/docs/model_card.md
+  modality: outputs text from text and image input
+  analysis: Evaluated on researcher experiments to test deeper understanding and
+    advanced commonsense reasoning
+  size: 1.3B parameters
+  dependencies: [MIMIC-IT, OpenFlamingo]
+  training_emissions: ''
+  training_time: ''
+  training_hardware: 4 RTX-3090 GPUs
+  quality_control: ''
+  access: open
+  license: MIT
+  intended_uses: Following and executing new instructions with few in-context learning
+    examples given image and textual input.
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
