@@ -5,7 +5,7 @@
   organization: EleutherAI
   description: VQGAN-CLIP is a model that better generates and edits images using
     a multimodal encoder to guide image generation.
-  created_date: 2023-09-04
+  created_date: 2022-09-04
   url: https://arxiv.org/pdf/2204.08583.pdf
   model_card: ''
   modality: text input with image output
