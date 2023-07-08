@@ -14,7 +14,7 @@
   analysis: Reports results on standard code benchmarks across a variety of programming
     languages.
   size: 3.6T parameters
-  dependencies: [PaLM 2 Dataset]
+  dependencies: [palm 2 dataset]
   training_emissions: ''
   training_time: ''
   training_hardware: TPU v4 (number unspecified)

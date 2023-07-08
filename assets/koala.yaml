@@ -2,7 +2,7 @@
 
 - type: model
   name: Koala
-  organization: BAIR
+  organization: Berkeley
   description: A relatively small chatbot trained by fine-tuning Meta’s LLaMA on
     dialogue data gathered from the web.
   created_date: 2023-04-03
@@ -13,7 +13,7 @@
   size: 13B parameters
   dependencies: [LLaMA, web-scraped dialogue data]
   training_emissions: ''
-  training_time: 6 hours on 2 epochs
+  training_time: 6 hours
   training_hardware: 8 A100 GPUs
   quality_control: ''
   access: open

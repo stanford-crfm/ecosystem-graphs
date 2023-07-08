@@ -2,7 +2,7 @@
 
 - type: model
   name: Google Joint SLM
-  organization: Google DeepMind
+  organization: Google
   description: Joint speech and language model using a Speech2Text adapter and using
     a CTC-based blank-filtering.
   created_date: 2023-06-08

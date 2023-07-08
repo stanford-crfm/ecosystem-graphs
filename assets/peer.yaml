@@ -2,7 +2,7 @@
 
 - type: model
   name: PEER
-  organization: Meta AI Research
+  organization: Meta
   description: PEER is a collaborative language model that is trained to imitate
     the entire writing process itself. PEER can write drafts, add suggestions, propose
     edits and provide explanations for its actions.

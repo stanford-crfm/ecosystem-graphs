@@ -10,7 +10,7 @@
   modality: natural language text
   analysis: ''
   size: 7B parameters
-  dependencies: [The Pile, Stanford Alpaca]
+  dependencies: [StableLM-Alpha dataset, Alpaca dataset, gpt4all dataset, ShareGPT52K dataset, Dolly dataset, HH dataset]
   training_emissions: ''
   training_time: ''
   training_hardware: ''

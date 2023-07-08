@@ -12,7 +12,7 @@
   modality: image and text input with textual output
   analysis: Evaluated on COCO captioning and VQAv2 vision-language tasks.
   size: 9B parameters
-  dependencies: [Flamingo, LLaMA]
+  dependencies: [LLaMA, CLIP]
   training_emissions: ''
   training_time: ''
   training_hardware: ''

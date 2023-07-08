@@ -19,7 +19,7 @@
   quality_control: Number data is randomly generated from log space to reduce likelihood
     of redundancy and range of magnitudes.
   access: open
-  license: unknown
+  license: Apache 2.0
   intended_uses: Integration into other instruction-tuned LLMs to further enhance
     arithmetic reasoning abilities in solving math word problems.
   prohibited_uses: ''

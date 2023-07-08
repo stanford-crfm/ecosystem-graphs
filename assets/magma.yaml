@@ -13,7 +13,7 @@
   size: 6B parameters
   dependencies: [GPT-J, CLIP]
   training_emissions: ''
-  training_time: 1.25 days per ablation
+  training_time: ''
   training_hardware: 32 A100 GPUs
   quality_control: ''
   access: open

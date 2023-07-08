@@ -2,7 +2,7 @@
 
 - type: model
   name: CORGI
-  organization: Stanford ILIAD
+  organization: Stanford
   description: Model trained to generate language corrections for physical control
     tasks.
   created_date: 2023-06-12
@@ -14,7 +14,9 @@
   size: 124M parameters
   dependencies: [GPT-2, BABEL, text-davinci-003]
   training_emissions: ''
-  training_time: 200 epochs
+  training_time: 
+    value: unknown
+    explanation: The authors do not report the training time, but do report that they train for 200 epochs.
   training_hardware: one NVIDIA A40 GPU
   quality_control: ''
   access: open

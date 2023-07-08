@@ -8,12 +8,11 @@
   created_date: 2023-05-26
   url: https://arxiv.org/pdf/2305.17100.pdf
   model_card: ''
-  modality: multimedia input, natural language text output
+  modality: image and text input, text output
   analysis: outperforms majority of preceding state-of-the-art models over 15 unique
     biomedical modalities.
   size: 472M parameters
   dependencies:
-    - BART
     - GPT-style autoregressive decoder
     - BiomedGPT biomedical datasets
   training_emissions: unknown
