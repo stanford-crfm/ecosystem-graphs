@@ -154,3 +154,27 @@
     from using LAION-2B-en for non-research purposes.
   monitoring: ''
   feedback: ''
+
+- type: model
+  name: OpenFlamingo
+  organization: LAION
+  description: An open-source reproduction of DeepMind's Flamingo model. At its
+    core, OpenFlamingo is a framework that enables training and evaluation of large
+    multimodal models (LMMs).
+  created_date: 2023-03-28
+  url: https://laion.ai/blog/open-flamingo/
+  model_card: https://github.com/mlfoundations/open_flamingo/blob/main/MODEL_CARD.md
+  modality: image and text input with textual output
+  analysis: Evaluated on COCO captioning and VQAv2 vision-language tasks.
+  size: 9B parameters
+  dependencies: [LLaMA, CLIP]
+  training_emissions: ''
+  training_time: ''
+  training_hardware: ''
+  quality_control: ''
+  access: open
+  license: MIT
+  intended_uses: academic research purposes
+  prohibited_uses: commercial use
+  monitoring: ''
+  feedback: ''

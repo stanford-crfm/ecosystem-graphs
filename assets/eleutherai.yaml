@@ -267,3 +267,51 @@
   monthly_active_users: unknown
   user_distribution: unknown
   failures: unknown
+
+- type: model
+  name: VQGAN-CLIP
+  organization: EleutherAI
+  description: VQGAN-CLIP is a model that better generates and edits images using
+    a multimodal encoder to guide image generation.
+  created_date: 2022-09-04
+  url: https://arxiv.org/pdf/2204.08583.pdf
+  model_card: ''
+  modality: text input with image output
+  analysis: Evaluated by human testers rating alignment of text input, image output
+    pairs.
+  size: 227M parameters
+  dependencies: [VQGAN, CLIP]
+  training_emissions: unknown
+  training_time: Less than 1 V100-hour
+  training_hardware: 1 NVIDIA Tesla K80 GPU
+  quality_control: ''
+  access: open
+  license: MIT
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+
+- type: model
+  name: Pythia
+  organization: Eleuther AI
+  description: A suite of 16 LLMs all trained on public data seen in the exact same
+    order and ranging in size from 70M to 12B parameters
+  created_date: 2023-05-31
+  url: https://arxiv.org/pdf/2304.01373.pdf
+  model_card: https://huggingface.co/EleutherAI/pythia-12b
+  modality: natural language text
+  analysis: Evaluated on a variety of NLP benchmarks and found to perform similarly
+    to OPT and BLOOM models.
+  size: 12B parameters
+  dependencies: [The Pile]
+  training_emissions: ''
+  training_time: ''
+  training_hardware: 64 A100 GPUs
+  quality_control: ''
+  access: open
+  license: Apache 2.0
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: https://huggingface.co/EleutherAI/pythia-6.9b/discussions

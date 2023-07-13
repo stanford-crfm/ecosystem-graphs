@@ -608,3 +608,54 @@
   monitoring: ''
   feedback: Feedback can be given via the feedback form on their website [segment-anything.com](https://segment-anything.com/)
     or by emailing at segment-anything at meta.com.
+
+- type: model
+  name: Voicebox
+  organization: Meta
+  description: Voicebox is the first generative AI model for speech to generalize
+    across tasks with state-of-the-art performance.
+  created_date: 2023-06-16
+  url: https://research.facebook.com/publications/voicebox-text-guided-multilingual-universal-speech-generation-at-scale/
+  model_card: ''
+  modality: text and audio input and audio output
+  analysis: Evaluated on zero-shot text-to-speech benchmarks, with Voicebox outperforming
+    the current state-of-the-art English model VALL-E.
+  size: 330M parameters
+  dependencies: []
+  training_emissions: unknown
+  training_time: 750,000 iterations
+  training_hardware: 32 GPUs of unspecified type
+  quality_control: ''
+  access: closed
+  license: ''
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+
+- type: model
+  name: PEER
+  organization: Meta
+  description: PEER is a collaborative language model that is trained to imitate
+    the entire writing process itself. PEER can write drafts, add suggestions, propose
+    edits and provide explanations for its actions.
+  created_date: 2022-08-24
+  url: https://arxiv.org/pdf/2208.11663.pdf
+  model_card: ''
+  modality: natural language text
+  analysis: PEER is evaluated on core research questions intended to gauge language
+    understanding, proper use of citations, instruction following, and iterative
+    use.
+  size: 3B parameters
+  dependencies: []
+  training_emissions: ''
+  training_time: ''
+  training_hardware: 64 GPUs
+  quality_control: Heuristics and edit filtering was used on data set, which consisted
+    mostly of Wikipedia pages.
+  access: open
+  license: ''
+  intended_uses: adapting LLMs to work with collaborative writing and updating.
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
