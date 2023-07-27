@@ -60,9 +60,10 @@
   size: 124M parameters
   dependencies: [GPT-2, BABEL, text-davinci-003]
   training_emissions: ''
-  training_time: 
+  training_time:
     value: unknown
-    explanation: The authors do not report the training time, but do report that they train for 200 epochs.
+    explanation: The authors do not report the training time, but do report that
+      they train for 200 epochs.
   training_hardware: one NVIDIA A40 GPU
   quality_control: ''
   access: open
