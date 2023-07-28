@@ -11,7 +11,7 @@
   modality: text
   analysis: Performance evaluated on English and Chinese language benchmark tests.
   size: 6B parameters
-  dependencies: [GLM-130B]
+  dependencies: []
   training_emissions: unknown
   training_time: unknown
   training_hardware: ''

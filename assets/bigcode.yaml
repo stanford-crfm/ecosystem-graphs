@@ -13,9 +13,9 @@
   analysis: Tested on several benchmarks, most notably Python benchmark HumanEval.
   size: 15.5B parameters
   dependencies: [The Stack]
-  training_emissions: ''
-  training_time: 24 days
-  training_hardware: 512 Tesla A100 GPU
+  training_emissions: 16.68 tons of CO2eq
+  training_time: 2 days
+  training_hardware: 64 NVIDIA A100 GPUs
   quality_control: No specific quality control is mentioned in model training, though
     details on data processing and how the tokenizer was trained are provided in
     the paper.
@@ -41,7 +41,7 @@
   dependencies: [The Stack, BigCode Dataset]
   training_emissions: ''
   training_time: 3.1 days
-  training_hardware: 96 Tesla V100 GPUs
+  training_hardware: 96 NVIDIA Tesla V100 GPUs
   quality_control: ''
   access: open
   license: Apache 2.0

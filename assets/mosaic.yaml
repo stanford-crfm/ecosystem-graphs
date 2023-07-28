@@ -11,7 +11,7 @@
   modality: text
   analysis: Evaluated on a range of benchmarks and performed on par with LLaMA-7B.
   size: 7B parameters
-  dependencies: []
+  dependencies: [RedPajama-Data, C4, The Stack, Multimodal C4]
   training_emissions: unknown
   training_time: 9.5 days
   training_hardware: 440 A100 40GB GPUs
