@@ -9,7 +9,13 @@
     access for all builders. using an API.
   created_date: 2023-04-13
   url: https://aws.amazon.com/bedrock/
-  dependencies: [Jurassic-2, Claude, Stable Diffusion, Amazon Titan]
+  dependencies:
+    - Jurassic-2
+    - Claude
+    - Stable Diffusion
+    - Amazon Titan
+    - Claude 2
+    - Cohere Command
   adaptation: ''
   output_space: foundation models made accessible via an API
   quality_control: ''

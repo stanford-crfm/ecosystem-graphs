@@ -615,7 +615,7 @@
   training_time: unknown
   training_hardware: 128 TPU-v4
   quality_control: ''
-  access: closed
+  access: open
   license:
     value: unknown
     explanation: >
@@ -756,6 +756,32 @@
   analysis: ''
   size: 540B
   dependencies: [Flan-PaLM, MultiMedQA]
+  training_emissions: ''
+  training_time: ''
+  training_hardware: ''
+  quality_control: ''
+  access: closed
+  license:
+    value: unknown
+    explanation: >
+      The asset isn't released, and hence the license is unknown.
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+
+- type: model
+  name: Med-PaLM Multimodal
+  organization: Google
+  description: ''
+  created_date: 2023-07-26
+  url: https://arxiv.org/pdf/2307.14334.pdf
+  model_card: ''
+  modality: text, image, and genomics input with text output
+  analysis: Evaluated on MultiMedBench tasks and radiologist evaluations of model-generated
+    chest X-ray reports
+  size: 562B parameters (dense)
+  dependencies: [PaLM-E, MultiMedBench]
   training_emissions: ''
   training_time: ''
   training_hardware: ''

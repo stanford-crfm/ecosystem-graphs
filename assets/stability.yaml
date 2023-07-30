@@ -36,7 +36,13 @@
   modality: natural language text
   analysis: ''
   size: 7B parameters
-  dependencies: [StableLM-Alpha dataset, Alpaca dataset, gpt4all dataset, ShareGPT52K dataset, Dolly dataset, HH dataset]
+  dependencies:
+    - StableLM-Alpha dataset
+    - Alpaca dataset
+    - gpt4all dataset
+    - ShareGPT52K dataset
+    - Dolly dataset
+    - HH dataset
   training_emissions: ''
   training_time: ''
   training_hardware: ''
@@ -47,3 +53,50 @@
   prohibited_uses: ''
   monitoring: ''
   feedback: ''
+
+
+- type: application
+  name: Stable Diffusion
+  organization: Stability AI
+  description: Stable Diffusion is a generative software that creates images from
+    text prompts.
+  created_date: 2022-08-22
+  url: https://stability.ai/blog/stable-diffusion-public-release
+  dependencies: []
+  adaptation: ''
+  output_space: image
+  quality_control: ''
+  access: open
+  license:
+    value: custom
+    explanation: License agreement can be found on https://github.com/CompVis/stable-diffusion/blob/main/LICENSE
+  terms_of_service: ''
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: https://huggingface.co/CompVis/stable-diffusion/discussions
+  monthly_active_users: ''
+  user_distribution: ''
+  failures: ''
+
+- type: application
+  name: Stable Diffusion XL
+  organization: Stability AI
+  description: Stable Diffusion XL is an updated version of Stable Diffusion, and
+    creates descriptive images with shorter prompts and generate words within images.
+  created_date: 2023-07-26
+  url: https://stability.ai/stablediffusion
+  dependencies: []
+  adaptation: ''
+  output_space: image
+  quality_control: ''
+  access: limited
+  license: MIT
+  terms_of_service: ''
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+  monthly_active_users: ''
+  user_distribution: ''
+  failures: ''
