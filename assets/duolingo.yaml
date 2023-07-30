@@ -1,62 +1,58 @@
 ---
-
-- type: application
-  name: Duolingo Explain My Answer
-  organization: Duolingo
+- access: limited
+  adaptation: ''
+  created_date: 2023-03-14
+  dependencies: [GPT-4 API]
   description: Explain My Answer offers learners the chance to learn more about
     their response in a lesson (whether their answer was correct or incorrect!)
     By tapping a button after certain exercise types, learners can enter a chat
     with Duo to get a simple explanation on why their answer was right or wrong,
     and ask for examples or further clarification.
-  created_date: 2023-03-14
-  url: https://blog.duolingo.com/duolingo-max/
-  dependencies: [GPT-4 API]
-  adaptation: ''
-  output_space: ''
-  quality_control: ''
-  access: limited
-  license:
-    value: custom
-    explanation: >
-      Users are granted a limited license per Duolingo Terms.
-  terms_of_service: https://www.duolingo.com/terms
-  intended_uses: ''
-  prohibited_uses: ''
-  monitoring: ''
-  feedback: ''
-  monthly_active_users: ''
-  user_distribution: ''
   failures: ''
-
-- type: application
-  name: Duolingo Max
+  feedback: ''
+  intended_uses: ''
+  license:
+    explanation: "Users are granted a limited license per Duolingo Terms.\n"
+    value: custom
+  monitoring: ''
+  monthly_active_users: ''
+  name: Duolingo Explain My Answer
   organization: Duolingo
+  output_space: ''
+  prohibited_uses: ''
+  quality_control: ''
+  terms_of_service: https://www.duolingo.com/terms
+  type: application
+  url: https://blog.duolingo.com/duolingo-max/
+  user_distribution: ''
+- access: limited
+  adaptation: ''
+  created_date: 2023-03-14
+  dependencies: [Duolingo Role Play, Duolingo Explain My Answer]
   description: Duolingo Max is a new subscription tier above Super Duolingo that
     gives learners access to two brand-new features and exercises - Explain My Answer
     and Roleplay.
-  created_date: 2023-03-14
-  url: https://blog.duolingo.com/duolingo-max/
-  dependencies: [Duolingo Role Play, Duolingo Explain My Answer]
-  adaptation: ''
-  output_space: ''
-  quality_control: ''
-  access: limited
-  license:
-    value: custom
-    explanation: >
-      Users are granted a limited license per Duolingo Terms.
-  terms_of_service: ''
-  intended_uses: ''
-  prohibited_uses: ''
-  monitoring: ''
-  feedback: ''
-  monthly_active_users: ''
-  user_distribution: ''
   failures: ''
-
-- type: application
-  name: Duolingo Role Play
+  feedback: ''
+  intended_uses: ''
+  license:
+    explanation: "Users are granted a limited license per Duolingo Terms.\n"
+    value: custom
+  monitoring: ''
+  monthly_active_users: ''
+  name: Duolingo Max
   organization: Duolingo
+  output_space: ''
+  prohibited_uses: ''
+  quality_control: ''
+  terms_of_service: ''
+  type: application
+  url: https://blog.duolingo.com/duolingo-max/
+  user_distribution: ''
+- access: limited
+  adaptation: ''
+  created_date: 2023-03-14
+  dependencies: [GPT-4 API]
   description: Roleplay allows learners to practice real-world conversation skills
     with world characters in the app. These challenges, which earn XP, will live
     alongside the path as one of the “Side Quests” learners can access by tapping
@@ -64,26 +60,24 @@
     scenarios! Learners might discuss future vacation plans with Lin, order coffee
     at a café in Paris, go furniture shopping with Eddy, or ask a friend to go for
     a hike.
-  created_date: 2023-03-14
-  url: https://blog.duolingo.com/duolingo-max/
-  dependencies: [GPT-4 API]
-  adaptation: ''
-  output_space: ''
-  quality_control: ''
-  access: limited
-  license:
-    value: custom
-    explanation: >
-      "Subject to the terms of these Terms and Conditions, Duolingo grants you
-      a non-transferable, non-exclusive license to download, install, and use
-      one copy of each App in object code form only on an interactive wireless
-      device that you own or control" - excerpt from the Terms of Service
-      document.
-  terms_of_service: https://www.duolingo.com/terms
-  intended_uses: ''
-  prohibited_uses: ''
-  monitoring: ''
-  feedback: ''
-  monthly_active_users: ''
-  user_distribution: ''
   failures: ''
+  feedback: ''
+  intended_uses: ''
+  license:
+    explanation: "\"Subject to the terms of these Terms and Conditions, Duolingo\
+      \ grants you a non-transferable, non-exclusive license to download, install,\
+      \ and use one copy of each App in object code form only on an interactive\
+      \ wireless device that you own or control\" - excerpt from the Terms of Service\
+      \ document.\n"
+    value: custom
+  monitoring: ''
+  monthly_active_users: ''
+  name: Duolingo Role Play
+  organization: Duolingo
+  output_space: ''
+  prohibited_uses: ''
+  quality_control: ''
+  terms_of_service: https://www.duolingo.com/terms
+  type: application
+  url: https://blog.duolingo.com/duolingo-max/
+  user_distribution: ''

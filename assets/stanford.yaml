@@ -1,74 +1,77 @@
 ---
-
-- type: model
+- access: open
+  analysis: ''
+  created_date: 2022-12-15
+  dependencies: [The Pile]
+  description: ''
+  feedback: ''
+  intended_uses: ''
+  license: bigscience-bloom-rail-1.0
+  modality:
+    explanation: text
+    value: text; text
+  model_card: ''
+  monitoring: ''
   name: BioMedLM
   organization: Stanford
-  description: ''
-  created_date: 2022-12-15
-  url: https://crfm.stanford.edu/2022/12/15/pubmedgpt.html
-  model_card: ''
-  modality: text
-  analysis: ''
-  size: 2.7B parameters (dense model)
-  dependencies: [The Pile]
-  training_emissions: ''
-  training_time: ''
-  training_hardware: ''
-  quality_control: ''
-  access: open
-  license: bigscience-bloom-rail-1.0
-  intended_uses: ''
   prohibited_uses: ''
-  monitoring: ''
-  feedback: ''
-
-- type: model
-  name: RoentGen
-  organization: Stanford
-  description: RoentGen is a generative medical imaging model that can create visually
-    convincing X-ray images.
-  created_date: 2022-11-23
-  url: https://arxiv.org/pdf/2211.12737.pdf
-  model_card: ''
-  modality: text input and image output
+  quality_control: ''
+  size: 2.7B parameters (dense)
+  training_emissions: ''
+  training_hardware: ''
+  training_time: ''
+  type: model
+  url: https://crfm.stanford.edu/2022/12/15/pubmedgpt.html
+- access: open
   analysis: Evaluated on own framework that tests domain-specific tasks in medical
     field.
-  size: 330M parameters
+  created_date: 2022-11-23
   dependencies: [Stable Diffusion, RoentGen radiology dataset]
-  training_emissions: unknown
-  training_time: 60k training steps per day
-  training_hardware: 64 A100 GPUs
-  quality_control: ''
-  access: open
-  license: ''
-  intended_uses: ''
-  prohibited_uses: ''
-  monitoring: ''
+  description: RoentGen is a generative medical imaging model that can create visually
+    convincing X-ray images.
   feedback: ''
-
-- type: model
-  name: CORGI
-  organization: Stanford
-  description: Model trained to generate language corrections for physical control
-    tasks.
-  created_date: 2023-06-12
-  url: https://arxiv.org/pdf/2306.07012.pdf
+  intended_uses: ''
+  license: ''
+  modality:
+    explanation: text input and image output
+    value: text; image
   model_card: ''
-  modality: trajectory input with text output
+  monitoring: ''
+  name: RoentGen
+  organization: Stanford
+  prohibited_uses: ''
+  quality_control: ''
+  size: 330M parameters (dense)
+  training_emissions: unknown
+  training_hardware: 64 A100 GPUs
+  training_time: 60k training steps per day
+  type: model
+  url: https://arxiv.org/pdf/2211.12737.pdf
+- access: open
   analysis: Evaluated on three physical control tasks, drawing, steering, and human
     body movement on various dynamics
-  size: 124M parameters
+  created_date: 2023-06-12
   dependencies: [GPT-2, BABEL, text-davinci-003]
+  description: Model trained to generate language corrections for physical control
+    tasks.
+  feedback: ''
+  intended_uses: ''
+  license: MIT
+  modality:
+    explanation: trajectory input with text output
+    value: other; text
+  model_card: ''
+  monitoring: ''
+  name: CORGI
+  organization: Stanford
+  prohibited_uses: ''
+  quality_control: ''
+  size: 124M parameters (dense)
   training_emissions: ''
+  training_hardware: one NVIDIA A40 GPU
   training_time:
-    value: unknown
     explanation: The authors do not report the training time, but do report that
       they train for 200 epochs.
-  training_hardware: one NVIDIA A40 GPU
-  quality_control: ''
-  access: open
-  license: MIT
-  intended_uses: ''
-  prohibited_uses: ''
-  monitoring: ''
-  feedback: ''
+    value: unknown
+  type: model
+  url: https://arxiv.org/pdf/2306.07012.pdf

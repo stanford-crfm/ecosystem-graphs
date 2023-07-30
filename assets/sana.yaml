@@ -1,55 +1,40 @@
 ---
-
-- type: application
-  name: Sana
-  # General
-  organization: Sana
-  description: >
-    "Sana is your all-in-one, AI-assisted, online learning platform (LMS).
-    Author employee training courses and measure team development with Sana's
-    powerful analytics. Sana partners with the world's most important
-    organizations and fastest-growing startups to make personalized, adaptive
-    learning available for everyone, everywhere"
-    [[Sana GPT-3 Demo]](https://gpt3demo.com/apps/sanalabs).
+- access: limited
+  adaptation: "Customized GPT-3, fine-tuned on private data [[Sana GPT-3 Demo]](https://gpt3demo.com/apps/sanalabs).\n"
   created_date:
+    explanation: "The company was founded in 2016 according to [[Crunchbase]](https://www.crunchbase.com/organization/sana-2).\
+      \ It is unclear when Sana adapted the OpenAI API to their products.\n"
     value: unknown
-    explanation: >
-      The company was founded in 2016 according to
-      [[Crunchbase]](https://www.crunchbase.com/organization/sana-2). It is
-      unclear when Sana adapted the OpenAI API to their products.
-  url: https://www.sanalabs.com/
-  # Construction
   dependencies: [OpenAI API]
-  adaptation: >
-    Customized GPT-3, fine-tuned on private data
-    [[Sana GPT-3 Demo]](https://gpt3demo.com/apps/sanalabs).
-  output_space: question and answer, summarization, sentiment analysis,topic identification
-  quality_control: unknown
-  # Downstream
-  access: limited
-  license:
-    value: custom
-    explanation: >
-      "Sana Labs grants Subscriber a limited non-exclusive, non-transferable,
-      non-sublicensable license to use Sana Labs' web-based personalized and
-      collaborative learning platform (“Sana Platform”) solely in connection
-      with the subscribed Services in accordance with the Agreement." -
-      excerpt from the Terms of Service.
-  terms_of_service: https://www.sanalabs.com/legal/
-  intended_uses: >
-    Sana is intended to be used by employers to provide a learning service for
-    their employees.
-  prohibited_uses:
-    value: none
-    explanation: >
-      "Sana provides an extensive set of legal documents
-      [[Sana Legal]](https://www.sanalabs.com/legal/), but missing from the
-      documents are prohibited uses of the Sana platform, beyond a mention of
-      what is impermissible under relevant law." - exceprt from the Terms of
-      Service document.
-  monitoring: unknown
-  feedback: unknown
-  # Deployment
-  monthly_active_users: unknown
-  user_distribution: unknown
+  description: "\"Sana is your all-in-one, AI-assisted, online learning platform\
+    \ (LMS). Author employee training courses and measure team development with\
+    \ Sana's powerful analytics. Sana partners with the world's most important organizations\
+    \ and fastest-growing startups to make personalized, adaptive learning available\
+    \ for everyone, everywhere\" [[Sana GPT-3 Demo]](https://gpt3demo.com/apps/sanalabs).\n"
   failures: unknown
+  feedback: unknown
+  intended_uses: "Sana is intended to be used by employers to provide a learning\
+    \ service for their employees.\n"
+  license:
+    explanation: "\"Sana Labs grants Subscriber a limited non-exclusive, non-transferable,\
+      \ non-sublicensable license to use Sana Labs' web-based personalized and collaborative\
+      \ learning platform (“Sana Platform”) solely in connection with the subscribed\
+      \ Services in accordance with the Agreement.\" - excerpt from the Terms of\
+      \ Service.\n"
+    value: custom
+  monitoring: unknown
+  monthly_active_users: unknown
+  name: Sana
+  organization: Sana
+  output_space: question and answer, summarization, sentiment analysis,topic identification
+  prohibited_uses:
+    explanation: "\"Sana provides an extensive set of legal documents [[Sana Legal]](https://www.sanalabs.com/legal/),\
+      \ but missing from the documents are prohibited uses of the Sana platform,\
+      \ beyond a mention of what is impermissible under relevant law.\" - exceprt\
+      \ from the Terms of Service document.\n"
+    value: none
+  quality_control: unknown
+  terms_of_service: https://www.sanalabs.com/legal/
+  type: application
+  url: https://www.sanalabs.com/
+  user_distribution: unknown

@@ -1,49 +1,50 @@
 ---
-
-- type: dataset
-  name: LAION-1B
-  organization: Alibaba
-  description: ''
-  created_date: 2023-02-20
-  url: https://arxiv.org/pdf/2302.09778.pdf
-  datasheet: ''
-  modality: text and image
-  size: 1B image-text pairs
-  sample: []
+- access: closed
   analysis: ''
+  created_date: 2023-02-20
+  datasheet: ''
   dependencies: [LAION-5B]
-  included: ''
+  description: ''
   excluded: We eliminate duplicates, low resolution images, and images potentially
     contain harmful content from the LAION dataset.
-  quality_control: ''
-  access: closed
-  license: unknown
-  intended_uses: ''
-  prohibited_uses: ''
-  monitoring: ''
   feedback: ''
-
-- type: model
+  included: ''
+  intended_uses: ''
+  license: unknown
+  modality:
+    explanation: text and image
+    value: image, text
+  monitoring: ''
+  name: LAION-1B
+  organization: Alibaba
+  prohibited_uses: ''
+  quality_control: ''
+  sample: []
+  size: 1B image-text pairs
+  type: dataset
+  url: https://arxiv.org/pdf/2302.09778.pdf
+- access: closed
+  analysis: ''
+  created_date: 2023-02-20
+  dependencies: [ImageNet, WebVision, LAION-1B]
+  description: ''
+  feedback: ''
+  intended_uses: ''
+  license:
+    explanation: "The asset isn't released, and hence the license is unknown.\n"
+    value: unknown
+  modality:
+    explanation: images
+    value: image; image
+  model_card: ''
+  monitoring: ''
   name: Composer
   organization: Alibaba
-  description: ''
-  created_date: 2023-02-20
-  url: https://arxiv.org/pdf/2302.09778.pdf
-  model_card: ''
-  modality: images
-  analysis: ''
-  size: 4.4B parameters (dense model)
-  dependencies: [ImageNet, WebVision, LAION-1B]
-  training_emissions: ''
-  training_time: ''
-  training_hardware: ''
-  quality_control: ''
-  access: closed
-  license:
-    value: unknown
-    explanation: >
-      The asset isn't released, and hence the license is unknown.
-  intended_uses: ''
   prohibited_uses: ''
-  monitoring: ''
-  feedback: ''
+  quality_control: ''
+  size: 4.4B parameters (dense)
+  training_emissions: ''
+  training_hardware: ''
+  training_time: ''
+  type: model
+  url: https://arxiv.org/pdf/2302.09778.pdf

@@ -1,32 +1,25 @@
 ---
-
-- type: dataset
-  name: COYO-700M
-  organization: Kakao Brain
-  description: >
-    COYO-700M is a large-scale dataset that contains 747M image-text pairs as well
-    as many other meta-attributes to increase the usability to train various models.
-  created_date:
-    value: 2022-08-31
-    explanation: As mentioned in the [[Google Scholar page]](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=8WXfStMAAAAJ&citation_for_view=8WXfStMAAAAJ:-f6ydRqryjwC).
-  url: https://github.com/kakaobrain/coyo-dataset
-  datasheet: none
-  modality: text (English) and image
-  size: 747M image-text pairs
-  sample: []
+- access:
+    explanation: You can download the dataset from [[COYO Huggingface page]](https://huggingface.co/datasets/kakaobrain/coyo-700m).
+      For more information on downloading the image dataset, please refer to [[download/README.md]](https://github.com/kakaobrain/coyo-dataset/blob/main/download/README.md)
+      on Github.
+    value: open
   analysis:
-    value: >
-      "We empirically validated the quality of COYO dataset by re-implementing popular
-      models such as ALIGN, unCLIP, and ViT. We trained these models on COYO-700M
-      or its subsets from scratch, achieving competitive performance to the reported
-      numbers or generated samples in the original papers."
     explanation: See [[Experiments]](https://github.com/kakaobrain/coyo-dataset#experiments)
+    value: "\"We empirically validated the quality of COYO dataset by re-implementing\
+      \ popular models such as ALIGN, unCLIP, and ViT. We trained these models on\
+      \ COYO-700M or its subsets from scratch, achieving competitive performance\
+      \ to the reported numbers or generated samples in the original papers.\"\n"
+  created_date:
+    explanation: As mentioned in the [[Google Scholar page]](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=8WXfStMAAAAJ&citation_for_view=8WXfStMAAAAJ:-f6ydRqryjwC).
+    value: 2022-08-31
+  datasheet: none
   dependencies: [CommonCrawl]
-  included:
-    value: Included all image formats that Pillow library can decode. Collected
-      only English text using cld3.
-    explanation: See [[Data Filtering]](https://github.com/kakaobrain/coyo-dataset#data-filtering)
+  description: "COYO-700M is a large-scale dataset that contains 747M image-text\
+    \ pairs as well as many other meta-attributes to increase the usability to train\
+    \ various models.\n"
   excluded:
+    explanation: See [[Data Filtering]](https://github.com/kakaobrain/coyo-dataset#data-filtering)
     value: Removed images less than 5KB image size. Removed images with an aspect
       ratio greater than 3.0. Removed images with min(width, height) < 200. Removed
       images with a score of OpenNSFW2 or GantMan/NSFW higher than 0.5. Removed
@@ -36,34 +29,36 @@
       texts over 1000 in length. Removed texts appearing more than 10 times. Removed
       texts containing NSFW words. Removed duplicated samples based on (image_phash,
       text).
-    explanation: See [[Data Filtering]](https://github.com/kakaobrain/coyo-dataset#data-filtering)
-  quality_control: ''
-  access:
-    value: open
-    explanation: You can download the dataset from [[COYO Huggingface page]](https://huggingface.co/datasets/kakaobrain/coyo-700m).
-      For more information on downloading the image dataset, please refer to [[download/README.md]](https://github.com/kakaobrain/coyo-dataset/blob/main/download/README.md)
-      on Github.
-  license: CC-BY-4.0
-  intended_uses:
-    value: >
-      "It is strongly recommended that this dataset be used only for research, keeping
-      this in mind when using the dataset, and Kakao Brain does not recommend using
-      this dataset as it is without special processing to clear inappropriate data
-      to create commercial products."
-    explanation: See [[Disclaimer & Content Warning]](https://github.com/kakaobrain/coyo-dataset#disclaimer--content-warning)
-  prohibited_uses:
-    value: >
-      Authors note the following limitations: "Kakao Brain tried to construct a
-      "Safe"
-      dataset when building the COYO dataset. However, despite these efforts, this
-      large-scale dataset was not hand-picked by humans to avoid the risk due to
-      its
-      very large size (over 700M). Keep in mind that the unscreened nature of the
-      dataset means that the collected images can lead to strongly discomforting
-      and
-      disturbing content for humans. The COYO dataset may contain some inappropriate
-      data, and any problems resulting from such data are the full responsibility
-      of the user who used it."
-    explanation: See [[Disclaimer & Content Warning]](https://github.com/kakaobrain/coyo-dataset#disclaimer--content-warning)
-  monitoring: none
   feedback: Feedback can be given by emailing at coyo at kakaobrain.com
+  included:
+    explanation: See [[Data Filtering]](https://github.com/kakaobrain/coyo-dataset#data-filtering)
+    value: Included all image formats that Pillow library can decode. Collected
+      only English text using cld3.
+  intended_uses:
+    explanation: See [[Disclaimer & Content Warning]](https://github.com/kakaobrain/coyo-dataset#disclaimer--content-warning)
+    value: "\"It is strongly recommended that this dataset be used only for research,\
+      \ keeping this in mind when using the dataset, and Kakao Brain does not recommend\
+      \ using this dataset as it is without special processing to clear inappropriate\
+      \ data to create commercial products.\"\n"
+  license: CC-BY-4.0
+  modality:
+    explanation: text (English) and image
+    value: image, text
+  monitoring: none
+  name: COYO-700M
+  organization: Kakao Brain
+  prohibited_uses:
+    explanation: See [[Disclaimer & Content Warning]](https://github.com/kakaobrain/coyo-dataset#disclaimer--content-warning)
+    value: "Authors note the following limitations: \"Kakao Brain tried to construct\
+      \ a \"Safe\" dataset when building the COYO dataset. However, despite these\
+      \ efforts, this large-scale dataset was not hand-picked by humans to avoid\
+      \ the risk due to its very large size (over 700M). Keep in mind that the unscreened\
+      \ nature of the dataset means that the collected images can lead to strongly\
+      \ discomforting and disturbing content for humans. The COYO dataset may contain\
+      \ some inappropriate data, and any problems resulting from such data are the\
+      \ full responsibility of the user who used it.\"\n"
+  quality_control: ''
+  sample: []
+  size: 747M image-text pairs
+  type: dataset
+  url: https://github.com/kakaobrain/coyo-dataset

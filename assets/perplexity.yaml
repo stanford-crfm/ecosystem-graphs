@@ -1,52 +1,50 @@
 ---
-
-- type: application
-  name: Perplexity Ask
-  organization: Perplexity
-  description: Perplexity Ask is a new search interface that uses advanced artificial
-    intelligence technologies
+- access: open
+  adaptation: ''
   created_date:
-    value: 2022-12-07
     explanation: Perplexity Ask was announced in a [[Twitter post]](https://twitter.com/perplexity_ai/status/1600551871554338816?s=20)
       by the company.
-  url: https://www.perplexity.ai/
+    value: 2022-12-07
   dependencies: [GPT-3.5, Bing Search]
-  adaptation: ''
-  output_space: ''
-  quality_control: ''
-  access: open
-  license:
-    value: none
-    explanation: No license was found.
-  terms_of_service: ''
-  intended_uses: ''
-  prohibited_uses: ''
-  monitoring: ''
-  feedback: ''
-  monthly_active_users: ''
-  user_distribution: ''
+  description: Perplexity Ask is a new search interface that uses advanced artificial
+    intelligence technologies
   failures: ''
-
-- type: application
-  name: Bird SQL
+  feedback: ''
+  intended_uses: ''
+  license:
+    explanation: No license was found.
+    value: none
+  monitoring: ''
+  monthly_active_users: ''
+  name: Perplexity Ask
   organization: Perplexity
+  output_space: ''
+  prohibited_uses: ''
+  quality_control: ''
+  terms_of_service: ''
+  type: application
+  url: https://www.perplexity.ai/
+  user_distribution: ''
+- access: deprecated
+  adaptation: ''
+  created_date: 2022-12-15
+  dependencies: [Perplexity Ask, OpenAI API]
   description: Twitter search interface that is powered by Perplexity's structured
     search engine.
-  created_date: 2022-12-15
-  url: https://www.perplexity.ai/sql
-  dependencies: [Perplexity Ask, OpenAI API]
-  adaptation: ''
-  output_space: ''
-  quality_control: ''
-  access: deprecated
-  license:
-    value: none
-    explanation: No license was found.
-  terms_of_service: ''
-  intended_uses: ''
-  prohibited_uses: ''
-  monitoring: ''
-  feedback: ''
-  monthly_active_users: ''
-  user_distribution: ''
   failures: ''
+  feedback: ''
+  intended_uses: ''
+  license:
+    explanation: No license was found.
+    value: none
+  monitoring: ''
+  monthly_active_users: ''
+  name: Bird SQL
+  organization: Perplexity
+  output_space: ''
+  prohibited_uses: ''
+  quality_control: ''
+  terms_of_service: ''
+  type: application
+  url: https://www.perplexity.ai/sql
+  user_distribution: ''

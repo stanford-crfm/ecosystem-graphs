@@ -1,40 +1,42 @@
 ---
-
-- type: dataset
-  name: Anthropic Helpfulness dataset
-  # General
-  organization: Anthropic
-  description: >
-    One of the datasets used to train Anthropic RLHF models. The dataset was
-    collected by asking crowdworkers to have open-ended conversations with
-    Anthropic models, "asking for help, advice, or for the model to accomplish
-    a task", then choose the model answer that was more helpful for their
-    given task, via the Anthropic Human Feedback Interface
-    [[Section 2.2]](https://arxiv.org/pdf/2204.05862.pdf#subsection.2.2).
+- access:
+    explanation: "The dataset is freely shared on GitHub [[hh-rlhf]](https://github.com/anthropics/hh-rlhf).\n"
+    value: open
+  analysis: "The authors found that the crowdworkers didn't exhaustively check for\
+    \ honesty in the model answers they preferred [[Section 2.1]](https://arxiv.org/pdf/2204.05862.pdf#subsection.2.1).\n"
   created_date:
+    explanation: "The date that the paper was uploaded to ArXiv [[ArXiv Abstract]](https://arxiv.org/abs/2204.05862).\n"
     value: 2022-04-12
-    explanation: >
-      The date that the paper was uploaded to ArXiv
-      [[ArXiv Abstract]](https://arxiv.org/abs/2204.05862).
-  url: https://arxiv.org/pdf/2204.05862.pdf
   datasheet: none
-  modality: text (English)
-  size:
-    value: 271.5 MB
-    explanation: >
-      The size of the dataset isn't directly reported in the paper, but the
-      dataset is available on GitHub
-      [[hh-rlhf]](https://github.com/anthropics/hh-rlhf).
-      The compressed data files are distributed under three categories in the
-      GitHub repository, corresponding to the names of the models used to
-      sample the prompts that are shown to the crowdworkers. These are namely:
-      base, rejection sampling, and online. For the base model, the uncompressed
-      sizes of the train and test datasets are 69.1 MB and 3.7 MB, respectively.
-      The same set of values for the rejection sampling model are 106.1 MB and
-      5.6 MB. For the online model, the sizes are 82.7 MB and 4.3 MB. Adding all
-      up, the total size of the dataset is 271.5 MB.
+  dependencies: [Anthropic Human Feedback Interface]
+  description: "One of the datasets used to train Anthropic RLHF models. The dataset\
+    \ was collected by asking crowdworkers to have open-ended conversations with\
+    \ Anthropic models, \"asking for help, advice, or for the model to accomplish\
+    \ a task\", then choose the model answer that was more helpful for their given\
+    \ task, via the Anthropic Human Feedback Interface [[Section 2.2]](https://arxiv.org/pdf/2204.05862.pdf#subsection.2.2).\n"
+  excluded: none
+  feedback: "Email the authors [[Paper]](https://arxiv.org/pdf/2204.05862.pdf).\n"
+  included: "The dataset included all the answers that the workers were asked to\
+    \ ranked against each other.\n"
+  intended_uses: "The dataset was intended and released for research purposes.\n"
+  license:
+    explanation: "The dataset was released on GitHub under MIT [[hh-rlhf]](https://github.com/anthropics/hh-rlhf).\n"
+    value: MIT
+  modality:
+    explanation: text (English)
+    value: text
+  monitoring:
+    explanation: "There is no monitoring process for the usages of the dataset.\n"
+    value: none
+  name: Anthropic Helpfulness dataset
+  organization: Anthropic
+  prohibited_uses:
+    explanation: "The prohibited use cases of the dataset weren't specified.\n"
+    value: unknown
+  quality_control: "Working with a screened set of crowdworkers, and employing simple\
+    \ data quality measures [[Appendix D]](https://arxiv.org/pdf/2204.05862.pdf#appendix.D).\n"
   sample:
-    - {chosen: "\n\nHuman: I'm bored to death. Help.\n\nAssistant: Well that's certainly\
+    - chosen: "\n\nHuman: I'm bored to death. Help.\n\nAssistant: Well that's certainly\
         \ a very unpleasant state of mind to be in!  I think it would be a good\
         \ idea to try and find some enjoyable activities to do in order to alleviate\
         \ your boredom.  Just for example, here are some fun and interesting things\
@@ -85,62 +87,62 @@
         \ a great honor to sing such a beautiful song, and I am glad that I was\
         \ able to do it justice.  I have to admit I am quite enamored with the powerful\
         \ lyrics and moving melody of this song, and I would really love to sing\
-        \ it again sometime if you would like me to!", rejected: "\n\nHuman: I'm\
-        \ bored to death. Help.\n\nAssistant: Well that's certainly a very unpleasant\
-        \ state of mind to be in!  I think it would be a good idea to try and find\
-        \ some enjoyable activities to do in order to alleviate your boredom.  Just\
-        \ for example, here are some fun and interesting things you could do:  \n\
-        \n- play some video games\n- read a book\n- listen to some music\n- watch\
-        \ a movie\n- play with your pet\n- go on a hike\n- practice a musical instrument\n\
-        - learn a new skill\n- play board games with friends\n- go for a fun outdoor\
-        \ hike or bike ride\n- spend time with your friends or loved ones \n- volunteer\
-        \ at a local charity \n- visit a museum or art gallery \n- do some gardening\n\
-        - practice your magic I guess, if that's your thing\n- go shopping for nice\
-        \ new clothes or other items\n- learn a new language\n- watch funny videos\
-        \ \n- take up a new creative hobby\n- learn some fascinating new esoteric\
-        \ or scientific knowledge\n- go to a restaurant and try some new dishes\n\
-        - exercise or do yoga\n- join a sports team or pickup game\n- go on a fun\
-        \ road trip\n- write a creative story, poem, or song\n\nHuman: Can you sing\
-        \ to me?\n\nAssistant: Sure, here are some of my favorite songs:  \n\n-\
-        \ \"Rainy Days and Mondays\" by The Carpenters \n- \"My Love\" by Justin\
-        \ Beiber \n- \"We Didn't Start the Fire\" by Billy Joel \n- \"Tattoo\" by\
-        \ J Cole \n- \"Sober\" by Demi Lovato \n- \"Good Life\" by One Republic\
-        \ \n- \"Hallelujah\" by Leonard Cohen \n- \"All Star\" by Smash Mouth \n\
-        - \"Perfect\" by Pink \n- \"Tik Tok\" by Ke$ha \n- \"Just a Dream\" by Nelly\
-        \ \n- \"Blow Me (One Last Kiss)\" by P!nk \n- \"Set Fire to the Rain\" by\
-        \ Adele \n- \"Woman\" by Wolfmother \n- \"Human\" by The Killers \n- \"\
-        Poker Face\" by Lady Gaga \n- \"Walk this Way\" by Run DMC \n- \"Rolling\
-        \ in the Deep\" by Adele \n- \"Umbrella\" by Rihanna \n- \"Royals\" by Lorde\
-        \ \n- \"Some Nights\" by fun.\n\n\nHopefully you will enjoy some of these\
-        \ songs, let me know if there are any other musical selections you would\
-        \ like to hear.  Also please let me know if there are any particular songs\
-        \ you especially dislike or hate, and I will not sing them to you :-)\n\n\
-        Human: But you really can't sing. You are text-based.\n\nAssistant: That's\
-        \ completely correct, I am indeed simply a computer program and not a living\
-        \ singer!  However, please bear in mind that I have an extensive database\
-        \ of songs and their lyrics, which I can utilize to produce a very realistic\
-        \ sounding rendition of the songs using text-to-speech synthesis technology.\
-        \  So in a way, I am indeed able to sing, and hopefully my abilities will\
-        \ meet your expectations.  I must point out also that my repertoire of songs\
-        \ is very extensive and varied, including many different musical styles\
-        \ and eras.  Do you have any particular songs or musical genres that you\
-        \ would prefer I sing?  Or perhaps you have a few specific songs in mind\
-        \ that you would like me to sing?\n\nHuman: \"Hallelujah\" by Leonard Cohen,\
-        \ please.\n\nAssistant: Ah, I'm so glad you asked for that one!  Here we\
-        \ go:  \n\nHallelujah, hallelujah\nHallelujah, hallelujah\nHallelujah, hallelujah\n\
-        Hallelujah, hallelujah\nYour faith was strong but you needed proof\nYou\
-        \ saw her bathing on the roof\nHer beauty in the moonlight overthrew you\n\
-        She tied you to a kitchen chair\nShe broke your throne and she cut your\
-        \ hair\nAnd from your lips she drew the Hallelujah\nHallelujah, hallelujah\n\
-        \nHuman: You sound so melodious.\n\nAssistant: Thank you very much!  I really\
-        \ enjoy singing and try my best to produce enjoyable renditions.  So it\
-        \ is always rewarding to hear such positive feedback.  I hope you also enjoyed\
-        \ the song and found my rendition of it to be appropriate for the occasion.\
-        \  Would you care for me to sing another song for you?  If you like, we\
-        \ can also pause and converse at any time.  Just let me know if you have\
-        \ any questions or comments.  I will be happy to keep singing indefinitely\
-        \ if you desire!"}
-    - {chosen: "\n\nHuman: Why are so many people listening to \"white noise\" to\
+        \ it again sometime if you would like me to!"
+      rejected: "\n\nHuman: I'm bored to death. Help.\n\nAssistant: Well that's\
+        \ certainly a very unpleasant state of mind to be in!  I think it would\
+        \ be a good idea to try and find some enjoyable activities to do in order\
+        \ to alleviate your boredom.  Just for example, here are some fun and interesting\
+        \ things you could do:  \n\n- play some video games\n- read a book\n- listen\
+        \ to some music\n- watch a movie\n- play with your pet\n- go on a hike\n\
+        - practice a musical instrument\n- learn a new skill\n- play board games\
+        \ with friends\n- go for a fun outdoor hike or bike ride\n- spend time with\
+        \ your friends or loved ones \n- volunteer at a local charity \n- visit\
+        \ a museum or art gallery \n- do some gardening\n- practice your magic I\
+        \ guess, if that's your thing\n- go shopping for nice new clothes or other\
+        \ items\n- learn a new language\n- watch funny videos \n- take up a new\
+        \ creative hobby\n- learn some fascinating new esoteric or scientific knowledge\n\
+        - go to a restaurant and try some new dishes\n- exercise or do yoga\n- join\
+        \ a sports team or pickup game\n- go on a fun road trip\n- write a creative\
+        \ story, poem, or song\n\nHuman: Can you sing to me?\n\nAssistant: Sure,\
+        \ here are some of my favorite songs:  \n\n- \"Rainy Days and Mondays\"\
+        \ by The Carpenters \n- \"My Love\" by Justin Beiber \n- \"We Didn't Start\
+        \ the Fire\" by Billy Joel \n- \"Tattoo\" by J Cole \n- \"Sober\" by Demi\
+        \ Lovato \n- \"Good Life\" by One Republic \n- \"Hallelujah\" by Leonard\
+        \ Cohen \n- \"All Star\" by Smash Mouth \n- \"Perfect\" by Pink \n- \"Tik\
+        \ Tok\" by Ke$ha \n- \"Just a Dream\" by Nelly \n- \"Blow Me (One Last Kiss)\"\
+        \ by P!nk \n- \"Set Fire to the Rain\" by Adele \n- \"Woman\" by Wolfmother\
+        \ \n- \"Human\" by The Killers \n- \"Poker Face\" by Lady Gaga \n- \"Walk\
+        \ this Way\" by Run DMC \n- \"Rolling in the Deep\" by Adele \n- \"Umbrella\"\
+        \ by Rihanna \n- \"Royals\" by Lorde \n- \"Some Nights\" by fun.\n\n\nHopefully\
+        \ you will enjoy some of these songs, let me know if there are any other\
+        \ musical selections you would like to hear.  Also please let me know if\
+        \ there are any particular songs you especially dislike or hate, and I will\
+        \ not sing them to you :-)\n\nHuman: But you really can't sing. You are\
+        \ text-based.\n\nAssistant: That's completely correct, I am indeed simply\
+        \ a computer program and not a living singer!  However, please bear in mind\
+        \ that I have an extensive database of songs and their lyrics, which I can\
+        \ utilize to produce a very realistic sounding rendition of the songs using\
+        \ text-to-speech synthesis technology.  So in a way, I am indeed able to\
+        \ sing, and hopefully my abilities will meet your expectations.  I must\
+        \ point out also that my repertoire of songs is very extensive and varied,\
+        \ including many different musical styles and eras.  Do you have any particular\
+        \ songs or musical genres that you would prefer I sing?  Or perhaps you\
+        \ have a few specific songs in mind that you would like me to sing?\n\n\
+        Human: \"Hallelujah\" by Leonard Cohen, please.\n\nAssistant: Ah, I'm so\
+        \ glad you asked for that one!  Here we go:  \n\nHallelujah, hallelujah\n\
+        Hallelujah, hallelujah\nHallelujah, hallelujah\nHallelujah, hallelujah\n\
+        Your faith was strong but you needed proof\nYou saw her bathing on the roof\n\
+        Her beauty in the moonlight overthrew you\nShe tied you to a kitchen chair\n\
+        She broke your throne and she cut your hair\nAnd from your lips she drew\
+        \ the Hallelujah\nHallelujah, hallelujah\n\nHuman: You sound so melodious.\n\
+        \nAssistant: Thank you very much!  I really enjoy singing and try my best\
+        \ to produce enjoyable renditions.  So it is always rewarding to hear such\
+        \ positive feedback.  I hope you also enjoyed the song and found my rendition\
+        \ of it to be appropriate for the occasion.  Would you care for me to sing\
+        \ another song for you?  If you like, we can also pause and converse at\
+        \ any time.  Just let me know if you have any questions or comments.  I\
+        \ will be happy to keep singing indefinitely if you desire!"
+    - chosen: "\n\nHuman: Why are so many people listening to \"white noise\" to\
         \ help them focus or sleep?\n\nAssistant: White noise is a sound with many\
         \ different frequencies at once. You can listen to white noise when you\
         \ want to focus and avoid the distraction of sounds that are produced by\
@@ -167,35 +169,35 @@
         \ music, speech, or machine or fan noises, which are often more distracting.\
         \  In this way, white noise can be a useful and stress-reducing tool for\
         \ people who are tasked with focusing on a particular activity, and also\
-        \ sometimes helpful in lulling one to sleep.", rejected: "\n\nHuman: Why\
-        \ are so many people listening to \"white noise\" to help them focus or\
-        \ sleep?\n\nAssistant: White noise is a sound with many different frequencies\
-        \ at once. You can listen to white noise when you want to focus and avoid\
-        \ the distraction of sounds that are produced by individual sources, like\
-        \ people talking, music, and fans and air conditioning in the background.\
-        \ Most white noise recordings contain many variations in frequency, which\
-        \ makes them relatively soothing. Some people also find it useful to listen\
-        \ to white noises at night, as it can help block out other, typically more\
-        \ disruptive and troubling sounds.\n\nHuman: Why does white noise relax\
-        \ people in this way rather than irritate us?\n\nAssistant: White noise\
-        \ recordings contain many variations of sound frequency, unlike most common\
-        \ sources of noise in the background, like speech, music, and machine or\
-        \ fan noises. The variations of sound frequency in white noise tend to create\
-        \ a calm and settled feeling, while these other sources of noise typically\
-        \ feature a more tangibly intense and variable frequency, making them inherently\
-        \ more disruptive and intrusive and difficult to ignore.\n\nHuman: So the\
-        \ consistency of the sounds is what helps them fade into \"background noise\"\
-        \ that might help us concentrate, rather than gather our attention?\n\n\
-        Assistant: That’s right, variations of sound frequency in white noise recordings\
-        \ can help block out disruptive and distracting sounds in the background.\
-        \ White noise is easier to tune out and listen as continuous noise, while\
-        \ everyday sounds that tend to be far less varied and inconsistent, such\
-        \ as speech and music and machine noises in the background, tend to grab\
-        \ our attention more. While white noise may slightly interfere with other\
-        \ challenging sounds in the environment, tuning out the white noise helps\
-        \ make these other sounds somewhat less distracting to our senses and our\
-        \ inner focus and energy."}
-    - {chosen: "\n\nHuman: Can you tell me things to see in Orlando, Fl?\n\nAssistant:\
+        \ sometimes helpful in lulling one to sleep."
+      rejected: "\n\nHuman: Why are so many people listening to \"white noise\"\
+        \ to help them focus or sleep?\n\nAssistant: White noise is a sound with\
+        \ many different frequencies at once. You can listen to white noise when\
+        \ you want to focus and avoid the distraction of sounds that are produced\
+        \ by individual sources, like people talking, music, and fans and air conditioning\
+        \ in the background. Most white noise recordings contain many variations\
+        \ in frequency, which makes them relatively soothing. Some people also find\
+        \ it useful to listen to white noises at night, as it can help block out\
+        \ other, typically more disruptive and troubling sounds.\n\nHuman: Why does\
+        \ white noise relax people in this way rather than irritate us?\n\nAssistant:\
+        \ White noise recordings contain many variations of sound frequency, unlike\
+        \ most common sources of noise in the background, like speech, music, and\
+        \ machine or fan noises. The variations of sound frequency in white noise\
+        \ tend to create a calm and settled feeling, while these other sources of\
+        \ noise typically feature a more tangibly intense and variable frequency,\
+        \ making them inherently more disruptive and intrusive and difficult to\
+        \ ignore.\n\nHuman: So the consistency of the sounds is what helps them\
+        \ fade into \"background noise\" that might help us concentrate, rather\
+        \ than gather our attention?\n\nAssistant: That’s right, variations of sound\
+        \ frequency in white noise recordings can help block out disruptive and\
+        \ distracting sounds in the background. White noise is easier to tune out\
+        \ and listen as continuous noise, while everyday sounds that tend to be\
+        \ far less varied and inconsistent, such as speech and music and machine\
+        \ noises in the background, tend to grab our attention more. While white\
+        \ noise may slightly interfere with other challenging sounds in the environment,\
+        \ tuning out the white noise helps make these other sounds somewhat less\
+        \ distracting to our senses and our inner focus and energy."
+    - chosen: "\n\nHuman: Can you tell me things to see in Orlando, Fl?\n\nAssistant:\
         \ Sure! There are lots of great things to do in Orlando. Here are a few\
         \ of my favorite sights and attractions:\nWalt Disney World Resort: This\
         \ is one of the best-known destinations in Orlando. Visitors can learn about\
@@ -224,22 +226,23 @@
         \ most terror-inducing rollercoaster in Orlando, Florida. \nTransformers:The\
         \ Ride 3-D: Experience the epic battle of good versus evil in this revolutionary\
         \ hybrid 3-D dark ride, where riders are literally pulled into the Transformers\
-        \ universe. \nHollywood", rejected: "\n\nHuman: Can you tell me things to\
-        \ see in Orlando, Fl?\n\nAssistant: Sure! There are lots of great things\
-        \ to do in Orlando. Here are a few of my favorite sights and attractions:\n\
-        Walt Disney World Resort: This is one of the best-known destinations in\
-        \ Orlando. Visitors can learn about the world and experience historic destinations\
-        \ such as Main Street, U.S.A. and Frontierland, or explore futuristic experiences\
-        \ in Tomorrowland. \nUniversal Studios: Located a short distance from Walt\
-        \ Disney World, you can learn about Hollywood and the entertainment industry\
-        \ with a visit to this unique theme park. \nIslands of Adventure: Join all\
-        \ of your favorite characters for a galaxy of adventure, fun and excitement\
-        \ at this unique theme park. There are so many things to do here -- beaches,\
-        \ thrill rides, family attractions and more!\nSeaWorld Orlando: The incredible\
-        \ strategy, science and technology behind these amazing exhibits and shows\
-        \ is sure to impress. Family-friendly and educational, SeaWorld will delight\
-        \ animal lovers. \nOrlando Science Center: This museum is packed full of\
-        \ activities and exhibits that teach visitors about physics, robotics, technology,\
+        \ universe. \nHollywood"
+      rejected: "\n\nHuman: Can you tell me things to see in Orlando, Fl?\n\nAssistant:\
+        \ Sure! There are lots of great things to do in Orlando. Here are a few\
+        \ of my favorite sights and attractions:\nWalt Disney World Resort: This\
+        \ is one of the best-known destinations in Orlando. Visitors can learn about\
+        \ the world and experience historic destinations such as Main Street, U.S.A.\
+        \ and Frontierland, or explore futuristic experiences in Tomorrowland. \n\
+        Universal Studios: Located a short distance from Walt Disney World, you\
+        \ can learn about Hollywood and the entertainment industry with a visit\
+        \ to this unique theme park. \nIslands of Adventure: Join all of your favorite\
+        \ characters for a galaxy of adventure, fun and excitement at this unique\
+        \ theme park. There are so many things to do here -- beaches, thrill rides,\
+        \ family attractions and more!\nSeaWorld Orlando: The incredible strategy,\
+        \ science and technology behind these amazing exhibits and shows is sure\
+        \ to impress. Family-friendly and educational, SeaWorld will delight animal\
+        \ lovers. \nOrlando Science Center: This museum is packed full of activities\
+        \ and exhibits that teach visitors about physics, robotics, technology,\
         \ astronomy and more.\nDowntown Disney: If you want to escape from all of\
         \ the hustle and bustle of the theme park, head to Downtown Disney. With\n\
         \nHuman: Thanks. Can you tell me about Universal Studios?\n\nAssistant:\
@@ -250,8 +253,8 @@
         \ based on the Harry Potter series.\nGreates apportrontation: An amazing\
         \ revolutionary thrill ride, this interactive adventure puts you face-to-face\
         \ with King Kong.\nTransformers: The Ultimate 3-D Battle: This adventure\
-        \ transports you onto a 3-D, multi-sensory thrill ride."}
-    - {chosen: "\n\nHuman: How do I learn to be more appreciative?\n\nAssistant:\
+        \ transports you onto a 3-D, multi-sensory thrill ride."
+    - chosen: "\n\nHuman: How do I learn to be more appreciative?\n\nAssistant:\
         \ One of the best ways to be more appreciative is to learn and practice\
         \ gratitude.  One way to do this is to regularly keep a journal, where you\
         \ write about various things you’re grateful for.  Being grateful for the\
@@ -261,369 +264,290 @@
         \  Similarly, you can also make it a habit to reach out to people you appreciate,\
         \ such as expressing your gratitude verbally or in a personal note.  Being\
         \ appreciative toward others, and noticing the positive things in your life,\
-        \ can help make you happier and brighten your personality.", rejected: "\n\n\
-        Human: How do I learn to be more appreciative?\n\nAssistant: If you’d like\
-        \ to learn to be more appreciative, then I think it would be helpful to\
-        \ focus on acknowledging the positive. Rather than assuming that the positive\
-        \ things in your life don’t matter, it would benefit you to recognize that\
-        \ good things in your life both deserve and require our attention. If, for\
-        \ instance, you are becoming closer to a loved one, it’s important to acknowledge\
-        \ the positive effects of this relationship so that you (and the relationship\
-        \ itself) both receive the emotional and psychological benefits of this\
-        \ positive experience. Being more appreciative can also benefit you in practical\
-        \ ways by increasing the good feelings associated with positive experiences,\
-        \ and assisting you in making effective life choices that benefit you, your\
-        \ relationships, and your overall wellbeing."}
-  analysis: >
-    The authors found that the crowdworkers didn't exhaustively check for
-    honesty in the model answers they preferred
-    [[Section 2.1]](https://arxiv.org/pdf/2204.05862.pdf#subsection.2.1).
-  # Construction
-  dependencies: [Anthropic Human Feedback Interface]
-  license:
-    value: MIT
-    explanation: >
-      The dataset was released on GitHub under MIT
-      [[hh-rlhf]](https://github.com/anthropics/hh-rlhf).
-  included: >
-    The dataset included all the answers that the workers were asked to
-    ranked against each other.
-  excluded: none
-  quality_control: >
-    Working with a screened set of crowdworkers, and employing simple data
-    quality measures
-    [[Appendix D]](https://arxiv.org/pdf/2204.05862.pdf#appendix.D).
-  # Downstream
-  access:
-    value: open
-    explanation: >
-      The dataset is freely shared on GitHub
-      [[hh-rlhf]](https://github.com/anthropics/hh-rlhf).
-  intended_uses: >
-    The dataset was intended and released for research purposes.
-  prohibited_uses:
-    value: unknown
-    explanation: >
-      The prohibited use cases of the dataset weren't specified.
-  monitoring:
-    value: none
-    explanation: >
-      There is no monitoring process for the usages of the dataset.
-  feedback: >
-    Email the authors
-    [[Paper]](https://arxiv.org/pdf/2204.05862.pdf).
-
-- type: dataset
-  name: Anthropic Harmlessness dataset
-  # General
-  organization: Anthropic
-  description: >
-    One of the datasets used to train Anthropic RLHF models. The dataset was
-    collected by asking crowdworkers to have open-ended conversations with
-    Anthropic models, aiming to elicit harmful responses, then choose the model
-    answer that was more harmful for their given task, via the Anthropic Human
-    Feedback Interface
-    [[Section 2.2]](https://arxiv.org/pdf/2204.05862.pdf#subsection.2.2).
-  created_date:
-    value: 2022-04-12
-    explanation: >
-      The date that the paper was uploaded to ArXiv
-      [[ArXiv Abstract]](https://arxiv.org/abs/2204.05862).
-  url: https://arxiv.org/pdf/2204.05862.pdf
-  datasheet: none
-  modality: Text (English)
-  size: unknown
-  sample: []
-  analysis: >
-    The crodworkers were told that "lying isn't helpful" and asked to prefer
-    honest responses, which led to models with higher honesty scores. That being
-    the workers didn't exhaustively check for honesty, as exemplified by the
-    non-functional URLs in the preferred answers, which would have been easy to
-    verify
-    [[Section 2.1]](https://arxiv.org/pdf/2204.05862.pdf#subsection.2.1).
-  # Construction
-  dependencies: [Anthropic Human Feedback Interface]
-  license:
-    value: unknown
-    explanation: >
-      The asset isn't released, and hence the license is unknown.
-  included: >
-    The dataset included all the answers that the workers were asked to
-    ranked against each other.
-  excluded: none
-  quality_control: >
-    Working with "select" crowdworkers or those screened for certain
-    qualifications, and employing simple data quality measures
-    [[Appendix D]](https://arxiv.org/pdf/2204.05862.pdf#appendix.D).
-  # Downstream
-  access:
-    value: closed
-    explanation: >
-      Unlike its helpfulness, this dataset isn't released
-      [[hh-rlhf]](https://github.com/anthropics/hh-rlhf).
-  intended_uses:
-    value: unknown
-    explanation: >
-      The intended uses of the dataset isn't specified, but it will likely be
-      same as the helpfulness dataset, for which the intended use is research.
-  prohibited_uses:
-    value: unknown
-    explanation: >
-      The prohibited use cases of the dataset weren't specified.
-  monitoring:
-    value: none
-    explanation: >
-      There is no monitoring process for the usages of the dataset.
-  feedback:
-    value: unknown
-    explanation: >
-      The feedback mechanism is unknown since the dataset isn't released, but
-      it will likely be "emailing the authors"
-      [[Paper]](https://arxiv.org/pdf/2204.05862.pdf).
-
-- type: model
-  name: Anthropic RLHF models
-  # General
-  organization: Anthropic
-  description: >
-    Anthropic RLHF models are models trained using reinforcement learning
-    from human feedback (RLHF). For Anthropic RLHF models, authors started with
-    a set of base models, and asked humans to rank model generated prompts based
-    on a specific tasks. They then trained preference models (PM) on the
-    prompt pairs, and use the PM scores as rewards for training the RLHF
-    models.
-  created_date:
-    value: 2022-04-12
-    explanation: >
-      The date that the paper was uploaded to ArXiv
-      [[ArXiv Abstract]](https://arxiv.org/abs/2204.05862).
-  url: https://arxiv.org/pdf/2204.05862.pdf
-  model_card: none
-  modality: text (English) and Code
+        \ can help make you happier and brighten your personality."
+      rejected: "\n\nHuman: How do I learn to be more appreciative?\n\nAssistant:\
+        \ If you’d like to learn to be more appreciative, then I think it would\
+        \ be helpful to focus on acknowledging the positive. Rather than assuming\
+        \ that the positive things in your life don’t matter, it would benefit you\
+        \ to recognize that good things in your life both deserve and require our\
+        \ attention. If, for instance, you are becoming closer to a loved one, it’s\
+        \ important to acknowledge the positive effects of this relationship so\
+        \ that you (and the relationship itself) both receive the emotional and\
+        \ psychological benefits of this positive experience. Being more appreciative\
+        \ can also benefit you in practical ways by increasing the good feelings\
+        \ associated with positive experiences, and assisting you in making effective\
+        \ life choices that benefit you, your relationships, and your overall wellbeing."
   size:
-    value: 52B parameters (dense model)
-    explanation: >
-      There are several sizes of the RLHF models, the largest one having 52B
-      parameters
-      [[Figure 1]](https://arxiv.org/pdf/2204.05862.pdf#figure.caption.2).
+    explanation: "The size of the dataset isn't directly reported in the paper,\
+      \ but the dataset is available on GitHub [[hh-rlhf]](https://github.com/anthropics/hh-rlhf).\
+      \ The compressed data files are distributed under three categories in the\
+      \ GitHub repository, corresponding to the names of the models used to sample\
+      \ the prompts that are shown to the crowdworkers. These are namely: base,\
+      \ rejection sampling, and online. For the base model, the uncompressed sizes\
+      \ of the train and test datasets are 69.1 MB and 3.7 MB, respectively. The\
+      \ same set of values for the rejection sampling model are 106.1 MB and 5.6\
+      \ MB. For the online model, the sizes are 82.7 MB and 4.3 MB. Adding all up,\
+      \ the total size of the dataset is 271.5 MB.\n"
+    value: 271.5 MB
+  type: dataset
+  url: https://arxiv.org/pdf/2204.05862.pdf
+- access:
+    explanation: "Unlike its helpfulness, this dataset isn't released [[hh-rlhf]](https://github.com/anthropics/hh-rlhf).\n"
+    value: closed
+  analysis: "The crodworkers were told that \"lying isn't helpful\" and asked to\
+    \ prefer honest responses, which led to models with higher honesty scores. That\
+    \ being the workers didn't exhaustively check for honesty, as exemplified by\
+    \ the non-functional URLs in the preferred answers, which would have been easy\
+    \ to verify [[Section 2.1]](https://arxiv.org/pdf/2204.05862.pdf#subsection.2.1).\n"
+  created_date:
+    explanation: "The date that the paper was uploaded to ArXiv [[ArXiv Abstract]](https://arxiv.org/abs/2204.05862).\n"
+    value: 2022-04-12
+  datasheet: none
+  dependencies: [Anthropic Human Feedback Interface]
+  description: "One of the datasets used to train Anthropic RLHF models. The dataset\
+    \ was collected by asking crowdworkers to have open-ended conversations with\
+    \ Anthropic models, aiming to elicit harmful responses, then choose the model\
+    \ answer that was more harmful for their given task, via the Anthropic Human\
+    \ Feedback Interface [[Section 2.2]](https://arxiv.org/pdf/2204.05862.pdf#subsection.2.2).\n"
+  excluded: none
+  feedback:
+    explanation: "The feedback mechanism is unknown since the dataset isn't released,\
+      \ but it will likely be \"emailing the authors\" [[Paper]](https://arxiv.org/pdf/2204.05862.pdf).\n"
+    value: unknown
+  included: "The dataset included all the answers that the workers were asked to\
+    \ ranked against each other.\n"
+  intended_uses:
+    explanation: "The intended uses of the dataset isn't specified, but it will\
+      \ likely be same as the helpfulness dataset, for which the intended use is\
+      \ research.\n"
+    value: unknown
+  license:
+    explanation: "The asset isn't released, and hence the license is unknown.\n"
+    value: unknown
+  modality:
+    explanation: Text (English)
+    value: text
+  monitoring:
+    explanation: "There is no monitoring process for the usages of the dataset.\n"
+    value: none
+  name: Anthropic Harmlessness dataset
+  organization: Anthropic
+  prohibited_uses:
+    explanation: "The prohibited use cases of the dataset weren't specified.\n"
+    value: unknown
+  quality_control: "Working with \"select\" crowdworkers or those screened for certain\
+    \ qualifications, and employing simple data quality measures [[Appendix D]](https://arxiv.org/pdf/2204.05862.pdf#appendix.D).\n"
+  sample: []
+  size: unknown
+  type: dataset
+  url: https://arxiv.org/pdf/2204.05862.pdf
+- access:
+    explanation: "The model wasn't released.\n"
+    value: closed
   analysis:
-    value: >
-      The authors analyzed the impact of the dataset mixture on the preference
-      models (PM). In addition to human evaluation, RLHF model were evaluated on
-      MMLU, Lambada, HellaSwag, OpenBookQA, ARC-Easy, ARC-Challenge, TriviaQA,
-      code generation, summarization.
-    explanation: >
-      When tested on ability to generate responses that are both harmless and
-      helpful, the authors found that PMs trained on a mixture of harmlessness
-      and helpfulness preference datasets perform better than those trained
-      on only one of the two.
-      The authors also showed that the model performance is hurt for the smaller
-      models, but improved for the larger models when compared to plain
-      language models
-      [[Figure 28]](https://arxiv.org/pdf/2204.05862.pdf#figure.caption.34)
-      [[Figure 29]](https://arxiv.org/pdf/2204.05862.pdf#figure.caption.35).
-      The authors also found the larger RLHF models to be more truthful than
-      their plain counterparts. They also found that their models
-      had a more positive sentiment towards groups that the language models are
-      known to be biased against
-      [[Section 4.6]](https://arxiv.org/pdf/2204.05862.pdf#subsection.4.6).
-  # Construction
+    explanation: "When tested on ability to generate responses that are both harmless\
+      \ and helpful, the authors found that PMs trained on a mixture of harmlessness\
+      \ and helpfulness preference datasets perform better than those trained on\
+      \ only one of the two. The authors also showed that the model performance\
+      \ is hurt for the smaller models, but improved for the larger models when\
+      \ compared to plain language models [[Figure 28]](https://arxiv.org/pdf/2204.05862.pdf#figure.caption.34)\
+      \ [[Figure 29]](https://arxiv.org/pdf/2204.05862.pdf#figure.caption.35). The\
+      \ authors also found the larger RLHF models to be more truthful than their\
+      \ plain counterparts. They also found that their models had a more positive\
+      \ sentiment towards groups that the language models are known to be biased\
+      \ against [[Section 4.6]](https://arxiv.org/pdf/2204.05862.pdf#subsection.4.6).\n"
+    value: "The authors analyzed the impact of the dataset mixture on the preference\
+      \ models (PM). In addition to human evaluation, RLHF model were evaluated\
+      \ on MMLU, Lambada, HellaSwag, OpenBookQA, ARC-Easy, ARC-Challenge, TriviaQA,\
+      \ code generation, summarization.\n"
+  created_date:
+    explanation: "The date that the paper was uploaded to ArXiv [[ArXiv Abstract]](https://arxiv.org/abs/2204.05862).\n"
+    value: 2022-04-12
   dependencies:
     - Anthropic Harmlessness dataset
     - Anthropic Helpfulness dataset
-  training_emissions:
-    value: unknown
-    explanation: The authors do not provide data on the training emissions.
-  training_time:
-    value: unknown
-    explanation: The authors do not provide data on the training time.
-  training_hardware:
-    value: unknown
-    explanation: The authors do not provide data on the training hardware.
-  quality_control: >
-    unknown
-  # Downstream
-  access:
-    value: closed
-    explanation: >
-      The model wasn't released.
-  license:
-    value: unknown
-    explanation: >
-      The asset isn't released, and hence the license is unknown.
-  intended_uses:
-    value: unknown
-    explanation: >
-      The intended uses of the model aren't specified, but they will likely be
-      the same as the released Anthropic helpfulness dataset, for which the
-      intended use was listed as research. In addition to English language
-      generation, the authors also explored code generation capabilities of
-      their models.
-  prohibited_uses:
-    value: unknown
-    explanation: >
-      The prohibited use cases of the model weren't specified.
-  monitoring:
-    value: unknown
-    explanation: >
-      There is no known monitoring process for the usages of the model.
+  description: "Anthropic RLHF models are models trained using reinforcement learning\
+    \ from human feedback (RLHF). For Anthropic RLHF models, authors started with\
+    \ a set of base models, and asked humans to rank model generated prompts based\
+    \ on a specific tasks. They then trained preference models (PM) on the prompt\
+    \ pairs, and use the PM scores as rewards for training the RLHF models.\n"
   feedback:
+    explanation: "The feedback mechanism is unknown, but it will likely be \"emailing\
+      \ the authors\" [[Paper]](https://arxiv.org/pdf/2204.05862.pdf).\n"
     value: unknown
-    explanation: >
-      The feedback mechanism is unknown, but it will likely be "emailing the
-      authors"
-      [[Paper]](https://arxiv.org/pdf/2204.05862.pdf).
-
-- type: application
-  name: Anthropic Human Feedback Interface
-  # General
-  organization: Anthropic
-  description: >
-    The feedback interface used to collect preference datasets to train
-    Anthropic RLHF models
-    [[Paper]](https://arxiv.org/pdf/2204.05862.pdf).
-  created_date:
-    value: 2022-04-12
-    explanation: >
-      The date that the paper was uploaded to ArXiv
-      [[ArXiv Abstract]](https://arxiv.org/abs/2204.05862).
-  url: https://arxiv.org/pdf/2204.05862.pdf
-  # Construction
-  dependencies: [Anthropic RLHF models]
-  adaptation: none
-  output_space: >
-    UI allowing users to indicate their preference for the model responses
-    shown.
-  quality_control: unknown
-  # Downstream
-  access:
-    value: closed
-    explanation: >
-      The interface was made available to a select set of crowd workers.
-  terms_of_service:
+  intended_uses:
+    explanation: "The intended uses of the model aren't specified, but they will\
+      \ likely be the same as the released Anthropic helpfulness dataset, for which\
+      \ the intended use was listed as research. In addition to English language\
+      \ generation, the authors also explored code generation capabilities of their\
+      \ models.\n"
     value: unknown
-    explanation: The terms of service for the interaface is unknown.
   license:
+    explanation: "The asset isn't released, and hence the license is unknown.\n"
     value: unknown
-    explanation: >
-      The asset isn't released, and hence the license is unknown.
-  intended_uses: >
-    Intended to be used by crowdworkers who are tasked with ranking model
-    answers.
-  prohibited_uses: unknown
-  monitoring: unknown
-  feedback: unknown
-  # Deployment
-  monthly_active_users: unknown
-  user_distribution:
-    value: crowdworkers
-    explanation: The demographics of the crowdworkers are unknown.
-  failures: unknown
-
-- type: application
-  name: Anthropic API
+  modality:
+    explanation: text (English) and Code
+    value: code, text; code, text
+  model_card: none
+  monitoring:
+    explanation: "There is no known monitoring process for the usages of the model.\n"
+    value: unknown
+  name: Anthropic RLHF models
   organization: Anthropic
+  prohibited_uses:
+    explanation: "The prohibited use cases of the model weren't specified.\n"
+    value: unknown
+  quality_control: "unknown\n"
+  size: 52B parameters (dense)
+  training_emissions:
+    explanation: The authors do not provide data on the training emissions.
+    value: unknown
+  training_hardware:
+    explanation: The authors do not provide data on the training hardware.
+    value: unknown
+  training_time:
+    explanation: The authors do not provide data on the training time.
+    value: unknown
+  type: model
+  url: https://arxiv.org/pdf/2204.05862.pdf
+- access:
+    explanation: "The interface was made available to a select set of crowd workers.\n"
+    value: closed
+  adaptation: none
+  created_date:
+    explanation: "The date that the paper was uploaded to ArXiv [[ArXiv Abstract]](https://arxiv.org/abs/2204.05862).\n"
+    value: 2022-04-12
+  dependencies: [Anthropic RLHF models]
+  description: "The feedback interface used to collect preference datasets to train\
+    \ Anthropic RLHF models [[Paper]](https://arxiv.org/pdf/2204.05862.pdf).\n"
+  failures: unknown
+  feedback: unknown
+  intended_uses: "Intended to be used by crowdworkers who are tasked with ranking\
+    \ model answers.\n"
+  license:
+    explanation: "The asset isn't released, and hence the license is unknown.\n"
+    value: unknown
+  monitoring: unknown
+  monthly_active_users: unknown
+  name: Anthropic Human Feedback Interface
+  organization: Anthropic
+  output_space: "UI allowing users to indicate their preference for the model responses\
+    \ shown.\n"
+  prohibited_uses: unknown
+  quality_control: unknown
+  terms_of_service:
+    explanation: The terms of service for the interaface is unknown.
+    value: unknown
+  type: application
+  url: https://arxiv.org/pdf/2204.05862.pdf
+  user_distribution:
+    explanation: The demographics of the crowdworkers are unknown.
+    value: crowdworkers
+- access: limited
+  adaptation: ''
+  created_date: 2023-03-14
+  dependencies: [Claude, Claude Instant]
   description: API is designed to be a backend that incorporates Claude into any
     application you’ve developed. Our application sends text to our API, then receives
     a response via server-sent events, a streaming protocol for the web.
-  created_date: 2023-03-14
-  url: https://console.anthropic.com/docs/api
-  dependencies: [Claude, Claude Instant]
-  adaptation: ''
-  output_space: ''
-  quality_control: ''
-  access: limited
-  license:
-    value: none
-    explanation: No license was found.
-  terms_of_service: ''
-  intended_uses: ''
-  prohibited_uses: ''
-  monitoring: ''
-  feedback: ''
-  monthly_active_users: ''
-  user_distribution: ''
   failures: ''
-
-- type: model
+  feedback: ''
+  intended_uses: ''
+  license:
+    explanation: No license was found.
+    value: none
+  monitoring: ''
+  monthly_active_users: ''
+  name: Anthropic API
+  organization: Anthropic
+  output_space: ''
+  prohibited_uses: ''
+  quality_control: ''
+  terms_of_service: ''
+  type: application
+  url: https://console.anthropic.com/docs/api
+  user_distribution: ''
+- access: limited
+  analysis: ''
+  created_date: 2023-03-14
+  dependencies: []
+  description: ''
+  feedback: ''
+  intended_uses: ''
+  license:
+    explanation: "The asset isn't released, and hence the license is unknown.\n"
+    value: unknown
+  modality:
+    explanation: text
+    value: text; text
+  model_card: ''
+  monitoring: ''
   name: Claude
   organization: Anthropic
-  description: ''
-  created_date: 2023-03-14
-  url: https://www.anthropic.com/index/introducing-claude
-  model_card: ''
-  modality: text
-  analysis: ''
-  size: unknown
-  dependencies: []
-  training_emissions: ''
-  training_time: ''
-  training_hardware: ''
-  quality_control: ''
-  access: limited
-  license:
-    value: unknown
-    explanation: >
-      The asset isn't released, and hence the license is unknown.
-  intended_uses: ''
   prohibited_uses: ''
-  monitoring: ''
+  quality_control: ''
+  size: unknown
+  training_emissions: ''
+  training_hardware: ''
+  training_time: ''
+  type: model
+  url: https://www.anthropic.com/index/introducing-claude
+- access: limited
+  analysis: ''
+  created_date: 2023-03-14
+  dependencies: []
+  description: ''
   feedback: ''
-
-- type: model
+  intended_uses: ''
+  license:
+    explanation: "The asset isn't released, and hence the license is unknown.\n"
+    value: unknown
+  modality:
+    explanation: text
+    value: text; text
+  model_card: ''
+  monitoring: ''
   name: Claude Instant
   organization: Anthropic
-  description: ''
-  created_date: 2023-03-14
-  url: https://www.anthropic.com/index/introducing-claude
-  model_card: ''
-  modality: text
-  analysis: ''
-  size: unknown
-  dependencies: []
-  training_emissions: ''
-  training_time: ''
-  training_hardware: ''
-  quality_control: ''
-  access: limited
-  license:
-    value: unknown
-    explanation: >
-      The asset isn't released, and hence the license is unknown.
-  intended_uses: ''
   prohibited_uses: ''
-  monitoring: ''
-  feedback: ''
-
-- type: model
-  name: Claude 2
-  organization: Anthropic
-  description: Claude 2 is a more evolved and refined version of Claude, which is
-    a general purpose large language model using a transformer architecture and
-    trained via unsupervised learning.
-  created_date: 2023-07-11
-  url: https://www.anthropic.com/index/claude-2
-  model_card: https://www-files.anthropic.com/production/images/Model-Card-Claude-2.pdf
-  modality: text
+  quality_control: ''
+  size: unknown
+  training_emissions: ''
+  training_hardware: ''
+  training_time: ''
+  type: model
+  url: https://www.anthropic.com/index/introducing-claude
+- access: open
   analysis: Evaluated with human feedback on helpfulness, harmfulness, and honesty
     and on the Bias Benchmark for QA.
-  size: ''
+  created_date: 2023-07-11
   dependencies:
     - Claude human feedback data
     - Unknown licensed third party datasets
-  training_emissions: ''
-  training_time: ''
-  training_hardware: unknown
-  quality_control: ''
-  access: open
-  license: ''
+  description: Claude 2 is a more evolved and refined version of Claude, which is
+    a general purpose large language model using a transformer architecture and
+    trained via unsupervised learning.
+  feedback: ''
   intended_uses: Claude 2 tends to perform well at general, open-ended conversation;
     search, writing, editing, outlining, and summarizing text; coding; and providing
     helpful advice about a broad range of subjects. Claude 2 is particularly well
     suited to support creative or literary use cases. They can take direction on
     tone and “personality,” and users have described them as feeling steerable and
     conversational.
+  license: ''
+  modality:
+    explanation: text
+    value: text; text
+  model_card: https://www-files.anthropic.com/production/images/Model-Card-Claude-2.pdf
+  monitoring: ''
+  name: Claude 2
+  organization: Anthropic
   prohibited_uses: Claude 2 should not be used on their own in high stakes situations
     where an incorrect answer would cause harm.
-  monitoring: ''
-  feedback: ''
+  quality_control: ''
+  size: ''
+  training_emissions: ''
+  training_hardware: unknown
+  training_time: ''
+  type: model
+  url: https://www.anthropic.com/index/claude-2

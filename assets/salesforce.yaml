@@ -1,42 +1,35 @@
 ---
-
-- type: model
-  name: CodeGen
-  organization: Salesforce
-  description: CodeGen is a language model for code
-  created_date:
-    value: 2022-03-25
-    explanation: Date model paper was released
-  url: https://arxiv.org/abs/2203.13474
-  model_card: ''
-  modality: text (English) and code
-  analysis: ''
-  size: 16B parameters (dense model)
-  dependencies: []
-  training_emissions: ''
-  training_time: ''
-  training_hardware: Unspecified Salesforce Compute (TPU-V4s)
-  quality_control: ''
-  access:
-    value: open
+- access:
     explanation: Model weights are available for download with links in the [[GitHub
       repo]](https://github.com/salesforce/CodeGen)
-  license: none (model weights), BSD-3-Clause (code)
-  intended_uses: ''
-  prohibited_uses: ''
-  monitoring: ''
-  feedback: ''
-
-- type: model
-  name: BLIP
-  organization: Salesforce
-  description: ''
-  created_date: 2022-01-28
-  url: https://arxiv.org/abs/2201.12086
-  model_card: ''
-  modality: text and image
+    value: open
   analysis: ''
-  size: unknown
+  created_date:
+    explanation: Date model paper was released
+    value: 2022-03-25
+  dependencies: []
+  description: CodeGen is a language model for code
+  feedback: ''
+  intended_uses: ''
+  license: none (model weights), BSD-3-Clause (code)
+  modality:
+    explanation: text (English) and code
+    value: code, text; code, text
+  model_card: ''
+  monitoring: ''
+  name: CodeGen
+  organization: Salesforce
+  prohibited_uses: ''
+  quality_control: ''
+  size: 16B parameters (dense)
+  training_emissions: ''
+  training_hardware: Unspecified Salesforce Compute (TPU-V4s)
+  training_time: ''
+  type: model
+  url: https://arxiv.org/abs/2203.13474
+- access: open
+  analysis: ''
+  created_date: 2022-01-28
   dependencies:
     - ViT-B
     - BERT
@@ -46,60 +39,68 @@
     - Conceptual 12M
     - SBU Captions
     - LAION-115M
-  training_emissions: ''
-  training_time: ''
-  training_hardware: ''
-  quality_control: ''
-  access: open
-  license: BSD-3-Clause
-  intended_uses: ''
-  prohibited_uses: ''
-  monitoring: ''
+  description: ''
   feedback: ''
-
-- type: dataset
+  intended_uses: ''
+  license: BSD-3-Clause
+  modality:
+    explanation: text and image
+    value: image, text; image, text
+  model_card: ''
+  monitoring: ''
+  name: BLIP
+  organization: Salesforce
+  prohibited_uses: ''
+  quality_control: ''
+  size: unknown
+  training_emissions: ''
+  training_hardware: ''
+  training_time: ''
+  type: model
+  url: https://arxiv.org/abs/2201.12086
+- access: open
+  analysis: ''
+  created_date: 2022-01-28
+  datasheet: ''
+  dependencies: [LAION-400M]
+  description: ''
+  excluded: ''
+  feedback: ''
+  included: ''
+  intended_uses: ''
+  license: BSD-3-Clause
+  modality:
+    explanation: text and image
+    value: image, text
+  monitoring: ''
   name: LAION-115M
   organization: Salesforce
-  description: ''
-  created_date: 2022-01-28
-  url: https://arxiv.org/abs/2201.12086
-  datasheet: ''
-  modality: text and image
-  size: 115M image-text pairs
-  sample: []
-  analysis: ''
-  dependencies: [LAION-400M]
-  included: ''
-  excluded: ''
-  quality_control: ''
-  access: open
-  license: BSD-3-Clause
-  intended_uses: ''
   prohibited_uses: ''
-  monitoring: ''
-  feedback: ''
-
-- type: application
-  name: EinsteinGPT
-  organization: Salesforce
+  quality_control: ''
+  sample: []
+  size: 115M image-text pairs
+  type: dataset
+  url: https://arxiv.org/abs/2201.12086
+- access: limited
+  adaptation: ''
+  created_date: 2023-03-07
+  dependencies: [ChatGPT API]
   description: EinsteinGPT is generative AI for customer relationship management
     (CRFM).
-  created_date: 2023-03-07
-  url: https://www.salesforce.com/products/einstein/overview/?d=cta-body-promo-8
-  dependencies: [ChatGPT API]
-  adaptation: ''
-  output_space: ''
-  quality_control: ''
-  access: limited
-  license:
-    value: unknown
-    explanation: >
-      The asset isn't released, and hence the license is unknown.
-  terms_of_service: ''
-  intended_uses: ''
-  prohibited_uses: ''
-  monitoring: ''
-  feedback: ''
-  monthly_active_users: ''
-  user_distribution: ''
   failures: ''
+  feedback: ''
+  intended_uses: ''
+  license:
+    explanation: "The asset isn't released, and hence the license is unknown.\n"
+    value: unknown
+  monitoring: ''
+  monthly_active_users: ''
+  name: EinsteinGPT
+  organization: Salesforce
+  output_space: ''
+  prohibited_uses: ''
+  quality_control: ''
+  terms_of_service: ''
+  type: application
+  url: https://www.salesforce.com/products/einstein/overview/?d=cta-body-promo-8
+  user_distribution: ''
