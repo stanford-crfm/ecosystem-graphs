@@ -1,0 +1,24 @@
+---
+
+- type: application
+  name: Nextdoor Assistant
+  organization: Nextdoor
+  description: AI chatbot on Nextdoor that helps users write more clear and conscientious
+    posts.
+  created_date: 2023-05-02
+  url: https://help.nextdoor.com/s/article/Introducing-Assistant
+  dependencies: [ChatGPT]
+  adaptation: ''
+  output_space: natural language text guidance
+  quality_control: ''
+  access: open
+  license: unknown
+  terms_of_service: ''
+  intended_uses: to be used to help make the Nextdoor experience more positive for
+    users
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+  monthly_active_users: ''
+  user_distribution: ''
+  failures: ''

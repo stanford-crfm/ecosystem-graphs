@@ -1,0 +1,24 @@
+---
+
+- type: model
+  name: Vicuna
+  organization: LMSYS
+  description: An open-source chatbot trained by fine-tuning LLaMA on user-shared
+    conversations collected from ShareGPT.
+  created_date: 2023-03-30
+  url: https://lmsys.org/blog/2023-03-30-vicuna/
+  model_card: https://huggingface.co/lmsys/vicuna-13b-delta-v0
+  modality: natural language text
+  analysis: Evaluated against similar LLMs using GPT-4 as a judge.
+  size: 13B parameters
+  dependencies: [LLaMA, ShareGPT conversations data]
+  training_emissions: ''
+  training_time: 1 day
+  training_hardware: 8 A100 GPUs
+  quality_control: ''
+  access: open
+  license: Apache 2.0
+  intended_uses: research on LLMs and chatbots
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: https://huggingface.co/datasets/bigcode/the-stack/discussions

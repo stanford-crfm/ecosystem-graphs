@@ -1,0 +1,24 @@
+---
+
+- type: model
+  name: MPT
+  organization: Mosaic
+  description: MPT is a series of large language models seeking to address the limitations
+    of other open source models like LLaMA and Pythia.
+  created_date: 2023-05-05
+  url: https://www.mosaicml.com/blog/mpt-7b
+  model_card: ''
+  modality: text
+  analysis: Evaluated on a range of benchmarks and performed on par with LLaMA-7B.
+  size: 7B parameters
+  dependencies: [RedPajama-Data, C4, The Stack, Multimodal C4]
+  training_emissions: unknown
+  training_time: 9.5 days
+  training_hardware: 440 A100 40GB GPUs
+  quality_control: ''
+  access: open
+  license: Apache 2.0
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''

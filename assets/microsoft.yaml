@@ -779,3 +779,100 @@
   monthly_active_users: unknown
   user_distribution: unknown
   failures: unknown
+
+- type: model
+  name: UniLM
+  organization: Microsoft
+  description: UniLM is a unified language model that can be fine-tuned for both
+    natural language understanding and generation tasks.
+  created_date: 2019-10-01
+  url: https://proceedings.neurips.cc/paper_files/paper/2019/file/c20bb2d9a50d5ac1f713f8b34d9aac5a-Paper.pdf
+  model_card: ''
+  modality: text
+  analysis: Evaluated on GLUE, SQuAD 2.0, and CoQA benchmarks.
+  size: 340M parameters
+  dependencies: []
+  training_emissions: unknown
+  training_time: 10,000 steps in 7 hours
+  training_hardware: 8 NVIDIA Tesla V100 32GB GPUs
+  quality_control: ''
+  access: open
+  license: MIT
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+
+- type: model
+  name: Docugami
+  organization: Microsoft
+  description: Docugami is a LLM focused on writing business documents and data
+    using generative AI.
+  created_date: 2021-04-12
+  url: https://www.docugami.com/generative-ai
+  model_card: ''
+  modality: text
+  analysis: ''
+  size: 20B parameters
+  dependencies: []
+  training_emissions: unknown
+  training_time: unknown
+  training_hardware: ''
+  quality_control: ''
+  access: limited
+  license: ''
+  intended_uses: analyzing, writing, and connecting business documents and data
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+
+- type: model
+  name: BEiT-3
+  organization: Microsoft
+  description: BEiT-3 is a general-purpose multimodal foundation model for vision
+    and vision-language tasks.
+  created_date: 2022-08-31
+  url: https://arxiv.org/pdf/2208.10442.pdf
+  model_card: ''
+  modality: text and image input and output
+  analysis: Evaluated on a range of standardized vision benchmarks, and achieves
+    state of the art performance on all experimentally.
+  size: 1.9B parameters
+  dependencies: [Multiway Transformer network]
+  training_emissions: unknown
+  training_time: ''
+  training_hardware: ''
+  quality_control: ''
+  access: open
+  license: ''
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+
+- type: model
+  name: WizardLM
+  organization: Microsoft
+  description: Starting with an initial set of instructions, we use our proposed
+    Evol-Instruct to rewrite them step by step into more complex instructions. Then,
+    we mix all generated instruction data to fine-tune LLaMA. We call the resulting
+    model WizardLM.
+  created_date: 2023-04-24
+  url: https://arxiv.org/pdf/2304.12244v1.pdf
+  model_card: https://huggingface.co/WizardLM/WizardLM-13B-1.0
+  modality: natural language text
+  analysis: Reports results on standard LLM benchmarks in comparison to other LLMs
+    and test sets.
+  size: 7B parameters
+  dependencies: [LLaMA, Evol-Instruct, Alpaca dataset]
+  training_emissions: ''
+  training_time: 70 hours on 3 epochs
+  training_hardware: 8 V100 GPUs
+  quality_control: ''
+  access: open
+  license: Apache 2.0
+  intended_uses: Creating large amounts of instruction data, particularly with high
+    complexity
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: https://huggingface.co/datasets/WizardLM/evol_instruct_70k/discussions

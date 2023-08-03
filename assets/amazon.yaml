@@ -1,0 +1,32 @@
+---
+
+- type: application
+  name: Bedrock
+  organization: Amazon
+  description: Bedrock is a new service that makes FMs from AI21 Labs, Anthropic,
+    Stability AI, and Amazon accessible via an API. Bedrock is intended for customers
+    to build and scale generative AI-based applications using FMs, democratizing
+    access for all builders. using an API.
+  created_date: 2023-04-13
+  url: https://aws.amazon.com/bedrock/
+  dependencies:
+    - Jurassic-2
+    - Claude
+    - Stable Diffusion
+    - Amazon Titan
+    - Claude 2
+    - Cohere Command
+  adaptation: ''
+  output_space: foundation models made accessible via an API
+  quality_control: ''
+  access: limited
+  license: unknown
+  terms_of_service: https://aws.amazon.com/service-terms/
+  intended_uses: allowing companies to incorporate generative AI into their business
+    models
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+  monthly_active_users: ''
+  user_distribution: ''
+  failures: ''

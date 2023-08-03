@@ -1,31 +1,102 @@
 ---
 
 - type: model
-  name: Stable Diffusion
+  name: DeepFloyd IF
   organization: Stability AI
-  description: Stable Diffusion is an open source text-to-image model
-  created_date:
-    value: 2022-08-22
-    explanation: Date the model was made publicly available
-  url: https://github.com/CompVis/stable-diffusion
-  model_card: https://huggingface.co/CompVis/stable-diffusion-v1-4?text=A+mecha+robot+in+a+favela+in+expressionist+style
-  modality: text and image
-  size: 890M parameters
-  analysis: ''
+  description: A text-to-image cascaded pixel diffusion model released in conjunction
+    with AI research lab DeepFloyd.
+  created_date: 2023-04-28
+  url: https://stability.ai/blog/deepfloyd-if-text-to-image-model
+  model_card: https://huggingface.co/DeepFloyd/IF-I-XL-v1.0
+  modality: textual input with image output
+  analysis: Evaluated on the COCO dataset.
+  size: 4.3B parameters
   dependencies: [LAION-5B]
   training_emissions: ''
-  training_time: 25 days according to Emad Mostaque (CEO of Stability) on [[Twitter]](https://twitter.com/emostaque/status/1563870674111832066)
-  training_hardware: 256 A100 GPUs according to Emad Mostaque (CEO of Stability)
-    on [[Twitter]](https://twitter.com/emostaque/status/1563870674111832066)
+  training_time: ''
+  training_hardware: ''
   quality_control: ''
-  access:
-    value: open
-    explanation: Model weights are available for download from the [[Github repo]](https://github.com/CompVis/stable-diffusion)
+  access: open
   license:
-    value: CreativeML Open RAIL-M
-    explanation: >
-      [[CreativeML Open RAIL-M]](https://github.com/CompVis/stable-diffusion/blob/main/LICENSE)
+    value: custom
+    explanation: License agreement can be found on model card https://huggingface.co/DeepFloyd/IF-I-XL-v1.0
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: https://huggingface.co/DeepFloyd/IF-I-XL-v1.0/discussions
+
+
+- type: model
+  name: StableLM
+  organization: Stability AI
+  description: Large language models trained on up to 1.5 trillion tokens.
+  created_date: 2023-04-20
+  url: https://github.com/Stability-AI/StableLM
+  model_card: ''
+  modality: natural language text
+  analysis: ''
+  size: 7B parameters
+  dependencies:
+    - StableLM-Alpha dataset
+    - Alpaca dataset
+    - gpt4all dataset
+    - ShareGPT52K dataset
+    - Dolly dataset
+    - HH dataset
+  training_emissions: ''
+  training_time: ''
+  training_hardware: ''
+  quality_control: ''
+  access: open
+  license: Apache 2.0
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
   feedback: ''
+
+
+- type: application
+  name: Stable Diffusion
+  organization: Stability AI
+  description: Stable Diffusion is a generative software that creates images from
+    text prompts.
+  created_date: 2022-08-22
+  url: https://stability.ai/blog/stable-diffusion-public-release
+  dependencies: []
+  adaptation: ''
+  output_space: image
+  quality_control: ''
+  access: open
+  license:
+    value: custom
+    explanation: License agreement can be found on https://github.com/CompVis/stable-diffusion/blob/main/LICENSE
+  terms_of_service: ''
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: https://huggingface.co/CompVis/stable-diffusion/discussions
+  monthly_active_users: ''
+  user_distribution: ''
+  failures: ''
+
+- type: application
+  name: Stable Diffusion XL
+  organization: Stability AI
+  description: Stable Diffusion XL is an updated version of Stable Diffusion, and
+    creates descriptive images with shorter prompts and generate words within images.
+  created_date: 2023-07-26
+  url: https://stability.ai/stablediffusion
+  dependencies: []
+  adaptation: ''
+  output_space: image
+  quality_control: ''
+  access: limited
+  license: MIT
+  terms_of_service: ''
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+  monthly_active_users: ''
+  user_distribution: ''
+  failures: ''
