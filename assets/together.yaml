@@ -1,134 +1,134 @@
 ---
-
-- type: model
+- access: open
+  analysis: ''
+  created_date: 2022-11-29
+  dependencies: [GPT-J, P3, NaturalInstructions-v2]
+  description: ''
+  feedback: ''
+  intended_uses: ''
+  license: Apache 2.0
+  modality:
+    explanation: text
+    value: text; text
+  model_card: ''
+  monitoring: ''
   name: GPT-JT
   organization: Together
-  description: ''
-  created_date: 2022-11-29
-  url: https://www.together.xyz/blog/releasing-v1-of-gpt-jt-powered-by-open-source-ai
-  model_card: ''
-  modality: text
-  analysis: ''
-  size: 6B parameters (dense model)
-  dependencies: [GPT-J, P3, NaturalInstructions-v2]
-  training_emissions: ''
-  training_time: ''
-  training_hardware: ''
-  quality_control: ''
-  access: open
-  license: Apache 2.0
-  intended_uses: ''
   prohibited_uses: ''
-  monitoring: ''
+  quality_control: ''
+  size: 6B parameters (dense)
+  training_emissions: ''
+  training_hardware: ''
+  training_time: ''
+  type: model
+  url: https://www.together.xyz/blog/releasing-v1-of-gpt-jt-powered-by-open-source-ai
+- access: open
+  analysis: ''
+  created_date: 2023-03-10
+  dependencies: [GPT-NeoX, OIG-43M]
+  description: ''
   feedback: ''
-
-- type: model
+  intended_uses: ''
+  license: Apache 2.0
+  modality:
+    explanation: text
+    value: text; text
+  model_card: ''
+  monitoring: ''
   name: GPT-NeoXT-Chat-Base
   organization: Together
-  description: ''
-  created_date: 2023-03-10
-  url: https://www.together.xyz/blog/openchatkit
-  model_card: ''
-  modality: text
-  analysis: ''
-  size: 20B parameters (dense model)
-  dependencies: [GPT-NeoX, OIG-43M]
-  training_emissions: ''
-  training_time: ''
-  training_hardware: ''
-  quality_control: ''
-  access: open
-  license: Apache 2.0
-  intended_uses: ''
   prohibited_uses: ''
-  monitoring: ''
+  quality_control: ''
+  size: 20B parameters (dense)
+  training_emissions: ''
+  training_hardware: ''
+  training_time: ''
+  type: model
+  url: https://www.together.xyz/blog/openchatkit
+- access: open
+  analysis: ''
+  created_date: 2023-03-10
+  dependencies: [GPT-JT, OIG-moderation]
+  description: ''
   feedback: ''
-
-- type: model
+  intended_uses: ''
+  license: Apache 2.0
+  modality:
+    explanation: text
+    value: text; text
+  model_card: ''
+  monitoring: ''
   name: OpenChatKit moderation model
   organization: Together
-  description: ''
-  created_date: 2023-03-10
-  url: https://www.together.xyz/blog/openchatkit
-  model_card: ''
-  modality: text
-  analysis: ''
-  size: 6B parameters (dense model)
-  dependencies: [GPT-JT, OIG-moderation]
-  training_emissions: ''
-  training_time: ''
-  training_hardware: ''
-  quality_control: ''
-  access: open
-  license: Apache 2.0
-  intended_uses: ''
   prohibited_uses: ''
-  monitoring: ''
+  quality_control: ''
+  size: 6B parameters (dense)
+  training_emissions: ''
+  training_hardware: ''
+  training_time: ''
+  type: model
+  url: https://www.together.xyz/blog/openchatkit
+- access: open
+  analysis: ''
+  created_date: 2023-03-10
+  datasheet: ''
+  dependencies: [P3, NaturalInstructions-v2, FLAN dataset]
+  description: ''
+  excluded: ''
   feedback: ''
-
-- type: dataset
+  included: ''
+  intended_uses: ''
+  license: Apache 2.0
+  modality: text
+  monitoring: ''
   name: OIG-43M
   organization: Together, LAION, Ontocord
-  description: ''
-  created_date: 2023-03-10
-  url: https://laion.ai/blog/oig-dataset/
-  datasheet: ''
-  modality: text
-  size: 43M instructions
-  sample: []
-  analysis: ''
-  dependencies: [P3, NaturalInstructions-v2, FLAN dataset]
-  included: ''
-  excluded: ''
-  quality_control: ''
-  access: open
-  license: Apache 2.0
-  intended_uses: ''
   prohibited_uses: ''
-  monitoring: ''
+  quality_control: ''
+  sample: []
+  size: 43M instructions
+  type: dataset
+  url: https://laion.ai/blog/oig-dataset/
+- access: open
+  analysis: ''
+  created_date: 2023-03-10
+  datasheet: ''
+  dependencies: []
+  description: ''
+  excluded: ''
   feedback: ''
-
-- type: dataset
+  included: ''
+  intended_uses: ''
+  license: Apache 2.0
+  modality: text
+  monitoring: ''
   name: OIG-moderation
   organization: Together, LAION, Ontocord
-  description: ''
-  created_date: 2023-03-10
-  url: https://laion.ai/blog/oig-dataset/
-  datasheet: ''
-  modality: text
-  size: unknown
-  sample: []
-  analysis: ''
-  dependencies: []
-  included: ''
-  excluded: ''
-  quality_control: ''
-  access: open
-  license: Apache 2.0
-  intended_uses: ''
   prohibited_uses: ''
-  monitoring: ''
-  feedback: ''
-
-- type: dataset
-  name: RedPajama-Data
-  organization: Together
+  quality_control: ''
+  sample: []
+  size: unknown
+  type: dataset
+  url: https://laion.ai/blog/oig-dataset/
+- access: open
+  analysis: ''
+  created_date: 2022-04-17
+  datasheet: https://huggingface.co/datasets/togethercomputer/RedPajama-Data-1T
+  dependencies: [GitHub, Wikipedia]
   description: The RedPajama base dataset is a 1.2 trillion token fully-open dataset
     created by following the recipe described in the LLaMA paper
-  created_date: 2022-04-17
-  url: https://www.together.xyz/blog/redpajama
-  datasheet: https://huggingface.co/datasets/togethercomputer/RedPajama-Data-1T
-  modality: text
-  size: 1.2 trillion tokens
-  sample: []
-  analysis: ''
-  dependencies: [GitHub, Wikipedia]
-  included: ''
   excluded: ''
-  quality_control: ''
-  access: open
-  license: Apache 2.0
-  intended_uses: ''
-  prohibited_uses: ''
-  monitoring: ''
   feedback: ''
+  included: ''
+  intended_uses: ''
+  license: Apache 2.0
+  modality: {}
+  monitoring: ''
+  name: RedPajama-Data
+  organization: Together
+  prohibited_uses: ''
+  quality_control: ''
+  sample: []
+  size: 1.2 trillion tokens
+  type: dataset
+  url: https://www.together.xyz/blog/redpajama

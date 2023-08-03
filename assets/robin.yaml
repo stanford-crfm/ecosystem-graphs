@@ -1,27 +1,26 @@
 ---
-
-- type: application
-  name: Robin AI
-  organization: Robin AI
+- access: limited
+  adaptation: ''
+  created_date: unknown
+  dependencies: [Anthropic API]
   description: Robin AI uses Claude and Anthropic's models to understand language
     - including in technical domains like legal language. It's also very confident
     at drafting, summarising, translations, and explaining complex concepts in simple
     terms
-  created_date: unknown
-  url: https://www.robinai.co.uk/
-  dependencies: [Anthropic API]
-  adaptation: ''
-  output_space: ''
-  quality_control: ''
-  access: limited
-  license:
-    value: none
-    explanation: No license was found.
-  terms_of_service: https://www.robinai.co.uk/terms
-  intended_uses: ''
-  prohibited_uses: ''
-  monitoring: ''
-  feedback: ''
-  monthly_active_users: ''
-  user_distribution: ''
   failures: ''
+  feedback: ''
+  intended_uses: ''
+  license:
+    explanation: No license was found.
+    value: none
+  monitoring: ''
+  monthly_active_users: ''
+  name: Robin AI
+  organization: Robin AI
+  output_space: ''
+  prohibited_uses: ''
+  quality_control: ''
+  terms_of_service: https://www.robinai.co.uk/terms
+  type: application
+  url: https://www.robinai.co.uk/
+  user_distribution: ''

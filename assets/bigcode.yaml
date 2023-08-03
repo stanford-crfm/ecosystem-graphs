@@ -1,76 +1,79 @@
 ---
-
-- type: model
-  name: StarCoder
-  organization: BigCode
+- access: open
+  analysis: Tested on several benchmarks, most notably Python benchmark HumanEval.
+  created_date: 2023-05-09
+  dependencies: [The Stack]
   description: StarCoder is a Large Language Model for Code (Code LLM) trained on
     permissively licensed data from GitHub, including from 80+ programming languages,
     Git commits, GitHub issues, and Jupyter notebooks.
-  created_date: 2023-05-09
-  url: https://arxiv.org/pdf/2305.06161.pdf
+  feedback: https://huggingface.co/bigcode/starcoder/discussions
+  intended_uses: With a Tech Assistant prompt and not as an instruction model given
+    training limitations.
+  license: Apache 2.0
+  modality:
+    explanation: code (80+ programming languages)
+    value: code; code
   model_card: https://huggingface.co/bigcode/starcoder
-  modality: code (80+ programming languages)
-  analysis: Tested on several benchmarks, most notably Python benchmark HumanEval.
-  size: 15.5B parameters
-  dependencies: [The Stack]
-  training_emissions: 16.68 tons of CO2eq
-  training_time: 2 days
-  training_hardware: 64 NVIDIA A100 GPUs
+  monitoring: ''
+  name: StarCoder
+  organization: BigCode
+  prohibited_uses: ''
   quality_control: No specific quality control is mentioned in model training, though
     details on data processing and how the tokenizer was trained are provided in
     the paper.
-  access: open
-  license: Apache 2.0
-  intended_uses: With a Tech Assistant prompt and not as an instruction model given
-    training limitations.
-  prohibited_uses: ''
-  monitoring: ''
-  feedback: https://huggingface.co/bigcode/starcoder/discussions
-
-- type: model
-  name: SantaCoder
-  organization: BigCode
+  size: 15.5B parameters (dense)
+  training_emissions: 16.68 tons of CO2eq
+  training_hardware: 64 NVIDIA A100 GPUs
+  training_time: 2 days
+  type: model
+  url: https://arxiv.org/pdf/2305.06161.pdf
+- access: open
+  analysis: Evaluated on MultiPL-E system benchmarks.
+  created_date: 2023-02-24
+  dependencies: [The Stack, BigCode Dataset]
   description: Multilingual code model derived from findings of BigCode Project
     analysis on Github stars' association to data quality.
-  created_date: 2023-02-24
-  url: https://arxiv.org/pdf/2301.03988.pdf
-  model_card: ''
-  modality: code
-  analysis: Evaluated on MultiPL-E system benchmarks.
-  size: 1.1B parameters
-  dependencies: [The Stack, BigCode Dataset]
-  training_emissions: ''
-  training_time: 3.1 days
-  training_hardware: 96 NVIDIA Tesla V100 GPUs
-  quality_control: ''
-  access: open
-  license: Apache 2.0
-  intended_uses: ''
-  prohibited_uses: ''
-  monitoring: ''
   feedback: ''
-
-- type: dataset
-  name: The Stack
+  intended_uses: ''
+  license: Apache 2.0
+  modality:
+    explanation: code
+    value: code; code
+  model_card: ''
+  monitoring: ''
+  name: SantaCoder
   organization: BigCode
-  description: The Stack is a 3.1 TB dataset consisting of permissively licensed
-    source code inteded for use in creating code LLMs.
-  created_date: 2022-11-20
-  url: https://arxiv.org/pdf/2211.15533.pdf
-  datasheet: https://huggingface.co/datasets/bigcode/the-stack
-  modality: code (358 programming languages)
-  size: 3.1 TB
-  sample: []
+  prohibited_uses: ''
+  quality_control: ''
+  size: 1.1B parameters (dense)
+  training_emissions: ''
+  training_hardware: 96 NVIDIA Tesla V100 GPUs
+  training_time: 3.1 days
+  type: model
+  url: https://arxiv.org/pdf/2301.03988.pdf
+- access: open
   analysis: Evaluated models trained on The Stack on HumanEval and MBPP and compared
     against similarly-sized models.
+  created_date: 2022-11-20
+  datasheet: https://huggingface.co/datasets/bigcode/the-stack
   dependencies: [GitHub]
-  included: ''
+  description: The Stack is a 3.1 TB dataset consisting of permissively licensed
+    source code inteded for use in creating code LLMs.
   excluded: ''
+  feedback: ''
+  included: ''
+  intended_uses: creating code LLMs
+  license: Apache 2.0
+  modality:
+    explanation: code (358 programming languages)
+    value: code
+  monitoring: ''
+  name: The Stack
+  organization: BigCode
+  prohibited_uses: ''
   quality_control: allowed users whose data were part of The Stack's training data
     to opt-out
-  access: open
-  license: Apache 2.0
-  intended_uses: creating code LLMs
-  prohibited_uses: ''
-  monitoring: ''
-  feedback: ''
+  sample: []
+  size: 3.1 TB
+  type: dataset
+  url: https://arxiv.org/pdf/2211.15533.pdf

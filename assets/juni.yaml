@@ -1,22 +1,21 @@
 ---
-
-- type: application
+- access: limited
+  adaptation: ''
+  created_date: unknown
+  dependencies: [Anthropic API]
+  description: An online tutoring solution to help students achieve academic success.
+  failures: ''
+  feedback: ''
+  intended_uses: ''
+  license: unknown
+  monitoring: ''
+  monthly_active_users: ''
   name: Juni Tutor Bot
   organization: Juni Learning
-  description: An online tutoring solution to help students achieve academic success.
-  created_date: unknown
-  url: https://junilearning.com/
-  dependencies: [Anthropic API]
-  adaptation: ''
   output_space: ''
-  quality_control: ''
-  access: limited
-  license: unknown
-  terms_of_service: ''
-  intended_uses: ''
   prohibited_uses: ''
-  monitoring: ''
-  feedback: ''
-  monthly_active_users: ''
+  quality_control: ''
+  terms_of_service: ''
+  type: application
+  url: https://junilearning.com/
   user_distribution: ''
-  failures: ''

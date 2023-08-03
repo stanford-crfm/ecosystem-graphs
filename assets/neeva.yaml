@@ -1,85 +1,79 @@
 ---
-
-- type: dataset
+- access: closed
+  analysis: ''
+  created_date: unknown
+  datasheet: ''
+  dependencies: []
+  description: ''
+  excluded: ''
+  feedback: ''
+  included: ''
+  intended_uses: ''
+  license:
+    explanation: "The asset isn't released, and hence the license is unknown.\n"
+    value: unknown
+  modality: {}
+  monitoring: ''
   name: Neeva dataset
   organization: Neeva
-  description: ''
-  created_date: unknown
-  url: https://neeva.com/index
-  datasheet: ''
-  modality: text
-  size: unknown
-  sample: []
-  analysis: ''
-  dependencies: []
-  included: ''
-  excluded: ''
-  quality_control: ''
-  access: closed
-  license:
-    value: unknown
-    explanation: >
-      The asset isn't released, and hence the license is unknown.
-  intended_uses: ''
   prohibited_uses: ''
-  monitoring: ''
+  quality_control: ''
+  sample: []
+  size: unknown
+  type: dataset
+  url: https://neeva.com/index
+- access: closed
+  analysis: ''
+  created_date: unknown
+  dependencies: [Neeva dataset]
+  description: ''
   feedback: ''
-
-- type: model
+  intended_uses: ''
+  license:
+    explanation: "The asset isn't released, and hence the license is unknown.\n"
+    value: unknown
+  modality: {}
+  model_card: ''
+  monitoring: ''
   name: Neeva model
   organization: Neeva
-  description: ''
-  created_date: unknown
-  url: https://neeva.com/index
-  model_card: ''
-  modality: text
-  analysis: ''
-  size: unknown
-  dependencies: [Neeva dataset]
-  training_emissions: ''
-  training_time: ''
-  training_hardware: ''
-  quality_control: ''
-  access: closed
-  license:
-    value: unknown
-    explanation: >
-      The asset isn't released, and hence the license is unknown.
-  intended_uses: ''
   prohibited_uses: ''
-  monitoring: ''
-  feedback: ''
-
-- type: application
-  name: NeevaAI
-  organization: Neeva
+  quality_control: ''
+  size: ''
+  training_emissions: ''
+  training_hardware: ''
+  training_time: ''
+  type: model
+  url: https://neeva.com/index
+- access: open
+  adaptation: ''
+  created_date:
+    explanation: The [[Blog post]](https://neeva.com/blog/introducing-neevaai) announcing
+      NeevaAI.
+    value: 2023-01-06
+  dependencies: [Neeva model]
   description: NeevaAI is an AI-powered search tool that combines the capabilities
     of LLMs with Neeva's independent in-house search stack to create a unique and
     transformative search experience.
-  created_date:
-    value: 2023-01-06
-    explanation: The [[Blog post]](https://neeva.com/blog/introducing-neevaai) announcing
-      NeevaAI.
-  url: https://neeva.com/blog/introducing-neevaai
-  dependencies: [Neeva model]
-  adaptation: ''
-  output_space: ''
-  quality_control: ''
-  access: open
-  license:
-    value: Custom
-    explanation: >
-      "If you comply with these Terms, Neeva grants to you, during the term of
-      these Terms, a limited non-exclusive, non-transferable license, with no
-      right to sublicense, to download and install the App on your personal
-      computers, mobile handsets, tablets, wearable devices, and/or other
-      devices and to run the App solely for your own personal non-commercial
-      purposes." - excerpt from the Terms of Service document.
-  terms_of_service: https://neeva.com/terms
-  intended_uses: ''
-  prohibited_uses: ''
-  monitoring: ''
-  feedback: ''
-  monthly_active_users: ''
-  user_distribution: ''
   failures: ''
+  feedback: ''
+  intended_uses: ''
+  license:
+    explanation: "\"If you comply with these Terms, Neeva grants to you, during\
+      \ the term of these Terms, a limited non-exclusive, non-transferable license,\
+      \ with no right to sublicense, to download and install the App on your personal\
+      \ computers, mobile handsets, tablets, wearable devices, and/or other devices\
+      \ and to run the App solely for your own personal non-commercial purposes.\"\
+      \ - excerpt from the Terms of Service document.\n"
+    value: Custom
+  monitoring: ''
+  monthly_active_users: ''
+  name: NeevaAI
+  organization: Neeva
+  output_space: ''
+  prohibited_uses: ''
+  quality_control: ''
+  terms_of_service: https://neeva.com/terms
+  type: application
+  url: https://neeva.com/blog/introducing-neevaai
+  user_distribution: ''

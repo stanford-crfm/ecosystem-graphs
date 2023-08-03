@@ -1,89 +1,86 @@
 ---
-
-- type: model
+- access:
+    explanation: Baidu does not provide ERNIE 3.0 for external researchers
+    value: closed
+  analysis: ''
+  created_date:
+    explanation: The date the model paper was released
+    value: 2021-12-23
+  dependencies: []
+  description: ERNIE 3.0 Titan is a language model
+  feedback: none
+  intended_uses: unknown
+  license:
+    explanation: "The asset isn't released, and hence the license is unknown.\n"
+    value: unknown
+  modality: {}
+  model_card: none
+  monitoring: none
   name: ERNIE 3.0 Titan
   organization: Baidu, PengCheng Laboratory
-  description: ERNIE 3.0 Titan is a language model
-  created_date:
-    value: 2021-12-23
-    explanation: The date the model paper was released
-  url: https://arxiv.org/abs/2112.12731
-  model_card: none
-  modality: text (Chinese)
-  analysis: ''
-  size: 260B parameters (dense model)
-  dependencies: []
-  training_emissions: unknown
-  training_time: unknown
-  training_hardware: Baidu V100 Cluster, PengCheng Lab Ascend 910 NPU cluster
-  quality_control: none
-  access:
-    value: closed
-    explanation: Baidu does not provide ERNIE 3.0 for external researchers
-  license:
-    value: unknown
-    explanation: >
-      The asset isn't released, and hence the license is unknown.
-  intended_uses: unknown
   prohibited_uses: unknown
-  monitoring: none
-  feedback: none
-
-- type: model
-  name: ERNIE-ViLG
-  organization: Baidu
-  description: ERNIE-ViLG is a model for text-to-image generation
-  created_date:
-    value: 2021-12-31
-    explanation: The date the model paper was released
-  url: https://arxiv.org/abs/2112.15283
-  model_card: none
-  modality: text (Chinese) and image
-  size: 10B parameters
-  analysis: ''
-  dependencies: []
+  quality_control: none
+  size: ''
   training_emissions: unknown
+  training_hardware: Baidu V100 Cluster, PengCheng Lab Ascend 910 NPU cluster
   training_time: unknown
-  training_hardware: unknown
-  quality_control: ''
-  access:
-    value: limited
+  type: model
+  url: https://arxiv.org/abs/2112.12731
+- access:
     explanation: API access is available through PaddleHub. Instructions on [[Github
       repository]](https://github.com/PaddlePaddle/PaddleHub/blob/develop/modules/image/text_to_image/ernie_vilg/README.md)
-  license:
-    value: none
-    explanation: >
-      No explicit license for the ERNIE-ViLG model is provided in the [[Github repository]](https://github.com/PaddlePaddle/PaddleHub)
-  intended_uses: unknown
-  prohibited_uses: unknown
-  monitoring: none
+    value: limited
+  analysis: ''
+  created_date:
+    explanation: The date the model paper was released
+    value: 2021-12-31
+  dependencies: []
+  description: ERNIE-ViLG is a model for text-to-image generation
   feedback: none
-
-- type: model
+  intended_uses: unknown
+  license:
+    explanation: "No explicit license for the ERNIE-ViLG model is provided in the\
+      \ [[Github repository]](https://github.com/PaddlePaddle/PaddleHub)\n"
+    value: none
+  modality: {}
+  model_card: none
+  monitoring: none
+  name: ERNIE-ViLG
+  organization: Baidu
+  prohibited_uses: unknown
+  quality_control: ''
+  size: ''
+  training_emissions: unknown
+  training_hardware: unknown
+  training_time: unknown
+  type: model
+  url: https://arxiv.org/abs/2112.15283
+- access:
+    explanation: Baidu does not provide ERNIE-ViLG 2.0 to external researchers
+    value: closed
+  analysis: ''
+  created_date:
+    explanation: The date the model paper was released
+    value: 2022-10-27
+  dependencies: []
+  description: ERNIE-ViLG is a model for text-to-image generation
+  feedback: none
+  intended_uses: unknown
+  license:
+    explanation: "The asset isn't released, and hence the license is unknown.\n"
+    value: unknown
+  modality:
+    explanation: text (Chinese) and image
+    value: image, text; image, text
+  model_card: none
+  monitoring: none
   name: ERNIE-ViLG 2.0
   organization: Baidu
-  description: ERNIE-ViLG is a model for text-to-image generation
-  created_date:
-    value: 2022-10-27
-    explanation: The date the model paper was released
-  url: https://arxiv.org/abs/2210.15257
-  model_card: none
-  modality: text (Chinese) and image
-  size: 10B parameters
-  analysis: ''
-  dependencies: []
-  training_emissions: unknown
-  training_time: 18 days according to [[the paper]](https://arxiv.org/abs/2210.15257)
-  training_hardware: 320 A100 GPUs according to [[the paper]](https://arxiv.org/abs/2210.15257)
-  quality_control: ''
-  access:
-    value: closed
-    explanation: Baidu does not provide ERNIE-ViLG 2.0 to external researchers
-  license:
-    value: unknown
-    explanation: >
-      The asset isn't released, and hence the license is unknown.
-  intended_uses: unknown
   prohibited_uses: unknown
-  monitoring: none
-  feedback: none
+  quality_control: ''
+  size: 10B parameters (dense)
+  training_emissions: unknown
+  training_hardware: 320 A100 GPUs according to [[the paper]](https://arxiv.org/abs/2210.15257)
+  training_time: 18 days according to [[the paper]](https://arxiv.org/abs/2210.15257)
+  type: model
+  url: https://arxiv.org/abs/2210.15257

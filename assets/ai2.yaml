@@ -1,95 +1,95 @@
 ---
-
-- type: dataset
+- access: open
+  analysis: ''
+  created_date: 2022-04-16
+  datasheet: ''
+  dependencies: []
+  description: ''
+  excluded: ''
+  feedback: ''
+  included: ''
+  intended_uses: ''
+  license: Apache 2.0
+  modality: {}
+  monitoring: ''
   name: NaturalInstructions-v2
   organization: AI2
-  description: ''
-  created_date: 2022-04-16
-  url: https://arxiv.org/abs/2204.07705
-  datasheet: ''
-  modality: text
-  size: 1600 tasks
-  sample: []
-  analysis: ''
-  dependencies: []
-  included: ''
-  excluded: ''
-  quality_control: ''
-  access: open
-  license: Apache 2.0
-  intended_uses: ''
   prohibited_uses: ''
-  monitoring: ''
-  feedback: ''
-
-- type: dataset
-  name: SODA
-  organization: AI2
-  description: SODA is the first publicly available, million-scale, high-quality
-    dialogue dataset covering a wide range of social interactions.
-  created_date: 2023-05-24
-  url: https://arxiv.org/pdf/2212.10465.pdf
-  datasheet: https://huggingface.co/datasets/allenai/soda
-  modality: text
-  size: 1.5M dialogues
+  quality_control: ''
   sample: []
+  size: 1600 tasks
+  type: dataset
+  url: https://arxiv.org/abs/2204.07705
+- access: open
   analysis: Randomly sampled dialogues from dataset are evaluated according to six
     established criteria of natural flow, context dependence, topic consistency,
     speaker consistency, specificity, and overall.
+  created_date: 2023-05-24
+  datasheet: https://huggingface.co/datasets/allenai/soda
   dependencies: []
-  included: ''
+  description: SODA is the first publicly available, million-scale, high-quality
+    dialogue dataset covering a wide range of social interactions.
   excluded: ''
-  quality_control: ''
-  access: open
-  license: CC BY 4.0
-  intended_uses: ''
-  prohibited_uses: ''
-  monitoring: ''
   feedback: ''
-
-- type: dataset
-  name: Multimodal C4
+  included: ''
+  intended_uses: ''
+  license: CC BY 4.0
+  modality: text
+  monitoring: ''
+  name: SODA
   organization: AI2
-  description: An augmentation of C4 with images added and made openly available.
-  created_date: 2023-06-09
-  url: https://arxiv.org/pdf/2304.06939.pdf
-  datasheet: ''
-  modality: text and images
-  size: 43B English tokens with 101.2M documents and 571M images
+  prohibited_uses: ''
+  quality_control: ''
   sample: []
+  size: 1.5M dialogues
+  type: dataset
+  url: https://arxiv.org/pdf/2212.10465.pdf
+- access: open
   analysis: Conducted experiments on models trained with Multimodal C4 in comparison
     to models trained on single image/caption datasets
+  created_date: 2023-06-09
+  datasheet: ''
   dependencies: [C4]
-  included: ''
+  description: An augmentation of C4 with images added and made openly available.
   excluded: ''
-  quality_control: ''
-  access: open
-  license: MIT
-  intended_uses: ''
-  prohibited_uses: ''
-  monitoring: ''
   feedback: ''
-
-- type: model
-  name: COSMO
+  included: ''
+  intended_uses: ''
+  license: MIT
+  modality:
+    explanation: text and images
+    value: image, text
+  monitoring: ''
+  name: Multimodal C4
   organization: AI2
-  description: COSMO is a conversation agent with greater generalizability on both
-    in- and out-of-domain chitchat datasets
-  created_date: 2023-05-24
-  url: https://arxiv.org/pdf/2212.10465.pdf
-  model_card: https://huggingface.co/allenai/cosmo-xl
-  modality: text
+  prohibited_uses: ''
+  quality_control: ''
+  sample: []
+  size: 43B English tokens with 101.2M documents and 571M images
+  type: dataset
+  url: https://arxiv.org/pdf/2304.06939.pdf
+- access: open
   analysis: Evaluated by human testers on generalization capabilities and responses
     compared to other chatbots.
-  size: 11B parameters
+  created_date: 2023-05-24
   dependencies: [SODA, ProsocialDialog, T5]
-  training_emissions: unknown
-  training_time: unknown
-  training_hardware: v3-128 TPU accelerators with batch size 256
-  quality_control: ''
-  access: open
-  license: ''
-  intended_uses: ''
-  prohibited_uses: ''
-  monitoring: ''
+  description: COSMO is a conversation agent with greater generalizability on both
+    in- and out-of-domain chitchat datasets
   feedback: https://huggingface.co/allenai/cosmo-xl/discussions
+  intended_uses: ''
+  license: ''
+  modality:
+    explanation: text
+    value: text; text
+  model_card: https://huggingface.co/allenai/cosmo-xl
+  monitoring: ''
+  name: COSMO
+  organization: AI2
+  prohibited_uses: ''
+  quality_control: ''
+  size: 11B parameters (dense)
+  training_emissions: unknown
+  training_hardware: v3-128 TPU accelerators with batch size 256
+  training_time: unknown
+  type: model
+  url: https://arxiv.org/pdf/2212.10465.pdf
