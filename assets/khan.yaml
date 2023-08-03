@@ -1,24 +1,26 @@
 ---
-- access: limited
-  adaptation: ''
-  created_date: 2023-03-14
-  dependencies: [GPT-4 API]
-  description: An AI-powered assistant that functions as both a virtual tutor for
-    students and a classroom assistant for teachers.
-  failures: ''
-  feedback: ''
-  intended_uses: ''
-  license:
-    explanation: "The asset isn't released, and hence the license is unknown.\n"
-    value: unknown
-  monitoring: ''
-  monthly_active_users: ''
+
+- type: application
   name: Khanmigo
   organization: Khan Academy
-  output_space: ''
-  prohibited_uses: ''
-  quality_control: ''
-  terms_of_service: ''
-  type: application
+  description: An AI-powered assistant that functions as both a virtual tutor for
+    students and a classroom assistant for teachers.
+  created_date: 2023-03-14
   url: https://www.khanacademy.org/khan-labs#khanmigo
+  dependencies: [GPT-4 API]
+  adaptation: ''
+  output_space: ''
+  quality_control: ''
+  access: limited
+  license:
+    value: unknown
+    explanation: >
+      The asset isn't released, and hence the license is unknown.
+  terms_of_service: ''
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+  monthly_active_users: ''
   user_distribution: ''
+  failures: ''

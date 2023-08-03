@@ -1,25 +1,26 @@
 ---
-- access: open
-  adaptation: ''
-  created_date: 2023-03-01
-  dependencies: [ChatGPT API]
+
+- type: application
+  name: Q-Chat
+  organization: Quizlet
   description: Quizlet is introducing Q-Chat, a fully-adaptive AI tutor that engages
     students with adaptive questions based on relevant study materials delivered
     through a fun chat experience.
-  failures: ''
-  feedback: ''
-  intended_uses: ''
-  license:
-    explanation: No license was found.
-    value: none
-  monitoring: ''
-  monthly_active_users: ''
-  name: Q-Chat
-  organization: Quizlet
-  output_space: ''
-  prohibited_uses: ''
-  quality_control: ''
-  terms_of_service: https://quizlet.com/tos
-  type: application
+  created_date: 2023-03-01
   url: https://openai.com/blog/introducing-chatgpt-and-whisper-apis
+  dependencies: [ChatGPT API]
+  adaptation: ''
+  output_space: ''
+  quality_control: ''
+  access: open
+  license:
+    value: none
+    explanation: No license was found.
+  terms_of_service: https://quizlet.com/tos
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+  monthly_active_users: ''
   user_distribution: ''
+  failures: ''

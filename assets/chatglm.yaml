@@ -1,25 +1,24 @@
 ---
-- access: open
-  analysis: Performance evaluated on English and Chinese language benchmark tests.
-  created_date: 2023-03-14
-  dependencies: []
-  description: ChatGLM is a Chinese-English language model with question and answer
-    and dialogue functions, and is aimed at a Chinese audience.
-  feedback: ''
-  intended_uses: ''
-  license: Apache 2.0
-  modality:
-    explanation: text
-    value: text; text
-  model_card: ''
-  monitoring: ''
+
+- type: model
   name: ChatGLM
   organization: ChatGLM
-  prohibited_uses: ''
-  quality_control: ''
-  size: 6B parameters (dense)
-  training_emissions: unknown
-  training_hardware: ''
-  training_time: unknown
-  type: model
+  description: ChatGLM is a Chinese-English language model with question and answer
+    and dialogue functions, and is aimed at a Chinese audience.
+  created_date: 2023-03-14
   url: https://chatglm.cn/blog
+  model_card: ''
+  modality: text
+  analysis: Performance evaluated on English and Chinese language benchmark tests.
+  size: 6B parameters
+  dependencies: []
+  training_emissions: unknown
+  training_time: unknown
+  training_hardware: ''
+  quality_control: ''
+  access: open
+  license: Apache 2.0
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''

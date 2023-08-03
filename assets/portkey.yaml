@@ -1,22 +1,23 @@
 ---
-- access: open
-  adaptation: ''
-  created_date: 2023-05-06
-  dependencies: []
-  description: Portkey is a hosted middleware that allows users to create generative
-    AI applications
-  failures: ''
-  feedback: ''
-  intended_uses: ''
-  license: ''
-  monitoring: ''
-  monthly_active_users: ''
+
+- type: application
   name: Portkey
   organization: Portkey
-  output_space: generative AI apps
-  prohibited_uses: ''
-  quality_control: ''
-  terms_of_service: https://portkey.ai/terms
-  type: application
+  description: Portkey is a hosted middleware that allows users to create generative
+    AI applications
+  created_date: 2023-05-06
   url: https://portkey.ai/
+  dependencies: []
+  adaptation: ''
+  output_space: generative AI apps
+  quality_control: ''
+  access: open
+  license: ''
+  terms_of_service: https://portkey.ai/terms
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+  monthly_active_users: ''
   user_distribution: ''
+  failures: ''

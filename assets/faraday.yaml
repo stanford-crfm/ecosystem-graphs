@@ -1,26 +1,27 @@
 ---
-- access: open
-  adaptation: ''
-  created_date:
-    explanation: The date Faraday Lab's hugging face card was last updated. Date
-      for ARES release is not published on site.
-    value: 2023-04-26
-  dependencies: [Stable Diffusion]
+
+- type: application
+  name: ARES
+  organization: Faraday Lab
   description: ARES is a text-to-image generator based on Stable Diffusion. The
     goal is to provide a simple tool with a user interface allowing mainstream AI
     access for artists and creators.
-  failures: ''
-  feedback: ''
-  intended_uses: ''
-  license: unknown
-  monitoring: ''
-  monthly_active_users: ''
-  name: ARES
-  organization: Faraday Lab
-  output_space: generated images
-  prohibited_uses: ''
-  quality_control: ''
-  terms_of_service: ''
-  type: application
+  created_date:
+    value: 2023-04-26
+    explanation: The date Faraday Lab's hugging face card was last updated. Date
+      for ARES release is not published on site.
   url: https://faradaylab.fr/
+  dependencies: [Stable Diffusion]
+  adaptation: ''
+  output_space: generated images
+  quality_control: ''
+  access: open
+  license: unknown
+  terms_of_service: ''
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+  monthly_active_users: ''
   user_distribution: ''
+  failures: ''

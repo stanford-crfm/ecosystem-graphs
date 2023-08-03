@@ -1,28 +1,27 @@
 ---
-- access: open
-  analysis: Performance assessed on BIG-bench arithmetic sub-task, and various elementary
-    arithmetic tasks.
-  created_date: 2023-05-23
-  dependencies: [LLaMA, GOAT dataset]
-  description: GOAT is a fine-tuned LLaMA model which uses the tokenization of numbers
-    to significantly outperform benchmark standards on a range of arithmetic tasks.
-  feedback: ''
-  intended_uses: Integration into other instruction-tuned LLMs to further enhance
-    arithmetic reasoning abilities in solving math word problems.
-  license: Apache 2.0
-  modality:
-    explanation: textual input, numerical data output
-    value: text; other
-  model_card: none
-  monitoring: ''
+
+- type: model
   name: GOAT
   organization: National University of Singapore
-  prohibited_uses: ''
+  description: GOAT is a fine-tuned LLaMA model which uses the tokenization of numbers
+    to significantly outperform benchmark standards on a range of arithmetic tasks.
+  created_date: 2023-05-23
+  url: https://arxiv.org/pdf/2305.14201.pdf
+  model_card: none
+  modality: textual input, numerical data output
+  analysis: Performance assessed on BIG-bench arithmetic sub-task, and various elementary
+    arithmetic tasks.
+  size: 7B parameters
+  dependencies: [LLaMA, GOAT dataset]
+  training_emissions: unknown
+  training_time: unknown
+  training_hardware: 24 GB VRAM GPU
   quality_control: Number data is randomly generated from log space to reduce likelihood
     of redundancy and range of magnitudes.
-  size: 7B parameters (dense)
-  training_emissions: unknown
-  training_hardware: 24 GB VRAM GPU
-  training_time: unknown
-  type: model
-  url: https://arxiv.org/pdf/2305.14201.pdf
+  access: open
+  license: Apache 2.0
+  intended_uses: Integration into other instruction-tuned LLMs to further enhance
+    arithmetic reasoning abilities in solving math word problems.
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''

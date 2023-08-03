@@ -1,149 +1,148 @@
 ---
-- access:
-    explanation: Model weights are available but gated via an [[application form]](https://models.aminer.cn/codegeex/download/request)
-    value: limited
-  analysis: none
-  created_date: 2022-09-20
-  dependencies: []
-  description: CodeGeeX is an autoregressive language model trained on code
-  feedback: none
-  intended_uses: none
-  license:
-    explanation: The license is provided in the [[Github repository]](https://github.com/THUDM/CodeGeeX)
-    value: Apache 2.0
-  modality:
-    explanation: code
-    value: code; code
-  model_card: none
-  monitoring: none
+
+# models
+- type: model
   name: CodeGeeX
   organization: Tsinghua
-  prohibited_uses: none
-  quality_control: none
-  size: 13B parameters (dense)
-  training_emissions: unknown
-  training_hardware: THUDM 1536 Ascend 910 (32GB) Cluster
-  training_time: unknown
-  type: model
+  description: CodeGeeX is an autoregressive language model trained on code
+  created_date: 2022-09-20
   url: https://github.com/THUDM/CodeGeeX
-- access:
-    explanation: Model checkpoints available from [[Wudao-Wenhui]](https://resource.wudaoai.cn/home?ind=2&name=WuDao%20WenHui&id=1399364355975327744)
-    value: open
-  analysis: ''
-  created_date:
-    explanation: The date the model paper was released
-    value: 2021-05-26
-  dependencies: []
-  description: CogView is a transformer model for text-to-image generation
-  feedback: ''
-  intended_uses: ''
-  license:
-    explanation: "The license is provided in the [[Github repository]](https://github.com/THUDM/CogView)\n"
-    value: Apache 2.0
-  modality:
-    explanation: text (Chinese) and image
-    value: image, text; image, text
   model_card: none
-  monitoring: ''
+  modality: code
+  analysis: none
+  size: 13B parameters (dense model)
+  dependencies: []
+  training_emissions: unknown
+  training_time: unknown
+  training_hardware: THUDM 1536 Ascend 910 (32GB) Cluster
+  quality_control: none
+  access:
+    value: limited
+    explanation: Model weights are available but gated via an [[application form]](https://models.aminer.cn/codegeex/download/request)
+  license:
+    value: Apache 2.0
+    explanation: The license is provided in the [[Github repository]](https://github.com/THUDM/CodeGeeX)
+  intended_uses: none
+  prohibited_uses: none
+  monitoring: none
+  feedback: none
+
+- type: model
   name: CogView
   organization: Tsinghua
-  prohibited_uses: ''
-  quality_control: ''
-  size: 4B parameters (dense)
-  training_emissions: ''
-  training_hardware: ''
-  training_time: ''
-  type: model
-  url: https://arxiv.org/abs/2105.13290
-- access:
-    explanation: The model checkpoints are available for download from [[BAAI]](https://model.baai.ac.cn/model-detail/100041)
-    value: open
-  analysis: ''
+  description: CogView is a transformer model for text-to-image generation
   created_date:
+    value: 2021-05-26
     explanation: The date the model paper was released
-    value: 2022-04-28
-  dependencies: []
-  description: CogView 2 is a hierarchical transformer for text-to-image generation
-  feedback: ''
-  intended_uses: ''
-  license:
-    explanation: "The license is provided in the [[Github repository]](https://github.com/THUDM/CogView2)\n"
-    value: Apache 2.0
-  modality:
-    explanation: text (Chinese, English) and image
-    value: image, text; image, text
+  url: https://arxiv.org/abs/2105.13290
   model_card: none
+  modality: text (Chinese) and image
+  size: 4B parameters
+  analysis: ''
+  dependencies: []
+  training_emissions: ''
+  training_time: ''
+  training_hardware: ''
+  quality_control: ''
+  access:
+    value: open
+    explanation: Model checkpoints available from [[Wudao-Wenhui]](https://resource.wudaoai.cn/home?ind=2&name=WuDao%20WenHui&id=1399364355975327744)
+  license:
+    value: Apache 2.0
+    explanation: >
+      The license is provided in the [[Github repository]](https://github.com/THUDM/CogView)
+  intended_uses: ''
+  prohibited_uses: ''
   monitoring: ''
+  feedback: ''
+
+- type: model
   name: CogView 2
   organization: Tsinghua
-  prohibited_uses: ''
-  quality_control: ''
-  size: 6B parameters (dense)
-  training_emissions: ''
-  training_hardware: ''
-  training_time: ''
-  type: model
-  url: https://arxiv.org/abs/2204.14217
-- access:
-    explanation: Model checkpoints are available for download from https://github.com/THUDM/CogVideo
-    value: open
-  analysis: ''
+  description: CogView 2 is a hierarchical transformer for text-to-image generation
   created_date:
+    value: 2022-04-28
     explanation: The date the model paper was released
-    value: 2022-05-29
-  dependencies: []
-  description: CogVideo is a transformer model for text-to-video generation
-  feedback: ''
-  intended_uses: ''
-  license:
-    explanation: "The license is provided in the [[Github repository]](https://github.com/THUDM/CogVideo)\n"
-    value: Apache 2.0
-  modality:
-    explanation: text (Chinese) and video
-    value: text, video; text, video
+  url: https://arxiv.org/abs/2204.14217
   model_card: none
+  modality: text (Chinese, English) and image
+  size: 6B parameters
+  analysis: ''
+  dependencies: []
+  training_emissions: ''
+  training_time: ''
+  training_hardware: ''
+  quality_control: ''
+  access:
+    value: open
+    explanation: The model checkpoints are available for download from [[BAAI]](https://model.baai.ac.cn/model-detail/100041)
+  license:
+    value: Apache 2.0
+    explanation: >
+      The license is provided in the [[Github repository]](https://github.com/THUDM/CogView2)
+  intended_uses: ''
+  prohibited_uses: ''
   monitoring: ''
+  feedback: ''
+
+- type: model
   name: CogVideo
   organization: Tsinghua
-  prohibited_uses: ''
-  quality_control: ''
-  size: unknown
-  training_emissions: ''
-  training_hardware: ''
-  training_time: ''
-  type: model
-  url: https://arxiv.org/abs/2205.15868
-- access:
-    explanation: Model checkpoints are available from the [[GitHub repository]](https://github.com/THUDM/GLM-130B/blob/main/MODEL_LICENSE)
-    value: open
-  analysis: ''
+  description: CogVideo is a transformer model for text-to-video generation
   created_date:
-    explanation: The date the model website was made public
+    value: 2022-05-29
+    explanation: The date the model paper was released
+  url: https://arxiv.org/abs/2205.15868
+  model_card: none
+  modality: text (Chinese) and video
+  size: unknown
+  analysis: ''
+  dependencies: []
+  training_emissions: ''
+  training_time: ''
+  training_hardware: ''
+  quality_control: ''
+  access:
+    value: open
+    explanation: Model checkpoints are available for download from https://github.com/THUDM/CogVideo
+  license:
+    value: Apache 2.0
+    explanation: >
+      The license is provided in the [[Github repository]](https://github.com/THUDM/CogVideo)
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+
+- type: model
+  name: GLM-130B
+  organization: Tsinghua
+  description: GLM-130B is a bidirectional language model trained on English and
+    Chinese
+  created_date:
     value: 2022-08-04
+    explanation: The date the model website was made public
+  url: https://keg.cs.tsinghua.edu.cn/glm-130b/
+  model_card: none
+  modality: text (Chinese | English)
+  size: 130B parameters (dense model)
+  analysis: ''
   dependencies:
     - The Pile
     - GLM-130B Chinese corpora
     - P3
     - DeepStruct finetuning dataset
-  description: GLM-130B is a bidirectional language model trained on English and
-    Chinese
-  feedback: ''
-  intended_uses: ''
-  license:
-    explanation: Unique model license. See the [[GitHub repository]](https://github.com/THUDM/GLM-130B/blob/main/MODEL_LICENSE)
-    value: GLM-130B License
-  modality:
-    explanation: text (Chinese | English)
-    value: text; text
-  model_card: none
-  monitoring: ''
-  name: GLM-130B
-  organization: Tsinghua
-  prohibited_uses: ''
-  quality_control: ''
-  size: 130B parameters (dense)
   training_emissions: ''
-  training_hardware: THUDM 96 DGX-A100 (40G) cluster
   training_time: ''
-  type: model
-  url: https://keg.cs.tsinghua.edu.cn/glm-130b/
+  training_hardware: THUDM 96 DGX-A100 (40G) cluster
+  quality_control: ''
+  access:
+    value: open
+    explanation: Model checkpoints are available from the [[GitHub repository]](https://github.com/THUDM/GLM-130B/blob/main/MODEL_LICENSE)
+  license:
+    value: GLM-130B License
+    explanation: Unique model license. See the [[GitHub repository]](https://github.com/THUDM/GLM-130B/blob/main/MODEL_LICENSE)
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''

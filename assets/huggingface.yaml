@@ -1,30 +1,29 @@
 ---
-- access:
-    explanation: The license is provided in the [[HuggingFace repository]](https://huggingface.co/codeparrot/codeparrot)
-    value: open
-  analysis: none
-  created_date:
-    explanation: The date the model was announced
-    value: 2021-12-06
-  dependencies: []
-  description: CodeParrot is an autoregressive language model trained on code
-  feedback: none
-  intended_uses: none
-  license:
-    explanation: No license is explicitly provided for this model.
-    value: none
-  modality:
-    explanation: code (Python)
-    value: code; code
-  model_card: none
-  monitoring: none
+
+- type: model
   name: CodeParrot
   organization: HuggingFace
-  prohibited_uses: none
-  quality_control: none
-  size: 1B parameters (dense)
-  training_emissions: unknown
-  training_hardware: 16 x A100 (40GB)
-  training_time: unknown
-  type: model
+  description: CodeParrot is an autoregressive language model trained on code
+  created_date:
+    value: 2021-12-06
+    explanation: The date the model was announced
   url: https://twitter.com/lvwerra/status/1467933794699259908
+  model_card: none
+  modality: code (Python)
+  analysis: none
+  size: 1B parameters (dense model)
+  dependencies: []
+  training_emissions: unknown
+  training_time: unknown
+  training_hardware: 16 x A100 (40GB)
+  quality_control: none
+  access:
+    value: open
+    explanation: The license is provided in the [[HuggingFace repository]](https://huggingface.co/codeparrot/codeparrot)
+  license:
+    value: none
+    explanation: No license is explicitly provided for this model.
+  intended_uses: none
+  prohibited_uses: none
+  monitoring: none
+  feedback: none
