@@ -1,100 +1,99 @@
 ---
-- access:
-    explanation: "Neither the 8.3B parameter model trained to convergence nor the\
-      \ 1 trillion paramter model is available for download\n"
-    value: closed
-  analysis: ''
-  created_date:
-    explanation: The date the paper for the 1 trillion parameter model was published
-    value: 2021-04-09
-  dependencies: []
-  description: Megatron-LM is an autoregressive language model
-  feedback: none
-  intended_uses: none
-  license:
-    explanation: "The asset isn't released, and hence the license is unknown.\n"
-    value: unknown
-  modality:
-    explanation: text (English)
-    value: text; text
-  model_card: none
-  monitoring: none
+
+# models
+- type: model
   name: Megatron-LM
   organization: NVIDIA
-  prohibited_uses: none
-  quality_control: unknown
-  size: 1000B parameters (dense)
-  training_emissions: unknown
-  training_hardware: 3072 A100 GPUs
-  training_time: 84 days
-  type: model
+  description: Megatron-LM is an autoregressive language model
+  created_date:
+    value: 2021-04-09
+    explanation: The date the paper for the 1 trillion parameter model was published
   url: https://arxiv.org/abs/2104.04473
-- access: open
+  model_card: none
+  modality: text (English)
   analysis: ''
-  created_date: 2022-06-17
-  datasheet: ''
-  dependencies: [YouTube, Wikipedia, Reddit]
-  description: ''
-  excluded: ''
-  feedback: ''
-  included: ''
-  intended_uses: ''
-  license: MIT
-  modality:
-    explanation: Videos, Text
-    value: text, video
-  monitoring: ''
+  size: 1000B parameters (dense model)
+  dependencies: []
+  training_emissions: unknown
+  training_time: 84 days
+  training_hardware: 3072 A100 GPUs
+  quality_control: unknown
+  access:
+    value: closed
+    explanation: >
+      Neither the 8.3B parameter model trained to convergence nor the 1 trillion
+      paramter model is available for download
+  license:
+    value: unknown
+    explanation: >
+      The asset isn't released, and hence the license is unknown.
+  intended_uses: none
+  prohibited_uses: none
+  monitoring: none
+  feedback: none
+
+- type: dataset
   name: MineDojo
   organization: NVIDIA
-  prohibited_uses: ''
-  quality_control: ''
-  sample: []
-  size: 730k videos, 6k Wikipedia pages, 340k reddit posts
-  type: dataset
-  url: https://arxiv.org/abs/2206.08853
-- access: open
-  analysis: ''
-  created_date: 2022-10-06
-  datasheet: ''
-  dependencies: [T5, Mask R-CNN, VIMA dataset]
   description: ''
-  excluded: ''
-  feedback: ''
+  created_date: 2022-06-17
+  url: https://arxiv.org/abs/2206.08853
+  datasheet: ''
+  modality: Videos, Text
+  size: 730k videos, 6k Wikipedia pages, 340k reddit posts
+  sample: []
+  analysis: ''
+  dependencies: [YouTube, Wikipedia, Reddit]
   included: ''
-  intended_uses: ''
+  excluded: ''
+  quality_control: ''
+  access: open
   license: MIT
-  modality:
-    explanation: text and image
-    value: image, text
+  intended_uses: ''
+  prohibited_uses: ''
   monitoring: ''
+  feedback: ''
+
+- type: dataset
   name: VIMA dataset
   organization: NVIDIA, Stanford
-  prohibited_uses: ''
-  quality_control: ''
-  sample: []
-  size: 200M parameters (dense model)
-  type: dataset
-  url: https://vimalabs.github.io/
-- access: open
-  analysis: ''
-  created_date: 2022-10-06
-  dependencies: []
   description: ''
-  feedback: ''
-  intended_uses: ''
+  created_date: 2022-10-06
+  url: https://vimalabs.github.io/
+  datasheet: ''
+  modality: text and image
+  size: 200M parameters (dense model)
+  sample: []
+  analysis: ''
+  dependencies: [T5, Mask R-CNN, VIMA dataset]
+  included: ''
+  excluded: ''
+  quality_control: ''
+  access: open
   license: MIT
-  modality:
-    explanation: Simulation
-    value: other; other
-  model_card: ''
+  intended_uses: ''
+  prohibited_uses: ''
   monitoring: ''
+  feedback: ''
+
+- type: model
   name: VIMA
   organization: NVIDIA, Stanford
-  prohibited_uses: ''
-  quality_control: ''
-  size: 650K parameters (dense)
-  training_emissions: ''
-  training_hardware: ''
-  training_time: ''
-  type: model
+  description: ''
+  created_date: 2022-10-06
   url: https://vimalabs.github.io/
+  model_card: ''
+  modality: Simulation
+  analysis: ''
+  size: 650K successful trajectories
+  dependencies: []
+  training_emissions: ''
+  training_time: ''
+  training_hardware: ''
+  quality_control: ''
+  access: open
+  license: MIT
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''

@@ -1,26 +1,27 @@
 ---
-- access: open
-  adaptation: ''
-  created_date: unknown
-  dependencies: [Azure Cognitive Services for Vision]
+
+- type: application
+  name: LinkedIn
+  organization: LinkedIn
   description: More than 40 percent of LinkedIn's feed posts include at least one
     image. We want every member to have equal access to opportunity and are committed
     to ensuring that we make images accessible to our members who are blind or who
     have low vision so they can be a part of the online conversation. With Azure
     Cognitive Service for Vision, we can provide auto-captioning to edit and support
     alt. text descriptions.
-  failures: ''
-  feedback: ''
-  intended_uses: ''
-  license: unknown
-  monitoring: ''
-  monthly_active_users: ''
-  name: LinkedIn
-  organization: LinkedIn
-  output_space: ''
-  prohibited_uses: ''
-  quality_control: ''
-  terms_of_service: ''
-  type: application
+  created_date: unknown
   url: https://www.linkedin.com/
+  dependencies: [Azure Cognitive Services for Vision]
+  adaptation: ''
+  output_space: ''
+  quality_control: ''
+  access: open
+  license: unknown
+  terms_of_service: ''
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+  monthly_active_users: ''
   user_distribution: ''
+  failures: ''

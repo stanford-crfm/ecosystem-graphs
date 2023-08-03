@@ -1,50 +1,49 @@
 ---
-- access: closed
-  analysis: ''
-  created_date: 2023-02-20
-  datasheet: ''
-  dependencies: [LAION-5B]
-  description: ''
-  excluded: We eliminate duplicates, low resolution images, and images potentially
-    contain harmful content from the LAION dataset.
-  feedback: ''
-  included: ''
-  intended_uses: ''
-  license: unknown
-  modality:
-    explanation: text and image
-    value: image, text
-  monitoring: ''
+
+- type: dataset
   name: LAION-1B
   organization: Alibaba
-  prohibited_uses: ''
-  quality_control: ''
-  sample: []
-  size: 1B image-text pairs
-  type: dataset
-  url: https://arxiv.org/pdf/2302.09778.pdf
-- access: closed
-  analysis: ''
-  created_date: 2023-02-20
-  dependencies: [ImageNet, WebVision, LAION-1B]
   description: ''
-  feedback: ''
+  created_date: 2023-02-20
+  url: https://arxiv.org/pdf/2302.09778.pdf
+  datasheet: ''
+  modality: text and image
+  size: 1B image-text pairs
+  sample: []
+  analysis: ''
+  dependencies: [LAION-5B]
+  included: ''
+  excluded: We eliminate duplicates, low resolution images, and images potentially
+    contain harmful content from the LAION dataset.
+  quality_control: ''
+  access: closed
+  license: unknown
   intended_uses: ''
-  license:
-    explanation: "The asset isn't released, and hence the license is unknown.\n"
-    value: unknown
-  modality:
-    explanation: images
-    value: image; image
-  model_card: ''
+  prohibited_uses: ''
   monitoring: ''
+  feedback: ''
+
+- type: model
   name: Composer
   organization: Alibaba
-  prohibited_uses: ''
-  quality_control: ''
-  size: 4.4B parameters (dense)
-  training_emissions: ''
-  training_hardware: ''
-  training_time: ''
-  type: model
+  description: ''
+  created_date: 2023-02-20
   url: https://arxiv.org/pdf/2302.09778.pdf
+  model_card: ''
+  modality: images
+  analysis: ''
+  size: 4.4B parameters (dense model)
+  dependencies: [ImageNet, WebVision, LAION-1B]
+  training_emissions: ''
+  training_time: ''
+  training_hardware: ''
+  quality_control: ''
+  access: closed
+  license:
+    value: unknown
+    explanation: >
+      The asset isn't released, and hence the license is unknown.
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''

@@ -1,22 +1,23 @@
 ---
-- access: open
-  analysis: ''
-  created_date: 2022-01-07
-  datasheet: ''
-  dependencies: [YouTube]
-  description: ''
-  excluded: ''
-  feedback: ''
-  included: ''
-  intended_uses: ''
-  license: MIT
-  modality: video
-  monitoring: ''
+
+- type: dataset
   name: YT-Temporal-1B
   organization: University of Washington
-  prohibited_uses: ''
-  quality_control: ''
-  sample: []
-  size: 20M videos
-  type: dataset
+  description: ''
+  created_date: 2022-01-07
   url: https://arxiv.org/abs/2201.02639
+  datasheet: ''
+  modality: video
+  size: 20M videos
+  sample: []
+  analysis: ''
+  dependencies: [YouTube]
+  included: ''
+  excluded: ''
+  quality_control: ''
+  access: open
+  license: MIT
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''

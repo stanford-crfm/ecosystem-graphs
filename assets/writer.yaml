@@ -1,55 +1,53 @@
 ---
-- access: open
-  analysis: Evaluated on the SuperGLUE benchmark
-  created_date:
-    explanation: The model was stated to be published in January, but which day
-      is not specified on the website.
-    value: 2023-01-01
-  dependencies: [Writer dataset]
-  description: Palmyra is a privacy-first LLM for enterprises trained on business
-    and marketing writing.
-  feedback: https://huggingface.co/Writer/palmyra-base/discussions
-  intended_uses: generating text from a prompt
-  license: Apache 2.0
-  modality:
-    explanation: text
-    value: text; text
-  model_card: https://huggingface.co/Writer/palmyra-base
-  monitoring: ''
+
+- type: model
   name: Palmyra
   organization: Writer
-  prohibited_uses: ''
-  quality_control: ''
-  size: 128M parameters (dense)
-  training_emissions: unknown
-  training_hardware: ''
-  training_time: unknown
-  type: model
-  url: https://gpt3demo.com/apps/palmyra
-- access: open
-  analysis: ''
+  description: Palmyra is a privacy-first LLM for enterprises trained on business
+    and marketing writing.
   created_date:
-    explanation: The model was stated to be published in April, but which day is
-      not specified on the website.
-    value: 2023-04-01
-  dependencies: [Palmyra, Camel dataset]
-  description: Camel is an instruction-following large language model tailored for
-    advanced NLP and comprehension capabilities.
-  feedback: https://huggingface.co/Writer/camel-5b-hf/discussions
-  intended_uses: ''
+    value: 2023-01-01
+    explanation: The model was stated to be published in January, but which day
+      is not specified on the website.
+  url: https://gpt3demo.com/apps/palmyra
+  model_card: https://huggingface.co/Writer/palmyra-base
+  modality: text
+  analysis: Evaluated on the SuperGLUE benchmark
+  size: 128M (Small), 5B (Base), 20B (Large) parameters
+  dependencies: [Writer dataset]
+  training_emissions: unknown
+  training_time: unknown
+  training_hardware: ''
+  quality_control: ''
+  access: open
   license: Apache 2.0
-  modality:
-    explanation: text
-    value: text; text
-  model_card: https://huggingface.co/Writer/camel-5b-hf
+  intended_uses: generating text from a prompt
+  prohibited_uses: ''
   monitoring: ''
+  feedback: https://huggingface.co/Writer/palmyra-base/discussions
+
+- type: model
   name: Camel
   organization: Writer
-  prohibited_uses: ''
-  quality_control: ''
-  size: 5B parameters (dense)
-  training_emissions: unknown
-  training_hardware: ''
-  training_time: unknown
-  type: model
+  description: Camel is an instruction-following large language model tailored for
+    advanced NLP and comprehension capabilities.
+  created_date:
+    value: 2023-04-01
+    explanation: The model was stated to be published in April, but which day is
+      not specified on the website.
   url: https://chatcamel.vercel.app/
+  model_card: https://huggingface.co/Writer/camel-5b-hf
+  modality: text
+  analysis: ''
+  size: 5B parameters
+  dependencies: [Palmyra, Camel dataset]
+  training_emissions: unknown
+  training_time: unknown
+  training_hardware: ''
+  quality_control: ''
+  access: open
+  license: Apache 2.0
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: https://huggingface.co/Writer/camel-5b-hf/discussions

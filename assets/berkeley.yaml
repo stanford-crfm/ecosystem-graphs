@@ -1,75 +1,72 @@
 ---
-- access: open
-  analysis: Evaluated in comparison with ChatGPT and Stanford Alpaca.
-  created_date: 2023-04-03
-  dependencies: [LLaMA, web-scraped dialogue data]
-  description: A relatively small chatbot trained by fine-tuning Meta’s LLaMA on
-    dialogue data gathered from the web.
-  feedback: https://huggingface.co/TheBloke/koala-7B-GPTQ-4bit-128g/discussions
-  intended_uses: academic research
-  license: Apache 2.0
-  modality:
-    explanation: natural language text
-    value: text; text
-  model_card: https://huggingface.co/TheBloke/koala-7B-GPTQ-4bit-128g
-  monitoring: ''
+
+- type: model
   name: Koala
   organization: Berkeley
-  prohibited_uses: ''
-  quality_control: ''
-  size: 13B parameters (dense)
-  training_emissions: ''
-  training_hardware: 8 A100 GPUs
-  training_time: 6 hours
-  type: model
+  description: A relatively small chatbot trained by fine-tuning Meta’s LLaMA on
+    dialogue data gathered from the web.
+  created_date: 2023-04-03
   url: https://bair.berkeley.edu/blog/2023/04/03/koala/
-- access: open
-  analysis: Evaluated using AST sub-tree matching technique and compared to other
-    models in terms of API functionality accuracy.
-  created_date: 2023-05-24
-  dependencies: [LLaMA, Gorilla document retriever]
-  description: Gorilla is a finetuned LLaMA-based model that surpasses the performance
-    of GPT-4 on writing API calls.
-  feedback: ''
-  intended_uses: In conjunction with a LLM to improve its capability for using API
-    calls.
+  model_card: https://huggingface.co/TheBloke/koala-7B-GPTQ-4bit-128g
+  modality: natural language text
+  analysis: Evaluated in comparison with ChatGPT and Stanford Alpaca.
+  size: 13B parameters
+  dependencies: [LLaMA, web-scraped dialogue data]
+  training_emissions: ''
+  training_time: 6 hours
+  training_hardware: 8 A100 GPUs
+  quality_control: ''
+  access: open
   license: Apache 2.0
-  modality:
-    explanation: outputs API from natural language input
-    value: other; other
-  model_card: ''
+  intended_uses: academic research
+  prohibited_uses: ''
   monitoring: ''
+  feedback: https://huggingface.co/TheBloke/koala-7B-GPTQ-4bit-128g/discussions
+
+- type: model
   name: Gorilla
   organization: Berkeley
-  prohibited_uses: ''
+  description: Gorilla is a finetuned LLaMA-based model that surpasses the performance
+    of GPT-4 on writing API calls.
+  created_date: 2023-05-24
+  url: https://arxiv.org/pdf/2305.15334v1.pdf
+  model_card: ''
+  modality: outputs API from natural language input
+  analysis: Evaluated using AST sub-tree matching technique and compared to other
+    models in terms of API functionality accuracy.
+  size: 7B parameters
+  dependencies: [LLaMA, Gorilla document retriever]
+  training_emissions: ''
+  training_time: ''
+  training_hardware: ''
   quality_control: No specific quality control is mentioned in model training, though
     details on data processing and collection are provided in the paper.
-  size: 7B parameters (dense)
-  training_emissions: ''
-  training_hardware: ''
-  training_time: ''
-  type: model
-  url: https://arxiv.org/pdf/2305.15334v1.pdf
-- access: open
-  analysis: Evaluated on wide range of tasks using own evaluation benchmarks.
-  created_date: 2023-05-03
-  dependencies: [RedPajama]
-  description: OpenLlama is an open source reproduction of Meta's LLaMA model.
-  feedback: ''
-  intended_uses: ''
+  access: open
   license: Apache 2.0
-  modality:
-    explanation: text
-    value: text; text
-  model_card: ''
+  intended_uses: In conjunction with a LLM to improve its capability for using API
+    calls.
+  prohibited_uses: ''
   monitoring: ''
+  feedback: ''
+
+- type: model
   name: OpenLLaMA
   organization: Berkeley
-  prohibited_uses: ''
-  quality_control: ''
-  size: 17B parameters (dense)
-  training_emissions: unknown
-  training_hardware: ''
-  training_time: unknown
-  type: model
+  description: OpenLlama is an open source reproduction of Meta's LLaMA model.
+  created_date: 2023-05-03
   url: https://github.com/openlm-research/open_llama
+  model_card: ''
+  modality: text
+  analysis: Evaluated on wide range of tasks using own evaluation benchmarks.
+  size: 17B parameters
+  dependencies: [RedPajama]
+  training_emissions: unknown
+  training_time: unknown
+  training_hardware: ''
+  quality_control: ''
+  access: open
+  license: Apache 2.0
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''

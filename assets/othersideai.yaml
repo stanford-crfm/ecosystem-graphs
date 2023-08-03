@@ -1,31 +1,42 @@
 ---
-- access: limited
-  adaptation: unknown
-  created_date: unknown
-  dependencies: [OpenAI API]
-  description: "HyperWrite is a writing assistant that generates text based on a\
-    \ user's request, as well as style and tone choices.\n"
-  failures: unknown
-  feedback: unknown
-  intended_uses: "HyperWrite is intended to be used as a writing assistant.\n"
-  license:
-    explanation: "\"The Software, including software embedded in the Software, is\
-      \ licensed, not sold, to you by Otherside only under the terms of this Agreement;\
-      \ and Otherside reserves all rights not expressly granted under this Agreemen\"\
-      \ - excerpt from the Terms of Service.\n"
-    value: custom
-  monitoring: unknown
-  monthly_active_users: unknown
+
+- type: application
   name: HyperWrite
+  # General
   organization: OthersideAI
-  output_space: Generation
-  prohibited_uses: unknown
-  quality_control:
-    explanation: "There is a HyperWrite blog warning the users about the risks of\
-      \ writing with an AI assistant, but the company doesn't list the quality control\
-      \ measures taken to prevent the listed risks, if any [[HyperWrite Blog]] (https://blog.hyperwrite.ai/what-are-the-risks-of-ai-writing/).\n"
-    value: unknown
-  terms_of_service: https://hyperwriteai.com/terms
-  type: application
+  description: >
+    HyperWrite is a writing assistant that generates text based on a user's
+    request, as well as style and tone choices.
+  created_date: unknown
   url: https://hyperwriteai.com/
+  # Construction
+  dependencies: [OpenAI API]
+  adaptation: unknown
+  output_space: Generation
+  quality_control:
+    value: unknown
+    explanation: >
+      There is a HyperWrite blog warning the users about the risks of writing
+      with an AI assistant, but the company doesn't list the quality control
+      measures taken to prevent the listed risks, if any
+      [[HyperWrite Blog]]
+      (https://blog.hyperwrite.ai/what-are-the-risks-of-ai-writing/).
+  # Downstream
+  access: limited
+  license:
+    value: custom
+    explanation: >
+      "The Software, including software embedded in the Software, is licensed,
+      not sold, to you by Otherside only under the terms of this Agreement; and
+      Otherside reserves all rights not expressly granted under this Agreemen"
+      - excerpt from the Terms of Service.
+  terms_of_service: https://hyperwriteai.com/terms
+  intended_uses: >
+    HyperWrite is intended to be used as a writing assistant.
+  prohibited_uses: unknown
+  monitoring: unknown
+  feedback: unknown
+  # Deployment
+  monthly_active_users: unknown
   user_distribution: unknown
+  failures: unknown

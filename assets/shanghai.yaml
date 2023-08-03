@@ -1,7 +1,15 @@
 ---
-- access: open
-  analysis: ''
+
+- type: model
+  name: InternVideo
+  organization: Shanghai AI Laboratory
+  description: ''
   created_date: 2022-12-06
+  url: https://arxiv.org/pdf/2212.03191.pdf
+  model_card: ''
+  modality: text and video
+  analysis: ''
+  size: 1.3B parameters (dense model)
   dependencies:
     - Kinetics-400
     - WebVid-2M
@@ -10,46 +18,36 @@
     - AVA
     - Something-Something-v2
     - Kinetics-710
-  description: ''
-  feedback: ''
-  intended_uses: ''
-  license: Apache 2.0
-  modality:
-    explanation: text and video
-    value: text, video; text, video
-  model_card: ''
-  monitoring: ''
-  name: InternVideo
-  organization: Shanghai AI Laboratory
-  prohibited_uses: ''
-  quality_control: ''
-  size: 1.3B parameters (dense)
   training_emissions: ''
-  training_hardware: ''
   training_time: ''
-  type: model
-  url: https://arxiv.org/pdf/2212.03191.pdf
-- access: open
-  analysis: Evaluated based on own constructed dataset covering 433 languages.
-  created_date: 2023-05-29
-  dependencies: [OPUS]
-  description: Lego-MT is a multilingual large language model which uses a more
-    efficient approach of being an effective detachable model.
-  feedback: ''
+  training_hardware: ''
+  quality_control: ''
+  access: open
+  license: Apache 2.0
   intended_uses: ''
-  license: ''
-  modality:
-    explanation: multilingual text
-    value: text; text
-  model_card: ''
+  prohibited_uses: ''
   monitoring: ''
+  feedback: ''
+
+- type: model
   name: Lego-MT
   organization: Shanghai AI Laboratory
-  prohibited_uses: ''
-  quality_control: ''
-  size: 1.2B parameters (dense)
-  training_emissions: unknown
-  training_hardware: 32 A100 GPUs
-  training_time: 15 days
-  type: model
+  description: Lego-MT is a multilingual large language model which uses a more
+    efficient approach of being an effective detachable model.
+  created_date: 2023-05-29
   url: https://arxiv.org/pdf/2212.10551.pdf
+  model_card: ''
+  modality: multilingual text
+  analysis: Evaluated based on own constructed dataset covering 433 languages.
+  size: 1.2B parameters
+  dependencies: [OPUS]
+  training_emissions: unknown
+  training_time: 15 days
+  training_hardware: 32 A100 GPUs
+  quality_control: ''
+  access: open
+  license: ''
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''

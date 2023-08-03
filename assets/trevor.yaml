@@ -1,38 +1,50 @@
 ---
-- access:
-    explanation: "The tool can only be accessed by the Trevor Project will be counsolors\
-      \ for training purposes.\n"
-    value: closed
-  adaptation:
-    explanation: "The base GPT-2 model was fine-tuned on the previous conversations\
-      \ between new trainees and the Trevor Project counselors posing to be a fictional\
-      \ persona in crisis.\n"
-    value: Fine-tuning
-  created_date:
-    explanation: "The release date of the blog post introducing Crisis Contact Simulator\
-      \ [[Trevor Project Blog]](https://www.thetrevorproject.org/blog/the-trevor-project-launches-new-ai-tool-to-support-crisis-counselor-training/).\n"
-    value: 2021-03-24
-  dependencies: [OpenAI API]
-  description: "Crisis Contact Simulator, developed as part of a collaboration with\
-    \ Google.org, helps train The Trevor Project counselors by mimicking to be a\
-    \ teen in crisis. Crisis Contact Simulator is used as part of the training programs\
-    \ for the Trevor Project's 24/7 digital crisis services that supports LGBTQ\
-    \ youth [[Trevor Project Blog]](https://www.thetrevorproject.org/blog/the-trevor-project-launches-new-ai-tool-to-support-crisis-counselor-training/).\n"
-  failures: unknown
-  feedback: unknown
-  intended_uses: "Training counselors\n"
-  license: unknown
-  monitoring: unknown
-  monthly_active_users: unknown
+
+- type: application
   name: Crisis Contact Simulator
+  # General
   organization: The Trevor Project
-  output_space: Dialogue
-  prohibited_uses: unknown
-  quality_control:
-    explanation: "The tool can only be accessed by the Trevor Project will be counsolors\
-      \ for training purposes.\n"
-    value: Limited release
-  terms_of_service: unknown
-  type: application
+  description: >
+    Crisis Contact Simulator, developed as part of a collaboration with
+    Google.org, helps train The Trevor Project counselors by
+    mimicking to be a teen in crisis. Crisis Contact Simulator is used
+    as part of the training programs for the Trevor Project's 24/7 digital
+    crisis services that supports LGBTQ youth
+    [[Trevor Project Blog]](https://www.thetrevorproject.org/blog/the-trevor-project-launches-new-ai-tool-to-support-crisis-counselor-training/).
+  created_date:
+    value: 2021-03-24
+    explanation: >
+      The release date of the blog post introducing Crisis Contact Simulator
+      [[Trevor Project Blog]](https://www.thetrevorproject.org/blog/the-trevor-project-launches-new-ai-tool-to-support-crisis-counselor-training/).
   url: https://www.thetrevorproject.org/
+  # Construction
+  dependencies: [OpenAI API]
+  adaptation:
+    value: Fine-tuning
+    explanation: >
+      The base GPT-2 model was fine-tuned on the previous conversations between
+      new trainees and the Trevor Project counselors posing to be a fictional
+      persona in crisis.
+  output_space: Dialogue
+  quality_control:
+    value: Limited release
+    explanation: >
+      The tool can only be accessed by the Trevor Project will be counsolors
+      for training purposes.
+  # Downstream
+  access:
+    value: closed
+    explanation: >
+      The tool can only be accessed by the Trevor Project will be counsolors
+      for training purposes.
+  license: unknown
+  terms_of_service: unknown
+  intended_uses: >
+    Training counselors
+  prohibited_uses: unknown
+  monitoring: unknown
+  feedback: unknown
+  # Deployment
+  monthly_active_users: unknown
   user_distribution: unknown
+  failures: unknown

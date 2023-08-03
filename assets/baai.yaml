@@ -1,57 +1,68 @@
 ---
-- access: closed
-  analysis: ''
-  created_date:
-    explanation: "The date that BAAI made a public announcement [[News Link]](https://mp.weixin.qq.com/s/BUQWZ5EdR19i40GuFofpBg).\n"
-    value: 2021-01-12
-  datasheet: ''
-  dependencies: []
-  description: ''
-  excluded: ''
-  feedback: ''
-  included: ''
-  intended_uses: ''
-  license:
-    explanation: "The asset isn't released, and hence the license is unknown.\n"
-    value: unknown
-  modality:
-    explanation: text (Chinese, English) and image
-    value: image, text
-  monitoring: ''
+
+- type: dataset
   name: Wu Dao dataset
+  # General
   organization: Beijing Academy of Artificial Intelligence
-  prohibited_uses: ''
-  quality_control: ''
-  sample: []
-  size: unknown
-  type: dataset
-  url: https://www.tsinghua.edu.cn/en/info/1420/10473.htm
-- access:
-    explanation: "The model wasn't released.\n"
-    value: closed
-  analysis: ''
-  created_date:
-    explanation: "The date that BAAI made a public announcement [[News Link]](https://mp.weixin.qq.com/s/BUQWZ5EdR19i40GuFofpBg).\n"
-    value: 2021-01-12
-  dependencies: [Wu Dao dataset]
   description: ''
-  feedback: ''
-  intended_uses: ''
-  license:
-    explanation: "The asset isn't released, and hence the license is unknown.\n"
-    value: unknown
-  modality:
-    explanation: text (Chinese, English) and image
-    value: image, text; image, text
-  model_card: ''
-  monitoring: ''
-  name: Wu Dao 2.0
-  organization: Beijing Academy of Artificial Intelligence
-  prohibited_uses: ''
-  quality_control: ''
-  size: 1.75T parameters (dense)
-  training_emissions: ''
-  training_hardware: ''
-  training_time: ''
-  type: model
+  created_date:
+    value: 2021-01-12
+    explanation: >
+      The date that BAAI made a public announcement
+      [[News Link]](https://mp.weixin.qq.com/s/BUQWZ5EdR19i40GuFofpBg).
   url: https://www.tsinghua.edu.cn/en/info/1420/10473.htm
+  datasheet: ''
+  modality: text (Chinese, English) and image
+  size: unknown
+  sample: []
+  analysis: ''
+  # Construction
+  dependencies: []
+  license:
+    value: unknown
+    explanation: >
+      The asset isn't released, and hence the license is unknown.
+  included: ''
+  excluded: ''
+  quality_control: ''
+  # Downstream
+  access: closed
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+
+- type: model
+  name: Wu Dao 2.0
+  # General
+  organization: Beijing Academy of Artificial Intelligence
+  description: ''
+  created_date:
+    value: 2021-01-12
+    explanation: >
+      The date that BAAI made a public announcement
+      [[News Link]](https://mp.weixin.qq.com/s/BUQWZ5EdR19i40GuFofpBg).
+  url: https://www.tsinghua.edu.cn/en/info/1420/10473.htm
+  model_card: ''
+  modality: text (Chinese, English) and image
+  size: 1.75T parameters (dense model)
+  analysis: ''
+  # Construction
+  dependencies: [Wu Dao dataset]
+  training_emissions: ''
+  training_time: ''
+  training_hardware: ''
+  quality_control: ''
+  # Downstream
+  access:
+    value: closed
+    explanation: >
+      The model wasn't released.
+  license:
+    value: unknown
+    explanation: >
+      The asset isn't released, and hence the license is unknown.
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
