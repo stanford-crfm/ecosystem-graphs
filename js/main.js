@@ -704,7 +704,7 @@ function loadAssetsAndRenderPageContent() {
     'assets/shanghai.yaml',
     'assets/shop.yaml',
     'assets/snap.yaml',
-    'assets/speak.yaml', 
+    'assets/speak.yaml',
     'assets/spotify.yaml',       
     'assets/stability.yaml',
     'assets/stanford.yaml',

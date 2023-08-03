@@ -640,3 +640,31 @@
   training_time: ''
   type: model
   url: https://arxiv.org/pdf/2208.11663.pdf
+- access: open
+  analysis: PEER is evaluated on core research questions intended to gauge language
+    understanding, proper use of citations, instruction following, and iterative
+    use.
+  created_date: 2022-08-24
+  dependencies: []
+  description: PEER is a collaborative language model that is trained to imitate
+    the entire writing process itself. PEER can write drafts, add suggestions, propose
+    edits and provide explanations for its actions.
+  feedback: ''
+  intended_uses: adapting LLMs to work with collaborative writing and updating.
+  license: ''
+  modality:
+    explanation: natural language text
+    value: text; text
+  model_card: ''
+  monitoring: ''
+  name: PEER
+  organization: Meta
+  prohibited_uses: ''
+  quality_control: Heuristics and edit filtering was used on data set, which consisted
+    mostly of Wikipedia pages.
+  size: 3B parameters (dense)
+  training_emissions: ''
+  training_hardware: 64 GPUs
+  training_time: ''
+  type: model
+  url: https://arxiv.org/pdf/2208.11663.pdf
