@@ -632,3 +632,52 @@
   training_time: ''
   type: model
   url: https://arxiv.org/pdf/2208.11663.pdf
+
+- access: open
+  analysis: MusicGen was evaluated on standard music benchmarks of Frechet Audio Distance, Kullback-Leibler Divergence, and its CLAP score.
+  created_date: 2023-08-02
+  dependencies: [Meta Music Initative Sound Collection, Shutterstock music collection, Pond5 music collection]
+  description: MusicGen is a simple and controllable model for music generation that doesn't require self-supervised semantic representation
+  feedback: https://huggingface.co/spaces/facebook/MusicGen/discussions
+  intended_uses: The primary use of MusicGen is research on AI-based music generation
+  license: MIT
+  modality:
+    explanation: MusicGen generates music from text prompts
+    value: text; audio
+  model_card: https://huggingface.co/spaces/facebook/MusicGen/blob/main/MODEL_CARD.md
+  monitoring: ''
+  name: MusicGen
+  organization: Meta
+  prohibited_uses: The model should not be used on downstream applications without further risk evaluation and mitigation. The model should not be used to intentionally create or disseminate music pieces that create hostile or alienating environments for people. This includes generating music that people would foreseeably find disturbing, distressing, or offensive; or content that propagates historical or current stereotypes.
+  quality_control: ''
+  size: 3.3B parameters (dense)
+  training_emissions: ''
+  training_hardware: ''
+  training_time: ''
+  type: model
+  url: https://huggingface.co/spaces/facebook/MusicGen/tree/main
+
+- access: open
+  analysis: Evaluated on Frechet Audio Distance and Kullback-Leibler Divergence as well as qualitative studies with human participants.
+  created_date: 2023-08-02
+  dependencies: [AudioSet, BBC sound effects, AudioCaps, Clotho v2, VGG-Sound, FSD50K, Free To Use Sounds, Sonniss Game Effects, WeSoundEffects, Paramount Motion - Odeon Cinematic Sound Effects]
+  description: AudioGen is an auto-regressive generative model that generates audio samples conditioned on text inputs
+  feedback: https://huggingface.co/facebook/audiogen-medium/discussions
+  intended_uses: The primary use of AudioGen is research on AI-based audio generation.
+  license: MIT
+  modality:
+    explanation: generates audio like environmental sound effects from text prompts
+    value: text; audio
+  model_card: https://github.com/facebookresearch/audiocraft/blob/main/model_cards/AUDIOGEN_MODEL_CARD.md
+  monitoring: ''
+  name: AudioGen
+  organization: Meta
+  prohibited_uses: The model should not be used on downstream applications without further risk evaluation and mitigation. The model should not be used to intentionally create or disseminate audio pieces that create hostile or alienating environments for people. This includes generating audio that people would foreseeably find disturbing, distressing, or offensive; or content that propagates historical or current stereotypes.
+  quality_control: ''
+  size: 1.5B parameters (dense)
+  training_emissions: ''
+  training_hardware: ''
+  training_time: ''
+  type: model
+  url: https://felixkreuk.github.io/audiogen/paper.pdf
+
