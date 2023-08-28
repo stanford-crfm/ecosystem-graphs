@@ -802,3 +802,26 @@
   training_time: 70 hours on 3 epochs
   type: model
   url: https://arxiv.org/pdf/2304.12244v1.pdf
+- access: open
+  analysis: Evaluated on four prominent code generation benchmarks HumanEval, HumanEval+, MBPP, and DS100.
+  created_date: 2023-08-26
+  dependencies: [Evol-Instruct, Alpaca dataset, StarCoder]
+  description: WizardCoder empowers Code LLMs with complex instruction fine-tuning, by adapting the Evol-Instruct method to the domain of code.
+  feedback: https://huggingface.co/WizardLM/WizardCoder-Python-34B-V1.0/discussions
+  intended_uses: ''
+  license: Apache 2.0
+  modality:
+    explanation: natural language text
+    value: text; text
+  model_card: https://huggingface.co/WizardLM/WizardCoder-Python-34B-V1.0
+  monitoring: ''
+  name: WizardCoder
+  organization: Microsoft
+  prohibited_uses: ''
+  quality_control: ''
+  size: 34B parameters (dense)
+  training_emissions: ''
+  training_hardware: ''
+  training_time: ''
+  type: model
+  url: https://arxiv.org/pdf/2306.08568.pdf

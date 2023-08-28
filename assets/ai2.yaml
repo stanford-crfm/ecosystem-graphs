@@ -93,3 +93,28 @@
   training_time: unknown
   type: model
   url: https://arxiv.org/pdf/2212.10465.pdf
+- access: open
+  analysis: Compared with other open and closed datasets in regards to size and quality control.
+  created_date: 2023-08-18
+  datasheet: https://drive.google.com/file/d/12gOf5I5RytsD159nSP7iim_5zN31FCXq/view
+  dependencies: []
+  description: Dolma is a dataset of 3 trillion tokens from a diverse mix of web content, academic publications, code, books, and encyclopedic materials
+  excluded: ''
+  feedback: ''
+  included: ''
+  intended_uses: ''
+  license:
+    explanation: license can be found at https://allenai.org/impact-license
+    value: custom
+  modality:
+    explanation: contains a mixture of text obtained from a web scrape, scientific content extracted from academic PDFs and its associated metadata, code over a variety of programming languages, reference material from Wikipedia and Wikibooks, as well as public domain books from Project Gutenberg.
+    value: text, text
+  monitoring: Quality filtration, deduplication, and risk mitigation via logistic qualifiers and regular expressions used.
+  name: Dolma
+  organization: AI2
+  prohibited_uses: ''
+  quality_control: ''
+  sample: []
+  size: 3T tokens
+  type: dataset
+  url: https://blog.allenai.org/dolma-3-trillion-tokens-open-llm-corpus-9a0ff4b8da64

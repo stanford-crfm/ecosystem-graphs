@@ -1337,3 +1337,26 @@
   type: application
   url: https://openai.com/product/gpt-4
   user_distribution: ''
+- access: limited
+  adaptation: ''
+  created_date: 2023-08-28
+  dependencies: [GPT-4]
+  description: ChatGPT Enterprise offers enterprise-grade security and privacy, unlimited higher-speed GPT-4 access, longer context windows for processing longer inputs, advanced data analysis capabilities, and customization options compared to OpenAI's previous offerings.
+  failures: ''
+  feedback: ''
+  intended_uses: ''
+  license:
+    explanation: Per the Terms of Use, a limited license is provided to the users
+      during their use of the API [[Section 2]](https://openai.com/policies/terms-of-use).
+    value: custom
+  monitoring: ''
+  monthly_active_users: ''
+  name: ChatGPT Enterprise
+  organization: OpenAI
+  output_space: ''
+  prohibited_uses: ''
+  quality_control: ''
+  terms_of_service: https://openai.com/policies/terms-of-use
+  type: application
+  url: https://openai.com/enterprise
+  user_distribution: ''

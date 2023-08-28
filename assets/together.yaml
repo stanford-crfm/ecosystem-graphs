@@ -132,3 +132,27 @@
   size: 1.2 trillion tokens
   type: dataset
   url: https://www.together.xyz/blog/redpajama
+- access: open
+  analysis: Model evaluated over AlpacaEval, Rouge score over BookSum, and accuracy over MQA.
+  created_date: 2023-08-18
+  dependencies: [LLaMA-2-70B-Chat outputs, BookSum dataset, MQA dataset, Together API, LLaMA-2-7B-32K]
+  description: Llama-2-7B-32K-Instruct is an open-source, long-context chat model finetuned from Llama-2-7B-32K, over high-quality instruction and chat data.
+  feedback: https://huggingface.co/togethercomputer/Llama-2-7B-32K-Instruct/discussions
+  intended_uses: ''
+  license: Apache 2.0
+  modality:
+    explanation: text
+    value: text; text
+  model_card: https://huggingface.co/togethercomputer/Llama-2-7B-32K-Instruct
+  monitoring: ''
+  name: Llama-2-7B-32K-Instruct
+  organization: Together
+  prohibited_uses: ''
+  quality_control: ''
+  size: 7B parameters (dense)
+  training_emissions: ''
+  training_hardware: ''
+  training_time: ''
+  type: model
+  url: https://together.ai/blog/llama-2-7b-32k-instruct
+

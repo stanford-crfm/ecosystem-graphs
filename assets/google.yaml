@@ -1821,8 +1821,8 @@
   analysis: Reports results on standard code benchmarks across a variety of programming
     languages.
   created_date: 2023-05-10
-  dependencies: [palm 2 dataset]
-  description: PaLM2 is a new state-of-the-art language model that has better multilingual
+  dependencies: [PaLM 2 dataset]
+  description: PaLM 2 is a new state-of-the-art language model that has better multilingual
     and reasoning capabilities and is more compute-efficient than its predecessor
     PaLM. PaLM 2 is a Transformer-based model trained using a mixture of objectives
     similar to UL2.
@@ -1841,7 +1841,9 @@
     within specific downstream applications without prior assessment
   quality_control: Employed de-duplication, removal of sensitive-PII and filtering.
     Added control tokens marking toxicity of text.
-  size: 3.6T parameters (dense)
+  size:
+    explanation: Model size is reported to be 340B parameters according to https://www.cnbc.com/2023/05/16/googles-palm-2-uses-nearly-five-times-more-text-data-than-predecessor.html, but Google has not confirmed anything.
+    value: unknown
   training_emissions: ''
   training_hardware: TPU v4 (number unspecified)
   training_time: ''
