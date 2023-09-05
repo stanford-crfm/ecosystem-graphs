@@ -1,5 +1,5 @@
----
-- name: HyperCLOVA
+- type: model
+  name: HyperCLOVA
   organization: Naver
   description: HyperClova is an autoregressive language model
   created_date:
@@ -19,7 +19,9 @@
     explanation: The model is not available for download or direct API use
     value: closed
   license:
-    explanation: "The asset isn't released, and hence the license is unknown.\n"
+    explanation: 'The asset isn''t released, and hence the license is unknown.
+
+      '
     value: unknown
   intended_uses: ''
   prohibited_uses: ''

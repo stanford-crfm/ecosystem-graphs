@@ -1,11 +1,12 @@
----
-- name: Transformify Automate
+- type: application
+  name: Transformify Automate
   organization: Transformify
   description: Transformify Automate is a platform for automated task integration
     using natural language prompts.
   created_date: 2023-05-30
   url: https://www.transformify.ai/automate
-  dependencies: [GPT-4]
+  dependencies:
+  - GPT-4
   adaptation: ''
   output_space: text and code
   quality_control: ''

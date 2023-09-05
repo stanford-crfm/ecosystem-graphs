@@ -1,5 +1,5 @@
----
-- name: DeepFloyd IF
+- type: model
+  name: DeepFloyd IF
   organization: Stability AI
   description: A text-to-image cascaded pixel diffusion model released in conjunction
     with AI research lab DeepFloyd.
@@ -11,7 +11,8 @@
     value: image, text; image, text
   analysis: Evaluated on the COCO dataset.
   size: 4.3B parameters (dense)
-  dependencies: [LAION-5B]
+  dependencies:
+  - LAION-5B
   training_emissions: ''
   training_time: ''
   training_hardware: ''
@@ -24,7 +25,8 @@
   prohibited_uses: ''
   monitoring: ''
   feedback: https://huggingface.co/DeepFloyd/IF-I-XL-v1.0/discussions
-- name: StableLM
+- type: model
+  name: StableLM
   organization: Stability AI
   description: Large language models trained on up to 1.5 trillion tokens.
   created_date: 2023-04-20
@@ -36,12 +38,12 @@
   analysis: ''
   size: 7B parameters (dense)
   dependencies:
-    - StableLM-Alpha dataset
-    - Alpaca dataset
-    - gpt4all dataset
-    - ShareGPT52K dataset
-    - Dolly dataset
-    - HH dataset
+  - StableLM-Alpha dataset
+  - Alpaca dataset
+  - gpt4all dataset
+  - ShareGPT52K dataset
+  - Dolly dataset
+  - HH dataset
   training_emissions: ''
   training_time: ''
   training_hardware: ''
@@ -52,7 +54,8 @@
   prohibited_uses: ''
   monitoring: ''
   feedback: ''
-- name: Stable Diffusion
+- type: application
+  name: Stable Diffusion
   organization: Stability AI
   description: Stable Diffusion is a generative software that creates images from
     text prompts.
@@ -74,7 +77,8 @@
   monthly_active_users: ''
   user_distribution: ''
   failures: ''
-- name: Stable Diffusion XL
+- type: application
+  name: Stable Diffusion XL
   organization: Stability AI
   description: Stable Diffusion XL is an updated version of Stable Diffusion, and
     creates descriptive images with shorter prompts and generate words within images.

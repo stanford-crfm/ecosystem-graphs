@@ -1,5 +1,5 @@
----
-- name: UnderwriteGPT
+- type: application
+  name: UnderwriteGPT
   organization: Paladin Group and Dais Technology
   description: UnderwriteGPT is the world's first generative AI underwriting tool.
   created_date: 2023-02-01

@@ -1,5 +1,5 @@
----
-- name: LP-MusicCaps
+- type: dataset
+  name: LP-MusicCaps
   organization: South Korea Graduate School of Culture Technology
   description: LP-MusicCaps is a LLM-based pseudo music caption dataset.
   created_date: 2023-07-31
@@ -8,9 +8,12 @@
   modality: {}
   size: 2.2M captions paired with 0.5M audio clips
   sample: []
-  analysis: Evaluated in comparison to the MusicCaps dataset and with respect to
-    n-gram, neural metrics.
-  dependencies: [MusicCaps, Million Song Dataset, Magnatagtune]
+  analysis: Evaluated in comparison to the MusicCaps dataset and with respect to n-gram,
+    neural metrics.
+  dependencies:
+  - MusicCaps
+  - Million Song Dataset
+  - Magnatagtune
   included: ''
   excluded: ''
   quality_control: ''

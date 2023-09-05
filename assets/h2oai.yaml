@@ -1,5 +1,5 @@
----
-- name: h2oGPT
+- type: model
+  name: h2oGPT
   organization: H2O AI
   description: Series of models fine-tuned on well-known LLMs using the h2oGPT repositories.
   created_date: 2023-06-16
@@ -10,7 +10,10 @@
     value: text; text
   analysis: Evaluated on EleutherAI evaluation harness.
   size: 20B parameters (dense)
-  dependencies: [GPT-NeoX, H2O AI OpenAssistant, h2oGPT Repositories]
+  dependencies:
+  - GPT-NeoX
+  - H2O AI OpenAssistant
+  - h2oGPT Repositories
   training_emissions: unknown
   training_time: unknown
   training_hardware: unspecified number of 48GB A100 NVIDIA GPUs

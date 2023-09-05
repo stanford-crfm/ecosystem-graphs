@@ -1,34 +1,47 @@
----
-- name: Crisis Contact Simulator
+- type: application
+  name: Crisis Contact Simulator
   organization: The Trevor Project
-  description: "Crisis Contact Simulator, developed as part of a collaboration with\
-    \ Google.org, helps train The Trevor Project counselors by mimicking to be a\
-    \ teen in crisis. Crisis Contact Simulator is used as part of the training programs\
-    \ for the Trevor Project's 24/7 digital crisis services that supports LGBTQ\
-    \ youth [[Trevor Project Blog]](https://www.thetrevorproject.org/blog/the-trevor-project-launches-new-ai-tool-to-support-crisis-counselor-training/).\n"
+  description: 'Crisis Contact Simulator, developed as part of a collaboration with
+    Google.org, helps train The Trevor Project counselors by mimicking to be a teen
+    in crisis. Crisis Contact Simulator is used as part of the training programs for
+    the Trevor Project''s 24/7 digital crisis services that supports LGBTQ youth [[Trevor
+    Project Blog]](https://www.thetrevorproject.org/blog/the-trevor-project-launches-new-ai-tool-to-support-crisis-counselor-training/).
+
+    '
   created_date:
-    explanation: "The release date of the blog post introducing Crisis Contact Simulator\
-      \ [[Trevor Project Blog]](https://www.thetrevorproject.org/blog/the-trevor-project-launches-new-ai-tool-to-support-crisis-counselor-training/).\n"
+    explanation: 'The release date of the blog post introducing Crisis Contact Simulator
+      [[Trevor Project Blog]](https://www.thetrevorproject.org/blog/the-trevor-project-launches-new-ai-tool-to-support-crisis-counselor-training/).
+
+      '
     value: 2021-03-24
   url: https://www.thetrevorproject.org/
-  dependencies: [OpenAI API]
+  dependencies:
+  - OpenAI API
   adaptation:
-    explanation: "The base GPT-2 model was fine-tuned on the previous conversations\
-      \ between new trainees and the Trevor Project counselors posing to be a fictional\
-      \ persona in crisis.\n"
+    explanation: 'The base GPT-2 model was fine-tuned on the previous conversations
+      between new trainees and the Trevor Project counselors posing to be a fictional
+      persona in crisis.
+
+      '
     value: Fine-tuning
   output_space: Dialogue
   quality_control:
-    explanation: "The tool can only be accessed by the Trevor Project will be counsolors\
-      \ for training purposes.\n"
+    explanation: 'The tool can only be accessed by the Trevor Project will be counsolors
+      for training purposes.
+
+      '
     value: Limited release
   access:
-    explanation: "The tool can only be accessed by the Trevor Project will be counsolors\
-      \ for training purposes.\n"
+    explanation: 'The tool can only be accessed by the Trevor Project will be counsolors
+      for training purposes.
+
+      '
     value: closed
   license: unknown
   terms_of_service: unknown
-  intended_uses: "Training counselors\n"
+  intended_uses: 'Training counselors
+
+    '
   prohibited_uses: unknown
   monitoring: unknown
   feedback: unknown

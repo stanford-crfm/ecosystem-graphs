@@ -1,5 +1,5 @@
----
-- name: ACT-1
+- type: model
+  name: ACT-1
   organization: Adept
   description: ACT-1 (ACtion Transformer) is a large-scale transformer model designed
     and trained specifically for taking actions on computers (use software tools,
@@ -21,7 +21,9 @@
   quality_control: ''
   access: closed
   license:
-    explanation: "The asset isn't released, and hence the license is unknown.\n"
+    explanation: 'The asset isn''t released, and hence the license is unknown.
+
+      '
     value: unknown
   intended_uses: ''
   prohibited_uses: ''

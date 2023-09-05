@@ -1,5 +1,5 @@
----
-- name: Cformers
+- type: application
+  name: Cformers
   organization: Nolano
   description: Cformers is a set of transformers that act as an API for AI inference
     in code.

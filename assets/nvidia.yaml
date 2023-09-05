@@ -1,5 +1,5 @@
----
-- name: Megatron-LM
+- type: model
+  name: Megatron-LM
   organization: NVIDIA
   description: Megatron-LM is an autoregressive language model
   created_date:
@@ -16,17 +16,22 @@
   training_hardware: 3072 A100 GPUs
   quality_control: unknown
   access:
-    explanation: "Neither the 8.3B parameter model trained to convergence nor the\
-      \ 1 trillion paramter model is available for download\n"
+    explanation: 'Neither the 8.3B parameter model trained to convergence nor the
+      1 trillion paramter model is available for download
+
+      '
     value: closed
   license:
-    explanation: "The asset isn't released, and hence the license is unknown.\n"
+    explanation: 'The asset isn''t released, and hence the license is unknown.
+
+      '
     value: unknown
   intended_uses: none
   prohibited_uses: none
   monitoring: none
   feedback: none
-- name: MineDojo
+- type: dataset
+  name: MineDojo
   organization: NVIDIA
   description: ''
   created_date: 2022-06-17
@@ -36,7 +41,10 @@
   size: 730k videos, 6k Wikipedia pages, 340k reddit posts
   sample: []
   analysis: ''
-  dependencies: [YouTube, Wikipedia, Reddit]
+  dependencies:
+  - YouTube
+  - Wikipedia
+  - Reddit
   included: ''
   excluded: ''
   quality_control: ''
@@ -46,7 +54,8 @@
   prohibited_uses: ''
   monitoring: ''
   feedback: ''
-- name: VIMA dataset
+- type: dataset
+  name: VIMA dataset
   organization: NVIDIA, Stanford
   description: ''
   created_date: 2022-10-06
@@ -56,7 +65,10 @@
   size: 200M parameters (dense model)
   sample: []
   analysis: ''
-  dependencies: [T5, Mask R-CNN, VIMA dataset]
+  dependencies:
+  - T5
+  - Mask R-CNN
+  - VIMA dataset
   included: ''
   excluded: ''
   quality_control: ''
@@ -66,7 +78,8 @@
   prohibited_uses: ''
   monitoring: ''
   feedback: ''
-- name: VIMA
+- type: model
+  name: VIMA
   organization: NVIDIA, Stanford
   description: ''
   created_date: 2022-10-06

@@ -1,5 +1,5 @@
----
-- name: OpenFold
+- type: model
+  name: OpenFold
   organization: Columbia
   description: OpenFold is an open source recreation of AlphaFold2.
   created_date: 2022-11-20
@@ -10,7 +10,9 @@
     value: image; image
   analysis: Evaluated on wide range of tasks using own evaluation benchmarks.
   size: ''
-  dependencies: [AlphaFold2, OpenProteinSet]
+  dependencies:
+  - AlphaFold2
+  - OpenProteinSet
   training_emissions: unknown
   training_time: 50,000 GPU hours
   training_hardware: Single A100 NVIDIA GPU

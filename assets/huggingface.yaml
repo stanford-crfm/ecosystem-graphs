@@ -1,5 +1,5 @@
----
-- name: CodeParrot
+- type: model
+  name: CodeParrot
   organization: HuggingFace
   description: CodeParrot is an autoregressive language model trained on code
   created_date:

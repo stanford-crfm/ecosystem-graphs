@@ -1,12 +1,16 @@
----
-- name: SBU Captions
+- type: dataset
+  name: SBU Captions
   organization: Stony Brook University
-  description: "SBU Captions Dataset is a collection of 1 million images and associated\
-    \ captions from Flickr, filtered so that the descriptions are likely to refer\
-    \ to visual content.\n"
+  description: 'SBU Captions Dataset is a collection of 1 million images and associated
+    captions from Flickr, filtered so that the descriptions are likely to refer to
+    visual content.
+
+    '
   created_date:
-    explanation: "The date the [[paper]](https://papers.nips.cc/paper_files/paper/2011/hash/5dd9db5e033da9c6fb5ba83c7a7ebea9-Abstract.html)\
-      \ was published.\n"
+    explanation: 'The date the [[paper]](https://papers.nips.cc/paper_files/paper/2011/hash/5dd9db5e033da9c6fb5ba83c7a7ebea9-Abstract.html)
+      was published.
+
+      '
     value: 2011-12-12
   url: https://proceedings.neurips.cc/paper/2011/file/5dd9db5e033da9c6fb5ba83c7a7ebea9-Paper.pdf
   datasheet: none
@@ -15,26 +19,30 @@
   sample: []
   analysis:
     explanation: See [[Section 5]](https://proceedings.neurips.cc/paper/2011/file/5dd9db5e033da9c6fb5ba83c7a7ebea9-Paper.pdf)
-    value: "Authors perform two quantitative evaluations for image captioning -\
-      \ direct user ratings of relevance and BLEU score. They also propose a new\
-      \ evaluation task: \"we propose a new evaluation task where a user is presented\
-      \ with two photographs and one caption. The user must assign the caption to\
-      \ the most relevant image. For evaluation we use a query image, a random image\
-      \ and a generated caption.\"\n"
-  dependencies: [Flickr]
+    value: 'Authors perform two quantitative evaluations for image captioning - direct
+      user ratings of relevance and BLEU score. They also propose a new evaluation
+      task: "we propose a new evaluation task where a user is presented with two photographs
+      and one caption. The user must assign the caption to the most relevant image.
+      For evaluation we use a query image, a random image and a generated caption."
+
+      '
+  dependencies:
+  - Flickr
   included:
     explanation: See [[Section 2]](https://proceedings.neurips.cc/paper/2011/file/5dd9db5e033da9c6fb5ba83c7a7ebea9-Paper.pdf)
     value: "\"To encourage visual descriptiveness in our collection, we select only\
-      \ those images with descriptions of satisfactory length based on observed\
-      \ lengths in visual descriptions. We also enforce that retained descriptions\
-      \ contain at least 2 words belonging to our term lists and at least one prepositional\
-      \ word, e.g. “on”, “under” which often indicate visible spatial relationships.\"\
-      \n"
+      \ those images with descriptions of satisfactory length based on observed lengths\
+      \ in visual descriptions. We also enforce that retained descriptions contain\
+      \ at least 2 words belonging to our term lists and at least one prepositional\
+      \ word, e.g. \u201Con\u201D, \u201Cunder\u201D which often indicate visible\
+      \ spatial relationships.\"\n"
   excluded:
     explanation: See [[Section 2]](https://proceedings.neurips.cc/paper/2011/file/5dd9db5e033da9c6fb5ba83c7a7ebea9-Paper.pdf)
-    value: "\"This produces a very large, but noisy initial set of photographs with\
-      \ associated text. We filter this set of photos so that the descriptions attached\
-      \ to a picture are relevant and visually descriptive.\"\n"
+    value: '"This produces a very large, but noisy initial set of photographs with
+      associated text. We filter this set of photos so that the descriptions attached
+      to a picture are relevant and visually descriptive."
+
+      '
   quality_control: unknown
   access:
     explanation: The dataset is available for download on the [[SBU Captions Dataset

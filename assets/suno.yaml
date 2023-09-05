@@ -1,5 +1,5 @@
----
-- name: Bark
+- type: model
+  name: Bark
   organization: Suno
   description: Bark is a text-to-audio model that can generate multilingual speech
     as well as other noises.
@@ -11,7 +11,8 @@
     value: audio, text; audio, text
   analysis: ''
   size: ''
-  dependencies: [AudioLM]
+  dependencies:
+  - AudioLM
   training_emissions: unknown
   training_time: unknown
   training_hardware: ''

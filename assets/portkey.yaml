@@ -1,5 +1,5 @@
----
-- name: Portkey
+- type: application
+  name: Portkey
   organization: Portkey
   description: Portkey is a hosted middleware that allows users to create generative
     AI applications

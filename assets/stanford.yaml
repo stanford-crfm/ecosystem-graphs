@@ -1,5 +1,5 @@
----
-- name: BioMedLM
+- type: model
+  name: BioMedLM
   organization: Stanford
   description: ''
   created_date: 2022-12-15
@@ -10,7 +10,8 @@
     value: text; text
   analysis: ''
   size: 2.7B parameters (dense)
-  dependencies: [The Pile]
+  dependencies:
+  - The Pile
   training_emissions: ''
   training_time: ''
   training_hardware: ''
@@ -21,7 +22,8 @@
   prohibited_uses: ''
   monitoring: ''
   feedback: ''
-- name: RoentGen
+- type: model
+  name: RoentGen
   organization: Stanford
   description: RoentGen is a generative medical imaging model that can create visually
     convincing X-ray images.
@@ -34,7 +36,9 @@
   analysis: Evaluated on own framework that tests domain-specific tasks in medical
     field.
   size: 330M parameters (dense)
-  dependencies: [Stable Diffusion, RoentGen radiology dataset]
+  dependencies:
+  - Stable Diffusion
+  - RoentGen radiology dataset
   training_emissions: unknown
   training_time: 60k training steps per day
   training_hardware: 64 A100 GPUs
@@ -45,7 +49,8 @@
   prohibited_uses: ''
   monitoring: ''
   feedback: ''
-- name: CORGI
+- type: model
+  name: CORGI
   organization: Stanford
   description: Model trained to generate language corrections for physical control
     tasks.
@@ -58,11 +63,14 @@
   analysis: Evaluated on three physical control tasks, drawing, steering, and human
     body movement on various dynamics
   size: 124M parameters (dense)
-  dependencies: [GPT-2, BABEL, text-davinci-003]
+  dependencies:
+  - GPT-2
+  - BABEL
+  - text-davinci-003
   training_emissions: ''
   training_time:
-    explanation: The authors do not report the training time, but do report that
-      they train for 200 epochs.
+    explanation: The authors do not report the training time, but do report that they
+      train for 200 epochs.
     value: unknown
   training_hardware: one NVIDIA A40 GPU
   quality_control: ''

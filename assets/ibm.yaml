@@ -1,5 +1,5 @@
----
-- name: Prithvi
+- type: model
+  name: Prithvi
   organization: IBM
   description: Prithvi is a first-of-its-kind temporal Vision transformer pre-trained
     by the IBM and NASA team on contiguous US Harmonised Landsat Sentinel 2 (HLS)
@@ -15,7 +15,8 @@
     value: text, video; text, video
   analysis: ''
   size: 100M parameters (dense)
-  dependencies: [NASA HLS data]
+  dependencies:
+  - NASA HLS data
   training_emissions: ''
   training_time: ''
   training_hardware: ''

@@ -1,5 +1,5 @@
----
-- name: Vicuna
+- type: model
+  name: Vicuna
   organization: LMSYS
   description: An open-source chatbot trained by fine-tuning LLaMA on user-shared
     conversations collected from ShareGPT.
@@ -11,7 +11,9 @@
     value: text; text
   analysis: Evaluated against similar LLMs using GPT-4 as a judge.
   size: 13B parameters (dense)
-  dependencies: [LLaMA, ShareGPT conversations data]
+  dependencies:
+  - LLaMA
+  - ShareGPT conversations data
   training_emissions: ''
   training_time: 1 day
   training_hardware: 8 A100 GPUs

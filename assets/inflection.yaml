@@ -1,5 +1,5 @@
----
-- name: Inflection-1
+- type: model
+  name: Inflection-1
   organization: Inflection AI
   description: Inflection AI's in-house LLM, which powers Pi and will soon be available
     via Inflection AI's conversational API.
@@ -23,13 +23,15 @@
   prohibited_uses: ''
   monitoring: ''
   feedback: ''
-- name: Pi
+- type: application
+  name: Pi
   organization: Inflection AI
-  description: Personal AI chatbot designed to be conversational and specialized
-    in emotional intelligence.
+  description: Personal AI chatbot designed to be conversational and specialized in
+    emotional intelligence.
   created_date: 2023-05-02
   url: https://inflection.ai/press
-  dependencies: [Inflection-1]
+  dependencies:
+  - Inflection-1
   adaptation: ''
   output_space: natural language text responses
   quality_control: ''

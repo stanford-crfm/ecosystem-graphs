@@ -1,5 +1,5 @@
----
-- name: GPT-JT
+- type: model
+  name: GPT-JT
   organization: Together
   description: ''
   created_date: 2022-11-29
@@ -10,7 +10,10 @@
     value: text; text
   analysis: ''
   size: 6B parameters (dense)
-  dependencies: [GPT-J, P3, NaturalInstructions-v2]
+  dependencies:
+  - GPT-J
+  - P3
+  - NaturalInstructions-v2
   training_emissions: ''
   training_time: ''
   training_hardware: ''
@@ -21,7 +24,8 @@
   prohibited_uses: ''
   monitoring: ''
   feedback: ''
-- name: GPT-NeoXT-Chat-Base
+- type: model
+  name: GPT-NeoXT-Chat-Base
   organization: Together
   description: ''
   created_date: 2023-03-10
@@ -32,7 +36,9 @@
     value: text; text
   analysis: ''
   size: 20B parameters (dense)
-  dependencies: [GPT-NeoX, OIG-43M]
+  dependencies:
+  - GPT-NeoX
+  - OIG-43M
   training_emissions: ''
   training_time: ''
   training_hardware: ''
@@ -43,7 +49,8 @@
   prohibited_uses: ''
   monitoring: ''
   feedback: ''
-- name: OpenChatKit moderation model
+- type: model
+  name: OpenChatKit moderation model
   organization: Together
   description: ''
   created_date: 2023-03-10
@@ -54,7 +61,9 @@
     value: text; text
   analysis: ''
   size: 6B parameters (dense)
-  dependencies: [GPT-JT, OIG-moderation]
+  dependencies:
+  - GPT-JT
+  - OIG-moderation
   training_emissions: ''
   training_time: ''
   training_hardware: ''
@@ -65,7 +74,8 @@
   prohibited_uses: ''
   monitoring: ''
   feedback: ''
-- name: OIG-43M
+- type: dataset
+  name: OIG-43M
   organization: Together, LAION, Ontocord
   description: ''
   created_date: 2023-03-10
@@ -75,7 +85,10 @@
   size: 43M instructions
   sample: []
   analysis: ''
-  dependencies: [P3, NaturalInstructions-v2, FLAN dataset]
+  dependencies:
+  - P3
+  - NaturalInstructions-v2
+  - FLAN dataset
   included: ''
   excluded: ''
   quality_control: ''
@@ -85,7 +98,8 @@
   prohibited_uses: ''
   monitoring: ''
   feedback: ''
-- name: OIG-moderation
+- type: dataset
+  name: OIG-moderation
   organization: Together, LAION, Ontocord
   description: ''
   created_date: 2023-03-10
@@ -105,7 +119,8 @@
   prohibited_uses: ''
   monitoring: ''
   feedback: ''
-- name: RedPajama-Data
+- type: dataset
+  name: RedPajama-Data
   organization: Together
   description: The RedPajama base dataset is a 1.2 trillion token fully-open dataset
     created by following the recipe described in the LLaMA paper
@@ -118,7 +133,9 @@
   size: 1.2 trillion tokens
   sample: []
   analysis: ''
-  dependencies: [GitHub, Wikipedia]
+  dependencies:
+  - GitHub
+  - Wikipedia
   included: ''
   excluded: ''
   quality_control: ''
@@ -128,7 +145,8 @@
   prohibited_uses: ''
   monitoring: ''
   feedback: ''
-- name: Llama-2-7B-32K-Instruct
+- type: model
+  name: Llama-2-7B-32K-Instruct
   organization: Together
   description: Llama-2-7B-32K-Instruct is an open-source, long-context chat model
     finetuned from Llama-2-7B-32K, over high-quality instruction and chat data.
@@ -142,11 +160,11 @@
     over MQA.
   size: 7B parameters (dense)
   dependencies:
-    - LLaMA-2-70B-Chat outputs
-    - BookSum dataset
-    - MQA dataset
-    - Together API
-    - LLaMA-2-7B-32K
+  - LLaMA-2-70B-Chat outputs
+  - BookSum dataset
+  - MQA dataset
+  - Together API
+  - LLaMA-2-7B-32K
   training_emissions: ''
   training_time: ''
   training_hardware: ''

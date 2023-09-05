@@ -1,5 +1,5 @@
----
-- name: ChatGLM
+- type: model
+  name: ChatGLM
   organization: ChatGLM
   description: ChatGLM is a Chinese-English language model with question and answer
     and dialogue functions, and is aimed at a Chinese audience.

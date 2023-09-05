@@ -1,5 +1,5 @@
----
-- name: Neeva dataset
+- type: dataset
+  name: Neeva dataset
   organization: Neeva
   description: ''
   created_date: unknown
@@ -15,13 +15,16 @@
   quality_control: ''
   access: closed
   license:
-    explanation: "The asset isn't released, and hence the license is unknown.\n"
+    explanation: 'The asset isn''t released, and hence the license is unknown.
+
+      '
     value: unknown
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
   feedback: ''
-- name: Neeva model
+- type: model
+  name: Neeva model
   organization: Neeva
   description: ''
   created_date: unknown
@@ -30,20 +33,24 @@
   modality: {}
   analysis: ''
   size: ''
-  dependencies: [Neeva dataset]
+  dependencies:
+  - Neeva dataset
   training_emissions: ''
   training_time: ''
   training_hardware: ''
   quality_control: ''
   access: closed
   license:
-    explanation: "The asset isn't released, and hence the license is unknown.\n"
+    explanation: 'The asset isn''t released, and hence the license is unknown.
+
+      '
     value: unknown
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
   feedback: ''
-- name: NeevaAI
+- type: application
+  name: NeevaAI
   organization: Neeva
   description: NeevaAI is an AI-powered search tool that combines the capabilities
     of LLMs with Neeva's independent in-house search stack to create a unique and
@@ -53,18 +60,21 @@
       NeevaAI.
     value: 2023-01-06
   url: https://neeva.com/blog/introducing-neevaai
-  dependencies: [Neeva model]
+  dependencies:
+  - Neeva model
   adaptation: ''
   output_space: ''
   quality_control: ''
   access: open
   license:
-    explanation: "\"If you comply with these Terms, Neeva grants to you, during\
-      \ the term of these Terms, a limited non-exclusive, non-transferable license,\
-      \ with no right to sublicense, to download and install the App on your personal\
-      \ computers, mobile handsets, tablets, wearable devices, and/or other devices\
-      \ and to run the App solely for your own personal non-commercial purposes.\"\
-      \ - excerpt from the Terms of Service document.\n"
+    explanation: '"If you comply with these Terms, Neeva grants to you, during the
+      term of these Terms, a limited non-exclusive, non-transferable license, with
+      no right to sublicense, to download and install the App on your personal computers,
+      mobile handsets, tablets, wearable devices, and/or other devices and to run
+      the App solely for your own personal non-commercial purposes." - excerpt from
+      the Terms of Service document.
+
+      '
     value: Custom
   terms_of_service: https://neeva.com/terms
   intended_uses: ''

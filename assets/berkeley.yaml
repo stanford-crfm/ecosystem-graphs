@@ -1,8 +1,8 @@
----
-- name: Koala
+- type: model
+  name: Koala
   organization: Berkeley
-  description: A relatively small chatbot trained by fine-tuning Meta’s LLaMA on
-    dialogue data gathered from the web.
+  description: "A relatively small chatbot trained by fine-tuning Meta\u2019s LLaMA\
+    \ on dialogue data gathered from the web."
   created_date: 2023-04-03
   url: https://bair.berkeley.edu/blog/2023/04/03/koala/
   model_card: https://huggingface.co/TheBloke/koala-7B-GPTQ-4bit-128g
@@ -11,7 +11,9 @@
     value: text; text
   analysis: Evaluated in comparison with ChatGPT and Stanford Alpaca.
   size: 13B parameters (dense)
-  dependencies: [LLaMA, web-scraped dialogue data]
+  dependencies:
+  - LLaMA
+  - web-scraped dialogue data
   training_emissions: ''
   training_time: 6 hours
   training_hardware: 8 A100 GPUs
@@ -22,7 +24,8 @@
   prohibited_uses: ''
   monitoring: ''
   feedback: https://huggingface.co/TheBloke/koala-7B-GPTQ-4bit-128g/discussions
-- name: Gorilla
+- type: model
+  name: Gorilla
   organization: Berkeley
   description: Gorilla is a finetuned LLaMA-based model that surpasses the performance
     of GPT-4 on writing API calls.
@@ -35,7 +38,9 @@
   analysis: Evaluated using AST sub-tree matching technique and compared to other
     models in terms of API functionality accuracy.
   size: 7B parameters (dense)
-  dependencies: [LLaMA, Gorilla document retriever]
+  dependencies:
+  - LLaMA
+  - Gorilla document retriever
   training_emissions: ''
   training_time: ''
   training_hardware: ''
@@ -48,7 +53,8 @@
   prohibited_uses: ''
   monitoring: ''
   feedback: ''
-- name: OpenLLaMA
+- type: model
+  name: OpenLLaMA
   organization: Berkeley
   description: OpenLlama is an open source reproduction of Meta's LLaMA model.
   created_date: 2023-05-03
@@ -59,7 +65,8 @@
     value: text; text
   analysis: Evaluated on wide range of tasks using own evaluation benchmarks.
   size: 17B parameters (dense)
-  dependencies: [RedPajama]
+  dependencies:
+  - RedPajama
   training_emissions: unknown
   training_time: unknown
   training_hardware: ''

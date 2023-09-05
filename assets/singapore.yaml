@@ -1,5 +1,5 @@
----
-- name: GOAT
+- type: model
+  name: GOAT
   organization: National University of Singapore
   description: GOAT is a fine-tuned LLaMA model which uses the tokenization of numbers
     to significantly outperform benchmark standards on a range of arithmetic tasks.
@@ -12,7 +12,9 @@
   analysis: Performance assessed on BIG-bench arithmetic sub-task, and various elementary
     arithmetic tasks.
   size: 7B parameters (dense)
-  dependencies: [LLaMA, GOAT dataset]
+  dependencies:
+  - LLaMA
+  - GOAT dataset
   training_emissions: unknown
   training_time: unknown
   training_hardware: 24 GB VRAM GPU

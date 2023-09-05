@@ -1,5 +1,5 @@
----
-- name: CodeGen
+- type: model
+  name: CodeGen
   organization: Salesforce
   description: CodeGen is a language model for code
   created_date:
@@ -26,7 +26,8 @@
   prohibited_uses: ''
   monitoring: ''
   feedback: ''
-- name: BLIP
+- type: model
+  name: BLIP
   organization: Salesforce
   description: ''
   created_date: 2022-01-28
@@ -38,14 +39,14 @@
   analysis: ''
   size: ''
   dependencies:
-    - ViT-B
-    - BERT
-    - COCO
-    - Visual Genome
-    - Conceptual Captions
-    - Conceptual 12M
-    - SBU Captions
-    - LAION-115M
+  - ViT-B
+  - BERT
+  - COCO
+  - Visual Genome
+  - Conceptual Captions
+  - Conceptual 12M
+  - SBU Captions
+  - LAION-115M
   training_emissions: ''
   training_time: ''
   training_hardware: ''
@@ -56,7 +57,8 @@
   prohibited_uses: ''
   monitoring: ''
   feedback: ''
-- name: LAION-115M
+- type: dataset
+  name: LAION-115M
   organization: Salesforce
   description: ''
   created_date: 2022-01-28
@@ -68,7 +70,8 @@
   size: 115M image-text pairs
   sample: []
   analysis: ''
-  dependencies: [LAION-400M]
+  dependencies:
+  - LAION-400M
   included: ''
   excluded: ''
   quality_control: ''
@@ -78,19 +81,22 @@
   prohibited_uses: ''
   monitoring: ''
   feedback: ''
-- name: EinsteinGPT
+- type: application
+  name: EinsteinGPT
   organization: Salesforce
-  description: EinsteinGPT is generative AI for customer relationship management
-    (CRFM).
+  description: EinsteinGPT is generative AI for customer relationship management (CRFM).
   created_date: 2023-03-07
   url: https://www.salesforce.com/products/einstein/overview/?d=cta-body-promo-8
-  dependencies: [ChatGPT API]
+  dependencies:
+  - ChatGPT API
   adaptation: ''
   output_space: ''
   quality_control: ''
   access: limited
   license:
-    explanation: "The asset isn't released, and hence the license is unknown.\n"
+    explanation: 'The asset isn''t released, and hence the license is unknown.
+
+      '
     value: unknown
   terms_of_service: ''
   intended_uses: ''

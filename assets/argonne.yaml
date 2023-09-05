@@ -1,5 +1,5 @@
----
-- name: GenSLM
+- type: model
+  name: GenSLM
   organization: Argonne National Laboratory
   description: ''
   created_date: 2022-10-11
@@ -10,7 +10,9 @@
     value: text; text
   analysis: ''
   size: 25B parameters (dense)
-  dependencies: [SARS-CoV-2 genome dataset, BV-BRC dataset]
+  dependencies:
+  - SARS-CoV-2 genome dataset
+  - BV-BRC dataset
   training_emissions: ''
   training_time: ''
   training_hardware: ''

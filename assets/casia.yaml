@@ -1,5 +1,5 @@
----
-- name: BigTrans
+- type: model
+  name: BigTrans
   organization: Institute of Automation Chinese Academy of Sciences
   description: BigTrans is a model which adapts LLaMA that covers only 20 languages
     and enhances it with multilingual translation capability on more than 100 languages
@@ -12,7 +12,10 @@
   analysis: Reports results on standard translation benchmarks across 102 languages
     in comparison with Google Translate and ChatGPT
   size: 13B parameters (dense)
-  dependencies: [LLaMA, CLUE, BigTrans parallel dataset]
+  dependencies:
+  - LLaMA
+  - CLUE
+  - BigTrans parallel dataset
   training_emissions: unknown
   training_time: unknown
   training_hardware: 16 A100 GPUs with 80 GB of RAM
