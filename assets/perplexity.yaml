@@ -1,50 +1,48 @@
 ---
-- access: open
-  adaptation: ''
+- name: Perplexity Ask
+  organization: Perplexity
+  description: Perplexity Ask is a new search interface that uses advanced artificial
+    intelligence technologies
   created_date:
     explanation: Perplexity Ask was announced in a [[Twitter post]](https://twitter.com/perplexity_ai/status/1600551871554338816?s=20)
       by the company.
     value: 2022-12-07
+  url: https://www.perplexity.ai/
   dependencies: [GPT-3.5, Bing Search]
-  description: Perplexity Ask is a new search interface that uses advanced artificial
-    intelligence technologies
-  failures: ''
-  feedback: ''
-  intended_uses: ''
+  adaptation: ''
+  output_space: ''
+  quality_control: ''
+  access: open
   license:
     explanation: No license was found.
     value: none
-  monitoring: ''
-  monthly_active_users: ''
-  name: Perplexity Ask
-  organization: Perplexity
-  output_space: ''
-  prohibited_uses: ''
-  quality_control: ''
   terms_of_service: ''
-  type: application
-  url: https://www.perplexity.ai/
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+  monthly_active_users: ''
   user_distribution: ''
-- access: deprecated
-  adaptation: ''
-  created_date: 2022-12-15
-  dependencies: [Perplexity Ask, OpenAI API]
+  failures: ''
+- name: Bird SQL
+  organization: Perplexity
   description: Twitter search interface that is powered by Perplexity's structured
     search engine.
-  failures: ''
-  feedback: ''
-  intended_uses: ''
+  created_date: 2022-12-15
+  url: https://www.perplexity.ai/sql
+  dependencies: [Perplexity Ask, OpenAI API]
+  adaptation: ''
+  output_space: ''
+  quality_control: ''
+  access: deprecated
   license:
     explanation: No license was found.
     value: none
-  monitoring: ''
-  monthly_active_users: ''
-  name: Bird SQL
-  organization: Perplexity
-  output_space: ''
-  prohibited_uses: ''
-  quality_control: ''
   terms_of_service: ''
-  type: application
-  url: https://www.perplexity.ai/sql
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+  monthly_active_users: ''
   user_distribution: ''
+  failures: ''

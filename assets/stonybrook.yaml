@@ -1,9 +1,18 @@
 ---
-- access:
-    explanation: The dataset is available for download on the [[SBU Captions Dataset
-      website]](https://www.cs.rice.edu/~vo9/sbucaptions/), along with additional
-      resources.
-    value: open
+- name: SBU Captions
+  organization: Stony Brook University
+  description: "SBU Captions Dataset is a collection of 1 million images and associated\
+    \ captions from Flickr, filtered so that the descriptions are likely to refer\
+    \ to visual content.\n"
+  created_date:
+    explanation: "The date the [[paper]](https://papers.nips.cc/paper_files/paper/2011/hash/5dd9db5e033da9c6fb5ba83c7a7ebea9-Abstract.html)\
+      \ was published.\n"
+    value: 2011-12-12
+  url: https://proceedings.neurips.cc/paper/2011/file/5dd9db5e033da9c6fb5ba83c7a7ebea9-Paper.pdf
+  datasheet: none
+  modality: {}
+  size: 1M image-text pairs
+  sample: []
   analysis:
     explanation: See [[Section 5]](https://proceedings.neurips.cc/paper/2011/file/5dd9db5e033da9c6fb5ba83c7a7ebea9-Paper.pdf)
     value: "Authors perform two quantitative evaluations for image captioning -\
@@ -12,21 +21,7 @@
       \ with two photographs and one caption. The user must assign the caption to\
       \ the most relevant image. For evaluation we use a query image, a random image\
       \ and a generated caption.\"\n"
-  created_date:
-    explanation: "The date the [[paper]](https://papers.nips.cc/paper_files/paper/2011/hash/5dd9db5e033da9c6fb5ba83c7a7ebea9-Abstract.html)\
-      \ was published.\n"
-    value: 2011-12-12
-  datasheet: none
   dependencies: [Flickr]
-  description: "SBU Captions Dataset is a collection of 1 million images and associated\
-    \ captions from Flickr, filtered so that the descriptions are likely to refer\
-    \ to visual content.\n"
-  excluded:
-    explanation: See [[Section 2]](https://proceedings.neurips.cc/paper/2011/file/5dd9db5e033da9c6fb5ba83c7a7ebea9-Paper.pdf)
-    value: "\"This produces a very large, but noisy initial set of photographs with\
-      \ associated text. We filter this set of photos so that the descriptions attached\
-      \ to a picture are relevant and visually descriptive.\"\n"
-  feedback: ''
   included:
     explanation: See [[Section 2]](https://proceedings.neurips.cc/paper/2011/file/5dd9db5e033da9c6fb5ba83c7a7ebea9-Paper.pdf)
     value: "\"To encourage visual descriptiveness in our collection, we select only\
@@ -35,17 +30,21 @@
       \ contain at least 2 words belonging to our term lists and at least one prepositional\
       \ word, e.g. “on”, “under” which often indicate visible spatial relationships.\"\
       \n"
-  intended_uses: ''
+  excluded:
+    explanation: See [[Section 2]](https://proceedings.neurips.cc/paper/2011/file/5dd9db5e033da9c6fb5ba83c7a7ebea9-Paper.pdf)
+    value: "\"This produces a very large, but noisy initial set of photographs with\
+      \ associated text. We filter this set of photos so that the descriptions attached\
+      \ to a picture are relevant and visually descriptive.\"\n"
+  quality_control: unknown
+  access:
+    explanation: The dataset is available for download on the [[SBU Captions Dataset
+      website]](https://www.cs.rice.edu/~vo9/sbucaptions/), along with additional
+      resources.
+    value: open
   license:
     explanation: No license was found.
     value: none
-  modality: {}
-  monitoring: none
-  name: SBU Captions
-  organization: Stony Brook University
+  intended_uses: ''
   prohibited_uses: ''
-  quality_control: unknown
-  sample: []
-  size: 1M image-text pairs
-  type: dataset
-  url: https://proceedings.neurips.cc/paper/2011/file/5dd9db5e033da9c6fb5ba83c7a7ebea9-Paper.pdf
+  monitoring: none
+  feedback: ''

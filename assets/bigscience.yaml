@@ -1,146 +1,144 @@
 ---
-- access:
-    explanation: While not all of the ROOTS corpus is publicly accessible, the majority
-      is through [this form](https://docs.google.com/forms/d/e/1FAIpQLSdq50O1x4dkdGI4dwsmchFuNI0KCWEDiKUYxvd0r0_sl6FfAQ/viewform?usp=send_form)
-    value: open
-  analysis: https://huggingface.co/spaces/bigscience-data/roots-search
-  created_date: 2022-06-06
-  datasheet: https://huggingface.co/spaces/bigscience-data/bigscience-corpus
-  dependencies: []
+- name: ROOTS
+  organization: BigScience
   description: The Responsible Open-science Open-collaboration Text Sources (ROOTS)
     corpus, a 1.6TB dataset spanning 59 languages that was used to train the 176-billion-parameter
     BigScience Large Open-science Open-access Multilingual (BLOOM) language model.
-  excluded: unknown
-  feedback: https://huggingface.co/spaces/bigscience-data/roots-search/discussions
+  created_date: 2022-06-06
+  url: https://openreview.net/forum?id=UoEw6KigkUn
+  datasheet: https://huggingface.co/spaces/bigscience-data/bigscience-corpus
+  modality: code, text
+  size: 1.6TB
+  sample: [https://huggingface.co/spaces/bigscience-data/roots-search]
+  analysis: https://huggingface.co/spaces/bigscience-data/roots-search
+  dependencies: []
   included: See section 2 of the paper.
-  intended_uses: To empower large-scale monolingual and multilingual modeling projects
-    with both the data and the processing tools, as well as stimulate research around
-    this large multilingual corpus.
+  excluded: unknown
+  quality_control: Data collection involved merging and deduplicating searches to
+    remove menus, HTML tags. Further, a quality improvement pipeline was implemented.
+  access:
+    explanation: While not all of the ROOTS corpus is publicly accessible, the majority
+      is through [this form](https://docs.google.com/forms/d/e/1FAIpQLSdq50O1x4dkdGI4dwsmchFuNI0KCWEDiKUYxvd0r0_sl6FfAQ/viewform?usp=send_form)
+    value: open
   license:
     explanation: Each constituent subset of the dataset will be released under the
       license that applies to it. ([See individual dataset page for specific license
       information](https://hf.co/bigscience-data))
     value: custom
-  modality:
-    explanation: text (46 languages) and code (13 programming languages)
-    value: code, text
-  monitoring: none
-  name: ROOTS
-  organization: BigScience
+  intended_uses: To empower large-scale monolingual and multilingual modeling projects
+    with both the data and the processing tools, as well as stimulate research around
+    this large multilingual corpus.
   prohibited_uses: none
-  quality_control: Data collection involved merging and deduplicating searches to
-    remove menus, HTML tags. Further, a quality improvement pipeline was implemented.
-  sample: [https://huggingface.co/spaces/bigscience-data/roots-search]
-  size: 1.6TB
-  type: dataset
-  url: https://openreview.net/forum?id=UoEw6KigkUn
-- access: open
-  analysis: See the paper.
-  created_date: 2022-10-15
-  datasheet: https://huggingface.co/datasets/bigscience/P3
-  dependencies: []
+  monitoring: none
+  feedback: https://huggingface.co/spaces/bigscience-data/roots-search/discussions
+- name: P3
+  organization: BigScience
   description: The Public Pool of Prompts (P3) are prompts written in an unified
     format use to train T0++.
-  excluded: We conservatively decided not to prompt datasets that contain potentially
-    harmful content (for instance, datasets built on social media content).
-  feedback: Point of Contact is [Victor Sanh](https://huggingface.co/datasets/bigscience/P3)
+  created_date: 2022-10-15
+  url: https://arxiv.org/pdf/2110.08207.pdf
+  datasheet: https://huggingface.co/datasets/bigscience/P3
+  modality: text
+  size: 2000 prompts
+  sample: [https://huggingface.co/datasets/bigscience/P3/viewer]
+  analysis: See the paper.
+  dependencies: []
   included: The Public Pool of Prompts relies on the Hugging Face Dataset library.
     Any public dataset in the Datasets library can be prompted. We select the datasets
     that have at least one subset in English and excluded datasets containing (predominantly)
     non-natural language examples.
-  intended_uses: Multitask finetuning of language models.
-  license: Apache 2.0
-  modality:
-    explanation: text (English)
-    value: text
-  monitoring: none
-  name: P3
-  organization: BigScience
-  prohibited_uses: none
+  excluded: We conservatively decided not to prompt datasets that contain potentially
+    harmful content (for instance, datasets built on social media content).
   quality_control: Data collection involved merging and deduplicating searches to
     remove menus, HTML tags. Further, a quality improvement pipeline was implemented.
-  sample: [https://huggingface.co/datasets/bigscience/P3/viewer]
-  size: 2000 prompts
-  type: dataset
-  url: https://arxiv.org/pdf/2110.08207.pdf
-- access: open
-  analysis: See the paper.
-  created_date: 2022-11-03
-  datasheet: https://huggingface.co/datasets/bigscience/xP3
-  dependencies: [P3]
+  access: open
+  license: Apache 2.0
+  intended_uses: Multitask finetuning of language models.
+  prohibited_uses: none
+  monitoring: none
+  feedback: Point of Contact is [Victor Sanh](https://huggingface.co/datasets/bigscience/P3)
+- name: xP3
+  organization: BigScience
   description: xP3 (Crosslingual Public Pool of Prompts) is a collection of prompts
     and datasets across 46 of languages & 16 NLP tasks. It is used for the training
     of BLOOMZ and mT0, multilingual language models capable of following human instructions
     in dozens of languages zero-shot.
+  created_date: 2022-11-03
+  url: https://arxiv.org/abs/2211.01786
+  datasheet: https://huggingface.co/datasets/bigscience/xP3
+  modality: code, text
+  size: 9.4GB
+  sample: [https://huggingface.co/datasets/bigscience/xP3/viewer]
+  analysis: See the paper.
+  dependencies: [P3]
+  included: xP3 adds 28 multilingual datasets to P3 based on the P3 task taxonomy.
   excluded: We conservatively decided not to prompt datasets that contain potentially
     harmful content (for instance, datasets built on social media content).
-  feedback: Point of Contact is [Niklas Muennighoff](https://huggingface.co/datasets/bigscience/xP3)
-  included: xP3 adds 28 multilingual datasets to P3 based on the P3 task taxonomy.
-  intended_uses: Multitask finetuning of language models.
-  license: Apache 2.0
-  modality:
-    explanation: text (46 languages) and code (13 programming languages)
-    value: code, text
-  monitoring: none
-  name: xP3
-  organization: BigScience
-  prohibited_uses: none
   quality_control: Data collection involved merging and deduplicating searches to
     remove menus, HTML tags. Further, a quality improvement pipeline was implemented.
-  sample: [https://huggingface.co/datasets/bigscience/xP3/viewer]
-  size: 9.4GB
-  type: dataset
-  url: https://arxiv.org/abs/2211.01786
-- access: open
-  analysis: ''
+  access: open
+  license: Apache 2.0
+  intended_uses: Multitask finetuning of language models.
+  prohibited_uses: none
+  monitoring: none
+  feedback: Point of Contact is [Niklas Muennighoff](https://huggingface.co/datasets/bigscience/xP3)
+- name: T0++
+  organization: BigScience
+  description: T0++ is an multitask fine-tuned language model based on T5.
   created_date:
     explanation: The date the paper was posted to arXiv.
     value: 2021-10-15
-  dependencies: [T5, P3]
-  description: T0++ is an multitask fine-tuned language model based on T5.
-  feedback: https://huggingface.co/bigscience/T0pp/discussions
-  intended_uses: You can use the models to perform inference on tasks by specifying
-    your query in natural language, and the models will generate a prediction.
-  license: Apache 2.0
-  modality: {}
+  url: https://arxiv.org/pdf/2110.08207.pdf
   model_card: https://huggingface.co/bigscience/T0pp
-  monitoring: none
-  name: T0++
-  organization: BigScience
-  prohibited_uses: none
-  quality_control: https://arxiv.org/pdf/2110.08207.pdf
+  modality: {}
+  analysis: ''
   size: ''
+  dependencies: [T5, P3]
   training_emissions:
     explanation: Sourced from estimates in https://arxiv.org/pdf/2110.08207.pdf
     value: 0.9 tCO2e
-  training_hardware: Jean Zay (v3-512)
   training_time:
     explanation: Sourced from estimates in https://arxiv.org/pdf/2110.08207.pdf
     value: 27 hours
-  type: model
-  url: https://arxiv.org/pdf/2110.08207.pdf
-- access: open
-  analysis: ''
+  training_hardware: Jean Zay (v3-512)
+  quality_control: https://arxiv.org/pdf/2110.08207.pdf
+  access: open
+  license: Apache 2.0
+  intended_uses: You can use the models to perform inference on tasks by specifying
+    your query in natural language, and the models will generate a prediction.
+  prohibited_uses: none
+  monitoring: none
+  feedback: https://huggingface.co/bigscience/T0pp/discussions
+- name: BLOOM
+  organization: BigScience
+  description: BLOOM is an autoregressive multilingual language model.
   created_date:
     explanation: The date the model was released
     value: 2022-07-12
+  url: https://arxiv.org/abs/2211.05100
+  model_card: ''
+  modality:
+    explanation: code, text; code, text
+    value: code, text; code, text
+  analysis: ''
+  size: 176B parameters (dense)
   dependencies: [ROOTS]
-  description: BLOOM is an autoregressive multilingual language model.
-  feedback: https://huggingface.co/bigscience/bloom/discussions
+  training_emissions:
+    explanation: Sourced from estimates in https://arxiv.org/abs/2211.02001
+    value: 25 tCO2e
+  training_time:
+    explanation: 1082990 A100 hours at 156 TFLOP/s maximum utilization
+    value: 7039 petaflop/s-days
+  training_hardware: Jean Zay (48 * 8xA100 80GB nodes)
+  quality_control: ''
+  access: open
+  license:
+    explanation: Model is licensed under https://huggingface.co/spaces/bigscience/license
+    value: BigScience RAIL v1.0
   intended_uses: This model is being created in order to enable public research
     on large language models (LLMs). LLMs are intended to be used for language generation
     or as a pretrained base model that can be further fine-tuned for specific tasks.
     Use cases below are not exhaustive.
-  license:
-    explanation: Model is licensed under https://huggingface.co/spaces/bigscience/license
-    value: BigScience RAIL v1.0
-  modality:
-    explanation: text (46 languages) and code (13 programming languages)
-    value: code, text; code, text
-  model_card: ''
-  monitoring: none
-  name: BLOOM
-  organization: BigScience
   prohibited_uses: Using the model in high-stakes settings is out of scope for this
     model (e.g. biomedical/political/legal/finance domains, evaluating or scoring
     individuals). The model is not designed for critical decisions nor uses with
@@ -149,70 +147,59 @@
     using the model for harm, violating human rights, or other kinds of malicious
     activities, is a misuse of this model (e.g. spam generation, disinformation,
     disparagement, deception, surveillance).
-  quality_control: ''
-  size: 176B parameters (dense)
-  training_emissions:
-    explanation: Sourced from estimates in https://arxiv.org/abs/2211.02001
-    value: 25 tCO2e
-  training_hardware: Jean Zay (48 * 8xA100 80GB nodes)
-  training_time:
-    explanation: 1082990 A100 hours at 156 TFLOP/s maximum utilization
-    value: 7039 petaflop/s-days
-  type: model
-  url: https://arxiv.org/abs/2211.05100
-- access: open
-  analysis: https://huggingface.co/bigscience/bloomz#evaluation
+  monitoring: none
+  feedback: https://huggingface.co/bigscience/bloom/discussions
+- name: mT0
+  organization: BigScience
+  description: mT0 is an multitask fine-tuned multilingual language model based
+    on mT5.
   created_date:
     explanation: The date the model was released
     value: 2021-10-15
+  url: https://arxiv.org/pdf/2110.08207.pdf
+  model_card: https://huggingface.co/bigscience/T0pp
+  modality: {}
+  analysis: https://huggingface.co/bigscience/bloomz#evaluation
+  size: ''
   dependencies: [mT5, xP3]
-  description: mT0 is an multitask fine-tuned multilingual language model based
-    on mT5.
-  feedback: https://huggingface.co/bigscience/bloomz/discussions
-  intended_uses: We recommend using the model to perform tasks expressed in natural
-    language.
+  training_emissions: unknown
+  training_time: unknown
+  training_hardware: Jean Zay (288 A100 80GB GPUs with 8 GPUs per node (36 nodes)
+    using NVLink 4 inter-gpu connects, 4 OmniPath links)
+  quality_control: https://arxiv.org/pdf/2211.01786.pdf
+  access: open
   license:
     explanation: Model is licensed under https://huggingface.co/spaces/bigscience/license
     value: BigScience RAIL v1.0
-  modality: {}
-  model_card: https://huggingface.co/bigscience/T0pp
-  monitoring: none
-  name: mT0
-  organization: BigScience
+  intended_uses: We recommend using the model to perform tasks expressed in natural
+    language.
   prohibited_uses: none
-  quality_control: https://arxiv.org/pdf/2211.01786.pdf
-  size: ''
-  training_emissions: unknown
-  training_hardware: Jean Zay (288 A100 80GB GPUs with 8 GPUs per node (36 nodes)
-    using NVLink 4 inter-gpu connects, 4 OmniPath links)
-  training_time: unknown
-  type: model
-  url: https://arxiv.org/pdf/2110.08207.pdf
-- access: open
-  analysis: https://huggingface.co/bigscience/bloomz#evaluation
-  created_date: 2022-11-03
-  dependencies: [BLOOM, xP3]
+  monitoring: none
+  feedback: https://huggingface.co/bigscience/bloomz/discussions
+- name: BLOOMZ
+  organization: BigScience
   description: BLOOMZ is an multitask fine-tuned autoregressive multilingual language
     model.
-  feedback: https://huggingface.co/bigscience/bloomz/discussions
-  intended_uses: We recommend using the model to perform tasks expressed in natural
-    language.
+  created_date: 2022-11-03
+  url: https://arxiv.org/pdf/2211.01786.pdf
+  model_card: https://huggingface.co/bigscience/bloomz
+  modality:
+    explanation: code, text; code, text
+    value: code, text; code, text
+  analysis: https://huggingface.co/bigscience/bloomz#evaluation
+  size: 176B parameters (dense)
+  dependencies: [BLOOM, xP3]
+  training_emissions: unknown
+  training_time: unknown
+  training_hardware: Jean Zay (288 A100 80GB GPUs with 8 GPUs per node (36 nodes)
+    using NVLink 4 inter-gpu connects, 4 OmniPath links)
+  quality_control: https://arxiv.org/pdf/2211.01786.pdf
+  access: open
   license:
     explanation: Model is licensed under https://huggingface.co/spaces/bigscience/license
     value: BigScience RAIL v1.0
-  modality:
-    explanation: text (46 languages) and code (13 programming languages)
-    value: code, text; code, text
-  model_card: https://huggingface.co/bigscience/bloomz
-  monitoring: none
-  name: BLOOMZ
-  organization: BigScience
+  intended_uses: We recommend using the model to perform tasks expressed in natural
+    language.
   prohibited_uses: none
-  quality_control: https://arxiv.org/pdf/2211.01786.pdf
-  size: 176B parameters (dense)
-  training_emissions: unknown
-  training_hardware: Jean Zay (288 A100 80GB GPUs with 8 GPUs per node (36 nodes)
-    using NVLink 4 inter-gpu connects, 4 OmniPath links)
-  training_time: unknown
-  type: model
-  url: https://arxiv.org/pdf/2211.01786.pdf
+  monitoring: none
+  feedback: https://huggingface.co/bigscience/bloomz/discussions

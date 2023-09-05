@@ -1,47 +1,45 @@
 ---
-- access: limited
-  analysis: Evaluated on wide range of language benchmarks like MMLU 5-shot, GSM-8K,
-    and HellaSwag 10-shot among others.
-  created_date: 2023-06-22
-  dependencies: []
+- name: Inflection-1
+  organization: Inflection AI
   description: Inflection AI's in-house LLM, which powers Pi and will soon be available
     via Inflection AI's conversational API.
-  feedback: ''
-  intended_uses: ''
-  license: unknown
-  modality:
-    explanation: text
-    value: text; text
-  model_card: ''
-  monitoring: ''
-  name: Inflection-1
-  organization: Inflection AI
-  prohibited_uses: ''
-  quality_control: ''
-  size: unknown
-  training_emissions: ''
-  training_hardware: unknown
-  training_time: ''
-  type: model
+  created_date: 2023-06-22
   url: https://inflection.ai/inflection-1
-- access: limited
-  adaptation: ''
-  created_date: 2023-05-02
-  dependencies: [Inflection-1]
+  model_card: ''
+  modality:
+    explanation: text; text
+    value: text; text
+  analysis: Evaluated on wide range of language benchmarks like MMLU 5-shot, GSM-8K,
+    and HellaSwag 10-shot among others.
+  size: unknown
+  dependencies: []
+  training_emissions: ''
+  training_time: ''
+  training_hardware: unknown
+  quality_control: ''
+  access: limited
+  license: unknown
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+- name: Pi
+  organization: Inflection AI
   description: Personal AI chatbot designed to be conversational and specialized
     in emotional intelligence.
-  failures: ''
-  feedback: ''
-  intended_uses: to be used as a personal assistant chatbot for everyday activities
-  license: unknown
-  monitoring: ''
-  monthly_active_users: ''
-  name: Pi
-  organization: Inflection AI
-  output_space: natural language text responses
-  prohibited_uses: ''
-  quality_control: ''
-  terms_of_service: ''
-  type: application
+  created_date: 2023-05-02
   url: https://inflection.ai/press
+  dependencies: [Inflection-1]
+  adaptation: ''
+  output_space: natural language text responses
+  quality_control: ''
+  access: limited
+  license: unknown
+  terms_of_service: ''
+  intended_uses: to be used as a personal assistant chatbot for everyday activities
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+  monthly_active_users: ''
   user_distribution: ''
+  failures: ''

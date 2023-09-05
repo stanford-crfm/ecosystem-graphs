@@ -1,30 +1,29 @@
 ---
-- access: closed
-  analysis: ''
-  created_date:
-    explanation: The date the model was announced in the [[Adept blog post]](https://www.adept.ai/blog/act-1).
-    value: 2022-09-14
-  dependencies: []
+- name: ACT-1
+  organization: Adept
   description: ACT-1 (ACtion Transformer) is a large-scale transformer model designed
     and trained specifically for taking actions on computers (use software tools,
     APIs and websites) in response to the user's natural language commands.
-  feedback: ''
-  intended_uses: ''
+  created_date:
+    explanation: The date the model was announced in the [[Adept blog post]](https://www.adept.ai/blog/act-1).
+    value: 2022-09-14
+  url: https://www.adept.ai/blog/act-1
+  model_card: none
+  modality:
+    explanation: text; text
+    value: text; text
+  analysis: ''
+  size: ''
+  dependencies: []
+  training_emissions: unknown
+  training_time: unknown
+  training_hardware: unknown
+  quality_control: ''
+  access: closed
   license:
     explanation: "The asset isn't released, and hence the license is unknown.\n"
     value: unknown
-  modality:
-    explanation: text
-    value: text; text
-  model_card: none
-  monitoring: ''
-  name: ACT-1
-  organization: Adept
+  intended_uses: ''
   prohibited_uses: ''
-  quality_control: ''
-  size: ''
-  training_emissions: unknown
-  training_hardware: unknown
-  training_time: unknown
-  type: model
-  url: https://www.adept.ai/blog/act-1
+  monitoring: ''
+  feedback: ''

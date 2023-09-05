@@ -1,50 +1,48 @@
 ---
-- access: open
-  analysis: ''
-  created_date: 2023-06-14
-  dependencies: [RefinedWeb]
+- name: Falcon
+  organization: UAE Technology Innovation Institute
   description: Falcon-40B is a 40B parameters causal decoder-only model built by
     TII and trained on 1,000B tokens of RefinedWeb enhanced with curated corpora.
-  feedback: https://huggingface.co/tiiuae/falcon-40b/discussions
-  intended_uses: ''
-  license: Apache 2.0
-  modality:
-    explanation: natural language text
-    value: text; text
+  created_date: 2023-06-14
+  url: https://huggingface.co/tiiuae/falcon-40b
   model_card: https://huggingface.co/tiiuae/falcon-40b
-  monitoring: None
-  name: Falcon
-  organization: UAE Technology Innovation Institute
+  modality:
+    explanation: text; text
+    value: text; text
+  analysis: ''
+  size: 40B parameters (dense)
+  dependencies: [RefinedWeb]
+  training_emissions: ''
+  training_time: 2 months
+  training_hardware: 384 A100 40GB GPUs
+  quality_control: ''
+  access: open
+  license: Apache 2.0
+  intended_uses: ''
   prohibited_uses: irresponsible or harmful use or production use without adequate
     assessment of risks and mitigation
-  quality_control: ''
-  size: 40B parameters (dense)
-  training_emissions: ''
-  training_hardware: 384 A100 40GB GPUs
-  training_time: 2 months
-  type: model
-  url: https://huggingface.co/tiiuae/falcon-40b
-- access: open
-  analysis: ''
-  created_date: 2023-06-01
-  datasheet: https://huggingface.co/datasets/tiiuae/falcon-refinedweb
-  dependencies: []
+  monitoring: None
+  feedback: https://huggingface.co/tiiuae/falcon-40b/discussions
+- name: RefinedWeb
+  organization: UAE Technology Innovation Institute
   description: RefinedWeb is a high-quality five trillion tokens web-only English
     pretraining dataset.
-  excluded: ''
-  feedback: ''
+  created_date: 2023-06-01
+  url: https://arxiv.org/pdf/2306.01116.pdf
+  datasheet: https://huggingface.co/datasets/tiiuae/falcon-refinedweb
+  modality: text
+  size: 600B tokens
+  sample: []
+  analysis: ''
+  dependencies: []
   included: ''
-  intended_uses: ''
+  excluded: ''
+  quality_control: ''
+  access: open
   license:
     explanation: License can be found at https://huggingface.co/datasets/tiiuae/falcon-refinedweb
     value: unknown
-  modality: text
-  monitoring: ''
-  name: RefinedWeb
-  organization: UAE Technology Innovation Institute
+  intended_uses: ''
   prohibited_uses: ''
-  quality_control: ''
-  sample: []
-  size: 600B tokens
-  type: dataset
-  url: https://arxiv.org/pdf/2306.01116.pdf
+  monitoring: ''
+  feedback: ''

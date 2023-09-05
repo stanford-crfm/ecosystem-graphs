@@ -1,24 +1,23 @@
 ---
-- access: open
-  analysis: ''
-  created_date: 2022-10-11
-  dependencies: [SARS-CoV-2 genome dataset, BV-BRC dataset]
-  description: ''
-  feedback: ''
-  intended_uses: ''
-  license: MIT
-  modality:
-    explanation: genome sequence
-    value: text; text
-  model_card: ''
-  monitoring: ''
-  name: GenSLM
+- name: GenSLM
   organization: Argonne National Laboratory
-  prohibited_uses: ''
-  quality_control: ''
-  size: 25B parameters (dense)
-  training_emissions: ''
-  training_hardware: ''
-  training_time: ''
-  type: model
+  description: ''
+  created_date: 2022-10-11
   url: https://www.biorxiv.org/content/10.1101/2022.10.10.511571v1
+  model_card: ''
+  modality:
+    explanation: text; text
+    value: text; text
+  analysis: ''
+  size: 25B parameters (dense)
+  dependencies: [SARS-CoV-2 genome dataset, BV-BRC dataset]
+  training_emissions: ''
+  training_time: ''
+  training_hardware: ''
+  quality_control: ''
+  access: open
+  license: MIT
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''

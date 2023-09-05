@@ -1,24 +1,22 @@
 ---
-- access: open
-  analysis: Evaluated in comparison to the MusicCaps dataset and with respect to n-gram, neural metrics.
-  created_date: 2023-07-31
-  datasheet: none
-  dependencies: [MusicCaps, Million Song Dataset, Magnatagtune]
-  description: LP-MusicCaps is a LLM-based pseudo music caption dataset.
-  excluded: ''
-  feedback: ''
-  included: ''
-  intended_uses: ''
-  license: CC BY 4.0
-  modality: 
-    explanation: Paired music captions with audio clips
-    value: {audio, text}
-  monitoring: ''
-  name: LP-MusicCaps
+- name: LP-MusicCaps
   organization: South Korea Graduate School of Culture Technology
-  prohibited_uses: ''
-  quality_control: ''
-  sample: []
-  size: 2.2M captions paired with 0.5M audio clips
-  type: dataset
+  description: LP-MusicCaps is a LLM-based pseudo music caption dataset.
+  created_date: 2023-07-31
   url: https://arxiv.org/pdf/2307.16372.pdf
+  datasheet: none
+  modality: {}
+  size: 2.2M captions paired with 0.5M audio clips
+  sample: []
+  analysis: Evaluated in comparison to the MusicCaps dataset and with respect to
+    n-gram, neural metrics.
+  dependencies: [MusicCaps, Million Song Dataset, Magnatagtune]
+  included: ''
+  excluded: ''
+  quality_control: ''
+  access: open
+  license: CC BY 4.0
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''

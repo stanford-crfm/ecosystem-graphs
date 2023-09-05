@@ -1,38 +1,40 @@
 ---
-- access:
-    explanation: The captions and video url's can be found at the [[dataset page]](https://m-bain.github.io/webvid-dataset/).
-      CLIP ViT-B/32 features of this dataset can be found at the [[WebVid github
-      repository]](https://github.com/m-bain/webvid#download-clip-features-%EF%B8%8F).
-    value: open
-  analysis: unknown
+- name: WebVid-10M
+  organization: University of Oxford
+  description: "WebVid-10M is a large-scale dataset of short videos with textual\
+    \ descriptions sourced from stock footage sites.\n"
   created_date:
     explanation: "The date the [[paper]](https://arxiv.org/abs/2104.00650) was released.\n"
     value: 2021-04-01
+  url: https://m-bain.github.io/webvid-dataset/
   datasheet: none
+  modality: {}
+  size: 10.7M video-text pairs, 52K hours video
+  sample: []
+  analysis: unknown
   dependencies: []
-  description: "WebVid-10M is a large-scale dataset of short videos with textual\
-    \ descriptions sourced from stock footage sites.\n"
-  excluded: unknown
-  feedback: Feedback can be given by emailing at maxbain at robots.ox.ac.uk
   included:
     explanation: Authors note in the paper:"We scrape the web for a new dataset
       of videos with textual description annotations, called WebVid-2M. The data
       was scraped from the web following a similar procedure to Google Conceptual
       Captions"
     value: Video URLs and textual description annotations
+  excluded: unknown
+  quality_control: unknown
+  access:
+    explanation: The captions and video url's can be found at the [[dataset page]](https://m-bain.github.io/webvid-dataset/).
+      CLIP ViT-B/32 features of this dataset can be found at the [[WebVid github
+      repository]](https://github.com/m-bain/webvid#download-clip-features-%EF%B8%8F).
+    value: open
+  license:
+    explanation: "[WebVid Dataset Terms](https://github.com/m-bain/webvid/blob/main/TERMS.md)\n"
+    value: WebVid Dataset Terms
   intended_uses:
     explanation: See [[Terms of Access]](https://github.com/m-bain/webvid/blob/main/TERMS.md)
     value: "\"Provided you keep to these rules, the University grants you (the researcher)\
       \ a non-exclusive and non-transferable licence to use the content free of\
       \ charge strictly for non-commercial research (i.e., whose output artefacts\
       \ are not incorporated in commercial products) for 12 months.\"\n"
-  license:
-    explanation: "[WebVid Dataset Terms](https://github.com/m-bain/webvid/blob/main/TERMS.md)\n"
-    value: WebVid Dataset Terms
-  modality: {}
-  monitoring: ''
-  name: WebVid-10M
-  organization: University of Oxford
   prohibited_uses: "- Authors note the following prohibited uses: \"You must not\
     \ use the content other than for the Permitted Purpose in strict conformity\
     \ with these terms and any other reasonable instructions of the University.\
@@ -46,46 +48,45 @@
     \ data sourced from the web may be prone to biases and may contain graphic content.\
     \ Please be careful of unintended societal, gender, racial and other biases\
     \ when training or deploying models trained on this data.\" [[Disclaimer]](https://github.com/m-bain/webvid#disclaimer-%EF%B8%8F)\n"
-  quality_control: unknown
-  sample: []
-  size: 10.7M video-text pairs, 52K hours video
-  type: dataset
-  url: https://m-bain.github.io/webvid-dataset/
-- access:
-    explanation: The captions and video url's can be found at the [[dataset page]](https://m-bain.github.io/webvid-dataset/).
-      CLIP ViT-B/32 features of this dataset can be found at the [[WebVid github
-      repository]](https://github.com/m-bain/webvid#download-clip-features-%EF%B8%8F).
-    value: open
-  analysis: unknown
-  created_date:
-    explanation: "The date the [[paper]](https://arxiv.org/abs/2104.00650) was released.\n"
-    value: 2021-04-01
-  datasheet: none
-  dependencies: [WebVid-10M]
+  monitoring: ''
+  feedback: Feedback can be given by emailing at maxbain at robots.ox.ac.uk
+- name: WebVid-2M
+  organization: University of Oxford
   description: "WebVid-2M is a large-scale dataset of 2.5M short videos with textual\
     \ descriptions sourced from stock footage sites. A subset of the WebVid-10M\
     \ dataset.\n"
-  excluded: unknown
-  feedback: Feedback can be given by emailing at maxbain at robots.ox.ac.uk
+  created_date:
+    explanation: "The date the [[paper]](https://arxiv.org/abs/2104.00650) was released.\n"
+    value: 2021-04-01
+  url: https://m-bain.github.io/webvid-dataset/
+  datasheet: none
+  modality: {}
+  size: 2.5M video-text pairs, 13K hours video
+  sample: []
+  analysis: unknown
+  dependencies: [WebVid-10M]
   included:
     explanation: Authors note in the paper:"We scrape the web for a new dataset
       of videos with textual description annotations, called WebVid-2M. The data
       was scraped from the web following a similar procedure to Google Conceptual
       Captions"
     value: Video URLs and textual description annotations
+  excluded: unknown
+  quality_control: unknown
+  access:
+    explanation: The captions and video url's can be found at the [[dataset page]](https://m-bain.github.io/webvid-dataset/).
+      CLIP ViT-B/32 features of this dataset can be found at the [[WebVid github
+      repository]](https://github.com/m-bain/webvid#download-clip-features-%EF%B8%8F).
+    value: open
+  license:
+    explanation: "[WebVid Dataset Terms](https://github.com/m-bain/webvid/blob/main/TERMS.md)\n"
+    value: WebVid Dataset Terms
   intended_uses:
     explanation: See [[Terms of Access]](https://github.com/m-bain/webvid/blob/main/TERMS.md)
     value: "\"Provided you keep to these rules, the University grants you (the researcher)\
       \ a non-exclusive and non-transferable licence to use the content free of\
       \ charge strictly for non-commercial research (i.e., whose output artefacts\
       \ are not incorporated in commercial products) for 12 months.\"\n"
-  license:
-    explanation: "[WebVid Dataset Terms](https://github.com/m-bain/webvid/blob/main/TERMS.md)\n"
-    value: WebVid Dataset Terms
-  modality: {}
-  monitoring: ''
-  name: WebVid-2M
-  organization: University of Oxford
   prohibited_uses: "- Authors note the following prohibited uses: \"You must not\
     \ use the content other than for the Permitted Purpose in strict conformity\
     \ with these terms and any other reasonable instructions of the University.\
@@ -99,8 +100,5 @@
     \ data sourced from the web may be prone to biases and may contain graphic content.\
     \ Please be careful of unintended societal, gender, racial and other biases\
     \ when training or deploying models trained on this data.\" [[Disclaimer]](https://github.com/m-bain/webvid#disclaimer-%EF%B8%8F)\n"
-  quality_control: unknown
-  sample: []
-  size: 2.5M video-text pairs, 13K hours video
-  type: dataset
-  url: https://m-bain.github.io/webvid-dataset/
+  monitoring: ''
+  feedback: Feedback can be given by emailing at maxbain at robots.ox.ac.uk

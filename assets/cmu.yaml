@@ -1,33 +1,34 @@
 ---
-- access:
-    explanation: Model checkpoints are available for download at https://github.com/VHellendoorn/Code-LMs
-    value: open
-  analysis: Reports results on standard code benchmarks across a variety of programming
-    languages.
-  created_date:
-    explanation: The date the model paper was released
-    value: 2022-02-26
-  dependencies: [Github]
+- name: PolyCoder
+  organization: CMU
   description: PolyCoder is a code model trained on 2.7B parameters based on the
     GPT-2 architecture, which was trained on 249GB of code across 12 programming
     languages on a single machine.
-  feedback: https://huggingface.co/NinedayWang/PolyCoder-2.7B/discussion
-  intended_uses: unknown
-  license:
-    explanation: The license is provided in the [[Github repository]](https://github.com/VHellendoorn/Code-LMs)
-    value: MIT
-  modality: {}
+  created_date:
+    explanation: The date the model paper was released
+    value: 2022-02-26
+  url: https://arxiv.org/abs/2202.13169
   model_card: https://huggingface.co/NinedayWang/PolyCoder-2.7B
-  monitoring: None
-  name: PolyCoder
-  organization: CMU
-  prohibited_uses: None
+  modality:
+    explanation: ''
+    value: other; other
+  analysis: Reports results on standard code benchmarks across a variety of programming
+    languages.
+  size: ''
+  dependencies: [Github]
+  training_emissions: unknown
+  training_time: 6 weeks
+  training_hardware: 8 NVIDIA RTX 8000
   quality_control: No specific quality control is mentioned in model training, though
     details on data processing and how the tokenizer was trained are provided in
     the paper.
-  size: ''
-  training_emissions: unknown
-  training_hardware: 8 NVIDIA RTX 8000
-  training_time: 6 weeks
-  type: model
-  url: https://arxiv.org/abs/2202.13169
+  access:
+    explanation: Model checkpoints are available for download at https://github.com/VHellendoorn/Code-LMs
+    value: open
+  license:
+    explanation: The license is provided in the [[Github repository]](https://github.com/VHellendoorn/Code-LMs)
+    value: MIT
+  intended_uses: unknown
+  prohibited_uses: None
+  monitoring: None
+  feedback: https://huggingface.co/NinedayWang/PolyCoder-2.7B/discussion

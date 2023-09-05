@@ -1,28 +1,27 @@
 ---
-- access:
-    explanation: The model is not available for download or direct API use
-    value: closed
-  analysis: ''
+- name: HyperCLOVA
+  organization: Naver
+  description: HyperClova is an autoregressive language model
   created_date:
     explanation: The date the model paper was submitted to arxiv
     value: 2021-05-21
+  url: https://arxiv.org/abs/2109.04650
+  model_card: ''
+  modality: {}
+  analysis: ''
+  size: ''
   dependencies: []
-  description: HyperClova is an autoregressive language model
-  feedback: ''
-  intended_uses: ''
+  training_emissions: ''
+  training_time: 130.4 days
+  training_hardware: 1024 A100 GPUs
+  quality_control: ''
+  access:
+    explanation: The model is not available for download or direct API use
+    value: closed
   license:
     explanation: "The asset isn't released, and hence the license is unknown.\n"
     value: unknown
-  modality: {}
-  model_card: ''
-  monitoring: ''
-  name: HyperCLOVA
-  organization: Naver
+  intended_uses: ''
   prohibited_uses: ''
-  quality_control: ''
-  size: ''
-  training_emissions: ''
-  training_hardware: 1024 A100 GPUs
-  training_time: 130.4 days
-  type: model
-  url: https://arxiv.org/abs/2109.04650
+  monitoring: ''
+  feedback: ''

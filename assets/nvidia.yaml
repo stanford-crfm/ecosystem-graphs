@@ -1,98 +1,90 @@
 ---
-- access:
-    explanation: "Neither the 8.3B parameter model trained to convergence nor the\
-      \ 1 trillion paramter model is available for download\n"
-    value: closed
-  analysis: ''
+- name: Megatron-LM
+  organization: NVIDIA
+  description: Megatron-LM is an autoregressive language model
   created_date:
     explanation: The date the paper for the 1 trillion parameter model was published
     value: 2021-04-09
+  url: https://arxiv.org/abs/2104.04473
+  model_card: none
+  modality: {}
+  analysis: ''
+  size: ''
   dependencies: []
-  description: Megatron-LM is an autoregressive language model
-  feedback: none
-  intended_uses: none
+  training_emissions: unknown
+  training_time: 84 days
+  training_hardware: 3072 A100 GPUs
+  quality_control: unknown
+  access:
+    explanation: "Neither the 8.3B parameter model trained to convergence nor the\
+      \ 1 trillion paramter model is available for download\n"
+    value: closed
   license:
     explanation: "The asset isn't released, and hence the license is unknown.\n"
     value: unknown
-  modality: {}
-  model_card: none
-  monitoring: none
-  name: Megatron-LM
-  organization: NVIDIA
+  intended_uses: none
   prohibited_uses: none
-  quality_control: unknown
-  size: ''
-  training_emissions: unknown
-  training_hardware: 3072 A100 GPUs
-  training_time: 84 days
-  type: model
-  url: https://arxiv.org/abs/2104.04473
-- access: open
-  analysis: ''
-  created_date: 2022-06-17
-  datasheet: ''
-  dependencies: [YouTube, Wikipedia, Reddit]
-  description: ''
-  excluded: ''
-  feedback: ''
-  included: ''
-  intended_uses: ''
-  license: MIT
-  modality:
-    explanation: Videos, Text
-    value: text, video
-  monitoring: ''
-  name: MineDojo
+  monitoring: none
+  feedback: none
+- name: MineDojo
   organization: NVIDIA
-  prohibited_uses: ''
-  quality_control: ''
-  sample: []
-  size: 730k videos, 6k Wikipedia pages, 340k reddit posts
-  type: dataset
+  description: ''
+  created_date: 2022-06-17
   url: https://arxiv.org/abs/2206.08853
-- access: open
-  analysis: ''
-  created_date: 2022-10-06
   datasheet: ''
-  dependencies: [T5, Mask R-CNN, VIMA dataset]
-  description: ''
-  excluded: ''
-  feedback: ''
-  included: ''
-  intended_uses: ''
-  license: MIT
-  modality:
-    explanation: text and image
-    value: image, text
-  monitoring: ''
-  name: VIMA dataset
-  organization: NVIDIA, Stanford
-  prohibited_uses: ''
-  quality_control: ''
+  modality: text, video
+  size: 730k videos, 6k Wikipedia pages, 340k reddit posts
   sample: []
-  size: 200M parameters (dense model)
-  type: dataset
-  url: https://vimalabs.github.io/
-- access: open
   analysis: ''
-  created_date: 2022-10-06
-  dependencies: []
-  description: ''
-  feedback: ''
-  intended_uses: ''
-  license: MIT
-  modality:
-    explanation: Simulation
-    value: other; other
-  model_card: ''
-  monitoring: ''
-  name: VIMA
-  organization: NVIDIA, Stanford
-  prohibited_uses: ''
+  dependencies: [YouTube, Wikipedia, Reddit]
+  included: ''
+  excluded: ''
   quality_control: ''
-  size: 650K parameters (dense)
-  training_emissions: ''
-  training_hardware: ''
-  training_time: ''
-  type: model
+  access: open
+  license: MIT
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+- name: VIMA dataset
+  organization: NVIDIA, Stanford
+  description: ''
+  created_date: 2022-10-06
   url: https://vimalabs.github.io/
+  datasheet: ''
+  modality: image, text
+  size: 200M parameters (dense model)
+  sample: []
+  analysis: ''
+  dependencies: [T5, Mask R-CNN, VIMA dataset]
+  included: ''
+  excluded: ''
+  quality_control: ''
+  access: open
+  license: MIT
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+- name: VIMA
+  organization: NVIDIA, Stanford
+  description: ''
+  created_date: 2022-10-06
+  url: https://vimalabs.github.io/
+  model_card: ''
+  modality:
+    explanation: other; other
+    value: other; other
+  analysis: ''
+  size: 650K parameters (dense)
+  dependencies: []
+  training_emissions: ''
+  training_time: ''
+  training_hardware: ''
+  quality_control: ''
+  access: open
+  license: MIT
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''

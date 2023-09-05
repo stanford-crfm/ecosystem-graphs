@@ -1,41 +1,42 @@
 ---
-- access: open
-  analysis: ''
+- name: YaLM
+  organization: Yandex
+  description: YaLM is a 100B parameter autoregressive model trained on 25% English
+    and 75% Russian text.
   created_date:
     explanation: The date the blog post about YaLM was published.
     value: 2022-06-22
+  url: https://medium.com/yandex/yandex-publishes-yalm-100b-its-the-largest-gpt-like-neural-network-in-open-source-d1df53d0e9a6
+  model_card: ''
+  modality:
+    explanation: text; text
+    value: text; text
+  analysis: ''
+  size: 100B parameters (dense)
   dependencies: [The Pile, Yandex Russian Pretraining Dataset]
-  description: YaLM is a 100B parameter autoregressive model trained on 25% English
-    and 75% Russian text.
-  feedback: ''
-  intended_uses: ''
+  training_emissions: ''
+  training_time: ''
+  training_hardware: Yandex 800 A100 Cluster
+  quality_control: ''
+  access: open
   license:
     explanation: ''
     value: Apache 2.0
-  modality:
-    explanation: text (English, Russian)
-    value: text; text
-  model_card: ''
-  monitoring: ''
-  name: YaLM
-  organization: Yandex
+  intended_uses: ''
   prohibited_uses: ''
-  quality_control: ''
-  size: 100B parameters (dense)
-  training_emissions: ''
-  training_hardware: Yandex 800 A100 Cluster
-  training_time: ''
-  type: model
-  url: https://medium.com/yandex/yandex-publishes-yalm-100b-its-the-largest-gpt-like-neural-network-in-open-source-d1df53d0e9a6
-- access: open
-  adaptation: ''
-  created_date: 2022-06-23
-  dependencies: [YaLM]
+  monitoring: ''
+  feedback: ''
+- name: Yandex Search
+  organization: Yandex
   description: Yandex is a search engine and web portal. Yandex offers internet
     search and other services
-  failures: ''
-  feedback: ''
-  intended_uses: ''
+  created_date: 2022-06-23
+  url: https://medium.com/yandex/yandex-publishes-yalm-100b-its-the-largest-gpt-like-neural-network-in-open-source-d1df53d0e9a6
+  dependencies: [YaLM]
+  adaptation: ''
+  output_space: ''
+  quality_control: ''
+  access: open
   license:
     explanation: "\"3.1. The Rightholder, on the basis of a simple (non-exclusive)\
       \ license, shall grant the User a free, worldwide, non-transferable right\
@@ -46,14 +47,11 @@
       \ in an unmodified form and solely for non-commercial purposes (free of charge).\"\
       \ - excerpt from the Terms of Service document for browsers.\n"
     value: custom
-  monitoring: ''
-  monthly_active_users: ''
-  name: Yandex Search
-  organization: Yandex
-  output_space: ''
-  prohibited_uses: ''
-  quality_control: ''
   terms_of_service: https://yandex.com/legal/browser_agreement/
-  type: application
-  url: https://medium.com/yandex/yandex-publishes-yalm-100b-its-the-largest-gpt-like-neural-network-in-open-source-d1df53d0e9a6
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+  monthly_active_users: ''
   user_distribution: ''
+  failures: ''

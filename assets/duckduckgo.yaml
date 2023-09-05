@@ -1,25 +1,24 @@
 ---
-- access: open
-  adaptation: ''
-  created_date: 2023-03-08
-  dependencies: [Anthropic API]
+- name: DuckAssist
+  organization: DuckDuckGo
   description: The first Instant Answer in DuckDuckGo search results to use natural
     language technology to generate answers to search queries using Wikipedia and
     other related sources
-  failures: ''
-  feedback: ''
-  intended_uses: ''
+  created_date: 2023-03-08
+  url: https://spreadprivacy.com/duckassist-launch/
+  dependencies: [Anthropic API]
+  adaptation: ''
+  output_space: ''
+  quality_control: ''
+  access: open
   license:
     explanation: "The asset is no longer available, and hence the license is unknown.\n"
     value: unknown
-  monitoring: ''
-  monthly_active_users: ''
-  name: DuckAssist
-  organization: DuckDuckGo
-  output_space: ''
-  prohibited_uses: ''
-  quality_control: ''
   terms_of_service: ''
-  type: application
-  url: https://spreadprivacy.com/duckassist-launch/
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+  monthly_active_users: ''
   user_distribution: ''
+  failures: ''

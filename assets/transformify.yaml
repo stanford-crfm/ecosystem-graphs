@@ -1,22 +1,21 @@
 ---
-- access: open
-  adaptation: ''
-  created_date: 2023-05-30
-  dependencies: [GPT-4]
+- name: Transformify Automate
+  organization: Transformify
   description: Transformify Automate is a platform for automated task integration
     using natural language prompts.
-  failures: ''
-  feedback: ''
-  intended_uses: ''
-  license: ''
-  monitoring: ''
-  monthly_active_users: ''
-  name: Transformify Automate
-  organization: Transformify
-  output_space: text and code
-  prohibited_uses: ''
-  quality_control: ''
-  terms_of_service: https://www.transformify.ai/legal-stuff
-  type: application
+  created_date: 2023-05-30
   url: https://www.transformify.ai/automate
+  dependencies: [GPT-4]
+  adaptation: ''
+  output_space: text and code
+  quality_control: ''
+  access: open
+  license: ''
+  terms_of_service: https://www.transformify.ai/legal-stuff
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+  monthly_active_users: ''
   user_distribution: ''
+  failures: ''

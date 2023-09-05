@@ -1,26 +1,28 @@
 ---
-- access: open
-  analysis: ''
+- name: Prithvi
+  organization: IBM
+  description: Prithvi is a first-of-its-kind temporal Vision transformer pre-trained
+    by the IBM and NASA team on contiguous US Harmonised Landsat Sentinel 2 (HLS)
+    data. The model adopts a self-supervised encoder developed with a ViT architecture
+    and Masked AutoEncoder (MAE) learning strategy, with an MSE loss function.
   created_date:
     explanation: The date the model was announced in the [[Adept blog post]](https://www.adept.ai/blog/act-1).
     value: 2023-08-03
-  dependencies: [NASA HLS data, ]
-  description: Prithvi is a first-of-its-kind temporal Vision transformer pre-trained by the IBM and NASA team on contiguous US Harmonised Landsat Sentinel 2 (HLS) data. The model adopts a self-supervised encoder developed with a ViT architecture and Masked AutoEncoder (MAE) learning strategy, with an MSE loss function.
-  feedback: https://huggingface.co/ibm-nasa-geospatial/Prithvi-100M/discussions
-  intended_uses: ''
-  license: Apache 2.0
-  modality:
-    explanation: The model takes in satellite imagery as an input and classifies various natural features/disasters that are present.
-    value: video; text
-  model_card: https://huggingface.co/ibm-nasa-geospatial/Prithvi-100M
-  monitoring: ''
-  name: Prithvi
-  organization: IBM
-  prohibited_uses: ''
-  quality_control: ''
-  size: 100M parameters (dense)
-  training_emissions: ''
-  training_hardware: ''
-  training_time: ''
-  type: model
   url: https://github.com/NASA-IMPACT/hls-foundation-os
+  model_card: https://huggingface.co/ibm-nasa-geospatial/Prithvi-100M
+  modality:
+    explanation: video; text
+    value: text, video; text, video
+  analysis: ''
+  size: 100M parameters (dense)
+  dependencies: [NASA HLS data]
+  training_emissions: ''
+  training_time: ''
+  training_hardware: ''
+  quality_control: ''
+  access: open
+  license: Apache 2.0
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: https://huggingface.co/ibm-nasa-geospatial/Prithvi-100M/discussions

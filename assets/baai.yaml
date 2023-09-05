@@ -1,53 +1,51 @@
 ---
-- access: closed
-  analysis: ''
+- name: Wu Dao dataset
+  organization: Beijing Academy of Artificial Intelligence
+  description: ''
   created_date:
     explanation: "The date that BAAI made a public announcement [[News Link]](https://mp.weixin.qq.com/s/BUQWZ5EdR19i40GuFofpBg).\n"
     value: 2021-01-12
+  url: https://www.tsinghua.edu.cn/en/info/1420/10473.htm
   datasheet: ''
+  modality: {}
+  size: unknown
+  sample: []
+  analysis: ''
   dependencies: []
-  description: ''
-  excluded: ''
-  feedback: ''
   included: ''
-  intended_uses: ''
+  excluded: ''
+  quality_control: ''
+  access: closed
   license:
     explanation: "The asset isn't released, and hence the license is unknown.\n"
     value: unknown
-  modality: {}
-  monitoring: ''
-  name: Wu Dao dataset
-  organization: Beijing Academy of Artificial Intelligence
+  intended_uses: ''
   prohibited_uses: ''
-  quality_control: ''
-  sample: []
-  size: unknown
-  type: dataset
+  monitoring: ''
+  feedback: ''
+- name: Wu Dao 2.0
+  organization: Beijing Academy of Artificial Intelligence
+  description: ''
+  created_date:
+    explanation: "The date that BAAI made a public announcement [[News Link]](https://mp.weixin.qq.com/s/BUQWZ5EdR19i40GuFofpBg).\n"
+    value: 2021-01-12
   url: https://www.tsinghua.edu.cn/en/info/1420/10473.htm
-- access:
+  model_card: ''
+  modality: {}
+  analysis: ''
+  size: ''
+  dependencies: [Wu Dao dataset]
+  training_emissions: ''
+  training_time: ''
+  training_hardware: ''
+  quality_control: ''
+  access:
     explanation: "The model wasn't released.\n"
     value: closed
-  analysis: ''
-  created_date:
-    explanation: "The date that BAAI made a public announcement [[News Link]](https://mp.weixin.qq.com/s/BUQWZ5EdR19i40GuFofpBg).\n"
-    value: 2021-01-12
-  dependencies: [Wu Dao dataset]
-  description: ''
-  feedback: ''
-  intended_uses: ''
   license:
     explanation: "The asset isn't released, and hence the license is unknown.\n"
     value: unknown
-  modality: {}
-  model_card: ''
-  monitoring: ''
-  name: Wu Dao 2.0
-  organization: Beijing Academy of Artificial Intelligence
+  intended_uses: ''
   prohibited_uses: ''
-  quality_control: ''
-  size: ''
-  training_emissions: ''
-  training_hardware: ''
-  training_time: ''
-  type: model
-  url: https://www.tsinghua.edu.cn/en/info/1420/10473.htm
+  monitoring: ''
+  feedback: ''

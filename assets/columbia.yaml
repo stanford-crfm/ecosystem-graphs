@@ -1,24 +1,23 @@
 ---
-- access: open
-  analysis: Evaluated on wide range of tasks using own evaluation benchmarks.
-  created_date: 2022-11-20
-  dependencies: [AlphaFold2, OpenProteinSet]
-  description: OpenFold is an open source recreation of AlphaFold2.
-  feedback: ''
-  intended_uses: ''
-  license: CC BY 4.0
-  modality:
-    explanation: protein structures
-    value: image; image
-  model_card: ''
-  monitoring: ''
-  name: OpenFold
+- name: OpenFold
   organization: Columbia
-  prohibited_uses: ''
-  quality_control: ''
-  size: ''
-  training_emissions: unknown
-  training_hardware: Single A100 NVIDIA GPU
-  training_time: 50,000 GPU hours
-  type: model
+  description: OpenFold is an open source recreation of AlphaFold2.
+  created_date: 2022-11-20
   url: https://www.biorxiv.org/content/10.1101/2022.11.20.517210v2
+  model_card: ''
+  modality:
+    explanation: image; image
+    value: image; image
+  analysis: Evaluated on wide range of tasks using own evaluation benchmarks.
+  size: ''
+  dependencies: [AlphaFold2, OpenProteinSet]
+  training_emissions: unknown
+  training_time: 50,000 GPU hours
+  training_hardware: Single A100 NVIDIA GPU
+  quality_control: ''
+  access: open
+  license: CC BY 4.0
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''

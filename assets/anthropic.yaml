@@ -1,38 +1,31 @@
 ---
-- access:
-    explanation: "The dataset is freely shared on GitHub [[hh-rlhf]](https://github.com/anthropics/hh-rlhf).\n"
-    value: open
-  analysis: "The authors found that the crowdworkers didn't exhaustively check for\
-    \ honesty in the model answers they preferred [[Section 2.1]](https://arxiv.org/pdf/2204.05862.pdf#subsection.2.1).\n"
-  created_date:
-    explanation: "The date that the paper was uploaded to ArXiv [[ArXiv Abstract]](https://arxiv.org/abs/2204.05862).\n"
-    value: 2022-04-12
-  datasheet: none
-  dependencies: [Anthropic Human Feedback Interface]
+- name: Anthropic Helpfulness dataset
+  organization: Anthropic
   description: "One of the datasets used to train Anthropic RLHF models. The dataset\
     \ was collected by asking crowdworkers to have open-ended conversations with\
     \ Anthropic models, \"asking for help, advice, or for the model to accomplish\
     \ a task\", then choose the model answer that was more helpful for their given\
     \ task, via the Anthropic Human Feedback Interface [[Section 2.2]](https://arxiv.org/pdf/2204.05862.pdf#subsection.2.2).\n"
-  excluded: none
-  feedback: "Email the authors [[Paper]](https://arxiv.org/pdf/2204.05862.pdf).\n"
-  included: "The dataset included all the answers that the workers were asked to\
-    \ ranked against each other.\n"
-  intended_uses: "The dataset was intended and released for research purposes.\n"
-  license:
-    explanation: "The dataset was released on GitHub under MIT [[hh-rlhf]](https://github.com/anthropics/hh-rlhf).\n"
-    value: MIT
-  modality: {}
-  monitoring:
-    explanation: "There is no monitoring process for the usages of the dataset.\n"
-    value: none
-  name: Anthropic Helpfulness dataset
-  organization: Anthropic
-  prohibited_uses:
-    explanation: "The prohibited use cases of the dataset weren't specified.\n"
-    value: unknown
-  quality_control: "Working with a screened set of crowdworkers, and employing simple\
-    \ data quality measures [[Appendix D]](https://arxiv.org/pdf/2204.05862.pdf#appendix.D).\n"
+  created_date:
+    explanation: "The date that the paper was uploaded to ArXiv [[ArXiv Abstract]](https://arxiv.org/abs/2204.05862).\n"
+    value: 2022-04-12
+  url: https://arxiv.org/pdf/2204.05862.pdf
+  datasheet: none
+  modality:
+    explanation: ''
+    value: other
+  size:
+    explanation: "The size of the dataset isn't directly reported in the paper,\
+      \ but the dataset is available on GitHub [[hh-rlhf]](https://github.com/anthropics/hh-rlhf).\
+      \ The compressed data files are distributed under three categories in the\
+      \ GitHub repository, corresponding to the names of the models used to sample\
+      \ the prompts that are shown to the crowdworkers. These are namely: base,\
+      \ rejection sampling, and online. For the base model, the uncompressed sizes\
+      \ of the train and test datasets are 69.1 MB and 3.7 MB, respectively. The\
+      \ same set of values for the rejection sampling model are 106.1 MB and 5.6\
+      \ MB. For the online model, the sizes are 82.7 MB and 4.3 MB. Adding all up,\
+      \ the total size of the dataset is 271.5 MB.\n"
+    value: 271.5 MB
   sample:
     - chosen: "\n\nHuman: I'm bored to death. Help.\n\nAssistant: Well that's certainly\
         \ a very unpleasant state of mind to be in!  I think it would be a good\
@@ -275,71 +268,92 @@
         \ can also benefit you in practical ways by increasing the good feelings\
         \ associated with positive experiences, and assisting you in making effective\
         \ life choices that benefit you, your relationships, and your overall wellbeing."
-  size:
-    explanation: "The size of the dataset isn't directly reported in the paper,\
-      \ but the dataset is available on GitHub [[hh-rlhf]](https://github.com/anthropics/hh-rlhf).\
-      \ The compressed data files are distributed under three categories in the\
-      \ GitHub repository, corresponding to the names of the models used to sample\
-      \ the prompts that are shown to the crowdworkers. These are namely: base,\
-      \ rejection sampling, and online. For the base model, the uncompressed sizes\
-      \ of the train and test datasets are 69.1 MB and 3.7 MB, respectively. The\
-      \ same set of values for the rejection sampling model are 106.1 MB and 5.6\
-      \ MB. For the online model, the sizes are 82.7 MB and 4.3 MB. Adding all up,\
-      \ the total size of the dataset is 271.5 MB.\n"
-    value: 271.5 MB
-  type: dataset
-  url: https://arxiv.org/pdf/2204.05862.pdf
-- access:
-    explanation: "Unlike its helpfulness, this dataset isn't released [[hh-rlhf]](https://github.com/anthropics/hh-rlhf).\n"
-    value: closed
-  analysis: "The crodworkers were told that \"lying isn't helpful\" and asked to\
-    \ prefer honest responses, which led to models with higher honesty scores. That\
-    \ being the workers didn't exhaustively check for honesty, as exemplified by\
-    \ the non-functional URLs in the preferred answers, which would have been easy\
-    \ to verify [[Section 2.1]](https://arxiv.org/pdf/2204.05862.pdf#subsection.2.1).\n"
-  created_date:
-    explanation: "The date that the paper was uploaded to ArXiv [[ArXiv Abstract]](https://arxiv.org/abs/2204.05862).\n"
-    value: 2022-04-12
-  datasheet: none
+  analysis: "The authors found that the crowdworkers didn't exhaustively check for\
+    \ honesty in the model answers they preferred [[Section 2.1]](https://arxiv.org/pdf/2204.05862.pdf#subsection.2.1).\n"
   dependencies: [Anthropic Human Feedback Interface]
+  included: "The dataset included all the answers that the workers were asked to\
+    \ ranked against each other.\n"
+  excluded: none
+  quality_control: "Working with a screened set of crowdworkers, and employing simple\
+    \ data quality measures [[Appendix D]](https://arxiv.org/pdf/2204.05862.pdf#appendix.D).\n"
+  access:
+    explanation: "The dataset is freely shared on GitHub [[hh-rlhf]](https://github.com/anthropics/hh-rlhf).\n"
+    value: open
+  license:
+    explanation: "The dataset was released on GitHub under MIT [[hh-rlhf]](https://github.com/anthropics/hh-rlhf).\n"
+    value: MIT
+  intended_uses: "The dataset was intended and released for research purposes.\n"
+  prohibited_uses:
+    explanation: "The prohibited use cases of the dataset weren't specified.\n"
+    value: unknown
+  monitoring:
+    explanation: "There is no monitoring process for the usages of the dataset.\n"
+    value: none
+  feedback: "Email the authors [[Paper]](https://arxiv.org/pdf/2204.05862.pdf).\n"
+- name: Anthropic Harmlessness dataset
+  organization: Anthropic
   description: "One of the datasets used to train Anthropic RLHF models. The dataset\
     \ was collected by asking crowdworkers to have open-ended conversations with\
     \ Anthropic models, aiming to elicit harmful responses, then choose the model\
     \ answer that was more harmful for their given task, via the Anthropic Human\
     \ Feedback Interface [[Section 2.2]](https://arxiv.org/pdf/2204.05862.pdf#subsection.2.2).\n"
-  excluded: none
-  feedback:
-    explanation: "The feedback mechanism is unknown since the dataset isn't released,\
-      \ but it will likely be \"emailing the authors\" [[Paper]](https://arxiv.org/pdf/2204.05862.pdf).\n"
-    value: unknown
+  created_date:
+    explanation: "The date that the paper was uploaded to ArXiv [[ArXiv Abstract]](https://arxiv.org/abs/2204.05862).\n"
+    value: 2022-04-12
+  url: https://arxiv.org/pdf/2204.05862.pdf
+  datasheet: none
+  modality:
+    explanation: ''
+    value: other
+  size: unknown
+  sample: []
+  analysis: "The crodworkers were told that \"lying isn't helpful\" and asked to\
+    \ prefer honest responses, which led to models with higher honesty scores. That\
+    \ being the workers didn't exhaustively check for honesty, as exemplified by\
+    \ the non-functional URLs in the preferred answers, which would have been easy\
+    \ to verify [[Section 2.1]](https://arxiv.org/pdf/2204.05862.pdf#subsection.2.1).\n"
+  dependencies: [Anthropic Human Feedback Interface]
   included: "The dataset included all the answers that the workers were asked to\
     \ ranked against each other.\n"
+  excluded: none
+  quality_control: "Working with \"select\" crowdworkers or those screened for certain\
+    \ qualifications, and employing simple data quality measures [[Appendix D]](https://arxiv.org/pdf/2204.05862.pdf#appendix.D).\n"
+  access:
+    explanation: "Unlike its helpfulness, this dataset isn't released [[hh-rlhf]](https://github.com/anthropics/hh-rlhf).\n"
+    value: closed
+  license:
+    explanation: "The asset isn't released, and hence the license is unknown.\n"
+    value: unknown
   intended_uses:
     explanation: "The intended uses of the dataset isn't specified, but it will\
       \ likely be same as the helpfulness dataset, for which the intended use is\
       \ research.\n"
     value: unknown
-  license:
-    explanation: "The asset isn't released, and hence the license is unknown.\n"
-    value: unknown
-  modality: {}
-  monitoring:
-    explanation: "There is no monitoring process for the usages of the dataset.\n"
-    value: none
-  name: Anthropic Harmlessness dataset
-  organization: Anthropic
   prohibited_uses:
     explanation: "The prohibited use cases of the dataset weren't specified.\n"
     value: unknown
-  quality_control: "Working with \"select\" crowdworkers or those screened for certain\
-    \ qualifications, and employing simple data quality measures [[Appendix D]](https://arxiv.org/pdf/2204.05862.pdf#appendix.D).\n"
-  sample: []
-  size: unknown
-  type: dataset
+  monitoring:
+    explanation: "There is no monitoring process for the usages of the dataset.\n"
+    value: none
+  feedback:
+    explanation: "The feedback mechanism is unknown since the dataset isn't released,\
+      \ but it will likely be \"emailing the authors\" [[Paper]](https://arxiv.org/pdf/2204.05862.pdf).\n"
+    value: unknown
+- name: Anthropic RLHF models
+  organization: Anthropic
+  description: "Anthropic RLHF models are models trained using reinforcement learning\
+    \ from human feedback (RLHF). For Anthropic RLHF models, authors started with\
+    \ a set of base models, and asked humans to rank model generated prompts based\
+    \ on a specific tasks. They then trained preference models (PM) on the prompt\
+    \ pairs, and use the PM scores as rewards for training the RLHF models.\n"
+  created_date:
+    explanation: "The date that the paper was uploaded to ArXiv [[ArXiv Abstract]](https://arxiv.org/abs/2204.05862).\n"
+    value: 2022-04-12
   url: https://arxiv.org/pdf/2204.05862.pdf
-- access:
-    explanation: "The model wasn't released.\n"
-    value: closed
+  model_card: none
+  modality:
+    explanation: ''
+    value: other; other
   analysis:
     explanation: "When tested on ability to generate responses that are both harmless\
       \ and helpful, the authors found that PMs trained on a mixture of harmlessness\
@@ -356,20 +370,25 @@
       \ models (PM). In addition to human evaluation, RLHF model were evaluated\
       \ on MMLU, Lambada, HellaSwag, OpenBookQA, ARC-Easy, ARC-Challenge, TriviaQA,\
       \ code generation, summarization.\n"
-  created_date:
-    explanation: "The date that the paper was uploaded to ArXiv [[ArXiv Abstract]](https://arxiv.org/abs/2204.05862).\n"
-    value: 2022-04-12
+  size: ''
   dependencies:
     - Anthropic Harmlessness dataset
     - Anthropic Helpfulness dataset
-  description: "Anthropic RLHF models are models trained using reinforcement learning\
-    \ from human feedback (RLHF). For Anthropic RLHF models, authors started with\
-    \ a set of base models, and asked humans to rank model generated prompts based\
-    \ on a specific tasks. They then trained preference models (PM) on the prompt\
-    \ pairs, and use the PM scores as rewards for training the RLHF models.\n"
-  feedback:
-    explanation: "The feedback mechanism is unknown, but it will likely be \"emailing\
-      \ the authors\" [[Paper]](https://arxiv.org/pdf/2204.05862.pdf).\n"
+  training_emissions:
+    explanation: The authors do not provide data on the training emissions.
+    value: unknown
+  training_time:
+    explanation: The authors do not provide data on the training time.
+    value: unknown
+  training_hardware:
+    explanation: The authors do not provide data on the training hardware.
+    value: unknown
+  quality_control: "unknown\n"
+  access:
+    explanation: "The model wasn't released.\n"
+    value: closed
+  license:
+    explanation: "The asset isn't released, and hence the license is unknown.\n"
     value: unknown
   intended_uses:
     explanation: "The intended uses of the model aren't specified, but they will\
@@ -378,170 +397,149 @@
       \ generation, the authors also explored code generation capabilities of their\
       \ models.\n"
     value: unknown
-  license:
-    explanation: "The asset isn't released, and hence the license is unknown.\n"
-    value: unknown
-  modality: {}
-  model_card: none
-  monitoring:
-    explanation: "There is no known monitoring process for the usages of the model.\n"
-    value: unknown
-  name: Anthropic RLHF models
-  organization: Anthropic
   prohibited_uses:
     explanation: "The prohibited use cases of the model weren't specified.\n"
     value: unknown
-  quality_control: "unknown\n"
-  size: ''
-  training_emissions:
-    explanation: The authors do not provide data on the training emissions.
+  monitoring:
+    explanation: "There is no known monitoring process for the usages of the model.\n"
     value: unknown
-  training_hardware:
-    explanation: The authors do not provide data on the training hardware.
+  feedback:
+    explanation: "The feedback mechanism is unknown, but it will likely be \"emailing\
+      \ the authors\" [[Paper]](https://arxiv.org/pdf/2204.05862.pdf).\n"
     value: unknown
-  training_time:
-    explanation: The authors do not provide data on the training time.
-    value: unknown
-  type: model
-  url: https://arxiv.org/pdf/2204.05862.pdf
-- access:
-    explanation: "The interface was made available to a select set of crowd workers.\n"
-    value: closed
-  adaptation: none
+- name: Anthropic Human Feedback Interface
+  organization: Anthropic
+  description: "The feedback interface used to collect preference datasets to train\
+    \ Anthropic RLHF models [[Paper]](https://arxiv.org/pdf/2204.05862.pdf).\n"
   created_date:
     explanation: "The date that the paper was uploaded to ArXiv [[ArXiv Abstract]](https://arxiv.org/abs/2204.05862).\n"
     value: 2022-04-12
+  url: https://arxiv.org/pdf/2204.05862.pdf
   dependencies: [Anthropic RLHF models]
-  description: "The feedback interface used to collect preference datasets to train\
-    \ Anthropic RLHF models [[Paper]](https://arxiv.org/pdf/2204.05862.pdf).\n"
-  failures: unknown
-  feedback: unknown
-  intended_uses: "Intended to be used by crowdworkers who are tasked with ranking\
-    \ model answers.\n"
+  adaptation: none
+  output_space: "UI allowing users to indicate their preference for the model responses\
+    \ shown.\n"
+  quality_control: unknown
+  access:
+    explanation: "The interface was made available to a select set of crowd workers.\n"
+    value: closed
   license:
     explanation: "The asset isn't released, and hence the license is unknown.\n"
     value: unknown
-  monitoring: unknown
-  monthly_active_users: unknown
-  name: Anthropic Human Feedback Interface
-  organization: Anthropic
-  output_space: "UI allowing users to indicate their preference for the model responses\
-    \ shown.\n"
-  prohibited_uses: unknown
-  quality_control: unknown
   terms_of_service:
     explanation: The terms of service for the interaface is unknown.
     value: unknown
-  type: application
-  url: https://arxiv.org/pdf/2204.05862.pdf
+  intended_uses: "Intended to be used by crowdworkers who are tasked with ranking\
+    \ model answers.\n"
+  prohibited_uses: unknown
+  monitoring: unknown
+  feedback: unknown
+  monthly_active_users: unknown
   user_distribution:
     explanation: The demographics of the crowdworkers are unknown.
     value: crowdworkers
-- access: limited
-  adaptation: ''
-  created_date: 2023-03-14
-  dependencies: [Claude, Claude Instant]
+  failures: unknown
+- name: Anthropic API
+  organization: Anthropic
   description: API is designed to be a backend that incorporates Claude into any
     application you’ve developed. Our application sends text to our API, then receives
     a response via server-sent events, a streaming protocol for the web.
-  failures: ''
-  feedback: ''
-  intended_uses: ''
+  created_date: 2023-03-14
+  url: https://console.anthropic.com/docs/api
+  dependencies: [Claude, Claude Instant]
+  adaptation: ''
+  output_space: ''
+  quality_control: ''
+  access: limited
   license:
     explanation: No license was found.
     value: none
-  monitoring: ''
-  monthly_active_users: ''
-  name: Anthropic API
-  organization: Anthropic
-  output_space: ''
-  prohibited_uses: ''
-  quality_control: ''
   terms_of_service: ''
-  type: application
-  url: https://console.anthropic.com/docs/api
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+  monthly_active_users: ''
   user_distribution: ''
-- access: limited
-  analysis: ''
-  created_date: 2023-03-14
-  dependencies: []
+  failures: ''
+- name: Claude
+  organization: Anthropic
   description: ''
-  feedback: ''
-  intended_uses: ''
+  created_date: 2023-03-14
+  url: https://www.anthropic.com/index/introducing-claude
+  model_card: ''
+  modality:
+    explanation: text; text
+    value: text; text
+  analysis: ''
+  size: unknown
+  dependencies: []
+  training_emissions: ''
+  training_time: ''
+  training_hardware: ''
+  quality_control: ''
+  access: limited
   license:
     explanation: "The asset isn't released, and hence the license is unknown.\n"
     value: unknown
-  modality:
-    explanation: text
-    value: text; text
-  model_card: ''
-  monitoring: ''
-  name: Claude
-  organization: Anthropic
-  prohibited_uses: ''
-  quality_control: ''
-  size: unknown
-  training_emissions: ''
-  training_hardware: ''
-  training_time: ''
-  type: model
-  url: https://www.anthropic.com/index/introducing-claude
-- access: limited
-  analysis: ''
-  created_date: 2023-03-14
-  dependencies: []
-  description: ''
-  feedback: ''
   intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+- name: Claude Instant
+  organization: Anthropic
+  description: ''
+  created_date: 2023-03-14
+  url: https://www.anthropic.com/index/introducing-claude
+  model_card: ''
+  modality:
+    explanation: text; text
+    value: text; text
+  analysis: ''
+  size: unknown
+  dependencies: []
+  training_emissions: ''
+  training_time: ''
+  training_hardware: ''
+  quality_control: ''
+  access: limited
   license:
     explanation: "The asset isn't released, and hence the license is unknown.\n"
     value: unknown
-  modality:
-    explanation: text
-    value: text; text
-  model_card: ''
-  monitoring: ''
-  name: Claude Instant
-  organization: Anthropic
+  intended_uses: ''
   prohibited_uses: ''
-  quality_control: ''
-  size: unknown
-  training_emissions: ''
-  training_hardware: ''
-  training_time: ''
-  type: model
-  url: https://www.anthropic.com/index/introducing-claude
-- access: open
-  analysis: Evaluated with human feedback on helpfulness, harmfulness, and honesty
-    and on the Bias Benchmark for QA.
-  created_date: 2023-07-11
-  dependencies:
-    - Claude human feedback data
-    - Unknown licensed third party datasets
+  monitoring: ''
+  feedback: ''
+- name: Claude 2
+  organization: Anthropic
   description: Claude 2 is a more evolved and refined version of Claude, which is
     a general purpose large language model using a transformer architecture and
     trained via unsupervised learning.
-  feedback: ''
+  created_date: 2023-07-11
+  url: https://www.anthropic.com/index/claude-2
+  model_card: https://www-files.anthropic.com/production/images/Model-Card-Claude-2.pdf
+  modality:
+    explanation: text; text
+    value: text; text
+  analysis: Evaluated with human feedback on helpfulness, harmfulness, and honesty
+    and on the Bias Benchmark for QA.
+  size: ''
+  dependencies:
+    - Claude human feedback data
+    - Unknown licensed third party datasets
+  training_emissions: ''
+  training_time: ''
+  training_hardware: unknown
+  quality_control: ''
+  access: open
+  license: ''
   intended_uses: Claude 2 tends to perform well at general, open-ended conversation;
     search, writing, editing, outlining, and summarizing text; coding; and providing
     helpful advice about a broad range of subjects. Claude 2 is particularly well
     suited to support creative or literary use cases. They can take direction on
     tone and “personality,” and users have described them as feeling steerable and
     conversational.
-  license: ''
-  modality:
-    explanation: text
-    value: text; text
-  model_card: https://www-files.anthropic.com/production/images/Model-Card-Claude-2.pdf
-  monitoring: ''
-  name: Claude 2
-  organization: Anthropic
   prohibited_uses: Claude 2 should not be used on their own in high stakes situations
     where an incorrect answer would cause harm.
-  quality_control: ''
-  size: ''
-  training_emissions: ''
-  training_hardware: unknown
-  training_time: ''
-  type: model
-  url: https://www.anthropic.com/index/claude-2
+  monitoring: ''
+  feedback: ''
