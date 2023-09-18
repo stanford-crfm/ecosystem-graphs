@@ -1,9 +1,17 @@
-def extract(dict, field, dict_key):
-    if(isinstance(field, dict) and dict_key in field.keys()):
-        return dict[field[dict_key]]
-    if(not isinstance(field, dict)):
-        return dict[field]
+
+def extract(asset, field, dict_key):
+    if (not isinstance(asset[field], dict)):
+        return asset[field]
+    if(isinstance(asset[field], dict) and dict_key in asset[field].keys()):
+        return asset[field][dict_key]
     return None
+
+def replace(asset, field, dict_key, new_value):
+    if (not isinstance(asset[field], dict)):
+        asset[field] = new_value
+    if(isinstance(asset[field], dict) and dict_key in asset[field].keys()):
+        asset[field][dict_key] = new_value
+    return asset
 
 def integer_sizes(df):
     size_values = []
@@ -26,7 +34,8 @@ def integer_sizes(df):
                     size_values.append(0)
     return size_values
 
-def standard_size(size_field):
+def standardize_size(asset):
+    size_field = extract(asset, "size", "value")
     modifier = "(dense)"
     if (size_field != '' and size_field.lower() != "unknown"):
         size_field_words = size_field.split(" ")
@@ -38,30 +47,52 @@ def standard_size(size_field):
     else:
         return size_field
 
-
-def standard_modal(modality):
+# helper function for standard_modal, standardizes text in the fields
+# assumes input is a string, should extract() first before running function
+def standardize_fields(modality):
     upmodal_value = ""
-    other_bool = True
+    # check to see if modality is non-standard
+    other = True
     if "audio" in modality.lower() or "speech" in modality.lower():
         upmodal_value += "audio, "
-        other_bool = False
+        other = False
     if "code" in modality.lower():
         upmodal_value += "code, "
-        other_bool = False
+        other = False
     if "image" in modality.lower():
         upmodal_value += "image, "
-        other_bool = False
+        other = False
     if "text" in modality.lower():
         upmodal_value += "text, "
-        other_bool = False
+        other = False
     if "video" in modality.lower():
         upmodal_value += "video, "
-        other_bool = False
-    if not other_bool:
+        other = False
+    if upmodal_value[-2:] == ", ":
         upmodal_value = upmodal_value[:-2]
+    if other:
+        upmodal_value = modality
+    return upmodal_value
+
+#only datasets and models have a modality
+def standardize_modal(asset):
+    # modality of asset
+    modality = extract(asset, "modality", "value")
+    # type of asset (application, dataset, model)
+    type = extract(asset, "type", "value")
+    # updated modality
+    if(type == "dataset"):
+        return standardize_fields(modality)
+    # assumes model bc of precondition
     else:
-        upmodal_value = "other"
-    return_dict = {}
-    return_dict["value"] = upmodal_value
-    return_dict["explanation"] = modality
-    return return_dict
+        if(not ("input" in modality.lower() and "output" in modality.lower())):
+            return standardize_fields(modality) + "; " + standardize_fields(modality)
+        # there is a specified input and output for model
+        else:
+            # expects form "[input modalities] "input" ... [output modalities] "output"
+            input_modalities = modality.split("input")[0]
+            output_modalities = modality.split("input")[1]
+            return standardize_fields(input_modalities) + "; " + standardize_fields(output_modalities)
+
+
+

@@ -5,9 +5,8 @@ import yaml
 
 def loadin_data():
     data = []
-    p = pathlib.Path("ecosystem-graphs/assets")
-    for filename in os.listdir(p):
-        with open(p + str(filename), "r") as f:
+    for filename in os.listdir(pathlib.Path("ecosystem-graphs/assets")):
+        with open(pathlib.Path("ecosystem-graphs/assets") + str(filename), "r") as f:
             if (".yaml" in filename):
                 asset = yaml.safe_load(f)
                 if(asset != None):
