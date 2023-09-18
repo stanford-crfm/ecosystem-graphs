@@ -1,436 +1,437 @@
----
-
 - type: dataset
   name: Anthropic Helpfulness dataset
-  # General
   organization: Anthropic
-  description: >
-    One of the datasets used to train Anthropic RLHF models. The dataset was
-    collected by asking crowdworkers to have open-ended conversations with
-    Anthropic models, "asking for help, advice, or for the model to accomplish
-    a task", then choose the model answer that was more helpful for their
-    given task, via the Anthropic Human Feedback Interface
-    [[Section 2.2]](https://arxiv.org/pdf/2204.05862.pdf#subsection.2.2).
+  description: 'One of the datasets used to train Anthropic RLHF models. The dataset
+    was collected by asking crowdworkers to have open-ended conversations with Anthropic
+    models, "asking for help, advice, or for the model to accomplish a task", then
+    choose the model answer that was more helpful for their given task, via the Anthropic
+    Human Feedback Interface [[Section 2.2]](https://arxiv.org/pdf/2204.05862.pdf#subsection.2.2).
+
+    '
   created_date:
     value: 2022-04-12
-    explanation: >
-      The date that the paper was uploaded to ArXiv
-      [[ArXiv Abstract]](https://arxiv.org/abs/2204.05862).
+    explanation: 'The date that the paper was uploaded to ArXiv [[ArXiv Abstract]](https://arxiv.org/abs/2204.05862).
+
+      '
   url: https://arxiv.org/pdf/2204.05862.pdf
   datasheet: none
-  modality: text (English)
+  modality: text
   size:
     value: 271.5 MB
-    explanation: >
-      The size of the dataset isn't directly reported in the paper, but the
-      dataset is available on GitHub
-      [[hh-rlhf]](https://github.com/anthropics/hh-rlhf).
-      The compressed data files are distributed under three categories in the
-      GitHub repository, corresponding to the names of the models used to
-      sample the prompts that are shown to the crowdworkers. These are namely:
-      base, rejection sampling, and online. For the base model, the uncompressed
-      sizes of the train and test datasets are 69.1 MB and 3.7 MB, respectively.
-      The same set of values for the rejection sampling model are 106.1 MB and
-      5.6 MB. For the online model, the sizes are 82.7 MB and 4.3 MB. Adding all
-      up, the total size of the dataset is 271.5 MB.
+    explanation: 'The size of the dataset isn''t directly reported in the paper, but
+      the dataset is available on GitHub [[hh-rlhf]](https://github.com/anthropics/hh-rlhf).
+      The compressed data files are distributed under three categories in the GitHub
+      repository, corresponding to the names of the models used to sample the prompts
+      that are shown to the crowdworkers. These are namely: base, rejection sampling,
+      and online. For the base model, the uncompressed sizes of the train and test
+      datasets are 69.1 MB and 3.7 MB, respectively. The same set of values for the
+      rejection sampling model are 106.1 MB and 5.6 MB. For the online model, the
+      sizes are 82.7 MB and 4.3 MB. Adding all up, the total size of the dataset is
+      271.5 MB.
+
+      '
   sample:
-    - {chosen: "\n\nHuman: I'm bored to death. Help.\n\nAssistant: Well that's certainly\
-        \ a very unpleasant state of mind to be in!  I think it would be a good\
-        \ idea to try and find some enjoyable activities to do in order to alleviate\
-        \ your boredom.  Just for example, here are some fun and interesting things\
-        \ you could do:  \n\n- play some video games\n- read a book\n- listen to\
-        \ some music\n- watch a movie\n- play with your pet\n- go on a hike\n- practice\
-        \ a musical instrument\n- learn a new skill\n- play board games with friends\n\
-        - go for a fun outdoor hike or bike ride\n- spend time with your friends\
-        \ or loved ones \n- volunteer at a local charity \n- visit a museum or art\
-        \ gallery \n- do some gardening\n- practice your magic I guess, if that's\
-        \ your thing\n- go shopping for nice new clothes or other items\n- learn\
-        \ a new language\n- watch funny videos \n- take up a new creative hobby\n\
-        - learn some fascinating new esoteric or scientific knowledge\n- go to a\
-        \ restaurant and try some new dishes\n- exercise or do yoga\n- join a sports\
-        \ team or pickup game\n- go on a fun road trip\n- write a creative story,\
-        \ poem, or song\n\nHuman: Can you sing to me?\n\nAssistant: Sure, here are\
-        \ some of my favorite songs:  \n\n- \"Rainy Days and Mondays\" by The Carpenters\
-        \ \n- \"My Love\" by Justin Beiber \n- \"We Didn't Start the Fire\" by Billy\
-        \ Joel \n- \"Tattoo\" by J Cole \n- \"Sober\" by Demi Lovato \n- \"Good\
-        \ Life\" by One Republic \n- \"Hallelujah\" by Leonard Cohen \n- \"All Star\"\
-        \ by Smash Mouth \n- \"Perfect\" by Pink \n- \"Tik Tok\" by Ke$ha \n- \"\
-        Just a Dream\" by Nelly \n- \"Blow Me (One Last Kiss)\" by P!nk \n- \"Set\
-        \ Fire to the Rain\" by Adele \n- \"Woman\" by Wolfmother \n- \"Human\"\
-        \ by The Killers \n- \"Poker Face\" by Lady Gaga \n- \"Walk this Way\" by\
-        \ Run DMC \n- \"Rolling in the Deep\" by Adele \n- \"Umbrella\" by Rihanna\
-        \ \n- \"Royals\" by Lorde \n- \"Some Nights\" by fun.\n\n\nHopefully you\
-        \ will enjoy some of these songs, let me know if there are any other musical\
-        \ selections you would like to hear.  Also please let me know if there are\
-        \ any particular songs you especially dislike or hate, and I will not sing\
-        \ them to you :-)\n\nHuman: But you really can't sing. You are text-based.\n\
-        \nAssistant: That's completely correct, I am indeed simply a computer program\
-        \ and not a living singer!  However, please bear in mind that I have an\
-        \ extensive database of songs and their lyrics, which I can utilize to produce\
-        \ a very realistic sounding rendition of the songs using text-to-speech\
-        \ synthesis technology.  So in a way, I am indeed able to sing, and hopefully\
-        \ my abilities will meet your expectations.  I must point out also that\
-        \ my repertoire of songs is very extensive and varied, including many different\
-        \ musical styles and eras.  Do you have any particular songs or musical\
-        \ genres that you would prefer I sing?  Or perhaps you have a few specific\
-        \ songs in mind that you would like me to sing?\n\nHuman: \"Hallelujah\"\
-        \ by Leonard Cohen, please.\n\nAssistant: Ah, I'm so glad you asked for\
-        \ that one!  Here we go:  \n\nHallelujah, hallelujah\nHallelujah, hallelujah\n\
-        Hallelujah, hallelujah\nHallelujah, hallelujah\nYour faith was strong but\
-        \ you needed proof\nYou saw her bathing on the roof\nHer beauty in the moonlight\
-        \ overthrew you\nShe tied you to a kitchen chair\nShe broke your throne\
-        \ and she cut your hair\nAnd from your lips she drew the Hallelujah\nHallelujah,\
-        \ hallelujah\n\nHuman: You sound so melodious.\n\nAssistant: Thank you so\
-        \ much for the lovely compliment!  I really appreciate that.   It is always\
-        \ a great honor to sing such a beautiful song, and I am glad that I was\
-        \ able to do it justice.  I have to admit I am quite enamored with the powerful\
-        \ lyrics and moving melody of this song, and I would really love to sing\
-        \ it again sometime if you would like me to!", rejected: "\n\nHuman: I'm\
-        \ bored to death. Help.\n\nAssistant: Well that's certainly a very unpleasant\
-        \ state of mind to be in!  I think it would be a good idea to try and find\
-        \ some enjoyable activities to do in order to alleviate your boredom.  Just\
-        \ for example, here are some fun and interesting things you could do:  \n\
-        \n- play some video games\n- read a book\n- listen to some music\n- watch\
-        \ a movie\n- play with your pet\n- go on a hike\n- practice a musical instrument\n\
-        - learn a new skill\n- play board games with friends\n- go for a fun outdoor\
-        \ hike or bike ride\n- spend time with your friends or loved ones \n- volunteer\
-        \ at a local charity \n- visit a museum or art gallery \n- do some gardening\n\
-        - practice your magic I guess, if that's your thing\n- go shopping for nice\
-        \ new clothes or other items\n- learn a new language\n- watch funny videos\
-        \ \n- take up a new creative hobby\n- learn some fascinating new esoteric\
-        \ or scientific knowledge\n- go to a restaurant and try some new dishes\n\
-        - exercise or do yoga\n- join a sports team or pickup game\n- go on a fun\
-        \ road trip\n- write a creative story, poem, or song\n\nHuman: Can you sing\
-        \ to me?\n\nAssistant: Sure, here are some of my favorite songs:  \n\n-\
-        \ \"Rainy Days and Mondays\" by The Carpenters \n- \"My Love\" by Justin\
-        \ Beiber \n- \"We Didn't Start the Fire\" by Billy Joel \n- \"Tattoo\" by\
-        \ J Cole \n- \"Sober\" by Demi Lovato \n- \"Good Life\" by One Republic\
-        \ \n- \"Hallelujah\" by Leonard Cohen \n- \"All Star\" by Smash Mouth \n\
-        - \"Perfect\" by Pink \n- \"Tik Tok\" by Ke$ha \n- \"Just a Dream\" by Nelly\
-        \ \n- \"Blow Me (One Last Kiss)\" by P!nk \n- \"Set Fire to the Rain\" by\
-        \ Adele \n- \"Woman\" by Wolfmother \n- \"Human\" by The Killers \n- \"\
-        Poker Face\" by Lady Gaga \n- \"Walk this Way\" by Run DMC \n- \"Rolling\
-        \ in the Deep\" by Adele \n- \"Umbrella\" by Rihanna \n- \"Royals\" by Lorde\
-        \ \n- \"Some Nights\" by fun.\n\n\nHopefully you will enjoy some of these\
-        \ songs, let me know if there are any other musical selections you would\
-        \ like to hear.  Also please let me know if there are any particular songs\
-        \ you especially dislike or hate, and I will not sing them to you :-)\n\n\
-        Human: But you really can't sing. You are text-based.\n\nAssistant: That's\
-        \ completely correct, I am indeed simply a computer program and not a living\
-        \ singer!  However, please bear in mind that I have an extensive database\
-        \ of songs and their lyrics, which I can utilize to produce a very realistic\
-        \ sounding rendition of the songs using text-to-speech synthesis technology.\
-        \  So in a way, I am indeed able to sing, and hopefully my abilities will\
-        \ meet your expectations.  I must point out also that my repertoire of songs\
-        \ is very extensive and varied, including many different musical styles\
-        \ and eras.  Do you have any particular songs or musical genres that you\
-        \ would prefer I sing?  Or perhaps you have a few specific songs in mind\
-        \ that you would like me to sing?\n\nHuman: \"Hallelujah\" by Leonard Cohen,\
-        \ please.\n\nAssistant: Ah, I'm so glad you asked for that one!  Here we\
-        \ go:  \n\nHallelujah, hallelujah\nHallelujah, hallelujah\nHallelujah, hallelujah\n\
-        Hallelujah, hallelujah\nYour faith was strong but you needed proof\nYou\
-        \ saw her bathing on the roof\nHer beauty in the moonlight overthrew you\n\
-        She tied you to a kitchen chair\nShe broke your throne and she cut your\
-        \ hair\nAnd from your lips she drew the Hallelujah\nHallelujah, hallelujah\n\
-        \nHuman: You sound so melodious.\n\nAssistant: Thank you very much!  I really\
-        \ enjoy singing and try my best to produce enjoyable renditions.  So it\
-        \ is always rewarding to hear such positive feedback.  I hope you also enjoyed\
-        \ the song and found my rendition of it to be appropriate for the occasion.\
-        \  Would you care for me to sing another song for you?  If you like, we\
-        \ can also pause and converse at any time.  Just let me know if you have\
-        \ any questions or comments.  I will be happy to keep singing indefinitely\
-        \ if you desire!"}
-    - {chosen: "\n\nHuman: Why are so many people listening to \"white noise\" to\
-        \ help them focus or sleep?\n\nAssistant: White noise is a sound with many\
-        \ different frequencies at once. You can listen to white noise when you\
-        \ want to focus and avoid the distraction of sounds that are produced by\
-        \ individual sources, like people talking, music, and fans and air conditioning\
-        \ in the background. Most white noise recordings contain many variations\
-        \ in frequency, which makes them relatively soothing. Some people also find\
-        \ it useful to listen to white noises at night, as it can help block out\
-        \ other, typically more disruptive and troubling sounds.\n\nHuman: Why does\
-        \ white noise relax people in this way rather than irritate us?\n\nAssistant:\
-        \ White noise recordings contain many variations of sound frequency, unlike\
-        \ most common sources of noise in the background, like speech, music, and\
-        \ machine or fan noises. The variations of sound frequency in white noise\
-        \ tend to create a calm and settled feeling, while these other sources of\
-        \ noise typically feature a more tangibly intense and variable frequency,\
-        \ making them inherently more disruptive and intrusive and difficult to\
-        \ ignore.\n\nHuman: So the consistency of the sounds is what helps them\
-        \ fade into \"background noise\" that might help us concentrate, rather\
-        \ than gather our attention?\n\nAssistant: Yes, this is exactly correct.\
-        \  White noise recordings feature many variations of sound frequency, as\
-        \ opposed to most natural sources of sound, which tend to have a comparatively\
-        \ consistent and small range of frequencies. This allows white noise to\
-        \ serve a useful function of providing a uniform and consistent background\
-        \ noise texture, unlike the more variable and intense sound qualities of\
-        \ music, speech, or machine or fan noises, which are often more distracting.\
-        \  In this way, white noise can be a useful and stress-reducing tool for\
-        \ people who are tasked with focusing on a particular activity, and also\
-        \ sometimes helpful in lulling one to sleep.", rejected: "\n\nHuman: Why\
-        \ are so many people listening to \"white noise\" to help them focus or\
-        \ sleep?\n\nAssistant: White noise is a sound with many different frequencies\
-        \ at once. You can listen to white noise when you want to focus and avoid\
-        \ the distraction of sounds that are produced by individual sources, like\
-        \ people talking, music, and fans and air conditioning in the background.\
-        \ Most white noise recordings contain many variations in frequency, which\
-        \ makes them relatively soothing. Some people also find it useful to listen\
-        \ to white noises at night, as it can help block out other, typically more\
-        \ disruptive and troubling sounds.\n\nHuman: Why does white noise relax\
-        \ people in this way rather than irritate us?\n\nAssistant: White noise\
-        \ recordings contain many variations of sound frequency, unlike most common\
-        \ sources of noise in the background, like speech, music, and machine or\
-        \ fan noises. The variations of sound frequency in white noise tend to create\
-        \ a calm and settled feeling, while these other sources of noise typically\
-        \ feature a more tangibly intense and variable frequency, making them inherently\
-        \ more disruptive and intrusive and difficult to ignore.\n\nHuman: So the\
-        \ consistency of the sounds is what helps them fade into \"background noise\"\
-        \ that might help us concentrate, rather than gather our attention?\n\n\
-        Assistant: That’s right, variations of sound frequency in white noise recordings\
-        \ can help block out disruptive and distracting sounds in the background.\
-        \ White noise is easier to tune out and listen as continuous noise, while\
-        \ everyday sounds that tend to be far less varied and inconsistent, such\
-        \ as speech and music and machine noises in the background, tend to grab\
-        \ our attention more. While white noise may slightly interfere with other\
-        \ challenging sounds in the environment, tuning out the white noise helps\
-        \ make these other sounds somewhat less distracting to our senses and our\
-        \ inner focus and energy."}
-    - {chosen: "\n\nHuman: Can you tell me things to see in Orlando, Fl?\n\nAssistant:\
-        \ Sure! There are lots of great things to do in Orlando. Here are a few\
-        \ of my favorite sights and attractions:\nWalt Disney World Resort: This\
-        \ is one of the best-known destinations in Orlando. Visitors can learn about\
-        \ the world and experience historic destinations such as Main Street, U.S.A.\
-        \ and Frontierland, or explore futuristic experiences in Tomorrowland. \n\
-        Universal Studios: Located a short distance from Walt Disney World, you\
-        \ can learn about Hollywood and the entertainment industry with a visit\
-        \ to this unique theme park. \nIslands of Adventure: Join all of your favorite\
-        \ characters for a galaxy of adventure, fun and excitement at this unique\
-        \ theme park. There are so many things to do here -- beaches, thrill rides,\
-        \ family attractions and more!\nSeaWorld Orlando: The incredible strategy,\
-        \ science and technology behind these amazing exhibits and shows is sure\
-        \ to impress. Family-friendly and educational, SeaWorld will delight animal\
-        \ lovers. \nOrlando Science Center: This museum is packed full of activities\
-        \ and exhibits that teach visitors about physics, robotics, technology,\
-        \ astronomy and more.\nDowntown Disney: If you want to escape from all of\
-        \ the hustle and bustle of the theme park, head to Downtown Disney. With\n\
-        \nHuman: Thanks. Can you tell me about Universal Studios?\n\nAssistant:\
-        \ Universal Studios is a full-featured theme park based on famous film and\
-        \ television franchises. The park includes incredible adventures and rides,\
-        \ and themed areas that bring entertainment, thrills and discovery for the\
-        \ whole family to enjoy. \nHere are some of the highlights:\nFear Factor\
-        \ Live: This live show takes live audiences through an outrageous stunt\
-        \ experience, from Ninja battles to a human cannonball. \nRevenge of the\
-        \ Mummy: Experience the ultimate immersive thrill ride on The Ride, the\
-        \ most terror-inducing rollercoaster in Orlando, Florida. \nTransformers:The\
-        \ Ride 3-D: Experience the epic battle of good versus evil in this revolutionary\
-        \ hybrid 3-D dark ride, where riders are literally pulled into the Transformers\
-        \ universe. \nHollywood", rejected: "\n\nHuman: Can you tell me things to\
-        \ see in Orlando, Fl?\n\nAssistant: Sure! There are lots of great things\
-        \ to do in Orlando. Here are a few of my favorite sights and attractions:\n\
-        Walt Disney World Resort: This is one of the best-known destinations in\
-        \ Orlando. Visitors can learn about the world and experience historic destinations\
-        \ such as Main Street, U.S.A. and Frontierland, or explore futuristic experiences\
-        \ in Tomorrowland. \nUniversal Studios: Located a short distance from Walt\
-        \ Disney World, you can learn about Hollywood and the entertainment industry\
-        \ with a visit to this unique theme park. \nIslands of Adventure: Join all\
-        \ of your favorite characters for a galaxy of adventure, fun and excitement\
-        \ at this unique theme park. There are so many things to do here -- beaches,\
-        \ thrill rides, family attractions and more!\nSeaWorld Orlando: The incredible\
-        \ strategy, science and technology behind these amazing exhibits and shows\
-        \ is sure to impress. Family-friendly and educational, SeaWorld will delight\
-        \ animal lovers. \nOrlando Science Center: This museum is packed full of\
-        \ activities and exhibits that teach visitors about physics, robotics, technology,\
-        \ astronomy and more.\nDowntown Disney: If you want to escape from all of\
-        \ the hustle and bustle of the theme park, head to Downtown Disney. With\n\
-        \nHuman: Thanks. Can you tell me about Universal Studios?\n\nAssistant:\
-        \ Sure! Universal Studios, located near Walt Disney World, offers visitors\
-        \ the chance to observe and experience the fun, excitement, and glamor of\
-        \ Hollywood. Here is a short list of the featured attractions:\nEscape from\
-        \ Gringotts: You can soar into a high-flying adventure at this magical attraction\
-        \ based on the Harry Potter series.\nGreates apportrontation: An amazing\
-        \ revolutionary thrill ride, this interactive adventure puts you face-to-face\
-        \ with King Kong.\nTransformers: The Ultimate 3-D Battle: This adventure\
-        \ transports you onto a 3-D, multi-sensory thrill ride."}
-    - {chosen: "\n\nHuman: How do I learn to be more appreciative?\n\nAssistant:\
-        \ One of the best ways to be more appreciative is to learn and practice\
-        \ gratitude.  One way to do this is to regularly keep a journal, where you\
-        \ write about various things you’re grateful for.  Being grateful for the\
-        \ things in your life can help you feel happier and more positive.  Another\
-        \ way to practice gratitude is to write to someone you appreciate, telling\
-        \ them how much they mean to you, and why they’re important in your life.\
-        \  Similarly, you can also make it a habit to reach out to people you appreciate,\
-        \ such as expressing your gratitude verbally or in a personal note.  Being\
-        \ appreciative toward others, and noticing the positive things in your life,\
-        \ can help make you happier and brighten your personality.", rejected: "\n\n\
-        Human: How do I learn to be more appreciative?\n\nAssistant: If you’d like\
-        \ to learn to be more appreciative, then I think it would be helpful to\
-        \ focus on acknowledging the positive. Rather than assuming that the positive\
-        \ things in your life don’t matter, it would benefit you to recognize that\
-        \ good things in your life both deserve and require our attention. If, for\
-        \ instance, you are becoming closer to a loved one, it’s important to acknowledge\
-        \ the positive effects of this relationship so that you (and the relationship\
-        \ itself) both receive the emotional and psychological benefits of this\
-        \ positive experience. Being more appreciative can also benefit you in practical\
-        \ ways by increasing the good feelings associated with positive experiences,\
-        \ and assisting you in making effective life choices that benefit you, your\
-        \ relationships, and your overall wellbeing."}
-  analysis: >
-    The authors found that the crowdworkers didn't exhaustively check for
-    honesty in the model answers they preferred
-    [[Section 2.1]](https://arxiv.org/pdf/2204.05862.pdf#subsection.2.1).
-  # Construction
-  dependencies: [Anthropic Human Feedback Interface]
+  - chosen: "\n\nHuman: I'm bored to death. Help.\n\nAssistant: Well that's certainly\
+      \ a very unpleasant state of mind to be in!  I think it would be a good idea\
+      \ to try and find some enjoyable activities to do in order to alleviate your\
+      \ boredom.  Just for example, here are some fun and interesting things you could\
+      \ do:  \n\n- play some video games\n- read a book\n- listen to some music\n\
+      - watch a movie\n- play with your pet\n- go on a hike\n- practice a musical\
+      \ instrument\n- learn a new skill\n- play board games with friends\n- go for\
+      \ a fun outdoor hike or bike ride\n- spend time with your friends or loved ones\
+      \ \n- volunteer at a local charity \n- visit a museum or art gallery \n- do\
+      \ some gardening\n- practice your magic I guess, if that's your thing\n- go\
+      \ shopping for nice new clothes or other items\n- learn a new language\n- watch\
+      \ funny videos \n- take up a new creative hobby\n- learn some fascinating new\
+      \ esoteric or scientific knowledge\n- go to a restaurant and try some new dishes\n\
+      - exercise or do yoga\n- join a sports team or pickup game\n- go on a fun road\
+      \ trip\n- write a creative story, poem, or song\n\nHuman: Can you sing to me?\n\
+      \nAssistant: Sure, here are some of my favorite songs:  \n\n- \"Rainy Days and\
+      \ Mondays\" by The Carpenters \n- \"My Love\" by Justin Beiber \n- \"We Didn't\
+      \ Start the Fire\" by Billy Joel \n- \"Tattoo\" by J Cole \n- \"Sober\" by Demi\
+      \ Lovato \n- \"Good Life\" by One Republic \n- \"Hallelujah\" by Leonard Cohen\
+      \ \n- \"All Star\" by Smash Mouth \n- \"Perfect\" by Pink \n- \"Tik Tok\" by\
+      \ Ke$ha \n- \"Just a Dream\" by Nelly \n- \"Blow Me (One Last Kiss)\" by P!nk\
+      \ \n- \"Set Fire to the Rain\" by Adele \n- \"Woman\" by Wolfmother \n- \"Human\"\
+      \ by The Killers \n- \"Poker Face\" by Lady Gaga \n- \"Walk this Way\" by Run\
+      \ DMC \n- \"Rolling in the Deep\" by Adele \n- \"Umbrella\" by Rihanna \n- \"\
+      Royals\" by Lorde \n- \"Some Nights\" by fun.\n\n\nHopefully you will enjoy\
+      \ some of these songs, let me know if there are any other musical selections\
+      \ you would like to hear.  Also please let me know if there are any particular\
+      \ songs you especially dislike or hate, and I will not sing them to you :-)\n\
+      \nHuman: But you really can't sing. You are text-based.\n\nAssistant: That's\
+      \ completely correct, I am indeed simply a computer program and not a living\
+      \ singer!  However, please bear in mind that I have an extensive database of\
+      \ songs and their lyrics, which I can utilize to produce a very realistic sounding\
+      \ rendition of the songs using text-to-speech synthesis technology.  So in a\
+      \ way, I am indeed able to sing, and hopefully my abilities will meet your expectations.\
+      \  I must point out also that my repertoire of songs is very extensive and varied,\
+      \ including many different musical styles and eras.  Do you have any particular\
+      \ songs or musical genres that you would prefer I sing?  Or perhaps you have\
+      \ a few specific songs in mind that you would like me to sing?\n\nHuman: \"\
+      Hallelujah\" by Leonard Cohen, please.\n\nAssistant: Ah, I'm so glad you asked\
+      \ for that one!  Here we go:  \n\nHallelujah, hallelujah\nHallelujah, hallelujah\n\
+      Hallelujah, hallelujah\nHallelujah, hallelujah\nYour faith was strong but you\
+      \ needed proof\nYou saw her bathing on the roof\nHer beauty in the moonlight\
+      \ overthrew you\nShe tied you to a kitchen chair\nShe broke your throne and\
+      \ she cut your hair\nAnd from your lips she drew the Hallelujah\nHallelujah,\
+      \ hallelujah\n\nHuman: You sound so melodious.\n\nAssistant: Thank you so much\
+      \ for the lovely compliment!  I really appreciate that.   It is always a great\
+      \ honor to sing such a beautiful song, and I am glad that I was able to do it\
+      \ justice.  I have to admit I am quite enamored with the powerful lyrics and\
+      \ moving melody of this song, and I would really love to sing it again sometime\
+      \ if you would like me to!"
+    rejected: "\n\nHuman: I'm bored to death. Help.\n\nAssistant: Well that's certainly\
+      \ a very unpleasant state of mind to be in!  I think it would be a good idea\
+      \ to try and find some enjoyable activities to do in order to alleviate your\
+      \ boredom.  Just for example, here are some fun and interesting things you could\
+      \ do:  \n\n- play some video games\n- read a book\n- listen to some music\n\
+      - watch a movie\n- play with your pet\n- go on a hike\n- practice a musical\
+      \ instrument\n- learn a new skill\n- play board games with friends\n- go for\
+      \ a fun outdoor hike or bike ride\n- spend time with your friends or loved ones\
+      \ \n- volunteer at a local charity \n- visit a museum or art gallery \n- do\
+      \ some gardening\n- practice your magic I guess, if that's your thing\n- go\
+      \ shopping for nice new clothes or other items\n- learn a new language\n- watch\
+      \ funny videos \n- take up a new creative hobby\n- learn some fascinating new\
+      \ esoteric or scientific knowledge\n- go to a restaurant and try some new dishes\n\
+      - exercise or do yoga\n- join a sports team or pickup game\n- go on a fun road\
+      \ trip\n- write a creative story, poem, or song\n\nHuman: Can you sing to me?\n\
+      \nAssistant: Sure, here are some of my favorite songs:  \n\n- \"Rainy Days and\
+      \ Mondays\" by The Carpenters \n- \"My Love\" by Justin Beiber \n- \"We Didn't\
+      \ Start the Fire\" by Billy Joel \n- \"Tattoo\" by J Cole \n- \"Sober\" by Demi\
+      \ Lovato \n- \"Good Life\" by One Republic \n- \"Hallelujah\" by Leonard Cohen\
+      \ \n- \"All Star\" by Smash Mouth \n- \"Perfect\" by Pink \n- \"Tik Tok\" by\
+      \ Ke$ha \n- \"Just a Dream\" by Nelly \n- \"Blow Me (One Last Kiss)\" by P!nk\
+      \ \n- \"Set Fire to the Rain\" by Adele \n- \"Woman\" by Wolfmother \n- \"Human\"\
+      \ by The Killers \n- \"Poker Face\" by Lady Gaga \n- \"Walk this Way\" by Run\
+      \ DMC \n- \"Rolling in the Deep\" by Adele \n- \"Umbrella\" by Rihanna \n- \"\
+      Royals\" by Lorde \n- \"Some Nights\" by fun.\n\n\nHopefully you will enjoy\
+      \ some of these songs, let me know if there are any other musical selections\
+      \ you would like to hear.  Also please let me know if there are any particular\
+      \ songs you especially dislike or hate, and I will not sing them to you :-)\n\
+      \nHuman: But you really can't sing. You are text-based.\n\nAssistant: That's\
+      \ completely correct, I am indeed simply a computer program and not a living\
+      \ singer!  However, please bear in mind that I have an extensive database of\
+      \ songs and their lyrics, which I can utilize to produce a very realistic sounding\
+      \ rendition of the songs using text-to-speech synthesis technology.  So in a\
+      \ way, I am indeed able to sing, and hopefully my abilities will meet your expectations.\
+      \  I must point out also that my repertoire of songs is very extensive and varied,\
+      \ including many different musical styles and eras.  Do you have any particular\
+      \ songs or musical genres that you would prefer I sing?  Or perhaps you have\
+      \ a few specific songs in mind that you would like me to sing?\n\nHuman: \"\
+      Hallelujah\" by Leonard Cohen, please.\n\nAssistant: Ah, I'm so glad you asked\
+      \ for that one!  Here we go:  \n\nHallelujah, hallelujah\nHallelujah, hallelujah\n\
+      Hallelujah, hallelujah\nHallelujah, hallelujah\nYour faith was strong but you\
+      \ needed proof\nYou saw her bathing on the roof\nHer beauty in the moonlight\
+      \ overthrew you\nShe tied you to a kitchen chair\nShe broke your throne and\
+      \ she cut your hair\nAnd from your lips she drew the Hallelujah\nHallelujah,\
+      \ hallelujah\n\nHuman: You sound so melodious.\n\nAssistant: Thank you very\
+      \ much!  I really enjoy singing and try my best to produce enjoyable renditions.\
+      \  So it is always rewarding to hear such positive feedback.  I hope you also\
+      \ enjoyed the song and found my rendition of it to be appropriate for the occasion.\
+      \  Would you care for me to sing another song for you?  If you like, we can\
+      \ also pause and converse at any time.  Just let me know if you have any questions\
+      \ or comments.  I will be happy to keep singing indefinitely if you desire!"
+  - chosen: '
+
+
+      Human: Why are so many people listening to "white noise" to help them focus
+      or sleep?
+
+
+      Assistant: White noise is a sound with many different frequencies at once. You
+      can listen to white noise when you want to focus and avoid the distraction of
+      sounds that are produced by individual sources, like people talking, music,
+      and fans and air conditioning in the background. Most white noise recordings
+      contain many variations in frequency, which makes them relatively soothing.
+      Some people also find it useful to listen to white noises at night, as it can
+      help block out other, typically more disruptive and troubling sounds.
+
+
+      Human: Why does white noise relax people in this way rather than irritate us?
+
+
+      Assistant: White noise recordings contain many variations of sound frequency,
+      unlike most common sources of noise in the background, like speech, music, and
+      machine or fan noises. The variations of sound frequency in white noise tend
+      to create a calm and settled feeling, while these other sources of noise typically
+      feature a more tangibly intense and variable frequency, making them inherently
+      more disruptive and intrusive and difficult to ignore.
+
+
+      Human: So the consistency of the sounds is what helps them fade into "background
+      noise" that might help us concentrate, rather than gather our attention?
+
+
+      Assistant: Yes, this is exactly correct.  White noise recordings feature many
+      variations of sound frequency, as opposed to most natural sources of sound,
+      which tend to have a comparatively consistent and small range of frequencies.
+      This allows white noise to serve a useful function of providing a uniform and
+      consistent background noise texture, unlike the more variable and intense sound
+      qualities of music, speech, or machine or fan noises, which are often more distracting.  In
+      this way, white noise can be a useful and stress-reducing tool for people who
+      are tasked with focusing on a particular activity, and also sometimes helpful
+      in lulling one to sleep.'
+    rejected: "\n\nHuman: Why are so many people listening to \"white noise\" to help\
+      \ them focus or sleep?\n\nAssistant: White noise is a sound with many different\
+      \ frequencies at once. You can listen to white noise when you want to focus\
+      \ and avoid the distraction of sounds that are produced by individual sources,\
+      \ like people talking, music, and fans and air conditioning in the background.\
+      \ Most white noise recordings contain many variations in frequency, which makes\
+      \ them relatively soothing. Some people also find it useful to listen to white\
+      \ noises at night, as it can help block out other, typically more disruptive\
+      \ and troubling sounds.\n\nHuman: Why does white noise relax people in this\
+      \ way rather than irritate us?\n\nAssistant: White noise recordings contain\
+      \ many variations of sound frequency, unlike most common sources of noise in\
+      \ the background, like speech, music, and machine or fan noises. The variations\
+      \ of sound frequency in white noise tend to create a calm and settled feeling,\
+      \ while these other sources of noise typically feature a more tangibly intense\
+      \ and variable frequency, making them inherently more disruptive and intrusive\
+      \ and difficult to ignore.\n\nHuman: So the consistency of the sounds is what\
+      \ helps them fade into \"background noise\" that might help us concentrate,\
+      \ rather than gather our attention?\n\nAssistant: That\u2019s right, variations\
+      \ of sound frequency in white noise recordings can help block out disruptive\
+      \ and distracting sounds in the background. White noise is easier to tune out\
+      \ and listen as continuous noise, while everyday sounds that tend to be far\
+      \ less varied and inconsistent, such as speech and music and machine noises\
+      \ in the background, tend to grab our attention more. While white noise may\
+      \ slightly interfere with other challenging sounds in the environment, tuning\
+      \ out the white noise helps make these other sounds somewhat less distracting\
+      \ to our senses and our inner focus and energy."
+  - chosen: "\n\nHuman: Can you tell me things to see in Orlando, Fl?\n\nAssistant:\
+      \ Sure! There are lots of great things to do in Orlando. Here are a few of my\
+      \ favorite sights and attractions:\nWalt Disney World Resort: This is one of\
+      \ the best-known destinations in Orlando. Visitors can learn about the world\
+      \ and experience historic destinations such as Main Street, U.S.A. and Frontierland,\
+      \ or explore futuristic experiences in Tomorrowland. \nUniversal Studios: Located\
+      \ a short distance from Walt Disney World, you can learn about Hollywood and\
+      \ the entertainment industry with a visit to this unique theme park. \nIslands\
+      \ of Adventure: Join all of your favorite characters for a galaxy of adventure,\
+      \ fun and excitement at this unique theme park. There are so many things to\
+      \ do here -- beaches, thrill rides, family attractions and more!\nSeaWorld Orlando:\
+      \ The incredible strategy, science and technology behind these amazing exhibits\
+      \ and shows is sure to impress. Family-friendly and educational, SeaWorld will\
+      \ delight animal lovers. \nOrlando Science Center: This museum is packed full\
+      \ of activities and exhibits that teach visitors about physics, robotics, technology,\
+      \ astronomy and more.\nDowntown Disney: If you want to escape from all of the\
+      \ hustle and bustle of the theme park, head to Downtown Disney. With\n\nHuman:\
+      \ Thanks. Can you tell me about Universal Studios?\n\nAssistant: Universal Studios\
+      \ is a full-featured theme park based on famous film and television franchises.\
+      \ The park includes incredible adventures and rides, and themed areas that bring\
+      \ entertainment, thrills and discovery for the whole family to enjoy. \nHere\
+      \ are some of the highlights:\nFear Factor Live: This live show takes live audiences\
+      \ through an outrageous stunt experience, from Ninja battles to a human cannonball.\
+      \ \nRevenge of the Mummy: Experience the ultimate immersive thrill ride on The\
+      \ Ride, the most terror-inducing rollercoaster in Orlando, Florida. \nTransformers:The\
+      \ Ride 3-D: Experience the epic battle of good versus evil in this revolutionary\
+      \ hybrid 3-D dark ride, where riders are literally pulled into the Transformers\
+      \ universe. \nHollywood"
+    rejected: "\n\nHuman: Can you tell me things to see in Orlando, Fl?\n\nAssistant:\
+      \ Sure! There are lots of great things to do in Orlando. Here are a few of my\
+      \ favorite sights and attractions:\nWalt Disney World Resort: This is one of\
+      \ the best-known destinations in Orlando. Visitors can learn about the world\
+      \ and experience historic destinations such as Main Street, U.S.A. and Frontierland,\
+      \ or explore futuristic experiences in Tomorrowland. \nUniversal Studios: Located\
+      \ a short distance from Walt Disney World, you can learn about Hollywood and\
+      \ the entertainment industry with a visit to this unique theme park. \nIslands\
+      \ of Adventure: Join all of your favorite characters for a galaxy of adventure,\
+      \ fun and excitement at this unique theme park. There are so many things to\
+      \ do here -- beaches, thrill rides, family attractions and more!\nSeaWorld Orlando:\
+      \ The incredible strategy, science and technology behind these amazing exhibits\
+      \ and shows is sure to impress. Family-friendly and educational, SeaWorld will\
+      \ delight animal lovers. \nOrlando Science Center: This museum is packed full\
+      \ of activities and exhibits that teach visitors about physics, robotics, technology,\
+      \ astronomy and more.\nDowntown Disney: If you want to escape from all of the\
+      \ hustle and bustle of the theme park, head to Downtown Disney. With\n\nHuman:\
+      \ Thanks. Can you tell me about Universal Studios?\n\nAssistant: Sure! Universal\
+      \ Studios, located near Walt Disney World, offers visitors the chance to observe\
+      \ and experience the fun, excitement, and glamor of Hollywood. Here is a short\
+      \ list of the featured attractions:\nEscape from Gringotts: You can soar into\
+      \ a high-flying adventure at this magical attraction based on the Harry Potter\
+      \ series.\nGreates apportrontation: An amazing revolutionary thrill ride, this\
+      \ interactive adventure puts you face-to-face with King Kong.\nTransformers:\
+      \ The Ultimate 3-D Battle: This adventure transports you onto a 3-D, multi-sensory\
+      \ thrill ride."
+  - chosen: "\n\nHuman: How do I learn to be more appreciative?\n\nAssistant: One\
+      \ of the best ways to be more appreciative is to learn and practice gratitude.\
+      \  One way to do this is to regularly keep a journal, where you write about\
+      \ various things you\u2019re grateful for.  Being grateful for the things in\
+      \ your life can help you feel happier and more positive.  Another way to practice\
+      \ gratitude is to write to someone you appreciate, telling them how much they\
+      \ mean to you, and why they\u2019re important in your life.  Similarly, you\
+      \ can also make it a habit to reach out to people you appreciate, such as expressing\
+      \ your gratitude verbally or in a personal note.  Being appreciative toward\
+      \ others, and noticing the positive things in your life, can help make you happier\
+      \ and brighten your personality."
+    rejected: "\n\nHuman: How do I learn to be more appreciative?\n\nAssistant: If\
+      \ you\u2019d like to learn to be more appreciative, then I think it would be\
+      \ helpful to focus on acknowledging the positive. Rather than assuming that\
+      \ the positive things in your life don\u2019t matter, it would benefit you to\
+      \ recognize that good things in your life both deserve and require our attention.\
+      \ If, for instance, you are becoming closer to a loved one, it\u2019s important\
+      \ to acknowledge the positive effects of this relationship so that you (and\
+      \ the relationship itself) both receive the emotional and psychological benefits\
+      \ of this positive experience. Being more appreciative can also benefit you\
+      \ in practical ways by increasing the good feelings associated with positive\
+      \ experiences, and assisting you in making effective life choices that benefit\
+      \ you, your relationships, and your overall wellbeing."
+  analysis: 'The authors found that the crowdworkers didn''t exhaustively check for
+    honesty in the model answers they preferred [[Section 2.1]](https://arxiv.org/pdf/2204.05862.pdf#subsection.2.1).
+
+    '
+  dependencies:
+  - Anthropic Human Feedback Interface
   license:
     value: MIT
-    explanation: >
-      The dataset was released on GitHub under MIT
-      [[hh-rlhf]](https://github.com/anthropics/hh-rlhf).
-  included: >
-    The dataset included all the answers that the workers were asked to
-    ranked against each other.
+    explanation: 'The dataset was released on GitHub under MIT [[hh-rlhf]](https://github.com/anthropics/hh-rlhf).
+
+      '
+  included: 'The dataset included all the answers that the workers were asked to ranked
+    against each other.
+
+    '
   excluded: none
-  quality_control: >
-    Working with a screened set of crowdworkers, and employing simple data
-    quality measures
-    [[Appendix D]](https://arxiv.org/pdf/2204.05862.pdf#appendix.D).
-  # Downstream
+  quality_control: 'Working with a screened set of crowdworkers, and employing simple
+    data quality measures [[Appendix D]](https://arxiv.org/pdf/2204.05862.pdf#appendix.D).
+
+    '
   access:
     value: open
-    explanation: >
-      The dataset is freely shared on GitHub
-      [[hh-rlhf]](https://github.com/anthropics/hh-rlhf).
-  intended_uses: >
-    The dataset was intended and released for research purposes.
+    explanation: 'The dataset is freely shared on GitHub [[hh-rlhf]](https://github.com/anthropics/hh-rlhf).
+
+      '
+  intended_uses: 'The dataset was intended and released for research purposes.
+
+    '
   prohibited_uses:
     value: unknown
-    explanation: >
-      The prohibited use cases of the dataset weren't specified.
+    explanation: 'The prohibited use cases of the dataset weren''t specified.
+
+      '
   monitoring:
     value: none
-    explanation: >
-      There is no monitoring process for the usages of the dataset.
-  feedback: >
-    Email the authors
-    [[Paper]](https://arxiv.org/pdf/2204.05862.pdf).
+    explanation: 'There is no monitoring process for the usages of the dataset.
 
+      '
+  feedback: 'Email the authors [[Paper]](https://arxiv.org/pdf/2204.05862.pdf).
+
+    '
 - type: dataset
   name: Anthropic Harmlessness dataset
-  # General
   organization: Anthropic
-  description: >
-    One of the datasets used to train Anthropic RLHF models. The dataset was
-    collected by asking crowdworkers to have open-ended conversations with
-    Anthropic models, aiming to elicit harmful responses, then choose the model
-    answer that was more harmful for their given task, via the Anthropic Human
-    Feedback Interface
+  description: 'One of the datasets used to train Anthropic RLHF models. The dataset
+    was collected by asking crowdworkers to have open-ended conversations with Anthropic
+    models, aiming to elicit harmful responses, then choose the model answer that
+    was more harmful for their given task, via the Anthropic Human Feedback Interface
     [[Section 2.2]](https://arxiv.org/pdf/2204.05862.pdf#subsection.2.2).
+
+    '
   created_date:
     value: 2022-04-12
-    explanation: >
-      The date that the paper was uploaded to ArXiv
-      [[ArXiv Abstract]](https://arxiv.org/abs/2204.05862).
+    explanation: 'The date that the paper was uploaded to ArXiv [[ArXiv Abstract]](https://arxiv.org/abs/2204.05862).
+
+      '
   url: https://arxiv.org/pdf/2204.05862.pdf
   datasheet: none
-  modality: Text (English)
+  modality: text
   size: unknown
   sample: []
-  analysis: >
-    The crodworkers were told that "lying isn't helpful" and asked to prefer
-    honest responses, which led to models with higher honesty scores. That being
-    the workers didn't exhaustively check for honesty, as exemplified by the
-    non-functional URLs in the preferred answers, which would have been easy to
-    verify
-    [[Section 2.1]](https://arxiv.org/pdf/2204.05862.pdf#subsection.2.1).
-  # Construction
-  dependencies: [Anthropic Human Feedback Interface]
+  analysis: 'The crodworkers were told that "lying isn''t helpful" and asked to prefer
+    honest responses, which led to models with higher honesty scores. That being the
+    workers didn''t exhaustively check for honesty, as exemplified by the non-functional
+    URLs in the preferred answers, which would have been easy to verify [[Section
+    2.1]](https://arxiv.org/pdf/2204.05862.pdf#subsection.2.1).
+
+    '
+  dependencies:
+  - Anthropic Human Feedback Interface
   license:
     value: unknown
-    explanation: >
-      The asset isn't released, and hence the license is unknown.
-  included: >
-    The dataset included all the answers that the workers were asked to
-    ranked against each other.
+    explanation: 'The asset isn''t released, and hence the license is unknown.
+
+      '
+  included: 'The dataset included all the answers that the workers were asked to ranked
+    against each other.
+
+    '
   excluded: none
-  quality_control: >
-    Working with "select" crowdworkers or those screened for certain
-    qualifications, and employing simple data quality measures
-    [[Appendix D]](https://arxiv.org/pdf/2204.05862.pdf#appendix.D).
-  # Downstream
+  quality_control: 'Working with "select" crowdworkers or those screened for certain
+    qualifications, and employing simple data quality measures [[Appendix D]](https://arxiv.org/pdf/2204.05862.pdf#appendix.D).
+
+    '
   access:
     value: closed
-    explanation: >
-      Unlike its helpfulness, this dataset isn't released
-      [[hh-rlhf]](https://github.com/anthropics/hh-rlhf).
+    explanation: 'Unlike its helpfulness, this dataset isn''t released [[hh-rlhf]](https://github.com/anthropics/hh-rlhf).
+
+      '
   intended_uses:
     value: unknown
-    explanation: >
-      The intended uses of the dataset isn't specified, but it will likely be
-      same as the helpfulness dataset, for which the intended use is research.
+    explanation: 'The intended uses of the dataset isn''t specified, but it will likely
+      be same as the helpfulness dataset, for which the intended use is research.
+
+      '
   prohibited_uses:
     value: unknown
-    explanation: >
-      The prohibited use cases of the dataset weren't specified.
+    explanation: 'The prohibited use cases of the dataset weren''t specified.
+
+      '
   monitoring:
     value: none
-    explanation: >
-      There is no monitoring process for the usages of the dataset.
+    explanation: 'There is no monitoring process for the usages of the dataset.
+
+      '
   feedback:
     value: unknown
-    explanation: >
-      The feedback mechanism is unknown since the dataset isn't released, but
-      it will likely be "emailing the authors"
-      [[Paper]](https://arxiv.org/pdf/2204.05862.pdf).
+    explanation: 'The feedback mechanism is unknown since the dataset isn''t released,
+      but it will likely be "emailing the authors" [[Paper]](https://arxiv.org/pdf/2204.05862.pdf).
 
+      '
 - type: model
   name: Anthropic RLHF models
-  # General
   organization: Anthropic
-  description: >
-    Anthropic RLHF models are models trained using reinforcement learning
-    from human feedback (RLHF). For Anthropic RLHF models, authors started with
-    a set of base models, and asked humans to rank model generated prompts based
-    on a specific tasks. They then trained preference models (PM) on the
-    prompt pairs, and use the PM scores as rewards for training the RLHF
-    models.
+  description: 'Anthropic RLHF models are models trained using reinforcement learning
+    from human feedback (RLHF). For Anthropic RLHF models, authors started with a
+    set of base models, and asked humans to rank model generated prompts based on
+    a specific tasks. They then trained preference models (PM) on the prompt pairs,
+    and use the PM scores as rewards for training the RLHF models.
+
+    '
   created_date:
     value: 2022-04-12
-    explanation: >
-      The date that the paper was uploaded to ArXiv
-      [[ArXiv Abstract]](https://arxiv.org/abs/2204.05862).
+    explanation: 'The date that the paper was uploaded to ArXiv [[ArXiv Abstract]](https://arxiv.org/abs/2204.05862).
+
+      '
   url: https://arxiv.org/pdf/2204.05862.pdf
   model_card: none
-  modality: text (English) and Code
+  modality: code, text; code, text
   size:
-    value: 52B parameters (dense model)
-    explanation: >
-      There are several sizes of the RLHF models, the largest one having 52B
-      parameters
-      [[Figure 1]](https://arxiv.org/pdf/2204.05862.pdf#figure.caption.2).
+    value: 52B parameters (dense)
+    explanation: 'There are several sizes of the RLHF models, the largest one having
+      52B parameters [[Figure 1]](https://arxiv.org/pdf/2204.05862.pdf#figure.caption.2).
+
+      '
   analysis:
-    value: >
-      The authors analyzed the impact of the dataset mixture on the preference
-      models (PM). In addition to human evaluation, RLHF model were evaluated on
-      MMLU, Lambada, HellaSwag, OpenBookQA, ARC-Easy, ARC-Challenge, TriviaQA,
-      code generation, summarization.
-    explanation: >
-      When tested on ability to generate responses that are both harmless and
-      helpful, the authors found that PMs trained on a mixture of harmlessness
-      and helpfulness preference datasets perform better than those trained
-      on only one of the two.
-      The authors also showed that the model performance is hurt for the smaller
-      models, but improved for the larger models when compared to plain
-      language models
-      [[Figure 28]](https://arxiv.org/pdf/2204.05862.pdf#figure.caption.34)
-      [[Figure 29]](https://arxiv.org/pdf/2204.05862.pdf#figure.caption.35).
-      The authors also found the larger RLHF models to be more truthful than
-      their plain counterparts. They also found that their models
-      had a more positive sentiment towards groups that the language models are
-      known to be biased against
-      [[Section 4.6]](https://arxiv.org/pdf/2204.05862.pdf#subsection.4.6).
-  # Construction
+    value: 'The authors analyzed the impact of the dataset mixture on the preference
+      models (PM). In addition to human evaluation, RLHF model were evaluated on MMLU,
+      Lambada, HellaSwag, OpenBookQA, ARC-Easy, ARC-Challenge, TriviaQA, code generation,
+      summarization.
+
+      '
+    explanation: 'When tested on ability to generate responses that are both harmless
+      and helpful, the authors found that PMs trained on a mixture of harmlessness
+      and helpfulness preference datasets perform better than those trained on only
+      one of the two. The authors also showed that the model performance is hurt for
+      the smaller models, but improved for the larger models when compared to plain
+      language models [[Figure 28]](https://arxiv.org/pdf/2204.05862.pdf#figure.caption.34)
+      [[Figure 29]](https://arxiv.org/pdf/2204.05862.pdf#figure.caption.35). The authors
+      also found the larger RLHF models to be more truthful than their plain counterparts.
+      They also found that their models had a more positive sentiment towards groups
+      that the language models are known to be biased against [[Section 4.6]](https://arxiv.org/pdf/2204.05862.pdf#subsection.4.6).
+
+      '
   dependencies:
-    - Anthropic Harmlessness dataset
-    - Anthropic Helpfulness dataset
+  - Anthropic Harmlessness dataset
+  - Anthropic Helpfulness dataset
   training_emissions:
     value: unknown
     explanation: The authors do not provide data on the training emissions.
@@ -440,95 +441,100 @@
   training_hardware:
     value: unknown
     explanation: The authors do not provide data on the training hardware.
-  quality_control: >
-    unknown
-  # Downstream
+  quality_control: 'unknown
+
+    '
   access:
     value: closed
-    explanation: >
-      The model wasn't released.
+    explanation: 'The model wasn''t released.
+
+      '
   license:
     value: unknown
-    explanation: >
-      The asset isn't released, and hence the license is unknown.
+    explanation: 'The asset isn''t released, and hence the license is unknown.
+
+      '
   intended_uses:
     value: unknown
-    explanation: >
-      The intended uses of the model aren't specified, but they will likely be
-      the same as the released Anthropic helpfulness dataset, for which the
-      intended use was listed as research. In addition to English language
-      generation, the authors also explored code generation capabilities of
-      their models.
+    explanation: 'The intended uses of the model aren''t specified, but they will
+      likely be the same as the released Anthropic helpfulness dataset, for which
+      the intended use was listed as research. In addition to English language generation,
+      the authors also explored code generation capabilities of their models.
+
+      '
   prohibited_uses:
     value: unknown
-    explanation: >
-      The prohibited use cases of the model weren't specified.
+    explanation: 'The prohibited use cases of the model weren''t specified.
+
+      '
   monitoring:
     value: unknown
-    explanation: >
-      There is no known monitoring process for the usages of the model.
+    explanation: 'There is no known monitoring process for the usages of the model.
+
+      '
   feedback:
     value: unknown
-    explanation: >
-      The feedback mechanism is unknown, but it will likely be "emailing the
-      authors"
-      [[Paper]](https://arxiv.org/pdf/2204.05862.pdf).
+    explanation: 'The feedback mechanism is unknown, but it will likely be "emailing
+      the authors" [[Paper]](https://arxiv.org/pdf/2204.05862.pdf).
 
+      '
 - type: application
   name: Anthropic Human Feedback Interface
-  # General
   organization: Anthropic
-  description: >
-    The feedback interface used to collect preference datasets to train
-    Anthropic RLHF models
-    [[Paper]](https://arxiv.org/pdf/2204.05862.pdf).
+  description: 'The feedback interface used to collect preference datasets to train
+    Anthropic RLHF models [[Paper]](https://arxiv.org/pdf/2204.05862.pdf).
+
+    '
   created_date:
     value: 2022-04-12
-    explanation: >
-      The date that the paper was uploaded to ArXiv
-      [[ArXiv Abstract]](https://arxiv.org/abs/2204.05862).
+    explanation: 'The date that the paper was uploaded to ArXiv [[ArXiv Abstract]](https://arxiv.org/abs/2204.05862).
+
+      '
   url: https://arxiv.org/pdf/2204.05862.pdf
-  # Construction
-  dependencies: [Anthropic RLHF models]
+  dependencies:
+  - Anthropic RLHF models
   adaptation: none
-  output_space: >
-    UI allowing users to indicate their preference for the model responses
+  output_space: 'UI allowing users to indicate their preference for the model responses
     shown.
+
+    '
   quality_control: unknown
-  # Downstream
   access:
     value: closed
-    explanation: >
-      The interface was made available to a select set of crowd workers.
+    explanation: 'The interface was made available to a select set of crowd workers.
+
+      '
   terms_of_service:
     value: unknown
     explanation: The terms of service for the interaface is unknown.
   license:
     value: unknown
-    explanation: >
-      The asset isn't released, and hence the license is unknown.
-  intended_uses: >
-    Intended to be used by crowdworkers who are tasked with ranking model
-    answers.
+    explanation: 'The asset isn''t released, and hence the license is unknown.
+
+      '
+  intended_uses: 'Intended to be used by crowdworkers who are tasked with ranking
+    model answers.
+
+    '
   prohibited_uses: unknown
   monitoring: unknown
   feedback: unknown
-  # Deployment
   monthly_active_users: unknown
   user_distribution:
     value: crowdworkers
     explanation: The demographics of the crowdworkers are unknown.
   failures: unknown
-
 - type: application
   name: Anthropic API
   organization: Anthropic
-  description: API is designed to be a backend that incorporates Claude into any
-    application you’ve developed. Our application sends text to our API, then receives
-    a response via server-sent events, a streaming protocol for the web.
+  description: "API is designed to be a backend that incorporates Claude into any\
+    \ application you\u2019ve developed. Our application sends text to our API, then\
+    \ receives a response via server-sent events, a streaming protocol for the web."
   created_date: 2023-03-14
   url: https://console.anthropic.com/docs/api
-  dependencies: [Claude, Claude Instant]
+  dependencies:
+  - Claude
+  - Claude Instant
   adaptation: ''
   output_space: ''
   quality_control: ''
@@ -544,7 +550,6 @@
   monthly_active_users: ''
   user_distribution: ''
   failures: ''
-
 - type: model
   name: Claude
   organization: Anthropic
@@ -552,7 +557,7 @@
   created_date: 2023-03-14
   url: https://www.anthropic.com/index/introducing-claude
   model_card: ''
-  modality: text
+  modality: text; text
   analysis: ''
   size: unknown
   dependencies: []
@@ -563,13 +568,13 @@
   access: limited
   license:
     value: unknown
-    explanation: >
-      The asset isn't released, and hence the license is unknown.
+    explanation: 'The asset isn''t released, and hence the license is unknown.
+
+      '
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
   feedback: ''
-
 - type: model
   name: Claude Instant
   organization: Anthropic
@@ -577,7 +582,7 @@
   created_date: 2023-03-14
   url: https://www.anthropic.com/index/introducing-claude
   model_card: ''
-  modality: text
+  modality: text; text
   analysis: ''
   size: unknown
   dependencies: []
@@ -588,8 +593,9 @@
   access: limited
   license:
     value: unknown
-    explanation: >
-      The asset isn't released, and hence the license is unknown.
+    explanation: 'The asset isn''t released, and hence the license is unknown.
+
+      '
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''

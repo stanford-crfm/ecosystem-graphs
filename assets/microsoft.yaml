@@ -1,5 +1,3 @@
----
-
 - type: model
   name: VLMo
   organization: Microsoft
@@ -9,16 +7,16 @@
     explanation: The date the model paper was released
   url: https://arxiv.org/abs/2111.02358
   model_card: none
-  modality: text (English) and image
-  size: 562M
+  modality: image, text; image, text
+  size: 562M parameters (dense)
   analysis: ''
   dependencies:
-    - Conceptual Captions
-    - SBU Captions
-    - COCO
-    - Visual Genome
-    - Wikipedia
-    - BooksCorpus
+  - Conceptual Captions
+  - SBU Captions
+  - COCO
+  - Visual Genome
+  - Wikipedia
+  - BooksCorpus
   training_emissions: ''
   training_time: ''
   training_hardware: ''
@@ -35,7 +33,6 @@
   prohibited_uses: ''
   monitoring: ''
   feedback: ''
-
 - type: model
   name: T-ULRv5
   organization: Microsoft
@@ -45,8 +42,8 @@
     explanation: Date model blog post was released
   url: https://www.microsoft.com/en-us/research/blog/microsoft-turing-universal-language-representation-model-t-ulrv5-tops-xtreme-leaderboard-and-trains-100x-faster/
   model_card: ''
-  modality: Text (English, 93 other languages)
-  size: 2.2B parameters (dense model)
+  modality: text; text
+  size: 2.2B parameters (dense)
   analysis: ''
   dependencies: []
   training_emissions: ''
@@ -58,13 +55,13 @@
     explanation: Manual approval through early access request form required.
   license:
     value: unknown
-    explanation: >
-      The asset isn't released, and hence the license is unknown.
+    explanation: 'The asset isn''t released, and hence the license is unknown.
+
+      '
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
   feedback: ''
-
 - type: model
   name: Turing NLR-v5
   organization: Microsoft
@@ -74,9 +71,9 @@
     explanation: Date model blog post was released
   url: https://www.microsoft.com/en-us/research/blog/efficiently-and-effectively-scaling-up-language-model-pretraining-for-best-language-representation-model-on-glue-and-superglue/?OCID=msr_blog_TNLRV5_tw
   model_card: ''
-  modality: text (English)
+  modality: text; text
   analysis: ''
-  size: 5B parameters (dense model)
+  size: 5B parameters (dense)
   dependencies: []
   training_emissions: ''
   training_time: ''
@@ -87,29 +84,32 @@
     explanation: Manual approval through early access request form required.
   license:
     value: unknown
-    explanation: >
-      The asset isn't released, and hence the license is unknown.
+    explanation: 'The asset isn''t released, and hence the license is unknown.
+
+      '
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
   feedback: ''
-
 - type: model
   name: Megatron-Turing NLG
   organization: Microsoft, NVIDIA
-  description: >
-    Megatron-Turing NLG is a 530B parameter autoregressive language model.
+  description: 'Megatron-Turing NLG is a 530B parameter autoregressive language model.
+
+    '
   created_date:
     value: 2022-01-28
-    explanation: >
-      The date of the Microsoft Research blog announcing MT-NLG
-      [[Microsoft Research Blog]](https://www.microsoft.com/en-us/research/blog/using-deepspeed-and-megatron-to-train-megatron-turing-nlg-530b-the-worlds-largest-and-most-powerful-generative-language-model/).
+    explanation: 'The date of the Microsoft Research blog announcing MT-NLG [[Microsoft
+      Research Blog]](https://www.microsoft.com/en-us/research/blog/using-deepspeed-and-megatron-to-train-megatron-turing-nlg-530b-the-worlds-largest-and-most-powerful-generative-language-model/).
+
+      '
   url: https://arxiv.org/abs/2201.11990
   model_card: ''
-  modality: text (English)
-  size: 530B parameters (dense model)
+  modality: text; text
+  size: 530B parameters (dense)
   analysis: ''
-  dependencies: [The Pile]
+  dependencies:
+  - The Pile
   training_emissions: ''
   training_time: ''
   training_hardware: 4480 A100s (560 x 8)
@@ -120,24 +120,24 @@
       Program]](https://www.microsoft.com/en-us/research/collaboration/microsoft-turing-academic-program/)
   license:
     value: unknown
-    explanation: >
-      The asset isn't released, and hence the license is unknown.
+    explanation: 'The asset isn''t released, and hence the license is unknown.
+
+      '
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
   feedback: ''
-
 - type: model
   name: VALL-E
   organization: Microsoft
   description: Vall-E is a neural code model for text-to-speech synthesis
   created_date:
     value: 2023-01-05
-    explanation: The date the [[model paper]](https://arxiv.org/abs/2301.02111)
-      was released
+    explanation: The date the [[model paper]](https://arxiv.org/abs/2301.02111) was
+      released
   url: https://valle-demo.github.io/
   model_card: none
-  modality: text, audio
+  modality: audio, text; audio, text
   size: unknown
   analysis: ''
   dependencies: []
@@ -150,79 +150,72 @@
     explanation: Microsoft does not provide public access to VALL-E
   license:
     value: unknown
-    explanation: >
-      The asset isn't released, and hence the license is unknown.
+    explanation: 'The asset isn''t released, and hence the license is unknown.
+
+      '
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
   feedback: ''
-
-# Applications
-
 - type: application
   name: GitHub CoPilot
-  # General
   organization: Microsoft
-  description: >
-    GitHub CoPilot is a coding pair programmer assisting programmers as they
-    write code.
+  description: 'GitHub CoPilot is a coding pair programmer assisting programmers as
+    they write code.
+
+    '
   created_date:
     value: 2021-06-29
-    explanation: >
-      Date of the blog post introducing CoPilot
-      [[GitHub Blog Post]]
-      (https://github.blog/2021-06-29-introducing-github-copilot-ai-pair-programmer/).
+    explanation: 'Date of the blog post introducing CoPilot [[GitHub Blog Post]] (https://github.blog/2021-06-29-introducing-github-copilot-ai-pair-programmer/).
+
+      '
   url: https://copilot.github.com/
-  # Construction
-  dependencies: [Codex]
+  dependencies:
+  - Codex
   adaptation: unknown
   output_space: Code completions
-  quality_control: >
-    GitHub is working on a filter to detect and suppress code generations that
-    are verbatim from the training set
-    [[GitHub Research Recitation]]
-    (https://docs.github.com/en/github/copilot/research-recitation).
-    According to the FAQ, GitHub implemented a simple filter that blocks emails
-    in standard formats to protect personally identifiable data that may be
-    present in the training data
-    [[GitHub CoPilot]](https://copilot.github.com/).
-  # Downstream
+  quality_control: 'GitHub is working on a filter to detect and suppress code generations
+    that are verbatim from the training set [[GitHub Research Recitation]] (https://docs.github.com/en/github/copilot/research-recitation).
+    According to the FAQ, GitHub implemented a simple filter that blocks emails in
+    standard formats to protect personally identifiable data that may be present in
+    the training data [[GitHub CoPilot]](https://copilot.github.com/).
+
+    '
   access:
     value: limited
-    explanation: >
-      The feature is available to developers in a restricted
-      technical preview
-      [[GitHub CoPilot]](https://copilot.github.com/).
+    explanation: 'The feature is available to developers in a restricted technical
+      preview [[GitHub CoPilot]](https://copilot.github.com/).
+
+      '
   license:
     value: unknown
-    explanation: >
-      We weren't able to locate the license.
-  terms_of_service: >
-    https://docs.github.com/en/site-policy/github-terms/github-terms-of-service
-  intended_uses: >
-    GitHub CoPilot is intended to be used as a coding assistant.
-  prohibited_uses: >
-    Access to GPT-3 is governed by GitHub Acceptable Use Policies and Terms of
-    Service, both of which list a set of prohibited uses
-    [[Use Policies]]
+    explanation: 'We weren''t able to locate the license.
+
+      '
+  terms_of_service: 'https://docs.github.com/en/site-policy/github-terms/github-terms-of-service
+
+    '
+  intended_uses: 'GitHub CoPilot is intended to be used as a coding assistant.
+
+    '
+  prohibited_uses: 'Access to GPT-3 is governed by GitHub Acceptable Use Policies
+    and Terms of Service, both of which list a set of prohibited uses [[Use Policies]]
     (https://docs.github.com/en/site-policy/acceptable-use-policies/github-acceptable-use-policies)
-    [[Terms of Service]]
-    (https://docs.github.com/en/site-policy/github-terms/github-terms-of-service).
-  monitoring: >
-    value: unknown
-    explanation: >
-      There may be internal monitoring mechanisms unknown to the public.
-  feedback: >
-    Feedback can be provided in the CoPilot feedback project
-    [[CoPilot feedback]]
+    [[Terms of Service]] (https://docs.github.com/en/site-policy/github-terms/github-terms-of-service).
+
+    '
+  monitoring: "value: unknown explanation: >\n  There may be internal monitoring mechanisms\
+    \ unknown to the public.\n"
+  feedback: 'Feedback can be provided in the CoPilot feedback project [[CoPilot feedback]]
     (https://github.com/github/feedback/discussions/categories/copilot-feedback).
-  # Deployment
-  monthly_active_users: >
-    GitHub Copilot reportedly has over 1 million sign-ups
-    [[Tweet Source]](https://twitter.com/sama/status/1539737789310259200?s=21&t=YPaYd0ZueJzrR6rLslUqzg).
+
+    '
+  monthly_active_users: 'GitHub Copilot reportedly has over 1 million sign-ups [[Tweet
+    Source]](https://twitter.com/sama/status/1539737789310259200?s=21&t=YPaYd0ZueJzrR6rLslUqzg).
+
+    '
   user_distribution: unknown
   failures: unknown
-
 - type: model
   name: BioGPT
   organization: Microsoft
@@ -230,10 +223,11 @@
   created_date: 2022-09-24
   url: https://academic.oup.com/bib/article/23/6/bbac409/6713511?guestAccessKey=a66d9b5d-4f83-4017-bb52-405815c907b9&login=true
   model_card: ''
-  modality: text
+  modality: text; text
   analysis: ''
-  size: 1.5B parameters (dense model)
-  dependencies: [PubMed]
+  size: 1.5B parameters (dense)
+  dependencies:
+  - PubMed
   training_emissions: ''
   training_time: ''
   training_hardware: ''
@@ -244,26 +238,27 @@
   prohibited_uses: ''
   monitoring: ''
   feedback: ''
-
 - type: application
   name: Microsoft Teams
   organization: Microsoft
-  description: Microsoft Teams Premium is generally available. Built on the familiar,
-    all-in-one collaborative experience of Microsoft Teams, Teams Premium brings
-    the latest technologies, powered by OpenAI’s GPT-3.5, to make meetings more
-    intelligent, personalized, and protected—whether it’s one-on-one, large meetings,
-    virtual appointments, or webinars.
+  description: "Microsoft Teams Premium is generally available. Built on the familiar,\
+    \ all-in-one collaborative experience of Microsoft Teams, Teams Premium brings\
+    \ the latest technologies, powered by OpenAI\u2019s GPT-3.5, to make meetings\
+    \ more intelligent, personalized, and protected\u2014whether it\u2019s one-on-one,\
+    \ large meetings, virtual appointments, or webinars."
   created_date: 2023-02-01
   url: https://www.microsoft.com/en-us/microsoft-365/blog/2023/02/01/microsoft-teams-premium-cut-costs-and-add-ai-powered-productivity/
-  dependencies: [ChatGPT API]
+  dependencies:
+  - ChatGPT API
   adaptation: ''
   output_space: ''
   quality_control: ''
   access: open
   license:
     value: unknown
-    explanation: >
-      The asset isn't released, and hence the license is unknown.
+    explanation: 'The asset isn''t released, and hence the license is unknown.
+
+      '
   terms_of_service: ''
   intended_uses: ''
   prohibited_uses: ''
@@ -272,54 +267,55 @@
   monthly_active_users: ''
   user_distribution: ''
   failures: ''
-
 - type: application
   name: Bing Search
   organization: Microsoft
   description: AI-powered Bing search engine and Edge browser, available in preview
-    now at Bing.com, to deliver better search, more complete answers, a new chat
-    experience and the ability to generate content. We think of these tools as an
-    AI copilot for the web.
+    now at Bing.com, to deliver better search, more complete answers, a new chat experience
+    and the ability to generate content. We think of these tools as an AI copilot
+    for the web.
   created_date: 2023-02-07
   url: https://blogs.microsoft.com/blog/2023/02/07/reinventing-search-with-a-new-ai-powered-microsoft-bing-and-edge-your-copilot-for-the-web/
-  dependencies: [ChatGPT API]
+  dependencies:
+  - ChatGPT API
   adaptation: unknown
   output_space: Search results
   quality_control: ''
   access: limited
   license:
     value: custom
-    explanation: >
-      Software license as described in the Terms of Service document.
+    explanation: 'Software license as described in the Terms of Service document.
+
+      '
   terms_of_service: https://www.microsoft.com/legal/terms-of-use
   intended_uses: Search engine
   prohibited_uses: ''
   monitoring: ''
-  feedback: >
-    Feedback can be submitted at [bing.com](bing.com).
+  feedback: 'Feedback can be submitted at [bing.com](bing.com).
+
+    '
   monthly_active_users: ''
   user_distribution: ''
   failures: ''
-
 - type: model
   name: KOSMOS-1
   organization: Microsoft
   description: KOSMOS-1 is a multimodal language model that is capable of perceiving
-    multimodal input, following instructions, and performing in-context learning
-    for not only language tasks but also multimodal tasks.
+    multimodal input, following instructions, and performing in-context learning for
+    not only language tasks but also multimodal tasks.
   created_date: 2023-03-01
   url: https://arxiv.org/pdf/2302.14045.pdf
   model_card: ''
-  modality: text, image
+  modality: image, text; image, text
   analysis: ''
-  size: 1.6B parameters (dense model)
+  size: 1.6B parameters (dense)
   dependencies:
-    - The Pile
-    - CommonCrawl
-    - LAION-2B-en
-    - LAION-400M
-    - COYO-700M
-    - Conceptual Captions
+  - The Pile
+  - CommonCrawl
+  - LAION-2B-en
+  - LAION-400M
+  - COYO-700M
+  - Conceptual Captions
   training_emissions: ''
   training_time: ''
   training_hardware: ''
@@ -330,7 +326,6 @@
   prohibited_uses: ''
   monitoring: ''
   feedback: ''
-
 - type: model
   name: Prometheus
   organization: Microsoft
@@ -341,7 +336,7 @@
   created_date: 2023-02-07
   url: https://blogs.microsoft.com/blog/2023/02/07/reinventing-search-with-a-new-ai-powered-microsoft-bing-and-edge-your-copilot-for-the-web/
   model_card: ''
-  modality: unknown
+  modality: unknown; unknown
   analysis: ''
   size: unknown
   dependencies: []
@@ -352,13 +347,13 @@
   access: closed
   license:
     value: unknown
-    explanation: >
-      We weren't able to locate a license.
+    explanation: 'We weren''t able to locate a license.
+
+      '
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
   feedback: ''
-
 - type: model
   name: Florence
   organization: Microsoft
@@ -366,10 +361,11 @@
   created_date: 2022-11-23
   url: https://arxiv.org/abs/2111.11432
   model_card: ''
-  modality: text, image
+  modality: image, text; image, text
   analysis: ''
-  size: 900M parameters (637M image, 256M text)
-  dependencies: [FLD-900M]
+  size: 900M parameters (dense)
+  dependencies:
+  - FLD-900M
   training_emissions: ''
   training_time: ''
   training_hardware: ''
@@ -377,13 +373,13 @@
   access: closed
   license:
     value: unknown
-    explanation: >
-      We weren't able to locate a license.
+    explanation: 'We weren''t able to locate a license.
+
+      '
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
   feedback: ''
-
 - type: dataset
   name: FLD-900M
   organization: Microsoft
@@ -391,7 +387,7 @@
   created_date: 2022-11-23
   url: https://arxiv.org/abs/2111.11432
   datasheet: ''
-  modality: text, image
+  modality: image, text
   size: 900M image-text pairs
   sample: []
   analysis: ''
@@ -402,13 +398,13 @@
   access: closed
   license:
     value: unknown
-    explanation: >
-      We weren't able to locate a license.
+    explanation: 'We weren''t able to locate a license.
+
+      '
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
   feedback: ''
-
 - type: application
   name: Azure Cognitive Services for Vision
   organization: Microsoft
@@ -418,16 +414,18 @@
     across various industries.
   created_date: 2023-03-07
   url: https://azure.microsoft.com/en-us/blog/announcing-a-renaissance-in-computer-vision-ai-with-microsofts-florence-foundation-model/?utm_content=buffer16fa0&utm_medium=social&utm_source=twitter.com&utm_campaign=buffer
-  dependencies: [Florence]
+  dependencies:
+  - Florence
   adaptation: ''
   output_space: ''
   quality_control: ''
   access: limited
   license:
     value: custom
-    explanation: >
-      Software license in the Microsoft Terms of Use govern the license rules
-      for Azure services as outlined in the Terms of Service document.
+    explanation: 'Software license in the Microsoft Terms of Use govern the license
+      rules for Azure services as outlined in the Terms of Service document.
+
+      '
   terms_of_service: https://azure.microsoft.com/en-us/support/legal/
   intended_uses: ''
   prohibited_uses: ''
@@ -436,7 +434,6 @@
   monthly_active_users: ''
   user_distribution: ''
   failures: ''
-
 - type: model
   name: VisualChatGPT
   organization: Microsoft
@@ -444,10 +441,11 @@
   created_date: 2023-03-08
   url: https://arxiv.org/pdf/2303.04671.pdf
   model_card: ''
-  modality: text, image
+  modality: image, text; image, text
   analysis: ''
   size: unknown
-  dependencies: [OpenAI API]
+  dependencies:
+  - OpenAI API
   training_emissions: ''
   training_time: ''
   training_hardware: ''
@@ -460,7 +458,6 @@
   prohibited_uses: ''
   monitoring: ''
   feedback: ''
-
 - type: application
   name: Microsoft 365 Copilot
   organization: Microsoft
@@ -469,15 +466,17 @@
     tool on the planet.
   created_date: 2023-03-16
   url: https://blogs.microsoft.com/blog/2023/03/16/introducing-microsoft-365-copilot-your-copilot-for-work/
-  dependencies: [GPT-4 API]
+  dependencies:
+  - GPT-4 API
   adaptation: ''
   output_space: ''
   quality_control: ''
   access: limited
   license:
     value: custom
-    explanation: >
-      Software license as described in the Terms of Service document.
+    explanation: 'Software license as described in the Terms of Service document.
+
+      '
   terms_of_service: https://www.microsoft.com/legal/terms-of-use
   intended_uses: ''
   prohibited_uses: ''
@@ -486,27 +485,28 @@
   monthly_active_users: ''
   user_distribution: ''
   failures: ''
-
 - type: application
   name: Microsoft Business Chat
   organization: Microsoft
-  description: Business Chat works across the langugae model, the Microsoft 365
-    apps, and your data — your calendar, emails, chats, documents, meetings and
-    contacts — to do things you’ve never been able to do before. You can give it
-    natural language prompts like “Tell my team how we updated the product strategy,”
-    and it will generate a status update based on the morning’s meetings, emails
-    and chat threads.
+  description: "Business Chat works across the langugae model, the Microsoft 365 apps,\
+    \ and your data \u2014 your calendar, emails, chats, documents, meetings and contacts\
+    \ \u2014 to do things you\u2019ve never been able to do before. You can give it\
+    \ natural language prompts like \u201CTell my team how we updated the product\
+    \ strategy,\u201D and it will generate a status update based on the morning\u2019\
+    s meetings, emails and chat threads."
   created_date: 2023-03-16
   url: https://blogs.microsoft.com/blog/2023/03/16/introducing-microsoft-365-copilot-your-copilot-for-work/
-  dependencies: [Microsoft 365 Copilot]
+  dependencies:
+  - Microsoft 365 Copilot
   adaptation: ''
   output_space: ''
   quality_control: ''
   access: limited
   license:
     value: custom
-    explanation: >
-      Software license as described in the Terms of Service document.
+    explanation: 'Software license as described in the Terms of Service document.
+
+      '
   terms_of_service: https://www.microsoft.com/legal/terms-of-use
   intended_uses: ''
   prohibited_uses: ''
@@ -515,7 +515,6 @@
   monthly_active_users: ''
   user_distribution: ''
   failures: ''
-
 - type: application
   name: Microsoft Excel
   organization: Microsoft
@@ -523,15 +522,17 @@
     a powerful data visualization and analysis tool.
   created_date: unknown
   url: https://www.microsoft.com/en-us/microsoft-365/excel
-  dependencies: [Microsoft 365 Copilot]
+  dependencies:
+  - Microsoft 365 Copilot
   adaptation: ''
   output_space: ''
   quality_control: ''
   access: open
   license:
     value: custom
-    explanation: >
-      Software license as described in the Terms of Service document.
+    explanation: 'Software license as described in the Terms of Service document.
+
+      '
   terms_of_service: https://www.microsoft.com/legal/terms-of-use
   intended_uses: ''
   prohibited_uses: ''
@@ -540,7 +541,6 @@
   monthly_active_users: ''
   user_distribution: ''
   failures: ''
-
 - type: application
   name: Microsoft Outlook
   organization: Microsoft
@@ -549,15 +549,17 @@
     software suites.
   created_date: unknown
   url: https://www.microsoft.com/en-us/microsoft-365/outlook/email-and-calendar-software-microsoft-outlook
-  dependencies: [Microsoft 365 Copilot]
+  dependencies:
+  - Microsoft 365 Copilot
   adaptation: ''
   output_space: ''
   quality_control: ''
   access: open
   license:
     value: custom
-    explanation: >
-      Software license as described in the Terms of Service document.
+    explanation: 'Software license as described in the Terms of Service document.
+
+      '
   terms_of_service: https://www.microsoft.com/legal/terms-of-use
   intended_uses: ''
   prohibited_uses: ''
@@ -566,23 +568,24 @@
   monthly_active_users: ''
   user_distribution: ''
   failures: ''
-
 - type: application
   name: Microsoft Power Platform
   organization: Microsoft
-  description: Microsoft Power Platform is a line of business intelligence, app
-    development, and app connectivity software applications.
+  description: Microsoft Power Platform is a line of business intelligence, app development,
+    and app connectivity software applications.
   created_date: unknown
   url: https://powerplatform.microsoft.com/en-us/
-  dependencies: [Microsoft 365 Copilot]
+  dependencies:
+  - Microsoft 365 Copilot
   adaptation: ''
   output_space: ''
   quality_control: ''
   access: limited
   license:
     value: custom
-    explanation: >
-      Software license as described in the Terms of Service document.
+    explanation: 'Software license as described in the Terms of Service document.
+
+      '
   terms_of_service: https://www.microsoft.com/legal/terms-of-use
   intended_uses: ''
   prohibited_uses: ''
@@ -591,7 +594,6 @@
   monthly_active_users: ''
   user_distribution: ''
   failures: ''
-
 - type: application
   name: Microsoft PowerPoint
   organization: Microsoft
@@ -599,15 +601,17 @@
     and intricate pitch decks and gives you a powerful presentation maker.
   created_date: unknown
   url: https://www.microsoft.com/en-us/microsoft-365/powerpoint
-  dependencies: [Microsoft 365 Copilot]
+  dependencies:
+  - Microsoft 365 Copilot
   adaptation: ''
   output_space: ''
   quality_control: ''
   access: open
   license:
     value: custom
-    explanation: >
-      Software license as described in the Terms of Service document.
+    explanation: 'Software license as described in the Terms of Service document.
+
+      '
   terms_of_service: https://www.microsoft.com/legal/terms-of-use
   intended_uses: ''
   prohibited_uses: ''
@@ -616,23 +620,25 @@
   monthly_active_users: ''
   user_distribution: ''
   failures: ''
-
 - type: application
   name: Microsoft Teams
   organization: Microsoft
-  description: Microsoft Teams is a proprietary business communication platform
-    developed by Microsoft, as part of the Microsoft 365 family of products.
+  description: Microsoft Teams is a proprietary business communication platform developed
+    by Microsoft, as part of the Microsoft 365 family of products.
   created_date: unknown
   url: https://www.microsoft.com/en-us/microsoft-teams/group-chat-software
-  dependencies: [Microsoft 365 Copilot, Microsoft Business Chat]
+  dependencies:
+  - Microsoft 365 Copilot
+  - Microsoft Business Chat
   adaptation: ''
   output_space: ''
   quality_control: ''
   access: open
   license:
     value: custom
-    explanation: >
-      Software license as described in the Terms of Service document.
+    explanation: 'Software license as described in the Terms of Service document.
+
+      '
   terms_of_service: https://www.microsoft.com/legal/terms-of-use
   intended_uses: ''
   prohibited_uses: ''
@@ -641,22 +647,23 @@
   monthly_active_users: ''
   user_distribution: ''
   failures: ''
-
 - type: application
   name: Microsoft Word
   organization: Microsoft
   description: Microsoft Word is a word processing software developed by Microsoft
   created_date: unknown
   url: https://www.microsoft.com/en-us/microsoft-365/word
-  dependencies: [Microsoft 365 Copilot]
+  dependencies:
+  - Microsoft 365 Copilot
   adaptation: ''
   output_space: ''
   quality_control: ''
   access: open
   license:
     value: custom
-    explanation: >
-      Software license as described in the Terms of Service document.
+    explanation: 'Software license as described in the Terms of Service document.
+
+      '
   terms_of_service: https://www.microsoft.com/legal/terms-of-use
   intended_uses: ''
   prohibited_uses: ''
@@ -665,108 +672,102 @@
   monthly_active_users: ''
   user_distribution: ''
   failures: ''
-
 - type: application
   name: Microsoft Inside Look
-  # General
   organization: Microsoft
-  description: >
-    Inside look is a Microsoft Office feature, composing document insights
+  description: 'Inside look is a Microsoft Office feature, composing document insights
     highlighting key points, expected time to read, and popularity among others.
+
+    '
   created_date: unknown
   url: https://support.microsoft.com/en-us/office/see-file-insights-before-you-open-a-file-87a23bbc-a516-42e2-a7b6-0ecb8259e026
   dependencies: []
   adaptation: unknown
   output_space: Document level insights for users.
   quality_control: unknown
-  # Downstream
   access: limited
   license:
     value: custom
-    explanation: >
-      Software license as described in the Terms of Service document.
+    explanation: 'Software license as described in the Terms of Service document.
+
+      '
   terms_of_service: https://www.microsoft.com/legal/terms-of-use
   intended_uses: Providing document insights to users.
   prohibited_uses: unknown
   monitoring: unknown
   feedback: unknown
-  # Deployment
   monthly_active_users: unknown
   user_distribution: unknown
   failures: unknown
-
 - type: application
   name: Microsoft Suggested Replies
-  # General
   organization: Microsoft
-  description: >
-    Suggested replies is a Microsoft Outlook feature that suggests responses
-    to emails, available in: English, Spanish, Italian, French, German,
-    Portuguese Chinese Simplified, Chinese Traditional, Swedish, Russian,
-    Korean, Czech, Hungarian, Arabic, Hebrew, Thai, Turkish, Japanese, Dutch,
-    Norwegian, Danish, and Polish.
+  description: 'Suggested replies is a Microsoft Outlook feature that suggests responses
+    to emails, available in: English, Spanish, Italian, French, German, Portuguese
+    Chinese Simplified, Chinese Traditional, Swedish, Russian, Korean, Czech, Hungarian,
+    Arabic, Hebrew, Thai, Turkish, Japanese, Dutch, Norwegian, Danish, and Polish.
+
+    '
   created_date: unknown
   url: https://support.microsoft.com/en-us/office/use-suggested-replies-in-outlook-19316194-0434-43ba-a742-6b5890157379
   dependencies: []
   adaptation: unknown
   output_space: Suggested emails.
   quality_control: unknown
-  # Downstream
   access: limited
   license:
     value: custom
-    explanation: >
-      Software license as described in the Terms of Service document.
+    explanation: 'Software license as described in the Terms of Service document.
+
+      '
   terms_of_service: https://www.microsoft.com/legal/terms-of-use
   intended_uses: Suggesting email replies.
   prohibited_uses: unknown
   monitoring: unknown
   feedback: unknown
-  # Deployment
   monthly_active_users: unknown
   user_distribution: unknown
   failures: unknown
-
 - type: application
   name: Microsoft Security Copilot
-  # General
   organization: Microsoft
-  description: >
-    Microsoft Security Copilot is an AI-powered security analysis tool that enables
-    analysts to respond to threats quickly, process signals at machine speed, and
-    assess risk exposure in minutes.
+  description: 'Microsoft Security Copilot is an AI-powered security analysis tool
+    that enables analysts to respond to threats quickly, process signals at machine
+    speed, and assess risk exposure in minutes.
+
+    '
   created_date:
     value: 2023-03-28
-    explanation: The date Security Copilot was announced in the [[Microsoft blog
-      post]](https://blogs.microsoft.com/blog/2023/03/28/introducing-microsoft-security-copilot-empowering-defenders-at-the-speed-of-ai/).
+    explanation: The date Security Copilot was announced in the [[Microsoft blog post]](https://blogs.microsoft.com/blog/2023/03/28/introducing-microsoft-security-copilot-empowering-defenders-at-the-speed-of-ai/).
   url: https://blogs.microsoft.com/blog/2023/03/28/introducing-microsoft-security-copilot-empowering-defenders-at-the-speed-of-ai/
-  # Construction
-  dependencies: [GPT-4, Microsoft security-specific model]
+  dependencies:
+  - GPT-4
+  - Microsoft security-specific model
   adaptation:
     value: Security Copilot combines OpenAI's GPT-4 generative AI with a security-specific
-      model from Microsoft. This security-specific model in turn incorporates a
-      growing set of security-specific skills and is informed by Microsoft's unique
-      global threat intelligence and more than 65 trillion daily signals.
+      model from Microsoft. This security-specific model in turn incorporates a growing
+      set of security-specific skills and is informed by Microsoft's unique global
+      threat intelligence and more than 65 trillion daily signals.
     explanation: See [[blog post]](https://blogs.microsoft.com/blog/2023/03/28/introducing-microsoft-security-copilot-empowering-defenders-at-the-speed-of-ai/).
   output_space:
-    value: Actionable responses to security-related questions (text and image).
-      Security event, incident or threat reports (PowerPoint slide).
+    value: Actionable responses to security-related questions (text and image). Security
+      event, incident or threat reports (PowerPoint slide).
     explanation: See [[product demo]](https://www.microsoft.com/en-us/security/business/ai-machine-learning/microsoft-security-copilot).
   quality_control:
     value: Security Copilot employs a closed-loop learning system that learns from
       user interactions and feedback, enabling it to provide more coherent, relevant,
-      and useful answers that continually improve over time. Security Copilot is
-      committed to delivering safe, secure, and responsible AI solutions, ensuring
-      that customers' data and AI models are protected with enterprise compliance
-      and security controls. Customer data is owned and controlled by them, and
-      not used to train AI models for anyone outside their organization.
+      and useful answers that continually improve over time. Security Copilot is committed
+      to delivering safe, secure, and responsible AI solutions, ensuring that customers'
+      data and AI models are protected with enterprise compliance and security controls.
+      Customer data is owned and controlled by them, and not used to train AI models
+      for anyone outside their organization.
     explanation: See [[blog post]](https://blogs.microsoft.com/blog/2023/03/28/introducing-microsoft-security-copilot-empowering-defenders-at-the-speed-of-ai/).
-  # Downstream
   access: limited
   license:
     value: custom
-    explanation: >
-      Software license as described in the Terms of Service document.
+    explanation: 'Software license as described in the Terms of Service document.
+
+      '
   terms_of_service: https://www.microsoft.com/legal/terms-of-use
   intended_uses: Security Copilot is designed to enhance the capabilities of cybersecurity
     professionals. It leverages machine speed and scale to accelerate response to
@@ -775,7 +776,6 @@
   prohibited_uses: unknown
   monitoring: ''
   feedback: unknown
-  # Deployment
   monthly_active_users: unknown
   user_distribution: unknown
   failures: unknown

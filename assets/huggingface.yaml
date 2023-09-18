@@ -1,5 +1,3 @@
----
-
 - type: model
   name: CodeParrot
   organization: HuggingFace
@@ -9,9 +7,9 @@
     explanation: The date the model was announced
   url: https://twitter.com/lvwerra/status/1467933794699259908
   model_card: none
-  modality: code (Python)
+  modality: code; code
   analysis: none
-  size: 1B parameters (dense model)
+  size: 1B parameters (dense)
   dependencies: []
   training_emissions: unknown
   training_time: unknown

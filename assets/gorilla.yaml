@@ -1,5 +1,3 @@
----
-
 - type: model
   name: Gorilla
   organization: UC Berkeley
@@ -8,11 +6,13 @@
   created_date: 2023-05-24
   url: https://arxiv.org/pdf/2305.15334v1.pdf
   model_card: ''
-  modality: outputs API from natural language input
+  modality: natural language ;  API output
   analysis: Evaluated using AST sub-tree matching technique and compared to other
     models in terms of API functionality accuracy.
-  size: 7B parameters
-  dependencies: [LLaMA, Gorilla document retriever]
+  size: 7B parameters (dense)
+  dependencies:
+  - LLaMA
+  - Gorilla document retriever
   training_emissions: ''
   training_time: ''
   training_hardware: ''

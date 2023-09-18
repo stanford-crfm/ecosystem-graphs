@@ -1,5 +1,3 @@
----
-
 - type: model
   name: CORGI
   organization: Stanford
@@ -8,15 +6,19 @@
   created_date: 2023-06-12
   url: https://arxiv.org/pdf/2306.07012.pdf
   model_card: ''
-  modality: trajectory input with text output
+  modality: trajectory ; text
   analysis: Evaluated on three physical control tasks, drawing, steering, and human
     body movement on various dynamics
-  size: 124M parameters
-  dependencies: [GPT-2, BABEL, text-davinci-003]
+  size: 124M parameters (dense)
+  dependencies:
+  - GPT-2
+  - BABEL
+  - text-davinci-003
   training_emissions: ''
-  training_time: 
+  training_time:
     value: unknown
-    explanation: The authors do not report the training time, but do report that they train for 200 epochs.
+    explanation: The authors do not report the training time, but do report that they
+      train for 200 epochs.
   training_hardware: one NVIDIA A40 GPU
   quality_control: ''
   access: open

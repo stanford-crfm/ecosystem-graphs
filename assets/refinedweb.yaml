@@ -1,9 +1,8 @@
----
-
 - type: dataset
   name: RefinedWeb
   organization: UAE Technology Innovation Institute
-  description: RefinedWeb is a high-quality five trillion tokens web-only English pretraining dataset.
+  description: RefinedWeb is a high-quality five trillion tokens web-only English
+    pretraining dataset.
   created_date: 2023-06-01
   url: https://arxiv.org/pdf/2306.01116.pdf
   datasheet: https://huggingface.co/datasets/tiiuae/falcon-refinedweb

@@ -1,23 +1,23 @@
----
-
 - type: application
   name: ChatGPT powered by OBO
   organization: HubSpot
-  description: Give your sales, marketing, and customer service teams one of the
-    most powerful AI tools available - ChatGPT priority access, no timeout limits,
-    company wide access managed through a single account, incorporate into your
-    existing processes without leaving HubSpot
+  description: Give your sales, marketing, and customer service teams one of the most
+    powerful AI tools available - ChatGPT priority access, no timeout limits, company
+    wide access managed through a single account, incorporate into your existing processes
+    without leaving HubSpot
   created_date: 2023-01-31
   url: https://ecosystem.hubspot.com/marketplace/apps/sales/sales-enablement/the-obo-group-chatgpt-1398072
-  dependencies: [ChatGPT API]
+  dependencies:
+  - ChatGPT API
   adaptation: ''
   output_space: ''
   quality_control: ''
   access: limited
   license:
     value: unknown
-    explanation: >
-      We weren't able to locate a license.
+    explanation: 'We weren''t able to locate a license.
+
+      '
   terms_of_service: ''
   intended_uses: ''
   prohibited_uses: ''

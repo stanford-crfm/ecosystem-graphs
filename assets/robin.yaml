@@ -1,5 +1,3 @@
----
-
 - type: application
   name: Robin AI
   organization: Robin AI
@@ -9,7 +7,8 @@
     terms
   created_date: unknown
   url: https://www.robinai.co.uk/
-  dependencies: [Anthropic API]
+  dependencies:
+  - Anthropic API
   adaptation: ''
   output_space: ''
   quality_control: ''

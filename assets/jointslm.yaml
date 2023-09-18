@@ -1,5 +1,3 @@
----
-
 - type: model
   name: Google Joint SLM
   organization: Google
@@ -8,11 +6,13 @@
   created_date: 2023-06-08
   url: https://arxiv.org/pdf/2306.07944.pdf
   model_card: ''
-  modality: speech input with textual output
+  modality: audio; text
   analysis: evaluated on DSTC11 Challenge Task, based on MultiWoz 2.1, with a focus
     on dialog state tracking.
   size: ''
-  dependencies: [CTC blank-filtering, Speech2Text adapter]
+  dependencies:
+  - CTC blank-filtering
+  - Speech2Text adapter
   training_emissions: ''
   training_time: ''
   training_hardware: ''

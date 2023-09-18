@@ -1,13 +1,10 @@
----
-
-# Datasets
 - type: dataset
   name: Jurassic-1 dataset
-  # General
   organization: AI21 Labs
-  description: >
-    The dataset used to train the Jurassic-1 models, based on publicly available
-    data.
+  description: 'The dataset used to train the Jurassic-1 models, based on publicly
+    available data.
+
+    '
   created_date:
     value: 2021-08-11
     explanation: The date the white paper was made public.
@@ -19,18 +16,17 @@
   analysis:
     value: none
     explanation: No analysis is provided in the paper.
-  # Construction
   dependencies: []
   license:
     value: unknown
-    explanation: >
-      The asset isn't released, and hence the license is unknown.
+    explanation: 'The asset isn''t released, and hence the license is unknown.
+
+      '
   included: unknown
   excluded: unknown
   quality_control:
     value: none
     explanation: No quality control is provided in the paper.
-  # Downstream
   access: closed
   intended_uses: unknown
   prohibited_uses:
@@ -38,60 +34,61 @@
     explanation: No uses are prohibited in the paper.
   monitoring: none
   feedback: none
-
 - type: dataset
   name: Jurassic-1 Instruct dataset
-  # General
   organization: AI21 Labs
-  description: >
-    The dataset used to instruction-tune the Jurassic-1 Instruct models.
+  description: 'The dataset used to instruction-tune the Jurassic-1 Instruct models.
+
+    '
   created_date:
     value: 2022-12-01
-    explanation: >
-      The date the model was [announced](https://docs.ai21.com/changelog/jurassic-1-instruct-is-now-available).
+    explanation: 'The date the model was [announced](https://docs.ai21.com/changelog/jurassic-1-instruct-is-now-available).
+
+      '
   url: none
   datasheet: none
   modality: text
   size: unknown
   sample: []
   analysis: unknown
-  # Construction
   dependencies: []
   license:
     value: unknown
-    explanation: >
-      The asset isn't released, and hence the license is unknown.
+    explanation: 'The asset isn''t released, and hence the license is unknown.
+
+      '
   included: unknown
   excluded: unknown
   quality_control: unknown
-  # Downstream
   access: closed
   intended_uses: unknown
   prohibited_uses: unknown
   monitoring: none
   feedback: none
-
-# Models
 - type: model
   name: Jurassic-1
   organization: AI21 Labs
-  description: >
-    Jurassic-1 is a family of autoregressive language models (Large, Grande, Jumbo).
+  description: 'Jurassic-1 is a family of autoregressive language models (Large, Grande,
+    Jumbo).
+
+    '
   created_date:
     value: 2021-08-11
-    explanation: >
-      The date the white paper was made public.
+    explanation: 'The date the white paper was made public.
+
+      '
   url: https://uploads-ssl.webflow.com/60fd4503684b466578c0d307/61138924626a6981ee09caf6_jurassic_tech_paper.pdf
   model_card: none
-  modality: text (English)
+  modality: text; text
   size:
-    value: 178B parameters (dense model)
+    value: 178B parameters (dense)
     explanation: The model sizes are 7.5B (Large), 17B (Grande), and 178B (Jumbo).
   analysis:
-    value: Evaluated on several standard benchmarks (e.g. ARC, BoolQ, HellaSwag,
-      RTE, Winogrande)
+    value: Evaluated on several standard benchmarks (e.g. ARC, BoolQ, HellaSwag, RTE,
+      Winogrande)
     explanation: Results are reported in the [the paper](https://uploads-ssl.webflow.com/60fd4503684b466578c0d307/61138924626a6981ee09caf6_jurassic_tech_paper.pdf)
-  dependencies: [Jurassic-1 dataset]
+  dependencies:
+  - Jurassic-1 dataset
   training_emissions: unknown
   training_time:
     value: Several months
@@ -105,33 +102,38 @@
     explanation: Jurassic-1 is available through AI21's paid API.
   license:
     value: unknown
-    explanation: >
-      The asset isn't released, and hence the license is unknown.
+    explanation: 'The asset isn''t released, and hence the license is unknown.
+
+      '
   intended_uses: unknown
   prohibited_uses:
-    value: Illegal activities, such as hate speech, gambling, child pornography
-      or violating intellectual property rights; Harassment, victimization, intimidation,
+    value: Illegal activities, such as hate speech, gambling, child pornography or
+      violating intellectual property rights; Harassment, victimization, intimidation,
       fraud or spam; Creation or dissemination of misinformation, promotion of self-harm,
       glorification of violent events or incitement of violence.
     explanation: https://docs.ai21.com/docs/responsible-use
   monitoring: none
   feedback: none
-
 - type: model
   name: Jurassic-1 Instruct
   organization: AI21 Labs
-  description: >
-    Jurassic-1 Instruct is an instruction-tuned autoregressive language model.
+  description: 'Jurassic-1 Instruct is an instruction-tuned autoregressive language
+    model.
+
+    '
   created_date:
     value: 2022-12-01
-    explanation: >
-      The date the model was [announced](https://docs.ai21.com/changelog/jurassic-1-instruct-is-now-available).
+    explanation: 'The date the model was [announced](https://docs.ai21.com/changelog/jurassic-1-instruct-is-now-available).
+
+      '
   url: https://docs.ai21.com/docs/jurassic-1-instruct-beta
   model_card: none
-  modality: text (English)
-  size: 17B parameters (dense model)
+  modality: text; text
+  size: 17B parameters (dense)
   analysis: none
-  dependencies: [Jurassic-1, Jurassic-1 Instruct dataset]
+  dependencies:
+  - Jurassic-1
+  - Jurassic-1 Instruct dataset
   training_emissions: unknown
   training_time: unknown
   training_hardware: unknown
@@ -141,30 +143,31 @@
     explanation: Jurassic-1 Instruct is available through AI21's paid API.
   license:
     value: unknown
-    explanation: >
-      The asset isn't released, and hence the license is unknown.
+    explanation: 'The asset isn''t released, and hence the license is unknown.
+
+      '
   intended_uses: Jurassic-1 Instruct was trained specifically to handle instructions-only
-    prompts ("zero-shot") without examples ("few-shot"). It is the most natural
-    way to interact with language models, and it is the best way to get a sense
-    of the optimal output for your task without any examples.
+    prompts ("zero-shot") without examples ("few-shot"). It is the most natural way
+    to interact with language models, and it is the best way to get a sense of the
+    optimal output for your task without any examples.
   prohibited_uses:
-    value: Illegal activities, such as hate speech, gambling, child pornography
-      or violating intellectual property rights; Harassment, victimization, intimidation,
+    value: Illegal activities, such as hate speech, gambling, child pornography or
+      violating intellectual property rights; Harassment, victimization, intimidation,
       fraud or spam; Creation or dissemination of misinformation, promotion of self-harm,
       glorification of violent events or incitement of violence.
     explanation: https://docs.ai21.com/docs/responsible-use
   monitoring: none
   feedback: none
-
 - type: model
   name: Jurassic-2
   organization: AI21 Labs
-  description: >
-    Jurassic-2 a family of language model designed to replace Jurassic-1.
+  description: 'Jurassic-2 a family of language model designed to replace Jurassic-1.
+
+    '
   created_date: 2023-03-09
   url: https://docs.ai21.com/docs/jurassic-2-models
   model_card: none
-  modality: text (English)
+  modality: text; text
   size: unknown
   analysis: The model was evaluated on the HELM benchmark as discussed in https://www.ai21.com/blog/introducing-j2.
   dependencies: []
@@ -177,22 +180,20 @@
     explanation: Jurassic-2 is available through AI21's paid API.
   license:
     value: unknown
-    explanation: >
-      The asset isn't released, and hence the license is unknown.
+    explanation: 'The asset isn''t released, and hence the license is unknown.
+
+      '
   intended_uses: ''
   prohibited_uses:
-    value: Illegal activities, such as hate speech, gambling, child pornography
-      or violating intellectual property rights; Harassment, victimization, intimidation,
+    value: Illegal activities, such as hate speech, gambling, child pornography or
+      violating intellectual property rights; Harassment, victimization, intimidation,
       fraud or spam; Creation or dissemination of misinformation, promotion of self-harm,
       glorification of violent events or incitement of violence.
     explanation: https://docs.ai21.com/docs/responsible-use
   monitoring: unknown
   feedback: none
-
-# Applications
 - type: application
   name: AI21 Playground
-  # General
   organization: AI21 Labs
   description: The AI21 Labs Playground supports several task-specific APIs in addition
     to a variety of models.
@@ -200,13 +201,12 @@
     value: 2021-08-11
     explanation: The date Jurassic-1 was made public.
   url: https://studio.ai21.com/playground/
-  # Construction
   dependencies:
-    - Jurassic-1
-    - Jurassic-1 Instruct
-    - Jurassic-2
-    - AI21 Summarization API
-    - AI21 Paraphrase API
+  - Jurassic-1
+  - Jurassic-1 Instruct
+  - Jurassic-2
+  - AI21 Summarization API
+  - AI21 Paraphrase API
   adaptation: The Playground provides direct access to the language models (Complete
     API) as well as wrapped for Rewrite and Summarize.
   output_space:
@@ -214,7 +214,6 @@
     explanation: The Playground supports different use cases that all involve text
       generation.
   quality_control: unknown
-  # Downstream
   access: limited
   terms_of_service: https://www.ai21.com/terms-of-use
   license:
@@ -222,21 +221,18 @@
     explanation: No license was found.
   intended_uses: The intended uses are text completion, rewriting, and summarization.
   prohibited_uses:
-    value: Illegal activities, such as hate speech, gambling, child pornography
-      or violating intellectual property rights; Harassment, victimization, intimidation,
+    value: Illegal activities, such as hate speech, gambling, child pornography or
+      violating intellectual property rights; Harassment, victimization, intimidation,
       fraud or spam; Creation or dissemination of misinformation, promotion of self-harm,
       glorification of violent events or incitement of violence.
     explanation: https://docs.ai21.com/docs/responsible-use
   monitoring: unknown
   feedback: Feedback can be given by emailing at info at ai21.com
-  # Deployment
   monthly_active_users: unknown
   user_distribution: unknown
   failures: unknown
-
 - type: application
   name: AI21 Paraphrase API
-  # General
   organization: AI21 Labs
   description: AI21 Studio's Paraphrase API offers access to our world-class paraphrasing
     engine. It has been specifically developed for suggesting alternative ways to
@@ -245,12 +241,11 @@
     value: 2023-03-09
     explanation: The date Jurassic-2 and Task-Specific APIs were released.
   url: https://docs.ai21.com/docs/paraphrase-api
-  # Construction
-  dependencies: [Jurassic-2]
+  dependencies:
+  - Jurassic-2
   adaptation: The AI21 language models are further specialized to the task of paraphrasing.
   output_space: text
   quality_control: unknown
-  # Downstream
   access: limited
   terms_of_service: https://www.ai21.com/terms-of-use
   license:
@@ -258,21 +253,18 @@
     explanation: No license was found.
   intended_uses: The intended uses are text paraphrasing.
   prohibited_uses:
-    value: Illegal activities, such as hate speech, gambling, child pornography
-      or violating intellectual property rights; Harassment, victimization, intimidation,
+    value: Illegal activities, such as hate speech, gambling, child pornography or
+      violating intellectual property rights; Harassment, victimization, intimidation,
       fraud or spam; Creation or dissemination of misinformation, promotion of self-harm,
       glorification of violent events or incitement of violence.
     explanation: https://docs.ai21.com/docs/responsible-use
   monitoring: unknown
   feedback: Feedback can be given by emailing at info at ai21.com
-  # Deployment
   monthly_active_users: unknown
   user_distribution: unknown
   failures: unknown
-
 - type: application
   name: AI21 Summarization API
-  # General
   organization: AI21 Labs
   description: AI21 Studio's Summarize API offers access to our world-class summarization
     engine. It has been specifically developed for reading long texts and providing
@@ -281,12 +273,11 @@
     value: 2023-03-09
     explanation: The date Jurassic-2 and Task-Specific APIs were released.
   url: https://docs.ai21.com/docs/summarize-api
-  # Construction
-  dependencies: [Jurassic-2]
+  dependencies:
+  - Jurassic-2
   adaptation: The AI21 language models are further specialized to the task of summarization.
   output_space: text
   quality_control: unknown
-  # Downstream
   access: limited
   terms_of_service: https://www.ai21.com/terms-of-use
   license:
@@ -294,21 +285,18 @@
     explanation: No license was found.
   intended_uses: The intended uses are text paraphrasing.
   prohibited_uses:
-    value: Illegal activities, such as hate speech, gambling, child pornography
-      or violating intellectual property rights; Harassment, victimization, intimidation,
+    value: Illegal activities, such as hate speech, gambling, child pornography or
+      violating intellectual property rights; Harassment, victimization, intimidation,
       fraud or spam; Creation or dissemination of misinformation, promotion of self-harm,
       glorification of violent events or incitement of violence.
     explanation: https://docs.ai21.com/docs/responsible-use
   monitoring: unknown
   feedback: Feedback can be given by emailing at info at ai21.com
-  # Deployment
   monthly_active_users: unknown
   user_distribution: unknown
   failures: unknown
-
 - type: application
   name: Wordtune
-  # General
   organization: AI21 Labs
   description: Wordtune, the first AI-based writing companion that understands context
     and meaning.
@@ -316,12 +304,11 @@
     value: 2020-10-27
     explanation: https://www.businesswire.com/news/home/20201027005162/en/AI21-Labs-Comes-out-of-Stealth-and-Launches-First-Deep-Tech-Writing-Assistant-Wordtune
   url: https://www.wordtune.com/
-  # Construction
-  dependencies: [AI21 Paraphrase API]
+  dependencies:
+  - AI21 Paraphrase API
   adaptation: unknown
   output_space: text
   quality_control: unknown
-  # Downstream
   access: limited
   terms_of_service: https://www.wordtune.com/terms-of-use
   license:
@@ -331,25 +318,21 @@
   prohibited_uses: ''
   monitoring: unknown
   feedback: ''
-  # Deployment
   monthly_active_users: unknown
   user_distribution: unknown
   failures: unknown
-
 - type: application
   name: Wordtune Read
-  # General
   organization: AI21 Labs
   description: Wordtune Read is an AI reader that summarizes long documents so you
     can understand more, faster.
   created_date: 2021-11-16
   url: https://www.wordtune.com/read
-  # Construction
-  dependencies: [AI21 Summarize API]
+  dependencies:
+  - AI21 Summarize API
   adaptation: unknown
   output_space: text
   quality_control: unknown
-  # Downstream
   access: limited
   terms_of_service: https://www.wordtune.com/terms-of-use
   license:
@@ -359,7 +342,6 @@
   prohibited_uses: ''
   monitoring: unknown
   feedback: ''
-  # Deployment
   monthly_active_users: unknown
   user_distribution: unknown
   failures: unknown

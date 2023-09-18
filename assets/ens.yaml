@@ -1,50 +1,48 @@
----
-
 - type: dataset
   name: HowTo100M
-  organization: École Normale Supérieure, Inria
+  organization: "\xC9cole Normale Sup\xE9rieure, Inria"
   description: HowTo100M is a large-scale dataset of narrated videos with an emphasis
     on instructional videos where content creators teach complex tasks with an explicit
     intention of explaining the visual content on screen. HowTo100M features a total
-    of 136M video clips with captions sourced from 1.2M Youtube videos (15 years
-    of video) and 23k activities from domains such as cooking, hand crafting, personal
+    of 136M video clips with captions sourced from 1.2M Youtube videos (15 years of
+    video) and 23k activities from domains such as cooking, hand crafting, personal
     care, gardening or fitness.
   created_date:
     value: 2019-06-07
     explanation: The date the [[paper]](https://arxiv.org/abs/1906.03327) was submitted.
   url: https://arxiv.org/pdf/1906.03327.pdf
   datasheet: https://arxiv.org/pdf/1906.03327.pdf
-  modality: text (English) and video
+  modality: text, video
   size: 136M video clips
   sample: []
   analysis:
     value: Authors use the dataset to learn a joint text-video embedding by leveraging
       more than 130M video clip-caption pairs. They then evaluate the learned embeddings
-      on the tasks of localizing steps in instructional videos of CrossTask and
-      textbased video retrieval on YouCook2, MSR-VTT and LSMDC datasets. They show
-      that their learned embedding can perform better compared to models trained
-      on existing carefully annotated but smaller video description datasets.
+      on the tasks of localizing steps in instructional videos of CrossTask and textbased
+      video retrieval on YouCook2, MSR-VTT and LSMDC datasets. They show that their
+      learned embedding can perform better compared to models trained on existing
+      carefully annotated but smaller video description datasets.
     explanation: See [[Experiments]](https://arxiv.org/pdf/1906.03327v2.pdf#section.5)
-  dependencies: [YouTube]
+  dependencies:
+  - YouTube
   included:
-    value: The dataset features 1.22 million videos from YouTube with a primary
-      focus on videos containing "visual tasks", that involve some interaction with
-      the physical world (e.g. Making peanut butter, Pruning a tree) as compared
-      to others that are more abstract (e.g. Ending a toxic relationship, Choosing
-      a gift). To obtain predominantly visual tasks, the authors limit them to one
-      of 12 categories (Food and Entertaining, Home and Garden, Hobbies and Crafts,
-      Cars & Other Vehicles, Pets and Animals, Holidays and Traditions, Personal
-      Care and Style, Sports and Fitness, Health, Education and Communications,
-      Arts and Entertainment, Computers and Electronics). They also restrict to
-      the top 200 YouTube search results, as the latter ones may not be related
-      to the query task.
+    value: The dataset features 1.22 million videos from YouTube with a primary focus
+      on videos containing "visual tasks", that involve some interaction with the
+      physical world (e.g. Making peanut butter, Pruning a tree) as compared to others
+      that are more abstract (e.g. Ending a toxic relationship, Choosing a gift).
+      To obtain predominantly visual tasks, the authors limit them to one of 12 categories
+      (Food and Entertaining, Home and Garden, Hobbies and Crafts, Cars & Other Vehicles,
+      Pets and Animals, Holidays and Traditions, Personal Care and Style, Sports and
+      Fitness, Health, Education and Communications, Arts and Entertainment, Computers
+      and Electronics). They also restrict to the top 200 YouTube search results,
+      as the latter ones may not be related to the query task.
     explanation: See [[Data collection]](https://arxiv.org/pdf/1906.03327v2.pdf#subsection.3.1)
   excluded:
     value: Categories such as Relationships and Finance and Business, that may be
-      more abstract, are excluded. Videos with less than 100 views are removed.
-      Authors also ignore videos that have less than 100 words. Videos longer than
-      2,000 seconds are removed. As some videos may appear in several tasks, the
-      videos are deduplicated based on YouTube IDs.
+      more abstract, are excluded. Videos with less than 100 views are removed. Authors
+      also ignore videos that have less than 100 words. Videos longer than 2,000 seconds
+      are removed. As some videos may appear in several tasks, the videos are deduplicated
+      based on YouTube IDs.
     explanation: See [[Data collection]](https://arxiv.org/pdf/1906.03327v2.pdf#subsection.3.1)
   quality_control: ''
   access:
@@ -54,13 +52,14 @@
   license: Apache 2.0
   intended_uses: ''
   prohibited_uses:
-    value: >
-      No uses are explicitly prohibited by the authors. They note the following
+    value: 'No uses are explicitly prohibited by the authors. They note the following
       limitations of the dataset: "We note that the distribution of identities and
       activities in the HowTo100M dataset may not be representative of the global
       human population and the diversity in society. Please be careful of unintended
       societal, gender, racial and other biases when training or deploying models
       trained on this data."
+
+      '
     explanation: See [[HowTo100M dataset webpage]](https://www.di.ens.fr/willow/research/howto100m/)
   monitoring: ''
   feedback: ''

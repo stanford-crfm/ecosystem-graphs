@@ -1,17 +1,17 @@
----
-
 - type: model
   name: MAGMA
   organization: Aleph Alpha
-  description: An autoregressive VL model that is able to generate text from an
-    arbitrary combination of visual and textual input
+  description: An autoregressive VL model that is able to generate text from an arbitrary
+    combination of visual and textual input
   created_date: 2022-10-24
   url: https://arxiv.org/pdf/2112.05253.pdf
   model_card: ''
-  modality: image and text input with natural language text output
+  modality: image, text; text
   analysis: Evaluated on the OKVQA benchmark as a fully open-ended generative task.
-  size: 6B parameters
-  dependencies: [GPT-J, CLIP]
+  size: 6B parameters (dense)
+  dependencies:
+  - GPT-J
+  - CLIP
   training_emissions: ''
   training_time: ''
   training_hardware: 32 A100 GPUs

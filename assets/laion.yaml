@@ -1,51 +1,49 @@
----
-
 - type: dataset
   name: LAION-400M
-  # General
   organization: LAION
-  description: LAION-400M is a dataset with CLIP-filtered 400 million image-text
-    pairs, their CLIP embeddings and kNN indices that allow efficient similarity
-    search. This dataset is entirely openly, freely accessible.
+  description: LAION-400M is a dataset with CLIP-filtered 400 million image-text pairs,
+    their CLIP embeddings and kNN indices that allow efficient similarity search.
+    This dataset is entirely openly, freely accessible.
   created_date:
     value: 2021-08-20
     explanation: The date the [[blog post]](https://laion.ai/blog/laion-400-open-dataset/)
       was released.
   url: https://laion.ai/blog/laion-400-open-dataset/
   datasheet: https://laion.ai/blog/laion-400-open-dataset/
-  modality: text (English) and image
+  modality: image, text
   size: 400M image-text pairs
   sample: []
   analysis: ''
-  # Construction
-  dependencies: [CLIP, CommonCrawl]
+  dependencies:
+  - CLIP
+  - CommonCrawl
   included: ''
   excluded:
-    value: >
-      Authors apply the following filtering conditions on the WAT files downloaded
-      from Common Crawl: "All samples with less than 5 character alt-text length
-      or less than 5 KB image size are dropped. Duplicate removal is performed with
-      bloom filter based on URL and alt-text. We use CLIP to compute embeddings
-      of the image and alt-text. Then we compute the cosine similarity of both embeddings
-      and drop all samples with cosine similarity below 0.3. This threshold was
-      selected based on human inspections. We use the CLIP embeddings of images
-      and texts to filter out illegal contents."
+    value: 'Authors apply the following filtering conditions on the WAT files downloaded
+      from Common Crawl: "All samples with less than 5 character alt-text length or
+      less than 5 KB image size are dropped. Duplicate removal is performed with bloom
+      filter based on URL and alt-text. We use CLIP to compute embeddings of the image
+      and alt-text. Then we compute the cosine similarity of both embeddings and drop
+      all samples with cosine similarity below 0.3. This threshold was selected based
+      on human inspections. We use the CLIP embeddings of images and texts to filter
+      out illegal contents."
+
+      '
     explanation: See [[Dataset and Methods]](https://arxiv.org/pdf/2111.02114.pdf#section.2)
   quality_control:
     value: The authors use  CLIP embeddings of images and texts to filter out illegal
       contents. They also use CLIP to tag image-text pairs as NSFW. They note that
-      less than 1% of images were detected as NSFW, which can be filtered out by
-      an user with NSFW tag.
+      less than 1% of images were detected as NSFW, which can be filtered out by an
+      user with NSFW tag.
     explanation: See [[Dataset and Methods]](https://arxiv.org/pdf/2111.02114.pdf#section.2)
-  # Downstream
   access:
     value: open
     explanation: The dataset index is available from [[dataset blog post]](https://laion.ai/blog/laion-400-open-dataset/)
   license:
     value: CC BY 4.0
     explanation: The license is listed on the [[dataset blog post]](https://laion.ai/blog/laion-400-open-dataset/)
-  intended_uses: The authors recommend using the dataset "for research purposes"
-    and warn that "this large-scale dataset is non-curated. It was built for research
+  intended_uses: The authors recommend using the dataset "for research purposes" and
+    warn that "this large-scale dataset is non-curated. It was built for research
     purposes to enable testing model training on larger scale for broad researcher
     and other interested communities, and is not meant for any real-world production
     or application."
@@ -53,103 +51,98 @@
     from using LAION-400M for any real-world production or application.
   monitoring: ''
   feedback: ''
-
 - type: dataset
   name: LAION-5B
-  # General
   organization: LAION
   description: LAION is a dataset of 5 billion image-text pairs from the Internet
   created_date:
     value: 2022-12-12
-    explanation: The date the [[blog post]](https://laion.ai/blog/laion-5b/) was
-      released. Note that the dataset was already compiled earlier, e.g. the Stable
-      Diffusion model released earlier was trained on a subset of LAION-5B
+    explanation: The date the [[blog post]](https://laion.ai/blog/laion-5b/) was released.
+      Note that the dataset was already compiled earlier, e.g. the Stable Diffusion
+      model released earlier was trained on a subset of LAION-5B
   url: https://laion.ai/blog/laion-5b/
   datasheet: https://laion.ai/blog/laion-5b/
-  modality: text and image
+  modality: image, text
   size: 5B image-text pairs
   sample: []
   analysis: ''
-  # Construction
-  dependencies: [CLIP, mCLIP, CommonCrawl]
+  dependencies:
+  - CLIP
+  - mCLIP
+  - CommonCrawl
   included: ''
   excluded:
-    value: All samples with less than 5 characters alt-text length or less than
-      5 KB image size are dropped. All images with the too big resolution, potentially
+    value: All samples with less than 5 characters alt-text length or less than 5
+      KB image size are dropped. All images with the too big resolution, potentially
       DOS bombs, were dropped before attempting to process them. Duplicate removal
       is performed with a bloom filter based on URL. Future runs would include more
-      variate deduplication rules, such as URL + language for the multilanguage
-      dataset. We use CLIP respectively MCLIP to compute embeddings of the image
-      and alt-text. Then we compute the cosine similarity of both embeddings and
-      drop all samples with cosine similarity below 0.28 for the English language
-      ( with CLIP B/32) and 0.26 for the multilingual dataset (MCLIP). These thresholds
-      were selected based on human inspection of the test results. We use the CLIP
-      embeddings of images and texts to filter out to the possible extent the illegal
-      content.
+      variate deduplication rules, such as URL + language for the multilanguage dataset.
+      We use CLIP respectively MCLIP to compute embeddings of the image and alt-text.
+      Then we compute the cosine similarity of both embeddings and drop all samples
+      with cosine similarity below 0.28 for the English language ( with CLIP B/32)
+      and 0.26 for the multilingual dataset (MCLIP). These thresholds were selected
+      based on human inspection of the test results. We use the CLIP embeddings of
+      images and texts to filter out to the possible extent the illegal content.
     explanation: See [[dataset blog post]](https://laion.ai/blog/laion-5b/)
   quality_control: ''
-  # Downstream
   access:
     value: open
     explanation: The dataset index is available from [[dataset blog post]](https://laion.ai/blog/laion-5b/)
   license:
     value: CC BY 4.0
     explanation: The license is listed on the [[dataset blog post]](https://laion.ai/blog/laion-5b/)
-  intended_uses: The authors recommend using the dataset "for research purposes"
-    and "do not recommend using it for creating ready-to-go industrial products,
-    as the basic research about general properties and safety of such large-scale
-    models, which we would like to encourage with this release, is still in progress"
+  intended_uses: The authors recommend using the dataset "for research purposes" and
+    "do not recommend using it for creating ready-to-go industrial products, as the
+    basic research about general properties and safety of such large-scale models,
+    which we would like to encourage with this release, is still in progress"
   prohibited_uses: No uses are explicitly prohibited by the license. Users are warned
     from using LAION-5B for non-research purposes.
   monitoring: ''
   feedback: ''
-
 - type: dataset
   name: LAION-2B-en
-  # General
   organization: LAION
-  description: LAION-2B-en is a subset of the LAION-5B dataset and contains 2.3
-    billion English image-text pairs.
+  description: LAION-2B-en is a subset of the LAION-5B dataset and contains 2.3 billion
+    English image-text pairs.
   created_date:
     value: 2022-12-12
-    explanation: The date the [[blog post]](https://laion.ai/blog/laion-5b/) was
-      released. Note that the dataset was already compiled earlier, e.g. the Stable
-      Diffusion model released earlier was trained on a subset of LAION-5B
+    explanation: The date the [[blog post]](https://laion.ai/blog/laion-5b/) was released.
+      Note that the dataset was already compiled earlier, e.g. the Stable Diffusion
+      model released earlier was trained on a subset of LAION-5B
   url: https://arxiv.org/pdf/2210.08402.pdf
   datasheet: https://laion.ai/blog/laion-5b/
-  modality: text (English) and image
+  modality: image, text
   size: 2.32B image-text pairs
   sample: []
   analysis: ''
-  # Construction
-  dependencies: [CLIP, LAION-5B]
+  dependencies:
+  - CLIP
+  - LAION-5B
   included: ''
   excluded:
-    value: All samples with less than 5 characters alt-text length or less than
-      5 KB image size are dropped. All images with the too big resolution, potentially
+    value: All samples with less than 5 characters alt-text length or less than 5
+      KB image size are dropped. All images with the too big resolution, potentially
       DOS bombs, were dropped before attempting to process them. Duplicate removal
       is performed with a bloom filter based on URL. Future runs would include more
-      variate deduplication rules, such as URL + language for the multilanguage
-      dataset. We use CLIP respectively MCLIP to compute embeddings of the image
-      and alt-text. Then we compute the cosine similarity of both embeddings and
-      drop all samples with cosine similarity below 0.28 for the English language
-      ( with CLIP B/32) and 0.26 for the multilingual dataset (MCLIP). These thresholds
-      were selected based on human inspection of the test results. We use the CLIP
-      embeddings of images and texts to filter out to the possible extent the illegal
-      content.
+      variate deduplication rules, such as URL + language for the multilanguage dataset.
+      We use CLIP respectively MCLIP to compute embeddings of the image and alt-text.
+      Then we compute the cosine similarity of both embeddings and drop all samples
+      with cosine similarity below 0.28 for the English language ( with CLIP B/32)
+      and 0.26 for the multilingual dataset (MCLIP). These thresholds were selected
+      based on human inspection of the test results. We use the CLIP embeddings of
+      images and texts to filter out to the possible extent the illegal content.
     explanation: See [[dataset blog post]](https://laion.ai/blog/laion-5b/)
   quality_control: ''
-  # Downstream
   access:
     value: open
     explanation: The dataset index is available from [[dataset blog post]](https://laion.ai/blog/laion-5b/)
   license:
     value: CC BY 4.0
     explanation: The license is listed on the [[dataset blog post]](https://laion.ai/blog/laion-5b/)
-  intended_uses: The authors recommend using the dataset "for research purposes"
-    and "do not recommend using it for creating ready-to-go industrial products,
-    as the basic research about general properties and safety of such large-scale
-    models, which we would like to encourage with this release, is still in progress"
+  intended_uses: The authors recommend using the dataset "for research purposes" and
+    "do not recommend using it for creating ready-to-go industrial products, as the
+    basic research about general properties and safety of such large-scale models,
+    which we would like to encourage with this release, is still in progress"
   prohibited_uses: No uses are explicitly prohibited by the license. Users are warned
     from using LAION-2B-en for non-research purposes.
   monitoring: ''

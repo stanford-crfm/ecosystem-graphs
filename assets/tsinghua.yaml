@@ -1,6 +1,3 @@
----
-
-# models
 - type: model
   name: CodeGeeX
   organization: Tsinghua
@@ -8,9 +5,9 @@
   created_date: 2022-09-20
   url: https://github.com/THUDM/CodeGeeX
   model_card: none
-  modality: code
+  modality: code; code
   analysis: none
-  size: 13B parameters (dense model)
+  size: 13B parameters (dense)
   dependencies: []
   training_emissions: unknown
   training_time: unknown
@@ -26,7 +23,6 @@
   prohibited_uses: none
   monitoring: none
   feedback: none
-
 - type: model
   name: CogView
   organization: Tsinghua
@@ -36,8 +32,8 @@
     explanation: The date the model paper was released
   url: https://arxiv.org/abs/2105.13290
   model_card: none
-  modality: text (Chinese) and image
-  size: 4B parameters
+  modality: image, text; image, text
+  size: 4B parameters (dense)
   analysis: ''
   dependencies: []
   training_emissions: ''
@@ -49,13 +45,13 @@
     explanation: Model checkpoints available from [[Wudao-Wenhui]](https://resource.wudaoai.cn/home?ind=2&name=WuDao%20WenHui&id=1399364355975327744)
   license:
     value: Apache 2.0
-    explanation: >
-      The license is provided in the [[Github repository]](https://github.com/THUDM/CogView)
+    explanation: 'The license is provided in the [[Github repository]](https://github.com/THUDM/CogView)
+
+      '
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
   feedback: ''
-
 - type: model
   name: CogView 2
   organization: Tsinghua
@@ -65,8 +61,8 @@
     explanation: The date the model paper was released
   url: https://arxiv.org/abs/2204.14217
   model_card: none
-  modality: text (Chinese, English) and image
-  size: 6B parameters
+  modality: image, text; image, text
+  size: 6B parameters (dense)
   analysis: ''
   dependencies: []
   training_emissions: ''
@@ -78,13 +74,13 @@
     explanation: The model checkpoints are available for download from [[BAAI]](https://model.baai.ac.cn/model-detail/100041)
   license:
     value: Apache 2.0
-    explanation: >
-      The license is provided in the [[Github repository]](https://github.com/THUDM/CogView2)
+    explanation: 'The license is provided in the [[Github repository]](https://github.com/THUDM/CogView2)
+
+      '
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
   feedback: ''
-
 - type: model
   name: CogVideo
   organization: Tsinghua
@@ -94,7 +90,7 @@
     explanation: The date the model paper was released
   url: https://arxiv.org/abs/2205.15868
   model_card: none
-  modality: text (Chinese) and video
+  modality: text, video; text, video
   size: unknown
   analysis: ''
   dependencies: []
@@ -107,31 +103,30 @@
     explanation: Model checkpoints are available for download from https://github.com/THUDM/CogVideo
   license:
     value: Apache 2.0
-    explanation: >
-      The license is provided in the [[Github repository]](https://github.com/THUDM/CogVideo)
+    explanation: 'The license is provided in the [[Github repository]](https://github.com/THUDM/CogVideo)
+
+      '
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
   feedback: ''
-
 - type: model
   name: GLM-130B
   organization: Tsinghua
-  description: GLM-130B is a bidirectional language model trained on English and
-    Chinese
+  description: GLM-130B is a bidirectional language model trained on English and Chinese
   created_date:
     value: 2022-08-04
     explanation: The date the model website was made public
   url: https://keg.cs.tsinghua.edu.cn/glm-130b/
   model_card: none
-  modality: text (Chinese | English)
-  size: 130B parameters (dense model)
+  modality: text; text
+  size: 130B parameters (dense)
   analysis: ''
   dependencies:
-    - The Pile
-    - GLM-130B Chinese corpora
-    - P3
-    - DeepStruct finetuning dataset
+  - The Pile
+  - GLM-130B Chinese corpora
+  - P3
+  - DeepStruct finetuning dataset
   training_emissions: ''
   training_time: ''
   training_hardware: THUDM 96 DGX-A100 (40G) cluster

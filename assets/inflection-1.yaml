@@ -1,14 +1,14 @@
----
-
 - type: model
   name: Inflection-1
   organization: Inflection AI
-  description: Inflection AI's in-house LLM, which powers Pi and will soon be available via Inflection AI's conversational API.
+  description: Inflection AI's in-house LLM, which powers Pi and will soon be available
+    via Inflection AI's conversational API.
   created_date: 2023-06-22
   url: https://inflection.ai/inflection-1
   model_card: ''
-  modality: text
-  analysis: Evaluated on wide range of language benchmarks like MMLU 5-shot, GSM-8K, and HellaSwag 10-shot among others.
+  modality: text; text
+  analysis: Evaluated on wide range of language benchmarks like MMLU 5-shot, GSM-8K,
+    and HellaSwag 10-shot among others.
   size:
     value: unknown
     explanation: Designed to be roughly around Chat-GPT's size (175B parameters).

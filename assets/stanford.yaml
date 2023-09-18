@@ -1,5 +1,3 @@
----
-
 - type: model
   name: BioMedLM
   organization: Stanford
@@ -7,10 +5,11 @@
   created_date: 2022-12-15
   url: https://crfm.stanford.edu/2022/12/15/pubmedgpt.html
   model_card: ''
-  modality: text
+  modality: text; text
   analysis: ''
-  size: 2.7B parameters (dense model)
-  dependencies: [The Pile]
+  size: 2.7B parameters (dense)
+  dependencies:
+  - The Pile
   training_emissions: ''
   training_time: ''
   training_hardware: ''

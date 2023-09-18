@@ -1,9 +1,5 @@
----
-
-# Datasets
 - type: dataset
   name: Luminous dataset
-  # General
   organization: Aleph Alpha
   description: The dataset used to train the Luminous models.
   created_date:
@@ -11,27 +7,24 @@
     explanation: Date the models were announced by the Aleph Alpha twitter account
   url: none
   datasheet: none
-  modality: text (English, French | français, German | Deutsch, Italian | italiano,
-    Spanish | Español)
+  modality: text
   size: unknown
   sample: []
   analysis: unknown
-  # Construction
   dependencies: []
   license:
     value: unknown
-    explanation: >
-      The asset isn't released, and hence the license is unknown.
+    explanation: 'The asset isn''t released, and hence the license is unknown.
+
+      '
   included: unknown
   excluded: unknown
   quality_control: unknown
-  # Downstream
   access: closed
   intended_uses: unknown
   prohibited_uses: unknown
   monitoring: none
   feedback: none
-
 - type: model
   name: Luminous
   organization: Aleph Alpha
@@ -41,13 +34,13 @@
     explanation: Date the models were announced by the Aleph Alpha twitter account
   url: https://twitter.com/Aleph__Alpha/status/1514576711492542477
   model_card: ''
-  modality: text (English, French | français, German | Deutsch, Italian | italiano,
-    Spanish | Español)
+  modality: text; text
   analysis: ''
   size:
-    value: 200B parameters (dense model)
+    value: 200B parameters (dense)
     explanation: According to [[this news article]](https://www-heise-de.translate.goog/news/Machine-Learning-Aleph-Alpha-feilt-mit-Oracle-und-Nvidia-an-transformativer-KI-6269269.html?_x_tr_sl=de&_x_tr_tl=en&_x_tr_hl=en&_x_tr_pto=sc).
-  dependencies: [Luminous dataset]
+  dependencies:
+  - Luminous dataset
   training_emissions: unknown
   training_time: unknown
   training_hardware: unknown
@@ -62,28 +55,28 @@
   prohibited_uses: ''
   monitoring: ''
   feedback: ''
-
 - type: application
   name: Aleph Alpha API
-  # General
   organization: Aleph Alpha
-  description: >
-    The Aleph Alpha API serves a family of text-only language models (Luminous)
+  description: 'The Aleph Alpha API serves a family of text-only language models (Luminous)
     and multimodal text-and-image models (Magma).
+
+    '
   created_date:
     value: 2021-09-30
-    explanation: >
-      Date the Aleph Alpha Python API client was first available based on to the
-      [PyPi package history](https://pypi.org/project/aleph-alpha-client/1.0.0/)
+    explanation: 'Date the Aleph Alpha Python API client was first available based
+      on to the [PyPi package history](https://pypi.org/project/aleph-alpha-client/1.0.0/)
+
+      '
   url: https://www.aleph-alpha.com/
-  # Construction
-  dependencies: [Luminous]
+  dependencies:
+  - Luminous
   adaptation: ''
-  output_space: >
-    The text models provide text outputs given text inputs. The multimodal models
-    provide text completions given text and image inputs.
+  output_space: 'The text models provide text outputs given text inputs. The multimodal
+    models provide text completions given text and image inputs.
+
+    '
   quality_control: ''
-  # Downstream
   access:
     value: limited
     explanation: The API is a paid product. Refer to the [[API documentation]](https://docs.aleph-alpha.com/docs/introduction/luminous/)
@@ -96,7 +89,6 @@
   prohibited_uses: unknown
   monitoring: unknown
   feedback: unknown
-  # Deployment
   monthly_active_users: unknown
   user_distribution: unknown
   failures: unknown

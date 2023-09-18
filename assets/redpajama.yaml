@@ -1,5 +1,3 @@
----
-
 - type: dataset
   name: RedPajama-Data
   organization: Together
@@ -12,7 +10,10 @@
   size: 1.2 trillion tokens
   sample: []
   analysis: ''
-  dependencies: [LLaMA dataset, GitHub, Wikipedia]
+  dependencies:
+  - LLaMA dataset
+  - GitHub
+  - Wikipedia
   included: ''
   excluded: ''
   quality_control: ''
