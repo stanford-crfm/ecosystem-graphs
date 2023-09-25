@@ -1,5 +1,3 @@
----
-
 - type: model
   name: Inflection-1
   organization: Inflection AI
@@ -8,12 +6,12 @@
   created_date: 2023-06-22
   url: https://inflection.ai/inflection-1
   model_card: ''
-  modality: text
+  modality:
+    explanation: text; text
+    value: text; text
   analysis: Evaluated on wide range of language benchmarks like MMLU 5-shot, GSM-8K,
     and HellaSwag 10-shot among others.
-  size:
-    value: unknown
-    explanation: Designed to be roughly around Chat-GPT's size (175B parameters).
+  size: unknown
   dependencies: []
   training_emissions: ''
   training_time: ''
@@ -25,15 +23,15 @@
   prohibited_uses: ''
   monitoring: ''
   feedback: ''
-
 - type: application
   name: Pi
   organization: Inflection AI
-  description: Personal AI chatbot designed to be conversational and specialized
-    in emotional intelligence.
+  description: Personal AI chatbot designed to be conversational and specialized in
+    emotional intelligence.
   created_date: 2023-05-02
   url: https://inflection.ai/press
-  dependencies: [Inflection-1]
+  dependencies:
+  - Inflection-1
   adaptation: ''
   output_space: natural language text responses
   quality_control: ''

@@ -1,373 +1,398 @@
----
-
 - type: model
   name: ESM-2
   organization: Meta
   description: ESM-2 is a series of protein language models trained on protein sequences
   created_date:
-    value: 2022-10-31
     explanation: The date the [[model paper]](https://www.biorxiv.org/content/10.1101/2022.07.20.500902v2.full.pdf+html)
       was released
+    value: 2022-10-31
   url: https://www.biorxiv.org/content/10.1101/2022.07.20.500902v2.full.pdf+html
   model_card: none
-  modality: protein sequence
-  size: 15B parameters (dense model)
+  modality:
+    explanation: text; text
+    value: text; text
   analysis: ''
-  dependencies: [UniRef50, UniRef90]
+  size: 15B parameters (dense)
+  dependencies:
+  - UniRef50
+  - UniRef90
   training_emissions: ''
   training_time: ''
   training_hardware: ''
   quality_control: ''
   access:
-    value: open
     explanation: Models are available for download from [[GitHub repository]](https://github.com/facebookresearch/esm#available-models)
+    value: open
   license:
+    explanation: 'The license is provided in the [[Github repository]](https://github.com/facebookresearch/esm#available-models)
+
+      '
     value: MIT
-    explanation: >
-      The license is provided in the [[Github repository]](https://github.com/facebookresearch/esm#available-models)
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
   feedback: ''
-
 - type: dataset
   name: PMD
-  # General
   organization: Meta
   description: PMD (Public Multimodal Datasets) is a collection of image-text datasets
     introduced in the FLAVA work.
   created_date:
-    value: 2021-12-08
     explanation: The date the model paper was released
+    value: 2021-12-08
   url: https://arxiv.org/abs/2112.04482
   datasheet: none
-  modality: text, image
+  modality: {}
   size: 70M
   sample: []
   analysis: none
-  # Construction
   dependencies:
-    - COCO
-    - YFCC100M
-    - SBU Captions
-    - Localized Narratives
-    - Visual Genome
-    - Wikipedia
-    - Conceptual Captions
-    - Red Caps
-  license:
-    value: unknown
-    explanation: >
-      The asset isn't released, and hence the license is unknown.
+  - COCO
+  - YFCC100M
+  - SBU Captions
+  - Localized Narratives
+  - Visual Genome
+  - Wikipedia
+  - Conceptual Captions
+  - Red Caps
   included: none
   excluded: YFCC100M is filtered for non-English captions and very short (< 2 word)
     captions.
   quality_control: Beyond filtering mentioned in excluded, nothing further is done.
-  # Downstream
   access: closed
+  license:
+    explanation: 'The asset isn''t released, and hence the license is unknown.
+
+      '
+    value: unknown
   intended_uses: unknown
   prohibited_uses: unknown
   monitoring: none
   feedback: none
-
 - type: model
   name: FLAVA
   organization: Meta
   description: FLAVA is a multimodal model composed of an image encoder, text encoder,
     and multimodal encoder.
   created_date:
-    value: 2021-12-08
     explanation: The date the model paper was released
+    value: 2021-12-08
   url: https://arxiv.org/abs/2112.04482
   model_card: https://huggingface.co/facebook/flava-full
-  modality: Text (English) and Image
-  size:
-    value: 306M
-    explanation: >
-      110M (Language encoder) + 86M (Vision encoder) + 110M (mul encoder)
+  modality: {}
   analysis: FLAVA is benchmarked on a range of vision-only (e.g. CIFAR-10), language-only
     (e.g. GLUE), and multimodal (e.g. Hateful Memes) standard evaluations.
-  dependencies: [PMD]
+  size: ''
+  dependencies:
+  - PMD
   training_emissions: unknown
   training_time: unknown
   training_hardware: unknown
   quality_control: FLAVA introduces a variety of new modeling techniques, specifically
     with an interest in improved text-image alignment through contrastive objectives.
   access:
-    value: open
-    explanation: >
-      Model checkpoints are available for download from the [[HuggingFace
+    explanation: 'Model checkpoints are available for download from the [[HuggingFace
       repository]](https://huggingface.co/facebook/flava-full)
+
+      '
+    value: open
   license:
+    explanation: 'The license is provided in the [[HuggingFace repository]](https://huggingface.co/facebook/flava-full)
+
+      '
     value: BSD-3-Clause
-    explanation: >
-      The license is provided in the [[HuggingFace repository]](https://huggingface.co/facebook/flava-full)
-  intended_uses: >
-    Per the [[HuggingFace repository]](https://huggingface.co/facebook/flava-full),
+  intended_uses: 'Per the [[HuggingFace repository]](https://huggingface.co/facebook/flava-full),
     "The model is intended to serve as a reproducible research artifact for research
     communities in the light of models whose exact reproduction details are never
     released such as CLIP and SimVLM."
-  prohibited_uses: >
-    Per the [[HuggingFace repository]](https://huggingface.co/facebook/flava-full),
+
+    '
+  prohibited_uses: 'Per the [[HuggingFace repository]](https://huggingface.co/facebook/flava-full),
     "Any deployed use case of the model - whether commercial or not" - is currently
     out of scope.
+
+    '
   monitoring: none
   feedback: https://huggingface.co/facebook/flava-full/discussions
-
 - type: dataset
   name: The Galactica Corpus
-  # General
   organization: Meta
   description: The Galactica Corpus is a collection of scientific datasets introduced
     in the Galactica work.
   created_date:
+    explanation: 'The date the Galactica paper was released
+
+      '
     value: 2022-11-15
-    explanation: >
-      The date the Galactica paper was released
   url: https://galactica.org/static/paper.pdf
   datasheet: none
   modality: text
   size: 106B tokens
   sample: []
   analysis: none
-  # Construction
-  dependencies: [CommonCrawl, Wikipedia, arXiv]
-  license:
-    value: unknown
-    explanation: >
-      The asset isn't released, and hence the license is unknown.
+  dependencies:
+  - CommonCrawl
+  - Wikipedia
+  - arXiv
   included: Prompts and reasoning data is explicitly included to improve model capabilities
     derived from this data.
   excluded: ''
   quality_control: ''
-  # Downstream
   access: closed
+  license:
+    explanation: 'The asset isn''t released, and hence the license is unknown.
+
+      '
+    value: unknown
   intended_uses: unknown
   prohibited_uses: unknown
   monitoring: none
   feedback: none
-
 - type: model
   name: Galactica
   organization: Meta
   description: Galactica is a family of autoregressive language models.
   created_date:
+    explanation: 'The date the Galactica paper was released
+
+      '
     value: 2022-11-15
-    explanation: >
-      The date the Galactica paper was released
   url: https://galactica.org/static/paper.pdf
   model_card: https://huggingface.co/facebook/galactica-6.7b
-  modality: Text (English), Code, Math, Chemistry, Biology
+  modality:
+    explanation: code, text; code, text
+    value: code, text; code, text
   analysis: ''
-  size: 120B parameters (dense model)
-  dependencies: [The Galactica Corpus]
+  size: 120B parameters (dense)
+  dependencies:
+  - The Galactica Corpus
   training_emissions: unknown
   training_time: unknown
-  training_hardware: Meta AI Cluster. Trained on 1024 80GB A100 GPUs (128 8xA100
-    80GB nodes)
+  training_hardware: Meta AI Cluster. Trained on 1024 80GB A100 GPUs (128 8xA100 80GB
+    nodes)
   quality_control: ''
   access:
-    value: open
     explanation: Model checkpoints freely available at https://github.com/paperswithcode/galai
+    value: open
   license:
-    value: CC BY-NC 4.0
     explanation: https://github.com/paperswithcode/galai/blob/main/LICENSE-MODEL.md
+    value: CC BY-NC 4.0
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
   feedback: ''
-
 - type: model
   name: InCoder
   organization: Meta, CMU, TTI-Chicago, UC Berkeley, University of Washington
-  description: InCoder is a language model trained on code with a causal masking
-    objective
+  description: InCoder is a language model trained on code with a causal masking objective
   created_date:
-    value: 2022-04-12
     explanation: The date the model paper was released
+    value: 2022-04-12
   url: https://arxiv.org/abs/2204.05999
   model_card: none
-  modality: text (English) and code
+  modality:
+    explanation: code, text; code, text
+    value: code, text; code, text
   analysis: none
-  size: 6B parameters (dense model)
+  size: 6B parameters (dense)
   dependencies: []
   training_emissions: Unknown
   training_time: 24 days, according to [[the paper]](https://arxiv.org/pdf/2204.05999.pdf)
   training_hardware: 248 V100 GPUs, according to [[the paper]](https://arxiv.org/pdf/2204.05999.pdf)
   quality_control: unknown
   access:
-    value: open
     explanation: Model weights are available via the [[HuggingFace repository]](https://huggingface.co/facebook/incoder-6B)
+    value: open
   license:
-    value: CC BY-NC 4.0
     explanation: The license is provided in the [[HuggingFace repository]](https://huggingface.co/facebook/incoder-6B?text=My+name+is+Lewis+and+I+like+to)
+    value: CC BY-NC 4.0
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
   feedback: ''
-
 - type: model
   name: OPT
   organization: Meta
   description: OPT is a family of autoregressive language models.
   created_date:
+    explanation: 'The date the OPT paper was submitted to Arxiv
+
+      '
     value: 2022-05-01
-    explanation: >
-      The date the OPT paper was submitted to Arxiv
   url: https://arxiv.org/abs/2205.01068
   model_card: https://arxiv.org/pdf/2205.01068.pdf
-  modality: text (English)
+  modality:
+    explanation: text; text
+    value: text; text
   analysis: ''
-  size: 175B parameters (dense model)
-  dependencies: [RoBERTa dataset, The Pile, PushShift.io Reddit]
+  size: 175B parameters (dense)
+  dependencies:
+  - RoBERTa dataset
+  - The Pile
+  - PushShift.io Reddit
   training_emissions:
+    explanation: 'Estimate by authors for the OPT-175B model only. Not including ablations
+      and baselines.
+
+      '
     value: 75 tCO2e
-    explanation: >
-      Estimate by authors for the OPT-175B model only. Not including ablations and
-      baselines.
   training_time: ''
   training_hardware: Meta AI cluster. Trained on 992 80GB A100 GPUs
   quality_control: ''
   access:
-    value: limited
     explanation: The 175B model requires manual approval from Meta to access. Other
       models are available through HuggingFace.
+    value: limited
   license:
-    value: OPT-175B License
-    explanation: >
-      All released with the
-      [[OPT-175B License]](https://github.com/facebookresearch/metaseq/blob/main/projects/OPT/MODEL_LICENSE.md),
+    explanation: 'All released with the [[OPT-175B License]](https://github.com/facebookresearch/metaseq/blob/main/projects/OPT/MODEL_LICENSE.md),
       except 66B (TBD) and 17B (requires manual approval)
+
+      '
+    value: OPT-175B License
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
   feedback: ''
-
 - type: dataset
   name: Make-A-Video dataset
-  # General
   organization: Meta
-  description: >
-    The Make-A-Video dataset is the dataset used to train Make-A-Video, which includes
-    both image-text and video-only datasets with specific and significant filtering.
+  description: 'The Make-A-Video dataset is the dataset used to train Make-A-Video,
+    which includes both image-text and video-only datasets with specific and significant
+    filtering.
+
+    '
   created_date:
+    explanation: 'The date that Make-A-Video was posted to arXiv [[arXiv]] (https://arxiv.org/abs/2209.14792).
+
+      '
     value: 2022-09-29
-    explanation: >
-      The date that Make-A-Video was posted to arXiv
-      [[arXiv]]
-      (https://arxiv.org/abs/2209.14792).
   url: https://arxiv.org/pdf/2209.14792.pdf
   datasheet: none
-  modality: video, image-text
+  modality: image, text, video
   size: 20M video clips, 2.3B image-text pairs
   sample: []
   analysis: ''
-  # Construction
-  dependencies: [LAION-5B, WebVid-10M, HD-VILA-100M]
-  license:
-    value: none
-    explanation: >
-      No license was found, though the underlying datasets are public and have
-      licenses.
+  dependencies:
+  - LAION-5B
+  - WebVid-10M
+  - HD-VILA-100M
   included:
+    explanation: 'Data from the three underlying datasets is filtered, but nothing
+      is included beyond this.
+
+      '
     value: none
-    explanation: >
-      Data from the three underlying datasets is filtered, but nothing is included
-      beyond this.
-  excluded: >
-    The LAION-5B dataset is filtered to 2.3B by removing NSFW images using [https://github.com/GantMan/nsfw](https://github.com/GantMan/nsfw),
-    toxic words in text, and images with watermark probability > 0.5. The HD-VILA-100M
-    is randomly subsampled to 10M video clips.
-  quality_control: >
-    The authors exclude NSFW, toxic, and likely watermarked data from LAION-5B.
-  # Downstream
+  excluded: 'The LAION-5B dataset is filtered to 2.3B by removing NSFW images using
+    [https://github.com/GantMan/nsfw](https://github.com/GantMan/nsfw), toxic words
+    in text, and images with watermark probability > 0.5. The HD-VILA-100M is randomly
+    subsampled to 10M video clips.
+
+    '
+  quality_control: 'The authors exclude NSFW, toxic, and likely watermarked data from
+    LAION-5B.
+
+    '
   access:
+    explanation: 'The datasets involved are public, but the full dataset is not directly
+      available, nor are filtering scripts.
+
+      '
     value: limited
-    explanation: >
-      The datasets involved are public, but the full dataset is not directly available,
-      nor are filtering scripts.
+  license:
+    explanation: 'No license was found, though the underlying datasets are public
+      and have licenses.
+
+      '
+    value: none
   intended_uses: unknown
   prohibited_uses: unknown
   monitoring:
-    value: unknown
-    explanation: >
-      There is no information on how Meta is internally monitoring
-      the use of the dataset.
-  feedback:
-    value: none
-    explanation: >
-      No feedback mechanism is mentioned by the authors.
+    explanation: 'There is no information on how Meta is internally monitoring the
+      use of the dataset.
 
+      '
+    value: unknown
+  feedback:
+    explanation: 'No feedback mechanism is mentioned by the authors.
+
+      '
+    value: none
 - type: model
   name: Make-A-Video
-  # General
   organization: Meta
-  description: >
-    Make-A-Video is a model for Text-to-Video Generation without Text-Video Data.
+  description: 'Make-A-Video is a model for Text-to-Video Generation without Text-Video
+    Data.
+
+    '
   created_date:
+    explanation: 'The date that Make-A-Video was posted to arXiv [[arXiv]] (https://arxiv.org/abs/2209.14792).
+
+      '
     value: 2022-09-29
-    explanation: >
-      The date that Make-A-Video was posted to arXiv
-      [[arXiv]]
-      (https://arxiv.org/abs/2209.14792).
   url: https://arxiv.org/pdf/2209.14792.pdf
   model_card: none
-  modality: text, video
-  size:
-    value: unknown
-    explanation: >
-      The authors do not state the model size in the paper.
-  analysis: >
-    Model performance was evaluated using automated (Frechet Video Distance; Frechet
-    Inception Distance) and human evaluation on two datasets (UCF-101, MSR-VTT)
+  modality:
+    explanation: text, video; text, video
+    value: text, video; text, video
+  analysis: 'Model performance was evaluated using automated (Frechet Video Distance;
+    Frechet Inception Distance) and human evaluation on two datasets (UCF-101, MSR-VTT)
     in the zero-shot setting.
-  # Construction
-  dependencies: [Make-A-Video dataset]
-  training_emissions:
-    value: unknown
-    explanation: >
-      Authors do not report the training emissions.
-  training_time:
-    value: unknown
-    explanation: >
-      Authors do not report the training time.
-  training_hardware:
-    value: unknown
-    explanation: >
-      Authors do not report the training hardware or provider.
-  quality_control:
-    value: none
-    explanation: >
-      Authors do not report specific quality control steps taken in modeling, though
-      filtering is done in producing the Make-A-Video dataset.
-  # Downstream
-  access:
-    value: closed
-    explanation: >
-      The model has not been released; a form existed to potentially acquire access
-      but is now closed as of 2022-12-07
-      [[Access Form]](https://docs.google.com/forms/u/0/d/e/1FAIpQLSfMjC57wcXWUDV0UbS2Tn6VhjLEiCXaHvWZuWgWRa-Zx8-Few/closedform).
-  license:
-    value: none
-    explanation: No license was found.
-  intended_uses:
-    value: unknown
-    explanation: >
-      Authors do not report the intended uses.
-  prohibited_uses:
-    value: unknown
-    explanation: >
-      Authors do not report the prohibited uses.
-  monitoring:
-    value: unknown
-    explanation: >
-      Authors do not report the monitoring process for Make-A-Video internally at
-      Meta.
-  feedback:
-    value: none
-    explanation: >
-      Authors do not mention or provide a feedback mechanism.
 
+    '
+  size: unknown
+  dependencies:
+  - Make-A-Video dataset
+  training_emissions:
+    explanation: 'Authors do not report the training emissions.
+
+      '
+    value: unknown
+  training_time:
+    explanation: 'Authors do not report the training time.
+
+      '
+    value: unknown
+  training_hardware:
+    explanation: 'Authors do not report the training hardware or provider.
+
+      '
+    value: unknown
+  quality_control:
+    explanation: 'Authors do not report specific quality control steps taken in modeling,
+      though filtering is done in producing the Make-A-Video dataset.
+
+      '
+    value: none
+  access:
+    explanation: 'The model has not been released; a form existed to potentially acquire
+      access but is now closed as of 2022-12-07 [[Access Form]](https://docs.google.com/forms/u/0/d/e/1FAIpQLSfMjC57wcXWUDV0UbS2Tn6VhjLEiCXaHvWZuWgWRa-Zx8-Few/closedform).
+
+      '
+    value: closed
+  license:
+    explanation: No license was found.
+    value: none
+  intended_uses:
+    explanation: 'Authors do not report the intended uses.
+
+      '
+    value: unknown
+  prohibited_uses:
+    explanation: 'Authors do not report the prohibited uses.
+
+      '
+    value: unknown
+  monitoring:
+    explanation: 'Authors do not report the monitoring process for Make-A-Video internally
+      at Meta.
+
+      '
+    value: unknown
+  feedback:
+    explanation: 'Authors do not mention or provide a feedback mechanism.
+
+      '
+    value: none
 - type: model
   name: LLaMA
   organization: Meta
@@ -375,17 +400,19 @@
   created_date: 2023-02-24
   url: https://arxiv.org/abs/2302.13971
   model_card: ''
-  modality: Text
+  modality:
+    explanation: text; text
+    value: text; text
   analysis: ''
-  size: 65B parameters (dense model)
+  size: 65B parameters (dense)
   dependencies:
-    - CommonCrawl
-    - C4
-    - Github
-    - Wikipedia
-    - BooksCorpus
-    - arXiv
-    - StackExchange
+  - CommonCrawl
+  - C4
+  - Github
+  - Wikipedia
+  - BooksCorpus
+  - arXiv
+  - StackExchange
   training_emissions: ''
   training_time: ''
   training_hardware: ''
@@ -396,7 +423,6 @@
   prohibited_uses: ''
   monitoring: ''
   feedback: ''
-
 - type: model
   name: LLaMA 2
   organization: Meta
@@ -405,9 +431,11 @@
   created_date: 2023-07-18
   url: https://ai.meta.com/resources/models-and-libraries/llama/
   model_card: Can be found at appendix of paper at https://ai.meta.com/research/publications/llama-2-open-foundation-and-fine-tuned-chat-models/
-  modality: text
+  modality:
+    explanation: text; text
+    value: text; text
   analysis: Evaluated on standard academic benchmarks and internal Meta libraries.
-  size: 70B parameters (dense model)
+  size: 70B parameters (dense)
   dependencies: []
   training_emissions: 539 tCO2eq
   training_time: ''
@@ -415,18 +443,17 @@
   quality_control: ''
   access: open
   license:
-    value: custom
     explanation: The license can be found at https://ai.meta.com/resources/models-and-libraries/llama-downloads/
-  intended_uses: LLaMA 2 is intended for commercial and research use in English.
-    Tuned models are intended for assistant-like chat, whereas pretrained models
-    can be adapted for a variety of natural language generation tasks.
+    value: custom
+  intended_uses: LLaMA 2 is intended for commercial and research use in English. Tuned
+    models are intended for assistant-like chat, whereas pretrained models can be
+    adapted for a variety of natural language generation tasks.
   prohibited_uses: Use in any manner that violates applicable laws or regulations
-    (including trade compliance laws). Use in languages other than English. Use
-    in any other way that is prohibited by the Acceptable Use Policy and Licensing
-    Agreement for LLaMA 2.
+    (including trade compliance laws). Use in languages other than English. Use in
+    any other way that is prohibited by the Acceptable Use Policy and Licensing Agreement
+    for LLaMA 2.
   monitoring: ''
   feedback: ''
-
 - type: model
   name: OPT-IML
   organization: Meta
@@ -434,10 +461,14 @@
   created_date: 2022-12-22
   url: https://arxiv.org/abs/2212.12017
   model_card: ''
-  modality: text
+  modality:
+    explanation: text; text
+    value: text; text
   analysis: ''
   size: 175B parameters (dense)
-  dependencies: [OPT, OPT-IML Bench]
+  dependencies:
+  - OPT
+  - OPT-IML Bench
   training_emissions: ''
   training_time: ''
   training_hardware: ''
@@ -448,197 +479,201 @@
   prohibited_uses: ''
   monitoring: ''
   feedback: ''
-
 - type: dataset
   name: SA-1B
-  # General
   organization: Meta
-  description: >
-    SA-1B (Segment Anything 1 Billion) is a dataset designed for training general-purpose
-    object segmentation models from open world images. It consists of 11M diverse,
-    high-resolution, privacy protecting images and 1.1B high-quality segmentation
-    masks.
+  description: 'SA-1B (Segment Anything 1 Billion) is a dataset designed for training
+    general-purpose object segmentation models from open world images. It consists
+    of 11M diverse, high-resolution, privacy protecting images and 1.1B high-quality
+    segmentation masks.
+
+    '
   created_date:
-    value: 2023-04-05
     explanation: The date the [[Meta blog post]](https://ai.facebook.com/blog/segment-anything-foundation-model-image-segmentation/)
       was released.
+    value: 2023-04-05
   url: https://ai.facebook.com/datasets/segment-anything/
   datasheet:
-    value: https://arxiv.org/pdf/2304.02643.pdf#page=25
     explanation: Datasheet can be found in the Appendix section of the Segment Anything
       paper.
+    value: https://arxiv.org/pdf/2304.02643.pdf#page=25
   modality: image
   size: 11M images, 1.1B mask annotations
   sample: []
   analysis: ''
-  # Construction
   dependencies: []
+  included:
+    explanation: According to section [[Segment Anything Dataset]](https://arxiv.org/pdf/2304.02643.pdf#section.5)
+      of the paper and [[SA-1B website]](https://ai.facebook.com/datasets/segment-anything/).
+    value: "SA-1B consists of 11M diverse, high-resolution (averaging 1500\xD72250\
+      \ pixels), and privacy protecting images collected and licensed from a third\
+      \ party photo company. The images are photos taken from a camera, i.e. not artwork.\
+      \ The images vary in subject matter. Common themes of the images include: locations,\
+      \ objects, scenes. The dataset includes 1.1B high-quality segmentation masks\
+      \ collected with the Segment Anything Data Engine. SA-1B only includes automatically\
+      \ generated masks (99.1%), as the authors conclude after experiments that the\
+      \ automatic masks are high quality and effective for training models. The masks\
+      \ range from large scale objects such as buildings to fine grained details such\
+      \ as door handles. Masks are provided in the COCO run-length encoding (RLE)\
+      \ annotation format.\n"
+  excluded:
+    explanation: See [[Datasheet]](https://arxiv.org/pdf/2304.02643.pdf#page=25)
+    value: '"We withheld ~2k randomly selected images for testing purposes."  "Each
+      image is accompanied by a short caption that describes the content and place
+      of the photo in a free form text. Per our agreement with the photo provider
+      we are not allowed to release these captions."
+
+      '
+  quality_control:
+    explanation: According to sections [[Segment Anything Dataset]](https://arxiv.org/pdf/2304.02643.pdf#section.5)
+      and [[Datasheet]](https://arxiv.org/pdf/2304.02643.pdf#page=25) of the paper.
+    value: "- Dataset quality:\n  Due to potential accessibility and storage challenges,\
+      \ the original high-resolution images (averaging 3300\xD74950 pixels) were downsampled\
+      \ to an average resolution of 1500\xD72250 pixels. Authors note that despite\
+      \ the downsampling, the images remain significantly higher in resolution than\
+      \ those in many existing vision datasets, such as COCO, where images are typically\
+      \ around 480\xD7640 pixels.\n  The images were processed to blur faces and license\
+      \ plates to protect the identities of those in the image.\n  To estimate the\
+      \ quality of the masks in the images, a random sample of 500 images (\u223C\
+      50k masks) was taken and professional annotators were asked to improve the quality\
+      \ of all masks in those images.\n- Safety measures:\n  Authors implemented two\
+      \ safety measures to prevent objectionable content:\n    (1) Photos are licensed\
+      \ from a photo provider and had to meet the terms of service of the photo provider.\
+      \ Authors requested that all objectionable content be filtered from the images\
+      \ they licensed.\n    (2) Users who observe objectionable images in the dataset\
+      \ are invited to report them for removal at segment-anything@meta.com.\n  Despite\
+      \ these measures, they observed that a small portion of images contain scenes\
+      \ of protests or other gatherings that focus on a diverse spectrum of religious\
+      \ beliefs or political opinions that may be considered offensive. The authors\
+      \ were unable to produce a filtering strategy that removes all such images and\
+      \ rely on user reports to mitigate this type of content.\n"
+  access:
+    explanation: 'The full dataset can be downloaded at [[SA-1B Download]](https://ai.facebook.com/datasets/segment-anything-downloads/).
+      A 50k image preview of the full dataset is available [[here]](https://segment-anything.com/dataset/index.html).
+
+      '
+    value: open
   license:
-    value: SA-1B Dataset Research License
     explanation: SA-1B is released under a favorable license agreement for certain
       research uses and with protections for researchers. See [[SA-1B Dataset Research
       License]](https://ai.facebook.com/datasets/segment-anything-downloads/).
-  included:
-    value: >
-      SA-1B consists of 11M diverse, high-resolution (averaging 1500×2250 pixels),
-      and privacy protecting images collected and licensed from a third party photo
-      company. The images are photos taken from a camera, i.e. not artwork.
-      The images vary in subject matter. Common themes of the images include: locations,
-      objects, scenes.
-      The dataset includes 1.1B high-quality segmentation masks collected with the
-      Segment Anything Data Engine.
-      SA-1B only includes automatically generated masks (99.1%), as the authors
-      conclude after experiments that the automatic masks are high quality and effective
-      for training models. The masks range from large scale objects such as buildings
-      to fine grained details such as door handles.
-      Masks are provided in the COCO run-length encoding (RLE) annotation format.
-    explanation: According to section [[Segment Anything Dataset]](https://arxiv.org/pdf/2304.02643.pdf#section.5)
-      of the paper and [[SA-1B website]](https://ai.facebook.com/datasets/segment-anything/).
-  excluded:
-    value: >
-      "We withheld ~2k randomly selected images for testing purposes."  "Each image
-      is accompanied by a short caption that describes the content and place of
-      the photo in a free form text. Per our agreement with the photo provider we
-      are not allowed to release these captions."
-    explanation: See [[Datasheet]](https://arxiv.org/pdf/2304.02643.pdf#page=25)
-  quality_control:
-    value: |
-      - Dataset quality:
-        Due to potential accessibility and storage challenges, the original high-resolution images (averaging 3300×4950 pixels) were downsampled to an average resolution of 1500×2250 pixels. Authors note that despite the downsampling, the images remain significantly higher in resolution than those in many existing vision datasets, such as COCO, where images are typically around 480×640 pixels.
-        The images were processed to blur faces and license plates to protect the identities of those in the image.
-        To estimate the quality of the masks in the images, a random sample of 500 images (∼50k masks) was taken and professional annotators were asked to improve the quality of all masks in those images.
-      - Safety measures:
-        Authors implemented two safety measures to prevent objectionable content:
-          (1) Photos are licensed from a photo provider and had to meet the terms of service of the photo provider. Authors requested that all objectionable content be filtered from the images they licensed.
-          (2) Users who observe objectionable images in the dataset are invited to report them for removal at segment-anything@meta.com.
-        Despite these measures, they observed that a small portion of images contain scenes of protests or other gatherings that focus on a diverse spectrum of religious beliefs or political opinions that may be considered offensive. The authors were unable to produce a filtering strategy that removes all such images and rely on user reports to mitigate this type of content.
-    explanation: According to sections [[Segment Anything Dataset]](https://arxiv.org/pdf/2304.02643.pdf#section.5)
-      and [[Datasheet]](https://arxiv.org/pdf/2304.02643.pdf#page=25) of the paper.
-  # Downstream
-  access:
-    value: open
-    explanation: >
-      The full dataset can be downloaded at [[SA-1B Download]](https://ai.facebook.com/datasets/segment-anything-downloads/).
-      A 50k image preview of the full dataset is available [[here]](https://segment-anything.com/dataset/index.html).
+    value: SA-1B Dataset Research License
   intended_uses:
-    value: SA-1B is intended to be used for research purposes only. It allows access
-      to a privacy protecting and copyright friendly large-scale image dataset.
-      Researchers can use it to train and evaluate generic object segmentation models.
     explanation: See [[SA-1B website]](https://ai.facebook.com/datasets/segment-anything/)
+    value: SA-1B is intended to be used for research purposes only. It allows access
+      to a privacy protecting and copyright friendly large-scale image dataset. Researchers
+      can use it to train and evaluate generic object segmentation models.
   prohibited_uses:
-    value: >
-      Authors note the following limitations of the dataset:
-        The masks are generated by a segmentation model, so there may be errors
-      or inconsistencies in the masks.
-        While no two images are the same, there are instances of images of the same
-      subject taken close together in time.
-        The dataset contains scenes of protests, or other gatherings that may suggest
-      religious beliefs, political opinions or union memberships that may be offensive.
-
     explanation: See [[Datasheet]](https://arxiv.org/pdf/2304.02643.pdf#page=25)
+    value: "Authors note the following limitations of the dataset:\n  The masks are\
+      \ generated by a segmentation model, so there may be errors\nor inconsistencies\
+      \ in the masks.\n  While no two images are the same, there are instances of\
+      \ images of the same\nsubject taken close together in time.\n  The dataset contains\
+      \ scenes of protests, or other gatherings that may suggest\nreligious beliefs,\
+      \ political opinions or union memberships that may be offensive.\n"
   monitoring:
-    value: >
-      The dataset will be hosted at https://ai.facebook.com/datasets/segment-anything
-      and maintained by Meta AI.
-      "If a user observes objectionable image(s) in the dataset, we invite them
-      to report the image(s) at segment-anything at meta.com for removal"
-      "To aid reproducibility of research using SA-1B, the only updates (to the
-      dataset) will be to remove reported images."
-      "We encourage users to gather further annotations for SA-1B. Any users who
-      generate annotations will be liable for hosting and distributing their annotations."
     explanation: See [[Datasheet]](https://arxiv.org/pdf/2304.02643.pdf#page=25)
+    value: 'The dataset will be hosted at https://ai.facebook.com/datasets/segment-anything
+      and maintained by Meta AI. "If a user observes objectionable image(s) in the
+      dataset, we invite them to report the image(s) at segment-anything at meta.com
+      for removal" "To aid reproducibility of research using SA-1B, the only updates
+      (to the dataset) will be to remove reported images." "We encourage users to
+      gather further annotations for SA-1B. Any users who generate annotations will
+      be liable for hosting and distributing their annotations."
+
+      '
   feedback: Feedback can be given via the feedback form on their website [segment-anything.com](https://segment-anything.com/)
     or by emailing at segment-anything at meta.com.
-
 - type: model
   name: SAM
-  # General
   organization: Meta
   description: SAM (Segment Anything Model) is a foundation model for image segmentation.
     The model is designed and trained to be promptable, and supports flexible prompts
-    (point, box, mask and free-form text) to compute masks in real-time to allow
-    interactive use.
+    (point, box, mask and free-form text) to compute masks in real-time to allow interactive
+    use.
   created_date:
-    value: 2023-04-05
     explanation: The date the [[Meta blog post]](https://ai.facebook.com/blog/segment-anything-foundation-model-image-segmentation/)
       was released.
+    value: 2023-04-05
   url: https://arxiv.org/pdf/2304.02643.pdf
   model_card:
-    value: https://arxiv.org/pdf/2304.02643.pdf#page=28
     explanation: Model card can be found in the Appendix section of the paper.
-  modality: image, text
+    value: https://arxiv.org/pdf/2304.02643.pdf#page=28
+  modality:
+    explanation: image, text; image, text
+    value: image, text; image, text
   analysis:
-    value: >
-      "We extensively evaluate SAM.
-      First, using a diverse new suite of 23 segmentation datasets, we find that
-      SAM produces high-quality masks from a single foreground point, often only
-      slightly below that of the manually annotated ground truth.
+    explanation: See [[Zero-Shot Transfer Experiments]](https://arxiv.org/pdf/2304.02643.pdf#section.7)
+      for more details.
+    value: '"We extensively evaluate SAM. First, using a diverse new suite of 23 segmentation
+      datasets, we find that SAM produces high-quality masks from a single foreground
+      point, often only slightly below that of the manually annotated ground truth.
       Second, we find consistently strong quantitative and qualitative results on
       a variety of downstream tasks under a zero-shot transfer protocol using prompt
       engineering, including edge detection, object proposal generation, instance
       segmentation, and a preliminary exploration of text-to-mask prediction."
-    explanation: See [[Zero-Shot Transfer Experiments]](https://arxiv.org/pdf/2304.02643.pdf#section.7)
-      for more details.
+
+      '
   size: unknown
-  # Construction
-  dependencies: [SA-1B]
+  dependencies:
+  - SA-1B
   training_emissions:
+    explanation: See [[Model card]](https://arxiv.org/pdf/2304.02643.pdf#page=28)
     value: 2.8 metric tons of carbon dioxide
-    explanation: See [[Model card]](https://arxiv.org/pdf/2304.02643.pdf#page=28)
   training_time:
+    explanation: See [[Model card]](https://arxiv.org/pdf/2304.02643.pdf#page=28)
     value: 68 hours
-    explanation: See [[Model card]](https://arxiv.org/pdf/2304.02643.pdf#page=28)
   training_hardware:
-    value: 256 A100 GPUs
     explanation: See [[Model card]](https://arxiv.org/pdf/2304.02643.pdf#page=28)
+    value: 256 A100 GPUs
   quality_control:
-    value: >
-      "We perform a Responsible AI (RAI) analysis of our work by investigating potential
-      fairness concerns and biases when using SA-1B and SAM. We focus on the geographic
-      and income distribution of SA-1B and fairness of SAM across protected attributes
-      of people."
     explanation: See [[Segment Anything RAI Analysis]](https://arxiv.org/pdf/2304.02643.pdf#section.6)
       for more details.
-  # Downstream
+    value: '"We perform a Responsible AI (RAI) analysis of our work by investigating
+      potential fairness concerns and biases when using SA-1B and SAM. We focus on
+      the geographic and income distribution of SA-1B and fairness of SAM across protected
+      attributes of people."
+
+      '
   access:
-    value: open
-    explanation: >
-      Inference code and model checkpoints are available on the model's
+    explanation: 'Inference code and model checkpoints are available on the model''s
       [[GitHub repository]](https://github.com/facebookresearch/segment-anything).
       Its training dataset SA-1B can be used for research purposes and is available
       for download [here](https://ai.facebook.com/datasets/segment-anything-downloads/).
+
+      '
+    value: open
   license:
-    value: Apache 2.0
     explanation: See [[LICENSE]](https://github.com/facebookresearch/segment-anything/blob/main/LICENSE)
+    value: Apache 2.0
   intended_uses:
-    value: >
-      "SAM is intended to be used for any prompt-based segmentation task. We explored
-      its use in segmenting objects from a point, edge detection, segmenting all
-      objects, and segmenting detected objects. We explored how SAM can integrate
-      with other vision models to segment objects from text."
     explanation: See [[Model card]](https://arxiv.org/pdf/2304.02643.pdf#page=28)
+    value: '"SAM is intended to be used for any prompt-based segmentation task. We
+      explored its use in segmenting objects from a point, edge detection, segmenting
+      all objects, and segmenting detected objects. We explored how SAM can integrate
+      with other vision models to segment objects from text."
+
+      '
   prohibited_uses:
-    value: >
-      For out-of-scope use cases see terms of use in [[LICENSE]](https://github.com/facebookresearch/segment-anything/blob/main/LICENSE).
-      Authors also discuss the following limitations of the model: "While SAM performs
-      well in general, it is not perfect. It can miss fine structures, hallucinates
-      small disconnected components at times, and does not produce boundaries as
-      crisply as more computationally intensive methods that “zoom-in”, e.g. [18].
-      In general, we expect dedicated interactive segmentation methods to outperform
-      SAM when many points are provided, e.g. [67]. Unlike these methods, SAM is
-      designed for generality and breadth of use rather than high IoU interactive
-      segmentation. Moreover, SAM can process prompts in real-time, but nevertheless
-      SAM's overall performance is not real-time when using a heavy image encoder.
-      Our foray into the text-to-mask task is exploratory and not entirely robust,
-      although we believe it can be improved with more effort. While SAM can perform
-      many tasks, it is unclear how to design simple prompts that implement semantic
-      and panoptic segmentation. Finally, there are domain-specific tools, such
-      as [7], that we expect to outperform SAM in their respective domains."
     explanation: See [[Discussion]](https://arxiv.org/pdf/2304.02643.pdf#section.8)
+    value: "For out-of-scope use cases see terms of use in [[LICENSE]](https://github.com/facebookresearch/segment-anything/blob/main/LICENSE).\
+      \ Authors also discuss the following limitations of the model: \"While SAM performs\
+      \ well in general, it is not perfect. It can miss fine structures, hallucinates\
+      \ small disconnected components at times, and does not produce boundaries as\
+      \ crisply as more computationally intensive methods that \u201Czoom-in\u201D\
+      , e.g. [18]. In general, we expect dedicated interactive segmentation methods\
+      \ to outperform SAM when many points are provided, e.g. [67]. Unlike these methods,\
+      \ SAM is designed for generality and breadth of use rather than high IoU interactive\
+      \ segmentation. Moreover, SAM can process prompts in real-time, but nevertheless\
+      \ SAM's overall performance is not real-time when using a heavy image encoder.\
+      \ Our foray into the text-to-mask task is exploratory and not entirely robust,\
+      \ although we believe it can be improved with more effort. While SAM can perform\
+      \ many tasks, it is unclear how to design simple prompts that implement semantic\
+      \ and panoptic segmentation. Finally, there are domain-specific tools, such\
+      \ as [7], that we expect to outperform SAM in their respective domains.\"\n"
   monitoring: ''
   feedback: Feedback can be given via the feedback form on their website [segment-anything.com](https://segment-anything.com/)
     or by emailing at segment-anything at meta.com.
-
 - type: model
   name: Voicebox
   organization: Meta
@@ -647,10 +682,12 @@
   created_date: 2023-06-16
   url: https://research.facebook.com/publications/voicebox-text-guided-multilingual-universal-speech-generation-at-scale/
   model_card: ''
-  modality: text and audio input and audio output
+  modality:
+    explanation: audio, text; audio, text
+    value: audio, text; audio, text
   analysis: Evaluated on zero-shot text-to-speech benchmarks, with Voicebox outperforming
     the current state-of-the-art English model VALL-E.
-  size: 330M parameters
+  size: 330M parameters (dense)
   dependencies: []
   training_emissions: unknown
   training_time: 750,000 iterations
@@ -662,21 +699,21 @@
   prohibited_uses: ''
   monitoring: ''
   feedback: ''
-
 - type: model
   name: PEER
   organization: Meta
-  description: PEER is a collaborative language model that is trained to imitate
-    the entire writing process itself. PEER can write drafts, add suggestions, propose
+  description: PEER is a collaborative language model that is trained to imitate the
+    entire writing process itself. PEER can write drafts, add suggestions, propose
     edits and provide explanations for its actions.
   created_date: 2022-08-24
   url: https://arxiv.org/pdf/2208.11663.pdf
   model_card: ''
-  modality: natural language text
+  modality:
+    explanation: text; text
+    value: text; text
   analysis: PEER is evaluated on core research questions intended to gauge language
-    understanding, proper use of citations, instruction following, and iterative
-    use.
-  size: 3B parameters
+    understanding, proper use of citations, instruction following, and iterative use.
+  size: 3B parameters (dense)
   dependencies: []
   training_emissions: ''
   training_time: ''

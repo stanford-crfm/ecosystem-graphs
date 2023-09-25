@@ -1,118 +1,113 @@
----
-
-# Datasets
 - type: dataset
   name: Luminous dataset
-  # General
   organization: Aleph Alpha
   description: The dataset used to train the Luminous models.
   created_date:
-    value: 2022-04-14
     explanation: Date the models were announced by the Aleph Alpha twitter account
+    value: 2022-04-14
   url: none
   datasheet: none
-  modality: text (English, French | français, German | Deutsch, Italian | italiano,
-    Spanish | Español)
+  modality: text
   size: unknown
   sample: []
   analysis: unknown
-  # Construction
   dependencies: []
-  license:
-    value: unknown
-    explanation: >
-      The asset isn't released, and hence the license is unknown.
   included: unknown
   excluded: unknown
   quality_control: unknown
-  # Downstream
   access: closed
+  license:
+    explanation: 'The asset isn''t released, and hence the license is unknown.
+
+      '
+    value: unknown
   intended_uses: unknown
   prohibited_uses: unknown
   monitoring: none
   feedback: none
-
 - type: model
   name: Luminous
   organization: Aleph Alpha
   description: Luminous is a family of multilingual language models
   created_date:
-    value: 2022-04-14
     explanation: Date the models were announced by the Aleph Alpha twitter account
+    value: 2022-04-14
   url: https://twitter.com/Aleph__Alpha/status/1514576711492542477
   model_card: ''
-  modality: text (English, French | français, German | Deutsch, Italian | italiano,
-    Spanish | Español)
+  modality:
+    explanation: text; text
+    value: text; text
   analysis: ''
-  size:
-    value: 200B parameters (dense model)
-    explanation: According to [[this news article]](https://www-heise-de.translate.goog/news/Machine-Learning-Aleph-Alpha-feilt-mit-Oracle-und-Nvidia-an-transformativer-KI-6269269.html?_x_tr_sl=de&_x_tr_tl=en&_x_tr_hl=en&_x_tr_pto=sc).
-  dependencies: [Luminous dataset]
+  size: 200B parameters (dense)
+  dependencies:
+  - Luminous dataset
   training_emissions: unknown
   training_time: unknown
   training_hardware: unknown
   quality_control: ''
   access:
-    value: limited
     explanation: Paid API product
+    value: limited
   license:
-    value: none
     explanation: No license was found.
+    value: none
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
   feedback: ''
-
 - type: application
   name: Aleph Alpha API
-  # General
   organization: Aleph Alpha
-  description: >
-    The Aleph Alpha API serves a family of text-only language models (Luminous)
+  description: 'The Aleph Alpha API serves a family of text-only language models (Luminous)
     and multimodal text-and-image models (Magma).
+
+    '
   created_date:
+    explanation: 'Date the Aleph Alpha Python API client was first available based
+      on to the [PyPi package history](https://pypi.org/project/aleph-alpha-client/1.0.0/)
+
+      '
     value: 2021-09-30
-    explanation: >
-      Date the Aleph Alpha Python API client was first available based on to the
-      [PyPi package history](https://pypi.org/project/aleph-alpha-client/1.0.0/)
   url: https://www.aleph-alpha.com/
-  # Construction
-  dependencies: [Luminous]
+  dependencies:
+  - Luminous
   adaptation: ''
-  output_space: >
-    The text models provide text outputs given text inputs. The multimodal models
-    provide text completions given text and image inputs.
+  output_space: 'The text models provide text outputs given text inputs. The multimodal
+    models provide text completions given text and image inputs.
+
+    '
   quality_control: ''
-  # Downstream
   access:
-    value: limited
     explanation: The API is a paid product. Refer to the [[API documentation]](https://docs.aleph-alpha.com/docs/introduction/luminous/)
       for further details.
+    value: limited
   license:
-    value: none
     explanation: No license was found.
+    value: none
   terms_of_service: https://www.aleph-alpha.com/terms-conditions
   intended_uses: unknown
   prohibited_uses: unknown
   monitoring: unknown
   feedback: unknown
-  # Deployment
   monthly_active_users: unknown
   user_distribution: unknown
   failures: unknown
-
 - type: model
   name: MAGMA
   organization: Aleph Alpha
-  description: An autoregressive VL model that is able to generate text from an
-    arbitrary combination of visual and textual input
+  description: An autoregressive VL model that is able to generate text from an arbitrary
+    combination of visual and textual input
   created_date: 2022-10-24
   url: https://arxiv.org/pdf/2112.05253.pdf
   model_card: ''
-  modality: image and text input with natural language text output
+  modality:
+    explanation: image, text; image, text
+    value: image, text; image, text
   analysis: Evaluated on the OKVQA benchmark as a fully open-ended generative task.
-  size: 6B parameters
-  dependencies: [GPT-J, CLIP]
+  size: 6B parameters (dense)
+  dependencies:
+  - GPT-J
+  - CLIP
   training_emissions: ''
   training_time: ''
   training_hardware: 32 A100 GPUs

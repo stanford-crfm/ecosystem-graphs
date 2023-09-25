@@ -1,5 +1,3 @@
----
-
 - type: model
   name: DeepFloyd IF
   organization: Stability AI
@@ -8,24 +6,25 @@
   created_date: 2023-04-28
   url: https://stability.ai/blog/deepfloyd-if-text-to-image-model
   model_card: https://huggingface.co/DeepFloyd/IF-I-XL-v1.0
-  modality: textual input with image output
+  modality:
+    explanation: image, text; image, text
+    value: image, text; image, text
   analysis: Evaluated on the COCO dataset.
-  size: 4.3B parameters
-  dependencies: [LAION-5B]
+  size: 4.3B parameters (dense)
+  dependencies:
+  - LAION-5B
   training_emissions: ''
   training_time: ''
   training_hardware: ''
   quality_control: ''
   access: open
   license:
-    value: custom
     explanation: License agreement can be found on model card https://huggingface.co/DeepFloyd/IF-I-XL-v1.0
+    value: custom
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
   feedback: https://huggingface.co/DeepFloyd/IF-I-XL-v1.0/discussions
-
-
 - type: model
   name: StableLM
   organization: Stability AI
@@ -33,16 +32,18 @@
   created_date: 2023-04-20
   url: https://github.com/Stability-AI/StableLM
   model_card: ''
-  modality: natural language text
+  modality:
+    explanation: text; text
+    value: text; text
   analysis: ''
-  size: 7B parameters
+  size: 7B parameters (dense)
   dependencies:
-    - StableLM-Alpha dataset
-    - Alpaca dataset
-    - gpt4all dataset
-    - ShareGPT52K dataset
-    - Dolly dataset
-    - HH dataset
+  - StableLM-Alpha dataset
+  - Alpaca dataset
+  - gpt4all dataset
+  - ShareGPT52K dataset
+  - Dolly dataset
+  - HH dataset
   training_emissions: ''
   training_time: ''
   training_hardware: ''
@@ -53,8 +54,6 @@
   prohibited_uses: ''
   monitoring: ''
   feedback: ''
-
-
 - type: application
   name: Stable Diffusion
   organization: Stability AI
@@ -68,8 +67,8 @@
   quality_control: ''
   access: open
   license:
-    value: custom
     explanation: License agreement can be found on https://github.com/CompVis/stable-diffusion/blob/main/LICENSE
+    value: custom
   terms_of_service: ''
   intended_uses: ''
   prohibited_uses: ''
@@ -78,7 +77,6 @@
   monthly_active_users: ''
   user_distribution: ''
   failures: ''
-
 - type: application
   name: Stable Diffusion XL
   organization: Stability AI

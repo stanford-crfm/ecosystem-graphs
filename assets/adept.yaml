@@ -1,5 +1,3 @@
----
-
 - type: model
   name: ACT-1
   organization: Adept
@@ -7,11 +5,13 @@
     and trained specifically for taking actions on computers (use software tools,
     APIs and websites) in response to the user's natural language commands.
   created_date:
-    value: 2022-09-14
     explanation: The date the model was announced in the [[Adept blog post]](https://www.adept.ai/blog/act-1).
+    value: 2022-09-14
   url: https://www.adept.ai/blog/act-1
   model_card: none
-  modality: text
+  modality:
+    explanation: text; text
+    value: text; text
   analysis: ''
   size: ''
   dependencies: []
@@ -21,9 +21,8 @@
   quality_control: ''
   access: closed
   license:
+    explanation: 'The asset isn''t released, and hence the license is unknown.'
     value: unknown
-    explanation: >
-      The asset isn't released, and hence the license is unknown.
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''

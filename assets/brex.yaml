@@ -1,25 +1,24 @@
----
-
 - type: application
   name: Brex Chat
   organization: Brex
   description: Brex Inc., a highly valued startup that makes software for finance
     professionals, is turning to the same artificial intelligence tool behind ChatGPT
-    for a service that can answer questions about corporate budgets, policy and
-    spending.
+    for a service that can answer questions about corporate budgets, policy and spending.
   created_date: 2023-03-07
   url: https://fortune.com/2023/03/07/cfo-chatbot-chatgpt-ai-brex-finance-software-startup-budgets-policies/
-  dependencies: [ChatGPT API]
+  dependencies:
+  - ChatGPT API
   adaptation: ''
   output_space: ''
   quality_control: ''
   access: limited
   license:
-    value: custom
-    explanation: >
-      "Brex grants you a nonexclusive and nontransferable license to use Brex
-      Property as provided through the Services and as permitted by these User
+    explanation: '"Brex grants you a nonexclusive and nontransferable license to use
+      Brex Property as provided through the Services and as permitted by these User
       Terms." - excerpt from the Terms of Service.
+
+      '
+    value: custom
   terms_of_service: https://www.brex.com/legal/user-terms
   intended_uses: ''
   prohibited_uses: ''

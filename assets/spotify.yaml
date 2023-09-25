@@ -1,27 +1,27 @@
----
-
 - type: application
   name: AI DJ
   organization: Spotify
-  description: The DJ is a personalized AI guide that knows you and your music taste
-    so well that it can choose what to play for you. This feature, first rolling
-    out in beta, will deliver a curated lineup of music alongside commentary around
-    the tracks and artists we think you’ll like in a stunningly realistic voice.
+  description: "The DJ is a personalized AI guide that knows you and your music taste\
+    \ so well that it can choose what to play for you. This feature, first rolling\
+    \ out in beta, will deliver a curated lineup of music alongside commentary around\
+    \ the tracks and artists we think you\u2019ll like in a stunningly realistic voice."
   created_date: 2023-02-23
   url: https://newsroom.spotify.com/2023-02-22/spotify-debuts-a-new-ai-dj-right-in-your-pocket/
-  dependencies: [ChatGPT API, Sonantic AI]
+  dependencies:
+  - ChatGPT API
+  - Sonantic AI
   adaptation: ''
   output_space: ''
   quality_control: ''
   access: limited
   license:
+    explanation: '"The Spotify software applications and the Content are licensed,
+      not sold or transferred to you, and Spotify and its licensors retain ownership
+      of all copies of the Spotify software applications and Content even after installation
+      on your Devices." - excerpt from the Terms of Service document.
+
+      '
     value: custom
-    explanation: >
-      "The Spotify software applications and the Content are licensed, not sold
-      or transferred to you, and Spotify and its licensors retain ownership of
-      all copies of the Spotify software applications and Content even after
-      installation on your Devices." - excerpt from the Terms of Service
-      document.
   terms_of_service: https://www.spotify.com/us/legal/end-user-agreement/
   intended_uses: ''
   prohibited_uses: ''

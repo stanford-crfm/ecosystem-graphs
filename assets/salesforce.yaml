@@ -1,32 +1,31 @@
----
-
 - type: model
   name: CodeGen
   organization: Salesforce
   description: CodeGen is a language model for code
   created_date:
-    value: 2022-03-25
     explanation: Date model paper was released
+    value: 2022-03-25
   url: https://arxiv.org/abs/2203.13474
   model_card: ''
-  modality: text (English) and code
+  modality:
+    explanation: code, text; code, text
+    value: code, text; code, text
   analysis: ''
-  size: 16B parameters (dense model)
+  size: 16B parameters (dense)
   dependencies: []
   training_emissions: ''
   training_time: ''
   training_hardware: Unspecified Salesforce Compute (TPU-V4s)
   quality_control: ''
   access:
-    value: open
     explanation: Model weights are available for download with links in the [[GitHub
       repo]](https://github.com/salesforce/CodeGen)
+    value: open
   license: none (model weights), BSD-3-Clause (code)
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
   feedback: ''
-
 - type: model
   name: BLIP
   organization: Salesforce
@@ -34,18 +33,20 @@
   created_date: 2022-01-28
   url: https://arxiv.org/abs/2201.12086
   model_card: ''
-  modality: text and image
+  modality:
+    explanation: image, text; image, text
+    value: image, text; image, text
   analysis: ''
   size: unknown
   dependencies:
-    - ViT-B
-    - BERT
-    - COCO
-    - Visual Genome
-    - Conceptual Captions
-    - Conceptual 12M
-    - SBU Captions
-    - LAION-115M
+  - ViT-B
+  - BERT
+  - COCO
+  - Visual Genome
+  - Conceptual Captions
+  - Conceptual 12M
+  - SBU Captions
+  - LAION-115M
   training_emissions: ''
   training_time: ''
   training_hardware: ''
@@ -56,7 +57,6 @@
   prohibited_uses: ''
   monitoring: ''
   feedback: ''
-
 - type: dataset
   name: LAION-115M
   organization: Salesforce
@@ -64,11 +64,12 @@
   created_date: 2022-01-28
   url: https://arxiv.org/abs/2201.12086
   datasheet: ''
-  modality: text and image
+  modality: image, text
   size: 115M image-text pairs
   sample: []
   analysis: ''
-  dependencies: [LAION-400M]
+  dependencies:
+  - LAION-400M
   included: ''
   excluded: ''
   quality_control: ''
@@ -78,23 +79,23 @@
   prohibited_uses: ''
   monitoring: ''
   feedback: ''
-
 - type: application
   name: EinsteinGPT
   organization: Salesforce
-  description: EinsteinGPT is generative AI for customer relationship management
-    (CRFM).
+  description: EinsteinGPT is generative AI for customer relationship management (CRFM).
   created_date: 2023-03-07
   url: https://www.salesforce.com/products/einstein/overview/?d=cta-body-promo-8
-  dependencies: [ChatGPT API]
+  dependencies:
+  - ChatGPT API
   adaptation: ''
   output_space: ''
   quality_control: ''
   access: limited
   license:
+    explanation: 'The asset isn''t released, and hence the license is unknown.
+
+      '
     value: unknown
-    explanation: >
-      The asset isn't released, and hence the license is unknown.
   terms_of_service: ''
   intended_uses: ''
   prohibited_uses: ''

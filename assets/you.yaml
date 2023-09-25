@@ -1,5 +1,3 @@
----
-
 - type: dataset
   name: You dataset
   organization: You
@@ -7,7 +5,7 @@
   created_date: unknown
   url: https://you.com/
   datasheet: ''
-  modality: text
+  modality: {}
   size: unknown
   sample: []
   analysis: ''
@@ -17,14 +15,14 @@
   quality_control: ''
   access: closed
   license:
+    explanation: 'The asset isn''t released, and hence the license is unknown.
+
+      '
     value: unknown
-    explanation: >
-      The asset isn't released, and hence the license is unknown.
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
   feedback: ''
-
 - type: model
   name: You model
   organization: You
@@ -32,41 +30,43 @@
   created_date: unknown
   url: https://you.com/
   model_card: ''
-  modality: Text
+  modality: {}
   analysis: ''
-  size: unknown
-  dependencies: [You dataset]
+  size: ''
+  dependencies:
+  - You dataset
   training_emissions: ''
   training_time: ''
   training_hardware: ''
   quality_control: ''
   access: closed
   license:
+    explanation: 'The asset isn''t released, and hence the license is unknown.
+
+      '
     value: unknown
-    explanation: >
-      The asset isn't released, and hence the license is unknown.
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
   feedback: ''
-
 - type: application
   name: You Search
   organization: You
-  description: You.com is a search engine built on artificial intelligence that
-    provides users with a customized search experience while keeping their data
-    100% private.
+  description: You.com is a search engine built on artificial intelligence that provides
+    users with a customized search experience while keeping their data 100% private.
   created_date: unknown
   url: https://you.com/
-  dependencies: [You model]
+  dependencies:
+  - You model
   adaptation: ''
   output_space: ''
   quality_control: ''
   access: open
   license:
+    explanation: 'The asset isn''t released, and hence the license is unknown.
+
+      '
     value: unknown
-    explanation: >
-      The asset isn't released, and hence the license is unknown.
   terms_of_service: ''
   intended_uses: ''
   prohibited_uses: ''

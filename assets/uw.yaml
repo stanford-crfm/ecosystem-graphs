@@ -1,5 +1,3 @@
----
-
 - type: dataset
   name: YT-Temporal-1B
   organization: University of Washington
@@ -11,7 +9,8 @@
   size: 20M videos
   sample: []
   analysis: ''
-  dependencies: [YouTube]
+  dependencies:
+  - YouTube
   included: ''
   excluded: ''
   quality_control: ''

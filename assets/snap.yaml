@@ -1,25 +1,25 @@
----
-
 - type: application
   name: My AI for Snapchat
   organization: Snap
   description: My AI offers Snapchatters a friendly, customizable chatbot at their
     fingertips that offers recommendations, and can even write a haiku for friends
-    in seconds. Snapchat, where communication and messaging is a daily behavior,
-    has 750 million monthly Snapchatters.
+    in seconds. Snapchat, where communication and messaging is a daily behavior, has
+    750 million monthly Snapchatters.
   created_date: 2023-03-01
   url: https://openai.com/blog/introducing-chatgpt-and-whisper-apis
-  dependencies: [ChatGPT API]
+  dependencies:
+  - ChatGPT API
   adaptation: ''
   output_space: ''
   quality_control: ''
   access: open
   license:
+    explanation: '"Snap grants you a worldwide, royalty-free, non-assignable, non-exclusive,  revocable,
+      and non-sublicensable license to use the Services." - excerpt from the Terms
+      of Service document.
+
+      '
     value: custom
-    explanation: >
-      "Snap grants you a worldwide, royalty-free, non-assignable, non-exclusive,  revocable,
-      and non-sublicensable license to use the Services." - excerpt
-      from the Terms of Service document.
   terms_of_service: https://snap.com/terms
   intended_uses: ''
   prohibited_uses: ''

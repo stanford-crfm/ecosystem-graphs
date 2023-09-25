@@ -1,5 +1,3 @@
----
-
 - type: application
   name: Auto-GPT
   organization: Auto-GPT
@@ -7,7 +5,8 @@
     capabilities of the GPT-4 language model.
   created_date: 2023-04-16
   url: https://news.agpt.co/
-  dependencies: [GPT-4 API]
+  dependencies:
+  - GPT-4 API
   adaptation: GPT-4 adapted to run autonomously by chaining together LLM "thoughts"
   output_space: text
   quality_control: ''

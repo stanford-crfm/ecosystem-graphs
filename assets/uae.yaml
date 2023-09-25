@@ -1,17 +1,18 @@
----
-
 - type: model
   name: Falcon
   organization: UAE Technology Innovation Institute
-  description: Falcon-40B is a 40B parameters causal decoder-only model built by
-    TII and trained on 1,000B tokens of RefinedWeb enhanced with curated corpora.
+  description: "Falcon-40B is a 40B parameters causal decoder-only model built by\
+    \ TII and trained on 1,000B tokens of\_RefinedWeb enhanced with curated corpora."
   created_date: 2023-06-14
   url: https://huggingface.co/tiiuae/falcon-40b
   model_card: https://huggingface.co/tiiuae/falcon-40b
-  modality: natural language text
+  modality:
+    explanation: text; text
+    value: text; text
   analysis: ''
-  size: 40B parameters
-  dependencies: [RefinedWeb]
+  size: 40B parameters (dense)
+  dependencies:
+  - RefinedWeb
   training_emissions: ''
   training_time: 2 months
   training_hardware: 384 A100 40GB GPUs
@@ -23,7 +24,6 @@
     assessment of risks and mitigation
   monitoring: None
   feedback: https://huggingface.co/tiiuae/falcon-40b/discussions
-
 - type: dataset
   name: RefinedWeb
   organization: UAE Technology Innovation Institute
@@ -42,8 +42,8 @@
   quality_control: ''
   access: open
   license:
-    value: unknown
     explanation: License can be found at https://huggingface.co/datasets/tiiuae/falcon-refinedweb
+    value: unknown
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
