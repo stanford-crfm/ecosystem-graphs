@@ -600,3 +600,37 @@
   prohibited_uses: ''
   monitoring: ''
   feedback: ''
+- type: model
+  name: Claude 2
+  organization: Anthropic
+  description: Claude 2 is a more evolved and refined version of Claude, which is
+    a general purpose large language model using a transformer architecture and
+    trained via unsupervised learning.
+  created_date: 2023-07-11
+  url: https://www.anthropic.com/index/claude-2
+  model_card: https://www-files.anthropic.com/production/images/Model-Card-Claude-2.pdf
+  modality:
+    explanation: text
+    value: text; text
+  analysis: Evaluated with human feedback on helpfulness, harmfulness, and honesty
+    and on the Bias Benchmark for QA.
+  size: ''
+  dependencies:
+    - Claude human feedback data
+    - Unknown licensed third party datasets
+  training_emissions: ''
+  training_time: ''
+  training_hardware: unknown
+  quality_control: ''
+  access: open
+  license: ''
+  intended_uses: Claude 2 tends to perform well at general, open-ended conversation;
+    search, writing, editing, outlining, and summarizing text; coding; and providing
+    helpful advice about a broad range of subjects. Claude 2 is particularly well
+    suited to support creative or literary use cases. It can take direction on
+    tone and “personality,” and users have described them as feeling steerable and
+    conversational.
+  prohibited_uses: Claude 2 should not be used on their own in high stakes situations
+    where an incorrect answer would cause harm.
+  monitoring: ''
+  feedback: ''
