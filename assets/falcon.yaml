@@ -22,3 +22,28 @@
     assessment of risks and mitigation
   monitoring: None
   feedback: https://huggingface.co/tiiuae/falcon-40b/discussions
+- type: model
+  name: Falcon-180B
+  organization: UAE Technology Innovation Institute
+  description: Falcon-180B is a 180B parameters causal decoder-only model built by TII and trained on 3,500B tokens of RefinedWeb enhanced with curated corpora.
+  created_date: 2023-09-06
+  url: https://falconllm.tii.ae/falcon-models.html
+  model_card: https://huggingface.co/tiiuae/falcon-180B
+  modality: text; text
+  analysis: Evaluated on the OpenLLM leaderboard, outperforms LLaMA2, StableLM, RedPajama
+  size: 180B parameters (dense)
+  dependencies:
+  - RefinedWeb
+  training_emissions: ''
+  training_time: 9 months
+  training_hardware: 4096 A100 40GB GPUs
+  quality_control: ''
+  access: open
+  license:
+    value: custom
+    explanation: Will be made available through https://huggingface.co/tiiuae/falcon-180B/blob/main/LICENSE.txt
+  intended_uses: Uses can be found via https://huggingface.co/tiiuae/falcon-180B/blob/main/ACCEPTABLE_USE_POLICY.txt
+  prohibited_uses: irresponsible or harmful use or production use without adequate
+    assessment of risks and mitigation
+  monitoring: ''
+  feedback: https://huggingface.co/tiiuae/falcon-180b/discussions

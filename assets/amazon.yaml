@@ -10,8 +10,9 @@
   dependencies:
   - Jurassic-2
   - Claude
-  - Stable Diffusion
   - Amazon Titan
+  - Cohere
+  - Stable Diffusion
   adaptation: ''
   output_space: foundation models made accessible via an API
   quality_control: ''

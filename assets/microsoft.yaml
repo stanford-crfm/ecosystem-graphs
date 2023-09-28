@@ -779,3 +779,25 @@
   monthly_active_users: unknown
   user_distribution: unknown
   failures: unknown
+- type: model
+  name: WizardCoder
+  organization: Microsoft
+  description: WizardCoder empowers Code LLMs with complex instruction fine-tuning, by adapting the Evol-Instruct method to the domain of code.
+  created_date: 2023-08-26
+  url: https://arxiv.org/pdf/2306.08568.pdf
+  model_card: https://huggingface.co/WizardLM/WizardCoder-Python-34B-V1.0
+  modality: text; code
+  analysis: Evaluated on four prominent code generation benchmarks HumanEval, HumanEval+, MBPP, and DS100.
+  size: 34B parameters (dense)
+  dependencies: [Evol-Instruct, Alpaca dataset, StarCoder]
+  training_emissions: ''
+  training_time: ''
+  training_hardware: ''
+  quality_control: ''
+  access: open
+  license: Apache 2.0
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: https://huggingface.co/WizardLM/WizardCoder-Python-34B-V1.0/discussions
+

@@ -1,0 +1,44 @@
+- type: model
+  name: MPT
+  organization: MosaicML
+  description: MPT is a series of large language models seeking to address the limitations
+    of other open source models like LLaMA and Pythia.
+  created_date: 2023-05-05
+  url: https://www.mosaicml.com/blog/mpt-7b
+  model_card: ''
+  modality: text; text
+  analysis: Evaluated on a range of benchmarks and performed on par with LLaMA-7B.
+  size: 7B parameters (dense)
+  dependencies: [RedPajama-Data, C4, The Stack, Multimodal C4]
+  training_emissions: unknown
+  training_hardware: 440 A100 40GB GPUs
+  training_time: 9.5 days
+  quality_control: ''
+  access: open
+  license: Apache 2.0
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+- type: model
+  name: MPT-8K
+  organization: MosaicML
+  description: MPT-8K series models use the traditional MPT framework, and specialize in document summarization and question-answering with its longer 8k context length.
+  created_date: 2023-07-18
+  url: https://www.mosaicml.com/blog/long-context-mpt-7b-8k
+  model_card: https://huggingface.co/mosaicml/mpt-7b-8k
+  modality: text; text
+  analysis: Evaluated on the Mosaic Eval Gauntlet that compares 34 different benchmarks and 6 broad categories of competency, found at https://www.mosaicml.com/llm-evaluation.
+  size: 7B parameters (dense)
+  dependencies: [RedPajama-Data, C4, The Stack, Multimodal C4, Semantic Scholar]
+  training_emissions: unknown
+  training_hardware: 440 A100 40GB GPUs
+  training_time: 9.5 days
+  quality_control: ''
+  access: open
+  license: Apache 2.0
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: https://huggingface.co/mosaicml/mpt-7b-8k/discussions
+

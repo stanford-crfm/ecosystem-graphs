@@ -864,3 +864,25 @@
   prohibited_uses: ''
   monitoring: ''
   feedback: ''
+- type: model
+  name: RT-2
+  organization: DeepMind
+  description: RT-2 is a vision-language-action model for robotic actions that incorporates chain of thought reasoning.
+  created_date: 2023-07-28
+  url: https://arxiv.org/pdf/2307.15818.pdf
+  model_card: ''
+  modality: text, video; robot actions
+  analysis: Evaluated on evaluation trajectories and SoTA baselines using robotic data.
+  size: 55B parameters (dense)
+  dependencies: [PaLI-X, PaLM-E, RT-2 action tokens]
+  training_emissions: ''
+  training_time: ''
+  training_hardware: ''
+  quality_control: ''
+  access: open
+  license:
+    value: unknown
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''

@@ -635,3 +635,46 @@
   monitoring: ''
   feedback: Feedback can be given via the feedback form on their website [segment-anything.com](https://segment-anything.com/)
     or by emailing at segment-anything at meta.com.
+- type: model
+  name: MusicGen
+  organization: Meta
+  description: MusicGen is a simple and controllable model for music generation that doesn't require self-supervised semantic representation
+  created_date: 2023-08-02
+  url: https://huggingface.co/spaces/facebook/MusicGen/tree/main
+  model_card: https://huggingface.co/spaces/facebook/MusicGen/blob/main/MODEL_CARD.md
+  modality: text; audio
+  analysis: MusicGen was evaluated on standard music benchmarks of Frechet Audio Distance, Kullback-Leibler Divergence, and its CLAP score.
+  size: 3.3B parameters (dense)
+  dependencies: [Meta Music Initative Sound Collection, Shutterstock music collection, Pond5 music collection]
+  training_emissions: ''
+  training_time: ''
+  training_hardware: ''
+  quality_control: ''
+  access: open
+  license: MIT
+  intended_uses: The primary use of MusicGen is research on AI-based music generation.
+  prohibited_uses: The model should not be used on downstream applications without further risk evaluation and mitigation. The model should not be used to intentionally create or disseminate music pieces that create hostile or alienating environments for people. This includes generating music that people would foreseeably find disturbing, distressing, or offensive; or content that propagates historical or current stereotypes.
+  monitoring: ''
+  feedback: https://huggingface.co/spaces/facebook/MusicGen/discussions
+- type: model
+  name: AudioGen
+  organization: Meta
+  description: AudioGen is an auto-regressive generative model that generates audio samples conditioned on text inputs
+  created_date: 2023-08-02
+  url: https://felixkreuk.github.io/audiogen/paper.pdf
+  model_card: https://github.com/facebookresearch/audiocraft/blob/main/model_cards/AUDIOGEN_MODEL_CARD.md
+  modality: text; audio
+  analysis: Evaluated on Frechet Audio Distance and Kullback-Leibler Divergence as well as qualitative studies with human participants.
+  size: 1.5B parameters (dense)
+  dependencies: [AudioSet, BBC sound effects, AudioCaps, Clotho v2, VGG-Sound, FSD50K, Free To Use Sounds, Sonniss Game Effects, WeSoundEffects, Paramount Motion - Odeon Cinematic Sound Effects]
+  training_emissions: ''
+  training_time: ''
+  training_hardware: ''
+  quality_control: ''
+  access: open
+  license: MIT
+  intended_uses: The primary use of AudioGen is research on AI-based audio generation.
+  prohibited_uses: The model should not be used on downstream applications without further risk evaluation and mitigation. The model should not be used to intentionally create or disseminate audio pieces that create hostile or alienating environments for people. This includes generating audio that people would foreseeably find disturbing, distressing, or offensive; or content that propagates historical or current stereotypes.
+  monitoring: ''
+  feedback: https://huggingface.co/facebook/audiogen-medium/discussions
+
