@@ -1,3 +1,4 @@
+---
 - type: dataset
   name: FinPile
   organization: Bloomberg
@@ -21,33 +22,32 @@
   dependencies: []
   included:
     explanation: See [[Financial Datasets]](https://arxiv.org/pdf/2303.17564.pdf#subsection.2.1)
-    value: "FinPile consists of English financial documents. Authors utilize the The\
-      \ Bloomberg\nTerminal, which is an extensive collection of curated and maintained\
-      \ documents,\nto create the FinPile dataset. Each document in FinPile is time-stamped,\
-      \ with\ndates ranging from 2007-03-01 to 2022-07-31.\nTypes of data included\
-      \ are given below:\n  1. Web (298B tokens) - Inclues Bloomberg's web crawl focused\
-      \ on high-quality\nwebsites that have financially relevant information. This\
-      \ makes up the majority\nof FinPile.\n  2. News (38B tokens) - Includes all\
-      \ news sources relevant to the financial\ncommunity, excluding news articles\
-      \ written by Bloomberg journalists. Overall,\nthere are hundreds of English\
-      \ news sources in FinPile including \"Bloomberg\nTranscripts\", which are transcripts\
-      \ of Bloomberg TV news.\n  3. Filings (14B tokens) - Includes financial statements\
-      \ prepared by (public)\ncompanies and made available to the general public.\
-      \  In the dataset, a majority\nof the filings come from EDGAR, which is the\
-      \ SEC's online database.\n  4. Press (9B tokens) - Includes press releases typically\
-      \ issued by companies\nthat are financially relevant.\n  5. Bloomberg (5B tokens)\
-      \ - Includes Bloomberg authored news and other documents\nsuch as opinions and\
-      \ analyses. The largest sources are \u201CBloomberg News\u201D and\n\u201CBloomberg\
-      \ First Word\u201D, the Bloomberg-authored wire of real-time news.\n"
+    value: "FinPile consists of English financial documents. Authors utilize the\
+      \ The Bloomberg\nTerminal, which is an extensive collection of curated and\
+      \ maintained documents,\nto create the FinPile dataset. Each document in FinPile\
+      \ is time-stamped, with\ndates ranging from 2007-03-01 to 2022-07-31.\nTypes\
+      \ of data included are given below:\n  1. Web (298B tokens) - Inclues Bloomberg's\
+      \ web crawl focused on high-quality\nwebsites that have financially relevant\
+      \ information. This makes up the majority\nof FinPile.\n  2. News (38B tokens)\
+      \ - Includes all news sources relevant to the financial\ncommunity, excluding\
+      \ news articles written by Bloomberg journalists. Overall,\nthere are hundreds\
+      \ of English news sources in FinPile including \"Bloomberg\nTranscripts\"\
+      , which are transcripts of Bloomberg TV news.\n  3. Filings (14B tokens) -\
+      \ Includes financial statements prepared by (public)\ncompanies and made available\
+      \ to the general public.  In the dataset, a majority\nof the filings come\
+      \ from EDGAR, which is the SEC's online database.\n  4. Press (9B tokens)\
+      \ - Includes press releases typically issued by companies\nthat are financially\
+      \ relevant.\n  5. Bloomberg (5B tokens) - Includes Bloomberg authored news\
+      \ and other documents\nsuch as opinions and analyses. The largest sources\
+      \ are “Bloomberg News” and\n“Bloomberg First Word”, the Bloomberg-authored\
+      \ wire of real-time news.\n"
   excluded: ''
   quality_control: ''
   access:
     explanation: See [[Openness]](https://arxiv.org/pdf/2303.17564.pdf#subsection.8.2)
     value: closed
   license:
-    explanation: 'The asset isn''t released, and hence the license is unknown.
-
-      '
+    explanation: "The asset isn't released, and hence the license is unknown.\n'"
     value: unknown
   intended_uses: Used to train the BloombergGPT model.
   prohibited_uses: ''
@@ -56,9 +56,9 @@
 - type: model
   name: BloombergGPT
   organization: Bloomberg
-  description: BloombergGPT is a 50 billion parameter large language model that is
-    specifically trained on a wide range of financial data to support a diverse set
-    of natural language processing tasks within the financial industry.
+  description: BloombergGPT is a 50 billion parameter large language model that
+    is specifically trained on a wide range of financial data to support a diverse
+    set of natural language processing tasks within the financial industry.
   created_date:
     explanation: The date the model was announced in the [[Bloomberg article]](https://www.bloomberg.com/company/press/bloomberggpt-50-billion-parameter-llm-tuned-finance/).
     value: 2023-03-30
@@ -69,22 +69,16 @@
     value: text; text
   analysis:
     explanation: See [[Evaluation]](https://arxiv.org/pdf/2303.17564.pdf#section.5)
-    value: 'Authors evaluate the performance of BloombergGPT on two broad categories
-      of tasks, finance-specific and general purpose, on several standard benchmarks.
-      They compare BloombergGPT to the three closest models: GPT-NeoX, OPT-66B and
-      BLOOM-176B. They also report results from the original GPT-3 whenever externally
-      available. They conclude "We achieve strong results on general LLM benchmarks
-      and outperform comparable models on financial tasks. We attribute this, in decreasing
-      order of impact, to 1. a well-curated internal dataset, 2. our unique choice
-      in tokenizer, and 3. an up-to-date architecture."
-
-      '
+    value: "Authors evaluate the performance of BloombergGPT on two broad categories\
+      \ of tasks, finance-specific and general purpose, on several standard benchmarks.\
+      \ They compare BloombergGPT to the three closest models: GPT-NeoX, OPT-66B\
+      \ and BLOOM-176B. They also report results from the original GPT-3 whenever\
+      \ externally available. They conclude \"We achieve strong results on general\
+      \ LLM benchmarks and outperform comparable models on financial tasks. We attribute\
+      \ this, in decreasing order of impact, to 1. a well-curated internal dataset,\
+      \ 2. our unique choice in tokenizer, and 3. an up-to-date architecture.\"\n"
   size: 50B parameters (dense)
-  dependencies:
-  - FinPile
-  - The Pile
-  - C4
-  - Wikipedia
+  dependencies: [FinPile, The Pile, C4, Wikipedia]
   training_emissions: unknown
   training_time:
     explanation: See [[Training Run]](https://arxiv.org/pdf/2303.17564.pdf#section.4)
@@ -99,36 +93,32 @@
       \ to the financial community, we\n  have developed a rigorous risk and testing\
       \ assessment process. This process\n  includes careful annotation guidelines\
       \ Tseng et al. (2020), pre-launch review\n  at multiple levels by the central\
-      \ risk and compliance organizations, and\n  by the product leaders (e.g., the\
-      \ newsroom) as applicable, and post-launch\n  monitoring. Moreover, we conduct\
-      \ our research, development, and deployment\n  of NLP and AI systems in accordance\
-      \ with all applicable regulations.\"\n- \"Similarly, toxicity and bias are areas\
-      \ where, as a company, we take extraordinary\n  care with any content we produce,\
-      \ whether from humans or machines. Since\n  the measurement of toxicity and\
-      \ bias in our model depends on its application\n  areas, quantifying the potential\
-      \ for the generation of harmful language\n  remains an open question. We are\
-      \ particularly interested in studying whether\n  FinPile, which is cleaner and\
-      \ contains fewer examples of overtly biased\n  or toxic language (e.g., Press\
-      \ Releases), reduces the proclivity of the\n  model to generate inappropriate\
-      \ content.\"\n"
+      \ risk and compliance organizations, and\n  by the product leaders (e.g.,\
+      \ the newsroom) as applicable, and post-launch\n  monitoring. Moreover, we\
+      \ conduct our research, development, and deployment\n  of NLP and AI systems\
+      \ in accordance with all applicable regulations.\"\n- \"Similarly, toxicity\
+      \ and bias are areas where, as a company, we take extraordinary\n  care with\
+      \ any content we produce, whether from humans or machines. Since\n  the measurement\
+      \ of toxicity and bias in our model depends on its application\n  areas, quantifying\
+      \ the potential for the generation of harmful language\n  remains an open\
+      \ question. We are particularly interested in studying whether\n  FinPile,\
+      \ which is cleaner and contains fewer examples of overtly biased\n  or toxic\
+      \ language (e.g., Press Releases), reduces the proclivity of the\n  model\
+      \ to generate inappropriate content.\"\n"
   access:
     explanation: See [[Openness]](https://arxiv.org/pdf/2303.17564.pdf#subsection.8.2)
     value: closed
   license:
-    explanation: 'The asset isn''t released, and hence the license is unknown.
-
-      '
+    explanation: "The asset isn't released, and hence the license is unknown.\n'"
     value: unknown
   intended_uses:
     explanation: See [[Bloomberg article]](https://www.bloomberg.com/company/press/bloomberggpt-50-billion-parameter-llm-tuned-finance/)
-    value: '"This model will assist Bloomberg in improving existing financial NLP
-      tasks, such as sentiment analysis, named entity recognition, news classification,
-      and question answering, among others. Furthermore, BloombergGPT will unlock
-      new opportunities for marshalling the vast quantities of data available on the
-      Bloomberg Terminal to better help the firm''s customers, while bringing the
-      full potential of AI to the financial domain."
-
-      '
+    value: "\"This model will assist Bloomberg in improving existing financial NLP\
+      \ tasks, such as sentiment analysis, named entity recognition, news classification,\
+      \ and question answering, among others. Furthermore, BloombergGPT will unlock\
+      \ new opportunities for marshalling the vast quantities of data available\
+      \ on the Bloomberg Terminal to better help the firm's customers, while bringing\
+      \ the full potential of AI to the financial domain.\"\n"
   prohibited_uses: ''
   monitoring: ''
   feedback: ''

@@ -1,3 +1,4 @@
+---
 - type: model
   name: ERNIE 3.0 Titan
   organization: Baidu, PengCheng Laboratory
@@ -19,9 +20,7 @@
     explanation: Baidu does not provide ERNIE 3.0 for external researchers
     value: closed
   license:
-    explanation: 'The asset isn''t released, and hence the license is unknown.
-
-      '
+    explanation: "The asset isn't released, and hence the license is unknown.\n'"
     value: unknown
   intended_uses: unknown
   prohibited_uses: unknown
@@ -49,10 +48,8 @@
       repository]](https://github.com/PaddlePaddle/PaddleHub/blob/develop/modules/image/text_to_image/ernie_vilg/README.md)
     value: limited
   license:
-    explanation: 'No explicit license for the ERNIE-ViLG model is provided in the
-      [[Github repository]](https://github.com/PaddlePaddle/PaddleHub)
-
-      '
+    explanation: "No explicit license for the ERNIE-ViLG model is provided in the\
+      \ [[Github repository]](https://github.com/PaddlePaddle/PaddleHub)\n"
     value: none
   intended_uses: unknown
   prohibited_uses: unknown
@@ -81,9 +78,7 @@
     explanation: Baidu does not provide ERNIE-ViLG 2.0 to external researchers
     value: closed
   license:
-    explanation: 'The asset isn''t released, and hence the license is unknown.
-
-      '
+    explanation: "The asset isn't released, and hence the license is unknown.\n'"
     value: unknown
   intended_uses: unknown
   prohibited_uses: unknown

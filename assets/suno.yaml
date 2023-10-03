@@ -1,3 +1,4 @@
+---
 - type: model
   name: Bark
   organization: Suno
@@ -11,8 +12,7 @@
     value: audio, text; audio, text
   analysis: ''
   size: ''
-  dependencies:
-  - AudioLM
+  dependencies: [AudioLM]
   training_emissions: unknown
   training_time: unknown
   training_hardware: ''

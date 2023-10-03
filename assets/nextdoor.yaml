@@ -1,3 +1,4 @@
+---
 - type: application
   name: Nextdoor Assistant
   organization: Nextdoor
@@ -5,8 +6,7 @@
     posts.
   created_date: 2023-05-02
   url: https://help.nextdoor.com/s/article/Introducing-Assistant
-  dependencies:
-  - ChatGPT
+  dependencies: [ChatGPT]
   adaptation: ''
   output_space: natural language text guidance
   quality_control: ''

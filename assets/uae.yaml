@@ -1,8 +1,9 @@
+---
 - type: model
-  name: Falcon
+  name: Falcon-40B
   organization: UAE Technology Innovation Institute
-  description: "Falcon-40B is a 40B parameters causal decoder-only model built by\
-    \ TII and trained on 1,000B tokens of\_RefinedWeb enhanced with curated corpora."
+  description: Falcon-40B is a 40B parameters causal decoder-only model built by
+    TII and trained on 1,000B tokens of RefinedWeb enhanced with curated corpora.
   created_date: 2023-06-14
   url: https://huggingface.co/tiiuae/falcon-40b
   model_card: https://huggingface.co/tiiuae/falcon-40b
@@ -11,8 +12,7 @@
     value: text; text
   analysis: ''
   size: 40B parameters (dense)
-  dependencies:
-  - RefinedWeb
+  dependencies: [RefinedWeb]
   training_emissions: ''
   training_time: 2 months
   training_hardware: 384 A100 40GB GPUs
@@ -48,3 +48,27 @@
   prohibited_uses: ''
   monitoring: ''
   feedback: ''
+- type: model
+  name: Falcon-180B
+  organization: UAE Technology Innovation Institute
+  description: Falcon-180B is a 180B parameters causal decoder-only model built
+    by TII and trained on 3,500B tokens of RefinedWeb enhanced with curated corpora.
+  created_date: 2023-09-06
+  url: https://falconllm.tii.ae/falcon-models.html
+  model_card: https://huggingface.co/tiiuae/falcon-180B
+  modality: text; text
+  analysis: Falcon-180B outperforms LLaMA-2, StableLM, RedPajama, MPT on the Open
+    LLM Leaderboard at https://huggingface.co/spaces/HuggingFaceH4/open_llm_leaderboard.
+  size: 180B parameters (dense)
+  dependencies: [RefinedWeb]
+  training_emissions: ''
+  training_time: 9 months
+  training_hardware: 4096 A100 40GB GPUs
+  quality_control: ''
+  access: open
+  license: unknown
+  intended_uses: ''
+  prohibited_uses: Production use without adequate assessment of risks and mitigation;
+    any use cases which may be considered irresponsible or harmful.
+  monitoring: None
+  feedback: https://huggingface.co/tiiuae/falcon-180b/discussions

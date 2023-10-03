@@ -1,3 +1,4 @@
+---
 - type: model
   name: Megatron-LM
   organization: NVIDIA
@@ -16,15 +17,11 @@
   training_hardware: 3072 A100 GPUs
   quality_control: unknown
   access:
-    explanation: 'Neither the 8.3B parameter model trained to convergence nor the
-      1 trillion paramter model is available for download
-
-      '
+    explanation: "Neither the 8.3B parameter model trained to convergence nor the\
+      \ 1 trillion paramter model is available for download\n"
     value: closed
   license:
-    explanation: 'The asset isn''t released, and hence the license is unknown.
-
-      '
+    explanation: "The asset isn't released, and hence the license is unknown.\n'"
     value: unknown
   intended_uses: none
   prohibited_uses: none
@@ -41,10 +38,7 @@
   size: 730k videos, 6k Wikipedia pages, 340k reddit posts
   sample: []
   analysis: ''
-  dependencies:
-  - YouTube
-  - Wikipedia
-  - Reddit
+  dependencies: [YouTube, Wikipedia, Reddit]
   included: ''
   excluded: ''
   quality_control: ''
@@ -65,10 +59,7 @@
   size: 200M parameters (dense model)
   sample: []
   analysis: ''
-  dependencies:
-  - T5
-  - Mask R-CNN
-  - VIMA dataset
+  dependencies: [T5, Mask R-CNN, VIMA dataset]
   included: ''
   excluded: ''
   quality_control: ''

@@ -1,3 +1,4 @@
+---
 - type: model
   name: OpenFold
   organization: Columbia
@@ -5,14 +6,10 @@
   created_date: 2022-11-20
   url: https://www.biorxiv.org/content/10.1101/2022.11.20.517210v2
   model_card: ''
-  modality:
-    explanation: image; image
-    value: image; image
+  modality: text; protein structures
   analysis: Evaluated on wide range of tasks using own evaluation benchmarks.
   size: ''
-  dependencies:
-  - AlphaFold2
-  - OpenProteinSet
+  dependencies: [AlphaFold2, OpenProteinSet]
   training_emissions: unknown
   training_time: 50,000 GPU hours
   training_hardware: Single A100 NVIDIA GPU

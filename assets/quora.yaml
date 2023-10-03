@@ -1,3 +1,4 @@
+---
 - type: application
   name: Poe
   organization: Quora
@@ -8,11 +9,11 @@
   created_date: 2023-02-03
   url: https://quorablog.quora.com/Poe-1
   dependencies:
-  - ChatGPT API
-  - GPT-4 API
-  - Claude API
-  - Dragonfly API
-  - Sage API
+    - ChatGPT API
+    - GPT-4 API
+    - Claude API
+    - Dragonfly API
+    - Sage API
   adaptation: ''
   output_space: ''
   quality_control: ''

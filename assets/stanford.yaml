@@ -1,3 +1,4 @@
+---
 - type: model
   name: BioMedLM
   organization: Stanford
@@ -10,8 +11,7 @@
     value: text; text
   analysis: ''
   size: 2.7B parameters (dense)
-  dependencies:
-  - The Pile
+  dependencies: [The Pile]
   training_emissions: ''
   training_time: ''
   training_hardware: ''
@@ -36,9 +36,7 @@
   analysis: Evaluated on own framework that tests domain-specific tasks in medical
     field.
   size: 330M parameters (dense)
-  dependencies:
-  - Stable Diffusion
-  - RoentGen radiology dataset
+  dependencies: [Stable Diffusion, RoentGen radiology dataset]
   training_emissions: unknown
   training_time: 60k training steps per day
   training_hardware: 64 A100 GPUs
@@ -63,14 +61,11 @@
   analysis: Evaluated on three physical control tasks, drawing, steering, and human
     body movement on various dynamics
   size: 124M parameters (dense)
-  dependencies:
-  - GPT-2
-  - BABEL
-  - text-davinci-003
+  dependencies: [GPT-2, BABEL, text-davinci-003]
   training_emissions: ''
   training_time:
-    explanation: The authors do not report the training time, but do report that they
-      train for 200 epochs.
+    explanation: The authors do not report the training time, but do report that
+      they train for 200 epochs.
     value: unknown
   training_hardware: one NVIDIA A40 GPU
   quality_control: ''

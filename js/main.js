@@ -630,6 +630,8 @@ function loadAssetsAndRenderPageContent() {
   const paths = [
     'assets/adept.yaml',
     'assets/ibm.yaml',
+    'assets/osu.yaml',
+    'assets/boston.yaml',
     'assets/kaist.yaml',
     'assets/writer.yaml',
     'assets/berkeley.yaml',

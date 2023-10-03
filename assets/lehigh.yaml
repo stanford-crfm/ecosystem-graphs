@@ -1,3 +1,4 @@
+---
 - type: model
   name: BiomedGPT
   organization: Lehigh University
@@ -13,17 +14,18 @@
     biomedical modalities.
   size: 472M parameters (dense)
   dependencies:
-  - GPT-style autoregressive decoder
-  - BiomedGPT biomedical datasets
+    - GPT-style autoregressive decoder
+    - BiomedGPT biomedical datasets
   training_emissions: unknown
   training_time: unknown
   training_hardware: 10 NVIDIA A5000 GPUs
   quality_control: No specific quality control is mentioned in model training, though
-    details on data processing and how the model was trained are provided in the paper.
+    details on data processing and how the model was trained are provided in the
+    paper.
   access: open
   license: Apache 2.0
-  intended_uses: furthering research in developing unified and generalist models for
-    biomedicine.
+  intended_uses: furthering research in developing unified and generalist models
+    for biomedicine.
   prohibited_uses: ''
   monitoring: ''
   feedback: ''

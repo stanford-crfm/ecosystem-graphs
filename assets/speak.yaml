@@ -1,13 +1,13 @@
+---
 - type: application
   name: Speak
   organization: Speak
-  description: Speak is an AI-powered language learning app focused on building the
-    best path to spoken fluency and is the the fastest-growing English app in South
-    Korea.
+  description: Speak is an AI-powered language learning app focused on building
+    the best path to spoken fluency and is the the fastest-growing English app in
+    South Korea.
   created_date: 2023-03-01
   url: https://openai.com/blog/introducing-chatgpt-and-whisper-apis
-  dependencies:
-  - Whisper API
+  dependencies: [Whisper API]
   adaptation: ''
   output_space: ''
   quality_control: ''

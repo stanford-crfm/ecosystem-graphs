@@ -1,3 +1,4 @@
+---
 - type: model
   name: Inflection-1
   organization: Inflection AI
@@ -26,12 +27,11 @@
 - type: application
   name: Pi
   organization: Inflection AI
-  description: Personal AI chatbot designed to be conversational and specialized in
-    emotional intelligence.
+  description: Personal AI chatbot designed to be conversational and specialized
+    in emotional intelligence.
   created_date: 2023-05-02
   url: https://inflection.ai/press
-  dependencies:
-  - Inflection-1
+  dependencies: [Inflection-1]
   adaptation: ''
   output_space: natural language text responses
   quality_control: ''

@@ -1,3 +1,4 @@
+---
 - type: model
   name: Prithvi
   organization: IBM
@@ -15,8 +16,7 @@
     value: text, video; text, video
   analysis: ''
   size: 100M parameters (dense)
-  dependencies:
-  - NASA HLS data
+  dependencies: [NASA HLS data]
   training_emissions: ''
   training_time: ''
   training_hardware: ''
@@ -27,3 +27,25 @@
   prohibited_uses: ''
   monitoring: ''
   feedback: https://huggingface.co/ibm-nasa-geospatial/Prithvi-100M/discussions
+- type: application
+  name: Watsonx.ai
+  organization: IBM
+  description: Watsonx.ai is part of the IBM watsonx platform that brings together
+    new generative AI capabilities, powered by foundation models and traditional
+    machine learning into a powerful studio spanning the AI lifecycle.
+  created_date: 2023-09-07
+  url: https://www.ibm.com/products/watsonx-ai
+  dependencies: []
+  adaptation: ''
+  output_space: deployed AI models
+  quality_control: ''
+  access: limited
+  license: ''
+  terms_of_service: https://www.ibm.com/docs/en/watsonx-as-a-service?topic=models-terms-use
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+  monthly_active_users: ''
+  user_distribution: ''
+  failures: ''

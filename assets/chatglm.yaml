@@ -1,3 +1,4 @@
+---
 - type: model
   name: ChatGLM
   organization: ChatGLM

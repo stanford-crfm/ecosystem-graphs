@@ -1,3 +1,4 @@
+---
 - type: model
   name: HyperCLOVA
   organization: Naver
@@ -19,9 +20,7 @@
     explanation: The model is not available for download or direct API use
     value: closed
   license:
-    explanation: 'The asset isn''t released, and hence the license is unknown.
-
-      '
+    explanation: "The asset isn't released, and hence the license is unknown.\n'"
     value: unknown
   intended_uses: ''
   prohibited_uses: ''

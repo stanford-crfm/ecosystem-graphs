@@ -1,3 +1,4 @@
+---
 - type: model
   name: DeepFloyd IF
   organization: Stability AI
@@ -11,8 +12,7 @@
     value: image, text; image, text
   analysis: Evaluated on the COCO dataset.
   size: 4.3B parameters (dense)
-  dependencies:
-  - LAION-5B
+  dependencies: [LAION-5B]
   training_emissions: ''
   training_time: ''
   training_hardware: ''
@@ -38,12 +38,12 @@
   analysis: ''
   size: 7B parameters (dense)
   dependencies:
-  - StableLM-Alpha dataset
-  - Alpaca dataset
-  - gpt4all dataset
-  - ShareGPT52K dataset
-  - Dolly dataset
-  - HH dataset
+    - StableLM-Alpha dataset
+    - Alpaca dataset
+    - gpt4all dataset
+    - ShareGPT52K dataset
+    - Dolly dataset
+    - HH dataset
   training_emissions: ''
   training_time: ''
   training_hardware: ''

@@ -1,3 +1,4 @@
+---
 - type: dataset
   name: Conformer-1 dataset
   organization: AssemblyAI
@@ -12,17 +13,13 @@
   sample: []
   analysis: ''
   dependencies: []
-  included: '"our team curated a dataset of 650K hours of English audio - consisting
-    of proprietary internal datasets and various sources from the internet"
-
-    '
+  included: "\"our team curated a dataset of 650K hours of English audio - consisting\
+    \ of proprietary internal datasets and various sources from the internet\"\n"
   excluded: ''
   quality_control: ''
   access: closed
   license:
-    explanation: 'The asset isn''t released, and hence the license is unknown.
-
-      '
+    explanation: "The asset isn't released, and hence the license is unknown.\n'"
     value: unknown
   intended_uses: ''
   prohibited_uses: ''
@@ -46,24 +43,21 @@
   analysis:
     explanation: See [[Results and Performance]](https://www.assemblyai.com/blog/conformer-1/#results-and-performance)
     value: In order to evaluate the accuracy and robustness of Conformer-1, we sourced
-      60+ hours of human labeled audio data covering popular speech domains such as
-      call centers, podcasts, broadcasts, and webinars. We then calculated the Word
-      Error Rate (WER) of Conformer-1 against these datasets, and compared the results
-      against Whisper and a number of other ASR models. To ground our results against
-      popular open source speech recognition benchmarks, we also performed the same
-      WER analysis against a number of academic datasets.
+      60+ hours of human labeled audio data covering popular speech domains such
+      as call centers, podcasts, broadcasts, and webinars. We then calculated the
+      Word Error Rate (WER) of Conformer-1 against these datasets, and compared
+      the results against Whisper and a number of other ASR models. To ground our
+      results against popular open source speech recognition benchmarks, we also
+      performed the same WER analysis against a number of academic datasets.
   size: 300M parameters (dense)
-  dependencies:
-  - Conformer-1 dataset
+  dependencies: [Conformer-1 dataset]
   training_emissions: ''
   training_time: ''
   training_hardware: ''
   quality_control: ''
   access: limited
   license:
-    explanation: 'The asset isn''t released, and hence the license is unknown.
-
-      '
+    explanation: "The asset isn't released, and hence the license is unknown.\n'"
     value: unknown
   intended_uses: ''
   prohibited_uses: ''
@@ -76,19 +70,16 @@
     audio data at scale.
   created_date: 2022
   url: https://www.assemblyai.com/
-  dependencies:
-  - Anthropic API
+  dependencies: [Anthropic API]
   adaptation: ''
   output_space: ''
   quality_control: ''
   access: limited
   license:
-    explanation: '"AssemblyAI gives you a personal, worldwide, royalty-free, non-assignable
-      and non-exclusive license to use the Site and Services solely for your reasonable
-      personal and commercial purposes, in the manner permitted by these Terms." -
-      excerpt from the Terms of Service.
-
-      '
+    explanation: "\"AssemblyAI gives you a personal, worldwide, royalty-free, non-assignable\
+      \ and non-exclusive license to use the Site and Services solely for your reasonable\
+      \ personal and commercial purposes, in the manner permitted by these Terms.\"\
+      \ - excerpt from the Terms of Service.\n"
     value: custom
   terms_of_service: https://www.assemblyai.com/legal/terms-of-service
   intended_uses: ''
@@ -106,19 +97,16 @@
     explanation: The date the API was announced in this [[Twitter post]](https://twitter.com/AssemblyAI/status/1636050346240884744).
     value: 2023-03-15
   url: https://www.assemblyai.com/blog/conformer-1/
-  dependencies:
-  - Conformer-1
+  dependencies: [Conformer-1]
   adaptation: ''
   output_space: ''
   quality_control: ''
   access: open
   license:
-    explanation: '"AssemblyAI gives you a personal, worldwide, royalty-free, non-assignable
-      and non-exclusive license to use the Site and Services solely for your reasonable
-      personal and commercial purposes, in the manner permitted by these Terms." -
-      excerpt from the Terms of Service.
-
-      '
+    explanation: "\"AssemblyAI gives you a personal, worldwide, royalty-free, non-assignable\
+      \ and non-exclusive license to use the Site and Services solely for your reasonable\
+      \ personal and commercial purposes, in the manner permitted by these Terms.\"\
+      \ - excerpt from the Terms of Service.\n"
     value: custom
   terms_of_service: https://www.assemblyai.com/legal/terms-of-service
   intended_uses: Speech recognition

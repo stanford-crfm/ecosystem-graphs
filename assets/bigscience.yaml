@@ -1,3 +1,4 @@
+---
 - type: dataset
   name: ROOTS
   organization: BigScience
@@ -9,8 +10,7 @@
   datasheet: https://huggingface.co/spaces/bigscience-data/bigscience-corpus
   modality: code, text
   size: 1.6TB
-  sample:
-  - https://huggingface.co/spaces/bigscience-data/roots-search
+  sample: [https://huggingface.co/spaces/bigscience-data/roots-search]
   analysis: https://huggingface.co/spaces/bigscience-data/roots-search
   dependencies: []
   included: See section 2 of the paper.
@@ -35,15 +35,14 @@
 - type: dataset
   name: P3
   organization: BigScience
-  description: The Public Pool of Prompts (P3) are prompts written in an unified format
-    use to train T0++.
+  description: The Public Pool of Prompts (P3) are prompts written in an unified
+    format use to train T0++.
   created_date: 2022-10-15
   url: https://arxiv.org/pdf/2110.08207.pdf
   datasheet: https://huggingface.co/datasets/bigscience/P3
   modality: text
   size: 2000 prompts
-  sample:
-  - https://huggingface.co/datasets/bigscience/P3/viewer
+  sample: [https://huggingface.co/datasets/bigscience/P3/viewer]
   analysis: See the paper.
   dependencies: []
   included: The Public Pool of Prompts relies on the Hugging Face Dataset library.
@@ -72,11 +71,9 @@
   datasheet: https://huggingface.co/datasets/bigscience/xP3
   modality: code, text
   size: 9.4GB
-  sample:
-  - https://huggingface.co/datasets/bigscience/xP3/viewer
+  sample: [https://huggingface.co/datasets/bigscience/xP3/viewer]
   analysis: See the paper.
-  dependencies:
-  - P3
+  dependencies: [P3]
   included: xP3 adds 28 multilingual datasets to P3 based on the P3 task taxonomy.
   excluded: We conservatively decided not to prompt datasets that contain potentially
     harmful content (for instance, datasets built on social media content).
@@ -100,9 +97,7 @@
   modality: {}
   analysis: ''
   size: ''
-  dependencies:
-  - T5
-  - P3
+  dependencies: [T5, P3]
   training_emissions:
     explanation: Sourced from estimates in https://arxiv.org/pdf/2110.08207.pdf
     value: 0.9 tCO2e
@@ -132,8 +127,7 @@
     value: code, text; code, text
   analysis: ''
   size: 176B parameters (dense)
-  dependencies:
-  - ROOTS
+  dependencies: [ROOTS]
   training_emissions:
     explanation: Sourced from estimates in https://arxiv.org/abs/2211.02001
     value: 25 tCO2e
@@ -146,25 +140,25 @@
   license:
     explanation: Model is licensed under https://huggingface.co/spaces/bigscience/license
     value: BigScience RAIL v1.0
-  intended_uses: This model is being created in order to enable public research on
-    large language models (LLMs). LLMs are intended to be used for language generation
+  intended_uses: This model is being created in order to enable public research
+    on large language models (LLMs). LLMs are intended to be used for language generation
     or as a pretrained base model that can be further fine-tuned for specific tasks.
     Use cases below are not exhaustive.
   prohibited_uses: Using the model in high-stakes settings is out of scope for this
     model (e.g. biomedical/political/legal/finance domains, evaluating or scoring
-    individuals). The model is not designed for critical decisions nor uses with any
-    material consequences on an individual's livelihood or wellbeing. The model outputs
-    content that appears factual but may not be correct. Misuse. Intentionally using
-    the model for harm, violating human rights, or other kinds of malicious activities,
-    is a misuse of this model (e.g. spam generation, disinformation, disparagement,
-    deception, surveillance).
+    individuals). The model is not designed for critical decisions nor uses with
+    any material consequences on an individual's livelihood or wellbeing. The model
+    outputs content that appears factual but may not be correct. Misuse. Intentionally
+    using the model for harm, violating human rights, or other kinds of malicious
+    activities, is a misuse of this model (e.g. spam generation, disinformation,
+    disparagement, deception, surveillance).
   monitoring: none
   feedback: https://huggingface.co/bigscience/bloom/discussions
 - type: model
   name: mT0
   organization: BigScience
-  description: mT0 is an multitask fine-tuned multilingual language model based on
-    mT5.
+  description: mT0 is an multitask fine-tuned multilingual language model based
+    on mT5.
   created_date:
     explanation: The date the model was released
     value: 2021-10-15
@@ -173,9 +167,7 @@
   modality: {}
   analysis: https://huggingface.co/bigscience/bloomz#evaluation
   size: ''
-  dependencies:
-  - mT5
-  - xP3
+  dependencies: [mT5, xP3]
   training_emissions: unknown
   training_time: unknown
   training_hardware: Jean Zay (288 A100 80GB GPUs with 8 GPUs per node (36 nodes)
@@ -203,9 +195,7 @@
     value: code, text; code, text
   analysis: https://huggingface.co/bigscience/bloomz#evaluation
   size: 176B parameters (dense)
-  dependencies:
-  - BLOOM
-  - xP3
+  dependencies: [BLOOM, xP3]
   training_emissions: unknown
   training_time: unknown
   training_hardware: Jean Zay (288 A100 80GB GPUs with 8 GPUs per node (36 nodes)

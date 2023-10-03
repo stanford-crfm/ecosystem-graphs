@@ -1,3 +1,4 @@
+---
 - type: dataset
   name: Luminous dataset
   organization: Aleph Alpha
@@ -7,9 +8,7 @@
     value: 2022-04-14
   url: none
   datasheet: none
-  modality:
-    explanation: ''
-    value: other
+  modality: text
   size: unknown
   sample: []
   analysis: unknown
@@ -19,9 +18,7 @@
   quality_control: unknown
   access: closed
   license:
-    explanation: 'The asset isn''t released, and hence the license is unknown.
-
-      '
+    explanation: "The asset isn't released, and hence the license is unknown.\n'"
     value: unknown
   intended_uses: unknown
   prohibited_uses: unknown
@@ -36,13 +33,10 @@
     value: 2022-04-14
   url: https://twitter.com/Aleph__Alpha/status/1514576711492542477
   model_card: ''
-  modality:
-    explanation: ''
-    value: other; other
+  modality: text; text
   analysis: ''
   size: ''
-  dependencies:
-  - Luminous dataset
+  dependencies: [Luminous dataset]
   training_emissions: unknown
   training_time: unknown
   training_hardware: unknown
@@ -60,24 +54,17 @@
 - type: application
   name: Aleph Alpha API
   organization: Aleph Alpha
-  description: 'The Aleph Alpha API serves a family of text-only language models (Luminous)
-    and multimodal text-and-image models (Magma).
-
-    '
+  description: "The Aleph Alpha API serves a family of text-only language models\
+    \ (Luminous) and multimodal text-and-image models (Magma).\n"
   created_date:
-    explanation: 'Date the Aleph Alpha Python API client was first available based
-      on to the [PyPi package history](https://pypi.org/project/aleph-alpha-client/1.0.0/)
-
-      '
+    explanation: "Date the Aleph Alpha Python API client was first available based\
+      \ on to the [PyPi package history](https://pypi.org/project/aleph-alpha-client/1.0.0/)\n"
     value: 2021-09-30
   url: https://www.aleph-alpha.com/
-  dependencies:
-  - Luminous
+  dependencies: [Luminous]
   adaptation: ''
-  output_space: 'The text models provide text outputs given text inputs. The multimodal
-    models provide text completions given text and image inputs.
-
-    '
+  output_space: "The text models provide text outputs given text inputs. The multimodal\
+    \ models provide text completions given text and image inputs.\n"
   quality_control: ''
   access:
     explanation: The API is a paid product. Refer to the [[API documentation]](https://docs.aleph-alpha.com/docs/introduction/luminous/)
@@ -97,19 +84,15 @@
 - type: model
   name: MAGMA
   organization: Aleph Alpha
-  description: An autoregressive VL model that is able to generate text from an arbitrary
-    combination of visual and textual input
+  description: An autoregressive VL model that is able to generate text from an
+    arbitrary combination of visual and textual input
   created_date: 2022-10-24
   url: https://arxiv.org/pdf/2112.05253.pdf
   model_card: ''
-  modality:
-    explanation: image, text; text
-    value: image, text; image, text
+  modality: image, text; text
   analysis: Evaluated on the OKVQA benchmark as a fully open-ended generative task.
   size: 6B parameters (dense)
-  dependencies:
-  - GPT-J
-  - CLIP
+  dependencies: [GPT-J, CLIP]
   training_emissions: ''
   training_time: ''
   training_hardware: 32 A100 GPUs

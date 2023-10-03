@@ -1,3 +1,4 @@
+---
 - type: model
   name: GPT-JT
   organization: Together
@@ -10,10 +11,7 @@
     value: text; text
   analysis: ''
   size: 6B parameters (dense)
-  dependencies:
-  - GPT-J
-  - P3
-  - NaturalInstructions-v2
+  dependencies: [GPT-J, P3, NaturalInstructions-v2]
   training_emissions: ''
   training_time: ''
   training_hardware: ''
@@ -36,9 +34,7 @@
     value: text; text
   analysis: ''
   size: 20B parameters (dense)
-  dependencies:
-  - GPT-NeoX
-  - OIG-43M
+  dependencies: [GPT-NeoX, OIG-43M]
   training_emissions: ''
   training_time: ''
   training_hardware: ''
@@ -61,9 +57,7 @@
     value: text; text
   analysis: ''
   size: 6B parameters (dense)
-  dependencies:
-  - GPT-JT
-  - OIG-moderation
+  dependencies: [GPT-JT, OIG-moderation]
   training_emissions: ''
   training_time: ''
   training_hardware: ''
@@ -85,10 +79,7 @@
   size: 43M instructions
   sample: []
   analysis: ''
-  dependencies:
-  - P3
-  - NaturalInstructions-v2
-  - FLAN dataset
+  dependencies: [P3, NaturalInstructions-v2, FLAN dataset]
   included: ''
   excluded: ''
   quality_control: ''
@@ -133,9 +124,7 @@
   size: 1.2 trillion tokens
   sample: []
   analysis: ''
-  dependencies:
-  - GitHub
-  - Wikipedia
+  dependencies: [GitHub, Wikipedia]
   included: ''
   excluded: ''
   quality_control: ''
@@ -160,11 +149,11 @@
     over MQA.
   size: 7B parameters (dense)
   dependencies:
-  - LLaMA-2-70B-Chat outputs
-  - BookSum dataset
-  - MQA dataset
-  - Together API
-  - LLaMA-2-7B-32K
+    - LLaMA-2-70B-Chat outputs
+    - BookSum dataset
+    - MQA dataset
+    - Together API
+    - LLaMA-2-7B-32K
   training_emissions: ''
   training_time: ''
   training_hardware: ''

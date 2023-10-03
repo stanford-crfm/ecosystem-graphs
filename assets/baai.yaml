@@ -1,11 +1,10 @@
+---
 - type: dataset
   name: Wu Dao dataset
   organization: Beijing Academy of Artificial Intelligence
   description: ''
   created_date:
-    explanation: 'The date that BAAI made a public announcement [[News Link]](https://mp.weixin.qq.com/s/BUQWZ5EdR19i40GuFofpBg).
-
-      '
+    explanation: "The date that BAAI made a public announcement [[News Link]](https://mp.weixin.qq.com/s/BUQWZ5EdR19i40GuFofpBg).\n"
     value: 2021-01-12
   url: https://www.tsinghua.edu.cn/en/info/1420/10473.htm
   datasheet: ''
@@ -19,9 +18,7 @@
   quality_control: ''
   access: closed
   license:
-    explanation: 'The asset isn''t released, and hence the license is unknown.
-
-      '
+    explanation: "The asset isn't released, and hence the license is unknown.\n'"
     value: unknown
   intended_uses: ''
   prohibited_uses: ''
@@ -32,30 +29,23 @@
   organization: Beijing Academy of Artificial Intelligence
   description: ''
   created_date:
-    explanation: 'The date that BAAI made a public announcement [[News Link]](https://mp.weixin.qq.com/s/BUQWZ5EdR19i40GuFofpBg).
-
-      '
+    explanation: "The date that BAAI made a public announcement [[News Link]](https://mp.weixin.qq.com/s/BUQWZ5EdR19i40GuFofpBg).\n"
     value: 2021-01-12
   url: https://www.tsinghua.edu.cn/en/info/1420/10473.htm
   model_card: ''
   modality: {}
   analysis: ''
   size: ''
-  dependencies:
-  - Wu Dao dataset
+  dependencies: [Wu Dao dataset]
   training_emissions: ''
   training_time: ''
   training_hardware: ''
   quality_control: ''
   access:
-    explanation: 'The model wasn''t released.
-
-      '
+    explanation: "The model wasn't released.\n"
     value: closed
   license:
-    explanation: 'The asset isn''t released, and hence the license is unknown.
-
-      '
+    explanation: "The asset isn't released, and hence the license is unknown.\n'"
     value: unknown
   intended_uses: ''
   prohibited_uses: ''

@@ -1,3 +1,4 @@
+---
 - type: application
   name: Perplexity Ask
   organization: Perplexity
@@ -8,9 +9,7 @@
       by the company.
     value: 2022-12-07
   url: https://www.perplexity.ai/
-  dependencies:
-  - GPT-3.5
-  - Bing Search
+  dependencies: [GPT-3.5, Bing Search]
   adaptation: ''
   output_space: ''
   quality_control: ''
@@ -33,9 +32,7 @@
     search engine.
   created_date: 2022-12-15
   url: https://www.perplexity.ai/sql
-  dependencies:
-  - Perplexity Ask
-  - OpenAI API
+  dependencies: [Perplexity Ask, OpenAI API]
   adaptation: ''
   output_space: ''
   quality_control: ''

@@ -1,3 +1,4 @@
+---
 - type: application
   name: Khanmigo
   organization: Khan Academy
@@ -5,16 +6,13 @@
     students and a classroom assistant for teachers.
   created_date: 2023-03-14
   url: https://www.khanacademy.org/khan-labs#khanmigo
-  dependencies:
-  - GPT-4 API
+  dependencies: [GPT-4 API]
   adaptation: ''
   output_space: ''
   quality_control: ''
   access: limited
   license:
-    explanation: 'The asset isn''t released, and hence the license is unknown.
-
-      '
+    explanation: "The asset isn't released, and hence the license is unknown.\n'"
     value: unknown
   terms_of_service: ''
   intended_uses: ''

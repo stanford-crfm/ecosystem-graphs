@@ -1,9 +1,10 @@
+---
 - type: model
   name: PolyCoder
   organization: CMU
-  description: PolyCoder is a code model trained on 2.7B parameters based on the GPT-2
-    architecture, which was trained on 249GB of code across 12 programming languages
-    on a single machine.
+  description: PolyCoder is a code model trained on 2.7B parameters based on the
+    GPT-2 architecture, which was trained on 249GB of code across 12 programming
+    languages on a single machine.
   created_date:
     explanation: The date the model paper was released
     value: 2022-02-26
@@ -15,14 +16,13 @@
   analysis: Reports results on standard code benchmarks across a variety of programming
     languages.
   size: ''
-  dependencies:
-  - Github
+  dependencies: [Github]
   training_emissions: unknown
   training_time: 6 weeks
   training_hardware: 8 NVIDIA RTX 8000
   quality_control: No specific quality control is mentioned in model training, though
-    details on data processing and how the tokenizer was trained are provided in the
-    paper.
+    details on data processing and how the tokenizer was trained are provided in
+    the paper.
   access:
     explanation: Model checkpoints are available for download at https://github.com/VHellendoorn/Code-LMs
     value: open
