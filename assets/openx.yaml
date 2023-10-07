@@ -1,0 +1,45 @@
+---
+- type: dataset
+  name: Open X-Embodiment dataset
+  organization: Open X-Embodiment
+  description: The Open X-Embodiment dataset is a dataset of robot movements assembled from 22 different robots collected through a collaboration between 21 institutions, demonstrating 527 skills (160266 tasks)
+  created_date: 2023-10-03
+  url: https://robotics-transformer-x.github.io/
+  datasheet: All data can be found at https://robotics-transformer-x.github.io/.
+  modality: robot trajectories
+  size: 160K tasks
+  sample: []
+  analysis: Analyzed on breakdown of types of robot trajectory in dataset, and overall coverage.
+  dependencies:
+    explanation: data compiled from unknown datasets in over 21 different institutions, list of institutions can be found at https://robotics-transformer-x.github.io/paper.pdf
+    value: []
+  included: N/A
+  excluded: N/A
+  quality_control: unknown
+  access: open
+  license: unknown
+  intended_uses: Further research on X-embodiment models.
+  prohibited_uses: none
+  monitoring: unknown
+  feedback: none
+- type: model
+  name: RT-X
+  organization: Open X-Embodiment
+  description: RT-X is a model trained on the Open X-Embodiment dataset that exhibits better generalization and new capabilities compared to previous robotics models.
+  created_date: 2023-10-03
+  url: https://robotics-transformer-x.github.io/
+  model_card: none
+  modality: text; robot trajectories
+  analysis: Evaluated on in-distribution robotics skills, and outperforms its parent model RT-2 by 3x in emergent skill evaluations.
+  size: 35M parameters (dense)
+  dependencies: [RT-2, Open X-Embodiment dataset]
+  training_emissions: unknown
+  training_time: unknown
+  training_hardware: unknown
+  quality_control: unknown
+  access: open
+  license: unknown
+  intended_uses: Further research on X-embodiment models.
+  prohibited_uses: none
+  monitoring: unknown
+  feedback: none

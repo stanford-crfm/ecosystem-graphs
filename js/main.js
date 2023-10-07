@@ -629,6 +629,10 @@ function loadAssetsAndRenderPageContent() {
 
   const paths = [
     'assets/adept.yaml',
+    'assets/wayve.yaml',
+    'assets/openx.yaml',
+    'assets/cbtn.yaml',
+    'assets/ukm.yaml',
     'assets/writer.yaml',
     'assets/berkeley.yaml',
     'assets/faraday.yaml',
