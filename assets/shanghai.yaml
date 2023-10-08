@@ -54,12 +54,13 @@
 - type: model
   name: MathCoder
   organization: Shanghai AI Laboratory
-  description: MathCoder is a family of models capable of generating code-based solutions for solving challenging math problems. 
+  description: MathCoder is a family of models capable of generating code-based
+    solutions for solving challenging math problems.
   created_date: 2023-10-05
   url: https://arxiv.org/pdf/2310.03731.pdf
   model_card: none
   modality: text; text
-  analysis: Evaluated on GSM8K and the competition-level MATH dataset. 
+  analysis: Evaluated on GSM8K and the competition-level MATH dataset.
   size: 70B parameters (dense)
   dependencies: [GPT-4, LLaMA-2]
   training_emissions: unknown
@@ -68,8 +69,8 @@
   quality_control: none
   access: open
   license: unknown
-  intended_uses: bridging the gap between natural language understanding and computational problem-solving
+  intended_uses: bridging the gap between natural language understanding and computational
+    problem-solving
   prohibited_uses: none
   monitoring: none
   feedback: none
-

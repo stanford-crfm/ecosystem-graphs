@@ -2,7 +2,10 @@
 - type: model
   name: GAIA-1
   organization: Wayve
-  description: GAIA-1 (‘Generative AI for Autonomy’) is a generative world model that leverages video, text, and action inputs to generate realistic driving scenarios while offering fine-grained control over ego-vehicle behavior and scene features.
+  description: GAIA-1 (‘Generative AI for Autonomy’) is a generative world model
+    that leverages video, text, and action inputs to generate realistic driving
+    scenarios while offering fine-grained control over ego-vehicle behavior and
+    scene features.
   created_date: 2023-09-29
   url: arxiv.org/pdf/2309.17080.pdf
   model_card: none
@@ -16,7 +19,8 @@
   quality_control: none
   access: closed
   license: unknown
-  intended_uses: The main use cases are pure representation learning, planning (look-ahead search), or learning a policy in the world model (neural simulator)
+  intended_uses: The main use cases are pure representation learning, planning (look-ahead
+    search), or learning a policy in the world model (neural simulator)
   prohibited_uses: none
   monitoring: none
   feedback: none

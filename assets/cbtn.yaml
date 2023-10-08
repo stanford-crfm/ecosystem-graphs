@@ -7,17 +7,23 @@
   url: https://arxiv.org/pdf/2310.01413.pdf
   datasheet: ''
   modality: MRI exams
-  size: 23K MRI exams
+  size: 23K exams
   sample: []
   analysis: Evaluated in comparison to other cancer datasets and variety of diagnoses provided.
-  dependencies: [NCI Childhood Cancer Data Initiative, The Cancer Imaging Archive, Cancer Data Service]
-  included: N/A
+  dependencies:
+    - NCI Childhood Cancer Data Initiative datasets
+    - The Cancer Imaging Archive datasets
+    - Cancer Data Service datasets
+    - local hospital cancer datasets
+  included: Longitudinal MRIs across various cancer diagnoses, with associated patient-level
+    clinical information, digital pathology slides, as well as tissue genotype and
+    omics data.
   excluded: N/A
-  quality_control: none
+  quality_control: images acquired through institution-specific clinical imaging
+    protocols as part of routine standard of care
   access: open
   license: unknown
-  intended_uses: To facilitate research in preventing pediatric cancer. 
+  intended_uses: To facilitate research in preventing pediatric cancer.
   prohibited_uses: none
   monitoring: none
   feedback: none
-
