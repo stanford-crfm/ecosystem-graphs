@@ -8,7 +8,7 @@
     value: 2021-01-12
   url: https://www.tsinghua.edu.cn/en/info/1420/10473.htm
   datasheet: ''
-  modality: {}
+  modality: image, text
   size: unknown
   sample: []
   analysis: ''
@@ -17,9 +17,7 @@
   excluded: ''
   quality_control: ''
   access: closed
-  license:
-    explanation: "The asset isn't released, and hence the license is unknown.\n'"
-    value: unknown
+  license: unknown
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
@@ -33,20 +31,16 @@
     value: 2021-01-12
   url: https://www.tsinghua.edu.cn/en/info/1420/10473.htm
   model_card: ''
-  modality: {}
+  modality: image, text
   analysis: ''
-  size: ''
+  size: 1.75T parameters (dense)
   dependencies: [Wu Dao dataset]
   training_emissions: ''
   training_time: ''
   training_hardware: ''
   quality_control: ''
-  access:
-    explanation: "The model wasn't released.\n"
-    value: closed
-  license:
-    explanation: "The asset isn't released, and hence the license is unknown.\n'"
-    value: unknown
+  access: closed
+  license: unknown
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''

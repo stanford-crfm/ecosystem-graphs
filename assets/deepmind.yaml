@@ -8,7 +8,7 @@
     value: 2021-12-08
   url: https://arxiv.org/pdf/2112.11446.pdf
   datasheet: https://arxiv.org/pdf/2112.11446.pdf#subsection.A.5
-  modality: {}
+  modality: code, text
   size: 10.5 TB
   sample: []
   analysis: "MassiveText data was analyzed for toxicity, language distribution,\
@@ -60,9 +60,7 @@
     value: 2022-04-29
   url: https://arxiv.org/pdf/2204.14198.pdf
   datasheet: https://arxiv.org/pdf/2204.14198.pdf#appendix.F
-  modality:
-    explanation: ''
-    value: other
+  modality: code, text
   size: 182GB Text, 185M Images
   sample: []
   analysis: ''
@@ -100,9 +98,7 @@
     value: 2022-05-12
   url: https://www.deepmind.com/blog/a-generalist-agent
   datasheet: none
-  modality:
-    explanation: ''
-    value: other
+  modality: image, text, robotics trajectories, simulated control tasks
   size: 10.5 TB Text, 2.2B Text-Image pairs, 1.5T tokens of simulated control, 500k
     robotics trajectories
   sample: []
@@ -147,9 +143,9 @@
     value: 2021-07-15
   url: https://www.nature.com/articles/s41586-021-03819-2
   model_card: none
-  modality: {}
+  modality: amino acid sequence; protein structure
   analysis: ''
-  size: ''
+  size: 93M parameters (dense)
   dependencies: [Protein Data Bank]
   training_emissions: ''
   training_time:
@@ -180,12 +176,10 @@
     value: 2022-04-29
   url: https://arxiv.org/pdf/2204.14198.pdf
   model_card: https://arxiv.org/pdf/2204.14198.pdf#appendix.E
-  modality:
-    explanation: ''
-    value: other; other
+  modality: image, text; text
   analysis: "Model performance was evaluated on image and video datasets primarily,\
     \ including dialogue.\n"
-  size: ''
+  size: 80B parameters (dense)
   dependencies: [M3W, ALIGN, LTIP, VTP, Chinchilla]
   training_emissions:
     explanation: "Authors do not report the training emissions.\n"
@@ -234,11 +228,9 @@
     value: 2022-02-02
   url: https://arxiv.org/abs/2203.07814
   model_card: ''
-  modality:
-    explanation: ''
-    value: other; other
+  modality: text; code
   analysis: ''
-  size: ''
+  size: 41B parameters (dense)
   dependencies: []
   training_emissions: ''
   training_time: ''
@@ -266,13 +258,13 @@
     value: 2021-12-08
   url: https://arxiv.org/pdf/2112.11446.pdf
   model_card: https://arxiv.org/pdf/2112.11446.pdf#appendix.B
-  modality: {}
+  modality: text; code
   analysis: "Model performance was evaluated and analyzed on 152 NLP tasks including:\
     \ Language Modelling (20), Reading Comprehension (3), Fact Checking (3), Question\
     \ Answering (3), Common Sense (4), MMLU (57), BIG-bench (62) [[Section 4]](https://arxiv.org/pdf/2112.11446.pdf#section.4);\
     \ on toxicity and bias datasets [[Section 5]](https://arxiv.org/pdf/2112.11446.pdf#section.5);\
     \ and on dialogue tasks [[Section 6]](https://arxiv.org/pdf/2112.11446.pdf#section.6).\n"
-  size: ''
+  size: 280B parameters (dense)
   dependencies: [MassiveText]
   training_emissions:
     explanation: "The training emission estimate from the paper [[Section F]](https://arxiv.org/pdf/2112.11446.pdf#appendix.F)\n"
@@ -320,13 +312,11 @@
     value: 2022-03-29
   url: https://arxiv.org/pdf/2203.15556.pdf
   model_card: https://arxiv.org/pdf/2203.15556.pdf
-  modality:
-    explanation: ''
-    value: other; other
+  modality: text; code
   analysis: "Model performance was evaluated and analyzed on many NLP tasks including\
     \ language modeling, reading comprehension, question answering, commonsense-intensive\
     \ tasks, and the BIG-Bench and MMLU meta-benchmarks.\n"
-  size: ''
+  size: 70B parameters (dense)
   dependencies: [MassiveText]
   training_emissions:
     explanation: "Authors do not report the training emissions.\n"
@@ -375,12 +365,10 @@
     value: 2022-05-12
   url: https://www.deepmind.com/blog/a-generalist-agent
   model_card: https://openreview.net/pdf?id=1ikK0kHjvj#appendix.B
-  modality:
-    explanation: ''
-    value: other; other
+  modality: image, text; image, text, robotics trajectories
   analysis: "Model performance was evaluated on simulated and robotics task primarily,\
     \ including out-of-distribution and skill generalization.\n"
-  size: ''
+  size: 1.2B parameters (dense)
   dependencies: [Gato dataset]
   training_emissions:
     explanation: "Authors do not report the training emissions.\n"
@@ -398,9 +386,7 @@
     explanation: "The model access is limited to DeepMind researchers. The model\
       \ won't be released to the public [[Model Card]](https://openreview.net/pdf?id=1ikK0kHjvj#appendix.A).\n"
     value: closed
-  license:
-    explanation: "The asset isn't released, and hence the license is unknown.\n'"
-    value: unknown
+  license: unknown
   intended_uses: "The intended uses are stated in the Gopher model card: \"Learn\
     \ to accomplish a wide variety of tasks from expert demonstrations, such as\
     \ playing video games, controlling simulated embodiments, and real world block\
@@ -421,9 +407,7 @@
   created_date: 2022-09-28
   url: https://arxiv.org/abs/2209.14375
   model_card: ''
-  modality:
-    explanation: text; text
-    value: text; text
+  modality: text; text
   analysis: ''
   size: 70B parameters (dense)
   dependencies:
@@ -450,18 +434,16 @@
   created_date: 2021-12-08
   url: https://arxiv.org/abs/2112.04426
   model_card: ''
-  modality: {}
+  modality: text; text
   analysis: ''
-  size: ''
+  size: 7.5B parameters (dense)
   dependencies: [MassiveText]
   training_emissions: ''
   training_time: ''
   training_hardware: ''
   quality_control: ''
   access: closed
-  license:
-    explanation: "The asset isn't released, and hence the license is unknown.\n'"
-    value: unknown
+  license: unknown
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
@@ -473,9 +455,7 @@
   created_date: 2022-09-28
   url: https://arxiv.org/abs/2209.14375
   model_card: ''
-  modality:
-    explanation: text; text
-    value: text; text
+  modality: text; text
   analysis: ''
   size: 70B parameters (dense)
   dependencies: [Chinchilla, Sparrow adversarial probing dataset]
@@ -484,9 +464,7 @@
   training_hardware: ''
   quality_control: ''
   access: closed
-  license:
-    explanation: "The asset isn't released, and hence the license is unknown.\n'"
-    value: unknown
+  license: unknown
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
@@ -498,9 +476,7 @@
   created_date: 2022-09-28
   url: https://arxiv.org/abs/2209.14375
   model_card: ''
-  modality:
-    explanation: text; text
-    value: text; text
+  modality: text; text
   analysis: ''
   size: 70B parameters (dense)
   dependencies: [Chinchilla, Sparrow response preference dataset]
@@ -509,9 +485,7 @@
   training_hardware: ''
   quality_control: ''
   access: closed
-  license:
-    explanation: "The asset isn't released, and hence the license is unknown.\n'"
-    value: unknown
+  license: unknown
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
@@ -532,9 +506,7 @@
   excluded: ''
   quality_control: ''
   access: closed
-  license:
-    explanation: "The asset isn't released, and hence the license is unknown.\n'"
-    value: unknown
+  license: unknown
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
@@ -555,9 +527,7 @@
   excluded: ''
   quality_control: ''
   access: closed
-  license:
-    explanation: "The asset isn't released, and hence the license is unknown.\n'"
-    value: unknown
+  license: unknown
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
@@ -569,20 +539,16 @@
   created_date: 2022-03-16
   url: https://storage.googleapis.com/deepmind-media/Teaching%20language%20models%20to%20support%20answers%20with%20verified%20quotes/Teaching%20language%20models%20to%20support%20answers%20with%20verified%20quotes.pdf
   model_card: ''
-  modality:
-    explanation: ''
-    value: other; other
+  modality: text; text
   analysis: ''
-  size: ''
+  size: 280B parameters (dense)
   dependencies: [Gopher, Google Search, GopherCite reward model]
   training_emissions: ''
   training_time: ''
   training_hardware: ''
   quality_control: ''
   access: closed
-  license:
-    explanation: "The asset isn't released, and hence the license is unknown.\n'"
-    value: unknown
+  license: unknown
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
@@ -594,20 +560,16 @@
   created_date: 2022-03-16
   url: https://storage.googleapis.com/deepmind-media/Teaching%20language%20models%20to%20support%20answers%20with%20verified%20quotes/Teaching%20language%20models%20to%20support%20answers%20with%20verified%20quotes.pdf
   model_card: ''
-  modality:
-    explanation: ''
-    value: other; other
+  modality: text; text
   analysis: ''
-  size: ''
+  size: 7B parameters (dense)
   dependencies: [Gopher, GopherCite Preference dataset]
   training_emissions: ''
   training_time: ''
   training_hardware: ''
   quality_control: ''
   access: closed
-  license:
-    explanation: "The asset isn't released, and hence the license is unknown.\n'"
-    value: unknown
+  license: unknown
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
@@ -619,9 +581,7 @@
   created_date: 2022-03-16
   url: https://storage.googleapis.com/deepmind-media/Teaching%20language%20models%20to%20support%20answers%20with%20verified%20quotes/Teaching%20language%20models%20to%20support%20answers%20with%20verified%20quotes.pdf
   datasheet: ''
-  modality:
-    explanation: ''
-    value: other
+  modality: text
   size: 33k response pairs
   sample: []
   analysis: ''
@@ -630,9 +590,7 @@
   excluded: ''
   quality_control: ''
   access: closed
-  license:
-    explanation: "The asset isn't released, and hence the license is unknown.\n'"
-    value: unknown
+  license: unknown
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
@@ -644,9 +602,7 @@
   created_date: 2022-09-29
   url: https://arxiv.org/abs/2209.14958
   model_card: ''
-  modality:
-    explanation: text; text
-    value: text; text
+  modality: text; text
   analysis: ''
   size: 70B parameters (dense)
   dependencies: [Chinchilla]
@@ -655,9 +611,7 @@
   training_hardware: ''
   quality_control: ''
   access: closed
-  license:
-    explanation: "The asset isn't released, and hence the license is unknown.\n'"
-    value: unknown
+  license: unknown
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
@@ -670,9 +624,7 @@
   created_date: 2023-07-28
   url: https://arxiv.org/pdf/2307.15818.pdf
   model_card: ''
-  modality:
-    explanation: text, video; other
-    value: text, video; text, video
+  modality: text, video; text, robotics trajectories
   analysis: Evaluated on evaluation trajectories and SoTA baselines using robotic
     data.
   size: 55B parameters (dense)
@@ -682,8 +634,7 @@
   training_hardware: ''
   quality_control: ''
   access: open
-  license:
-    value: unknown
+  license: unknown
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''

@@ -2,19 +2,17 @@
 - type: model
   name: Palmyra
   organization: Writer
-  description: Palmyra is a privacy-first LLM for enterprises trained on business
-    and marketing writing.
+  description: Palmyra is a family of privacy-first LLMs for enterprises trained
+    on business and marketing writing.
   created_date:
     explanation: The model was stated to be published in January, but which day
       is not specified on the website.
     value: 2023-01-01
   url: https://gpt3demo.com/apps/palmyra
   model_card: https://huggingface.co/Writer/palmyra-base
-  modality:
-    explanation: text; text
-    value: text; text
+  modality: text; text
   analysis: Evaluated on the SuperGLUE benchmark
-  size: 128M parameters (dense)
+  size: 20B parameters (dense)
   dependencies: [Writer dataset]
   training_emissions: unknown
   training_time: unknown
@@ -37,9 +35,7 @@
     value: 2023-04-01
   url: https://chatcamel.vercel.app/
   model_card: https://huggingface.co/Writer/camel-5b-hf
-  modality:
-    explanation: text; text
-    value: text; text
+  modality: text; text
   analysis: ''
   size: 5B parameters (dense)
   dependencies: [Palmyra, Camel dataset]

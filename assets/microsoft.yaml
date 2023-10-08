@@ -8,9 +8,9 @@
     value: 2021-11-03
   url: https://arxiv.org/abs/2111.02358
   model_card: none
-  modality: {}
+  modality: text; image
   analysis: ''
-  size: ''
+  size: 562M parameters (dense)
   dependencies:
     - Conceptual Captions
     - SBU Captions
@@ -27,9 +27,7 @@
       commented that code would be pushed "soon" in [[November of 2021]](https://github.com/microsoft/unilm/issues/532),
       but the repository does not contain relevant changes.
     value: closed
-  license:
-    explanation: No license was found.
-    value: none
+  license: none
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
@@ -43,9 +41,7 @@
     value: 2022-09-28
   url: https://www.microsoft.com/en-us/research/blog/microsoft-turing-universal-language-representation-model-t-ulrv5-tops-xtreme-leaderboard-and-trains-100x-faster/
   model_card: ''
-  modality:
-    explanation: text; text
-    value: text; text
+  modality: text; text
   analysis: ''
   size: 2.2B parameters (dense)
   dependencies: []
@@ -56,9 +52,7 @@
   access:
     explanation: Manual approval through early access request form required.
     value: limited
-  license:
-    explanation: "The asset isn't released, and hence the license is unknown.\n'"
-    value: unknown
+  license: unknown
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
@@ -72,9 +66,9 @@
     value: 2021-12-02
   url: https://www.microsoft.com/en-us/research/blog/efficiently-and-effectively-scaling-up-language-model-pretraining-for-best-language-representation-model-on-glue-and-superglue/?OCID=msr_blog_TNLRV5_tw
   model_card: ''
-  modality: {}
+  modality: text; text
   analysis: ''
-  size: ''
+  size: 5B parameters (dense)
   dependencies: []
   training_emissions: ''
   training_time: ''
@@ -83,9 +77,7 @@
   access:
     explanation: Manual approval through early access request form required.
     value: limited
-  license:
-    explanation: "The asset isn't released, and hence the license is unknown.\n'"
-    value: unknown
+  license: unknown
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
@@ -101,11 +93,9 @@
     value: 2022-01-28
   url: https://arxiv.org/abs/2201.11990
   model_card: ''
-  modality:
-    explanation: ''
-    value: other; other
+  modality: text; text
   analysis: ''
-  size: ''
+  size: 530B parameters (dense)
   dependencies: [The Pile]
   training_emissions: ''
   training_time: ''
@@ -115,9 +105,7 @@
     explanation: Megatron-Turing NLG can be accessed through the [[Turing Academic
       Program]](https://www.microsoft.com/en-us/research/collaboration/microsoft-turing-academic-program/)
     value: limited
-  license:
-    explanation: "The asset isn't released, and hence the license is unknown.\n'"
-    value: unknown
+  license: unknown
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
@@ -132,9 +120,7 @@
     value: 2023-01-05
   url: https://valle-demo.github.io/
   model_card: none
-  modality:
-    explanation: audio, text; audio, text
-    value: audio, text; audio, text
+  modality: text; audio
   analysis: ''
   size: unknown
   dependencies: []
@@ -145,9 +131,7 @@
   access:
     explanation: Microsoft does not provide public access to VALL-E
     value: closed
-  license:
-    explanation: "The asset isn't released, and hence the license is unknown.\n'"
-    value: unknown
+  license: unknown
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
@@ -174,9 +158,7 @@
     explanation: "The feature is available to developers in a restricted technical\
       \ preview [[GitHub CoPilot]](https://copilot.github.com/).\n"
     value: limited
-  license:
-    explanation: "We weren't able to locate the license.\n"
-    value: unknown
+  license: unknown
   terms_of_service: "https://docs.github.com/en/site-policy/github-terms/github-terms-of-service\n"
   intended_uses: "GitHub CoPilot is intended to be used as a coding assistant.\n"
   prohibited_uses: "Access to GPT-3 is governed by GitHub Acceptable Use Policies\
@@ -198,9 +180,7 @@
   created_date: 2022-09-24
   url: https://academic.oup.com/bib/article/23/6/bbac409/6713511?guestAccessKey=a66d9b5d-4f83-4017-bb52-405815c907b9&login=true
   model_card: ''
-  modality:
-    explanation: text; text
-    value: text; text
+  modality: text; text
   analysis: ''
   size: 1.5B parameters (dense)
   dependencies: [PubMed]
@@ -214,32 +194,6 @@
   prohibited_uses: ''
   monitoring: ''
   feedback: ''
-- type: application
-  name: Microsoft Teams
-  organization: Microsoft
-  description: Microsoft Teams Premium is generally available. Built on the familiar,
-    all-in-one collaborative experience of Microsoft Teams, Teams Premium brings
-    the latest technologies, powered by OpenAI’s GPT-3.5, to make meetings more
-    intelligent, personalized, and protected—whether it’s one-on-one, large meetings,
-    virtual appointments, or webinars.
-  created_date: 2023-02-01
-  url: https://www.microsoft.com/en-us/microsoft-365/blog/2023/02/01/microsoft-teams-premium-cut-costs-and-add-ai-powered-productivity/
-  dependencies: [ChatGPT API]
-  adaptation: ''
-  output_space: ''
-  quality_control: ''
-  access: open
-  license:
-    explanation: "The asset isn't released, and hence the license is unknown.\n'"
-    value: unknown
-  terms_of_service: ''
-  intended_uses: ''
-  prohibited_uses: ''
-  monitoring: ''
-  feedback: ''
-  monthly_active_users: ''
-  user_distribution: ''
-  failures: ''
 - type: application
   name: Bing Search
   organization: Microsoft
@@ -274,9 +228,7 @@
   created_date: 2023-03-01
   url: https://arxiv.org/pdf/2302.14045.pdf
   model_card: ''
-  modality:
-    explanation: image, text; image, text
-    value: image, text; image, text
+  modality: image, text; image, text
   analysis: ''
   size: 1.6B parameters (dense)
   dependencies:
@@ -306,9 +258,7 @@
   created_date: 2023-02-07
   url: https://blogs.microsoft.com/blog/2023/02/07/reinventing-search-with-a-new-ai-powered-microsoft-bing-and-edge-your-copilot-for-the-web/
   model_card: ''
-  modality:
-    explanation: ''
-    value: other; other
+  modality: unknown
   analysis: ''
   size: unknown
   dependencies: []
@@ -317,9 +267,7 @@
   training_hardware: ''
   quality_control: ''
   access: closed
-  license:
-    explanation: "We weren't able to locate a license.\n"
-    value: unknown
+  license: unknown
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
@@ -331,9 +279,7 @@
   created_date: 2022-11-23
   url: https://arxiv.org/abs/2111.11432
   model_card: ''
-  modality:
-    explanation: image, text; image, text
-    value: image, text; image, text
+  modality: text; image
   analysis: ''
   size: 900M parameters (dense)
   dependencies: [FLD-900M]
@@ -342,9 +288,7 @@
   training_hardware: ''
   quality_control: ''
   access: closed
-  license:
-    explanation: "We weren't able to locate a license.\n"
-    value: unknown
+  license: unknown
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
@@ -365,9 +309,7 @@
   excluded: ''
   quality_control: ''
   access: closed
-  license:
-    explanation: "We weren't able to locate a license.\n"
-    value: unknown
+  license: unknown
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
@@ -405,9 +347,7 @@
   created_date: 2023-03-08
   url: https://arxiv.org/pdf/2303.04671.pdf
   model_card: ''
-  modality:
-    explanation: image, text; image, text
-    value: image, text; image, text
+  modality: text; image, text
   analysis: ''
   size: unknown
   dependencies: [OpenAI API]
@@ -416,9 +356,7 @@
   training_hardware: ''
   quality_control: ''
   access: closed
-  license:
-    explanation: No license was found.
-    value: none
+  license: none
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
@@ -715,9 +653,9 @@
   created_date: 2019-10-01
   url: https://proceedings.neurips.cc/paper_files/paper/2019/file/c20bb2d9a50d5ac1f713f8b34d9aac5a-Paper.pdf
   model_card: ''
-  modality: {}
+  modality: text; text
   analysis: Evaluated on GLUE, SQuAD 2.0, and CoQA benchmarks.
-  size: ''
+  size: 340M parameters (dense)
   dependencies: []
   training_emissions: unknown
   training_time: 10,000 steps in 7 hours
@@ -737,9 +675,9 @@
   created_date: 2021-04-12
   url: https://www.docugami.com/generative-ai
   model_card: ''
-  modality: {}
+  modality: text; text
   analysis: ''
-  size: ''
+  size: 20B parameters (dense)
   dependencies: []
   training_emissions: unknown
   training_time: unknown
@@ -759,9 +697,7 @@
   created_date: 2022-08-31
   url: https://arxiv.org/pdf/2208.10442.pdf
   model_card: ''
-  modality:
-    explanation: image, text; image, text
-    value: image, text; image, text
+  modality: image, text; image, text
   analysis: Evaluated on a range of standardized vision benchmarks, and achieves
     state of the art performance on all experimentally.
   size: 1.9B parameters (dense)
@@ -786,9 +722,7 @@
   created_date: 2023-04-24
   url: https://arxiv.org/pdf/2304.12244v1.pdf
   model_card: https://huggingface.co/WizardLM/WizardLM-13B-1.0
-  modality:
-    explanation: text; text
-    value: text; text
+  modality: text; text
   analysis: Reports results on standard LLM benchmarks in comparison to other LLMs
     and test sets.
   size: 7B parameters (dense)

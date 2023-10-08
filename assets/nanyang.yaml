@@ -8,9 +8,7 @@
   created_date: 2023-05-05
   url: https://arxiv.org/pdf/2305.03726v1.pdf
   model_card: https://github.com/Luodian/Otter/blob/main/docs/model_card.md
-  modality:
-    explanation: text; image, text
-    value: image, text; image, text
+  modality: image, text; text
   analysis: Evaluated on researcher experiments to test deeper understanding and
     advanced commonsense reasoning
   size: 1.3B parameters (dense)

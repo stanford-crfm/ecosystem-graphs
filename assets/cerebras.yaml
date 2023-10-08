@@ -11,9 +11,7 @@
     value: 2023-03-28
   url: https://www.cerebras.net/blog/cerebras-gpt-a-family-of-open-compute-efficient-large-language-models/
   model_card: https://huggingface.co/cerebras/Cerebras-GPT-13B
-  modality:
-    explanation: text; text
-    value: text; text
+  modality: text; text
   analysis: "\"We evaluate our models on the PILE validation set comprising 380M\
     \ tokens. We also evaluate the public checkpoints of Pythia, Eleuther (2022);\
     \ OPT, Zhang et al. (2022); GPT-NeoX 20B, Black et al. (2022); and GPT-J 6B,\

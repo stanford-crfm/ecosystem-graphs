@@ -12,7 +12,7 @@
     value: 2021-11-15
   url: none
   datasheet: https://docs.cohere.ai/data-statement
-  modality: {}
+  modality: text; text
   size:
     explanation: "Size of the filtered dataset is 200 GB. The unfiltered dataset\
       \ is ~3 TB.\n"
@@ -35,9 +35,7 @@
   access:
     explanation: The dataset isn't provided to the public.
     value: closed
-  license:
-    explanation: "The asset isn't released, and hence the license is unknown.\n'"
-    value: unknown
+  license: unknown
   intended_uses: "The intended use of the dataset is to train Cohere's language\
     \ models.\n"
   prohibited_uses:
@@ -63,10 +61,15 @@
     value: 2021-11-15
   url: none
   model_card: https://docs.cohere.ai/generation-card
-  modality: {}
+  modality: text; text
   analysis: The model's performance was analyzed on Hellaswag and COPA, as well
     as several safety benchmarks [[Model Card]](https://docs.cohere.ai/generation-card).
-  size: ''
+  size:
+    value: unknown
+    explanation: >
+      The exact sizes of the generation models are unknown, but we know
+      that they come in three sizes: small, medium, and large
+      [[Model Card]](https://docs.cohere.ai/generation-card).
   dependencies: [coheretext]
   training_emissions:
     explanation: The emissions of the models are unknown.
@@ -88,9 +91,7 @@
     explanation: "The model is available to the public through the Cohere Platform\
       \ [[Cohere Platform]](https://os.cohere.ai/login).\n"
     value: limited
-  license:
-    explanation: "The asset isn't released, and hence the license is unknown.\n'"
-    value: unknown
+  license: unknown
   intended_uses: "On the model card, the intended uses are stated as \"interactive\
     \ autocomplete, augmenting human writing processes, summarization, text rephrasing,\
     \ and other text-to-text tasks in non-sensitive domains\" [[Model Card]](https://docs.cohere.ai/generation-card).\n"
@@ -116,9 +117,7 @@
     value: 2023-01-01
   url: https://docs.cohere.com/docs/command-beta
   model_card: https://docs.cohere.ai/generation-card
-  modality:
-    explanation: text; text
-    value: text; text
+  modality: text; text
   analysis: The model's performance was analyzed on Hellaswag and COPA, as well
     as several safety benchmarks [[Model Card]](https://docs.cohere.ai/generation-card).
   size: unknown
@@ -168,10 +167,10 @@
     value: 2021-11-15
   url: none
   model_card: https://docs.cohere.ai/representation-card
-  modality: {}
+  modality: text; text
   analysis: "The model's performance was analyzed on several safety benchmarks [[Model\
     \ Card]](https://docs.cohere.ai/representation-card).\n"
-  size: ''
+  size: unknown
   dependencies: []
   training_emissions:
     explanation: The emissions of the models are unknown.
@@ -221,9 +220,7 @@
     value: 2022-12-12
   url: https://txt.cohere.ai/multilingual/
   model_card: https://docs.cohere.ai/representation-card
-  modality:
-    explanation: text; text
-    value: text; text
+  modality: text; text
   analysis: "The model's performance was analyzed on several safety benchmarks [[Model\
     \ Card]](https://docs.cohere.ai/representation-card).\n"
   size: unknown

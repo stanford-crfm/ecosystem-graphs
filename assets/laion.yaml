@@ -11,7 +11,7 @@
     value: 2021-08-20
   url: https://laion.ai/blog/laion-400-open-dataset/
   datasheet: https://laion.ai/blog/laion-400-open-dataset/
-  modality: {}
+  modality: image, text
   size: 400M image-text pairs
   sample: []
   analysis: ''
@@ -150,9 +150,7 @@
   created_date: 2023-03-28
   url: https://laion.ai/blog/open-flamingo/
   model_card: https://github.com/mlfoundations/open_flamingo/blob/main/MODEL_CARD.md
-  modality:
-    explanation: image, text; text
-    value: image, text; image, text
+  modality: image, text; text
   analysis: Evaluated on COCO captioning and VQAv2 vision-language tasks.
   size: 9B parameters (dense)
   dependencies: [LLaMA, CLIP]

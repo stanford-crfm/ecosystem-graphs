@@ -9,7 +9,7 @@
     value: 2019-10-23
   url: https://arxiv.org/abs/1910.10683
   datasheet: https://huggingface.co/datasets/c4
-  modality: {}
+  modality: text
   size: 750GB
   sample: [https://huggingface.co/datasets/c4/viewer/en/train]
   analysis: https://arxiv.org/abs/2104.08758
@@ -38,7 +38,7 @@
     value: 2019-11-25
   url: https://blog.google/products/search/search-language-understanding-bert/
   datasheet: none
-  modality: {}
+  modality: text
   size: unknown
   sample: []
   analysis: unknown
@@ -50,9 +50,7 @@
   excluded: unknown
   quality_control: unknown
   access: closed
-  license:
-    explanation: "The asset isn't released, and hence the license is unknown.\n'"
-    value: unknown
+  license: unknown
   intended_uses:
     explanation: "We don't have an exhaustive list of the intended use cases for\
       \ the Internal Google BERT dataset, but we know that BERT was used in Google\
@@ -72,7 +70,7 @@
     value: 2018-07-01
   url: https://aclanthology.org/P18-1238/
   datasheet: none
-  modality: {}
+  modality: image, text
   size: 3.3M (image, text) pairs
   sample: []
   analysis:
@@ -147,7 +145,7 @@
     value: 2021-02-17
   url: https://arxiv.org/pdf/2102.08981.pdf
   datasheet: none
-  modality: {}
+  modality: image, text
   size: 12M (image, text) pairs
   sample: []
   analysis:
@@ -202,9 +200,9 @@
     value: 2019-10-23
   url: https://arxiv.org/abs/1910.10683
   model_card: https://huggingface.co/t5-base
-  modality: {}
+  modality: text; text
   analysis: https://huggingface.co/t5-base#evaluation
-  size: ''
+  size: 11B parameters (dense)
   dependencies: [C4]
   training_emissions: unknown
   training_time: unknown
@@ -229,18 +227,16 @@
     value: 2019-11-25
   url: https://blog.google/products/search/search-language-understanding-bert/
   model_card: unknown
-  modality: {}
+  modality: text; text
   analysis: unknown
-  size: ''
+  size: unknown
   dependencies: [Internal Google BERT dataset]
   training_emissions: unknown
   training_time: unknown
   training_hardware: unknown
   quality_control: unknown
   access: closed
-  license:
-    explanation: "The asset isn't released, and hence the license is unknown.\n'"
-    value: unknown
+  license: unknown
   intended_uses:
     explanation: "We don't have an exhaustive list of the intended use cases for\
       \ the Internal Google BERT model, but we know that Google Search was powered\
@@ -263,9 +259,7 @@
   output_space: web page ranking
   quality_control: unknown
   access: open
-  license:
-    explanation: No license was found.
-    value: none
+  license: none
   terms_of_service: https://policies.google.com/terms
   intended_uses: Searching the web using text, voice or image
   prohibited_uses: "Prohibited use cases aren't specifically spelled out for Google\
@@ -289,7 +283,7 @@
     value: 2021-06-18
   url: https://arxiv.org/pdf/2201.08239.pdf
   datasheet: none
-  modality: {}
+  modality: code, text
   size:
     explanation: "The size of the dataset is unclear, but it is reported that the\
       \ dataset \"consists of 2.97B documents and 1.12B dialogs with 13.39B utterances\"\
@@ -305,9 +299,7 @@
   excluded: unknown
   quality_control: unknown
   access: closed
-  license:
-    explanation: "The asset isn't released, and hence the license is unknown.\n'"
-    value: unknown
+  license: unknown
   intended_uses:
     explanation: "Intended uses of the dataset wasn't explicitly linked, but it\
       \ is likely intended for training language models specialized in dialogue.\n"
@@ -330,14 +322,14 @@
     value: 2021-06-18
   url: https://arxiv.org/pdf/2201.08239.pdf
   model_card: none
-  modality: {}
+  modality: text; text
   analysis: "The model performance was analyzed on sensibleness, specificity and\
     \ interestingness. The model was also analyzed on safety, following metrics\
     \ derived from Google AI Principles [[Appendix A.1]](https://arxiv.org/pdf/2201.08239.pdf#subsection.A.1).\
     \ Finally, the model was analyzed on groundedness, testing its ability to produce\
     \ responses that can be associated with \"known sources whenever possible [[Section\
     \ 4.1]](https://arxiv.org/pdf/2201.08239.pdf#subsection.4.1).\"\n"
-  size: ''
+  size: 137B parameters (dense)
   dependencies: [Infiniset]
   training_emissions:
     explanation: "\"...total carbon footprint of LaMDA’s pre-training of the largest\
@@ -361,9 +353,7 @@
     \ model was also fine-tuned for groundedness. The results are shown in [[Figure\
     \ 5]](https://arxiv.org/pdf/2201.08239.pdf#figure.caption.23).\n"
   access: closed
-  license:
-    explanation: "The asset isn't released, and hence the license is unknown.\n'"
-    value: unknown
+  license: unknown
   intended_uses: "LaMDA is a language model, so it can be used for regular langauge\
     \ modelling tasks without fine-tuning, but its fine-tuned for dialogue tasks.\n"
   prohibited_uses: "The prohibited uses of LaMDA weren't specifically listed, but\
@@ -383,9 +373,7 @@
     value: 2022-04-04
   url: https://arxiv.org/pdf/2204.02311.pdf
   datasheet: https://arxiv.org/pdf/2204.02311.pdf#appendix.D
-  modality:
-    explanation: ''
-    value: other
+  modality: code, text
   size:
     explanation: "Dataset size in GB is not reported, but the dataset is reported\
       \ to have 780 billion tokens [[Datasheet]](https://arxiv.org/pdf/2204.02311.pdf#appendix.D).\
@@ -410,9 +398,7 @@
     \ sampled according to a \"quality score\" classifier. Code files were de-duplicated\
     \ using Levenshtein distance [[Section 3]](https://arxiv.org/pdf/2204.02311.pdf#section.3).\n"
   access: closed
-  license:
-    explanation: "The asset isn't released, and hence the license is unknown.\n'"
-    value: unknown
+  license: unknown
   intended_uses:
     explanation: "As stated in [[Datasheet]](https://arxiv.org/pdf/2204.02311.pdf#appendix.D).\n"
     value: "\"The dataset was created for pre-training language models by a team\
@@ -433,9 +419,7 @@
     value: 2022-10-20
   url: https://arxiv.org/abs/2210.11416
   model_card: https://arxiv.org/pdf/2210.11416.pdf
-  modality:
-    explanation: text; text
-    value: text; text
+  modality: text; text
   analysis: Evaluated on a variety of standard language datasets.
   size: 11B parameters (dense)
   dependencies: [T5, Muffin, P3, NaturalInstructions-v2, Flan CoT]
@@ -460,15 +444,13 @@
   organization: Google
   description: UL2 is a language model trained with a new pretraining objective
   created_date:
-    explanation: Date mdoel paper was released
+    explanation: Date model paper was released
     value: 2022-05-10
   url: https://arxiv.org/abs/2205.05131
   model_card: ''
-  modality:
-    explanation: ''
-    value: other; other
+  modality: text; text
   analysis: ''
-  size: ''
+  size: 20B parameters (dense)
   dependencies: [C4]
   training_emissions: ''
   training_time: ''
@@ -493,9 +475,7 @@
     value: 2022-06-22
   url: https://parti.research.google/
   model_card: ''
-  modality:
-    explanation: image, text; image, text
-    value: image, text; image, text
+  modality: text; image
   analysis: ''
   size: 20B parameters (dense)
   dependencies: [C4, LAION-400M, FIT400M, JFT-4B]
@@ -506,9 +486,7 @@
   access:
     explanation: Google does not provide access to Parti for external researchers.
     value: closed
-  license:
-    explanation: "The asset isn't released, and hence the license is unknown.\n'"
-    value: unknown
+  license: unknown
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
@@ -522,20 +500,16 @@
     value: 2022-05-23
   url: https://imagen.research.google/
   model_card: ''
-  modality:
-    explanation: ''
-    value: other; other
+  modality: text; image
   analysis: ''
-  size: ''
+  size: 14B parameters (dense)
   dependencies: [LAION-400M, Google internal image-text dataset]
   training_emissions: unknown
   training_time: unknown
   training_hardware: 128 TPU-v4
   quality_control: ''
   access: open
-  license:
-    explanation: "The asset isn't released, and hence the license is unknown.\n'"
-    value: unknown
+  license: unknown
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
@@ -549,11 +523,9 @@
     value: 2022-04-22
   url: https://arxiv.org/abs/2104.11178
   model_card: ''
-  modality:
-    explanation: ''
-    value: other; other
+  modality: text; audio, video
   analysis: ''
-  size: ''
+  size: 155M parameters (dense)
   dependencies: [AudioSet, HowTo100M]
   training_emissions: unknown
   training_time: 3 days
@@ -580,14 +552,12 @@
     value: 2022-04-04
   url: https://arxiv.org/pdf/2204.02311.pdf
   model_card: https://arxiv.org/pdf/2204.02311.pdf#appendix.E
-  modality:
-    explanation: ''
-    value: other; other
+  modality: text; text, code
   analysis: "\"PaLM is evaluated on English Natural Language Processing (NLP) tasks,\
     \ tasks from BIG-bench, reasoning tasks, code completion tasks, multilingual\
     \ generation and question answering tasks, translation tasks, and bias and toxicity\
     \ benchmarks\" [[Model Card]](https://arxiv.org/pdf/2204.02311.pdf#appendix.E).\n"
-  size: ''
+  size: 540B parameters (dense)
   dependencies: [PaLM dataset]
   training_emissions:
     explanation: "Reported in [[Appendix B]](https://arxiv.org/pdf/2204.02311.pdf#appendix.A)\n"
@@ -602,9 +572,7 @@
   access:
     explanation: Made available through the PaLM API as of March 14, 2023.
     value: limited
-  license:
-    explanation: "The asset isn't released, and hence the license is unknown.\n'"
-    value: unknown
+  license: unknown
   intended_uses: "\"The primary use is research on language models, including: research\
     \ on NLP applications like machine translation and question answering, advancing\
     \ fairness and safety research, and understanding limitations of current LLMs.\
@@ -647,9 +615,7 @@
   created_date: 2022-12-26
   url: https://arxiv.org/abs/2212.13138
   model_card: ''
-  modality:
-    explanation: text; text
-    value: text; text
+  modality: text; text
   analysis: ''
   size: 540B parameters (dense)
   dependencies: [Flan-PaLM, MultiMedQA]
@@ -658,9 +624,7 @@
   training_hardware: ''
   quality_control: ''
   access: closed
-  license:
-    explanation: "The asset isn't released, and hence the license is unknown.\n'"
-    value: unknown
+  license: unknown
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
@@ -672,9 +636,7 @@
   created_date: 2023-07-26
   url: https://arxiv.org/pdf/2307.14334.pdf
   model_card: ''
-  modality:
-    explanation: image, text; text
-    value: image, text; image, text
+  modality: image, text, genome sequence; text
   analysis: Evaluated on MultiMedBench tasks and radiologist evaluations of model-generated
     chest X-ray reports
   size: 562B parameters (dense)
@@ -684,9 +646,7 @@
   training_hardware: ''
   quality_control: ''
   access: closed
-  license:
-    explanation: "The asset isn't released, and hence the license is unknown.\n'"
-    value: unknown
+  license: unknown
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
@@ -698,9 +658,7 @@
   created_date: 2022-12-26
   url: https://arxiv.org/abs/2212.13138
   model_card: ''
-  modality:
-    explanation: text; text
-    value: text; text
+  modality: text; text
   analysis: ''
   size: unknown
   dependencies:
@@ -716,9 +674,7 @@
   training_hardware: ''
   quality_control: ''
   access: closed
-  license:
-    explanation: "The asset isn't released, and hence the license is unknown.\n'"
-    value: unknown
+  license: unknown
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
@@ -730,9 +686,7 @@
   created_date: 2022-10-20
   url: https://arxiv.org/abs/2210.11416
   model_card: ''
-  modality:
-    explanation: text; text
-    value: text; text
+  modality: text; text
   analysis: ''
   size: 540B parameters (dense)
   dependencies: [PaLM, Muffin, P3, NaturalInstructions-v2]
@@ -741,9 +695,7 @@
   training_hardware: ''
   quality_control: ''
   access: closed
-  license:
-    explanation: "The asset isn't released, and hence the license is unknown.\n'"
-    value: unknown
+  license: unknown
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
@@ -755,9 +707,7 @@
   created_date: 2022-10-20
   url: https://arxiv.org/abs/2210.11416
   model_card: ''
-  modality:
-    explanation: text; text
-    value: text; text
+  modality: text; text
   analysis: ''
   size: 540B parameters (dense)
   dependencies: [U-PaLM, Muffin, P3, NaturalInstructions-v2]
@@ -766,9 +716,7 @@
   training_hardware: ''
   quality_control: ''
   access: closed
-  license:
-    explanation: "The asset isn't released, and hence the license is unknown.\n'"
-    value: unknown
+  license: unknown
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
@@ -780,7 +728,7 @@
   created_date: 2021-09-03
   url: https://arxiv.org/abs/2109.01652
   datasheet: ''
-  modality: {}
+  modality: text
   size: 62 tasks
   sample: []
   analysis: ''
@@ -801,9 +749,7 @@
   created_date: 2022-10-20
   url: https://arxiv.org/abs/2210.11399
   model_card: ''
-  modality:
-    explanation: text; text
-    value: text; text
+  modality: text; text
   analysis: ''
   size: 540B parameters (dense)
   dependencies: [PaLM, PaLM dataset]
@@ -812,9 +758,7 @@
   training_hardware: ''
   quality_control: ''
   access: closed
-  license:
-    explanation: "The asset isn't released, and hence the license is unknown.\n'"
-    value: unknown
+  license: unknown
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
@@ -826,9 +770,7 @@
   created_date: 2022-08-16
   url: https://arxiv.org/abs/2204.01691
   model_card: ''
-  modality:
-    explanation: text; text
-    value: text; text
+  modality: text; robotics trajectories
   analysis: ''
   size: 540B parameters (dense)
   dependencies: [PaLM]
@@ -849,9 +791,9 @@
   created_date: 2021-12-13
   url: https://arxiv.org/abs/2112.06905
   model_card: ''
-  modality: {}
+  modality: text; text
   analysis: ''
-  size: ''
+  size: 1.2T parameters (sparse)
   dependencies:
     - GLaM Web dataset
     - Wikipedia
@@ -864,9 +806,7 @@
   training_hardware: ''
   quality_control: ''
   access: closed
-  license:
-    explanation: "The asset isn't released, and hence the license is unknown.\n'"
-    value: unknown
+  license: unknown
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
@@ -878,7 +818,7 @@
   created_date: 2021-12-13
   url: https://arxiv.org/abs/2112.06905
   datasheet: ''
-  modality: {}
+  modality: text
   size: unknown
   sample: []
   analysis: ''
@@ -887,9 +827,7 @@
   excluded: ''
   quality_control: ''
   access: closed
-  license:
-    explanation: "The asset isn't released, and hence the license is unknown.\n'"
-    value: unknown
+  license: unknown
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
@@ -901,7 +839,7 @@
   created_date: 2021-12-13
   url: https://arxiv.org/abs/2112.06905
   datasheet: ''
-  modality: {}
+  modality: text
   size: unknown
   sample: []
   analysis: ''
@@ -910,9 +848,7 @@
   excluded: ''
   quality_control: ''
   access: closed
-  license:
-    explanation: "The asset isn't released, and hence the license is unknown.\n'"
-    value: unknown
+  license: unknown
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
@@ -924,7 +860,7 @@
   created_date: 2021-12-13
   url: https://arxiv.org/abs/2112.06905
   datasheet: ''
-  modality: {}
+  modality: text
   size: unknown
   sample: []
   analysis: ''
@@ -933,9 +869,7 @@
   excluded: ''
   quality_control: ''
   access: closed
-  license:
-    explanation: "The asset isn't released, and hence the license is unknown.\n'"
-    value: unknown
+  license: unknown
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
@@ -947,7 +881,7 @@
   created_date: 2021-12-13
   url: https://arxiv.org/abs/2112.06905
   datasheet: ''
-  modality: {}
+  modality: text
   size: unknown
   sample: []
   analysis: ''
@@ -956,9 +890,7 @@
   excluded: ''
   quality_control: ''
   access: closed
-  license:
-    explanation: "The asset isn't released, and hence the license is unknown.\n'"
-    value: unknown
+  license: unknown
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
@@ -966,22 +898,21 @@
 - type: model
   name: MUM
   organization: Google
-  description: ''
+  description: MUM (Multitask Unified Model) is a multimodal model that is specialized
+    for more complex queries.
   created_date: 2021-05-18
   url: https://blog.google/products/search/introducing-mum/
   model_card: ''
-  modality: {}
+  modality: image, text; text
   analysis: ''
-  size: ''
+  size: unknown
   dependencies: [MUM dataset]
   training_emissions: ''
   training_time: ''
   training_hardware: ''
   quality_control: ''
   access: closed
-  license:
-    explanation: "The asset isn't released, and hence the license is unknown.\n'"
-    value: unknown
+  license: unknown
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
@@ -993,7 +924,7 @@
   created_date: 2021-05-18
   url: https://blog.google/products/search/introducing-mum/
   datasheet: ''
-  modality: {}
+  modality: image, text
   size: unknown
   sample: []
   analysis: ''
@@ -1002,9 +933,7 @@
   excluded: ''
   quality_control: ''
   access: closed
-  license:
-    explanation: "The asset isn't released, and hence the license is unknown.\n'"
-    value: unknown
+  license: unknown
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
@@ -1016,9 +945,7 @@
   created_date: 2023-02-01
   url: https://openreview.net/pdf?id=vOEXS39nOF
   model_card: ''
-  modality:
-    explanation: text, video; text, video
-    value: text, video; text, video
+  modality: text; video
   analysis: ''
   size: 1.8B parameters (dense)
   dependencies: [LAION-400M, Phenaki Video-Text Corpus]
@@ -1027,9 +954,7 @@
   training_hardware: ''
   quality_control: ''
   access: closed
-  license:
-    explanation: "The asset isn't released, and hence the license is unknown.\n'"
-    value: unknown
+  license: unknown
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
@@ -1050,9 +975,7 @@
   excluded: ''
   quality_control: ''
   access: closed
-  license:
-    explanation: "The asset isn't released, and hence the license is unknown.\n'"
-    value: unknown
+  license: unknown
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
@@ -1064,9 +987,7 @@
   created_date: 2023-03-02
   url: https://arxiv.org/abs/2205.05131
   model_card: ''
-  modality:
-    explanation: text; text
-    value: text; text
+  modality: text; text
   analysis: ''
   size: 20B parameters (dense)
   dependencies: [UL2, Flan Collection]
@@ -1108,9 +1029,7 @@
   created_date: 2023-01-26
   url: https://arxiv.org/pdf/2301.11325.pdf
   model_card: ''
-  modality:
-    explanation: audio, text; audio, text
-    value: audio, text; audio, text
+  modality: text; audio
   analysis: ''
   size: 1.4B parameters (dense)
   dependencies:
@@ -1124,9 +1043,7 @@
   training_hardware: ''
   quality_control: ''
   access: closed
-  license:
-    explanation: "The asset isn't released, and hence the license is unknown.\n'"
-    value: unknown
+  license: unknown
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
@@ -1138,9 +1055,7 @@
   created_date: 2023-01-26
   url: https://arxiv.org/pdf/2301.11325.pdf
   model_card: ''
-  modality:
-    explanation: audio; audio
-    value: audio; audio
+  modality: audio; audio
   analysis: ''
   size: unknown
   dependencies: [Free Music Archive]
@@ -1149,9 +1064,7 @@
   training_hardware: ''
   quality_control: ''
   access: closed
-  license:
-    explanation: "The asset isn't released, and hence the license is unknown.\n'"
-    value: unknown
+  license: unknown
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
@@ -1163,9 +1076,7 @@
   created_date: 2023-01-26
   url: https://arxiv.org/pdf/2301.11325.pdf
   model_card: ''
-  modality:
-    explanation: audio; audio
-    value: audio; audio
+  modality: audio; audio
   analysis: ''
   size: 600M parameters (dense)
   dependencies: [Free Music Archive]
@@ -1174,9 +1085,7 @@
   training_hardware: ''
   quality_control: ''
   access: closed
-  license:
-    explanation: "The asset isn't released, and hence the license is unknown.\n'"
-    value: unknown
+  license: unknown
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
@@ -1188,20 +1097,16 @@
   created_date: 2022-08-26
   url: https://arxiv.org/abs/2208.12415
   model_card: ''
-  modality:
-    explanation: audio, text; audio, text
-    value: audio, text; audio, text
+  modality: text; audio
   analysis: ''
-  size: Unknown
+  size: unknown
   dependencies: [AST, BERT, MuLan dataset]
   training_emissions: ''
   training_time: ''
   training_hardware: ''
   quality_control: ''
   access: closed
-  license:
-    explanation: "The asset isn't released, and hence the license is unknown.\n'"
-    value: unknown
+  license: unknown
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
@@ -1222,9 +1127,7 @@
   excluded: ''
   quality_control: ''
   access: closed
-  license:
-    explanation: "The asset isn't released, and hence the license is unknown.\n'"
-    value: unknown
+  license: unknown
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
@@ -1245,9 +1148,7 @@
   excluded: ''
   quality_control: ''
   access: closed
-  license:
-    explanation: "The asset isn't released, and hence the license is unknown.\n'"
-    value: unknown
+  license: unknown
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
@@ -1259,9 +1160,7 @@
   created_date: 2023-01-26
   url: https://arxiv.org/pdf/2301.11325.pdf
   model_card: ''
-  modality:
-    explanation: audio; audio
-    value: audio; audio
+  modality: audio; audio
   analysis: ''
   size: 430M parameters (dense)
   dependencies: [MusicLM dataset]
@@ -1270,9 +1169,7 @@
   training_hardware: ''
   quality_control: ''
   access: closed
-  license:
-    explanation: "The asset isn't released, and hence the license is unknown.\n'"
-    value: unknown
+  license: unknown
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
@@ -1284,9 +1181,7 @@
   created_date: 2023-01-26
   url: https://arxiv.org/pdf/2301.11325.pdf
   model_card: ''
-  modality:
-    explanation: audio; audio
-    value: audio; audio
+  modality: audio; audio
   analysis: ''
   size: 430M parameters (dense)
   dependencies: [MusicLM dataset]
@@ -1295,9 +1190,7 @@
   training_hardware: ''
   quality_control: ''
   access: closed
-  license:
-    explanation: "The asset isn't released, and hence the license is unknown.\n'"
-    value: unknown
+  license: unknown
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
@@ -1309,9 +1202,7 @@
   created_date: 2023-02-08
   url: https://google-research.github.io/noise2music/noise2music.pdf
   model_card: ''
-  modality:
-    explanation: audio, text; audio, text
-    value: audio, text; audio, text
+  modality: audio, text; audio
   analysis: ''
   size: unknown
   dependencies: [Noise2Music pseudolabel dataset]
@@ -1320,9 +1211,7 @@
   training_hardware: ''
   quality_control: ''
   access: closed
-  license:
-    explanation: "The asset isn't released, and hence the license is unknown.\n'"
-    value: unknown
+  license: unknkown
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
@@ -1343,9 +1232,7 @@
   excluded: ''
   quality_control: ''
   access: closed
-  license:
-    explanation: "The asset isn't released, and hence the license is unknown.\n'"
-    value: unknown
+  license: unknown
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
@@ -1366,9 +1253,7 @@
   excluded: ''
   quality_control: ''
   access: closed
-  license:
-    explanation: "The asset isn't released, and hence the license is unknown.\n'"
-    value: unknown
+  license: unknown
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
@@ -1389,9 +1274,7 @@
   excluded: ''
   quality_control: ''
   access: closed
-  license:
-    explanation: "The asset isn't released, and hence the license is unknown.\n'"
-    value: unknown
+  license: unknown
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
@@ -1403,9 +1286,7 @@
   created_date: 2023-02-08
   url: https://google-research.github.io/noise2music/noise2music.pdf
   model_card: ''
-  modality:
-    explanation: audio, text; audio, text
-    value: audio, text; audio, text
+  modality: audio, text; audio
   analysis: ''
   size: unknown
   dependencies: [MuLan, MuLaMCap, LaMDA-LF, Rater-LF, Rater-SF]
@@ -1414,9 +1295,7 @@
   training_hardware: ''
   quality_control: ''
   access: closed
-  license:
-    explanation: "The asset isn't released, and hence the license is unknown.\n'"
-    value: unknown
+  license: unknown
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
@@ -1437,9 +1316,7 @@
   excluded: ''
   quality_control: ''
   access: closed
-  license:
-    explanation: "The asset isn't released, and hence the license is unknown.\n'"
-    value: unknown
+  license: unknown
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
@@ -1479,9 +1356,7 @@
   output_space: ''
   quality_control: ''
   access: limited
-  license:
-    explanation: "The asset isn't released, and hence the license is unknown.\n'"
-    value: unknown
+  license: unknown
   terms_of_service: ''
   intended_uses: ''
   prohibited_uses: ''
@@ -1501,9 +1376,7 @@
   output_space: ''
   quality_control: ''
   access: closed
-  license:
-    explanation: "The asset isn't released, and hence the license is unknown.\n'"
-    value: unknown
+  license: unknown
   terms_of_service: ''
   intended_uses: ''
   prohibited_uses: ''
@@ -1519,9 +1392,7 @@
   created_date: 2022-06-29
   url: https://arxiv.org/abs/2206.14858
   model_card: ''
-  modality:
-    explanation: text; text
-    value: text; text
+  modality: text; text
   analysis: ''
   size: 540B parameters (dense)
   dependencies:
@@ -1534,9 +1405,7 @@
   training_hardware: ''
   quality_control: ''
   access: closed
-  license:
-    explanation: "The asset isn't released, and hence the license is unknown.\n'"
-    value: unknown
+  license: unknown
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
@@ -1557,9 +1426,7 @@
   excluded: ''
   quality_control: ''
   access: closed
-  license:
-    explanation: "The asset isn't released, and hence the license is unknown.\n'"
-    value: unknown
+  license: unknown
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
@@ -1579,9 +1446,7 @@
   created_date: 2023-03-06
   url: https://arxiv.org/abs/2303.01037
   model_card: ''
-  modality:
-    explanation: audio, text; audio, text
-    value: audio, text; audio, text
+  modality: audio, text; text
   analysis: ''
   size: 2B parameters (dense)
   dependencies: [YT-NLU-U, Pub-U, Web-NTL, YT-SUP+, Pub-S]
@@ -1590,9 +1455,7 @@
   training_hardware: ''
   quality_control: ''
   access: limited
-  license:
-    explanation: "The asset isn't released, and hence the license is unknown.\n'"
-    value: unknown
+  license: unknown
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
@@ -1624,9 +1487,7 @@
   created_date: 2023-03-06
   url: https://arxiv.org/abs/2303.03378
   model_card: ''
-  modality:
-    explanation: image, text; image, text
-    value: image, text; image, text
+  modality: image, text; text
   analysis: ''
   size: 562B parameters (dense)
   dependencies: [PaLM, ViT-22B]
@@ -1635,9 +1496,7 @@
   training_hardware: ''
   quality_control: ''
   access: closed
-  license:
-    explanation: "The asset isn't released, and hence the license is unknown.\n'"
-    value: unknown
+  license: unknown
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
@@ -1649,9 +1508,7 @@
   created_date: 2023-02-10
   url: https://arxiv.org/abs/2302.05442
   model_card: ''
-  modality:
-    explanation: image; image
-    value: image; image
+  modality: image, image
   analysis: ''
   size: 22B parameters (dense)
   dependencies: [JFT]
@@ -1660,9 +1517,7 @@
   training_hardware: ''
   quality_control: ''
   access: closed
-  license:
-    explanation: "The asset isn't released, and hence the license is unknown.\n'"
-    value: unknown
+  license: unknown
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
@@ -1674,9 +1529,7 @@
   created_date: 2022-09-07
   url: https://arxiv.org/abs/2209.03143
   model_card: ''
-  modality:
-    explanation: audio, text; audio, text
-    value: audio, text; audio, text
+  modality: audio, text; audio
   analysis: ''
   size: 1B parameters (dense)
   dependencies: [w2v-BERT, SoundStream]
@@ -1685,9 +1538,7 @@
   training_hardware: ''
   quality_control: ''
   access: closed
-  license:
-    explanation: "The asset isn't released, and hence the license is unknown.\n'"
-    value: unknown
+  license: unknown
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
@@ -1699,9 +1550,7 @@
   created_date: 2022-09-14
   url: https://arxiv.org/abs/2209.06794
   model_card: ''
-  modality:
-    explanation: image, text; image, text
-    value: image, text; image, text
+  modality: text; image
   analysis: ''
   size: 17B parameters (dense)
   dependencies: [mT5, ViT-e, WebLI]
@@ -1710,9 +1559,7 @@
   training_hardware: ''
   quality_control: ''
   access: closed
-  license:
-    explanation: "The asset isn't released, and hence the license is unknown.\n'"
-    value: unknown
+  license: unknown
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
@@ -1724,9 +1571,7 @@
   created_date: 2022-09-14
   url: https://arxiv.org/abs/2209.06794
   model_card: ''
-  modality:
-    explanation: image; image
-    value: image; image
+  modality: image; image
   analysis: ''
   size: 3.9B parameters (dense)
   dependencies: [JFT]
@@ -1735,9 +1580,7 @@
   training_hardware: ''
   quality_control: ''
   access: closed
-  license:
-    explanation: "The asset isn't released, and hence the license is unknown.\n'"
-    value: unknown
+  license: unknown
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
@@ -1758,9 +1601,7 @@
   excluded: ''
   quality_control: ''
   access: closed
-  license:
-    explanation: "The asset isn't released, and hence the license is unknown.\n'"
-    value: unknown
+  license: unknown
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
@@ -1772,9 +1613,7 @@
   created_date: 2023-02-27
   url: https://arxiv.org/abs/2302.14115
   model_card: ''
-  modality:
-    explanation: text, video; text, video
-    value: text, video; text, video
+  modality: video; text
   analysis: ''
   size: 500M parameters (dense)
   dependencies: [T5, CLIP, YT-Temporal-1B]
@@ -1796,12 +1635,10 @@
   created_date: 2023-06-08
   url: https://arxiv.org/pdf/2306.07944.pdf
   model_card: ''
-  modality:
-    explanation: audio; text
-    value: audio, text; audio, text
+  modality: audio; text
   analysis: evaluated on DSTC11 Challenge Task, based on MultiWoz 2.1, with a focus
     on dialog state tracking.
-  size: ''
+  size: unknown
   dependencies: [CTC blank-filtering, Speech2Text adapter]
   training_emissions: ''
   training_time: ''
@@ -1823,9 +1660,7 @@
   created_date: 2023-05-10
   url: https://blog.google/technology/ai/google-palm-2-ai-large-language-model/
   model_card: https://ai.google/static/documents/palm2techreport.pdf
-  modality:
-    explanation: text; text
-    value: text; text
+  modality: text; text
   analysis: Reports results on standard code benchmarks across a variety of programming
     languages.
   size: unknown

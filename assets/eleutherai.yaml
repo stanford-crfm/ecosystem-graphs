@@ -2,11 +2,11 @@
 - type: dataset
   name: The Pile
   organization: EleutherAI
-  description: "A latge language model training dataset, used to train GPT-NeoX-20B.\n"
+  description: "A large language model training dataset, used to train GPT-NeoX-20B.\n"
   created_date: 2021-01-01
   url: https://arxiv.org/pdf/2101.00027.pdf
   datasheet: https://arxiv.org/pdf/2201.07311.pdf
-  modality: {}
+  modality: code, text
   size: 825 GB
   sample:
     - '...pot trending topics and the coverage around them. First up, there’s a
@@ -74,9 +74,9 @@
     value: 2021-06-04
   url: https://arankomatsuzaki.wordpress.com/2021/06/04/gpt-j/
   model_card: ''
-  modality: {}
+  modality: text; text
   analysis: ''
-  size: ''
+  size: 6B parameters (dense)
   dependencies: [The Pile]
   training_emissions: ''
   training_time: ''
@@ -101,9 +101,9 @@
     value: 2021-03-21
   url: https://github.com/EleutherAI/gpt-neo
   model_card: ''
-  modality: {}
+  modality: text; text
   analysis: ''
-  size: ''
+  size: 2.7B parameters (dense)
   dependencies: [The Pile]
   training_emissions: ''
   training_time: ''
@@ -124,12 +124,10 @@
   created_date: 2022-02-02
   url: http://eaidata.bmk.sh/data/GPT_NeoX_20B.pdf
   model_card: https://mystic.the-eye.eu/public/AI/models/GPT-NeoX-20B/20B_model_card.md
-  modality:
-    explanation: ''
-    value: other; other
+  modality: text; text, code
   analysis: "The model was evaluated on standard NLP benchmarks: LAMBADA, ANLI,\
     \ HellaSwag, MMLU among others [[Section 4]](http://eaidata.bmk.sh/data/GPT_NeoX_20B.pdf#section.4).\n"
-  size: ''
+  size: 20B parameters (dense)
   dependencies: [The Pile]
   training_emissions:
     explanation: "The amount of emission during the development and training of\
@@ -217,9 +215,7 @@
   created_date: 2022-09-04
   url: https://arxiv.org/pdf/2204.08583.pdf
   model_card: ''
-  modality:
-    explanation: text; image
-    value: image, text; image, text
+  modality: text; image
   analysis: Evaluated by human testers rating alignment of text input, image output
     pairs.
   size: 227M parameters (dense)
@@ -242,9 +238,7 @@
   created_date: 2023-05-31
   url: https://arxiv.org/pdf/2304.01373.pdf
   model_card: https://huggingface.co/EleutherAI/pythia-12b
-  modality:
-    explanation: text; text
-    value: text; text
+  modality: text; text
   analysis: Evaluated on a variety of NLP benchmarks and found to perform similarly
     to OPT and BLOOM models.
   size: 12B parameters (dense)

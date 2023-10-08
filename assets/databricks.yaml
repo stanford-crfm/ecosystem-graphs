@@ -13,9 +13,7 @@
     value: 2023-03-24
   url: https://www.databricks.com/blog/2023/03/24/hello-dolly-democratizing-magic-chatgpt-open-models.html
   model_card: ''
-  modality:
-    explanation: text; text
-    value: text; text
+  modality: text; text
   analysis: "\"We evaluated Dolly on the instruction-following capabilities described\
     \ in the InstructGPT paper that ChatGPT is based on and found that it exhibits\
     \ many of the same qualitative capabilities, including text generation, brainstorming\

@@ -9,9 +9,7 @@
     value: 2022-06-22
   url: https://medium.com/yandex/yandex-publishes-yalm-100b-its-the-largest-gpt-like-neural-network-in-open-source-d1df53d0e9a6
   model_card: ''
-  modality:
-    explanation: text; text
-    value: text; text
+  modality: text; text
   analysis: ''
   size: 100B parameters (dense)
   dependencies: [The Pile, Yandex Russian Pretraining Dataset]

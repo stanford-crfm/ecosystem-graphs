@@ -17,9 +17,7 @@
   excluded: unknown
   quality_control: unknown
   access: closed
-  license:
-    explanation: "The asset isn't released, and hence the license is unknown.\n'"
-    value: unknown
+  license: unknown
   intended_uses: unknown
   prohibited_uses: unknown
   monitoring: none
@@ -35,7 +33,7 @@
   model_card: ''
   modality: text; text
   analysis: ''
-  size: ''
+  size: 200B parameters (dense)
   dependencies: [Luminous dataset]
   training_emissions: unknown
   training_time: unknown
@@ -44,9 +42,7 @@
   access:
     explanation: Paid API product
     value: limited
-  license:
-    explanation: No license was found.
-    value: none
+  license: none
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
@@ -54,8 +50,8 @@
 - type: application
   name: Aleph Alpha API
   organization: Aleph Alpha
-  description: "The Aleph Alpha API serves a family of text-only language models\
-    \ (Luminous) and multimodal text-and-image models (Magma).\n"
+  description: The Aleph Alpha API serves a family of text-only language models
+    (Luminous) and multimodal text-and-image models (Magma).
   created_date:
     explanation: "Date the Aleph Alpha Python API client was first available based\
       \ on to the [PyPi package history](https://pypi.org/project/aleph-alpha-client/1.0.0/)\n"
@@ -63,8 +59,8 @@
   url: https://www.aleph-alpha.com/
   dependencies: [Luminous]
   adaptation: ''
-  output_space: "The text models provide text outputs given text inputs. The multimodal\
-    \ models provide text completions given text and image inputs.\n"
+  output_space: The text models provide text outputs given text inputs. The multimodal
+    models provide text completions given text and image inputs.
   quality_control: ''
   access:
     explanation: The API is a paid product. Refer to the [[API documentation]](https://docs.aleph-alpha.com/docs/introduction/luminous/)

@@ -7,9 +7,7 @@
   created_date: 2023-04-03
   url: https://bair.berkeley.edu/blog/2023/04/03/koala/
   model_card: https://huggingface.co/TheBloke/koala-7B-GPTQ-4bit-128g
-  modality:
-    explanation: text; text
-    value: text; text
+  modality: text; text
   analysis: Evaluated in comparison with ChatGPT and Stanford Alpaca.
   size: 13B parameters (dense)
   dependencies: [LLaMA, web-scraped dialogue data]
@@ -31,9 +29,7 @@
   created_date: 2023-05-24
   url: https://arxiv.org/pdf/2305.15334v1.pdf
   model_card: ''
-  modality:
-    explanation: other; other
-    value: other; other
+  modality: text; API
   analysis: Evaluated using AST sub-tree matching technique and compared to other
     models in terms of API functionality accuracy.
   size: 7B parameters (dense)
@@ -57,9 +53,7 @@
   created_date: 2023-05-03
   url: https://github.com/openlm-research/open_llama
   model_card: ''
-  modality:
-    explanation: text; text
-    value: text; text
+  modality: text; text
   analysis: Evaluated on wide range of tasks using own evaluation benchmarks.
   size: 17B parameters (dense)
   dependencies: [RedPajama]

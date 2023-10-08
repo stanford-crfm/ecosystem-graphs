@@ -6,9 +6,7 @@
   created_date: 2023-06-16
   url: https://arxiv.org/pdf/2306.08161.pdf
   model_card: https://huggingface.co/h2oai/h2ogpt-oasst1-512-20b
-  modality:
-    explanation: text; text
-    value: text; text
+  modality: text; text
   analysis: Evaluated on EleutherAI evaluation harness.
   size: 20B parameters (dense)
   dependencies: [GPT-NeoX, H2O AI OpenAssistant, h2oGPT Repositories]

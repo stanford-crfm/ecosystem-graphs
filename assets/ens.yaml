@@ -13,7 +13,7 @@
     value: 2019-06-07
   url: https://arxiv.org/pdf/1906.03327.pdf
   datasheet: https://arxiv.org/pdf/1906.03327.pdf
-  modality: {}
+  modality: text, video
   size: 136M video clips
   sample: []
   analysis:

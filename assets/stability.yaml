@@ -7,9 +7,7 @@
   created_date: 2023-04-28
   url: https://stability.ai/blog/deepfloyd-if-text-to-image-model
   model_card: https://huggingface.co/DeepFloyd/IF-I-XL-v1.0
-  modality:
-    explanation: text; image
-    value: image, text; image, text
+  modality: text; image
   analysis: Evaluated on the COCO dataset.
   size: 4.3B parameters (dense)
   dependencies: [LAION-5B]
@@ -32,9 +30,7 @@
   created_date: 2023-04-20
   url: https://github.com/Stability-AI/StableLM
   model_card: ''
-  modality:
-    explanation: text; text
-    value: text; text
+  modality: text; text
   analysis: ''
   size: 7B parameters (dense)
   dependencies:

@@ -18,9 +18,7 @@
   output_space: ''
   quality_control: ''
   access: limited
-  license:
-    explanation: No license was found.
-    value: none
+  license: none
   terms_of_service: https://poe.com/tos
   intended_uses: ''
   prohibited_uses: ''

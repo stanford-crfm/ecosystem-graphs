@@ -18,9 +18,7 @@
   excluded: ''
   quality_control: ''
   access: closed
-  license:
-    explanation: "The asset isn't released, and hence the license is unknown.\n'"
-    value: unknown
+  license: unknown
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
@@ -37,9 +35,7 @@
     value: 2023-03-15
   url: https://www.assemblyai.com/blog/conformer-1/
   model_card: ''
-  modality:
-    explanation: audio, text; audio, text
-    value: audio, text; audio, text
+  modality: audio, text; audio, text
   analysis:
     explanation: See [[Results and Performance]](https://www.assemblyai.com/blog/conformer-1/#results-and-performance)
     value: In order to evaluate the accuracy and robustness of Conformer-1, we sourced
@@ -56,9 +52,7 @@
   training_hardware: ''
   quality_control: ''
   access: limited
-  license:
-    explanation: "The asset isn't released, and hence the license is unknown.\n'"
-    value: unknown
+  license: unknown
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''

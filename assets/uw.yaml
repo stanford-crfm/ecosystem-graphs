@@ -6,9 +6,7 @@
   created_date: 2022-01-07
   url: https://arxiv.org/abs/2201.02639
   datasheet: ''
-  modality:
-    explanation: ''
-    value: other
+  modality: video
   size: 20M videos
   sample: []
   analysis: ''

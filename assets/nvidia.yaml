@@ -8,9 +8,9 @@
     value: 2021-04-09
   url: https://arxiv.org/abs/2104.04473
   model_card: none
-  modality: {}
+  modality: text; text
   analysis: ''
-  size: ''
+  size: 1T parameters (dense)
   dependencies: []
   training_emissions: unknown
   training_time: 84 days
@@ -20,9 +20,7 @@
     explanation: "Neither the 8.3B parameter model trained to convergence nor the\
       \ 1 trillion paramter model is available for download\n"
     value: closed
-  license:
-    explanation: "The asset isn't released, and hence the license is unknown.\n'"
-    value: unknown
+  license: unknown
   intended_uses: none
   prohibited_uses: none
   monitoring: none
@@ -76,11 +74,9 @@
   created_date: 2022-10-06
   url: https://vimalabs.github.io/
   model_card: ''
-  modality:
-    explanation: other; other
-    value: other; other
+  modality: image, text; robotics trajectories
   analysis: ''
-  size: 650K parameters (dense)
+  size: 200M parameters (dense)
   dependencies: []
   training_emissions: ''
   training_time: ''

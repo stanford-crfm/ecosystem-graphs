@@ -7,9 +7,7 @@
   created_date: 2023-03-14
   url: https://chatglm.cn/blog
   model_card: ''
-  modality:
-    explanation: text; text
-    value: text; text
+  modality: text; text
   analysis: Performance evaluated on English and Chinese language benchmark tests.
   size: 6B parameters (dense)
   dependencies: []

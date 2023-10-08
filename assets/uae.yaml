@@ -7,9 +7,7 @@
   created_date: 2023-06-14
   url: https://huggingface.co/tiiuae/falcon-40b
   model_card: https://huggingface.co/tiiuae/falcon-40b
-  modality:
-    explanation: text; text
-    value: text; text
+  modality: text; text
   analysis: ''
   size: 40B parameters (dense)
   dependencies: [RefinedWeb]
@@ -43,7 +41,7 @@
   access: open
   license:
     explanation: License can be found at https://huggingface.co/datasets/tiiuae/falcon-refinedweb
-    value: unknown
+    value: custom
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''

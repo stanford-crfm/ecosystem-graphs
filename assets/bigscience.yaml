@@ -94,9 +94,9 @@
     value: 2021-10-15
   url: https://arxiv.org/pdf/2110.08207.pdf
   model_card: https://huggingface.co/bigscience/T0pp
-  modality: {}
+  modality: text; text
   analysis: ''
-  size: ''
+  size: 11B parameters (dense)
   dependencies: [T5, P3]
   training_emissions:
     explanation: Sourced from estimates in https://arxiv.org/pdf/2110.08207.pdf
@@ -122,9 +122,7 @@
     value: 2022-07-12
   url: https://arxiv.org/abs/2211.05100
   model_card: ''
-  modality:
-    explanation: code, text; code, text
-    value: code, text; code, text
+  modality: code, text; code, text
   analysis: ''
   size: 176B parameters (dense)
   dependencies: [ROOTS]
@@ -164,9 +162,9 @@
     value: 2021-10-15
   url: https://arxiv.org/pdf/2110.08207.pdf
   model_card: https://huggingface.co/bigscience/T0pp
-  modality: {}
+  modality: text ;text
   analysis: https://huggingface.co/bigscience/bloomz#evaluation
-  size: ''
+  size: 13B parameters (dense)
   dependencies: [mT5, xP3]
   training_emissions: unknown
   training_time: unknown
@@ -190,9 +188,7 @@
   created_date: 2022-11-03
   url: https://arxiv.org/pdf/2211.01786.pdf
   model_card: https://huggingface.co/bigscience/bloomz
-  modality:
-    explanation: code, text; code, text
-    value: code, text; code, text
+  modality: code, text; code, text
   analysis: https://huggingface.co/bigscience/bloomz#evaluation
   size: 176B parameters (dense)
   dependencies: [BLOOM, xP3]

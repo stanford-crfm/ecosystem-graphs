@@ -7,9 +7,7 @@
   created_date: 2023-05-23
   url: https://arxiv.org/pdf/2305.14201.pdf
   model_card: none
-  modality:
-    explanation: text; other
-    value: text; text
+  modality: text; text
   analysis: Performance assessed on BIG-bench arithmetic sub-task, and various elementary
     arithmetic tasks.
   size: 7B parameters (dense)

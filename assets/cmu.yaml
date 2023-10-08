@@ -10,12 +10,10 @@
     value: 2022-02-26
   url: https://arxiv.org/abs/2202.13169
   model_card: https://huggingface.co/NinedayWang/PolyCoder-2.7B
-  modality:
-    explanation: ''
-    value: other; other
+  modality: code
   analysis: Reports results on standard code benchmarks across a variety of programming
     languages.
-  size: ''
+  size: 2.7B parameters (dense)
   dependencies: [Github]
   training_emissions: unknown
   training_time: 6 weeks

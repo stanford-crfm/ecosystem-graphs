@@ -14,7 +14,7 @@
   datasheet:
     explanation: No datasheet available as of 2022-04-04.
     value: none
-  modality: {}
+  modality: text
   size: 570 GB
   sample: []
   analysis: The GPT-3 paper, which also introduces the GPT-3 dataset, provides a
@@ -80,7 +80,7 @@
   datasheet:
     explanation: No datasheet available as of 2022-04-10.
     value: none
-  modality: {}
+  modality: code
   size: 214 KB
   sample:
     - "\n\ndef string_sequence(n: int) -> str:\n    \"\"\" Return a string containing\
@@ -159,8 +159,7 @@
       '"
     value: closed
   license:
-    explanation: "The asset isn't released, and hence the license is unknown.\n'"
-    value: unknown
+    explanation: unknown
   intended_uses: Training language models on code.
   prohibited_uses: unknown
   monitoring: unknown
@@ -175,7 +174,7 @@
     value: 2021-01-05
   url: https://arxiv.org/pdf/2103.00020.pdf
   datasheet: none
-  modality: {}
+  modality: image, text
   size: 400M (image, text) pairs
   sample: []
   analysis: "The dataset contained some overlap with the test sets of the benchmarks\
@@ -193,10 +192,7 @@
   access:
     explanation: The dataset wasn't released to the public.
     value: closed
-  license:
-    explanation: "The asset doesn''t have a known license as it hasn''t been publicly\
-      \ released.\n'"
-    value: unknown
+  license: unknown
   intended_uses: Training multimodal vision models.
   prohibited_uses:
     explanation: The prohibited uses of the dataset are unknown.
@@ -217,7 +213,7 @@
     value: 2021-01-05
   url: https://arxiv.org/abs/2102.12092
   datasheet: none
-  modality: {}
+  modality: image, text
   size: "250M (image, text) pairs\n"
   sample: []
   analysis: The authors found that the dataset contained 21% of the images in the
@@ -240,10 +236,7 @@
   access:
     explanation: The dataset wasn't released to the public.
     value: closed
-  license:
-    explanation: "The asset doesn''t have a known license as it hasn''t been publicly\
-      \ released.\n'"
-    value: unknown
+  license: unknown
   intended_uses: Training multimodal vision models.
   prohibited_uses:
     explanation: The prohibited uses of the dataset are unknown.
@@ -281,10 +274,7 @@
   access:
     explanation: "The dataset isn't released to the public.\n'"
     value: closed
-  license:
-    explanation: "The asset doesn''t have a known license as it hasn''t been publicly\
-      \ released.\n'"
-    value: unknown
+  license: unknown
   intended_uses: The intended use is to train speech models.
   prohibited_uses:
     explanation: "No uses are explicitly prohibited.\n'"
@@ -307,7 +297,7 @@
     value: 2019-11-01
   url: https://cdn.openai.com/better-language-models/language_models_are_unsupervised_multitask_learners.pdf
   datasheet: ''
-  modality: {}
+  modality: text
   size: 40 GB
   sample: []
   analysis: ''
@@ -316,10 +306,7 @@
   excluded: ''
   quality_control: ''
   access: closed
-  license:
-    explanation: "The asset doesn''t have a known license as it hasn''t been publicly\
-      \ released.\n'"
-    value: unknown
+  license: unknown
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
@@ -334,9 +321,9 @@
     value: 2019-11-01
   url: https://cdn.openai.com/better-language-models/language_models_are_unsupervised_multitask_learners.pdf
   model_card: https://github.com/openai/gpt-2/blob/master/model_card.md
-  modality: {}
+  modality: text; text
   analysis: ''
-  size: ''
+  size: 1.5B parameters (dense)
   dependencies: [WebText]
   training_emissions: ''
   training_time: ''
@@ -361,12 +348,18 @@
     value: 2020-06-11
   url: https://arxiv.org/pdf/2005.14165.pdf
   model_card: https://github.com/openai/gpt-3/blob/master/model-card.md
-  modality: {}
+  modality: text; text
   analysis: "The GPT-3 model was evaluated on language modeling, closed-book question\
     \ answering, translation, Winograd-style tasks, commonsense reasoning, reading\
     \ comprehension, SuperGLUE, NLI, synthetic tasks, and generation [[Section 4]](https://arxiv.org/pdf/2005.14165.pdf#section.4);\
     \ as well as on fairness and biases [[Section 6]](https://arxiv.org/pdf/2005.14165.pdf#section.6).\n"
-  size: ''
+  size:
+    value: 175B parameters (dense)
+    explanation: >
+      GPT-3 comes in several sizes. Here we report the size of the Davinci
+      model, the largest GPT-3 model served through the OpenAI API. Sizes of the
+      other models can be found in the paper
+      [[Table 2.1]](https://arxiv.org/pdf/2005.14165.pdf#table.caption.7).
   dependencies: [GPT-3 dataset]
   training_emissions:
     explanation: "Estimate of the CO2(e) emissions for GPT-3 were not provided by\
@@ -402,10 +395,7 @@
       \ in supported countries [[Supported Countries]](https://beta.openai.com/docs/supported-countries)\
       \ [[OpenAI API]](https://openai.com/api/).\n'"
     value: limited
-  license:
-    explanation: "The asset doesn''t have a known license as it hasn''t been publicly\
-      \ released.\n'"
-    value: unknown
+  license: unknown
   intended_uses: "GPT-3 was intended to be use through the OpenAI API by developers\
     \ for language applications. Other intended use of GPT-3 include researchers\
     \ accessing the model through the API to study its paradigms [[Model Card]](https://github.com/openai/gpt-3/blob/master/model-card.md).\n"
@@ -431,10 +421,10 @@
     value: 2021-08-10
   url: https://arxiv.org/pdf/2107.03374.pdf
   model_card: none
-  modality: {}
+  modality: text; code, text
   analysis: "The model was evaluated using the HumanEval dataset with pass@k metric\
     \ and BLEU scores [[Section 2]](https://arxiv.org/pdf/2107.03374.pdf#section.2).\n"
-  size: ''
+  size: 12B parameters (dense)
   dependencies: [GPT-3, Codex dataset, HumanEval]
   training_emissions:
     explanation: Authors do not report the training emissions.
@@ -459,10 +449,7 @@
       \ as code-cushman-001 according to the [[Model Index]](https://platform.openai.com/docs/model-index-for-researchers).\n\
       '"
     value: limited
-  license:
-    explanation: "The asset doesn''t have a known license as it hasn''t been publicly\
-      \ released.\n'"
-    value: unknown
+  license: unknown
   intended_uses: "Codex is intended to be used for coding related language modelling\
     \ tasks.\n"
   prohibited_uses:
@@ -485,12 +472,12 @@
     value: 2022-01-27
   url: https://arxiv.org/pdf/2203.02155.pdf
   model_card: https://github.com/openai/following-instructions-human-feedback/blob/main/model-card.md
-  modality: other; other
+  modality: text; code, text
   analysis: The model was evaluated on human ratings to the InstructGPT answers
     to the prompts submitted to the OpenAI API as well as on public NLP datasets
     spanning truthfulness, toxicity, and bias, question answering, reading comprehension,
     and summarization tasks.
-  size: ''
+  size: 175B parameters (dense)
   dependencies: [GPT-3, OpenAI API]
   training_emissions:
     explanation: The authors do not estimate the emissions of the model.
@@ -510,10 +497,7 @@
       \ endpoint (davinci-instruct-beta) is currently unavailable. [[Model Index]](https://platform.openai.com/docs/model-index-for-researchers).\n\
       '"
     value: closed
-  license:
-    explanation: "The asset doesn''t have a known license as it hasn''t been publicly\
-      \ released.\n'"
-    value: unknown
+  license: unknown
   intended_uses: "As stated in the model card: \"The intended direct users of InstructGPT\
     \ are developers who access its capabilities via the OpenAI API. Through the\
     \ OpenAI API, the model can be used by those who may not have AI development\
@@ -535,26 +519,20 @@
 - type: model
   name: Whisper
   organization: OpenAI
-  description: "GPT-3 is a speech recognition model.\n"
+  description: Whisper is an audio transcription software.
   created_date:
     explanation: "The date that Whisper was announced to the public [[OpenAI Blog\
       \ Post]](https://openai.com/blog/whisper/).\n'"
     value: 2022-09-21
   url: https://cdn.openai.com/papers/whisper.pdf
   model_card: https://github.com/openai/whisper/blob/main/model-card.md
-  modality:
-    explanation: audio; audio
-    value: audio; audio
+  modality: audio; text
   analysis: The model was evaluated for zero-shot English and multingual speech
     recognition, translation, language identification and robustness to noise.
   size: 1.5B parameters (dense)
   dependencies: [Whisper dataset]
-  training_emissions:
-    explanation: "Authors do not report the training emissions.\n'"
-    value: unknown
-  training_time:
-    explanation: "Authors do not report the training time.\n'"
-    value: unknown
+  training_emissions: unknown
+  training_time: unknown
   training_hardware:
     explanation: "The original paper doesn''t specify the training hardware for\
       \ Whisper, but we expect it is trained on Azure given other models from OpenAI\
@@ -594,10 +572,15 @@
     value: 2021-01-05
   url: https://arxiv.org/pdf/2103.00020.pdf
   model_card: https://github.com/openai/CLIP/blob/main/model-card.md
-  modality: {}
+  modality: image, text; text
   analysis: The model was evaluated on standard vision datasets (e.g. CIFAR10, ImageNet)
     and showed robust state of the art results.
-  size: ''
+  size:
+    value: unknown
+    explanation: >
+      The total size is unknown, but the largest CLIP model is a
+      a combination of 63M-parameter (dense) text encoder and a 307M-parameter
+      vision encoder.
   dependencies: [CLIP dataset]
   training_emissions: unknown
   training_time:
@@ -671,13 +654,13 @@
     value: 2021-01-05
   url: https://arxiv.org/pdf/2102.12092.pdf
   model_card: https://github.com/openai/DALL-E/blob/master/model_card.md
-  modality: {}
+  modality: text; image
   analysis: "The model was evaluated against three prior approaches, AttnGAN, DM-GAN,\
     \ and DF-GAN using Inception Score and Fréchet Inception Distance on MS-COCO\
     \ as metrics. The model was also evaluated by humans and received the majority\
     \ of the votes in generating images that look realistic and better match the\
     \ caption when compared to the images generated by DF-GAN [[Section]](https://arxiv.org/pdf/2102.12092.pdf#section.3).\n"
-  size: ''
+  size: 12B parameters (dense)
   dependencies: [DALL·E dataset]
   training_emissions:
     explanation: The training emissions were not reported.
@@ -690,10 +673,7 @@
   access:
     explanation: Available via the OpenAI API as of Q1 2023.
     value: limited
-  license:
-    explanation: "The asset doesn''t have a known license as it hasn''t been publicly\
-      \ released.\n'"
-    value: unknown
+  license: unknown
   intended_uses: "\"The model is intended for others to use for training their own\
     \ generative models\" [[Model Card]](https://github.com/openai/DALL-E/blob/master/model_card.md).\n"
   prohibited_uses:
@@ -706,7 +686,7 @@
 - type: model
   name: Jukebox
   organization: OpenAI
-  description: Jukebox is a generate model that produces music
+  description: Jukebox is a generative model that produces music
   created_date:
     explanation: The date the model paper was released
     value: 2020-04-30
@@ -714,10 +694,10 @@
   model_card:
     explanation: No model card found as of 2023-01-09
     value: none
-  modality: {}
+  modality: text; audio
   analysis: Evaluations in paper are primarily considering the fidelity and novelty
     of samples from Jukebox.
-  size: ''
+  size: 5B parameters (dense)
   dependencies: [Jukebox Dataset]
   training_emissions: unknown
   training_time: 4 weeks
@@ -748,14 +728,12 @@
     value: 2022-04-13
   url: https://arxiv.org/abs/2204.06125
   model_card: https://github.com/openai/dalle-2-preview/blob/main/system-card.md
-  modality:
-    explanation: ''
-    value: other; other
+  modality: text; image
   analysis: The model is capable of generating explicit content and the researchers
     found limited amount of spurious content generated. The researchers also found
     that visual synonyms can be used to prompt the model to surface unwanted generations
     [[Probes and Evaluations]] (https://github.com/openai/dalle-2-preview/blob/main/system-card.md#probes-and-evaluations).
-  size: ''
+  size: unknown
   dependencies: [DALL·E dataset, CLIP dataset]
   training_emissions: unknown
   training_time: unknown
@@ -768,9 +746,7 @@
       \ and company friends. OpenAI opened a waitlist for DALL·E 2 access. [[System\
       \ Card]] (https://github.com/openai/dalle-2-preview/blob/main/system-card.md#access).\n"
     value: limited
-  license:
-    explanation: The asset is not released, and hence the license is unknown.
-    value: unknown
+  license: unknown
   intended_uses: "\"The intended use of the DALL·E 2 Preview at this time is for\
     \ personal, non-commercial exploration and research purposes by people who are\
     \ interested in understanding the potential uses of these capabilities\" [[Use]]\
@@ -872,9 +848,7 @@
   created_date: 2022-06-23
   url: https://arxiv.org/abs/2206.11795
   model_card: ''
-  modality:
-    explanation: video; video
-    value: video; video
+  modality: video; video
   analysis: ''
   size: 500M parameters (dense)
   dependencies: [web_clean]
@@ -904,9 +878,7 @@
   excluded: ''
   quality_control: ''
   access: closed
-  license:
-    explanation: The asset is not released, and hence the license is unknown.
-    value: unknown
+  license: unknown
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
@@ -914,7 +886,7 @@
 - type: application
   name: ChatGPT
   organization: OpenAI
-  description: ChatGPT is an artificial intelligence chatbot developed by OpenAI
+  description: ChatGPT is an artificial intelligence chatbot developed by OpenAI.
   created_date: 2022-11-30
   url: https://openai.com/blog/chatgpt
   dependencies: [gpt-3.5-turbo, OpenAI toxicity classifier]
@@ -933,7 +905,7 @@
   feedback: ''
   monthly_active_users:
     explanation: https://www.reuters.com/technology/chatgpt-sets-record-fastest-growing-user-base-analyst-note-2023-02-01/
-    value: 100000000
+    value: 100M
   user_distribution: ''
   failures: ''
 - type: model
@@ -943,9 +915,7 @@
   created_date: 2023-03-01
   url: https://platform.openai.com/docs/models/gpt-3-5
   model_card: ''
-  modality:
-    explanation: text; text
-    value: text; text
+  modality: text; text
   analysis: ''
   size: unknown
   dependencies: [gpt-3.5-turbo dataset]
@@ -978,9 +948,7 @@
   excluded: ''
   quality_control: ''
   access: limited
-  license:
-    explanation: The asset isnt released, and hence the license is unknown.
-    value: unknown
+  license: unknown
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
@@ -992,9 +960,7 @@
   created_date: 2022-05-01
   url: https://platform.openai.com/docs/model-index-for-researchers
   datasheet: ''
-  modality:
-    explanation: ''
-    value: other
+  modality: code, text
   size: unknown
   sample: []
   analysis: ''
@@ -1003,9 +969,7 @@
   excluded: ''
   quality_control: ''
   access: limited
-  license:
-    explanation: "The asset isn't released, and hence the license is unknown.\n'"
-    value: unknown
+  license: unknown
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
@@ -1017,20 +981,16 @@
   created_date: 2022-05-01
   url: https://platform.openai.com/docs/model-index-for-researchers
   model_card: ''
-  modality:
-    explanation: ''
-    value: other; other
+  modality: text; code, text
   analysis: ''
-  size: ''
+  size: unknown
   dependencies: [code-davinci-002 dataset]
   training_emissions: ''
   training_time: ''
   training_hardware: ''
   quality_control: ''
   access: limited
-  license:
-    explanation: "The asset isn't released, and hence the license is unknown.\n'"
-    value: unknown
+  license: unknown
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
@@ -1042,20 +1002,16 @@
   created_date: 2022-05-01
   url: https://platform.openai.com/docs/model-index-for-researchers
   model_card: ''
-  modality:
-    explanation: ''
-    value: other; other
+  modality: text; text
   analysis: ''
-  size: ''
+  size: unknown
   dependencies: [code-davinci-002]
   training_emissions: ''
   training_time: ''
   training_hardware: ''
   quality_control: ''
   access: limited
-  license:
-    explanation: "The asset isn't released, and hence the license is unknown.\n'"
-    value: unknown
+  license: unknown
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
@@ -1067,9 +1023,7 @@
   created_date: 2022-11-30
   url: https://platform.openai.com/docs/model-index-for-researchers
   model_card: ''
-  modality:
-    explanation: text; text
-    value: text; text
+  modality: text; text
   analysis: ''
   size: unknown
   dependencies: [text-davinci-002]
@@ -1078,9 +1032,7 @@
   training_hardware: ''
   quality_control: ''
   access: limited
-  license:
-    explanation: "The asset isn't released, and hence the license is unknown.\n'"
-    value: unknown
+  license: unknown
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
@@ -1163,9 +1115,7 @@
   created_date: 2023-01-18
   url: https://time.com/6247678/openai-chatgpt-kenya-workers/#:~:text=In%20a%20statement%2C%20an%20OpenAI,datasets%20of%20tools%20like%20ChatGPT.
   model_card: ''
-  modality:
-    explanation: text; text
-    value: text; text
+  modality: text; text
   analysis: ''
   size: unknown
   dependencies: [OpenAI toxicity dataset]
@@ -1174,9 +1124,7 @@
   training_hardware: ''
   quality_control: ''
   access: closed
-  license:
-    explanation: "The asset isn't released, and hence the license is unknown.\n'"
-    value: unknown
+  license: unknown
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
@@ -1197,9 +1145,7 @@
   excluded: ''
   quality_control: ''
   access: closed
-  license:
-    explanation: "The asset isn't released, and hence the license is unknown.\n'"
-    value: unknown
+  license: unknown
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
@@ -1251,9 +1197,7 @@
   created_date: 2023-02-03
   url: https://quorablog.quora.com/Poe-1
   model_card: ''
-  modality:
-    explanation: text; text
-    value: text; text
+  modality: text; text
   analysis: ''
   size: unknown
   dependencies: []
@@ -1274,9 +1218,7 @@
   created_date: 2023-02-03
   url: https://quorablog.quora.com/Poe-1
   model_card: ''
-  modality:
-    explanation: text; text
-    value: text; text
+  modality: text; text
   analysis: ''
   size: unknown
   dependencies: []
@@ -1319,9 +1261,7 @@
   created_date: 2023-03-14
   url: https://arxiv.org/abs/2303.08774
   model_card: ''
-  modality:
-    explanation: image, text; image, text
-    value: image, text; image, text
+  modality: image, text; image, text
   analysis: ''
   size: unknown
   dependencies: []
@@ -1330,9 +1270,7 @@
   training_hardware: ''
   quality_control: ''
   access: limited
-  license:
-    explanation: "The asset isn't released, and hence the license is unknown.\n'"
-    value: unknown
+  license: unknown
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''

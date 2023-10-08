@@ -12,9 +12,7 @@
   output_space: ''
   quality_control: ''
   access: open
-  license:
-    explanation: No license was found.
-    value: none
+  license: none
   terms_of_service: https://quizlet.com/tos
   intended_uses: ''
   prohibited_uses: ''

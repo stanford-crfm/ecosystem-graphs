@@ -2,41 +2,33 @@
 - type: dataset
   name: Jurassic-1 dataset
   organization: AI21 Labs
-  description: "The dataset used to train the Jurassic-1 models, based on publicly\
-    \ available data.\n"
+  description: The dataset used to train the Jurassic-1 models, based on publicly
+    available data.
   created_date:
     explanation: The date the white paper was made public.
     value: 2021-08-11
   url: https://uploads-ssl.webflow.com/60fd4503684b466578c0d307/61138924626a6981ee09caf6_jurassic_tech_paper.pdf
   datasheet: none
-  modality: {}
+  modality: text
   size: 300B tokens
   sample: []
-  analysis:
-    explanation: No analysis is provided in the paper.
-    value: none
+  analysis: none
   dependencies: []
   included: unknown
   excluded: unknown
-  quality_control:
-    explanation: No quality control is provided in the paper.
-    value: none
+  quality_control: none
   access: closed
-  license:
-    explanation: "The asset isn't released, and hence the license is unknown.\n'"
-    value: unknown
+  license: unknown
   intended_uses: unknown
-  prohibited_uses:
-    explanation: No uses are prohibited in the paper.
-    value: none
+  prohibited_uses: none
   monitoring: none
   feedback: none
 - type: dataset
   name: Jurassic-1 Instruct dataset
   organization: AI21 Labs
-  description: "The dataset used to instruction-tune the Jurassic-1 Instruct models.\n"
+  description: The dataset used to instruction-tune the Jurassic-1 Instruct models.
   created_date:
-    explanation: "The date the model was [announced](https://docs.ai21.com/changelog/jurassic-1-instruct-is-now-available).\n"
+    explanation: The date the model was [announced](https://docs.ai21.com/changelog/jurassic-1-instruct-is-now-available).
     value: 2022-12-01
   url: none
   datasheet: none
@@ -49,9 +41,7 @@
   excluded: unknown
   quality_control: unknown
   access: closed
-  license:
-    explanation: "The asset isn't released, and hence the license is unknown.\n'"
-    value: unknown
+  license: unknown
   intended_uses: unknown
   prohibited_uses: unknown
   monitoring: none
@@ -59,19 +49,19 @@
 - type: model
   name: Jurassic-1
   organization: AI21 Labs
-  description: "Jurassic-1 is a family of autoregressive language models (Large,\
-    \ Grande, Jumbo).\n"
+  description: Jurassic-1 is a family of autoregressive language models (Large,
+    Grande, Jumbo).
   created_date:
-    explanation: "The date the white paper was made public.\n"
+    explanation: The date the white paper was made public.
     value: 2021-08-11
   url: https://uploads-ssl.webflow.com/60fd4503684b466578c0d307/61138924626a6981ee09caf6_jurassic_tech_paper.pdf
   model_card: none
-  modality: {}
+  modality: text
   analysis:
     explanation: Results are reported in the [the paper](https://uploads-ssl.webflow.com/60fd4503684b466578c0d307/61138924626a6981ee09caf6_jurassic_tech_paper.pdf)
     value: Evaluated on several standard benchmarks (e.g. ARC, BoolQ, HellaSwag,
       RTE, Winogrande)
-  size: ''
+  size: 178B parameters (dense)
   dependencies: [Jurassic-1 dataset]
   training_emissions: unknown
   training_time:
@@ -79,14 +69,12 @@
     value: Several months
   training_hardware:
     explanation: Training details from [the paper](https://uploads-ssl.webflow.com/60fd4503684b466578c0d307/61138924626a6981ee09caf6_jurassic_tech_paper.pdf)
-    value: Over 800 [A100] GPUs
+    value: Over 800 A100 GPUs
   quality_control: none
   access:
     explanation: Jurassic-1 is available through AI21's paid API.
     value: limited
-  license:
-    explanation: "The asset isn't released, and hence the license is unknown.\n'"
-    value: unknown
+  license: unknown
   intended_uses: unknown
   prohibited_uses:
     explanation: https://docs.ai21.com/docs/responsible-use
@@ -99,16 +87,14 @@
 - type: model
   name: Jurassic-1 Instruct
   organization: AI21 Labs
-  description: "Jurassic-1 Instruct is an instruction-tuned autoregressive language\
-    \ model.\n"
+  description: Jurassic-1 Instruct is an instruction-tuned autoregressive language
+    model.
   created_date:
-    explanation: "The date the model was [announced](https://docs.ai21.com/changelog/jurassic-1-instruct-is-now-available).\n"
+    explanation: The date the model was announced(https://docs.ai21.com/changelog/jurassic-1-instruct-is-now-available).
     value: 2022-12-01
   url: https://docs.ai21.com/docs/jurassic-1-instruct-beta
   model_card: none
-  modality:
-    explanation: text; text
-    value: text; text
+  modality: text; text
   analysis: none
   size: 17B parameters (dense)
   dependencies: [Jurassic-1, Jurassic-1 Instruct dataset]
@@ -119,9 +105,7 @@
   access:
     explanation: Jurassic-1 Instruct is available through AI21's paid API.
     value: limited
-  license:
-    explanation: "The asset isn't released, and hence the license is unknown.\n'"
-    value: unknown
+  license: unknown
   intended_uses: Jurassic-1 Instruct was trained specifically to handle instructions-only
     prompts ("zero-shot") without examples ("few-shot"). It is the most natural
     way to interact with language models, and it is the best way to get a sense
@@ -137,13 +121,11 @@
 - type: model
   name: Jurassic-2
   organization: AI21 Labs
-  description: "Jurassic-2 a family of language model designed to replace Jurassic-1.\n"
+  description: Jurassic-2 is a family of language models designed to replace Jurassic-1.
   created_date: 2023-03-09
   url: https://docs.ai21.com/docs/jurassic-2-models
   model_card: none
-  modality:
-    explanation: text; text
-    value: text; text
+  modality: text; text
   analysis: The model was evaluated on the HELM benchmark as discussed in https://www.ai21.com/blog/introducing-j2.
   size: unknown
   dependencies: []
@@ -154,9 +136,7 @@
   access:
     explanation: Jurassic-2 is available through AI21's paid API.
     value: limited
-  license:
-    explanation: "The asset isn't released, and hence the license is unknown.\n'"
-    value: unknown
+  license: unknown
   intended_uses: ''
   prohibited_uses:
     explanation: https://docs.ai21.com/docs/responsible-use

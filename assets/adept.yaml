@@ -10,9 +10,7 @@
     value: 2022-09-14
   url: https://www.adept.ai/blog/act-1
   model_card: none
-  modality:
-    explanation: text; text
-    value: text; text
+  modality: text; text
   analysis: ''
   size: ''
   dependencies: []
@@ -21,9 +19,7 @@
   training_hardware: unknown
   quality_control: ''
   access: closed
-  license:
-    explanation: "The asset isn't released, and hence the license is unknown.\n'"
-    value: unknown
+  license: unknown
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''

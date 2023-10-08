@@ -6,9 +6,7 @@
   created_date: 2022-12-06
   url: https://arxiv.org/pdf/2212.03191.pdf
   model_card: ''
-  modality:
-    explanation: text, video; text, video
-    value: text, video; text, video
+  modality: text, video; video
   analysis: ''
   size: 1.3B parameters (dense)
   dependencies:
@@ -37,9 +35,7 @@
   created_date: 2023-05-29
   url: https://arxiv.org/pdf/2212.10551.pdf
   model_card: ''
-  modality:
-    explanation: text; text
-    value: text; text
+  modality: text; text
   analysis: Evaluated based on own constructed dataset covering 433 languages.
   size: 1.2B parameters (dense)
   dependencies: [OPUS]

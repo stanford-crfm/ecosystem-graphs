@@ -6,9 +6,7 @@
   created_date: 2022-09-20
   url: https://github.com/THUDM/CodeGeeX
   model_card: none
-  modality:
-    explanation: code; code
-    value: code; code
+  modality: text; code
   analysis: none
   size: 13B parameters (dense)
   dependencies: []
@@ -35,9 +33,9 @@
     value: 2021-05-26
   url: https://arxiv.org/abs/2105.13290
   model_card: none
-  modality: {}
+  modality: text; image
   analysis: ''
-  size: ''
+  size: 4B parameters (dense)
   dependencies: []
   training_emissions: ''
   training_time: ''
@@ -62,11 +60,9 @@
     value: 2022-04-28
   url: https://arxiv.org/abs/2204.14217
   model_card: none
-  modality:
-    explanation: ''
-    value: other; other
+  modality: text; image
   analysis: ''
-  size: ''
+  size: 6B parameters (dense)
   dependencies: []
   training_emissions: ''
   training_time: ''
@@ -91,11 +87,9 @@
     value: 2022-05-29
   url: https://arxiv.org/abs/2205.15868
   model_card: none
-  modality:
-    explanation: ''
-    value: other; other
+  modality: text; video
   analysis: ''
-  size: ''
+  size: unknown
   dependencies: []
   training_emissions: ''
   training_time: ''
@@ -121,9 +115,7 @@
     value: 2022-08-04
   url: https://keg.cs.tsinghua.edu.cn/glm-130b/
   model_card: none
-  modality:
-    explanation: text; text
-    value: text; text
+  modality: text; text
   analysis: ''
   size: 130B parameters (dense)
   dependencies:

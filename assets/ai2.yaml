@@ -6,8 +6,7 @@
   created_date: 2022-04-16
   url: https://arxiv.org/abs/2204.07705
   datasheet: ''
-  modality:
-    value: NLP tasks
+  modality: NLP tasks
   size: 1600 tasks
   sample: []
   analysis: ''

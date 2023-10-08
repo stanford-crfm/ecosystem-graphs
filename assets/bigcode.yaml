@@ -8,9 +8,7 @@
   created_date: 2023-05-09
   url: https://arxiv.org/pdf/2305.06161.pdf
   model_card: https://huggingface.co/bigcode/starcoder
-  modality:
-    explanation: code; code
-    value: code; code
+  modality: code; code
   analysis: Tested on several benchmarks, most notably Python benchmark HumanEval.
   size: 15.5B parameters (dense)
   dependencies: [The Stack]
@@ -35,9 +33,7 @@
   created_date: 2023-02-24
   url: https://arxiv.org/pdf/2301.03988.pdf
   model_card: ''
-  modality:
-    explanation: code; code
-    value: code; code
+  modality: code; code
   analysis: Evaluated on MultiPL-E system benchmarks.
   size: 1.1B parameters (dense)
   dependencies: [The Stack, BigCode Dataset]

@@ -28,7 +28,7 @@
   created_date: 2023-02-20
   url: https://arxiv.org/pdf/2302.09778.pdf
   model_card: ''
-  modality: image; image
+  modality: image, text; image
   analysis: ''
   size: 4.4B parameters (dense)
   dependencies: [ImageNet, WebVision, LAION-1B]

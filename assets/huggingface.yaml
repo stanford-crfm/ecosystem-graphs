@@ -8,17 +8,15 @@
     value: 2021-12-06
   url: https://twitter.com/lvwerra/status/1467933794699259908
   model_card: none
-  modality: {}
+  modality: text; code, text
   analysis: none
-  size: ''
+  size: 1B parameters (dense)
   dependencies: []
   training_emissions: unknown
   training_time: unknown
   training_hardware: 16 x A100 (40GB)
   quality_control: none
-  access:
-    explanation: The license is provided in the [[HuggingFace repository]](https://huggingface.co/codeparrot/codeparrot)
-    value: open
+  access: open
   license:
     explanation: No license is explicitly provided for this model.
     value: none

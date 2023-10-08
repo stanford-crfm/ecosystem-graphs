@@ -11,7 +11,7 @@
     value: 2011-12-12
   url: https://proceedings.neurips.cc/paper/2011/file/5dd9db5e033da9c6fb5ba83c7a7ebea9-Paper.pdf
   datasheet: none
-  modality: {}
+  modality: image, text
   size: 1M image-text pairs
   sample: []
   analysis:
@@ -42,9 +42,7 @@
       website]](https://www.cs.rice.edu/~vo9/sbucaptions/), along with additional
       resources.
     value: open
-  license:
-    explanation: No license was found.
-    value: none
+  license: none
   intended_uses: ''
   prohibited_uses: ''
   monitoring: none

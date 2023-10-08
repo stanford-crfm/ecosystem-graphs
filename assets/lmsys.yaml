@@ -7,9 +7,7 @@
   created_date: 2023-03-30
   url: https://lmsys.org/blog/2023-03-30-vicuna/
   model_card: https://huggingface.co/lmsys/vicuna-13b-delta-v0
-  modality:
-    explanation: text; text
-    value: text; text
+  modality: text; text
   analysis: Evaluated against similar LLMs using GPT-4 as a judge.
   size: 13B parameters (dense)
   dependencies: [LLaMA, ShareGPT conversations data]

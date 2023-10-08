@@ -9,7 +9,7 @@
     value: 2021-04-01
   url: https://m-bain.github.io/webvid-dataset/
   datasheet: none
-  modality: {}
+  modality: text, video
   size: 10.7M video-text pairs, 52K hours video
   sample: []
   analysis: unknown
@@ -62,7 +62,7 @@
     value: 2021-04-01
   url: https://m-bain.github.io/webvid-dataset/
   datasheet: none
-  modality: {}
+  modality: text, video
   size: 2.5M video-text pairs, 13K hours video
   sample: []
   analysis: unknown

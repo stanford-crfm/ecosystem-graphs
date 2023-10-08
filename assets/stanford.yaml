@@ -6,9 +6,7 @@
   created_date: 2022-12-15
   url: https://crfm.stanford.edu/2022/12/15/pubmedgpt.html
   model_card: ''
-  modality:
-    explanation: text; text
-    value: text; text
+  modality: text; text
   analysis: ''
   size: 2.7B parameters (dense)
   dependencies: [The Pile]
@@ -30,9 +28,7 @@
   created_date: 2022-11-23
   url: https://arxiv.org/pdf/2211.12737.pdf
   model_card: ''
-  modality:
-    explanation: text; image
-    value: image, text; image, text
+  modality: text; image
   analysis: Evaluated on own framework that tests domain-specific tasks in medical
     field.
   size: 330M parameters (dense)
@@ -55,9 +51,7 @@
   created_date: 2023-06-12
   url: https://arxiv.org/pdf/2306.07012.pdf
   model_card: ''
-  modality:
-    explanation: other; text
-    value: text; text
+  modality: human trajectories; text
   analysis: Evaluated on three physical control tasks, drawing, steering, and human
     body movement on various dynamics
   size: 124M parameters (dense)

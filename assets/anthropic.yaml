@@ -12,9 +12,7 @@
     value: 2022-04-12
   url: https://arxiv.org/pdf/2204.05862.pdf
   datasheet: none
-  modality:
-    explanation: ''
-    value: other
+  modality: text
   size:
     explanation: "The size of the dataset isn't directly reported in the paper,\
       \ but the dataset is available on GitHub [[hh-rlhf]](https://github.com/anthropics/hh-rlhf).\
@@ -304,12 +302,10 @@
     value: 2022-04-12
   url: https://arxiv.org/pdf/2204.05862.pdf
   datasheet: none
-  modality:
-    explanation: ''
-    value: other
+  modality: text
   size: unknown
   sample: []
-  analysis: "The crodworkers were told that \"lying isn't helpful\" and asked to\
+  analysis: "The crowdworkers were told that \"lying isn't helpful\" and asked to\
     \ prefer honest responses, which led to models with higher honesty scores. That\
     \ being the workers didn't exhaustively check for honesty, as exemplified by\
     \ the non-functional URLs in the preferred answers, which would have been easy\
@@ -323,9 +319,7 @@
   access:
     explanation: "Unlike its helpfulness, this dataset isn't released [[hh-rlhf]](https://github.com/anthropics/hh-rlhf).\n"
     value: closed
-  license:
-    explanation: "The asset isn't released, and hence the license is unknown.\n"
-    value: unknown
+  license: unknown
   intended_uses:
     explanation: "The intended uses of the dataset isn't specified, but it will\
       \ likely be same as the helpfulness dataset, for which the intended use is\
@@ -354,9 +348,7 @@
     value: 2022-04-12
   url: https://arxiv.org/pdf/2204.05862.pdf
   model_card: none
-  modality:
-    explanation: ''
-    value: other; other
+  modality: code; text
   analysis:
     explanation: "When tested on ability to generate responses that are both harmless\
       \ and helpful, the authors found that PMs trained on a mixture of harmlessness\
@@ -373,26 +365,19 @@
       \ models (PM). In addition to human evaluation, RLHF model were evaluated\
       \ on MMLU, Lambada, HellaSwag, OpenBookQA, ARC-Easy, ARC-Challenge, TriviaQA,\
       \ code generation, summarization.\n"
-  size: ''
+  size: 52B parameters (dense)
   dependencies:
     - Anthropic Harmlessness dataset
     - Anthropic Helpfulness dataset
-  training_emissions:
-    explanation: The authors do not provide data on the training emissions.
-    value: unknown
-  training_time:
-    explanation: The authors do not provide data on the training time.
-    value: unknown
-  training_hardware:
-    explanation: The authors do not provide data on the training hardware.
-    value: unknown
+  training_emissions: unknown
+  training_time: unknown
+  training_hardware: unknown
   quality_control: "unknown\n"
   access:
     explanation: "The model wasn't released.\n"
     value: closed
   license:
-    explanation: "The asset isn't released, and hence the license is unknown.\n"
-    value: unknown
+    explanation: unknown
   intended_uses:
     explanation: "The intended uses of the model aren't specified, but they will\
       \ likely be the same as the released Anthropic helpfulness dataset, for which\
@@ -427,11 +412,9 @@
   access:
     explanation: "The interface was made available to a select set of crowd workers.\n"
     value: closed
-  license:
-    explanation: "The asset isn't released, and hence the license is unknown.\n"
-    value: unknown
+  license: unknown
   terms_of_service:
-    explanation: The terms of service for the interaface is unknown.
+    explanation: The terms of service for the interface is unknown.
     value: unknown
   intended_uses: "Intended to be used by crowdworkers who are tasked with ranking\
     \ model answers.\n"
@@ -456,9 +439,7 @@
   output_space: ''
   quality_control: ''
   access: limited
-  license:
-    explanation: No license was found.
-    value: none
+  license: none
   terms_of_service: ''
   intended_uses: ''
   prohibited_uses: ''
@@ -474,9 +455,7 @@
   created_date: 2023-03-14
   url: https://www.anthropic.com/index/introducing-claude
   model_card: ''
-  modality:
-    explanation: text; text
-    value: text; text
+  modality: text; text
   analysis: ''
   size: unknown
   dependencies: []
@@ -485,9 +464,7 @@
   training_hardware: ''
   quality_control: ''
   access: limited
-  license:
-    explanation: "The asset isn't released, and hence the license is unknown.\n"
-    value: unknown
+  license: unknown
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
@@ -499,9 +476,7 @@
   created_date: 2023-03-14
   url: https://www.anthropic.com/index/introducing-claude
   model_card: ''
-  modality:
-    explanation: text; text
-    value: text; text
+  modality: text; text
   analysis: ''
   size: unknown
   dependencies: []
@@ -526,9 +501,7 @@
   created_date: 2023-07-11
   url: https://www.anthropic.com/index/claude-2
   model_card: https://www-files.anthropic.com/production/images/Model-Card-Claude-2.pdf
-  modality:
-    explanation: text; text
-    value: text; text
+  modality: text; text
   analysis: Evaluated with human feedback on helpfulness, harmfulness, and honesty
     and on the Bias Benchmark for QA.
   size: ''

@@ -6,9 +6,7 @@
   created_date: 2022-10-11
   url: https://www.biorxiv.org/content/10.1101/2022.10.10.511571v1
   model_card: ''
-  modality:
-    explanation: text; text
-    value: text; text
+  modality: text; genome sequence
   analysis: ''
   size: 25B parameters (dense)
   dependencies: [SARS-CoV-2 genome dataset, BV-BRC dataset]

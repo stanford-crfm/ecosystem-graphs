@@ -6,9 +6,7 @@
   created_date: 2022-11-29
   url: https://www.together.xyz/blog/releasing-v1-of-gpt-jt-powered-by-open-source-ai
   model_card: ''
-  modality:
-    explanation: text; text
-    value: text; text
+  modality: text; text
   analysis: ''
   size: 6B parameters (dense)
   dependencies: [GPT-J, P3, NaturalInstructions-v2]
@@ -29,9 +27,7 @@
   created_date: 2023-03-10
   url: https://www.together.xyz/blog/openchatkit
   model_card: ''
-  modality:
-    explanation: text; text
-    value: text; text
+  modality: text; text
   analysis: ''
   size: 20B parameters (dense)
   dependencies: [GPT-NeoX, OIG-43M]
@@ -52,9 +48,7 @@
   created_date: 2023-03-10
   url: https://www.together.xyz/blog/openchatkit
   model_card: ''
-  modality:
-    explanation: text; text
-    value: text; text
+  modality: text; text
   analysis: ''
   size: 6B parameters (dense)
   dependencies: [GPT-JT, OIG-moderation]
@@ -118,9 +112,7 @@
   created_date: 2022-04-17
   url: https://www.together.xyz/blog/redpajama
   datasheet: https://huggingface.co/datasets/togethercomputer/RedPajama-Data-1T
-  modality:
-    explanation: ''
-    value: other
+  modality: text
   size: 1.2 trillion tokens
   sample: []
   analysis: ''

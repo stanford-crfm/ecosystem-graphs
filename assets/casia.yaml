@@ -7,9 +7,7 @@
   created_date: 2023-05-29
   url: https://arxiv.org/pdf/2305.18098v1.pdf
   model_card: https://huggingface.co/James-WYang/BigTrans
-  modality:
-    explanation: text; text
-    value: text; text
+  modality: text; text
   analysis: Reports results on standard translation benchmarks across 102 languages
     in comparison with Google Translate and ChatGPT
   size: 13B parameters (dense)

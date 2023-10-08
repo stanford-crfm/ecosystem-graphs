@@ -7,9 +7,7 @@
   created_date: 2023-05-05
   url: https://www.mosaicml.com/blog/mpt-7b
   model_card: ''
-  modality:
-    explanation: text; text
-    value: text; text
+  modality: text; text
   analysis: Evaluated on a range of benchmarks and performed on par with LLaMA-7B.
   size: 7B parameters (dense)
   dependencies: [RedPajama-Data, C4, The Stack, Multimodal C4]

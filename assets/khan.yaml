@@ -11,9 +11,7 @@
   output_space: ''
   quality_control: ''
   access: limited
-  license:
-    explanation: "The asset isn't released, and hence the license is unknown.\n'"
-    value: unknown
+  license: unknown
   terms_of_service: ''
   intended_uses: ''
   prohibited_uses: ''

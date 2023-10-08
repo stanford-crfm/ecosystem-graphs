@@ -8,9 +8,9 @@
     value: 2021-12-23
   url: https://arxiv.org/abs/2112.12731
   model_card: none
-  modality: {}
+  modality: text; text
   analysis: ''
-  size: ''
+  size: 260B parameters (dense)
   dependencies: []
   training_emissions: unknown
   training_time: unknown
@@ -19,9 +19,7 @@
   access:
     explanation: Baidu does not provide ERNIE 3.0 for external researchers
     value: closed
-  license:
-    explanation: "The asset isn't released, and hence the license is unknown.\n'"
-    value: unknown
+  license: unknown
   intended_uses: unknown
   prohibited_uses: unknown
   monitoring: none
@@ -35,9 +33,9 @@
     value: 2021-12-31
   url: https://arxiv.org/abs/2112.15283
   model_card: none
-  modality: {}
+  modality: text; image
   analysis: ''
-  size: ''
+  size: 10B parameters (dense)
   dependencies: []
   training_emissions: unknown
   training_time: unknown
@@ -64,9 +62,7 @@
     value: 2022-10-27
   url: https://arxiv.org/abs/2210.15257
   model_card: none
-  modality:
-    explanation: image, text; image, text
-    value: image, text; image, text
+  modality: text; image
   analysis: ''
   size: 10B parameters (dense)
   dependencies: []
