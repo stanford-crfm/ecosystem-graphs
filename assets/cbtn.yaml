@@ -2,14 +2,16 @@
 - type: dataset
   name: CBTN Pediatric Radiology MRI dataset
   organization: Children's Brain Tumor Network (CBTN)
-  description: CBTN Pediatric Radiology MRI dataset is a multi-institutional pediatric dataset of clinical radiology MRIs by the Children’s Brain Tumor Network
+  description: CBTN Pediatric Radiology MRI dataset is a multi-institutional pediatric
+    dataset of clinical radiology MRIs by the Children’s Brain Tumor Network
   created_date: 2023-10-03
   url: https://arxiv.org/pdf/2310.01413.pdf
   datasheet: ''
   modality: MRI exams
   size: 23K exams
   sample: []
-  analysis: Evaluated in comparison to other cancer datasets and variety of diagnoses provided.
+  analysis: Evaluated in comparison to other cancer datasets and variety of diagnoses
+    provided.
   dependencies:
     - NCI Childhood Cancer Data Initiative datasets
     - The Cancer Imaging Archive datasets
