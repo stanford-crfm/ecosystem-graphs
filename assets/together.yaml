@@ -140,12 +140,7 @@
   analysis: Model evaluated over AlpacaEval, Rouge score over BookSum, and accuracy
     over MQA.
   size: 7B parameters (dense)
-  dependencies:
-    - LLaMA-2-70B-Chat outputs
-    - BookSum dataset
-    - MQA dataset
-    - Together API
-    - LLaMA-2-7B-32K
+  dependencies: [BookSum dataset, MQA dataset, Together API, LLaMA 2]
   training_emissions: ''
   training_time: ''
   training_hardware: ''

@@ -683,7 +683,7 @@
   analysis: Emu significantly outperforms a publicly available state-of-the-art
     model SDXLv1.0 on visual appeal when compared on standard benchmarks.
   size: 1.5B parameters (dense)
-  dependencies: [CLIP ViT-L, T5-XXL]
+  dependencies: [CLIP, T5]
   training_emissions: ''
   training_time: ''
   training_hardware: ''
