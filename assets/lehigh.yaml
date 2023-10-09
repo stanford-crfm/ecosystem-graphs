@@ -1,5 +1,4 @@
 ---
-
 - type: model
   name: BiomedGPT
   organization: Lehigh University
@@ -8,10 +7,10 @@
   created_date: 2023-05-26
   url: https://arxiv.org/pdf/2305.17100.pdf
   model_card: ''
-  modality: image and text input, text output
+  modality: image, text; text
   analysis: outperforms majority of preceding state-of-the-art models over 15 unique
     biomedical modalities.
-  size: 472M parameters
+  size: 472M parameters (dense)
   dependencies:
     - GPT-style autoregressive decoder
     - BiomedGPT biomedical datasets

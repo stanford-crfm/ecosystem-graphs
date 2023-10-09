@@ -1,5 +1,4 @@
 ---
-
 - type: model
   name: BigTrans
   organization: Institute of Automation Chinese Academy of Sciences
@@ -8,10 +7,10 @@
   created_date: 2023-05-29
   url: https://arxiv.org/pdf/2305.18098v1.pdf
   model_card: https://huggingface.co/James-WYang/BigTrans
-  modality: text
+  modality: text; text
   analysis: Reports results on standard translation benchmarks across 102 languages
     in comparison with Google Translate and ChatGPT
-  size: 13B parameters (dense model)
+  size: 13B parameters (dense)
   dependencies: [LLaMA, CLUE, BigTrans parallel dataset]
   training_emissions: unknown
   training_time: unknown

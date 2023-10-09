@@ -1,5 +1,4 @@
 ---
-
 - type: model
   name: StarCoder
   organization: BigCode
@@ -9,9 +8,9 @@
   created_date: 2023-05-09
   url: https://arxiv.org/pdf/2305.06161.pdf
   model_card: https://huggingface.co/bigcode/starcoder
-  modality: code (80+ programming languages)
+  modality: code; code
   analysis: Tested on several benchmarks, most notably Python benchmark HumanEval.
-  size: 15.5B parameters
+  size: 15.5B parameters (dense)
   dependencies: [The Stack]
   training_emissions: 16.68 tons of CO2eq
   training_time: 2 days
@@ -26,7 +25,6 @@
   prohibited_uses: ''
   monitoring: ''
   feedback: https://huggingface.co/bigcode/starcoder/discussions
-
 - type: model
   name: SantaCoder
   organization: BigCode
@@ -35,9 +33,9 @@
   created_date: 2023-02-24
   url: https://arxiv.org/pdf/2301.03988.pdf
   model_card: ''
-  modality: code
+  modality: code; code
   analysis: Evaluated on MultiPL-E system benchmarks.
-  size: 1.1B parameters
+  size: 1.1B parameters (dense)
   dependencies: [The Stack, BigCode Dataset]
   training_emissions: ''
   training_time: 3.1 days
@@ -49,7 +47,6 @@
   prohibited_uses: ''
   monitoring: ''
   feedback: ''
-
 - type: dataset
   name: The Stack
   organization: BigCode
@@ -58,7 +55,7 @@
   created_date: 2022-11-20
   url: https://arxiv.org/pdf/2211.15533.pdf
   datasheet: https://huggingface.co/datasets/bigcode/the-stack
-  modality: code (358 programming languages)
+  modality: code
   size: 3.1 TB
   sample: []
   analysis: Evaluated models trained on The Stack on HumanEval and MBPP and compared

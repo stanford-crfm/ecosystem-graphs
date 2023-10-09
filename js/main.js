@@ -629,6 +629,10 @@ function loadAssetsAndRenderPageContent() {
 
   const paths = [
     'assets/adept.yaml',
+    'assets/ibm.yaml',
+    'assets/osu.yaml',
+    'assets/boston.yaml',
+    'assets/kaist.yaml',
     'assets/writer.yaml',
     'assets/berkeley.yaml',
     'assets/faraday.yaml',
@@ -704,7 +708,7 @@ function loadAssetsAndRenderPageContent() {
     'assets/shanghai.yaml',
     'assets/shop.yaml',
     'assets/snap.yaml',
-    'assets/speak.yaml', 
+    'assets/speak.yaml',
     'assets/spotify.yaml',       
     'assets/stability.yaml',
     'assets/stanford.yaml',

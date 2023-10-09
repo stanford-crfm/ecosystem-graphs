@@ -1,23 +1,20 @@
 ---
-
 - type: application
   name: Perplexity Ask
   organization: Perplexity
   description: Perplexity Ask is a new search interface that uses advanced artificial
     intelligence technologies
   created_date:
-    value: 2022-12-07
     explanation: Perplexity Ask was announced in a [[Twitter post]](https://twitter.com/perplexity_ai/status/1600551871554338816?s=20)
       by the company.
+    value: 2022-12-07
   url: https://www.perplexity.ai/
   dependencies: [GPT-3.5, Bing Search]
   adaptation: ''
   output_space: ''
   quality_control: ''
   access: open
-  license:
-    value: none
-    explanation: No license was found.
+  license: none
   terms_of_service: ''
   intended_uses: ''
   prohibited_uses: ''
@@ -26,7 +23,6 @@
   monthly_active_users: ''
   user_distribution: ''
   failures: ''
-
 - type: application
   name: Bird SQL
   organization: Perplexity
@@ -38,10 +34,8 @@
   adaptation: ''
   output_space: ''
   quality_control: ''
-  access: deprecated
-  license:
-    value: none
-    explanation: No license was found.
+  access: closed
+  license: none
   terms_of_service: ''
   intended_uses: ''
   prohibited_uses: ''

@@ -1,5 +1,4 @@
 ---
-
 - type: application
   name: Brex Chat
   organization: Brex
@@ -15,11 +14,10 @@
   quality_control: ''
   access: limited
   license:
+    explanation: "\"Brex grants you a nonexclusive and nontransferable license to\
+      \ use Brex Property as provided through the Services and as permitted by these\
+      \ User Terms.\" - excerpt from the Terms of Service.\n"
     value: custom
-    explanation: >
-      "Brex grants you a nonexclusive and nontransferable license to use Brex
-      Property as provided through the Services and as permitted by these User
-      Terms." - excerpt from the Terms of Service.
   terms_of_service: https://www.brex.com/legal/user-terms
   intended_uses: ''
   prohibited_uses: ''

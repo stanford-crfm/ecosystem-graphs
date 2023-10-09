@@ -1,5 +1,4 @@
 ---
-
 - type: model
   name: OpenFold
   organization: Columbia
@@ -7,7 +6,7 @@
   created_date: 2022-11-20
   url: https://www.biorxiv.org/content/10.1101/2022.11.20.517210v2
   model_card: ''
-  modality: protein structures
+  modality: amino acid sequence; protein structure
   analysis: Evaluated on wide range of tasks using own evaluation benchmarks.
   size: ''
   dependencies: [AlphaFold2, OpenProteinSet]

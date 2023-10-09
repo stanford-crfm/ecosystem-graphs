@@ -1,18 +1,17 @@
 ---
-
 - type: model
   name: YaLM
   organization: Yandex
   description: YaLM is a 100B parameter autoregressive model trained on 25% English
     and 75% Russian text.
   created_date:
-    value: 2022-06-22
     explanation: The date the blog post about YaLM was published.
+    value: 2022-06-22
   url: https://medium.com/yandex/yandex-publishes-yalm-100b-its-the-largest-gpt-like-neural-network-in-open-source-d1df53d0e9a6
   model_card: ''
-  modality: text (English, Russian)
+  modality: text; text
   analysis: ''
-  size: 100B parameters (dense model)
+  size: 100B parameters (dense)
   dependencies: [The Pile, Yandex Russian Pretraining Dataset]
   training_emissions: ''
   training_time: ''
@@ -20,13 +19,12 @@
   quality_control: ''
   access: open
   license:
-    value: Apache 2.0
     explanation: ''
+    value: Apache 2.0
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
   feedback: ''
-
 - type: application
   name: Yandex Search
   organization: Yandex
@@ -40,19 +38,15 @@
   quality_control: ''
   access: open
   license:
+    explanation: "\"3.1. The Rightholder, on the basis of a simple (non-exclusive)\
+      \ license, shall grant the User a free, worldwide, non-transferable right\
+      \ to use the Software as set forth below:\n3.1.1. To use the Software in accordance\
+      \ with its functionality by copying and installing it on the User's personal\
+      \ device(s). The User shall be entitled to install the Software on any number\
+      \ of personal devices.\n3.1.2. To reproduce and to distribute this Software\
+      \ in an unmodified form and solely for non-commercial purposes (free of charge).\"\
+      \ - excerpt from the Terms of Service document for browsers.\n"
     value: custom
-    explanation: >
-      "3.1. The Rightholder, on the basis of a simple (non-exclusive) license,
-      shall grant the User a free, worldwide, non-transferable right to use the
-      Software as set forth below:
-
-      3.1.1. To use the Software in accordance with its functionality by
-      copying and installing it on the User's personal device(s). The User shall
-      be entitled to install the Software on any number of personal devices.
-
-      3.1.2. To reproduce and to distribute this Software in an unmodified form
-      and solely for non-commercial purposes (free of charge)." - excerpt
-      from the Terms of Service document for browsers.
   terms_of_service: https://yandex.com/legal/browser_agreement/
   intended_uses: ''
   prohibited_uses: ''

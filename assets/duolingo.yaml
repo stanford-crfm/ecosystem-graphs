@@ -1,5 +1,4 @@
 ---
-
 - type: application
   name: Duolingo Explain My Answer
   organization: Duolingo
@@ -16,9 +15,8 @@
   quality_control: ''
   access: limited
   license:
+    explanation: "Users are granted a limited license per Duolingo Terms.\n"
     value: custom
-    explanation: >
-      Users are granted a limited license per Duolingo Terms.
   terms_of_service: https://www.duolingo.com/terms
   intended_uses: ''
   prohibited_uses: ''
@@ -27,7 +25,6 @@
   monthly_active_users: ''
   user_distribution: ''
   failures: ''
-
 - type: application
   name: Duolingo Max
   organization: Duolingo
@@ -42,9 +39,8 @@
   quality_control: ''
   access: limited
   license:
+    explanation: "Users are granted a limited license per Duolingo Terms.\n"
     value: custom
-    explanation: >
-      Users are granted a limited license per Duolingo Terms.
   terms_of_service: ''
   intended_uses: ''
   prohibited_uses: ''
@@ -53,7 +49,6 @@
   monthly_active_users: ''
   user_distribution: ''
   failures: ''
-
 - type: application
   name: Duolingo Role Play
   organization: Duolingo
@@ -72,13 +67,12 @@
   quality_control: ''
   access: limited
   license:
+    explanation: "\"Subject to the terms of these Terms and Conditions, Duolingo\
+      \ grants you a non-transferable, non-exclusive license to download, install,\
+      \ and use one copy of each App in object code form only on an interactive\
+      \ wireless device that you own or control\" - excerpt from the Terms of Service\
+      \ document.\n"
     value: custom
-    explanation: >
-      "Subject to the terms of these Terms and Conditions, Duolingo grants you
-      a non-transferable, non-exclusive license to download, install, and use
-      one copy of each App in object code form only on an interactive wireless
-      device that you own or control" - excerpt from the Terms of Service
-      document.
   terms_of_service: https://www.duolingo.com/terms
   intended_uses: ''
   prohibited_uses: ''

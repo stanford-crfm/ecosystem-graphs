@@ -1,37 +1,30 @@
 ---
-
-# models
 - type: model
   name: Megatron-LM
   organization: NVIDIA
   description: Megatron-LM is an autoregressive language model
   created_date:
-    value: 2021-04-09
     explanation: The date the paper for the 1 trillion parameter model was published
+    value: 2021-04-09
   url: https://arxiv.org/abs/2104.04473
   model_card: none
-  modality: text (English)
+  modality: text; text
   analysis: ''
-  size: 1000B parameters (dense model)
+  size: 1T parameters (dense)
   dependencies: []
   training_emissions: unknown
   training_time: 84 days
   training_hardware: 3072 A100 GPUs
   quality_control: unknown
   access:
+    explanation: "Neither the 8.3B parameter model trained to convergence nor the\
+      \ 1 trillion paramter model is available for download\n"
     value: closed
-    explanation: >
-      Neither the 8.3B parameter model trained to convergence nor the 1 trillion
-      paramter model is available for download
-  license:
-    value: unknown
-    explanation: >
-      The asset isn't released, and hence the license is unknown.
+  license: unknown
   intended_uses: none
   prohibited_uses: none
   monitoring: none
   feedback: none
-
 - type: dataset
   name: MineDojo
   organization: NVIDIA
@@ -39,7 +32,7 @@
   created_date: 2022-06-17
   url: https://arxiv.org/abs/2206.08853
   datasheet: ''
-  modality: Videos, Text
+  modality: text, video
   size: 730k videos, 6k Wikipedia pages, 340k reddit posts
   sample: []
   analysis: ''
@@ -53,7 +46,6 @@
   prohibited_uses: ''
   monitoring: ''
   feedback: ''
-
 - type: dataset
   name: VIMA dataset
   organization: NVIDIA, Stanford
@@ -61,7 +53,7 @@
   created_date: 2022-10-06
   url: https://vimalabs.github.io/
   datasheet: ''
-  modality: text and image
+  modality: image, text
   size: 200M parameters (dense model)
   sample: []
   analysis: ''
@@ -75,7 +67,6 @@
   prohibited_uses: ''
   monitoring: ''
   feedback: ''
-
 - type: model
   name: VIMA
   organization: NVIDIA, Stanford
@@ -83,9 +74,9 @@
   created_date: 2022-10-06
   url: https://vimalabs.github.io/
   model_card: ''
-  modality: Simulation
+  modality: image, text; robotics trajectories
   analysis: ''
-  size: 650K successful trajectories
+  size: 200M parameters (dense)
   dependencies: []
   training_emissions: ''
   training_time: ''
