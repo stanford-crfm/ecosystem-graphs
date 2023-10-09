@@ -51,6 +51,7 @@
   prohibited_uses: ''
   monitoring: ''
   feedback: ''
+
 - type: model
   name: MathCoder
   organization: Shanghai AI Laboratory
@@ -62,7 +63,7 @@
   modality: text; text
   analysis: Evaluated on GSM8K and the competition-level MATH dataset.
   size: 70B parameters (dense)
-  dependencies: [GPT-4, LLaMA-2]
+  dependencies: [GPT-4, LLaMA 2]
   training_emissions: unknown
   training_time: unknown
   training_hardware: 32 NVIDIA A800 80GB GPUs

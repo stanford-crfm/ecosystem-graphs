@@ -1,7 +1,7 @@
 ---
 - type: dataset
   name: Open X-Embodiment dataset
-  organization: Open X-Embodiment, Google Deepmind
+  organization: Open X-Embodiment
   description: The Open X-Embodiment dataset is a dataset of robot movements assembled
     from 22 different robots collected through a collaboration between 21 institutions,
     demonstrating 527 skills (160266 tasks)
@@ -26,6 +26,7 @@
   prohibited_uses: none
   monitoring: unknown
   feedback: none
+
 - type: model
   name: RT-1-X
   organization: Open X-Embodiment, Google Deepmind
@@ -35,11 +36,11 @@
   created_date: 2023-10-03
   url: https://robotics-transformer-x.github.io/
   model_card: none
-  modality: text; robot trajectories
+  modality: images, text; robot trajectories
   analysis: Evaluated on in-distribution robotics skills, and outperforms its predecessor
     RT-1 by 50% in emergent skill evaluations.
   size: 35M parameters (dense)
-  dependencies: [RT-1, Open X-Embodiment dataset]
+  dependencies: [Open X-Embodiment dataset, ImageNet EfficientNet, USE]
   training_emissions: unknown
   training_time: unknown
   training_hardware: unknown
@@ -50,6 +51,7 @@
   prohibited_uses: none
   monitoring: unknown
   feedback: none
+
 - type: model
   name: RT-2-X
   organization: Open X-Embodiment, Google Deepmind
@@ -60,16 +62,16 @@
   created_date: 2023-10-03
   url: https://robotics-transformer-x.github.io/
   model_card: none
-  modality: text; robot trajectories
+  modality: images, text, robot trajectories; robot trajectories
   analysis: Evaluated on in-distribution robotics skills, and outperforms its predecessor
     RT-2 by 3x in emergent skill evaluations.
-  size: 35M parameters (dense)
-  dependencies: [RT-2, Open X-Embodiment dataset]
+  size: 55B parameters (dense)
+  dependencies: [Open X-Embodiment dataset, ViT (unknown size), UL2]
   training_emissions: unknown
   training_time: unknown
   training_hardware: unknown
   quality_control: unknown
-  access: open
+  access: closed
   license: unknown
   intended_uses: Further research on X-embodiment models.
   prohibited_uses: none
