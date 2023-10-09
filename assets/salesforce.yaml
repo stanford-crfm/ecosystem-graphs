@@ -1,32 +1,30 @@
 ---
-
 - type: model
   name: CodeGen
   organization: Salesforce
   description: CodeGen is a language model for code
   created_date:
-    value: 2022-03-25
     explanation: Date model paper was released
+    value: 2022-03-25
   url: https://arxiv.org/abs/2203.13474
   model_card: ''
-  modality: text (English) and code
+  modality: code, text; code, text
   analysis: ''
-  size: 16B parameters (dense model)
+  size: 16B parameters (dense)
   dependencies: []
   training_emissions: ''
   training_time: ''
   training_hardware: Unspecified Salesforce Compute (TPU-V4s)
   quality_control: ''
   access:
-    value: open
     explanation: Model weights are available for download with links in the [[GitHub
       repo]](https://github.com/salesforce/CodeGen)
+    value: open
   license: none (model weights), BSD-3-Clause (code)
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
   feedback: ''
-
 - type: model
   name: BLIP
   organization: Salesforce
@@ -34,7 +32,7 @@
   created_date: 2022-01-28
   url: https://arxiv.org/abs/2201.12086
   model_card: ''
-  modality: text and image
+  modality: text; image
   analysis: ''
   size: unknown
   dependencies:
@@ -56,7 +54,6 @@
   prohibited_uses: ''
   monitoring: ''
   feedback: ''
-
 - type: dataset
   name: LAION-115M
   organization: Salesforce
@@ -64,7 +61,7 @@
   created_date: 2022-01-28
   url: https://arxiv.org/abs/2201.12086
   datasheet: ''
-  modality: text and image
+  modality: image, text
   size: 115M image-text pairs
   sample: []
   analysis: ''
@@ -78,7 +75,6 @@
   prohibited_uses: ''
   monitoring: ''
   feedback: ''
-
 - type: application
   name: EinsteinGPT
   organization: Salesforce
@@ -91,10 +87,7 @@
   output_space: ''
   quality_control: ''
   access: limited
-  license:
-    value: unknown
-    explanation: >
-      The asset isn't released, and hence the license is unknown.
+  license: unknown
   terms_of_service: ''
   intended_uses: ''
   prohibited_uses: ''

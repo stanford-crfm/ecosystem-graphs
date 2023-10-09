@@ -1,5 +1,4 @@
 ---
-
 - type: model
   name: ACT-1
   organization: Adept
@@ -7,11 +6,11 @@
     and trained specifically for taking actions on computers (use software tools,
     APIs and websites) in response to the user's natural language commands.
   created_date:
-    value: 2022-09-14
     explanation: The date the model was announced in the [[Adept blog post]](https://www.adept.ai/blog/act-1).
+    value: 2022-09-14
   url: https://www.adept.ai/blog/act-1
   model_card: none
-  modality: text
+  modality: text; text
   analysis: ''
   size: ''
   dependencies: []
@@ -20,10 +19,30 @@
   training_hardware: unknown
   quality_control: ''
   access: closed
-  license:
-    value: unknown
-    explanation: >
-      The asset isn't released, and hence the license is unknown.
+  license: unknown
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+- type: model
+  name: Persimmon
+  organization: Adept
+  description: Persimmon is the most capable open-source, fully permissive model
+    with fewer than 10 billion parameters, as of its release date.
+  created_date: 2023-09-07
+  url: https://www.adept.ai/blog/persimmon-8b
+  model_card: ''
+  modality: text; text
+  analysis: Evaluated in comparison to LLaMA 2 and MPT Instruct, and outperforms
+    both on standard benchmarks.
+  size: 8B parameters (dense)
+  dependencies: []
+  training_emissions: ''
+  training_time: ''
+  training_hardware: ''
+  quality_control: ''
+  access: open
+  license: Apache 2.0
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''

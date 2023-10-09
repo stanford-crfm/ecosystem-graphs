@@ -1,5 +1,4 @@
 ---
-
 - type: model
   name: BioMedLM
   organization: Stanford
@@ -7,9 +6,9 @@
   created_date: 2022-12-15
   url: https://crfm.stanford.edu/2022/12/15/pubmedgpt.html
   model_card: ''
-  modality: text
+  modality: text; text
   analysis: ''
-  size: 2.7B parameters (dense model)
+  size: 2.7B parameters (dense)
   dependencies: [The Pile]
   training_emissions: ''
   training_time: ''
@@ -21,7 +20,6 @@
   prohibited_uses: ''
   monitoring: ''
   feedback: ''
-
 - type: model
   name: RoentGen
   organization: Stanford
@@ -30,10 +28,10 @@
   created_date: 2022-11-23
   url: https://arxiv.org/pdf/2211.12737.pdf
   model_card: ''
-  modality: text input and image output
+  modality: text; image
   analysis: Evaluated on own framework that tests domain-specific tasks in medical
     field.
-  size: 330M parameters
+  size: 330M parameters (dense)
   dependencies: [Stable Diffusion, RoentGen radiology dataset]
   training_emissions: unknown
   training_time: 60k training steps per day
@@ -45,7 +43,6 @@
   prohibited_uses: ''
   monitoring: ''
   feedback: ''
-
 - type: model
   name: CORGI
   organization: Stanford
@@ -54,16 +51,16 @@
   created_date: 2023-06-12
   url: https://arxiv.org/pdf/2306.07012.pdf
   model_card: ''
-  modality: trajectory input with text output
+  modality: human trajectories; text
   analysis: Evaluated on three physical control tasks, drawing, steering, and human
     body movement on various dynamics
-  size: 124M parameters
+  size: 124M parameters (dense)
   dependencies: [GPT-2, BABEL, text-davinci-003]
   training_emissions: ''
   training_time:
-    value: unknown
     explanation: The authors do not report the training time, but do report that
       they train for 200 epochs.
+    value: unknown
   training_hardware: one NVIDIA A40 GPU
   quality_control: ''
   access: open

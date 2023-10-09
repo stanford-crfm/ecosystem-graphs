@@ -1,5 +1,4 @@
 ---
-
 - type: dataset
   name: You dataset
   organization: You
@@ -16,15 +15,11 @@
   excluded: ''
   quality_control: ''
   access: closed
-  license:
-    value: unknown
-    explanation: >
-      The asset isn't released, and hence the license is unknown.
+  license: unknown
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
   feedback: ''
-
 - type: model
   name: You model
   organization: You
@@ -32,24 +27,20 @@
   created_date: unknown
   url: https://you.com/
   model_card: ''
-  modality: Text
+  modality: text; text
   analysis: ''
-  size: unknown
+  size: unknkown
   dependencies: [You dataset]
   training_emissions: ''
   training_time: ''
   training_hardware: ''
   quality_control: ''
   access: closed
-  license:
-    value: unknown
-    explanation: >
-      The asset isn't released, and hence the license is unknown.
+  license: unknown
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
   feedback: ''
-
 - type: application
   name: You Search
   organization: You
@@ -63,10 +54,7 @@
   output_space: ''
   quality_control: ''
   access: open
-  license:
-    value: unknown
-    explanation: >
-      The asset isn't released, and hence the license is unknown.
+  license: unknown
   terms_of_service: ''
   intended_uses: ''
   prohibited_uses: ''

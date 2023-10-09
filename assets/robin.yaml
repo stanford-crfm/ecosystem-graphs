@@ -1,5 +1,4 @@
 ---
-
 - type: application
   name: Robin AI
   organization: Robin AI
@@ -14,9 +13,7 @@
   output_space: ''
   quality_control: ''
   access: limited
-  license:
-    value: none
-    explanation: No license was found.
+  license: none
   terms_of_service: https://www.robinai.co.uk/terms
   intended_uses: ''
   prohibited_uses: ''

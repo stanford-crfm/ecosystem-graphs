@@ -1,5 +1,4 @@
 ---
-
 - type: model
   name: InternVideo
   organization: Shanghai AI Laboratory
@@ -7,9 +6,9 @@
   created_date: 2022-12-06
   url: https://arxiv.org/pdf/2212.03191.pdf
   model_card: ''
-  modality: text and video
+  modality: text, video; video
   analysis: ''
-  size: 1.3B parameters (dense model)
+  size: 1.3B parameters (dense)
   dependencies:
     - Kinetics-400
     - WebVid-2M
@@ -28,7 +27,6 @@
   prohibited_uses: ''
   monitoring: ''
   feedback: ''
-
 - type: model
   name: Lego-MT
   organization: Shanghai AI Laboratory
@@ -37,9 +35,9 @@
   created_date: 2023-05-29
   url: https://arxiv.org/pdf/2212.10551.pdf
   model_card: ''
-  modality: multilingual text
+  modality: text; text
   analysis: Evaluated based on own constructed dataset covering 433 languages.
-  size: 1.2B parameters
+  size: 1.2B parameters (dense)
   dependencies: [OPUS]
   training_emissions: unknown
   training_time: 15 days

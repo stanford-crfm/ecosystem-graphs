@@ -1,43 +1,33 @@
 ---
-
 - type: application
   name: AI Dungeon
-  # General
   organization: Latitude
-  description: >
-    AI Dungeon is a single-player text adventure game that uses AI to generate
-    content.
+  description: "AI Dungeon is a single-player text adventure game that uses AI to\
+    \ generate content.\n"
   created_date:
+    explanation: "Release date of the game on iOS and Android platforms [[Wikipedia]](https://en.wikipedia.org/wiki/AI_Dungeon).\n"
     value: 2019-12-17
-    explanation: >
-      Release date of the game on iOS and Android platforms
-      [[Wikipedia]](https://en.wikipedia.org/wiki/AI_Dungeon).
   url: https://play.aidungeon.io
-  # Construction
   dependencies: [OpenAI API]
   adaptation: ''
   output_space: ''
   quality_control: ''
-  # Downstream
   access:
+    explanation: "The game is available to public upon sign up.\n"
     value: limited
-    explanation: >
-      The game is available to public upon sign up.
-  terms_of_service: https://play.aidungeon.io/main/termsOfService
   license:
+    explanation: "\"Subject to your compliance with these Terms, the Company hereby\
+      \ grants to you, a personal, worldwide, royalty-free, non-assignable, non-sublicensable,\
+      \ non-transferrable, and non-exclusive license to use the software provided\
+      \ to you as part of the Services (and to download a single copy of the App\
+      \ onto the equipment or device specified by us)\" - excerpt from the Terms\
+      \ of Service document.\n"
     value: custom
-    explanation: >
-      "Subject to your compliance with these Terms, the Company hereby grants
-      to you, a personal, worldwide, royalty-free, non-assignable,
-      non-sublicensable, non-transferrable, and non-exclusive license to use
-      the software provided to you as part of the Services (and to download a
-      single copy of the App onto the equipment or device specified by us)" -
-      excerpt from the Terms of Service document.
+  terms_of_service: https://play.aidungeon.io/main/termsOfService
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
   feedback: ''
-  # Deployment
   monthly_active_users: ''
   user_distribution: ''
   failures: ''

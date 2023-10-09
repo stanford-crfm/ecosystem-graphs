@@ -1,5 +1,4 @@
 ---
-
 - type: dataset
   name: LAION-1B
   organization: Alibaba
@@ -7,7 +6,7 @@
   created_date: 2023-02-20
   url: https://arxiv.org/pdf/2302.09778.pdf
   datasheet: ''
-  modality: text and image
+  modality: image, text
   size: 1B image-text pairs
   sample: []
   analysis: ''
@@ -22,7 +21,6 @@
   prohibited_uses: ''
   monitoring: ''
   feedback: ''
-
 - type: model
   name: Composer
   organization: Alibaba
@@ -30,19 +28,16 @@
   created_date: 2023-02-20
   url: https://arxiv.org/pdf/2302.09778.pdf
   model_card: ''
-  modality: images
+  modality: image, text; image
   analysis: ''
-  size: 4.4B parameters (dense model)
+  size: 4.4B parameters (dense)
   dependencies: [ImageNet, WebVision, LAION-1B]
   training_emissions: ''
   training_time: ''
   training_hardware: ''
   quality_control: ''
   access: closed
-  license:
-    value: unknown
-    explanation: >
-      The asset isn't released, and hence the license is unknown.
+  license: unknown
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''

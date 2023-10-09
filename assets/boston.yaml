@@ -1,0 +1,24 @@
+---
+- type: model
+  name: Platypus
+  organization: Boston University
+  description: Platypus is a family of fine-tuned and merged Large Language Models
+    (LLMs).
+  created_date: 2023-08-14
+  url: https://arxiv.org/pdf/2308.07317.pdf
+  model_card: https://huggingface.co/garage-bAInd/Platypus2-13B
+  modality: text; text
+  analysis: Platypus achieves the strongest performance and currently stands at
+    first place in HuggingFace’s Open LLM Leaderboard as of its release date.
+  size: 13B parameters (dense)
+  dependencies: [LLaMA 2, Platypus curated dataset]
+  training_emissions: ''
+  training_time: 5 hours
+  training_hardware: 1 A100 GPU
+  quality_control: ''
+  access: open
+  license: CC by-NC-SA 4.0
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: https://huggingface.co/garage-bAInd/Platypus2-13B/discussions

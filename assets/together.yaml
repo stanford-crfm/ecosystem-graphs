@@ -1,5 +1,4 @@
 ---
-
 - type: model
   name: GPT-JT
   organization: Together
@@ -7,9 +6,9 @@
   created_date: 2022-11-29
   url: https://www.together.xyz/blog/releasing-v1-of-gpt-jt-powered-by-open-source-ai
   model_card: ''
-  modality: text
+  modality: text; text
   analysis: ''
-  size: 6B parameters (dense model)
+  size: 6B parameters (dense)
   dependencies: [GPT-J, P3, NaturalInstructions-v2]
   training_emissions: ''
   training_time: ''
@@ -21,7 +20,6 @@
   prohibited_uses: ''
   monitoring: ''
   feedback: ''
-
 - type: model
   name: GPT-NeoXT-Chat-Base
   organization: Together
@@ -29,9 +27,9 @@
   created_date: 2023-03-10
   url: https://www.together.xyz/blog/openchatkit
   model_card: ''
-  modality: text
+  modality: text; text
   analysis: ''
-  size: 20B parameters (dense model)
+  size: 20B parameters (dense)
   dependencies: [GPT-NeoX, OIG-43M]
   training_emissions: ''
   training_time: ''
@@ -43,7 +41,6 @@
   prohibited_uses: ''
   monitoring: ''
   feedback: ''
-
 - type: model
   name: OpenChatKit moderation model
   organization: Together
@@ -51,9 +48,9 @@
   created_date: 2023-03-10
   url: https://www.together.xyz/blog/openchatkit
   model_card: ''
-  modality: text
+  modality: text; text
   analysis: ''
-  size: 6B parameters (dense model)
+  size: 6B parameters (dense)
   dependencies: [GPT-JT, OIG-moderation]
   training_emissions: ''
   training_time: ''
@@ -65,7 +62,6 @@
   prohibited_uses: ''
   monitoring: ''
   feedback: ''
-
 - type: dataset
   name: OIG-43M
   organization: Together, LAION, Ontocord
@@ -87,7 +83,6 @@
   prohibited_uses: ''
   monitoring: ''
   feedback: ''
-
 - type: dataset
   name: OIG-moderation
   organization: Together, LAION, Ontocord
@@ -109,7 +104,6 @@
   prohibited_uses: ''
   monitoring: ''
   feedback: ''
-
 - type: dataset
   name: RedPajama-Data
   organization: Together
@@ -132,3 +126,28 @@
   prohibited_uses: ''
   monitoring: ''
   feedback: ''
+- type: model
+  name: Llama-2-7B-32K-Instruct
+  organization: Together
+  description: Llama-2-7B-32K-Instruct is an open-source, long-context chat model
+    finetuned from Llama-2-7B-32K, over high-quality instruction and chat data.
+  created_date: 2023-08-18
+  url: https://together.ai/blog/llama-2-7b-32k-instruct
+  model_card: https://huggingface.co/togethercomputer/Llama-2-7B-32K-Instruct
+  modality:
+    explanation: text; text
+    value: text; text
+  analysis: Model evaluated over AlpacaEval, Rouge score over BookSum, and accuracy
+    over MQA.
+  size: 7B parameters (dense)
+  dependencies: [BookSum dataset, MQA dataset, Together API, LLaMA 2]
+  training_emissions: ''
+  training_time: ''
+  training_hardware: ''
+  quality_control: ''
+  access: open
+  license: Apache 2.0
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: https://huggingface.co/togethercomputer/Llama-2-7B-32K-Instruct/discussions

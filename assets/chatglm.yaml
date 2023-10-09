@@ -1,5 +1,4 @@
 ---
-
 - type: model
   name: ChatGLM
   organization: ChatGLM
@@ -8,9 +7,9 @@
   created_date: 2023-03-14
   url: https://chatglm.cn/blog
   model_card: ''
-  modality: text
+  modality: text; text
   analysis: Performance evaluated on English and Chinese language benchmark tests.
-  size: 6B parameters
+  size: 6B parameters (dense)
   dependencies: []
   training_emissions: unknown
   training_time: unknown
