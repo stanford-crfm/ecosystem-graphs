@@ -1,0 +1,79 @@
+---
+- type: dataset
+  name: Open X-Embodiment dataset
+  organization: Open X-Embodiment
+  description: The Open X-Embodiment dataset is a dataset of robot movements assembled
+    from 22 different robots collected through a collaboration between 21 institutions,
+    demonstrating 527 skills (160266 tasks)
+  created_date: 2023-10-03
+  url: https://robotics-transformer-x.github.io/
+  datasheet: All data can be found at https://robotics-transformer-x.github.io/.
+  modality: robot trajectories
+  size: 160K tasks
+  sample: []
+  analysis: Analyzed on breakdown of types of robot trajectory in dataset, and overall
+    coverage.
+  dependencies:
+    explanation: data compiled from unknown datasets in over 21 different institutions,
+      list of institutions can be found at https://robotics-transformer-x.github.io/paper.pdf
+    value: []
+  included: N/A
+  excluded: N/A
+  quality_control: unknown
+  access: open
+  license: unknown
+  intended_uses: Further research on X-embodiment models.
+  prohibited_uses: none
+  monitoring: unknown
+  feedback: none
+
+- type: model
+  name: RT-1-X
+  organization: Open X-Embodiment, Google Deepmind
+  description: RT-1-X is a model trained on the Open X-Embodiment dataset that exhibits
+    better generalization and new capabilities compared to its predecessor RT-1,
+    an efficient Transformer-based architecture designed for robotic control.
+  created_date: 2023-10-03
+  url: https://robotics-transformer-x.github.io/
+  model_card: none
+  modality: images, text; robot trajectories
+  analysis: Evaluated on in-distribution robotics skills, and outperforms its predecessor
+    RT-1 by 50% in emergent skill evaluations.
+  size: 35M parameters (dense)
+  dependencies: [Open X-Embodiment dataset, ImageNet EfficientNet, USE]
+  training_emissions: unknown
+  training_time: unknown
+  training_hardware: unknown
+  quality_control: unknown
+  access: open
+  license: unknown
+  intended_uses: Further research on X-embodiment models.
+  prohibited_uses: none
+  monitoring: unknown
+  feedback: none
+
+- type: model
+  name: RT-2-X
+  organization: Open X-Embodiment, Google Deepmind
+  description: RT-2-X is a model trained on the Open X-Embodiment dataset that exhibits
+    better generalization and new capabilities compared to its predecessor RT-2,
+    a large vision-language model co-fine-tuned to output robot actions as natural
+    language tokens.
+  created_date: 2023-10-03
+  url: https://robotics-transformer-x.github.io/
+  model_card: none
+  modality: images, text, robot trajectories; robot trajectories
+  analysis: Evaluated on in-distribution robotics skills, and outperforms its predecessor
+    RT-2 by 3x in emergent skill evaluations.
+  size: 55B parameters (dense)
+  dependencies: [Open X-Embodiment dataset, ViT (unknown size), UL2]
+  training_emissions: unknown
+  training_time: unknown
+  training_hardware: unknown
+  quality_control: unknown
+  access: closed
+  license: unknown
+  intended_uses: Further research on X-embodiment models.
+  prohibited_uses: none
+  monitoring: unknown
+  feedback: none

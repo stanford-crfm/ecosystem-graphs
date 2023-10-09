@@ -1,0 +1,25 @@
+---
+- type: dataset
+  name: UKM Credit Score Dataset
+  organization: Universiti Kebangsaan Malaysia (UKM)
+  description: UKM Credit Score Dataset is a new credit card default dataset for
+    American banks.
+  created_date: 2023-10-04
+  url: https://browse.arxiv.org/pdf/2310.02956.pdf
+  datasheet: Can be found at https://browse.arxiv.org/pdf/2310.02956.pdf Table 1.
+  modality: text
+  size: 18K score features
+  sample: []
+  analysis: Evaluated on model accuracy using UKM dataset compared to other financial
+    datasets.
+  dependencies: [unspecified American bank data]
+  included: N/A
+  excluded: N/A
+  quality_control: none
+  access: open
+  license: unknown
+  intended_uses: investigating the best-performing ML models to use in conjunction
+    with credit data.
+  prohibited_uses: none
+  monitoring: none
+  feedback: none
