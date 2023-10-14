@@ -1,7 +1,5 @@
 # Ecosystem Graphs
 
-Test commit action
-
 ## Overview
 Welcome! Ecosystem Graphs is an ongoing effort to track the foundation model ecosystem, namely both the assets (datasets, models, and applications) and their relationships. Using it, one can answer questions such as: What are the latest foundation models? Who builds them and where are they used downstream? What are the general trends over time? We hope that ecosystem graphs will be a useful resource for researchers, application developers, policymakers, and the public to better understand the foundation models ecosystem.
 
