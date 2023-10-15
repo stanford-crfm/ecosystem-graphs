@@ -24,3 +24,47 @@
   prohibited_uses: none
   monitoring: none
   feedback: none
+- type: model
+  name: Zephyr
+  organization: HuggingFace
+  description: Zephyr is a series of language models that are trained to act as helpful assistants.
+  created_date: 2023-10-11
+  url: https://huggingface.co/HuggingFaceH4/zephyr-7b-alpha
+  model_card: https://huggingface.co/HuggingFaceH4/zephyr-7b-alpha
+  modality: text; text
+  analysis: Evaluated on loss, rewards, logps, and logits rejected and chosen.
+  size: 7B parameters (dense)
+  dependencies: [Mistral]
+  training_emissions: unknown
+  training_time: unknown
+  training_hardware: unknown
+  quality_control: none
+  access: open
+  license: MIT
+  intended_uses: Educational and research purposes
+  prohibited_uses: none
+  monitoring: none
+  feedback: https://huggingface.co/HuggingFaceH4/zephyr-7b-alpha/discussions
+- type: model
+  name: IDEFICS
+  organization: HuggingFace
+  description: IDEFICS is an open-access visual language model, based on Flamingo.
+  created_date: 2023-08-22
+  url: https://huggingface.co/blog/idefics
+  model_card: https://huggingface.co/HuggingFaceM4/idefics-80b-instruct
+  modality: image, text; text
+  analysis: Evaluated in comparison to Flamingo and OpenFlamingo on standard benchmarks.
+  size: 80B parameters (dense)
+  dependencies: [OBELICS, Wikipedia, LAION, PMD]
+  training_emissions: unknown
+  training_time: unknown
+  training_hardware: unknown
+  quality_control: none
+  access: open
+  license:
+    explanation: Can be found at https://huggingface.co/HuggingFaceM4/idefics-80b-instruct#license
+    value: custom
+  intended_uses: Educational and research purposes
+  prohibited_uses: none
+  monitoring: none
+  feedback: https://huggingface.co/HuggingFaceM4/idefics-80b-instruct/discussions
