@@ -630,6 +630,9 @@ function loadAssetsAndRenderPageContent() {
   const paths = [
     'assets/adept.yaml',
     'assets/wayve.yaml',
+    'assets/beitech.yaml',
+    'assets/twelvelabs.yaml',
+    'assets/bytedance.yaml',
     'assets/openx.yaml',
     'assets/ibm.yaml',
     'assets/osu.yaml',
