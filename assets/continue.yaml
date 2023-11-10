@@ -1,7 +1,7 @@
 ---
 - type: application
   name: Continue
-  organization: Continue
+  organization: Continue Dev, Inc.
   description: Continue is the open-source autopilot for software development. It is an IDE extension that brings the power of 
     ChatGPT to VS Code and JetBrains. It’s built to be deeply customizable and continuously learn from development data. 
   created_date: 2023-07-26
