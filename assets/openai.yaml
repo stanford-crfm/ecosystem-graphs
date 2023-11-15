@@ -932,6 +932,32 @@
   prohibited_uses: ''
   monitoring: ''
   feedback: ''
+- type: model
+  name: GPT-4 Turbo
+  organization: OpenAI
+  description: GPT-4 Turbo is a more capable version of GPT-4 and has knowledge
+    of world events up to April 2023. It has a 128k context window so it can fit
+    the equivalent of more than 300 pages of text in a single prompt.
+  created_date: 2023-11-06
+  url: https://platform.openai.com/docs/models/gpt-4-and-gpt-4-turbo
+  model_card: none
+  modality: text; text
+  analysis: none
+  size: unknown
+  dependencies: []
+  training_emissions: unknown
+  training_time: unknown
+  training_hardware: unknown
+  quality_control: ''
+  access: limited
+  license:
+    explanation: Per the Terms of Use, a limited license is provided to the users
+      during their use of the API [[Section 2]](https://openai.com/api/policies/terms/).
+    value: custom
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: unknown
+  feedback: none
 - type: dataset
   name: gpt-3.5-turbo dataset
   organization: OpenAI

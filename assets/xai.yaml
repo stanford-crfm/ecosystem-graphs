@@ -1,0 +1,22 @@
+---
+- type: model
+  name: Grok-1
+  organization: xAI
+  description: Grok is an AI modeled after the Hitchhiker’s Guide to the Galaxy, intended to answer almost anything and even suggest what questions to ask.
+  created_date: 2023-11-04
+  url: https://x.ai/
+  model_card: https://x.ai/model-card/
+  modality: text; text
+  analysis: Grok-1 was evaluated on a range of reasoning benchmark tasks and on curated foreign mathematic examination questions.
+  size: unknown
+  dependencies: []
+  training_emissions: unknown
+  training_time: unknown
+  training_hardware: unknown
+  quality_control: none
+  access: closed
+  license: unknown
+  intended_uses: Grok-1 is intended to be used as the engine behind Grok for natural language processing tasks including question answering, information retrieval, creative writing and coding assistance.
+  prohibited_uses: none
+  monitoring: unknown
+  feedback: none
