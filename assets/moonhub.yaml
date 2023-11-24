@@ -5,7 +5,7 @@
   description: Moonhub Recruiter is the world's first AI-powered recruiter providing sourcing and recruiting services for startups and growing businesses.
   created_date: 2023-10-11
   url: https://www.moonhub.ai/
-  dependencies: []
+  dependencies: [Cohere Base]
   adaptation: ''
   output_space: job candidate matches
   quality_control: ''

@@ -55,7 +55,7 @@
   modality: image, text; text
   analysis: Evaluated in comparison to Flamingo and OpenFlamingo on standard benchmarks.
   size: 80B parameters (dense)
-  dependencies: [OBELICS, Wikipedia, LAION, PMD]
+  dependencies: [OBELICS, Wikipedia, LAION-5B, PMD]
   training_emissions: unknown
   training_time: unknown
   training_hardware: unknown
@@ -68,3 +68,24 @@
   prohibited_uses: none
   monitoring: none
   feedback: https://huggingface.co/HuggingFaceM4/idefics-80b-instruct/discussions
+- type: dataset
+  name: OBELICS
+  organization: HuggingFace
+  description: OBELICS is a dataset consisting of 141 million interleaved image-text documents scraped from the web and contains 353 million images.
+  created_date: 2023-08-22
+  url: https://huggingface.co/blog/idefics
+  datasheet: https://huggingface.co/datasets/HuggingFaceM4/OBELICS
+  modality: image, text
+  size: 115B tokens
+  sample: []
+  analysis: Subset of training dataset evaluated for bias using Data Measurements Tool.
+  dependencies: []
+  included: ''
+  excluded: All images for which creators explicitly requested opt-out of AI training.
+  quality_control: Sexual and violent content still present in OBELICS even after filtering.
+  access: open
+  license: CC-BY-4.0
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: https://huggingface.co/datasets/HuggingFaceM4/OBELICS/discussions

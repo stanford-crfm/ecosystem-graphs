@@ -1,7 +1,7 @@
 ---
 - type: model
   name: Mistral
-  organization: Alibaba
+  organization: Mistral AI
   description: Mistral is a compact language model.
   created_date: 2023-09-27
   url: https://mistral.ai/news/announcing-mistral-7b/

@@ -1,53 +1,79 @@
 ---
-- type: application
+- type: model
   name: Firefly Image 2
   organization: Adobe
   description: Firefly Image 2 is the next generation of generative AI for imaging, bringing significant advancements to creative control and quality, including new Text to Image capabilities now available in the popular Firefly web app where 90% of users are new to Adobe products.
   created_date: 2023-10-10
   url: https://firefly.adobe.com/
-  dependencies: [Firefly]
-  adaptation: ''
-  output_space: AI-generated images
+  model_card: none
+  modality: text; image
+  analysis: ''
+  size: unknown
+  dependencies: []
+  training_emissions: unknown
+  training_time: unknown
+  training_hardware: unknown
   quality_control: ''
-  access: limited
+  access: closed
   license: unknown
-  terms_of_service: https://www.adobe.com/legal/licenses-terms/adobe-gen-ai-user-guidelines.html
   intended_uses: creative generation of digital art and images
   prohibited_uses: AI/ML training, attempting to create abusive, illegal, or confidential content.
   monitoring: ''
   feedback: ''
-  monthly_active_users: unknown
-  user_distribution: unknown
-  failures: unknown
-- type: application
+
+- type: model
   name: Firefly Vector
   organization: Adobe
   description: Firefly Vector is the world’s first generative AI focused on producing vector graphics, bringing Adobe's vector graphic and generative AI expertise directly into Adobe Illustrator workflows with Text to Vector Graphic.
   created_date: 2023-10-10
   url: https://firefly.adobe.com/
-  dependencies: [Firefly]
-  adaptation: ''
-  output_space: AI-generated vector graphics
+  model_card: none
+  modality: text; vector graphic
+  analysis: ''
+  size: unknown
+  dependencies: []
+  training_emissions: unknown
+  training_time: unknown
+  training_hardware: unknown
   quality_control: ''
-  access: limited
+  access: closed
   license: unknown
-  terms_of_service: https://www.adobe.com/legal/licenses-terms/adobe-gen-ai-user-guidelines.html
   intended_uses: creative generation of digital art and images
   prohibited_uses: AI/ML training, attempting to create abusive, illegal, or confidential content.
   monitoring: ''
   feedback: ''
-  monthly_active_users: unknown
-  user_distribution: unknown
-  failures: unknown
-- type: application
+
+- type: model
   name: Firefly Design
   organization: Adobe
   description: Firefly Design powers instant generation of amazing quality template designs in Adobe Express with the new Text to Template capability.
   created_date: 2023-10-10
   url: https://firefly.adobe.com/
-  dependencies: [Firefly]
+  model_card: none
+  modality: text; template design
+  analysis: ''
+  size: unknown
+  dependencies: []
+  training_emissions: unknown
+  training_time: unknown
+  training_hardware: unknown
+  quality_control: ''
+  access: closed
+  license: unknown
+  intended_uses: creative generation of digital art and images
+  prohibited_uses: AI/ML training, attempting to create abusive, illegal, or confidential content.
+  monitoring: ''
+  feedback: ''
+
+- type: application
+  name: Firefly
+  organization: Adobe
+  description: Adobe Firefly is a standalone web application. It offers new ways to ideate, create, and communicate while significantly improving creative workflows using generative AI.
+  created_date: 2023-03-21
+  url: https://firefly.adobe.com/
+  dependencies: [Firefly Image 2, Firefly Vector, Firefly Design]
   adaptation: ''
-  output_space: AI-generated template designs.
+  output_space: AI-generated creations
   quality_control: ''
   access: limited
   license: unknown

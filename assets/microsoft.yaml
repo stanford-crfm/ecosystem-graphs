@@ -774,7 +774,7 @@
   size: 4.5M text queries
   sample: []
   analysis: Models trained on OpenOrca compared to GPT-series on language benchmarks.
-  dependencies: [GPT-3.5, GPT-4]
+  dependencies: [GPT-3.5, GPT-4, Flan Collection]
   included: ''
   excluded: ''
   quality_control: ''
@@ -784,20 +784,20 @@
   prohibited_uses: none
   monitoring: ''
   feedback: none
-- type: dataset
+- type: model
   name: LlongOrca
   organization: Microsoft
   description: LlongOrca is an attempt to make OpenOrca able to function in a Llong context.
   created_date: 2023-08-01
   url: https://huggingface.co/Open-Orca/LlongOrca-7B-16k
-  datasheet: https://huggingface.co/Open-Orca/LlongOrca-7B-16k
-  modality: text
+  model_card: https://huggingface.co/Open-Orca/LlongOrca-7B-16k
+  modality: text; text
+  analysis: LlongOrca evaluated on BigBench-Hard and AGIEval results.
   size: 7B parameters (dense)
-  sample: []
-  analysis: Model trained on LlongOrca evaluated on BigBench-Hard and AGIEval results.
   dependencies: [OpenOrca, LLongMA-2]
-  included: ''
-  excluded: ''
+  training_emissions: unknown
+  training_time: 37 hours
+  training_hardware: 8x A6000-48GB (first-gen) GPUs 
   quality_control: ''
   access: open
   license: LLaMA2
@@ -821,7 +821,9 @@
   training_hardware: 32 A100-40G GPUs
   quality_control: generic web-crawl data is removed from dataset.
   access: open
-  license: microsoft research license
+  license: 
+    explanation: can be found via the license tab at top of https://huggingface.co/microsoft/phi-1_5
+    value: microsoft research license
   intended_uses: Phi-1.5 is best suited for answering prompts using the QA format, the chat format, and the code format.
   prohibited_uses: ''
   monitoring: none
