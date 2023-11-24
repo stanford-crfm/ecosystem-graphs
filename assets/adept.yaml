@@ -50,7 +50,7 @@
 - type: model
   name: Fuyu
   organization: Adept
-  description: Fuyu is a small version of the multimodal model that powers our product.
+  description: Fuyu is a small version of the multimodal model that powers Adept's core product.
   created_date: 2023-10-17
   url: https://www.adept.ai/blog/fuyu-8b
   model_card: https://huggingface.co/adept/fuyu-8b

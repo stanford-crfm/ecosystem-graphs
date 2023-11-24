@@ -31,7 +31,7 @@
   modality: text; image
   analysis: Compared to Stable Diffusion 2, a SOTA text-to-image model.
   size: unknown
-  dependencies: [Creative Commons]
+  dependencies: [CommonCatalog]
   training_emissions: unknown
   training_time: 6.79 days
   training_hardware: 128 A100 NVIDIA GPUs
@@ -41,4 +41,25 @@
   intended_uses: ''
   prohibited_uses: ''
   monitoring: none
+  feedback: none
+- type: dataset
+  name: CommonCatalog
+  organization: Mosaic
+  description: CommonCatalog is a curated dataset of CommonCrawl images and synthetic captions.
+  created_date: 2023-10-25
+  url: https://arxiv.org/pdf/2310.16825.pdf
+  datasheet: https://github.com/mosaicml/diffusion/blob/main/assets/common-canvas.md
+  modality: image-caption pairings
+  size: 70M images
+  sample: []
+  analysis: none
+  dependencies: [YFCC100M, BLIP-2]
+  included: images with derivative licenses
+  excluded: images with non-derivative licenses
+  quality_control: ''
+  access: open
+  license: Apache 2.0
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
   feedback: none
