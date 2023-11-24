@@ -782,6 +782,7 @@
     - Whisper
     - DALL·E
     - GPT-4
+    - GPT-4 Turbo
   adaptation: The API exposes the models fairly direclty with a range of hyperparameters
     (e.g. temperature scaling).
   output_space: "Given a prompting text, the OpenAI API provides access to text\

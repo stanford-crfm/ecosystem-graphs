@@ -765,7 +765,7 @@
   feedback: https://huggingface.co/WizardLM/WizardCoder-Python-34B-V1.0/discussions
 - type: model
   name: Florence-2
-  organization: Azure AI, Microsoft
+  organization: Microsoft
   description: WizardCoder empowers Code LLMs with complex instruction fine-tuning, by adapting the Evol-Instruct method to the domain of code.
   created_date: 2023-11-10
   url: https://arxiv.org/pdf/2311.06242.pdf
@@ -794,7 +794,7 @@
   modality: image, text
   size: 1.3B image-text annotations
   sample: []
-  analysis: Compared to datasets that power other large-scale image models.
+  analysis: FLD-5B evaluated in comparison to datasets that power other large-scale image models on standard image benchmarks.
   dependencies: []
   included: ''
   excluded: ''
