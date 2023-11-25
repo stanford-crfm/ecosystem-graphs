@@ -115,3 +115,97 @@
   monitoring: Quality filtration, deduplication, and risk mitigation via logistic
     qualifiers and regular expressions used.
   feedback: ''
+
+- type: dataset
+  name: Tulu-V2-mix
+  organization: AI2
+  description: Tulu-V2-mix is a dataset composed of many high-quality instruction datasets that results in stronger performance across a variety of reasoning and knowledge-probing tasks.
+  created_date: 2023-11-20
+  url: https://arxiv.org/pdf/2311.10702.pdf
+  datasheet: https://huggingface.co/datasets/allenai/tulu-v2-sft-mixture
+  modality: text
+  size:
+    value: unknown
+    explanation: Magnitude of size is around 100M tokens, given the length distribution of dataset provided in model card.
+  sample: []
+  analysis: Models trained with dataset evaluated on downstream performance.
+  dependencies: [FLAN, Open Assistant 1, ShareGPT, GPT4 Alpaca, Code Alpaca, LIMA, WizardLM Evol Instruct, Open Orca]
+  included: ''
+  excluded: ''
+  quality_control: ''
+  access: open
+  license: ODC-BY
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: https://huggingface.co/datasets/allenai/tulu-v2-sft-mixture/discussions
+
+- type: model
+  name: Tulu 2
+  organization: AI2
+  description: Tulu 2 is a language model trained on the new Tulu-v2-mix dataset and fine-tuned on more state of the art language models.
+  created_date: 2023-11-20
+  url: https://arxiv.org/pdf/2311.10702.pdf
+  model_card: https://huggingface.co/allenai/tulu-2-70b
+  modality: text; text
+  analysis: Evaluated on MT-Bench and AlpacaEval.
+    compared to other chatbots.
+  size: 70B parameters (dense)
+  dependencies: [LLaMA 2, Tulu-V2-mix]
+  training_emissions: unknown
+  training_time: unknown
+  training_hardware: unknown
+  quality_control: ''
+  access: open
+  license: AI2 ImpACT
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: https://huggingface.co/allenai/tulu-2-70b/discussions
+
+- type: model
+  name: Tulu 2 DPO
+  organization: AI2
+  description: Tulu 2 DPO is created in a similar manner to Tulu 2, but with Direct Preference Optimization (DPO).
+  created_date: 2023-11-20
+  url: https://arxiv.org/pdf/2311.10702.pdf
+  model_card: https://huggingface.co/allenai/tulu-2-dpo-70b
+  modality: text; text
+  analysis: Evaluated on MT-Bench and AlpacaEval.
+    compared to other chatbots.
+  size: 70B parameters (dense)
+  dependencies: [LLaMA 2, Tulu-V2-mix]
+  training_emissions: unknown
+  training_time: unknown
+  training_hardware: unknown
+  quality_control: ''
+  access: open
+  license: AI2 ImpACT
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: https://huggingface.co/allenai/tulu-2-dpo-70b/discussions
+
+- type: model
+  name: Code Tulu 2
+  organization: AI2
+  description: Code Tulu 2 is a fine-tuned version of Code LLaMA that was trained on a mix of publicly available, synthetic and human datasets.
+  created_date: 2023-11-20
+  url: https://arxiv.org/pdf/2311.10702.pdf
+  model_card: https://huggingface.co/allenai/codetulu-2-13b
+  modality: text; code, text
+  analysis: Evaluated on MT-Bench and AlpacaEval.
+    compared to other chatbots.
+  size: 13B parameters (dense)
+  dependencies: [Code LLaMA, Tulu-V2-mix]
+  training_emissions: unknown
+  training_time: unknown
+  training_hardware: unknown
+  quality_control: ''
+  access: open
+  license: AI2 ImpACT
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: https://huggingface.co/allenai/codetulu-2-13b/discussions
+
