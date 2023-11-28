@@ -69,3 +69,77 @@
   prohibited_uses: ''
   monitoring: ''
   feedback: ''
+- type: dataset
+  name: Alpaca dataset
+  # General
+  organization: Stanford
+  description: >
+    Alpaca dataset consistes of 52,000 instruction-following demonstrations generated
+    in the style of the [Self-Instruct framework](https://github.com/yizhongw/self-instruct)
+    using OpenAI's text-davinci-003 engine. This instruction data can be used to
+    conduct instruction-tuning for language models and make the language model follow
+    instruction better.
+  created_date:
+    value: 2023-03-13
+    explanation: >
+      The date the [[blog post]](https://crfm.stanford.edu/2023/03/13/alpaca.html)
+      was released.
+  url: https://crfm.stanford.edu/2023/03/13/alpaca.html
+  datasheet: https://huggingface.co/datasets/tatsu-lab/alpaca
+  modality: text (English)
+  size: 52K instruction-following demonstrations
+  sample: []
+  analysis: ''
+  # Construction
+  dependencies: [text-davinci-003]
+  license: CC BY-NC 4.0
+  included: ''
+  excluded: ''
+  quality_control: ''
+  # Downstream
+  access:
+    value: open
+    explanation: The dataset can be downloaded from [[Hugging Face]](https://huggingface.co/datasets/tatsu-lab/alpaca).
+      The code for generating data is available on the [[GitHub repository]](https://github.com/tatsu-lab/stanford_alpaca#data-generation-process).
+  intended_uses: Alpaca is intended and licensed for research use only.
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: Feedback can be provided on [[GitHub Issues]](https://github.com/tatsu-lab/stanford_alpaca/issues).
+
+- type: model
+  name: Alpaca
+  # General
+  organization: Stanford
+  description: >
+    Alpaca-7B is an instruction-following model fine-tuned from the LLaMA 7B model
+    on 52K instruction-following demonstrations.
+  created_date:
+    value: 2023-03-13
+    explanation: >
+      The date the [[blog post]](https://crfm.stanford.edu/2023/03/13/alpaca.html)
+      was released.
+  url: https://crfm.stanford.edu/2023/03/13/alpaca.html
+  model_card: ''
+  modality: text (English)
+  size: 7B parameters (dense model)
+  analysis: ''
+  # Construction
+  dependencies: [LLaMa, Alpaca dataset]
+  training_emissions: unknown
+  training_time: ''
+  training_hardware: ''
+  quality_control: ''
+  # Downstream
+  access:
+    value: open
+    explanation: The weight diff between Alpaca-7B and LLaMA-7B is located on the
+      [[Hugging Face]](https://huggingface.co/tatsu-lab/alpaca-7b-wdiff). To recover
+      the original Alpaca-7B weights, follow the steps given [[here]](https://github.com/tatsu-lab
+      stanford_alpaca#recovering-alpaca-weights). Training and data generation code
+      can be found on the [[GitHub repository]](https://github.com/tatsu-lab/stanford_alpaca).
+      An [[online demo]](https://chat.lmsys.org/?model=alpaca-13b) is also available.
+  license: CC BY NC 4.0 (model weights)
+  intended_uses: Alpaca is intended and licensed for research use only.
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: Feedback can be provided on [[GitHub Issues]](https://github.com/tatsu-lab/stanford_alpaca/issues).

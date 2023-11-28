@@ -1,7 +1,7 @@
 ---
 - type: model
   name: CodeGeeX
-  organization: Tsinghua
+  organization: Tsinghua University
   description: CodeGeeX is an autoregressive language model trained on code
   created_date: 2022-09-20
   url: https://github.com/THUDM/CodeGeeX
@@ -26,7 +26,7 @@
   feedback: none
 - type: model
   name: CogView
-  organization: Tsinghua
+  organization: Tsinghua University
   description: CogView is a transformer model for text-to-image generation
   created_date:
     explanation: The date the model paper was released
@@ -53,7 +53,7 @@
   feedback: ''
 - type: model
   name: CogView 2
-  organization: Tsinghua
+  organization: Tsinghua University
   description: CogView 2 is a hierarchical transformer for text-to-image generation
   created_date:
     explanation: The date the model paper was released
@@ -80,7 +80,7 @@
   feedback: ''
 - type: model
   name: CogVideo
-  organization: Tsinghua
+  organization: Tsinghua University
   description: CogVideo is a transformer model for text-to-video generation
   created_date:
     explanation: The date the model paper was released
@@ -107,7 +107,7 @@
   feedback: ''
 - type: model
   name: GLM-130B
-  organization: Tsinghua
+  organization: Tsinghua University
   description: GLM-130B is a bidirectional language model trained on English and
     Chinese
   created_date:
@@ -137,3 +137,25 @@
   prohibited_uses: ''
   monitoring: ''
   feedback: ''
+- type: model
+  name: CogVLM
+  organization: Zhipu AI, Tsinghua University
+  description: CogVLM is a powerful open-source visual language foundation model
+  created_date: 2023-11-06
+  url: https://arxiv.org/pdf/2311.03079.pdf
+  model_card: none
+  modality: image, text; text
+  analysis: Evaluated on image captioning and visual question answering benchmarks.
+  size: 17B parameters (dense)
+  dependencies: [Vicuna, CLIP]
+  training_emissions: unknown
+  training_time: 4096 A100 days
+  training_hardware: unknown
+  quality_control: none
+  access: open
+  license: Apache 2.0
+  intended_uses: Future multimodal research
+  prohibited_uses: none
+  monitoring: none
+  feedback: none
+

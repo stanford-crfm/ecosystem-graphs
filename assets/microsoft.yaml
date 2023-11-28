@@ -763,3 +763,110 @@
   prohibited_uses: ''
   monitoring: ''
   feedback: https://huggingface.co/WizardLM/WizardCoder-Python-34B-V1.0/discussions
+- type: model
+  name: Florence-2
+  organization: Microsoft
+  description: WizardCoder empowers Code LLMs with complex instruction fine-tuning, by adapting the Evol-Instruct method to the domain of code.
+  created_date: 2023-11-10
+  url: https://arxiv.org/pdf/2311.06242.pdf
+  model_card: none
+  modality: image, text; text
+  analysis: Evaluated on standard image processing benchmarks
+  size: 771M parameters (dense)
+  dependencies: [FLD-5B]
+  training_emissions: unknown
+  training_time: unknown
+  training_hardware: unknown
+  quality_control: ''
+  access: closed
+  license: unknown
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: none
+- type: dataset
+  name: FLD-5B
+  organization: Microsoft
+  description: FLD-5B is the dataset that powers Florence-2
+  created_date: 2023-11-10
+  url: https://arxiv.org/pdf/2311.06242.pdf
+  datasheet: ''
+  modality: image, text
+  size: 1.3B image-text annotations
+  sample: []
+  analysis: FLD-5B evaluated in comparison to datasets that power other large-scale image models on standard image benchmarks.
+  dependencies: []
+  included: ''
+  excluded: ''
+  quality_control: ''
+  access: closed
+  license: unknown
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+- type: dataset
+  name: OpenOrca
+  organization: Microsoft
+  description: The OpenOrca dataset is a collection of augmented FLAN Collection data. Currently ~1M GPT-4 completions, and ~3.2M GPT-3.5 completions. It is tabularized in alignment with the distributions presented in the ORCA paper and currently represents a partial completion of the full intended dataset, with ongoing generation to expand its scope.
+  created_date: 2023-06-05
+  url: https://huggingface.co/datasets/Open-Orca/OpenOrca
+  datasheet: https://huggingface.co/datasets/Open-Orca/OpenOrca
+  modality: text
+  size: 4.5M text queries
+  sample: []
+  analysis: Models trained on OpenOrca compared to GPT-series on language benchmarks.
+  dependencies: [GPT-3.5, GPT-4, Flan Collection]
+  included: ''
+  excluded: ''
+  quality_control: ''
+  access: open
+  license: MIT
+  intended_uses: training and evaluation in the field of natural language processing.
+  prohibited_uses: none
+  monitoring: ''
+  feedback: none
+- type: model
+  name: LlongOrca
+  organization: Microsoft
+  description: LlongOrca is an attempt to make OpenOrca able to function in a Llong context.
+  created_date: 2023-08-01
+  url: https://huggingface.co/Open-Orca/LlongOrca-7B-16k
+  model_card: https://huggingface.co/Open-Orca/LlongOrca-7B-16k
+  modality: text; text
+  analysis: LlongOrca evaluated on BigBench-Hard and AGIEval results.
+  size: 7B parameters (dense)
+  dependencies: [OpenOrca, LLongMA-2]
+  training_emissions: unknown
+  training_time: 37 hours
+  training_hardware: 8x A6000-48GB (first-gen) GPUs 
+  quality_control: ''
+  access: open
+  license: LLaMA2
+  intended_uses: training and evaluation in the field of natural language processing.
+  prohibited_uses: none
+  monitoring: ''
+  feedback: https://huggingface.co/Open-Orca/LlongOrca-7B-16k/discussions
+- type: model
+  name: Phi-1.5
+  organization: Microsoft
+  description: Phi-1.5 is a large language transformer model.
+  created_date: 2023-09-11
+  url: https://arxiv.org/pdf/2309.05463.pdf
+  model_card: https://huggingface.co/microsoft/phi-1_5
+  modality: text; text
+  analysis: Evaluated on common sense reasoning, language understanding, and multi-step reasoning compared to other SOTA language models.
+  size: 1.3B parameters (dense)
+  dependencies: [phi-1]
+  training_emissions: unknown
+  training_time: 8 days
+  training_hardware: 32 A100-40G GPUs
+  quality_control: generic web-crawl data is removed from dataset.
+  access: open
+  license: 
+    explanation: can be found via the license tab at top of https://huggingface.co/microsoft/phi-1_5
+    value: microsoft research license
+  intended_uses: Phi-1.5 is best suited for answering prompts using the QA format, the chat format, and the code format.
+  prohibited_uses: ''
+  monitoring: none
+  feedback: https://huggingface.co/microsoft/phi-1_5/discussions

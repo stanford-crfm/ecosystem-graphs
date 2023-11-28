@@ -151,3 +151,24 @@
   prohibited_uses: ''
   monitoring: ''
   feedback: https://huggingface.co/togethercomputer/Llama-2-7B-32K-Instruct/discussions
+- type: dataset
+  name: RedPajama-Data-v2
+  organization: Together
+  description: RedPajama-Data-v2 is a new version of the RedPajama dataset, with 30 trillion filtered and deduplicated tokens (100+ trillions raw) from 84 CommonCrawl dumps covering 5 languages, along with 40+ pre-computed data quality annotations that can be used for further filtering and weighting. 
+  created_date: 2023-10-30
+  url: https://together.ai/blog/redpajama-data-v2
+  datasheet: ''
+  modality: text
+  size: 30 trillion tokens
+  sample: []
+  analysis: none
+  dependencies: [Common Crawl]
+  included: documents in English, German, French, Spanish, and Italian.
+  excluded: ''
+  quality_control: tokens filtered and deduplicated
+  access: open
+  license: Apache 2.0
+  intended_uses: To be used as the start of a larger, community-driven development of large-scale datasets for LLMs.
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: Feedback can be sent to Together via https://www.together.ai/contact

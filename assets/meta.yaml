@@ -694,6 +694,7 @@
   prohibited_uses: ''
   monitoring: ''
   feedback: ''
+
 - type: model
   name: Emu Video
   organization: Meta
@@ -718,6 +719,7 @@
   prohibited_uses: ''
   monitoring: ''
   feedback: none
+
 - type: model
   name: Emu Edit
   organization: Meta
@@ -740,4 +742,26 @@
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
+  feedback: none
+
+- type: model
+  name: MetaCLIP
+  organization: Meta
+  description: MetaCLIP is a more transparent rendition of CLIP that aims to reveal CLIP's training data curation methods. 
+  created_date: 2023-10-02
+  url: https://arxiv.org/pdf/2103.00020.pdf
+  model_card: https://huggingface.co/facebook/metaclip-b32-400m
+  modality: text; text
+  analysis: Evaluated in comparison to CLIP.
+  size: unknown
+  dependencies: [Common Crawl]
+  training_emissions: unknown
+  training_time: unknown
+  training_hardware: unknown
+  quality_control: ''
+  access: open
+  license: CC BY NC 4.0
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: none
   feedback: none

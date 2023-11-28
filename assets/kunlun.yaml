@@ -1,0 +1,25 @@
+---
+- type: model
+  name: Skywork
+  organization: Kunlun Inc. 
+  description: The Skywork series is a family of large language models (LLMs) trained on a corpus of over 3.2 trillion tokens drawn from both English and Chinese texts.
+  created_date: 2023-10-30
+  url: https://arxiv.org/pdf/2310.19341.pdf
+  model_card: https://huggingface.co/Skywork/Skywork-13B-base
+  modality: text; text
+  analysis: Evaluated on several popular benchmarks and performance in different fields.
+  size: 13B parameters (dense)
+  dependencies: [SkyPile]
+  training_emissions: unknown
+  training_time: 39 days
+  training_hardware: 512 A800-80GB GPUs
+  quality_control: ''
+  access: open
+  license:
+    value: custom
+    explanation: can be found at https://github.com/SkyworkAI/Skywork/blob/main/LICENSE
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: none
+  feedback: https://huggingface.co/Skywork/Skywork-13B-base/discussions
+
