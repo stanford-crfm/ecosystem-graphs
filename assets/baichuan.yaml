@@ -1,0 +1,22 @@
+---
+- type: model
+  name: Baichuan 2
+  organization: Baichuan Inc.
+  description: Baichuan 2 is a series of large-scale multilingual language models containing 7 billion and 13 billion parameters, trained from scratch, on 2.6 trillion tokens.
+  created_date: 2023-09-20
+  url: https://arxiv.org/pdf/2309.10305.pdf
+  model_card: none
+  modality: text; text
+  analysis: Evaluated on public benchmarks like MMLU, CMMLU, GSM8K, and HumanEval.
+  size: 13B parameters (dense)
+  dependencies: []
+  training_emissions: unknown
+  training_time: unknown
+  training_hardware: 1024 NVIDIA A800 GPUs
+  quality_control: ''
+  access: open
+  license: unknown
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: none
+  feedback: https://huggingface.co/Xwin-LM/Xwin-LM-70B-V0.1/discussions

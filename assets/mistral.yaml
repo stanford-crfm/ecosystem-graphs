@@ -1,0 +1,22 @@
+---
+- type: model
+  name: Mistral
+  organization: Mistral AI
+  description: Mistral is a compact language model.
+  created_date: 2023-09-27
+  url: https://mistral.ai/news/announcing-mistral-7b/
+  model_card: https://huggingface.co/mistralai/Mistral-7B-v0.1
+  modality: text; text
+  analysis: Evaluated in comparison to LLaMA series models on standard language benchmarks.
+  size: 7.3B parameters (dense)
+  dependencies: []
+  training_emissions: unknown
+  training_time: unknown
+  training_hardware: unknown
+  quality_control: ''
+  access: open
+  license: Apache 2.0
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: none
+  feedback: https://huggingface.co/mistralai/Mistral-7B-v0.1/discussions

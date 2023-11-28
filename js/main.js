@@ -629,6 +629,14 @@ function loadAssetsAndRenderPageContent() {
 
   const paths = [
     'assets/adept.yaml',
+    'assets/mila.yaml',
+    'assets/soochow.yaml',
+    'assets/baichuan.yaml',
+    'assets/xwin.yaml',
+    'assets/mistral.yaml',
+    'assets/adobe.yaml',
+    'assets/openlemur.yaml',
+    'assets/toronto.yaml',
     'assets/wayve.yaml',
     'assets/openx.yaml',
     'assets/ibm.yaml',
@@ -644,6 +652,7 @@ function loadAssetsAndRenderPageContent() {
     'assets/casia.yaml',
     'assets/lehigh.yaml',
     'assets/nolano.yaml',
+    'assets/moonhub.yaml',
     'assets/chatglm.yaml',
     'assets/uae.yaml',
     'assets/singapore.yaml',

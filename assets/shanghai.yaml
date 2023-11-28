@@ -73,3 +73,24 @@
   prohibited_uses: none
   monitoring: none
   feedback: none
+- type: model
+  name: InternLM
+  organization: Shanghai AI Laboratory
+  description: InternLM is a high-quality language model proficient in English, Chinese, and code.
+  created_date: 2023-09-20
+  url: https://github.com/InternLM/InternLM
+  model_card: https://huggingface.co/internlm/internlm-20b
+  modality: code, text; code, text
+  analysis: Evaluated in comparison to LLaMA series models on standard benchmarks.
+  size: 20B parameters (dense)
+  dependencies: []
+  training_emissions: unknown
+  training_time: unknown
+  training_hardware: unknown
+  quality_control: ''
+  access: open
+  license: Apache 2.0
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: none
+  feedback: https://huggingface.co/internlm/internlm-20b/discussions
