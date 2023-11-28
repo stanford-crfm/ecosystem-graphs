@@ -763,6 +763,48 @@
   prohibited_uses: ''
   monitoring: ''
   feedback: https://huggingface.co/WizardLM/WizardCoder-Python-34B-V1.0/discussions
+- type: model
+  name: Florence-2
+  organization: Microsoft
+  description: WizardCoder empowers Code LLMs with complex instruction fine-tuning, by adapting the Evol-Instruct method to the domain of code.
+  created_date: 2023-11-10
+  url: https://arxiv.org/pdf/2311.06242.pdf
+  model_card: none
+  modality: image, text; text
+  analysis: Evaluated on standard image processing benchmarks
+  size: 771M parameters (dense)
+  dependencies: [FLD-5B]
+  training_emissions: unknown
+  training_time: unknown
+  training_hardware: unknown
+  quality_control: ''
+  access: closed
+  license: unknown
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: none
+- type: dataset
+  name: FLD-5B
+  organization: Microsoft
+  description: FLD-5B is the dataset that powers Florence-2
+  created_date: 2023-11-10
+  url: https://arxiv.org/pdf/2311.06242.pdf
+  datasheet: ''
+  modality: image, text
+  size: 1.3B image-text annotations
+  sample: []
+  analysis: FLD-5B evaluated in comparison to datasets that power other large-scale image models on standard image benchmarks.
+  dependencies: []
+  included: ''
+  excluded: ''
+  quality_control: ''
+  access: closed
+  license: unknown
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
 - type: dataset
   name: OpenOrca
   organization: Microsoft
