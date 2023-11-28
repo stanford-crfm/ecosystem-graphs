@@ -512,7 +512,7 @@
   training_time: ''
   training_hardware: unknown
   quality_control: ''
-  access: open
+  access: limited
   license: ''
   intended_uses: Claude 2 tends to perform well at general, open-ended conversation;
     search, writing, editing, outlining, and summarizing text; coding; and providing
@@ -524,3 +524,24 @@
     where an incorrect answer would cause harm.
   monitoring: ''
   feedback: ''
+- type: model
+  name: Claude 2.1
+  organization: Anthropic
+  description: Claude 2.1 is an updated version of Claude 2, with an increased context window, less hallucination and tool use.
+  created_date: 2023-11-21
+  url: https://www.anthropic.com/index/claude-2-1
+  model_card: none
+  modality: text; text
+  analysis: Evaluated on open-ended conversation accuracy and long context question answering. In evaluations, Claude 2.1 demonstrated a 30% reduction in incorrect answers and a 3-4x lower rate of mistakenly concluding a document supports a particular claim.
+  size: unknown
+  dependencies: []
+  training_emissions: unknown
+  training_time: unknown
+  training_hardware: unknown
+  quality_control: ''
+  access: limited
+  license: unknown
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: none

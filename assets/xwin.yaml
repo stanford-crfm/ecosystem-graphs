@@ -1,0 +1,22 @@
+---
+- type: model
+  name: Xwin-LM
+  organization: Xwin
+  description: Xwin-LM is a LLM, which on release, ranked top 1 on AlpacaEval, becoming the first to surpass GPT-4 on this benchmark.
+  created_date: 2023-09-20
+  url: https://huggingface.co/Xwin-LM/Xwin-LM-70B-V0.1
+  model_card: https://huggingface.co/Xwin-LM/Xwin-LM-70B-V0.1
+  modality: text; text
+  analysis: Evaluated on AlpacaEval benchmark against SOTA LLMs.
+  size: 70B parameters (dense)
+  dependencies: []
+  training_emissions: unknown
+  training_time: unknown
+  training_hardware: unknown
+  quality_control: ''
+  access: open
+  license: LLaMA2
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: none
+  feedback: https://huggingface.co/Xwin-LM/Xwin-LM-70B-V0.1/discussions

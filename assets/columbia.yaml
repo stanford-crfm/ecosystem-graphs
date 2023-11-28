@@ -20,3 +20,24 @@
   prohibited_uses: ''
   monitoring: ''
   feedback: ''
+- type: model
+  name: Ferret
+  organization: Columbia
+  description: Ferret is a Multimodal Large Language Model (MLLM) capable of understanding spatial referring of any shape or granularity within an image and accurately grounding open-vocabulary descriptions.
+  created_date: 2023-10-11
+  url: https://arxiv.org/pdf/2310.07704.pdf
+  model_card: none
+  modality: image, text; image, text
+  analysis: Evaluated on the object hallucination benchmark and compared to GPT-4V.
+  size: 13B parameters
+  dependencies: [CLIP, Vicuna]
+  training_emissions: unknown
+  training_time: 2.5 to 5 days
+  training_hardware: 8 A100 GPUs
+  quality_control: ''
+  access: open
+  license: unknown
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: none
+  feedback: none
