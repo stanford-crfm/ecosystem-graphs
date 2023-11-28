@@ -47,3 +47,24 @@
   prohibited_uses: ''
   monitoring: ''
   feedback: ''
+- type: model
+  name: Fuyu
+  organization: Adept
+  description: Fuyu is a small version of the multimodal model that powers Adept's core product.
+  created_date: 2023-10-17
+  url: https://www.adept.ai/blog/fuyu-8b
+  model_card: https://huggingface.co/adept/fuyu-8b
+  modality: image, text; text
+  analysis: Evaluated on standard image understanding benchmarks.
+  size: 8B parameters (dense)
+  dependencies: []
+  training_emissions: unknown
+  training_time: unknown
+  training_hardware: unknown
+  quality_control: none
+  access: open
+  license: CC BY NC 4.0
+  intended_uses: The model is intended for research purposes only.
+  prohibited_uses: The model was not trained to be factual or true representations of people or events, and therefore using the model to generate such content is out-of-scope for the abilities of this model.
+  monitoring: ''
+  feedback: https://huggingface.co/adept/fuyu-8b/discussions

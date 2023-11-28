@@ -253,3 +253,45 @@
   prohibited_uses: ''
   monitoring: ''
   feedback: https://huggingface.co/EleutherAI/pythia-6.9b/discussions
+- type: model
+  name: Llemma
+  organization: Princeton University, Eleuther AI
+  description: Llemma is a large language model for mathematics.
+  created_date: 2023-10-16
+  url: https://arxiv.org/pdf/2310.10631.pdf
+  model_card: https://huggingface.co/EleutherAI/llemma_34b
+  modality: text; text
+  analysis: Evaluated on math benchmarks in comparison to general large language models.
+  size: 34B parameters (dense)
+  dependencies: [Proof Pile 2, Code LLaMA]
+  training_emissions: unknown
+  training_time: 47k A100 hours
+  training_hardware: 256 A100 40GB GPUs
+  quality_control: ''
+  access: open
+  license: LLaMA 2
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: none
+  feedback: https://huggingface.co/EleutherAI/llemma_34b/discussions
+- type: dataset
+  name: Proof Pile 2
+  organization: Princeton University, Eleuther AI
+  description: Proof Pile 2 is a corpus for language modeling of mathematics.
+  created_date: 2023-10-16
+  url: https://arxiv.org/pdf/2310.10631.pdf
+  datasheet: https://huggingface.co/datasets/EleutherAI/proof-pile-2
+  modality: text
+  size: 55B tokens
+  sample: []
+  analysis: ''
+  dependencies: [Common Crawl, OpenWebMath, Arxiv, RedPajama-Data]
+  included: scientific papers, web data containing mathematics, mathematical code
+  excluded: ''
+  quality_control: ''
+  access: open
+  license: Same as dependencies
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: none
+  feedback: https://huggingface.co/datasets/EleutherAI/proof-pile-2/discussions
