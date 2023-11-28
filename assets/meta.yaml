@@ -694,6 +694,56 @@
   prohibited_uses: ''
   monitoring: ''
   feedback: ''
+
+- type: model
+  name: Emu Video
+  organization: Meta
+  description: Emu Video is a text-to-video generation model that factorizes the
+    generation into two steps, first generating an image conditioned on the text,
+    and then generating a video conditioned on the text and the generated image.
+  created_date: 2023-11-16
+  url: https://emu-video.metademolab.com/
+  model_card: none
+  modality: text; video
+  analysis: Analyzed against nearest neighbor model baseline and by extending the
+    video length.
+  size: 6B parameters (dense)
+  dependencies: [Emu, CLIP, T5]
+  training_emissions: unknown
+  training_time: unknown
+  training_hardware: unknown
+  quality_control: ''
+  access: limited
+  license: unknown
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: none
+
+- type: model
+  name: Emu Edit
+  organization: Meta
+  description: Emu Edit is a multi-task image editing model which sets state-of-the-art
+    results in instruction-based image editing.
+  created_date: 2023-11-16
+  url: https://emu-edit.metademolab.com/
+  model_card: none
+  modality: text; image
+  analysis: Evaluated on test set of actions in comparison to SoTA image editing
+    models.
+  size: unknown
+  dependencies: [Emu, CLIP, T5]
+  training_emissions: unknown
+  training_time: unknown
+  training_hardware: unknown
+  quality_control: ''
+  access: limited
+  license: unknown
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: none
+
 - type: model
   name: MetaCLIP
   organization: Meta
