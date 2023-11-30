@@ -42,3 +42,42 @@
   prohibited_uses: ''
   monitoring: ''
   feedback: ''
+- type: model
+  name: Qwen
+  organization: Alibaba
+  description: 'QWEN is a comprehensive language model series that encompasses distinct
+    models with varying parameter counts. Qwen series, now including Qwen, the base
+    language models, namely Qwen-7B and Qwen-14B, as well as Qwen-Chat, the chat
+    models, namely Qwen-7B-Chat and Qwen-14B-Chat. '
+  created_date: 2023-08-03
+  url: https://arxiv.org/abs/2309.16609
+  model_card: https://huggingface.co/Qwen
+  modality: image, text; text
+  analysis: Evaluated on MMLU, C-Eval, GSM8K, MATH, HumanEval, etc.
+  size: 14B parameters (dense)
+  dependencies: []
+  training_emissions: unknown
+  training_time: ''
+  training_hardware: ''
+  quality_control:
+    explanation: According to [[Model Description Section 2]](https://arxiv.org/pdf/2302.09778.pdf)
+    value: They filter out low-quality data, they employ a combination of rule-based
+      and machine-learning-based methods. Specifically, they use multiple models
+      to score the content, including language models, text-quality scoring models,
+      and models for identifying potentially offensive or inappropriate content.
+      They also manually sample texts from various sources and review them to ensure
+      their quality. To further enhance the quality of our data, they selectively
+      up-sample data from certain sources, to ensure that our models are trained
+      on a diverse range of high-quality content.
+  access:
+    explanation: "Model checkpoints are available for download from the [[HuggingFace\
+      \ repository]](https://huggingface.co/Qwen)\n"
+    value: open
+  license: License information are described in [[Qwen  repository]](https://github.com/QwenLM/Qwen/blob/main/LICENSE)"
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: Governed by the laws of China, without regard to conflict of law principles,
+    and the UN Convention on Contracts for the International Sale of Goods does
+    not apply to this Agreement. And The People's Courts in Hangzhou City shall
+    have exclusive jurisdiction over any dispute arising out of this Agreement.
+  feedback: ''
