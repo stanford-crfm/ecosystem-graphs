@@ -4,12 +4,12 @@
   organization: xAI
   description: Grok is a text chatbot modeled after the Hitchhiker’s Guide to the Galaxy, so intended to answer almost anything and even suggest what questions to ask.
   created_date: 2023-11-04
-  url: https://github.com/01-ai/Yi
-  model_card: https://grok.x.ai/
+  url: https://grok.x.ai/
+  model_card: https://x.ai/model-card/
   modality: text; text
   analysis: Evaluated on standard language benchmarks in comparison to SoTA LLMs. 
   size: 
-    explanation: No model size specified, but Grok-1 is larger than predecessor Grok-0 (33B parameters)
+    explanation: No model size specified, but Grok-1 is larger than predecessor Grok-0 (33B parameters), as stated in the Grok announcement at https://x.ai/.
     value: unknown
   dependencies: []
   training_emissions: unknown

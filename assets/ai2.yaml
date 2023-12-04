@@ -129,7 +129,7 @@
     explanation: Magnitude of size is around 100M tokens, given the length distribution of dataset provided in model card.
   sample: []
   analysis: Models trained with dataset evaluated on downstream performance.
-  dependencies: [FLAN, Open Assistant 1, ShareGPT, GPT4 Alpaca, Code Alpaca, LIMA, WizardLM Evol Instruct, Open Orca]
+  dependencies: [FLAN Collection, Open Assistant 1, ShareGPT, Alpaca dataset, Code Alpaca, LIMA, WizardLM, OpenOrca]
   included: ''
   excluded: ''
   quality_control: ''
