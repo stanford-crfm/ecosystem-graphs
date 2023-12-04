@@ -449,3 +449,27 @@
   monthly_active_users: unknown
   user_distribution: unknown
   failures: unknown
+- type: model
+  name: Cohere Embedv3 (English)
+  organization: Cohere
+  description: As of release, Cohere Embedv3 is Cohere's latest and most advanced embeddings model.
+  created_date: 2023-11-02
+  url: https://txt.cohere.com/introducing-embed-v3/
+  model_card: https://huggingface.co/Cohere/Cohere-embed-english-v3.0
+  modality: text; text
+  analysis: Achieves SOTA performances on trusted MTEB and BEIR benchmarks.
+  size: unknown
+  dependencies: []
+  training_emissions: unknown
+  training_time: unknown
+  training_hardware: unknown
+  quality_control: ''
+  access:
+    explanation: "The model is available to the public through the Cohere Platform\
+      \ [[Cohere Platform]](https://cohere.ai/).\n"
+    value: limited
+  license: unknown
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: none
+  feedback: https://huggingface.co/Cohere/Cohere-embed-english-v3.0/discussions

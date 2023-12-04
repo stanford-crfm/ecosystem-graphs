@@ -29,3 +29,24 @@
   monthly_active_users: ''
   user_distribution: ''
   failures: ''
+- type: model
+  name: FalconLite2
+  organization: Amazon
+  description: FalconLite2 is a fine-tuned and quantized Falcon language model, capable of processing long (up to 24K tokens) input sequences.
+  created_date: 2023-08-08
+  url: https://huggingface.co/amazon/FalconLite2
+  model_card: https://huggingface.co/amazon/FalconLite2
+  modality: text; text
+  analysis: Evaluated against benchmarks that are specifically designed to assess the capabilities of LLMs in handling longer contexts.
+  size: 40B parameters (dense)
+  dependencies: [Falcon]
+  training_emissions: unknown
+  training_time: unknown
+  training_hardware: unknown
+  quality_control: ''
+  access: open
+  license: Apache 2.0
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: https://huggingface.co/amazon/FalconLite2/discussions

@@ -22,3 +22,24 @@
   prohibited_uses: ''
   monitoring: ''
   feedback: https://huggingface.co/garage-bAInd/Platypus2-13B/discussions
+- type: model
+  name: UFOGen
+  organization: Boston University
+  description: UFOGen is a novel generative model designed for ultra-fast, one-step text-to-image synthesis.
+  created_date: 2023-11-14
+  url: https://arxiv.org/pdf/2311.09257.pdf
+  model_card: none
+  modality: text; image
+  analysis: UFOGen is evaluated on standard image benchmarks against other models fine-tuned with Stable Diffusion.
+  size: 900M parameters (dense)
+  dependencies: [Stable Diffusion]
+  training_emissions: unknown
+  training_time: unknown
+  training_hardware: unknown
+  quality_control: ''
+  access: open
+  license: unknown
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: none

@@ -23,3 +23,24 @@
   prohibited_uses: ''
   monitoring: ''
   feedback: ''
+- type: model
+  name: Llark
+  organization: University of Washington, Spotify
+  description: Llark is an instruction-tuned multimodal model for music understanding.
+  created_date: 2023-10-11
+  url: https://arxiv.org/pdf/2310.07160.pdf
+  model_card: none
+  modality: audio, text; text
+  analysis: Evaluated on benchmark music understanding tasks on SOTA music datasets.
+  size: 12B parameters (dense)
+  dependencies: [LLaMA 2, Jukebox]
+  training_emissions: unknown
+  training_time: 54 hours
+  training_hardware: 4 80GB NVIDIA A40 GPUs
+  quality_control: ''
+  access: open
+  license: Apache 2.0
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: none

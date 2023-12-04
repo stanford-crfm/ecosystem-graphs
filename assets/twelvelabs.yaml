@@ -1,0 +1,22 @@
+---
+- type: model
+  name: Pegasus-1
+  organization: Twelve Labs
+  description: Pegasus-1 is a video-language foundation model.
+  created_date: 2023-10-23
+  url: https://app.twelvelabs.io/blog/introducing-pegasus-1
+  model_card: none
+  modality: video; text
+  analysis: Evaluated in comparison to SOTA video-to-language models. 
+  size: 80B parameters (dense)
+  dependencies: [MSR-VTT, Video-ChatGPT Video Descriptions Dataset]
+  training_emissions: unknown
+  training_time: unknown
+  training_hardware: unknown
+  quality_control: Data selected and cleaned to eliminate toxic and biased content.
+  access: open
+  license: unknown
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: none
+  feedback: none

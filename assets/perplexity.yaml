@@ -44,3 +44,23 @@
   monthly_active_users: ''
   user_distribution: ''
   failures: ''
+- type: application
+  name: Perplexity Chat
+  organization: Perplexity
+  description: Perplexity chat is an AI chatbot trained in-house by Perplexity.
+  created_date: 2023-10-27
+  url: https://labs.perplexity.ai/
+  dependencies: []
+  adaptation: ''
+  output_space: Chatbot output in response to user queries
+  quality_control: ''
+  access: open
+  license: none
+  terms_of_service: https://blog.perplexity.ai/legal/terms-of-service
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+  monthly_active_users: ''
+  user_distribution: ''
+  failures: ''

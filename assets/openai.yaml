@@ -782,6 +782,7 @@
     - Whisper
     - DALL·E
     - GPT-4
+    - GPT-4 Turbo
   adaptation: The API exposes the models fairly direclty with a range of hyperparameters
     (e.g. temperature scaling).
   output_space: "Given a prompting text, the OpenAI API provides access to text\
@@ -932,6 +933,32 @@
   prohibited_uses: ''
   monitoring: ''
   feedback: ''
+- type: model
+  name: GPT-4 Turbo
+  organization: OpenAI
+  description: GPT-4 Turbo is a more capable version of GPT-4 and has knowledge
+    of world events up to April 2023. It has a 128k context window so it can fit
+    the equivalent of more than 300 pages of text in a single prompt.
+  created_date: 2023-11-06
+  url: https://platform.openai.com/docs/models/gpt-4-and-gpt-4-turbo
+  model_card: none
+  modality: text; text
+  analysis: none
+  size: unknown
+  dependencies: []
+  training_emissions: unknown
+  training_time: unknown
+  training_hardware: unknown
+  quality_control: ''
+  access: limited
+  license:
+    explanation: Per the Terms of Use, a limited license is provided to the users
+      during their use of the API [[Section 2]](https://openai.com/api/policies/terms/).
+    value: custom
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: unknown
+  feedback: none
 - type: dataset
   name: gpt-3.5-turbo dataset
   organization: OpenAI
@@ -1325,3 +1352,38 @@
   monthly_active_users: ''
   user_distribution: ''
   failures: ''
+- type: model
+  name: DALL·E 3
+  organization: OpenAI
+  description: DALL·E 3 is an artificial intelligence model that takes a text
+    prompt and/or existing image as an input and generates a new image as an output
+    The model is now in research preview, and will be available to ChatGPT Plus and Enterprise customers in October.
+  created_date:
+    explanation: OpenAI announced that DALL·E 3 was coming soon in a tweet on 2023-09-20. Users could begin experimenting with DALL·E 3 in research preview in early October.
+    value: 2023-09-20
+  url: https://openai.com/dall-e-3
+  model_card: none
+  modality: text; image
+  analysis: The model is capable of generating explicit content and the researchers
+    found limited amount of spurious content generated.
+  size: unknown
+  dependencies: [DALL·E 2 dataset, CLIP dataset, ChatGPT]
+  training_emissions: unknown
+  training_time: unknown
+  training_hardware: unknown
+  quality_control: DALL·E 3 has mitigations to decline requests that ask for a public figure by name. We improved safety performance in risk areas like generation of public figures and harmful biases related to visual over/under-representation, in partnership with red teamers—domain experts who stress-test the model—to help inform our risk assessment and mitigation efforts in areas like propaganda and misinformation.
+  access:
+    explanation: DALL·E 3 is now in research preview, and will be available to ChatGPT Plus and Enterprise customers in October, via the API and in Labs later this fall.
+    value: limited
+  license: unknown
+  intended_uses: The intended use of the DALL·E 3 Preview at this time is for
+    personal, non-commercial exploration and research purposes by people who are
+    interested in understanding the potential uses of these capabilities
+  prohibited_uses: Use of the model is governed by the OpenAI Content Policy, which
+    prohibits posting of G rated content. Users are not allowed to utilize the model
+    in commercial products in the preview version.
+  monitoring: Uses of the model are monitored. In the preview version, any user
+     can flag content. The specific policies for monitoring are not disclosed,
+     but possible measures include disabling of accounts violating the content
+  feedback: Feedback can be provided at openai.com
+
