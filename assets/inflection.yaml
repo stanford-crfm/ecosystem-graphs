@@ -55,9 +55,7 @@
   model_card: none
   modality: text; text
   analysis: Evaluated against state of the art models on benchmarks, and found to be most performant model outside of GPT-4.
-  size:
-    value: unknown
-    explanation: Likely larger than Inflection-1, which was stated to be around the size of ChatGPT (175B parameters).
+  size: unknown
   dependencies: []
   training_emissions: unknown
   training_time: unknown
