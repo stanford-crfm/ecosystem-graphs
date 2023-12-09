@@ -1671,7 +1671,7 @@
   quality_control: Employed de-duplication, removal of sensitive-PII and filtering.
     Added control tokens marking toxicity of text.
   access: open
-  license: Google
+  license: unknown
   intended_uses: general use large language model that can be used for language,
     reasoning, and code tasks.
   prohibited_uses: becoming part of a general-purpose service or product or use
@@ -1698,7 +1698,7 @@
   training_hardware: unknown
   quality_control: ''
   access: closed
-  license: Google
+  license: unknown
   intended_uses: general use large language model that can be used for language,
     reasoning, and code tasks.
   prohibited_uses: becoming part of a general-purpose service or product or use

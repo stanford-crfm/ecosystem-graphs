@@ -186,7 +186,7 @@
   modality: text; text
   analysis: Model evaluated on a suite of short-context task benchmarks.
   size: 7B parameters (dense)
-  dependencies: []
+  dependencies: [Hyena, RedPajama-Data]
   training_emissions: unknown
   training_time: unknown
   training_hardware: unknown
@@ -207,7 +207,7 @@
   modality: text; text
   analysis: Model evaluated on a suite of short-context task benchmarks.
   size: 7B parameters (dense)
-  dependencies: []
+  dependencies: [Hyena, RedPajama-Data]
   training_emissions: unknown
   training_time: unknown
   training_hardware: unknown

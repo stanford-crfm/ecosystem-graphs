@@ -15,9 +15,9 @@
   training_hardware: unknown
   quality_control: ''
   access: open
-  license: Apache 2.0
+  license: LLaMA 2
   intended_uses: Medical exam question answering, supporting differential diagnosis,
     disease information.
   prohibited_uses: ''
   monitoring: none
-  feedback: https://huggingface.co/01-ai/Yi-34B/discussions
+  feedback: https://huggingface.co/epfl-llm/meditron-7b/discussions

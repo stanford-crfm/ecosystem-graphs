@@ -16,10 +16,8 @@
   training_hardware: unknown
   quality_control: ''
   access: open
-  license:
-    explanation: License can be found at model card link.
-    value: custom
+  license: CC BY NC 4.0
   intended_uses: Academic research and free commercial usage
   prohibited_uses: ''
   monitoring: none
-  feedback: https://huggingface.co/01-ai/Yi-34B/discussions
+  feedback: https://huggingface.co/berkeley-nest/Starling-LM-7B-alpha/discussions

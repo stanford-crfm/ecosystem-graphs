@@ -1,7 +1,7 @@
 ---
 - type: model
   name: Notus
-  organization: 01.AI
+  organization: Argilla
   description: Notus is an open source LLM, fine-tuned using Direct Preference Optimization
     (DPO) and AIF (AI Feedback) techniques.
   created_date: 2023-12-01
