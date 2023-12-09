@@ -747,7 +747,8 @@
 - type: model
   name: MetaCLIP
   organization: Meta
-  description: MetaCLIP is a more transparent rendition of CLIP that aims to reveal CLIP's training data curation methods. 
+  description: MetaCLIP is a more transparent rendition of CLIP that aims to reveal
+    CLIP's training data curation methods.
   created_date: 2023-10-02
   url: https://arxiv.org/pdf/2103.00020.pdf
   model_card: https://huggingface.co/facebook/metaclip-b32-400m

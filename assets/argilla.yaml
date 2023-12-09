@@ -1,0 +1,23 @@
+---
+- type: model
+  name: Notus
+  organization: 01.AI
+  description: Notus is an open source LLM, fine-tuned using Direct Preference Optimization
+    (DPO) and AIF (AI Feedback) techniques.
+  created_date: 2023-12-01
+  url: https://argilla.io/blog/notus7b/
+  model_card: https://huggingface.co/argilla/notus-7b-v1
+  modality: text; text
+  analysis: Evaluated on MT-Bench and AlphaEval benchmarks.
+  size: 7B parameters (dense)
+  dependencies: [UltraFeedback, Zephyr]
+  training_emissions: unknown
+  training_time: unknown
+  training_hardware: 8 x A100 40GB GPUs
+  quality_control: ''
+  access: open
+  license: MIT
+  intended_uses: Academic research and free commercial usage
+  prohibited_uses: ''
+  monitoring: none
+  feedback: https://huggingface.co/argilla/notus-7b-v1/discussions

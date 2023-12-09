@@ -452,7 +452,8 @@
 - type: model
   name: Cohere Embedv3 (English)
   organization: Cohere
-  description: As of release, Cohere Embedv3 is Cohere's latest and most advanced embeddings model.
+  description: As of release, Cohere Embedv3 is Cohere's latest and most advanced
+    embeddings model.
   created_date: 2023-11-02
   url: https://txt.cohere.com/introducing-embed-v3/
   model_card: https://huggingface.co/Cohere/Cohere-embed-english-v3.0

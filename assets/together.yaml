@@ -154,7 +154,10 @@
 - type: dataset
   name: RedPajama-Data-v2
   organization: Together
-  description: RedPajama-Data-v2 is a new version of the RedPajama dataset, with 30 trillion filtered and deduplicated tokens (100+ trillions raw) from 84 CommonCrawl dumps covering 5 languages, along with 40+ pre-computed data quality annotations that can be used for further filtering and weighting. 
+  description: RedPajama-Data-v2 is a new version of the RedPajama dataset, with
+    30 trillion filtered and deduplicated tokens (100+ trillions raw) from 84 CommonCrawl
+    dumps covering 5 languages, along with 40+ pre-computed data quality annotations
+    that can be used for further filtering and weighting.
   created_date: 2023-10-30
   url: https://together.ai/blog/redpajama-data-v2
   datasheet: ''
@@ -168,7 +171,50 @@
   quality_control: tokens filtered and deduplicated
   access: open
   license: Apache 2.0
-  intended_uses: To be used as the start of a larger, community-driven development of large-scale datasets for LLMs.
+  intended_uses: To be used as the start of a larger, community-driven development
+    of large-scale datasets for LLMs.
   prohibited_uses: ''
   monitoring: ''
   feedback: Feedback can be sent to Together via https://www.together.ai/contact
+- type: model
+  name: StripedHyena
+  organization: Together
+  description: StripedHyena is an LLM and the first alternative model competitive with the best open-source Transformers in short and long-context evaluations, according to Together.
+  created_date: 2023-12-08
+  url: https://www.together.ai/blog/stripedhyena-7b
+  model_card: https://huggingface.co/togethercomputer/StripedHyena-Hessian-7B
+  modality: text; text
+  analysis: Model evaluated on a suite of short-context task benchmarks.
+  size: 7B parameters (dense)
+  dependencies: []
+  training_emissions: unknown
+  training_time: unknown
+  training_hardware: unknown
+  quality_control: ''
+  access: open
+  license: Apache 2.0
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: https://huggingface.co/togethercomputer/StripedHyena-Hessian-7B/discussions
+- type: model
+  name: StripedHyena Nous
+  organization: Together
+  description: StripedHyena Nous is an LLM and chatbot, along with the first alternative model competitive with the best open-source Transformers in short and long-context evaluations, according to Together.
+  created_date: 2023-12-08
+  url: https://www.together.ai/blog/stripedhyena-7b
+  model_card: https://huggingface.co/togethercomputer/StripedHyena-Nous-7B
+  modality: text; text
+  analysis: Model evaluated on a suite of short-context task benchmarks.
+  size: 7B parameters (dense)
+  dependencies: []
+  training_emissions: unknown
+  training_time: unknown
+  training_hardware: unknown
+  quality_control: ''
+  access: open
+  license: Apache 2.0
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: https://huggingface.co/togethercomputer/StripedHyena-Nous-7B/discussions

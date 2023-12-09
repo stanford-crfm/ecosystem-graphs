@@ -7,7 +7,8 @@
   url: https://github.com/01-ai/Yi
   model_card: https://huggingface.co/01-ai/Yi-34B
   modality: text; text
-  analysis: Evaluated on common sense reasoning and reading comprehension, analogous to LLaMA 2's analysis. 
+  analysis: Evaluated on common sense reasoning and reading comprehension, analogous
+    to LLaMA 2's analysis.
   size: 34B parameters (dense)
   dependencies: []
   training_emissions: unknown

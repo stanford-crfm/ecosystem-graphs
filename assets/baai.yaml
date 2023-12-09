@@ -48,7 +48,8 @@
 - type: model
   name: JudgeLM
   organization: Beijing Academy of Artificial Intelligence
-  description: JudgeLM is a fine-tuned to be a scalable judge to evaluate LLMs efficiently and effectively in open-ended benchmarks.
+  description: JudgeLM is a fine-tuned to be a scalable judge to evaluate LLMs efficiently
+    and effectively in open-ended benchmarks.
   created_date: 2023-10-26
   url: https://arxiv.org/pdf/2310.17631.pdf
   model_card: https://huggingface.co/BAAI/JudgeLM-13B-v1.0
@@ -62,14 +63,17 @@
   quality_control: ''
   access: open
   license: custom non-commercial license
-  intended_uses: Research on evaluating the performance of large language models and chatbots.
+  intended_uses: Research on evaluating the performance of large language models
+    and chatbots.
   prohibited_uses: none
   monitoring: none
   feedback: https://huggingface.co/BAAI/JudgeLM-13B-v1.0/discussions
 - type: dataset
   name: JudgeLM Dataset
   organization: Beijing Academy of Artificial Intelligence
-  description: JudgeLM Dataset is a novel dataset replete with a rich variety of seed tasks, comprehensive answers from modern LLMs, answers’ grades from the teacher judge, and detailed reasons for judgments.
+  description: JudgeLM Dataset is a novel dataset replete with a rich variety of
+    seed tasks, comprehensive answers from modern LLMs, answers’ grades from the
+    teacher judge, and detailed reasons for judgments.
   created_date: 2023-10-26
   url: https://huggingface.co/datasets/BAAI/JudgeLM-100K
   datasheet: ''
@@ -83,7 +87,8 @@
   quality_control: ''
   access: open
   license: CC BY NC 4.0
-  intended_uses: To be used to conduct instruction-tuning for language models and make the language model able to judge open-ended answer pairs.
+  intended_uses: To be used to conduct instruction-tuning for language models and
+    make the language model able to judge open-ended answer pairs.
   prohibited_uses: none
   monitoring: none
   feedback: https://huggingface.co/datasets/BAAI/JudgeLM-100K/discussions

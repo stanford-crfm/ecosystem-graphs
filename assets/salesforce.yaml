@@ -99,15 +99,18 @@
 - type: model
   name: BLIP-2
   organization: Salesforce
-  description: BLIP-2 is a model that employs a generic and efficient pretraining strategy that bootstraps vision-language pre-training from off-the-shelf frozen pre-trained image encoders and frozen large language models.
+  description: BLIP-2 is a model that employs a generic and efficient pretraining
+    strategy that bootstraps vision-language pre-training from off-the-shelf frozen
+    pre-trained image encoders and frozen large language models.
   created_date: 2023-01-30
   url: https://arxiv.org/pdf/2301.12597.pdf
   model_card: https://huggingface.co/Salesforce/blip2-opt-2.7b
   modality: text; image
-  analysis:  BLIP-2 achieves state-of-the-art performance on various vision-language tasks, despite having significantly fewer trainable parameters than existing methods
+  analysis: BLIP-2 achieves state-of-the-art performance on various vision-language
+    tasks, despite having significantly fewer trainable parameters than existing
+    methods
   size: 2.7B parameters (dense)
-  dependencies:
-    - OPT
+  dependencies: [OPT]
   training_emissions: unknown
   training_time: less than 9 days
   training_hardware: unknown

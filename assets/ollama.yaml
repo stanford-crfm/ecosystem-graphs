@@ -1,0 +1,25 @@
+---
+- type: model
+  name: Starling
+  organization: Ollama
+  description: Starling is a large language model trained by reinforcement learning
+    from AI feedback focused on improving chatbot helpfulness.
+  created_date: 2023-11-02
+  url: https://starling.cs.berkeley.edu/
+  model_card: https://huggingface.co/berkeley-nest/Starling-LM-7B-alpha
+  modality: text; text
+  analysis: Mainly evaluated on MT-Bench and AlpacaEval, which are GPT-4-based comparisons.
+  size: 7B parameters (dense)
+  dependencies: []
+  training_emissions: unknown
+  training_time: unknown
+  training_hardware: unknown
+  quality_control: ''
+  access: open
+  license:
+    explanation: License can be found at model card link.
+    value: custom
+  intended_uses: Academic research and free commercial usage
+  prohibited_uses: ''
+  monitoring: none
+  feedback: https://huggingface.co/01-ai/Yi-34B/discussions
