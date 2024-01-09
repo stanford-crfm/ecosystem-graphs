@@ -39,7 +39,7 @@
   modality: text; text
   analysis: Evaluated against benchmarks that are specifically designed to assess the capabilities of LLMs in handling longer contexts.
   size: 40B parameters (dense)
-  dependencies: [Falcon]
+  dependencies: [Falcon-40B]
   training_emissions: unknown
   training_time: unknown
   training_hardware: unknown

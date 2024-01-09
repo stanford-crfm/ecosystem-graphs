@@ -551,7 +551,7 @@
   description: Claude for Sheets is a Google Sheets add-on that allows the usage of Claude directly in Google Sheets.
   created_date: 2023-12-21
   url: https://workspace.google.com/marketplace/app/claude_for_sheets/909417792257
-  dependencies: [Claude]
+  dependencies: [Anthropic API]
   adaptation: ''
   output_space: AI-generated text from prompt
   quality_control: ''
