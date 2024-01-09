@@ -261,7 +261,8 @@
   url: https://arxiv.org/pdf/2310.10631.pdf
   model_card: https://huggingface.co/EleutherAI/llemma_34b
   modality: text; text
-  analysis: Evaluated on math benchmarks in comparison to general large language models.
+  analysis: Evaluated on math benchmarks in comparison to general large language
+    models.
   size: 34B parameters (dense)
   dependencies: [Proof Pile 2, Code LLaMA]
   training_emissions: unknown

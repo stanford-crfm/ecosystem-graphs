@@ -7,7 +7,7 @@
   url: https://app.twelvelabs.io/blog/introducing-pegasus-1
   model_card: none
   modality: video; text
-  analysis: Evaluated in comparison to SOTA video-to-language models. 
+  analysis: Evaluated in comparison to SOTA video-to-language models.
   size: 80B parameters (dense)
   dependencies: [MSR-VTT, Video-ChatGPT Video Descriptions Dataset]
   training_emissions: unknown

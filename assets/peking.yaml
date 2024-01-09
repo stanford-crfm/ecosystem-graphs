@@ -2,12 +2,15 @@
 - type: model
   name: JARVIS-1
   organization: Peking University Institute for Artificial Intelligence
-  description: JARVIS-1 is an open-world agent that can perceive multimodal input (visual observations and human instructions), generate sophisticated plans, and perform embodied control, all within the popular yet challenging open-world Minecraft universe.
+  description: JARVIS-1 is an open-world agent that can perceive multimodal input
+    (visual observations and human instructions), generate sophisticated plans,
+    and perform embodied control, all within the popular yet challenging open-world
+    Minecraft universe.
   created_date: 2023-11-10
   url: https://arxiv.org/pdf/2311.05997.pdf
   model_card: none
   modality: text; in-game actions
-  analysis: Compared with other multi-task, instruction-following agents. 
+  analysis: Compared with other multi-task, instruction-following agents.
   size: unknown
   dependencies: []
   training_emissions: unknown

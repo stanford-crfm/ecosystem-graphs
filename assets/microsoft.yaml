@@ -766,7 +766,8 @@
 - type: model
   name: Florence-2
   organization: Microsoft
-  description: WizardCoder empowers Code LLMs with complex instruction fine-tuning, by adapting the Evol-Instruct method to the domain of code.
+  description: WizardCoder empowers Code LLMs with complex instruction fine-tuning,
+    by adapting the Evol-Instruct method to the domain of code.
   created_date: 2023-11-10
   url: https://arxiv.org/pdf/2311.06242.pdf
   model_card: none
@@ -794,7 +795,8 @@
   modality: image, text
   size: 1.3B image-text annotations
   sample: []
-  analysis: FLD-5B evaluated in comparison to datasets that power other large-scale image models on standard image benchmarks.
+  analysis: FLD-5B evaluated in comparison to datasets that power other large-scale
+    image models on standard image benchmarks.
   dependencies: []
   included: ''
   excluded: ''
@@ -808,7 +810,11 @@
 - type: dataset
   name: OpenOrca
   organization: Microsoft
-  description: The OpenOrca dataset is a collection of augmented FLAN Collection data. Currently ~1M GPT-4 completions, and ~3.2M GPT-3.5 completions. It is tabularized in alignment with the distributions presented in the ORCA paper and currently represents a partial completion of the full intended dataset, with ongoing generation to expand its scope.
+  description: The OpenOrca dataset is a collection of augmented FLAN Collection
+    data. Currently ~1M GPT-4 completions, and ~3.2M GPT-3.5 completions. It is
+    tabularized in alignment with the distributions presented in the ORCA paper
+    and currently represents a partial completion of the full intended dataset,
+    with ongoing generation to expand its scope.
   created_date: 2023-06-05
   url: https://huggingface.co/datasets/Open-Orca/OpenOrca
   datasheet: https://huggingface.co/datasets/Open-Orca/OpenOrca
@@ -829,7 +835,8 @@
 - type: model
   name: LlongOrca
   organization: Microsoft
-  description: LlongOrca is an attempt to make OpenOrca able to function in a Llong context.
+  description: LlongOrca is an attempt to make OpenOrca able to function in a Llong
+    context.
   created_date: 2023-08-01
   url: https://huggingface.co/Open-Orca/LlongOrca-7B-16k
   model_card: https://huggingface.co/Open-Orca/LlongOrca-7B-16k
@@ -839,7 +846,7 @@
   dependencies: [OpenOrca, LLongMA-2]
   training_emissions: unknown
   training_time: 37 hours
-  training_hardware: 8x A6000-48GB (first-gen) GPUs 
+  training_hardware: 8x A6000-48GB (first-gen) GPUs
   quality_control: ''
   access: open
   license: LLaMA2
@@ -855,7 +862,8 @@
   url: https://arxiv.org/pdf/2309.05463.pdf
   model_card: https://huggingface.co/microsoft/phi-1_5
   modality: text; text
-  analysis: Evaluated on common sense reasoning, language understanding, and multi-step reasoning compared to other SOTA language models.
+  analysis: Evaluated on common sense reasoning, language understanding, and multi-step
+    reasoning compared to other SOTA language models.
   size: 1.3B parameters (dense)
   dependencies: [phi-1]
   training_emissions: unknown
@@ -863,10 +871,11 @@
   training_hardware: 32 A100-40G GPUs
   quality_control: generic web-crawl data is removed from dataset.
   access: open
-  license: 
+  license:
     explanation: can be found via the license tab at top of https://huggingface.co/microsoft/phi-1_5
     value: microsoft research license
-  intended_uses: Phi-1.5 is best suited for answering prompts using the QA format, the chat format, and the code format.
+  intended_uses: Phi-1.5 is best suited for answering prompts using the QA format,
+    the chat format, and the code format.
   prohibited_uses: ''
   monitoring: none
   feedback: https://huggingface.co/microsoft/phi-1_5/discussions
