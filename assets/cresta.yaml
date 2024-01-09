@@ -2,12 +2,15 @@
 - type: model
   name: Ocean-1
   organization: Cresta
-  description: Ocean-1 is the culmination of Cresta's experience in deploying generative AI systems for large enterprises and signifies their latest milestone in advancing the cutting edge AI technology for customer facing conversations.
+  description: Ocean-1 is the culmination of Cresta's experience in deploying generative
+    AI systems for large enterprises and signifies their latest milestone in advancing
+    the cutting edge AI technology for customer facing conversations.
   created_date: 2023-06-20
   url: https://cresta.com/blog/introducing-ocean-1-worlds-first-contact-center-foundation-model/
   model_card: none
   modality: text; text
-  analysis: Outperforms GPT-4 in common sense and reasoning tasks on the basis of both efficiency and accuracy.
+  analysis: Outperforms GPT-4 in common sense and reasoning tasks on the basis of
+    both efficiency and accuracy.
   size: 7B parameters (dense)
   dependencies: [GPT-4, Claude, Falcon-40B]
   training_emissions: unknown

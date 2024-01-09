@@ -552,7 +552,8 @@
 - type: application
   name: Claude for Sheets
   organization: Anthropic
-  description: Claude for Sheets is a Google Sheets add-on that allows the usage of Claude directly in Google Sheets.
+  description: Claude for Sheets is a Google Sheets add-on that allows the usage
+    of Claude directly in Google Sheets.
   created_date: 2023-12-21
   url: https://workspace.google.com/marketplace/app/claude_for_sheets/909417792257
   dependencies: [Anthropic API]

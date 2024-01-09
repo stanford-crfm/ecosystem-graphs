@@ -686,7 +686,6 @@ function loadAssetsAndRenderPageContent() {
     'assets/bloomberg.yaml',
     'assets/brex.yaml',
     'assets/cerebras.yaml',
-    'assets/character.yaml',
     'assets/cmu.yaml',
     'assets/cohere.yaml',
     'assets/continue.yaml',
@@ -745,7 +744,7 @@ function loadAssetsAndRenderPageContent() {
     'assets/viable.yaml',
     'assets/xai.yaml',
     'assets/yandex.yaml',
-    'assets/you.yaml',
+    'assets/you.yaml'
   ];
 
   $.get('js/schemas.yaml', {}, (response) => {
