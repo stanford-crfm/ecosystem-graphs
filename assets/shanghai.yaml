@@ -76,7 +76,8 @@
 - type: model
   name: InternLM
   organization: Shanghai AI Laboratory
-  description: InternLM is a high-quality language model proficient in English, Chinese, and code.
+  description: InternLM is a high-quality language model proficient in English,
+    Chinese, and code.
   created_date: 2023-09-20
   url: https://github.com/InternLM/InternLM
   model_card: https://huggingface.co/internlm/internlm-20b

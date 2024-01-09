@@ -142,7 +142,9 @@
 - type: application
   name: Sky Replacer
   organization: Stability AI
-  description: Sky Replacer is an exciting new tool that allows users to replace the color and aesthetic of the sky in their original photos with a selection of nine alternatives to improve the overall look and feel of the image. 
+  description: Sky Replacer is an exciting new tool that allows users to replace
+    the color and aesthetic of the sky in their original photos with a selection
+    of nine alternatives to improve the overall look and feel of the image.
   created_date: 2023-11-01
   url: https://clipdrop.co/real-estate/sky-replacer
   dependencies: []

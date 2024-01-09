@@ -1671,10 +1671,37 @@
   quality_control: Employed de-duplication, removal of sensitive-PII and filtering.
     Added control tokens marking toxicity of text.
   access: open
-  license: Google
+  license: unknown
   intended_uses: general use large language model that can be used for language,
     reasoning, and code tasks.
   prohibited_uses: becoming part of a general-purpose service or product or use
     within specific downstream applications without prior assessment
   monitoring: Google internal monitoring
   feedback: Specific queries provided by annotators
+- type: model
+  name: Gemini
+  organization: Google
+  description: As of release, Gemini is Google's most capable and flexible AI model,
+    proficient in multimodal domains.
+  created_date: 2023-12-06
+  url: https://deepmind.google/technologies/gemini/#introduction
+  model_card: none
+  modality: text; image, text, video
+  analysis: Evaluated on standard general, reasoning, math, coding, and multimodal
+    benchmarks with results that surpass GPT-4 on almost all.
+  size:
+    explanation: Comes in sizes Ultra, Pro, and Nano.
+    value: unknown
+  dependencies: []
+  training_emissions: unknown
+  training_time: unknown
+  training_hardware: unknown
+  quality_control: ''
+  access: closed
+  license: unknown
+  intended_uses: general use large language model that can be used for language,
+    reasoning, and code tasks.
+  prohibited_uses: becoming part of a general-purpose service or product or use
+    within specific downstream applications without prior assessment
+  monitoring: Google internal monitoring
+  feedback: none

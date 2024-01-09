@@ -7,7 +7,8 @@
   url: https://mistral.ai/news/announcing-mistral-7b/
   model_card: https://huggingface.co/mistralai/Mistral-7B-v0.1
   modality: text; text
-  analysis: Evaluated in comparison to LLaMA series models on standard language benchmarks.
+  analysis: Evaluated in comparison to LLaMA series models on standard language
+    benchmarks.
   size: 7.3B parameters (dense)
   dependencies: []
   training_emissions: unknown

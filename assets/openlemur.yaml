@@ -2,14 +2,23 @@
 - type: model
   name: Lemur
   organization: OpenLemur
-  description: Lemur is an openly accessible language model optimized for both natural language and coding capabilities to serve as the backbone of versatile language agents.
+  description: Lemur is an openly accessible language model optimized for both natural
+    language and coding capabilities to serve as the backbone of versatile language
+    agents.
   created_date: 2023-10-10
   url: https://arxiv.org/pdf/2310.06830.pdf
   model_card: https://huggingface.co/OpenLemur/lemur-70b-v1
   modality: code, text; code, text
   analysis: Evaluated on text and code benchmarks in comparison to other models.
   size: 70B parameters (dense)
-  dependencies: [LLaMA 2, The Stack, RefinedWeb, RedPajama, Common Crawl, Wikipedia, ArXiv]
+  dependencies:
+    - LLaMA 2
+    - The Stack
+    - RefinedWeb
+    - RedPajama
+    - Common Crawl
+    - Wikipedia
+    - ArXiv
   training_emissions: unknown
   training_time: unknown
   training_hardware: TPUv4-512 pod
@@ -23,14 +32,21 @@
 - type: model
   name: Lemur-Chat
   organization: OpenLemur
-  description: Lemur-Chat is an openly accessible language model optimized for both natural language and coding capabilities to serve as the backbone of versatile language agents.
+  description: Lemur-Chat is an openly accessible language model optimized for both
+    natural language and coding capabilities to serve as the backbone of versatile
+    language agents.
   created_date: 2023-10-10
   url: https://arxiv.org/pdf/2310.06830.pdf
   model_card: https://huggingface.co/OpenLemur/lemur-70b-chat-v1
   modality: text; text
   analysis: Evaluated on text and code benchmarks in comparison to other models.
   size: 70B parameters (dense)
-  dependencies: [Lemur, OpenAssistant 1, OpenOrca, ShareGPT & ChatLogs, Evol-CodeAlpaca data]
+  dependencies:
+    - Lemur
+    - OpenAssistant 1
+    - OpenOrca
+    - ShareGPT & ChatLogs
+    - Evol-CodeAlpaca data
   training_emissions: unknown
   training_time: unknown
   training_hardware: unknown

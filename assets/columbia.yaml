@@ -23,7 +23,9 @@
 - type: model
   name: Ferret
   organization: Columbia
-  description: Ferret is a Multimodal Large Language Model (MLLM) capable of understanding spatial referring of any shape or granularity within an image and accurately grounding open-vocabulary descriptions.
+  description: Ferret is a Multimodal Large Language Model (MLLM) capable of understanding
+    spatial referring of any shape or granularity within an image and accurately
+    grounding open-vocabulary descriptions.
   created_date: 2023-10-11
   url: https://arxiv.org/pdf/2310.07704.pdf
   model_card: none

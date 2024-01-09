@@ -2,7 +2,8 @@
 - type: model
   name: OpenBA
   organization: Soochow University
-  description: OpenBA is an open-sourced 15B bilingual (English + Chinese) asymmetric seq2seq model.
+  description: OpenBA is an open-sourced 15B bilingual (English + Chinese) asymmetric
+    seq2seq model.
   created_date: 2023-10-01
   url: https://arxiv.org/pdf/2309.10706.pdf
   model_card: https://huggingface.co/OpenBA/OpenBA-LM

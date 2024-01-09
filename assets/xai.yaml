@@ -2,7 +2,7 @@
 - type: model
   name: Grok-1
   organization: xAI
-  description: Grok is a text chatbot modeled after the Hitchhiker’s Guide to the Galaxy, so intended to answer almost anything and even suggest what questions to ask.
+  description: Grok is an AI modeled after the Hitchhiker’s Guide to the Galaxy,
   created_date: 2023-11-04
   url: https://grok.x.ai/
   model_card: https://x.ai/model-card/
@@ -18,7 +18,9 @@
   quality_control: none
   access: limited
   license: unknown
-  intended_uses: Grok-1 is intended to be used as the engine behind Grok for natural language processing tasks including question answering, information retrieval, creative writing and coding assistance.
+  intended_uses: Grok-1 is intended to be used as the engine behind Grok for natural
+    language processing tasks including question answering, information retrieval,
+    creative writing and coding assistance.
   prohibited_uses: none
   monitoring: unknown
   feedback: none

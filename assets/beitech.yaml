@@ -2,14 +2,16 @@
 - type: dataset
   name: EXMODD
   organization: Beijing Institute of Technology
-  description: EXMODD (Explanatory Multimodal Open-Domain Dialogue dataset) is a dataset built off the proposed MDCF (Multimodal Data Construction Framework).
+  description: EXMODD (Explanatory Multimodal Open-Domain Dialogue dataset) is a
+    dataset built off the proposed MDCF (Multimodal Data Construction Framework).
   created_date: 2023-10-17
   url: https://arxiv.org/pdf/2310.10967.pdf
   datasheet: none
   modality: image, text
   size: unknown
   sample: []
-  analysis: Models fine-tuned on EXMODD and earlier dataset Image-Chat and then evaluated on Image-Chat validation set.
+  analysis: Models fine-tuned on EXMODD and earlier dataset Image-Chat and then
+    evaluated on Image-Chat validation set.
   dependencies: [YFCC100M, Image-Chat]
   included: ''
   excluded: ''
