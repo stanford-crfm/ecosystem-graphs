@@ -94,6 +94,51 @@
   monthly_active_users: ''
   user_distribution: ''
   failures: ''
+
+- type: model
+  name: Stable Video Diffusion
+  organization: Stability AI
+  description: Stable Video Diffusion is a latent diffusion model trained to generate short video clips from an image conditioning.
+  created_date: 2023-11-21
+  url: https://static1.squarespace.com/static/6213c340453c3f502425776e/t/655ce779b9d47d342a93c890/1700587395994/stable_video_diffusion.pdf
+  model_card: https://huggingface.co/stabilityai/stable-video-diffusion-img2vid-xt
+  modality: text; video
+  analysis: Evaluated via a user study comparing preferences between Stable Video Diffusion and competing text-to-video models.
+  size: unknown
+  dependencies: [Large Video Dataset]
+  training_emissions: unknown
+  training_time: unknown
+  training_hardware: unknown
+  quality_control: ''
+  access: limited
+  license: unknown
+  intended_uses: Intended for research purposes only.
+  prohibited_uses: Using the model to generate representations of real-world people or events. 
+  monitoring: ''
+  feedback: https://huggingface.co/stabilityai/stable-video-diffusion-img2vid-xt/discussions
+
+- type: dataset
+  name: Large Video Dataset
+  organization: Stability AI
+  description: Large Video Dataset is the dataset that trained Stable Video Diffusion, consisting of over 212 years of content.
+  created_date: 2023-11-21
+  url: https://static1.squarespace.com/static/6213c340453c3f502425776e/t/655ce779b9d47d342a93c890/1700587395994/stable_video_diffusion.pdf
+  datasheet: ''
+  modality: video with caption
+  size: 580M annotated video clip pairs
+  sample: []
+  analysis: Large Video Dataset compared to publicly available research datasets on general statistics before and after filtering.
+  dependencies: [WebVid-10M, CoCa, V-BLIP]
+  included: ''
+  excluded: ''
+  quality_control: Dataset annotated with dense optical flow, and low optical flow videos are removed.
+  access:  closed
+  license: unknown
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: none
+
 - type: application
   name: Sky Replacer
   organization: Stability AI
@@ -116,3 +161,4 @@
   monthly_active_users: ''
   user_distribution: ''
   failures: ''
+

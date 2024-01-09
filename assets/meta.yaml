@@ -696,6 +696,28 @@
   feedback: ''
 
 - type: model
+  name: Code LLaMA
+  organization: Meta
+  description: Code Llama is a collection of pretrained and fine-tuned generative text models ranging in scale from 7 billion to 34 billion parameters.
+  created_date: 2023-08-24
+  url: https://ai.meta.com/research/publications/code-llama-open-foundation-models-for-code/
+  model_card: https://huggingface.co/codellama/CodeLlama-34b-hf
+  modality: text; code, text
+  analysis: Evaluated on several code benchmarks like HumanEval and MBPP.
+  size: 34B parameters (dense)
+  dependencies: [LLaMA 2]
+  training_emissions: 65.3 tCO2eq
+  training_time: 400K GPU hours
+  training_hardware: A100-80GB GPUs
+  quality_control: ''
+  access: open
+  license: LLaMA 2
+  intended_uses: Code Llama and its variants is intended for commercial and research use in English and relevant programming languages.
+  prohibited_uses: Use in any manner that violates applicable laws or regulations (including trade compliance laws). Use in languages other than English. Use in any other way that is prohibited by the Acceptable Use Policy and Licensing Agreement for Code Llama and its variants.
+  monitoring: ''
+  feedback: https://huggingface.co/allenai/codetulu-2-13b/discussions
+
+- type: model
   name: Emu Video
   organization: Meta
   description: Emu Video is a text-to-video generation model that factorizes the
@@ -766,3 +788,4 @@
   prohibited_uses: ''
   monitoring: none
   feedback: none
+  
