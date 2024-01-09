@@ -19,8 +19,4 @@
   intended_uses: ''
   prohibited_uses: none
   monitoring: unknown
-<<<<<<< HEAD
   feedback: https://huggingface.co/deepseek-ai/deepseek-llm-67b-base/discussions
-=======
-  feedback: https://huggingface.co/deepseek-ai/deepseek-llm-67b-base/discussions
->>>>>>> 7db61616a2f9fc26746d0f359c17b4ae1b7cad62
