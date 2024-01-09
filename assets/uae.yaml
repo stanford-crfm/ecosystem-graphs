@@ -5,21 +5,27 @@
   description: Falcon-40B is a 40B parameters causal decoder-only model built by
     TII and trained on 1,000B tokens of RefinedWeb enhanced with curated corpora.
   created_date: 2023-06-14
-  url: https://huggingface.co/tiiuae/falcon-40b
+  url: https://arxiv.org/pdf/2311.16867.pdf
   model_card: https://huggingface.co/tiiuae/falcon-40b
   modality: text; text
-  analysis: ''
+  analysis: Evaluated in 1-shot against the PaLM models, with the tasks of the paper
+    "Language models are few-shot learners" (Brown et al., 2020); (2) on a small
+    set of few-shot tasks reported by the GPT-4 paper; (3) against state-of-the-art
+    models across common sense, question answering, and code tasks; (4) against
+    models which also report results from the EAI Harness, for which we are able
+    to compare with identical prompts and metrics.
   size: 40B parameters (dense)
   dependencies: [RefinedWeb]
-  training_emissions: ''
+  training_emissions: unknown
   training_time: 2 months
   training_hardware: 384 A100 40GB GPUs
   quality_control: ''
   access: open
   license: Apache 2.0
-  intended_uses: ''
+  intended_uses: Research on large language models; as a foundation for further
+    specialization for specific use cases.
   prohibited_uses: irresponsible or harmful use or production use without adequate
-    assessment of risks and mitigation
+    assessment of risks and mitigation.
   monitoring: None
   feedback: https://huggingface.co/tiiuae/falcon-40b/discussions
 - type: dataset
@@ -52,7 +58,7 @@
   description: Falcon-180B is a 180B parameters causal decoder-only model built
     by TII and trained on 3,500B tokens of RefinedWeb enhanced with curated corpora.
   created_date: 2023-09-06
-  url: https://falconllm.tii.ae/falcon-models.html
+  url: https://arxiv.org/pdf/2311.16867.pdf
   model_card: https://huggingface.co/tiiuae/falcon-180B
   modality: text; text
   analysis: Falcon-180B outperforms LLaMA-2, StableLM, RedPajama, MPT on the Open
@@ -65,7 +71,8 @@
   quality_control: ''
   access: open
   license: unknown
-  intended_uses: ''
+  intended_uses: Research on large language models; as a foundation for further
+    specialization for specific use cases.
   prohibited_uses: Production use without adequate assessment of risks and mitigation;
     any use cases which may be considered irresponsible or harmful.
   monitoring: None

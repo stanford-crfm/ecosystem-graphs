@@ -2,12 +2,14 @@
 - type: model
   name: SALMONN
   organization: ByteDance, Tsinghua University
-  description: SALMONN is a large language model (LLM) enabling speech, audio event, and music inputs.
+  description: SALMONN is a large language model (LLM) enabling speech, audio event,
+    and music inputs.
   created_date: 2023-10-20
   url: https://github.com/bytedance/SALMONN
   model_card: https://huggingface.co/MSIIP/SALMONN
   modality: audio, text; text
-  analysis: Evaluated on benchmarks pertaining to speech, music, and other audio recognition.
+  analysis: Evaluated on benchmarks pertaining to speech, music, and other audio
+    recognition.
   size: unknown
   dependencies: [Whisper, BEATs, Vicuna]
   training_emissions: unknown

@@ -692,7 +692,13 @@ function loadAssetsAndRenderPageContent() {
     'assets/continue.yaml',
     'assets/cresta.yaml',
     'assets/databricks.yaml',
+<<<<<<< HEAD
     'assets/deci.yaml',
+=======
+    'assets/ollama.yaml',
+    'assets/argilla.yaml',
+    'assets/epfl.yaml',
+>>>>>>> 7db61616a2f9fc26746d0f359c17b4ae1b7cad62
     'assets/deepmind.yaml',
     'assets/deepseek.yaml',
     'assets/duckduckgo.yaml',

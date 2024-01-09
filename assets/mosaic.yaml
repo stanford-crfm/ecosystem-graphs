@@ -24,7 +24,8 @@
 - type: model
   name: CommonCanvas
   organization: Cornell University, Mosaic
-  description: CommonCanvas is a text-to-image model trained solely on Creative Commons licensed images.
+  description: CommonCanvas is a text-to-image model trained solely on Creative
+    Commons licensed images.
   created_date: 2023-10-25
   url: https://arxiv.org/pdf/2310.16825.pdf
   model_card: none
@@ -45,7 +46,8 @@
 - type: dataset
   name: CommonCatalog
   organization: Mosaic
-  description: CommonCatalog is a curated dataset of CommonCrawl images and synthetic captions.
+  description: CommonCatalog is a curated dataset of CommonCrawl images and synthetic
+    captions.
   created_date: 2023-10-25
   url: https://arxiv.org/pdf/2310.16825.pdf
   datasheet: https://github.com/mosaicml/diffusion/blob/main/assets/common-canvas.md
