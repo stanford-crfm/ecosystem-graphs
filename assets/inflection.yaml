@@ -45,3 +45,26 @@
   monthly_active_users: ''
   user_distribution: ''
   failures: ''
+
+- type: model
+  name: Inflection-2
+  organization: Inflection AI
+  description: Inflection-2 is the best model in the world for its compute class and the second most capable LLM in the world, according to benchmark evaluation, as of its release.
+  created_date: 2023-11-22
+  url: https://inflection.ai/inflection-2
+  model_card: none
+  modality: text; text
+  analysis: Evaluated against state of the art models on benchmarks, and found to be most performant model outside of GPT-4.
+  size: unknown
+  dependencies: []
+  training_emissions: unknown
+  training_time: unknown
+  training_hardware: 5000 NVIDIA H100 GPUs
+  quality_control: ''
+  access: closed
+  license: unknown
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: none
+
