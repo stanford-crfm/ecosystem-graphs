@@ -2,18 +2,21 @@
 - type: model
   name: Deepseek
   organization: Deepseek AI
-  description: Deepseek is a 67B parameter model with Grouped-Query Attention trained on 2 trillion tokens from scratch.
+  description: Deepseek is a 67B parameter model with Grouped-Query Attention trained
+    on 2 trillion tokens from scratch.
   created_date: 2023-11-29
   url: https://github.com/deepseek-ai/DeepSeek-LLM
   model_card: https://huggingface.co/deepseek-ai/deepseek-llm-67b-base
   modality: text; text
-  analysis: Deepseek and baseline models (for comparison) evaluated on a series of representative benchmarks, both in English and Chinese.
+  analysis: Deepseek and baseline models (for comparison) evaluated on a series
+    of representative benchmarks, both in English and Chinese.
   size: 67B parameters (dense)
   dependencies: []
   training_emissions: unknown
   training_time: unknown
   training_hardware: unknown
-  quality_control: Training dataset comprised of diverse data composition and pruned and deduplicated.
+  quality_control: Training dataset comprised of diverse data composition and pruned
+    and deduplicated.
   access: open
   license: MIT
   intended_uses: ''

@@ -7,9 +7,11 @@
   url: https://grok.x.ai/
   model_card: https://x.ai/model-card/
   modality: text; text
-  analysis: Grok-1 was evaluated on a range of reasoning benchmark tasks and on curated foreign mathematic examination questions.
-  size: 
-    explanation: No model size specified, but Grok-1 is larger than predecessor Grok-0 (33B parameters), as stated in the Grok announcement at https://x.ai/.
+  analysis: Grok-1 was evaluated on a range of reasoning benchmark tasks and on
+    curated foreign mathematic examination questions.
+  size:
+    explanation: No model size specified, but Grok-1 is larger than predecessor
+      Grok-0 (33B parameters), as stated in the Grok announcement at https://x.ai/.
     value: unknown
   dependencies: []
   training_emissions: unknown

@@ -179,7 +179,9 @@
 - type: model
   name: StripedHyena
   organization: Together
-  description: StripedHyena is an LLM and the first alternative model competitive with the best open-source Transformers in short and long-context evaluations, according to Together.
+  description: StripedHyena is an LLM and the first alternative model competitive
+    with the best open-source Transformers in short and long-context evaluations,
+    according to Together.
   created_date: 2023-12-08
   url: https://www.together.ai/blog/stripedhyena-7b
   model_card: https://huggingface.co/togethercomputer/StripedHyena-Hessian-7B
@@ -200,7 +202,9 @@
 - type: model
   name: StripedHyena Nous
   organization: Together
-  description: StripedHyena Nous is an LLM and chatbot, along with the first alternative model competitive with the best open-source Transformers in short and long-context evaluations, according to Together.
+  description: StripedHyena Nous is an LLM and chatbot, along with the first alternative
+    model competitive with the best open-source Transformers in short and long-context
+    evaluations, according to Together.
   created_date: 2023-12-08
   url: https://www.together.ai/blog/stripedhyena-7b
   model_card: https://huggingface.co/togethercomputer/StripedHyena-Nous-7B

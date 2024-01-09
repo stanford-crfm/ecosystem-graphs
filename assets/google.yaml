@@ -1679,6 +1679,32 @@
   monitoring: Google internal monitoring
   feedback: Specific queries provided by annotators
 - type: model
+  name: MedLM
+  organization: Google
+  description: MedLM is a collection of foundation models tuned to follow natural
+    language instructions for tasks in medicine, such as question answering and
+    creating draft summaries.
+  created_date: 2023-12-13
+  url: https://cloud.google.com/vertex-ai/docs/generative-ai/medlm/overview
+  model_card: https://cloud.google.com/static/vertex-ai/docs/generative-ai/medlm/MedLM-model-card.pdf
+  modality: text; text
+  analysis: Assessed on medical benchmarks of professional medical exams, medical
+    research, and consumer queries.
+  size: unknown
+  dependencies: []
+  training_emissions: unknown
+  training_time: unknown
+  training_hardware: unknown
+  quality_control: ''
+  access: limited
+  license: unknown
+  intended_uses: to be used for question answering and creating draft summaries
+    from existing documentation, to be reviewed, edited, and approved by the user
+    before use.
+  prohibited_uses: ''
+  monitoring: Google internal monitoring
+  feedback: none
+- type: model
   name: Gemini
   organization: Google
   description: As of release, Gemini is Google's most capable and flexible AI model,

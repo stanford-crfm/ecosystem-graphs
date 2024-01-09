@@ -549,3 +549,24 @@
   prohibited_uses: ''
   monitoring: ''
   feedback: none
+- type: application
+  name: Claude for Sheets
+  organization: Anthropic
+  description: Claude for Sheets is a Google Sheets add-on that allows the usage
+    of Claude directly in Google Sheets.
+  created_date: 2023-12-21
+  url: https://workspace.google.com/marketplace/app/claude_for_sheets/909417792257
+  dependencies: [Anthropic API]
+  adaptation: ''
+  output_space: AI-generated text from prompt
+  quality_control: ''
+  access: open
+  license: unknown
+  terms_of_service: https://claude.ai/legal
+  intended_uses: as an integrated AI assistant in Google Sheets
+  prohibited_uses: ''
+  monitoring: unknown
+  feedback: Reviews on https://workspace.google.com/marketplace/app/claude_for_sheets/909417792257
+  monthly_active_users: unknown
+  user_distribution: unknown
+  failures: unknown

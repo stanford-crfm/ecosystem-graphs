@@ -1,0 +1,60 @@
+---
+- type: model
+  name: Amber
+  organization: LLM360
+  description: Amber is the first model in the LLM360 family, an initiative for
+    comprehensive and fully open-sourced LLMs, where all training details, model
+    checkpoints, intermediate results, and additional analyses are made available
+    to the community.
+  created_date: 2023-12-12
+  url: https://www.llm360.ai/
+  model_card: https://huggingface.co/LLM360/Amber
+  modality: text; text
+  analysis: Evaluated on several benchmark LLM tasks
+  size: 7B parameters (dense)
+  dependencies:
+    - Arxiv
+    - Books
+    - C4
+    - RefinedWeb
+    - StarCoder
+    - StackExchange
+    - Wikipedia
+  training_emissions: unknown
+  training_time: unknown
+  training_hardware: 56 DGX A100 nodes, each equipped with 4 80GB A100 GPUs
+  quality_control: ''
+  access: open
+  license: Apache 2.0
+  intended_uses: to support open and collaborative AI research by making the full
+    LLM training process transparent.
+  prohibited_uses: ''
+  monitoring: unknown
+  feedback: https://huggingface.co/LLM360/Amber/discussions
+
+- type: model
+  name: CrystalCoder
+  organization: LLM360
+  description: CrystalCoder is a language model with a balance of code and text
+    data that follows the initiative under LLM360 of its training process being
+    fully transparent.
+  created_date: 2023-12-12
+  url: https://www.llm360.ai/
+  model_card: https://huggingface.co/LLM360/CrystalCoder
+  modality: text; code, text
+  analysis: Evaluated on English and coding tasks and benchmarks, and outperforms
+    LLaMA 2 in some.
+  size: 7B parameters (dense)
+  dependencies: [SlimPajama dataset, StarCoder]
+  training_emissions: unknown
+  training_time: unknown
+  training_hardware: Trained on the Cerebras Condor Galaxy 1 (CG-1), a 4 exaFLOPS,
+    54 million core, 64-node cloud AI supercomputer.
+  quality_control: ''
+  access: open
+  license: Apache 2.0
+  intended_uses: to support open and collaborative AI research by making the full
+    LLM training process transparent.
+  prohibited_uses: ''
+  monitoring: unknown
+  feedback: https://huggingface.co/LLM360/CrystalCoder/discussions
