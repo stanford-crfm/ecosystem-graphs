@@ -686,6 +686,7 @@ function loadAssetsAndRenderPageContent() {
     'assets/bloomberg.yaml',
     'assets/brex.yaml',
     'assets/cerebras.yaml',
+    'assets/character.yaml',
     'assets/cmu.yaml',
     'assets/cohere.yaml',
     'assets/continue.yaml',
