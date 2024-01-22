@@ -23,3 +23,27 @@
   prohibited_uses: none
   monitoring: unknown
   feedback: https://huggingface.co/deepseek-ai/deepseek-llm-67b-base/discussions
+- type: model
+  name: Deepseek Chat
+  organization: Deepseek AI
+  description: Deepseek Chat is a 67B parameter model initialized from Deepseek and fine-tuned on extra instruction data.
+  created_date: 2023-11-29
+  url: https://github.com/deepseek-ai/DeepSeek-LLM
+  model_card: https://huggingface.co/deepseek-ai/deepseek-llm-67b-chat
+  modality: text; text
+  analysis: Deepseek and baseline models (for comparison) evaluated on a series
+    of representative benchmarks, both in English and Chinese.
+  size: 67B parameters (dense)
+  dependencies: [Deepseek]
+  training_emissions: unknown
+  training_time: unknown
+  training_hardware: unknown
+  quality_control: Training dataset comprised of diverse data composition and pruned
+    and deduplicated.
+  access: open
+  license: MIT
+  intended_uses: ''
+  prohibited_uses: none
+  monitoring: unknown
+  feedback: https://huggingface.co/deepseek-ai/deepseek-llm-67b-chat/discussions
+

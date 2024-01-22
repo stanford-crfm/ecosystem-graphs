@@ -720,6 +720,7 @@ function loadAssetsAndRenderPageContent() {
     'assets/notion.yaml',
     'assets/nvidia.yaml',
     'assets/openai.yaml',
+    'assets/orion.yaml',
     'assets/othersideai.yaml',
     'assets/oxford.yaml',
     'assets/peking.yaml',

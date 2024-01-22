@@ -55,3 +55,50 @@
     \ Limitations]](https://github.com/Cerebras/modelzoo/tree/main/modelzoo/transformers/pytorch/gpt3/configs/Cerebras_GPT#out-of-scope-use).\n"
   monitoring: ''
   feedback: ''
+- type: model
+  name: Jais
+  organization: Inception Institute of Artificial Intelligence, Cerebras, Mohamed bin Zayed University of Artificial Intelligence
+  description: Jais is the world’s most advanced Arabic LLM as of its release.
+  created_date: 2023-08-30
+  url: https://inceptioniai.org/jais/docs/Technicalpaper.pdf
+  model_card:
+    explanation: Found in section C “Model Cards”
+    value: https://inceptioniai.org/jais/docs/Technicalpaper.pdf
+  modality: text; text
+  analysis: Evaluated on standard English LLM benchmarks and adapted Arabic LLM benchmarks.
+  size: 13B parameters (dense)
+  dependencies: [GPT-3, The Pile]
+  training_emissions: unknown
+  training_time: unknown
+  training_hardware: Condor Galaxy Supercomputer
+  quality_control: ''
+  access: open
+  license: Apache 2.0
+  intended_uses: Jais is released with the aim to stimulate research and development in the Arabic NLP community.
+  prohibited_uses: Generating or endorsing hate speech, disseminating false information, engaging in illegal activities, managing sensitive data, attempting language generalization beyond Arabic and English, and making critical decisions with high stakes.
+  monitoring: unknown
+  feedback: none
+- type: model
+  name: Jais Chat
+  organization: Inception Institute of Artificial Intelligence, Cerebras, Mohamed bin Zayed University of Artificial Intelligence
+  description: Jais Chat is an instruction-tuned version of Jais, optimized for dialog interaction.
+  created_date: 2023-08-30
+  url: https://inceptioniai.org/jais/docs/Technicalpaper.pdf
+  model_card:
+    explanation: Found in section C “Model Cards”
+    value: https://inceptioniai.org/jais/docs/Technicalpaper.pdf
+  modality: text; text
+  analysis: Evaluated on standard English LLM benchmarks and adapted Arabic LLM benchmarks.
+  size: 13B parameters (dense)
+  dependencies: [GPT-3, The Pile]
+  training_emissions: unknown
+  training_time: unknown
+  training_hardware: Condor Galaxy Supercomputer
+  quality_control: ''
+  access: open
+  license: Apache 2.0
+  intended_uses: Jais Chat is released with the aim to stimulate research and development in the Arabic NLP community.
+  prohibited_uses: Generating or endorsing hate speech, disseminating false information, engaging in illegal activities, managing sensitive data, attempting language generalization beyond Arabic and English, and making critical decisions with high stakes.
+  monitoring: unknown
+  feedback: none
+
