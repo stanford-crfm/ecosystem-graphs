@@ -93,7 +93,7 @@
   dependencies: [GPT-3, The Pile]
   training_emissions: unknown
   training_time: unknown
-  training_hardware: Condor Galaxy Supercomputer
+  training_hardware: Condor Galaxy Supercomputer from Cerebras
   quality_control: ''
   access: open
   license: Apache 2.0

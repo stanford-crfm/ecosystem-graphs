@@ -43,25 +43,4 @@
   prohibited_uses: ''
   monitoring: ''
   feedback: https://huggingface.co/wenge-research/yayi2-30b/discussions
-- type: model
-  name: YAYI 2 Chat
-  organization: Institute of Automation Chinese Academy of Sciences
-  description: YAYI 2 Chat is an open source large language model trained in both English and Chinese which functions as a chatbot.
-  created_date: 2023-12-22
-  url: https://arxiv.org/pdf/2312.14862.pdf
-  model_card: none
-  modality: text; text
-  analysis: Evaluated on standard benchmarks for knowledge and language understanding, mathematical reasoning, and programming ability in comparison to similarly sized open-source models.
-  size: 30B parameters (dense)
-  dependencies: []
-  training_emissions: unknown
-  training_time: unknown
-  training_hardware: over 1000 A800 GPUs
-  quality_control: data is deduplicated, normalized, cleaned, and filtered for toxicity
-  access: open
-  license: Apache 2.0
-  intended_uses: ''
-  prohibited_uses: ''
-  monitoring: ''
-  feedback: none
 
