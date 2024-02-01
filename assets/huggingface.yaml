@@ -93,3 +93,46 @@
   prohibited_uses: ''
   monitoring: ''
   feedback: https://huggingface.co/datasets/HuggingFaceM4/OBELICS/discussions
+- type: model
+  name: FinGPT
+  organization: University of Turku, HuggingFace, National Library of Finland
+  description: FinGPT is a series of Finnish LLMs trained from scratch.
+  created_date: 2023-11-03
+  url: https://arxiv.org/pdf/2311.05640.pdf
+  model_card: https://huggingface.co/TurkuNLP/gpt3-finnish-13B
+  modality: text; text
+  analysis: Evaluated on in-house benchmark, FIN-bench, adapted from BIG-bench for Finnish.
+  size: 13B parameters (dense)
+  dependencies: []
+  training_emissions: unknown
+  training_time: unknown
+  training_hardware: 192 nodes, each consisting of 4 AMD Instinct MI250X GPUs, a single 64-core AMD Trento CPU and 512GB of memory.
+  quality_control: unknown
+  access: open
+  license: Apache 2.0
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: unknown
+  feedback: https://huggingface.co/TurkuNLP/gpt3-finnish-13B/discussions
+- type: model
+  name: BLUUMI
+  organization: University of Turku, HuggingFace, National Library of Finland
+  description: BLUUMI is a multilingual fine-tuned version of BLOOM.
+  created_date: 2023-11-03
+  url: https://arxiv.org/pdf/2311.05640.pdf
+  model_card: https://huggingface.co/TurkuNLP/bloom-finnish-176b
+  modality: text; text
+  analysis: Evaluated on in-house benchmark, FIN-bench, adapted from BIG-bench for Finnish.
+  size: 176B parameters (dense)
+  dependencies: [BLOOM]
+  training_emissions: unknown
+  training_time: unknown
+  training_hardware: 192 nodes, each consisting of 4 AMD Instinct MI250X GPUs, a single 64-core AMD Trento CPU and 512GB of memory.
+  quality_control: unknown
+  access: open
+  license: Apache 2.0
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: unknown
+  feedback: https://huggingface.co/TurkuNLP/bloom-finnish-176b/discussions
+
