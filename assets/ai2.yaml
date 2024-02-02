@@ -219,3 +219,25 @@
   prohibited_uses: ''
   monitoring: ''
   feedback: https://huggingface.co/allenai/codetulu-2-13b/discussions
+
+- type: model
+  name: OLMo
+  organization: AI2
+  description: Open Language Model (OLMo) is designed to provide access to data, training code, models, and evaluation code necessary to advance AI through open research to empower academics and researchers to study the science of language models collectively.
+  created_date: 2024-02-01
+  url: https://allenai.org/olmo/olmo-paper.pdf
+  model_card: https://huggingface.co/allenai/OLMo-7B
+  modality: text; text
+  analysis: Evaluated on standard LLM tasks and benchmarks in comparison to LLaMA, Falcon, and MPT, in addition to other same-sized models.
+  size: 7B parameters (dense)
+  dependencies: [Dolma]
+  training_emissions: 75.05 tCo2eq
+  training_time: unknown
+  training_hardware: 27 nodes, with each node containing 8x NVIDIA A100-40GB GPUs provided by MosaicML
+  quality_control: training data from Dolma filtered and deduplicated before being trained on.
+  access: open
+  license: Apache 2.0
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: unknown
+  feedback: https://huggingface.co/allenai/OLMo-7B/discussions
