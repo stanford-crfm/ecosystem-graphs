@@ -2,12 +2,14 @@
 - type: model
   name: Orion
   organization: OrionStarAI
-  description: Orion series models are open-source multilingual large language models trained from scratch by OrionStarAI.
+  description: Orion series models are open-source multilingual large language models
+    trained from scratch by OrionStarAI.
   created_date: 2024-01-20
   url: https://github.com/OrionStarAI/Orion
   model_card: https://huggingface.co/OrionStarAI/Orion-14B-Base
   modality: text; text
-  analysis: Evaluated on multilingual and NLP benchmarks in comparison with SoTA models of comparable size.
+  analysis: Evaluated on multilingual and NLP benchmarks in comparison with SoTA
+    models of comparable size.
   size: 14B parameters (dense)
   dependencies: []
   training_emissions: unknown

@@ -18,7 +18,9 @@
   quality_control: Training dataset comprised of diverse data composition and pruned
     and deduplicated.
   access: open
-  license: MIT
+  license:
+    explanation: can be found at https://github.com/deepseek-ai/DeepSeek-LLM/blob/main/LICENSE-MODEL
+    value: custom
   intended_uses: ''
   prohibited_uses: none
   monitoring: unknown
@@ -26,7 +28,8 @@
 - type: model
   name: Deepseek Chat
   organization: Deepseek AI
-  description: Deepseek Chat is a 67B parameter model initialized from Deepseek and fine-tuned on extra instruction data.
+  description: Deepseek Chat is a 67B parameter model initialized from Deepseek
+    and fine-tuned on extra instruction data.
   created_date: 2023-11-29
   url: https://github.com/deepseek-ai/DeepSeek-LLM
   model_card: https://huggingface.co/deepseek-ai/deepseek-llm-67b-chat
@@ -41,9 +44,10 @@
   quality_control: Training dataset comprised of diverse data composition and pruned
     and deduplicated.
   access: open
-  license: MIT
+  license:
+    explanation: can be found at https://github.com/deepseek-ai/DeepSeek-LLM/blob/main/LICENSE-MODEL
+    value: custom
   intended_uses: ''
   prohibited_uses: none
   monitoring: unknown
   feedback: https://huggingface.co/deepseek-ai/deepseek-llm-67b-chat/discussions
-

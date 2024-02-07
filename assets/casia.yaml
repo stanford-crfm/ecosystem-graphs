@@ -25,12 +25,15 @@
 - type: model
   name: YAYI 2
   organization: Institute of Automation Chinese Academy of Sciences
-  description: YAYI 2 is an open source large language model trained in both English and Chinese.
+  description: YAYI 2 is an open source large language model trained in both English
+    and Chinese.
   created_date: 2023-12-22
   url: https://arxiv.org/pdf/2312.14862.pdf
   model_card: https://huggingface.co/wenge-research/yayi2-30b
   modality: text; text
-  analysis: Evaluated on standard benchmarks for knowledge and language understanding, mathematical reasoning, and programming ability in comparison to similarly sized open-source models.
+  analysis: Evaluated on standard benchmarks for knowledge and language understanding,
+    mathematical reasoning, and programming ability in comparison to similarly sized
+    open-source models.
   size: 30B parameters (dense)
   dependencies: []
   training_emissions: unknown
@@ -38,9 +41,11 @@
   training_hardware: over 1000 A800 GPUs
   quality_control: data is deduplicated, normalized, cleaned, and filtered for toxicity
   access: open
-  license: Apache 2.0
+  license:
+    explanation: Model is under a custom [license](https://github.com/wenge-research/YAYI2/blob/main/COMMUNITY_LICENSE),
+      while code is Apache 2.0
+    value: custom
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
   feedback: https://huggingface.co/wenge-research/yayi2-30b/discussions
-
