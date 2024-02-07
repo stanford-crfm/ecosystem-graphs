@@ -31,7 +31,7 @@
   modality: text; text
   analysis: Evaluated on common sense and world knowledge benchmarks.
   size: 1.8B parameters (dense)
-  dependencies: [LLaMA 2]
+  dependencies: []
   training_emissions: unknown
   training_time: unknown
   training_hardware: 8x H100 GPUs on a single node
