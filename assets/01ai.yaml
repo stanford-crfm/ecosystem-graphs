@@ -18,7 +18,9 @@
   quality_control: Model underwent supervised fine-tuning, leading to a greater
     diversity of responses.
   access: open
-  license: Apache 2.0
+  license:
+    explanation: can be found at https://huggingface.co/01-ai/Yi-34B/blob/main/LICENSE
+    value: custom
   intended_uses: ''
   prohibited_uses: none
   monitoring: unknown
@@ -39,7 +41,9 @@
   training_hardware: 128 NVIDIA A800 (80G) GPUs
   quality_control: unknown
   access: open
-  license: Apache 2.0
+  license:
+    explanation: can be found at https://huggingface.co/01-ai/Yi-VL-34B/blob/main/LICENSE
+    value: custom
   intended_uses: ''
   prohibited_uses: ''
   monitoring: unknown

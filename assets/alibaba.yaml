@@ -98,7 +98,9 @@
   training_hardware: unknown
   quality_control: unknown
   access: open
-  license: Apache 2.0
+  license:
+    explanation: can be found at https://huggingface.co/Qwen/Qwen1.5-72B/blob/main/LICENSE
+    value: custom
   intended_uses: ''
   prohibited_uses: ''
   monitoring: unknown
