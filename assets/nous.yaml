@@ -1,0 +1,22 @@
+---
+- type: model
+  name: Nous Hermes 2
+  organization: Nous
+  description: Nous Hermes 2 Mixtral 8x7B DPO is the new flagship Nous Research model trained over the Mixtral 8x7B MoE LLM.
+  created_date: 2024-01-10
+  url: https://huggingface.co/NousResearch/Nous-Hermes-2-Mixtral-8x7B-DPO
+  model_card: https://huggingface.co/NousResearch/Nous-Hermes-2-Mixtral-8x7B-DPO
+  modality: text; code, text
+  analysis: Evaluated across standard benchmarks and generally performs better than Mixtral, which it was fine-tuned on.
+  size: 7B parameters (dense)
+  dependencies: [Mixtral]
+  training_emissions: unknown
+  training_time: unknown
+  training_hardware: unknown
+  quality_control: unknown
+  access: open
+  license: Apache 2.0
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: unknown
+  feedback: https://huggingface.co/NousResearch/Nous-Hermes-2-Mixtral-8x7B-DPO/discussions

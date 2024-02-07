@@ -20,3 +20,25 @@
   prohibited_uses: ''
   monitoring: ''
   feedback: https://huggingface.co/h2oai/h2ogpt-oasst1-512-20b/discussions
+
+- type: model
+  name: H2O Danube
+  organization: H2O AI
+  description: H2O Danube is a language model trained on 1T tokens following the core principles of LLaMA 2 and Mistral.
+  created_date: 2024-01-30
+  url: https://arxiv.org/pdf/2401.16818.pdf
+  model_card: https://huggingface.co/h2oai/h2o-danube-1.8b-base
+  modality: text; text
+  analysis: Evaluated on common sense and world knowledge benchmarks.
+  size: 1.8B parameters (dense)
+  dependencies: [LLaMA 2]
+  training_emissions: unknown
+  training_time: unknown
+  training_hardware: 8x H100 GPUs on a single node
+  quality_control: unknown
+  access: open
+  license: Apache 2.0
+  intended_uses: ‘’
+  prohibited_uses: Users are encouraged to use the large language model responsibly and ethically. By using this model, you agree not to use it for purposes that promote hate speech, discrimination, harassment, or any form of illegal or harmful activities.
+  monitoring: unknown
+  feedback: https://huggingface.co/h2oai/h2o-danube-1.8b-base/discussions

@@ -24,3 +24,26 @@
   prohibited_uses: ''
   monitoring: ''
   feedback: ''
+
+- type: model
+  name: OpenMoE
+  organization: National University of Singapore, University of Edinburgh, ETH Zurich
+  description: OpenMoE is a series of fully open-sourced and reproducible decoder-only MoE LLMs.
+  created_date: 2024-01-12
+  url: https://github.com/XueFuzhao/OpenMoE
+  model_card: https://huggingface.co/OrionZheng/openmoe-base
+  modality: text; text
+  analysis: Evaluated on relatively simple established benchmarks.
+  size: 34B parameters (dense)
+  dependencies: [RedPajama, The Stack]
+  training_emissions: unknown
+  training_time: unknown
+  training_hardware: unknown
+  quality_control: unknown
+  access: open
+  license: Apache 2.0
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: unknown
+  feedback: https://huggingface.co/OrionZheng/openmoe-base/discussions
+

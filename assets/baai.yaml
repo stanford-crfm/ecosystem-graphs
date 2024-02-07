@@ -92,3 +92,47 @@
   prohibited_uses: none
   monitoring: none
   feedback: https://huggingface.co/datasets/BAAI/JudgeLM-100K/discussions
+
+- type: model
+  name: SegMamba
+  organization: Hong Kong University of Science and Technology (Guangzhou + original), Beijing Academy of Artificial Intelligence
+  description: SegMamba is a novel 3D medical image Segmentation Mamba model, designed to effectively capture long-range dependencies within whole volume features at every scale.
+  created_date: 2024-01-25
+  url: https://arxiv.org/pdf/2401.13560v2.pdf
+  model_card: none
+  modality: image; text
+  analysis: Compared to other segmentation models across different modalities on BraTS2023 dataset.
+  size: unknown
+  dependencies: []
+  training_emissions: unknown
+  training_time: 1000 epochs
+  training_hardware: 4 NVIDIA A100 GPUs
+  quality_control: unknown
+  access: open
+  license: Apache 2.0
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: unknown
+  feedback: none
+
+- type: model
+  name: BGE M3 Embedding
+  organization: Beijing Academy of Artificial Intelligence, University of Science and Technology of China
+  description: BGE M3 Embedding is a new embedding model that can support more than 100 working languages, leading to new state-of-the-art performances on multi-lingual and cross-lingual retrieval tasks.
+  created_date: 2024-02-05
+  url: https://arxiv.org/pdf/2402.03216.pdf
+  model_card: https://huggingface.co/BAAI/bge-m3
+  modality: text; text
+  analysis: Evaluated on standard datasets in multilingual, cross-lingual, long document retrieval, and Q&A domains.
+  size: unknown
+  dependencies: []
+  training_emissions: unknown
+  training_time: 20,000 steps
+  training_hardware: 32 A100 40GB GPUs
+  quality_control: unknown
+  access: open
+  license: MIT
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: unknown
+  feedback: https://huggingface.co/BAAI/bge-m3/discussions
