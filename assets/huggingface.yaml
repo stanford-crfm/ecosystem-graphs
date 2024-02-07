@@ -101,12 +101,14 @@
   url: https://arxiv.org/pdf/2311.05640.pdf
   model_card: https://huggingface.co/TurkuNLP/gpt3-finnish-13B
   modality: text; text
-  analysis: Evaluated on in-house benchmark, FIN-bench, adapted from BIG-bench for Finnish.
+  analysis: Evaluated on in-house benchmark, FIN-bench, adapted from BIG-bench for
+    Finnish.
   size: 13B parameters (dense)
   dependencies: []
   training_emissions: unknown
   training_time: unknown
-  training_hardware: 192 nodes, each consisting of 4 AMD Instinct MI250X GPUs, a single 64-core AMD Trento CPU and 512GB of memory.
+  training_hardware: 192 nodes, each consisting of 4 AMD Instinct MI250X GPUs, a
+    single 64-core AMD Trento CPU and 512GB of memory.
   quality_control: unknown
   access: open
   license: Apache 2.0
@@ -122,17 +124,20 @@
   url: https://arxiv.org/pdf/2311.05640.pdf
   model_card: https://huggingface.co/TurkuNLP/bloom-finnish-176b
   modality: text; text
-  analysis: Evaluated on in-house benchmark, FIN-bench, adapted from BIG-bench for Finnish.
+  analysis: Evaluated on in-house benchmark, FIN-bench, adapted from BIG-bench for
+    Finnish.
   size: 176B parameters (dense)
   dependencies: [BLOOM]
   training_emissions: unknown
   training_time: unknown
-  training_hardware: 192 nodes, each consisting of 4 AMD Instinct MI250X GPUs, a single 64-core AMD Trento CPU and 512GB of memory.
+  training_hardware: 192 nodes, each consisting of 4 AMD Instinct MI250X GPUs, a
+    single 64-core AMD Trento CPU and 512GB of memory.
   quality_control: unknown
   access: open
-  license: Apache 2.0
+  license:
+    explanation: Model card indicates same as license for BLOOM.
+    value: BigScience RAIL v1.0
   intended_uses: ''
   prohibited_uses: ''
   monitoring: unknown
   feedback: https://huggingface.co/TurkuNLP/bloom-finnish-176b/discussions
-

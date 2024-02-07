@@ -74,14 +74,18 @@
 - type: model
   name: Fuyu Heavy
   organization: Adept
-  description: Fuyu Heavy is a new multimodal model designed specifically for digital agents.
+  description: Fuyu Heavy is a new multimodal model designed specifically for digital
+    agents.
   created_date: 2024-01-24
   url: https://www.adept.ai/blog/adept-fuyu-heavy
   model_card: none
   modality: image, text; text
-  analysis: Evaluated on the MMLU, GSM8K, MATH, and HumanEval benchmarks. According to these benchmarks, Fuyu-Heavy is, as of release, the strongest multimodal model trained outside of Google or OpenAI.
-  size: 
-    explanation: The size of the model is 10-20 times smaller than GPT-4V and Gemini Ultra, as per announcement.
+  analysis: Evaluated on the MMLU, GSM8K, MATH, and HumanEval benchmarks. According
+    to these benchmarks, Fuyu-Heavy is, as of release, the strongest multimodal
+    model trained outside of Google or OpenAI.
+  size:
+    explanation: The size of the model is 10-20 times smaller than GPT-4V and Gemini
+      Ultra, as per announcement.
     value: unknown
   dependencies: []
   training_emissions: unknown
@@ -94,4 +98,3 @@
   prohibited_uses: none
   monitoring: ''
   feedback: none
-

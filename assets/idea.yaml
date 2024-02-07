@@ -1,13 +1,16 @@
 ---
 - type: model
   name: Taiyi Diffusion XL
-  organization: International Digital Economy Academy, South China University of Technology, University of Science and Technology of China
-  description: Taiyi Diffusion XL is a new Chinese and English bilingual text-to-image model which is developed by extending the capabilities of CLIP and Stable-DiffusionXL.
+  organization: International Digital Economy Academy, South China University of
+    Technology, University of Science and Technology of China
+  description: Taiyi Diffusion XL is a new Chinese and English bilingual text-to-image
+    model which is developed by extending the capabilities of CLIP and Stable-DiffusionXL.
   created_date: 2024-01-26
   url: https://arxiv.org/pdf/2401.14688.pdf
   model_card: https://huggingface.co/IDEA-CCNL/Taiyi-Stable-Diffusion-XL-3.5B
   modality: text; image
-  analysis: Evaluated on human and machine benchmarks in comparison to established image models as a baseline.
+  analysis: Evaluated on human and machine benchmarks in comparison to established
+    image models as a baseline.
   size: 3.5B parameters (dense)
   dependencies: [CLIP, LAION-400M, Wukong, Stable Diffusion XL]
   training_emissions: unknown

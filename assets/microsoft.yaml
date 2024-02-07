@@ -873,7 +873,7 @@
   access: open
   license:
     explanation: can be found via the license tab at top of https://huggingface.co/microsoft/phi-1_5
-    value: microsoft research license
+    value: MIT
   intended_uses: Phi-1.5 is best suited for answering prompts using the QA format,
     the chat format, and the code format.
   prohibited_uses: ''
