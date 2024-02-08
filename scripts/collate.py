@@ -28,11 +28,11 @@ def collate_assets():
     assets = [asset for fp in paths for asset in yaml.safe_load(open(fp))]
     df = DataFrame.from_records(assets)
 
-    # Cleanup missing data representations
-    df = df.replace("none", None)
-
     # Make data consistent within columns (cannot have scalar and dicts in same column)
     df = df.apply(lambda ser: ser.apply(scalar))
+
+    # Cleanup missing data representations
+    df = df.replace("none", None).replace("unknown", None)
 
     df.to_csv("./resources/all_assets.csv", index=False)
 
