@@ -11,8 +11,10 @@
   output_space: job candidate matches
   quality_control: ''
   access: limited
-  license: unknown
-  terms_of_service: https://aws.amazon.com/service-terms/
+  license:
+    explanation: License information can be found in terms of service
+    value: custom
+  terms_of_service: https://www.moonhub.ai/terms
   intended_uses: recruiting candidates for business needs
   prohibited_uses: none
   monitoring: ''

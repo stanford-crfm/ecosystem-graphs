@@ -19,7 +19,7 @@
     and deduplicated.
   access: open
   license:
-    explanation: can be found at https://github.com/deepseek-ai/DeepSeek-LLM/blob/main/LICENSE-MODEL
+    explanation: Model license can be found at https://github.com/deepseek-ai/DeepSeek-LLM/blob/main/LICENSE-MODEL. Code license is under MIT
     value: custom
   intended_uses: ''
   prohibited_uses: none
@@ -45,7 +45,7 @@
     and deduplicated.
   access: open
   license:
-    explanation: can be found at https://github.com/deepseek-ai/DeepSeek-LLM/blob/main/LICENSE-MODEL
+    explanation: Model license can be found at https://github.com/deepseek-ai/DeepSeek-LLM/blob/main/LICENSE-MODEL. Code license is under MIT
     value: custom
   intended_uses: ''
   prohibited_uses: none

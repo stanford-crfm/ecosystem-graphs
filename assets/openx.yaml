@@ -21,7 +21,7 @@
   excluded: N/A
   quality_control: unknown
   access: open
-  license: unknown
+  license: Apache 2.0
   intended_uses: Further research on X-embodiment models.
   prohibited_uses: none
   monitoring: unknown
@@ -46,7 +46,7 @@
   training_hardware: unknown
   quality_control: unknown
   access: open
-  license: unknown
+  license: Apache 2.0
   intended_uses: Further research on X-embodiment models.
   prohibited_uses: none
   monitoring: unknown

@@ -758,7 +758,7 @@
   training_hardware: ''
   quality_control: ''
   access: open
-  license: Apache 2.0
+  license: LLaMA 2
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
@@ -849,7 +849,7 @@
   training_hardware: 8x A6000-48GB (first-gen) GPUs
   quality_control: ''
   access: open
-  license: LLaMA2
+  license: LLaMA 2
   intended_uses: training and evaluation in the field of natural language processing.
   prohibited_uses: none
   monitoring: ''

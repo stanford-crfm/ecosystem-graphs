@@ -62,7 +62,7 @@
   training_hardware: 8 A100 40GB NVIDIA GPUs
   quality_control: ''
   access: open
-  license: custom non-commercial license
+  license: Apache 2.0
   intended_uses: Research on evaluating the performance of large language models
     and chatbots.
   prohibited_uses: none

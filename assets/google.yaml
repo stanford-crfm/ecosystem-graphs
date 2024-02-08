@@ -1644,8 +1644,8 @@
   training_time: ''
   training_hardware: ''
   quality_control: ''
-  access: open
-  license: Google
+  access: closed
+  license: unknown
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
