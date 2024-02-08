@@ -1,0 +1,39 @@
+---
+name: Collate
+
+"on":
+  workflow_dispatch
+  push:
+    branches: main
+    paths:
+      - assets/**
+
+jobs:
+  collate-assets:
+    name: Collate all assets into single file
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.9'
+
+      - name: Install dependencies
+        run: python -m pip install --upgrade pip pandas pyyaml
+
+      - name: collate
+        run: |-
+          ./scripts/collate.py
+
+      - name: commit
+        run: |-
+          git config user.name "GitHub Actions Bot"
+          git config user.email "<>"
+          git add resources/all_assets.csv
+          git commit -m "Update collated assets CSV."
+          git push origin main
