@@ -32,7 +32,11 @@ def collate_assets():
     df = df.apply(lambda ser: ser.apply(scalar))
 
     # Cleanup missing data representations
-    df = df.replace("none", None).replace("unknown", None)
+    df = df.replace("none", None)
+
+    non_categorical = ["created_date"]
+    for col in non_categorical:
+        df[col] = df[col].replace("unknown", None)
 
     df.to_csv("./resources/all_assets.csv", index=False)
 
