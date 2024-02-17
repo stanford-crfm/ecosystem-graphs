@@ -1,0 +1,22 @@
+---
+- type: model
+  name: OpenAssistant LLaMA 2
+  organization: OpenAssistant
+  description: OpenAssistant LLaMA 2 is an Open-Assistant fine-tuning of Meta's LLaMA 2.
+  created_date: 2023-08-23
+  url: https://huggingface.co/OpenAssistant/llama2-70b-oasst-sft-v10
+  model_card: https://huggingface.co/OpenAssistant/llama2-70b-oasst-sft-v10
+  modality: text; text
+  analysis: none
+  size: 70B parameters (dense)
+  dependencies: [LLaMA 2]
+  training_emissions: unknown
+  training_time: unknown
+  training_hardware: unknown
+  quality_control: ''
+  access: open
+  license: LLaMA 2
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: unknown
+  feedback: https://huggingface.co/OpenAssistant/llama2-70b-oasst-sft-v10/discussions

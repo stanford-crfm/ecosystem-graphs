@@ -1,7 +1,7 @@
 ---
 - type: model
   name: Nous Hermes 2
-  organization: Nous
+  organization: Nous Research
   description: Nous Hermes 2 Mixtral 8x7B DPO is the new flagship Nous Research
     model trained over the Mixtral 8x7B MoE LLM.
   created_date: 2024-01-10
@@ -22,3 +22,90 @@
   prohibited_uses: ''
   monitoring: unknown
   feedback: https://huggingface.co/NousResearch/Nous-Hermes-2-Mixtral-8x7B-DPO/discussions
+- type: model
+  name: YaRN LLaMA 2
+  organization: Nous Research, EleutherAI, University of Geneva
+  description: YaRN LLaMA 2 is an adapted version of LLaMA 2 using the YaRN extension method.
+  created_date: 2023-11-01
+  url: https://arxiv.org/pdf/2309.00071.pdf
+  model_card: https://huggingface.co/NousResearch/Yarn-Llama-2-70b-32k
+  modality: text; text
+  analysis: Evaluated across a variety of standard benchmarks in comparison to LLaMA 2.
+  size: 70B parameters (dense)
+  dependencies: [LLaMA 2]
+  training_emissions: unknown
+  training_time: unknown
+  training_hardware: unknown
+  quality_control: ''
+  access: open
+  license: LLaMA 2
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: unknown
+  feedback: https://huggingface.co/NousResearch/Yarn-Llama-2-70b-32k/discussions
+- type: model
+  name: Nous Capybara
+  organization: Nous Research
+  description: The Capybara series is a series of LLMs and the first Nous collection of models made by fine-tuning mostly on data created by Nous in-house.
+  created_date: 2023-11-13
+  url: https://huggingface.co/NousResearch/Nous-Capybara-34B
+  model_card: https://huggingface.co/NousResearch/Nous-Capybara-34B
+  modality: text; text
+  analysis: none
+  size: 34B parameters (dense)
+  dependencies: [Yi]
+  training_emissions: unknown
+  training_time: unknown
+  training_hardware: unknown
+  quality_control: ''
+  access: open
+  license: MIT
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: unknown
+  feedback: https://huggingface.co/NousResearch/Nous-Capybara-34B/discussions
+- type: model
+  name: YaRN Mistral
+  organization: Nous Research, EleutherAI, University of Geneva
+  description: YaRN Mistral is an adapted version of Mistral using the YaRN extension method.
+  created_date: 2023-11-01
+  url: https://arxiv.org/pdf/2309.00071.pdf
+  model_card: https://huggingface.co/NousResearch/Yarn-Mistral-7b-128k
+  modality: text; text
+  analysis: Evaluated across a variety of standard benchmarks in comparison to Mistral.
+  size: 7B parameters (dense)
+  dependencies: [Mistral]
+  training_emissions: unknown
+  training_time: unknown
+  training_hardware: unknown
+  quality_control: ''
+  access: open
+  license: MIT
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: unknown
+  feedback: https://huggingface.co/NousResearch/Yarn-Mistral-7b-128k/discussions
+- type: model
+  name: OpenHermes 2.5 Mistral
+  organization:
+    explanation: developed as a personal project by Teknium, co-founder of Nous Research
+    value: Nous Research
+  description: OpenHermes 2.5 Mistral 7B is a state of the art Mistral Fine-tune, a continuation of OpenHermes 2 model, trained on additional code datasets.
+  created_date: 2023-11-03
+  url: https://huggingface.co/teknium/OpenHermes-2.5-Mistral-7B
+  model_card: https://huggingface.co/teknium/OpenHermes-2.5-Mistral-7B
+  modality: text; text
+  analysis: Evaluated on common LLM benchmarks in comparison to other Mistral derivatives.
+  size: 7B parameters (dense)
+  dependencies: [Mistral]
+  training_emissions: unknown
+  training_time: unknown
+  training_hardware: unknown
+  quality_control: ''
+  access: open
+  license: Apache 2.0
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: unknown
+  feedback: https://huggingface.co/teknium/OpenHermes-2.5-Mistral-7B/discussions
+

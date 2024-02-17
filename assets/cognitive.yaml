@@ -1,0 +1,48 @@
+---
+- type: model
+  name: Dolphin 2.2 Yi
+  organization: Cognitive Computations
+  description: Dolphin 2.2 Yi is an LLM based off Yi.
+  created_date: 2023-11-14
+  url: https://erichartford.com/dolphin
+  model_card: https://huggingface.co/cognitivecomputations/dolphin-2_2-yi-34b
+  modality: text; text
+  analysis: none
+  size: 34B parameters (dense)
+  dependencies: [Dolphin, Yi]
+  training_emissions: unknown
+  training_time: 3 days
+  training_hardware: 4 A100 GPUs
+  quality_control: ''
+  access: open
+  license:
+    explanation: can be found at https://huggingface.co/cognitivecomputations/dolphin-2_2-yi-34b/blob/main/LICENSE
+    value: custom
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: unknown
+  feedback: https://huggingface.co/cognitivecomputations/dolphin-2_2-yi-34b/discussions
+- type: model
+  name: WizardLM Uncensored
+  organization: Cognitive Computations
+  description: WizardLM Uncensored is WizardLM trained with a subset of the dataset - responses that contained alignment / moralizing were removed.
+  created_date:
+    explanation: release date is not published; estimated to be sometime in either May or June 2023.
+    value: 2023-06-01
+  url: https://huggingface.co/cognitivecomputations/WizardLM-30B-Uncensored
+  model_card: https://huggingface.co/cognitivecomputations/WizardLM-30B-Uncensored
+  modality: text; text
+  analysis: Evaluated on OpenLLM leaderboard.
+  size: 30B parameters (dense)
+  dependencies: [WizardLM]
+  training_emissions: unknown
+  training_time: unknown
+  training_hardware: unknown
+  quality_control: ''
+  access: open
+  license: unknown
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: unknown
+  feedback: https://huggingface.co/cognitivecomputations/WizardLM-30B-Uncensored/discussions
+

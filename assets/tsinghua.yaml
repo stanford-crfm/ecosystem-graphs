@@ -158,3 +158,46 @@
   prohibited_uses: none
   monitoring: none
   feedback: none
+- type: model
+  name: UltraLM
+  organization: Tsinghua University
+  description: UltraLM is a series of chat language models trained on UltraChat.
+  created_date: 2023-06-27
+  url: https://github.com/thunlp/UltraChat#UltraLM
+  model_card: https://huggingface.co/openbmb/UltraLM-13b
+  modality: text; text
+  analysis: Evaluated on AlpacaEval Leaderboard benchmarks.
+  size: 13B parameters (dense)
+  dependencies: [UltraChat]
+  training_emissions: unknown
+  training_time: unknown
+  training_hardware: unknown
+  quality_control: ''
+  access: open
+  license: LLaMA 2
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: unknown
+  feedback: https://huggingface.co/openbmb/UltraLM-13b/discussions
+- type: dataset
+  name: UltraChat
+  organization: Tsinghua University
+  description: UltraChat is an open-source, large-scale, and multi-round dialogue data powered by Turbo APIs.
+  created_date: 2023-04-20
+  url: https://github.com/thunlp/UltraChat
+  datasheet: https://huggingface.co/datasets/stingning/ultrachat
+  modality: text
+  size: unknown
+  sample: []
+  analysis: UltraLM evaluated off of UltraChat is evaluated on standard LLM benchmarks.
+  dependencies: []
+  included: Dialogue data of questions about the world, writing and creation tasks, and questions on existing materials.
+  excluded: ''
+  quality_control: ''
+  access: open
+  license: MIT
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: unknown
+  feedback: https://huggingface.co/datasets/stingning/ultrachat/discussions
+
