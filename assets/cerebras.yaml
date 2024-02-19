@@ -135,3 +135,24 @@
   prohibited_uses: ''
   monitoring: unknown
   feedback: https://huggingface.co/cerebras/btlm-3b-8k-base/discussions
+- type: dataset
+  name: SlimPajama
+  organization: Cerebras
+  description: As of release, SlimPajama is the largest extensively deduplicated, multi-corpora, open-source dataset for training large language models.
+  created_date: 2023-06-09
+  url: https://huggingface.co/datasets/cerebras/SlimPajama-627B
+  datasheet: https://huggingface.co/datasets/cerebras/SlimPajama-627B
+  modality: text
+  size: 627B tokens
+  sample: []
+  analysis: ''
+  dependencies: [RedPajama-Data]
+  included: ''
+  excluded: ''
+  quality_control: ''
+  access: open
+  license: Apache 2.0
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: unknown
+  feedback: https://huggingface.co/datasets/cerebras/SlimPajama-627B/discussions

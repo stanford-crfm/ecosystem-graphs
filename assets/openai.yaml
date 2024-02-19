@@ -894,7 +894,7 @@
   adaptation: ''
   output_space: ''
   quality_control: ''
-  access: open
+  access: limited
   license:
     explanation: Per the Terms of Use, a limited license is provided to the users
       during their use of the API [[Section 2]](https://openai.com/api/policies/terms/).
@@ -1396,3 +1396,25 @@
     can flag content. The specific policies for monitoring are not disclosed, but
     possible measures include disabling of accounts violating the content
   feedback: Feedback can be provided at openai.com
+
+- type: model
+  name: Sora
+  organization: OpenAI
+  description: Sora is an AI model that can create realistic and imaginative scenes from text instructions.
+  created_date: 2024-02-15
+  url: https://openai.com/sora
+  model_card: none
+  modality: text; image, video
+  analysis: none
+  size: unknown
+  dependencies: []
+  training_emissions: unknown
+  training_time: unknown
+  training_hardware: unknown
+  quality_control: ''
+  access: limited
+  license: unknown
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: unknown
+  feedback: ''

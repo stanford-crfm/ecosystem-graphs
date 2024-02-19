@@ -167,3 +167,51 @@
   monthly_active_users: ''
   user_distribution: ''
   failures: ''
+
+- type: model
+  name: StableLM 2
+  organization: Stability AI
+  description: StableLM 2 is a state-of-the-art 1.6 billion parameter small language model trained on multilingual data in English, Spanish, German, Italian, French, Portuguese, and Dutch.
+  created_date: 2024-01-19
+  url: https://stability.ai/news/introducing-stable-lm-2
+  model_card: https://huggingface.co/stabilityai/stablelm-2-1_6b
+  modality: text; text
+  analysis: Evaluated on standard LLM benchmarks and in multilingual tasks compared to similarly sized open-source models.
+  size: 1.6B parameters (dense)
+  dependencies: [RedPajama-Data, The Pile, RefinedWeb, The Stack, OpenWebText, OpenWebMath]
+  training_emissions: 11 tCO2eq
+  training_time: 92k GPU hours
+  training_hardware: 512 NVIDIA A100 40GB GPUs
+  quality_control: ''
+  access: open
+  license:
+    explanation: License agreement can be found on https://huggingface.co/stabilityai/stablelm-2-1_6b/blob/main/LICENSE
+    value: custom
+  intended_uses: The model is intended to be used as a foundational base model for application-specific fine-tuning. Developers must evaluate and fine-tune the model for safe performance in downstream applications.
+  prohibited_uses: ''
+  monitoring: unknown
+  feedback: https://huggingface.co/stabilityai/stablelm-2-1_6b/discussions
+
+- type: model
+  name: Stable Cascade
+  organization: Stability AI
+  description: Stable Cascade is built upon the Würstchen architecture and its main difference to other models, like Stable Diffusion, is that it is working at a much smaller latent space.
+  created_date: 2024-01-16
+  url: https://huggingface.co/stabilityai/stable-cascade
+  model_card: https://huggingface.co/stabilityai/stable-cascade
+  modality: text; image
+  analysis: Evaluated on image generation benchmarks in comparison to equal and smaller-sized models.
+  size: unknown
+  dependencies: []
+  training_emissions: 2,276 kgCO2eq
+  training_time: 24,602 A100 GPU hours
+  training_hardware: Some number of A100 GPUs
+  quality_control: ''
+  access: open
+  license:
+    explanation: License agreement can be found on https://github.com/Stability-AI/StableCascade/blob/master/WEIGHTS_LICENSE
+    value: custom
+  intended_uses: The model is intended for research purposes for now.
+  prohibited_uses: The model was not trained to be factual or true representations of people or events, and therefore using the model to generate such content is out-of-scope for the abilities of this model. The model should not be used in any way that violates Stability AI's Acceptable Use Policy.
+  monitoring: unknown
+  feedback: https://huggingface.co/stabilityai/stable-cascade/discussions

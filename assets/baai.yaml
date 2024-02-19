@@ -144,3 +144,24 @@
   prohibited_uses: ''
   monitoring: unknown
   feedback: https://huggingface.co/BAAI/bge-m3/discussions
+- type: model
+  name: EVA-CLIP
+  organization: Beijing Academy of Artificial Intelligence, Tsinghua University
+  description: As of release, EVA-CLIP is the largest and most powerful open-source CLIP model to date, with 18 billion parameters.
+  created_date: 2024-02-06
+  url: https://arxiv.org/pdf/2402.04252.pdf
+  model_card: https://huggingface.co/BAAI/EVA-CLIP-8B-448
+  modality: image, text; text
+  analysis: Evaluated on zero-shot classification performance across multiple image classification benchmarks.
+  size: 8B parameters (dense)
+  dependencies: [CLIP]
+  training_emissions: unknown
+  training_time: unknown
+  training_hardware: 384 A100 40GB GPUs
+  quality_control: ''
+  access: open
+  license: MIT
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: unknown
+  feedback: https://huggingface.co/BAAI/EVA-CLIP-8B-448/discussions

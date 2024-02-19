@@ -1,0 +1,22 @@
+---
+- type: model
+  name: Reka Flash
+  organization: Reka 
+  description: Reka Flash is a multimodal, multilingual, state-of-the-art 21B model trained entirely from scratch.
+  created_date: 2024-02-12
+  url: https://reka.ai/reka-flash-an-efficient-and-capable-multimodal-language-model/
+  model_card: none
+  modality: image, text, video; text
+  analysis: Evaluated on MMLU, GSM8K, HumanEval, and GPQA benchmarks, among others.
+  size: 21B parameters (dense)
+  dependencies: []
+  training_emissions: unknown
+  training_time: unknown
+  training_hardware: unknown
+  quality_control: ''
+  access: limited
+  license: unknown
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: unknown
+  feedback: none

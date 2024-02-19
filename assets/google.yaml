@@ -1731,3 +1731,25 @@
     within specific downstream applications without prior assessment
   monitoring: Google internal monitoring
   feedback: none
+- type: model
+  name: TimesFM
+  organization: Google
+  description: TimesFM is a single forecasting model pre-trained on a large time-series corpus of 100 billion real world time-points.
+  created_date: 2024-02-02
+  url: https://blog.research.google/2024/02/a-decoder-only-foundation-model-for.html
+  model_card: none
+  modality: ''
+  analysis: Evaluated on popular time-series benchmarks.
+  size: 200M parameters (dense)
+  dependencies: []
+  training_emissions: unknown
+  training_time: unknown
+  training_hardware: unknown
+  quality_control: ''
+  access: closed
+  license: unknown
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: unknown
+  feedback: none
+
