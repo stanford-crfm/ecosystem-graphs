@@ -1385,7 +1385,9 @@
       Plus and Enterprise customers in October, via the API and in Labs later this
       fall.
     value: limited
-  license: unknown
+  license:
+    explanation: License information can be found at https://openai.com/policies/terms-of-use
+    value: custom
   intended_uses: The intended use of the DALL·E 3 Preview at this time is for personal,
     non-commercial exploration and research purposes by people who are interested
     in understanding the potential uses of these capabilities
