@@ -660,3 +660,24 @@
   prohibited_uses: ''
   monitoring: ''
   feedback: ''
+- type: model
+  name: Genie
+  organization: DeepMind
+  description: Gene is a foundation world model trained from Internet videos that can generate an endless variety of playable (action-controllable) worlds from synthetic images, photographs, and even sketches.
+  created_date: 2024-02-23
+  url: https://sites.google.com/view/genie-2024
+  model_card: none
+  modality: image; video
+  analysis: Evaluated using only out-of-distribution image prompts for qualitative results.
+  size: 11B parameters (dense)
+  dependencies: []
+  training_emissions: unknown
+  training_time: unknown
+  training_hardware: unknown
+  quality_control: ''
+  access: limited
+  license: unknown
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: none
