@@ -88,3 +88,25 @@
   prohibited_uses: ''
   monitoring: ''
   feedback: ''
+- type: model
+  name: Nemotron 4
+  organization: Nvidia
+  description: Nemotron 4 is a 15-billion-parameter large multilingual language model trained on 8 trillion text tokens.
+  created_date: 2024-02-27
+  url: https://arxiv.org/pdf/2402.16819.pdf
+  model_card: none
+  modality: text; code, text
+  analysis: Evaluated on standard LLM benchmarks across a range of fields like reasoning, code generation, and mathematical skills.
+  size: 15B parameters (dense)
+  dependencies: []
+  training_emissions: unknown
+  training_time: 13 days
+  training_hardware: 384 DGX H100 nodes, each with 8 H100 80GB SXM5 GPUs
+  quality_control: Deduplication and quality filtering techniques are applied to the training dataset.
+  access: open
+  license: unknown
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: unknown
+  feedback: none
+

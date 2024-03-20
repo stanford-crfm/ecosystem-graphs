@@ -1,0 +1,47 @@
+---
+- type: model
+  name: SambaLingo
+  organization: Samba Nova Systems
+  description: SambaLingo is a suite of models that adapt Llama 2 to a diverse set of 9 languages.
+  created_date: 2024-02-26
+  url: https://sambanova.ai/blog/sambalingo-open-source-language-experts
+  model_card: 
+    explanation: The Arabic language model card is given, but there exist one for each of the other 8 languages in the collection.
+    value: https://huggingface.co/sambanovasystems/SambaLingo-Arabic-Base
+  modality: text; text
+  analysis: Evaluated on open source multilingual model benchmarks.
+  size: unknown
+  dependencies: [LLaMA 2]
+  training_emissions: unknown
+  training_time: unknown
+  training_hardware: unknown
+  quality_control: ''
+  access: open
+  license: LLaMA 2
+  intended_uses: ''
+  prohibited_uses: SambaLingo should not be used for mission-critical applications, applications involving the safety of others, and highly critical decisions.
+  monitoring: ''
+  feedback:
+    explanation: The Arabic language model feedback is given, but there exists one for each of the other 8 languages in the collection.
+    value: https://huggingface.co/sambanovasystems/SambaLingo-Arabic-Base/discussions
+- type: model
+  name: Samba 1
+  organization: Samba Nova Systems
+  description: Samba 1 is a trillion parameter generative AI model using a Composition of Experts architecture.
+  created_date: 2024-02-28
+  url: https://sambanova.ai/blog/samba-1-composition-of-experts-mode
+  model_card: none
+  modality: text; text
+  analysis: unknown
+  size: 1T parameters (dense)
+  dependencies: [LLaMA 2, Mistral, Falcon-180B, Deepseek, BLOOM, LLaVA, CLIP]
+  training_emissions: unknown
+  training_time: unknown
+  training_hardware: unknown
+  quality_control: ''
+  access: limited
+  license: unknown
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: unknown
+  feedback: none
