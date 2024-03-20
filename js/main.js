@@ -686,6 +686,7 @@ function loadAssetsAndRenderPageContent() {
     'assets/bigscience.yaml',
     'assets/bloomberg.yaml',
     'assets/brex.yaml',
+    'assets/cagliostro.yaml',
     'assets/cerebras.yaml',
     'assets/character.yaml',
     'assets/cmu.yaml',
