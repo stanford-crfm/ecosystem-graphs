@@ -577,7 +577,7 @@
   created_date: 2024-03-04
   url: https://www.anthropic.com/news/claude-3-family
   model_card: https://www-cdn.anthropic.com/de8ba9b01c9ab7cbabf5c33b80b7bbc618857627/Model_Card_Claude_3.pdf
-  modality: image, text; code, text
+  modality: image, text; text
   analysis: Evaluated on reasoning, math, coding, reading comprehension, and question answering, outperforming GPT-4 on standard benchmarks.
   size: unknown
   dependencies: []

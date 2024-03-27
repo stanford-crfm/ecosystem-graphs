@@ -101,7 +101,7 @@
   dependencies: []
   training_emissions: unknown
   training_time: 13 days
-  training_hardware: 384 DGX H100 nodes, each with 8 H100 80GB SXM5 GPUs
+  training_hardware: 3072 H100 80GB SXM5 GPUs across 384 DGX H100 nodes
   quality_control: Deduplication and quality filtering techniques are applied to the training dataset.
   access: open
   license: unknown

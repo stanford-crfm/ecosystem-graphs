@@ -11,7 +11,7 @@
   modality: text; text
   analysis: Evaluated on open source multilingual model benchmarks.
   size: unknown
-  dependencies: [LLaMA 2]
+  dependencies: [Llama 2]
   training_emissions: unknown
   training_time: unknown
   training_hardware: unknown
@@ -34,7 +34,7 @@
   modality: text; text
   analysis: unknown
   size: 1T parameters (dense)
-  dependencies: [LLaMA 2, Mistral, Falcon-180B, Deepseek, BLOOM, LLaVA, CLIP]
+  dependencies: [Llama 2, Mistral, Falcon-180B, Deepseek, BLOOM, LLaVA, CLIP]
   training_emissions: unknown
   training_time: unknown
   training_hardware: unknown
