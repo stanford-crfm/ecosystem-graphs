@@ -20,3 +20,24 @@
   prohibited_uses: ''
   monitoring: none
   feedback: none
+- type: model
+  name: Marengo 2.6
+  organization: Twelve Labs
+  description: Marengo 2.6 is a new state-of-the-art (SOTA) multimodal foundation model capable of performing any-to-any search tasks, including Text-To-Video, Text-To-Image, Text-To-Audio, Audio-To-Video, Image-To-Video, and more. 
+  created_date: 2024-03-01
+  url: https://www.twelvelabs.io/blog/introducing-marengo-2-6
+  model_card: none
+  modality: audio, image, text; audio, image, video
+  analysis: Marengo-2.6 sets new benchmarks in zero-shot text-to-video, text-to-image, and text-to-audio retrieval tasks with a single embedding model.
+  size: unknown
+  dependencies: []
+  training_emissions: unknown
+  training_time: unknown
+  training_hardware: unknown
+  quality_control: ''
+  access: open
+  license: unknown
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: none

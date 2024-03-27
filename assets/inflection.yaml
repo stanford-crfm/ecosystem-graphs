@@ -2,7 +2,7 @@
 - type: model
   name: Inflection-1
   organization: Inflection AI
-  description: Inflection AI's in-house LLM, which powers Pi and will soon be available
+  description: Inflection AI's first version of its in-house LLM.
     via Inflection AI's conversational API.
   created_date: 2023-06-22
   url: https://inflection.ai/inflection-1
@@ -31,7 +31,7 @@
     in emotional intelligence.
   created_date: 2023-05-02
   url: https://inflection.ai/press
-  dependencies: [Inflection-1]
+  dependencies: [Inflection-2.5]
   adaptation: ''
   output_space: natural language text responses
   quality_control: ''
@@ -70,3 +70,25 @@
   prohibited_uses: ''
   monitoring: ''
   feedback: none
+- type: model
+  name: Inflection-2.5
+  organization: Inflection AI
+  description: Inflection-2.5 is an upgraded in-house model that is competitive with all the world's leading LLMs, as of release, like GPT-4 and Gemini.
+  created_date: 2024-03-07
+  url: https://inflection.ai/inflection-2-5
+  model_card: none
+  modality: text; text
+  analysis: Evaluated on standard LLM and technical benchmarks in comparison to Inflection-1 and GPT-4, along with advanced STEM examinations.
+  size: unknown
+  dependencies: []
+  training_emissions: unknown
+  training_time: unknown
+  training_hardware: unknown
+  quality_control: ''
+  access: limited
+  license: unknown
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: none
+

@@ -1,0 +1,22 @@
+---
+- type: model
+  name: Kotoba Speech
+  organization: Kotoba Tech
+  description: Kotoba-Speech is a Transformer-based speech generative model that supports fluent text-to-speech generation in Japanese and one-shot voice cloning through speech prompt.
+  created_date: 2024-03-13
+  url: https://huggingface.co/kotoba-tech/kotoba-speech-v0.1
+  model_card: https://huggingface.co/kotoba-tech/kotoba-speech-v0.1
+  modality: text; audio
+  analysis: unknown
+  size: 1.2B parameters (dense)
+  dependencies: []
+  training_emissions: unknown
+  training_time: unknown
+  training_hardware: unknown
+  quality_control: ''
+  access: open
+  license: Apache 2.0
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: unknown
+  feedback: https://huggingface.co/kotoba-tech/kotoba-speech-v0.1/discussions

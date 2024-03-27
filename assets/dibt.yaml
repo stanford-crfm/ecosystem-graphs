@@ -1,0 +1,22 @@
+---
+- type: dataset
+  name: 10k_prompts_ranked
+  organization: Data is Better Together
+  description: 10k_prompts_ranked is a dataset of prompts with quality rankings created by 314 members of the open-source ML community using Argilla, an open-source tool to label data.
+  created_date: 2024-02-27
+  url: https://huggingface.co/blog/community-datasets
+  datasheet: https://huggingface.co/datasets/DIBT/10k_prompts_ranked
+  modality: text
+  size: 10k examples
+  sample: []
+  analysis: none
+  dependencies: []
+  included: ''
+  excluded: ''
+  quality_control: ''
+  access: open
+  license: unknown
+  intended_uses: 	Training and evaluating language models on prompt ranking tasks and as a dataset that can be filtered only to include high-quality prompts. These can serve as seed data for generating synthetic prompts and generations.
+  prohibited_uses: This dataset only contains rankings for prompts, not prompt/response pairs so it is not suitable for direct use for supervised fine-tuning of language models.
+  monitoring: ''
+  feedback: https://huggingface.co/datasets/DIBT/10k_prompts_ranked/discussions

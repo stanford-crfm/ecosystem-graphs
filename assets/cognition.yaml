@@ -1,0 +1,22 @@
+---
+- type: model
+  name: Devin
+  organization: Cognition Labs
+  description: Devin is the world’s first fully autonomous AI software engineer.
+  created_date: 2024-03-12
+  url: https://www.cognition-labs.com/introducing-devin
+  model_card: none
+  modality: text; code
+  analysis: Evaluated on SWE-Bench, a challenging software engineering benchmark, where Devin outperforms major state of the art models unassisted.
+  size: unknown
+  dependencies: []
+  training_emissions: unknown
+  training_time: unknown
+  training_hardware: unknown
+  quality_control: ''
+  access: limited
+  license: unknown
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: none

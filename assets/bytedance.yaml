@@ -22,3 +22,24 @@
   prohibited_uses: ''
   monitoring: none
   feedback: https://huggingface.co/MSIIP/SALMONN/discussions
+- type: model
+  name: SDXL-Lightning
+  organization: ByteDance
+  description: SDXL-Lightning is a lightning-fast text-to-image generation model. It can generate high-quality 1024px images in a few steps. The models are distilled from stabilityai/stable-diffusion-xl-base-1.0. This repository contains checkpoints for 1-step, 2-step, 4-step, and 8-step distilled models.
+  created_date: 2024-02-21
+  url: https://arxiv.org/pdf/2402.13929.pdf
+  model_card: https://huggingface.co/ByteDance/SDXL-Lightning
+  modality: text; image
+  analysis: Evaluated via qualitative comparison relative to other SoTA image generation models.
+  size: unknown
+  dependencies: [Stable Diffusion XL]
+  training_emissions: unknown
+  training_time: unknown
+  training_hardware: 64 A100 80G GPUs
+  quality_control: unknown
+  access: open
+  license: OpenRail++
+  intended_uses: The model can be used for fast, high-quality text-to-image generation. It supports 1-step, 2-step, 4-step, and 8-step distilled models which provide varying generation quality.
+  prohibited_uses: unknown
+  monitoring: unknown
+  feedback: https://huggingface.co/ByteDance/SDXL-Lightning/discussions
