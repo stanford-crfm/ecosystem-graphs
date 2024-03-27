@@ -9,10 +9,10 @@
   modality: text; text
   analysis: BioMistral was evaluated on a benchmark comprising 10 established medical question-answering (QA) tasks in English and seven other languages.
   size: 7B parameters (dense)
-  dependencies: [Mistral]
+  dependencies: [Mistral, PubMed Central]
   training_emissions: unknown
   training_time: unknown
-  training_hardware: French National Centre for Scientific Research Jean Zay French HPC
+  training_hardware: 32 NVIDIA A100 80GB GPUs
   quality_control: ''
   access: open
   license: Apache 2.0

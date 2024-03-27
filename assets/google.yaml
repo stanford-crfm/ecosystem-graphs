@@ -1751,6 +1751,6 @@
     explanation: License can be found at https://ai.google.dev/gemma/terms.
     value: custom
   intended_uses: Text generation tasks including question answering, summarization, and reasoning; content creation, communication, research, and education.
-  prohibited_uses: Any violation of the Gemma Prohibited Use Policy is not allowed.
+  prohibited_uses: Prohibited uses are specified in the Gemma Prohibited Use Policy here https://ai.google.dev/gemma/prohibited_use_policy
   monitoring: ''
   feedback: https://huggingface.co/google/gemma-7b/discussions

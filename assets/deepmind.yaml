@@ -1,7 +1,7 @@
 ---
 - type: dataset
   name: MassiveText
-  organization: DeepMind
+  organization: Google Deepmind
   description: "The MassiveText dataset was used to train the Gopher model.\n"
   created_date:
     explanation: "The date that Gopher was announced [[DeepMind Blog Post]] (https://www.deepmind.com/blog/language-modelling-at-scale-gopher-ethical-considerations-and-retrieval).\n"
@@ -52,7 +52,7 @@
     value: unknown
 - type: dataset
   name: M3W
-  organization: DeepMind
+  organization: Google Deepmind
   description: "M3W (MassiveWeb) is dataset used to train Flamingo, and other vision-language\
     \ models and was created by researchers and engineers.\n"
   created_date:
@@ -90,7 +90,7 @@
     value: none
 - type: dataset
   name: Gato dataset
-  organization: DeepMind
+  organization: Google Deepmind
   description: "The Gato datasets are a collection of data used to train the Gato\
     \ model.\n"
   created_date:
@@ -136,7 +136,7 @@
     value: none
 - type: model
   name: AlphaFold2
-  organization: DeepMind
+  organization: Google Deepmind
   description: AlphaFold2 is a protein language model trained on protein sequences
   created_date:
     explanation: The date the model paper was released
@@ -168,7 +168,7 @@
   feedback: ''
 - type: model
   name: Flamingo
-  organization: DeepMind
+  organization: Google Deepmind
   description: "Flamingo is a Visual Language Model using the Transformer architecture\
     \ that is intended for few-shot learning.\n"
   created_date:
@@ -221,7 +221,7 @@
     value: none
 - type: model
   name: AlphaCode
-  organization: DeepMind
+  organization: Google Deepmind
   description: AlphaCode is an autoregressive language model trained on code
   created_date:
     explanation: The date the model paper was released
@@ -248,7 +248,7 @@
   feedback: ''
 - type: model
   name: Gopher
-  organization: DeepMind
+  organization: Google Deepmind
   description: "Gopher is an autoregressive language model based on the Transformer\
     \ architecture with two modifications: using RMSNorm instead of LayerNorm and\
     \ using relative positional encoding scheme instead of absolute positional encodings\
@@ -304,7 +304,7 @@
     \ model card, geoffreyi at google.com [[Model Card]](https://arxiv.org/pdf/2112.11446.pdf#appendix.B).\n"
 - type: model
   name: Chinchilla
-  organization: DeepMind
+  organization: Google Deepmind
   description: "Chinchilla is an autoregressive language model based on the Transformer\
     \ architecture with improved scaling laws.\n"
   created_date:
@@ -356,7 +356,7 @@
     \ Card]](https://arxiv.org/pdf/2203.15556.pdf#appendix.I).\n"
 - type: model
   name: Gato
-  organization: DeepMind
+  organization: Google Deepmind
   description: "Gato is a generalist agent based on sequence modeling using the\
     \ Transformer architecture to implement multi-modal, multi-task, multi-embodiment\
     \ generalist policy.\n"
@@ -402,7 +402,7 @@
     \ model card, reedscot at google.com [[Model Card]](https://openreview.net/pdf?id=1ikK0kHjvj#appendix.A).\n"
 - type: model
   name: Sparrow
-  organization: DeepMind
+  organization: Google Deepmind
   description: ''
   created_date: 2022-09-28
   url: https://arxiv.org/abs/2209.14375
@@ -429,7 +429,7 @@
   feedback: ''
 - type: model
   name: RETRO
-  organization: DeepMind
+  organization: Google Deepmind
   description: ''
   created_date: 2021-12-08
   url: https://arxiv.org/abs/2112.04426
@@ -450,7 +450,7 @@
   feedback: ''
 - type: model
   name: Sparrow Rule reward model
-  organization: DeepMind
+  organization: Google Deepmind
   description: ''
   created_date: 2022-09-28
   url: https://arxiv.org/abs/2209.14375
@@ -471,7 +471,7 @@
   feedback: ''
 - type: model
   name: Sparrow Preference reward model
-  organization: DeepMind
+  organization: Google Deepmind
   description: ''
   created_date: 2022-09-28
   url: https://arxiv.org/abs/2209.14375
@@ -492,7 +492,7 @@
   feedback: ''
 - type: dataset
   name: Sparrow adversarial probing dataset
-  organization: DeepMind
+  organization: Google Deepmind
   description: ''
   created_date: 2022-09-28
   url: https://arxiv.org/abs/2209.14375
@@ -513,7 +513,7 @@
   feedback: ''
 - type: dataset
   name: Sparrow response preference dataset
-  organization: DeepMind
+  organization: Google Deepmind
   description: ''
   created_date: 2022-09-28
   url: https://arxiv.org/abs/2209.14375
@@ -534,7 +534,7 @@
   feedback: ''
 - type: model
   name: GopherCite
-  organization: DeepMind
+  organization: Google Deepmind
   description: ''
   created_date: 2022-03-16
   url: https://storage.googleapis.com/deepmind-media/Teaching%20language%20models%20to%20support%20answers%20with%20verified%20quotes/Teaching%20language%20models%20to%20support%20answers%20with%20verified%20quotes.pdf
@@ -555,7 +555,7 @@
   feedback: ''
 - type: model
   name: GopherCite reward model
-  organization: DeepMind
+  organization: Google Deepmind
   description: ''
   created_date: 2022-03-16
   url: https://storage.googleapis.com/deepmind-media/Teaching%20language%20models%20to%20support%20answers%20with%20verified%20quotes/Teaching%20language%20models%20to%20support%20answers%20with%20verified%20quotes.pdf
@@ -576,7 +576,7 @@
   feedback: ''
 - type: dataset
   name: GopherCite Preference dataset
-  organization: DeepMind
+  organization: Google Deepmind
   description: ''
   created_date: 2022-03-16
   url: https://storage.googleapis.com/deepmind-media/Teaching%20language%20models%20to%20support%20answers%20with%20verified%20quotes/Teaching%20language%20models%20to%20support%20answers%20with%20verified%20quotes.pdf
@@ -597,7 +597,7 @@
   feedback: ''
 - type: model
   name: Dramatron
-  organization: DeepMind
+  organization: Google Deepmind
   description: ''
   created_date: 2022-09-29
   url: https://arxiv.org/abs/2209.14958
@@ -618,7 +618,7 @@
   feedback: ''
 - type: model
   name: RT-2
-  organization: DeepMind
+  organization: Google Deepmind
   description: RT-2 is a vision-language-action model for robotic actions that incorporates
     chain of thought reasoning.
   created_date: 2023-07-28
@@ -641,7 +641,7 @@
   feedback: ''
 - type: model
   name: Lyria
-  organization: DeepMind
+  organization: Google Deepmind
   description: Lyria is DeepMind's most advanced AI music generation model to date.
   created_date: 2023-11-16
   url: https://deepmind.google/discover/blog/transforming-the-future-of-music-creation/
@@ -662,7 +662,7 @@
   feedback: ''
 - type: model
   name: Genie
-  organization: DeepMind
+  organization: Google DeepMind
   description: Gene is a foundation world model trained from Internet videos that can generate an endless variety of playable (action-controllable) worlds from synthetic images, photographs, and even sketches.
   created_date: 2024-02-23
   url: https://sites.google.com/view/genie-2024
@@ -675,7 +675,7 @@
   training_time: unknown
   training_hardware: unknown
   quality_control: ''
-  access: limited
+  access: closed
   license: unknown
   intended_uses: ''
   prohibited_uses: ''
