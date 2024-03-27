@@ -121,3 +121,25 @@
   prohibited_uses: ''
   monitoring: ''
   feedback: https://huggingface.co/Salesforce/blip2-opt-2.7b/discussions
+- type: model
+  name: Moirai
+  organization: Salesforce
+  description: Moirai is a cutting-edge time series foundation model, offering universal forecasting capabilities. It stands out as a versatile time series forecasting model capable of addressing diverse forecasting tasks across multiple domains, frequencies, and variables in a zero-shot manner.
+  created_date: 2024-03-19
+  url: https://blog.salesforceairesearch.com/moirai/
+  model_card: https://huggingface.co/Salesforce/moirai-1.0-R-large
+  modality: text; text
+  analysis: Moirai has undergone a comprehensive evaluation in both in-distribution and out-of-distribution settings. It demonstrated its capabilities as a zero-shot forecaster and delivered competitive or superior performance compared to full-shot models.
+  size: 311M parameters
+  dependencies: [LOTSA]
+  training_emissions: unknown
+  training_time: unknown
+  training_hardware: NVIDIA A100 40G GPUs
+  quality_control: The performance of Moirai was evaluated through in-distribution and out-of-distribution settings. 
+  access: open
+  license: Apache 2.0
+  intended_uses: Moirai can be used for time series forecasting in multiple domains. It offers robust zero-shot forecasting capabilities and eliminates the need for additional data, extensive computational resources, and expert input for achieving accurate forecasts.
+  prohibited_uses: unknown
+  monitoring: unknown
+  feedback: https://huggingface.co/Salesforce/moirai-1.0-R-large/discussions
+
