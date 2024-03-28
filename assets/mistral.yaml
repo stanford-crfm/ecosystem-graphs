@@ -21,5 +21,44 @@
   prohibited_uses: ''
   monitoring: none
   feedback: https://huggingface.co/mistralai/Mistral-7B-v0.1/discussions
-
-
+- type: model
+  name: Mistral Large
+  organization: Mistral AI
+  description: Mistral Large is Mistral AI’s new cutting-edge text generation model.
+  created_date: 2024-02-26
+  url: https://mistral.ai/news/mistral-large/
+  model_card: none
+  modality: text; text
+  analysis: Evaluated on commonly used benchmarks in comparison to the current LLM leaders.
+  size: unknown
+  dependencies: []
+  training_emissions: unknown
+  training_time: unknown
+  training_hardware: unknown
+  quality_control: ''
+  access: limited
+  license: unknown
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: none
+- type: application
+  name: Le Chat
+  organization: Mistral AI
+  description:  Le Chat is a first demonstration of what can be built with Mistral models and what can deployed in the business environment.
+  created_date: 2024-02-26
+  url: https://mistral.ai/news/le-chat-mistral/
+  dependencies: [Mistral, Mistral Large]
+  adaptation: ''
+  output_space: ''
+  quality_control: ''
+  access: limited
+  license: unknown
+  terms_of_service: https://mistral.ai/terms/#terms-of-use
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: none
+  monthly_active_users: unknown
+  user_distribution: unknown
+  failures: unknown
