@@ -17,7 +17,7 @@
   training_hardware: 1024 NVIDIA A800 GPUs
   quality_control: ''
   access: open
-  license: unknown
+  license: Apache 2.0
   intended_uses: ''
   prohibited_uses: ''
   monitoring: none

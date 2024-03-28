@@ -604,7 +604,7 @@
     that doesn't require self-supervised semantic representation
   created_date: 2023-08-02
   url: https://huggingface.co/spaces/facebook/MusicGen/tree/main
-  model_card: https://huggingface.co/spaces/facebook/MusicGen/blob/main/MODEL_CARD.md
+  model_card: https://github.com/facebookresearch/audiocraft/blob/main/model_cards/MUSICGEN_MODEL_CARD.md
   modality:
     explanation: text; audio
     value: audio, text; audio, text
@@ -678,7 +678,7 @@
     images.
   created_date: 2023-09-27
   url: https://ai.meta.com/research/publications/emu-enhancing-image-generation-models-using-photogenic-needles-in-a-haystack/
-  model_card: ''
+  model_card: none
   modality: text; image
   analysis: Emu significantly outperforms a publicly available state-of-the-art
     model SDXLv1.0 on visual appeal when compared on standard benchmarks.
@@ -688,7 +688,7 @@
   training_time: ''
   training_hardware: ''
   quality_control: ''
-  access: open
+  access: closed
   license: unknown
   intended_uses: ''
   prohibited_uses: ''
@@ -740,7 +740,7 @@
   training_time: unknown
   training_hardware: unknown
   quality_control: ''
-  access: limited
+  access: closed
   license: unknown
   intended_uses: ''
   prohibited_uses: ''
@@ -764,7 +764,7 @@
   training_time: unknown
   training_hardware: unknown
   quality_control: ''
-  access: limited
+  access: closed
   license: unknown
   intended_uses: ''
   prohibited_uses: ''
@@ -788,7 +788,7 @@
   training_hardware: unknown
   quality_control: ''
   access: open
-  license: CC BY NC 4.0
+  license: CC-BY-NC-4.0
   intended_uses: ''
   prohibited_uses: ''
   monitoring: none

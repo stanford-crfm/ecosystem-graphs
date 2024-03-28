@@ -40,7 +40,9 @@
   output_space: deployed AI models
   quality_control: ''
   access: limited
-  license: ''
+  license:
+    explanation: License information can be found at https://www.ibm.com/docs/en/watsonxdata/1.0.x?topic=planning-licenses-entitlements
+    value: custom
   terms_of_service: https://www.ibm.com/docs/en/watsonx-as-a-service?topic=models-terms-use
   intended_uses: ''
   prohibited_uses: ''

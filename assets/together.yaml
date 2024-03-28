@@ -146,7 +146,7 @@
   training_hardware: ''
   quality_control: ''
   access: open
-  license: Apache 2.0
+  license: LLaMA 2
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''

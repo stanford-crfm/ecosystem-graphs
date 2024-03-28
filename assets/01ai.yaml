@@ -19,7 +19,7 @@
     diversity of responses.
   access: open
   license:
-    explanation: can be found at https://huggingface.co/01-ai/Yi-34B/blob/main/LICENSE
+    explanation: Model license can be found at https://huggingface.co/01-ai/Yi-34B/blob/main/LICENSE. Code license is under Apache 2.0
     value: custom
   intended_uses: ''
   prohibited_uses: none
@@ -46,7 +46,7 @@
   quality_control: unknown
   access: open
   license:
-    explanation: can be found at https://huggingface.co/01-ai/Yi-VL-34B/blob/main/LICENSE
+    explanation: Model license can be found at https://huggingface.co/01-ai/Yi-VL-34B/blob/main/LICENSE. Code license is under Apache 2.0
     value: custom
   intended_uses: ''
   prohibited_uses: ''

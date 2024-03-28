@@ -61,7 +61,9 @@
   excluded: ''
   quality_control: ''
   access: open
-  license: MIT
+  license:
+    explanation: Data license is under ODC-By. Code license is under MIT
+    value: ODC-By
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
@@ -109,7 +111,7 @@
   access: open
   license:
     explanation: license can be found at https://allenai.org/impact-license
-    value: custom
+    value: AI2 ImpACT
   intended_uses: ''
   prohibited_uses: ''
   monitoring: Quality filtration, deduplication, and risk mitigation via logistic
@@ -168,7 +170,9 @@
   training_hardware: unknown
   quality_control: ''
   access: open
-  license: AI2 ImpACT
+  license:
+    explanation: license can be found at https://allenai.org/impact-license
+    value: AI2 ImpACT
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
@@ -191,7 +195,9 @@
   training_hardware: unknown
   quality_control: ''
   access: open
-  license: AI2 ImpACT
+  license:
+    explanation: license can be found at https://allenai.org/impact-license
+    value: AI2 ImpACT
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
@@ -214,7 +220,9 @@
   training_hardware: unknown
   quality_control: ''
   access: open
-  license: AI2 ImpACT
+  license:
+    explanation: license can be found at https://allenai.org/impact-license
+    value: AI2 ImpACT
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''

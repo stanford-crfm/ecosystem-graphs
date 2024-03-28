@@ -7,7 +7,7 @@
     scenarios while offering fine-grained control over ego-vehicle behavior and
     scene features.
   created_date: 2023-09-29
-  url: arxiv.org/pdf/2309.17080.pdf
+  url: https://arxiv.org/pdf/2309.17080.pdf
   model_card: none
   modality: text, video; video
   analysis: Compared to self before being scaled on quality of video generation.

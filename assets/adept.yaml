@@ -64,7 +64,7 @@
   training_hardware: unknown
   quality_control: none
   access: open
-  license: CC BY NC 4.0
+  license: CC-BY-NC-4.0
   intended_uses: The model is intended for research purposes only.
   prohibited_uses: The model was not trained to be factual or true representations
     of people or events, and therefore using the model to generate such content

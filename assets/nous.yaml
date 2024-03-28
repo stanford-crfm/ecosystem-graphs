@@ -109,3 +109,45 @@
   monitoring: unknown
   feedback: https://huggingface.co/teknium/OpenHermes-2.5-Mistral-7B/discussions
 
+  name: Hermes 2 Pro-Mistral
+  organization: Nous
+  description: Hermes 2 Pro on Mistral 7B is an upgraded, retrained version of Nous Hermes 2. This improved version excels at function calling, JSON Structured Outputs, and several other areas, scoring positively on various benchmarks.
+  created_date: 2024-03-10
+  url: https://huggingface.co/NousResearch/Hermes-2-Pro-Mistral-7B
+  model_card: https://huggingface.co/NousResearch/Hermes-2-Pro-Mistral-7B
+  modality: text; text
+  analysis: The model was examined across a range of benchmarks including GPT4All, AGIEval, BigBench, TruthfulQA and in-house evaluations of function calling and JSON mode.
+  size: 7B parameters (dense)
+  dependencies: [Mistral, OpenHermes 2.5 Dataset, Nous Hermes 2]
+  training_emissions: unknown
+  training_time: unknown
+  training_hardware: unknown
+  quality_control: The model was evaluated across multiple tasks, displaying notable scores in GPT4All, AGIEval, BigBench, and TruthfulQA. It also has a high score on function calling and JSON mode, indicating the robustness of its capabilities.
+  access: open
+  license: Apache 2.0
+  intended_uses: The model is intended for general task and conversation capabilities, function calling, and JSON structured outputs. 
+  prohibited_uses: unknown
+  monitoring: unknown
+  feedback: https://huggingface.co/NousResearch/Hermes-2-Pro-Mistral-7B/discussions
+- type: model
+  name: Genstruct
+  organization: Nous
+  description: Genstruct is an instruction-generation model, designed to create valid instructions given a raw text corpus. This enables the creation of new, partially synthetic instruction finetuning datasets from any raw-text corpus. This work was inspired by Ada-Instruct and the model is also trained to generate questions involving complex scenarios that require detailed reasoning.
+  created_date: 2024-03-07
+  url: https://huggingface.co/NousResearch/Genstruct-7B
+  model_card: https://huggingface.co/NousResearch/Genstruct-7B
+  modality: text; text
+  analysis: unknown
+  size: 7B parameters (dense)
+  dependencies: []
+  training_emissions: unknown
+  training_time: unknown
+  training_hardware: unknown
+  quality_control: unknown
+  access: open
+  license: Apache 2.0
+  intended_uses: The model is intended for instruction-generation, creating questions involving complex scenarios and generating reasoning steps for those questions.
+  prohibited_uses: unknown
+  monitoring: unknown
+  feedback: https://huggingface.co/NousResearch/Genstruct-7B/discussions
+

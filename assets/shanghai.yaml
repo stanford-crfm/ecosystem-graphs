@@ -95,3 +95,24 @@
   prohibited_uses: ''
   monitoring: none
   feedback: https://huggingface.co/internlm/internlm-20b/discussions
+- type: model
+  name: InternVideo2
+  organization: Shanghai AI Laboratory, Nanjing University, Zhejiang University
+  description: InternVideo2 is a new video foundation model (ViFM) that achieves the state-of-the-art performance in action recognition, video-text tasks, and video-centric dialogue.
+  created_date: 2024-03-22
+  url: https://github.com/OpenGVLab/InternVideo2
+  model_card: none
+  modality: text, video; text
+  analysis: Evaluated across a range of video-related tasks and compared to other multimodal models like CLIP, VideoPrism, and VideoCoCa. InternVideo 2 generally performs among the best of such models on these benchmarks.
+  size: 6B parameters
+  dependencies: [InternVL, VideoMAEv2, LAION, WebVid, InternVid, LLaVA, KMash]
+  training_emissions: unknown
+  training_time: 35 days
+  training_hardware: 256 NVIDIA A100 GPUs for 32 days, and 64 GPUs for 3 days
+  quality_control: ''
+  access: open
+  license: MIT
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: unknown
+  feedback: none

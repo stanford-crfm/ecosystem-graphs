@@ -22,7 +22,7 @@
   feedback: ''
 - type: model
   name: Ferret
-  organization: Columbia
+  organization: Columbia, Apple AI
   description: Ferret is a Multimodal Large Language Model (MLLM) capable of understanding
     spatial referring of any shape or granularity within an image and accurately
     grounding open-vocabulary descriptions.
@@ -38,7 +38,9 @@
   training_hardware: 8 A100 GPUs
   quality_control: ''
   access: open
-  license: unknown
+  license:
+    explanation: License can be found at https://github.com/apple/ml-ferret/blob/main/LICENSE
+    value: Apple
   intended_uses: ''
   prohibited_uses: ''
   monitoring: none

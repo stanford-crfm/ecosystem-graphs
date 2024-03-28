@@ -495,6 +495,27 @@
   prohibited_uses: ''
   monitoring: unknown
   feedback: https://huggingface.co/CohereForAI/aya-101/discussions
+- type: model
+  name: Command-R
+  organization: Cohere
+  description: Command-R is a scalable generative model targeting RAG and Tool Use to enable production-scale AI for enterprise.
+  created_date: 2024-03-11
+  url: https://txt.cohere.com/command-r/
+  model_card: https://huggingface.co/CohereForAI/c4ai-command-r-v01
+  modality: text; text
+  analysis: none
+  size: 35B parameters (dense)
+  dependencies: []
+  training_emissions: unknown
+  training_time: unknown
+  training_hardware: unknown
+  quality_control: ''
+  access: open
+  license: CC BY NC 4.0
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: https://huggingface.co/CohereForAI/c4ai-command-r-v01/discussions
 - type: dataset
   name: Aya Dataset
   organization: Cohere for AI, Beijing Academy of Artificial Intelligence, Cohere, Binghamton University
@@ -516,4 +537,9 @@
   prohibited_uses: ''
   monitoring: unknown
   feedback: https://huggingface.co/datasets/CohereForAI/aya_dataset/discussions
+  license: CC BY NC 4.0
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: https://huggingface.co/CohereForAI/c4ai-command-r-v01/discussions
 
