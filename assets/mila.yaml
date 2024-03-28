@@ -1,7 +1,7 @@
 ---
 - type: dataset
   name: ToyMix
-  organization: Mila - Quebec AI Institute
+  organization: Mila-Quebec AI Institute
   description: ToyMix is the smallest dataset of three extensive and meticulously
     curated multi-label datasets that cover nearly 100 million molecules and over
     3000 sparsely defined tasks.
@@ -28,7 +28,7 @@
   feedback: none
 - type: dataset
   name: LargeMix
-  organization: Mila - Quebec AI Institute
+  organization: Mila-Quebec AI Institute
   description: LargeMix is the middle-sized dataset of three extensive and meticulously
     curated multi-label datasets that cover nearly 100 million molecules and over
     3000 sparsely defined tasks.
@@ -55,7 +55,7 @@
   feedback: none
 - type: dataset
   name: UltraLarge
-  organization: Mila - Quebec AI Institute
+  organization: Mila-Quebec AI Institute
   description: UltraLarge is the largest dataset of three extensive and meticulously
     curated multi-label datasets that cover nearly 100 million molecules and over
     3000 sparsely defined tasks.
@@ -79,3 +79,24 @@
   prohibited_uses: none
   monitoring: none
   feedback: none
+- type: model
+  name: Lag-LLaMA
+  organization: Morgan Stanley, ServiceNow Research, University of Montreal, Mila-Quebec AI Institute
+  description: Lag-LLaMA is a general-purpose foundation model for univariate probabilistic time series forecasting based on a decoder-only transformer architecture that uses lags as covariates.
+  created_date: 2024-02-08
+  url: https://time-series-foundation-models.github.io/lag-llama.pdf
+  model_card: https://huggingface.co/time-series-foundation-models/Lag-Llama
+  modality: text; text
+  analysis: Evaluated on previously unseen time series datasets.
+  size: unknown
+  dependencies: []
+  training_emissions: unknown
+  training_time: unknown
+  training_hardware: A single NVIDIA Tesla-P100 GPU
+  quality_control: ''
+  access: open
+  license: Apache 2.0
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: unknown
+  feedback: https://huggingface.co/time-series-foundation-models/Lag-Llama/discussions

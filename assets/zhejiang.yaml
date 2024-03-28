@@ -1,0 +1,22 @@
+---
+- type: model
+  name: OceanGPT
+  organization: Zhejiang University
+  description: OceanGPT is the first-ever LLM in the ocean domain and displays expertise in various ocean science tasks. 
+  created_date: 2024-02-06
+  url: https://www.zjukg.org/project/OceanGPT/
+  model_card: https://huggingface.co/zjunlp/OceanGPT-7b
+  modality: text; text
+  analysis: Evaluated on standard and ocean science benchmarks in comparison to other similar-sized models.
+  size: 7B parameters (dense)
+  dependencies: []
+  training_emissions: unknown
+  training_time: 7 days
+  training_hardware: 6 A800 NVIDIA GPUs
+  quality_control: ''
+  access: open
+  license: MIT
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: unknown
+  feedback: https://huggingface.co/zjunlp/OceanGPT-7b/discussions

@@ -1,7 +1,7 @@
 ---
 - type: model
   name: PolyCoder
-  organization: CMU
+  organization: Carnegie Mellon University
   description: PolyCoder is a code model trained on 2.7B parameters based on the
     GPT-2 architecture, which was trained on 249GB of code across 12 programming
     languages on a single machine.
@@ -31,3 +31,24 @@
   prohibited_uses: None
   monitoring: None
   feedback: https://huggingface.co/NinedayWang/PolyCoder-2.7B/discussion
+- type: model
+  name: Moment
+  organization: Carnegie Mellon University, University of Pennsylvania
+  description: Moment is a family of open-source foundation models for general-purpose time-series analysis.
+  created_date: 2024-02-06
+  url: https://arxiv.org/pdf/2402.03885.pdf
+  model_card: none
+  modality: ''
+  analysis: Evaluated on nascent time-series datasets and benchmarks.
+  size: 385M parameters (dense)
+  dependencies: []
+  training_emissions: unknown
+  training_time: unknown
+  training_hardware: Single A6000 GPU
+  quality_control: ''
+  access: open
+  license: unknown
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: unknown
+  feedback: none

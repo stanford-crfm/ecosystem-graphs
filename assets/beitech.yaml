@@ -22,3 +22,25 @@
   prohibited_uses: ''
   monitoring: none
   feedback: Feedback can be sent to authors via poplpr@bit.edu.cn
+- type: model
+  name: MiniMA
+  organization: Beijing Institute of Technology
+  description: MiniMA is a smaller finetuned Llama 2 model adapted for Chinese.
+  created_date: 2023-11-13
+  url: https://github.com/GeneZC/MiniMA
+  model_card: https://huggingface.co/GeneZC/MiniMA-3B
+  modality: text; text
+  analysis: Evaluated on standard benchmarks including MMLU, CEval, and DROP.
+  size: 3B parameters (dense)
+  dependencies: [Llama 2]
+  training_emissions: unknown
+  training_time: unknown
+  training_hardware: 8 A100 80G GPUs
+  quality_control: ''
+  access: open
+  license: Llama 2
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: unknokwn
+  feedback: https://huggingface.co/GeneZC/MiniMA-3B/discussions
+

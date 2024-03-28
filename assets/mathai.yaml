@@ -1,0 +1,22 @@
+---
+- type: dataset
+  name: AutoMathText
+  organization: Math AI
+  description: AutoMathText is an extensive and carefully curated dataset encompassing around 200 GB of mathematical texts.
+  created_date: 2024-02-12
+  url: https://github.com/yifanzhang-pro/AutoMathText
+  datasheet: https://huggingface.co/datasets/math-ai/AutoMathText
+  modality: text
+  size: 200 GB
+  sample: []
+  analysis: Mistral model fine-tuned on AutoMathText and evaluated on the MATH dataset.
+  dependencies: [OpenWebMath, RedPajama-Data, Algebraic Stack, Qwen]
+  included: ''
+  excluded: ''
+  quality_control: ''
+  access: open
+  license: CC BY-SA 4.0
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: unknown
+  feedback: https://huggingface.co/datasets/math-ai/AutoMathText/discussions

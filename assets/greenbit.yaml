@@ -1,0 +1,22 @@
+---
+- type: model
+  name: GreenBit LLaMA
+  organization: GreenBit AI
+  description: GreenBit LLaMA is a series of fine-tuned LLaMA models.
+  created_date: 2023-09-29
+  url: https://github.com/GreenBitAI/low_bit_llama
+  model_card: https://huggingface.co/GreenBitAI/LLaMA-30B-2bit-groupsize8
+  modality: text; text
+  analysis: Evaluated on common LLM benchmarks.
+  size: 30B parameters (dense)
+  dependencies: [LLaMA]
+  training_emissions: unknown
+  training_time: unknown
+  training_hardware: unknown
+  quality_control: ''
+  access: open
+  license: Apache 2.0
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: unknown
+  feedback: https://huggingface.co/GreenBitAI/LLaMA-30B-2bit-groupsize8/discussions
