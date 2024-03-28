@@ -679,6 +679,7 @@ function loadAssetsAndRenderPageContent() {
     'assets/apple.yaml',
     'assets/argonne.yaml',
     'assets/assembly.yaml',
+    'assets/avignon.yaml',
     'assets/baai.yaml',
     'assets/baidu.yaml',
     'assets/bain.yaml',
