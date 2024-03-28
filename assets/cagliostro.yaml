@@ -1,0 +1,22 @@
+---
+- type: model
+  name: Animagine XL 3.1
+  organization: Cagliostro Research Lab
+  description: An open-source, anime-themed text-to-image model enhanced to generate higher quality anime-style images with a broader range of characters from well-known anime series, an optimized dataset, and new aesthetic tags for better image creation.
+  created_date: 2024-03-18
+  url: https://cagliostrolab.net/posts/animagine-xl-v31-release
+  model_card: https://huggingface.co/cagliostrolab/animagine-xl-3.1
+  modality: text; image
+  analysis: unknown
+  size: unknown
+  dependencies: [Animagine XL 3.0]
+  training_emissions: unknown
+  training_time: Approximately 15 days, totaling over 350 GPU hours.
+  training_hardware: 2x A100 80GB GPUs
+  quality_control: The model undergoes pretraining, first stage finetuning, and second stage finetuning for refining and improving aspects such as hand and anatomy rendering.
+  access: open
+  license: Fair AI Public License 1.0-SD
+  intended_uses: Generating high-quality anime images from textual prompts. Useful for anime fans, artists, and content creators.
+  prohibited_uses: Not suitable for creating realistic photos or for users who expect high-quality results from short or simple prompts.
+  monitoring: unknown
+  feedback: https://huggingface.co/cagliostrolab/animagine-xl-3.1/discussions
