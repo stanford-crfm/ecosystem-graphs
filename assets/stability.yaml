@@ -84,8 +84,10 @@
   adaptation: ''
   output_space: image
   quality_control: ''
-  access: limited
-  license: MIT
+  access: open
+  license:
+    explanation: License can be found at https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0/blob/main/LICENSE.md
+    value: Open Rail++
   terms_of_service: ''
   intended_uses: ''
   prohibited_uses: ''
@@ -113,7 +115,9 @@
   training_hardware: unknown
   quality_control: ''
   access: limited
-  license: unknown
+  license:
+    explanation: License can be found at https://huggingface.co/stabilityai/stable-video-diffusion-img2vid-xt/blob/main/LICENSE
+    value: custom
   intended_uses: Intended for research purposes only.
   prohibited_uses: Using the model to generate representations of real-world people
     or events.
@@ -215,3 +219,26 @@
   prohibited_uses: The model was not trained to be factual or true representations of people or events, and therefore using the model to generate such content is out-of-scope for the abilities of this model. The model should not be used in any way that violates Stability AI's Acceptable Use Policy.
   monitoring: unknown
   feedback: https://huggingface.co/stabilityai/stable-cascade/discussions
+
+- type: model
+  name: Stable Video 3D
+  organization: Stability AI
+  description: Stable Video 3D (SV3D) is a generative model based on Stable Video Diffusion that takes in a still image of an object as a conditioning frame, and generates an orbital video of that object.
+  created_date: 2024-03-18
+  url: https://stability.ai/news/introducing-stable-video-3d
+  model_card: https://huggingface.co/stabilityai/sv3d
+  modality: image; video
+  analysis: unknown
+  size: unknown
+  dependencies: [Objaverse]
+  training_emissions: unknown
+  training_time: unknown
+  training_hardware: unknown
+  quality_control: unknown
+  access: open
+  license: StabilityAI Non-Commercial Research Community License
+  intended_uses: This model is intended to be used for generating orbital videos of objects from still images.
+  prohibited_uses: The model should not be used for generating factual or true representations of people or events, or in any way that violates Stability AIs Acceptable Use Policy.
+  monitoring: unknown
+  feedback: https://huggingface.co/stabilityai/sv3d/discussions
+

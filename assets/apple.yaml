@@ -1,0 +1,22 @@
+---
+- type: model
+  name: MM1
+  organization: Apple
+  description: MM1 is a family of multimodal models, including both dense variants up to 30B and mixture-of-experts (MoE) variants up to 64B.
+  created_date: 2024-03-16
+  url: https://arxiv.org/pdf/2403.09611.pdf
+  model_card: none
+  modality: image, text; text
+  analysis: Evaluated on image captioning and visual question answering across many benchmarks.
+  size: 30B parameters (dense)
+  dependencies: []
+  training_emissions: unknown
+  training_time: unknown
+  training_hardware: unknown
+  quality_control: ''
+  access: closed
+  license: unknown
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: none

@@ -291,7 +291,7 @@
   excluded: ''
   quality_control: ''
   access: open
-  license: Same as dependencies
+  license: MIT
   intended_uses: ''
   prohibited_uses: ''
   monitoring: none

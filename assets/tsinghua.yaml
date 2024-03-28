@@ -153,7 +153,9 @@
   training_hardware: unknown
   quality_control: none
   access: open
-  license: Apache 2.0
+  license:
+    explanation: Model license can be found at https://github.com/THUDM/CogVLM/blob/main/MODEL_LICENSE. Code license is under Apache 2.0
+    value: custom
   intended_uses: Future multimodal research
   prohibited_uses: none
   monitoring: none

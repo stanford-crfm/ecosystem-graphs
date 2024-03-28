@@ -741,8 +741,9 @@
 - type: model
   name: WizardCoder
   organization: Microsoft
-  description: WizardCoder empowers Code LLMs with complex instruction fine-tuning,
-    by adapting the Evol-Instruct method to the domain of code.
+  description: 
+    explanation: WizardCoder refers to both a set of models fine-tuned on StarCoder and a set of models fined-tuned on Code LLaMA. This node refers to the set fine-tuned on StarCoder.
+    value: WizardCoder empowers Code LLMs with complex instruction fine-tuning, by adapting the Evol-Instruct method to the domain of code.
   created_date: 2023-08-26
   url: https://arxiv.org/pdf/2306.08568.pdf
   model_card: https://huggingface.co/WizardLM/WizardCoder-Python-34B-V1.0
@@ -758,7 +759,9 @@
   training_hardware: ''
   quality_control: ''
   access: open
-  license: Apache 2.0
+  license: 
+    explanation: Model license can be found at https://github.com/nlpxucan/WizardLM/blob/main/WizardCoder/MODEL_WEIGHTS_LICENSE. Code license is under Apache 2.0
+    value: BigCode Open Rail-M
   intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
@@ -849,7 +852,7 @@
   training_hardware: 8x A6000-48GB (first-gen) GPUs
   quality_control: ''
   access: open
-  license: LLaMA2
+  license: LLaMA 2
   intended_uses: training and evaluation in the field of natural language processing.
   prohibited_uses: none
   monitoring: ''
