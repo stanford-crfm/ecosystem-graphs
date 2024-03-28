@@ -149,17 +149,17 @@
   url: none
   datasheet: https://huggingface.co/datasets/HuggingFaceTB/cosmopedia
   modality: text
-  size: 30 million files and 25 billion tokens
+  size: 25B tokens
   sample: []
   analysis: Some seed samples were used in different prompt styles and audiences. Less than 1% of files are duplicates after running MinHash deduplication. Contaminated samples were removed from each dataset split.
-  dependencies: [RefinedWeb, RedPajama-Data, Mixtral, Phi-1.5]
-  included: Synthetic textbooks, blogposts, stories, posts, and WikiHow articles; over 30 million files and 25 billion tokens.
+  dependencies: [Mixtral]
+  included: ''
   excluded: unknown
   quality_control: Measures were taken to reduce redundancy and ensure diversity in generated content. A decontamination pipeline was implemented to avoid benchmark contamination.
   access: open
   license: unknown
-  intended_uses: Intended to facilitate research efforts in the domain of synthetic data.
+  intended_uses: ''
   prohibited_uses: unknown
-  monitoring: Decontamination pipeline has been implemented to avoid contamination and ensure the integrity of the dataset.
+  monitoring: ''
   feedback: https://huggingface.co/datasets/HuggingFaceTB/cosmopedia/discussions
 

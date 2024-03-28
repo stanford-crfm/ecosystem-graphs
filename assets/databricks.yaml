@@ -56,10 +56,10 @@
   modality: text; text
   analysis: DBRX outperforms established open-source and open-weight base models on the Databricks Model Gauntlet, the Hugging Face Open LLM Leaderboard, and HumanEval. Full evaluation details can be found in the corresponding technical blog post. 
   size: 132B parameters (sparse)
-  dependencies: [MegaBlocks library, PyTorch FSDP]
+  dependencies: []
   training_emissions: unknown
-  training_time: unknown
-  training_hardware: unknown
+  training_time: 3 months
+  training_hardware: 3072 NVIDIA H100s connected by 3.2Tbps Infiniband
   quality_control: Recommendations provided for retrieval augmented generation (RAG) in scenarios where accuracy and fidelity are important and additional testing around safety in the context of the specific application and domain is suggested. 
   access: open
   license: Databricks Open Model License

@@ -128,7 +128,7 @@
   created_date: 2024-03-19
   url: https://blog.salesforceairesearch.com/moirai/
   model_card: https://huggingface.co/Salesforce/moirai-1.0-R-large
-  modality: text; text
+  modality: time-series; time-series
   analysis: Moirai has undergone a comprehensive evaluation in both in-distribution and out-of-distribution settings. It demonstrated its capabilities as a zero-shot forecaster and delivered competitive or superior performance compared to full-shot models.
   size: 311M parameters
   dependencies: [LOTSA]
@@ -142,4 +142,26 @@
   prohibited_uses: unknown
   monitoring: unknown
   feedback: https://huggingface.co/Salesforce/moirai-1.0-R-large/discussions
+- type: dataset
+  name: LOTSA
+  organization: Salesforce
+  description: LOTSA is the largest collection of open time series datasets with 27B observations across nine domains.
+  created_date: 2024-03-19
+  url: https://arxiv.org/pdf/2402.02592.pdf
+  datasheet: https://huggingface.co/datasets/Salesforce/lotsa_data
+  modality: time-series
+  size: 27B observations
+  sample: []
+  analysis: ''
+  dependencies: []
+  included: domain observations in energy, transport, climate, cloudops, web, sales, nature, econ/finance, and healthcare
+  excluded: ''
+  quality_control: ''
+  access: open
+  license: Apache 2.0
+  intended_uses: pre-training Large Time Series Models
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: https://huggingface.co/datasets/Salesforce/lotsa_data/discussions
+
 
