@@ -15,9 +15,7 @@
   training_hardware: unknown
   quality_control: ''
   access: open
-  license:
-    explanation: Code is licensed under a combination of Apache 2.0 and MIT as discussed in the url.
-    value: LLaMA 2
+  license: Apache 2.0
   intended_uses: ''
   prohibited_uses: ''
   monitoring: unknown
