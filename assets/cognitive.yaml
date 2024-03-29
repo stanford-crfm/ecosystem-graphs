@@ -25,9 +25,11 @@
 - type: model
   name: WizardLM Uncensored
   organization: Cognitive Computations
-  description: WizardLM Uncensored is WizardLM trained with a subset of the dataset - responses that contained alignment / moralizing were removed.
+  description: WizardLM Uncensored is WizardLM trained with a subset of the dataset
+    - responses that contained alignment / moralizing were removed.
   created_date:
-    explanation: release date is not published; estimated to be sometime in either May or June 2023.
+    explanation: release date is not published; estimated to be sometime in either
+      May or June 2023.
     value: 2023-06-01
   url: https://huggingface.co/cognitivecomputations/WizardLM-30B-Uncensored
   model_card: https://huggingface.co/cognitivecomputations/WizardLM-30B-Uncensored
@@ -45,4 +47,3 @@
   prohibited_uses: ''
   monitoring: unknown
   feedback: https://huggingface.co/cognitivecomputations/WizardLM-30B-Uncensored/discussions
-

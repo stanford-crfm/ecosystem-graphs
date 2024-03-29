@@ -34,7 +34,8 @@
 - type: model
   name: Moment
   organization: Carnegie Mellon University, University of Pennsylvania
-  description: Moment is a family of open-source foundation models for general-purpose time-series analysis.
+  description: Moment is a family of open-source foundation models for general-purpose
+    time-series analysis.
   created_date: 2024-02-06
   url: https://arxiv.org/pdf/2402.03885.pdf
   model_card: none

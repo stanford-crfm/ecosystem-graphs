@@ -7,7 +7,8 @@
   url: https://huggingface.co/VAGOsolutions/SauerkrautLM-7b-HerO
   model_card: https://huggingface.co/VAGOsolutions/SauerkrautLM-7b-HerO
   modality: text; text
-  analysis: Evaluated on standard benchmarks in comparison to other German language models.
+  analysis: Evaluated on standard benchmarks in comparison to other German language
+    models.
   size: 7B parameters (dense)
   dependencies: [OpenHermes 2.5 Mistral, OpenOrca Mistral]
   training_emissions: unknown

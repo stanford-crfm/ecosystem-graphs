@@ -7,7 +7,8 @@
   url: https://github.com/xverse-ai/XVERSE-65B
   model_card: https://huggingface.co/xverse/XVERSE-65B
   modality: text; text
-  analysis: Evaluated across a range of standard datasets regarding multiple model capabilities like language comprehension and logical reasoning.
+  analysis: Evaluated across a range of standard datasets regarding multiple model
+    capabilities like language comprehension and logical reasoning.
   size: 65B parameters (dense)
   dependencies: []
   training_emissions: unknown
@@ -16,10 +17,10 @@
   quality_control: ''
   access: open
   license:
-    explanation: can be found at https://github.com/xverse-ai/XVERSE-65B/blob/main/MODEL_LICENSE.pdf. Code license is under Apache 2.0
+    explanation: can be found at https://github.com/xverse-ai/XVERSE-65B/blob/main/MODEL_LICENSE.pdf.
+      Code license is under Apache 2.0
     value: custom
   intended_uses: ''
   prohibited_uses: ''
   monitoring: unknown
   feedback: https://huggingface.co/xverse/XVERSE-65B/discussions
-

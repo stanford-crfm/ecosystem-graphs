@@ -18,7 +18,8 @@
   quality_control: unknown
   access: open
   license:
-    explanation: Model license can be found at https://github.com/OrionStarAI/Orion/blob/master/ModelsCommunityLicenseAgreement. Code license is under Apache 2.0
+    explanation: Model license can be found at https://github.com/OrionStarAI/Orion/blob/master/ModelsCommunityLicenseAgreement.
+      Code license is under Apache 2.0
     value: custom
   intended_uses: ''
   prohibited_uses: ''

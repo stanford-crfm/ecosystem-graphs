@@ -2,7 +2,8 @@
 - type: dataset
   name: AutoMathText
   organization: Math AI
-  description: AutoMathText is an extensive and carefully curated dataset encompassing around 200 GB of mathematical texts.
+  description: AutoMathText is an extensive and carefully curated dataset encompassing
+    around 200 GB of mathematical texts.
   created_date: 2024-02-12
   url: https://github.com/yifanzhang-pro/AutoMathText
   datasheet: https://huggingface.co/datasets/math-ai/AutoMathText

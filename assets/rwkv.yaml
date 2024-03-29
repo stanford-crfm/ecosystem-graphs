@@ -2,7 +2,8 @@
 - type: model
   name: RWKV World 4
   organization: RWKV
-  description: RWKV World 4 is an RNN with GPT-level LLM performance, which can also be directly trained like a GPT transformer (parallelizable).
+  description: RWKV World 4 is an RNN with GPT-level LLM performance, which can
+    also be directly trained like a GPT transformer (parallelizable).
   created_date: 2023-05-03
   url: https://huggingface.co/RWKV/rwkv-4-world-7b
   model_card: https://huggingface.co/RWKV/rwkv-4-world-7b
@@ -23,7 +24,8 @@
 - type: model
   name: RWKV 4 Pile
   organization: RWKV
-  description: RWKV 4 Pile is an RNN with GPT-level LLM performance, which can also be directly trained like a GPT transformer (parallelizable).
+  description: RWKV 4 Pile is an RNN with GPT-level LLM performance, which can also
+    be directly trained like a GPT transformer (parallelizable).
   created_date: 2023-05-15
   url: https://huggingface.co/RWKV/rwkv-4-14b-pile
   model_card: https://huggingface.co/RWKV/rwkv-4-14b-pile
@@ -44,7 +46,8 @@
 - type: model
   name: RWKV World 5
   organization: RWKV
-  description: RWKV World 5 is an RNN with GPT-level LLM performance, which can also be directly trained like a GPT transformer (parallelizable).
+  description: RWKV World 5 is an RNN with GPT-level LLM performance, which can
+    also be directly trained like a GPT transformer (parallelizable).
   created_date: 2023-12-16
   url: https://huggingface.co/RWKV/rwkv-5-world-3b
   model_card: https://huggingface.co/RWKV/rwkv-5-world-3b

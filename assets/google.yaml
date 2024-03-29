@@ -1734,7 +1734,8 @@
 - type: model
   name: TimesFM
   organization: Google
-  description: TimesFM is a single forecasting model pre-trained on a large time-series corpus of 100 billion real world time-points.
+  description: TimesFM is a single forecasting model pre-trained on a large time-series
+    corpus of 100 billion real world time-points.
   created_date: 2024-02-02
   url: https://blog.research.google/2024/02/a-decoder-only-foundation-model-for.html
   model_card: none
@@ -1752,27 +1753,32 @@
   prohibited_uses: ''
   monitoring: unknown
   feedback: none
-
+- type: model
   name: Gemma
   organization: Google
-  description: Gemma is a family of lightweight, state-of-the-art open models from Google, based on the Gemini models. They are text-to-text, decoder-only large language models, available in English.
+  description: Gemma is a family of lightweight, state-of-the-art open models from
+    Google, based on the Gemini models. They are text-to-text, decoder-only large
+    language models, available in English.
   created_date: 2024-02-21
   url: https://blog.google/technology/developers/gemma-open-models/
   model_card: https://huggingface.co/google/gemma-7b
   modality: text; text
-  analysis: Evaluation was conducted on standard LLM benchmarks and includes internal red-teaming testing of relevant content policies.
+  analysis: Evaluation was conducted on standard LLM benchmarks and includes internal
+    red-teaming testing of relevant content policies.
   size: 7B parameters (dense)
   dependencies: []
   training_emissions: unknown
   training_time: unknown
   training_hardware: TPUv5e
-  quality_control: Multiple evaluations and red-teaming conducted, with particular focus on ethics, bias, fair use cases, and safety.
+  quality_control: Multiple evaluations and red-teaming conducted, with particular
+    focus on ethics, bias, fair use cases, and safety.
   access: open
   license:
     explanation: License can be found at https://ai.google.dev/gemma/terms.
     value: custom
-  intended_uses: Text generation tasks including question answering, summarization, and reasoning; content creation, communication, research, and education.
-  prohibited_uses: Prohibited uses are specified in the Gemma Prohibited Use Policy here https://ai.google.dev/gemma/prohibited_use_policy
+  intended_uses: Text generation tasks including question answering, summarization,
+    and reasoning; content creation, communication, research, and education.
+  prohibited_uses: Prohibited uses are specified in the Gemma Prohibited Use Policy
+    here https://ai.google.dev/gemma/prohibited_use_policy
   monitoring: ''
   feedback: https://huggingface.co/google/gemma-7b/discussions
-  

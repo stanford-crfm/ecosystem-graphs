@@ -154,7 +154,8 @@
   quality_control: none
   access: open
   license:
-    explanation: Model license can be found at https://github.com/THUDM/CogVLM/blob/main/MODEL_LICENSE. Code license is under Apache 2.0
+    explanation: Model license can be found at https://github.com/THUDM/CogVLM/blob/main/MODEL_LICENSE.
+      Code license is under Apache 2.0
     value: custom
   intended_uses: Future multimodal research
   prohibited_uses: none
@@ -184,7 +185,8 @@
 - type: dataset
   name: UltraChat
   organization: Tsinghua University
-  description: UltraChat is an open-source, large-scale, and multi-round dialogue data powered by Turbo APIs.
+  description: UltraChat is an open-source, large-scale, and multi-round dialogue
+    data powered by Turbo APIs.
   created_date: 2023-04-20
   url: https://github.com/thunlp/UltraChat
   datasheet: https://huggingface.co/datasets/stingning/ultrachat
@@ -193,7 +195,8 @@
   sample: []
   analysis: UltraLM evaluated off of UltraChat is evaluated on standard LLM benchmarks.
   dependencies: []
-  included: Dialogue data of questions about the world, writing and creation tasks, and questions on existing materials.
+  included: Dialogue data of questions about the world, writing and creation tasks,
+    and questions on existing materials.
   excluded: ''
   quality_control: ''
   access: open
@@ -202,4 +205,3 @@
   prohibited_uses: ''
   monitoring: unknown
   feedback: https://huggingface.co/datasets/stingning/ultrachat/discussions
-

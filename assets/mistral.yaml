@@ -29,7 +29,8 @@
   url: https://mistral.ai/news/mistral-large/
   model_card: none
   modality: text; text
-  analysis: Evaluated on commonly used benchmarks in comparison to the current LLM leaders.
+  analysis: Evaluated on commonly used benchmarks in comparison to the current LLM
+    leaders.
   size: unknown
   dependencies: []
   training_emissions: unknown
@@ -45,7 +46,8 @@
 - type: application
   name: Le Chat
   organization: Mistral AI
-  description:  Le Chat is a first demonstration of what can be built with Mistral models and what can deployed in the business environment.
+  description: Le Chat is a first demonstration of what can be built with Mistral
+    models and what can deployed in the business environment.
   created_date: 2024-02-26
   url: https://mistral.ai/news/le-chat-mistral/
   dependencies: [Mistral, Mistral Large]

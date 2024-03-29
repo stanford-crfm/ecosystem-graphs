@@ -54,7 +54,8 @@
 - type: model
   name: Granite
   organization: IBM
-  description: Granite is a set of multi-size foundation models that apply generative AI to both language and code.
+  description: Granite is a set of multi-size foundation models that apply generative
+    AI to both language and code.
   created_date: 2023-09-28
   url: https://www.ibm.com/blog/building-ai-for-business-ibms-granite-foundation-models/
   model_card: none
@@ -65,7 +66,9 @@
   training_emissions: unknown
   training_time: unknown
   training_hardware: unknown
-  quality_control: Training data passed through IBM HAP detector, language model designed to remove harmful content. Data also deduplicated and filtered for document quality.
+  quality_control: Training data passed through IBM HAP detector, language model
+    designed to remove harmful content. Data also deduplicated and filtered for
+    document quality.
   access: limited
   license: ''
   intended_uses: ''

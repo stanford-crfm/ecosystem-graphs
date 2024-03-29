@@ -74,7 +74,9 @@
 - type: model
   name: StarCoder2
   organization: BigCode
-  description: A 15 billion parameter language model trained on 600+ programming languages from The Stack v2. The training was carried out using the Fill-in-the-Middle objective on 4+ trillion tokens.
+  description: A 15 billion parameter language model trained on 600+ programming
+    languages from The Stack v2. The training was carried out using the Fill-in-the-Middle
+    objective on 4+ trillion tokens.
   created_date: 2024-02-28
   url: https://www.servicenow.com/company/media/press-room/huggingface-nvidia-launch-starcoder2.html
   model_card: https://huggingface.co/bigcode/starcoder2-15b
@@ -85,10 +87,14 @@
   training_emissions: unknown
   training_time: unknown
   training_hardware: 1024 x H100 GPUs
-  quality_control: The model was filtered for permissive licenses and code with no license only. A search index is provided to identify where generated code came from to apply the proper attribution.
+  quality_control: The model was filtered for permissive licenses and code with
+    no license only. A search index is provided to identify where generated code
+    came from to apply the proper attribution.
   access: open
   license: BigCode OpenRail-M
-  intended_uses: Intended to generate code snippets from given context, but not for writing actual functional code directly.
-  prohibited_uses: Should not be used as a way to write fully functioning code without modification or verification.
+  intended_uses: Intended to generate code snippets from given context, but not
+    for writing actual functional code directly.
+  prohibited_uses: Should not be used as a way to write fully functioning code without
+    modification or verification.
   monitoring: unknown
   feedback: https://huggingface.co/bigcode/starcoder2-15b/discussions

@@ -2,7 +2,8 @@
 - type: application
   name: Reexpress One
   organization: Reexpress AI
-  description: Reexpress One offers a means of document classification, semantic search, and uncertainty analysis on-device.
+  description: Reexpress One offers a means of document classification, semantic
+    search, and uncertainty analysis on-device.
   created_date: 2023-03-21
   url: https://re.express/index.html
   dependencies: []

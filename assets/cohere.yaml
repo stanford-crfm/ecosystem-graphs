@@ -476,13 +476,16 @@
   feedback: https://huggingface.co/Cohere/Cohere-embed-english-v3.0/discussions
 - type: model
   name: Aya
-  organization: Cohere for AI, Cohere, Brown University, Carnegie Mellon University, MIT
-  description: Aya is a massively multilingual generative language model that follows instructions in 101 languages of which over 50% are considered as lower-resourced.
+  organization: Cohere for AI, Cohere, Brown University, Carnegie Mellon University,
+    MIT
+  description: Aya is a massively multilingual generative language model that follows
+    instructions in 101 languages of which over 50% are considered as lower-resourced.
   created_date: 2024-02-12
   url: https://arxiv.org/pdf/2402.07827.pdf
   model_card: https://huggingface.co/CohereForAI/aya-101
   modality: text; text
-  analysis: Evaluated on standard LLM and multilingual benchmarks in comparison to SotA models.
+  analysis: Evaluated on standard LLM and multilingual benchmarks in comparison
+    to SotA models.
   size: 13B parameters (dense)
   dependencies: [mT5, Aya Dataset]
   training_emissions: unknown
@@ -498,7 +501,8 @@
 - type: model
   name: Command-R
   organization: Cohere
-  description: Command-R is a scalable generative model targeting RAG and Tool Use to enable production-scale AI for enterprise.
+  description: Command-R is a scalable generative model targeting RAG and Tool Use
+    to enable production-scale AI for enterprise.
   created_date: 2024-03-11
   url: https://txt.cohere.com/command-r/
   model_card: https://huggingface.co/CohereForAI/c4ai-command-r-v01
@@ -518,8 +522,10 @@
   feedback: https://huggingface.co/CohereForAI/c4ai-command-r-v01/discussions
 - type: dataset
   name: Aya Dataset
-  organization: Cohere for AI, Beijing Academy of Artificial Intelligence, Cohere, Binghamton University
-  description: The Aya Dataset is a dataset that consists of original human-curated prompt-completion pairs written by fluent speakers of 65 languages. 
+  organization: Cohere for AI, Beijing Academy of Artificial Intelligence, Cohere,
+    Binghamton University
+  description: The Aya Dataset is a dataset that consists of original human-curated
+    prompt-completion pairs written by fluent speakers of 65 languages.
   created_date: 2024-02-09
   url: https://arxiv.org/pdf/2402.06619.pdf
   datasheet: https://huggingface.co/datasets/CohereForAI/aya_dataset
@@ -537,4 +543,3 @@
   prohibited_uses: ''
   monitoring: unknown
   feedback: https://huggingface.co/datasets/CohereForAI/aya_dataset/discussions
-

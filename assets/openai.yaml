@@ -1402,7 +1402,8 @@
 - type: model
   name: Sora
   organization: OpenAI
-  description: Sora is an AI model that can create realistic and imaginative scenes from text instructions.
+  description: Sora is an AI model that can create realistic and imaginative scenes
+    from text instructions.
   created_date: 2024-02-15
   url: https://openai.com/sora
   model_card: none
