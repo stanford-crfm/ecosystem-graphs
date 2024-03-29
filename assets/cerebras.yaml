@@ -117,12 +117,14 @@
 - type: model
   name: Bittensor Language Model
   organization: Cerebras
-  description: Bittensor Language Model is a 3 billion parameter language model with an 8k context length trained on 627B tokens of SlimPajama.
+  description: Bittensor Language Model is a 3 billion parameter language model
+    with an 8k context length trained on 627B tokens of SlimPajama.
   created_date: 2023-07-24
   url: https://www.cerebras.net/blog/btlm-3b-8k-7b-performance-in-a-3-billion-parameter-model/
   model_card: https://huggingface.co/cerebras/btlm-3b-8k-base
   modality: text; text
-  analysis: Evaluated on standard LLM benchmarks in comparison to similar-sized models.
+  analysis: Evaluated on standard LLM benchmarks in comparison to similar-sized
+    models.
   size: 3B parameters (dense)
   dependencies: [SlimPajama]
   training_emissions: unknown
@@ -138,7 +140,8 @@
 - type: dataset
   name: SlimPajama
   organization: Cerebras
-  description: As of release, SlimPajama is the largest extensively deduplicated, multi-corpora, open-source dataset for training large language models.
+  description: As of release, SlimPajama is the largest extensively deduplicated,
+    multi-corpora, open-source dataset for training large language models.
   created_date: 2023-06-09
   url: https://huggingface.co/datasets/cerebras/SlimPajama-627B
   datasheet: https://huggingface.co/datasets/cerebras/SlimPajama-627B

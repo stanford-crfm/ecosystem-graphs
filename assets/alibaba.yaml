@@ -74,7 +74,8 @@
       \ repository]](https://huggingface.co/Qwen)\n"
     value: open
   license:
-    explanation: Model license can be found at https://github.com/QwenLM/Qwen/blob/main/Tongyi%20Qianwen%20LICENSE%20AGREEMENT. Code license is under Apache 2.0
+    explanation: Model license can be found at https://github.com/QwenLM/Qwen/blob/main/Tongyi%20Qianwen%20LICENSE%20AGREEMENT.
+      Code license is under Apache 2.0
     value: custom
   intended_uses: ''
   prohibited_uses: ''
@@ -87,12 +88,15 @@
 - type: model
   name: Qwen 1.5
   organization: Qwen AI
-  description: Qwen 1.5 is the next iteration in their Qwen series, consisting of Transformer-based large language models pretrained on a large volume of data, including web texts, books, codes, etc.
+  description: Qwen 1.5 is the next iteration in their Qwen series, consisting of
+    Transformer-based large language models pretrained on a large volume of data,
+    including web texts, books, codes, etc.
   created_date: 2024-02-04
   url: https://qwenlm.github.io/blog/qwen1.5/
   model_card: https://huggingface.co/Qwen/Qwen1.5-72B
   modality: text; text
-  analysis: Evaluated on MMLU, C-Eval, GSM8K, MATH, HumanEval, MBPP, BBH, CMMLU, all standard English and Chinese benchmarks.
+  analysis: Evaluated on MMLU, C-Eval, GSM8K, MATH, HumanEval, MBPP, BBH, CMMLU,
+    all standard English and Chinese benchmarks.
   size: 72B parameters (dense)
   dependencies: []
   training_emissions: unknown

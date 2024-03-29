@@ -2,7 +2,8 @@
 - type: model
   name: SaiLY
   organization: Deepnight Research
-  description: SaiLy is a series/collection of AI Models by Deepnight Research which are highly experimental and uncensored.
+  description: SaiLy is a series/collection of AI Models by Deepnight Research which
+    are highly experimental and uncensored.
   created_date: 2023-11-04
   url: https://huggingface.co/deepnight-research/saily_100b
   model_card: https://huggingface.co/deepnight-research/saily_100b

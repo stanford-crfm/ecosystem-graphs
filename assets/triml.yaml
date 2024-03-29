@@ -2,12 +2,14 @@
 - type: model
   name: Prism
   organization: Toyota Research Institute
-  description: Prism is a family of VLMs trained using new analyses about key vision design axes.
+  description: Prism is a family of VLMs trained using new analyses about key vision
+    design axes.
   created_date: 2024-02-09
   url: https://arxiv.org/pdf/2402.07865.pdf
   model_card: none
   modality: image, text; text
-  analysis: Evaluated on standard VLM benchmarks and outperforms SotA open-source VLMs as of release.
+  analysis: Evaluated on standard VLM benchmarks and outperforms SotA open-source
+    VLMs as of release.
   size: 7B parameters (dense)
   dependencies: []
   training_emissions: unknown

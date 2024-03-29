@@ -7,7 +7,8 @@
   url: https://www.cognition-labs.com/introducing-devin
   model_card: none
   modality: text; code
-  analysis: Evaluated on SWE-Bench, a challenging software engineering benchmark, where Devin outperforms major state of the art models unassisted.
+  analysis: Evaluated on SWE-Bench, a challenging software engineering benchmark,
+    where Devin outperforms major state of the art models unassisted.
   size: unknown
   dependencies: []
   training_emissions: unknown

@@ -741,9 +741,12 @@
 - type: model
   name: WizardCoder
   organization: Microsoft
-  description: 
-    explanation: WizardCoder refers to both a set of models fine-tuned on StarCoder and a set of models fined-tuned on Code LLaMA. This node refers to the set fine-tuned on StarCoder.
-    value: WizardCoder empowers Code LLMs with complex instruction fine-tuning, by adapting the Evol-Instruct method to the domain of code.
+  description:
+    explanation: WizardCoder refers to both a set of models fine-tuned on StarCoder
+      and a set of models fined-tuned on Code LLaMA. This node refers to the set
+      fine-tuned on StarCoder.
+    value: WizardCoder empowers Code LLMs with complex instruction fine-tuning,
+      by adapting the Evol-Instruct method to the domain of code.
   created_date: 2023-08-26
   url: https://arxiv.org/pdf/2306.08568.pdf
   model_card: https://huggingface.co/WizardLM/WizardCoder-Python-34B-V1.0
@@ -759,8 +762,9 @@
   training_hardware: ''
   quality_control: ''
   access: open
-  license: 
-    explanation: Model license can be found at https://github.com/nlpxucan/WizardLM/blob/main/WizardCoder/MODEL_WEIGHTS_LICENSE. Code license is under Apache 2.0
+  license:
+    explanation: Model license can be found at https://github.com/nlpxucan/WizardLM/blob/main/WizardCoder/MODEL_WEIGHTS_LICENSE.
+      Code license is under Apache 2.0
     value: BigCode Open Rail-M
   intended_uses: ''
   prohibited_uses: ''
@@ -890,7 +894,8 @@
   url: https://arxiv.org/pdf/2311.11045.pdf
   model_card: https://huggingface.co/microsoft/Orca-2-13b
   modality: text; text
-  analysis: Orca 2 has been evaluated on a large number of tasks ranging from reasoning to grounding and safety.
+  analysis: Orca 2 has been evaluated on a large number of tasks ranging from reasoning
+    to grounding and safety.
   size: 13B parameters (dense)
   dependencies: [LLaMA 2]
   training_emissions: unknown
@@ -901,7 +906,9 @@
   license:
     explanation: can be found at https://huggingface.co/microsoft/Orca-2-13b/blob/main/LICENSE
     value: custom
-  intended_uses: Orca 2 is built for research purposes only. The main purpose is to allow the research community to assess its abilities and to provide a foundation for building better frontier models.
+  intended_uses: Orca 2 is built for research purposes only. The main purpose is
+    to allow the research community to assess its abilities and to provide a foundation
+    for building better frontier models.
   prohibited_uses: Any purposes other than research.
   monitoring: unknown
   feedback: https://huggingface.co/microsoft/Orca-2-13b/discussions

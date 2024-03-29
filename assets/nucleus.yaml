@@ -2,12 +2,14 @@
 - type: model
   name: Nucleus
   organization: Nucleus.AI
-  description: Nucleus is a 22B parameters causal decoder-only model built by Nucleus.AI and trained on 500B tokens of RefinedWeb along with curated corpora.
+  description: Nucleus is a 22B parameters causal decoder-only model built by Nucleus.AI
+    and trained on 500B tokens of RefinedWeb along with curated corpora.
   created_date: 2023-10-05
   url: https://www.withnucleus.ai/
   model_card: https://huggingface.co/NucleusAI/nucleus-22B-token-500B
   modality: text; text
-  analysis: Evaluated on the OpenLLM leaderboard, performing on par with similar-sized models.
+  analysis: Evaluated on the OpenLLM leaderboard, performing on par with similar-sized
+    models.
   size: 22B parameters (dense)
   dependencies: [RefinedWeb]
   training_emissions: unknown
@@ -16,7 +18,10 @@
   quality_control: ''
   access: open
   license: MIT
-  intended_uses: Research on large language models; as a foundation for further specialization and finetuning for specific usecases (e.g., summarization, text generation, chatbot, etc.)
-  prohibited_uses: Production use without adequate assessment of risks and mitigation; any use cases which may be considered irresponsible or harmful.
+  intended_uses: Research on large language models; as a foundation for further
+    specialization and finetuning for specific usecases (e.g., summarization, text
+    generation, chatbot, etc.)
+  prohibited_uses: Production use without adequate assessment of risks and mitigation;
+    any use cases which may be considered irresponsible or harmful.
   monitoring: unknown
   feedback: https://huggingface.co/NucleusAI/nucleus-22B-token-500B/discussions

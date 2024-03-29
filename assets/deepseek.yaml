@@ -19,7 +19,8 @@
     and deduplicated.
   access: open
   license:
-    explanation: Model license can be found at https://github.com/deepseek-ai/DeepSeek-LLM/blob/main/LICENSE-MODEL. Code license is under MIT
+    explanation: Model license can be found at https://github.com/deepseek-ai/DeepSeek-LLM/blob/main/LICENSE-MODEL.
+      Code license is under MIT
     value: custom
   intended_uses: ''
   prohibited_uses: none
@@ -45,7 +46,8 @@
     and deduplicated.
   access: open
   license:
-    explanation: Model license can be found at https://github.com/deepseek-ai/DeepSeek-LLM/blob/main/LICENSE-MODEL. Code license is under MIT
+    explanation: Model license can be found at https://github.com/deepseek-ai/DeepSeek-LLM/blob/main/LICENSE-MODEL.
+      Code license is under MIT
     value: custom
   intended_uses: ''
   prohibited_uses: none
@@ -54,12 +56,15 @@
 - type: model
   name: Deepseek Coder
   organization: Deepseek AI
-  description: Deepseek Coder is composed of a series of code language models, each trained from scratch on 2T tokens, with a composition of 87% code and 13% natural language in both English and Chinese.
+  description: Deepseek Coder is composed of a series of code language models, each
+    trained from scratch on 2T tokens, with a composition of 87% code and 13% natural
+    language in both English and Chinese.
   created_date: 2023-11-03
   url: https://github.com/deepseek-ai/DeepSeek-Coder
   model_card: https://huggingface.co/deepseek-ai/deepseek-coder-33b-base
   modality: text; code
-  analysis: Evaluated on code generation, code completion, cross-file code completion, and program-based math reasoning across standard benchmarks.
+  analysis: Evaluated on code generation, code completion, cross-file code completion,
+    and program-based math reasoning across standard benchmarks.
   size: 33B parameters (dense)
   dependencies: []
   training_emissions: unknown
@@ -68,10 +73,10 @@
   quality_control: ''
   access: open
   license:
-    explanation: Model license can be found at https://github.com/deepseek-ai/DeepSeek-Coder/blob/main/LICENSE-MODEL. Code license is under MIT
+    explanation: Model license can be found at https://github.com/deepseek-ai/DeepSeek-Coder/blob/main/LICENSE-MODEL.
+      Code license is under MIT
     value: custom
   intended_uses: ''
   prohibited_uses: ''
   monitoring: unknkown
   feedback: https://huggingface.co/deepseek-ai/deepseek-coder-33b-base/discussions
-

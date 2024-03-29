@@ -49,22 +49,36 @@
 - type: model
   name: DBRX
   organization: Databricks
-  description: DBRX is a transformer-based decoder-only large language model (LLM) that was trained using next-token prediction by Databricks. It uses a fine-grained mixture-of-experts (MoE) architecture with 132B total parameters of which 36B parameters are active on any input. DBRX only accepts text-based inputs and produces text-based outputs.
+  description: DBRX is a transformer-based decoder-only large language model (LLM)
+    that was trained using next-token prediction by Databricks. It uses a fine-grained
+    mixture-of-experts (MoE) architecture with 132B total parameters of which 36B
+    parameters are active on any input. DBRX only accepts text-based inputs and
+    produces text-based outputs.
   created_date: 2024-03-27
   url: https://www.databricks.com/blog/introducing-dbrx-new-state-art-open-llm
   model_card: https://huggingface.co/databricks/dbrx-base
   modality: text; text
-  analysis: DBRX outperforms established open-source and open-weight base models on the Databricks Model Gauntlet, the Hugging Face Open LLM Leaderboard, and HumanEval. Full evaluation details can be found in the corresponding technical blog post. 
+  analysis: DBRX outperforms established open-source and open-weight base models
+    on the Databricks Model Gauntlet, the Hugging Face Open LLM Leaderboard, and
+    HumanEval. Full evaluation details can be found in the corresponding technical
+    blog post.
   size: 132B parameters (sparse)
   dependencies: []
   training_emissions: unknown
   training_time: 3 months
   training_hardware: 3072 NVIDIA H100s connected by 3.2Tbps Infiniband
-  quality_control: Recommendations provided for retrieval augmented generation (RAG) in scenarios where accuracy and fidelity are important and additional testing around safety in the context of the specific application and domain is suggested. 
+  quality_control: Recommendations provided for retrieval augmented generation (RAG)
+    in scenarios where accuracy and fidelity are important and additional testing
+    around safety in the context of the specific application and domain is suggested.
   access: open
   license: Databricks Open Model License
-  intended_uses: DBRX models are open, general-purpose LLMs intended and licensed for both commercial and research applications. They can be further fine-tuned for various domain-specific natural language and coding tasks. 
-  prohibited_uses: DBRX models are not intended to be used out-of-the-box in non-English languages, and do not support native code execution, function calling or any use that violates applicable laws or regulations or is otherwise prohibited by the Databricks Open Model License and Databricks Open Model Acceptable Use Policy. 
+  intended_uses: DBRX models are open, general-purpose LLMs intended and licensed
+    for both commercial and research applications. They can be further fine-tuned
+    for various domain-specific natural language and coding tasks.
+  prohibited_uses: DBRX models are not intended to be used out-of-the-box in non-English
+    languages, and do not support native code execution, function calling or any
+    use that violates applicable laws or regulations or is otherwise prohibited
+    by the Databricks Open Model License and Databricks Open Model Acceptable Use
+    Policy.
   monitoring: unknown
   feedback: https://huggingface.co/databricks/dbrx-base/discussions
-
