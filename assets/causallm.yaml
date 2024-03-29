@@ -1,0 +1,24 @@
+---
+- type: model
+  name: CausalLM
+  organization: CausalLM
+  description: CausalLM is an LLM based on the model weights of Qwen and trained on a model architecture identical to LLaMA 2.
+  created_date: 2023-10-21
+  url: https://huggingface.co/CausalLM/14B
+  model_card: https://huggingface.co/CausalLM/14B
+  modality: text; text
+  analysis: Evaluated on standard benchmarks across a range of tasks.
+  size: 14B parameters (dense)
+  dependencies: [Qwen, OpenOrca, Open Platypus]
+  training_emissions: unknown
+  training_time: unknown
+  training_hardware: unknown
+  quality_control: ''
+  access: open
+  license: 
+    explanation: can be found at https://github.com/rpherrera/WTFPL (HuggingFace lists this to be the license)
+    value: WTFPL
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: unknown
+  feedback: none

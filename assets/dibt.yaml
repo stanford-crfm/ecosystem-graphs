@@ -16,7 +16,7 @@
   quality_control: ''
   access: open
   license: unknown
-  intended_uses: 	Training and evaluating language models on prompt ranking tasks and as a dataset that can be filtered only to include high-quality prompts. These can serve as seed data for generating synthetic prompts and generations.
+  intended_uses: Training and evaluating language models on prompt ranking tasks and as a dataset that can be filtered only to include high-quality prompts. These can serve as seed data for generating synthetic prompts and generations.
   prohibited_uses: This dataset only contains rankings for prompts, not prompt/response pairs so it is not suitable for direct use for supervised fine-tuning of language models.
   monitoring: ''
   feedback: https://huggingface.co/datasets/DIBT/10k_prompts_ranked/discussions

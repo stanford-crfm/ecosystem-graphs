@@ -1,0 +1,64 @@
+---
+- type: model
+  name: RWKV World 4
+  organization: RWKV
+  description: RWKV World 4 is an RNN with GPT-level LLM performance, which can also be directly trained like a GPT transformer (parallelizable).
+  created_date: 2023-05-03
+  url: https://huggingface.co/RWKV/rwkv-4-world-7b
+  model_card: https://huggingface.co/RWKV/rwkv-4-world-7b
+  modality: text; text
+  analysis: none
+  size: 7B parameters (dense)
+  dependencies: []
+  training_emissions: unknown
+  training_time: unknown
+  training_hardware: unknown
+  quality_control: ''
+  access: open
+  license: Apache 2.0
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: unknown
+  feedback: https://huggingface.co/RWKV/rwkv-4-world-7b/discussions
+- type: model
+  name: RWKV 4 Pile
+  organization: RWKV
+  description: RWKV 4 Pile is an RNN with GPT-level LLM performance, which can also be directly trained like a GPT transformer (parallelizable).
+  created_date: 2023-05-15
+  url: https://huggingface.co/RWKV/rwkv-4-14b-pile
+  model_card: https://huggingface.co/RWKV/rwkv-4-14b-pile
+  modality: text; text
+  analysis: none
+  size: 14B parameters (dense)
+  dependencies: []
+  training_emissions: unknown
+  training_time: unknown
+  training_hardware: unknown
+  quality_control: ''
+  access: open
+  license: Apache 2.0
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: unknown
+  feedback: https://huggingface.co/RWKV/rwkv-4-14b-pile/discussions
+- type: model
+  name: RWKV World 5
+  organization: RWKV
+  description: RWKV World 5 is an RNN with GPT-level LLM performance, which can also be directly trained like a GPT transformer (parallelizable).
+  created_date: 2023-12-16
+  url: https://huggingface.co/RWKV/rwkv-5-world-3b
+  model_card: https://huggingface.co/RWKV/rwkv-5-world-3b
+  modality: text; text
+  analysis: none
+  size: 3B parameters (dense)
+  dependencies: []
+  training_emissions: unknown
+  training_time: unknown
+  training_hardware: unknown
+  quality_control: ''
+  access: open
+  license: Apache 2.0
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: unknown
+  feedback: https://huggingface.co/RWKV/rwkv-5-world-3b/discussions

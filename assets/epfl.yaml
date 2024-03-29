@@ -1,7 +1,7 @@
 ---
 - type: model
   name: MediTron
-  organization: EPFL, Idiap Research Institute, Open Assistant, Yale
+  organization: EPFL, Idiap Research Institute, OpenAssistant, Yale
   description: Meditron is a large-scale medical LLM that remains open-source.
   created_date: 2023-11-27
   url: https://arxiv.org/pdf/2311.16079.pdf

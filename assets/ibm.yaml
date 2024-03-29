@@ -35,7 +35,7 @@
     machine learning into a powerful studio spanning the AI lifecycle.
   created_date: 2023-09-07
   url: https://www.ibm.com/products/watsonx-ai
-  dependencies: []
+  dependencies: [Granite]
   adaptation: ''
   output_space: deployed AI models
   quality_control: ''
@@ -51,3 +51,24 @@
   monthly_active_users: ''
   user_distribution: ''
   failures: ''
+- type: model
+  name: Granite
+  organization: IBM
+  description: Granite is a set of multi-size foundation models that apply generative AI to both language and code.
+  created_date: 2023-09-28
+  url: https://www.ibm.com/blog/building-ai-for-business-ibms-granite-foundation-models/
+  model_card: none
+  modality: text; code, text
+  analysis: unknown
+  size: 13B parameters (dense)
+  dependencies: []
+  training_emissions: unknown
+  training_time: unknown
+  training_hardware: unknown
+  quality_control: Training data passed through IBM HAP detector, language model designed to remove harmful content. Data also deduplicated and filtered for document quality.
+  access: limited
+  license: ''
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''

@@ -45,7 +45,7 @@
   analysis: Evaluated on English and coding tasks and benchmarks, and outperforms
     LLaMA 2 in some.
   size: 7B parameters (dense)
-  dependencies: [SlimPajama dataset, StarCoder]
+  dependencies: [SlimPajama, StarCoder]
   training_emissions: unknown
   training_time: unknown
   training_hardware: Trained on the Cerebras Condor Galaxy 1 (CG-1), a 4 exaFLOPS,

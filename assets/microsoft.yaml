@@ -882,3 +882,26 @@
   prohibited_uses: ''
   monitoring: none
   feedback: https://huggingface.co/microsoft/phi-1_5/discussions
+- type: model
+  name: Orca 2
+  organization: Microsoft
+  description: Orca 2 is a finetuned version of LLAMA-2 for research purposes.
+  created_date: 2023-11-21
+  url: https://arxiv.org/pdf/2311.11045.pdf
+  model_card: https://huggingface.co/microsoft/Orca-2-13b
+  modality: text; text
+  analysis: Orca 2 has been evaluated on a large number of tasks ranging from reasoning to grounding and safety.
+  size: 13B parameters (dense)
+  dependencies: [LLaMA 2]
+  training_emissions: unknown
+  training_time: 80 hours
+  training_hardware: 32 NVIDIA A100 80GB GPUs
+  quality_control: ''
+  access: open
+  license:
+    explanation: can be found at https://huggingface.co/microsoft/Orca-2-13b/blob/main/LICENSE
+    value: custom
+  intended_uses: Orca 2 is built for research purposes only. The main purpose is to allow the research community to assess its abilities and to provide a foundation for building better frontier models.
+  prohibited_uses: Any purposes other than research.
+  monitoring: unknown
+  feedback: https://huggingface.co/microsoft/Orca-2-13b/discussions

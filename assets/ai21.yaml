@@ -295,3 +295,24 @@
   monthly_active_users: unknown
   user_distribution: unknown
   failures: unknown
+- type: model
+  name: Jamba
+  organization: AI21 Labs
+  description: Jamba is a state-of-the-art, hybrid SSM-Transformer LLM. Jamba is the world’s first production-grade Mamba based model.
+  created_date: 2024-03-28
+  url: https://www.ai21.com/blog/announcing-jamba
+  model_card: https://huggingface.co/ai21labs/Jamba-v0.1
+  modality: text; text
+  analysis: Jamba outperforms or matches other state-of-the-art models in its size class on a wide range of benchmarks.
+  size: 52B parameters (sparse)
+  dependencies: []
+  training_emissions: unknown
+  training_time: unknown
+  training_hardware: unknown
+  quality_control: ''
+  access: open
+  license: Apache 2.0
+  intended_uses: intended for use as a foundation layer for fine tuning, training
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: https://huggingface.co/ai21labs/Jamba-v0.1/discussions

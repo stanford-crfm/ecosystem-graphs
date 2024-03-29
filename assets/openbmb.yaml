@@ -1,0 +1,69 @@
+---
+- type: model
+  name: CPM Bee
+  organization: OpenBMB
+  description: CPM-Bee is a fully open-source, commercially-usable Chinese-English bilingual base model with a capacity of ten billion parameters.
+  created_date: 2023-05-27
+  url: https://github.com/OpenBMB/CPM-Bee
+  model_card: https://huggingface.co/openbmb/cpm-bee-10b
+  modality: text; text
+  analysis: Evaluated on English and Chinese language benchmarks.
+  size: 10B parameters (dense)
+  dependencies: []
+  training_emissions: unknown
+  training_time: unknown
+  training_hardware: unknown
+  quality_control: ''
+  access: open
+  license:
+    explanation: can be found at https://github.com/OpenBMB/CPM-Bee/blob/main/README_en.md#modellicense
+    value: custom
+  intended_uses: You can use the raw model for many NLP tasks like text generation or fine-tune it to a downstream task.
+  prohibited_uses: ''
+  monitoring: unknown
+  feedback: https://huggingface.co/openbmb/cpm-bee-10b/discussions
+- type: dataset
+  name: UltraFeedback
+  organization: OpenBMB
+  description: UltraFeedback is a large-scale, fine-grained, diverse preference dataset, used for training powerful reward models and critic models.
+  created_date: 2023-09-26
+  url: https://github.com/OpenBMB/UltraFeedback
+  datasheet: https://huggingface.co/datasets/openbmb/UltraFeedback
+  modality: text
+  size: 256k samples
+  sample: []
+  analysis: Randomly chosen models trained on UltraFeedback evaluated across standard benchmarks.
+  dependencies: []
+  included: ''
+  excluded: ''
+  quality_control: ''
+  access: open
+  license: MIT
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: unknown
+  feedback: https://huggingface.co/datasets/openbmb/UltraFeedback/discussions
+- type: model
+  name: MiniCPM
+  organization: OpenBMB
+  description: MiniCPM is an End-Side LLM developed by ModelBest Inc. and TsinghuaNLP, with only 2.4B parameters excluding embeddings (2.7B in total).
+  created_date: 2024-02-01
+  url: https://github.com/OpenBMB/MiniCPM/
+  model_card: https://huggingface.co/openbmb/MiniCPM-V
+  modality: text; text
+  analysis: Evaluated on open-sourced general benchmarks in comparison to SotA LLMs. 
+  size: 2.4B parameters (dense)
+  dependencies: []
+  training_emissions: unknown
+  training_time: unknown
+  training_hardware: unknown
+  quality_control: ''
+  access: open
+  license: 
+    explanation: can be found at https://github.com/OpenBMB/General-Model-License/tree/main
+    value: custom
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: unknown
+  feedback: https://huggingface.co/openbmb/MiniCPM-V/discussions
+

@@ -1,0 +1,22 @@
+---
+- type: model
+  name: SauerkrautLM
+  organization: VAGO Solutions
+  description: SauerkrautLM is a German language model merged from two Mistral derivatives.
+  created_date: 2023-11-28
+  url: https://huggingface.co/VAGOsolutions/SauerkrautLM-7b-HerO
+  model_card: https://huggingface.co/VAGOsolutions/SauerkrautLM-7b-HerO
+  modality: text; text
+  analysis: Evaluated on standard benchmarks in comparison to other German language models.
+  size: 7B parameters (dense)
+  dependencies: [OpenHermes 2.5 Mistral, OpenOrca Mistral]
+  training_emissions: unknown
+  training_time: unknown
+  training_hardware: unknown
+  quality_control: ''
+  access: open
+  license: Apache 2.0
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: unknown
+  feedback: https://huggingface.co/VAGOsolutions/SauerkrautLM-7b-HerO/discussions
