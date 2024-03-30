@@ -13,16 +13,16 @@
   size: 15.5B parameters (dense)
   dependencies: [The Stack]
   training_emissions: 16.68 tons of CO2eq
-  training_time: 2 days
-  training_hardware: 64 NVIDIA A100 GPUs
+  training_time: StarCoderBase: 320,256 GPU hours
+  training_hardware: 512 A100 80GB GPUs distributed across 64 nodes
   quality_control: No specific quality control is mentioned in model training, though
     details on data processing and how the tokenizer was trained are provided in
     the paper.
   access: open
-  license: Apache 2.0
-  intended_uses: With a Tech Assistant prompt and not as an instruction model given
+  license: BigCode Open RAIL-M v1.0
+  intended_uses: As a foundation model to fine-tune and create more specialized models that support use cases such as code completion, fill-in-the-middle, and text summarization. Can also be used as a Tech Assistant prompt and not as an instruction model given
     training limitations.
-  prohibited_uses: ''
+  prohibited_uses: 'See BigCode Open RAIL-M license and FAQ'
   monitoring: ''
   feedback: https://huggingface.co/bigcode/starcoder/discussions
 - type: model
@@ -32,32 +32,31 @@
     analysis on Github stars' association to data quality.
   created_date: 2023-02-24
   url: https://arxiv.org/pdf/2301.03988.pdf
-  model_card: ''
+  model_card: 'https://huggingface.co/bigcode/santacoder'
   modality: code; code
   analysis: Evaluated on MultiPL-E system benchmarks.
   size: 1.1B parameters (dense)
   dependencies: [The Stack, BigCode Dataset]
-  training_emissions: ''
-  training_time: 3.1 days
+  training_emissions: '124 kg of CO2eq'
+  training_time: 14,284 GPU hours
   training_hardware: 96 NVIDIA Tesla V100 GPUs
   quality_control: ''
   access: open
-  license: Apache 2.0
-  intended_uses: ''
-  prohibited_uses: ''
+  license: BigCode Open RAIL-M v1
+  intended_uses: 'The model was trained on GitHub code. As such it is not an instruction model and commands like "Write a function that computes the square root." do not work well. You should phrase commands like they occur in source code such as comments (e.g. # the following function computes the sqrt) or write a function signature and docstring and let the model complete the function body.'
+  prohibited_uses: 'See BigCode Open RAIL-M license and FAQ'
   monitoring: ''
-  feedback: ''
+  feedback: 'https://huggingface.co/bigcode/santacoder/discussions'
 - type: dataset
   name: The Stack
   organization: BigCode
-  description: The Stack is a 3.1 TB dataset consisting of permissively licensed
-    source code inteded for use in creating code LLMs.
+  description: The Stack contains over 6TB of permissively-licensed source code files covering 358 programming languages. The Stack serves as a pre-training dataset for Code LLMs, i.e., code-generating AI systems which enable the synthesis of programs from natural language descriptions as well as other from code snippets.
   created_date: 2022-11-20
   url: https://arxiv.org/pdf/2211.15533.pdf
   datasheet: https://huggingface.co/datasets/bigcode/the-stack
   modality: code
-  size: 3.1 TB
-  sample: []
+  size: 6 TB
+  sample: [https://huggingface.co/datasets/bigcode/the-stack/viewer/default/train]
   analysis: Evaluated models trained on The Stack on HumanEval and MBPP and compared
     against similarly-sized models.
   dependencies: [GitHub]
@@ -66,22 +65,21 @@
   quality_control: allowed users whose data were part of The Stack's training data
     to opt-out
   access: open
-  license: Apache 2.0
+  license: The Stack is a collection of source code from repositories with various licenses. Any use of all or part of the code gathered in The Stack must abide by the terms of the original licenses, including attribution clauses when relevant. Provenance information is provided for each data point.
   intended_uses: creating code LLMs
-  prohibited_uses: ''
+  prohibited_uses: 'See https://huggingface.co/datasets/bigcode/the-stack'
   monitoring: ''
-  feedback: ''
+  feedback: 'https://huggingface.co/datasets/bigcode/the-stack/discussions'
 - type: model
-  name: StarCoder2
+  name: StarCoder2-15B
   organization: BigCode
-  description: A 15 billion parameter language model trained on 600+ programming
-    languages from The Stack v2. The training was carried out using the Fill-in-the-Middle
+  description: StarCoder2-15B model is a 15B parameter model trained on 600+ programming languages from The Stack v2, with opt-out requests excluded. The training was carried out using the Fill-in-the-Middle
     objective on 4+ trillion tokens.
   created_date: 2024-02-28
   url: https://www.servicenow.com/company/media/press-room/huggingface-nvidia-launch-starcoder2.html
   model_card: https://huggingface.co/bigcode/starcoder2-15b
-  modality: text; text
-  analysis: unknown
+  modality: code; text
+  analysis: See https://arxiv.org/pdf/2402.19173.pdf
   size: 15B parameters (dense)
   dependencies: [The Stack v2]
   training_emissions: unknown
@@ -92,9 +90,56 @@
     came from to apply the proper attribution.
   access: open
   license: BigCode OpenRail-M
-  intended_uses: Intended to generate code snippets from given context, but not
+  intended_uses: The model was trained on GitHub code as well as additional selected data sources such as Arxiv and Wikipedia. As such it is not an instruction model and commands like "Write a function that computes the square root." do not work well. Intended to generate code snippets from given context, but not
     for writing actual functional code directly.
-  prohibited_uses: Should not be used as a way to write fully functioning code without
-    modification or verification.
+  prohibited_uses: 'See BigCode Open RAIL-M license and FAQ'
   monitoring: unknown
   feedback: https://huggingface.co/bigcode/starcoder2-15b/discussions
+- type: model
+  name: StarCoder2-7B
+  organization: BigCode
+  description: StarCoder2-7B model is a 7B parameter model trained on 17 programming languages from The Stack v2, with opt-out requests excluded. The model uses Grouped Query Attention, a context window of 16,384 tokens with a sliding window attention of 4,096 tokens, and was trained using the Fill-in-the-Middle objective on 3.5+ trillion tokens.
+  created_date: 2024-02-28
+  url: https://www.servicenow.com/company/media/press-room/huggingface-nvidia-launch-starcoder2.html
+  model_card: https://huggingface.co/bigcode/starcoder2-7b
+  modality: code; text
+  analysis: See https://arxiv.org/pdf/2402.19173.pdf
+  size: 7B parameters (dense)
+  dependencies: [The Stack v2]
+  training_emissions: 29,622.83 kgCO2eq
+  training_time: 145,152 hours (cumulative)
+  training_hardware: 432 H100 GPUs
+  quality_control: The model was filtered for permissive licenses and code with
+    no license only. A search index is provided to identify where generated code
+    came from to apply the proper attribution.
+  access: open
+  license: BigCode OpenRail-M
+  intended_uses: Intended to generate code snippets from given context, but not
+    for writing actual functional code directly. The model has been trained on source code from 17 programming languages. The predominant language in source is English although other languages are also present. As such the model is capable of generating code snippets provided some context but the generated code is not guaranteed to work as intended. It can be inefficient and contain bugs or exploits. See the paper for an in-depth discussion of the model limitations. 
+  prohibited_uses: 'See BigCode Open RAIL-M license and FAQ'
+  monitoring: unknown
+  feedback: https://huggingface.co/bigcode/starcoder2-7b/discussions
+- type: model
+  name: StarCoder2-3B
+  organization: BigCode
+  description: StarCoder2-3B model is a 3B parameter model trained on 17 programming languages from The Stack v2, with opt-out requests excluded. The model uses Grouped Query Attention, a context window of 16,384 tokens with a sliding window attention of 4,096 tokens, and was trained using the Fill-in-the-Middle objective on 3+ trillion tokens.
+  created_date: 2024-02-28
+  url: https://www.servicenow.com/company/media/press-room/huggingface-nvidia-launch-starcoder2.html
+  model_card: https://huggingface.co/bigcode/starcoder2-3b
+  modality: code; text
+  analysis: See https://arxiv.org/pdf/2402.19173.pdf
+  size: 3B parameters (dense)
+  dependencies: [The Stack v2]
+  training_emissions:  16,107.01 kgCO2eq
+  training_time: 97,120 hours (cumulative)
+  training_hardware: 160 A100 GPUs
+  quality_control: The model was filtered for permissive licenses and code with
+    no license only. A search index is provided to identify where generated code
+    came from to apply the proper attribution.
+  access: open
+  license: BigCode OpenRail-M
+  intended_uses: Intended to generate code snippets from given context, but not
+    for writing actual functional code directly. The model has been trained on source code from 17 programming languages. The predominant language in source is English although other languages are also present. As such the model is capable of generating code snippets provided some context but the generated code is not guaranteed to work as intended. It can be inefficient and contain bugs or exploits. See the paper for an in-depth discussion of the model limitations. 
+  prohibited_uses: 'See BigCode Open RAIL-M license and FAQ'
+  monitoring: unknown
+  feedback: https://huggingface.co/bigcode/starcoder2-3b/discussions
