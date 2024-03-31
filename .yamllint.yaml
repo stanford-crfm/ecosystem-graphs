@@ -20,7 +20,8 @@ rules:
   empty-lines: enable
   empty-values: disable
   hyphens: enable
-  indentation: enable
+  indentation:
+    level: warning
   key-duplicates: enable
   key-ordering: disable
   line-length: disable
