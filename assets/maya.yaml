@@ -2,12 +2,14 @@
 - type: model
   name: GodziLLa 2
   organization: Maya Philippines
-  description: GodziLLa 2 is an experimental combination of various proprietary LoRAs from Maya Philippines and Guanaco LLaMA 2 1K dataset, with LLaMA 2.
+  description: GodziLLa 2 is an experimental combination of various proprietary 
+    LoRAs from Maya Philippines and Guanaco LLaMA 2 1K dataset, with LLaMA 2.
   created_date: 2023-08-11
   url: https://huggingface.co/MayaPH/GodziLLa2-70B
   model_card: https://huggingface.co/MayaPH/GodziLLa2-70B
   modality: text; text
-  analysis: Evaluated on the OpenLLM leaderboard, releasing at rank number 4 on the leaderboard.
+  analysis: Evaluated on the OpenLLM leaderboard, releasing at rank number 4 
+    on the leaderboard.
   size: 70B parameters (dense)
   dependencies: [LLaMA 2, Guanaco LLaMA dataset]
   training_emissions: unknown
