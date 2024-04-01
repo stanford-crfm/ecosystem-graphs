@@ -7,8 +7,7 @@
   url: https://huggingface.co/MayaPH/GodziLLa2-70B
   model_card: https://huggingface.co/MayaPH/GodziLLa2-70B
   modality: text; text
-  analysis: Evaluated on the OpenLLM leaderboard, releasing at rank number 4 on
-    the leaderboard.
+  analysis: Evaluated on the OpenLLM leaderboard, releasing at rank number 4 on the leaderboard.
   size: 70B parameters (dense)
   dependencies: [LLaMA 2, Guanaco LLaMA dataset]
   training_emissions: unknown
