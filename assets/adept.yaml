@@ -3,7 +3,7 @@
   name: ACT-1
   organization: Adept
   description: ACT-1 (ACtion Transformer) is a large-scale transformer model designed
-    and trained specifically for taking actions on computers (use software tools,
+    and trained specifically for taking actions on computers (use software tools
     APIs and websites) in response to the user's natural language commands.
   created_date:
     explanation: The date the model was announced in the [[Adept blog post]](https://www.adept.ai/blog/act-1).
