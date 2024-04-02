@@ -1,5 +1,5 @@
 [tool.yamlfix]
-line_length         = 800
+line_length         = 200
 none_representation = "Unknown"
 flow_style_sequence = "false"
 explicit_start      = "true"
