@@ -553,10 +553,13 @@ function renderAssetsGraph(nameToAsset) {
 
 // UI Helpers
 
-function toggleExplanation(button) {
-  const newText = $(button).text() === "Show Field Details" ? "Hide Field Details" : "Show Field Details"
-  $(".field-explanation").toggle();
-  $(button).text(newText);
+function downloadCSV() {
+  var downloadLink = document.createElement('a');
+  downloadLink.href = 'resources/all_assets.csv';
+  downloadLink.download = 'assets.csv';
+  document.body.appendChild(downloadLink);
+  downloadLink.click();
+  document.body.removeChild(downloadLink);
 }
 
 function setUpSearch() {
