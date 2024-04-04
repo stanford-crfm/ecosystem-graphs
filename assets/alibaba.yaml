@@ -95,9 +95,9 @@
   url: https://qwenlm.github.io/blog/qwen1.5/
   model_card: https://huggingface.co/Qwen/Qwen1.5-72B
   modality: text; text
-  analysis: Base models are evaluated on MMLU, C-Eval, GSM8K, MATH, HumanEval, MBPP, BBH, CMMLU,
-    all standard English and Chinese benchmarks, and chat models are evaluated on Chatbot Arena, 
-    AlpacaEval, MT-Bench, etc.
+  analysis: Base models are evaluated on MMLU, C-Eval, GSM8K, MATH, HumanEval, MBPP,
+    BBH, CMMLU, all standard English and Chinese benchmarks, and chat models are
+    evaluated on Chatbot Arena, AlpacaEval, MT-Bench, etc.
   size: 72B parameters (dense)
   dependencies: []
   training_emissions: unknown
@@ -118,15 +118,15 @@
   organization: Qwen Team
   description: Qwen 1.5 is the next iteration in their Qwen series, consisting of
     Transformer-based large language models pretrained on a large volume of data,
-    including web texts, books, codes, etc. Qwen 1.5 MoE is the MoE model of the Qwen
-    1.5 series.
+    including web texts, books, codes, etc. Qwen 1.5 MoE is the MoE model of the
+    Qwen 1.5 series.
   created_date: 2024-03-28
   url: https://qwenlm.github.io/blog/qwen-moe/
   model_card: https://huggingface.co/Qwen/Qwen1.5-MoE-A2.7B
   modality: text; text
-  analysis: Base models are evaluated on MMLU, C-Eval, GSM8K, MATH, HumanEval, MBPP, BBH, CMMLU,
-    all standard English and Chinese benchmarks, and chat models are evaluated on Chatbot Arena, 
-    AlpacaEval, MT-Bench, etc.
+  analysis: Base models are evaluated on MMLU, C-Eval, GSM8K, MATH, HumanEval, MBPP,
+    BBH, CMMLU, all standard English and Chinese benchmarks, and chat models are
+    evaluated on Chatbot Arena, AlpacaEval, MT-Bench, etc.
   size: 14B parameters with 2.7B parameters for activation (MoE)
   dependencies: []
   training_emissions: unknown
