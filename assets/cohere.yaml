@@ -543,7 +543,9 @@
     behavior to human preferences for helpfulness and safety. Command R is part
     of a family of open weight releases from Cohere and Cohere For AI. Its larger
     companion model is [Command R+](https://huggingface.co/CohereForAI/c4ai-command-r-plus).
-  created_date: 2024-03-11
+  created_date:
+    explanation: The date that Command R was announced.
+    value: 2024-03-11
   url: https://txt.cohere.com/command-r/
   model_card: https://huggingface.co/CohereForAI/c4ai-command-r-v01
   modality: text; text
