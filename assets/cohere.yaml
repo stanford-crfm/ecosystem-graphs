@@ -156,8 +156,6 @@
       \ but a generic contact email is provided on Cohere website, which is support\
       \ at cohere.ai.\n"
     value: unknown
-
-
 - type: model
   name: Cohere Embed (English)
   organization: Cohere
