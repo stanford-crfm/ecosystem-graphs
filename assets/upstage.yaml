@@ -1,0 +1,22 @@
+---
+- type: model
+  name: SOLAR 
+  organization: Upstage.ai 
+  description: We present a methodology for scaling LLMs called depth up-scaling (DUS) , which encompasses architectural modifications and continued pretraining. In other words, we integrated Mistral 7B weights into the upscaled layers, and finally, continued pre-training for the entire model. SOLAR-10.7B has remarkable performance. It outperforms models with up to 30B parameters, even surpassing the recent Mixtral 8X7B model. For detailed information, please refer to the experimental table. Solar 10.7B is an ideal choice for fine-tuning. SOLAR-10.7B offers robustness and adaptability for your fine-tuning needs. Our simple instruction fine-tuning using the SOLAR-10.7B pre-trained model yields significant performance improvements (SOLAR-10.7B-Instruct-v1.0).
+  created_date: 2023
+  url: https://arxiv.org/abs/2312.15166 
+  model_card: https://huggingface.co/upstage/SOLAR-10.7B-v1.0 
+  modality: text; text
+  analysis: 
+  size: 10.7B 
+  dependencies: []
+  training_emissions: 
+  training_time: 
+  training_hardware: 
+  quality_control: ''
+  access: 
+  license: 
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: 
+  feedback: https://www.upstage.ai/solar-llm 
