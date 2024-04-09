@@ -354,6 +354,9 @@ function renderFieldName(fieldName) {
   // Capitalizes and removes '_' from a fieldName (which should be a field name
   // from the schema, such as created_date, name, etc.)
   const capitalized = fieldName.charAt(0).toUpperCase() + fieldName.slice(1);
+  if (capitalized === 'Modality') {
+    return 'Modality (In; Out)'
+  }
   return capitalized.replace('_', ' ');
 }
 
@@ -419,7 +422,7 @@ function renderCustomTable(selectedAssets, allNameToAsset, columnNames) {
 function renderAssetsTable(nameToAsset) {
   // Render the table
   const columnNames = [
-    'type', 'name', 'organization', 'created_date', 'size', 'access', 'license',
+    'type', 'name', 'organization', 'created_date', 'size', 'modality', 'access', 'license',
     'dependencies',
   ];
   const assets = Object.keys(nameToAsset).map((key) => (nameToAsset[key]));
@@ -550,10 +553,13 @@ function renderAssetsGraph(nameToAsset) {
 
 // UI Helpers
 
-function toggleExplanation(button) {
-  const newText = $(button).text() === "Show Field Details" ? "Hide Field Details" : "Show Field Details"
-  $(".field-explanation").toggle();
-  $(button).text(newText);
+function downloadCSV() {
+  var downloadLink = document.createElement('a');
+  downloadLink.href = 'resources/all_assets.csv';
+  downloadLink.download = 'assets.csv';
+  document.body.appendChild(downloadLink);
+  downloadLink.click();
+  document.body.removeChild(downloadLink);
 }
 
 function setUpSearch() {
