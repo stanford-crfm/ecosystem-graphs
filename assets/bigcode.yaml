@@ -45,11 +45,10 @@
   quality_control: ''
   access: open
   license: BigCode Open RAIL-M v1
-  intended_uses: 'The model was trained on GitHub code. As such it is not an instruction
-    model and commands like "Write a function that computes the square root." do
-    not work well. You should phrase commands like they occur in source code such
-    as comments (e.g. # the following function computes the sqrt) or write a function
-    signature and docstring and let the model complete the function body.'
+  intended_uses: The model was trained on GitHub code. As such it is not an instruction
+    model and commands do not work well. You should phrase commands like they occur
+    in source code such as comments or write a function signature and docstring
+    and let the model complete the function body.
   prohibited_uses: See BigCode Open RAIL-M license and FAQ
   monitoring: ''
   feedback: https://huggingface.co/bigcode/santacoder/discussions
