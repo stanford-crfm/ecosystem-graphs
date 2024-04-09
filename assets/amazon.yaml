@@ -52,3 +52,37 @@
   prohibited_uses: ''
   monitoring: ''
   feedback: https://huggingface.co/amazon/FalconLite2/discussions
+- type: model
+  name: Chronos
+  organization: Amazon
+  description: Chronos is a family of pretrained time series forecasting models
+    based on language model architectures. A time series is transformed into a sequence
+    of tokens via scaling and quantization, and a language model is trained on these
+    tokens using the cross-entropy loss. Once trained, probabilistic forecasts are
+    obtained by sampling multiple future trajectories given the historical context.
+  created_date: 2024-03-13
+  url: https://github.com/amazon-science/chronos-forecasting
+  model_card: https://huggingface.co/amazon/chronos-t5-large
+  modality: time-series; time-series
+  analysis: Chronos has been evaluated comprehensively on 42 datasets both in the
+    in-domain (15 datasets) and zero-shot settings (27 datasets). Chronos outperforms
+    task specific baselines in the in-domain setting and is competitive or better
+    than trained models in the zero-shot setting.
+  size: 710M parameters (dense)
+  dependencies: [T5]
+  training_emissions: ''
+  training_time: 63 hours on p4d.24xlarge EC2 instance
+  training_hardware: 8 NVIDIA A100 40G GPUs
+  quality_control: Chronos was evaluated rigorously on 42 datasets, including 27
+    in the zero-shot setting against a variety of statistical and deep learning
+    baselines.
+  access: open
+  license: Apache 2.0
+  intended_uses: Chronos can be used for zero-shot time series forecasting on univariate
+    time series from arbitrary domains and with arbitrary horizons. Chronos models
+    can also be fine-tuned for improved performance of specific datasets. Embeddings
+    from Chronos encoder may also be useful for other time series analysis tasks
+    such as classification, clustering, and anomaly detection.
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: https://github.com/amazon-science/chronos-forecasting/discussions
