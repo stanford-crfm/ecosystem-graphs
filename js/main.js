@@ -777,6 +777,7 @@ function loadAssetsAndRenderPageContent() {
     'assets/stonybrook.yaml',
     'assets/tiger.yaml',
     'assets/together.yaml',
+    'assets/tokyo.yaml',
     'assets/trevor.yaml',  
     'assets/triml.yaml',  
     'assets/tsinghua.yaml',

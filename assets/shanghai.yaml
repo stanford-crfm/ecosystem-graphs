@@ -127,3 +127,46 @@
   prohibited_uses: ''
   monitoring: unknown
   feedback: none
+- type: model
+  name: CosmicMan
+  organization: Shanghai AI Laboratory
+  description: CosmicMan is a text-to-image foundation model specialized for generating high-fidelity human images with meticulous appearance, reasonable structure, and precise text-image alignment.
+  created_date: 2024-04-01
+  url: https://cosmicman-cvpr2024.github.io/
+  model_card: none
+  modality: text; image
+  analysis: The model was compared with SOTAs and has shown good performance in generating high-quality human images.
+  size: unknown
+  dependencies: [CosmicMan-HQ 1.0]
+  training_emissions: unknown
+  training_time: 1 week
+  training_hardware: 32 80G NVIDIA A100 GPUs
+  quality_control: The quality control measures taken include modeling the relationship between dense text descriptions and image pixels in a decomposed manner and enforcing attention refocusing without adding extra modules. 
+  access: open
+  license: unknown
+  intended_uses: The model is intended to generate high-quality, photorealistic human images from text descriptions. Applications include avatar generation and potentially virtual reality and video game character creation.
+  prohibited_uses: unknown
+  monitoring: unknown
+  feedback: unknown
+
+- type: dataset
+  name: CosmicMan-HQ 1.0
+  organization: Shanghai AI Laboratory
+  description: CosmicMan-HQ 1.0 is a large-scale dataset with 6 million high-quality, real-world human images.
+  created_date: 2024-04-28
+  url: https://arxiv.org/pdf/2404.01294
+  datasheet: none
+  modality: image
+  size: 6 million images
+  sample: []
+  analysis: Compared to other human image datasets on data quantity, image quality, and annotations.
+  dependencies: []
+  included: ''
+  excluded: ''
+  quality_control: unknown
+  access: open
+  license: unknown
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: unknown
+  feedback: none

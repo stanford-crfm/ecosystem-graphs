@@ -296,3 +296,24 @@
   prohibited_uses: ''
   monitoring: none
   feedback: https://huggingface.co/datasets/EleutherAI/proof-pile-2/discussions
+- type: model
+  name: Pile-T5
+  organization: EleutherAI
+  description: Pile-T5 is a version of the broadly used T5 model, but improved to eliminate weaknesses such as the omission of crucial code-related tokens. It utilizes LLaMA tokenizer and is trained on the Pile, offering enhancements for finetuning on downstream tasks, particularly those involving code.
+  created_date: 2024-04-15
+  url: https://blog.eleuther.ai/pile-t5/
+  model_card: none
+  modality: text; text
+  analysis: The models were evaluated on SuperGLUE, CodeXGLUE, as well as MMLU and Bigbench Hard. Comparisons were made with T5v1.1 and found that Pile-T5 models performed better in most conditions.
+  size: unknown
+  dependencies: [The Pile, T5x, LLaMA, umT5]
+  training_emissions: unknown
+  training_time: 2 million steps
+  training_hardware: unknown
+  quality_control: ''
+  access: open
+  license: unknown
+  intended_uses: The model is aimed at downstream tasks that benefit from the encoder-decoder architecture. Particularly useful for tasks involving code.
+  prohibited_uses: unknown
+  monitoring: unknown
+  feedback: unknown

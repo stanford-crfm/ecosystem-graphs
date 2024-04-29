@@ -319,9 +319,9 @@
   monitoring: ''
   feedback: ''
 - type: model
-  name: LLaMA 2
+  name: Llama 2
   organization: Meta
-  description: LLaMA 2 is an updated version of LLaMA trained on a new mix of publicly
+  description: Llama 2 is an updated version of LLaMA trained on a new mix of publicly
     available data.
   created_date: 2023-07-18
   url: https://ai.meta.com/resources/models-and-libraries/llama/
@@ -338,13 +338,13 @@
   license:
     explanation: The license can be found at https://ai.meta.com/resources/models-and-libraries/llama-downloads/
     value: custom
-  intended_uses: LLaMA 2 is intended for commercial and research use in English.
+  intended_uses: Llama 2 is intended for commercial and research use in English.
     Tuned models are intended for assistant-like chat, whereas pretrained models
     can be adapted for a variety of natural language generation tasks.
   prohibited_uses: Use in any manner that violates applicable laws or regulations
     (including trade compliance laws). Use in languages other than English. Use
     in any other way that is prohibited by the Acceptable Use Policy and Licensing
-    Agreement for LLaMA 2.
+    Agreement for Llama 2.
   monitoring: ''
   feedback: ''
 - type: model
@@ -706,13 +706,13 @@
   modality: text; code, text
   analysis: Evaluated on several code benchmarks like HumanEval and MBPP.
   size: 34B parameters (dense)
-  dependencies: [LLaMA 2]
+  dependencies: [Llama 2]
   training_emissions: 65.3 tCO2eq
   training_time: 400K GPU hours
   training_hardware: A100-80GB GPUs
   quality_control: ''
   access: open
-  license: LLaMA 2
+  license: Llama 2
   intended_uses: Code Llama and its variants is intended for commercial and research
     use in English and relevant programming languages.
   prohibited_uses: Use in any manner that violates applicable laws or regulations
@@ -793,3 +793,27 @@
   prohibited_uses: ''
   monitoring: none
   feedback: none
+
+- type: model
+  name: Llama 3
+  organization: Meta
+  description: Llama 3 is the third generation of Meta AI's open-source large language model. It comes with pretrained and instruction-fine-tuned language models with 8B and 70B parameters that can support a broad range of use cases.
+  created_date: 2024-04-18
+  url: https://llama.meta.com/llama3/
+  model_card: https://github.com/meta-llama/llama3/blob/main/MODEL_CARD.md
+  modality: text; text
+  analysis: The models were evaluated based on their performance on standard benchmarks and real-world scenarios. These evaluations were performed using a high-quality human evaluation set containing 1,800 prompts covering multiple use cases. The models also went through red-teaming for safety, where human experts and automated methods were used to generate adversarial prompts to test for problematic responses.
+  size: 70B parameters
+  dependencies: []
+  training_emissions: unknown
+  training_time: unknown
+  training_hardware: 2 custom-built Meta 24K GPU clusters
+  quality_control: Extensive internal and external testing for safety, and design of new trust and safety tools.
+  access: open
+  license:
+    explanation: Can be found at https://github.com/meta-llama/llama3/blob/main/LICENSE
+    value: Llama 3
+  intended_uses: Llama 3 is intended for a broad range of use cases, including AI assistance, content creation, learning, and analysis. 
+  prohibited_uses: unknown
+  monitoring: Extensive internal and external performance evaluation and red-teaming approach for safety testing.
+  feedback: Feedback is encouraged from users to improve the model, but the feedback mechanism is not explicitly described.

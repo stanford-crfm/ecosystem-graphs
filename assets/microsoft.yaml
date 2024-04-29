@@ -912,3 +912,24 @@
   prohibited_uses: Any purposes other than research.
   monitoring: unknown
   feedback: https://huggingface.co/microsoft/Orca-2-13b/discussions
+- type: model
+  name: Phi-3 Mini
+  organization: Microsoft
+  description: Phi-3 Mini is a 3.8 billion-parameter, lightweight, state-of-the-art open model trained using the Phi-3 datasets.
+  created_date: 2024-04-23
+  url: https://azure.microsoft.com/en-us/blog/introducing-phi-3-redefining-whats-possible-with-slms/
+  model_card: https://huggingface.co/microsoft/Phi-3-mini-128k-instruct
+  modality: text; text
+  analysis: The model has been evaluated against benchmarks that test common sense, language understanding, mathematics, coding, long-term context, and logical reasoning. The Phi-3 Mini-128K-Instruct demonstrated robust and state-of-the-art performance among models with fewer than 13 billion parameters.
+  size: 3.8B parameters
+  dependencies: []
+  training_emissions: unknown
+  training_time: 7 days
+  training_hardware: 512 H100-80G GPUs
+  quality_control: The model underwent post-training processes viz. supervised fine-tuning and direct preference optimization to increase its capability in following instructions and aligning to safety measures.
+  access: open
+  license: MIT
+  intended_uses: The model's primary use cases are for commercial and research purposes that require capable reasoning in memory or compute constrained environments and latency-bound scenarios. It can also serve as a building block for generative AI-powered features.
+  prohibited_uses: The model should not be used for high-risk scenarios without adequate evaluation and mitigation techniques for accuracy, safety, and fairness. 
+  monitoring: Issues like allocation, high-risk scenarios, misinformation, generation of harmful content and misuse should be monitored and addressed.
+  feedback: https://huggingface.co/microsoft/Phi-3-mini-128k-instruct/discussions
