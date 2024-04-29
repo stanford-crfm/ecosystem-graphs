@@ -71,3 +71,24 @@
   prohibited_uses: ''
   monitoring: unknown
   feedback: https://huggingface.co/openbmb/MiniCPM-V/discussions
+- type: model
+  name: Eurus
+  organization: OpenBMB
+  description: Eurus is a suite of large language models (LLMs) optimized for reasoning.
+  created_date: 2024-04-02
+  url: https://arxiv.org/abs/2404.02078
+  model_card: https://huggingface.co/openbmb/Eurus-70b-nca
+  modality: text; text
+  analysis: The model was comprehensively benchmarked across 12 tests covering five tasks. Eurus achieved the best overall performance among open-source models of similar sizes and even outperformed specialized models in many cases.
+  size: 70B parameters
+  dependencies: [Eurus SFT, UltraInteract, UltraFeedback]
+  training_emissions: unknown
+  training_time: unknown
+  training_hardware: unknown
+  quality_control: none
+  access: open
+  license: Apache 2.0
+  intended_uses: The model can be used for reasoning tasks and is especially tailored for coding and math following specific prompts.
+  prohibited_uses: none
+  monitoring: unknown
+  feedback: https://huggingface.co/openbmb/Eurus-70b-nca/discussions

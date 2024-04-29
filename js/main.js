@@ -719,6 +719,7 @@ function loadAssetsAndRenderPageContent() {
     'assets/duolingo.yaml',
     'assets/eleutherai.yaml',
     'assets/ens.yaml',
+    'assets/fuse.yaml',
     'assets/google.yaml',
     'assets/greenbit.yaml',
     'assets/hubspot.yaml',
