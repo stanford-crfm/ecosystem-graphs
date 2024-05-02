@@ -1782,3 +1782,25 @@
     here https://ai.google.dev/gemma/prohibited_use_policy
   monitoring: ''
   feedback: https://huggingface.co/google/gemma-7b/discussions
+- type: model
+  name: Med-Gemini
+  organization: Google
+  description: Med-Gemini is a family of highly capable multimodal models that are specialized in medicine with the ability to seamlessly integrate the use of web search, and that can be efficiently tailored to novel modalities using custom encoders.
+  created_date: 2024-04-29
+  url: https://arxiv.org/pdf/2404.18416
+  model_card: none
+  modality: image, text; text
+  analysis: Evaluated Med-Gemini on 14 medical benchmarks spanning text, multimodal and long-context applications, establishing new state-of-the-art (SoTA) performance on 10 of them, and surpassing the GPT-4 model family on every benchmark where a direct comparison is viable.
+  size: unknown
+  dependencies: [Gemini, MultiMedBench]
+  training_emissions: unknown
+  training_time: unknown
+  training_hardware: unknown
+  quality_control: ''
+  access: closed
+  license: unknown
+  intended_uses: To be used in areas of medical research including medical summarization, referral letter generation, and medical simplification tasks.
+  prohibited_uses: Unfit for real-world deployment in the safety-critical medical domain.
+  monitoring: ''
+  feedback: none
+
