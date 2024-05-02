@@ -264,7 +264,7 @@
   url: https://arxiv.org/abs/2309.04662
   datasheet: https://huggingface.co/datasets/allenai/MADLAD-400
   modality: text
-  size: 3T tokens
+  size: 3 trillion tokens
   sample: []
   analysis: none
   dependencies: [Common Crawl]
