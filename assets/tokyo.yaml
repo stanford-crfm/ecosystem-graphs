@@ -1,0 +1,24 @@
+---
+- type: model
+  name: Aurora-M
+  organization: Tokyo Institute of Technology, MIT-IBM Watson Lab, Sapienza University of Rome
+  description: Aurora-M is a 15B parameter multilingual open-source model trained on English, Finnish, Hindi, Japanese, Vietnamese, and code. 
+  created_date: 2024-04-23
+  url: https://arxiv.org/pdf/2404.00399
+  model_card: none
+  modality: text; text
+  analysis: Evaluated on all language datasets compared to similarly sized SOTA models, with Aurora-M achieving strong performance in most.
+  size: 15B parameters
+  dependencies: [StarCoderPlus]
+  training_emissions:
+    explanation: The training process operated entirely on 100% hydro-powered energy and included waste heat recycling.
+    value: unknown
+  training_time: 48 days
+  training_hardware: LUMI supercomputer, using 128 AMD MI250X GPUs
+  quality_control: ''
+  access: open
+  license: unknown
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: unknown
+  feedback: none

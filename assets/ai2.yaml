@@ -255,3 +255,25 @@
   prohibited_uses: ''
   monitoring: unknown
   feedback: https://huggingface.co/allenai/OLMo-7B/discussions
+
+- type: dataset
+  name: MADLAD-400
+  organization: AI2
+  description: MADLAD-400 is a document-level multilingual dataset based on Common Crawl, covering 419 languages in total.
+  created_date: 2023-09-09
+  url: https://arxiv.org/abs/2309.04662
+  datasheet: https://huggingface.co/datasets/allenai/MADLAD-400
+  modality: text
+  size: 3 trillion tokens
+  sample: []
+  analysis: none
+  dependencies: [Common Crawl]
+  included: ''
+  excluded: ''
+  quality_control: ''
+  access: open
+  license: CC BY 4.0
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: unknown
+  feedback: https://huggingface.co/datasets/allenai/MADLAD-400/discussions

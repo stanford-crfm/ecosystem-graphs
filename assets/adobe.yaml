@@ -97,3 +97,25 @@
   monthly_active_users: unknown
   user_distribution: unknown
   failures: unknown
+
+- type: dataset
+  name: CulturaX
+  organization: University of Oregon, Adobe
+  description: CulturaX is a substantial multilingual dataset with 6.3 trillion tokens in 167 languages, tailored for LLM development. 
+  created_date: 2023-09-17
+  url: https://arxiv.org/pdf/2309.09400
+  datasheet: https://huggingface.co/datasets/uonlp/CulturaX
+  modality: text
+  size: 6.3 trillion tokens
+  sample: []
+  analysis: none
+  dependencies: [mC4, OSCAR]
+  included: unknown
+  excluded: unknown
+  quality_control: unknown
+  access: open
+  license: mC4, OSCAR
+  intended_uses: ''
+  prohibited_uses: The data must not be utilized for malicious or harmful purposes towards humanity.
+  monitoring: unknown
+  feedback: https://huggingface.co/datasets/uonlp/CulturaX/discussions

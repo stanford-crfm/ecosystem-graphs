@@ -263,3 +263,25 @@
     Policy.
   monitoring: unknown
   feedback: https://huggingface.co/stabilityai/sv3d/discussions
+
+- type: model
+  name: Stable Audio 2.0
+  organization: Stability AI
+  description: Stable Audio 2.0 sets a new standard in AI-generated audio, producing high-quality, full tracks with coherent musical structure up to three minutes in length at 44.1kHz stereo.
+  created_date: 2024-04-03
+  url: https://stability-ai.squarespace.com/news/stable-audio-2-0
+  model_card: none
+  modality: audio, text; audio
+  analysis: none
+  size: unknown
+  dependencies: [AudioSparx]
+  training_emissions: unknown
+  training_time: unknown
+  training_hardware: unknown
+  quality_control: To protect creator copyrights, for audio uploads, Stability AI partners with Audible Magic to use their content recognition (ACR) technology to power real-time content matching and prevent copyright infringement. Opt-out requests were honored during the training phase.
+  access: open
+  license: unknown
+  intended_uses: It can be used to generate melodies, backing tracks, stems, and sound effects.
+  prohibited_uses: Uploading copyrighted material for transformation.
+  monitoring: Advanced content recognition is used to maintain compliance and prevent copyright infringement.
+  feedback: none
