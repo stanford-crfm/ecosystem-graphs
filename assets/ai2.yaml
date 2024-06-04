@@ -259,7 +259,8 @@
 - type: dataset
   name: MADLAD-400
   organization: AI2
-  description: MADLAD-400 is a document-level multilingual dataset based on Common Crawl, covering 419 languages in total.
+  description: MADLAD-400 is a document-level multilingual dataset based on Common
+    Crawl, covering 419 languages in total.
   created_date: 2023-09-09
   url: https://arxiv.org/abs/2309.04662
   datasheet: https://huggingface.co/datasets/allenai/MADLAD-400

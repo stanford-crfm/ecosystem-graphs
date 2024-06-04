@@ -546,12 +546,14 @@
 - type: model
   name: Rerank 3
   organization: Cohere
-  description: Rerank 3 is a new foundation model for efficient enterprise search and retrieval with 4k context length.
+  description: Rerank 3 is a new foundation model for efficient enterprise search
+    and retrieval with 4k context length.
   created_date: 2024-04-11
   url: https://cohere.com/blog/rerank-3
   model_card: none
   modality: text; text
-  analysis: Evaluated on code retrieval and data retrieval capabilities, with improvements compared to the standard in both.
+  analysis: Evaluated on code retrieval and data retrieval capabilities, with improvements
+    compared to the standard in both.
   size: unknown
   dependencies: []
   training_emissions: unknown
@@ -560,7 +562,33 @@
   quality_control: ''
   access: limited
   license: unknown
-  intended_uses: Efficient enterprise search and retrieval. 
+  intended_uses: Efficient enterprise search and retrieval.
   prohibited_uses: ''
   monitoring: unknown
   feedback: none
+- type: model
+  name: Aya 23
+  organization: Cohere
+  description: Aya 23 is an open weights research release of an instruction fine-tuned
+    model with multilingual capabilities. It focuses on pairing a highly performant
+    pre-trained Command family of models with the recently released Aya Collection.
+    This model supports 23 languages.
+  created_date: 2024-05-31
+  url: https://arxiv.org/pdf/2405.15032
+  model_card: https://huggingface.co/CohereForAI/aya-23-35B
+  modality: text; text
+  analysis: Evaluated across 23 languages with the highest results in all tasks
+    and languages compared to other multilingual language models.
+  size: 35B parameters
+  dependencies: []
+  training_emissions: unknown
+  training_time: unknown
+  training_hardware: unknown
+  quality_control: unknown
+  access: open
+  license: CC-BY-NC
+  intended_uses: This model is designed to be used for multilingual tasks covering
+    23 languages.
+  prohibited_uses: unknown
+  monitoring: unknown
+  feedback: https://huggingface.co/CohereForAI/aya-23-35B/discussions

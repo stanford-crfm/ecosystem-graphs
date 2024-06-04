@@ -174,28 +174,40 @@
 - type: model
   name: Idefics2
   organization: Hugging Face
-  description: Idefics2 is a general multimodal model that takes as input arbitrary sequences of text and images, generating text responses. It has the capability to describe visual content, answer questions about images, perform basic arithmetic operations, create stories grounded in multiple images, and extract information from documents.
+  description: Idefics2 is a general multimodal model that takes as input arbitrary
+    sequences of text and images, generating text responses. It has the capability
+    to describe visual content, answer questions about images, perform basic arithmetic
+    operations, create stories grounded in multiple images, and extract information
+    from documents.
   created_date: 2024-04-15
   url: https://huggingface.co/blog/idefics2
   model_card: https://huggingface.co/HuggingFaceM4/idefics2-8b
   modality: image, text; text
-  analysis: The performance of Idefics2 has been evaluated on numerous benchmarks. It is top of its class size and competes with much larger models such as LLava-Next-34B and MM1-30B-chat.
+  analysis: The performance of Idefics2 has been evaluated on numerous benchmarks.
+    It is top of its class size and competes with much larger models such as LLava-Next-34B
+    and MM1-30B-chat.
   size: 8B parameters
   dependencies: [The Cauldron]
   training_emissions: unknown
   training_time: unknown
   training_hardware: unknown
-  quality_control: The quality of the model has been ensured by training it on a mixture of openly available datasets and enhancing its OCR capabilities. Further improvements include manipulating images in their native resolutions and aspect ratios, better pre-trained backbones, and allowing for sub-image splitting.
+  quality_control: The quality of the model has been ensured by training it on a
+    mixture of openly available datasets and enhancing its OCR capabilities. Further
+    improvements include manipulating images in their native resolutions and aspect
+    ratios, better pre-trained backbones, and allowing for sub-image splitting.
   access: open
   license: Apache 2.0
-  intended_uses: The model can be used for answering questions about images, describing visual content, creating stories grounded in multiple images, extracting information from documents, and performing basic arithmetic operations.
+  intended_uses: The model can be used for answering questions about images, describing
+    visual content, creating stories grounded in multiple images, extracting information
+    from documents, and performing basic arithmetic operations.
   prohibited_uses: unknown
   monitoring: unknown
   feedback: https://huggingface.co/HuggingFaceM4/idefics2-8b/discussions
 - type: dataset
   name: The Cauldron
   organization: Hugging Face
-  description: The Cauldron is an open compilation of 50 manually-curated datasets formatted for multi-turn conversations.
+  description: The Cauldron is an open compilation of 50 manually-curated datasets
+    formatted for multi-turn conversations.
   created_date: 2024-04-15
   url: https://huggingface.co/blog/idefics2
   datasheet: https://huggingface.co/datasets/HuggingFaceM4/the_cauldron
@@ -203,8 +215,9 @@
   size: 50 vision-language datasets
   sample: []
   analysis: none
-  dependencies: 
-    explanation: These are the datasets with the most tokens included; the full list of all 50 datasets can be found at https://huggingface.co/datasets/HuggingFaceM4/the_cauldron
+  dependencies:
+    explanation: These are the datasets with the most tokens included; the full
+      list of all 50 datasets can be found at https://huggingface.co/datasets/HuggingFaceM4/the_cauldron
     value: [LNarratives, Rendered Text, WebSight, DaTikz]
   included: ''
   excluded: ''

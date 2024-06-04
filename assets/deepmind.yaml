@@ -684,3 +684,66 @@
   prohibited_uses: ''
   monitoring: ''
   feedback: none
+- type: model
+  name: Imagen 3
+  organization: Google DeepMind
+  description: Imagen 3 is a high-quality text-to-image model, capable of generating images with better detail, richer lighting, and fewer distracting artifacts compared to previous models. Improved understanding of prompts allows for a wide range of visual styles and captures small details from longer prompts. It also understands prompts written in natural, everyday language, making it easier to use. Imagen 3 is available in multiple versions, optimized for different types of tasks, from generating quick sketches to high-resolution images.
+  created_date: 2024-05-14
+  url: https://deepmind.google/technologies/imagen-3/
+  model_card: none
+  modality: text; image
+  analysis: The model was tested and evaluated on various prompts to assess its understanding of natural language, its ability to generate high-quality images in various formats and styles and generate fine details and complex textures. Red teaming and evaluations were conducted on topics including fairness, bias, and content safety. 
+  size: unknown
+  dependencies: []
+  training_emissions: unknown
+  training_time: unknown
+  training_hardware: unknown
+  quality_control: Extensive filtering and data labeling were used to minimize harmful content in datasets and reduce the likelihood of harmful outputs. Privacy, safety, and security technologies were leveraged in deploying the model, including watermarking tool SynthID.
+  access: limited
+  license: unknown
+  intended_uses: Generate high-quality images for various purposes, from photorealistic landscapes to textured oil paintings or whimsical claymation scenes. It is useful in situations where detailed visual representation is required based on the textual description.
+  prohibited_uses: unknown
+  monitoring: Through digital watermarking tool SynthID embedded in pixels for detection and identification.
+  feedback: unknown
+- type: model
+  name: Veo
+  organization: Google DeepMind
+  description: Veo is Google DeepMind's most capable video generation model to date. It generates high-quality, 1080p resolution videos that can go beyond a minute, in a wide range of cinematic and visual styles. It accurately captures the nuance and tone of a prompt, and provides an unprecedented level of creative control. The model is also capable of maintaining visual consistency in video frames, and supports masked editing.
+  created_date: 2024-05-14
+  url: https://deepmind.google/technologies/veo/
+  model_card: none
+  modality: text; video
+  analysis: unknown
+  size: unknown
+  dependencies: []
+  training_emissions: unknown
+  training_time: unknown
+  training_hardware: unknown
+  quality_control: Videos created by Veo are watermarked using SynthID, DeepMinds tool for watermarking and identifying AI-generated content, and passed through safety filters and memorization checking processes to mitigate privacy, copyright and bias risks.
+  access: limited
+  license: unknown
+  intended_uses: Veo is intended to help create tools that make video production accessible to everyone. It can be used by filmmakers, creators, or educators for storytelling, education and more. Some of its features will be also brought to products like YouTube Shorts.
+  prohibited_uses: unknown
+  monitoring: unknown
+  feedback: Feedback from leading creators and filmmakers is incorporated to improve Veo's generative video technologies.
+- type: model
+  name: Gemini 1.5 Flash
+  organization: Google DeepMind
+  description: Gemini Flash is a lightweight model, optimized for speed and efficiency. It features multimodal reasoning and a breakthrough long context window of up to one million tokens. It's designed to serve at scale and is efficient on cost, providing quality results at a fraction of the cost of larger models.
+  created_date: 2024-05-30
+  url: https://deepmind.google/technologies/gemini/flash/
+  model_card: none
+  modality: audio, image, text, video; text
+  analysis: The model was evaluated on various benchmarks like General MMLU, Code Natural2Code, MATH, GPQA, Big-Bench, WMT23, MMMU, and MathVista providing performance across various domains like multilingual translation, image processing, and code generation.
+  size: unknown
+  dependencies: []
+  training_emissions: unknown
+  training_time: unknown
+  training_hardware: unknown
+  quality_control: The research team is continually exploring new ideas at the frontier of AI and building innovative products for consistent progress.
+  access: limited
+  license: Googles Terms and Conditions
+  intended_uses: The model is intended for developer and enterprise use cases. It can process hours of video and audio, and hundreds of thousands of words or lines of code, making it beneficial for a wide range of tasks.
+  prohibited_uses: ''
+  monitoring: unknown
+  feedback: none

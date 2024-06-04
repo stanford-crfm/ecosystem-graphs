@@ -58,3 +58,29 @@
   prohibited_uses: ''
   monitoring: unknown
   feedback: https://huggingface.co/LLM360/CrystalCoder/discussions
+- type: model
+  name: K2
+  organization: LLM360
+  description: K2 is a 65 billion parameter large language model built upon the
+    Llama 2 70B model. The model is also supported with a suite of research tools,
+    tutorials and step-by-step guides for learning pre-training and fine-tuning
+    techniques.
+  created_date: 2024-05-29
+  url: https://www.llm360.ai/paper2.pdf
+  model_card: https://huggingface.co/LLM360/K2
+  modality: text; text
+  analysis: Evaluated on the LLM360 Performance and Evaluation Collection that checks
+    standard best practice benchmarks, medical, math, and coding knowledge.
+  size: 65B parameters
+  dependencies: []
+  training_emissions: unknown
+  training_time: unknown
+  training_hardware: unknown
+  quality_control: unknown
+  access: open
+  license: Apache 2.0
+  intended_uses: The model is intended for learning pre-training techniques or enhancing
+    research capabilities in large language models.
+  prohibited_uses: unknown
+  monitoring: unknown
+  feedback: https://huggingface.co/LLM360/K2/discussions

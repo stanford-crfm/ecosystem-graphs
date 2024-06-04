@@ -28,12 +28,16 @@
 - type: model
   name: HyperCLOVA X
   organization: NAVER
-  description: HyperCLOVA X is a family of large language models (LLMs) tailored to the Korean language and culture, along with competitive capabilities in English, math, and coding.
+  description: HyperCLOVA X is a family of large language models (LLMs) tailored
+    to the Korean language and culture, along with competitive capabilities in English,
+    math, and coding.
   created_date: 2024-04-13
   url: https://arxiv.org/pdf/2404.01954
   model_card: none
   modality: text; text
-  analysis: Evaluated on English and Korean benchmarks in comparison to open source English and multilingual LLMs, with HyperCLOVA X (closed) surpassing the models compared.
+  analysis: Evaluated on English and Korean benchmarks in comparison to open source
+    English and multilingual LLMs, with HyperCLOVA X (closed) surpassing the models
+    compared.
   size: unknown
   dependencies: []
   training_emissions: unknown

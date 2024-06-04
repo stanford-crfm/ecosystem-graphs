@@ -2,7 +2,9 @@
 - type: model
   name: Konan LLM
   organization: Konan
-  description: Konan LLM is a Large Language Model developed in-house by Konan Technology. Optimized for super-large AI training, it leverages high-quality, large-scale data and over 20 years of expertise in natural language processing.
+  description: Konan LLM is a Large Language Model developed in-house by Konan Technology.
+    Optimized for super-large AI training, it leverages high-quality, large-scale
+    data and over 20 years of expertise in natural language processing.
   created_date: 2023-09-17
   url: https://en.konantech.com/en/llm/konanllm
   model_card: none

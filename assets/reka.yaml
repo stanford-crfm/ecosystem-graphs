@@ -24,12 +24,18 @@
 - type: model
   name: Reka Core
   organization: Reka
-  description: Reka Core is a frontier-class multimodal language model comparable to industry leaders. It has powerful capabilities including multimodal understanding (including images, videos, and audio), superb reasoning abilities, code generation, and multilinguality with proficiency in 32 languages.
+  description: Reka Core is a frontier-class multimodal language model comparable
+    to industry leaders. It has powerful capabilities including multimodal understanding
+    (including images, videos, and audio), superb reasoning abilities, code generation,
+    and multilinguality with proficiency in 32 languages.
   created_date: 2024-04-15
   url: https://www.reka.ai/news/reka-core-our-frontier-class-multimodal-language-model
   model_card: none
   modality: audio, image, text, video; text
-  analysis: Reka Core was evaluated against leading models such as OpenAIs GPT-4, Claude-3 Opus, and Gemini Ultra on a variety of tasks and metrics including multimodal and human evaluation conducted by a third party. It was found to be competitive or even surpassing these models.
+  analysis: Reka Core was evaluated against leading models such as OpenAIs GPT-4,
+    Claude-3 Opus, and Gemini Ultra on a variety of tasks and metrics including
+    multimodal and human evaluation conducted by a third party. It was found to
+    be competitive or even surpassing these models.
   size: unknown
   dependencies: []
   training_emissions: unknown
@@ -38,7 +44,9 @@
   quality_control: ''
   access: limited
   license: unknown
-  intended_uses: Reka Core can be used in e-commerce, social media, digital content and video games, healthcare, robotics, and other industries for tasks that require multimodal understanding, coding, complex reasoning, and more.
+  intended_uses: Reka Core can be used in e-commerce, social media, digital content
+    and video games, healthcare, robotics, and other industries for tasks that require
+    multimodal understanding, coding, complex reasoning, and more.
   prohibited_uses: unknown
   monitoring: unknown
   feedback: unknown

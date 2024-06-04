@@ -64,3 +64,24 @@
   monthly_active_users: unknown
   user_distribution: unknown
   failures: unknown
+- type: model
+  name: Codestral
+  organization: Mistral AI
+  description: Codestral is an open-weight generative AI model explicitly designed for code generation tasks. It helps developers write and interact with code through a shared instruction and completion API endpoint. Mastering code and English, it can be used to design advanced AI applications for software developers. It is fluent in 80+ programming languages.
+  created_date: 2024-05-29
+  url: https://mistral.ai/news/codestral/
+  model_card: none
+  modality: text; code
+  analysis: Performance of Codestral is evaluated in Python, SQL, and additional languages, C++, bash, Java, PHP, Typescript, and C#. Fill-in-the-middle performance is assessed using HumanEval pass@1 in Python, JavaScript, and Java.
+  size: 22B parameters
+  dependencies: []
+  training_emissions: unknown
+  training_time: unknown
+  training_hardware: unknown
+  quality_control: ''
+  access: open
+  license: Mistral AI Non-Production License
+  intended_uses: Helps developers write and interact with code, design advanced AI applications for software developers, integrated into LlamaIndex and LangChain for building applications, integrated in VSCode and JetBrains environments for code generation and interactive conversation.
+  prohibited_uses: unknown
+  monitoring: unknown
+  feedback: none
