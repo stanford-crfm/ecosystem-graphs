@@ -583,7 +583,7 @@
   dependencies: []
   training_emissions: unknown
   training_time: unknown
-  training_hardware: unknown
+  training_hardware: TPUv4 chips with up to 128 pod slices
   quality_control: unknown
   access: open
   license: CC-BY-NC

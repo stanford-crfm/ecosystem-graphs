@@ -61,8 +61,8 @@
 - type: model
   name: K2
   organization: LLM360
-  description: K2 is a 65 billion parameter large language model built upon the
-    Llama 2 70B model. The model is also supported with a suite of research tools,
+  description: K2 is a 65 billion parameter large language model inspired by the
+    Llama 2 65B model. The model is also supported with a suite of research tools,
     tutorials and step-by-step guides for learning pre-training and fine-tuning
     techniques.
   created_date: 2024-05-29

@@ -720,7 +720,7 @@
   training_time: unknown
   training_hardware: unknown
   quality_control: Videos created by Veo are watermarked using SynthID, DeepMinds tool for watermarking and identifying AI-generated content, and passed through safety filters and memorization checking processes to mitigate privacy, copyright and bias risks.
-  access: limited
+  access: closed
   license: unknown
   intended_uses: Veo is intended to help create tools that make video production accessible to everyone. It can be used by filmmakers, creators, or educators for storytelling, education and more. Some of its features will be also brought to products like YouTube Shorts.
   prohibited_uses: unknown

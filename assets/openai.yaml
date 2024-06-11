@@ -1428,7 +1428,7 @@
   created_date: 2024-05-13
   url: https://openai.com/index/hello-gpt-4o/
   model_card: none
-  modality: audio, text; image, text, video
+  modality: audio, image, text, video; audio, image, text
   analysis: When evaluated on standard performance benchmarks, achieves similar levels of performance to GPT-4 Turbo.
   size: unknown
   dependencies: []
@@ -1440,5 +1440,5 @@
   license: unknown
   intended_uses: ''
   prohibited_uses: ''
-  monitoring: unknown
+  monitoring: Internal monitoring of risk for non-text outputs before a public release (currently only image, text inputs and text outputs are available).
   feedback: none
