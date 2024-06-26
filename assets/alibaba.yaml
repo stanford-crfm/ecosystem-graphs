@@ -145,23 +145,34 @@
 - type: model
   name: SeaLLM v2.5
   organization: DAMO Academy, Alibaba
-  description: SeaLLM v2.5 is a multilingual large language model for Southeast Asian (SEA) languages.
+  description: SeaLLM v2.5 is a multilingual large language model for Southeast
+    Asian (SEA) languages.
   created_date: 2024-04-12
   url: https://github.com/DAMO-NLP-SG/SeaLLMs
   model_card: https://huggingface.co/SeaLLMs/SeaLLM-7B-v2.5
   modality: text; text
-  analysis: The model was evaluated on 3 benchmarks (MMLU for English, M3Exam (M3e) for English, Chinese, Vietnamese, Indonesian, and Thai, and VMLU for Vietnamese) and it outperformed GPT-3 and Vistral-7B-chat models across these benchmarks in the given languages.
+  analysis: The model was evaluated on 3 benchmarks (MMLU for English, M3Exam (M3e)
+    for English, Chinese, Vietnamese, Indonesian, and Thai, and VMLU for Vietnamese)
+    and it outperformed GPT-3 and Vistral-7B-chat models across these benchmarks
+    in the given languages.
   size: 7B parameters
   dependencies: [Gemma]
   training_emissions: unknown
   training_time: unknown
   training_hardware: unknown
-  quality_control: Despite efforts in red teaming and safety fine-tuning and enforcement, the creators suggest, developers and stakeholders should perform their own red teaming and provide related security measures before deployment, and they must abide by and comply with local governance and regulations.
+  quality_control: Despite efforts in red teaming and safety fine-tuning and enforcement,
+    the creators suggest, developers and stakeholders should perform their own red
+    teaming and provide related security measures before deployment, and they must
+    abide by and comply with local governance and regulations.
   access: open
   license:
     explanation: License can be found at https://huggingface.co/SeaLLMs/SeaLLM-13B-Chat/blob/main/LICENSE
     value: custom
-  intended_uses: The model is intended for multilingual tasks such as knowledge retrieval, math reasoning, and instruction following. Also, it could be used to provide multilingual assistance.
-  prohibited_uses: The model should not be used in a way that could lead to inaccurate, misleading or potentially harmful generation. Users should comply with local laws and regulations when deploying the model.
+  intended_uses: The model is intended for multilingual tasks such as knowledge
+    retrieval, math reasoning, and instruction following. Also, it could be used
+    to provide multilingual assistance.
+  prohibited_uses: The model should not be used in a way that could lead to inaccurate,
+    misleading or potentially harmful generation. Users should comply with local
+    laws and regulations when deploying the model.
   monitoring: unknown
   feedback: https://huggingface.co/SeaLLMs/SeaLLM-7B-v2.5/discussions

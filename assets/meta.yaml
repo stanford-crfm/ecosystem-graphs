@@ -797,23 +797,54 @@
 - type: model
   name: Llama 3
   organization: Meta
-  description: Llama 3 is the third generation of Meta AI's open-source large language model. It comes with pretrained and instruction-fine-tuned language models with 8B and 70B parameters that can support a broad range of use cases.
+  description: Llama 3 is the third generation of Meta AI's open-source large language
+    model. It comes with pretrained and instruction-fine-tuned language models with
+    8B and 70B parameters that can support a broad range of use cases.
   created_date: 2024-04-18
   url: https://llama.meta.com/llama3/
   model_card: https://github.com/meta-llama/llama3/blob/main/MODEL_CARD.md
   modality: text; text
-  analysis: The models were evaluated based on their performance on standard benchmarks and real-world scenarios. These evaluations were performed using a high-quality human evaluation set containing 1,800 prompts covering multiple use cases. The models also went through red-teaming for safety, where human experts and automated methods were used to generate adversarial prompts to test for problematic responses.
+  analysis: The models were evaluated based on their performance on standard benchmarks
+    and real-world scenarios. These evaluations were performed using a high-quality
+    human evaluation set containing 1,800 prompts covering multiple use cases. The
+    models also went through red-teaming for safety, where human experts and automated
+    methods were used to generate adversarial prompts to test for problematic responses.
   size: 70B parameters
   dependencies: []
   training_emissions: unknown
   training_time: unknown
   training_hardware: 2 custom-built Meta 24K GPU clusters
-  quality_control: Extensive internal and external testing for safety, and design of new trust and safety tools.
+  quality_control: Extensive internal and external testing for safety, and design
+    of new trust and safety tools.
   access: open
   license:
     explanation: Can be found at https://github.com/meta-llama/llama3/blob/main/LICENSE
     value: Llama 3
-  intended_uses: Llama 3 is intended for a broad range of use cases, including AI assistance, content creation, learning, and analysis. 
+  intended_uses: Llama 3 is intended for a broad range of use cases, including AI
+    assistance, content creation, learning, and analysis.
   prohibited_uses: unknown
-  monitoring: Extensive internal and external performance evaluation and red-teaming approach for safety testing.
-  feedback: Feedback is encouraged from users to improve the model, but the feedback mechanism is not explicitly described.
+  monitoring: Extensive internal and external performance evaluation and red-teaming
+    approach for safety testing.
+  feedback: Feedback is encouraged from users to improve the model, but the feedback
+    mechanism is not explicitly described.
+- type: model
+  name: Chameleon
+  organization: Meta FAIR
+  description: Chameleon is a family of early-fusion token-based mixed-modal models capable of understanding and generating images and text in any arbitrary sequence.
+  created_date: 2024-05-17
+  url: https://arxiv.org/pdf/2405.09818
+  model_card: none
+  modality: image, text; image, text
+  analysis: Evaluated on a comprehensive range of tasks, including visual question answering, image captioning, text generation, image generation, and long-form mixed modal generation. Chameleon demonstrates broad and general capabilities, including state-of-the-art performance in image captioning tasks, outperforms Llama-2 in text-only tasks while being competitive with models such as Mixtral 8x7B and Gemini-Pro.
+  size: 34B parameters
+  dependencies: []
+  training_emissions: unknown
+  training_time: unknown
+  training_hardware: Meta's Research Super Cluster (powered by NVIDIA A100 80GB GPUs)
+  quality_control: ''
+  access: open
+  license: unknown
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: none

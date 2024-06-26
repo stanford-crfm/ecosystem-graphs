@@ -2,12 +2,17 @@
 - type: model
   name: FuseChat
   organization: FuseAI
-  description: FuseChat is a powerful chat Language Learning Model (LLM) that integrates multiple structure and scale-varied chat LLMs using a fuse-then-merge strategy. The fusion is done using two stages
+  description: FuseChat is a powerful chat Language Learning Model (LLM) that integrates
+    multiple structure and scale-varied chat LLMs using a fuse-then-merge strategy.
+    The fusion is done using two stages
   created_date: 2024-02-26
   url: https://arxiv.org/abs/2402.16107
   model_card: https://huggingface.co/FuseAI/FuseChat-7B-VaRM
   modality: text; text
-  analysis: The FuseChat model was evaluated on MT-Bench which comprises 80 multi-turn dialogues spanning writing, roleplay, reasoning, math, coding, stem, and humanities domains. It yields an average performance of 66.52 with specific scores for individual domains available in the leaderboard results.
+  analysis: The FuseChat model was evaluated on MT-Bench which comprises 80 multi-turn
+    dialogues spanning writing, roleplay, reasoning, math, coding, stem, and humanities
+    domains. It yields an average performance of 66.52 with specific scores for
+    individual domains available in the leaderboard results.
   size: 7B parameters
   dependencies: [Nous Hermes 2, OpenChat 3.5]
   training_emissions: unknown
@@ -16,7 +21,9 @@
   quality_control: none
   access: open
   license: Apache 2.0
-  intended_uses: FuseChat is intended to be used as a powerful chat bot that takes in text inputs and provides text-based responses. It can be utilized in a variety of domains including writing, roleplay, reasoning, math, coding, stem, and humanities.
+  intended_uses: FuseChat is intended to be used as a powerful chat bot that takes
+    in text inputs and provides text-based responses. It can be utilized in a variety
+    of domains including writing, roleplay, reasoning, math, coding, stem, and humanities.
   prohibited_uses: unknown
   monitoring: unknown
   feedback: https://huggingface.co/FuseAI/FuseChat-7B-VaRM/discussions

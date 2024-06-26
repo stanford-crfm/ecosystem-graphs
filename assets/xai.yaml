@@ -26,12 +26,18 @@
 - type: model
   name: Grok-1.5V
   organization: xAI
-  description: Grok-1.5V is a first-generation multimodal model which can process a wide variety of visual information, including documents, diagrams, charts, screenshots, and photographs.
+  description: Grok-1.5V is a first-generation multimodal model which can process
+    a wide variety of visual information, including documents, diagrams, charts,
+    screenshots, and photographs.
   created_date: 2024-04-12
   url: https://x.ai/blog/grok-1.5v
   model_card: none
   modality: image, text; text
-  analysis: The model is evaluated in a zero-shot setting without chain-of-thought prompting. The evaluation domains include multi-disciplinary reasoning, understanding documents, science diagrams, charts, screenshots, photographs and real-world spatial understanding. The model shows competitive performance with existing frontier multimodal models.
+  analysis: The model is evaluated in a zero-shot setting without chain-of-thought
+    prompting. The evaluation domains include multi-disciplinary reasoning, understanding
+    documents, science diagrams, charts, screenshots, photographs and real-world
+    spatial understanding. The model shows competitive performance with existing
+    frontier multimodal models.
   size: unknown
   dependencies: []
   training_emissions: unknown
@@ -40,7 +46,9 @@
   quality_control: ''
   access: limited
   license: unknown
-  intended_uses: Grok-1.5V can be used for understanding documents, science diagrams, charts, screenshots, photographs. It can also translate diagrams into Python code.
+  intended_uses: Grok-1.5V can be used for understanding documents, science diagrams,
+    charts, screenshots, photographs. It can also translate diagrams into Python
+    code.
   prohibited_uses: unknown
   monitoring: unknown
   feedback: none
