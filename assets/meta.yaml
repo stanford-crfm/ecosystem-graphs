@@ -848,3 +848,66 @@
   prohibited_uses: ''
   monitoring: ''
   feedback: none
+- type: model
+  name: Llama 3
+  organization: Meta
+  description: Llama 3 is a family of large language models (LLMs) that comes in two sizes - 8B and 70B parameters. These models are optimized for dialogue use cases and are designed to outperform many available open source chat models on common industry benchmarks. The models use an optimized transformer architecture and are trained using supervised fine-tuning (SFT) and reinforcement learning with human feedback (RLHF) to align with human preferences for helpfulness and safety.
+  created_date: 2024-04-18
+  url: https://huggingface.co/meta-llama/Meta-Llama-3-8B
+  model card: https://huggingface.co/meta-llama/Meta-Llama-3-8B
+  modality: text; text,code
+  analysis: The models have been evaluated on several standard automatic benchmarks and have shown improved performance compared to previous versions and other comparable models.
+  size: 8B and 70B parameters (dense)
+  dependencies: Unknown (potentially uses a mix of publicly available online data and other propriety data) 
+  training_emissions: Estimated total emissions were 2290 tCO2eq for the training of both models, all of which were offset by Meta’s sustainability program.
+  training_time: Unknown
+  training_hardware: Custom training libraries, Meta's Research SuperCluster, and production clusters were used for pretraining. Fine-tuning, annotation, and evaluation were also performed on third-party cloud compute.
+  quality_control: The model utilizes supervised fine-tuning (SFT) and reinforcement learning with human feedback (RLHF) to increase alignment with human preferences for helpfulness and safety. Resources like Meta Llama Guard 2 and Code Shield safeguards are provided to further augment safety levels.
+  access: Unknown
+  license: Custom commercial license
+  intended_uses: Llama 3 is intended for commercial and research use in English. Instruction tuned models are intended for assistant-like chat, whereas pretrained models can be adapted for a variety of natural language generation tasks.
+  prohibited_uses: Use in any manner that violates applicable laws or regulations (including trade compliance laws), and use in any way that is prohibited by the Acceptable Use Policy and Llama 3 Community License. Use in languages other than English is also out-of-scope, except when developers fine-tune Llama 3 models for languages beyond English and comply with the Llama 3 Community License and Acceptable Use Policy.
+  monitoring: Unknown
+  feedback: Instructions on how to provide feedback or comments on the model can be found in the model README.
+- type: model
+  name: Meta Llama
+  organization: Meta AI
+  description: Unknown
+  created_date: 2024-Unknown-Unknown
+  url: https://go.fb.me/4m87kk
+  model card: https://go.fb.me/4m87kk
+  modality: Unknown
+  analysis: Unknown
+  size: Unknown
+  dependencies: Unknown
+  training_emissions: Unknown
+  training_time: Unknown
+  training_hardware: Unknown
+  quality_control: Unknown
+  access: Unknown
+  license: Presumably covered under Meta's general policies, but specific model license is unknown.
+  intended_uses: Unknown
+  prohibited_uses: Unknown
+  monitoring: Unknown
+  feedback: Likely through Meta AI's established channels, but specific details are unknown.
+- type: model
+  name: Meta Llama 3 
+  organization: Meta 
+  description: Meta Llama 3 is a large language model (LLM) optimized for dialogue use cases with two variations, 8B and 70B, aimed at improving helpfulness and safety. It is built with an optimized transformer architecture and leverages supervised fine-tuning and reinforcement learning with human feedback.
+  created_date: 2024-04-18
+  url: https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct
+  model card: https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct
+  modality: text; text/code 
+  analysis: The model demonstrated performance improvement on common industry benchmarks outperforming many other open source chat models. It has been tested in various scenarios and tuned models were intended for assistant-like chat and pretrained models have been adapted for various natural language generation tasks.
+  size: Largest is 70B parameters
+  dependencies: [A mix of publicly available online data]
+  training_emissions: 2290 tCO2eq, all of which were offset by Meta’s sustainability program.
+  training_time: Unknown
+  training_hardware: Meta's Research SuperCluster and production clusters with third-party cloud compute.
+  quality_control: The model was evaluated using standard automatic benchmarks to ensure performance and quality.
+  access: Unknown
+  license: custom commercial
+  intended_uses: Designed for commercial and research use in English. Intended for assistant-like chat, and various natural language generation tasks.
+  prohibited_uses: Any manner that violates laws or regulations. It should not be used in any other way prohibited by Acceptable Use Policy and Llama Community License, and not be used in languages other than English except for developers fine-tuning for languages beyond English and complying with appropriate policies.
+  monitoring: Unknown
+  feedback: Feedback and comments can be made in the model README file, and more technical information is available on the linked page.

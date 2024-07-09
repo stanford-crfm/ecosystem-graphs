@@ -228,3 +228,45 @@
   prohibited_uses: ''
   monitoring: unknown
   feedback: https://huggingface.co/datasets/HuggingFaceM4/the_cauldron/discussions
+- type: model
+  name: all-MiniLM-L6-v2
+  organization: Hugging Face Community and Google’s Flax, JAX, and Cloud team
+  description: A sentence-transformers model that maps sentences & paragraphs to a 384-dimensional dense vector space. It can be used for tasks like clustering or semantic search. The model was fine-tuned using a self-supervised contrastive learning objective, developed during a Hugging Face Community week on a large sentence level dataset.
+  created_date: Unknown
+  url: https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2
+  model card: https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2
+  modality: Text; Vector
+  analysis: Automated model evaluations can be found at the Sentence Embeddings Benchmark website: https://seb.sbert.net
+  size: Unknown
+  dependencies: Used the pretrained nreimers/MiniLM-L6-H384-uncased model and fine-tuning was done on the concatenation of multiple datasets totaling over one billion sentence pairs. Specific dataset references are provided but could not be compiled here due to space constraints.
+  training_emissions: Unknown
+  training_time: Unknown
+  training_hardware: 7 TPUs v3-8
+  quality_control: Cross entropy loss was applied to simulate a contrastive objective during model fine-tuning. Details of all hyperparameters used during training are accessible in the train_script.py repository.
+  access: Open
+  license: Unknown
+  intended_uses: The model is intended to encode sentences and short paragraphs. The resultant vector, capturing semantic information of the original input, can be used for information retrieval, clustering, or sentence similarity tasks.
+  prohibited_uses: Not suitable for input text longer than 256 word pieces, as such inputs will be truncated.
+  monitoring: Unknown
+  feedback: Unknown
+- type: model
+  name: Qwen2-57B-A14B
+  organization: Hugging Face
+  description: Qwen2 is a series of large language models, with the Qwen2-57B-A14B being a language model based on the Transformer architecture. It includes various enhancements like SwiGLU activation, QKV attention bias, group query attention, and an improved tokenizer for multiple natural languages and codes. It is a Mixture of Experts model with 57 billion parameters, 14 billion of which are activated in each pass. The model shows impressive performance in many benchmarks targeting language understanding and generation, coding, mathematics, reasoning, multilingual capability, etc.
+  created_date: 2024 (Exact month and date unknown)
+  url: https://hf.co/Qwen/Qwen2-57B-A14B
+  model card: https://hf.co/Qwen/Qwen2-57B-A14B
+  modality: Text; Text
+  analysis: The evaluation of the model mainly focuses on natural language understanding, general question answering, coding, mathematics, reasoning, and multilingual capabilities. The datasets for evaluation include English tasks, coding tasks, math tasks, Chinese tasks, and multilingual tasks. 
+  size: 57B parameters (Mixture of Experts model with 14B activated parameters per pass)
+  dependencies: It directly relies on the Transformer architecture, SwiGLU activation, and the improved tokenizer in the Hugging Face transformers (version >=4.40.0) dependency.
+  training_emissions: Unknown
+  training_time: Unknown
+  training_hardware: Unknown
+  quality_control: Unknown
+  access: Access details not provided.
+  license: Apache 2.0  
+  intended_uses: The model series is intended to be used for tasks related to language understanding, general question answering, coding, mathematics, reasoning, multilingual capabilities, etc.
+  prohibited_uses: The creators advise against using the base language models for text generation, suggesting post-training methods like SFT, RLHF, continued pretraining, etc., instead.
+  monitoring: Unknown
+  feedback: Problem reports are likely expected through the Hugging Face platform, although specific instructions are not provided.

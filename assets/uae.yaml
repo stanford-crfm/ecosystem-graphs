@@ -77,3 +77,24 @@
     any use cases which may be considered irresponsible or harmful.
   monitoring: None
   feedback: https://huggingface.co/tiiuae/falcon-180b/discussions
+- type: model
+  name: JASCO
+  organization: The Hebrew University of Jerusalem, Meta, FAIR Team
+  description: JASCO is a temporally controlled text-to-music generation model utilizing both symbolic and audio-based conditions. The model is based on the Flow-Matching modeling paradigm and a novel conditioning method that allows music generation controlled both locally and globally. It can generate high-quality music samples conditioned on global text descriptions along with fine-grained local controls. The model incorporates various symbolic control signals and audio representations for versatility in music generation.
+  created_date: 2024-06-12
+  url: https://arxiv.org/pdf/2406.10970
+  model card: https://arxiv.org/pdf/2406.10970
+  modality: text; music
+  analysis: JASCO was evaluated considering both generation quality and condition adherence, using a mix of objective metrics and human studies. It was compared to several baselines and found to provide comparable performance while offering a significantly richer set of controls.
+  size: Unknown
+  dependencies: [Flow-Matching, source separation network, F0 saliency detector model, chord progression extraction model]
+  training_emissions: Unknown
+  training_time: Unknown 
+  training_hardware: Unknown
+  quality_control: Evaluations were done on generation quality and condition adherence. Comparisons were made with various baselines.
+  access: open
+  license: Unknown 
+  intended_uses: The model can be used for music generation, especially for empowering content creators, advertisers, and video game designers. It's of particular value to users who need fine-grained local controls in their music creation, such as professional musicians.
+  prohibited_uses: Unknown 
+  monitoring: Unknown
+  feedback: Likely through the authors or organizations affiliated with the model.

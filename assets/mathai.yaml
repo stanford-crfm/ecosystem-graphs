@@ -21,3 +21,24 @@
   prohibited_uses: ''
   monitoring: unknown
   feedback: https://huggingface.co/datasets/math-ai/AutoMathText/discussions
+- type: model
+  name: AuraSR
+  organization: fal-ai
+  description: AuraSR is a GAN-based Super-Resolution model for upscaling generated images. It is a variation of the GigaGAN paper methodology focusing on image-conditioned upscaling and the implementation is based on the unofficial repository lucidrains/gigagan-pytorch.
+  created_date: Unknown
+  url: https://huggingface.co/fal/AuraSR
+  model card: https://huggingface.co/fal/AuraSR
+  modality: Image; Image (model takes an image input and produces upscaled image output)
+  analysis: Unknown
+  size: Unknown
+  dependencies: ['lucidrains/gigagan-pytorch']
+  training_emissions: Unknown
+  training_time: Unknown
+  training_hardware: Unknown
+  quality_control: Unknown
+  access: Open (assuming from pip install method)
+  license: Unknown
+  intended_uses: The model is intended to upscale low-resolution images while maintaining or enhancing their quality.
+  prohibited_uses: Unknown
+  monitoring: Unknown
+  feedback: Unknown

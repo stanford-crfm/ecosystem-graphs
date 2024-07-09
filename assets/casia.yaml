@@ -49,3 +49,24 @@
   prohibited_uses: ''
   monitoring: ''
   feedback: https://huggingface.co/wenge-research/yayi2-30b/discussions
+- type: model
+  name: AstroPT
+  organization: Aspia Space, Instituto de Astrofísica de Canarias (IAC), UniverseTBD, Astrophysics Research Institute, Liverpool John Moores University, Departamento Astrofísica, Universidad de la Laguna, Observatoire de Paris, LERMA, PSL University, Universit´e Paris-Cit´e
+  description: AstroPT is an autoregressive pretrained transformer developed with astronomical use-cases in mind. The models are trained on 8.6 million 512x512 pixel grz-band galaxy postage stamp observations from the DESI Legacy Survey DR8. The training resulted in the creation of foundation models ranging in size from 1 million to 2.1 billion parameters. It is a step towards creating a 'Large Observation Model' – a model trained on data from observational sciences at a scale similar to natural language processing models.
+  created_date: Unknown.
+  url: https://arxiv.org/pdf/2405.14930v1
+  model card: https://arxiv.org/pdf/2405.14930v1
+  modality: Image; Image.
+  analysis: The models' performance on downstream tasks, as measured by linear probing, was found to improve with model size up to a certain saturation point.
+  size: The model ranges from 1 million to 2.1 billion parameters. Given that the specific mention of the models being a Mixture of Experts or sparse in the information provided, we can't affirm about the model's sparsity.
+  dependencies: [DESI Legacy Survey DR8 Dataset].
+  training_emissions: Unknown.
+  training_time: Unknown.
+  training_hardware: Unknown.
+  quality_control: The models underwent linear probing to measure performance and identify the parameter saturation point beyond which size no longer improves performance.
+  access: Open. The source code, weights, and dataset for AstroPT have been released under the MIT license.
+  license: MIT.
+  intended_uses: Developed with astronomical use-cases in mind. The models can be utilized to extract meaningful information from astronomical observations.
+  prohibited_uses: Unknown.
+  monitoring: Description of measures taken to monitor downstream uses of this model is not mentioned in the provided information.
+  feedback: Potential collaborators and users are invited to join the research activities surrounding these models. It can be inferred that any feedback or issues can be reported to Michael J. Smith (mike@mjjsmith.com).

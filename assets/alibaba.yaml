@@ -176,3 +176,24 @@
     laws and regulations when deploying the model.
   monitoring: unknown
   feedback: https://huggingface.co/SeaLLMs/SeaLLM-7B-v2.5/discussions
+- type: model
+  name: SenseVoice
+  organization: Alibaba
+  description: SenseVoice is a speech foundation model with multiple speech understanding capabilities, such as automatic speech recognition (ASR), spoken language identification (LID), speech emotion recognition (SER), and audio event detection (AED). The model demonstrates high-accuracy multilingual speech recognition, speech emotion recognition, and audio event detection capabilities. It supports over 50 languages and was trained with more than 400,000 hours of data. It is efficient in inference and offers convenient finetuning scripts and strategies, as well as service deployment pipeline.
+  created_date: unknown
+  url: https://huggingface.co/FunAudioLLM/SenseVoiceSmall
+  model card: https://huggingface.co/FunAudioLLM/SenseVoiceSmall
+  modality: audio; text
+  analysis: The model has been evaluated for multilingual speech recognition, speech emotion recognition, and audio event detection. The evaluations compared SenseVoice with other models like the Whisper model and found that it surpasses these in nearly all tasks.
+  size: unknown
+  dependencies: Based on the code and the description provided, it appears that the model may depend on the [Whisper model], although this is not clearly stated. It could potentially also depend on several other models or libraries, such as the [AutoModel] and [funasr] that are mentioned in the provided Python scripts.
+  training_emissions: unknown
+  training_time: unknown
+  training_hardware: unknown
+  quality_control: Not explicitly stated, but given the evaluations mentioned and the performance of the model on multiple benchmark datasets, it seems that significant measures were taken to ensure its quality and accuracy.
+  access: Open
+  license: unknown but it's part of a cloned repo from GitHub which suggests that usage may be subject to GitHub's Terms and Conditions.
+  intended_uses: The model can be used for tasks such as automatic speech recognition, spoken language identification, speech emotion recognition, and audio event detection. It could be useful in a variety of fields, including translation services, virtual assistants, voice-activated systems, and emotion-detection services, among others.
+  prohibited_uses: Not stated
+  monitoring: There is no specific mention of monitoring measures being taken for downstream uses of the model.
+  feedback: Issues could be reported through the GitHub project page.

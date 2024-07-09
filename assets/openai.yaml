@@ -1442,3 +1442,24 @@
   prohibited_uses: ''
   monitoring: Internal monitoring of risk for non-text outputs before a public release (currently only image, text inputs and text outputs are available).
   feedback: none
+- type: model
+  name: Qwen2-72B-Instruct
+  organization: Qwen
+  description: Qwen2-72B-Instruct is a language model from the Qwen2 series which includes a range of models from 0.5 to 72 billion parameters. It is based on the Transformer architecture with modifications like the SwiGLU activation, attention QKV bias, group query attention, and an improved tokenizer. The models were pretrained on a large amount of data and post-trained with both supervised fine-tuning and direct preference optimization. The model supports a context length of up to 131,072 tokens, enabling the processing of extensive inputs.
+  created_date: Unknown
+  url: https://huggingface.co/Qwen/Qwen2-72B-Instruct
+  model card: https://huggingface.co/Qwen/Qwen2-72B-Instruct
+  modality: Text; text.
+  analysis: Qwen2-72B-Instruct has been compared with similar-sized instruction-tuned language models, including the previously released Qwen1.5-72B-Chat. Its evaluation spans across multiple domains including language understanding, multilingual capability, coding, and mathematics. The model has demonstrated improved performance across several datasets, according to the provided results.
+  size: 72B parameters (sparse)
+  dependencies: [Hugging face transformers >=4.37.0, original training datasets (not specified), potentially YARN and vLLM for processing long contexts]
+  training_emissions: Unknown
+  training_time: Unknown
+  training_hardware: Unknown
+  quality_control: Unknown
+  access: Open
+  license: Unknown
+  intended_uses: Qwen2-72B-Instruct can be used for language understanding, language generation, multilingual capability, coding, mathematics, reasoning, and bunch of other tasks. It can also be used for handling long texts through YARN, a technique for enhancing model length extrapolation.
+  prohibited_uses: Unknown
+  monitoring: Unknown
+  feedback: Any issues or bugs with the Qwen models should presumably be reported via the relevant GitHub page or directly to the organization, though no specific instructions were given.

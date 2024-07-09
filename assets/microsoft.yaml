@@ -986,3 +986,87 @@
   prohibited_uses: ''
   monitoring: ''
   feedback: none
+- type: model
+  name: Ostris VAE - KL-f8-d16
+  organization: Ostris
+  description: A 16 channel Variational AutoEncoder (VAE) model with 8x downsample. The model has been trained from scratch on a balance of images including photos, artistic images, texts, cartoons, and vector images. This VAE model is faster, uses less VRAM and has similar scoring abilities compared to larger parameter-sized models, yet its model size is considerably lower.
+  created_date: Unknown
+  url: https://huggingface.co/ostris/vae-kl-f8-d16
+  model card: https://huggingface.co/ostris/vae-kl-f8-d16
+  modality: Image; Image
+  analysis: This model has been evaluated to have a PSNR of 31.166 (higher is better) and LPIPS of 0.0198 (lower is better). This performance is quite similar to real images while maintaining a lower parameter count.
+  size: 57,266,643 parameters (dense)
+  dependencies: Unknown
+  training_emissions: Unknown
+  training_time: Unknown
+  training_hardware: Unknown
+  quality_control: The model has been compared with other VAEs using image generation metrics like PSNR and LPIPS, ensuring its superior performance.
+  access: Open
+  license: MIT
+  intended_uses: The model is an open source, lighter version of a 16 channel VAE. After training, it can be utilized for transformative image applications, among other creative works. 
+  prohibited_uses: The model should not be used for applications requiring compatibility with SD3 as it has an entirely different latent space.
+  monitoring: Unknown
+  feedback: The model creator can be followed and contacted on Twitter for updates and related queries about the model.
+- type: model
+  name: Florence-2
+  organization: Microsoft
+  description: Florence-2 is a vision foundation model that uses a prompt-based approach to perform a variety of vision and vision-language tasks. This includes tasks like captioning, object detection, and segmentation. Florence-2 leverages the FLD-5B data set, containing 5.4 billion annotations across 126 million images, to master multi-task learning. Various versions of the Florence-2 model have been trained, including a base and a large model, and versions of these models that were fine-tuned on a collection of downstream tasks.
+  created_date: Unknown
+  url: https://huggingface.co/microsoft/Florence-2-large
+  model card: https://huggingface.co/microsoft/Florence-2-large
+  modality: Text; Image
+  analysis: Evaluations were done on the model, with tables in the given document showing comparison of Florence-2's performance in tasks like image captioning, object detection and Visual Question Answering (VQA) to other models of a similar category.
+  size: Florence-2-base and Florence-2-base-ft have 0.23 billion parameters. Florence-2-large and Florence-2-large-ft have 0.77 billion parameters. The models are dense.
+  dependencies: [FLD-5B]
+  training_emissions: Unknown
+  training_time: Unknown
+  training_hardware: Unknown
+  quality_control: Unknown
+  access: Open
+  license: Unknown
+  intended_uses: Intended for a range of vision and vision-language tasks. Can perform tasks like captioning, object detection, segmentation and more by simply changing the text prompt.
+  prohibited_uses: Unknown
+  monitoring: Unknown
+  feedback: Unknown
+- type: model
+  name: Phi-3-Mini-4K-Instruct
+  organization: Microsoft
+  description: The Phi-3-Mini-4K-Instruct is a state-of-the-art open model trained with the Phi-3 datasets that includes both synthetic data and the filtered publicly available websites data. It's tuned for instruction following with safety measures and has a strong reasoning property. It's lightweight with a model size of 3.8 billion parameters and can support a context length (in tokens) of 4K and 128K.
+  created_date: Unknown
+  url: https://huggingface.co/microsoft/Phi-3-mini-4k-instruct
+  model card: https://huggingface.co/microsoft/Phi-3-mini-4k-instruct
+  modality: Text; Text
+  analysis: The model was evaluated against benchmarks testing common sense, language understanding, math, code, long context, and logical reasoning. The results indicate a robust performance and it outperformed similar models with less than 13 billion parameters.
+  size: 3.8B parameters
+  dependencies: [Phi-3 datasets, Microsoft's original instruction-tuned Phi-3-Mini]
+  training_emissions: Unknown
+  training_time: Unknown
+  training_hardware: Unknown
+  quality_control: The model underwent a post-training process, which incorporates both supervised fine-tuning and direct preference optimization for the instruction following and safety measures.
+  access: Open
+  license: Unknown
+  intended_uses: The model is intended for broad commercial and research uses in English. It's suitable for general purpose AI systems and applications requiring memory/compute constrained environments, latency bound scenarios, and strong reasoning (especially math and logic).
+  prohibited_uses: The models are not designed to be used for all downstream purposes and should not be used in high-risk scenarios without proper evaluation of accuracy, safety, and fairness considerations. Developers must also adhere to any laws or regulations relevant to their use case.
+  monitoring: Unknown
+  feedback: Feedback on the model is welcomed and can be given through the Phi-3 model family community. The developers appreciate all feedback and will continue to welcome it.
+- type: model
+  name: Phi-3-Mini-128K-Instruct
+  organization: Microsoft
+  description: The Phi-3-Mini-128K-Instruct is a 3.8 billion-parameter, lightweight, state-of-the-art open model trained using the Phi-3 datasets. It provides robust and state-of-the-art performance among models with fewer than 13 billion parameters, especially in areas that test common sense, language understanding, mathematics, coding, long-term context, and logical reasoning. The model underwent a post-training process that involved supervised fine-tuning and direct preference optimization.
+  created_date: 2024-06-22
+  url: https://huggingface.co/microsoft/Phi-3-mini-128k-instruct
+  model card: https://huggingface.co/microsoft/Phi-3-mini-128k-instruct
+  modality: Text
+  analysis: The model demonstrated robust performance against benchmarks that test common sense, language understanding, mathematics, coding, long-term context, and logical reasoning. It shows improvements in instruction following, structure output, reasoning, long-context understanding in both internal and public benchmarks.
+  size: 3.8B parameters (dense)
+  dependencies: [Phi-3 datasets]
+  training_emissions: Unknown
+  training_time: Unknown
+  training_hardware: Unknown
+  quality_control: Underwent a post-training process that involved supervised fine-tuning and direct preference optimization for enhancing its ability to follow instructions and adhere to safety measures.
+  access: Open
+  license: Unknown 
+  intended_uses: Designed for commercial and research use, especially in memory/compute constrained environments, latency-bound scenarios, and applications requiring strong reasoning such as code, math, and logic. Can be used as a building block for generative AI-powered features.
+  prohibited_uses: Not specifically designed or evaluated for all downstream purposes. Developers should consider the common limitations of language models and should evaluate and mitigate for accuracy, safety, and fairness before using within a specific downstream use case, particularly for high-risk scenarios.
+  monitoring: Measures to monitor downstream uses of the model are not mentioned.
+  feedback: Encourages feedback from the community, but no specific method is provided. Users are most likely expected to give feedback via the Phi-3 Portal, Phi-3 Microsoft Blog or Azure AI Studio.

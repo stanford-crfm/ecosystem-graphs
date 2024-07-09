@@ -23,3 +23,25 @@
   prohibited_uses: ''
   monitoring: unknown
   feedback: none
+- type: model
+  name: Poseidon
+  organization: Seminar for Applied Mathematics, ETH Zurich, Switzerland & ETH AI Center, Zurich, Switzerland
+  description: Poseidon is a foundation model for learning the solution operators of partial differential equations (PDEs). It is based on a multiscale operator transformer and implements a new training strategy that leverages semi-group properties of time-dependent PDEs for scalable training data. Poseidon is pretrained on a large scale dataset for the governing equations of fluid dynamics and exhibits a high level of performance across multiple downstream tasks. It also shows remarkable generalizability to new physics that did not feature during pretraining. 
+  created_date: Unknown 
+  url: https://arxiv.org/pdf/2405.19101
+  model card: https://arxiv.org/pdf/2405.19101
+  modality: Text; Unknown
+  analysis: Poseidon was evaluated on a suite of 15 downstream tasks of varying complexity involving different PDE types and operators. The model demonstrated excellent performance across all tasks, significantly outperforming baselines in both sample efficiency and accuracy.
+  size: Unknown 
+  dependencies: [Pretraining dataset for the governing equations of fluid dynamics]
+  training_emissions: Unknown
+  training_time: Unknown
+  training_hardware: Unknown
+  quality_control: Poseidon underwent extensive evaluations on 15 diverse downstream tasks to gauge its efficacy. The tasks span a wide range of complexities and PDE types. The model has shown the ability to generalize well to new, unseen physics that did not feature during pretraining.
+  access: Open
+  license: Unknown
+  intended_uses: Poseidon is intended for learning the solution operators of PDEs in contexts such as computational physics, fluid dynamics, and more. It can be effectively utilized in any task requiring the efficient and accurate resolution of PDEs.
+  prohibited_uses: Unknown
+  monitoring: Unknown
+  feedback: Problems with the model can be reported through the GitHub where the source code is hosted.
+  

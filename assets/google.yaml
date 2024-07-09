@@ -1811,3 +1811,169 @@
     domain.
   monitoring: ''
   feedback: none
+- type: model
+  name: Gemma 2
+  _organization: Google
+  _description: Gemma is a family of lightweight, state-of-the-art open models from Google built from the same research and technology used to create the Gemini models. They are text-to-text (decoder-only) large language models that are available in English, with open weights for both pre-trained variants and instruction-tuned variants. Gemma models are ideal for various text generation tasks, including question answering, summarization, and reasoning. They are relatively compact, which makes it possible to deploy in environments with limited resources such as a laptop, desktop, or own cloud infrastructure.
+  _created_date: 2024 (specific date unknown).
+  _modality: Text; Text
+  _analysis: Unknown
+  _size: Two variants are mentioned, a 27B and a 9B variant. These likely refer to the number of parameters the models have, so the biggest model in this family has 27 billion parameters (the model is sparse is not specified).
+  _dependencies: Unknown
+  _training_emissions: Unknown
+  _training_time: Unknown
+  _training_hardware: Gemma was trained using the latest generation of Tensor Processing Unit (TPU) hardware (TPUv5p).
+  _quality_control: Rigorous CSAM (Child Sexual Abuse Material) filtering was applied at multiple stages in the data preparation process to ensure the exclusion of harmful and illegal content. Automated techniques were used to filter out certain personal information and other sensitive data from training sets.
+  _access: Open
+  _license: Google's Terms of Use
+  _intended_uses: Used for various text generation tasks, including question answering, summarization, narrative generation, translation, and sentence completion.
+  _prohibited_uses: Unknown
+  _monitoring: Unknown
+  _feedback: Unknown
+- type: model
+  name: Gemma 2
+  organization: Google DeepMind
+  description: Gemma 2 is a state-of-the-art open model built from the same research and technology used to create the Gemini models. This high performing model easily integrates with other AI tools and runs at incredible speeds across different hardware. The Gemma 2 model offers outsized performance and unmatched efficiency and cost savings. It's optimized to run at incredible speed across a range of hardware and is designed to more easily integrate into workflows.
+  created_date: 2024-06-27
+  url: https://dpmd.ai/45Q6yba
+  model card: https://dpmd.ai/45Q6yba
+  modality: unknown
+  analysis: The model was thoroughly tested and evaluated against a comprehensive set of metrics to identify and mitigate potential biases. However, the detailed evaluations are not provided.
+  size: Available in both 9 billion (9B) and 27 billion (27B) parameter sizes.
+  dependencies: [Gemma, CodeGemma, RecurrentGemma, PaliGemma, Llama 3, Gemini, Hugging Face, NVIDIA, Ollama]
+  training_emissions: unknown
+  training_time: unknown
+  training_hardware: Google Cloud TPU host, NVIDIA A100 80GB Tensor Core GPU, or NVIDIA H100 Tensor Core GPU.
+  quality_control: The creation process of Gemma 2 involved robust internal safety processes, filtering pre-training data.
+  access: open
+  license: Gemma
+  intended_uses: Gemma 2 is built for a large variety of AI tasks and can be seamlessly integrated into different workflows of developers and researchers.
+  prohibited_uses: unknown
+  monitoring: Developers and researchers are provided with resources to build and deploy AI responsibly through Responsible Generative AI Toolkit.
+  feedback: Through Google Cloud Meet and email.
+- type: model
+  name: Gemma 2
+  organization: Google
+  description: Gemma is a family of lightweight, state-of-the-art open models from Google, built from the same research and technology used to create the Gemini models. They are text-to-text, decoder-only large language models, available in English, with open weights for both pre-trained variants and instruction-tuned variants. Gemma models are well-suited for a variety of text generation tasks, including question answering, summarization, and reasoning. Their relatively small size makes it possible to deploy them in environments with limited resources such as a laptop, desktop or your own cloud infrastructure.
+  created_date: Unknown
+  url: https://huggingface.co/google/gemma-2-27b-it
+  model card: https://huggingface.co/google/gemma-2-27b-it
+  modality: text to text
+  analysis: Unknown
+  size: Unknown
+  dependencies: ["Gemini models"]
+  training_emissions: Unknown
+  training_time: Unknown
+  training_hardware: Unknown
+  quality_control: Rigorous CSAM (Child Sexual Abuse Material) filtering was applied at multiple stages in the data preparation process to ensure the exclusion of harmful or illegal content. Automated techniques were used to filter out certain personal information and other sensitive data from training sets.
+  access: Open
+  license: Terms
+  intended_uses: Gemma models are well-suited for a variety of text generation tasks, including question answering, summarization, and reasoning. They can also generate responses to text queries or documents.
+  prohibited_uses: Unknown
+  monitoring: Unknown
+  feedback: Unknown
+- type: model
+  name: Gemma 2
+  organization: Google DeepMind
+  description: Gemma 2 is a family of lightweight, state-of-the-art open models built for researchers and developers. It offers best-in-class performance, runs at incredible speed across different hardware, and easily integrates with other AI tools. It is built for efficiency and performance, exhibiting outsized performance for its size class and unmatched efficiency and cost savings. Gemma 2 is also designed to more easily integrate into developers' and researchers' workflows.
+  created_date: 2024-06-27
+  url: https://goo.gle/3RLQXUa
+  model card: https://goo.gle/3RLQXUa
+  modality: unknown
+  analysis: It is reported that Gemma 2 outperforms other models in its size category and offers competitive alternatives to models more than twice its size. These results are mentioned in a technical report but the specifics of the evaluations or the quality of the data used for testing are not provided.
+  size: Available in 9 billion (9B) and 27 billion (27B) parameters. 
+  dependencies: [Gemma, CodeGemma, RecurrentGemma, PaliGemma, LLaMa 3]
+  training_emissions: unknown
+  training_time: unknown
+  training_hardware: NVIDIA H100 Tensor Core GPU or TPU host
+  quality_control: Rigorous testing and evaluation against a comprehensive set of metrics to identify and mitigate potential biases, and filtering of pre-training data.
+  access: open
+  license: Gemma license
+  intended_uses: Built for developers and researchers for a variety of AI tasks, fine-tuning and deployment.
+  prohibited_uses: unknown
+  monitoring: Google appears to be taking measures to ensure that developers and researchers have resources to build and deploy AI responsibly, including through the Responsible Generative AI Toolkit.
+  feedback: unknown
+- type: model
+  name: Gemini 1.5
+  organization: Google DeepMind
+  description: Advanced multimodal machine learning model developed by Google DeepMind that can analyze and process a wide variety of data types and has been used in various real-world applications such as video analysis for retail traffic prediction and dashcam footage for insurance purposes, among others. The model feats a 1 million-token context window, allowing it to handle large amounts of data, and is designed to be faster and more cost-effective than comparable models. It has two variations, Gemini 1.5 Flash and Gemini 1.5 Pro with the Pro version having an expanded context window to 2 million tokens.
+  created_date: 2024-06-27
+  url: https://cloud.google.com/blog/products/ai-machine-learning/vertex-ai-offers-enterprise-ready-generative-ai??utm_source=twitter&utm_medium=unpaidsoc&utm_campaign=fy24q2-googlecloud-blog-ai-in_feed-no-brand-global&utm_content=-&utm_term=-
+  model card: https://cloud.google.com/blog/products/ai-machine-learning/vertex-ai-offers-enterprise-ready-generative-ai??utm_source=twitter&utm_medium=unpaidsoc&utm_campaign=fy24q2-googlecloud-blog-ai-in_feed-no-brand-global&utm_content=-&utm_term=-
+  modality: Text/audio/video; text/audio/video (Handles a wide range of data types)
+  analysis: Has been used by several organizations in different sectors and compared favourably against other high-performance models such as GPT 3.5 Turbo, surpassing it in speed and cost efficiency. 
+  size: Unknown
+  dependencies: Unknown
+  training_emissions: Unknown
+  training_time: Unknown
+  training_hardware: Unknown
+  quality_control: Has built-in safety features and provides support for multiple contexts.
+  access: Limited (available in Google's Vertex AI platform)
+  license: Unknown
+  intended_uses: To support a variety of business AI use cases such as video analysis for retail traffic prediction, dashcam footage for insurance purposes, document processing, research, natural language conversations and multi-modal data processing.
+  prohibited_uses: Unknown
+  monitoring: Unknown
+  feedback: Unknown.
+- type: model
+  name: Gemma 2
+  organization: Google DeepMind
+  description: Gemma 2 is the second iteration of the Gemma family of lightweight, state-of-the-art open models. It is higher-performing and more efficient at inference than the first generation, with significant safety advancements built in. It offers performance that was only possible with proprietary models as recently as December. It is available in both 9 billion (9B) and 27 billion (27B) parameter sizes. Gemma 2 has been optimized to run at incredible speed across a range of hardware, making it accessible to a wider range of developers and researchers. It is currently available for global use by researchers and developers.
+  created_date: 2024-06-27
+  url: https://blog.google/technology/developers/google-gemma-2/
+  model card: https://blog.google/technology/developers/google-gemma-2/
+  modality: Unknown
+  analysis: According to the given information, Gemma 2 outperforms other models in its size category including Llama 3 8B. Detailed performance breakdowns are provided in the technical report.
+  size: Available in 9 billion (9B) and 27 billion (27B) parameter sizes.
+  dependencies: [Gemma family models, Gemini models, CodeGemma, RecurrentGemma, PaliGemma, Hugging Face, NVIDIA, Ollama]
+  training_emissions: Unknown
+  training_time: Unknown
+  training_hardware: Google Cloud TPU host, NVIDIA A100 80GB Tensor Core GPU, NVIDIA H100 Tensor Core GPU
+  quality_control: Robust internal safety processes were followed when training Gemma 2, including filtering pre-training data and performing rigorous testing and evaluation against a comprehensive set of metrics to identify and mitigate potential biases.
+  access: open
+  license: Gemma license
+  intended_uses: Gemma 2 was designed to be used in diverse AI tasks as it integrates easily with other AI tools. It can be used by researchers and developers globally.
+  prohibited_uses: Unknown
+  monitoring: Developers and researchers have access to the LLM Comparator which helps them run comparative evaluations with their model and data. 
+  feedback: Unknown
+- type: model
+  name: Gemma 2
+  organization: Google, Hugging Face
+  description: Gemma 2 is a large language model that is part of Google's latest innovations. It has been created utilising Google's Cloud TPUs and is now integrated within the Hugging Face platform's Inference Endpoints and Spaces.
+  created_date: 2024-06-27
+  url: https://bit.ly/3RVRums
+  model card: https://bit.ly/3RVRums
+  modality: Unknown
+  analysis: Unknown
+  size: Up to 2 billion parameters
+  dependencies: [Hugging Face, Google Cloud TPUs, Optimum TPU, Text Generation Inference (TGI)]
+  training_emissions: Unknown
+  training_time: Unknown
+  training_hardware: Google Cloud TPUs
+  quality_control: Hugging Face and Google have collaborated to ensure a seamless integration of the Gemma 2 model with Google Cloud TPUs on Hugging Face Inference Endpoints and Spaces.
+  access: Open
+  license: Unknown
+  intended_uses: Gemma 2 is intended to be used for accelerating AI applications and workloads on the Hugging Face platform; it can be deployed seamlessly via Hugging Face Inference Endpoints and Spaces.
+  prohibited_uses: Unknown
+  monitoring: Unknown
+  feedback: Problems with the model can likely be reported via Hugging Face's community platform and support channels. Users are encouraged to share their experiences with the Hugging Face community.
+- type: model
+  name: Gemma 2
+  organization: Google
+  description: Gemma is a family of lightweight, state-of-the-art open models from Google, built from the same research and technology used to create the Gemini models. They are text-to-text, decoder-only large language models, available in English, with open weights for both pre-trained variants and instruction-tuned variants. Gemma models are suited for a variety of text generation tasks, including question answering, summarization, and reasoning.
+  created_date: 2024 (exact date unknown)
+  url: https://huggingface.co/google/gemma-2-9b-it
+  model card: https://huggingface.co/google/gemma-2-9b-it
+  modality: "text; text" (model that takes text as an input and generates text as an output).
+  analysis: Unknown.
+  size: There are two models in the Gemma family - a 27B dense model and a 9B dense model.
+  dependencies: Unknown.
+  training_emissions: Unknown.
+  training_time: Unknown.
+  training_hardware: Gemma was trained using the latest generation of Tensor Processing Unit (TPU) hardware (TPUv5p).
+  quality_control: Rigorous CSAM (Child Sexual Abuse Material) filtering was applied at multiple stages in the data preparation process to ensure the exclusion of harmful and illegal content. Automated techniques were used to filter out certain personal information and other sensitive data from training sets. Additional methods were used for filtering based on content quality and safety.
+  access: Open.
+  license: Terms of Use: Terms (exact details Unknown).
+  intended_uses: Gemma models are suited for a variety of text generation tasks, including question answering, summarization, and reasoning. Their relatively small size makes it possible to deploy them in environments with limited resources.
+  prohibited_uses: Unknown.
+  monitoring: Unknown.
+  feedback: Unknown.

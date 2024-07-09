@@ -22,3 +22,24 @@
   monthly_active_users: ''
   user_distribution: ''
   failures: ''
+- type: model
+  name: XEUS
+  organization: Carnegie Mellon University's WAVLab
+  description: XEUS is a large-scale multilingual speech encoder that was pre-trained on over 1 million hours of publicly available speech datasets and covers over 4000 languages. It requires fine-tuning to be used in downstream tasks such as Speech Recognition or Translation and also supports Flash Attention. Its hidden states can also be used with k-means for semantic Speech Tokenization. XEUS uses the E-Branchformer architecture and is trained using HuBERT-style masked prediction of discrete speech tokens extracted from WavLabLM. During training, the input speech is also augmented with acoustic noise and reverberation.
+  created_date: 2024 (exact date unknown)
+  url: https://huggingface.co/espnet/xeus
+  model card: https://huggingface.co/espnet/xeus
+  modality: Audio; Text
+  analysis: XEUS tops the ML-SUPERB multilingual speech recognition leaderboard, outperforming others such as MMS, w2v-BERT 2.0, and XLS-R. It also sets a new state-of-the-art on 4 tasks in the monolingual SUPERB benchmark.
+  size: 577M Parameters
+  dependencies: ['The WAVLabLM dataset', 'Publicly available speech datasets']
+  training_emissions: Unknown
+  training_time: Unknown
+  training_hardware: Unknown
+  quality_control: Acoustic noise and reverberation added during training for better robustness; model evaluated on multiple benchmarks including ML-SUPERB and SUPERB.
+  access: Open
+  license: Unknown
+  intended_uses: For downstream tasks such as Speech Recognition, Translation, and semantic Speech Tokenization.
+  prohibited_uses: Should not be used without required fine-tuning for downstream tasks.
+  monitoring: Unknown
+  feedback: Unknown, potentially through the project's GitHub or through the authors' direct communication channels.

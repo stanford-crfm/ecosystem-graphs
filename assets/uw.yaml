@@ -20,3 +20,24 @@
   prohibited_uses: ''
   monitoring: ''
   feedback: ''
+- type: model
+  name: Multi-token Prediction Models and Baselines
+  organization: unknown
+  description: Models accompanying the research paper "Better & Faster Large Language Models via Multi-Token Prediction". These models are trained on code and are devised for large language computations. They consist of four 7B parameter models, two of which are trained on 200 billion tokens of code and two on 1 trillion tokens of code.
+  created_date: 2024
+  url: https://huggingface.co/facebook/multi-token-prediction
+  model card: https://huggingface.co/facebook/multi-token-prediction
+  modality: text; text
+  analysis: Evaluation details can be found in the corresponding research paper: "Better & Faster Large Language Models via Multi-Token Prediction".
+  size: 7B parameters (each model)
+  dependencies: [Llama 2 SentencePiece tokenizer, cited datasets in the original research paper]
+  training_emissions: unknown
+  training_time: unknown
+  training_hardware: unknown
+  quality_control: The models have been evaluated in line with the research outlined in the corresponding research paper. Further quality control measures are unknown.
+  access: unknown
+  license: unknown
+  intended_uses: These models are intended for large language computations, as per the research paper.
+  prohibited_uses: Any usage not in line with the acceptable use policy.
+  monitoring: It's unclear if or how the uses of these models are being monitored.
+  feedback: Risks should be reported as indicated in the Acceptable Use Policy. Bugs and other comments should be addressed to the corresponding authors as indicated in the research paper.

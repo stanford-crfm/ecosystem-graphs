@@ -26,3 +26,108 @@
   prohibited_uses: ''
   monitoring: unknown
   feedback: none
+- type: model
+  name: Fish Speech V1.2
+  organization: Unknown (Likely a collaborative project by individuals Shijia Liao and Tianyu Li)
+  description: Fish Speech V1.2 is a leading text-to-speech (TTS) model trained on approximately 300,000 hours of English, Chinese, and Japanese audio data.
+  created_date: 2024 (Specific date unknown)
+  url: https://huggingface.co/fishaudio/fish-speech-1.2
+  model card: https://huggingface.co/fishaudio/fish-speech-1.2
+  modality: Text; Audio
+  analysis: Unknown
+  size: Unknown
+  dependencies: Unknown
+  training_emissions: Unknown
+  training_time: Unknown
+  training_hardware: Unknown
+  quality_control: Unknown
+  access: Open (Assumed based on the source listed on GitHub)
+  license: BY-CC-NC-SA-4.0 for the model; BSD-3-Clause for the source code
+  intended_uses: Converting text to speech in English, Chinese, and Japanese languages.
+  prohibited_uses: Unknown
+  monitoring: Unknown
+  feedback: Issues can likely be reported via the GitHub repository referenced in the citation.
+- type: model
+  name: Anole
+  organization: Unknown
+  description: Anole is an open-source, autoregressive, and natively trained large multimodal model capable of interleaved image-text generation. It builds upon the strengths of the Chameleon model and excels at generating coherent sequences of alternating text and images. Anole achieves remarkable image generation and understanding capabilities with minimal additional training using a fine-tuned process with a curated dataset of approximately 6,000 images. Its functionalities include text-to-image generation, interleaved text-image generation, text generation, and multimodal understanding. Anole is positioned as a catalyst for accelerated research and development in multimodal AI due to its efficient approach and open-source nature.
+  created_date: Unknown
+  url: https://huggingface.co/GAIR/Anole-7b-v0.1
+  model card: https://huggingface.co/GAIR/Anole-7b-v0.1
+  modality: Text; Image
+  analysis: Preliminary tests demonstrate Anole's outstanding ability to follow nuanced instructions, producing high-quality images and interleaved text-image content that closely aligns with user prompts. 
+  size: Unknown
+  dependencies: [Chameleon]
+  training_emissions: Unknown
+  training_time: Unknown
+  training_hardware: Unknown
+  quality_control: The model has undergone preliminary testing, demonstrating its ability to generate high-quality images and interleaved text-image content.
+  access: Open
+  license: Unknown
+  intended_uses: Anole is intended to be used for research and development in multimodal AI, text-to-image generation, interleaved text-image generation, text generation, and multimodal understanding.
+  prohibited_uses: Unknown
+  monitoring: Unknown
+  feedback: Problems with this model should be reported on the GitHub repository where it is hosted.
+- type: model
+  name: ControlNet++
+  organization: Unknown
+  description: ControlNet++ is an improved model built on the original ControlNet architecture for image generation and editing. It supports over 10 control types for condition text-to-image generation, provides high resolution images and doesn't increase the computation offload or network parameters even when handling multiple conditions input. Compatible with other opensource SDXL models such as BluePencilXL and CounterfeitXL.
+  created_date: Unknown
+  url: https://huggingface.co/xinsir/controlnet-union-sdxl-1.0
+  model card: https://huggingface.co/xinsir/controlnet-union-sdxl-1.0
+  modality: Text; Image
+  analysis: The model was tested extensively on the SDXL and demonstrated superior performance both in control ability and aesthetic score.
+  size: Almost the same parameters as the original ControlNet architecture. An exact number of parameters is not specified.
+  dependencies: [SDXL, BluePencilXL, CounterfeitXL, ControlNet]
+  training_emissions: Unknown
+  training_time: Unknown
+  training_hardware: Unknown
+  quality_control: The model leveraged multiple innovative approaches for training such as date augmentation, multiple loss, multi-resolution, and supportive of 10+ control conditions.
+  access: Open
+  license: Refer to the GitHub page: https://github.com/xinsir6/ControlNetPlus/tree/main
+  intended_uses: Generative tasks that require high-resolution image generation and editing. Supports a wide range of control conditions, making it useful for designers and artists.
+  prohibited_uses: Not specified.
+  monitoring: Unspecified. Users of the model are presumably expected to use it ethically and responsibly.
+  feedback: Users are encouraged to engage and give feedback via the model's GitHub page https://github.com/xinsir6/ControlNetPlus/tree/main.
+- type: model
+  name: Unknown
+  organization: Unknown
+  description: Unknown
+  created_date: Unknown
+  url: http://claude.ai
+  model card: http://claude.ai
+  modality: Unknown
+  analysis: Unknown
+  size: Unknown
+  dependencies: Unknown
+  training_emissions: Unknown
+  training_time: Unknown
+  training_hardware: Unknown
+  quality_control: Unknown
+  access: Unknown
+  license: Unknown
+  intended_uses: Unknown
+  prohibited_uses: Unknown
+  monitoring: Unknown
+  feedback: Unknown.
+- type: model
+  name: nanoLLaVA-1.5
+  organization: Unknown
+  description: nanoLLaVA-1.5 is a "small but mighty" 1B vision-language model designed to run efficiently on edge devices. It is an update from the v1.0 version. This model follows the ChatML standard.
+  created_date: Unknown
+  url: https://huggingface.co/qnguyen3/nanoLLaVA-1.5
+  model card: https://huggingface.co/qnguyen3/nanoLLaVA-1.5
+  modality: image; text
+  analysis: The model was evaluated on VQA v2, TextVQA, ScienceQA, POPE, MMMU (Test), MMMU (Eval), GQA, MM-VET.
+  size: 1B parameters (Assumedly dense as no mention of sparse nature)
+  dependencies: [Quyen-SE-v0.1 (Qwen1.5-0.5B), google/siglip-so400m-patch14-384]
+  training_emissions: Unknown
+  training_time: Unknown
+  training_hardware: Unknown
+  quality_control: Unknown
+  access: Limited (Code for finetuning is still underway and has not been released yet)
+  license: Unknown
+  intended_uses: The model can be used to allow machines to analyze and describe images in detail.
+  prohibited_uses: Unknown
+  monitoring: Unknown
+  feedback: Unknown. Unspecified means for reporting downstream issues with the model.

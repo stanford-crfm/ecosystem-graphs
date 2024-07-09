@@ -179,3 +179,24 @@
   prohibited_uses: ''
   monitoring: unknown
   feedback: none
+- type: model
+  name: InternLM2.5-7B-Chat GGUF Model
+  organization: Shanghai AI Laboratory
+  description: The model is a conversational language model that can understand and communicate fluently in the language chosen by the user such as English and 中文. The model is provided in GGUF format and can be utilized by llama.cpp, an open-source framework for large language model inference.
+  created_date: Unknown
+  url: https://huggingface.co/internlm/internlm2_5-7b-chat-gguf
+  model card: https://huggingface.co/internlm/internlm2_5-7b-chat-gguf
+  modality: text; text
+  analysis: Unknown
+  size: 7B parameters
+  dependencies: [llama.cpp]
+  training_emissions: Unknown
+  training_time: Unknown
+  training_hardware: Unknown
+  quality_control: Unknown.
+  access: Unknown
+  license: Unknown
+  intended_uses: The model is designed to be a helpful, honest, and harmless virtual assistant that can understand and communicate fluently in multiple languages.
+  prohibited_uses: Unknown
+  monitoring: Unknown
+  feedback: Unknown.

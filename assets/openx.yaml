@@ -77,3 +77,45 @@
   prohibited_uses: none
   monitoring: unknown
   feedback: none
+- type: model
+  name: Whisper large-v3
+  organization: OpenAI
+  description: Whisper is a pre-trained model for automatic speech recognition (ASR) and speech translation. Having been trained on 1 million hours of weakly labeled audio and 4 million hours of pseudolabeled audio collected using the Whisper large-v2 model, it exhibits strong ability to generalize to many datasets and domains without the need for fine-tuning. It is a sequence-to-sequence Transformer based encoder-decoder model.
+  created_date: Unknown
+  url: https://huggingface.co/openai/whisper-large-v3
+  model card: https://huggingface.co/openai/whisper-large-v3
+  modality: Audio; Text
+  analysis: The Whisper large-v3 model shows improved performance over a wide variety of languages, showing 10% to 20% reduction of errors compared to Whisper large-v2.
+  size: 1550M parameters
+  dependencies: [Whisper large-v2, Hugging Face Transformers, Librispeech (dataset), OpenAI datasets]
+  training_emissions: Unknown
+  training_time: Unknown
+  training_hardware: Unknown
+  quality_control: The model is trained and tested on large and varied datasets. Further, incremental versions of the model demonstrate improved performance, indicating ongoing improvements and quality control measures.
+  access: Open (Available on Hugging Face Hub)
+  license: Unknown
+  intended_uses: The Whisper large-v3 model can be used for the task of speech recognition as well as for speech transcription and translation where the source audio language can be different from the target text language.
+  prohibited_uses: Unknown
+  monitoring: Unknown
+  feedback: Problems with the model usage and any potential issues can be addressed by raising these concerns directly with the Hugging Face or OpenAI community or through their respective GitHub repositories.
+- type: model
+  name: InternVL2-26B
+  organization: OpenGVLab
+  description: InternVL 2.0 is a multimodal large language model series trained with an 8k context window and utilizes training data consisting of long texts, multiple images, and videos. It demonstrates competitive performance across various capabilities, including document and chart comprehension, infographics QA, scene text understanding and OCR tasks, scientific and mathematical problem solving, and cultural understanding. The specific model InternVL2-26B is an instruction-tuned model optimized for multimodal tasks and consists of InternViT-6B-448px-V1-5, an MLP projector, and internlm2-chat-20b.
+  created_date: Unknown
+  url: https://huggingface.co/OpenGVLab/InternVL2-26B
+  model card: https://huggingface.co/OpenGVLab/InternVL2-26B
+  modality: Text; Image; Video
+  analysis: Various benchmarks were conducted for model evaluation which range from image benchmarks (DocVQA, ChartQA, InfoVQA, etc.) to video benchmarks (MVBench, Video-MME). In most cases, InternVL2-26B demonstrated competitive or better performance than other models.
+  size: 26B parameters
+  dependencies: [InternViT-6B-448px-V1-5, internlm2-chat-20b, transformers==4.37.2]
+  training_emissions: Unknown
+  training_time: Unknown
+  training_hardware: Unknown
+  quality_control: Efforts were taken to ensure the safety of the model during the training process and to encourage the model to generate text that complies with ethical and legal requirements.
+  access: Open
+  license: Unknown
+  intended_uses: This model is intended to be used for multimodal tasks related to document and chart comprehension, infographics QA, scene text understanding and OCR tasks, scientific and mathematical problem solving, and cultural understanding.
+  prohibited_uses: The model should not be used for propagating harmful content, including biases, discrimination, etc. The organization is not responsible for any consequences resulting from the dissemination of such information.
+  monitoring: Unknown
+  feedback: Unknown

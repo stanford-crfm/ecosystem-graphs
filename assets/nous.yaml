@@ -168,3 +168,24 @@
   prohibited_uses: unknown
   monitoring: unknown
   feedback: https://huggingface.co/NousResearch/Genstruct-7B/discussions
+- type: model
+  name: Arcee-Agent
+  organization: CrusoeAI
+  description: The Arcee Agent is a cutting-edge 7B parameter language model designed specifically for function calling and tool use. It presents a competitive performance, hosting advanced function calling and multi-format support. It can exist as a standalone chat agent or work as a tool router, routing requests to appropriate processing tools. Not only does it excel in function calling and tool use, but it also offers a high degree of speed and efficiency.
+  created_date: unknown
+  url: https://huggingface.co/arcee-ai/Arcee-Agent
+  model card: https://huggingface.co/arcee-ai/Arcee-Agent
+  modality: Text; Text
+  analysis: The model showcases competitive performance in function calling and tool use tasks. However, detailed evaluations and benchmarking are not provided.
+  size: 7B parameters
+  dependencies: [Qwen2-7B]
+  training_emissions: unknown
+  training_time: unknown
+  training_hardware: Compute for training Arcee-Agent was provided by CrusoeAI.
+  quality_control: The model's function and API integration, database operations, and multi-step task executions are advanced features that ensure high-quality results. However, since the model focuses on function calling, general knowledge, and capabilities outside of this may be limited, and performance in unrelated core functionalities may not match those of models trained on diverse data. 
+  access: open
+  license: unknown
+  intended_uses: Arcee Agent is designed for a wide range of applications where efficient function calling and tool use are crucial, such as developing chatbots, middleware, process automation in resource-constrained environments, prototyping tool-use scenarios, building interactive documentation systems, and AI-powered research assistants.
+  prohibited_uses: unknown
+  monitoring: unknown
+  feedback: unknown.

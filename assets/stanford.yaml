@@ -143,3 +143,24 @@
   prohibited_uses: ''
   monitoring: ''
   feedback: Feedback can be provided on [[GitHub Issues]](https://github.com/tatsu-lab/stanford_alpaca/issues).
+- type: model
+  name: Merlin
+  organization: Stanford University
+  description: Merlin is a 3D Vision Language Model that uses both structured electronic health record (EHR) and unstructured radiology reports for supervision. It is used for abdominal CT interpretation. The model is trained on a high-quality clinical dataset of paired CT scans, EHR diagnosis codes, and radiology reports and evaluated on 6 task types and 752 individual tasks. The tasks include zero-shot findings classification, phenotype classification, zero-shot cross-modal retrieval, 5-year chronic disease prediction, radiology report generation, and 3D semantic segmentation.
+  created_date: 2024 (exact date missing)
+  url: https://arxiv.org/pdf/2406.06512
+  model card: https://arxiv.org/pdf/2406.06512
+  modality: 3D image; text
+  analysis: Merlin was comprehensively evaluated on 6 task types and 752 individual tasks. This includes internal validation on a test set of 5,137 CTs, external validation on 7,000 clinical CTs, and on two public CT datasets (VerSe, TotalSegmentator).
+  size: Unknown
+  dependencies: ["CT scans dataset", "EHR diagnosis codes", "radiology reports"]
+  training_emissions: Unknown
+  training_time: Unknown
+  training_hardware: Single GPU
+  quality_control: The model was evaluated internally and externally on multiple clinical CTs and public CT datasets. It was compared with existing task-specific baselines to ensure it's performing favorably.
+  access: limited (models, code, and dataset planned to be released after removal of all protected health information)
+  license: Unknown
+  intended_uses: The model is intended for use in abdominal CT interpretation. It helps in alleviating the burden of interpreting complex imaging studies, predicting chronic diseases, and extracting novel physiological insights from the images.
+  prohibited_uses: The model should not be used for purposes that violate patient privacy and confidentiality.
+  monitoring: Unknown
+  feedback: Problems with the model can probably be reported directly to the corresponding author via email.

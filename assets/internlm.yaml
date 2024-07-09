@@ -22,3 +22,87 @@
   prohibited_uses: ''
   monitoring: unknown
   feedback: https://huggingface.co/internlm/internlm-20b/discussions
+- type: model
+  name: InternLM2.5-7B-Chat-1M
+  organization: InternLM
+  description: InternLM2.5 has open sourced a 7 billion parameter base model and a chat model tailored for practical scenarios. The model has outstanding reasoning capability, excellent performance on Math reasoning, surpassing models like Llama3 and Gemma2-9B. It can handle 1M long context and supports gathering information from more than 100 web pages.
+  created_date: Expected on 2024 based on citation date, exact date is unknown.
+  url: https://huggingface.co/internlm/internlm2_5-7b-chat-1m
+  model card: https://huggingface.co/internlm/internlm2_5-7b-chat-1m
+  modality: Text to text, as it appears to input textual prompts and generate the output responses.
+  analysis: Evaluations were done using "needle in a haystack" approach to evaluate the model's ability to retrieve information from long texts. Also, LongBench benchmark was used to assess long-document comprehension capabilities. 
+  size: 7B parameters, dense model.
+  dependencies: Unknown
+  training_emissions: Unknown
+  training_time: Unknown
+  training_hardware: It is suggested that the model requires 4xA100-80G for inference with 1M context length.
+  quality_control: Unknown
+  access: Open, as the model is open-sourced.
+  license: Apache 2.0
+  intended_uses: The model is intended for reasoning tasks, long context comprehension, information retrieval and others. Specifically mentioned use cases include math reasoning and instruction following. 
+  prohibited_uses: Unknown
+  monitoring: User prompt evaluation through "needle in haystack" approach.
+  feedback: Issues are reported on GitHub.
+- type: model
+  name: InternLM-XComposer-2.5
+  organization: InternLM Github
+  description: This model excels in various text-image comprehension and composition applications, achieving GPT-4V level capabilities with merely a 7B LLM backend. It is trained with 24K interleaved image-text contexts and can seamlessly extend to 96K long contexts via RoPE extrapolation. This long-context capability allows the model to excel in tasks requiring extensive input and output contexts. 
+  created_date: Unknown
+  url: https://huggingface.co/internlm/internlm-xcomposer2d5-7b
+  model card: https://huggingface.co/internlm/internlm-xcomposer2d5-7b
+  modality: Text; Image
+  analysis: Evaluations are showcased through the model's ability to handle video comprehension, multi-image multi-tone dialog, and high-resolution image understanding.
+  size: 7B parameters
+  dependencies: ['Transformers']
+  training_emissions: Unknown
+  training_time: Unknown
+  training_hardware: Unknown
+  quality_control: Regular evaluations on various tasks such as video comprehension, multi-image multi-tone dialog, and high-resolution image understanding. 
+  access: Open
+  license: Unknown
+  intended_uses: The model can be used for understanding and generating descriptions for video and high-resolution images, as well as conducting multi-image multi-tone dialogues, and other tasks requiring extensive input and output contexts.
+  prohibited_uses: Unknown
+  monitoring: Unknown
+  feedback: Problems with the model should be reported on the model's GitHub repository.
+- type: model
+  name: InternLM2.5-7B-Chat
+  organization: InternLM
+  description: InternLM2.5 has open-sourced a 7 billion parameter base model and a chat model tailored for practical scenarios. The model has outstanding reasoning capabilities and supports 1M context window. It also has advanced tool utilization-related capabilities in instruction following, tool selection, and reflection. The model is designed with an effective measure in place to handle large inputs and internally processing information from a variety of sources. 
+  created_date: 2024-03-17
+  url: https://huggingface.co/internlm/internlm2_5-7b-chat
+  model card: https://huggingface.co/internlm/internlm2_5-7b-chat
+  modality: Text; Text
+  analysis: A comprehensive evaluation was conducted using the open-source evaluation tool OpenCompass covering five dimensions: disciplinary competence, language competence, knowledge competence, inference competence, and comprehension competence. It showed state-of-the-art performance on Math reasoning and demonstrated leading performance on long-context tasks like LongBench.
+  size: 7B parameters
+  dependencies: ["Llama-3", "Gemma2-9B"]
+  training_emissions: Unknown
+  training_time: Unknown
+  training_hardware: Unknown
+  quality_control: Efforts were made to ensure the safety of the model during the training process and to encourage the model to generate text that complies with ethical and legal requirements.
+  access: Open 
+  license: Apache 2.0
+  intended_uses: The model can be used for practical scenarios that require understanding and reasoning capabilities such as chatbots, personal assistants, or any application requiring natural language understanding and generation.
+  prohibited_uses: The model is not intended to disseminate harmful information such as biased, discriminatory, or other harmful content.
+  monitoring: It is not clear how monitoring of the model's use is to be carried out after deployment into downstream applications. 
+  feedback: Problems with the model should be reported to internlm@pjlab.org.cn.
+- type: model
+  name: InternLM-XComposer-2.5
+  organization: InternLM
+  description: InternLM-XComposer-2.5 is a large, versatile vision language model that supports long-contextual input and output. It excels in various text-image comprehension and composition applications, achieving capabilities comparable to a 7 billion (7B) parameter language model. InternLM-XComposer-2.5 is trained with 24K interleaved image-text contexts but can also extend to 96K long contexts via RoPE extrapolation. This model is capable of understanding ultra-high resolution images, performing fine-grained video understanding, supporting multi-turn multi-image dialogue, creating webpages by composing source code (HTML, CSS, and JavaScript) following text-image instructions, and composing high-quality text-image articles.
+  created_date: 2024-07-03
+  url: https://github.com/InternLM/InternLM-XComposer
+  model card: https://github.com/InternLM/InternLM-XComposer
+  modality: Text; Image, Video
+  analysis: The model has been evaluated on 28 benchmarks, outperforming existing open-source state-of-the-art models on 16 benchmarks. It also competes closely with GPT-4V and Gemini Pro on 16 key tasks.
+  size: 7B parameters
+  dependencies: ["InternLM-XComposer-2.5 demo", "OpenXLab", "ModelScope"]
+  training_emissions: Unknown
+  training_time: Unknown
+  training_hardware: Unknown
+  quality_control: The model was evaluated extensively on a series of text-image comprehension and composition tasks, and its quality was validated by surpassing or closely competing with advanced models such as GPT-4V.
+  access: open
+  license: Unspecified
+  intended_uses: Intended for use in tasks that require understanding and generating high-resolution images and fine-grained videos, multi-turn multi-image dialogue, webpage crafting, and composing high-quality text-image articles.
+  prohibited_uses: Unknown
+  monitoring: Unknown
+  feedback: Feedback can be provided through the platform where the model is being used, such as Hugging Face, ModelScope, GitHub, etc.

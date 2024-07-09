@@ -54,3 +54,87 @@
   prohibited_uses: ''
   monitoring: unknown
   feedback: https://huggingface.co/01-ai/Yi-VL-34B/discussions
+- type: model
+  name: MARS5
+  organization: CAMB.AI
+  description: MARS5 is a two-stage AR-NAR English speech model capable of generating speech from text prompts and short audio references. The model can handle prosodically challenging scenarios, like sports commentary and anime dialogue, and allows users to 'deep clone' by providing the transcript of the reference audio. The resulting output can be 'steered' by punctuation and capitalization. The MARS5 model uses two checkpoints - an AR fp16 checkpoint (750M parameters), and an NAR fp16 checkpoint (450M parameters).
+  created_date: Unknown
+  url: https://huggingface.co/CAMB-AI/MARS5-TTS
+  model card: https://huggingface.co/CAMB-AI/MARS5-TTS
+  modality: text and audio; audio
+  analysis: Unknown. Future updates are planned to benchmark performance on standard speech datasets.
+  size: 1.2B parameters (750M AR + 450M NAR)
+  dependencies: ["TransFusion repository", "Multinomial diffusion repository", "Mistral-src repository", "minbpe repository", "Vocos from gemelo-ai", "AWS", "huggingface_hub", "torch", "torchaudio", "librosa", "vocos", "encodec"]
+  training_emissions: Unknown
+  training_time: Unknown
+  training_hardware: NVIDIA H100s
+  quality_control: Unknown. The project roadmap includes improving inference stability, speed, and performance.
+  access: open
+  license: GNU AGPL 3.0
+  intended_uses: The model is designed to synthesize speech from text prompts and audio reference files. These capabilities can be used in TTS and dubbing applications in over 140 languages.
+  prohibited_uses: Unknown
+  monitoring: Unknown. The organization actively accepts contributions on GitHub and is planning improvements to the model.
+  feedback: Users are encouraged to report problems or contribute improvements via GitHub's PR/discussion feature. They can also contact the organization via email at help@camb.ai.
+- type: model
+  name: Kolors
+  organization: Kuaishou Kolors team
+  description: Kolors is a large-scale text-to-image generation model based on latent diffusion. It is trained on billions of text-image pairs and shows significant advantages in visual quality, complex semantic accuracy, and text rendering for both Chinese and English characters. It also supports Chinese and English inputs.
+  created_date: 2024 (exact date unknown)
+  url: https://huggingface.co/Kwai-Kolors/Kolors
+  model card: https://huggingface.co/Kwai-Kolors/Kolors
+  modality: text; image
+  analysis: Unknown
+  size: Unknown
+  dependencies: [Diffusers, ChatGLM3]
+  training_emissions: Unknown
+  training_time: Unknown
+  training_hardware: Unknown
+  quality_control: Measures have been taken to ensure the compliance, accuracy, and safety of the data during training, but the developers note that due to the diversity and combinability of generated content and the probabilistic randomness affecting the model, they cannot guarantee the accuracy and safety of the output content.
+  access: open
+  license: Apache 2.0 
+  intended_uses: The model is intended to be used for text-to-image synthesis, with the ability to handle both Chinese and English inputs.
+  prohibited_uses: The model should not be used for any purposes that may harm the country and society, or for any services not evaluated and registered for safety. It should not be used in ways that could lead to data security issues, public opinion risks, or risks and liabilities arising from the model being misled, abused, misused, or improperly utilized.
+  monitoring: Unknown
+  feedback: Problems with the model can be reported via email at kwai-kolors@kuaishou.com.
+- type: model
+  name: ChatTTS
+  organization: 2NOISE
+  description: ChatTTS is a text-to-speech model that converts text input into audio output. The model supports batch processing, and it provides multiple parameter settings for fine control over the generated speech, including specifying the speaker, adjusting the speech speed, and adding laughter. The model does not guarantee accuracy, completeness, or reliability, contingent upon its use for academic and research purposes.
+  created_date: unknown
+  url: https://huggingface.co/2Noise/ChatTTS
+  model card: https://huggingface.co/2Noise/ChatTTS
+  modality: text; audio
+  analysis: unknown
+  size: unknown
+  dependencies: [torch, torchaudio, ChatTTS]
+  training_emissions: unknown
+  training_time: unknown
+  training_hardware: unknown
+  quality_control: unknown
+  access: open
+  license: unknown
+  intended_uses: The model is intended for academic, educational, and research use with the ability to convert text into speech. It provides multiple parameters for fine control over the generated speech.
+  prohibited_uses: The model should not be used for any commercial or legal purposes.
+  monitoring: unknown
+  feedback: Problems with this model can be reported via email at OPEN-SOURCE@2NOISE.COM.
+- type: model
+  name: CodeGeeX4-ALL-9B
+  organization: THUDM
+  description: CodeGeeX4-ALL-9B is a multilingual code generation model that has been trained on the GLM-4-9B. It can perform functions such as code completion and generation, code interpreting, web searching, function calling, and code Q&A, covering various scenarios of software development. It has shown remarkable performance on public benchmarks such as BigCodeBench and NaturalCodeBench.
+  created_date: unknown
+  url: https://huggingface.co/THUDM/codegeex4-all-9b
+  model card: https://huggingface.co/THUDM/codegeex4-all-9b
+  modality: text; text
+  analysis: The model was evaluated on several benchmarks including HumanEval, MBPP, NCB, LCB, HumanEvalFIM, and CRUXEval-O. It achieved competitive performances, standing out even among other, larger models.
+  size: This model has 9 billion parameters.
+  dependencies: This model was directly built on the GLM-4-9B model.
+  training_emissions: unknown
+  training_time: unknown
+  training_hardware: unknown
+  quality_control: The model has been evaluated on numerous public benchmarks for performance assessment.
+  access: open
+  license: unknown
+  intended_uses: It can be used for code completion and generation, code interpreting, web search, function call, repository-level code Q&A, and various software development scenarios.
+  prohibited_uses: unknown
+  monitoring: unknown
+  feedback: Any downstream problems should likely be reported to the model's creators at THUDM, but there's not specific feedback procedure mention in the provided materials about the model.

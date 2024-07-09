@@ -292,3 +292,24 @@
   monitoring: Advanced content recognition is used to maintain compliance and prevent
     copyright infringement.
   feedback: none
+- type: model
+  name: Stable Diffusion 3 Medium
+  organization: Stability AI 
+  description: Stable Diffusion 3 Medium is a Multimodal Diffusion Transformer (MMDiT) text-to-image model that features improved performance in image quality, typography, complex prompt understanding, and resource-efficiency. It uses three fixed, pretrained text encoders (OpenCLIP-ViT/G, CLIP-ViT/L and T5-xxl)
+  created_date: Unknown
+  url: https://huggingface.co/stabilityai/stable-diffusion-3-medium
+  model card: https://huggingface.co/stabilityai/stable-diffusion-3-medium
+  modality: Text; Image
+  analysis: The model underwent structured evaluations and internal and external red-teaming testing for specific, severe harms such as child sexual abuse and exploitation, extreme violence, and gore, sexually explicit content, and non-consensual nudity. The testing was primarily done in English.
+  size: Unknown
+  dependencies: [OpenCLIP-ViT/G, CLIP-ViT/L, T5-xxl]
+  training_emissions: Unknown
+  training_time: Unknown
+  training_hardware: Unknown
+  quality_control: The model has been trained using filtered datasets and implemented safeguards have been put in place to reduce harmful content output. However, developers are encouraged to conduct their own testing and apply additional mitigations based on their specific use cases.
+  access: Open
+  license: Community License
+  intended_uses: The model is intended for the generation of artworks, use in design and other artistic processes, applications in educational or creative tools, and research on generative models.
+  prohibited_uses: The model is not intended to generate factual or true representations of people or events.
+  monitoring: The model has in-built safety measures implemented throughout its development and encourages developers to cross-check the outputs based on their use-cases.
+  feedback: Issues with the model should be reported to Safety issues: safety@stability.ai, Security issues: security@stability.ai, Privacy issues: privacy@stability.ai or via https://stability.ai/license for license and general issues or https://stability.ai/enterprise for enterprise license issues.
