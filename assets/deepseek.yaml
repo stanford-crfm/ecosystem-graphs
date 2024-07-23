@@ -80,3 +80,24 @@
   prohibited_uses: ''
   monitoring: unknkown
   feedback: https://huggingface.co/deepseek-ai/deepseek-coder-33b-base/discussions
+- type: model
+  name: DeepSeek-V2-Chat-0628
+  organization: DeepSeek-AI
+  description: DeepSeek-V2-Chat-0628 is an improved version of DeepSeek-V2-Chat. It has significantly enhanced the user experience for immersive translation, RAG, and other tasks. The model has achieved notable rankings on the LMSYS Chatbot Arena Leaderboard, showcasing exceptional capabilities in coding tasks and strong performance on challenging prompts.
+  created_date: 2024 (Exact date is not provided.)
+  url: https://huggingface.co/deepseek-ai/DeepSeek-V2-Chat-0628
+  model_card: https://huggingface.co/deepseek-ai/DeepSeek-V2-Chat-0628
+  modality: Text; Text (Takes text input to generate text-based output.)
+  analysis: Performed remarkably well in benchmarks where it substantially improved upon the performance of its previous version, DeepSeek-V2-Chat, in various evaluation metrics including HumanEval, MATH, BBH, IFEval, and Arena-Hard rankings.
+  size: Unknown
+  dependencies: ['DeepSeek-V2-Chat', 'Huggingface Transformers', 'vLLM']
+  training_emissions: Unknown
+  training_time: Unknown
+  training_hardware: 80GB*8 GPUs for local inference.
+  quality_control: Benchmarking on different evaluation metrics like HumanEval, MATH, BBH, IFEval, Arena-Hard, and JSON Output.
+  access: Open
+  license: MIT
+  intended_uses: Can be utilized for various tasks like chat applications, coding task assistance, challenging prompt responses, immersive translations, RAG, and more.
+  prohibited_uses: Not stated explicitly.
+  monitoring: Unknown
+  feedback: Users can raise an issue or contact the DeepSeek-AI team at service@deepseek.com for reporting downstream problems.

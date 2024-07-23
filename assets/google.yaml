@@ -1811,3 +1811,24 @@
     domain.
   monitoring: ''
   feedback: none
+- type: model
+  name: FLAMe (Foundational Large Autorater Models)
+  organization: Google DeepMind
+  description: FLAMe is a family of Foundational Large Autorater Models. The model is trained on a large and diverse collection of over 100 quality assessment tasks comprising 5M+ human judgments. It is designed to serve as a powerful starting point for further downstream fine-tuning. Specific variants of the model have been developed for various tasks, notably FLAMe-RM-24B for reward modeling evaluation.
+  created_date: 2024-07-15
+  url: http://arxiv.org/pdf/2407.10817
+  model_card: 
+  modality: text; text
+  analysis: FLAMe outperforms Large Language Models like GPT-4, Claude-3 on many tasks. It enhances generalization to a wide variety of held-out tasks. Notably, on RewardBench, FLAMe-RM-24B achieves an accuracy of 87.8%.
+  size: 24B parameters. The model card states "FLAMe-RM-24B" which likely refers to the model having 24 billion parameters.
+  dependencies: [GPT-4, Claude-3, Llama-3, PaLM-2-24B, Various quality assessment tasks]
+  training_emissions: Unknown
+  training_time: Unknown
+  training_hardware: Unknown
+  quality_control: FLAMe is trained on extensive human judgments on quality assessment tasks, carefully curated and standardized. It also was fine-tuned and evaluated across a wide variety of tasks for robust performance.
+  access: Unknown
+  license: Not stated. However, it is mentioned that all data used to train the model are publicly available and permissively licensed.
+  intended_uses: FLAMe is intended to be an effective tool for automatically evaluating the output of large language models. A specific use case presented in the model card is use as an autorater for reward modeling evaluation (FLAMe-RM-24B).
+  prohibited_uses: FLAMe should not be used for applications where human-level rating accuracy is required. Also, it might carry the risk of reinforcing biases and hallucinations, as it is trained predominantly on human judgments.
+  monitoring: Unknown
+  feedback: Contact the corresponding author(s) via email.

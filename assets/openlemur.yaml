@@ -57,3 +57,24 @@
   prohibited_uses: ''
   monitoring: ''
   feedback: https://huggingface.co/OpenLemur/lemur-70b-chat-v1/discussions
+- type: model
+  name: Athene-Llama3-70B
+  organization: The Nexusflow Team
+  description: Athene-Llama3-70B is an open-weights language model trained through Reinforcement Learning from Human Feedback (RLHF). It was fine-tuned from the model Llama-3-70B-Instruct and competes on a high performance level on the Arena-Hard-Auto benchmark, which is a proxy for the Chatbot Arena.
+  created_date: 2024-07-01 (The created date assumption is based on the citation as no specific date is provided)
+  url: https://huggingface.co/Nexusflow/Athene-70B
+  model_card: https://huggingface.co/Nexusflow/Athene-70B
+  modality: text; text (As this is a chat model, it's assumed to take text input and generate text output)
+  analysis: The model was evaluated on the Arena-Hard benchmark, where it achieved a score of 77.8%, outperforming several other models including Gemini-Pro-1.5, Gemma-2-27B, and Llama-3-70B. 
+  size: 70B parameters (assumed to be dense)
+  dependencies: [Llama-3-70B-Instruct]
+  training_emissions: Unknown
+  training_time: Unknown
+  training_hardware: Unknown
+  quality_control: Unknown
+  access: Open
+  license: Unknown
+  intended_uses: Intended to be used for generating text, likely in a conversational context as it's a chat model. It can be used through the Transformers library, as demonstrated in the usage sample.
+  prohibited_uses: Unknown
+  monitoring: Unknown
+  feedback: Problems with the model likely can be reported through the Nexusflow website, as per the provided blog URL. However, no specific feedback process is outlined in the provided info.

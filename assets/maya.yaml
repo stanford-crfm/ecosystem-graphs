@@ -22,3 +22,24 @@
   prohibited_uses: ''
   monitoring: unknown
   feedback: none
+- type: model
+  name: DCLM-Baseline-7B
+  organization: DataComp for Language Models (DCLM) Team
+  description: DCLM-Baseline-7B is a 7 billion parameter language model trained primarily in English on the DCLM-Baseline dataset. It is designed to showcase the effectiveness of systematic data curation techniques for improving language model performance.
+  created_date: 2024-06-01
+  url: https://huggingface.co/apple/DCLM-7B
+  model_card: https://huggingface.co/apple/DCLM-7B
+  modality: text; text
+  analysis: The model has undergone extensive evaluations across a broad range of tasks using the llm-foundry evaluation suite. The scores, presented in decimal values between 0 and 1, indicate the model's performance (proportion of correct answers) on each task.
+  size: 7B parameters
+  dependencies: [DCLM-Baseline dataset, StarCoder, ProofPile2 data, PyTorch with OpenLM]
+  training_emissions: Unknown
+  training_time: Unknown
+  training_hardware: H100 GPUs
+  quality_control: The model is evaluated across a broad range of tasks using an evaluation suite. However, it does note that the model's performance on tasks not included in the suite may vary.
+  access: Open
+  license: Apple Sample Code
+  intended_uses: To demonstrate the effectiveness of systematic data curation techniques in improving language model performance.
+  prohibited_uses: Should not be used for making decisions about individuals or in sensitive applications without appropriate safeguards and human oversight.
+  monitoring: Unknown
+  feedback: Any problems with this model should be reported to contact@datacomp.ai.

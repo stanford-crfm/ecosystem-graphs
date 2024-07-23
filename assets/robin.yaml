@@ -22,3 +22,24 @@
   monthly_active_users: ''
   user_distribution: ''
   failures: ''
+- type: model
+  name: Roblox Voice Safety Classifier
+  organization: Roblox
+  description: This is a large classification model trained on a manually curated real-world dataset, used as a benchmark for research in toxicity detection and classification. It was started with weights from WavLM base plus and fine-tuned with 2,374 hours of voice chat audio clips. The model is designed for multilabel classification with categories such as Profanity, Dating and Sexting, Racist, Bullying, Other, and No Violation.
+  created_date: Unknown
+  url: https://huggingface.co/Roblox/voice-safety-classifier
+  model_card: https://huggingface.co/Roblox/voice-safety-classifier
+  modality: Audio; Multilabel Classification
+  analysis: This model was evaluated on a human-annotated dataset containing 9,795 samples. When treating the model as a binary classifier across the four toxicityy classes, it achieved a binarized average precision score of 94.48%.
+  size: Unknown
+  dependencies: [WavLM base plus]
+  training_emissions: Unknown
+  training_time: Unknown
+  training_hardware: Unknown
+  quality_control: The model was evaluated on a human-annotated dataset to ensure its quality and effectiveness.
+  access: Open
+  license: Unknown
+  intended_uses: This model is intended to be used for multilabel classification of audio data for toxicity detection in categories such as Profanity, DatingAndSexting, Racist, Bullying, Other, and NoViolation.
+  prohibited_uses: Unknown
+  monitoring: Unknown
+  feedback: Unknown

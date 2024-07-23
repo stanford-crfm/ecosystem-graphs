@@ -19,3 +19,24 @@
   monthly_active_users: ''
   user_distribution: ''
   failures: ''
+- type: model
+  name: AuraFlow v0.1
+  organization: Fal
+  description: AuraFlow v0.1 is the fully open-sourced largest flow-based text-to-image generation model that achieves state-of-the-art results on GenEval. It's currently in beta and the developers are actively working on improving it. The model transforms textual prompts into detailed images, and user feedback is critical to its ongoing improvement.
+  created_date: Unknown
+  url: https://huggingface.co/fal/AuraFlow
+  model_card: https://huggingface.co/fal/AuraFlow
+  modality: text; image
+  analysis: The model achieves state-of-the-art results on GenEval, but specific evaluation metrics are not mentioned.
+  size: Unknown
+  dependencies: [Transformers, Accelerate, Protobuf, SentencePiece, Diffusers (https://github.com/huggingface/diffusers.git)]
+  training_emissions: Unknown
+  training_time: Unknown
+  training_hardware: Unknown
+  quality_control: The model is continuously being improved, with the developers particularly highlighting their reliance on community feedback for improvements.
+  access: open
+  license: Unknown
+  intended_uses: The model can be used to generate detailed images from textural prompts. A classic use case is a text-to-image prompt where the user asks for a "close-up portrait of a majestic iguana" and the model will generate a realistic, high-resolution image based on the description.
+  prohibited_uses: Unknown
+  monitoring: Real-time feedback and model development updates are provided through the developers' Discord channel.
+  feedback: Feedback about any problems with the model should be provided through the Fal's Discord channel.

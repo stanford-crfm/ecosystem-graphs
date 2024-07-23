@@ -75,3 +75,24 @@
   prohibited_uses: ''
   monitoring: ''
   feedback: ''
+- type: model
+  name: ColPali
+  organization: illuin.tech
+  description: ColPali is a model based on Vision Language Models (VLMs) for efficiently indexing documents from their visual features. It is an extension of the PaliGemma-3B model that generates ColBERT- style multi-vector representations of text and images. The model is designed to compute interactions between text tokens and image patches, providing a significant improvement in performance.
+  created_date: 2024-07-01 (Assumed based on the arXiv paper submission date)
+  url: https://huggingface.co/vidore/colpali
+  model_card: https://huggingface.co/vidore/colpali
+  modality: image + text document; text
+  analysis: Unknown
+  size: Specific number of parameters unknown. However, since it's built on PaliGemma-3B, its parameters likely reside in the range of billions ('B').
+  dependencies: [SigLIP, PaliGemma-3B, BiSigLIP, BiPali, Claude-3 Sonnet]
+  training_emissions: Unknown
+  training_time: One epoch on the train set
+  training_hardware: 8 GPU setup with data parallelism
+  quality_control: The model was trained using a validation set for tuning hyperparameters. It was explicitly verified that no PDF document used in ViDoRe is present in the train set to prevent evaluation contamination.
+  access: Open (Released in the illuin.tech repository)
+  license: gemma (for PaliGemma); MIT (for the model-specific adapters)
+  intended_uses: ColPali is primarily designed for efficient document retrieval, taking visual features into account.
+  prohibited_uses: The model should not be used for multi-vector retrieval purposes that lack native multi-vector support, unless additional engineering effort is applied. Also, the model mainly works with English and high-resource languages and PDF-type documents; it's not intended for work with less represented languages or other document types without modification.
+  monitoring: Unknown
+  feedback: For downstream problems with this model, report to Manuel Faysse (manuel.faysse@illuin.tech), Hugues Sibille (hugues.sibille@illuin.tech), or Tony Wu (tony.wu@illuin.tech).

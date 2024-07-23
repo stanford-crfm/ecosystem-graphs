@@ -54,3 +54,24 @@
   prohibited_uses: ''
   monitoring: unknown
   feedback: https://huggingface.co/01-ai/Yi-VL-34B/discussions
+- type: model
+  name: Kolors-IP-Adapter-Plus
+  organization: Kwai-Kolors
+  description: Kolors-IP-Adapter-Plus is an improved model based on Kolors-Basemodel. This model includes a stronger image feature extractor employing the Openai-CLIP-336 model as the image encoder, which preserves more details in reference images. It also utilizes diverse and high-quality training data inspired by data strategies of other works. The IP-Adapter-Plus weights and inference code are also provided.
+  created_date: Unknown
+  url: https://huggingface.co/Kwai-Kolors/Kolors-IP-Adapter-Plus
+  model_card: https://huggingface.co/Kwai-Kolors/Kolors-IP-Adapter-Plus
+  modality: "image; image" (This model likely uses an image as input and generates another image as output)
+  analysis: The model was evaluated on a test set of over 200 reference images and text prompts. Image experts rated the generated images based on four criteria: visual appeal, text faithfulness, image faithfulness, and overall satisfaction. Kolors-IP-Adapter-Plus achieved the highest overall satisfaction score against other models in the evaluation.
+  size: Unknown
+  dependencies: [Kolors-Basemodel, Openai-CLIP-336, IP-Adapter]
+  training_emissions: Unknown
+  training_time: Unknown
+  training_hardware: Unknown
+  quality_control: The model was evaluated and rated by image experts for quality control, ensuring high image generation performance based on the criteria of visual appeal, text faithfulness, image faithfulness, and overall satisfaction.
+  access: open
+  license: Unknown
+  intended_uses: The model is intended to be used for image enhancement and conversion tasks specifically focusing on preserving the details in the reference images.
+  prohibited_uses: Unknown
+  monitoring: Unknown
+  feedback: Reporting of downstream problems with this model could be conducted by creating issues in the provided GitHub repository.

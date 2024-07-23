@@ -21,3 +21,24 @@
   prohibited_uses: ''
   monitoring: ''
   feedback: https://huggingface.co/spaces/suno/bark/discussions
+- type: model
+  name: Gen-3 Alpha
+  organization: Runway AI, Inc.
+  description: Gen-3 Alpha is the first of an upcoming series of models trained by Runway on a new infrastructure built for large-scale multimodal training. It represents a major improvement in fidelity, consistency, and motion over the previous Gen-2 model. Trained on both videos and images, Gen-3 Alpha demonstrates high-fidelity, controllable video generation capabilities.
+  created_date: 2024-06-17
+  url: https://runwayml.com/blog/introducing-gen-3-alpha/
+  model_card: 
+  modality: Video; Video, Image; Video, Text; Video, Image; Video
+  analysis: The model was evaluated based on its ability to produce high fidelity videos that demonstrate controllable movement and consistency. It's capable of generating expressive human characters with a broad range of actions, gestures, and emotions, thus unlocking new storytelling possibilities.
+  size: Unknown
+  dependencies: Unknown
+  training_emissions: Unknown
+  training_time: Unknown
+  training_hardware: Unknown
+  quality_control: The model includes a new set of safeguards, with improved in-house visual moderation system and compliance with the C2PA (Coalition for Content Provenance and Authenticity) provenance standards.
+  access: Unknown
+  license: Terms of Use
+  intended_uses: The model is intended for high-fidelity, controllable video generation, powering tools such as Text to Video, Image to Video, Text to Image, Motion Brush, Advanced Camera Controls, and Director Mode. It can be used for fine-grained control over structure, style, and motion in videos.
+  prohibited_uses: Unknown
+  monitoring: Unknown
+  feedback: Issues with the model should be reported to Runway AI, Inc. They may be available through contact information provided on their website.

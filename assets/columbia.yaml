@@ -45,3 +45,24 @@
   prohibited_uses: ''
   monitoring: none
   feedback: none
+- type: model
+  name: Mistral-NeMo-12B-Instruct
+  organization: NVIDIA and Mistral AI
+  description: Mistral-NeMo-12B-Instruct is a Large Language Model (LLM) composed of 12B parameters. It is a transformer model, pre-trained and instructed versions available, trained with a 128k context window. It comes with a FP8 quantized version with no accuracy loss and is trained on a large proportion of multilingual and code data. The model may generate socially unacceptable or undesirable text as it was trained on data that contains toxic language, unsafe content, and societal biases.
+  created_date: The model was trained between June 2024 and July 2024.
+  url: https://huggingface.co/nvidia/Mistral-NeMo-12B-Instruct
+  model_card: https://huggingface.co/nvidia/Mistral-NeMo-12B-Instruct
+  modality: Text; Text
+  analysis: The model has been evaluated on multiple benchmarks including MT Bench (dev): 7.84, MixEval Hard: 0.534, IFEval-v5: 0.629, Wildbench: 42.57.
+  size: 12B Parameters 
+  dependencies: [NeMo Framework, NeMo-Aligner]
+  training_emissions: Unknown
+  training_time: Approximately one month (from June 2024 to July 2024)
+  training_hardware: Unknown
+  quality_control: Trustworthy AI policies and practices established by NVIDIA were employed. Developers are encouraged to work with their internal model team to ensure this model meets industry requirements and addresses unforeseen product misuse.   
+  access: Open
+  license: Apache 2.0
+  intended_uses: The model can be used as a chat model for the English language. It can be further customized using the NeMo Framework suite of customization tools. 
+  prohibited_uses: The model should not be used for applications where generation of toxic, unsafe, or socially unacceptable responses is a concern. 
+  monitoring: To ensure quality control, applicability, and adherence to ethical guidelines, NVIDIA implements policies and practices for Trustworthy AI and expects users to comply with these standards.
+  feedback: Any issues, including security vulnerabilities or AI concerns should be reported to NVIDIA [via their contact channels](https://developer.nvidia.com/nvidia-developer-program) or directly in the relevant [Hugging Face repository](https://huggingface.co/mistralai/Mistral-Nemo-Instruct-2407).

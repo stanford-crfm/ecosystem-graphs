@@ -26,3 +26,66 @@
   prohibited_uses: ''
   monitoring: unknown
   feedback: none
+- type: model
+  name: Llama-3-70B-Tool-Use
+  organization: Unknown
+  description: This is the 70B parameter version of the Llama 3 Groq Tool Use model, specifically designed for advanced tool use and function calling tasks.
+  created_date: Unknown 
+  url: https://huggingface.co/Groq/Llama-3-Groq-70B-Tool-Use
+  model_card: https://huggingface.co/Groq/Llama-3-Groq-70B-Tool-Use
+  modality: text; text
+  analysis: The model scored 90.76% overall accuracy on the Berkeley Function Calling Leaderboard (BFC) which is the best performance among all open-source 70B LLMs on the BFCL.
+  size: 70B parameters
+  dependencies: [Llama 3 70B base model]
+  training_emissions: Unknown
+  training_time: Unknown
+  training_hardware: Unknown
+  quality_control: The model underwent rigorous evaluations as reflected in its top performance in the BFCL. Additionally, users are advised to use this model within its specific domain of tool use and function calling and to implement appropriate safety measures for their specific use case.
+  access: open
+  license: Meta Llama 3 Community
+  intended_uses: This model is designed for research and development in tool use and function calling scenarios. It excels at tasks involving API interactions, structured data manipulation, and complex tool use.
+  prohibited_uses: It is not suitable for general knowledge or open-ended tasks. 
+  monitoring: Unknown
+  feedback: Feedback should likely be directed to Groq or the original creators of the Llama 3 model, but specific instructions were not provided.
+- type: model
+  name: InternVL2-Llama3-76B
+  organization: Unknown
+  description: InternVL 2.0 is the latest addition to the InternVL series of multimodal large language models. This model is trained to handle long text inputs, multiple images, and videos. It demonstrates competitive performance on par with proprietary commercial models across various capabilities, including document and chart comprehension, infographics QA, scene text understanding, OCR tasks, scientific and mathematical problem-solving, as well as cultural understanding.
+  created_date: Unknown
+  url: https://huggingface.co/OpenGVLab/InternVL2-Llama3-76B
+  model_card: https://huggingface.co/OpenGVLab/InternVL2-Llama3-76B
+  modality: Text; Image; Video (Input/Output details for different modality are not specified)
+  analysis: The model has been evaluated and compared for performance in various benchmarks which include DocVQA, ChartQA, InfoVQA, TextVQA, MME, AI2D, MMBench, CCBench, MMVet, SEED-Image, OCRBench, RealWorldQA, HallBench, MathVista, MVBench, and Video-MME.
+  size: 76 billion parameters (The model card does not state if the model is sparse or dense)
+  dependencies: [InternViT-6B-448px-V1-5, Hermes-2-Theta-Llama-3-70B]
+  training_emissions: Unknown
+  training_time: Unknown
+  training_hardware: Unknown
+  quality_control: Efforts were made to ensure the safety of the model during the training process, and to make sure it generates text that complies with ethical and legal requirements.
+  access: Open
+  license: Unknown
+  intended_uses: The model is intended to be used for tasks that involve document and chart comprehension, infographics QA, scene text understanding, OCR tasks, scientific and mathematical problem-solving.
+  prohibited_uses: The model should not be used to propagate harmful content including biases, discrimination, or any other harmful information.
+  monitoring: Unknown
+  feedback: Unknown
+- type: model
+  name: Llama-3-Groq-8B-Tool-Use
+  organization: Unknown
+  description: This is a causal language model fine-tuned for advanced tool use and function calling tasks. It has been optimised for tasks involving API interactions, structured data manipulation, and complex tool use.
+  created_date: Unknown
+  url: https://huggingface.co/Groq/Llama-3-Groq-8B-Tool-Use
+  model_card: https://huggingface.co/Groq/Llama-3-Groq-8B-Tool-Use
+  modality: Text; Text
+  analysis: The model scored 89.06% overall accuracy on the Berkeley Function Calling Leaderboard (BFCL). This score represents the best performance among all open-source 8B LLMs on the BFCL.
+  size: 8B parameters
+  dependencies: [Llama 3 8B base model]
+  training_emissions: Unknown
+  training_time: Unknown
+  training_hardware: Unknown
+  quality_control: The model is fine-tuned and uses Direct Preference Optimization (DPO). It highly depends on the temperature and top_p sampling configuration.
+  access: Open
+  license: Meta Llama 3 Community
+  intended_uses: The model is primarily intended for research and development in tool use and function calling scenarios. It's perfect for tasks involving API interactions, structured data manipulation, and complex tool use.
+  prohibited_uses: This model is not suited for general knowledge or open-ended tasks as a general-purpose language model may be more suitable for these uses.
+  monitoring: Unknown
+  feedback: Users can refer to the official Llama 3 documentation and the Groq model card for full details on responsible use, ethical considerations, and latest benchmarks.

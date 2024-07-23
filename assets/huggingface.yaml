@@ -228,3 +228,87 @@
   prohibited_uses: ''
   monitoring: unknown
   feedback: https://huggingface.co/datasets/HuggingFaceM4/the_cauldron/discussions
+- type: model
+  name: SmolLM-1.7B
+  organization: HuggingFaceTB
+  description: SmolLM is a series of state-of-the-art small language models available in three sizes: 135M, 360M, and 1.7B parameters. The models have shown promising results compared to other models in their size categories across various benchmarks testing common sense reasoning and world knowledge.
+  created_date: unknown
+  url: https://huggingface.co/HuggingFaceTB/SmolLM-1.7B
+  model_card: https://huggingface.co/HuggingFaceTB/SmolLM-1.7B
+  modality: text; text 
+  analysis: The models have shown promising results when compared to other models in their size category across various benchmarks testing common sense and world knowledge.
+  size: 1.7 billion parameters
+  dependencies: [Cosmo-Corpus, Cosmopedia v2, Python-Edu, FineWeb-Edu]
+  training_emissions: unknown
+  training_time: 500k steps
+  training_hardware: 64 H100 GPUs
+  quality_control: While SmolLM models have been trained on a diverse dataset including educational content and synthetic texts, they have limitations. They mainly understand and generate content in English. The outputs may not always be factually accurate, logically consistent, or free from biases present in the training data.
+  access: open
+  license: Apache 2.0
+  intended_uses: The models can be used to generate text on a variety of topics.
+  prohibited_uses: The models should not be used as definitive sources of information.
+  monitoring: The performance difference between the converted checkpoint (transformers) and the original (nanotron) is being monitored and worked on.
+  feedback: Issues with the model should be reported back to the creators; however, the method for reporting such issues is not specified.
+- type: model
+  name: SmolLM-Instruct
+  organization: HuggingFaceTB
+  description: SmolLM is a series of state-of-the-art small language models available in three sizes: 135M, 360M, and 1.7B parameters. They are built on Cosmo-Corpus which includes Cosmopedia v2, Python-Edu, and FineWeb-Edu. For building SmolLM-Instruct, the models were instruction tuned using publicly available permissive instruction datasets. The training parameters followed the Zephyr-Gemma recipe from the alignment handbook.
+  created_date: 2024-00-00
+  url: https://huggingface.co/HuggingFaceTB/SmolLM-1.7B-Instruct
+  model_card: https://huggingface.co/HuggingFaceTB/SmolLM-1.7B-Instruct
+  modality: text; text
+  analysis: Unknown
+  size: 1.7B parameters
+  dependencies: [Cosmo-Corpus, Cosmopedia v2, Python-Edu, FineWeb-Edu, WebInstructSub dataset, StarCoder2-Self-OSS-Instruct]
+  training_emissions: Unknown
+  training_time: Unknown
+  training_hardware: Unknown
+  quality_control: The models were built on a meticulously curated high-quality training dataset. Also, the models were instruction tuned and underwent Direct Preference Optimization for quality control.
+  access: Open
+  license: Apache 2.0
+  intended_uses: These models can produce text on a variety of topics and can be used as assistive tools. The intended use is to generate content based on given instructions. An example use case is generating steps to bake a cake given the instruction.
+  prohibited_uses: These models should not be used as definitive sources of information. They should have limited use in producing factually accurate or logically consistent content without independent verification.
+  monitoring: Unknown
+  feedback: Feedback is likely expected to reported via the Hugging Face platform or directly to the authors, but explicit instructions are not provided.
+- type: model
+  name: Llama 3.1
+  organization: Hugging Face, Meta
+  description: Llama 3.1 is a foundation model with multilinguality and long context capabilities. It comes in three sizes: 8B for efficient deployment and development on consumer-size GPU, 70B for large-scale AI native applications, and 405B for synthetic data and other tasks. All three versions come in base and instruction-tuned variants. The model architecture is based on the Llama 3 design and supports a context length of 128K tokens and supports languages including English, German, French, Italian, Portuguese, Hindi, Spanish, and Thai. It employs Grouped-Query Attention (GQA) for efficient representation handling of longer contexts.
+  created_date: 2024-07-23
+  url: https://huggingface.co/blog/llama31
+  model_card: 
+  modality: Text; Text
+  analysis: The performance of Llama 3.1 was demonstrated through various applications including instruction following and synthetic data generation. However, the document does not provide comprehensive evaluations.
+  size: The available versions of the model are 8B, 70B and 405B parameters.
+  dependencies: ['Llama 3']
+  training_emissions: Unknown
+  training_time: The models were trained on over 15 trillion tokens with a total of 39.3M GPU hours (1.46M for 8B, 7.0M for 70B, 30.84M for 405B).
+  training_hardware: The model was trained on a custom-built GPU cluster 
+  quality_control: Meta developed LLM-based classifiers to filter and curate high-quality prompts and responses during the creation of the training dataset.
+  access: Open
+  license: Inferred to be more permissive than its predecessor, allowing the use of model outputs to improve other LLMs, redistribution, fine-tuning, and the creation of derivative work. Any derivative works or services must mention "Built with Llama".
+  intended_uses: The model is intended for instruction following, synthetic data generation, and enhancing the efficiency of long-context applications.
+  prohibited_uses: Unknown
+  monitoring: Unknown
+  feedback: Unknown
+- type: model
+  name: SmolLM-135M
+  organization: HuggingFaceTB
+  description: SmolLM-135M is a part of the SmolLM series of small language models. These models are trained on Cosmo-Corpus, a high-quality blend of synthetic textbooks, educational Python samples, and educational web samples. They demonstrate promising results in common sense reasoning and world knowledge benchmarks. 
+  created_date: Unknown
+  url: https://huggingface.co/HuggingFaceTB/SmolLM-135M
+  model_card: https://huggingface.co/HuggingFaceTB/SmolLM-135M
+  modality: Text; Text (The model takes text input and generates text output)
+  analysis: The models have been compared to other similar sized models across various benchmarks testing common sense reasoning and world knowledge. Some performance differences have been noticed between this converted checkpoint and the original.
+  size: 135M parameters
+  dependencies: [Mixtral, Python-Edu from The Stack, FineWeb-Edu]
+  training_emissions: Unknown
+  training_time: Unknown
+  training_hardware: 64 H100 GPUs
+  quality_control: A curated high-quality training dataset known as Cosmo-Corpus was used to ensure the quality and safety of results generated by SmolLM. 
+  access: Open
+  license: Apache 2.0
+  intended_uses: Intended for use as an assistive tool in generating text on a variety of topics
+  prohibited_uses: The model should not be blindly relied upon for factual accuracy, logical consistency, or be treated as free from biases inherent in the training data. It should not be used as a definitive source of information.
+  monitoring: Unknown
+  feedback: Any downstream problems with this model should be reported to the HuggingFace team.

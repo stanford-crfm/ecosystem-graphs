@@ -85,3 +85,129 @@
   prohibited_uses: unknown
   monitoring: unknown
   feedback: none
+- type: model
+  name: Mathstral
+  organization: Mistral AI
+  description: Mathstral is a specific model designed for math reasoning and scientific discovery. With a 32k context window, the model specializes in STEM subjects and boasts state-of-the-art reasoning capacities in its size category across various industry-standard benchmarks. It is developed as part of a broader effort to support academic projects and contribute to the science community. It is intended for use in solving advanced mathematical problems that require complex, multi-step logical reasoning.
+  created_date: 2024-07-16
+  url: https://mistral.ai/news/mathstral/
+  model_card: 
+  modality: Unknown
+  analysis: The model achieves 56.6% on MATH and 63.47% on MMLU performance benchmarks. When used with majority voting and a strong reward model among 64 candidates, Mathstral 7B scored 68.37% and 74.59% on MATH respectively.
+  size: 7B parameters (dense)
+  dependencies: [Mistral 7B, Project Numina, GRE Math Subject Test]
+  training_emissions: Unknown
+  training_time: Unknown
+  training_hardware: Unknown
+  quality_control: The model was evaluated using industry-standard benchmarks and has undergone various tests to ensure its performance.
+  access: Open
+  license: Apache 2.0
+  intended_uses: Advanced mathematical problems requiring complex, multi-step logical reasoning.
+  prohibited_uses: Unknown
+  monitoring: Unknown
+  feedback: Problems should be reported to the Mistral AI team.
+- type: model
+  name: Mistral-Nemo-Instruct-2407
+  organization: Mistral AI and NVIDIA
+  description: An instruct fine-tuned version of the Mistral-Nemo-Base-2407. It is a Large Language Model that outperforms models smaller or similar in size. Can be used with three different frameworks: mistral_inference, transformers, and NeMo. It has been trained with a 128k context window and a large proportion of multilingual and code data. This model is a drop-in replacement of Mistral 7B.
+  created_date: Unknown
+  url: https://huggingface.co/mistralai/Mistral-Nemo-Instruct-2407
+  model_card: https://huggingface.co/mistralai/Mistral-Nemo-Instruct-2407
+  modality: text; text
+  analysis: The model has been benchmarked for tasks like HellaSwag, Winogrande, OpenBookQA, CommonSenseQA, TruthfulQA, MMLU, TriviaQA, and NaturalQuestions in a 0-shot and 5-shot setting. It has also been evaluated on multilingual benchmarks with languages like French, German, Spanish, Italian, Portuguese, Russian, Chinese, and Japanese.
+  size: Unknown
+  dependencies: ['Mistral-Nemo-Base-2407']
+  training_emissions: Unknown
+  training_time: Unknown
+  training_hardware: Unknown
+  quality_control: The model does not have any moderation mechanisms. It's currently being explored for ways to make the model respect guardrails for deployment in environments requiring moderated outputs.
+  access: Open
+  license: Apache 2.0
+  intended_uses: The model can be used to generate text, for chat completions, function calling, and as a pirate chatbot.
+  prohibited_uses: Unknown
+  monitoring: There are currently no mechanisms in place for moderating the model's output. It's being looked into for ways to include moderation mechanisms so the model can respect guardrails.
+  feedback: Unknown
+- type: model
+  name: Codestral Mamba
+  organization: Mistral AI
+  description: Codestral Mamba is a Mamba2 language model specialized in code generation. Unlike Transformer models, Mamba models offer the advantage of linear time inference and the theoretical ability to model sequences of infinite length. It allows users to engage with the model extensively with quick responses, irrespective of the input length. It is designed with advanced code and reasoning capabilities, enabling it to perform on par with SOTA transformer-based models. 
+  created_date: 2024-07-16
+  url: https://mistral.ai/news/codestral-mamba/
+  model_card: 
+  modality: text; text (The model is designed to generate code, so the input and output formats are both text based.)
+  analysis: The model was tested on in-context retrieval capabilities up to 256k tokens. 
+  size: 7,285,403,648 parameters (dense)
+  dependencies: [Mamba, mistral-inference SDK, TensorRT-LLM, HuggingFace]
+  training_emissions: Unknown
+  training_time: Unknown
+  training_hardware: Unknown
+  quality_control: Unknown
+  access: Open
+  license: Apache 2.0
+  intended_uses: The model is intended to be used for engaging, extensive interactions irrespective of input length. It is particularly aimed at improving code productivity through its advanced code generation and reasoning capabilities.
+  prohibited_uses: Unknown
+  monitoring: Unknown
+  feedback: Problems with the model should possibly be reported to Mistral AI, though precise instructions or contact information is not provided.
+- type: model
+  name: Mamba-Codestral-7B-v0.1
+  organization: Mistral AI
+  description: Codestral Mamba is an open code model based on the Mamba2 architecture. It performs on par with state-of-the-art Transformer-based code models. 
+  created_date: Unknown
+  url: https://huggingface.co/mistralai/mamba-codestral-7B-v0.1
+  model_card: https://huggingface.co/mistralai/mamba-codestral-7B-v0.1
+  modality: Text; Text (assuming based on the nature of the model)
+  analysis: The model has been evaluated on various industry-standard benchmarks like HumanEval, MPBB, Spider, CruxE, HumanEval C++, HumanEvalJava, HumanEvalJS, and HumanEval Bash.
+  size: 7B parameters
+  dependencies: [`mistralai/mamba-codestral-7B-v0.1`, `mistral-inference`, `mamba-ssm`, `causal-conv1d`]
+  training_emissions: Unknown
+  training_time: Unknown
+  training_hardware: Unknown
+  quality_control: The quality of this model is ensured by evaluating it on various industry-standard benchmarks.
+  access: Open
+  license: Unknown
+  intended_uses: The model is intended for use in code-based applications, possibly for code generation, comprehension, or refactoring.
+  prohibited_uses: Unknown
+  monitoring: Unknown. 
+  feedback: Issues and problems with the model are likely reported through the software or platform the model is executed on, or possibly directly communicated to the team of Mistral AI.
+- type: model
+  name: Mathstral-7B-v0.1
+  organization: Mistral AI
+  description: Mathstral 7B is a model specializing in mathematical and scientific tasks. It is based on Mistral 7B and can perform tasks like solving math problems when provided with information in text form. It can also be used within the transformers library.
+  created_date: Unknown
+  url: https://huggingface.co/mistralai/mathstral-7B-v0.1
+  model_card: https://huggingface.co/mistralai/mathstral-7B-v0.1
+  modality: Text; Text
+  analysis: Mathstral 7B was evaluated against similar sized models on industry-standard benchmarks such as MATH, GSM8K (8-shot), Odyssey Math maj@16, GRE Math maj@16, AMC 2023 maj@16, and AIME 2024 maj@16. It outperformed most models in the benchmarks.
+  size: 7B parameters
+  dependencies: [Mistral 7B]
+  training_emissions: Unknown
+  training_time: Unknown
+  training_hardware: Unknown
+  quality_control: The model's quality was controlled by its creators, Mistral AI. It was also evaluated against other models in a series of industry-standard benchmarks.
+  access: Open (Assuming from installation instructions provided)
+  license: Unknown
+  intended_uses: The model is intended for mathematical and scientific tasks. It can be used to solve math problems given text information, in ML applications using transformers library.
+  prohibited_uses: Unknown, but likely misrepresentation of results, usage without proper understanding or any harmful or unethical activity.
+  monitoring: Unknown
+  feedback: Feedback for downstream problems is likely handled by Mistral AI, but no direct method is specified in the provided information. Users should likely report issues through Mistral AI's support lines or website.
+- type: model
+  name: Mistral-Nemo-Base-2407
+  organization: Mistral AI jointly with NVIDIA
+  description: The Mistral-Nemo-Base-2407 Large Language Model (LLM) is a pretrained generative text model with 12B parameters. It outperforms similar or smaller size models. It is a drop-in replacement of Mistral 7B.
+  created_date: Unknown
+  url: https://huggingface.co/mistralai/Mistral-Nemo-Base-2407
+  model_card: https://huggingface.co/mistralai/Mistral-Nemo-Base-2407
+  modality: Text; Text
+  analysis: The model underwent several benchmarks including HellaSwag, Winogrande, OpenBookQA, CommonSenseQA, TruthfulQA, MMLU, TriviaQA, and NaturalQuestions. It's also tested in multilingual benchmarks.
+  size: 12B parameters (dense)
+  dependencies: [Mistral 7B]
+  training_emissions: Unknown
+  training_time: Unknown
+  training_hardware: Unknown
+  quality_control: It underwent several benchmarks for quality control.
+  access: Open
+  license: Apache 2 
+  intended_uses: Text generation with frameworks including mistral_inference, transformers, and NeMo.
+  prohibited_uses: The base model does not include moderation mechanisms and should not be used for applications that require content moderation.
+  monitoring: Unknown
+  feedback: Issues or problems should be reported to Mistral AI.

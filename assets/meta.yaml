@@ -848,3 +848,192 @@
   prohibited_uses: ''
   monitoring: ''
   feedback: none
+- type: model
+  name: Llama 3.1
+  organization: Meta
+  description: Llama 3.1 is a suite of large language models developed by Meta. While the model supports a variety of use cases, it also takes safety into account, featuring a variety of trust and safety models to ensure safe response generation. The Llama 3.1 collection is optimized for GPUs worldwide and across all NVIDIA platforms, from data centers to edge and PC devices.
+  created_date: 2024-07-23
+  url: https://nvda.ws/3LB1iyQ
+  model_card: 
+  modality: Text; Text (The model takes text input and generates text output)
+  analysis: The evaluation process of Llama 3.1 includes Task-oriented benchmarks where the Reward model excels at handling trick questions and nuanced instruction responses. 
+  size: The largest model in the Llama 3.1 collection has 405B parameters.
+  dependencies: [Llama 3, Nemotron-4 340B Reward models]
+  training_emissions: Unknown
+  training_time: Unknown
+  training_hardware: Llama 3.1 was trained on over 16K H100 GPUs by NVIDIA.
+  quality_control: The model includes a suite of trust and safety models to ensure that it offers safe responses. Additionally, it includes Memotron-4, a 340B Reward model to evaluate the quality of generated data, filtering out lower-scored data.
+  access: Open
+  license: Unknown
+  intended_uses: Llama 3.1 can be used to support a variety of use cases. Developers worldwide can integrate this model into their applications. It can also be used as a generator in the synthetic data generation (SDG) pipeline, and for creating custom high-quality datasets.
+  prohibited_uses: Unknown
+  monitoring: Unknown
+  feedback: Unknown
+- type: model
+  name: Meta Llama 3.1
+  organization: Meta
+  description: The Meta Llama 3.1 collection of multilingual large language models (LLMs) is a collection of pretrained and instruction tuned generative models in 8B, 70B and 405B sizes optimized for multilingual dialogue use cases. It outperforms many of the available open source and closed chat models on common industry benchmarks. The model is optimized for multilingual operations and is primarily designed for commercial and research uses across multiple languages. 
+  created_date: 2024-07-23
+  url: https://huggingface.co/meta-llama/Meta-Llama-3.1-8B-Instruct
+  model_card: https://huggingface.co/meta-llama/Meta-Llama-3.1-8B-Instruct
+  modality: Multilingual Text; Multilingual Text and Code
+  analysis: The Llama 3.1 models were evaluated on standard automatic benchmarks. Results for each model variant on these benchmarks are accessible, providing end-user a comprehensive understanding of how the models perform on a variety of tasks.
+  size: There are three sizes for the Llama 3.1: 8 billion parameters, 70 billion parameters, and 405 billion parameters.
+  dependencies: [A mix of publicly available online data]
+  training_emissions: 11,390 tons CO2eq location-based greenhouse gas emissions in training. Meta has maintained net zero greenhouse gas emissions since 2020, so the total market-based emissions is 0 tons CO2eq.
+  training_time: Cumulative of 39.3M GPU hours of computation for the three model sizes.
+  training_hardware: Meta's custom built GPU cluster, and production infrastructure for pretraining.
+  quality_control: Fine-tuning, annotation, and evaluation were performed on production infrastructure, with human feedback to improve model safety.
+  access: Custom Commercial License via Meta Llama 3.1 Community License
+  license: Custom Commercial license (Llama 3.1 Community License)
+  intended_uses: The model can be used for commercial and research use in multiple languages. Intended for assistant-like chat, synthetic data generation, distillation and various natural language generation tasks.
+  prohibited_uses: Use in any manner that violates applicable laws or regulations, prohibited by the Acceptable Use Policy or the Llama 3.1 Community License, or use in languages beyond those noted as supported by this model.
+  monitoring: Unknown
+  feedback: Instructions on how to provide remarks or comments on the model can be found in the model README.
+- type: model
+  name: Meta Llama 3.1
+  organization: Meta
+  description: A collection of multilingual large language models (LLMs) optimized for multilingual dialogue use cases. The models are of varying parameters (8B, 70B, 405B) and are training using an optimized transformer architecture, supervised fine-tuning and reinforcement learning.
+  created_date: 2024-07-23
+  url: https://huggingface.co/meta-llama/Meta-Llama-3.1-70B
+  model_card: https://huggingface.co/meta-llama/Meta-Llama-3.1-70B
+  modality: Multilingual Text; Multilingual Text and code
+  analysis: The Llama 3.1 instruction tuned models report better performance than open source and closed chat models on common industry benchmarks.
+  size: Family of Models, Meta Llama 3.1 (8B parameters), Meta Llama 3.1 (70B parameters), Meta Llama 3.1 (405B parameters)
+  dependencies: [Publicly available online data]
+  training_emissions: Estimated total location-based greenhouse gas emissions were 11,390 tons CO2eq for training. However, Meta's operation runs on 100% renewable energy resulting in 0 tons CO2eq in market-based emissions.
+  training_time: A cumulative of 39.3M GPU hours were used to train all the models.
+  training_hardware: Custom built GPU cluster with H100-80GB hardware type.
+  quality_control: The models are optimized using reinforcement learning with human feedback to align with human preferences for helpfulness and safety.
+  access: unknown
+  license: Llama 3.1 Community License
+  intended_uses: Intended for commercial and research use in multiple languages. Can be adapted for a variety of natural language generation tasks and synthetic data generation.
+  prohibited_uses: Use in any manner that violates applicable laws or regulations (including trade compliance laws). Use in any other way that is prohibited by the Acceptable Use Policy and Llama 3.1 Community License. Use in languages beyond those explicitly referenced as supported in this model card.
+  monitoring: unknown
+  feedback: Instructions on how to provide feedback or comments on the model can be found in the model README.
+- type: model
+  name: Meta Llama 3.1
+  organization: Meta
+  description: The Meta Llama 3.1 collection of multilingual large language models (LLMs) is a collection of pretrained and instruction-tuned generative models optimized for multilingual dialogue use cases. They outperform many of the available open-source and closed chat models on common industry benchmarks.
+  created_date: 2024-07-23
+  url: https://huggingface.co/meta-llama/Meta-Llama-3.1-70B-Instruct
+  model_card: https://huggingface.co/meta-llama/Meta-Llama-3.1-70B-Instruct
+  modality: Multilingual Text; Multilingual Text and code
+  analysis: The models have been evaluated and compared on standard automatic benchmarks using Meta's internal evaluations library. These benchmarks include MMLU, MMLU-Pro (CoT) and AGIEval English among others.
+  size: Collection includes models of 8B, 70B, and 405B number of parameters.
+  dependencies: [Transformers, bitsandbytes, llama libraries, H100-80GB hardware]
+  training_emissions: Estimated total greenhouse gas emissions for training were 11,390 tons CO2eq. Note that since 2020, Meta matched 100% of its electricity use with renewable energy, making the total market-based greenhouse gas emissions zero.
+  training_time: These models cumulatively required 39.3M GPU hours for training.
+  training_hardware: Meta's custom GPU cluster, H100-80GB type hardwares with a TDP of 700W were used.
+  quality_control: Reinforcement learning with human feedback (RLHF) was used to align the model with human preferences for helpfulness and safety.
+  access: Unknown
+  license: Llama 3.1 Community
+  intended_uses: The Llama 3.1 models are intended for commercial and research use in multiple languages. They are optimized for assistant-like chat and can be adapted for a variety of natural language generation tasks.
+  prohibited_uses: Use in any manner that violates applicable laws or regulations (including trade compliance laws) or the Llama 3.1 Community License. Also, usage in languages not explicitly mentioned as supported is considered out-of-scope.
+  monitoring: Unknown
+  feedback: Questions or comments about the model can be reported as mentioned in the model README.
+- type: model
+  name: Llama 3.1 405B
+  organization: Meta AI
+  description: Llama 3.1 405B is an open source AI model capable of general knowledge, steerability, math tool use, and multilingual translation. It is the first open-source model that rivals the top AI models in its capabilities. It introduces the first frontier open-source AI model with support across eight languages and context length of 128K. It is built for applications such as synthetic data generation and model distillation.
+  created_date: 2024-07-23
+  url: https://ai.meta.com/blog/meta-llama-3-1/
+  model_card: 
+  modality: Text; Text
+  analysis: The model was evaluated performance on over 150 benchmark datasets of various languages as well as extensive human-focused evaluations. It was found to be competitive with leading foundation models across a number of tasks.
+  size: 405B parameters
+  dependencies: [Previous versions of Llama models]
+  training_emissions: Unknown
+  training_time: Unknown
+  training_hardware: 16 thousand H100 GPUs
+  quality_control: The model has employed upgraded versions, rigorous quality assurance and filtering approaches, iterative post-training procedure, and supervised fine-tuning and direct preference optimization among other measures to ensure quality and safety.
+  access: open
+  license: Unknown
+  intended_uses: Useful for synthetic data generation, model distillation, long-form text summarization, conversational agents in multiple languages, and coding assistants.
+  prohibited_uses: Unknown
+  monitoring: Unknown
+  feedback: Unknown
+- type: model
+  name: Llama 3.1 
+  organization: Meta in collaboration with Amazon Web Services
+  description: Llama 3.1 models are a collection of advanced generative artificial intelligence (generative AI) applications which include 8B, 70B, and 405B parameter size models. They demonstrate state-of-the-art performance and offer new capabilities for a wide range of industry benchmarks. All Llama 3.1 models support a 128K context length and can handle multilingual dialogue use cases in eight languages including English, German, French, Italian, Portuguese, Hindi, Spanish, and Thai. The models are best suited for tasks ranging from synthetic data generation to sentiment analysis dependent on their parameter size.
+  created_date: 2024-07-23
+  url: https://go.aws/3WyP6F3
+  model_card: 
+  modality: Text; Text
+  analysis: Meta evaluated the performance of Llama 3.1 on over 150 benchmark datasets that covered a wide range of languages. Additionally, extensive human evaluations were carried out.
+  size: The largest model in this release is 405B parameters. There are additional models with 70B parameters and 8B parameters.
+  dependencies: [Unknown]
+  training_emissions: Unknown
+  training_time: Unknown
+  training_hardware: Unknown
+  quality_control: Guardrails for Bedrock, a program that implements safeguards tailored for specific use cases to promote safe interactions between users and the generative AI applications has been used. It provides features for continuous monitoring and analysis.
+  access: Limited 
+  license: Unknown
+  intended_uses: The intended uses for the Llama 3.1 models range from synthetic data generation, enhancing smaller models, long-form text generation, multilingual translation, machine translation, coding, math, tool use, enhanced contextual understanding and advanced reasoning and decision making. The specific use case depends on the parameter size of the model.
+  prohibited_uses: Unknown
+  monitoring: With the use of Guardrails for Amazon Bedrock, there is continuous monitoring and analysis of user inputs and model responses. This includes detection of hallucination in model responses which are irrelevant or not based on enterprise data.
+  feedback: Problems with the model can be reported via a support ticket through the AWS Management Console. The team also requests feedback and encourages users to create a guardrail in the AWS documentation for better oversight and control.
+- type: model
+  name: Meta Llama 3.1
+  organization: Meta
+  description: Meta Llama 3.1 is a collection of multilingual large language models (LLMs). This auto-regressive language model uses an optimized transformer architecture and is optimized for multilingual dialogue use cases. The models were trained using supervised fine-tuning and reinforcement learning with human feedback to align with human preferences for helpfulness and safety.
+  created_date: 2024-07-23
+  url: https://huggingface.co/meta-llama/Meta-Llama-3.1-405B
+  model_card: https://huggingface.co/meta-llama/Meta-Llama-3.1-405B
+  modality: Multilingual text; Multilingual text and code
+  analysis: The model has been evaluated on standard automatic benchmarks. Internal evaluation libraries were used for these evaluations.
+  size: The model comes in various sizes including 8B, 70B and 405B parameters.
+  dependencies: [Publicly available online data]
+  training_emissions: The estimated total location-based greenhouse gas emissions are 11,390 tons CO2eq. However, since Meta matched 100% of its electricity use with renewable energy, the total market-based greenhouse gas emissions for training were 0 tons CO2eq.
+  training_time: Total cumulative training time is 39.3M GPU hours.
+  training_hardware: Custom training libraries, Meta's custom built GPU cluster, and production infrastructure.
+  quality_control: Measures were taken to ensure model safety with community feedback, and future versions of the tuned models will be released as these measures improve.
+  access: Limited
+  license: Llama 3.1 Community License
+  intended_uses: The model is intended for commercial and research use in multiple languages. It can be used for assistant-like chat, a variety of natural language generation tasks, synthetic data generation and distillation.
+  prohibited_uses: Use in any manner that violates applicable laws or regulations is strictly prohibited, as is use in any way other than those outlined in the Acceptable Use Policy and Llama 3.1 Community License. Use in languages beyond those explicitly supported is also prohibited.
+  monitoring: Unknown
+  feedback: Questions or comments about the model should be sent as instructed in the model README.
+- type: model
+  name: Meta Llama 3.1
+  organization: Meta
+  description: The Meta Llama 3.1 collection of multilingual large language models (LLMs) is a collection of pretrained and instruction tuned generative models in 8B, 70B and 405B sizes. The Llama 3.1 instruction tuned text only models are optimized for multilingual dialogue use cases and outperform many of the available open source and closed chat models on common industry benchmarks.
+  created_date: 2024-07-23
+  url: https://huggingface.co/meta-llama/Meta-Llama-3.1-8B
+  model_card: https://huggingface.co/meta-llama/Meta-Llama-3.1-8B
+  modality: Multilingual Text; Multilingual Text and code
+  analysis: Model performance was evaluated on standard automatic benchmarks using an internal evaluations library. Benchmark results are provided above.
+  size: Models available in 8B, 70B and 405B sizes.
+  dependencies: Llama 3.1 was pretrained on publicly available data (unknown specifics).
+  training_emissions: Estimated total location-based greenhouse gas emissions were 11,390 tons CO2eq for training. Since 2020, Meta has maintained net zero greenhouse gas emissions in its global operations and matched 100% of its electricity use with renewable energy, therefore the total market-based greenhouse gas emissions for training were 0 tons CO2eq.
+  training_time: A cumulative of 39.3M GPU hours of computation was used to train these models.
+  training_hardware: Training utilized Meta's custom built GPU cluster, and production infrastructure. Hardware type was H100-80GB (TDP of 700W).
+  quality_control: Models were supervised fine-tuned and used reinforcement learning with human feedback for quality control measure.
+  access: Unknown
+  license: Llama 3.1 Community License
+  intended_uses: These models are intended for commercial and research use in multiple languages. Instruction tuned text only models are intended for assistant-like chat, whereas pretrained models can be adapted for a variety of natural language generation tasks.
+  prohibited_uses: Llama 3.1 should not be used in any manner that violates applicable laws or regulations, or in any other way that is prohibited by the Acceptable Use Policy and the Llama 3.1 Community License. It should also not be used in languages beyond those explicitly referenced as supported in the model card.
+  monitoring: Unknown
+  feedback: Instructions on how to provide feedback or comments on the model can be found in the model README.
+- type: model
+  name: Meta Llama 3.1
+  organization: Meta
+  description: The Meta Llama 3.1 collection of multilingual large language models (LLMs) is a collection of pretrained and instruction tuned generative models optimized for multilingual dialogue use cases. These models outperform many of the available open source and closed chat models on common industry benchmarks.
+  created_date: 2024-07-23
+  url: https://huggingface.co/meta-llama/Meta-Llama-3.1-405B-Instruct
+  model_card: https://huggingface.co/meta-llama/Meta-Llama-3.1-405B-Instruct
+  modality: Multilingual Text; Multilingual Text and Code
+  analysis: The Llama 3.1 models were analyzed on standard automatic benchmarks using an internal evaluations library. Results reveal that these models perform considerably well across various categories such as General, Knowledge Reasoning, Reasoning, and Reading Comprehension among others.
+  size: The Llama 3.1 collection includes models of 8B, 70B and 405B parameters.
+  dependencies: [unknown]
+  training_emissions: Estimated total location-based greenhouse gas emissions were 11,390 tons CO2eq for training, however, the net emission was 0 tons CO2eq due to Meta's renewable energy policies.
+  training_time: Training utilized a cumulative of 39.3M GPU hours of computation.
+  training_hardware: Training was done on Meta's custom built GPU cluster and production infrastructure on H100-80GB (TDP of 700W) type hardware.
+  quality_control: The models were improved using community feedback for model safety.
+  access: Limited (Refer to the Llama 3.1 Community License here: https://github.com/meta-llama/llama-models/blob/main/models/llama3_1/LICENSE)
+  license: Llama 3.1 Community
+  intended_uses: Llama 3.1 is intended for commercial and research use in multiple languages. The Llama 3.1 model collection also supports synthetic data generation and distillation.
+  prohibited_uses: Use in any manner that violates laws or regulations, or the Acceptable Use Policy and Llama 3.1 Community License. Use in any other languages than referenced (unless done safely and responsibly).
+  monitoring: Unknown
+  feedback: Feedback or comments should be directed per the instructions in the model README.

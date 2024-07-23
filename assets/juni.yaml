@@ -19,3 +19,24 @@
   monthly_active_users: ''
   user_distribution: ''
   failures: ''
+- type: model
+  name: NuminaMath 7B TIR
+  organization: Numina & Hugging Face
+  description: NuminaMath 7B TIR is a 7 billion parameter math-focused language model that was designed to solve math problems using tool-integrated reasoning (TIR). The model was trained in two stages of supervised fine-tuning, winning the first progress prize of the AI Math Olympiad (AIMO).
+  created_date: 2024 (Exact date unknown)
+  url: https://huggingface.co/AI-MO/NuminaMath-7B-TIR
+  model_card: https://huggingface.co/AI-MO/NuminaMath-7B-TIR
+  modality: Text; Text
+  analysis: The model participated in and won the first progress prize at the AI Math Olympiad (AIMO), scoring 29/50 on both public and private test sets.
+  size: 7B parameters (dense)
+  dependencies: [deepseek-ai/deepseek-math-7b-base]
+  training_emissions: Unknown
+  training_time: Unknown
+  training_hardware: 8 multi-GPU devices
+  quality_control: The model underwent a two-step fine-tuning process, first on a dataset containing math problem-solution pairs, then on a synthetic dataset with examples of multi-step generations using tool-integrated reasoning.
+  access: Unknown
+  license: Apache 2.0
+  intended_uses: The model is designed to solve math problems. It can be used to solve problems at the level of AMC 12 and occasionally harder problems at the AIME and Math Olympiad level, although it does struggle with more complex problems.
+  prohibited_uses: The model is specifically designed to solve math problems and should not be used for general chat applications.
+  monitoring: Unknown
+  feedback: Problems should be reported through the Hugging Face repository.

@@ -82,3 +82,24 @@
     Policy.
   monitoring: unknown
   feedback: https://huggingface.co/databricks/dbrx-base/discussions
+- type: model
+  name: Meta Llama 3.1
+  organization: Databricks in partnership with Meta
+  description: The Llama 3.1 is a series of open source models designed for a variety of tasks, including document understanding, metadata extraction, summarization, chatbots, virtual assistants, advanced multi-step reasoning workflows, content generation, research review, brainstorming, and advanced data analysis. It introduces many new capabilities, including high-quality reasoning, steerability, general knowledge, expanded context length of 128k tokens, support across 8 languages, improved tool use and function calling. It also features the LlamaGuard model and Safety Models for secure and responsible deployment.
+  created_date: 2024-07-23
+  url: https://dbricks.co/4dcJpC3
+  model_card: 
+  modality: text; text
+  analysis: Unknown
+  size: The Meta Llama 3.1 model collection includes models that have 8B, 70B, and 405B parameters. The largest such model has 405 billion parameters and the models are presumably dense.
+  dependencies: Unknown
+  training_emissions: Unknown
+  training_time: Unknown
+  training_hardware: Unknown
+  quality_control: The integration of improved safety models such as LlamaGuard for secure and responsible deployment of models.
+  access: Open
+  license: Unknown
+  intended_uses: The models are intended for use in tasks like document understanding, metadata extraction, summarization, chatbots, virtual assistants, advanced multi-step reasoning workflows, content generation, research review, brainstorming, and advanced data analysis among other GenAI applications.
+  prohibited_uses: Unknown
+  monitoring: Unknown
+  feedback: Unknown

@@ -598,3 +598,24 @@
     and decisions related to financing, employment, and housing.
   monitoring: ''
   feedback: none
+- type: model
+  name: Claude 3 Haiku
+  organization: Anthropic
+  description: Claude 3 Haiku is a fast and cost-effective model that can be fine-tuned in Amazon Bedrock to customize its knowledge and capabilities for specific business applications. The model is effective for specialized tasks and can be adjusted to excel at highly tailored workflows. It can be used in place of Sonnet or Opus, returning faster results at lower costs. Claude 3 Haiku can generate consistently structured outputs tailored to exact specifications, and it preserves a low risk of producing harmful outputs.
+  created_date: 2024-07-11
+  url: https://www.anthropic.com/news/fine-tune-claude-3-haiku
+  model_card: 
+  modality: text; text
+  analysis: The model was fine-tuned to moderate online comments on internet forums, including identifying insults, threats, and explicit content. This process improved the classification accuracy from 81.5% to 99.6%, while reducing tokens per query by 85%.
+  size: Unknown
+  dependencies: [Claude, Amazon Bedrock]
+  training_emissions: Unknown
+  training_time: Unknown
+  training_hardware: Unknown
+  quality_control: Fine-tuning technique used by Anthropic ensures the model's low risk of harmful outputs. Proprietary training data remains within customers’ AWS environment, ensuring data safety and security.
+  access: Limited (Access can be requested by contacting the AWS account team or by submitting a support ticket in the AWS Management Console)
+  license: Unknown
+  intended_uses: Claude 3 Haiku is intended to excel at specialized business tasks, including classification, interactions with custom APIs, industry-specific data interpretation, and generation of consistently structured outputs. For example, SK Telecom used a custom Claude model to improve support workflows and enable better customer experiences. 
+  prohibited_uses: Unknown
+  monitoring: Unknown
+  feedback: Problems with the model can be reported by contacting the AWS account team or by submitting a support ticket in the AWS Management Console.

@@ -20,3 +20,24 @@
   prohibited_uses: ''
   monitoring: unknown
   feedback: https://huggingface.co/SciPhi/SciPhi-Mistral-7B-32k/discussions
+- type: model
+  name: Triplex
+  organization: SciPhi.AI
+  description: Triplex is a state-of-the-art language model for knowledge graph construction developed by SciPhi.AI. It works by extracting triplets - simple statements consisting of a subject, predicate, and object - from text or other data sources to build knowledge graphs. It offers a practical solution for building local knowledge graphs and reduces costs by 98%, outperforming GPT-4 at 1/60th the cost.
+  created_date: unknown
+  url: https://huggingface.co/SciPhi/Triplex
+  model_card: https://huggingface.co/SciPhi/Triplex
+  modality: text to knowledge graph
+  analysis: In terms of cost-effectiveness, Triplex is praiseworthy as it offers a 98% cost reduction for knowledge graph creation, and its performance surpasses that of GPT-4 at 1/60th the cost.
+  size: unknown
+  dependencies: [Phi3-3.8B]
+  training_emissions: unknown
+  training_time: unknown
+  training_hardware: unknown
+  quality_control: unknown
+  access: open
+  license: cc-by-nc-sa-4.0
+  intended_uses: Triplex is built for extracting knowledge graph triplets from unstructured data, making it ideal for building local knowledge graphs and reducing the cost of such operations.
+  prohibited_uses: Commercial usage is restricted for organizations with over $5M USD in gross revenue in the most recent 12-month period, unless they reach out to the SciPhi.AI team to waive the GPL license requirements or use the weights commercially over the revenue limit.
+  monitoring: unknown
+  feedback: Feedback or inquiries can be directed to founders@sciphi.ai.
