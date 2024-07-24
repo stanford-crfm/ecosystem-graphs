@@ -211,3 +211,24 @@
   prohibited_uses: The base model does not include moderation mechanisms and should not be used for applications that require content moderation.
   monitoring: Unknown
   feedback: Issues or problems should be reported to Mistral AI.
+- type: model
+  name: Mistral Large 2
+  organization: Mistral AI
+  description: Mistral Large 2 is a significant improvement over its predecessor in the areas of code generation, mathematics, reasoning, multilingual support, and advanced function calling capabilities. It supports dozens of languages including various coding languages and natural languages. The model is crafted to offer powerful code generation, language diversity, enhanced reasoning capabilities, and improved conversational dialogue. Keeping the accuracy and reliability of the outputs in mind, algorithms to minimize the model's tendency to generate plausible-sounding but factually incorrect or irrelevant information were applied during its training. Furthermore, the model houses a 128k context window and is composed of 123 billion parameters.
+  created_date: 2024-07-24
+  url: https://mistral.ai/news/mistral-large-2407/
+  model_card: 
+  modality: Text; Text
+  analysis: Evaluations were performed in terms of performance/cost of serving on evaluation metrics where it achieved an accuracy of 84% on MMLU. Different code and reasoning benchmarks, instruction following benchmarks, alignment benchmarks, and multilingual benchmarks were also applied for evaluation. The performance results are recorded in detailed graphs in the original documentation.
+  size: 123B parameters (dense)
+  dependencies: [Codestral 22B, Codestral Mamba]
+  training_emissions: Unknown
+  training_time: Unknown
+  training_hardware: Unknown
+  quality_control: To ensure quality, safety, and to mitigate harms, corrections have been made to minimize the model’s tendency to generate plausible-sounding but factually incorrect or irrelevant information. The model has been trained to acknowledge when it can’t find solutions or does not have sufficient information.
+  access: Open (for research and non-commercial usages), Limited (for commercial usage requiring self-deployment; a Mistral Commercial License must be acquired by contacting Mistral AI)
+  license: Mistral Research, Mistral Commercial
+  intended_uses: The model is intended to be used for facilitating the building of innovative AI applications. Its uses include advanced function calling, code generation, handling multi-turn conversations, and multilingual document handling.
+  prohibited_uses: Unknown
+  monitoring: Unknown
+  feedback: For any issues or queries, one is directed to make contact with Mistral AI.
