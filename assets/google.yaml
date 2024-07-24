@@ -1832,3 +1832,24 @@
   prohibited_uses: FLAMe should not be used for applications where human-level rating accuracy is required. Also, it might carry the risk of reinforcing biases and hallucinations, as it is trained predominantly on human judgments.
   monitoring: Unknown
   feedback: Contact the corresponding author(s) via email.
+- type: model
+  name: Foundational Large Autorater Models (FLAMe)
+  organization: Google DeepMind
+  description: FLAMe is a series of models designed to handle the automatic evaluation of large language models (LLMs). Trained on diverse quality assessment tasks, FLAMe is capable of generalizing in a robust manner to a wide variety of evaluation tasks that were not seen during training. It effectively outperforms similar models such as GPT-4 and Claude-3 on many tasks. FLAMe also serves as a good start for further downstream fine-tuning.
+  created_date: 2024-07-15
+  url: http://arxiv.org/pdf/2407.10817
+  model_card: 
+  modality: text; text
+  analysis: FLAMe was compared with other large language models on several benchmarks and proved to be highly competitive, often outperforming other models like GPT-4 and Claude-3.
+  size: The end document mentions a variant known as FLAMe-RM-24B. As such, it could be inferred that the FLAMe model at its largest has 24 billion parameters.
+  dependencies: ["PaLM-2-24B", "GPT-4", "Claude-3", "Llama-3", "human judgments"]
+  training_emissions: Unknown
+  training_time: Unknown
+  training_hardware: Unknown
+  quality_control: FLAMe training ensured quality and reduced subjectivity by incorporating a diverse set of tasks and adhering to the text-to-text format with manually crafted task definitions and evaluation instructions.
+  access: Unknown
+  license: Rights reserved by Google DeepMind
+  intended_uses: FLAMe is intended to improve the evaluation of large language models, as well as serving as a starting point for downstream fine-tuning.
+  prohibited_uses: The handling of proprietary LLM services was acknowledged as potentially in violation of terms of service.
+  monitoring: Unknown
+  feedback: The corresponding authors' emails were mentioned for feedback - ttvu@google.com and kalpeshk@google.com.

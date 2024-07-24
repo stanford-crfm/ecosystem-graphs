@@ -42,3 +42,24 @@
   prohibited_uses: Unknown
   monitoring: Unknown
   feedback: Issues with the model should be reported to Runway AI, Inc. They may be available through contact information provided on their website.
+- type: model
+  name: Gen-3 Alpha
+  organization: Runway AI, Inc.
+  description: Gen-3 Alpha is a multimodal AI model that enables the creation of videos in any style imagined from a text prompt. It supports video generation up to 10 seconds. The model aims to facilitate a new level of human creativity and contributes to Runway AI's long-term research efforts around what they call "general world models."
+  created_date: Unknown
+  url: https://runwayml.com/ai-tools/gen-3-alpha/
+  model_card: 
+  modality: text; video
+  analysis: Unknown
+  size: Unknown
+  dependencies: Unknown
+  training_emissions: Unknown
+  training_time: Unknown
+  training_hardware: Unknown
+  quality_control: Unknown
+  access: Unknown
+  license: Unknown
+  intended_uses: Gen-3 Alpha is intended for the generation of videos from text prompts. It can be used by creative content creators such as filmmakers to turn their imagine into visual content. Furthermore, it accelerates the prototyping process of video creation by rendering immediate results.
+  prohibited_uses: Unknown
+  monitoring: Unknown
+  feedback: Problems with the model can presumably be reported through the contact channels provided by Runway AI, Inc., including social media channels such as Twitter, Instagram, YouTube and Discord, as well as through their official website.
