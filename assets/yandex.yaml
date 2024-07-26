@@ -55,3 +55,24 @@
   monthly_active_users: ''
   user_distribution: ''
   failures: ''
+- type: model
+  name: PhotoMaker V2
+  organization: Tencent Advanced Robotics and Computer Vision Lab
+  description: PhotoMaker V2 is an image generation model that allows users to input one or a few face photos, along with a text prompt, to receive a customized photo or painting within seconds. It utilizes a fine-tuned OpenCLIP-ViT-H-14 among other layers.
+  created_date: Unknown
+  url: https://huggingface.co/TencentARC/PhotoMaker-V2
+  model_card: https://huggingface.co/TencentARC/PhotoMaker-V2
+  modality: Image; Image
+  analysis: The model's performance was evaluated based on the quality and customization of image generation. However, it has limitations such as degraded performance on Asian male faces and struggles with accurately rendering human hands.
+  size: Unknown
+  dependencies: [OpenCLIP-ViT-H-14]
+  training_emissions: Unknown
+  training_time: Unknown
+  training_hardware: Unknown
+  quality_control: The model was tested and fine-tuned on a variety of face photos to optimize its adaptation and generation capabilities. However, the model still has known limitations and can reinforce social biases.
+  access: Open
+  license: Unknown
+  intended_uses: The model can be used for generating customized images or paintings based on the input of a few face photos and text prompts.
+  prohibited_uses: The model should not be used in situations where accurate rendering of human body parts (such as hands) is required, and it's not recommended for extensive customization of Asian male faces due to its performance being degraded in such instances.
+  monitoring: Unknown
+  feedback: Any downstream problems with the model should be reported via the project's GitHub repository.
