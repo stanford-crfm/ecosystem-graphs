@@ -848,3 +848,24 @@
   prohibited_uses: ''
   monitoring: ''
   feedback: none
+- type: model
+  name: Llama Guard 3
+  organization: Meta-Llama
+  description: Llama Guard 3 is a pretrained language model fine-tuned for content safety classification. It classifies content in LLM inputs (prompt classification) and LLM responses (response classification). It acts as an LLM, generating text in its output that indicates whether a given prompt or response is safe or unsafe, and if unsafe, it lists the content categories violated. It aligns to safeguard against the MLCommons standardized hazards taxonomy and is designed to support Llama 3.1 capabilities. It provides content moderation in eight languages and was optimized for safety and security in search and code interpreter tool calls.
+  created_date: Unknown
+  url: https://huggingface.co/meta-llama/Llama-Guard-3-8B
+  model_card: https://huggingface.co/meta-llama/Llama-Guard-3-8B
+  modality: Text; text
+  analysis: The performance of Llama Guard 3 was evaluated against the MLCommons hazard taxonomy and compared across languages with Llama Guard 2 on an internal test, with GPT4 as a baseline and zero-shot prompting. The evaluations showed that Llama Guard 3 improved over Llama Guard 2 and outperformed GPT4 in English, multilingual, and tool use capabilities, while achieving much lower false positive rates.
+  size: 8 Billion parameters (dense)
+  dependencies: [Llama Guard 2, Llama 3, hh-rlhf dataset]
+  training_emissions: Unknown
+  training_time: Unknown
+  training_hardware: Unknown
+  quality_control: Aligned the model with the Proof of Concept MLCommons taxonomy of hazards to drive adoption of industry standards, facilitate collaboration, and transparency in the LLM safety and content evaluation space.
+  access: Limited
+  license: Unknown
+  intended_uses: To classify content safety in a variety of languages and contexts, including English, French, German, Hindi, Italian, Portuguese, Spanish, Thai. It is particularly optimized for moderating content in search and code interpreter tool calls.
+  prohibited_uses: The model is not intended for uses that violate the MLCommons taxonomy of 13 hazards, including violent crimes, non-violent crimes, sex-related crimes, etc., and an additional category for Code Interpreter Abuse for tool calls use cases.
+  monitoring: Unknown
+  feedback: Unknown
