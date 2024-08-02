@@ -890,3 +890,24 @@
   prohibited_uses: Not to be used for any purpose that may endanger, harm or disrupt the safety of individuals, groups or societies.
   monitoring: Unknown
   feedback: Unknown
+- type: model
+  name: Llama Guard 3
+  organization: Meta
+  description: Llama Guard 3 is a LSTM model fine-tuned for content safety classification. It acts as an LLM, generating text that indicates whether a given prompt or response is safe or not. Additionally, if a text is deemed unsafe, it lists content violation categories. This model is trained to predict safety labels across 14 categories based on the MLCommons taxonomy of 13 hazards plus an additional category for Code Interpreter Abuse. Llama Guard 3 supports content moderation in eight languages: English, French, German, Hindi, Italian, Portuguese, Spanish, and Thai.
+  created_date: Unknown
+  url: https://huggingface.co/meta-llama/Llama-Guard-3-8B
+  model_card: https://huggingface.co/meta-llama/Llama-Guard-3-8B
+  modality: text; text
+  analysis: The performance of Llama Guard 3 is evaluated based on the MLCommons hazard taxonomy. The evaluation includes a comparison across languages with the previous model, Llama Guard 2. The goal was to highlight the need for industry standards in LLM safety and content evaluation.
+  size: 8B parameters 
+  dependencies: ["Llama 2", "Llama 3", "hh-rlhf dataset"]
+  training_emissions: Unknown
+  training_time: Unknown
+  training_hardware: Unknown
+  quality_control: The model is designed to predict safety labels based on the MLCommons standard of 13 potential hazards along with an extra category for 'Code Interpreter Abuse'. It was tested for efficacy across multiple languages and compared against its predecessor models as well as other industry models for effectiveness.
+  access: Open
+  license: Unknown
+  intended_uses: The model is aimed at content safety classification. It can be used for prompt and response classification, where it determines if a given prompt or response is safe or unsafe and indicates the violated content categories.
+  prohibited_uses: The model must not be used to endorse, encourage or promote any form of hazardous, harmful, or illegal activities or behaviors (defined under 14 hazard categories based on the MLCommons standardized hazards taxonomy).
+  monitoring: The model is designed to provide continuous moderation support in eight different languages. However, the methods for monitoring its usage and compliance are not specified.
+  feedback: To report issues with the model, users likely need to contact the developers or organization directly, although specific instructions or channels are not provided.
