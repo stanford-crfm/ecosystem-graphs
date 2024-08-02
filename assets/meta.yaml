@@ -869,3 +869,24 @@
   prohibited_uses: The model is not intended for uses that violate the MLCommons taxonomy of 13 hazards, including violent crimes, non-violent crimes, sex-related crimes, etc., and an additional category for Code Interpreter Abuse for tool calls use cases.
   monitoring: Unknown
   feedback: Unknown
+- type: model
+  name: Llama Guard 3
+  organization: meta-llama
+  description: Llama Guard 3 is a Llama-3.1-8B pretrained model, fine-tuned for content safety classification. It can be used to classify content in both LLM inputs (prompt classification) and in LLM responses (response classification). The generated output indicates whether a given prompt or response is safe or unsafe and, if unsafe, it also lists the content categories violated. The model supports content moderation in 8 languages.
+  created_date: Unknown
+  url: https://huggingface.co/meta-llama/Llama-Guard-3-8B
+  model_card: https://huggingface.co/meta-llama/Llama-Guard-3-8B
+  modality: text; text
+  analysis: The model was evaluated on its performance on MLCommons hazard taxonomy and was compared across languages with Llama Guard 2 on internal testing. GPT-4 was also used as a baseline.
+  size: 8B parameters
+  dependencies: ["Llama-3.1-8B", "hh-rlhf dataset", "Brave Search API"]
+  training_emissions: Unknown
+  training_time: Unknown
+  training_hardware: Unknown
+  quality_control: The model was trained to predict safety labels based on the MLCommons taxonomy of hazards, ensuring safe use of the model in a variety of contexts and languages.
+  access: open
+  license: Unknown
+  intended_uses: For content safety classification on text inputs. Can be used to identify safe and unsafe content and categorize unsafe content according to violation categories.
+  prohibited_uses: Not to be used for any purpose that may endanger, harm or disrupt the safety of individuals, groups or societies.
+  monitoring: Unknown
+  feedback: Unknown
