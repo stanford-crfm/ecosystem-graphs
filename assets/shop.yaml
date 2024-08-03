@@ -22,3 +22,24 @@
   monthly_active_users: ''
   user_distribution: ''
   failures: ''
+- type: model
+  name: ChatGLM
+  organization: Zhipu AI and Tsinghua University
+  description: ChatGLM is an evolving family of large language models that have been developed over time, focusing primarily on the GLM-4 language series. The GLM-4 models are trained with all the insights and lessons gained from the preceding three generations of ChatGLM. They are pre-trained on ten trillions of tokens mostly in Chinese and English, along with a small set of corpus from 24 languages, aligned primarily for Chinese and English usage. The high-quality alignment is achieved via a multi-stage post-training process. The GLM-4 All Tools model is further aligned to understand user intent and autonomously decide when and which tool(s) to use.
+  created_date: 2024-06-10 (Based on the timeline given, the GLM-4-9B was released in June 2024)
+  url: https://arxiv.org/pdf/2406.12793
+  model_card: 
+  modality: Text
+  analysis: The evaluation shows that GLM-4 closely rivals or outperforms GPT-4 in terms of general metrics such as MMLU, GSM8K, MATH, BBH, GPQA, and HumanEval. It also gets close to GPT-4-Turbo in instruction following and matches GPT-4 Turbo for long context tasks. Furthermore, it outperforms GPT-4 in Chinese alignments. 
+  size: 9B parameters. (The size of the largest model in the GLM-4 series is 9 billion parameters and is presumably dense)
+  dependencies: [GPT-3, GPT-4, GLM-10B, GLM-130B]
+  training_emissions: Unknown
+  training_time: Unknown
+  training_hardware: Unknown
+  quality_control: Comprehensive evaluations were conducted that compared the model’s performance to GPT-4 on a set of common metrics. Their high-quality alignment is achieved with a multi-stage post-training process.
+  access: Open (The GLM models can be accessed through open-sourced links)
+  license: Unknown
+  intended_uses: ChatGLM models can complete complex tasks which would make them suitable for search queries, automation tasks, translations (especially between English and Chinese). It also can be used in applications that require an understanding of user intent.
+  prohibited_uses: Unknown
+  monitoring: Unknown
+  feedback: The report doesn't specify how to report problems with this model. Users can possibly report problems through the provided links: https://github.com/THUDM and https://huggingface.co/THUDM.
