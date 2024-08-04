@@ -49,3 +49,24 @@
   prohibited_uses: ''
   monitoring: ''
   feedback: https://huggingface.co/Writer/camel-5b-hf/discussions
+- type: model
+  name: Palmyra-Med and Palmyra-Fin
+  organization: Writer
+  description: The Palmyra-Med and Palmyra-Fin are domain-specific models for medical and financial sectors respectively. They are Long Language Models (LLMs) developed by Writer for use in areas with strict regulatory and compliance standards. They are designed to be highly accurate and capable of demonstrating superior industry-specific knowledge. Palmyra-Med excels in understanding clinical procedures, interpreting genetic data, and extracting information from biomedical literature. Palmyra-Fin is designed for use in financial trend analysis, investment analysis, risk evaluation, and asset allocation strategy. These models are part of the Writer full-stack generative AI platform that includes integrated graph-based RAG technology, AI guardrails, and a suite of developer tools.
+  created_date: 2024-07-31
+  url: https://writer.com/blog/palmyra-med-fin-models/
+  model_card: 
+  modality: Text; Text
+  analysis: According to Writer's testing, Palmyra-Med averaged 85.9% across all medical benchmarks, beating the runner-up model by almost two percentage points. Palmyra-Fin was tested using the CFA Level III exam and scored 73% on the multiple-choice section, outperforming the average passing score of 60% and demonstrating its financial expertise.
+  size: Palmyra-Med-70b and Palmyra-Fin-70B (The '70b' likely refers to the number of model parameters in billions. Hence it is suggested that each model has about 70 billion parameters. Further detail about model sparsity is unknown.)
+  dependencies: ["GPT-4", "Med-PaLM-2", "Claude 3.5 Sonnet", "long-fin-eval dataset", "CFA Level III sample test", "MMLU Clinical Knowledge dataset", "MMLU Anatomy dataset", "Medical Genetics dataset", "College Medicine dataset", "PubMedQA dataset"]
+  training_emissions: Unknown
+  training_time: Unknown
+  training_hardware: Unknown
+  quality_control: Quality control measures include extensive testing on a range of medical and financial benchmarks. The models also integrate well with the Writer full-stack generative AI platform and its AI guardrails.
+  access: Open
+  license: Open-model license 
+  intended_uses: Palmyra-Med is intended for use in improving patient outcomes, supporting diagnostic accuracy and treatment planning, interpreting genetic data, and aiding in biomedical research. Palmyra-Fin is intended for use in financial trend analysis and forecast, investment and risk analysis, and asset allocation strategy.
+  prohibited_uses: Unknown 
+  monitoring: Unknown
+  feedback: Feedback or concerns about these models can be reported by contact at sales@writer.com.
