@@ -54,3 +54,24 @@
   prohibited_uses: ''
   monitoring: unknown
   feedback: https://huggingface.co/01-ai/Yi-VL-34B/discussions
+- type: model
+  name: FLUX.1 [dev]
+  organization: Black Forest Labs
+  description: FLUX.1 [dev] is a 12 billion parameter rectified flow transformer that is capable of generating images from text descriptions. It delivers cutting-edge output quality and matches the performance of closed-source alternatives due to its training using guidance distillation. It has been openly made available to drive new scientific research and empower artists in developing innovative workflows.
+  created_date: Unknown
+  url: https://huggingface.co/black-forest-labs/FLUX.1-dev
+  model_card: https://huggingface.co/black-forest-labs/FLUX.1-dev
+  modality: Text; image
+  analysis: Unknown
+  size: 12B parameters 
+  dependencies: Unknown
+  training_emissions: Unknown
+  training_time: Unknown
+  training_hardware: Unknown
+  quality_control: Unknown
+  access: Open
+  license: FLUX.1 [dev] Non-Commercial
+  intended_uses: This model is intended to be used for generating images based on text prompts. Its outputs can be employed for personal, scientific, and commercial purposes.
+  prohibited_uses: This model is not to be used for illegal activities, attempted harm, generating or disseminating false information, harassment, non-consensual nudity or illegal pornographic content, fully automated decision making that impacts legal rights or the creation/modification of enforceable obligations, and large-scale disinformation campaigns.
+  monitoring: Unknown
+  feedback: Unknown
