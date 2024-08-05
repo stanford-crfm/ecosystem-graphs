@@ -85,3 +85,24 @@
   prohibited_uses: unknown
   monitoring: unknown
   feedback: none
+- type: model
+  name: Biggie-SmoLlm-0.15B-Base
+  organization: nisten
+  description: A model trained using a semi-automated continuous merging approach for increased coherence. It can provide coherent responses with a small file size (150mb for the model file).
+  created_date: Unknown
+  url: https://huggingface.co/nisten/Biggie-SmoLlm-0.15B-Base
+  model_card: https://huggingface.co/nisten/Biggie-SmoLlm-0.15B-Base
+  modality: text; text
+  analysis: Unknown
+  size: 0.15B parameters
+  dependencies: ["smolLm-0.13b"]
+  training_emissions: Unknown
+  training_time: Unknown
+  training_hardware: Unknown
+  quality_control: Wget verification, llama-cli command testing.
+  access: Open
+  license: Unknown
+  intended_uses: Can be used in generating coherent, conversational responses.
+  prohibited_uses: Unknown
+  monitoring: Unknown
+  feedback: Unknown
