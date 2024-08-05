@@ -54,3 +54,24 @@
   prohibited_uses: ''
   monitoring: unknown
   feedback: https://huggingface.co/01-ai/Yi-VL-34B/discussions
+- type: model
+  name: FLUX.1 [schnell]
+  organization: Black Forest Labs
+  description: FLUX.1 [schnell] is a 12 billion parameter rectified flow transformer capable of generating images from text descriptions. It is trained using latent adversarial diffusion distillation, and can generate high-quality images in only 1 to 4 steps.
+  created_date: Unknown
+  url: https://huggingface.co/black-forest-labs/FLUX.1-schnell
+  model_card: https://huggingface.co/black-forest-labs/FLUX.1-schnell
+  modality: text; image
+  analysis: The model has cutting-edge output quality and competitive prompt following, matching the performance of closed source alternatives.
+  size: 12B parameters (dense)
+  dependencies: Unknown
+  training_emissions: Unknown
+  training_time: Unknown
+  training_hardware: Unknown
+  quality_control: Unknown
+  access: open
+  license: Apache 2.0
+  intended_uses: Personal, scientific, and commercial purposes where high quality image generation from text is required.
+  prohibited_uses: Violating any applicable national, federal, state, local or international law or regulation, exploiting or harming minors, generating or disseminating false information to harm others, generating or disseminating personally identifiable information to harm individuals, harassment or threats, creating non-consensual nudity or illegal pornographic content, fully automated decision making that adversely affects an individual's legal rights, generating or facilitating large-scale disinformation campaigns.
+  monitoring: Unknown
+  feedback: Unknown
