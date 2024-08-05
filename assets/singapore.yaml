@@ -47,3 +47,24 @@
   prohibited_uses: ''
   monitoring: unknown
   feedback: https://huggingface.co/OrionZheng/openmoe-base/discussions
+- type: model
+  name: Whisper Medusa
+  organization: Aiola
+  description: Whisper is an advanced encoder-decoder model for speech transcription and translation. It processes audio through encoding and decoding stages. Various optimization strategies like Faster-Whisper and Speculative Decoding have been proposed to enhance performance. The Medusa model builds on Whisper by predicting multiple tokens per iteration, which significantly improves speed with a small degradation in WER (Word Error Rate).
+  created_date: Unknown
+  url: https://huggingface.co/aiola/whisper-medusa-v1
+  model_card: https://huggingface.co/aiola/whisper-medusa-v1
+  modality: Audio; Text
+  analysis: The model was trained and evaluated on the LibriSpeech dataset which resulted in significant speed improvements.
+  size: Unknown
+  dependencies: [LibriSpeech dataset, Whisper ASR model]
+  training_emissions: Unknown
+  training_time: Unknown
+  training_hardware: Unknown
+  quality_control: The model's quality is controlled by evaluating its performance in terms of speed improvement and degradation in WER on the LibriSpeech dataset.
+  access: Open
+  license: Unknown
+  intended_uses: The model is intended for use in audio transcription and translation. It is specifically optimized for English audio translation.
+  prohibited_uses: Usage of non-English audio is discouraged as the model's Medusa heads were specifically optimized for English.
+  monitoring: Unknown
+  feedback: Feedback on model issues can likely be reported through the Whisper Medusa GitHub repository.
