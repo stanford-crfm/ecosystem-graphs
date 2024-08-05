@@ -85,3 +85,25 @@
   prohibited_uses: unknown
   monitoring: unknown
   feedback: none
+- type: model
+  name: Biggie-SmoLlm-0.15B-Base
+  organization: nisten
+  description: Biggie-SmoLlm-0.15B-Base is a unique model developed through semi-automated continuous merging techniques to enhance coherence. The model potentially has application in tasks related to natural language understanding and generation, as implied by the testing prompt targeted at generating a coherent response on building cities on Mars using Aldrin-Cycler orbits.
+  created_date: Unknown
+  url: https://huggingface.co/nisten/Biggie-SmoLlm-0.15B-Base
+  model_card: https://huggingface.co/nisten/Biggie-SmoLlm-0.15B-Base
+  modality: text to text
+  analysis: The model has shown coherence for the first 100 tokens even in default settings, implying a robust capacity for semantically meaningful text generation. However, the exact evaluations or benchmark tests that were performed are not specified.
+  size: 0.15B parameters
+  dependencies: [Unknown]
+  training_emissions: Unknown
+  training_time: Unknown
+  training_hardware: Unknown
+  quality_control: The quality of this model seems to be primarily controlled through continuous merging techniques. However, specific measures taken to ensure quality, safety, and mitigate harms are not discussed.
+  access: Unknown
+  license: Unknown
+  intended_uses: This model is likely intended to aid in language-related tasks. However, specific intended uses have not been fully elaborated by the creator.
+  prohibited_uses: No explicit prohibited uses have been mentioned by the creator. However, general responsible AI practices would advise against using the model for tasks which it is not trained for, or for generating harmful, misleading or inappropriate content.
+  monitoring: Details on any monitoring mechanisms for downstream uses of this model are not mentioned in the available description.
+  feedback: Unknown
+  
