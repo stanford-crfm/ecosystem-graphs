@@ -848,3 +848,37 @@
   prohibited_uses: ''
   monitoring: ''
   feedback: none
+- type: model
+  name: SAM 2 (Meta Segment Anything Model 2)
+  organization: Meta AI
+  description: SAM 2 is a unified model for real-time object segmentation in images and videos, 
+  __achieving_state-of-the-art_performance._it_is_an_improvement_on_the_previous_sam_model,_now 
+  __supporting_object_segmentation_in_videos_in_addition_to_images._it_is_capable_of_segmenting_any 
+  __object_in_any_video_or_image,_even_those_it_has_not_previously_seen,_enabling_a_diverse_range 
+  __of_use_cases._potential_applications_for_sam_2_include: creating new video effects with a 
+  __generative_video_model,_speeding_up_annotation_tools_for_visual_data_to_enhance_computer_vision 
+  __systems,_and_aid_in_scientific_research,_such_as_tracking_endangered_animals_in_drone_footage_or 
+  __localizing_regions_in_a_medical_procedure.
+  created_date: 2024-07-29
+  url: https://go.fb.me/p749s5
+  model_card: 
+  modality: video; image
+  analysis: Achieves better video segmentation performance than existing work, is three times faster, 
+  __and_can_perform_zero-shot_generalization_(segmenting_any_object_in_any_video_or_image)._the_model's 
+  __evaluation_is_shared_under_a_bsd-3_license.
+  size: Unknown
+  dependencies: [SAM, SA-V dataset]
+  training_emissions: Unknown
+  training_time: Unknown
+  training_hardware: Unknown
+  quality_control: Public release of the model, code, and dataset for broader community review and use, 
+  __following_an_open_science_approach.
+  access: Open
+  license: Apache 2.0
+  intended_uses: Real-time object segmentation in images and videos for various application such as 
+  __creating_new_video_effects,_speeding_up_annotation_tools_for_visual_data,_and_aiding_in_scientific 
+  __research.
+  prohibited_uses: Unknown
+  monitoring: Unknown
+  feedback: Engagement with the AI community and open source contributions are encouraged, but no specific 
+  __feedback_method_is_mentioned.
