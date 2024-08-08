@@ -848,3 +848,24 @@
   prohibited_uses: ''
   monitoring: ''
   feedback: none
+- type: model
+  name: SAM 2
+  organization: Meta AI
+  description: SAM 2 is the successor to the Meta Segment Anything Model (SAM), now supporting object segmentation in videos and images. This unified model performs real-time promptable object segmentation in images and videos, enabling a step-change in the video segmentation experience and seamless use across image and video applications. SAM 2 achieves state-of-the-art performance exceeding previous capabilities in image segmentation accuracy. It also achieves better video segmentation performance than existing work while requiring three times less interaction time. It has numerous potential real-world applications in the fields of data annotation, marine science, satellite imagery analysis, and medical field, to name a few.
+  created_date: 2024-07-29
+  url: https://go.fb.me/p749s5
+  model_card: 
+  modality: Video; Image
+  analysis: SAM 2 outperforms previous segmentation models by providing better accuracy and requiring three times less interaction time.  
+  size: Unknown
+  dependencies: [SAM, SA-V]
+  training_emissions: Unknown
+  training_time: Unknown
+  training_hardware: Unknown
+  quality_control: It has been tested and evaluated for accuracy and performance on numerous visual tasks and challenges in diverse real-world scenarios.
+  access: Open
+  license: Apache 2.0
+  intended_uses: The technology can be used for real-time promptable object segmentation in images and videos. It can be used by content creators for video editing and by industries to train computer vision systems, such as those used in autonomous vehicles. SAM 2 can also aid in scientific research including tracking endangered animals in drone footage or localizing regions in a laparoscopic camera feed during a medical procedure.
+  prohibited_uses: Unknown
+  monitoring: It appears that Meta AI is planning to stay in touch with the AI community utilizing SAM 2, but specific measures weren't stated.
+  feedback: Any downstream problems with this model should presumably be reported to Meta AI, but the specifics of how that process works weren't detailed in the information provided.
