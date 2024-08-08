@@ -848,3 +848,24 @@
   prohibited_uses: ''
   monitoring: ''
   feedback: none
+- type: model
+  name: SAM 2 (Meta Segment Anything Model 2)
+  organization: Meta AI
+  description: SAM 2 is a unified model for real-time promptable object segmentation in images and videos. It exceeds previous capabilities in image segmentation accuracy and achieves better video segmentation performance than existing work while requiring less interaction time. It can be applied to previously unseen visual content without custom adaptation.
+  created_date: 2024-07-29
+  url: https://go.fb.me/p749s5
+  model_card: 
+  modality: Video; Video or Image; Image
+  analysis: SAM 2 has been demonstrated to perform better than preceding models in terms of segmentation accuracy and performance in videos while requiring three times less interaction. Its applications have included rapid annotation of visual data, the creation of video effects, scientific research, and medical procedures.
+  size: Unknown
+  dependencies: [SAM, SA-V dataset]
+  training_emissions: Unknown
+  training_time: Unknown
+  training_hardware: Unknown
+  quality_control: SAM 2 is built upon the success of the original SAM model which was noted for its impact and effectiveness across various disciplines. 
+  access: Open
+  license: Apache 2.0 (for model), BSD-3 (for evaluation code), CC BY 4.0 (for SA-V dataset)
+  intended_uses: SAM 2 is intended to be used in a diverse range of real-world use cases such as video effects, annotation tools for visual data, and various applications in scientific research and medicine. It's also designed to be incorporated into larger AI systems for a more general multimodal understanding of the world and could facilitate the development of computer vision systems in industries like autonomous vehicles. 
+  prohibited_uses: Unknown
+  monitoring: Unknown
+  feedback: Meta AI encourages community feedback and issues related to SAM 2 can likely be reported through their official channels or the platform where the open-source model is hosted.
