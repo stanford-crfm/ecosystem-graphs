@@ -848,3 +848,24 @@
   prohibited_uses: ''
   monitoring: ''
   feedback: none
+- type: model
+  name: SAM 2 (Meta Segment Anything Model 2)
+  organization: Meta AI 
+  description: SAM 2 is a unified model for real-time promptable object segmentation in images and videos. The model demonstrates state-of-the-art performance and can segment any object in any video or image, even those it has not been trained on. This allows for diverse use cases without the need for custom adaptation, extending its utility for real-world applications such as creating new video effects, faster annotation tools for visual data, and building better computer vision systems.
+  created_date: 2024-07-29
+  url: https://go.fb.me/p749s5
+  model_card: 
+  modality: Video, Image; Video, Image
+  analysis: The performance of SAM 2 in video and image segmentation has been tested and proven to exceed previous capabilities in image segmentation accuracy. It’s shown to deliver better video segmentation performance than existing work, requiring three times less interaction time.
+  size: Unknown
+  dependencies: [SAM (Meta Segment Anything Model), SA-V dataset]
+  training_emissions: Unknown
+  training_time: Unknown
+  training_hardware: Unknown
+  quality_control: The model has been extensively tested in real-world scenarios, and its performance has been evaluated and benchmarked against existing strategies for video and image segmentation.
+  access: Open
+  license: Apache 2.0
+  intended_uses: The model is intended for diverse applications including the creation of new video effects and faster annotation tools for visual data to build better computer vision systems. It can be used in scenarios requiring real-time, promptable object segmentation in images and videos. Other examples of use cases include tracking moving cells in videos captured from a microscope to aid scientific research, and enabling creative applications in video editing.
+  prohibited_uses: Unknown 
+  monitoring: Meta AI employs an open science approach, where the impact and potential misuse of their AI models can be monitored by the research and broader AI community.
+  feedback: Issues with the model or its deployment can likely be reported to the Meta AI team, although specific channels for this reporting were not included in the provided information.
