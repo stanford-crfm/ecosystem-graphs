@@ -47,3 +47,24 @@
   prohibited_uses: ''
   monitoring: unknown
   feedback: https://huggingface.co/OrionZheng/openmoe-base/discussions
+- type: model
+  name: CogVideoX-5B
+  organization: QingYing
+  description: CogVideoX-5B is a larger version of the video generation model, CogVideoX, which is designed to produce higher video generation quality and better visual effects. This model takes a textual prompt and generates a video according to the descriptions provided in the prompt.
+  created_date: Unknown
+  url: https://huggingface.co/THUDM/CogVideoX-5b
+  model_card: https://huggingface.co/THUDM/CogVideoX-5b
+  modality: Text; Video
+  analysis: Unknown
+  size: 5B parameters
+  dependencies: [CogVideoX-2B]
+  training_emissions: Unknown
+  training_time: Unknown
+  training_hardware: NVIDIA A100 and H100
+  quality_control: Unknown
+  access: Open
+  license: Unknown 
+  intended_uses: It can be used for the generation of descriptive videos from textual prompts. It is ideal for creating narrative videos and for visualizations of texts.  
+  prohibited_uses: Unknown
+  monitoring: Unknown
+  feedback: Users are likely instructed to report any issues or feedback through the organization's Github page.
