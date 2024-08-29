@@ -47,3 +47,24 @@
   prohibited_uses: ''
   monitoring: unknown
   feedback: https://huggingface.co/OrionZheng/openmoe-base/discussions
+- type: model
+  name: CogVideoX-5B
+  organization: QingYing
+  description: CogVideoX is a video generation model. The model receives a textual description and uses it to generate high-quality, detailed video scenes. This includes a broad number of settings, from calm natural scenes to intense weather conditions and even includes otherworldly scenes like an astronaut on Mars.
+  created_date: Unknown
+  url: https://huggingface.co/THUDM/CogVideoX-5b
+  model_card: https://huggingface.co/THUDM/CogVideoX-5b
+  modality: Text; Video
+  analysis: Unknown
+  size: 5B parameters (BF16 precision utilized during training for the 5B model)
+  dependencies: [Huggingface diffusers library]
+  training_emissions: Unknown
+  training_time: Unknown
+  training_hardware: Not mentioned, but inference has been tested on NVIDIA A100/H100 hardware.
+  quality_control: Optimization steps like SAT usage for inference and fine-tuning, utilization of the diffusers library.
+  access: Open 
+  license: Unknown
+  intended_uses: Generating video content based on input textual descriptions across a broad array of scenarios.
+  prohibited_uses: Unknown
+  monitoring: Unknown
+  feedback: Not specified but they suggest visiting their Github for more information which may be used for issue reporting.
