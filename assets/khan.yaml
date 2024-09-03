@@ -20,3 +20,24 @@
   monthly_active_users: ''
   user_distribution: ''
   failures: ''
+- type: model
+  name: AWPortrait-FL
+  organization: Shakker Labs
+  description: AWPortrait-FL is a machine learning model that was fine-tuned on FLUX.1-dev using the training set of AWPortrait-XL and nearly 2,000 fashion photography photos with extremely high aesthetic quality. It's capable of generating complex images based on a text input. It shows remarkable improvements in composition and details, with more delicate and realistic skin and textual portrayals. It was trained by DynamicWang at AWPlanet.
+  created_date: Unknown
+  url: https://huggingface.co/Shakker-Labs/AWPortrait-FL
+  model_card: https://huggingface.co/Shakker-Labs/AWPortrait-FL
+  modality: Text; Image
+  analysis: The model showed improved composition and details when compared to FLUX.1-dev under the same parameter settings. The comparison evaluation showed more delicate and realistic skin and textual portrayals.
+  size: Unknown
+  dependencies: [AWPortrait-XL, FLUX.1-dev]
+  training_emissions: Unknown
+  training_time: Unknown
+  training_hardware: Unknown
+  quality_control: Unknown
+  access: Limited (available only for non-commercial use)
+  license: flux-1-dev-non-commercial-license
+  intended_uses: This model is intended for the generation of images from a text input, specifically focused on high-quality aesthetics and realism in fashion photography portrayals.
+  prohibited_uses: The model and the generated images are not intended for commercial use.
+  monitoring: Unknown
+  feedback: Any problems with this model should likely be reported to the model creators at Shakker Labs or to the contributor DynamicWang at AWPlanet. However, specific channels for providing feedback have not been specified.
