@@ -20,3 +20,24 @@
   monthly_active_users: ''
   user_distribution: ''
   failures: ''
+- type: model
+  name: OLMOE-1B-7B
+  organization: Allen Institute for AI, Contextual AI, University of Washington, Princeton University
+  description: OLMOE is a fully open, state-of-the-art language model leveraging sparse Mixture-of-Experts (MoE). It has a total of 7 billion parameters but uses only 1 billion per input token. It's pretrained on 5 trillion tokens and further adapted to create OLMOE-1B-7B-INSTRUCT. The models outperform all available models with similar active parameters, even surpassing larger ones like Llama2-13B-Chat and DeepSeekMoE-16B. 
+  created_date: Unknown
+  url: https://arxiv.org/pdf/2409.02060
+  model_card: 
+  modality: Text; Text
+  analysis: The model outperforms all open 1B models and displays competitive performance to dense models with significantly higher inference costs and memory storage. It also exceeds various larger instruct models on common benchmarks (MMLU, GSM8k, HumanEval, etc).
+  size: 7B parameters (sparse)
+  dependencies: ["OLMoE-mix-0924", "Llama2-13B-Chat", "DeepSeekMoE-16B"]
+  training_emissions: Unknown
+  training_time: Unknown
+  training_hardware: Unknown
+  quality_control: Experimentation and testings were done to ensure the performance and quality of the model.
+  access: open
+  license: Unknown 
+  intended_uses: The model can be used for various applications, including but not limited to, content generation, text understanding, analysis, and language-related tasks.
+  prohibited_uses: Unknown
+  monitoring: Unknown
+  feedback: Problems with this model should be reported via the provided linkage at the Allen Institute for AI.
