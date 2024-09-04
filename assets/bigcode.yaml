@@ -177,3 +177,24 @@
   prohibited_uses: See BigCode Open RAIL-M license and FAQ
   monitoring: unknown
   feedback: https://huggingface.co/bigcode/starcoder2-3b/discussions
+- type: model
+  name: Re-LAION-5B
+  organization: LAION e.V.
+  description: Re-LAION-5B is an updated version of LAION-5B, a web-scale, text-link to images pair dataset. This new version has been thoroughly cleaned of known links to suspected CSAM (Child Sexual Abuse Material). This model offers a significant improvement in safety measures compared to the original model and can be used as a reference dataset for research purposes.
+  created_date: 2024-08-30
+  url: https://laion.ai/blog/relaion-5b/
+  model_card: 
+  modality: text; image
+  analysis: This model has undergone an extensive safety revision in partnership with the Internet Watch Foundation (IWF), the Canadian Center for Child Protection (C3P), and Stanford Internet Observatory, using lists of link and image hashes provided by these partners.
+  size: 5.5B text-link to images pairs
+  dependencies: [LAION-5B]
+  training_emissions: Unknown
+  training_time: Unknown
+  training_hardware: Unknown
+  quality_control: LAION e.V. implemented and refined filters to eliminate problematic content. Partnerships with organizations such as IWF and C3P helped in improving the safety of the dataset.
+  access: Open
+  license: Apache 2.0
+  intended_uses: Re-LAION-5B is intended for fully reproducible research on language-vision learning, serving as a reference dataset for pre-training open foundation models like openCLIP.
+  prohibited_uses: The dataset should not be used for illegal purposes. Explicitly, it should not be used to access, distribute, or reproduce CSAM content or other illegal material.
+  monitoring: Continuous scrutiny by the broad community is encouraged to continually improve the dataset.
+  feedback: Problems with the model should be addressed through established partnerships with organizations like IWF, C3P, and Stanford Internet Observatory. Any detected issues should be reported to LAION.
