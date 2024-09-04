@@ -177,3 +177,24 @@
   prohibited_uses: See BigCode Open RAIL-M license and FAQ
   monitoring: unknown
   feedback: https://huggingface.co/bigcode/starcoder2-3b/discussions
+- type: model
+  name: Re-LAION-5B
+  organization: LAION e.V.
+  description: Re-LAION-5B is an updated version of LAION-5B, a web-scale, text-link to images pair dataset that has been thoroughly cleaned of known links to suspected CSAM (Child Sexual Abuse Material). The model is released in two versions, Re-LAION-5B research and Re-LAION-5B research-safe. The dataset can be utilized by third parties to clean existing derivatives of LAION-5B by generating diffs and removes all matched content from their versions. Re-LAION-5B is an open dataset for fully reproducible research on language-vision learning - freely available and based on 100-percent open-source composition pipelines.
+  created_date: 2024-08-30
+  url: https://laion.ai/blog/relaion-5b/
+  model_card: 
+  modality: Text; Image
+  analysis: The model was evaluated through a safety revision procedure that identified potential problematic content.   
+  size: 5.5B pairs
+  dependencies: [LAION-5B]
+  training_emissions: Unknown
+  training_time: Unknown
+  training_hardware: Unknown
+  quality_control: The model underwent a safety revision procedure where problematic content was identified and removed. This was done in partnership with the Internet Watch Foundation (IWF), the Canadian Center for Child Protection (C3P), and Stanford Internet Observatory. 2236 links were removed after matching with the lists of link and image hashes provided by the partners.  
+  access: Open
+  license: Apache-2.0
+  intended_uses: The dataset is intended for fully reproducible research on language-vision learning. The metadata provided can be used by third parties to clean their versions of LAION-5B by generating diffs and removing all matched content. 
+  prohibited_uses: The dataset should not be used without applying the diffs provided to remove potential problematic content. It should not be used for purposes other than for research or study of foundation models.
+  monitoring: Organizations such as the Internet Watch Foundation (IWF), the Canadian Center for Child Protection (C3P), and Stanford Internet Observatory monitor the dataset for problematic content.  
+  feedback: Downstream problems with this model should be reported to LAION e.V. They have not specified a specific feedback mechanism, however, they typically expect feedback through their official channels which can include email or through their website contact form.
