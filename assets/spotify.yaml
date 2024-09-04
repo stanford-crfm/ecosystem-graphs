@@ -27,3 +27,25 @@
   monthly_active_users: ''
   user_distribution: ''
   failures: ''
+- type: model
+  name: TB-OCR-preview-0.1
+  organization: Hu Yifei
+  description: TB-OCR-preview (Text Block OCR), created by Yifei Hu, is an end-to-end OCR model that can handle text, math latex, and markdown formats in one go. It takes a block of text as input and generates clean markdown output. The model does not require line-detection or math formula detection.
+  created_date: unknown
+  url: https://huggingface.co/yifeihu/TB-OCR-preview-0.1
+  model_card: https://huggingface.co/yifeihu/TB-OCR-preview-0.1
+  modality: image; text
+  analysis: unknown
+  size: unknown
+  dependencies: [Phi-3.5-vision, TFT-ID-1.0[HF]]
+  training_emissions: unknown
+  training_time: unknown
+  training_hardware: unknown
+  quality_control: The model is a preview checkpoint created to verify the quality of data from a synthetic data pipeline.
+  access: unknown
+  license: unknown
+  intended_uses: The model's use case covers the conversion of blocks of text into markdown format. It is not designed for full-page OCR and is more effectively used on smaller, separate text blocks.
+  prohibited_uses: The model is not designed to be used in OCR on full pages of text.
+  monitoring: unknown
+  feedback: unknown
+  
