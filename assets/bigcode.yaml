@@ -177,3 +177,24 @@
   prohibited_uses: See BigCode Open RAIL-M license and FAQ
   monitoring: unknown
   feedback: https://huggingface.co/bigcode/starcoder2-3b/discussions
+- type: model
+  name: Re-LAION-5B
+  organization: LAION e.V.
+  description: Re-LAION-5B is an updated version of LAION-5B, a web-scale, text-link to images pair dataset, thoroughly cleaned of known links to suspected CSAM. The dataset can be used for fully reproducible research on language-vision learning. It has been released in two versions, Re-LAION-5B research and Re-LAION-5B research-safe.
+  created_date: 2024-08-30
+  url: https://laion.ai/blog/relaion-5b/
+  model_card: 
+  modality: Text; image
+  analysis: This model has gone through a safety revision procedure where known links to suspected CSAM have been removed after matching with a list of link and image hashes provided by partner organizations.
+  size: 5.5B pairs
+  dependencies: [LAION-5B]
+  training_emissions: Unknown
+  training_time: Unknown
+  training_hardware: Unknown
+  quality_control: The model was revised for safety, in partnership with the Internet Watch Foundation, the Canadian Center for Child Protection, and Stanford Internet Observatory. It went through a filtering process where links associated with potential CSAM were removed.
+  access: Open
+  license: Apache 2.0
+  intended_uses: The model is intended for reproducible research on language-vision learning.
+  prohibited_uses: The model should not be used to identify or propagate illegal content.
+  monitoring: All data contained in the dataset has been thoroughly checked and any problematic content removed. However, the team encourages continual scrutiny from the broader community.
+  feedback: Problematic data found in the dataset should be reported to LAION e.V for further action.
