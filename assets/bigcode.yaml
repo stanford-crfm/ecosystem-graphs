@@ -177,3 +177,24 @@
   prohibited_uses: See BigCode Open RAIL-M license and FAQ
   monitoring: unknown
   feedback: https://huggingface.co/bigcode/starcoder2-3b/discussions
+- type: model
+  name: Re-LAION-5B
+  organization: LAION e.V.
+  description: Re-LAION-5B is an updated version of the web-scale LAION-5B, a text-link to images pair dataset that has been thoroughly cleaned of known links to suspected child sexual abuse material (CSAM). It's designed to ensure safer use while preserving usability for research purposes. It is targeted for usage in fully reproducible research on language-vision learning.
+  created_date: 2024-08-30
+  url: https://laion.ai/blog/relaion-5b/
+  model_card: 
+  modality: Text; Images
+  analysis: The revisions and fixes implemented in Re-LAION-5B were necessitated by a report from Stanford Internet Observatory which highlighted links to potential illegal content. The filtering and cleaning process was done in partnership with Internet Watch Foundation (IWF) and the Canadian Center for Child Protection (C3P).
+  size: 5.5B text-link to images pairs.
+  dependencies: [LAION-5B]
+  training_emissions: Unknown
+  training_time: Unknown
+  training_hardware: Unknown
+  quality_control: Collaborations with the Internet Watch Foundation (IWF), the Canadian Center for Child Protection (C3P), and uses of link and image hashes provided by these partners ensured quality control, safety, and removed harmful content.
+  access: Open
+  license: Apache 2.0
+  intended_uses: Intended for use in studies and researches relating to language-vision learning, and to serve as a reference dataset for pre-training open foundation models like openCLIP.
+  prohibited_uses: It cannot be used for any purpose that contradicts the Apache 2.0 license agreement and ethical procedures, including illegal activities.
+  monitoring: Continuous scrutiny by the broad community, in a common effort to make open datasets better and safer.
+  feedback: The organization's contact mechanisms or public channels for discussing/improving the dataset can be used to report downstream problems with the model.
