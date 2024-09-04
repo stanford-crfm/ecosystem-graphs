@@ -177,3 +177,24 @@
   prohibited_uses: See BigCode Open RAIL-M license and FAQ
   monitoring: unknown
   feedback: https://huggingface.co/bigcode/starcoder2-3b/discussions
+- type: model
+  name: Re-LAION-5B
+  organization: LAION e.V.
+  description: Re-LAION-5B is an updated version of LAION-5B; it is the first web-scale, text-to-images pair dataset that is thoroughly cleaned of known links to suspected CSAM (Child Sexual Abuse Material). The dataset is useful for machine learning research particularly in language-vision learning. This model contains 5.5 billion (5,526,641,167) text-link to images pairs. It is available in two versions: Re-LAION-5B research and Re-LAION-5B research-safe.
+  created_date: 2024-08-30
+  url: https://laion.ai/blog/relaion-5b/
+  model_card: 
+  modality: text; image
+  analysis: The model underwent a safety revision procedure to address the issues identified by the Stanford Internet Observatory in the original LAION-5B model. This work was done in collaboration with the Internet Watch Foundation (IWF), the Canadian Center for Child Protection (C3P), and Stanford Internet Observatory. Additionally, the model benefits from continuous scrutiny by the broad community.
+  size: Unknown
+  dependencies: ["LAION-5B", "Stanford Internet Observatory findings"]
+  training_emissions: Unknown
+  training_time: Unknown
+  training_hardware: Unknown
+  quality_control: The model underwent a comprehensive safety revision process, which involved the removal of known links to potentially harmful content in collaboration with groups like IWF and C3P. Specific privacy data provided by Humans Rights Watch (HRW) was also removed. 
+  access: Open
+  license: Apache 2.0
+  intended_uses: This model is intended for reproducible research on language-vision learning. It serves as a reference dataset for training open foundation models such as openCLIP.
+  prohibited_uses: The model should not be used in a manner that propagates, encourages, or contains illegal content.
+  monitoring: The model is open for scrutiny by the community in improving its safety and quality. The dataset is subject to continuous reviews and improvements.
+  feedback: Problems with the model should be reported to LAION e.V., although the exact mode of reporting is not stated in the provided information.
