@@ -57,3 +57,30 @@
   prohibited_uses: ''
   monitoring: unknown
   feedback: none
+- type: model
+  name: sarvam-2b
+  organization: sarvamAI
+  description: This is an early checkpoint of sarvam-2b, a small, yet powerful language
+    model pre-trained from scratch on 2 trillion tokens. It is designed to be proficient
+    in 10 Indic languages (Bengali, Gujarati, Hindi, Kannada, Malayalam, Marathi,
+    Oriya, Punjabi, Tamil, and Telugu) + English.
+  created_date: 2024-08-15
+  url: https://huggingface.co/sarvamai/sarvam-2b-v0.5
+  model_card: https://huggingface.co/sarvamai/sarvam-2b-v0.5
+  modality: text; text
+  analysis: Analysis for the model is not yet provided; however, it has been reported
+    that more technical details like evaluations and benchmarking will be posted
+    soon.
+  size: Unknown
+  dependencies: []
+  training_emissions: Unknown
+  training_time: Unknown
+  training_hardware: NVIDIA NeMo™ Framework, Yotta Shakti Cloud, HGX H100 systems.
+  quality_control: Unknown
+  access: Open
+  license: Unknown
+  intended_uses: The model can be used for text completion and supervised fine-tuning,
+    particularly in the languages it was trained on.
+  prohibited_uses: Unknown
+  monitoring: Unknown
+  feedback: Unknown

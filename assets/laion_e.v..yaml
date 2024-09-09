@@ -1,0 +1,39 @@
+---
+- type: model
+  name: Re-LAION-5B
+  organization: LAION e.V.
+  description: Re-LAION-5B is an updated version of LAION-5B, the first web-scale,
+    text-link to images pair dataset to be thoroughly cleaned of known links to
+    suspected CSAM. It is an open dataset for fully reproducible research on language-vision
+    learning. This model was developed in response to issues identified by the Stanford
+    Internet Observatory in December 2023. The updates were made in collaboration
+    with multiple organizations like the Internet Watch Foundation (IWF), the Canadian
+    Center for Child Protection (C3P), and Stanford Internet Observatory.
+  created_date: 2024-08-30
+  url: https://laion.ai/blog/relaion-5b/
+  model_card: unknown
+  modality: Text; Image
+  analysis: Re-LAION-5B aims to fix the issues as reported by Stanford Internet
+    Observatory for the original LAION-5B. It is available for download in two versions,
+    research and research-safe. In total, 2236 links that potentially led to inappropriate
+    content were removed.
+  size: 5.5B (5,526,641,167) text-link to images pairs
+  dependencies: [LAION-5B]
+  training_emissions: Unknown
+  training_time: Unknown
+  training_hardware: Unknown
+  quality_control: The model utilized lists of link and image hashes provided by
+    partner organizations. These were used to remove inappropriate links from the
+    original LAION-5B dataset to create Re-LAION-5B.
+  access: Open
+  license: Apache 2.0
+  intended_uses: Re-LAION-5B is designed for research on language-vision learning.
+    It can also be used by third parties to clean existing derivatives of LAION-5B
+    by generating diffs and removing all matched content from their versions.
+  prohibited_uses: The dataset should not be utilized for purposes that breach legal
+    parameters or ethical standards, such as dealing with illegal content.
+  monitoring: This version is a response to continuous scrutiny & safety revisions.
+    It's also meant to allow inspection and validation by a broad community.
+  feedback: Problems with the dataset should be reported to the LAION organization.
+    They have open lines for communication with their partners and the broader research
+    community.

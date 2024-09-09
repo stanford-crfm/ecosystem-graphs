@@ -830,17 +830,24 @@
 - type: model
   name: Chameleon
   organization: Meta FAIR
-  description: Chameleon is a family of early-fusion token-based mixed-modal models capable of understanding and generating images and text in any arbitrary sequence.
+  description: Chameleon is a family of early-fusion token-based mixed-modal models
+    capable of understanding and generating images and text in any arbitrary sequence.
   created_date: 2024-05-17
   url: https://arxiv.org/pdf/2405.09818
   model_card: none
   modality: image, text; image, text
-  analysis: Evaluated on a comprehensive range of tasks, including visual question answering, image captioning, text generation, image generation, and long-form mixed modal generation. Chameleon demonstrates broad and general capabilities, including state-of-the-art performance in image captioning tasks, outperforms Llama-2 in text-only tasks while being competitive with models such as Mixtral 8x7B and Gemini-Pro.
+  analysis: Evaluated on a comprehensive range of tasks, including visual question
+    answering, image captioning, text generation, image generation, and long-form
+    mixed modal generation. Chameleon demonstrates broad and general capabilities,
+    including state-of-the-art performance in image captioning tasks, outperforms
+    Llama-2 in text-only tasks while being competitive with models such as Mixtral
+    8x7B and Gemini-Pro.
   size: 34B parameters
   dependencies: []
   training_emissions: unknown
   training_time: unknown
-  training_hardware: Meta's Research Super Cluster (powered by NVIDIA A100 80GB GPUs)
+  training_hardware: Meta's Research Super Cluster (powered by NVIDIA A100 80GB
+    GPUs)
   quality_control: ''
   access: open
   license: unknown
@@ -848,3 +855,39 @@
   prohibited_uses: ''
   monitoring: ''
   feedback: none
+- type: model
+  name: Llama 3.1 405B
+  organization: Meta AI
+  description: Llama 3.1 405B is the first openly available model that rivals the
+    top AI models when it comes to state-of-the-art capabilities in general knowledge,
+    steerability, math, tool use, and multilingual translation. With the release
+    of the 405B model, the Llama versions support advanced use cases, such as long-form
+    text summarization, multilingual conversational agents, and coding assistants.
+    It is the largest and most capable openly available foundation model.
+  created_date: 2024-07-23
+  url: https://ai.meta.com/blog/meta-llama-3-1/?utm_source=twitter&utm_medium=organic_social&utm_content=video&utm_campaign=llama31
+  model_card: unknown
+  modality: text; text
+  analysis: The model was evaluated on over 150 benchmark datasets that span a wide
+    range of languages. An experimental evaluation suggests that the model is competitive
+    with leading foundation models across a range of tasks. Also, smaller models
+    of Llama 3.1 405B are competitive with closed and open models that have a similar
+    number of parameters.
+  size: 405B parameters (dense)
+  dependencies: [Unknown]
+  training_emissions: Unknown
+  training_time: Unknown
+  training_hardware: Over 16 thousand H100 GPUs
+  quality_control: The development process was focused on keeping the model scalable
+    and straightforward. It adopted an iterative post-training procedure, where
+    each round uses supervised fine-tuning and direct preference optimization. The
+    model also underwent quality assurance and filtering for pre-and post-training
+    data.
+  access: open
+  license: Unknown
+  intended_uses: For advanced use cases, such as long-form text summarization, multilingual
+    conversational agents, and coding assistants. May also be useful in the development
+    of custom offerings and systems by developers.
+  prohibited_uses: Unknown
+  monitoring: Unknown
+  feedback: Unknown

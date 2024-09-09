@@ -1,0 +1,35 @@
+---
+- type: model
+  name: ChatGLM
+  organization: Team GLM, Zhipu AI, Tsinghua University
+  description: ChatGLM is an evolving family of large language models that have
+    been developed over time. The GLM-4 language series, includes GLM-4, GLM-4-Air,
+    and GLM-4-9B. They are pre-trained on ten trillions of tokens mostly in Chinese
+    and English and are aligned primarily for Chinese and English usage. The high-quality
+    alignment is achieved via a multi-stage post-training process, which involves
+    supervised fine-tuning and learning from human feedback. GLM-4 All Tools model
+    is further aligned to understand user intent and autonomously decide when and
+    which tool(s) to use.
+  created_date: 2023-07-02
+  url: https://arxiv.org/pdf/2406.12793
+  model_card: unknown
+  modality: text; text
+  analysis: Evaluations show that GLM-4, 1) closely rivals or outperforms GPT-4
+    in terms of general metrics such as MMLU, GSM8K, MATH, BBH, GPQA, and HumanEval,
+    2) gets close to GPT-4-Turbo in instruction following as measured by IFEval,
+    3) matches GPT-4 Turbo (128K) and Claude 3 for long context tasks, and 4) outperforms
+    GPT-4 in Chinese alignments as measured by AlignBench.
+  size: From 6.2 billion parameters to 9 billion parameters and 130 billion parameters.
+  dependencies: [GPT models, GLM-10B, GLM-130B]
+  training_emissions: Unknown
+  training_time: Unknown
+  training_hardware: Unknown
+  quality_control: High-quality alignment is achieved via a multi-stage post-training
+    process, which involves supervised fine-tuning and learning from human feedback.
+  access: Open
+  license: Unknown
+  intended_uses: General language modeling, complex tasks like accessing online
+    information via web browsing and solving math problems using Python interpreter.
+  prohibited_uses: Unknown
+  monitoring: Unknown
+  feedback: Unknown

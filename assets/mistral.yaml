@@ -67,12 +67,18 @@
 - type: model
   name: Codestral
   organization: Mistral AI
-  description: Codestral is an open-weight generative AI model explicitly designed for code generation tasks. It helps developers write and interact with code through a shared instruction and completion API endpoint. Mastering code and English, it can be used to design advanced AI applications for software developers. It is fluent in 80+ programming languages.
+  description: Codestral is an open-weight generative AI model explicitly designed
+    for code generation tasks. It helps developers write and interact with code
+    through a shared instruction and completion API endpoint. Mastering code and
+    English, it can be used to design advanced AI applications for software developers.
+    It is fluent in 80+ programming languages.
   created_date: 2024-05-29
   url: https://mistral.ai/news/codestral/
   model_card: none
   modality: text; code
-  analysis: Performance of Codestral is evaluated in Python, SQL, and additional languages, C++, bash, Java, PHP, Typescript, and C#. Fill-in-the-middle performance is assessed using HumanEval pass@1 in Python, JavaScript, and Java.
+  analysis: Performance of Codestral is evaluated in Python, SQL, and additional
+    languages, C++, bash, Java, PHP, Typescript, and C#. Fill-in-the-middle performance
+    is assessed using HumanEval pass@1 in Python, JavaScript, and Java.
   size: 22B parameters
   dependencies: []
   training_emissions: unknown
@@ -81,7 +87,108 @@
   quality_control: ''
   access: open
   license: Mistral AI Non-Production License
-  intended_uses: Helps developers write and interact with code, design advanced AI applications for software developers, integrated into LlamaIndex and LangChain for building applications, integrated in VSCode and JetBrains environments for code generation and interactive conversation.
+  intended_uses: Helps developers write and interact with code, design advanced
+    AI applications for software developers, integrated into LlamaIndex and LangChain
+    for building applications, integrated in VSCode and JetBrains environments for
+    code generation and interactive conversation.
   prohibited_uses: unknown
   monitoring: unknown
   feedback: none
+- type: model
+  name: Mistral NeMo
+  organization: Mistral AI, NVIDIA
+  description: The Mistral NeMo model is a state-of-the-art 12B model built in collaboration
+    with NVIDIA, offering a large context window of up to 128k tokens. The model
+    is suitable for multilingual applications and exhibits excellent reasoning,
+    world knowledge, and coding accuracy. It's easy to use and a drop-in replacement
+    in a system that uses Mistral 7B. The model uses a new tokenizer, Tekken, based
+    on Tiktoken, which is trained on over 100 languages. It compresses natural language
+    text and source code more efficiently than previously used tokenizers.
+  created_date: 2024-07-18
+  url: https://mistral.ai/news/mistral-nemo/
+  model_card: unknown
+  modality: Text; Text
+  analysis: The model underwent an advanced fine-tuning and alignment phase. Its
+    performance was evaluated using GPT4o as a judge on official references. It
+    was compared to recent open-source pre-trained models Gemma 2 9B, Llama 3 8B
+    regarding multilingual performance and coding accuracy. Tekken tokenizer's compression
+    ability was compared with previous tokenizers like SentencePiece and the Llama
+    3 tokenizer.
+  size: 12B parameters
+  dependencies: [GPT4o, Mistral 7B, Tekken]
+  training_emissions: Unknown
+  training_time: Unknown
+  training_hardware: NVIDIA hardware, specifics unknown
+  quality_control: The model underwent an advanced fine-tuning and alignment phase.
+    Various measures such as accuracy comparisons with other models and instruction-tuning
+    were implemented to ensure its quality.
+  access: Open
+  license: Apache 2.0
+  intended_uses: The model can be used for multilingual applications, understanding
+    and generating natural language as well as source code, handling multi-turn
+    conversations, and providing more precise instruction following.
+  prohibited_uses: Unknown
+  monitoring: Unknown
+  feedback: Problems should be reported to the Mistral AI team, though the specific
+    method of reporting is unknown.
+- type: model
+  name: Codestral Mamba
+  organization: Mistral AI
+  description: Codestral Mamba is a Mamba2 language model that is specialized in
+    code generation. It has a theoretical ability to model sequences of infinite
+    length and offers linear time inference. This makes it effective for extensive
+    user engagement and is especially practical for code productivity use cases.
+    Codestral Mamba can be deployed using the mistral-inference SDK or through TensorRT-LLM,
+    and users can download the raw weights from HuggingFace.
+  created_date: 2024-07-16
+  url: https://mistral.ai/news/codestral-mamba/
+  model_card: unknown
+  modality: Text; Text
+  analysis: The model has been tested for in-context retrieval capabilities up to
+    256k tokens. It has been created with advanced code and reasoning capabilities,
+    which enables it to perform on par with SOTA transformer-based models.
+  size: 7.3B parameters
+  dependencies: [Mamba's GitHub repository, HuggingFace]
+  training_emissions: Unknown
+  training_time: Unknown
+  training_hardware: Unknown
+  quality_control: Unknown
+  access: Open
+  license: Apache 2.0
+  intended_uses: The model is intended for code generation and can be utilized as
+    a local code assistant.
+  prohibited_uses: Unknown
+  monitoring: Unknown
+  feedback: Problems with the model can be reported through the organization's website.
+- type: model
+  name: MathΣtral
+  organization: Mistral AI
+  description: MathΣtral is a 7B model designed for math reasoning and scientific
+    discovery. It achieves state-of-the-art reasoning capacities in its size category
+    across various industry-standard benchmarks. This model stands on the shoulders
+    of Mistral 7B and specializes in STEM subjects. It is designed to assist efforts
+    in advanced mathematical problems requiring complex, multi-step logical reasoning.
+    It particularly achieves 56.6% on MATH and 63.47% on MMLU.
+  created_date: 2024-07-16
+  url: https://mistral.ai/news/mathstral/
+  model_card: unknown
+  modality: Text-to-text (presumed based on description)
+  analysis: The model's performance has been evaluated on the MATH and MMLU industry-standard
+    benchmarks. It scored notably higher on both these tests than the base model
+    Mistral 7B.
+  size: 7B parameters
+  dependencies: [Mistral 7B]
+  training_emissions: Unknown
+  training_time: Unknown
+  training_hardware: Unknown
+  quality_control: This model has been fine-tuned from a base model and its inference
+    and performance have been tested on several industry benchmarks.
+  access: open
+  license: Apache 2.0
+  intended_uses: The model is intended for use in solving advanced mathematical
+    problems requiring complex, multi-step logical reasoning or any math-related
+    STEM subjects challenges.
+  prohibited_uses: Unknown
+  monitoring: Unknown
+  feedback: Feedback is likely expected to be given through the HuggingFace platform
+    where the model's weights are hosted or directly to the Mistral AI team.

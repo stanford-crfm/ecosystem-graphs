@@ -1,0 +1,38 @@
+---
+- type: model
+  name: Dragonfly
+  organization: Unknown (Team members include, Kezhen Chen, Rahul Thapa, Rahul Chalamala,
+    Ben Athiwaratkun, Shuaiwen Leon Song, James Zou)
+  description: A large vision-language model with multi-resolution zoom that enhances
+    fine-grained visual understanding and reasoning about image regions. The Dragonfly
+    model comes in two variants, the general-domain model ("Llama-3-8b-Dragonfly-v1")
+    trained on 5.5 million image-instruction pairs, and the biomedical variant ("Llama-3-8b-Dragonfly-Med-v1")
+    fine-tuned on an additional 1.4 million biomedical image-instruction pairs.
+    Dragonfly demonstrates promising performance on vision-language benchmarks like
+    commonsense visual QA and image captioning.
+  created_date: 2024-06-06
+  url: https://www.together.ai/blog/dragonfly-v1
+  model_card: unknown
+  modality: Image; text
+  analysis: The model was evaluated using five popular vision-language benchmarks
+    that require strong commonsense reasoning and detailed image understanding,
+    AI2D, ScienceQA, MMMU, MMVet, and POPE. It demonstrated competitive performance
+    in these evaluations compared to other vision-language models.
+  size: 8B parameters (Unknown if sparse or dense)
+  dependencies: [LLaMA]
+  training_emissions: Unknown
+  training_time: Unknown
+  training_hardware: Unknown
+  quality_control: The model employs two key strategies (multi-resolution visual
+    encoding and zoom-in patch selection) that enable it to efficiently focus on
+    fine-grained details in image regions and provide better commonsense reasoning.
+    Its performance was evaluated on several benchmark tasks for quality assurance.
+  access: open
+  license: Unknown
+  intended_uses: Dragonfly is designed for image-text tasks, including commonsense
+    visual question answering and image captioning. It is further focused on tasks
+    that require fine-grained understanding of high-resolution image regions, such
+    as in medical imaging.
+  prohibited_uses: Unknown
+  monitoring: Unknown
+  feedback: Unknown

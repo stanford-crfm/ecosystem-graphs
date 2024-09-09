@@ -1,0 +1,36 @@
+---
+- type: model
+  name: ESM3
+  organization: EvolutionaryScale
+  description: ESM3 is the first generative model for biology that simultaneously
+    reasons over the sequence, structure, and function of proteins. It is trained
+    across the natural diversity of Earth, reasoning over billions of proteins from
+    diverse environments. It advances the ability to program and create with the
+    code of life, simulating evolution, and making biology programmable. ESM3 is
+    generative, and scientists can guide the model to create proteins for various
+    applications.
+  created_date: 2024-06-25
+  url: https://www.evolutionaryscale.ai/blog/esm3-release
+  model_card: unknown
+  modality: Text; Text (the model takes textual instructions as inputs and generates
+    textual descriptions of proteins as outputs)
+  analysis: The model was tested in the generation of a new green fluorescent protein.
+    Its effectiveness was compared to natural evolutionary processes, and it was
+    deemed to simulate over 500 million years of evolution.
+  size: 98B parameters (Dense)
+  dependencies: [ESM2(base model), largest dataset of proteins]
+  training_emissions: Unknown
+  training_time: Unknown
+  training_hardware: One of the highest throughput GPU clusters in the world.
+  quality_control: The creators have put in place a responsible development framework
+    to ensure transparency and accountability from the start. ESM3 was tested in
+    the generation of a new protein, ensuring its quality and effectiveness.
+  access: Open
+  license: Unknown
+  intended_uses: To engineer biology from first principles. It functions as a tool
+    for scientists to create proteins for various applications, including medicine,
+    biology research, and clean energy.
+  prohibited_uses: Unknown
+  monitoring: Measures associated with their responsible development framework,
+    though specific measures are not specified.
+  feedback: Unknown
