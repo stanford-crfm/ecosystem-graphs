@@ -54,3 +54,24 @@
   prohibited_uses: ''
   monitoring: unknown
   feedback: https://huggingface.co/01-ai/Yi-VL-34B/discussions
+- type: model
+  name: Chai-1
+  organization: Chai Discovery Team
+  description: Chai-1 is a multi-modal foundation model for molecular structure prediction that performs at the state-of-the-art across a variety of tasks relevant to drug discovery. It enables unified prediction of proteins, small molecules, DNA, RNA, covalent modifications, and more. It tested with a 77% success rate on the PoseBusters benchmark and an CÎ± LDDT of 0.849 on the CASP15 protein monomer structure prediction set.
+  created_date: 2024-09-09
+  url: https://www.chaidiscovery.com/blog/introducting-chai-1
+  model_card: 
+  modality: Unknown
+  analysis: The model was tested across a large number of benchmarks and found to achieve a 77% success rate on the PoseBusters benchmark (vs. 76% by AlphaFold3), as well as an CÎ± LDDT of 0.849 on the CASP15 protein monomer structure prediction set (vs. 0.801 by ESM3-98B). The model can also run in single sequence mode without MSAs while preserving most of its performance.
+  size: Unknown
+  dependencies: Unknown
+  training_emissions: Unknown
+  training_time: Unknown
+  training_hardware: Unknown
+  quality_control: Unknown
+  access: The model is available for free via a web interface for commercial applications such as drug discovery and the model weights and inference code are also released as a software library for non-commercial use.
+  license: Unknown
+  intended_uses: Can be used for drug discovery and other applications that require molecular structure prediction.
+  prohibited_uses: Unknown
+  monitoring: Unknown
+  feedback: Unknown
