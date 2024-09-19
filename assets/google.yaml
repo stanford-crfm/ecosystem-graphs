@@ -1811,3 +1811,28 @@
     domain.
   monitoring: ''
   feedback: none
+- type: model
+  name: Unknown
+  organization: Google
+  description: Unknown
+  created_date: 2024-09-19
+  url: https://goo.gle/4gooxdG
+  model_card: 
+  modality: Unknown
+  analysis: Unknown
+  size: Unknown
+  dependencies: []
+  training_emissions: Unknown
+  training_time: Unknown
+  training_hardware: Unknown
+  quality_control: Unknown
+  access: ''
+  license:
+    explanation: The mention of Google's Terms of Service in the text suggests that this is the license under which the model operates.
+    value: Google's Terms of Service
+  intended_uses: Unknown
+  prohibited_uses: The text suggests that any actions that violate Google's Terms of Service would be considered prohibited use.
+  monitoring: Unknown
+  feedback: Unknown
+  ''
+
