@@ -85,3 +85,31 @@
   prohibited_uses: unknown
   monitoring: unknown
   feedback: none
+- type: model
+  name: Pixtral 12B
+  organization: Mistral AI
+  description: Pixtral 12B is a Mixture of Experts model with a 400M parameter vision encoder and a 12B parameter multimodal decoder. The model has strong performance on multimodal tasks and maintains state-of-the-art performance on text-only benchmarks. It supports variable image sizes and aspect ratios as well as multiple images in the long context window of 128k tokens.
+  created_date: 2024-09-17 
+  url: https://mistral.ai/news/pixtral-12b/
+  model_card: 
+  modality:
+    explanation: "Natively multimodal, trained with interleaved image and text data" 
+    value: Image; text
+  analysis: Pixtral 12B was evaluated on a range of open and closed models using the same evaluation harness. It performed well on multimodal reasoning without compromising on text capabilities such as instruction following, coding, and math.
+  size:
+    explanation: "12B parameter multimodal decoder based on Mistral Nemo" 
+    value: 12B parameters
+  dependencies: [Mistral Nemo 12B]
+  training_emissions: Unknown
+  training_time: Unknown
+  training_hardware: Unknown
+  quality_control: The model was evaluated through the same evaluation harness as open and closed models. It performed well on a variety of tasks and outperformed many similar models.
+  access: ''
+  license:
+    explanation: "License: Apache 2.0"
+    value: Apache 2.0
+  intended_uses: The model can be used for tasks involving multimodal reasoning, chart and figure understanding, document question answering, and instruction following. It can also be used as a drop-in replacement for Mistral Nemo 12B. 
+  prohibited_uses: Unknown
+  monitoring: Unknown
+  feedback: Unknown
+
