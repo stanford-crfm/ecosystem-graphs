@@ -24,7 +24,7 @@
     this model and have implemented numerous safeguards to prevent harms. Safety
     measures were implemented from the start of training the model and continued
     throughout testing, evaluation, and deployment.
-  access: Open
+  access: open
   license: Stability Non-Commercial Research Community License
   intended_uses: The model can be used by professional artists, designers, developers,
     and AI enthusiasts for creating high-quality image outputs from text inputs.
