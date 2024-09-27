@@ -62,7 +62,7 @@
     exploration of real-world use-cases for this model and others. They are actively
     working to refine and optimize the model beyond the current synthetic datasets
     it has been trained on.
-  access: Open
+  access: open
   license: Stable AI License
   intended_uses: This model can be used for creating dynamic multi-angle videos,
     with applications in game development, video editing, and virtual reality. It
