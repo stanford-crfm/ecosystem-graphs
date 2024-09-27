@@ -148,7 +148,7 @@
     256k tokens. It has been created with advanced code and reasoning capabilities,
     which enables it to perform on par with SOTA transformer-based models.
   size: 7.3B parameters
-  dependencies: [Mamba's GitHub repository, HuggingFace]
+  dependencies: []
   training_emissions: Unknown
   training_time: Unknown
   training_hardware: Unknown
