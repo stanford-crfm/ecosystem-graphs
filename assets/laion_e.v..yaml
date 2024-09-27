@@ -17,7 +17,7 @@
     Observatory for the original LAION-5B. It is available for download in two versions,
     research and research-safe. In total, 2236 links that potentially led to inappropriate
     content were removed.
-  size: 5.5B (5,526,641,167) text-link to images pairs
+  size: 5.5B (text, image) pairs
   dependencies: [LAION-5B]
   training_emissions: Unknown
   training_time: Unknown
