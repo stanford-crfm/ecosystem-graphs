@@ -110,7 +110,7 @@
     internal finance evaluations. It passed the CFA Level III test with a score
     of 73% and has shown superior performance compared to other models in the long-fin-eval,
     an internally created benchmark that simulates real-world financial scenarios.
-  size: 70 Billion parameters
+  size: 70B parameters (dense)
   dependencies:
     - Palmyra-X-004
     - Writer in-house financial instruction dataset
