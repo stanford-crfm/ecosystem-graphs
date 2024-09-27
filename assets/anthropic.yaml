@@ -600,7 +600,7 @@
   feedback: none
 - type: model
   name: Claude 3.5 Sonnet
-  organization: Anthropic PBC
+  organization: Anthropic
   description: Claude 3.5 Sonnet is an AI model with advanced understanding and
     generation abilities in text, vision, and code. It sets new industry benchmarks
     for graduate-level reasoning (GPQA), undergrad-level knowledge (MMLU), coding
