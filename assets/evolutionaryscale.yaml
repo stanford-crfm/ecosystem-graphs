@@ -12,7 +12,7 @@
   created_date: 2024-06-25
   url: https://www.evolutionaryscale.ai/blog/esm3-release
   model_card: unknown
-  modality: Text; Text (the model takes textual instructions as inputs and generates
+  modality: text; text
     textual descriptions of proteins as outputs)
   analysis: The model was tested in the generation of a new green fluorescent protein.
     Its effectiveness was compared to natural evolutionary processes, and it was
