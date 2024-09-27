@@ -10,7 +10,7 @@
   created_date: 2024-09-08
   url: https://arxiv.org/pdf/2408.03541
   model_card: unknown
-  modality: Text; text
+  modality: text; text
   analysis: The model was evaluated extensively across a wide range of public and
     in-house benchmarks. The comparative analysis showed that the performance of
     EXAONE 3.0 was competitive in English and excellent in Korean compared to other
