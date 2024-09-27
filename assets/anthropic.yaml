@@ -633,7 +633,7 @@
     code.
   prohibited_uses: Misuse of the model is discouraged though specific use cases
     are not mentioned.
-  monitoring: Measures have been taken to evaluate the model against various types
+  monitoring: Unknown
     of misuse, and policy feedback from external experts has been integrated to
     ensure robustness of evaluations.
   feedback: Feedback on Claude 3.5 Sonnet can be submitted directly in-product to
