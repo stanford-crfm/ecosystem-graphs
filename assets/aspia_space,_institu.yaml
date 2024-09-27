@@ -13,7 +13,7 @@
   created_date: 2024-09-08
   url: https://arxiv.org/pdf/2405.14930v1
   model_card: unknown
-  modality: Image; Image (The model takes an image as input and processes it to
+  modality: image; image
     provide insights)
   analysis: The models’ performance on downstream tasks was evaluated by linear
     probing. The models follow a similar saturating log-log scaling law to textual
