@@ -107,7 +107,7 @@
   created_date: 2024-07-18
   url: https://mistral.ai/news/mistral-nemo/
   model_card: unknown
-  modality: Text; Text
+  modality: text; text
   analysis: The model underwent an advanced fine-tuning and alignment phase. Its
     performance was evaluated using GPT4o as a judge on official references. It
     was compared to recent open-source pre-trained models Gemma 2 9B, Llama 3 8B
