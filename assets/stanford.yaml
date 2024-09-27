@@ -165,7 +165,7 @@
     set of 5,137 CTs, and external validation on 7,000 clinical CTs and on two public
     CT datasets (VerSe, TotalSegmentator).
   size: Unknown
-  dependencies: ['VerSe, TotalSegmentator']
+  dependencies: []
   training_emissions: Unknown
   training_time: Unknown
   training_hardware: Single GPU.
