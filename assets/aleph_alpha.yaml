@@ -120,7 +120,7 @@
     webqs, arc, and boolq. Direct comparisons were also performed with applications
     like GPT and Llama 2.
   size: 7B parameters
-  dependencies: [GPT, Llama 2]
+  dependencies: []
   training_emissions: Unknown
   training_time: Unknown
   training_hardware: Unknown
