@@ -115,7 +115,7 @@
     ability was compared with previous tokenizers like SentencePiece and the Llama
     3 tokenizer.
   size: 12B parameters
-  dependencies: [GPT4o, Mistral 7B, Tekken]
+  dependencies: []
   training_emissions: Unknown
   training_time: Unknown
   training_hardware: NVIDIA hardware, specifics unknown
