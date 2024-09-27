@@ -100,7 +100,7 @@
   dependencies: [TripoSR]
   training_emissions: Unknown
   training_time: Unknown
-  training_hardware: GPU with 7GB VRAM
+  training_hardware: unknown
   quality_control: Unknown
   access: open
   license: Stability AI Community
