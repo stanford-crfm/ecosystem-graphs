@@ -14,7 +14,7 @@
   created_date: 2024-06-17
   url: https://runwayml.com/research/introducing-gen-3-alpha?utm_source=xinquji
   model_card: unknown
-  modality: Text, image, video; video
+  modality: text, image, video; video
   analysis: Unknown
   size: Unknown
   dependencies: []
