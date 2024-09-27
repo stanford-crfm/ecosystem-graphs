@@ -1825,7 +1825,7 @@
   created_date: 2024-09-05
   url: https://deepmind.google/technologies/imagen-3/
   model_card: unknown
-  modality: Text; Image
+  modality: text; image
   analysis: Unknown
   size: Unknown
   dependencies: []
