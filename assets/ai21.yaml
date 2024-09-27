@@ -334,7 +334,7 @@
   analysis: The models were evaluated based on their ability to handle long contexts,
     speed, and quality. They outperformed competitors in their size class, scoring
     high on the Arena Hard benchmark.
-  size: Unknown
+  size: 94B parameters
   dependencies: [SSM-Transformer architecture, Mamba]
   training_emissions: Unknown
   training_time: Unknown
