@@ -335,7 +335,7 @@
     speed, and quality. They outperformed competitors in their size class, scoring
     high on the Arena Hard benchmark.
   size: 94B parameters
-  dependencies: [SSM-Transformer architecture, Mamba]
+  dependencies: []
   training_emissions: Unknown
   training_time: Unknown
   training_hardware: For speed comparisons, Jamba 1.5 Mini used 2xA100 80GB GPUs,
