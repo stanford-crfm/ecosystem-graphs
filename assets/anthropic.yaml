@@ -626,7 +626,7 @@
     and refined by external experts. It was also provided to the UK's AI Safety
     Institute (UK AISI) for a pre-deployment safety evaluation.
   access: Open
-  license: {{Unknown: null}: null}
+  license: unknown
   intended_uses: The model is intended for complex tasks such as context-sensitive
     customer support, orchestrating multi-step workflows, interpreting charts and
     graphs, transcribing text from images, as well as writing, editing, and executing
