@@ -16,19 +16,14 @@
     EXAONE 3.0 was competitive in English and excellent in Korean compared to other
     large language models of a similar size.
   size: 7.8B parameters (dense)
-  dependencies:
-    - GQA
-    - SwiGLU
-    - Rotary Position Embeddings
-    - MeCab
-    - BBPE
+  dependencies: [MeCab]
   training_emissions: Unknown
   training_time: Unknown
   training_hardware: Unknown
   quality_control: Extensive pre-training on a diverse dataset, and advanced post-training
     techniques were employed to enhance instruction-following capabilities. The
     model was also trained to fully comply with data handling standards.
-  access: Open
+  access: open
   license: Unknown
   intended_uses: The model was intended for non-commercial and research purposes.
     The capabilities of the model allow for use cases that involve advanced AI and

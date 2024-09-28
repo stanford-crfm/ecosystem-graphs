@@ -18,14 +18,13 @@
   dependencies: []
   training_emissions: Unknown
   training_time: Unknown
-  training_hardware: NVIDIA RTX GPUs, TensorRT, AMD’s APUs, consumer GPUs and MI-300X
-    Enterprise GPUs
+  training_hardware: unknown
   quality_control: They have conducted extensive internal and external testing of
     this model and have implemented numerous safeguards to prevent harms. Safety
     measures were implemented from the start of training the model and continued
     throughout testing, evaluation, and deployment.
   access: open
-  license: Stability Non-Commercial Research Community License
+  license: Stability Community License
   intended_uses: The model can be used by professional artists, designers, developers,
     and AI enthusiasts for creating high-quality image outputs from text inputs.
   prohibited_uses: Large-scale commercial use requires contacting the organization
@@ -63,7 +62,7 @@
     working to refine and optimize the model beyond the current synthetic datasets
     it has been trained on.
   access: open
-  license: Stable AI License
+  license: Stability Community License
   intended_uses: This model can be used for creating dynamic multi-angle videos,
     with applications in game development, video editing, and virtual reality. It
     allows professionals in these fields to visualize objects from multiple angles,
@@ -88,7 +87,7 @@
     professions.
   created_date: 2024-08-01
   url: https://stability.ai/news/introducing-stable-fast-3d
-  model_card: unknown
+  model_card: https://huggingface.co/stabilityai/stable-fast-3d
   modality: image; 3D
   analysis: The model was evaluated on its ability to quickly and accurately transform
     a single image into a detailed 3D asset. This evaluation highlighted the model's
@@ -96,14 +95,14 @@
     in 3D work. Compared to the previous SV3D model, Stable Fast 3D offers significantly
     reduced inference times--0.5 seconds versus 10 minutes--while maintaining high-quality
     output.
-  size: Unknown
+  size: unknown
   dependencies: [TripoSR]
   training_emissions: Unknown
   training_time: Unknown
   training_hardware: unknown
   quality_control: Unknown
   access: open
-  license: Stability AI Community
+  license: Stability Community License
   intended_uses: The model is intended for use in game development, virtual reality,
     retail, architecture, design and other graphically intense professions. It allows
     for rapid prototyping in 3D work, assisting both enterprises and indie developers.

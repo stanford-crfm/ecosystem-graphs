@@ -66,7 +66,7 @@
     achieved state-of-the-art results with an average score of 85.9%. It also demonstrated
     robust capability in efficiently processing extensive medical documents, as
     showcased by its near-perfect score in the NIH evaluation.
-  size: Unknown
+  size: 70B parameters
   dependencies: [Palmyra-X-004]
   training_emissions: Unknown
   training_time: Unknown

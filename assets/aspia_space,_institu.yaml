@@ -14,12 +14,11 @@
   url: https://arxiv.org/pdf/2405.14930v1
   model_card: unknown
   modality: image; image
-    provide insights)
   analysis: The models’ performance on downstream tasks was evaluated by linear
     probing. The models follow a similar saturating log-log scaling law to textual
     models, their performance improves with the increase in model size up to the
     saturation point of parameters.
-  size: Ranges from 1 million to 2.1 billion parameters.
+  size: 2.1B parameters
   dependencies: [DESI Legacy Survey DR8]
   training_emissions: Unknown
   training_time: Unknown

@@ -12,22 +12,22 @@
     which tool(s) to use.
   created_date: 2023-07-02
   url: https://arxiv.org/pdf/2406.12793
-  model_card: unknown
+  model_card: https://huggingface.co/THUDM/glm-4-9b
   modality: text; text
   analysis: Evaluations show that GLM-4, 1) closely rivals or outperforms GPT-4
     in terms of general metrics such as MMLU, GSM8K, MATH, BBH, GPQA, and HumanEval,
     2) gets close to GPT-4-Turbo in instruction following as measured by IFEval,
     3) matches GPT-4 Turbo (128K) and Claude 3 for long context tasks, and 4) outperforms
     GPT-4 in Chinese alignments as measured by AlignBench.
-  size: From 6.2 billion parameters to 9 billion parameters and 130 billion parameters.
-  dependencies: [GPT models, GLM-10B, GLM-130B]
+  size: 9B parameters
+  dependencies: []
   training_emissions: Unknown
   training_time: Unknown
   training_hardware: Unknown
   quality_control: High-quality alignment is achieved via a multi-stage post-training
     process, which involves supervised fine-tuning and learning from human feedback.
   access: Open
-  license: Unknown
+  license: Apache 2.0
   intended_uses: General language modeling, complex tasks like accessing online
     information via web browsing and solving math problems using Python interpreter.
   prohibited_uses: Unknown

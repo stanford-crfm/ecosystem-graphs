@@ -319,7 +319,7 @@
   monitoring: ''
   feedback: https://huggingface.co/ai21labs/Jamba-v0.1/discussions
 - type: model
-  name: Jamba 1.5 Open Model Family (Jamba 1.5 Mini, Jamba 1.5 Large)
+  name: Jamba 1.5
   organization: AI21
   description: A family of models that demonstrate superior long context handling,
     speed, and quality. Built on a novel SSM-Transformer architecture, they surpass
@@ -342,7 +342,7 @@
     and Jamba 1.5 Large used 8xA100 80GB GPUs.
   quality_control: The models were evaluated on the Arena Hard benchmark. For maintaining
     long context performance, they were tested on the RULER benchmark.
-  access: Open
+  access: open
   license: Jamba Open Model License
   intended_uses: The models are built for enterprise scale AI applications. They
     are purpose-built for efficiency, speed, and ability to solve critical tasks

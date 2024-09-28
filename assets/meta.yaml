@@ -865,8 +865,8 @@
     text summarization, multilingual conversational agents, and coding assistants.
     It is the largest and most capable openly available foundation model.
   created_date: 2024-07-23
-  url: https://ai.meta.com/blog/meta-llama-3-1/?utm_source=twitter&utm_medium=organic_social&utm_content=video&utm_campaign=llama31
-  model_card: unknown
+  url: https://ai.meta.com/blog/meta-llama-3-1/
+  model_card: https://github.com/meta-llama/llama-models/blob/main/models/llama3_1/MODEL_CARD.md
   modality: text; text
   analysis: The model was evaluated on over 150 benchmark datasets that span a wide
     range of languages. An experimental evaluation suggests that the model is competitive

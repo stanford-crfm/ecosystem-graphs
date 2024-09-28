@@ -127,7 +127,7 @@
   quality_control: The model comes with additional safety guardrails via alignment
     methods to ensure safe usage. Training data is carefully curated to ensure compliance
     with EU and national regulations.
-  access: Open
+  access: open
   license: Aleph Open
   intended_uses: The model is intended for use in domain-specific applications,
     particularly in the automotive and engineering industries. It can also be tailored

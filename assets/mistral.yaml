@@ -122,7 +122,7 @@
   quality_control: The model underwent an advanced fine-tuning and alignment phase.
     Various measures such as accuracy comparisons with other models and instruction-tuning
     were implemented to ensure its quality.
-  access: Open
+  access: open
   license: Apache 2.0
   intended_uses: The model can be used for multilingual applications, understanding
     and generating natural language as well as source code, handling multi-turn
@@ -153,7 +153,7 @@
   training_time: Unknown
   training_hardware: Unknown
   quality_control: Unknown
-  access: Open
+  access: open
   license: Apache 2.0
   intended_uses: The model is intended for code generation and can be utilized as
     a local code assistant.
@@ -172,7 +172,7 @@
   created_date: 2024-07-16
   url: https://mistral.ai/news/mathstral/
   model_card: unknown
-  modality: Text-to-text (presumed based on description)
+  modality: text; text
   analysis: The model's performance has been evaluated on the MATH and MMLU industry-standard
     benchmarks. It scored notably higher on both these tests than the base model
     Mistral 7B.

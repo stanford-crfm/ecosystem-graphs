@@ -156,7 +156,7 @@
   created_date: 2024-09-08
   url: https://arxiv.org/pdf/2406.06512
   model_card: unknown
-  modality: Image; text
+  modality: image; text
   analysis: Merlin has been comprehensively evaluated on 6 task types and 752 individual
     tasks. The non-adapted (off-the-shelf) tasks include zero-shot findings classification,
     phenotype classification, and zero-shot cross-modal retrieval, while model adapted

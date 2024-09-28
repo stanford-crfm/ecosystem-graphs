@@ -72,15 +72,15 @@
     performance levels competitive to other frontier models in areas such as graduate-level
     science knowledge (GPQA), general knowledge (MMLU, MMLU-Pro), and math competition
     problems (MATH).
-  size: Unknown
-  dependencies: [Grok-1.5, FLUX.1]
+  size: unknown
+  dependencies: []
   training_emissions: Unknown
   training_time: Unknown
   training_hardware: Unknown
   quality_control: Grok-2 models were tested in real-world scenarios using AI tutors
     that engaged with the models across a variety of tasks and selected the superior
     response based on specific criteria outlined in the guidelines.
-  access: Limited
+  access: limited
   license: Unknown
   intended_uses: The model is intended to be used for understanding text and vision,
     answering questions, collaborating on writing, solving coding tasks, and enhancing

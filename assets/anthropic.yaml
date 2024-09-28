@@ -625,7 +625,7 @@
   quality_control: The model underwent a red-teaming assessment, and has been tested
     and refined by external experts. It was also provided to the UK's AI Safety
     Institute (UK AISI) for a pre-deployment safety evaluation.
-  access: Open
+  access: open
   license: unknown
   intended_uses: The model is intended for complex tasks such as context-sensitive
     customer support, orchestrating multi-step workflows, interpreting charts and
@@ -633,8 +633,7 @@
     code.
   prohibited_uses: Misuse of the model is discouraged though specific use cases
     are not mentioned.
-  monitoring: Unknown
-    of misuse, and policy feedback from external experts has been integrated to
-    ensure robustness of evaluations.
+  monitoring: Unknown of misuse, and policy feedback from external experts has been
+    integrated to ensure robustness of evaluations.
   feedback: Feedback on Claude 3.5 Sonnet can be submitted directly in-product to
     inform the development roadmap and improve user experience.

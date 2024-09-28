@@ -1870,7 +1870,7 @@
     2. The model has improvements in safety and efficiency over the first generation.
     The deployment of Gemma 2 on Vertex AI, scheduled for the next month, will offer
     effortless management of the model.
-  access: Open
+  access: open
   license: Gemma (commercially-friendly license given by Google DeepMind)
   intended_uses: Gemma 2 is designed for developers and researchers for various
     AI tasks. It can be used via the integrations it offers with other AI tools/platforms

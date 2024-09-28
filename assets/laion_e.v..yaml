@@ -25,15 +25,14 @@
   quality_control: The model utilized lists of link and image hashes provided by
     partner organizations. These were used to remove inappropriate links from the
     original LAION-5B dataset to create Re-LAION-5B.
-  access: Open
+  access: open
   license: Apache 2.0
   intended_uses: Re-LAION-5B is designed for research on language-vision learning.
     It can also be used by third parties to clean existing derivatives of LAION-5B
     by generating diffs and removing all matched content from their versions.
   prohibited_uses: The dataset should not be utilized for purposes that breach legal
     parameters or ethical standards, such as dealing with illegal content.
-  monitoring: This version is a response to continuous scrutiny & safety revisions.
-    It's also meant to allow inspection and validation by a broad community.
+  monitoring: unknown
   feedback: Problems with the dataset should be reported to the LAION organization.
     They have open lines for communication with their partners and the broader research
     community.

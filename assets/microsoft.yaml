@@ -1003,23 +1003,23 @@
   created_date: 2024-09-08
   url: https://huggingface.co/microsoft/Phi-3.5-MoE-instruct
   model_card: https://huggingface.co/microsoft/Phi-3.5-MoE-instruct
-  modality: Unknown
+  modality: text; text
   analysis: The model was evaluated across a variety of public benchmarks, comparing
     with a set of models including Mistral-Nemo-12B-instruct-2407, Llama-3.1-8B-instruct,
     Gemma-2-9b-It, Gemini-1.5-Flash, and GPT-4o-mini-2024-07-18. It achieved a similar
     level of language understanding and math as much larger models. It also displayed
     superior performance in reasoning capability, even with only 6.6B active parameters.
     It was also evaluated for multilingual tasks.
-  size: 6.6B active parameters
-  dependencies: [Phi-3]
+  size: 61B parameters (sparse); 6.6B active parameters
+  dependencies: [Phi-3 dataset]
   training_emissions: Unknown
   training_time: Unknown
   training_hardware: Unknown
   quality_control: The model was enhanced through supervised fine-tuning, proximal
     policy optimization, and direct preference optimization processes for safety
     measures.
-  access: Open
-  license: Unknown
+  access: open
+  license: MIT
   intended_uses: The model is intended for commercial and research use in multiple
     languages. It is designed to accelerate research on language and multimodal
     models, and for use as a building block for generative AI powered features.
