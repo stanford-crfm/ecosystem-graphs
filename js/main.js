@@ -635,9 +635,17 @@ function loadAssetsAndRenderPageContent() {
 
   const paths = [
     'assets/adept.yaml',
+    'assets/aspia_space,_institu.yaml',
+    'assets/evolutionaryscale.yaml',
+    'assets/laion_e.v..yaml',
+    'assets/lg_ai_research.yaml',
     'assets/mila.yaml',
+    'assets/qwen_team.yaml',
+    'assets/runway_ai,_inc..yaml',
     'assets/soochow.yaml',
     'assets/baichuan.yaml',
+    'assets/stability_ai.yaml',
+    'assets/glm.yaml',
     'assets/xwin.yaml',
     'assets/mistral.yaml',
     'assets/adobe.yaml',

@@ -99,3 +99,39 @@
   prohibited_uses: ''
   monitoring: ''
   feedback: ''
+- type: model
+  name: Pharia-1-LLM-7B
+  organization: Aleph Alpha
+  description: Pharia-1-LLM-7B is a model that falls within the Pharia-1-LLM model
+    family. It is designed to deliver short, controlled responses that match the
+    performance of leading open-source models around 7-8 billion parameters. The
+    model is culturally and linguistically tuned for German, French, and Spanish
+    languages. It is trained on carefully curated data in line with relevant EU
+    and national regulations. The model shows improved token efficiency and is particularly
+    effective in domain-specific applications, especially in the automotive and
+    engineering industries. It can also be aligned to user preferences, making it
+    appropriate for critical applications without the risk of shut-down behaviour.
+  created_date: 2024-09-08
+  url: https://aleph-alpha.com/introducing-pharia-1-llm-transparent-and-compliant/#:~:text=Pharia%2D1%2DLLM%2D7B
+  model_card: unknown
+  modality: text; text
+  analysis: Extensive evaluations were done with ablation experiments performed
+    on pre-training benchmarks such as lambada, triviaqa, hellaswag, winogrande,
+    webqs, arc, and boolq. Direct comparisons were also performed with applications
+    like GPT and Llama 2.
+  size: 7B parameters
+  dependencies: []
+  training_emissions: Unknown
+  training_time: Unknown
+  training_hardware: Unknown
+  quality_control: The model comes with additional safety guardrails via alignment
+    methods to ensure safe usage. Training data is carefully curated to ensure compliance
+    with EU and national regulations.
+  access: open
+  license: Aleph Open
+  intended_uses: The model is intended for use in domain-specific applications,
+    particularly in the automotive and engineering industries. It can also be tailored
+    to user preferences.
+  prohibited_uses: Unknown
+  monitoring: Unknown
+  feedback: Feedback can be sent to support@aleph-alpha.com.

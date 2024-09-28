@@ -1,0 +1,115 @@
+---
+- type: model
+  name: Stable Diffusion 3 Medium
+  organization: Stability AI
+  description: Stable Diffusion 3 Medium is Stability AI’s advanced text-to-image
+    open model. It's suitable for running on consumer PCs and laptops as well as
+    enterprise-tier GPUs. The model is known for its overall Quality and Photorealism,
+    prompt understanding, typography, being resource-efficient, and being fine-tuned.
+    The model in collaboration with NVIDIA and AMD has enhanced performance.
+  created_date: 2024-06-12
+  url: https://stability.ai/news/stable-diffusion-3-medium
+  model_card: unknown
+  modality: text; image
+  analysis: The model was tested extensively internally and externally. It has developed
+    and implemented numerous safeguards to prevent harms. They have also received
+    user feedback to make continuous improvements.
+  size: 2B parameters
+  dependencies: []
+  training_emissions: Unknown
+  training_time: Unknown
+  training_hardware: unknown
+  quality_control: They have conducted extensive internal and external testing of
+    this model and have implemented numerous safeguards to prevent harms. Safety
+    measures were implemented from the start of training the model and continued
+    throughout testing, evaluation, and deployment.
+  access: open
+  license: Stability Community License
+  intended_uses: The model can be used by professional artists, designers, developers,
+    and AI enthusiasts for creating high-quality image outputs from text inputs.
+  prohibited_uses: Large-scale commercial use requires contacting the organization
+    for licensing details. The model should not be used for any purpose that does
+    not adhere to the usage guidelines.
+  monitoring: Continuous collaboration with researchers, experts, and the community
+    to ensure that the model is being used appropriately.
+  feedback: Feedback can be given through Twitter, Instagram, LinkedIn, or Discord
+    Community.
+- type: model
+  name: Stable Video 4D
+  organization: Stability AI
+  description: Stable Video 4D is our latest AI model for dynamic multi-angle video
+    generation. It allows users to upload a single video and receive novel-view
+    videos of eight new angles/views. This advancement moves from image-based video
+    generation to full 3D dynamic video synthesis. Users can specify camera angles,
+    tailoring the output to meet specific creative needs. The model is currently
+    available on Hugging Face and can generate 5-frame videos across the 8 views
+    in about 40 seconds.
+  created_date: 2024-07-24
+  url: https://stability.ai/news/stable-video-4d
+  model_card: unknown
+  modality: video; video
+  analysis: Consistency across the spatial and temporal axes greatly improves with
+    this model. Stable Video 4D is able to generate novel view videos that are more
+    detailed, faithful to the input video, and are consistent across frames and
+    views compared to existing works.
+  size: Unknown
+  dependencies: [Stable Video Diffusion Model]
+  training_emissions: Unknown
+  training_time: Unknown
+  training_hardware: Unknown
+  quality_control: The Stability AI team is dedicated to continuous innovation and
+    exploration of real-world use-cases for this model and others. They are actively
+    working to refine and optimize the model beyond the current synthetic datasets
+    it has been trained on.
+  access: open
+  license: Stability Community License
+  intended_uses: This model can be used for creating dynamic multi-angle videos,
+    with applications in game development, video editing, and virtual reality. It
+    allows professionals in these fields to visualize objects from multiple angles,
+    enhancing the realism and immersion of their products.
+  prohibited_uses: Unknown
+  monitoring: Continuous monitoring by the Stability AI team for improvements and
+    refinements.
+  feedback: Feedback and reports about the progress should be shared via their social
+    channels like Twitter, Instagram, LinkedIn or their Discord Community.
+- type: model
+  name: Stable Fast 3D
+  organization: Stability AI
+  description: Stable Fast 3D is a ground-breaking model in 3D asset generation
+    technology. It can transform a single input image into a highly detailed 3D
+    asset in around half a second, setting new standards in terms of speed and quality
+    in the realm of 3D reconstruction. Users start the process by uploading an image
+    of an object. Stable Fast 3D then swiftly generates a complete 3D asset, which
+    includes, UV unwrapped mesh, material parameters, albedo colors with reduced
+    illumination bake-in, and optional quad or triangle remeshing. This model has
+    various applications, notably for game and virtual reality developers, as well
+    as professionals in retail, architecture, design, and other graphic-intensive
+    professions.
+  created_date: 2024-08-01
+  url: https://stability.ai/news/introducing-stable-fast-3d
+  model_card: https://huggingface.co/stabilityai/stable-fast-3d
+  modality: image; 3D
+  analysis: The model was evaluated on its ability to quickly and accurately transform
+    a single image into a detailed 3D asset. This evaluation highlighted the model's
+    unprecedented speed and quality, marking it as a valuable tool for rapid prototyping
+    in 3D work. Compared to the previous SV3D model, Stable Fast 3D offers significantly
+    reduced inference times--0.5 seconds versus 10 minutes--while maintaining high-quality
+    output.
+  size: unknown
+  dependencies: [TripoSR]
+  training_emissions: Unknown
+  training_time: Unknown
+  training_hardware: unknown
+  quality_control: Unknown
+  access: open
+  license: Stability Community License
+  intended_uses: The model is intended for use in game development, virtual reality,
+    retail, architecture, design and other graphically intense professions. It allows
+    for rapid prototyping in 3D work, assisting both enterprises and indie developers.
+    It's also used in movie production for creating static assets for games and
+    3D models for e-commerce, as well as fast model creation for AR/VR.
+  prohibited_uses: Use by individuals or organizations with over $1M in annual revenue
+    without obtaining an Enterprise License.
+  monitoring: Unknown
+  feedback: Information on any downstream issues with the model can be reported
+    to Stability AI through their support request system.
