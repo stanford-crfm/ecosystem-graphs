@@ -636,8 +636,6 @@ function loadAssetsAndRenderPageContent() {
   const paths = [
     'assets/adept.yaml',
     'assets/mila.yaml',
-    'assets/qwen_team.yaml',
-    'assets/runway_ai,_inc..yaml',
     'assets/soochow.yaml',
     'assets/baichuan.yaml',
     'assets/stability_ai.yaml',
