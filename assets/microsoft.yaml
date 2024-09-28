@@ -947,8 +947,7 @@
 - type: model
   name: Aurora
   organization: Microsoft
-  description: Aurora is a large-scale foundation model of the atmosphere trained
-    on over a million hours of diverse weather and climate data.
+  description: Aurora is a large-scale foundation model of the atmosphere trained on over a million hours of diverse weather and climate data.
   created_date: 2024-05-28
   url: https://arxiv.org/pdf/2405.13063
   model_card: none
@@ -969,15 +968,12 @@
 - type: model
   name: Prov-GigaPath
   organization: Microsoft
-  description: Prov-GigaPath is a whole-slide pathology foundation model pretrained
-    on 1.3 billion 256 × 256 pathology image tiles.
+  description: Prov-GigaPath is a whole-slide pathology foundation model pretrained on 1.3 billion 256 × 256 pathology image tiles.
   created_date: 2024-05-22
   url: https://www.nature.com/articles/s41586-024-07441-w
   model_card: none
   modality: image; embeddings
-  analysis: Evaluated on a digital pathology benchmark comprising 9 cancer subtyping
-    tasks and 17 pathomics tasks, with Prov-GigaPath demonstrating SoTA performance
-    in 25 out of 26 tasks.
+  analysis: Evaluated on a digital pathology benchmark comprising 9 cancer subtyping tasks and 17 pathomics tasks, with Prov-GigaPath demonstrating SoTA performance in 25 out of 26 tasks.
   size: unknown
   dependencies: [GigaPath]
   training_emissions: unknown
@@ -990,45 +986,3 @@
   prohibited_uses: ''
   monitoring: ''
   feedback: none
-- type: model
-  name: Phi-3.5-MoE
-  organization: Microsoft
-  description: Phi-3.5-MoE is a lightweight, state-of-the-art open model built upon
-    datasets used for Phi-3 - synthetic data and filtered publicly available documents,
-    with a focus on very high-quality, reasoning dense data. It supports multilingual
-    and has a 128K context length in tokens. The model underwent a rigorous enhancement
-    process, incorporating supervised fine-tuning, proximal policy optimization,
-    and direct preference optimization to ensure instruction adherence and robust
-    safety measures.
-  created_date: 2024-09-08
-  url: https://huggingface.co/microsoft/Phi-3.5-MoE-instruct
-  model_card: https://huggingface.co/microsoft/Phi-3.5-MoE-instruct
-  modality: text; text
-  analysis: The model was evaluated across a variety of public benchmarks, comparing
-    with a set of models including Mistral-Nemo-12B-instruct-2407, Llama-3.1-8B-instruct,
-    Gemma-2-9b-It, Gemini-1.5-Flash, and GPT-4o-mini-2024-07-18. It achieved a similar
-    level of language understanding and math as much larger models. It also displayed
-    superior performance in reasoning capability, even with only 6.6B active parameters.
-    It was also evaluated for multilingual tasks.
-  size: 61B parameters (sparse); 6.6B active parameters
-  dependencies: [Phi-3 dataset]
-  training_emissions: Unknown
-  training_time: Unknown
-  training_hardware: Unknown
-  quality_control: The model was enhanced through supervised fine-tuning, proximal
-    policy optimization, and direct preference optimization processes for safety
-    measures.
-  access: open
-  license: MIT
-  intended_uses: The model is intended for commercial and research use in multiple
-    languages. It is designed to accelerate research on language and multimodal
-    models, and for use as a building block for generative AI powered features.
-    It is suitable for general purpose AI systems and applications which require
-    memory/computed constrained environments, latency bound scenarios, and strong
-    reasoning.
-  prohibited_uses: The model should not be used for downstream purposes it was not
-    specifically designed or evaluated for. Developers should evaluate and mitigate
-    for accuracy, safety, and fariness before using within a specific downstream
-    use case, particularly for high risk scenarios.
-  monitoring: Unknown
-  feedback: Unknown
