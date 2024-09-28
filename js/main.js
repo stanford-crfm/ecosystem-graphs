@@ -634,6 +634,18 @@ function renderNavBar() {
 function loadAssetsAndRenderPageContent() {
 
   const paths = [
+    'assets/adept.yaml',
+    'assets/aspia_space,_institu.yaml',
+    'assets/evolutionaryscale.yaml',
+    'assets/laion_e.v..yaml',
+    'assets/lg_ai_research.yaml',
+    'assets/mila.yaml',
+    'assets/soochow.yaml',
+    'assets/baichuan.yaml',
+    'assets/glm.yaml',
+    'assets/xwin.yaml',
+    'assets/adobe.yaml',
+    'assets/openlemur.yaml',
     'assets/toronto.yaml',
     'assets/wayve.yaml',
     'assets/beitech.yaml',
