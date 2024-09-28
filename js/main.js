@@ -635,9 +635,9 @@ function loadAssetsAndRenderPageContent() {
 
   const paths = [
     'assets/adept.yaml',
-    'assets/aspia_space,_institu.yaml',
+    'assets/aspia_space_institu.yaml',
     'assets/evolutionaryscale.yaml',
-    'assets/laion_e.v..yaml',
+    'assets/laion_ev.yaml',
     'assets/lg_ai_research.yaml',
     'assets/mila.yaml',
     'assets/qwen_team.yaml',
