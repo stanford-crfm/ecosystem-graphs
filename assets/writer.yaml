@@ -141,3 +141,29 @@
     financial professional for personal financial needs.
   monitoring: Unknown
   feedback: Downstream problems with this model should be reported to Hello@writer.com.
+- type: model
+  name: GOT-OCR2_0
+  organization: University of Chinese Academy of Sciences (ucaslcl)
+  description: This is a Unified End-to-end OCR model called GOT-OCR2_0. It can perform plain text OCR, formatted text OCR, and fine-grained OCR. It can also render its OCR results and perform multi-crop OCR.
+  created_date: 2024-09-28
+  url: https://huggingface.co/stepfun-ai/GOT-OCR2_0
+  model_card: https://huggingface.co/stepfun-ai/GOT-OCR2_0
+  modality:
+    explanation: The inference section shows that it receives an image file as input and the output is plain, formatted or fine-grained OCR which are all text outputs.
+    value: image; text
+  analysis: Unknown
+  size: Unknown
+  dependencies: ['torch==2.0.1', 'torchvision==0.15.2', 'transformers==4.37.2', 'tiktoken==0.6.0', 'verovio==4.3.1', 'accelerate==0.28.0']
+  training_emissions: Unknown
+  training_time: Unknown
+  training_hardware: Unknown
+  quality_control: Unknown
+  access:
+    explanation: The model can be accessed using the provided huggingface transformers code, implying it is openly accessible.
+    value: open
+  license: Unknown
+  intended_uses: The model is intended for OCR tasks including plain texts OCR, format texts OCR, and fine-grained OCR. It can also do multi-crop OCR and render its OCR results.
+  prohibited_uses: Unknown
+  monitoring: Unknown
+  feedback: Unknown
+
