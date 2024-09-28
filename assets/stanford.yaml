@@ -143,3 +143,42 @@
   prohibited_uses: ''
   monitoring: ''
   feedback: Feedback can be provided on [[GitHub Issues]](https://github.com/tatsu-lab/stanford_alpaca/issues).
+- type: model
+  name: Merlin
+  organization: Stanford Center for Artificial Intelligence in Medicine and Imaging,
+    Stanford University
+  description: Merlin is a 3D Vision Language Model that's designed for interpretation
+    of abdominal computed tomography (CT) scans. It uses both structured Electronic
+    Health Record (EHR) and unstructured radiology reports for supervision without
+    requiring additional manual annotations. The model was trained on a high-quality
+    clinical dataset of paired CT scans, EHR diagnosis codes, and radiology reports
+    and was evaluated on 6 task types and 752 individual tasks.
+  created_date: 2024-09-08
+  url: https://arxiv.org/pdf/2406.06512
+  model_card: unknown
+  modality: image; text
+  analysis: Merlin has been comprehensively evaluated on 6 task types and 752 individual
+    tasks. The non-adapted (off-the-shelf) tasks include zero-shot findings classification,
+    phenotype classification, and zero-shot cross-modal retrieval, while model adapted
+    tasks include 5-year chronic disease prediction, radiology report generation,
+    and 3D semantic segmentation. It has undergone internal validation on a test
+    set of 5,137 CTs, and external validation on 7,000 clinical CTs and on two public
+    CT datasets (VerSe, TotalSegmentator).
+  size: Unknown
+  dependencies: []
+  training_emissions: Unknown
+  training_time: Unknown
+  training_hardware: Single GPU.
+  quality_control: The model has undergone extensive evaluations and also internal
+    and external validation tests.
+  access: open
+  license: Unknown
+  intended_uses: This model is intended for use in the interpretation of abdominal
+    computed tomography (CT) scans, chronic disease prediction, radiology report
+    generation, and 3D semantic segmentation.
+  prohibited_uses: The model should not be used outside of healthcare-related context,
+    such as for personal or non-medical commercial purposes.
+  monitoring: Unknown
+  feedback: Feedback and reports for problems with the model should likely be routed
+    to Stanford Center for Artificial Intelligence in Medicine and Imaging, or the
+    corresponding author of the research (louis.blankemeier@stanford.edu).

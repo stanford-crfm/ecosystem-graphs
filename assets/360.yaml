@@ -2,12 +2,14 @@
 - type: model
   name: 360 Zhinao
   organization: 360 Security
-  description: 360 Zhinao is a multilingual LLM in Chinese and English with chat capabilities.
+  description: 360 Zhinao is a multilingual LLM in Chinese and English with chat
+    capabilities.
   created_date: 2024-05-23
   url: https://arxiv.org/pdf/2405.13386
   model_card: none
   modality: text; text
-  analysis: Achieved competitive performance on relevant benchmarks against other 7B models in Chinese, English, and coding tasks.
+  analysis: Achieved competitive performance on relevant benchmarks against other
+    7B models in Chinese, English, and coding tasks.
   size: 7B parameters
   dependencies: []
   training_emissions: unknown
