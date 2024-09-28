@@ -638,7 +638,6 @@ function loadAssetsAndRenderPageContent() {
     'assets/mila.yaml',
     'assets/soochow.yaml',
     'assets/baichuan.yaml',
-    'assets/stability_ai.yaml',
     'assets/xwin.yaml',
     'assets/mistral.yaml',
     'assets/adobe.yaml',
