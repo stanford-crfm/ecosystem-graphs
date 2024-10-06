@@ -49,3 +49,25 @@
   prohibited_uses: unknown
   monitoring: unknown
   feedback: https://huggingface.co/ByteDance/SDXL-Lightning/discussions
+- type: model
+  name: LLaVA-Critic
+  organization: ByteDance, University of Maryland, College Park
+  description: LLaVA-Critic is an open-source large multimodal model developed to evaluate and assess performance across various multimodal tasks. It functions as a generalist evaluator, designed to provide reliable evaluation scores and enhance preference learning capabilities. The model was trained using a high-quality critic instruction-following dataset, which helps it perform tasks like LMM-as-a-Judge and preference learning with efficacy comparable to or surpassing existing GPT models.
+  created_date: 2024-10-06
+  url: https://arxiv.org/pdf/2410.02712
+  model_card: unknown
+  modality: text; image
+  analysis: The model was evaluated in tasks where it provided evaluation scores for multimodal models and in preference learning, where it generated reward signals. It was shown to have high correlation with commercial GPT models, making it a cost-effective alternative in resource-constrained settings.
+  size: unknown
+  dependencies: []
+  training_emissions: unknown
+  training_time: unknown
+  training_hardware: unknown
+  quality_control: The model uses a high-quality dataset for instruction-following and evaluation to ensure transparent and consistent performance assessments.
+  access: open
+  license: unknown
+  intended_uses: The model can be used for scalable performance evaluations, preference learning, reinforcement learning signals, and guiding inference-time search in multimodal models.
+  prohibited_uses: unknown
+  monitoring: unknown
+  feedback: unknown
+
