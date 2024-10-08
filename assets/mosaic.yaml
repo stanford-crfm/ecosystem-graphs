@@ -65,3 +65,25 @@
   prohibited_uses: ''
   monitoring: ''
   feedback: none
+- type: model
+  name: XTTS-v2
+  organization: Coqui
+  description: XTTS-v2 is a voice generation model that allows voice cloning into different languages using a brief 6-second audio clip, supporting 17 languages with features like emotion and style transfer, cross-language voice cloning, and multi-lingual speech generation. It powers Coqui Studio and Coqui API, with improvements in architectural and prosody aspects for better audio quality.
+  created_date: 2024-10-08
+  url: https://huggingface.co/coqui/XTTS-v2
+  model_card: https://huggingface.co/coqui/XTTS-v2
+  modality: audio; audio
+  analysis: unknown
+  size: unknown
+  dependencies: []
+  training_emissions: unknown
+  training_time: unknown
+  training_hardware: unknown
+  quality_control: unknown
+  access: open
+  license: Coqui Public Model
+  intended_uses: Voice cloning, multi-lingual speech generation, emotion and style transfer in speech.
+  prohibited_uses: unknown
+  monitoring: unknown
+  feedback: Users can join the Coqui community on Discord, engage on Twitter, or send emails to info@coqui.ai for feedback and queries.
+
