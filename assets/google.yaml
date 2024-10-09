@@ -1882,22 +1882,29 @@
 - type: model
   name: Gemini 1.5 Flash-8B
   organization: Google DeepMind
-  description: Gemini 1.5 Flash-8B is a lightweight, speed-optimized variant of the Gemini 1.5 Flash model, designed for efficiency and lower latency especially for tasks such as chat, transcription, and long context language translation. The model is production-ready and offers the lowest cost per intelligence of any Gemini model with improved rate limits.
+  description: Gemini 1.5 Flash-8B is a lightweight, speed-optimized variant of
+    the Gemini 1.5 Flash model, designed for efficiency and lower latency especially
+    for tasks such as chat, transcription, and long context language translation.
+    The model is production-ready and offers the lowest cost per intelligence of
+    any Gemini model with improved rate limits.
   created_date: 2024-10-03
   url: https://developers.googleblog.com/en/gemini-15-flash-8b-is-now-generally-available-for-use/
   model_card: unknown
-  modality: text; text
-  analysis: The model nearly matches the performance of the Gemini 1.5 Flash model across many benchmarks through developer feedback and testing.
+  modality: audio, image, text, video; text
+  analysis: The model nearly matches the performance of the Gemini 1.5 Flash model
+    across many benchmarks through developer feedback and testing.
   size: 8B parameters
   dependencies: []
   training_emissions: unknown
   training_time: unknown
   training_hardware: unknown
-  quality_control: Model improvement informed by developer feedback and extensive testing.
+  quality_control: Model improvement informed by developer feedback and extensive
+    testing.
   access: open
   license: unknown
-  intended_uses: Designed for simple, high-volume tasks including multimodal use cases and long-context summarization.
+  intended_uses: Designed for simple, high-volume tasks including multimodal use
+    cases and long-context summarization.
   prohibited_uses: unknown
   monitoring: unknown
-  feedback: Encourages developer feedback to inform model improvements and future updates.
-
+  feedback: Encourages developer feedback to inform model improvements and future
+    updates.
