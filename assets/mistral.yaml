@@ -192,3 +192,31 @@
   monitoring: Unknown
   feedback: Feedback is likely expected to be given through the HuggingFace platform
     where the model's weights are hosted or directly to the Mistral AI team.
+- type: model
+  name: Pixtral-Large-Instruct-2411
+  organization: Mistral AI
+  description: "Pixtral Large is the second model in our multimodal family and demonstrates frontier-level image understanding. Particularly, the model is able to understand documents, charts and natural images, while maintaining the leading text-only understanding of Mistral Large 2."
+  created_date: 2024-11-18
+  url: https://huggingface.co/mistralai/Pixtral-Large-Instruct-2411
+  model_card: https://huggingface.co/mistralai/Pixtral-Large-Instruct-2411
+  modality:
+    explanation: "Pixtral Large is the second model in our multimodal family and demonstrates frontier-level image understanding."
+    value: text, image; text
+  analysis: "State-of-the-art on MathVista, DocVQA, VQAv2"
+  size:
+    explanation: "123B multimodal decoder, 1B parameter vision encoder"
+    value: 124B parameters
+  dependencies: [Mistral Large 2]
+  training_emissions: unknown
+  training_time: unknown
+  training_hardware: unknown
+  quality_control: "We appreciate the feedback received from our community regarding our system prompt handling. In response, we have implemented stronger support for system prompts."
+  access:
+    explanation: "vllm: See here"
+    value: open
+  license: unknown
+  intended_uses: "The model can be used ... to implement production-ready inference pipelines with Pixtral-Large-Instruct-2411."
+  prohibited_uses: "Be careful with subtle missing or trailing white spaces!"
+  monitoring: "We recommend always including a system prompt that clearly outlines the bot's purpose."
+  feedback: "We appreciate the feedback received from our community regarding our system prompt handling."
+
