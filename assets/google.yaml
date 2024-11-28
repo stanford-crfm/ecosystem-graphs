@@ -1908,3 +1908,29 @@
   monitoring: unknown
   feedback: Encourages developer feedback to inform model improvements and future
     updates.
+- type: model
+  name: Health AI Developer Foundations (HAI-DEF)
+  organization: Google Research
+  description: "Health AI Developer Foundations (HAI-DEF) is a new suite of open weight models to help developers more easily build AI models for healthcare applications."
+  created_date: 2024-11-25
+  url: http://goo.gle/3AWVX33
+  model_card: unknown
+  modality:
+    explanation: "CXR Foundation’s image encoding model takes DICOM images, and its text-encoder accepts textual strings..."
+    value: text, image; vector
+  analysis: "After giving the community time to use the models and explore different applications, we collected feedback."
+  size: unknown
+  dependencies: [EfficientNet-L2, BERT, CLIP, BLIP-2, BiT ResNet-101x3, ViT-S]
+  training_emissions: unknown
+  training_time: unknown
+  training_hardware: unknown
+  quality_control: "Learning from community experience with previous research endpoints...we collected feedback."
+  access:
+    explanation: "The models are accessible via Vertex AI Model Garden [CXR, Derm, Path] and Hugging Face [CXR, Derm, Path]."
+    value: open
+  license: unknown
+  intended_uses: Building AI models for healthcare applications including imaging applications in radiology, dermatology, and pathology.
+  prohibited_uses: unknown
+  monitoring: "After giving the community time to use the models and explore different applications, we collected feedback."
+  feedback: unknown
+
