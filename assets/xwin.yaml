@@ -21,33 +21,3 @@
   prohibited_uses: ''
   monitoring: none
   feedback: https://huggingface.co/Xwin-LM/Xwin-LM-70B-V0.1/discussions
-- type: model
-  name: Qwen2.5
-  organization: Qwen Team
-  description: Qwen2.5 is an opensource release language model and it is the largest one in the Qwen family. It features a range of variations including Qwen2.5-Coder and Qwen2.5-Math and has been pretrained on a large-scale dataset with 18 trillion tokens. The model supports 29 languages and performs well in various fields such as coding and mathematics.
-  created_date: 2024-09-19
-  url: https://qwenlm.github.io/blog/qwen2.5/
-  model_card: 
-  modality:
-    explanation: "Qwen2.5 is an opensource release language model... The model supports 29 languages and performs well in various fields such as coding and mathematics."
-    value: text; text
-  analysis: The Qwen2.5 language models were evaluated against open-source models, such as Llama-3.1-70B, Mistral-Large-V2, and DeepSeek-V2.5, across various benchmarks. Model capabilities and human preferences were both assessed during these evaluations. The performance across diverse system prompts and the generation of structured outputs were also evaluated.
-  size:
-    explanation: "Our latest release features the LLMs Qwen2.5 ... along with specialized models for coding, Qwen2.5-Coder , and mathematics, Qwen2.5-Math ... all models are pretrained on our latest large-scale dataset, encompassing up to 18 trillion tokens."
-    value: 72B parameters (dense)
-  dependencies: [Qwen2, large-scale dataset]
-  training_emissions: Unknown
-  training_time: Unknown
-  training_hardware: Unknown
-  quality_control: The model was validated against various existing large language models and across multiple fields such as coding and mathematics. Improvements have been made based on these evaluations.
-  access:
-    explanation: "We are announcing what might be the largest opensource release in history! Our latest release features the LLMs Qwen2.5"
-    value: open
-  license:
-    explanation: "All our open-source models, except for the 3B and 72B variants, are licensed under Apache 2.0."
-    value: Apache 2.0
-  intended_uses: Qwen2.5 can be used for various natural language processing tasks and it has shown impressive performance in fields such as coding and mathematics. It's designed to facilitate developers to build applications across a broad range of tasks.
-  prohibited_uses: Unknown
-  monitoring: Unknown
-  feedback: The developers encourage users of the model to provide feedback on it so improvements can be made. Developers can give their feedback by visiting the links provided for Qwen2.5, Qwen2.5-Coder, and Qwen2.5-Math.
-
