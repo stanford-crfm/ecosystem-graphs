@@ -21,3 +21,29 @@
   prohibited_uses: ''
   monitoring: none
   feedback: https://huggingface.co/Xwin-LM/Xwin-LM-70B-V0.1/discussions
+- type: model
+  name: QwQ-32B-Preview
+  organization: Qwen Team
+  description: QwQ-32B-Preview is an experimental research model developed by the Qwen Team, focused on advancing AI reasoning capabilities.
+  created_date: 2024-12-04
+  url: https://huggingface.co/Qwen/QwQ-32B-Preview
+  model_card: https://huggingface.co/Qwen/QwQ-32B-Preview
+  modality:
+    explanation: "provides a code snippet with apply_chat_template to show you how to load the tokenizer and model and how to generate contents."
+    value: text; text
+  analysis: unknown
+  size:
+    explanation: "Number of Parameters: 32.5B"
+    value: 32.5B parameters
+  dependencies: [Qwen2.5]
+  training_emissions: unknown
+  training_time: unknown
+  training_hardware: unknown
+  quality_control: The model has identified limitations such as language mixing, recursive reasoning loops, and requires enhanced safety measures.
+  access: ''
+  license: unknown
+  intended_uses: Advancing AI reasoning capabilities, particularly excelling in math and coding.
+  prohibited_uses: unknown
+  monitoring: unknown
+  feedback: unknown
+
