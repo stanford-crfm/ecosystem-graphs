@@ -20,3 +20,33 @@
   prohibited_uses: ''
   monitoring: ''
   feedback: ''
+- type: model
+  name: HunyuanVideo
+  organization: unknown
+  description: "HunyuanVideo, a novel open-source video foundation model that exhibits performance in video generation."
+  created_date: 2024-12-03
+  url: https://huggingface.co/tencent/HunyuanVideo
+  model_card: https://huggingface.co/tencent/HunyuanVideo
+  modality:
+    explanation: "HunyuanVideo (Text-to-Video Model)"; "MLLM after visual instruction finetuning has better image-text alignment"
+    value: text; video
+  analysis: "conducted extensive experiments and implemented a series of targeted designs to ensure high visual quality, motion diversity, text-video alignment, and generation stability"
+  size:
+    explanation: "we successfully trained a video generative model with over 13 billion parameters"
+    value: 13B parameters
+  dependencies: []
+  training_emissions: unknown
+  training_time: unknown
+  training_hardware:
+    explanation: "The model is tested on a single 80G GPU."
+    value: "The model is tested on a single 80G GPU."
+  quality_control: "targeted designs to ensure high visual quality, motion diversity, text-video alignment, and generation stability"
+  access:
+    explanation: "a novel open-source video foundation model"
+    value: open
+  license: unknown
+  intended_uses: unknown
+  prohibited_uses: unknown
+  monitoring: unknown
+  feedback: unknown
+

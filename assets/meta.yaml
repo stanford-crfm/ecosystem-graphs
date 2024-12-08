@@ -891,3 +891,41 @@
   prohibited_uses: Unknown
   monitoring: Unknown
   feedback: Unknown
+- type: model
+  name: Llama 3.3
+  organization: Meta
+  -_"model_developer: Meta"
+  description: The Meta Llama 3.3 is a multilingual large language model (LLM) that is pretrained and instruction tuned for generative tasks. It is optimized for multilingual dialogue use cases.
+  created_date: 2024-12-06
+  url: https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct
+  model_card: https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct
+  -_"model_release_date: 70B Instruct, December 6, 2024"
+  modality:
+    explanation: "The Llama 3.3 instruction tuned text only model is optimized for multilingual dialogue."
+    value: text; text
+  analysis: Evaluations indicate that Llama 3.3 outperforms many available models on industry benchmarks and includes detailed evaluations of safety risks and specific capabilities.
+  size:
+    explanation: "The Meta Llama 3.3 multilingual large language model (LLM) is a pretrained... model in 70B."
+    value: 70B parameters
+  dependencies: []
+  training_emissions:
+    explanation: "Since 2020, Meta has maintained net zero greenhouse gas emissions in its global operations... therefore the total market-based greenhouse gas emissions for training were 0 tons CO2eq."
+    value: 0 tons CO2eq (market-based)
+  training_time:
+    explanation: "Training Energy Use Training utilized a cumulative of 39.3M GPU hours of computation."
+    value: 7.0M GPU hours
+  training_hardware:
+    explanation: "Training utilized a cumulative of 39.3M GPU hours... on H100-80GB (TDP of 700W) type hardware."
+    value: H100-80GB GPUs
+  quality_control: Employed a multi-faceted approach combining human and synthetic data collection, developed classifiers for high-quality prompts, and incorporated safety mitigations.
+  access:
+    explanation: "A custom commercial license, the Llama 3.3 Community License Agreement, is available..."
+    value: limited
+  license:
+    explanation: "License A custom commercial license, the Llama 3.3 Community License Agreement, is available..."
+    value: Llama 3.3 Community License Agreement
+  intended_uses: Commercial and research use in multiple languages, assistant-like chat, and natural language generation tasks.
+  prohibited_uses: Use violating applicable laws, prohibited by Acceptable Use Policy and Llama 3.3 Community License, and use in unsupported languages without appropriate safety controls.
+  monitoring: Evaluated for safety risks in common use cases, adversarial evaluation datasets, and red teaming exercises with subject-matter experts.
+  feedback: Instructions on how to provide feedback or comments on the model can be found in the model README.
+
