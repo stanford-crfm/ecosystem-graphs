@@ -1032,3 +1032,33 @@
     use case, particularly for high risk scenarios.
   monitoring: Unknown
   feedback: Unknown
+- type: model
+  name: Phi-4
+  organization: Microsoft
+  description: "Phi-4 is the latest member of our Phi family of small language models and demonstrates what’s possible as we continue to probe the boundaries of SLMs. Phi-4 outperforms comparable and larger models on math related reasoning due to advancements throughout the processes, including the use of high-quality synthetic datasets, curation of high-quality organic data, and post-training innovations."
+  created_date: 2024-12-13
+  url: https://aka.ms/phi4blog
+  model_card: unknown
+  modality:
+    explanation: "Phi-4, the latest small language model in Phi family, that offers high quality results at a small size (14B parameters)."
+    value: text; text
+  analysis: "Phi-4 outperforms comparable and larger models on math related reasoning due to advancements throughout the processes, including the use of high-quality synthetic datasets, curation of high-quality organic data, and post-training innovations."
+  size:
+    explanation: "Phi-4, the latest small language model in Phi family, that offers high quality results at a small size (14B parameters)."
+    value: 14B parameters
+  dependencies: []
+  training_emissions: unknown
+  training_time: unknown
+  training_hardware: unknown
+  quality_control: "Azure AI evaluations in AI Foundry enable developers to iteratively assess the quality and safety of models and applications using built-in and custom metrics to inform mitigations."
+  access:
+    explanation: "Phi-4 is currently available on Azure AI Foundry under a Microsoft Research License Agreement (MSRLA) and will be available on Hugging Face next week."
+    value: limited
+  license:
+    explanation: "Phi-4 is currently available on Azure AI Foundry under a Microsoft Research License Agreement (MSRLA)"
+    value: Microsoft Research License Agreement (MSRLA)
+  intended_uses: Complex reasoning in areas such as math, and conventional language processing.
+  prohibited_uses: unknown
+  monitoring: "Once in production, developers can monitor their application for quality and safety, adversarial prompt attacks, and data integrity, making timely interventions with the help of real-time alerts."
+  feedback: unknown
+
