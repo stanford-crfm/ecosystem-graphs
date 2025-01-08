@@ -1032,3 +1032,37 @@
     use case, particularly for high risk scenarios.
   monitoring: Unknown
   feedback: Unknown
+- type: model
+  name: Phi-4
+  organization: Microsoft Research
+  description: "phi-4 is a state-of-the-art open model built upon a blend of synthetic datasets, data from filtered public domain websites, and acquired academic books and Q&A datasets."
+  created_date: 2024-12-12
+  url: https://huggingface.co/microsoft/phi-4
+  model_card: https://huggingface.co/microsoft/phi-4
+  modality:
+    explanation: "Inputs: Text,... Outputs: Generated text in response to input"
+    value: text; text
+  analysis: "We evaluated phi-4 using OpenAI’s SimpleEval and our own internal benchmarks to understand the model’s capabilities."
+  size:
+    explanation: "14B parameters, dense decoder-only Transformer model"
+    value: 14B parameters
+  dependencies: [Phi-3]
+  training_emissions: unknown
+  training_time:
+    explanation: "Training time 21 days"
+    value: 21 days
+  training_hardware:
+    explanation: "GPUs 1920 H100-80G"
+    value: 1920 H100-80G
+  quality_control: "adopted a robust safety post-training approach," and "collaborated with the independent AI Red Team (AIRT) at Microsoft to assess safety risks"
+  access:
+    explanation: "an open model"
+    value: open
+  license:
+    explanation: "License MIT"
+    value: MIT
+  intended_uses: "designed to accelerate research on language models, for use as a building block for generative AI powered features."
+  prohibited_uses: "not specifically designed or evaluated for all downstream purposes," and "should consider common limitations of language models"
+  monitoring: "Developers should...build feedback mechanisms and pipelines to ground responses in use-case specific, contextual information"
+  feedback: Developers should "build feedback mechanisms and pipelines"
+
