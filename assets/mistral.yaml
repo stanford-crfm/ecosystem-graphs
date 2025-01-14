@@ -192,3 +192,79 @@
   monitoring: Unknown
   feedback: Feedback is likely expected to be given through the HuggingFace platform
     where the model's weights are hosted or directly to the Mistral AI team.
+- type: model
+  name: Pixtral Large
+  organization: Mistral AI
+  description: Pixtral Large is the second model in our multimodal family and demonstrates
+    frontier-level image understanding. Particularly, the model is able to understand
+    documents, charts and natural images, while maintaining the leading text-only
+    understanding of Mistral Large 2.
+  created_date: 2024-11-18
+  url: https://mistral.ai/news/pixtral-large/
+  model_card: unknown
+  modality:
+    explanation: Pixtral Large is the second model in our multimodal family and
+      demonstrates frontier-level image understanding.
+    value: text, image; text
+  analysis: We evaluate Pixtral Large against frontier models on a set of standard
+    multimodal benchmarks, through a common testing harness.
+  size:
+    explanation: Today we announce Pixtral Large, a 124B open-weights multimodal
+      model.
+    value: 124B parameters
+  dependencies: [Mistral Large 2]
+  training_emissions: unknown
+  training_time: unknown
+  training_hardware: unknown
+  quality_control: unknown
+  access:
+    explanation: The model is available under the Mistral Research License (MRL)
+      for research and educational use; and the Mistral Commercial License for experimentation,
+      testing, and production for commercial purposes.
+    value: open
+  license:
+    explanation: The model is available under the Mistral Research License (MRL)
+      for research and educational use; and the Mistral Commercial License for experimentation,
+      testing, and production for commercial purposes.
+    value: Mistral Research License (MRL), Mistral Commercial License
+  intended_uses: RAG and agentic workflows, making it a suitable choice for enterprise
+    use cases such as knowledge exploration and sharing, semantic understanding
+    of documents, task automation, and improved customer experiences.
+  prohibited_uses: unknown
+  monitoring: unknown
+  feedback: unknown
+
+- type: model
+  name: Codestral 25.01
+  organization: Mistral AI
+  description: Lightweight, fast, and proficient in over 80 programming languages,
+    Codestral is optimized for low-latency, high-frequency usecases and supports
+    tasks such as fill-in-the-middle (FIM), code correction and test generation.
+  created_date: 2025-01-13
+  url: https://mistral.ai/news/codestral-2501/
+  model_card: unknown
+  modality:
+    explanation: it for free in Continue for VS Code or JetBrains
+    value: text; text
+  analysis: Benchmarks We have benchmarked the new Codestral with the leading sub-100B
+    parameter coding models that are widely considered to be best-in-class for FIM
+    tasks.
+  size:
+    explanation: Codestral-2501 256k
+    value: 256k
+  dependencies: []
+  training_emissions: unknown
+  training_time: unknown
+  training_hardware: unknown
+  quality_control: unknown
+  access:
+    explanation: The API is also available on Google Cloud’s Vertex AI, in private
+      preview on Azure AI Foundry, and coming soon to Amazon Bedrock.
+    value: closed
+  license: unknown
+  intended_uses: Highly capable coding companion, regularly boosting productivity
+    several times over.
+  prohibited_uses: unknown
+  monitoring: unknown
+  feedback: We can’t wait to hear your experience! Try it now Try it on Continue.dev
+    with VsCode or JetBrains

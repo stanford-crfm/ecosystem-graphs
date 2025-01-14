@@ -637,3 +637,38 @@
     integrated to ensure robustness of evaluations.
   feedback: Feedback on Claude 3.5 Sonnet can be submitted directly in-product to
     inform the development roadmap and improve user experience.
+- type: model
+  name: Claude 3.5 Haiku
+  organization: Anthropic
+  description: Claude 3.5 Haiku is Anthropic's fastest model, delivering advanced
+    coding, tool use, and reasoning capability, surpassing the previous Claude 3
+    Opus in intelligence benchmarks. It is designed for critical use cases where
+    low latency is essential, such as user-facing chatbots and code completions.
+  created_date: 2024-10-22
+  url: https://www.anthropic.com/claude/haiku
+  model_card: unknown
+  modality:
+    explanation: Claude 3.5 Haiku is available...initially as a text-only model
+      and with image input to follow.
+    value: text; unknown
+  analysis: Claude 3.5 Haiku offers strong performance and speed across a variety
+    of coding, tool use, and reasoning tasks. Also, it has been tested in extensive
+    safety evaluations and exceeded expectations in reasoning and code generation
+    tasks.
+  size: unknown
+  dependencies: []
+  training_emissions: unknown
+  training_time: unknown
+  training_hardware: unknown
+  quality_control: During Claude 3.5 Haiku’s development, we conducted extensive
+    safety evaluations spanning multiple languages and policy domains.
+  access:
+    explanation: Claude 3.5 Haiku is available across Claude.ai, our first-party
+      API, Amazon Bedrock, and Google Cloud’s Vertex AI.
+    value: open
+  license: unknown
+  intended_uses: Critical use cases where low latency matters, like user-facing
+    chatbots and code completions.
+  prohibited_uses: unknown
+  monitoring: unknown
+  feedback: unknown
