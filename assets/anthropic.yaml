@@ -608,15 +608,17 @@
     speed of its predecessor, Claude 3 Opus, and is designed to tackle tasks like
     context-sensitive customer support, orchestrating multi-step workflows, interpreting
     charts and graphs, and transcribing text from images.
-  created_date: 2024-06-21
-  url: https://www.anthropic.com/news/claude-3-5-sonnet
+  created_date:
+    explanation: Claude 3.5 Sonnet updated on Oct. 22, initially released on June
+      20 of the same year.
+  value: 2024-10-22
+  url: https://www.anthropic.com/news/3-5-models-and-computer-use
   model_card: unknown
   modality: text; image, text
   analysis: The model has been evaluated on a range of tests including graduate-level
     reasoning (GPQA), undergraduate-level knowledge (MMLU), coding proficiency (HumanEval),
-    and standard vision benchmarks. In an internal agentic coding evaluation, Claude
-    3.5 Sonnet solved 64% of problems, outperforming the previous version, Claude
-    3 Opus, which solved 38%.
+    and standard vision benchmarks. Claude 3.5 Sonnet demonstrates state-of-the-art
+    performance on most benchmarks.
   size: Unknown
   dependencies: []
   training_emissions: Unknown

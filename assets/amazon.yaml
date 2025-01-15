@@ -87,25 +87,59 @@
   monitoring: ''
   feedback: https://github.com/amazon-science/chronos-forecasting/discussions
 - type: model
-  name: Amazon Nova
+  name: Amazon Nova (Understanding)
   organization: Amazon Web Services (AWS)
   description: A new generation of state-of-the-art foundation models (FMs) that
     deliver frontier intelligence and industry leading price performance, available
-    exclusively in Amazon Bedrock. You can use Amazon Nova to lower costs and latency
-    for almost any generative AI task.
+    exclusively in Amazon Bedrock. Amazon Nova understanding models excel in Retrieval-Augmented
+    Generation (RAG), function calling, and agentic applications.
   created_date: 2024-12-03
   url: https://aws.amazon.com/blogs/aws/introducing-amazon-nova-frontier-intelligence-and-industry-leading-price-performance/
   model_card: unknown
   modality:
     explanation: Amazon Nova understanding models accept text, image, or video inputs
-      to generate text output. Amazon creative content generation models accept
-      text and image inputs to generate image or video output.
-    value: text, image, video; text, image, video
+      to generate text output.
+    value: text, image, video; text
   analysis: Amazon Nova Pro is capable of processing up to 300K input tokens and
     sets new standards in multimodal intelligence and agentic workflows that require
     calling APIs and tools to complete complex workflows. It achieves state-of-the-art
     performance on key benchmarks including visual question answering ( TextVQA
     ) and video understanding ( VATEX ).
+  size: unknown
+  dependencies: []
+  training_emissions: unknown
+  training_time: unknown
+  training_hardware: unknown
+  quality_control: All Amazon Nova models include built-in safety controls and creative
+    content generation models include watermarking capabilities to promote responsible
+    AI use.
+  access:
+    explanation: available exclusively in Amazon Bedrock
+    value: limited
+  license: unknown
+  intended_uses: You can build on Amazon Nova to analyze complex documents and videos,
+    understand charts and diagrams, generate engaging video content, and build sophisticated
+    AI agents, from across a range of intelligence classes optimized for enterprise
+    workloads.
+  prohibited_uses: unknown
+  monitoring: unknown
+  feedback: unknown
+- type: model
+  name: Amazon Nova (Creative Content Generation)
+  organization: Amazon Web Services (AWS)
+  description: A new generation of state-of-the-art foundation models (FMs) that
+    deliver frontier intelligence and industry leading price performance, available
+    exclusively in Amazon Bedrock.
+  created_date: 2024-12-03
+  url: https://aws.amazon.com/blogs/aws/introducing-amazon-nova-frontier-intelligence-and-industry-leading-price-performance/
+  model_card: unknown
+  modality:
+    explanation: Amazon creative content generation models accept text and image
+      inputs to generate image or video output.
+    value: text, image;image, video
+  analysis: Amazon Nova Canvas excels on human evaluations and key benchmarks such
+    as text-to-image faithfulness evaluation with question answering (TIFA) and
+    ImageReward.
   size: unknown
   dependencies: []
   training_emissions: unknown

@@ -1951,7 +1951,7 @@
     explanation: The first model built to be natively multimodal, Gemini 1.0 and
       1.5 drove big advances with multimodality and long context to understand information
       across text, video, images, audio and code...
-    value: text, video, images, audio, code; image, audio
+    value: text, video, image, audio; image, text
   analysis: unknown
   size: unknown
   dependencies: []

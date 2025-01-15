@@ -115,7 +115,5 @@
     language use cases such as code generation, code explanation and code editing,
     and for agentic use cases requiring tool calling
   prohibited_uses: unknown
-  monitoring: IBM provides a detailed disclosure of training data sets and methodologies
-    in the Granite 3.0 technical paper , reaffirming IBM’s dedication to building
-    transparency, safety and trust in AI products.
+  monitoring: ''
   feedback: unknown

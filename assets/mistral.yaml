@@ -249,9 +249,7 @@
   analysis: Benchmarks We have benchmarked the new Codestral with the leading sub-100B
     parameter coding models that are widely considered to be best-in-class for FIM
     tasks.
-  size:
-    explanation: Codestral-2501 256k
-    value: 256k
+  size: unknown
   dependencies: []
   training_emissions: unknown
   training_time: unknown

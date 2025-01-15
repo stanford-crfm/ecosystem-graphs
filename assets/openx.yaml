@@ -107,7 +107,7 @@
   access:
     explanation: we are sharing the GPT-4o System Card, which includes our Preparedness
       Framework evaluations.
-    value: closed
+    value: limited
   license: unknown
   intended_uses: Use in multimodal applications requiring understanding and generation
     of combinations of text, audio, and image outputs, better performance on non-English
@@ -116,4 +116,40 @@
     or violation of usage policies.
   monitoring: Continuous monitoring and enforcement, providing moderation tools
     and transparency reports, and gathering feedback from users.
+  feedback: unknown
+
+- type: model
+  name: OpenAI o1
+  organization: OpenAI
+  description: OpenAI o1 is a new series of AI models designed to spend more time
+    thinking before they respond. They can reason through complex tasks and solve
+    harder problems than previous models in science, coding, and math.
+  created_date: 2024-09-12
+  url: https://openai.com/o1/
+  model_card: unknown
+  modality: text; text
+  analysis: Evaluated on challenging benchmark tasks in physics, chemistry, and
+    biology. In a qualifying exam for the International Mathematics Olympiad (IMO),
+    GPT-4o correctly solved only 13% of problems, while the reasoning model o1 scored
+    83%.
+  size: unknown
+  dependencies: []
+  training_emissions: unknown
+  training_time: unknown
+  training_hardware: unknown
+  quality_control: To match the new capabilities of these models, OpenAI has bolstered
+    safety work, internal governance, and federal government collaboration. This
+    includes rigorous testing and evaluations using their Preparedness Framework⁠(opens
+    in a new window), best-in-class red teaming, and board-level review processes,
+    including by OpenAI's Safety & Security Committee.
+  access: limited
+  license: unknown
+  intended_uses: These enhanced reasoning capabilities may be particularly useful
+    if you’re tackling complex problems in science, coding, math, and similar fields.
+    For example, o1 can be used by healthcare researchers to annotate cell sequencing
+    data, by physicists to generate complicated mathematical formulas needed for
+    quantum optics, and by developers in all fields to build and execute multi-step
+    workflows.
+  prohibited_uses: ''
+  monitoring: ''
   feedback: unknown
