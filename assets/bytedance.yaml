@@ -49,3 +49,25 @@
   prohibited_uses: unknown
   monitoring: unknown
   feedback: https://huggingface.co/ByteDance/SDXL-Lightning/discussions
+- type: model
+  name: LLaVA-Critic
+  organization: ByteDance and University of Maryland, College Park
+  description: LLaVA-Critic is an open-source large multimodal model (LMM) designed as a generalist evaluator. It assesses performance across a variety of multimodal tasks by following a high-quality critic instruction dataset, incorporating diverse evaluation criteria. The model is effective in areas like LMM-as-a-Judge, providing reliable evaluation scores comparable to GPT models, and Preference Learning, offering reward signals for preference learning to enhance model alignment capabilities.
+  created_date: 2024-10-06
+  url: https://arxiv.org/pdf/2410.02712
+  model_card: unknown
+  modality: image, text; text
+  analysis: LLaVA-Critic was tested in scenarios such as LMM-as-a-Judge and Preference Learning, showing a high correlation with commercial GPT models in evaluation scores. It served as an alternative to expensive human feedback in resource-constrained settings and demonstrated better performance in providing AI-generated feedback for model alignment compared to human-reliant reward models.
+  size: unknown
+  dependencies: []
+  training_emissions: unknown
+  training_time: unknown
+  training_hardware: unknown
+  quality_control: The model ensures quality by utilizing a high-quality dataset for critic instructions, providing both quantitative judgments and reasoning, with transparency in assessments.
+  access: open
+  license: Apache 2.0
+  intended_uses: The model can be used for evaluating multimodal tasks, generating reward signals for preference learning, and serving as a reliable alternate judge for model assessments.
+  prohibited_uses: The model should not be used in scenarios requiring authorization from proprietary models, nor relied upon for critical applications without human oversight due to potential biases in dataset.
+  monitoring: unknown
+  feedback: unknown
+
