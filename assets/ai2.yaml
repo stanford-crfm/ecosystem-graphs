@@ -278,3 +278,25 @@
   prohibited_uses: ''
   monitoring: unknown
   feedback: https://huggingface.co/datasets/allenai/MADLAD-400/discussions
+- type: model
+  name: Evo
+  organization: Liquid AI
+  description: Evo is a foundation model based on StripedHyena, which is a deep signal processing architecture. It is capable of generalizing across DNA, RNA, and proteins and is used for generative design of new CRISPR systems.
+  created_date: 2024-09-30
+  url: https://www.liquid.ai/research/liquid-neural-networks-research
+  model_card: unknown
+  modality: text; text
+  analysis: Extensive scaling laws analysis has been performed on Evo considering beyond-transformer architectures.
+  size: unknown
+  dependencies: ["StripedHyena"]
+  training_emissions: unknown
+  training_time: unknown
+  training_hardware: unknown
+  quality_control: The model performance has been extensively evaluated with scaling laws analysis.
+  access: closed
+  license: unknown
+  intended_uses: The Evo model is intended for generative design of new CRISPR systems, and it generalizes across DNA, RNA, and proteins.
+  prohibited_uses: unknown
+  monitoring: unknown
+  feedback: Feedback or inquiries can be addressed to the Liquid AI team.
+
