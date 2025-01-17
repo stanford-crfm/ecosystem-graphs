@@ -119,7 +119,7 @@
   feedback: unknown
 
 - type: model
-  name: OpenAI o1
+  name: o1
   organization: OpenAI
   description: OpenAI o1 is a new series of AI models designed to spend more time
     thinking before they respond. They can reason through complex tasks and solve
@@ -150,6 +150,30 @@
     data, by physicists to generate complicated mathematical formulas needed for
     quantum optics, and by developers in all fields to build and execute multi-step
     workflows.
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: unknown
+
+- type: model
+  name: o3
+  organization: OpenAI
+  description: OpenAI o1 is, as of release, the latest model in OpenAI's o-model
+    reasoning series.
+  created_date: 2024-10-20
+  url: https://x.com/OpenAI/status/1870186518230511844
+  model_card: unknown
+  modality: text; text
+  analysis: Makes significance process on the ARC-AGI evaluation framework compared
+    to all existing models.
+  size: unknown
+  dependencies: []
+  training_emissions: unknown
+  training_time: unknown
+  training_hardware: unknown
+  quality_control: ''
+  access: limited
+  license: unknown
+  intended_uses: ''
   prohibited_uses: ''
   monitoring: ''
   feedback: unknown
