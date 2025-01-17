@@ -34,7 +34,7 @@
   url: https://huggingface.co/mattshumer/Reflection-70B
   model_card: https://huggingface.co/mattshumer/Reflection-70B
   modality:
-    explanation: "you can sample from Reflection Llama-3.1 70B using the same code, pipelines, etc. as any other Llama model." This implies that the model takes text input and produces text output.
+    explanation: you can sample from Reflection Llama-3.1 70B using the same code, pipelines, etc. as any other Llama model. This implies that the model takes text input and produces text output.
     value: text; text
   analysis: Unknown
   size:
