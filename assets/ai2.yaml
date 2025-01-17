@@ -283,7 +283,7 @@
   organization: Liquid AI
   description: Evo is a foundation model based on StripedHyena, which is a deep signal processing architecture. It is capable of generalizing across DNA, RNA, and proteins and is used for generative design of new CRISPR systems.
   created_date: 2024-09-30
-  url: http://www.liquid.ai/blog/liquid-neural-networks-research
+  url: https://www.liquid.ai/research/liquid-neural-networks-research
   model_card: unknown
   modality: unknown
   analysis: Extensive scaling laws analysis has been performed on Evo considering beyond-transformer architectures.
