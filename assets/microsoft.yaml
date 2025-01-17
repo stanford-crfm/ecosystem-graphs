@@ -1032,3 +1032,38 @@
     use case, particularly for high risk scenarios.
   monitoring: Unknown
   feedback: Unknown
+- type: model
+  name: Phi-4
+  organization: Microsoft
+  description: the latest small language model in Phi family, that offers high quality
+    results at a small size (14B parameters).
+  created_date: 2024-12-13
+  url: https://techcommunity.microsoft.com/blog/aiplatformblog/introducing-phi-4-microsoft%E2%80%99s-newest-small-language-model-specializing-in-comple/4357090
+  model_card: unknown
+  modality:
+    explanation: Today we are introducing Phi-4 , our 14B parameter state-of-the-art
+      small language model (SLM) that excels at complex reasoning in areas such
+      as math, in addition to conventional language processing.
+    value: text; text
+  analysis: Phi-4 outperforms comparable and larger models on math related reasoning.
+  size:
+    explanation: a small size (14B parameters).
+    value: 14B parameters
+  dependencies: []
+  training_emissions: unknown
+  training_time: unknown
+  training_hardware: unknown
+  quality_control: Building AI solutions responsibly is at the core of AI development
+    at Microsoft. We have made our robust responsible AI capabilities available
+    to customers building with Phi models.
+  access:
+    explanation: Phi-4 is available on Azure AI Foundry and on Hugging Face.
+    value: open
+  license: unknown
+  intended_uses: Specialized in complex reasoning, particularly good at math problems
+    and high-quality language processing.
+  prohibited_uses: unknown
+  monitoring: Azure AI evaluations in AI Foundry enable developers to iteratively
+    assess the quality and safety of models and applications using built-in and
+    custom metrics to inform mitigations.
+  feedback: unknown

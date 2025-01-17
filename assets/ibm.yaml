@@ -75,3 +75,45 @@
   prohibited_uses: ''
   monitoring: ''
   feedback: ''
+- type: model
+  name: IBM Granite 3.0
+  organization: IBM
+  description: IBM Granite 3.0 models deliver state-of-the-art performance relative
+    to model size while maximizing safety, speed and cost-efficiency for enterprise
+    use cases.
+  created_date: 2024-10-21
+  url: https://www.ibm.com/new/ibm-granite-3-0-open-state-of-the-art-enterprise-models
+  model_card: unknown
+  modality:
+    explanation: IBM Granite 3.0 8B Instruct model for classic natural language
+      use cases including text generation, classification, summarization, entity
+      extraction and customer service chatbots
+    value: text; text
+  analysis: Granite 3.0 8B Instruct matches leading similarly-sized open models
+    on academic benchmarks while outperforming those peers on benchmarks for enterprise
+    tasks and safety.
+  size:
+    explanation: 'Dense, general purpose LLMs: Granite-3.0-8B-Instruct'
+    value: 8B parameters
+  dependencies: [Hugging Face’s OpenLLM Leaderboard v2]
+  training_emissions: unknown
+  training_time: unknown
+  training_hardware: unknown
+  quality_control: The entire Granite family of models are trained on carefully
+    curated enterprise datasets, filtered for objectionable content with critical
+    concerns like governance, risk, privacy and bias mitigation in mind
+  access:
+    explanation: In keeping with IBM’s strong historical commitment to open source
+      , all Granite models are released under the permissive Apache 2.0 license
+    value: open
+  license:
+    explanation: In keeping with IBM’s strong historical commitment to open source
+      , all Granite models are released under the permissive Apache 2.0 license
+    value: Apache 2.0
+  intended_uses: classic natural language use cases including text generation, classification,
+    summarization, entity extraction and customer service chatbots, programming
+    language use cases such as code generation, code explanation and code editing,
+    and for agentic use cases requiring tool calling
+  prohibited_uses: unknown
+  monitoring: ''
+  feedback: unknown

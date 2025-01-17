@@ -891,3 +891,51 @@
   prohibited_uses: Unknown
   monitoring: Unknown
   feedback: Unknown
+- type: model
+  name: Llama 3.3
+  organization: Meta
+  description: The Meta Llama 3.3 multilingual large language model (LLM) is an
+    instruction tuned generative model in 70B (text in/text out).
+  created_date: 2024-12-06
+  url: https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct
+  model_card: https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct
+  modality:
+    explanation: The Llama 3.3 instruction tuned text only model is optimized for
+      multilingual dialogue use cases.
+    value: text; text
+  analysis: Unknown
+  size:
+    explanation: The Meta Llama 3.3 multilingual large language model (LLM) is an
+      instruction tuned generative model in 70B (text in/text out).
+    value: 70B parameters
+  dependencies: []
+  training_emissions:
+    explanation: Training Greenhouse Gas Emissions Estimated total location-based
+      greenhouse gas emissions were 11,390 tons CO2eq for training.
+    value: 11,390 tons CO2eq
+  training_time:
+    explanation: Training utilized a cumulative of 39.3M GPU hours of computation
+      on H100-80GB (TDP of 700W) type hardware.
+    value: 39.3M GPU hours
+  training_hardware:
+    explanation: Training utilized a cumulative of 39.3M GPU hours of computation
+      on H100-80GB (TDP of 700W) type hardware.
+    value: H100-80GB (TDP of 700W) type hardware
+  quality_control: Used "supervised fine-tuning (SFT) and reinforcement learning
+    with human feedback (RLHF) to align with human preferences for helpfulness and
+    safety."
+  access:
+    explanation: Future versions of the tuned models will be released as we improve
+      model safety with community feedback.
+    value: open
+  license:
+    explanation: A custom commercial license, the Llama 3.3 Community License Agreement
+    value: Llama 3.3 Community License Agreement
+  intended_uses: Intended for commercial and research use in multiple languages.
+    Instruction tuned text only models are intended for assistant-like chat.
+  prohibited_uses: Use in any manner that violates applicable laws or regulations
+    (including trade compliance laws). Use in any other way that is prohibited by
+    the Acceptable Use Policy and Llama 3.3 Community License.
+  monitoring: Unknown
+  feedback: Instructions on how to provide feedback or comments on the model can
+    be found in the model README.

@@ -93,3 +93,29 @@
   prohibited_uses: ''
   monitoring: ''
   feedback: none
+- type: model
+  name: Inflection 3.0
+  organization: Inflection AI
+  description: Inflection for Enterprise, powered by our industry-first, enterprise-grade
+    AI system, Inflection 3.0.
+  created_date: 2024-10-07
+  url: https://inflection.ai/blog/enterprise
+  model_card: unknown
+  modality: unknown
+  analysis: unknown
+  size: unknown
+  dependencies: []
+  training_emissions: unknown
+  training_time: unknown
+  training_hardware: unknown
+  quality_control: unknown
+  access:
+    explanation: Developers can now access Inflection AI’s Large Language Model
+      through its new commercial API.
+    value: open
+  license: unknown
+  intended_uses: unknown
+  prohibited_uses: unknown
+  monitoring: unknown
+  feedback: So please drop us a line. We want to keep hearing from enterprises about
+    how we can help solve their challenges and make AI a reality for their business.
