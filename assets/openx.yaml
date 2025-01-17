@@ -77,3 +77,103 @@
   prohibited_uses: none
   monitoring: unknown
   feedback: none
+- type: model
+  name: GPT-4o
+  organization: OpenAI
+  description: GPT-4o is an autoregressive omni model that accepts a combination
+    of text, audio, image, and video as input and produces any combination of text,
+    audio, and image outputs. It is trained end-to-end across text, vision, and
+    audio, focusing on multimodal capabilities.
+  created_date: 2024-08-08
+  url: https://arxiv.org/pdf/2410.21276
+  model_card: unknown
+  modality:
+    explanation: '...accepts as input any combination of text, audio, image, and
+      video and generates any combination of text, audio, and image outputs.'
+    value: text, audio, image, video; text, audio, image
+  analysis: GPT-4o underwent evaluations that included the Preparedness Framework,
+    external red teaming, and third-party assessments to ensure safe and aligned
+    deployment. The evaluations focused on identifying and mitigating potential
+    risks across its capabilities, especially speech-to-speech functionality.
+  size: unknown
+  dependencies: [Shutterstock]
+  training_emissions: unknown
+  training_time: unknown
+  training_hardware: unknown
+  quality_control: Quality and safety measures included prior risk assessments,
+    post-training mitigation, moderation tools, advanced data filtering, and external
+    red teaming efforts with experts to evaluate potential risks like bias, discrimination,
+    and information harms.
+  access:
+    explanation: we are sharing the GPT-4o System Card, which includes our Preparedness
+      Framework evaluations.
+    value: limited
+  license: unknown
+  intended_uses: Use in multimodal applications requiring understanding and generation
+    of combinations of text, audio, and image outputs, better performance on non-English
+    languages, and enhanced vision and audio understanding.
+  prohibited_uses: Uses that could involve bias, discrimination, harmful content,
+    or violation of usage policies.
+  monitoring: Continuous monitoring and enforcement, providing moderation tools
+    and transparency reports, and gathering feedback from users.
+  feedback: unknown
+
+- type: model
+  name: o1
+  organization: OpenAI
+  description: OpenAI o1 is a new series of AI models designed to spend more time
+    thinking before they respond. They can reason through complex tasks and solve
+    harder problems than previous models in science, coding, and math.
+  created_date: 2024-09-12
+  url: https://openai.com/o1/
+  model_card: unknown
+  modality: text; text
+  analysis: Evaluated on challenging benchmark tasks in physics, chemistry, and
+    biology. In a qualifying exam for the International Mathematics Olympiad (IMO),
+    GPT-4o correctly solved only 13% of problems, while the reasoning model o1 scored
+    83%.
+  size: unknown
+  dependencies: []
+  training_emissions: unknown
+  training_time: unknown
+  training_hardware: unknown
+  quality_control: To match the new capabilities of these models, OpenAI has bolstered
+    safety work, internal governance, and federal government collaboration. This
+    includes rigorous testing and evaluations using their Preparedness Framework⁠(opens
+    in a new window), best-in-class red teaming, and board-level review processes,
+    including by OpenAI's Safety & Security Committee.
+  access: limited
+  license: unknown
+  intended_uses: These enhanced reasoning capabilities may be particularly useful
+    if you’re tackling complex problems in science, coding, math, and similar fields.
+    For example, o1 can be used by healthcare researchers to annotate cell sequencing
+    data, by physicists to generate complicated mathematical formulas needed for
+    quantum optics, and by developers in all fields to build and execute multi-step
+    workflows.
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: unknown
+
+- type: model
+  name: o3
+  organization: OpenAI
+  description: OpenAI o1 is, as of release, the latest model in OpenAI's o-model
+    reasoning series.
+  created_date: 2024-10-20
+  url: https://x.com/OpenAI/status/1870186518230511844
+  model_card: unknown
+  modality: text; text
+  analysis: Makes significance process on the ARC-AGI evaluation framework compared
+    to all existing models.
+  size: unknown
+  dependencies: []
+  training_emissions: unknown
+  training_time: unknown
+  training_hardware: unknown
+  quality_control: ''
+  access: limited
+  license: unknown
+  intended_uses: ''
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: unknown

@@ -22,3 +22,27 @@
   prohibited_uses: ''
   monitoring: unknown
   feedback: none
+- type: model
+  name: voyage-code-3
+  organization: Voyage AI
+  description: "Introducing voyage-code-3, our next-generation embedding model optimized for code retrieval."
+  created_date: 2024-12-04
+  url: https://blog.voyageai.com/2024/12/04/voyage-code-3/
+  model_card: unknown
+  modality: unknown
+  analysis: "We evaluated voyage-code-3 using an enhanced suite of evaluation datasets designed to address the shortcomings of existing benchmarks and deliver practical, robust results."
+  size: unknown
+  dependencies: []
+  training_emissions: unknown
+  training_time: unknown
+  training_hardware: unknown
+  quality_control: unknown
+  access:
+    explanation: "The first 200 million tokens are free."
+    value: limited
+  license: unknown
+  intended_uses: "optimized for code retrieval"
+  prohibited_uses: unknown
+  monitoring: unknown
+  feedback: "If you’re also interested in fine-tuned embedding models, we’d love to hear from you—please email us at contact@voyageai.com."
+
