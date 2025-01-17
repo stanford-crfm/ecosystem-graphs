@@ -38,7 +38,7 @@
     value: text; text
   analysis: Unknown
   size:
-    explanation: The size is in the model's name: "Reflection Llama-3.1 70B."
+    explanation: The size is in the model's name, Reflection Llama-3.1 70B.
     value: 70B parameters
   dependencies: [Glaive, Llama 3.1]
   training_emissions: Unknown
