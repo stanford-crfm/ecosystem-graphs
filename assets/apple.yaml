@@ -53,3 +53,31 @@
     should undertake thorough safety testing.
   monitoring: none
   feedback: https://huggingface.co/apple/OpenELM-3B-Instruct/discussions
+- type: model
+  name: Depth Pro
+  organization: Apple
+  description: "We present a foundation model for zero-shot metric monocular depth estimation. Our model, Depth Pro, synthesizes high-resolution depth maps with unparalleled sharpness and high-frequency details... The model is fast, producing a 2.25-megapixel depth map in 0.3 seconds on a standard GPU."
+  created_date: 2024-10-10
+  url: https://arxiv.org/pdf/2410.02073
+  model_card: unknown
+  modality:
+    explanation: "We present a foundation model for zero-shot metric monocular depth estimation."
+    value: text; depth maps
+  analysis: "Extensive experiments analyze specific design choices and demonstrate that Depth Pro outperforms prior work along multiple dimensions."
+  size: unknown
+  dependencies: []
+  training_emissions: unknown
+  training_time: unknown
+  training_hardware:
+    explanation: "2.25-megapixel depth maps with a native output resolution of 1536 × 1536 in 0.3 seconds on a V100 GPU."
+    value: V100 GPU
+  quality_control: "dedicated evaluation metrics for boundary accuracy in estimated depth maps, and state-of-the-art focal length estimation from a single image."
+  access:
+    explanation: "We release code & weights at https://github.com/apple/ml-depth-pro"
+    value: open
+  license: unknown
+  intended_uses: "Zero-shot monocular depth estimation underpins a growing variety of applications, such as advanced image editing, view synthesis, and conditional image generation."
+  prohibited_uses: unknown
+  monitoring: unknown
+  feedback: unknown
+

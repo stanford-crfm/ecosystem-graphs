@@ -635,9 +635,11 @@ function loadAssetsAndRenderPageContent() {
 
   const paths = [
     'assets/adept.yaml',
+    'assets/genmo.yaml',
     'assets/mila.yaml',
     'assets/soochow.yaml',
     'assets/baichuan.yaml',
+    'assets/unknown.yaml',
     'assets/xwin.yaml',
     'assets/mistral.yaml',
     'assets/adobe.yaml',

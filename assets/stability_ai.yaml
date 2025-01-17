@@ -113,3 +113,43 @@
   monitoring: Unknown
   feedback: Information on any downstream issues with the model can be reported
     to Stability AI through their support request system.
+- type: model
+  name: Stable Diffusion 3.5
+  organization: Stability AI
+  description: Stable Diffusion 3.5 reflects our commitment to empower builders
+    and creators with tools that are widely accessible, cutting-edge, and free for
+    most use cases.
+  created_date: 2023-10-29
+  url: https://stability.ai/news/introducing-stable-diffusion-3-5
+  model_card: unknown
+  modality:
+    explanation: Capable of generating a wide range of styles and aesthetics like
+      3D, photography, painting, line art, and virtually any visual style imaginable.
+    value: text; image
+  analysis: Our analysis shows that Stable Diffusion 3.5 Large leads the market
+    in prompt adherence and rivals much larger models in image quality.
+  size:
+    explanation: At 8.1 billion parameters, with superior quality and prompt adherence,
+      this base model is the most powerful in the Stable Diffusion family.
+    value: 8.1B parameters
+  dependencies: []
+  training_emissions: unknown
+  training_time: unknown
+  training_hardware: unknown
+  quality_control: We believe in safe, responsible AI practices and take deliberate
+    measures to ensure Integrity starts at the early stages of development.
+  access:
+    explanation: This open release includes multiple model variants, including Stable
+      Diffusion 3.5 Large and Stable Diffusion 3.5 Large Turbo, and as of October
+      29th, Stable Diffusion 3.5 Medium.
+    value: open
+  license:
+    explanation: This open release includes multiple variants that are customizable,
+      run on consumer hardware, and are available for use under the permissive Stability
+      AI Community License.
+    value: Stability AI Community
+  intended_uses: This model is ideal for professional use cases at 1 megapixel resolution.
+  prohibited_uses: unknown
+  monitoring: unknown
+  feedback: We look forward to hearing your feedback on Stable Diffusion 3.5 and
+    seeing what you create with the models.

@@ -21,3 +21,31 @@
   prohibited_uses: ''
   monitoring: ''
   feedback: none
+- type: model
+  name: ESM Cambrian
+  organization: EvolutionaryScale
+  description: "ESM Cambrian is a next generation language model trained on protein sequences at the scale of life on Earth. ESM C models define a new state of the art for protein representation learning."
+  created_date: 2024-12-04 
+  url: https://www.evolutionaryscale.ai/blog/esm-cambrian
+  model_card: unknown
+  modality:
+    explanation: "Just as a person can fill in the blanks, such as: To __ or not to __ that is the ___ We can train language models to fill in the blanks. Except in biology, instead of training the model to predict words, we train it to predict the characters in a protein sequence, i.e. its sequence of amino acids."
+    value: text; text
+  analysis: "Evaluations. We use the methodology of Rao et al. to measure unsupervised learning of tertiary structure in the form of contact maps. A logistic regression is used to identify contacts. For a protein of length L, we evaluate the precision of the top L contacts (P@L) with sequence separation of 6 or more residues."
+  size:
+    explanation: "ESM C is trained at three scales: 300M, 600M, and 6B parameters."
+    value: 6B parameters
+  dependencies: [UniRef, MGnify, Joint Genome Institute]
+  training_emissions: unknown
+  training_time: unknown
+  training_hardware: unknown
+  quality_control: "ESM C was reviewed by a committee of scientific experts who concluded that the benefits of releasing the models greatly outweigh any potential risks."
+  access:
+    explanation: "ESM C is a drop-in replacement for previous models that provides major improvements in both capability and efficiency. ESM C models are available immediately for academic and commercial use under a new license structure designed to promote openness and enable scientists and builders."
+    value: open
+  license: Cambrian Open License
+  intended_uses: "one that can be used by builders across a wide range of applications, to imbue AI models with a deeper understanding of the biology of life’s most important and mysterious molecules."
+  prohibited_uses: unknown
+  monitoring: unknown
+  feedback: unknown
+

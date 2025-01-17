@@ -53,4 +53,33 @@
   prohibited_uses: Unknown
   monitoring: Unknown
   feedback: Unknown
+- type: model
+  name: Pixtral 12B
+  organization: Unknown
+  description: Pixtral 12B is a 12-billion-parameter multimodal language model trained to understand both natural images and documents, achieving leading performance on various multimodal benchmarks without compromising on natural language performance.
+  created_date: 2024-10-10
+  url: https://arxiv.org/pdf/2410.07073
+  model_card: unknown
+  modality:
+    explanation: "Pixtral 12B is trained to understand both natural images and documents."
+    value: text; image
+  analysis: The model outperforms other models of similar and larger sizes on multimodal benchmarks. An open-source benchmark, MM-MT-Bench, is contributed for evaluating vision-language models.
+  size:
+    explanation: "We introduce Pixtral 12B, a 12–billion-parameter multimodal language model."
+    value: 12B parameters
+  dependencies: [Mistral Nemo 12B]
+  training_emissions: Unknown
+  training_time: Unknown
+  training_hardware: Unknown
+  quality_control: Evaluation protocols for multimodal language models were standardized and analysis was conducted to improve the reliability of model evaluations.
+  access:
+    explanation: "Pixtral 12B is released under Apache 2.0 license."
+    value: open
+  license:
+    explanation: "Pixtral 12B is released under Apache 2.0 license."
+    value: Apache 2.0
+  intended_uses: Multimodal instruction following tasks, capable of multi-turn, multi-image conversations.
+  prohibited_uses: Unknown
+  monitoring: Evaluation protocols and benchmarks are open-sourced to establish fair and standardized testing.
+  feedback: Unknown
 

@@ -1,0 +1,40 @@
+---
+- type: model
+  name: DeepSeek-V3
+  organization: DeepSeek
+  description: DeepSeek-V3 is a Mixture-of-Experts (MoE) language model with 671B
+    total parameters and 37B activated per token. It utilizes Multi-head Latent
+    Attention (MLA) and adopts innovative strategies for improved performance, such
+    as an auxiliary-loss-free load balancing and a multi-token prediction training
+    objective. Comprehensive evaluations show it achieves performance comparable
+    to leading closed-source models.
+  created_date: 2025-01-14
+  url: https://huggingface.co/deepseek-ai/DeepSeek-V3
+  model_card: https://huggingface.co/deepseek-ai/DeepSeek-V3
+  modality: unknown
+  analysis: Comprehensive evaluations reveal that DeepSeek-V3 outperforms other
+    open-source models and achieves performance comparable to leading closed-source
+    models.
+  size:
+    explanation: a strong Mixture-of-Experts (MoE) language model with 671B total
+      parameters with 37B activated for each token.
+    value: 671B parameters (sparse)
+  dependencies: [DeepSeek-R1]
+  training_emissions: unknown
+  training_time:
+    explanation: DeepSeek-V3 requires only 2.788M H800 GPU hours for its full training.
+    value: 2.788M GPU hours
+  training_hardware:
+    explanation: DeepSeek-V3 requires only 2.788M H800 GPU hours for its full training.
+    value: H800 GPUs
+  quality_control: Post-training includes knowledge distillation from the DeepSeek-R1
+    model, incorporating verification and reflection patterns to enhance reasoning
+    performance.
+  access:
+    explanation: producing the currently strongest open-source base model.
+    value: open
+  license: MIT
+  intended_uses: unknown
+  prohibited_uses: unknown
+  monitoring: unknown
+  feedback: unknown
