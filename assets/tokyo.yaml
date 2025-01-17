@@ -48,7 +48,7 @@
   access:
     explanation: "Reflection Llama-3.1 70B is an open-source LLM."
     value: open
-  license: Unknown
+  license: Llama 3.1 Community License Agreement
   intended_uses: The model is intended for complex reasoning and reflection tasks. It is designed to separate its internal thoughts and reasoning from its final answer.
   prohibited_uses: Unknown
   monitoring: Unknown
