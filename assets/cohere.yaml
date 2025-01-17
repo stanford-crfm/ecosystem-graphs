@@ -592,3 +592,25 @@
   prohibited_uses: unknown
   monitoring: unknown
   feedback: https://huggingface.co/CohereForAI/aya-23-35B/discussions
+- type: model
+  name: Command R+
+  organization: Cohere
+  description: Command R+ is a state-of-the-art RAG-optimized model designed to
+    tackle enterprise-grade workloads, and is available first on Microsoft Azure.
+  created_date: 2024-04-04
+  url: https://cohere.com/blog/command-r-plus-microsoft-azure
+  model_card: unknown
+  modality: unknown
+  analysis: unknown
+  size: unknown
+  dependencies: []
+  training_emissions: unknown
+  training_time: unknown
+  training_hardware: unknown
+  quality_control: unknown
+  access: ''
+  license: unknown
+  intended_uses: unknown
+  prohibited_uses: unknown
+  monitoring: unknown
+  feedback: unknown

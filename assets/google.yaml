@@ -1931,4 +1931,69 @@
   prohibited_uses: Unknown
   monitoring: Unknown
   feedback: Unknown
+- type: model
+  name: Veo 2
+  organization: Google DeepMind
+  description: Veo 2 is a state-of-the-art video generation model that creates videos
+    with realistic motion and high-quality output, up to 4K, with extensive camera
+    controls. It simulates real-world physics and offers advanced motion capabilities
+    with enhanced realism and fidelity.
+  created_date: 2024-12-16
+  url: https://deepmind.google/technologies/veo/veo-2/
+  model_card: unknown
+  modality:
+    explanation: Our state-of-the-art video generation model ... text-to-image model
+      Veo 2
+    value: text; video
+  analysis: Veo 2 outperforms other leading video generation models, based on human
+    evaluations of its performance.
+  size: unknown
+  dependencies: []
+  training_emissions: unknown
+  training_time: unknown
+  training_hardware: unknown
+  quality_control: Veo 2 includes features that enhance realism, fidelity, detail,
+    and artifact reduction to ensure high-quality output.
+  access: limited
+  license: unknown
+  intended_uses: Creating high-quality videos with realistic motion, different styles,
+    camera controls, shot styles, angles, and movements.
+  prohibited_uses: unknown
+  monitoring: unknown
+  feedback: unknown
 
+- type: model
+  name: Gemini 2.0
+  organization: Google DeepMind
+  description: Google DeepMind introduces Gemini 2.0, a new AI model designed for
+    the 'agentic era.'
+  created_date: 2024-12-11
+  url: https://blog.google/technology/google-deepmind/google-gemini-ai-update-december-2024/#ceo-message
+  model_card: unknown
+  modality:
+    explanation: The first model built to be natively multimodal, Gemini 1.0 and
+      1.5 drove big advances with multimodality and long context to understand information
+      across text, video, images, audio and code...
+    value: text, video, image, audio; image, text
+  analysis: unknown
+  size: unknown
+  dependencies: []
+  training_emissions: unknown
+  training_time: unknown
+  training_hardware:
+    explanation: It’s built on custom hardware like Trillium, our sixth-generation
+      TPUs.
+    value: custom hardware like Trillium, our sixth-generation TPUs
+  quality_control: Google is committed to building AI responsibly, with safety and
+    security as key priorities.
+  access:
+    explanation: Gemini 2.0 Flash is available to developers and trusted testers,
+      with wider availability planned for early next year.
+    value: limited
+  license: unknown
+  intended_uses: Develop more agentic models, meaning they can understand more about
+    the world around you, think multiple steps ahead, and take action on your behalf,
+    with your supervision.
+  prohibited_uses: unknown
+  monitoring: unknown
+  feedback: unknown
