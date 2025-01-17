@@ -21,7 +21,7 @@
   user_distribution: ''
   failures: ''
 - type: model
-  name: Llama-3.1-Tulu-3-8B
+  name: Llama 3.1 Tulu 3
   organization: Allen Institute for AI
   description: "Tülu3 is a leading instruction following model family, offering fully open-source data, code, and recipes designed to serve as a comprehensive guide for modern post-training techniques."
   created_date: 2024-11-21
