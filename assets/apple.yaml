@@ -74,7 +74,7 @@
   quality_control: "dedicated evaluation metrics for boundary accuracy in estimated depth maps, and state-of-the-art focal length estimation from a single image."
   access:
     explanation: "We release code & weights at https://github.com/apple/ml-depth-pro"
-    value: limited
+    value: open
   license: unknown
   intended_uses: "Zero-shot monocular depth estimation underpins a growing variety of applications, such as advanced image editing, view synthesis, and conditional image generation."
   prohibited_uses: unknown
