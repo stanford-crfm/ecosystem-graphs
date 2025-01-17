@@ -43,7 +43,7 @@
   access:
     explanation: "ESM C is a drop-in replacement for previous models that provides major improvements in both capability and efficiency. ESM C models are available immediately for academic and commercial use under a new license structure designed to promote openness and enable scientists and builders."
     value: open
-  license: unknown
+  license: Cambrian Open License
   intended_uses: "one that can be used by builders across a wide range of applications, to imbue AI models with a deeper understanding of the biology of life’s most important and mysterious molecules."
   prohibited_uses: unknown
   monitoring: unknown
