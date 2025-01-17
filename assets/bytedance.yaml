@@ -65,7 +65,7 @@
   training_hardware: unknown
   quality_control: The model ensures quality by utilizing a high-quality dataset for critic instructions, providing both quantitative judgments and reasoning, with transparency in assessments.
   access: open
-  license: unknown
+  license: Apache 2.0
   intended_uses: The model can be used for evaluating multimodal tasks, generating reward signals for preference learning, and serving as a reliable alternate judge for model assessments.
   prohibited_uses: The model should not be used in scenarios requiring authorization from proprietary models, nor relied upon for critical applications without human oversight due to potential biases in dataset.
   monitoring: unknown
