@@ -1924,7 +1924,7 @@
   training_emissions: Unknown
   training_time: Unknown
   training_hardware: Unknown
-  quality_control: Responsible development is emphasized, "developing our technologies responsibly" and building towards more general AI systems that can safely carry out tasks.
+  quality_control: Responsible development is emphasized, developing our technologies responsibly and building towards more general AI systems that can safely carry out tasks.
   access: ''
   license: Unknown
   intended_uses: Genie 2 can be used for generating diverse environments for training and evaluating AI agents, rapid prototyping interactive experiences, and experimenting with novel environments.
