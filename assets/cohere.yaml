@@ -272,7 +272,8 @@
     value: 2021-11-15
   url: https://cohere.ai/
   dependencies:
-    - Cohere Generate Endpoint
+    - Cohere Chat Endpoint
+    - Cohere Generate Endpoint (legacy)
     - Cohere Embed Endpoint
     - Cohere Classify Endpoint
     - Cohere Summarize Endpoint
@@ -302,12 +303,46 @@
   monitoring: "All applications developed using the Cohere API is subject to review\
     \ by Cohere.\n"
   feedback: "General feedback as well as the violations of the usage guidelines\
-    \ can be reported to Cohere at responsibility at cohere.ai [[Usage Guidelines]](https://docs.cohere.ai/usage-guidelines).\n"
+    \ can be reported to Cohere at safety at cohere.ai [[Usage Guidelines]](https://docs.cohere.ai/usage-guidelines).\n"
   monthly_active_users: unknown
   user_distribution: unknown
   failures: unknown
 - type: application
-  name: Cohere Generate Endpoint
+  name: Cohere Chat Endpoint
+  organization: Cohere
+  description: This endpoint generates a text response to a user message in the
+    context of a conversation, optionally grounding its generation with source material
+    from tools like search engines, functions or databases, and attributing its
+    responses with citations.
+  created_date:
+    explanation: The date the Chat API was announced in Cohere's blog [[Blog Post]](https://txt.cohere.com/chat-with-rag).
+    value: 2023-09-28
+  url: https://docs.cohere.com/reference/chat
+  dependencies: [Cohere Command, Command R, Command R+]
+  adaptation: unknown
+  output_space: generation
+  quality_control: ''
+  access:
+    explanation: "Users can access the Cohere API by signing up on the Cohere website\
+      \ [[Cohere Website]](https://cohere.ai/).\n"
+    value: limited
+  license: "Limited use license to Cohere platform users [[Terms of Use]](https://cohere.ai/terms-of-use).\n"
+  terms_of_service: https://cohere.ai/terms-of-use
+  intended_uses: "Intended to be used by developers who would like to incorporate\
+    \ NLP into their applications [[Cohere Website]](https://cohere.ai/).\n"
+  prohibited_uses: "The usage of the API is bound by the Cohere usage guidelines.\
+    \ Disallowed use cases include violence and threats, antisocial and antidemocratic\
+    \ uses, deceit, attacks on security or privacy, unsafe unsupervised uses, decision-making,\
+    \ high-Risk generations among others [[Usage Guidelines]](https://docs.cohere.ai/usage-guidelines).\n"
+  monitoring: "All applications developed using the Cohere API is subject to review\
+    \ by Cohere.\n"
+  feedback: "General feedback as well as the violations of the usage guidelines\
+    \ can be reported to Cohere at safety at cohere.ai [[Usage Guidelines]](https://docs.cohere.ai/usage-guidelines).\n"
+  monthly_active_users: unknown
+  user_distribution: unknown
+  failures: unknown
+- type: application
+  name: Cohere Generate Endpoint (legacy)
   organization: Cohere
   description: "This endpoint generates realistic text conditioned on a given input.\n"
   created_date:
@@ -337,7 +372,7 @@
   monitoring: "All applications developed using the Cohere API is subject to review\
     \ by Cohere.\n"
   feedback: "General feedback as well as the violations of the usage guidelines\
-    \ can be reported to Cohere at responsibility at cohere.ai [[Usage Guidelines]](https://docs.cohere.ai/usage-guidelines).\n"
+    \ can be reported to Cohere at safety at cohere.ai [[Usage Guidelines]](https://docs.cohere.ai/usage-guidelines).\n"
   monthly_active_users: unknown
   user_distribution: unknown
   failures: unknown
@@ -373,7 +408,7 @@
   monitoring: "All applications developed using the Cohere API is subject to review\
     \ by Cohere.\n"
   feedback: "General feedback as well as the violations of the usage guidelines\
-    \ can be reported to Cohere at responsibility at cohere.ai [[Usage Guidelines]](https://docs.cohere.ai/usage-guidelines).\n"
+    \ can be reported to Cohere at safety at cohere.ai [[Usage Guidelines]](https://docs.cohere.ai/usage-guidelines).\n"
   monthly_active_users: unknown
   user_distribution: unknown
   failures: unknown
@@ -409,7 +444,7 @@
   monitoring: "All applications developed using the Cohere API is subject to review\
     \ by Cohere.\n"
   feedback: "General feedback as well as the violations of the usage guidelines\
-    \ can be reported to Cohere at responsibility at cohere.ai [[Usage Guidelines]](https://docs.cohere.ai/usage-guidelines).\n"
+    \ can be reported to Cohere at safety at cohere.ai [[Usage Guidelines]](https://docs.cohere.ai/usage-guidelines).\n"
   monthly_active_users: unknown
   user_distribution: unknown
   failures: unknown
@@ -445,7 +480,7 @@
   monitoring: "All applications developed using the Cohere API is subject to review\
     \ by Cohere.\n"
   feedback: "General feedback as well as the violations of the usage guidelines\
-    \ can be reported to Cohere at responsibility at cohere.ai [[Usage Guidelines]](https://docs.cohere.ai/usage-guidelines).\n"
+    \ can be reported to Cohere at safety at cohere.ai [[Usage Guidelines]](https://docs.cohere.ai/usage-guidelines).\n"
   monthly_active_users: unknown
   user_distribution: unknown
   failures: unknown
@@ -499,27 +534,101 @@
   monitoring: unknown
   feedback: https://huggingface.co/CohereForAI/aya-101/discussions
 - type: model
-  name: Command-R
+  name: Command R
   organization: Cohere
-  description: Command-R is a scalable generative model targeting RAG and Tool Use
-    to enable production-scale AI for enterprise.
-  created_date: 2024-03-11
+  description: Command R is a scalable generative model targeting RAG and Tool Use
+    to enable production-scale AI for enterprise. It is an auto-regressive large
+    language model that uses an optimized transformer architecture. After pretraining,
+    supervised fine-tuning (SFT) and preference training were applied to align model
+    behavior to human preferences for helpfulness and safety. Command R is part
+    of a family of open weight releases from Cohere and Cohere For AI. Its larger
+    companion model is [Command R+](https://huggingface.co/CohereForAI/c4ai-command-r-plus).
+  created_date:
+    explanation: The date that Command R was announced.
+    value: 2024-03-11
   url: https://txt.cohere.com/command-r/
   model_card: https://huggingface.co/CohereForAI/c4ai-command-r-v01
   modality: text; text
-  analysis: none
+  analysis: Command R was evaluated on standard English and multilingual (translated
+    MMLU, FLoRES) benchmarks. It was also evaluated on KILT, HotpotQA and Bamboogle.
   size: 35B parameters (dense)
   dependencies: []
   training_emissions: unknown
   training_time: unknown
   training_hardware: unknown
-  quality_control: ''
-  access: open
+  quality_control: Comprehensive guidance for working with Command R's tool use
+    and grounded generation prompt template can be found in Cohere's [documentation](https://docs.cohere.com/docs/prompting-command-r).
+  access:
+    explanation: Model weights are made available through the [Hugging Face Model
+      Hub](https://huggingface.co/CohereForAI/c4ai-command-r-v01).
+    value: open
   license: CC BY NC 4.0
-  intended_uses: ''
-  prohibited_uses: ''
-  monitoring: ''
-  feedback: https://huggingface.co/CohereForAI/c4ai-command-r-v01/discussions
+  terms_of_service: https://cohere.ai/terms-of-use
+  intended_uses: 'Command R is optimized to perform well up to 128K context length
+    and in the following languages: English, French, Spanish, Italian, German, Brazilian
+    Portuguese, Japanese, Korean, Simplified Chinese, and Arabic. It has been trained
+    for conversational tool use and grounded generation capabilities. The open weights
+    release of Command R is intended to make community-based research efforts more
+    accessible.'
+  prohibited_uses: "Usage of this model requires adherence to [C4AI's Acceptable\
+    \ Use Policy](https://docs.cohere.com/docs/c4ai-acceptable-use-policy). Usage\
+    \ via the Cohere Platform is subject to Cohere's [Terms of Use](https://cohere.com/terms-of-use)\
+    \ and [Usage Guidelines](https://docs.cohere.com/docs/usage-guidelines). A non-exhaustive\
+    \ list of disallowed use cases include:\n- Violence and harm\n- Harassment and\
+    \ abuse\n- Sexual exploitation, harm, or abuse\n- Sensitve information\n- Fraud\
+    \ and deception\n- Synthetic data for commercial uses\n\nMisuse should be reported\
+    \ to Cohere at safety at cohere.ai."
+  monitoring: unknown
+  feedback: '[https://huggingface.co/CohereForAI/c4ai-command-r-v01/discussions](https://huggingface.co/CohereForAI/c4ai-command-r-v01/discussions)'
+- type: model
+  name: Command R+
+  organization: Cohere
+  description: Command R+ is a state-of-the-art RAG-optimized model designed to
+    tackle enterprise-grade workloads. It is an auto-regressive large language model
+    that uses an optimized transformer architecture. After pretraining, supervised
+    fine-tuning (SFT) and preference training were applied to align model behavior
+    to human preferences for helpfulness and safety. Command R+ is part of a family
+    of open weight releases from Cohere and Cohere For AI. Its smaller companion
+    model is [Command R](https://huggingface.co/CohereForAI/c4ai-command-r-v01).
+  created_date:
+    explanation: The date that Command R+ was announced.
+    value: 2024-04-03
+  url: https://txt.cohere.com/command-r-plus-microsoft-azure/
+  model_card: https://huggingface.co/CohereForAI/c4ai-command-r-plus
+  modality: text; text
+  analysis: Command R+ was evaluated on standard English and multilingual (e.g.
+    FLoRES, WMT23) benchmarks. It was also evaluated on multihop reasoning tasks
+    (e.g. HotpotQA, Bamboogle, StrategyQA), and tool use (e.g. ToolTalk, Berkeley
+    Function-Calling).
+  size: 104B parameters (dense)
+  dependencies: []
+  training_emissions: unknown
+  training_time: unknown
+  training_hardware: unknown
+  quality_control: Comprehensive guidance for working with Command R+'s tool use
+    and grounded generation prompt template can be found in Cohere's [documentation](https://docs.cohere.com/docs/prompting-command-r).
+  access:
+    explanation: Model weights are made available through the [Hugging Face Model
+      Hub](https://huggingface.co/CohereForAI/c4ai-command-r-plus).
+    value: open
+  license: CC BY NC 4.0
+  terms_of_service: https://cohere.ai/terms-of-use
+  intended_uses: 'Command R+ is optimized to perform well up to 128K context length
+    and in the following languages: English, French, Spanish, Italian, German, Brazilian
+    Portuguese, Japanese, Korean, Simplified Chinese, and Arabic. It has been trained
+    for conversational tool use and grounded generation capabilities. The open weights
+    release of Command R+ is intended to make community-based research efforts more
+    accessible.'
+  prohibited_uses: "Usage of this model requires adherence to [C4AI's Acceptable\
+    \ Use Policy](https://docs.cohere.com/docs/c4ai-acceptable-use-policy). Usage\
+    \ via the Cohere Platform is subject to Cohere's [Terms of Use](https://cohere.com/terms-of-use)\
+    \ and [Usage Guidelines](https://docs.cohere.com/docs/usage-guidelines). A non-exhaustive\
+    \ list of disallowed use cases include:\n- Violence and harm\n- Harassment and\
+    \ abuse\n- Sexual exploitation, harm, or abuse\n- Sensitve information\n- Fraud\
+    \ and deception\n- Synthetic data for commercial uses\n\nMisuse should be reported\
+    \ to Cohere at safety at cohere.ai."
+  monitoring: unknown
+  feedback: '[https://huggingface.co/CohereForAI/c4ai-command-r-plus/discussions](https://huggingface.co/CohereForAI/c4ai-command-r-plus/discussions)'
 - type: dataset
   name: Aya Dataset
   organization: Cohere for AI, Beijing Academy of Artificial Intelligence, Cohere,
