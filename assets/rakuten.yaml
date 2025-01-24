@@ -1,25 +1,26 @@
----
-- type: model
-  name: RakutenAI
-  organization: Rakuten
-  description: RakutenAI-7B is a model developed with a focus on Japanese language
-    understanding. It offers competitive performance on English tests as well.
-  created_date: 2024-03-21
-  url: https://global.rakuten.com/corp/news/press/2024/0321_01.html
-  model_card: https://huggingface.co/Rakuten/RakutenAI-7B
-  modality: text; text
+- access: open
   analysis: RakutenAI achieves the highest average score in both Japanese and English
     LM-Harness metrics, outperforming other similarly-sized Japanese language models.
-  size: 7B parameters
-  dependencies: [Mistral]
-  training_emissions: unknown
-  training_time: unknown
-  training_hardware: unknown
-  quality_control: unknown
-  access: open
-  license: Apache 2.0
+  created_date: 2024-03-21
+  dependencies:
+  - Mistral
+  description: RakutenAI-7B is a model developed with a focus on Japanese language
+    understanding. It offers competitive performance on English tests as well.
+  feedback: https://huggingface.co/Rakuten/RakutenAI-7B/discussions
   intended_uses: The model can be used for text generation tasks in both Japanese
     and English.
-  prohibited_uses: unknown
+  license: Apache 2.0
+  modality: text; text
+  model_card: https://huggingface.co/Rakuten/RakutenAI-7B
   monitoring: unknown
-  feedback: https://huggingface.co/Rakuten/RakutenAI-7B/discussions
+  name: RakutenAI
+  nationality: Japan
+  organization: Rakuten
+  prohibited_uses: unknown
+  quality_control: unknown
+  size: 7B parameters
+  training_emissions: unknown
+  training_hardware: unknown
+  training_time: unknown
+  type: model
+  url: https://global.rakuten.com/corp/news/press/2024/0321_01.html

@@ -1,24 +1,25 @@
----
-- type: application
-  name: Moonhub Recruiter
-  organization: Moonhub
+- access: limited
+  adaptation: ''
+  created_date: 2023-10-11
+  dependencies:
+  - Cohere Base
   description: Moonhub Recruiter is the world's first AI-powered recruiter providing
     sourcing and recruiting services for startups and growing businesses.
-  created_date: 2023-10-11
-  url: https://www.moonhub.ai/
-  dependencies: [Cohere Base]
-  adaptation: ''
-  output_space: job candidate matches
-  quality_control: ''
-  access: limited
+  failures: ''
+  feedback: ''
+  intended_uses: recruiting candidates for business needs
   license:
     explanation: License information can be found in terms of service
     value: custom
-  terms_of_service: https://www.moonhub.ai/terms
-  intended_uses: recruiting candidates for business needs
-  prohibited_uses: none
   monitoring: ''
-  feedback: ''
   monthly_active_users: unknown
+  name: Moonhub Recruiter
+  nationality: USA
+  organization: Moonhub
+  output_space: job candidate matches
+  prohibited_uses: none
+  quality_control: ''
+  terms_of_service: https://www.moonhub.ai/terms
+  type: application
+  url: https://www.moonhub.ai/
   user_distribution: unknown
-  failures: ''

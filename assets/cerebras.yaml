@@ -1,161 +1,182 @@
----
-- type: model
-  name: Cerebras-GPT
-  organization: Cerebras
-  description: "A Family of Open, Compute-efficient, Large Language Models. The\
-    \ family includes 111M, 256M, 590M, 1.3B, 2.7B, 6.7B, and 13B models. All models\
-    \ in the Cerebras-GPT family have been trained in accordance with Chinchilla\
-    \ scaling laws (20 tokens per model parameter). [[Cerebras Blog Post]](https://www.cerebras.net/blog/cerebras-gpt-a-family-of-open-compute-efficient-large-language-models)\n"
+- access:
+    explanation: 'The Pile is an open source dataset. Hugging Face compatible checkpoints
+      available on the [[Cerebras Hugging Face page]](https://huggingface.co/cerebras/Cerebras-GPT-13B).
+      Cerebras systems checkpoints for pre-training and fine tuning are available
+      in the cloud via the [[Cerebras Model Studio]](https://www.cerebras.net/product-cloud/).
+
+      '
+    value: open
+  analysis: '"We evaluate our models on the PILE validation set comprising 380M tokens.
+    We also evaluate the public checkpoints of Pythia, Eleuther (2022); OPT, Zhang
+    et al. (2022); GPT-NeoX 20B, Black et al. (2022); and GPT-J 6B, Wang & Komatsuzaki
+    (2021). We performed upstream (pre-training) evaluations of text prediction cross-entropy
+    using the Pile validation and test splits. We performed downstream evaluations
+    of text generation accuracy on standardized tasks using the Eleuther lm-evaluation-harness."
+    [[Evaluations]] (https://github.com/Cerebras/modelzoo/tree/main/modelzoo/transformers/pytorch/gpt3/configs/Cerebras_GPT#evaluations).
+
+    '
   created_date:
-    explanation: "The date the model was announced in the [[Cerebras blog post]](https://www.cerebras.net/blog/cerebras-gpt-a-family-of-open-compute-efficient-large-language-models).\n"
+    explanation: 'The date the model was announced in the [[Cerebras blog post]](https://www.cerebras.net/blog/cerebras-gpt-a-family-of-open-compute-efficient-large-language-models).
+
+      '
     value: 2023-03-28
-  url: https://www.cerebras.net/blog/cerebras-gpt-a-family-of-open-compute-efficient-large-language-models/
-  model_card: https://huggingface.co/cerebras/Cerebras-GPT-13B
+  dependencies:
+  - The Pile
+  description: 'A Family of Open, Compute-efficient, Large Language Models. The family
+    includes 111M, 256M, 590M, 1.3B, 2.7B, 6.7B, and 13B models. All models in the
+    Cerebras-GPT family have been trained in accordance with Chinchilla scaling laws
+    (20 tokens per model parameter). [[Cerebras Blog Post]](https://www.cerebras.net/blog/cerebras-gpt-a-family-of-open-compute-efficient-large-language-models)
+
+    '
+  feedback: ''
+  intended_uses: '"The primary intended use is to further research into large language
+    models. These models can be used as a foundation model for NLP, applications,
+    ethics, and alignment research. Our primary intended users are researchers who
+    are working to improve LLMs and practitioners seeking reference implementations,
+    training setups, hyperparameters, or pre-trained models. We release these models
+    with a fully permissive Apache license for the community to use freely." [[Uses
+    and Limitations]](https://github.com/Cerebras/modelzoo/tree/main/modelzoo/transformers/pytorch/gpt3/configs/Cerebras_GPT#uses-and-limitations).
+
+    '
+  license: Apache 2.0
   modality: text; text
-  analysis: "\"We evaluate our models on the PILE validation set comprising 380M\
-    \ tokens. We also evaluate the public checkpoints of Pythia, Eleuther (2022);\
-    \ OPT, Zhang et al. (2022); GPT-NeoX 20B, Black et al. (2022); and GPT-J 6B,\
-    \ Wang & Komatsuzaki (2021). We performed upstream (pre-training) evaluations\
-    \ of text prediction cross-entropy using the Pile validation and test splits.\
-    \ We performed downstream evaluations of text generation accuracy on standardized\
-    \ tasks using the Eleuther lm-evaluation-harness.\" [[Evaluations]] (https://github.com/Cerebras/modelzoo/tree/main/modelzoo/transformers/pytorch/gpt3/configs/Cerebras_GPT#evaluations).\n"
+  model_card: https://huggingface.co/cerebras/Cerebras-GPT-13B
+  monitoring: ''
+  name: Cerebras-GPT
+  nationality: USA
+  organization: Cerebras
+  prohibited_uses: 'Authors note the following limitations of the model: "Cerebras-GPT
+    models are trained on the Pile, with English language only, and are not suitable
+    for machine translation tasks. Cerebras-GPT models have not been tuned for human-facing
+    dialog applications like chatbots and will not respond to prompts in a similar
+    way to models that have received instruction tuning or reinforcement learning
+    from human feedback (RLHF) like Flan-T5 or ChatGPT." [[Uses and Limitations]](https://github.com/Cerebras/modelzoo/tree/main/modelzoo/transformers/pytorch/gpt3/configs/Cerebras_GPT#out-of-scope-use).
+
+    '
+  quality_control: 'The Pile dataset has been thoroughly analyzed from various ethical
+    standpoints such as toxicity analysis, gender bias, pejorative content, racially
+    sensitive content etc. Only mitigations in standard Pile dataset pre-processing
+    were employed when pre-training Cerebras-GPT. [[Risk, Bias, Ethical Considerations]](https://github.com/Cerebras/modelzoo/tree/main/modelzoo/transformers/pytorch/gpt3/configs/Cerebras_GPT#risk-bias-ethical-considerations)
+
+    '
   size: 13B parameters (dense)
-  dependencies: [The Pile]
   training_emissions: ''
+  training_hardware:
+    explanation: 'According to [[Model Description]](https://huggingface.co/cerebras/Cerebras-GPT-13B#model-description)
+
+      '
+    value: 16x Cerebras CS-2 wafer scale systems
   training_time:
     explanation: ''
     value: ''
-  training_hardware:
-    explanation: "According to [[Model Description]](https://huggingface.co/cerebras/Cerebras-GPT-13B#model-description)\n"
-    value: 16x Cerebras CS-2 wafer scale systems
-  quality_control: "The Pile dataset has been thoroughly analyzed from various ethical\
-    \ standpoints such as toxicity analysis, gender bias, pejorative content, racially\
-    \ sensitive content etc. Only mitigations in standard Pile dataset pre-processing\
-    \ were employed when pre-training Cerebras-GPT. [[Risk, Bias, Ethical Considerations]](https://github.com/Cerebras/modelzoo/tree/main/modelzoo/transformers/pytorch/gpt3/configs/Cerebras_GPT#risk-bias-ethical-considerations)\n"
-  access:
-    explanation: "The Pile is an open source dataset. Hugging Face compatible checkpoints\
-      \ available on the [[Cerebras Hugging Face page]](https://huggingface.co/cerebras/Cerebras-GPT-13B).\
-      \ Cerebras systems checkpoints for pre-training and fine tuning are available\
-      \ in the cloud via the [[Cerebras Model Studio]](https://www.cerebras.net/product-cloud/).\n"
-    value: open
-  license: Apache 2.0
-  intended_uses: "\"The primary intended use is to further research into large language\
-    \ models. These models can be used as a foundation model for NLP, applications,\
-    \ ethics, and alignment research. Our primary intended users are researchers\
-    \ who are working to improve LLMs and practitioners seeking reference implementations,\
-    \ training setups, hyperparameters, or pre-trained models. We release these\
-    \ models with a fully permissive Apache license for the community to use freely.\"\
-    \ [[Uses and Limitations]](https://github.com/Cerebras/modelzoo/tree/main/modelzoo/transformers/pytorch/gpt3/configs/Cerebras_GPT#uses-and-limitations).\n"
-  prohibited_uses: "Authors note the following limitations of the model: \"Cerebras-GPT\
-    \ models are trained on the Pile, with English language only, and are not suitable\
-    \ for machine translation tasks. Cerebras-GPT models have not been tuned for\
-    \ human-facing dialog applications like chatbots and will not respond to prompts\
-    \ in a similar way to models that have received instruction tuning or reinforcement\
-    \ learning from human feedback (RLHF) like Flan-T5 or ChatGPT.\" [[Uses and\
-    \ Limitations]](https://github.com/Cerebras/modelzoo/tree/main/modelzoo/transformers/pytorch/gpt3/configs/Cerebras_GPT#out-of-scope-use).\n"
-  monitoring: ''
-  feedback: ''
-- type: model
-  name: Jais
-  organization: Inception Institute of Artificial Intelligence, Cerebras, Mohamed
-    bin Zayed University of Artificial Intelligence
-  description: Jais is the world’s most advanced Arabic LLM as of its release.
+  type: model
+  url: https://www.cerebras.net/blog/cerebras-gpt-a-family-of-open-compute-efficient-large-language-models/
+- access: open
+  analysis: Evaluated on standard English LLM benchmarks and adapted Arabic LLM benchmarks.
   created_date: 2023-08-30
-  url: https://inceptioniai.org/jais/docs/Technicalpaper.pdf
-  model_card:
-    explanation: Found in section C “Model Cards”
-    value: https://inceptioniai.org/jais/docs/Technicalpaper.pdf
-  modality: text; text
-  analysis: Evaluated on standard English LLM benchmarks and adapted Arabic LLM
-    benchmarks.
-  size: 13B parameters (dense)
-  dependencies: [GPT-3, The Pile]
-  training_emissions: unknown
-  training_time: unknown
-  training_hardware: Condor Galaxy Supercomputer
-  quality_control: ''
-  access: open
-  license: Apache 2.0
+  dependencies:
+  - GPT-3
+  - The Pile
+  description: "Jais is the world\u2019s most advanced Arabic LLM as of its release."
+  feedback: none
   intended_uses: Jais is released with the aim to stimulate research and development
     in the Arabic NLP community.
-  prohibited_uses: Generating or endorsing hate speech, disseminating false information,
-    engaging in illegal activities, managing sensitive data, attempting language
-    generalization beyond Arabic and English, and making critical decisions with
-    high stakes.
+  license: Apache 2.0
+  modality: text; text
+  model_card:
+    explanation: "Found in section C \u201CModel Cards\u201D"
+    value: https://inceptioniai.org/jais/docs/Technicalpaper.pdf
   monitoring: unknown
-  feedback: none
-- type: model
-  name: Jais Chat
+  name: Jais
+  nationality: unknown
   organization: Inception Institute of Artificial Intelligence, Cerebras, Mohamed
     bin Zayed University of Artificial Intelligence
-  description: Jais Chat is an instruction-tuned version of Jais, optimized for
-    dialog interaction.
-  created_date: 2023-08-30
-  url: https://inceptioniai.org/jais/docs/Technicalpaper.pdf
-  model_card:
-    explanation: Found in section C “Model Cards”
-    value: https://inceptioniai.org/jais/docs/Technicalpaper.pdf
-  modality: text; text
-  analysis: Evaluated on standard English LLM benchmarks and adapted Arabic LLM
-    benchmarks.
-  size: 13B parameters (dense)
-  dependencies: [GPT-3, The Pile]
-  training_emissions: unknown
-  training_time: unknown
-  training_hardware: Condor Galaxy Supercomputer from Cerebras
+  prohibited_uses: Generating or endorsing hate speech, disseminating false information,
+    engaging in illegal activities, managing sensitive data, attempting language generalization
+    beyond Arabic and English, and making critical decisions with high stakes.
   quality_control: ''
-  access: open
-  license: Apache 2.0
+  size: 13B parameters (dense)
+  training_emissions: unknown
+  training_hardware: Condor Galaxy Supercomputer
+  training_time: unknown
+  type: model
+  url: https://inceptioniai.org/jais/docs/Technicalpaper.pdf
+- access: open
+  analysis: Evaluated on standard English LLM benchmarks and adapted Arabic LLM benchmarks.
+  created_date: 2023-08-30
+  dependencies:
+  - GPT-3
+  - The Pile
+  description: Jais Chat is an instruction-tuned version of Jais, optimized for dialog
+    interaction.
+  feedback: none
   intended_uses: Jais Chat is released with the aim to stimulate research and development
     in the Arabic NLP community.
-  prohibited_uses: Generating or endorsing hate speech, disseminating false information,
-    engaging in illegal activities, managing sensitive data, attempting language
-    generalization beyond Arabic and English, and making critical decisions with
-    high stakes.
-  monitoring: unknown
-  feedback: none
-- type: model
-  name: Bittensor Language Model
-  organization: Cerebras
-  description: Bittensor Language Model is a 3 billion parameter language model
-    with an 8k context length trained on 627B tokens of SlimPajama.
-  created_date: 2023-07-24
-  url: https://www.cerebras.net/blog/btlm-3b-8k-7b-performance-in-a-3-billion-parameter-model/
-  model_card: https://huggingface.co/cerebras/btlm-3b-8k-base
-  modality: text; text
-  analysis: Evaluated on standard LLM benchmarks in comparison to similar-sized
-    models.
-  size: 3B parameters (dense)
-  dependencies: [SlimPajama]
-  training_emissions: unknown
-  training_time: unknown
-  training_hardware: unknown
-  quality_control: ''
-  access: open
   license: Apache 2.0
-  intended_uses: ''
-  prohibited_uses: ''
+  modality: text; text
+  model_card:
+    explanation: "Found in section C \u201CModel Cards\u201D"
+    value: https://inceptioniai.org/jais/docs/Technicalpaper.pdf
   monitoring: unknown
+  name: Jais Chat
+  nationality: unknown
+  organization: Inception Institute of Artificial Intelligence, Cerebras, Mohamed
+    bin Zayed University of Artificial Intelligence
+  prohibited_uses: Generating or endorsing hate speech, disseminating false information,
+    engaging in illegal activities, managing sensitive data, attempting language generalization
+    beyond Arabic and English, and making critical decisions with high stakes.
+  quality_control: ''
+  size: 13B parameters (dense)
+  training_emissions: unknown
+  training_hardware: Condor Galaxy Supercomputer from Cerebras
+  training_time: unknown
+  type: model
+  url: https://inceptioniai.org/jais/docs/Technicalpaper.pdf
+- access: open
+  analysis: Evaluated on standard LLM benchmarks in comparison to similar-sized models.
+  created_date: 2023-07-24
+  dependencies:
+  - SlimPajama
+  description: Bittensor Language Model is a 3 billion parameter language model with
+    an 8k context length trained on 627B tokens of SlimPajama.
   feedback: https://huggingface.co/cerebras/btlm-3b-8k-base/discussions
-- type: dataset
-  name: SlimPajama
+  intended_uses: ''
+  license: Apache 2.0
+  modality: text; text
+  model_card: https://huggingface.co/cerebras/btlm-3b-8k-base
+  monitoring: unknown
+  name: Bittensor Language Model
+  nationality: USA
   organization: Cerebras
+  prohibited_uses: ''
+  quality_control: ''
+  size: 3B parameters (dense)
+  training_emissions: unknown
+  training_hardware: unknown
+  training_time: unknown
+  type: model
+  url: https://www.cerebras.net/blog/btlm-3b-8k-7b-performance-in-a-3-billion-parameter-model/
+- access: open
+  analysis: ''
+  created_date: 2023-06-09
+  datasheet: https://huggingface.co/datasets/cerebras/SlimPajama-627B
+  dependencies:
+  - RedPajama-Data
   description: As of release, SlimPajama is the largest extensively deduplicated,
     multi-corpora, open-source dataset for training large language models.
-  created_date: 2023-06-09
-  url: https://huggingface.co/datasets/cerebras/SlimPajama-627B
-  datasheet: https://huggingface.co/datasets/cerebras/SlimPajama-627B
-  modality: text
-  size: 627B tokens
-  sample: []
-  analysis: ''
-  dependencies: [RedPajama-Data]
-  included: ''
   excluded: ''
-  quality_control: ''
-  access: open
-  license: Apache 2.0
-  intended_uses: ''
-  prohibited_uses: ''
-  monitoring: unknown
   feedback: https://huggingface.co/datasets/cerebras/SlimPajama-627B/discussions
+  included: ''
+  intended_uses: ''
+  license: Apache 2.0
+  modality: text
+  monitoring: unknown
+  name: SlimPajama
+  nationality: USA
+  organization: Cerebras
+  prohibited_uses: ''
+  quality_control: ''
+  sample: []
+  size: 627B tokens
+  type: dataset
+  url: https://huggingface.co/datasets/cerebras/SlimPajama-627B

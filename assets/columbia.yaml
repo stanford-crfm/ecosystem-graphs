@@ -1,47 +1,52 @@
----
-- type: model
-  name: OpenFold
-  organization: Columbia
-  description: OpenFold is an open source recreation of AlphaFold2.
-  created_date: 2022-11-20
-  url: https://www.biorxiv.org/content/10.1101/2022.11.20.517210v2
-  model_card: ''
-  modality: amino acid sequence; protein structure
+- access: open
   analysis: Evaluated on wide range of tasks using own evaluation benchmarks.
-  size: ''
-  dependencies: [AlphaFold2, OpenProteinSet]
-  training_emissions: unknown
-  training_time: 50,000 GPU hours
-  training_hardware: Single A100 NVIDIA GPU
-  quality_control: ''
-  access: open
-  license: CC BY 4.0
-  intended_uses: ''
-  prohibited_uses: ''
-  monitoring: ''
+  created_date: 2022-11-20
+  dependencies:
+  - AlphaFold2
+  - OpenProteinSet
+  description: OpenFold is an open source recreation of AlphaFold2.
   feedback: ''
-- type: model
-  name: Ferret
-  organization: Columbia, Apple AI
-  description: Ferret is a Multimodal Large Language Model (MLLM) capable of understanding
-    spatial referring of any shape or granularity within an image and accurately
-    grounding open-vocabulary descriptions.
-  created_date: 2023-10-11
-  url: https://arxiv.org/pdf/2310.07704.pdf
-  model_card: none
-  modality: image, text; image, text
-  analysis: Evaluated on the object hallucination benchmark and compared to GPT-4V.
-  size: 13B parameters
-  dependencies: [CLIP, Vicuna]
-  training_emissions: unknown
-  training_time: 2.5 to 5 days
-  training_hardware: 8 A100 GPUs
+  intended_uses: ''
+  license: CC BY 4.0
+  modality: amino acid sequence; protein structure
+  model_card: ''
+  monitoring: ''
+  name: OpenFold
+  nationality: USA
+  organization: Columbia
+  prohibited_uses: ''
   quality_control: ''
-  access: open
+  size: ''
+  training_emissions: unknown
+  training_hardware: Single A100 NVIDIA GPU
+  training_time: 50,000 GPU hours
+  type: model
+  url: https://www.biorxiv.org/content/10.1101/2022.11.20.517210v2
+- access: open
+  analysis: Evaluated on the object hallucination benchmark and compared to GPT-4V.
+  created_date: 2023-10-11
+  dependencies:
+  - CLIP
+  - Vicuna
+  description: Ferret is a Multimodal Large Language Model (MLLM) capable of understanding
+    spatial referring of any shape or granularity within an image and accurately grounding
+    open-vocabulary descriptions.
+  feedback: none
+  intended_uses: ''
   license:
     explanation: License can be found at https://github.com/apple/ml-ferret/blob/main/LICENSE
     value: Apple
-  intended_uses: ''
-  prohibited_uses: ''
+  modality: image, text; image, text
+  model_card: none
   monitoring: none
-  feedback: none
+  name: Ferret
+  nationality: unknown
+  organization: Columbia, Apple AI
+  prohibited_uses: ''
+  quality_control: ''
+  size: 13B parameters
+  training_emissions: unknown
+  training_hardware: 8 A100 GPUs
+  training_time: 2.5 to 5 days
+  type: model
+  url: https://arxiv.org/pdf/2310.07704.pdf

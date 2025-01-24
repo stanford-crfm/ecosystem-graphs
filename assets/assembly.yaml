@@ -1,112 +1,124 @@
----
-- type: dataset
-  name: Conformer-1 dataset
-  organization: AssemblyAI
-  description: The dataset used to train AssemblyAI's Conformer-1 model.
+- access: closed
+  analysis: ''
   created_date:
     explanation: The date Conformer-1 was announced in this [[Twitter post]](https://twitter.com/AssemblyAI/status/1636050346240884744).
     value: 2023-03-15
-  url: https://www.assemblyai.com/blog/conformer-1/
   datasheet: none
-  modality: audio, text
-  size: 650K hours audio (60TB)
-  sample: []
-  analysis: ''
   dependencies: []
-  included: "\"our team curated a dataset of 650K hours of English audio - consisting\
-    \ of proprietary internal datasets and various sources from the internet\"\n"
+  description: The dataset used to train AssemblyAI's Conformer-1 model.
   excluded: ''
-  quality_control: ''
-  access: closed
-  license: unknown
-  intended_uses: ''
-  prohibited_uses: ''
-  monitoring: ''
   feedback: ''
-- type: model
-  name: Conformer-1
+  included: '"our team curated a dataset of 650K hours of English audio - consisting
+    of proprietary internal datasets and various sources from the internet"
+
+    '
+  intended_uses: ''
+  license: unknown
+  modality: audio, text
+  monitoring: ''
+  name: Conformer-1 dataset
+  nationality: USA
   organization: AssemblyAI
+  prohibited_uses: ''
+  quality_control: ''
+  sample: []
+  size: 650K hours audio (60TB)
+  type: dataset
+  url: https://www.assemblyai.com/blog/conformer-1/
+- access: limited
+  analysis:
+    explanation: See [[Results and Performance]](https://www.assemblyai.com/blog/conformer-1/#results-and-performance)
+    value: In order to evaluate the accuracy and robustness of Conformer-1, we sourced
+      60+ hours of human labeled audio data covering popular speech domains such as
+      call centers, podcasts, broadcasts, and webinars. We then calculated the Word
+      Error Rate (WER) of Conformer-1 against these datasets, and compared the results
+      against Whisper and a number of other ASR models. To ground our results against
+      popular open source speech recognition benchmarks, we also performed the same
+      WER analysis against a number of academic datasets.
+  created_date:
+    explanation: The date the model was announced in this [[Twitter post]](https://twitter.com/AssemblyAI/status/1636050346240884744).
+    value: 2023-03-15
+  dependencies:
+  - Conformer-1 dataset
   description: Conformer-1 is a state-of-the-art speech recognition model trained
     on 650K hours of audio data that achieves near human-level performance and robustness
     across a variety of data, making up to 43% fewer errors on noisy data than other
     ASR models.
-  created_date:
-    explanation: The date the model was announced in this [[Twitter post]](https://twitter.com/AssemblyAI/status/1636050346240884744).
-    value: 2023-03-15
-  url: https://www.assemblyai.com/blog/conformer-1/
-  model_card: ''
-  modality: audio, text; audio, text
-  analysis:
-    explanation: See [[Results and Performance]](https://www.assemblyai.com/blog/conformer-1/#results-and-performance)
-    value: In order to evaluate the accuracy and robustness of Conformer-1, we sourced
-      60+ hours of human labeled audio data covering popular speech domains such
-      as call centers, podcasts, broadcasts, and webinars. We then calculated the
-      Word Error Rate (WER) of Conformer-1 against these datasets, and compared
-      the results against Whisper and a number of other ASR models. To ground our
-      results against popular open source speech recognition benchmarks, we also
-      performed the same WER analysis against a number of academic datasets.
-  size: 300M parameters (dense)
-  dependencies: [Conformer-1 dataset]
-  training_emissions: ''
-  training_time: ''
-  training_hardware: ''
-  quality_control: ''
-  access: limited
-  license: unknown
-  intended_uses: ''
-  prohibited_uses: ''
-  monitoring: ''
   feedback: ''
-- type: application
-  name: AssemblyAI
+  intended_uses: ''
+  license: unknown
+  modality: audio, text; audio, text
+  model_card: ''
+  monitoring: ''
+  name: Conformer-1
+  nationality: USA
   organization: AssemblyAI
+  prohibited_uses: ''
+  quality_control: ''
+  size: 300M parameters (dense)
+  training_emissions: ''
+  training_hardware: ''
+  training_time: ''
+  type: model
+  url: https://www.assemblyai.com/blog/conformer-1/
+- access: limited
+  adaptation: ''
+  created_date: 2022
+  dependencies:
+  - Anthropic API
   description: AssemblyAI uses Claude and Anthropic's model to transcribe and understand
     audio data at scale.
-  created_date: 2022
-  url: https://www.assemblyai.com/
-  dependencies: [Anthropic API]
-  adaptation: ''
-  output_space: ''
-  quality_control: ''
-  access: limited
-  license:
-    explanation: "\"AssemblyAI gives you a personal, worldwide, royalty-free, non-assignable\
-      \ and non-exclusive license to use the Site and Services solely for your reasonable\
-      \ personal and commercial purposes, in the manner permitted by these Terms.\"\
-      \ - excerpt from the Terms of Service.\n"
-    value: custom
-  terms_of_service: https://www.assemblyai.com/legal/terms-of-service
-  intended_uses: ''
-  prohibited_uses: ''
-  monitoring: ''
-  feedback: ''
-  monthly_active_users: ''
-  user_distribution: ''
   failures: ''
-- type: application
-  name: Conformer-1 API
+  feedback: ''
+  intended_uses: ''
+  license:
+    explanation: '"AssemblyAI gives you a personal, worldwide, royalty-free, non-assignable
+      and non-exclusive license to use the Site and Services solely for your reasonable
+      personal and commercial purposes, in the manner permitted by these Terms." -
+      excerpt from the Terms of Service.
+
+      '
+    value: custom
+  monitoring: ''
+  monthly_active_users: ''
+  name: AssemblyAI
+  nationality: USA
   organization: AssemblyAI
-  description: API to access the AssemblyAI's Conformer-1 model.
+  output_space: ''
+  prohibited_uses: ''
+  quality_control: ''
+  terms_of_service: https://www.assemblyai.com/legal/terms-of-service
+  type: application
+  url: https://www.assemblyai.com/
+  user_distribution: ''
+- access: open
+  adaptation: ''
   created_date:
     explanation: The date the API was announced in this [[Twitter post]](https://twitter.com/AssemblyAI/status/1636050346240884744).
     value: 2023-03-15
-  url: https://www.assemblyai.com/blog/conformer-1/
-  dependencies: [Conformer-1]
-  adaptation: ''
-  output_space: ''
-  quality_control: ''
-  access: open
-  license:
-    explanation: "\"AssemblyAI gives you a personal, worldwide, royalty-free, non-assignable\
-      \ and non-exclusive license to use the Site and Services solely for your reasonable\
-      \ personal and commercial purposes, in the manner permitted by these Terms.\"\
-      \ - excerpt from the Terms of Service.\n"
-    value: custom
-  terms_of_service: https://www.assemblyai.com/legal/terms-of-service
-  intended_uses: Speech recognition
-  prohibited_uses: ''
-  monitoring: ''
-  feedback: ''
-  monthly_active_users: ''
-  user_distribution: ''
+  dependencies:
+  - Conformer-1
+  description: API to access the AssemblyAI's Conformer-1 model.
   failures: ''
+  feedback: ''
+  intended_uses: Speech recognition
+  license:
+    explanation: '"AssemblyAI gives you a personal, worldwide, royalty-free, non-assignable
+      and non-exclusive license to use the Site and Services solely for your reasonable
+      personal and commercial purposes, in the manner permitted by these Terms." -
+      excerpt from the Terms of Service.
+
+      '
+    value: custom
+  monitoring: ''
+  monthly_active_users: ''
+  name: Conformer-1 API
+  nationality: USA
+  organization: AssemblyAI
+  output_space: ''
+  prohibited_uses: ''
+  quality_control: ''
+  terms_of_service: https://www.assemblyai.com/legal/terms-of-service
+  type: application
+  url: https://www.assemblyai.com/blog/conformer-1/
+  user_distribution: ''

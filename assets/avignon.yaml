@@ -1,27 +1,29 @@
----
-- type: model
-  name: BioMistral
-  organization: Avignon University, Nantes University
+- access: open
+  analysis: BioMistral was evaluated on a benchmark comprising 10 established medical
+    question-answering (QA) tasks in English and seven other languages.
+  created_date: 2024-02-15
+  dependencies:
+  - Mistral
+  - PubMed Central
   description: BioMistral is an open-source Large Language Model tailored for the
     biomedical domain, utilizing Mistral as its foundation model and further pre-trained
     on PubMed Central.
-  created_date: 2024-02-15
-  url: https://arxiv.org/pdf/2402.10373.pdf
-  model_card: https://huggingface.co/BioMistral/BioMistral-7B
-  modality: text; text
-  analysis: BioMistral was evaluated on a benchmark comprising 10 established medical
-    question-answering (QA) tasks in English and seven other languages.
-  size: 7B parameters (dense)
-  dependencies: [Mistral, PubMed Central]
-  training_emissions: unknown
-  training_time: unknown
-  training_hardware: 32 NVIDIA A100 80GB GPUs
-  quality_control: ''
-  access: open
-  license: Apache 2.0
+  feedback: https://huggingface.co/BioMistral/BioMistral-7B/discussions
   intended_uses: Research in the biomedical domain, especially for medical question-answering
     tasks.
+  license: Apache 2.0
+  modality: text; text
+  model_card: https://huggingface.co/BioMistral/BioMistral-7B
+  monitoring: ''
+  name: BioMistral
+  nationality: unknown
+  organization: Avignon University, Nantes University
   prohibited_uses: Prohibited from deploying in production environments for natural
     language generation or any professional health and medical purposes.
-  monitoring: ''
-  feedback: https://huggingface.co/BioMistral/BioMistral-7B/discussions
+  quality_control: ''
+  size: 7B parameters (dense)
+  training_emissions: unknown
+  training_hardware: 32 NVIDIA A100 80GB GPUs
+  training_time: unknown
+  type: model
+  url: https://arxiv.org/pdf/2402.10373.pdf

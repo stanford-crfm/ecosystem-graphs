@@ -1,55 +1,57 @@
----
-- type: model
-  name: PolyCoder
-  organization: Carnegie Mellon University
-  description: PolyCoder is a code model trained on 2.7B parameters based on the
-    GPT-2 architecture, which was trained on 249GB of code across 12 programming
-    languages on a single machine.
+- access:
+    explanation: Model checkpoints are available for download at https://github.com/VHellendoorn/Code-LMs
+    value: open
+  analysis: Reports results on standard code benchmarks across a variety of programming
+    languages.
   created_date:
     explanation: The date the model paper was released
     value: 2022-02-26
-  url: https://arxiv.org/abs/2202.13169
-  model_card: https://huggingface.co/NinedayWang/PolyCoder-2.7B
-  modality: code
-  analysis: Reports results on standard code benchmarks across a variety of programming
-    languages.
-  size: 2.7B parameters (dense)
-  dependencies: [Github]
-  training_emissions: unknown
-  training_time: 6 weeks
-  training_hardware: 8 NVIDIA RTX 8000
-  quality_control: No specific quality control is mentioned in model training, though
-    details on data processing and how the tokenizer was trained are provided in
-    the paper.
-  access:
-    explanation: Model checkpoints are available for download at https://github.com/VHellendoorn/Code-LMs
-    value: open
+  dependencies:
+  - Github
+  description: PolyCoder is a code model trained on 2.7B parameters based on the GPT-2
+    architecture, which was trained on 249GB of code across 12 programming languages
+    on a single machine.
+  feedback: https://huggingface.co/NinedayWang/PolyCoder-2.7B/discussion
+  intended_uses: unknown
   license:
     explanation: The license is provided in the [[Github repository]](https://github.com/VHellendoorn/Code-LMs)
     value: MIT
-  intended_uses: unknown
-  prohibited_uses: None
+  modality: code
+  model_card: https://huggingface.co/NinedayWang/PolyCoder-2.7B
   monitoring: None
-  feedback: https://huggingface.co/NinedayWang/PolyCoder-2.7B/discussion
-- type: model
-  name: Moment
-  organization: Carnegie Mellon University, University of Pennsylvania
+  name: PolyCoder
+  nationality: USA
+  organization: Carnegie Mellon University
+  prohibited_uses: None
+  quality_control: No specific quality control is mentioned in model training, though
+    details on data processing and how the tokenizer was trained are provided in the
+    paper.
+  size: 2.7B parameters (dense)
+  training_emissions: unknown
+  training_hardware: 8 NVIDIA RTX 8000
+  training_time: 6 weeks
+  type: model
+  url: https://arxiv.org/abs/2202.13169
+- access: open
+  analysis: Evaluated on nascent time-series datasets and benchmarks.
+  created_date: 2024-02-06
+  dependencies: []
   description: Moment is a family of open-source foundation models for general-purpose
     time-series analysis.
-  created_date: 2024-02-06
-  url: https://arxiv.org/pdf/2402.03885.pdf
-  model_card: none
-  modality: ''
-  analysis: Evaluated on nascent time-series datasets and benchmarks.
-  size: 385M parameters (dense)
-  dependencies: []
-  training_emissions: unknown
-  training_time: unknown
-  training_hardware: Single A6000 GPU
-  quality_control: ''
-  access: open
-  license: unknown
-  intended_uses: ''
-  prohibited_uses: ''
-  monitoring: unknown
   feedback: none
+  intended_uses: ''
+  license: unknown
+  modality: ''
+  model_card: none
+  monitoring: unknown
+  name: Moment
+  nationality: unknown
+  organization: Carnegie Mellon University, University of Pennsylvania
+  prohibited_uses: ''
+  quality_control: ''
+  size: 385M parameters (dense)
+  training_emissions: unknown
+  training_hardware: Single A6000 GPU
+  training_time: unknown
+  type: model
+  url: https://arxiv.org/pdf/2402.03885.pdf

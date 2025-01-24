@@ -1,45 +1,49 @@
----
-- type: dataset
-  name: EXMODD
-  organization: Beijing Institute of Technology
-  description: EXMODD (Explanatory Multimodal Open-Domain Dialogue dataset) is a
-    dataset built off the proposed MDCF (Multimodal Data Construction Framework).
+- access: open
+  analysis: Models fine-tuned on EXMODD and earlier dataset Image-Chat and then evaluated
+    on Image-Chat validation set.
   created_date: 2023-10-17
-  url: https://arxiv.org/pdf/2310.10967.pdf
   datasheet: none
-  modality: image, text
-  size: unknown
-  sample: []
-  analysis: Models fine-tuned on EXMODD and earlier dataset Image-Chat and then
-    evaluated on Image-Chat validation set.
-  dependencies: [YFCC100M, Image-Chat]
-  included: ''
+  dependencies:
+  - YFCC100M
+  - Image-Chat
+  description: EXMODD (Explanatory Multimodal Open-Domain Dialogue dataset) is a dataset
+    built off the proposed MDCF (Multimodal Data Construction Framework).
   excluded: ''
-  quality_control: ''
-  access: open
-  license: MIT
-  intended_uses: ''
-  prohibited_uses: ''
-  monitoring: none
   feedback: Feedback can be sent to authors via poplpr@bit.edu.cn
-- type: model
-  name: MiniMA
-  organization: Beijing Institute of Technology
-  description: MiniMA is a smaller finetuned Llama 2 model adapted for Chinese.
-  created_date: 2023-11-13
-  url: https://github.com/GeneZC/MiniMA
-  model_card: https://huggingface.co/GeneZC/MiniMA-3B
-  modality: text; text
-  analysis: Evaluated on standard benchmarks including MMLU, CEval, and DROP.
-  size: 3B parameters (dense)
-  dependencies: [Llama 2]
-  training_emissions: unknown
-  training_time: unknown
-  training_hardware: 8 A100 80G GPUs
-  quality_control: ''
-  access: open
-  license: Llama 2
+  included: ''
   intended_uses: ''
+  license: MIT
+  modality: image, text
+  monitoring: none
+  name: EXMODD
+  nationality: China
+  organization: Beijing Institute of Technology
   prohibited_uses: ''
-  monitoring: unknokwn
+  quality_control: ''
+  sample: []
+  size: unknown
+  type: dataset
+  url: https://arxiv.org/pdf/2310.10967.pdf
+- access: open
+  analysis: Evaluated on standard benchmarks including MMLU, CEval, and DROP.
+  created_date: 2023-11-13
+  dependencies:
+  - Llama 2
+  description: MiniMA is a smaller finetuned Llama 2 model adapted for Chinese.
   feedback: https://huggingface.co/GeneZC/MiniMA-3B/discussions
+  intended_uses: ''
+  license: Llama 2
+  modality: text; text
+  model_card: https://huggingface.co/GeneZC/MiniMA-3B
+  monitoring: unknokwn
+  name: MiniMA
+  nationality: China
+  organization: Beijing Institute of Technology
+  prohibited_uses: ''
+  quality_control: ''
+  size: 3B parameters (dense)
+  training_emissions: unknown
+  training_hardware: 8 A100 80G GPUs
+  training_time: unknown
+  type: model
+  url: https://github.com/GeneZC/MiniMA

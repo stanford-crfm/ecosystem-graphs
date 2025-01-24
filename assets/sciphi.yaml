@@ -1,22 +1,23 @@
----
-- type: model
-  name: SciPhi Mistral
-  organization: SciPhi
-  description: SciPhi Mistral is a Large Language Model (LLM) fine-tuned from Mistral.
-  created_date: 2023-11-07
-  url: https://huggingface.co/SciPhi/SciPhi-Mistral-7B-32k
-  model_card: https://huggingface.co/SciPhi/SciPhi-Mistral-7B-32k
-  modality: text; text
+- access: open
   analysis: none
-  size: 7B parameters (dense)
-  dependencies: [Mistral]
-  training_emissions: unknown
-  training_time: unknown
-  training_hardware: unknown
-  quality_control: ''
-  access: open
-  license: MIT
-  intended_uses: ''
-  prohibited_uses: ''
-  monitoring: unknown
+  created_date: 2023-11-07
+  dependencies:
+  - Mistral
+  description: SciPhi Mistral is a Large Language Model (LLM) fine-tuned from Mistral.
   feedback: https://huggingface.co/SciPhi/SciPhi-Mistral-7B-32k/discussions
+  intended_uses: ''
+  license: MIT
+  modality: text; text
+  model_card: https://huggingface.co/SciPhi/SciPhi-Mistral-7B-32k
+  monitoring: unknown
+  name: SciPhi Mistral
+  nationality: USA
+  organization: SciPhi
+  prohibited_uses: ''
+  quality_control: ''
+  size: 7B parameters (dense)
+  training_emissions: unknown
+  training_hardware: unknown
+  training_time: unknown
+  type: model
+  url: https://huggingface.co/SciPhi/SciPhi-Mistral-7B-32k

@@ -1,52 +1,53 @@
----
-- type: model
-  name: Reka Flash
-  organization: Reka
+- access: limited
+  analysis: Evaluated on MMLU, GSM8K, HumanEval, and GPQA benchmarks, among others.
+  created_date: 2024-02-12
+  dependencies: []
   description: Reka Flash is a multimodal, multilingual, state-of-the-art 21B model
     trained entirely from scratch.
-  created_date: 2024-02-12
-  url: https://reka.ai/reka-flash-an-efficient-and-capable-multimodal-language-model/
-  model_card: none
-  modality: image, text, video; text
-  analysis: Evaluated on MMLU, GSM8K, HumanEval, and GPQA benchmarks, among others.
-  size: 21B parameters (dense)
-  dependencies: []
-  training_emissions: unknown
-  training_time: unknown
-  training_hardware: unknown
-  quality_control: ''
-  access: limited
-  license: unknown
-  intended_uses: ''
-  prohibited_uses: ''
-  monitoring: unknown
   feedback: none
-- type: model
-  name: Reka Core
+  intended_uses: ''
+  license: unknown
+  modality: image, text, video; text
+  model_card: none
+  monitoring: unknown
+  name: Reka Flash
+  nationality: USA
   organization: Reka
+  prohibited_uses: ''
+  quality_control: ''
+  size: 21B parameters (dense)
+  training_emissions: unknown
+  training_hardware: unknown
+  training_time: unknown
+  type: model
+  url: https://reka.ai/reka-flash-an-efficient-and-capable-multimodal-language-model/
+- access: limited
+  analysis: Reka Core was evaluated against leading models such as OpenAIs GPT-4,
+    Claude-3 Opus, and Gemini Ultra on a variety of tasks and metrics including multimodal
+    and human evaluation conducted by a third party. It was found to be competitive
+    or even surpassing these models.
+  created_date: 2024-04-15
+  dependencies: []
   description: Reka Core is a frontier-class multimodal language model comparable
     to industry leaders. It has powerful capabilities including multimodal understanding
     (including images, videos, and audio), superb reasoning abilities, code generation,
     and multilinguality with proficiency in 32 languages.
-  created_date: 2024-04-15
-  url: https://www.reka.ai/news/reka-core-our-frontier-class-multimodal-language-model
-  model_card: none
-  modality: audio, image, text, video; text
-  analysis: Reka Core was evaluated against leading models such as OpenAIs GPT-4,
-    Claude-3 Opus, and Gemini Ultra on a variety of tasks and metrics including
-    multimodal and human evaluation conducted by a third party. It was found to
-    be competitive or even surpassing these models.
-  size: unknown
-  dependencies: []
-  training_emissions: unknown
-  training_time: few months
-  training_hardware: thousands of GPUs
-  quality_control: ''
-  access: limited
-  license: unknown
+  feedback: unknown
   intended_uses: Reka Core can be used in e-commerce, social media, digital content
     and video games, healthcare, robotics, and other industries for tasks that require
     multimodal understanding, coding, complex reasoning, and more.
-  prohibited_uses: unknown
+  license: unknown
+  modality: audio, image, text, video; text
+  model_card: none
   monitoring: unknown
-  feedback: unknown
+  name: Reka Core
+  nationality: USA
+  organization: Reka
+  prohibited_uses: unknown
+  quality_control: ''
+  size: unknown
+  training_emissions: unknown
+  training_hardware: thousands of GPUs
+  training_time: few months
+  type: model
+  url: https://www.reka.ai/news/reka-core-our-frontier-class-multimodal-language-model

@@ -1,170 +1,183 @@
----
-- type: model
-  name: Nous Hermes 2
-  organization: Nous Research
-  description: Nous Hermes 2 Mixtral 8x7B DPO is the new flagship Nous Research
-    model trained over the Mixtral 8x7B MoE LLM.
-  created_date: 2024-01-10
-  url: https://huggingface.co/NousResearch/Nous-Hermes-2-Mixtral-8x7B-DPO
-  model_card: https://huggingface.co/NousResearch/Nous-Hermes-2-Mixtral-8x7B-DPO
-  modality: text; code, text
+- access: open
   analysis: Evaluated across standard benchmarks and generally performs better than
     Mixtral, which it was fine-tuned on.
-  size: 7B parameters (dense)
-  dependencies: [Mixtral]
-  training_emissions: unknown
-  training_time: unknown
-  training_hardware: unknown
-  quality_control: unknown
-  access: open
-  license: Apache 2.0
-  intended_uses: ''
-  prohibited_uses: ''
-  monitoring: unknown
+  created_date: 2024-01-10
+  dependencies:
+  - Mixtral
+  description: "Nous Hermes 2 Mixtral 8x7B DPO is the new flagship Nous Research model\
+    \ trained over the\_Mixtral 8x7B MoE LLM."
   feedback: https://huggingface.co/NousResearch/Nous-Hermes-2-Mixtral-8x7B-DPO/discussions
-- type: model
-  name: YaRN LLaMA 2
-  organization: Nous Research, EleutherAI, University of Geneva
-  description: YaRN LLaMA 2 is an adapted version of LLaMA 2 using the YaRN extension
-    method.
-  created_date: 2023-11-01
-  url: https://arxiv.org/pdf/2309.00071.pdf
-  model_card: https://huggingface.co/NousResearch/Yarn-Llama-2-70b-32k
-  modality: text; text
+  intended_uses: ''
+  license: Apache 2.0
+  modality: text; code, text
+  model_card: https://huggingface.co/NousResearch/Nous-Hermes-2-Mixtral-8x7B-DPO
+  monitoring: unknown
+  name: Nous Hermes 2
+  nationality: Canada
+  organization: Nous Research
+  prohibited_uses: ''
+  quality_control: unknown
+  size: 7B parameters (dense)
+  training_emissions: unknown
+  training_hardware: unknown
+  training_time: unknown
+  type: model
+  url: https://huggingface.co/NousResearch/Nous-Hermes-2-Mixtral-8x7B-DPO
+- access: open
   analysis: Evaluated across a variety of standard benchmarks in comparison to LLaMA
     2.
-  size: 70B parameters (dense)
-  dependencies: [LLaMA 2]
-  training_emissions: unknown
-  training_time: unknown
-  training_hardware: unknown
-  quality_control: ''
-  access: open
-  license: LLaMA 2
-  intended_uses: ''
-  prohibited_uses: ''
-  monitoring: unknown
+  created_date: 2023-11-01
+  dependencies:
+  - LLaMA 2
+  description: YaRN LLaMA 2 is an adapted version of LLaMA 2 using the YaRN extension
+    method.
   feedback: https://huggingface.co/NousResearch/Yarn-Llama-2-70b-32k/discussions
-- type: model
-  name: Nous Capybara
-  organization: Nous Research
+  intended_uses: ''
+  license: LLaMA 2
+  modality: text; text
+  model_card: https://huggingface.co/NousResearch/Yarn-Llama-2-70b-32k
+  monitoring: unknown
+  name: YaRN LLaMA 2
+  nationality: Canada/Switzerland
+  organization: Nous Research, EleutherAI, University of Geneva
+  prohibited_uses: ''
+  quality_control: ''
+  size: 70B parameters (dense)
+  training_emissions: unknown
+  training_hardware: unknown
+  training_time: unknown
+  type: model
+  url: https://arxiv.org/pdf/2309.00071.pdf
+- access: open
+  analysis: none
+  created_date: 2023-11-13
+  dependencies:
+  - Yi
   description: The Capybara series is a series of LLMs and the first Nous collection
     of models made by fine-tuning mostly on data created by Nous in-house.
-  created_date: 2023-11-13
-  url: https://huggingface.co/NousResearch/Nous-Capybara-34B
-  model_card: https://huggingface.co/NousResearch/Nous-Capybara-34B
-  modality: text; text
-  analysis: none
-  size: 34B parameters (dense)
-  dependencies: [Yi]
-  training_emissions: unknown
-  training_time: unknown
-  training_hardware: unknown
-  quality_control: ''
-  access: open
-  license: MIT
-  intended_uses: ''
-  prohibited_uses: ''
-  monitoring: unknown
   feedback: https://huggingface.co/NousResearch/Nous-Capybara-34B/discussions
-- type: model
-  name: YaRN Mistral
-  organization: Nous Research, EleutherAI, University of Geneva
+  intended_uses: ''
+  license: MIT
+  modality: text; text
+  model_card: https://huggingface.co/NousResearch/Nous-Capybara-34B
+  monitoring: unknown
+  name: Nous Capybara
+  nationality: Canada
+  organization: Nous Research
+  prohibited_uses: ''
+  quality_control: ''
+  size: 34B parameters (dense)
+  training_emissions: unknown
+  training_hardware: unknown
+  training_time: unknown
+  type: model
+  url: https://huggingface.co/NousResearch/Nous-Capybara-34B
+- access: open
+  analysis: Evaluated across a variety of standard benchmarks in comparison to Mistral.
+  created_date: 2023-11-01
+  dependencies:
+  - Mistral
   description: YaRN Mistral is an adapted version of Mistral using the YaRN extension
     method.
-  created_date: 2023-11-01
-  url: https://arxiv.org/pdf/2309.00071.pdf
-  model_card: https://huggingface.co/NousResearch/Yarn-Mistral-7b-128k
-  modality: text; text
-  analysis: Evaluated across a variety of standard benchmarks in comparison to Mistral.
-  size: 7B parameters (dense)
-  dependencies: [Mistral]
-  training_emissions: unknown
-  training_time: unknown
-  training_hardware: unknown
-  quality_control: ''
-  access: open
-  license: MIT
-  intended_uses: ''
-  prohibited_uses: ''
-  monitoring: unknown
   feedback: https://huggingface.co/NousResearch/Yarn-Mistral-7b-128k/discussions
-- type: model
-  name: OpenHermes 2.5 Mistral
-  organization:
-    explanation: developed as a personal project by Teknium, co-founder of Nous
-      Research
-    value: Nous Research
+  intended_uses: ''
+  license: MIT
+  modality: text; text
+  model_card: https://huggingface.co/NousResearch/Yarn-Mistral-7b-128k
+  monitoring: unknown
+  name: YaRN Mistral
+  nationality: Canada/Switzerland
+  organization: Nous Research, EleutherAI, University of Geneva
+  prohibited_uses: ''
+  quality_control: ''
+  size: 7B parameters (dense)
+  training_emissions: unknown
+  training_hardware: unknown
+  training_time: unknown
+  type: model
+  url: https://arxiv.org/pdf/2309.00071.pdf
+- access: open
+  analysis: Evaluated on common LLM benchmarks in comparison to other Mistral derivatives.
+  created_date: 2023-11-03
+  dependencies:
+  - Mistral
   description: OpenHermes 2.5 Mistral 7B is a state of the art Mistral Fine-tune,
     a continuation of OpenHermes 2 model, trained on additional code datasets.
-  created_date: 2023-11-03
-  url: https://huggingface.co/teknium/OpenHermes-2.5-Mistral-7B
-  model_card: https://huggingface.co/teknium/OpenHermes-2.5-Mistral-7B
-  modality: text; text
-  analysis: Evaluated on common LLM benchmarks in comparison to other Mistral derivatives.
-  size: 7B parameters (dense)
-  dependencies: [Mistral]
-  training_emissions: unknown
-  training_time: unknown
-  training_hardware: unknown
-  quality_control: ''
-  access: open
-  license: Apache 2.0
-  intended_uses: ''
-  prohibited_uses: ''
-  monitoring: unknown
   feedback: https://huggingface.co/teknium/OpenHermes-2.5-Mistral-7B/discussions
-- type: model
-  name: Hermes 2 Pro-Mistral
-  organization: Nous
-  description: Hermes 2 Pro on Mistral 7B is an upgraded, retrained version of Nous
-    Hermes 2. This improved version excels at function calling, JSON Structured
-    Outputs, and several other areas, scoring positively on various benchmarks.
-  created_date: 2024-03-10
-  url: https://huggingface.co/NousResearch/Hermes-2-Pro-Mistral-7B
-  model_card: https://huggingface.co/NousResearch/Hermes-2-Pro-Mistral-7B
+  intended_uses: ''
+  license: Apache 2.0
   modality: text; text
+  model_card: https://huggingface.co/teknium/OpenHermes-2.5-Mistral-7B
+  monitoring: unknown
+  name: OpenHermes 2.5 Mistral
+  nationality: Canada
+  organization:
+    explanation: developed as a personal project by Teknium, co-founder of Nous Research
+    value: Nous Research
+  prohibited_uses: ''
+  quality_control: ''
+  size: 7B parameters (dense)
+  training_emissions: unknown
+  training_hardware: unknown
+  training_time: unknown
+  type: model
+  url: https://huggingface.co/teknium/OpenHermes-2.5-Mistral-7B
+- access: open
   analysis: The model was examined across a range of benchmarks including GPT4All,
     AGIEval, BigBench, TruthfulQA and in-house evaluations of function calling and
     JSON mode.
-  size: 7B parameters (dense)
-  dependencies: [Mistral, OpenHermes 2.5 Dataset, Nous Hermes 2]
-  training_emissions: unknown
-  training_time: unknown
-  training_hardware: unknown
+  created_date: 2024-03-10
+  dependencies:
+  - Mistral
+  - OpenHermes 2.5 Dataset
+  - Nous Hermes 2
+  description: Hermes 2 Pro on Mistral 7B is an upgraded, retrained version of Nous
+    Hermes 2. This improved version excels at function calling, JSON Structured Outputs,
+    and several other areas, scoring positively on various benchmarks.
+  feedback: https://huggingface.co/NousResearch/Hermes-2-Pro-Mistral-7B/discussions
+  intended_uses: The model is intended for general task and conversation capabilities,
+    function calling, and JSON structured outputs.
+  license: Apache 2.0
+  modality: text; text
+  model_card: https://huggingface.co/NousResearch/Hermes-2-Pro-Mistral-7B
+  monitoring: unknown
+  name: Hermes 2 Pro-Mistral
+  nationality: unknown
+  organization: Nous
+  prohibited_uses: unknown
   quality_control: The model was evaluated across multiple tasks, displaying notable
     scores in GPT4All, AGIEval, BigBench, and TruthfulQA. It also has a high score
     on function calling and JSON mode, indicating the robustness of its capabilities.
-  access: open
-  license: Apache 2.0
-  intended_uses: The model is intended for general task and conversation capabilities,
-    function calling, and JSON structured outputs.
-  prohibited_uses: unknown
-  monitoring: unknown
-  feedback: https://huggingface.co/NousResearch/Hermes-2-Pro-Mistral-7B/discussions
-- type: model
-  name: Genstruct
-  organization: Nous
-  description: Genstruct is an instruction-generation model, designed to create
-    valid instructions given a raw text corpus. This enables the creation of new,
-    partially synthetic instruction finetuning datasets from any raw-text corpus.
-    This work was inspired by Ada-Instruct and the model is also trained to generate
-    questions involving complex scenarios that require detailed reasoning.
-  created_date: 2024-03-07
-  url: https://huggingface.co/NousResearch/Genstruct-7B
-  model_card: https://huggingface.co/NousResearch/Genstruct-7B
-  modality: text; text
-  analysis: unknown
   size: 7B parameters (dense)
-  dependencies: []
   training_emissions: unknown
-  training_time: unknown
   training_hardware: unknown
-  quality_control: unknown
-  access: open
-  license: Apache 2.0
+  training_time: unknown
+  type: model
+  url: https://huggingface.co/NousResearch/Hermes-2-Pro-Mistral-7B
+- access: open
+  analysis: unknown
+  created_date: 2024-03-07
+  dependencies: []
+  description: Genstruct is an instruction-generation model, designed to create valid
+    instructions given a raw text corpus. This enables the creation of new, partially
+    synthetic instruction finetuning datasets from any raw-text corpus. This work
+    was inspired by Ada-Instruct and the model is also trained to generate questions
+    involving complex scenarios that require detailed reasoning.
+  feedback: https://huggingface.co/NousResearch/Genstruct-7B/discussions
   intended_uses: The model is intended for instruction-generation, creating questions
     involving complex scenarios and generating reasoning steps for those questions.
-  prohibited_uses: unknown
+  license: Apache 2.0
+  modality: text; text
+  model_card: https://huggingface.co/NousResearch/Genstruct-7B
   monitoring: unknown
-  feedback: https://huggingface.co/NousResearch/Genstruct-7B/discussions
+  name: Genstruct
+  nationality: unknown
+  organization: Nous
+  prohibited_uses: unknown
+  quality_control: unknown
+  size: 7B parameters (dense)
+  training_emissions: unknown
+  training_hardware: unknown
+  training_time: unknown
+  type: model
+  url: https://huggingface.co/NousResearch/Genstruct-7B

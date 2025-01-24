@@ -1,25 +1,28 @@
----
-- type: model
-  name: Ocean-1
-  organization: Cresta
+- access: closed
+  analysis: Outperforms GPT-4 in common sense and reasoning tasks on the basis of
+    both efficiency and accuracy.
+  created_date: 2023-06-20
+  dependencies:
+  - GPT-4
+  - Claude
+  - Falcon-40B
   description: Ocean-1 is the culmination of Cresta's experience in deploying generative
     AI systems for large enterprises and signifies their latest milestone in advancing
     the cutting edge AI technology for customer facing conversations.
-  created_date: 2023-06-20
-  url: https://cresta.com/blog/introducing-ocean-1-worlds-first-contact-center-foundation-model/
-  model_card: none
-  modality: text; text
-  analysis: Outperforms GPT-4 in common sense and reasoning tasks on the basis of
-    both efficiency and accuracy.
-  size: 7B parameters (dense)
-  dependencies: [GPT-4, Claude, Falcon-40B]
-  training_emissions: unknown
-  training_time: unknown
-  training_hardware: unknown
-  quality_control: ''
-  access: closed
-  license: unknown
-  intended_uses: Acting as a contact center chatbot agent.
-  prohibited_uses: none
-  monitoring: unknown
   feedback: none
+  intended_uses: Acting as a contact center chatbot agent.
+  license: unknown
+  modality: text; text
+  model_card: none
+  monitoring: unknown
+  name: Ocean-1
+  nationality: USA
+  organization: Cresta
+  prohibited_uses: none
+  quality_control: ''
+  size: 7B parameters (dense)
+  training_emissions: unknown
+  training_hardware: unknown
+  training_time: unknown
+  type: model
+  url: https://cresta.com/blog/introducing-ocean-1-worlds-first-contact-center-foundation-model/

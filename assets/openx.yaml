@@ -1,179 +1,186 @@
----
-- type: dataset
-  name: Open X-Embodiment dataset
-  organization: Open X-Embodiment
-  description: The Open X-Embodiment dataset is a dataset of robot movements assembled
-    from 22 different robots collected through a collaboration between 21 institutions,
-    demonstrating 527 skills (160266 tasks)
-  created_date: 2023-10-03
-  url: https://robotics-transformer-x.github.io/
-  datasheet: All data can be found at https://robotics-transformer-x.github.io/.
-  modality: robot trajectories
-  size: 160K tasks
-  sample: []
+- access: open
   analysis: Analyzed on breakdown of types of robot trajectory in dataset, and overall
     coverage.
+  created_date: 2023-10-03
+  datasheet: All data can be found at https://robotics-transformer-x.github.io/.
   dependencies:
     explanation: data compiled from unknown datasets in over 21 different institutions,
       list of institutions can be found at https://robotics-transformer-x.github.io/paper.pdf
     value: []
-  included: N/A
+  description: The Open X-Embodiment dataset is a dataset of robot movements assembled
+    from 22 different robots collected through a collaboration between 21 institutions,
+    demonstrating 527 skills (160266 tasks)
   excluded: N/A
-  quality_control: unknown
-  access: open
-  license: Apache 2.0
-  intended_uses: Further research on X-embodiment models.
-  prohibited_uses: none
-  monitoring: unknown
   feedback: none
-
-- type: model
-  name: RT-1-X
-  organization: Open X-Embodiment, Google Deepmind
-  description: RT-1-X is a model trained on the Open X-Embodiment dataset that exhibits
-    better generalization and new capabilities compared to its predecessor RT-1,
-    an efficient Transformer-based architecture designed for robotic control.
-  created_date: 2023-10-03
+  included: N/A
+  intended_uses: Further research on X-embodiment models.
+  license: Apache 2.0
+  modality: robot trajectories
+  monitoring: unknown
+  name: Open X-Embodiment dataset
+  nationality: International
+  organization: Open X-Embodiment
+  prohibited_uses: none
+  quality_control: unknown
+  sample: []
+  size: 160K tasks
+  type: dataset
   url: https://robotics-transformer-x.github.io/
-  model_card: none
-  modality: images, text; robot trajectories
+- access: open
   analysis: Evaluated on in-distribution robotics skills, and outperforms its predecessor
     RT-1 by 50% in emergent skill evaluations.
-  size: 35M parameters (dense)
-  dependencies: [Open X-Embodiment dataset, ImageNet EfficientNet, USE]
-  training_emissions: unknown
-  training_time: unknown
-  training_hardware: unknown
-  quality_control: unknown
-  access: open
-  license: Apache 2.0
-  intended_uses: Further research on X-embodiment models.
-  prohibited_uses: none
-  monitoring: unknown
-  feedback: none
-
-- type: model
-  name: RT-2-X
-  organization: Open X-Embodiment, Google Deepmind
-  description: RT-2-X is a model trained on the Open X-Embodiment dataset that exhibits
-    better generalization and new capabilities compared to its predecessor RT-2,
-    a large vision-language model co-fine-tuned to output robot actions as natural
-    language tokens.
   created_date: 2023-10-03
-  url: https://robotics-transformer-x.github.io/
+  dependencies:
+  - Open X-Embodiment dataset
+  - ImageNet EfficientNet
+  - USE
+  description: RT-1-X is a model trained on the Open X-Embodiment dataset that exhibits
+    better generalization and new capabilities compared to its predecessor RT-1, an
+    efficient Transformer-based architecture designed for robotic control.
+  feedback: none
+  intended_uses: Further research on X-embodiment models.
+  license: Apache 2.0
+  modality: images, text; robot trajectories
   model_card: none
-  modality: images, text, robot trajectories; robot trajectories
+  monitoring: unknown
+  name: RT-1-X
+  nationality: unknown
+  organization: Open X-Embodiment, Google Deepmind
+  prohibited_uses: none
+  quality_control: unknown
+  size: 35M parameters (dense)
+  training_emissions: unknown
+  training_hardware: unknown
+  training_time: unknown
+  type: model
+  url: https://robotics-transformer-x.github.io/
+- access: closed
   analysis: Evaluated on in-distribution robotics skills, and outperforms its predecessor
     RT-2 by 3x in emergent skill evaluations.
-  size: 55B parameters (dense)
-  dependencies: [Open X-Embodiment dataset, ViT (unknown size), UL2]
-  training_emissions: unknown
-  training_time: unknown
-  training_hardware: unknown
-  quality_control: unknown
-  access: closed
-  license: unknown
-  intended_uses: Further research on X-embodiment models.
-  prohibited_uses: none
-  monitoring: unknown
+  created_date: 2023-10-03
+  dependencies:
+  - Open X-Embodiment dataset
+  - ViT (unknown size)
+  - UL2
+  description: RT-2-X is a model trained on the Open X-Embodiment dataset that exhibits
+    better generalization and new capabilities compared to its predecessor RT-2, a
+    large vision-language model co-fine-tuned to output robot actions as natural language
+    tokens.
   feedback: none
-- type: model
-  name: GPT-4o
-  organization: OpenAI
-  description: GPT-4o is an autoregressive omni model that accepts a combination
-    of text, audio, image, and video as input and produces any combination of text,
-    audio, and image outputs. It is trained end-to-end across text, vision, and
-    audio, focusing on multimodal capabilities.
-  created_date: 2024-08-08
-  url: https://arxiv.org/pdf/2410.21276
-  model_card: unknown
-  modality:
-    explanation: '...accepts as input any combination of text, audio, image, and
-      video and generates any combination of text, audio, and image outputs.'
-    value: text, audio, image, video; text, audio, image
-  analysis: GPT-4o underwent evaluations that included the Preparedness Framework,
-    external red teaming, and third-party assessments to ensure safe and aligned
-    deployment. The evaluations focused on identifying and mitigating potential
-    risks across its capabilities, especially speech-to-speech functionality.
-  size: unknown
-  dependencies: [Shutterstock]
+  intended_uses: Further research on X-embodiment models.
+  license: unknown
+  modality: images, text, robot trajectories; robot trajectories
+  model_card: none
+  monitoring: unknown
+  name: RT-2-X
+  nationality: unknown
+  organization: Open X-Embodiment, Google Deepmind
+  prohibited_uses: none
+  quality_control: unknown
+  size: 55B parameters (dense)
   training_emissions: unknown
-  training_time: unknown
   training_hardware: unknown
-  quality_control: Quality and safety measures included prior risk assessments,
-    post-training mitigation, moderation tools, advanced data filtering, and external
-    red teaming efforts with experts to evaluate potential risks like bias, discrimination,
-    and information harms.
-  access:
+  training_time: unknown
+  type: model
+  url: https://robotics-transformer-x.github.io/
+- access:
     explanation: we are sharing the GPT-4o System Card, which includes our Preparedness
       Framework evaluations.
     value: limited
-  license: unknown
+  analysis: GPT-4o underwent evaluations that included the Preparedness Framework,
+    external red teaming, and third-party assessments to ensure safe and aligned deployment.
+    The evaluations focused on identifying and mitigating potential risks across its
+    capabilities, especially speech-to-speech functionality.
+  created_date: 2024-08-08
+  dependencies:
+  - Shutterstock
+  description: GPT-4o is an autoregressive omni model that accepts a combination of
+    text, audio, image, and video as input and produces any combination of text, audio,
+    and image outputs. It is trained end-to-end across text, vision, and audio, focusing
+    on multimodal capabilities.
+  feedback: unknown
   intended_uses: Use in multimodal applications requiring understanding and generation
     of combinations of text, audio, and image outputs, better performance on non-English
     languages, and enhanced vision and audio understanding.
+  license: unknown
+  modality:
+    explanation: '...accepts as input any combination of text, audio, image, and video
+      and generates any combination of text, audio, and image outputs.'
+    value: text, audio, image, video; text, audio, image
+  model_card: unknown
+  monitoring: Continuous monitoring and enforcement, providing moderation tools and
+    transparency reports, and gathering feedback from users.
+  name: GPT-4o
+  nationality: USA
+  organization: OpenAI
   prohibited_uses: Uses that could involve bias, discrimination, harmful content,
     or violation of usage policies.
-  monitoring: Continuous monitoring and enforcement, providing moderation tools
-    and transparency reports, and gathering feedback from users.
-  feedback: unknown
-
-- type: model
-  name: o1
-  organization: OpenAI
+  quality_control: Quality and safety measures included prior risk assessments, post-training
+    mitigation, moderation tools, advanced data filtering, and external red teaming
+    efforts with experts to evaluate potential risks like bias, discrimination, and
+    information harms.
+  size: unknown
+  training_emissions: unknown
+  training_hardware: unknown
+  training_time: unknown
+  type: model
+  url: https://arxiv.org/pdf/2410.21276
+- access: limited
+  analysis: Evaluated on challenging benchmark tasks in physics, chemistry, and biology.
+    In a qualifying exam for the International Mathematics Olympiad (IMO), GPT-4o
+    correctly solved only 13% of problems, while the reasoning model o1 scored 83%.
+  created_date: 2024-09-12
+  dependencies: []
   description: OpenAI o1 is a new series of AI models designed to spend more time
     thinking before they respond. They can reason through complex tasks and solve
     harder problems than previous models in science, coding, and math.
-  created_date: 2024-09-12
-  url: https://openai.com/o1/
-  model_card: unknown
-  modality: text; text
-  analysis: Evaluated on challenging benchmark tasks in physics, chemistry, and
-    biology. In a qualifying exam for the International Mathematics Olympiad (IMO),
-    GPT-4o correctly solved only 13% of problems, while the reasoning model o1 scored
-    83%.
-  size: unknown
-  dependencies: []
-  training_emissions: unknown
-  training_time: unknown
-  training_hardware: unknown
-  quality_control: To match the new capabilities of these models, OpenAI has bolstered
-    safety work, internal governance, and federal government collaboration. This
-    includes rigorous testing and evaluations using their Preparedness Framework⁠(opens
-    in a new window), best-in-class red teaming, and board-level review processes,
-    including by OpenAI's Safety & Security Committee.
-  access: limited
-  license: unknown
-  intended_uses: These enhanced reasoning capabilities may be particularly useful
-    if you’re tackling complex problems in science, coding, math, and similar fields.
-    For example, o1 can be used by healthcare researchers to annotate cell sequencing
-    data, by physicists to generate complicated mathematical formulas needed for
-    quantum optics, and by developers in all fields to build and execute multi-step
-    workflows.
-  prohibited_uses: ''
-  monitoring: ''
   feedback: unknown
-
-- type: model
-  name: o3
-  organization: OpenAI
-  description: OpenAI o1 is, as of release, the latest model in OpenAI's o-model
-    reasoning series.
-  created_date: 2024-10-20
-  url: https://x.com/OpenAI/status/1870186518230511844
-  model_card: unknown
+  intended_uses: "These enhanced reasoning capabilities may be particularly useful\
+    \ if you\u2019re tackling complex problems in science, coding, math, and similar\
+    \ fields. For example, o1 can be used by healthcare researchers to annotate cell\
+    \ sequencing data, by physicists to generate complicated mathematical formulas\
+    \ needed for quantum optics, and by developers in all fields to build and execute\
+    \ multi-step workflows."
+  license: unknown
   modality: text; text
+  model_card: unknown
+  monitoring: ''
+  name: o1
+  nationality: USA
+  organization: OpenAI
+  prohibited_uses: ''
+  quality_control: "To match the new capabilities of these models, OpenAI has bolstered\
+    \ safety work, internal governance, and federal government collaboration. This\
+    \ includes rigorous testing and evaluations using their Preparedness Framework\u2060\
+    (opens in a new window), best-in-class red teaming, and board-level review processes,\
+    \ including by OpenAI's Safety & Security Committee."
+  size: unknown
+  training_emissions: unknown
+  training_hardware: unknown
+  training_time: unknown
+  type: model
+  url: https://openai.com/o1/
+- access: limited
   analysis: Makes significance process on the ARC-AGI evaluation framework compared
     to all existing models.
-  size: unknown
+  created_date: 2024-10-20
   dependencies: []
-  training_emissions: unknown
-  training_time: unknown
-  training_hardware: unknown
-  quality_control: ''
-  access: limited
-  license: unknown
-  intended_uses: ''
-  prohibited_uses: ''
-  monitoring: ''
+  description: OpenAI o1 is, as of release, the latest model in OpenAI's o-model reasoning
+    series.
   feedback: unknown
+  intended_uses: ''
+  license: unknown
+  modality: text; text
+  model_card: unknown
+  monitoring: ''
+  name: o3
+  nationality: USA
+  organization: OpenAI
+  prohibited_uses: ''
+  quality_control: ''
+  size: unknown
+  training_emissions: unknown
+  training_hardware: unknown
+  training_time: unknown
+  type: model
+  url: https://x.com/OpenAI/status/1870186518230511844

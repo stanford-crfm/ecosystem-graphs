@@ -1,46 +1,49 @@
----
-- type: model
-  name: Pegasus-1
-  organization: Twelve Labs
-  description: Pegasus-1 is a video-language foundation model.
-  created_date: 2023-10-23
-  url: https://app.twelvelabs.io/blog/introducing-pegasus-1
-  model_card: none
-  modality: video; text
+- access: open
   analysis: Evaluated in comparison to SOTA video-to-language models.
-  size: 80B parameters (dense)
-  dependencies: [MSR-VTT, Video-ChatGPT Video Descriptions Dataset]
-  training_emissions: unknown
-  training_time: unknown
-  training_hardware: unknown
-  quality_control: Data selected and cleaned to eliminate toxic and biased content.
-  access: open
-  license: unknown
-  intended_uses: ''
-  prohibited_uses: ''
-  monitoring: none
+  created_date: 2023-10-23
+  dependencies:
+  - MSR-VTT
+  - Video-ChatGPT Video Descriptions Dataset
+  description: Pegasus-1 is a video-language foundation model.
   feedback: none
-- type: model
-  name: Marengo 2.6
-  organization: Twelve Labs
-  description: Marengo 2.6 is a new state-of-the-art (SOTA) multimodal foundation
-    model capable of performing any-to-any search tasks, including Text-To-Video,
-    Text-To-Image, Text-To-Audio, Audio-To-Video, Image-To-Video, and more. 
-  created_date: 2024-03-01
-  url: https://www.twelvelabs.io/blog/introducing-marengo-2-6
+  intended_uses: ''
+  license: unknown
+  modality: video; text
   model_card: none
-  modality: audio, image, text; audio, image, video
+  monitoring: none
+  name: Pegasus-1
+  nationality: USA
+  organization: Twelve Labs
+  prohibited_uses: ''
+  quality_control: Data selected and cleaned to eliminate toxic and biased content.
+  size: 80B parameters (dense)
+  training_emissions: unknown
+  training_hardware: unknown
+  training_time: unknown
+  type: model
+  url: https://app.twelvelabs.io/blog/introducing-pegasus-1
+- access: open
   analysis: Marengo-2.6 sets new benchmarks in zero-shot text-to-video, text-to-image,
     and text-to-audio retrieval tasks with a single embedding model.
-  size: unknown
+  created_date: 2024-03-01
   dependencies: []
-  training_emissions: unknown
-  training_time: unknown
-  training_hardware: unknown
-  quality_control: ''
-  access: open
-  license: unknown
-  intended_uses: ''
-  prohibited_uses: ''
-  monitoring: ''
+  description: "Marengo 2.6 is a new state-of-the-art (SOTA) multimodal foundation\
+    \ model capable of performing any-to-any search tasks, including Text-To-Video,\
+    \ Text-To-Image, Text-To-Audio, Audio-To-Video, Image-To-Video, and more.\_"
   feedback: none
+  intended_uses: ''
+  license: unknown
+  modality: audio, image, text; audio, image, video
+  model_card: none
+  monitoring: ''
+  name: Marengo 2.6
+  nationality: USA
+  organization: Twelve Labs
+  prohibited_uses: ''
+  quality_control: ''
+  size: unknown
+  training_emissions: unknown
+  training_hardware: unknown
+  training_time: unknown
+  type: model
+  url: https://www.twelvelabs.io/blog/introducing-marengo-2-6

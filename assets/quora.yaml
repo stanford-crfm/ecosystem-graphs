@@ -1,29 +1,29 @@
----
-- type: application
-  name: Poe
-  organization: Quora
+- access: limited
+  adaptation: ''
+  created_date: 2023-02-03
+  dependencies:
+  - ChatGPT API
+  - GPT-4 API
+  - Claude API
+  - Dragonfly API
+  - Sage API
   description: Poe lets people ask questions, get instant answers, and have back-and-forth
     conversations with several AI-powered bots. It is initially available on iOS,
     but we will be adding support for all major platforms in the next few months,
     along with more bots.
-  created_date: 2023-02-03
-  url: https://quorablog.quora.com/Poe-1
-  dependencies:
-    - ChatGPT API
-    - GPT-4 API
-    - Claude API
-    - Dragonfly API
-    - Sage API
-  adaptation: ''
-  output_space: ''
-  quality_control: ''
-  access: limited
-  license: none
-  terms_of_service: https://poe.com/tos
-  intended_uses: ''
-  prohibited_uses: ''
-  monitoring: ''
-  feedback: ''
-  monthly_active_users: ''
-  user_distribution: ''
   failures: ''
+  feedback: ''
+  intended_uses: ''
+  license: none
+  monitoring: ''
+  monthly_active_users: ''
+  name: Poe
+  nationality: USA
+  organization: Quora
+  output_space: ''
+  prohibited_uses: ''
+  quality_control: ''
+  terms_of_service: https://poe.com/tos
+  type: application
+  url: https://quorablog.quora.com/Poe-1
+  user_distribution: ''

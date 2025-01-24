@@ -1,0 +1,35 @@
+- access: open
+  analysis: "The models\u2019 performance on downstream tasks was evaluated by linear\
+    \ probing. The models follow a similar saturating log-log scaling law to textual\
+    \ models, their performance improves with the increase in model size up to the\
+    \ saturation point of parameters."
+  created_date: 2024-09-08
+  dependencies:
+  - DESI Legacy Survey DR8
+  description: AstroPT is an autoregressive pretrained transformer developed with
+    astronomical use-cases in mind. The models have been pretrained on 8.6 million
+    512x512 pixel grz-band galaxy postage stamp observations from the DESI Legacy
+    Survey DR8. They have created a range of models with varying complexity, ranging
+    from 1 million to 2.1 billion parameters.
+  feedback: Any problem with the model can be reported to Michael J. Smith at mike@mjjsmith.com.
+  intended_uses: The models are intended for astronomical use-cases, particularly
+    in handling and interpreting large observation data from astronomical sources.
+  license: MIT
+  modality: image; image
+  model_card: unknown
+  monitoring: Unknown
+  name: AstroPT
+  nationality: unknown
+  organization: "Aspia Space, Instituto de Astrof\xEDsica de Canarias (IAC), UniverseTBD,\
+    \ Astrophysics Research Institute, Liverpool John Moores University, Departamento\
+    \ Astrof\xEDsica, Universidad de la Laguna, Observatoire de Paris, LERMA, PSL\
+    \ University, and Universit\xB4e Paris-Cit\xB4e."
+  prohibited_uses: Unknown
+  quality_control: "The models\u2019 performances were evaluated on downstream tasks\
+    \ as measured by linear probing."
+  size: 2.1B parameters
+  training_emissions: Unknown
+  training_hardware: Unknown
+  training_time: Unknown
+  type: model
+  url: https://arxiv.org/pdf/2405.14930v1

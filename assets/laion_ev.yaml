@@ -1,0 +1,39 @@
+- access: open
+  analysis: Re-LAION-5B aims to fix the issues as reported by Stanford Internet Observatory
+    for the original LAION-5B. It is available for download in two versions, research
+    and research-safe. In total, 2236 links that potentially led to inappropriate
+    content were removed.
+  created_date: 2024-08-30
+  dependencies:
+  - LAION-5B
+  description: Re-LAION-5B is an updated version of LAION-5B, the first web-scale,
+    text-link to images pair dataset to be thoroughly cleaned of known links to suspected
+    CSAM. It is an open dataset for fully reproducible research on language-vision
+    learning. This model was developed in response to issues identified by the Stanford
+    Internet Observatory in December 2023. The updates were made in collaboration
+    with multiple organizations like the Internet Watch Foundation (IWF), the Canadian
+    Center for Child Protection (C3P), and Stanford Internet Observatory.
+  feedback: Problems with the dataset should be reported to the LAION organization.
+    They have open lines for communication with their partners and the broader research
+    community.
+  intended_uses: Re-LAION-5B is designed for research on language-vision learning.
+    It can also be used by third parties to clean existing derivatives of LAION-5B
+    by generating diffs and removing all matched content from their versions.
+  license: Apache 2.0
+  modality: text; image
+  model_card: unknown
+  monitoring: unknown
+  name: Re-LAION-5B
+  nationality: Germany
+  organization: LAION e.V.
+  prohibited_uses: The dataset should not be utilized for purposes that breach legal
+    parameters or ethical standards, such as dealing with illegal content.
+  quality_control: The model utilized lists of link and image hashes provided by partner
+    organizations. These were used to remove inappropriate links from the original
+    LAION-5B dataset to create Re-LAION-5B.
+  size: 5.5B (text, image) pairs
+  training_emissions: Unknown
+  training_hardware: Unknown
+  training_time: Unknown
+  type: model
+  url: https://laion

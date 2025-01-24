@@ -76,6 +76,8 @@ model:
       Code, Code (Python), Video, Image).
   - name: analysis
     description: Description of any analysis that was done on the model.
+  - name: nationality
+    description: Description of which nationality the model is affiliated with.
   - name: size
     description: Size (and shape) of the model (e.g., number of parameters in the
       model)

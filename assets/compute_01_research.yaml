@@ -1,0 +1,29 @@
+- access:
+    explanation: to ensure AGI will be open-source, transparent, and accessible
+    value: open
+  analysis: ''
+  created_date: 2024-10-11
+  dependencies:
+  - DeepMind's Distributed Low-Communication (DiLoCo)
+  description: INTELLECT-1 is a decentralized training model with 10 billion parameters,
+    designed to be open-source and transparent, allowing global contributors to participate
+    in its computation.
+  feedback: unknown
+  intended_uses: Training globally distributed AI models in decentralized environments.
+  license: Apache 2.0
+  modality: text; text
+  model_card: unknown
+  monitoring: unknown
+  name: INTELLECT-1
+  nationality: USA
+  organization: PrimeIntellect
+  prohibited_uses: ''
+  quality_control: ''
+  size:
+    explanation: a 10-billion-parameter model
+    value: 10B parameters
+  training_emissions: unknown
+  training_hardware: unknown
+  training_time: unknown
+  type: model
+  url: https://www.primeintellect.ai/blog/intellect-1

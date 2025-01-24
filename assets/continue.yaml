@@ -1,29 +1,29 @@
----
-- type: application
-  name: Continue
-  organization: Continue Dev, Inc.
-  description: Continue is the open-source autopilot for software development. It
-    is an IDE extension that brings the power of ChatGPT to VS Code and JetBrains.
-    It’s built to be deeply customizable and continuously learn from development
-    data.
-  created_date: 2023-07-26
-  url: https://continue.dev
-  dependencies:
-    - GPT-4 API
-    - Code Llama
-    - Claude API
-    - WizardCoder
-    - PaLM API
+- access: open
   adaptation: ''
-  output_space: ''
-  quality_control: ''
-  access: open
-  license: Apache 2.0
-  terms_of_service: https://github.com/continuedev/continue/blob/main/LICENSE
-  intended_uses: ''
-  prohibited_uses: ''
-  monitoring: ''
-  feedback: ''
-  monthly_active_users: ''
-  user_distribution: ''
+  created_date: 2023-07-26
+  dependencies:
+  - GPT-4 API
+  - Code Llama
+  - Claude API
+  - WizardCoder
+  - PaLM API
+  description: "Continue is the open-source autopilot for software development. It\
+    \ is an IDE extension that brings the power of ChatGPT to VS Code and JetBrains.\
+    \ It\u2019s built to be deeply customizable and continuously learn from development\
+    \ data."
   failures: ''
+  feedback: ''
+  intended_uses: ''
+  license: Apache 2.0
+  monitoring: ''
+  monthly_active_users: ''
+  name: Continue
+  nationality: USA
+  organization: Continue Dev, Inc.
+  output_space: ''
+  prohibited_uses: ''
+  quality_control: ''
+  terms_of_service: https://github.com/continuedev/continue/blob/main/LICENSE
+  type: application
+  url: https://continue.dev
+  user_distribution: ''

@@ -1,23 +1,23 @@
----
-- type: model
-  name: A.X
-  organization: SK Telecom
+- access: closed
+  analysis: none
+  created_date: 2023-09-26
+  dependencies: []
   description: A.X is SK Telecom's proprietary LLM, which has been trained on the
     Korean language.
-  created_date: 2023-09-26
-  url: https://www.sktelecom.com/en/press/press_detail.do?idx=1582
-  model_card: none
-  modality: text; text
-  analysis: none
-  size: 39B parameters
-  dependencies: []
-  training_emissions: unknown
-  training_time: unknown
-  training_hardware: unknown
-  quality_control: ''
-  access: closed
-  license: unknown
-  intended_uses: ''
-  prohibited_uses: ''
-  monitoring: ''
   feedback: none
+  intended_uses: ''
+  license: unknown
+  modality: text; text
+  model_card: none
+  monitoring: ''
+  name: A.X
+  nationality: South Korea
+  organization: SK Telecom
+  prohibited_uses: ''
+  quality_control: ''
+  size: 39B parameters
+  training_emissions: unknown
+  training_hardware: unknown
+  training_time: unknown
+  type: model
+  url: https://www.sktelecom.com/en/press/press_detail.do?idx=1582

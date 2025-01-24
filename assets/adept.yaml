@@ -1,100 +1,103 @@
----
-- type: model
-  name: ACT-1
-  organization: Adept
-  description: ACT-1 (ACtion Transformer) is a large-scale transformer model designed
-    and trained specifically for taking actions on computers (use software tools
-    APIs and websites) in response to the user's natural language commands.
+- access: closed
+  analysis: ''
   created_date:
     explanation: The date the model was announced in the [[Adept blog post]](https://www.adept.ai/blog/act-1).
     value: 2022-09-14
-  url: https://www.adept.ai/blog/act-1
-  model_card: none
-  modality: text; text
-  analysis: ''
-  size: ''
   dependencies: []
-  training_emissions: unknown
-  training_time: unknown
-  training_hardware: unknown
-  quality_control: ''
-  access: closed
+  description: ACT-1 (ACtion Transformer) is a large-scale transformer model designed
+    and trained specifically for taking actions on computers (use software tools APIs
+    and websites) in response to the user's natural language commands.
+  feedback: ''
+  intended_uses: ''
   license: unknown
-  intended_uses: ''
-  prohibited_uses: ''
-  monitoring: ''
-  feedback: ''
-- type: model
-  name: Persimmon
-  organization: Adept
-  description: Persimmon is the most capable open-source, fully permissive model
-    with fewer than 10 billion parameters, as of its release date.
-  created_date: 2023-09-07
-  url: https://www.adept.ai/blog/persimmon-8b
-  model_card: ''
   modality: text; text
-  analysis: Evaluated in comparison to LLaMA 2 and MPT Instruct, and outperforms
-    both on standard benchmarks.
-  size: 8B parameters (dense)
-  dependencies: []
-  training_emissions: ''
-  training_time: ''
-  training_hardware: ''
-  quality_control: ''
-  access: open
-  license: Apache 2.0
-  intended_uses: ''
-  prohibited_uses: ''
+  model_card: none
   monitoring: ''
-  feedback: ''
-- type: model
-  name: Fuyu
+  name: ACT-1
+  nationality: USA
   organization: Adept
+  prohibited_uses: ''
+  quality_control: ''
+  size: ''
+  training_emissions: unknown
+  training_hardware: unknown
+  training_time: unknown
+  type: model
+  url: https://www.adept.ai/blog/act-1
+- access: open
+  analysis: Evaluated in comparison to LLaMA 2 and MPT Instruct, and outperforms both
+    on standard benchmarks.
+  created_date: 2023-09-07
+  dependencies: []
+  description: Persimmon is the most capable open-source, fully permissive model with
+    fewer than 10 billion parameters, as of its release date.
+  feedback: ''
+  intended_uses: ''
+  license: Apache 2.0
+  modality: text; text
+  model_card: ''
+  monitoring: ''
+  name: Persimmon
+  nationality: USA
+  organization: Adept
+  prohibited_uses: ''
+  quality_control: ''
+  size: 8B parameters (dense)
+  training_emissions: ''
+  training_hardware: ''
+  training_time: ''
+  type: model
+  url: https://www.adept.ai/blog/persimmon-8b
+- access: open
+  analysis: Evaluated on standard image understanding benchmarks.
+  created_date: 2023-10-17
+  dependencies: []
   description: Fuyu is a small version of the multimodal model that powers Adept's
     core product.
-  created_date: 2023-10-17
-  url: https://www.adept.ai/blog/fuyu-8b
-  model_card: https://huggingface.co/adept/fuyu-8b
-  modality: image, text; text
-  analysis: Evaluated on standard image understanding benchmarks.
-  size: 8B parameters (dense)
-  dependencies: []
-  training_emissions: unknown
-  training_time: unknown
-  training_hardware: unknown
-  quality_control: none
-  access: open
-  license: CC-BY-NC-4.0
-  intended_uses: The model is intended for research purposes only.
-  prohibited_uses: The model was not trained to be factual or true representations
-    of people or events, and therefore using the model to generate such content
-    is out-of-scope for the abilities of this model.
-  monitoring: ''
   feedback: https://huggingface.co/adept/fuyu-8b/discussions
-- type: model
-  name: Fuyu Heavy
+  intended_uses: The model is intended for research purposes only.
+  license: CC-BY-NC-4.0
+  modality: image, text; text
+  model_card: https://huggingface.co/adept/fuyu-8b
+  monitoring: ''
+  name: Fuyu
+  nationality: USA
   organization: Adept
+  prohibited_uses: The model was not trained to be factual or true representations
+    of people or events, and therefore using the model to generate such content is
+    out-of-scope for the abilities of this model.
+  quality_control: none
+  size: 8B parameters (dense)
+  training_emissions: unknown
+  training_hardware: unknown
+  training_time: unknown
+  type: model
+  url: https://www.adept.ai/blog/fuyu-8b
+- access: closed
+  analysis: Evaluated on the MMLU, GSM8K, MATH, and HumanEval benchmarks. According
+    to these benchmarks, Fuyu-Heavy is, as of release, the strongest multimodal model
+    trained outside of Google or OpenAI.
+  created_date: 2024-01-24
+  dependencies: []
   description: Fuyu Heavy is a new multimodal model designed specifically for digital
     agents.
-  created_date: 2024-01-24
-  url: https://www.adept.ai/blog/adept-fuyu-heavy
-  model_card: none
+  feedback: none
+  intended_uses: unknown
+  license: unknown
   modality: image, text; text
-  analysis: Evaluated on the MMLU, GSM8K, MATH, and HumanEval benchmarks. According
-    to these benchmarks, Fuyu-Heavy is, as of release, the strongest multimodal
-    model trained outside of Google or OpenAI.
+  model_card: none
+  monitoring: ''
+  name: Fuyu Heavy
+  nationality: USA
+  organization: Adept
+  prohibited_uses: none
+  quality_control: none
   size:
     explanation: The size of the model is 10-20 times smaller than GPT-4V and Gemini
       Ultra, as per announcement.
     value: unknown
-  dependencies: []
   training_emissions: unknown
-  training_time: unknown
   training_hardware: unknown
-  quality_control: none
-  access: closed
-  license: unknown
-  intended_uses: unknown
-  prohibited_uses: none
-  monitoring: ''
-  feedback: none
+  training_time: unknown
+  type: model
+  url: https://www.adept.ai/blog/adept-fuyu-heavy

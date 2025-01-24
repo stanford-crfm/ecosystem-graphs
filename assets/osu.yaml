@@ -1,24 +1,27 @@
----
-- type: model
-  name: MAmmoTH
-  organization: Ohio State University
-  description: MAmmoTH is a series of open-source large language models (LLMs) specifically
-    tailored for general math problem-solving.
-  created_date: 2023-09-11
-  url: https://arxiv.org/pdf/2309.05653.pdf
-  model_card: ''
-  modality: text; text
+- access: open
   analysis: Evaluated on MATH, a competition-level dataset, and achieves a 46% accuracy,
     higher than accuracy produced by GPT-4's chain of thought.
-  size: 34B parameters (dense)
-  dependencies: [MathInstruct, LLaMA, Code LLaMA]
-  training_emissions: ''
-  training_time: ''
-  training_hardware: ''
-  quality_control: ''
-  access: open
-  license: MIT
-  intended_uses: ''
-  prohibited_uses: ''
-  monitoring: ''
+  created_date: 2023-09-11
+  dependencies:
+  - MathInstruct
+  - LLaMA
+  - Code LLaMA
+  description: MAmmoTH is a series of open-source large language models (LLMs) specifically
+    tailored for general math problem-solving.
   feedback: ''
+  intended_uses: ''
+  license: MIT
+  modality: text; text
+  model_card: ''
+  monitoring: ''
+  name: MAmmoTH
+  nationality: USA
+  organization: Ohio State University
+  prohibited_uses: ''
+  quality_control: ''
+  size: 34B parameters (dense)
+  training_emissions: ''
+  training_hardware: ''
+  training_time: ''
+  type: model
+  url: https://arxiv.org/pdf/2309.05653.pdf

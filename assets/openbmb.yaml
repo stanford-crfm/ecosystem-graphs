@@ -1,97 +1,103 @@
----
-- type: model
-  name: CPM Bee
-  organization: OpenBMB
+- access: open
+  analysis: Evaluated on English and Chinese language benchmarks.
+  created_date: 2023-05-27
+  dependencies: []
   description: CPM-Bee is a fully open-source, commercially-usable Chinese-English
     bilingual base model with a capacity of ten billion parameters.
-  created_date: 2023-05-27
-  url: https://github.com/OpenBMB/CPM-Bee
-  model_card: https://huggingface.co/openbmb/cpm-bee-10b
-  modality: text; text
-  analysis: Evaluated on English and Chinese language benchmarks.
-  size: 10B parameters (dense)
-  dependencies: []
-  training_emissions: unknown
-  training_time: unknown
-  training_hardware: unknown
-  quality_control: ''
-  access: open
+  feedback: https://huggingface.co/openbmb/cpm-bee-10b/discussions
+  intended_uses: You can use the raw model for many NLP tasks like text generation
+    or fine-tune it to a downstream task.
   license:
     explanation: can be found at https://github.com/OpenBMB/CPM-Bee/blob/main/README_en.md#modellicense
     value: custom
-  intended_uses: You can use the raw model for many NLP tasks like text generation
-    or fine-tune it to a downstream task.
-  prohibited_uses: ''
+  modality: text; text
+  model_card: https://huggingface.co/openbmb/cpm-bee-10b
   monitoring: unknown
-  feedback: https://huggingface.co/openbmb/cpm-bee-10b/discussions
-- type: dataset
-  name: UltraFeedback
+  name: CPM Bee
+  nationality: International
   organization: OpenBMB
-  description: UltraFeedback is a large-scale, fine-grained, diverse preference
-    dataset, used for training powerful reward models and critic models.
-  created_date: 2023-09-26
-  url: https://github.com/OpenBMB/UltraFeedback
-  datasheet: https://huggingface.co/datasets/openbmb/UltraFeedback
-  modality: text
-  size: 256k samples
-  sample: []
+  prohibited_uses: ''
+  quality_control: ''
+  size: 10B parameters (dense)
+  training_emissions: unknown
+  training_hardware: unknown
+  training_time: unknown
+  type: model
+  url: https://github.com/OpenBMB/CPM-Bee
+- access: open
   analysis: Randomly chosen models trained on UltraFeedback evaluated across standard
     benchmarks.
+  created_date: 2023-09-26
+  datasheet: https://huggingface.co/datasets/openbmb/UltraFeedback
   dependencies: []
-  included: ''
+  description: UltraFeedback is a large-scale, fine-grained, diverse preference dataset,
+    used for training powerful reward models and critic models.
   excluded: ''
-  quality_control: ''
-  access: open
-  license: MIT
-  intended_uses: ''
-  prohibited_uses: ''
-  monitoring: unknown
   feedback: https://huggingface.co/datasets/openbmb/UltraFeedback/discussions
-- type: model
-  name: MiniCPM
+  included: ''
+  intended_uses: ''
+  license: MIT
+  modality: text
+  monitoring: unknown
+  name: UltraFeedback
+  nationality: International
   organization: OpenBMB
+  prohibited_uses: ''
+  quality_control: ''
+  sample: []
+  size: 256k samples
+  type: dataset
+  url: https://github.com/OpenBMB/UltraFeedback
+- access: open
+  analysis: Evaluated on open-sourced general benchmarks in comparison to SotA LLMs.
+  created_date: 2024-02-01
+  dependencies: []
   description: MiniCPM is an End-Side LLM developed by ModelBest Inc. and TsinghuaNLP,
     with only 2.4B parameters excluding embeddings (2.7B in total).
-  created_date: 2024-02-01
-  url: https://github.com/OpenBMB/MiniCPM/
-  model_card: https://huggingface.co/openbmb/MiniCPM-V
-  modality: text; text
-  analysis: Evaluated on open-sourced general benchmarks in comparison to SotA LLMs.
-  size: 2.4B parameters (dense)
-  dependencies: []
-  training_emissions: unknown
-  training_time: unknown
-  training_hardware: unknown
-  quality_control: ''
-  access: open
+  feedback: https://huggingface.co/openbmb/MiniCPM-V/discussions
+  intended_uses: ''
   license:
     explanation: can be found at https://github.com/OpenBMB/General-Model-License/tree/main
     value: custom
-  intended_uses: ''
-  prohibited_uses: ''
-  monitoring: unknown
-  feedback: https://huggingface.co/openbmb/MiniCPM-V/discussions
-- type: model
-  name: Eurus
-  organization: OpenBMB
-  description: Eurus is a suite of large language models (LLMs) optimized for reasoning.
-  created_date: 2024-04-02
-  url: https://arxiv.org/abs/2404.02078
-  model_card: https://huggingface.co/openbmb/Eurus-70b-nca
   modality: text; text
-  analysis: The model was comprehensively benchmarked across 12 tests covering five
-    tasks. Eurus achieved the best overall performance among open-source models
-    of similar sizes and even outperformed specialized models in many cases.
-  size: 70B parameters
-  dependencies: [Eurus SFT, UltraInteract, UltraFeedback]
+  model_card: https://huggingface.co/openbmb/MiniCPM-V
+  monitoring: unknown
+  name: MiniCPM
+  nationality: International
+  organization: OpenBMB
+  prohibited_uses: ''
+  quality_control: ''
+  size: 2.4B parameters (dense)
   training_emissions: unknown
-  training_time: unknown
   training_hardware: unknown
-  quality_control: none
-  access: open
-  license: Apache 2.0
+  training_time: unknown
+  type: model
+  url: https://github.com/OpenBMB/MiniCPM/
+- access: open
+  analysis: The model was comprehensively benchmarked across 12 tests covering five
+    tasks. Eurus achieved the best overall performance among open-source models of
+    similar sizes and even outperformed specialized models in many cases.
+  created_date: 2024-04-02
+  dependencies:
+  - Eurus SFT
+  - UltraInteract
+  - UltraFeedback
+  description: Eurus is a suite of large language models (LLMs) optimized for reasoning.
+  feedback: https://huggingface.co/openbmb/Eurus-70b-nca/discussions
   intended_uses: The model can be used for reasoning tasks and is especially tailored
     for coding and math following specific prompts.
-  prohibited_uses: none
+  license: Apache 2.0
+  modality: text; text
+  model_card: https://huggingface.co/openbmb/Eurus-70b-nca
   monitoring: unknown
-  feedback: https://huggingface.co/openbmb/Eurus-70b-nca/discussions
+  name: Eurus
+  nationality: International
+  organization: OpenBMB
+  prohibited_uses: none
+  quality_control: none
+  size: 70B parameters
+  training_emissions: unknown
+  training_hardware: unknown
+  training_time: unknown
+  type: model
+  url: https://arxiv.org/abs/2404.02078

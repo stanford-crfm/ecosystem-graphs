@@ -1,105 +1,115 @@
----
-- type: dataset
-  name: ToyMix
-  organization: Mila-Quebec AI Institute
+- access: open
+  analysis: Models of size 150k parameters trained on ToyMix and compared to models
+    trained on its dependencies across GNN baselines.
+  created_date: 2023-10-09
+  datasheet: none
+  dependencies:
+  - QM9
+  - TOX21
+  - ZINC12K
   description: ToyMix is the smallest dataset of three extensive and meticulously
     curated multi-label datasets that cover nearly 100 million molecules and over
     3000 sparsely defined tasks.
-  created_date: 2023-10-09
-  url: https://arxiv.org/pdf/2310.04292.pdf
-  datasheet: none
-  modality: molecules, tasks
-  size: 13B labels of quantum and biological nature.
-  sample: []
-  analysis: Models of size 150k parameters trained on ToyMix and compared to models
-    trained on its dependencies across GNN baselines.
-  dependencies: [QM9, TOX21, ZINC12K]
-  included: ''
   excluded: ''
-  quality_control: ''
-  access: open
-  license: CC BY-NC-SA 4.0
-  intended_uses: The datasets are intended to be used in an academic setting for
-    training molecular GNNs with orders of magnitude more parameters than current
-    large models. Further, the ToyMix dataset is intended to be used in a multi-task
-    setting, meaning that a single model should be trained to predict them simultaneously.
-  prohibited_uses: none
-  monitoring: none
   feedback: none
-- type: dataset
-  name: LargeMix
+  included: ''
+  intended_uses: The datasets are intended to be used in an academic setting for training
+    molecular GNNs with orders of magnitude more parameters than current large models.
+    Further, the ToyMix dataset is intended to be used in a multi-task setting, meaning
+    that a single model should be trained to predict them simultaneously.
+  license: CC BY-NC-SA 4.0
+  modality: molecules, tasks
+  monitoring: none
+  name: ToyMix
+  nationality: Canada
   organization: Mila-Quebec AI Institute
+  prohibited_uses: none
+  quality_control: ''
+  sample: []
+  size: 13B labels of quantum and biological nature.
+  type: dataset
+  url: https://arxiv.org/pdf/2310.04292.pdf
+- access: open
+  analysis: Models of size between 4M and 6M parameters trained for 200 epochs on
+    LargeMix and compared to models trained on its dependencies across GNN baselines.
+  created_date: 2023-10-09
+  datasheet: none
+  dependencies:
+  - L1000 VCAP
+  - L1000 MCF7
+  - PCBA1328
+  - PCQM4M_G25_N4
   description: LargeMix is the middle-sized dataset of three extensive and meticulously
     curated multi-label datasets that cover nearly 100 million molecules and over
     3000 sparsely defined tasks.
-  created_date: 2023-10-09
-  url: https://arxiv.org/pdf/2310.04292.pdf
-  datasheet: none
-  modality: molecules, tasks
-  size: 13B labels of quantum and biological nature.
-  sample: []
-  analysis: Models of size between 4M and 6M parameters trained for 200 epochs on
-    LargeMix and compared to models trained on its dependencies across GNN baselines.
-  dependencies: [L1000 VCAP, L1000 MCF7, PCBA1328, PCQM4M_G25_N4]
-  included: ''
   excluded: ''
-  quality_control: ''
-  access: open
-  license: CC BY-NC-SA 4.0
-  intended_uses: The datasets are intended to be used in an academic setting for
-    training molecular GNNs with orders of magnitude more parameters than current
-    large models. Further, the LargeMix dataset is intended to be used in a multi-task
-    setting, meaning that a single model should be trained to predict them simultaneously.
-  prohibited_uses: none
-  monitoring: none
   feedback: none
-- type: dataset
-  name: UltraLarge
+  included: ''
+  intended_uses: The datasets are intended to be used in an academic setting for training
+    molecular GNNs with orders of magnitude more parameters than current large models.
+    Further, the LargeMix dataset is intended to be used in a multi-task setting,
+    meaning that a single model should be trained to predict them simultaneously.
+  license: CC BY-NC-SA 4.0
+  modality: molecules, tasks
+  monitoring: none
+  name: LargeMix
+  nationality: Canada
   organization: Mila-Quebec AI Institute
+  prohibited_uses: none
+  quality_control: ''
+  sample: []
+  size: 13B labels of quantum and biological nature.
+  type: dataset
+  url: https://arxiv.org/pdf/2310.04292.pdf
+- access: open
+  analysis: Models of size between 4M and 6M parameters trained for 50 epochs on UltraLarge
+    and compared to models trained on its dependencies across GNN baselines.
+  created_date: 2023-10-09
+  datasheet: none
+  dependencies:
+  - PM6_83M
   description: UltraLarge is the largest dataset of three extensive and meticulously
     curated multi-label datasets that cover nearly 100 million molecules and over
     3000 sparsely defined tasks.
-  created_date: 2023-10-09
-  url: https://arxiv.org/pdf/2310.04292.pdf
-  datasheet: none
-  modality: molecules, tasks
-  size: 13B labels of quantum and biological nature.
-  sample: []
-  analysis: Models of size between 4M and 6M parameters trained for 50 epochs on
-    UltraLarge and compared to models trained on its dependencies across GNN baselines.
-  dependencies: [PM6_83M]
-  included: ''
   excluded: ''
-  quality_control: ''
-  access: open
-  license: CC BY-NC-SA 4.0
-  intended_uses: The datasets are intended to be used in an academic setting for
-    training molecular GNNs with orders of magnitude more parameters than current
-    large models.
-  prohibited_uses: none
-  monitoring: none
   feedback: none
-- type: model
-  name: Lag-LLaMA
-  organization: Morgan Stanley, ServiceNow Research, University of Montreal, Mila-Quebec
-    AI Institute
+  included: ''
+  intended_uses: The datasets are intended to be used in an academic setting for training
+    molecular GNNs with orders of magnitude more parameters than current large models.
+  license: CC BY-NC-SA 4.0
+  modality: molecules, tasks
+  monitoring: none
+  name: UltraLarge
+  nationality: Canada
+  organization: Mila-Quebec AI Institute
+  prohibited_uses: none
+  quality_control: ''
+  sample: []
+  size: 13B labels of quantum and biological nature.
+  type: dataset
+  url: https://arxiv.org/pdf/2310.04292.pdf
+- access: open
+  analysis: Evaluated on previously unseen time series datasets.
+  created_date: 2024-02-08
+  dependencies: []
   description: Lag-LLaMA is a general-purpose foundation model for univariate probabilistic
     time series forecasting based on a decoder-only transformer architecture that
     uses lags as covariates.
-  created_date: 2024-02-08
-  url: https://time-series-foundation-models.github.io/lag-llama.pdf
-  model_card: https://huggingface.co/time-series-foundation-models/Lag-Llama
-  modality: text; text
-  analysis: Evaluated on previously unseen time series datasets.
-  size: unknown
-  dependencies: []
-  training_emissions: unknown
-  training_time: unknown
-  training_hardware: A single NVIDIA Tesla-P100 GPU
-  quality_control: ''
-  access: open
-  license: Apache 2.0
-  intended_uses: ''
-  prohibited_uses: ''
-  monitoring: unknown
   feedback: https://huggingface.co/time-series-foundation-models/Lag-Llama/discussions
+  intended_uses: ''
+  license: Apache 2.0
+  modality: text; text
+  model_card: https://huggingface.co/time-series-foundation-models/Lag-Llama
+  monitoring: unknown
+  name: Lag-LLaMA
+  nationality: unknown
+  organization: Morgan Stanley, ServiceNow Research, University of Montreal, Mila-Quebec
+    AI Institute
+  prohibited_uses: ''
+  quality_control: ''
+  size: unknown
+  training_emissions: unknown
+  training_hardware: A single NVIDIA Tesla-P100 GPU
+  training_time: unknown
+  type: model
+  url: https://time-series-foundation-models.github.io/lag-llama.pdf

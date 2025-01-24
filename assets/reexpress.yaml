@@ -1,22 +1,22 @@
----
-- type: application
-  name: Reexpress One
-  organization: Reexpress AI
-  description: Reexpress One offers a means of document classification, semantic
-    search, and uncertainty analysis on-device.
-  created_date: 2023-03-21
-  url: https://re.express/index.html
-  dependencies: []
+- access: limited
   adaptation: ''
-  output_space: data analyses
-  quality_control: ''
-  access: limited
-  license: unknown
-  terms_of_service: hhttps://re.express/tos.html
-  intended_uses: ''
-  prohibited_uses: ''
-  monitoring: unknown
-  feedback: https://github.com/ReexpressAI/support
-  monthly_active_users: unknown
-  user_distribution: unknown
+  created_date: 2023-03-21
+  dependencies: []
+  description: Reexpress One offers a means of document classification, semantic search,
+    and uncertainty analysis on-device.
   failures: unknown
+  feedback: https://github.com/ReexpressAI/support
+  intended_uses: ''
+  license: unknown
+  monitoring: unknown
+  monthly_active_users: unknown
+  name: Reexpress One
+  nationality: USA
+  organization: Reexpress AI
+  output_space: data analyses
+  prohibited_uses: ''
+  quality_control: ''
+  terms_of_service: hhttps://re.express/tos.html
+  type: application
+  url: https://re.express/index.html
+  user_distribution: unknown

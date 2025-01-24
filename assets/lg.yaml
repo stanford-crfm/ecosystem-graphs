@@ -1,23 +1,23 @@
----
-- type: model
-  name: EXAONE 2.0
-  organization: LG AI Research
+- access: closed
+  analysis: none
+  created_date: 2023-07-19
+  dependencies: []
   description: EXAONE 2.0 is a multimodal artificial intelligence that can be used
     to help develop new materials and medicines.
-  created_date: 2023-07-19
-  url: https://www.lgresearch.ai/exaone
-  model_card: none
-  modality: image, text; image, text
-  analysis: none
-  size: unknown
-  dependencies: []
-  training_emissions: unknown
-  training_time: unknown
-  training_hardware: unknown
-  quality_control: ''
-  access: closed
-  license: unknown
-  intended_uses: ''
-  prohibited_uses: ''
-  monitoring: ''
   feedback: none
+  intended_uses: ''
+  license: unknown
+  modality: image, text; image, text
+  model_card: none
+  monitoring: ''
+  name: EXAONE 2.0
+  nationality: South Korea
+  organization: LG AI Research
+  prohibited_uses: ''
+  quality_control: ''
+  size: unknown
+  training_emissions: unknown
+  training_hardware: unknown
+  training_time: unknown
+  type: model
+  url: https://www.lgresearch.ai/exaone

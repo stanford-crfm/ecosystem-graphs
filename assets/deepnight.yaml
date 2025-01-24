@@ -1,23 +1,23 @@
----
-- type: model
-  name: SaiLY
-  organization: Deepnight Research
+- access: open
+  analysis: none
+  created_date: 2023-11-04
+  dependencies: []
   description: SaiLy is a series/collection of AI Models by Deepnight Research which
     are highly experimental and uncensored.
-  created_date: 2023-11-04
-  url: https://huggingface.co/deepnight-research/saily_100b
-  model_card: https://huggingface.co/deepnight-research/saily_100b
-  modality: text; text
-  analysis: none
-  size: 100B parameters (dense)
-  dependencies: []
-  training_emissions: unknown
-  training_time: unknown
-  training_hardware: unknown
-  quality_control: ''
-  access: open
-  license: MIT
-  intended_uses: ''
-  prohibited_uses: ''
-  monitoring: unknown
   feedback: https://huggingface.co/deepnight-research/saily_100b/discussions
+  intended_uses: ''
+  license: MIT
+  modality: text; text
+  model_card: https://huggingface.co/deepnight-research/saily_100b
+  monitoring: unknown
+  name: SaiLY
+  nationality: International
+  organization: Deepnight Research
+  prohibited_uses: ''
+  quality_control: ''
+  size: 100B parameters (dense)
+  training_emissions: unknown
+  training_hardware: unknown
+  training_time: unknown
+  type: model
+  url: https://huggingface.co/deepnight-research/saily_100b

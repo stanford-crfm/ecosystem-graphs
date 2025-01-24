@@ -1,48 +1,51 @@
----
-- type: model
-  name: h2oGPT
-  organization: H2O AI
-  description: Series of models fine-tuned on well-known LLMs using the h2oGPT repositories.
-  created_date: 2023-06-16
-  url: https://arxiv.org/pdf/2306.08161.pdf
-  model_card: https://huggingface.co/h2oai/h2ogpt-oasst1-512-20b
-  modality: text; text
+- access: open
   analysis: Evaluated on EleutherAI evaluation harness.
-  size: 20B parameters (dense)
-  dependencies: [GPT-NeoX, H2O AI OpenAssistant, h2oGPT Repositories]
-  training_emissions: unknown
-  training_time: unknown
-  training_hardware: unspecified number of 48GB A100 NVIDIA GPUs
-  quality_control: ''
-  access: open
-  license: Apache 2.0
-  intended_uses: ''
-  prohibited_uses: ''
-  monitoring: ''
+  created_date: 2023-06-16
+  dependencies:
+  - GPT-NeoX
+  - H2O AI OpenAssistant
+  - h2oGPT Repositories
+  description: Series of models fine-tuned on well-known LLMs using the h2oGPT repositories.
   feedback: https://huggingface.co/h2oai/h2ogpt-oasst1-512-20b/discussions
-
-- type: model
-  name: H2O Danube
-  organization: H2O AI
-  description: H2O Danube is a language model trained on 1T tokens following the
-    core principles of LLaMA 2 and Mistral.
-  created_date: 2024-01-30
-  url: https://arxiv.org/pdf/2401.16818.pdf
-  model_card: https://huggingface.co/h2oai/h2o-danube-1.8b-base
-  modality: text; text
-  analysis: Evaluated on common sense and world knowledge benchmarks.
-  size: 1.8B parameters (dense)
-  dependencies: []
-  training_emissions: unknown
-  training_time: unknown
-  training_hardware: 8x H100 GPUs on a single node
-  quality_control: unknown
-  access: open
-  license: Apache 2.0
   intended_uses: ''
+  license: Apache 2.0
+  modality: text; text
+  model_card: https://huggingface.co/h2oai/h2ogpt-oasst1-512-20b
+  monitoring: ''
+  name: h2oGPT
+  nationality: USA
+  organization: H2O AI
+  prohibited_uses: ''
+  quality_control: ''
+  size: 20B parameters (dense)
+  training_emissions: unknown
+  training_hardware: unspecified number of 48GB A100 NVIDIA GPUs
+  training_time: unknown
+  type: model
+  url: https://arxiv.org/pdf/2306.08161.pdf
+- access: open
+  analysis: Evaluated on common sense and world knowledge benchmarks.
+  created_date: 2024-01-30
+  dependencies: []
+  description: H2O Danube is a language model trained on 1T tokens following the core
+    principles of LLaMA 2 and Mistral.
+  feedback: https://huggingface.co/h2oai/h2o-danube-1.8b-base/discussions
+  intended_uses: ''
+  license: Apache 2.0
+  modality: text; text
+  model_card: https://huggingface.co/h2oai/h2o-danube-1.8b-base
+  monitoring: unknown
+  name: H2O Danube
+  nationality: USA
+  organization: H2O AI
   prohibited_uses: Users are encouraged to use the large language model responsibly
     and ethically. By using this model, you agree not to use it for purposes that
     promote hate speech, discrimination, harassment, or any form of illegal or harmful
     activities.
-  monitoring: unknown
-  feedback: https://huggingface.co/h2oai/h2o-danube-1.8b-base/discussions
+  quality_control: unknown
+  size: 1.8B parameters (dense)
+  training_emissions: unknown
+  training_hardware: 8x H100 GPUs on a single node
+  training_time: unknown
+  type: model
+  url: https://arxiv.org/pdf/2401.16818.pdf

@@ -1,46 +1,51 @@
----
-- type: model
-  name: Guanaco
-  organization: University of Washington
-  description: Guanaco is a model family trained with QLORA, an efficient finetuning
-    approach that reduces memory usage enough to finetune a 65B parameter model
-    on a single 48GB GPU while preserving full 16-bit finetuning task performance.
-  created_date: 2023-05-23
-  url: https://arxiv.org/pdf/2305.14314v1.pdf
-  model_card: ''
-  modality: text; text
+- access: open
   analysis: Reports results on the Vicuna benchmark and compares performance level
     and time expenditure with ChatGPT
-  size: 33B parameters (dense)
-  dependencies: [QLoRA, OASST1]
-  training_emissions: ''
-  training_time: ''
-  training_hardware: A single 24 GB GPU
-  quality_control: ''
-  access: open
-  license: MIT
-  intended_uses: ''
-  prohibited_uses: ''
-  monitoring: ''
+  created_date: 2023-05-23
+  dependencies:
+  - QLoRA
+  - OASST1
+  description: Guanaco is a model family trained with QLORA, an efficient finetuning
+    approach that reduces memory usage enough to finetune a 65B parameter model on
+    a single 48GB GPU while preserving full 16-bit finetuning task performance.
   feedback: ''
-- type: model
-  name: Llark
-  organization: University of Washington, Spotify
-  description: Llark is an instruction-tuned multimodal model for music understanding.
-  created_date: 2023-10-11
-  url: https://arxiv.org/pdf/2310.07160.pdf
-  model_card: none
-  modality: audio, text; text
-  analysis: Evaluated on benchmark music understanding tasks on SOTA music datasets.
-  size: 12B parameters (dense)
-  dependencies: [LLaMA 2, Jukebox]
-  training_emissions: unknown
-  training_time: 54 hours
-  training_hardware: 4 80GB NVIDIA A40 GPUs
-  quality_control: ''
-  access: open
-  license: Apache 2.0
   intended_uses: ''
-  prohibited_uses: ''
+  license: MIT
+  modality: text; text
+  model_card: ''
   monitoring: ''
+  name: Guanaco
+  nationality: USA
+  organization: University of Washington
+  prohibited_uses: ''
+  quality_control: ''
+  size: 33B parameters (dense)
+  training_emissions: ''
+  training_hardware: A single 24 GB GPU
+  training_time: ''
+  type: model
+  url: https://arxiv.org/pdf/2305.14314v1.pdf
+- access: open
+  analysis: Evaluated on benchmark music understanding tasks on SOTA music datasets.
+  created_date: 2023-10-11
+  dependencies:
+  - LLaMA 2
+  - Jukebox
+  description: Llark is an instruction-tuned multimodal model for music understanding.
   feedback: none
+  intended_uses: ''
+  license: Apache 2.0
+  modality: audio, text; text
+  model_card: none
+  monitoring: ''
+  name: Llark
+  nationality: USA
+  organization: University of Washington, Spotify
+  prohibited_uses: ''
+  quality_control: ''
+  size: 12B parameters (dense)
+  training_emissions: unknown
+  training_hardware: 4 80GB NVIDIA A40 GPUs
+  training_time: 54 hours
+  type: model
+  url: https://arxiv.org/pdf/2310.07160.pdf

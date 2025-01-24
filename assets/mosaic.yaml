@@ -1,89 +1,104 @@
----
-- type: model
-  name: MPT
-  organization: Mosaic
+- access: open
+  analysis: Evaluated on a range of benchmarks and performed on par with LLaMA-7B.
+  created_date: 2023-05-05
+  dependencies:
+  - RedPajama-Data
+  - C4
+  - The Stack
+  - Multimodal C4
   description: MPT is a series of large language models seeking to address the limitations
     of other open source models like LLaMA and Pythia.
-  created_date: 2023-05-05
-  url: https://www.mosaicml.com/blog/mpt-7b
-  model_card: ''
-  modality: text; text
-  analysis: Evaluated on a range of benchmarks and performed on par with LLaMA-7B.
-  size: 7B parameters (dense)
-  dependencies: [RedPajama-Data, C4, The Stack, Multimodal C4]
-  training_emissions: unknown
-  training_time: 9.5 days
-  training_hardware: 440 A100 40GB GPUs
-  quality_control: ''
-  access: open
-  license: Apache 2.0
-  intended_uses: ''
-  prohibited_uses: ''
-  monitoring: ''
   feedback: ''
-- type: model
-  name: CommonCanvas
-  organization: Cornell University, Mosaic
-  description: CommonCanvas is a text-to-image model trained solely on Creative
-    Commons licensed images.
-  created_date: 2023-10-25
-  url: https://arxiv.org/pdf/2310.16825.pdf
-  model_card: none
-  modality: text; image
-  analysis: Compared to Stable Diffusion 2, a SOTA text-to-image model.
-  size: unknown
-  dependencies: [CommonCatalog]
-  training_emissions: unknown
-  training_time: 6.79 days
-  training_hardware: 128 A100 NVIDIA GPUs
-  quality_control: ''
-  access: open
-  license: Apache 2.0
   intended_uses: ''
-  prohibited_uses: ''
-  monitoring: none
-  feedback: none
-- type: dataset
-  name: CommonCatalog
+  license: Apache 2.0
+  modality: text; text
+  model_card: ''
+  monitoring: ''
+  name: MPT
+  nationality: USA
   organization: Mosaic
+  prohibited_uses: ''
+  quality_control: ''
+  size: 7B parameters (dense)
+  training_emissions: unknown
+  training_hardware: 440 A100 40GB GPUs
+  training_time: 9.5 days
+  type: model
+  url: https://www.mosaicml.com/blog/mpt-7b
+- access: open
+  analysis: Compared to Stable Diffusion 2, a SOTA text-to-image model.
+  created_date: 2023-10-25
+  dependencies:
+  - CommonCatalog
+  description: CommonCanvas is a text-to-image model trained solely on Creative Commons
+    licensed images.
+  feedback: none
+  intended_uses: ''
+  license: Apache 2.0
+  modality: text; image
+  model_card: none
+  monitoring: none
+  name: CommonCanvas
+  nationality: unknown
+  organization: Cornell University, Mosaic
+  prohibited_uses: ''
+  quality_control: ''
+  size: unknown
+  training_emissions: unknown
+  training_hardware: 128 A100 NVIDIA GPUs
+  training_time: 6.79 days
+  type: model
+  url: https://arxiv.org/pdf/2310.16825.pdf
+- access: open
+  analysis: none
+  created_date: 2023-10-25
+  datasheet: https://github.com/mosaicml/diffusion/blob/main/assets/common-canvas.md
+  dependencies:
+  - YFCC100M
+  - BLIP-2
   description: CommonCatalog is a curated dataset of CommonCrawl images and synthetic
     captions.
-  created_date: 2023-10-25
-  url: https://arxiv.org/pdf/2310.16825.pdf
-  datasheet: https://github.com/mosaicml/diffusion/blob/main/assets/common-canvas.md
-  modality: image-caption pairings
-  size: 70M images
-  sample: []
-  analysis: none
-  dependencies: [YFCC100M, BLIP-2]
-  included: images with derivative licenses
   excluded: images with non-derivative licenses
-  quality_control: ''
-  access: open
-  license: Apache 2.0
-  intended_uses: ''
-  prohibited_uses: ''
-  monitoring: ''
   feedback: none
-- type: model
-  name: XTTS-v2
-  organization: Coqui
-  description: XTTS-v2 is a voice generation model that allows voice cloning into different languages using a brief 6-second audio clip, supporting 17 languages with features like emotion and style transfer, cross-language voice cloning, and multi-lingual speech generation. It powers Coqui Studio and Coqui API, with improvements in architectural and prosody aspects for better audio quality.
-  created_date: 2024-10-08
-  url: https://huggingface.co/coqui/XTTS-v2
-  model_card: https://huggingface.co/coqui/XTTS-v2
-  modality: audio; audio
+  included: images with derivative licenses
+  intended_uses: ''
+  license: Apache 2.0
+  modality: image-caption pairings
+  monitoring: ''
+  name: CommonCatalog
+  nationality: USA
+  organization: Mosaic
+  prohibited_uses: ''
+  quality_control: ''
+  sample: []
+  size: 70M images
+  type: dataset
+  url: https://arxiv.org/pdf/2310.16825.pdf
+- access: open
   analysis: unknown
-  size: unknown
+  created_date: 2024-10-08
   dependencies: []
-  training_emissions: unknown
-  training_time: unknown
-  training_hardware: unknown
-  quality_control: unknown
-  access: open
+  description: XTTS-v2 is a voice generation model that allows voice cloning into
+    different languages using a brief 6-second audio clip, supporting 17 languages
+    with features like emotion and style transfer, cross-language voice cloning, and
+    multi-lingual speech generation. It powers Coqui Studio and Coqui API, with improvements
+    in architectural and prosody aspects for better audio quality.
+  feedback: Users can join the Coqui community on Discord, engage on Twitter, or send
+    emails to info@coqui.ai for feedback and queries.
+  intended_uses: Voice cloning, multi-lingual speech generation, emotion and style
+    transfer in speech.
   license: Coqui Public Model
-  intended_uses: Voice cloning, multi-lingual speech generation, emotion and style transfer in speech.
-  prohibited_uses: unknown
+  modality: audio; audio
+  model_card: https://huggingface.co/coqui/XTTS-v2
   monitoring: unknown
-  feedback: Users can join the Coqui community on Discord, engage on Twitter, or send emails to info@coqui.ai for feedback and queries.
-
+  name: XTTS-v2
+  nationality: USA
+  organization: Coqui
+  prohibited_uses: unknown
+  quality_control: unknown
+  size: unknown
+  training_emissions: unknown
+  training_hardware: unknown
+  training_time: unknown
+  type: model
+  url: https://huggingface.co/coqui/XTTS-v2

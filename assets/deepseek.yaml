@@ -1,82 +1,85 @@
----
-- type: model
-  name: Deepseek
-  organization: Deepseek AI
+- access: open
+  analysis: Deepseek and baseline models (for comparison) evaluated on a series of
+    representative benchmarks, both in English and Chinese.
+  created_date: 2023-11-28
+  dependencies: []
   description: Deepseek is a 67B parameter model with Grouped-Query Attention trained
     on 2 trillion tokens from scratch.
-  created_date: 2023-11-28
-  url: https://github.com/deepseek-ai/DeepSeek-LLM
-  model_card: https://huggingface.co/deepseek-ai/deepseek-llm-67b-base
-  modality: text; text
-  analysis: Deepseek and baseline models (for comparison) evaluated on a series
-    of representative benchmarks, both in English and Chinese.
-  size: 67B parameters (dense)
-  dependencies: []
-  training_emissions: unknown
-  training_time: unknown
-  training_hardware: unknown
-  quality_control: Training dataset comprised of diverse data composition and pruned
-    and deduplicated.
-  access: open
-  license:
-    explanation: Model license can be found at https://github.com/deepseek-ai/DeepSeek-LLM/blob/main/LICENSE-MODEL.
-      Code license is under MIT
-    value: custom
-  intended_uses: ''
-  prohibited_uses: none
-  monitoring: unknown
   feedback: https://huggingface.co/deepseek-ai/deepseek-llm-67b-base/discussions
-- type: model
-  name: Deepseek Chat
-  organization: Deepseek AI
-  description: Deepseek Chat is a 67B parameter model initialized from Deepseek
-    and fine-tuned on extra instruction data.
-  created_date: 2023-11-29
-  url: https://github.com/deepseek-ai/DeepSeek-LLM
-  model_card: https://huggingface.co/deepseek-ai/deepseek-llm-67b-chat
-  modality: text; text
-  analysis: Deepseek and baseline models (for comparison) evaluated on a series
-    of representative benchmarks, both in English and Chinese.
-  size: 67B parameters (dense)
-  dependencies: [Deepseek]
-  training_emissions: unknown
-  training_time: unknown
-  training_hardware: unknown
-  quality_control: Training dataset comprised of diverse data composition and pruned
-    and deduplicated.
-  access: open
+  intended_uses: ''
   license:
     explanation: Model license can be found at https://github.com/deepseek-ai/DeepSeek-LLM/blob/main/LICENSE-MODEL.
       Code license is under MIT
     value: custom
-  intended_uses: ''
-  prohibited_uses: none
+  modality: text; text
+  model_card: https://huggingface.co/deepseek-ai/deepseek-llm-67b-base
   monitoring: unknown
-  feedback: https://huggingface.co/deepseek-ai/deepseek-llm-67b-chat/discussions
-- type: model
-  name: Deepseek Coder
+  name: Deepseek
+  nationality: USA
   organization: Deepseek AI
+  prohibited_uses: none
+  quality_control: Training dataset comprised of diverse data composition and pruned
+    and deduplicated.
+  size: 67B parameters (dense)
+  training_emissions: unknown
+  training_hardware: unknown
+  training_time: unknown
+  type: model
+  url: https://github.com/deepseek-ai/DeepSeek-LLM
+- access: open
+  analysis: Deepseek and baseline models (for comparison) evaluated on a series of
+    representative benchmarks, both in English and Chinese.
+  created_date: 2023-11-29
+  dependencies:
+  - Deepseek
+  description: Deepseek Chat is a 67B parameter model initialized from Deepseek and
+    fine-tuned on extra instruction data.
+  feedback: https://huggingface.co/deepseek-ai/deepseek-llm-67b-chat/discussions
+  intended_uses: ''
+  license:
+    explanation: Model license can be found at https://github.com/deepseek-ai/DeepSeek-LLM/blob/main/LICENSE-MODEL.
+      Code license is under MIT
+    value: custom
+  modality: text; text
+  model_card: https://huggingface.co/deepseek-ai/deepseek-llm-67b-chat
+  monitoring: unknown
+  name: Deepseek Chat
+  nationality: USA
+  organization: Deepseek AI
+  prohibited_uses: none
+  quality_control: Training dataset comprised of diverse data composition and pruned
+    and deduplicated.
+  size: 67B parameters (dense)
+  training_emissions: unknown
+  training_hardware: unknown
+  training_time: unknown
+  type: model
+  url: https://github.com/deepseek-ai/DeepSeek-LLM
+- access: open
+  analysis: Evaluated on code generation, code completion, cross-file code completion,
+    and program-based math reasoning across standard benchmarks.
+  created_date: 2023-11-03
+  dependencies: []
   description: Deepseek Coder is composed of a series of code language models, each
     trained from scratch on 2T tokens, with a composition of 87% code and 13% natural
     language in both English and Chinese.
-  created_date: 2023-11-03
-  url: https://github.com/deepseek-ai/DeepSeek-Coder
-  model_card: https://huggingface.co/deepseek-ai/deepseek-coder-33b-base
-  modality: text; code
-  analysis: Evaluated on code generation, code completion, cross-file code completion,
-    and program-based math reasoning across standard benchmarks.
-  size: 33B parameters (dense)
-  dependencies: []
-  training_emissions: unknown
-  training_time: unknown
-  training_hardware: 8 NVIDIA A100 GPUs and 8 NVIDIA H800 GPUs
-  quality_control: ''
-  access: open
+  feedback: https://huggingface.co/deepseek-ai/deepseek-coder-33b-base/discussions
+  intended_uses: ''
   license:
     explanation: Model license can be found at https://github.com/deepseek-ai/DeepSeek-Coder/blob/main/LICENSE-MODEL.
       Code license is under MIT
     value: custom
-  intended_uses: ''
-  prohibited_uses: ''
+  modality: text; code
+  model_card: https://huggingface.co/deepseek-ai/deepseek-coder-33b-base
   monitoring: unknkown
-  feedback: https://huggingface.co/deepseek-ai/deepseek-coder-33b-base/discussions
+  name: Deepseek Coder
+  nationality: USA
+  organization: Deepseek AI
+  prohibited_uses: ''
+  quality_control: ''
+  size: 33B parameters (dense)
+  training_emissions: unknown
+  training_hardware: 8 NVIDIA A100 GPUs and 8 NVIDIA H800 GPUs
+  training_time: unknown
+  type: model
+  url: https://github.com/deepseek-ai/DeepSeek-Coder

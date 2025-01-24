@@ -1,178 +1,187 @@
----
-- type: dataset
-  name: LAION-1B
-  organization: Alibaba
-  description: ''
-  created_date: 2023-02-20
-  url: https://arxiv.org/pdf/2302.09778.pdf
-  datasheet: ''
-  modality: image, text
-  size: 1B image-text pairs
-  sample: []
+- access: closed
   analysis: ''
-  dependencies: [LAION-5B]
-  included: ''
+  created_date: 2023-02-20
+  datasheet: ''
+  dependencies:
+  - LAION-5B
+  description: ''
   excluded: We eliminate duplicates, low resolution images, and images potentially
     contain harmful content from the LAION dataset.
-  quality_control: ''
-  access: closed
-  license: unknown
-  intended_uses: ''
-  prohibited_uses: ''
-  monitoring: ''
   feedback: ''
-- type: model
-  name: Composer
+  included: ''
+  intended_uses: ''
+  license: unknown
+  modality: image, text
+  monitoring: ''
+  name: LAION-1B
+  nationality: China
   organization: Alibaba
-  description: ''
-  created_date: 2023-02-20
+  prohibited_uses: ''
+  quality_control: ''
+  sample: []
+  size: 1B image-text pairs
+  type: dataset
   url: https://arxiv.org/pdf/2302.09778.pdf
-  model_card: ''
-  modality: image, text; image
+- access: closed
   analysis: ''
-  size: 4.4B parameters (dense)
-  dependencies: [ImageNet, WebVision, LAION-1B]
-  training_emissions: ''
-  training_time: ''
-  training_hardware: ''
-  quality_control: ''
-  access: closed
-  license: unknown
-  intended_uses: ''
-  prohibited_uses: ''
-  monitoring: ''
+  created_date: 2023-02-20
+  dependencies:
+  - ImageNet
+  - WebVision
+  - LAION-1B
+  description: ''
   feedback: ''
-- type: model
-  name: Qwen
+  intended_uses: ''
+  license: unknown
+  modality: image, text; image
+  model_card: ''
+  monitoring: ''
+  name: Composer
+  nationality: China
   organization: Alibaba
+  prohibited_uses: ''
+  quality_control: ''
+  size: 4.4B parameters (dense)
+  training_emissions: ''
+  training_hardware: ''
+  training_time: ''
+  type: model
+  url: https://arxiv.org/pdf/2302.09778.pdf
+- access:
+    explanation: 'Model checkpoints are available for download from the [[HuggingFace
+      repository]](https://huggingface.co/Qwen)
+
+      '
+    value: open
+  analysis: Evaluated on MMLU, C-Eval, GSM8K, MATH, HumanEval, etc.
+  created_date: 2023-08-03
+  dependencies: []
   description: 'QWEN is a comprehensive language model series that encompasses distinct
     models with varying parameter counts. Qwen series, now including Qwen, the base
-    language models, namely Qwen-7B and Qwen-14B, as well as Qwen-Chat, the chat
-    models, namely Qwen-7B-Chat and Qwen-14B-Chat. '
-  created_date: 2023-08-03
-  url: https://arxiv.org/abs/2309.16609
-  model_card: https://huggingface.co/Qwen
-  modality: image, text; text
-  analysis: Evaluated on MMLU, C-Eval, GSM8K, MATH, HumanEval, etc.
-  size: 14B parameters (dense)
-  dependencies: []
-  training_emissions: unknown
-  training_time: ''
-  training_hardware: ''
-  quality_control:
-    explanation: According to [[Model Description Section 2]](https://arxiv.org/pdf/2302.09778.pdf)
-    value: They filter out low-quality data, they employ a combination of rule-based
-      and machine-learning-based methods. Specifically, they use multiple models
-      to score the content, including language models, text-quality scoring models,
-      and models for identifying potentially offensive or inappropriate content.
-      They also manually sample texts from various sources and review them to ensure
-      their quality. To further enhance the quality of our data, they selectively
-      up-sample data from certain sources, to ensure that our models are trained
-      on a diverse range of high-quality content.
-  access:
-    explanation: "Model checkpoints are available for download from the [[HuggingFace\
-      \ repository]](https://huggingface.co/Qwen)\n"
-    value: open
+    language models, namely Qwen-7B and Qwen-14B, as well as Qwen-Chat, the chat models,
+    namely Qwen-7B-Chat and Qwen-14B-Chat. '
+  feedback: ''
+  intended_uses: ''
   license:
     explanation: Model license can be found at https://github.com/QwenLM/Qwen/blob/main/Tongyi%20Qianwen%20LICENSE%20AGREEMENT.
       Code license is under Apache 2.0
     value: custom
-  intended_uses: ''
-  prohibited_uses: ''
+  modality: image, text; text
+  model_card: https://huggingface.co/Qwen
   monitoring: Governed by the laws of China, without regard to conflict of law principles,
-    and the UN Convention on Contracts for the International Sale of Goods does
-    not apply to this Agreement. And The People's Courts in Hangzhou City shall
-    have exclusive jurisdiction over any dispute arising out of this Agreement.
-  feedback: ''
-
-- type: model
-  name: Qwen 1.5
+    and the UN Convention on Contracts for the International Sale of Goods does not
+    apply to this Agreement. And The People's Courts in Hangzhou City shall have exclusive
+    jurisdiction over any dispute arising out of this Agreement.
+  name: Qwen
+  nationality: China
   organization: Alibaba
+  prohibited_uses: ''
+  quality_control:
+    explanation: According to [[Model Description Section 2]](https://arxiv.org/pdf/2302.09778.pdf)
+    value: They filter out low-quality data, they employ a combination of rule-based
+      and machine-learning-based methods. Specifically, they use multiple models to
+      score the content, including language models, text-quality scoring models, and
+      models for identifying potentially offensive or inappropriate content. They
+      also manually sample texts from various sources and review them to ensure their
+      quality. To further enhance the quality of our data, they selectively up-sample
+      data from certain sources, to ensure that our models are trained on a diverse
+      range of high-quality content.
+  size: 14B parameters (dense)
+  training_emissions: unknown
+  training_hardware: ''
+  training_time: ''
+  type: model
+  url: https://arxiv.org/abs/2309.16609
+- access: open
+  analysis: Base models are evaluated on MMLU, C-Eval, GSM8K, MATH, HumanEval, MBPP,
+    BBH, CMMLU, all standard English and Chinese benchmarks, and chat models are evaluated
+    on Chatbot Arena, AlpacaEval, MT-Bench, etc.
+  created_date: 2024-02-04
+  dependencies: []
   description: Qwen 1.5 is the next iteration in their Qwen series, consisting of
     Transformer-based large language models pretrained on a large volume of data,
     including web texts, books, codes, etc.
-  created_date: 2024-02-04
-  url: https://qwenlm.github.io/blog/qwen1.5/
-  model_card: https://huggingface.co/Qwen/Qwen1.5-72B
-  modality: text; text
-  analysis: Base models are evaluated on MMLU, C-Eval, GSM8K, MATH, HumanEval, MBPP,
-    BBH, CMMLU, all standard English and Chinese benchmarks, and chat models are
-    evaluated on Chatbot Arena, AlpacaEval, MT-Bench, etc.
-  size: 72B parameters (dense)
-  dependencies: []
-  training_emissions: unknown
-  training_time: unknown
-  training_hardware: unknown
-  quality_control: unknown
-  access: open
+  feedback: https://huggingface.co/Qwen/Qwen1.5-72B/discussions
+  intended_uses: ''
   license:
     explanation: Model license can be found at https://huggingface.co/Qwen/Qwen1.5-72B/blob/main/LICENSE
     value: custom
-  intended_uses: ''
-  prohibited_uses: ''
+  modality: text; text
+  model_card: https://huggingface.co/Qwen/Qwen1.5-72B
   monitoring: unknown
-  feedback: https://huggingface.co/Qwen/Qwen1.5-72B/discussions
-
-- type: model
-  name: Qwen 1.5 MoE
-  organization: Qwen Team
+  name: Qwen 1.5
+  nationality: China
+  organization: Alibaba
+  prohibited_uses: ''
+  quality_control: unknown
+  size: 72B parameters (dense)
+  training_emissions: unknown
+  training_hardware: unknown
+  training_time: unknown
+  type: model
+  url: https://qwenlm.github.io/blog/qwen1.5/
+- access: open
+  analysis: Base models are evaluated on MMLU, C-Eval, GSM8K, MATH, HumanEval, MBPP,
+    BBH, CMMLU, all standard English and Chinese benchmarks, and chat models are evaluated
+    on Chatbot Arena, AlpacaEval, MT-Bench, etc.
+  created_date: 2024-03-28
+  dependencies: []
   description: Qwen 1.5 is the next iteration in their Qwen series, consisting of
     Transformer-based large language models pretrained on a large volume of data,
-    including web texts, books, codes, etc. Qwen 1.5 MoE is the MoE model of the
-    Qwen 1.5 series.
-  created_date: 2024-03-28
-  url: https://qwenlm.github.io/blog/qwen-moe/
-  model_card: https://huggingface.co/Qwen/Qwen1.5-MoE-A2.7B
-  modality: text; text
-  analysis: Base models are evaluated on MMLU, C-Eval, GSM8K, MATH, HumanEval, MBPP,
-    BBH, CMMLU, all standard English and Chinese benchmarks, and chat models are
-    evaluated on Chatbot Arena, AlpacaEval, MT-Bench, etc.
-  size: 14B parameters with 2.7B parameters for activation (MoE)
-  dependencies: []
-  training_emissions: unknown
-  training_time: unknown
-  training_hardware: unknown
-  quality_control: unknown
-  access: open
+    including web texts, books, codes, etc. Qwen 1.5 MoE is the MoE model of the Qwen
+    1.5 series.
+  feedback: https://huggingface.co/Qwen/Qwen1.5-MoE-A2.7B/discussions
+  intended_uses: ''
   license:
     explanation: Model license can be found at https://huggingface.co/Qwen/Qwen1.5-MoE-A2.7B/blob/main/LICENSE
     value: custom
-  intended_uses: ''
-  prohibited_uses: ''
-  monitoring: unknown
-  feedback: https://huggingface.co/Qwen/Qwen1.5-MoE-A2.7B/discussions
-
-- type: model
-  name: SeaLLM v2.5
-  organization: DAMO Academy, Alibaba
-  description: SeaLLM v2.5 is a multilingual large language model for Southeast
-    Asian (SEA) languages.
-  created_date: 2024-04-12
-  url: https://github.com/DAMO-NLP-SG/SeaLLMs
-  model_card: https://huggingface.co/SeaLLMs/SeaLLM-7B-v2.5
   modality: text; text
+  model_card: https://huggingface.co/Qwen/Qwen1.5-MoE-A2.7B
+  monitoring: unknown
+  name: Qwen 1.5 MoE
+  nationality: China
+  organization: Qwen Team
+  prohibited_uses: ''
+  quality_control: unknown
+  size: 14B parameters with 2.7B parameters for activation (MoE)
+  training_emissions: unknown
+  training_hardware: unknown
+  training_time: unknown
+  type: model
+  url: https://qwenlm.github.io/blog/qwen-moe/
+- access: open
   analysis: The model was evaluated on 3 benchmarks (MMLU for English, M3Exam (M3e)
     for English, Chinese, Vietnamese, Indonesian, and Thai, and VMLU for Vietnamese)
-    and it outperformed GPT-3 and Vistral-7B-chat models across these benchmarks
-    in the given languages.
-  size: 7B parameters
-  dependencies: [Gemma]
-  training_emissions: unknown
-  training_time: unknown
-  training_hardware: unknown
+    and it outperformed GPT-3 and Vistral-7B-chat models across these benchmarks in
+    the given languages.
+  created_date: 2024-04-12
+  dependencies:
+  - Gemma
+  description: SeaLLM v2.5 is a multilingual large language model for Southeast Asian
+    (SEA) languages.
+  feedback: https://huggingface.co/SeaLLMs/SeaLLM-7B-v2.5/discussions
+  intended_uses: The model is intended for multilingual tasks such as knowledge retrieval,
+    math reasoning, and instruction following. Also, it could be used to provide multilingual
+    assistance.
+  license:
+    explanation: License can be found at https://huggingface.co/SeaLLMs/SeaLLM-13B-Chat/blob/main/LICENSE
+    value: custom
+  modality: text; text
+  model_card: https://huggingface.co/SeaLLMs/SeaLLM-7B-v2.5
+  monitoring: unknown
+  name: SeaLLM v2.5
+  nationality: China
+  organization: DAMO Academy, Alibaba
+  prohibited_uses: The model should not be used in a way that could lead to inaccurate,
+    misleading or potentially harmful generation. Users should comply with local laws
+    and regulations when deploying the model.
   quality_control: Despite efforts in red teaming and safety fine-tuning and enforcement,
     the creators suggest, developers and stakeholders should perform their own red
     teaming and provide related security measures before deployment, and they must
     abide by and comply with local governance and regulations.
-  access: open
-  license:
-    explanation: License can be found at https://huggingface.co/SeaLLMs/SeaLLM-13B-Chat/blob/main/LICENSE
-    value: custom
-  intended_uses: The model is intended for multilingual tasks such as knowledge
-    retrieval, math reasoning, and instruction following. Also, it could be used
-    to provide multilingual assistance.
-  prohibited_uses: The model should not be used in a way that could lead to inaccurate,
-    misleading or potentially harmful generation. Users should comply with local
-    laws and regulations when deploying the model.
-  monitoring: unknown
-  feedback: https://huggingface.co/SeaLLMs/SeaLLM-7B-v2.5/discussions
+  size: 7B parameters
+  training_emissions: unknown
+  training_hardware: unknown
+  training_time: unknown
+  type: model
+  url: https://github.com/DAMO-NLP-SG/SeaLLMs

@@ -1,184 +1,195 @@
----
-- type: model
-  name: BioMedLM
-  organization: Stanford
-  description: ''
-  created_date: 2022-12-15
-  url: https://crfm.stanford.edu/2022/12/15/pubmedgpt.html
-  model_card: ''
-  modality: text; text
+- access: open
   analysis: ''
-  size: 2.7B parameters (dense)
-  dependencies: [The Pile]
-  training_emissions: ''
-  training_time: ''
-  training_hardware: ''
-  quality_control: ''
-  access: open
-  license: bigscience-bloom-rail-1.0
-  intended_uses: ''
-  prohibited_uses: ''
-  monitoring: ''
+  created_date: 2022-12-15
+  dependencies:
+  - The Pile
+  description: ''
   feedback: ''
-- type: model
-  name: RoentGen
-  organization: Stanford
-  description: RoentGen is a generative medical imaging model that can create visually
-    convincing X-ray images.
-  created_date: 2022-11-23
-  url: https://arxiv.org/pdf/2211.12737.pdf
+  intended_uses: ''
+  license: bigscience-bloom-rail-1.0
+  modality: text; text
   model_card: ''
-  modality: text; image
+  monitoring: ''
+  name: BioMedLM
+  nationality: USA
+  organization: Stanford
+  prohibited_uses: ''
+  quality_control: ''
+  size: 2.7B parameters (dense)
+  training_emissions: ''
+  training_hardware: ''
+  training_time: ''
+  type: model
+  url: https://crfm.stanford.edu/2022/12/15/pubmedgpt.html
+- access: open
   analysis: Evaluated on own framework that tests domain-specific tasks in medical
     field.
-  size: 330M parameters (dense)
-  dependencies: [Stable Diffusion, RoentGen radiology dataset]
-  training_emissions: unknown
-  training_time: 60k training steps per day
-  training_hardware: 64 A100 GPUs
-  quality_control: ''
-  access: open
-  license: ''
-  intended_uses: ''
-  prohibited_uses: ''
-  monitoring: ''
+  created_date: 2022-11-23
+  dependencies:
+  - Stable Diffusion
+  - RoentGen radiology dataset
+  description: RoentGen is a generative medical imaging model that can create visually
+    convincing X-ray images.
   feedback: ''
-- type: model
-  name: CORGI
-  organization: Stanford
-  description: Model trained to generate language corrections for physical control
-    tasks.
-  created_date: 2023-06-12
-  url: https://arxiv.org/pdf/2306.07012.pdf
+  intended_uses: ''
+  license: ''
+  modality: text; image
   model_card: ''
-  modality: human trajectories; text
+  monitoring: ''
+  name: RoentGen
+  nationality: USA
+  organization: Stanford
+  prohibited_uses: ''
+  quality_control: ''
+  size: 330M parameters (dense)
+  training_emissions: unknown
+  training_hardware: 64 A100 GPUs
+  training_time: 60k training steps per day
+  type: model
+  url: https://arxiv.org/pdf/2211.12737.pdf
+- access: open
   analysis: Evaluated on three physical control tasks, drawing, steering, and human
     body movement on various dynamics
-  size: 124M parameters (dense)
-  dependencies: [GPT-2, BABEL, text-davinci-003]
-  training_emissions: ''
-  training_time:
-    explanation: The authors do not report the training time, but do report that
-      they train for 200 epochs.
-    value: unknown
-  training_hardware: one NVIDIA A40 GPU
-  quality_control: ''
-  access: open
-  license: MIT
-  intended_uses: ''
-  prohibited_uses: ''
-  monitoring: ''
+  created_date: 2023-06-12
+  dependencies:
+  - GPT-2
+  - BABEL
+  - text-davinci-003
+  description: Model trained to generate language corrections for physical control
+    tasks.
   feedback: ''
-- type: dataset
-  name: Alpaca dataset
-  # General
+  intended_uses: ''
+  license: MIT
+  modality: human trajectories; text
+  model_card: ''
+  monitoring: ''
+  name: CORGI
+  nationality: USA
   organization: Stanford
-  description: >
-    Alpaca dataset consistes of 52,000 instruction-following demonstrations generated
-    in the style of the [Self-Instruct framework](https://github.com/yizhongw/self-instruct)
-    using OpenAI's text-davinci-003 engine. This instruction data can be used to
-    conduct instruction-tuning for language models and make the language model follow
-    instruction better.
-  created_date:
-    value: 2023-03-13
-    explanation: >
-      The date the [[blog post]](https://crfm.stanford.edu/2023/03/13/alpaca.html)
-      was released.
-  url: https://crfm.stanford.edu/2023/03/13/alpaca.html
-  datasheet: https://huggingface.co/datasets/tatsu-lab/alpaca
-  modality: text (English)
-  size: 52K instruction-following demonstrations
-  sample: []
-  analysis: ''
-  # Construction
-  dependencies: [text-davinci-003]
-  license: CC BY-NC 4.0
-  included: ''
-  excluded: ''
+  prohibited_uses: ''
   quality_control: ''
-  # Downstream
-  access:
-    value: open
+  size: 124M parameters (dense)
+  training_emissions: ''
+  training_hardware: one NVIDIA A40 GPU
+  training_time:
+    explanation: The authors do not report the training time, but do report that they
+      train for 200 epochs.
+    value: unknown
+  type: model
+  url: https://arxiv.org/pdf/2306.07012.pdf
+- access:
     explanation: The dataset can be downloaded from [[Hugging Face]](https://huggingface.co/datasets/tatsu-lab/alpaca).
       The code for generating data is available on the [[GitHub repository]](https://github.com/tatsu-lab/stanford_alpaca#data-generation-process).
-  intended_uses: Alpaca is intended and licensed for research use only.
-  prohibited_uses: ''
-  monitoring: ''
-  feedback: Feedback can be provided on [[GitHub Issues]](https://github.com/tatsu-lab/stanford_alpaca/issues).
-
-- type: model
-  name: Alpaca
-  # General
-  organization: Stanford
-  description: >
-    Alpaca-7B is an instruction-following model fine-tuned from the LLaMA 7B model
-    on 52K instruction-following demonstrations.
-  created_date:
-    value: 2023-03-13
-    explanation: >
-      The date the [[blog post]](https://crfm.stanford.edu/2023/03/13/alpaca.html)
-      was released.
-  url: https://crfm.stanford.edu/2023/03/13/alpaca.html
-  model_card: ''
-  modality: text (English)
-  size: 7B parameters (dense model)
-  analysis: ''
-  # Construction
-  dependencies: [LLaMa, Alpaca dataset]
-  training_emissions: unknown
-  training_time: ''
-  training_hardware: ''
-  quality_control: ''
-  # Downstream
-  access:
     value: open
+  analysis: ''
+  created_date:
+    explanation: 'The date the [[blog post]](https://crfm.stanford.edu/2023/03/13/alpaca.html)
+      was released.
+
+      '
+    value: 2023-03-13
+  datasheet: https://huggingface.co/datasets/tatsu-lab/alpaca
+  dependencies:
+  - text-davinci-003
+  description: 'Alpaca dataset consistes of 52,000 instruction-following demonstrations
+    generated in the style of the [Self-Instruct framework](https://github.com/yizhongw/self-instruct)
+    using OpenAI''s text-davinci-003 engine. This instruction data can be used to
+    conduct instruction-tuning for language models and make the language model follow
+    instruction better.
+
+    '
+  excluded: ''
+  feedback: Feedback can be provided on [[GitHub Issues]](https://github.com/tatsu-lab/stanford_alpaca/issues).
+  included: ''
+  intended_uses: Alpaca is intended and licensed for research use only.
+  license: CC BY-NC 4.0
+  modality: text (English)
+  monitoring: ''
+  name: Alpaca dataset
+  nationality: USA
+  organization: Stanford
+  prohibited_uses: ''
+  quality_control: ''
+  sample: []
+  size: 52K instruction-following demonstrations
+  type: dataset
+  url: https://crfm.stanford.edu/2023/03/13/alpaca.html
+- access:
     explanation: The weight diff between Alpaca-7B and LLaMA-7B is located on the
       [[Hugging Face]](https://huggingface.co/tatsu-lab/alpaca-7b-wdiff). To recover
       the original Alpaca-7B weights, follow the steps given [[here]](https://github.com/tatsu-lab
       stanford_alpaca#recovering-alpaca-weights). Training and data generation code
       can be found on the [[GitHub repository]](https://github.com/tatsu-lab/stanford_alpaca).
       An [[online demo]](https://chat.lmsys.org/?model=alpaca-13b) is also available.
-  license: CC BY NC 4.0 (model weights)
-  intended_uses: Alpaca is intended and licensed for research use only.
-  prohibited_uses: ''
-  monitoring: ''
+    value: open
+  analysis: ''
+  created_date:
+    explanation: 'The date the [[blog post]](https://crfm.stanford.edu/2023/03/13/alpaca.html)
+      was released.
+
+      '
+    value: 2023-03-13
+  dependencies:
+  - LLaMa
+  - Alpaca dataset
+  description: 'Alpaca-7B is an instruction-following model fine-tuned from the LLaMA
+    7B model on 52K instruction-following demonstrations.
+
+    '
   feedback: Feedback can be provided on [[GitHub Issues]](https://github.com/tatsu-lab/stanford_alpaca/issues).
-- type: model
-  name: Merlin
-  organization: Stanford Center for Artificial Intelligence in Medicine and Imaging,
-    Stanford University
+  intended_uses: Alpaca is intended and licensed for research use only.
+  license: CC BY NC 4.0 (model weights)
+  modality: text (English)
+  model_card: ''
+  monitoring: ''
+  name: Alpaca
+  nationality: USA
+  organization: Stanford
+  prohibited_uses: ''
+  quality_control: ''
+  size: 7B parameters (dense model)
+  training_emissions: unknown
+  training_hardware: ''
+  training_time: ''
+  type: model
+  url: https://crfm.stanford.edu/2023/03/13/alpaca.html
+- access: open
+  analysis: Merlin has been comprehensively evaluated on 6 task types and 752 individual
+    tasks. The non-adapted (off-the-shelf) tasks include zero-shot findings classification,
+    phenotype classification, and zero-shot cross-modal retrieval, while model adapted
+    tasks include 5-year chronic disease prediction, radiology report generation,
+    and 3D semantic segmentation. It has undergone internal validation on a test set
+    of 5,137 CTs, and external validation on 7,000 clinical CTs and on two public
+    CT datasets (VerSe, TotalSegmentator).
+  created_date: 2024-09-08
+  dependencies: []
   description: Merlin is a 3D Vision Language Model that's designed for interpretation
     of abdominal computed tomography (CT) scans. It uses both structured Electronic
     Health Record (EHR) and unstructured radiology reports for supervision without
     requiring additional manual annotations. The model was trained on a high-quality
     clinical dataset of paired CT scans, EHR diagnosis codes, and radiology reports
     and was evaluated on 6 task types and 752 individual tasks.
-  created_date: 2024-09-08
-  url: https://arxiv.org/pdf/2406.06512
-  model_card: unknown
-  modality: image; text
-  analysis: Merlin has been comprehensively evaluated on 6 task types and 752 individual
-    tasks. The non-adapted (off-the-shelf) tasks include zero-shot findings classification,
-    phenotype classification, and zero-shot cross-modal retrieval, while model adapted
-    tasks include 5-year chronic disease prediction, radiology report generation,
-    and 3D semantic segmentation. It has undergone internal validation on a test
-    set of 5,137 CTs, and external validation on 7,000 clinical CTs and on two public
-    CT datasets (VerSe, TotalSegmentator).
-  size: Unknown
-  dependencies: []
-  training_emissions: Unknown
-  training_time: Unknown
-  training_hardware: Single GPU.
-  quality_control: The model has undergone extensive evaluations and also internal
-    and external validation tests.
-  access: open
-  license: Unknown
-  intended_uses: This model is intended for use in the interpretation of abdominal
-    computed tomography (CT) scans, chronic disease prediction, radiology report
-    generation, and 3D semantic segmentation.
-  prohibited_uses: The model should not be used outside of healthcare-related context,
-    such as for personal or non-medical commercial purposes.
-  monitoring: Unknown
   feedback: Feedback and reports for problems with the model should likely be routed
     to Stanford Center for Artificial Intelligence in Medicine and Imaging, or the
     corresponding author of the research (louis.blankemeier@stanford.edu).
+  intended_uses: This model is intended for use in the interpretation of abdominal
+    computed tomography (CT) scans, chronic disease prediction, radiology report generation,
+    and 3D semantic segmentation.
+  license: Unknown
+  modality: image; text
+  model_card: unknown
+  monitoring: Unknown
+  name: Merlin
+  nationality: unknown
+  organization: Stanford Center for Artificial Intelligence in Medicine and Imaging,
+    Stanford University
+  prohibited_uses: The model should not be used outside of healthcare-related context,
+    such as for personal or non-medical commercial purposes.
+  quality_control: The model has undergone extensive evaluations and also internal
+    and external validation tests.
+  size: Unknown
+  training_emissions: Unknown
+  training_hardware: Single GPU.
+  training_time: Unknown
+  type: model
+  url: https://arxiv.org/pdf/2406.06512

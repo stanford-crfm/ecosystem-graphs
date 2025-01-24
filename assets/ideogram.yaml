@@ -1,23 +1,23 @@
----
-- type: model
-  name: Ideogram 1.0
-  organization: Ideogram AI
-  description: Ideogram 1.0 is Ideogram’s most advanced text-to-image model, as
-    of release.
+- access: limited
+  analysis: "Compared to DALL\xB7E 3 based on a qualitative user comparison."
   created_date: 2024-02-28
-  url: https://about.ideogram.ai/1.0
-  model_card: none
-  modality: text; image
-  analysis: Compared to DALL·E 3 based on a qualitative user comparison.
-  size: unknown
   dependencies: []
-  training_emissions: unknown
-  training_time: unknown
-  training_hardware: unknown
-  quality_control: ''
-  access: limited
-  license: unknown
-  intended_uses: ''
-  prohibited_uses: ''
-  monitoring: ''
+  description: "Ideogram 1.0 is Ideogram\u2019s most advanced text-to-image model,\
+    \ as of release."
   feedback: none
+  intended_uses: ''
+  license: unknown
+  modality: text; image
+  model_card: none
+  monitoring: ''
+  name: Ideogram 1.0
+  nationality: USA
+  organization: Ideogram AI
+  prohibited_uses: ''
+  quality_control: ''
+  size: unknown
+  training_emissions: unknown
+  training_hardware: unknown
+  training_time: unknown
+  type: model
+  url: https://about.ideogram.ai/1.0

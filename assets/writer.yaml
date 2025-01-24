@@ -1,143 +1,147 @@
----
-- type: model
-  name: Palmyra
-  organization: Writer
-  description: Palmyra is a family of privacy-first LLMs for enterprises trained
-    on business and marketing writing.
-  created_date:
-    explanation: The model was stated to be published in January, but which day
-      is not specified on the website.
-    value: 2023-01-01
-  url: https://gpt3demo.com/apps/palmyra
-  model_card: https://huggingface.co/Writer/palmyra-base
-  modality: text; text
+- access: open
   analysis: Evaluated on the SuperGLUE benchmark
-  size: 20B parameters (dense)
-  dependencies: [Writer dataset]
-  training_emissions: unknown
-  training_time: unknown
-  training_hardware: ''
-  quality_control: ''
-  access: open
-  license: Apache 2.0
-  intended_uses: generating text from a prompt
-  prohibited_uses: ''
-  monitoring: ''
+  created_date:
+    explanation: The model was stated to be published in January, but which day is
+      not specified on the website.
+    value: 2023-01-01
+  dependencies:
+  - Writer dataset
+  description: Palmyra is a family of privacy-first LLMs for enterprises trained on
+    business and marketing writing.
   feedback: https://huggingface.co/Writer/palmyra-base/discussions
-- type: model
-  name: Camel
+  intended_uses: generating text from a prompt
+  license: Apache 2.0
+  modality: text; text
+  model_card: https://huggingface.co/Writer/palmyra-base
+  monitoring: ''
+  name: Palmyra
+  nationality: USA
   organization: Writer
+  prohibited_uses: ''
+  quality_control: ''
+  size: 20B parameters (dense)
+  training_emissions: unknown
+  training_hardware: ''
+  training_time: unknown
+  type: model
+  url: https://gpt3demo.com/apps/palmyra
+- access: open
+  analysis: ''
+  created_date:
+    explanation: The model was stated to be published in April, but which day is not
+      specified on the website.
+    value: 2023-04-01
+  dependencies:
+  - Palmyra
+  - Camel dataset
   description: Camel is an instruction-following large language model tailored for
     advanced NLP and comprehension capabilities.
-  created_date:
-    explanation: The model was stated to be published in April, but which day is
-      not specified on the website.
-    value: 2023-04-01
-  url: https://chatcamel.vercel.app/
-  model_card: https://huggingface.co/Writer/camel-5b-hf
-  modality: text; text
-  analysis: ''
-  size: 5B parameters (dense)
-  dependencies: [Palmyra, Camel dataset]
-  training_emissions: unknown
-  training_time: unknown
-  training_hardware: ''
-  quality_control: ''
-  access: open
-  license: Apache 2.0
-  intended_uses: ''
-  prohibited_uses: ''
-  monitoring: ''
   feedback: https://huggingface.co/Writer/camel-5b-hf/discussions
-- type: model
-  name: Palmyra-Med-70b-32k
+  intended_uses: ''
+  license: Apache 2.0
+  modality: text; text
+  model_card: https://huggingface.co/Writer/camel-5b-hf
+  monitoring: ''
+  name: Camel
+  nationality: USA
   organization: Writer
-  description: Palmyra-Med-70b-32k is a Language Model designed specifically for
-    healthcare and biomedical applications. It builds upon the foundation of Palmyra-Med-70b
+  prohibited_uses: ''
+  quality_control: ''
+  size: 5B parameters (dense)
+  training_emissions: unknown
+  training_hardware: ''
+  training_time: unknown
+  type: model
+  url: https://chatcamel.vercel.app/
+- access: open
+  analysis: The model was evaluated across 9 diverse biomedical datasets where it
+    achieved state-of-the-art results with an average score of 85.9%. It also demonstrated
+    robust capability in efficiently processing extensive medical documents, as showcased
+    by its near-perfect score in the NIH evaluation.
+  created_date: 2024-09-08
+  dependencies:
+  - Palmyra-X-004
+  description: Palmyra-Med-70b-32k is a Language Model designed specifically for healthcare
+    and biomedical applications. It builds upon the foundation of Palmyra-Med-70b
     and offers an extended context length. This model integrates the DPO dataset,
     a custom medical instruction dataset, and has been fine-tuned to meet the unique
     requirements of the medical and life sciences sectors. It is ranked as the leading
     LLM on biomedical benchmarks with an average score of 85.87%.
-  created_date: 2024-09-08
-  url: https://huggingface.co/Writer/Palmyra-Med-70B-32K
-  model_card: https://huggingface.co/Writer/Palmyra-Med-70B-32K
-  modality: text; text
-  analysis: The model was evaluated across 9 diverse biomedical datasets where it
-    achieved state-of-the-art results with an average score of 85.9%. It also demonstrated
-    robust capability in efficiently processing extensive medical documents, as
-    showcased by its near-perfect score in the NIH evaluation.
-  size: 70B parameters
-  dependencies: [Palmyra-X-004]
-  training_emissions: Unknown
-  training_time: Unknown
-  training_hardware: Unknown
-  quality_control: The model has been refined using Policy Optimization and a finely
-    crafted fine-tuning dataset. It contains watermarks to detect and prevent misuse
-    and illegal use.
-  access: open
+  feedback: Downstream problems with this model should be reported via email to Hello@writer.com.
+  intended_uses: Palmyra-Med-70b-32k is intended for non-commercial and research use
+    in English. Specifically, it can be used for tasks like clinical entity recognition
+    and knowledge discovery from EHRs, research articles, and other biomedical sources.
+    It excels in analyzing and summarizing complex clinical notes, EHR data, and discharge
+    summaries.
   license: Writer open model
-  intended_uses: Palmyra-Med-70b-32k is intended for non-commercial and research
-    use in English. Specifically, it can be used for tasks like clinical entity
-    recognition and knowledge discovery from EHRs, research articles, and other
-    biomedical sources. It excels in analyzing and summarizing complex clinical
-    notes, EHR data, and discharge summaries.
+  modality: text; text
+  model_card: https://huggingface.co/Writer/Palmyra-Med-70B-32K
+  monitoring: Measures in place to monitor misuse include the addition of watermarks
+    in all models built by Writer.com to detect and prevent misuse and illegal use.
+  name: Palmyra-Med-70b-32k
+  nationality: USA
+  organization: Writer
   prohibited_uses: The model should not be used in any manner that violates applicable
     laws or regulations. It is not to be used in direct patient care, clinical decision
     support, or professional medical purposes. The model should not replace professional
     medical judgment.
-  monitoring: Measures in place to monitor misuse include the addition of watermarks
-    in all models built by Writer.com to detect and prevent misuse and illegal use.
-  feedback: Downstream problems with this model should be reported via email to
-    Hello@writer.com.
-- type: model
-  name: Palmyra-Fin-70B-32K
-  organization: Writer
+  quality_control: The model has been refined using Policy Optimization and a finely
+    crafted fine-tuning dataset. It contains watermarks to detect and prevent misuse
+    and illegal use.
+  size: 70B parameters
+  training_emissions: Unknown
+  training_hardware: Unknown
+  training_time: Unknown
+  type: model
+  url: https://huggingface.co/Writer/Palmyra-Med-70B-32K
+- access: open
+  analysis: The model has been evaluated internally, showing state-of-the-art results
+    on various financial datasets. It has shown 100% accuracy in needle-in-haystack
+    tasks and superior performance in comparison to other models in the organization's
+    internal finance evaluations. It passed the CFA Level III test with a score of
+    73% and has shown superior performance compared to other models in the long-fin-eval,
+    an internally created benchmark that simulates real-world financial scenarios.
+  created_date: 2024-09-08
+  dependencies:
+  - Palmyra-X-004
+  - Writer in-house financial instruction dataset
   description: Palmyra-Fin-70B-32K is a leading LLM built specifically to meet the
     needs of the financial industry. It has been fine-tuned on an extensive collection
     of high-quality financial data and it is highly adept at handling the specific
     needs of the finance field. It outperforms other large language models in various
     financial tasks and evaluations, achieving state-of-the-art results across various
-    financial datasets. Its strong performance in tasks like financial document
-    analysis, market trend prediction, risk assessment underscores its effective
-    grasp of financial knowledge.
-  created_date: 2024-09-08
-  url: https://huggingface.co/Writer/Palmyra-Fin-70B-32K
-  model_card: https://huggingface.co/Writer/Palmyra-Fin-70B-32K
-  modality: text; text
-  analysis: The model has been evaluated internally, showing state-of-the-art results
-    on various financial datasets. It has shown 100% accuracy in needle-in-haystack
-    tasks and superior performance in comparison to other models in the organization's
-    internal finance evaluations. It passed the CFA Level III test with a score
-    of 73% and has shown superior performance compared to other models in the long-fin-eval,
-    an internally created benchmark that simulates real-world financial scenarios.
-  size: 70B parameters (dense)
-  dependencies:
-    - Palmyra-X-004
-    - Writer in-house financial instruction dataset
-  training_emissions: Unknown
-  training_time: Unknown
-  training_hardware: Unknown
-  quality_control: The model was trained with a proprietary internal database and
-    a fine-tuning recipe to ensure a greater level of domain-specific accuracy and
-    fluency. Still, the model may contain inaccuracies, biases, or misalignments
-    and its usage for direct financial decision-making or professional financial
-    advice without human oversight is not recommended. It has not been rigorously
-    evaluated in real-world financial settings and it requires further testing,
-    regulatory compliance, bias mitigation, and human oversight for more critical
-    financial applications.
-  access: open
-  license: Writer open model license
+    financial datasets. Its strong performance in tasks like financial document analysis,
+    market trend prediction, risk assessment underscores its effective grasp of financial
+    knowledge.
+  feedback: Downstream problems with this model should be reported to Hello@writer.com.
   intended_uses: The model is intended for use in English for financial analysis,
     market trend prediction, risk assessment, financial report generation, automated
-    financial advice, and answering questions from long financial documents. It
-    can be used for entity recognition, identifying key financial concepts such
-    as market trends, economic indicators, and financial instruments from unstructured
-    text.
+    financial advice, and answering questions from long financial documents. It can
+    be used for entity recognition, identifying key financial concepts such as market
+    trends, economic indicators, and financial instruments from unstructured text.
+  license: Writer open model license
+  modality: text; text
+  model_card: https://huggingface.co/Writer/Palmyra-Fin-70B-32K
+  monitoring: Unknown
+  name: Palmyra-Fin-70B-32K
+  nationality: USA
+  organization: Writer
   prohibited_uses: The model should not be used in manners that violate applicable
     laws or regulations, including trade compliance laws, use prohibited by Writer's
-    acceptable use policy, the Writer open model license, and in languages other
-    than English. It is advised not to use the model for direct financial decision-making
+    acceptable use policy, the Writer open model license, and in languages other than
+    English. It is advised not to use the model for direct financial decision-making
     or professional financial advice without human oversight. Always consult a qualified
     financial professional for personal financial needs.
-  monitoring: Unknown
-  feedback: Downstream problems with this model should be reported to Hello@writer.com.
+  quality_control: The model was trained with a proprietary internal database and
+    a fine-tuning recipe to ensure a greater level of domain-specific accuracy and
+    fluency. Still, the model may contain inaccuracies, biases, or misalignments and
+    its usage for direct financial decision-making or professional financial advice
+    without human oversight is not recommended. It has not been rigorously evaluated
+    in real-world financial settings and it requires further testing, regulatory compliance,
+    bias mitigation, and human oversight for more critical financial applications.
+  size: 70B parameters (dense)
+  training_emissions: Unknown
+  training_hardware: Unknown
+  training_time: Unknown
+  type: model
+  url: https://huggingface.co/Writer/Palmyra-Fin-70B-32K

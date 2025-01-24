@@ -1,40 +1,70 @@
----
-- type: model
-  name: DeepSeek-V3
-  organization: DeepSeek
-  description: DeepSeek-V3 is a Mixture-of-Experts (MoE) language model with 671B
-    total parameters and 37B activated per token. It utilizes Multi-head Latent
-    Attention (MLA) and adopts innovative strategies for improved performance, such
-    as an auxiliary-loss-free load balancing and a multi-token prediction training
-    objective. Comprehensive evaluations show it achieves performance comparable
-    to leading closed-source models.
+- access:
+    explanation: producing the currently strongest open-source base model.
+    value: open
+  analysis: Comprehensive evaluations reveal that DeepSeek-V3 outperforms other open-source
+    models and achieves performance comparable to leading closed-source models.
   created_date: 2025-01-14
-  url: https://huggingface.co/deepseek-ai/DeepSeek-V3
-  model_card: https://huggingface.co/deepseek-ai/DeepSeek-V3
+  dependencies:
+  - DeepSeek-R1
+  description: DeepSeek-V3 is a Mixture-of-Experts (MoE) language model with 671B
+    total parameters and 37B activated per token. It utilizes Multi-head Latent Attention
+    (MLA) and adopts innovative strategies for improved performance, such as an auxiliary-loss-free
+    load balancing and a multi-token prediction training objective. Comprehensive
+    evaluations show it achieves performance comparable to leading closed-source models.
+  feedback: unknown
+  intended_uses: unknown
+  license: MIT
   modality: unknown
-  analysis: Comprehensive evaluations reveal that DeepSeek-V3 outperforms other
-    open-source models and achieves performance comparable to leading closed-source
-    models.
+  model_card: https://huggingface.co/deepseek-ai/DeepSeek-V3
+  monitoring: unknown
+  name: DeepSeek-V3
+  nationality: unknown
+  organization: DeepSeek
+  prohibited_uses: unknown
+  quality_control: Post-training includes knowledge distillation from the DeepSeek-R1
+    model, incorporating verification and reflection patterns to enhance reasoning
+    performance.
   size:
     explanation: a strong Mixture-of-Experts (MoE) language model with 671B total
       parameters with 37B activated for each token.
     value: 671B parameters (sparse)
-  dependencies: [DeepSeek-R1]
   training_emissions: unknown
-  training_time:
-    explanation: DeepSeek-V3 requires only 2.788M H800 GPU hours for its full training.
-    value: 2.788M GPU hours
   training_hardware:
     explanation: DeepSeek-V3 requires only 2.788M H800 GPU hours for its full training.
     value: H800 GPUs
-  quality_control: Post-training includes knowledge distillation from the DeepSeek-R1
-    model, incorporating verification and reflection patterns to enhance reasoning
-    performance.
-  access:
-    explanation: producing the currently strongest open-source base model.
-    value: open
-  license: MIT
-  intended_uses: unknown
-  prohibited_uses: unknown
-  monitoring: unknown
-  feedback: unknown
+  training_time:
+    explanation: DeepSeek-V3 requires only 2.788M H800 GPU hours for its full training.
+    value: 2.788M GPU hours
+  type: model
+  url: https://huggingface.co/deepseek-ai/DeepSeek-V3
+- access: open
+  analysis: ''
+  created_date: 2024-04-24
+  dependencies: []
+  description: We present a methodology for scaling LLMs called depth up-scaling (DUS)
+    , which encompasses architectural modifications and continued pretraining. In
+    other words, we integrated Mistral 7B weights into the upscaled layers, and finally,
+    continued pre-training for the entire model. SOLAR-10.7B has remarkable performance.
+    It outperforms models with up to 30B parameters, even surpassing the recent Mixtral
+    8X7B model. For detailed information, please refer to the experimental table.
+    Solar 10.7B is an ideal choice for fine-tuning. SOLAR-10.7B offers robustness
+    and adaptability for your fine-tuning needs. Our simple instruction fine-tuning
+    using the SOLAR-10.7B pre-trained model yields significant performance improvements
+    (SOLAR-10.7B-Instruct-v1.0).
+  feedback: https://www.upstage.ai/solar-llm
+  intended_uses: ''
+  license: Apache 2.0
+  modality: text; text
+  model_card: https://huggingface.co/upstage/SOLAR-10.7B-v1.0
+  monitoring: ''
+  name: SOLAR
+  nationality: South Korea
+  organization: Upstage.ai
+  prohibited_uses: ''
+  quality_control: ''
+  size: 10.7B parameters
+  training_emissions: ''
+  training_hardware: ''
+  training_time: ''
+  type: model
+  url: https://arxiv.org/abs/2312.15166

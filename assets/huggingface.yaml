@@ -1,230 +1,249 @@
----
-- type: model
-  name: CodeParrot
-  organization: HuggingFace
-  description: CodeParrot is an autoregressive language model trained on code
+- access: open
+  analysis: none
   created_date:
     explanation: The date the model was announced
     value: 2021-12-06
-  url: https://twitter.com/lvwerra/status/1467933794699259908
-  model_card: none
-  modality: text; code, text
-  analysis: none
-  size: 1B parameters (dense)
   dependencies: []
-  training_emissions: unknown
-  training_time: unknown
-  training_hardware: 16 x A100 (40GB)
-  quality_control: none
-  access: open
+  description: CodeParrot is an autoregressive language model trained on code
+  feedback: none
+  intended_uses: none
   license:
     explanation: No license is explicitly provided for this model.
     value: none
-  intended_uses: none
-  prohibited_uses: none
+  modality: text; code, text
+  model_card: none
   monitoring: none
-  feedback: none
-- type: model
-  name: Zephyr
+  name: CodeParrot
+  nationality: USA
   organization: HuggingFace
-  description: Zephyr is a series of language models that are trained to act as
-    helpful assistants.
-  created_date: 2023-10-11
-  url: https://huggingface.co/HuggingFaceH4/zephyr-7b-alpha
-  model_card: https://huggingface.co/HuggingFaceH4/zephyr-7b-alpha
-  modality: text; text
+  prohibited_uses: none
+  quality_control: none
+  size: 1B parameters (dense)
+  training_emissions: unknown
+  training_hardware: 16 x A100 (40GB)
+  training_time: unknown
+  type: model
+  url: https://twitter.com/lvwerra/status/1467933794699259908
+- access: open
   analysis: Evaluated on loss, rewards, logps, and logits rejected and chosen.
-  size: 7B parameters (dense)
-  dependencies: [Mistral]
-  training_emissions: unknown
-  training_time: unknown
-  training_hardware: unknown
-  quality_control: none
-  access: open
-  license: MIT
-  intended_uses: Educational and research purposes
-  prohibited_uses: none
-  monitoring: none
+  created_date: 2023-10-11
+  dependencies:
+  - Mistral
+  description: Zephyr is a series of language models that are trained to act as helpful
+    assistants.
   feedback: https://huggingface.co/HuggingFaceH4/zephyr-7b-alpha/discussions
-- type: model
-  name: IDEFICS
+  intended_uses: Educational and research purposes
+  license: MIT
+  modality: text; text
+  model_card: https://huggingface.co/HuggingFaceH4/zephyr-7b-alpha
+  monitoring: none
+  name: Zephyr
+  nationality: USA
   organization: HuggingFace
-  description: IDEFICS is an open-access visual language model, based on Flamingo.
-  created_date: 2023-08-22
-  url: https://huggingface.co/blog/idefics
-  model_card: https://huggingface.co/HuggingFaceM4/idefics-80b-instruct
-  modality: image, text; text
-  analysis: Evaluated in comparison to Flamingo and OpenFlamingo on standard benchmarks.
-  size: 80B parameters (dense)
-  dependencies: [OBELICS, Wikipedia, LAION-5B, PMD]
-  training_emissions: unknown
-  training_time: unknown
-  training_hardware: unknown
+  prohibited_uses: none
   quality_control: none
-  access: open
+  size: 7B parameters (dense)
+  training_emissions: unknown
+  training_hardware: unknown
+  training_time: unknown
+  type: model
+  url: https://huggingface.co/HuggingFaceH4/zephyr-7b-alpha
+- access: open
+  analysis: Evaluated in comparison to Flamingo and OpenFlamingo on standard benchmarks.
+  created_date: 2023-08-22
+  dependencies:
+  - OBELICS
+  - Wikipedia
+  - LAION-5B
+  - PMD
+  description: IDEFICS is an open-access visual language model, based on Flamingo.
+  feedback: https://huggingface.co/HuggingFaceM4/idefics-80b-instruct/discussions
+  intended_uses: Educational and research purposes
   license:
     explanation: Can be found at https://huggingface.co/HuggingFaceM4/idefics-80b-instruct#license
     value: custom
-  intended_uses: Educational and research purposes
-  prohibited_uses: none
+  modality: image, text; text
+  model_card: https://huggingface.co/HuggingFaceM4/idefics-80b-instruct
   monitoring: none
-  feedback: https://huggingface.co/HuggingFaceM4/idefics-80b-instruct/discussions
-- type: dataset
-  name: OBELICS
+  name: IDEFICS
+  nationality: USA
   organization: HuggingFace
-  description: OBELICS is a dataset consisting of 141 million interleaved image-text
-    documents scraped from the web and contains 353 million images.
-  created_date: 2023-08-22
+  prohibited_uses: none
+  quality_control: none
+  size: 80B parameters (dense)
+  training_emissions: unknown
+  training_hardware: unknown
+  training_time: unknown
+  type: model
   url: https://huggingface.co/blog/idefics
-  datasheet: https://huggingface.co/datasets/HuggingFaceM4/OBELICS
-  modality: image, text
-  size: 115B tokens
-  sample: []
+- access: open
   analysis: Subset of training dataset evaluated for bias using Data Measurements
     Tool.
+  created_date: 2023-08-22
+  datasheet: https://huggingface.co/datasets/HuggingFaceM4/OBELICS
   dependencies: []
-  included: ''
+  description: OBELICS is a dataset consisting of 141 million interleaved image-text
+    documents scraped from the web and contains 353 million images.
   excluded: All images for which creators explicitly requested opt-out of AI training.
+  feedback: https://huggingface.co/datasets/HuggingFaceM4/OBELICS/discussions
+  included: ''
+  intended_uses: ''
+  license: CC-BY-4.0
+  modality: image, text
+  monitoring: ''
+  name: OBELICS
+  nationality: USA
+  organization: HuggingFace
+  prohibited_uses: ''
   quality_control: Sexual and violent content still present in OBELICS even after
     filtering.
-  access: open
-  license: CC-BY-4.0
-  intended_uses: ''
-  prohibited_uses: ''
-  monitoring: ''
-  feedback: https://huggingface.co/datasets/HuggingFaceM4/OBELICS/discussions
-- type: model
-  name: FinGPT
-  organization: University of Turku, HuggingFace, National Library of Finland
-  description: FinGPT is a series of Finnish LLMs trained from scratch.
-  created_date: 2023-11-03
-  url: https://arxiv.org/pdf/2311.05640.pdf
-  model_card: https://huggingface.co/TurkuNLP/gpt3-finnish-13B
-  modality: text; text
+  sample: []
+  size: 115B tokens
+  type: dataset
+  url: https://huggingface.co/blog/idefics
+- access: open
   analysis: Evaluated on in-house benchmark, FIN-bench, adapted from BIG-bench for
     Finnish.
-  size: 13B parameters (dense)
+  created_date: 2023-11-03
   dependencies: []
-  training_emissions: unknown
-  training_time: unknown
-  training_hardware: 192 nodes, each consisting of 4 AMD Instinct MI250X GPUs, a
-    single 64-core AMD Trento CPU and 512GB of memory.
-  quality_control: unknown
-  access: open
-  license: Apache 2.0
-  intended_uses: ''
-  prohibited_uses: ''
-  monitoring: unknown
+  description: FinGPT is a series of Finnish LLMs trained from scratch.
   feedback: https://huggingface.co/TurkuNLP/gpt3-finnish-13B/discussions
-- type: model
-  name: BLUUMI
-  organization: University of Turku, HuggingFace, National Library of Finland
-  description: BLUUMI is a multilingual fine-tuned version of BLOOM.
-  created_date: 2023-11-03
-  url: https://arxiv.org/pdf/2311.05640.pdf
-  model_card: https://huggingface.co/TurkuNLP/bloom-finnish-176b
+  intended_uses: ''
+  license: Apache 2.0
   modality: text; text
+  model_card: https://huggingface.co/TurkuNLP/gpt3-finnish-13B
+  monitoring: unknown
+  name: FinGPT
+  nationality: unknown
+  organization: University of Turku, HuggingFace, National Library of Finland
+  prohibited_uses: ''
+  quality_control: unknown
+  size: 13B parameters (dense)
+  training_emissions: unknown
+  training_hardware: 192 nodes, each consisting of 4 AMD Instinct MI250X GPUs, a single
+    64-core AMD Trento CPU and 512GB of memory.
+  training_time: unknown
+  type: model
+  url: https://arxiv.org/pdf/2311.05640.pdf
+- access: open
   analysis: Evaluated on in-house benchmark, FIN-bench, adapted from BIG-bench for
     Finnish.
-  size: 176B parameters (dense)
-  dependencies: [BLOOM]
-  training_emissions: unknown
-  training_time: unknown
-  training_hardware: 192 nodes, each consisting of 4 AMD Instinct MI250X GPUs, a
-    single 64-core AMD Trento CPU and 512GB of memory.
-  quality_control: unknown
-  access: open
+  created_date: 2023-11-03
+  dependencies:
+  - BLOOM
+  description: BLUUMI is a multilingual fine-tuned version of BLOOM.
+  feedback: https://huggingface.co/TurkuNLP/bloom-finnish-176b/discussions
+  intended_uses: ''
   license:
     explanation: Model card indicates same as license for BLOOM.
     value: BigScience RAIL v1.0
-  intended_uses: ''
-  prohibited_uses: ''
+  modality: text; text
+  model_card: https://huggingface.co/TurkuNLP/bloom-finnish-176b
   monitoring: unknown
-  feedback: https://huggingface.co/TurkuNLP/bloom-finnish-176b/discussions
-- type: dataset
-  name: Cosmopedia v0.1
-  organization: Hugging Face
-  description: Cosmopedia is a dataset of synthetic textbooks, blogposts, stories,
-    posts, and WikiHow articles generated by Mixtral-8x7B-Instruct-v0.1. The dataset
-    contains over 30 million files and 25 billion tokens, making it the largest
-    open synthetic dataset to date. It covers a variety of topics, mapping worldwide
-    knowledge from Web datasets like RefinedWeb and RedPajama, to generate synthetic
-    content.
-  created_date: 2024-02-22
-  url: none
-  datasheet: https://huggingface.co/datasets/HuggingFaceTB/cosmopedia
-  modality: text
-  size: 25B tokens
-  sample: []
+  name: BLUUMI
+  nationality: unknown
+  organization: University of Turku, HuggingFace, National Library of Finland
+  prohibited_uses: ''
+  quality_control: unknown
+  size: 176B parameters (dense)
+  training_emissions: unknown
+  training_hardware: 192 nodes, each consisting of 4 AMD Instinct MI250X GPUs, a single
+    64-core AMD Trento CPU and 512GB of memory.
+  training_time: unknown
+  type: model
+  url: https://arxiv.org/pdf/2311.05640.pdf
+- access: open
   analysis: Some seed samples were used in different prompt styles and audiences.
     Less than 1% of files are duplicates after running MinHash deduplication. Contaminated
     samples were removed from each dataset split.
-  dependencies: [Mixtral]
-  included: ''
+  created_date: 2024-02-22
+  datasheet: https://huggingface.co/datasets/HuggingFaceTB/cosmopedia
+  dependencies:
+  - Mixtral
+  description: Cosmopedia is a dataset of synthetic textbooks, blogposts, stories,
+    posts, and WikiHow articles generated by Mixtral-8x7B-Instruct-v0.1. The dataset
+    contains over 30 million files and 25 billion tokens, making it the largest open
+    synthetic dataset to date. It covers a variety of topics, mapping worldwide knowledge
+    from Web datasets like RefinedWeb and RedPajama, to generate synthetic content.
   excluded: unknown
-  quality_control: Measures were taken to reduce redundancy and ensure diversity
-    in generated content. A decontamination pipeline was implemented to avoid benchmark
-    contamination.
-  access: open
-  license: unknown
-  intended_uses: ''
-  prohibited_uses: unknown
-  monitoring: ''
   feedback: https://huggingface.co/datasets/HuggingFaceTB/cosmopedia/discussions
-- type: model
-  name: Idefics2
+  included: ''
+  intended_uses: ''
+  license: unknown
+  modality: text
+  monitoring: ''
+  name: Cosmopedia v0.1
+  nationality: unknown
   organization: Hugging Face
+  prohibited_uses: unknown
+  quality_control: Measures were taken to reduce redundancy and ensure diversity in
+    generated content. A decontamination pipeline was implemented to avoid benchmark
+    contamination.
+  sample: []
+  size: 25B tokens
+  type: dataset
+  url: none
+- access: open
+  analysis: The performance of Idefics2 has been evaluated on numerous benchmarks.
+    It is top of its class size and competes with much larger models such as LLava-Next-34B
+    and MM1-30B-chat.
+  created_date: 2024-04-15
+  dependencies:
+  - The Cauldron
   description: Idefics2 is a general multimodal model that takes as input arbitrary
     sequences of text and images, generating text responses. It has the capability
     to describe visual content, answer questions about images, perform basic arithmetic
     operations, create stories grounded in multiple images, and extract information
     from documents.
-  created_date: 2024-04-15
-  url: https://huggingface.co/blog/idefics2
-  model_card: https://huggingface.co/HuggingFaceM4/idefics2-8b
-  modality: image, text; text
-  analysis: The performance of Idefics2 has been evaluated on numerous benchmarks.
-    It is top of its class size and competes with much larger models such as LLava-Next-34B
-    and MM1-30B-chat.
-  size: 8B parameters
-  dependencies: [The Cauldron]
-  training_emissions: unknown
-  training_time: unknown
-  training_hardware: unknown
-  quality_control: The quality of the model has been ensured by training it on a
-    mixture of openly available datasets and enhancing its OCR capabilities. Further
-    improvements include manipulating images in their native resolutions and aspect
-    ratios, better pre-trained backbones, and allowing for sub-image splitting.
-  access: open
-  license: Apache 2.0
+  feedback: https://huggingface.co/HuggingFaceM4/idefics2-8b/discussions
   intended_uses: The model can be used for answering questions about images, describing
     visual content, creating stories grounded in multiple images, extracting information
     from documents, and performing basic arithmetic operations.
-  prohibited_uses: unknown
+  license: Apache 2.0
+  modality: image, text; text
+  model_card: https://huggingface.co/HuggingFaceM4/idefics2-8b
   monitoring: unknown
-  feedback: https://huggingface.co/HuggingFaceM4/idefics2-8b/discussions
-- type: dataset
-  name: The Cauldron
+  name: Idefics2
+  nationality: unknown
   organization: Hugging Face
+  prohibited_uses: unknown
+  quality_control: The quality of the model has been ensured by training it on a mixture
+    of openly available datasets and enhancing its OCR capabilities. Further improvements
+    include manipulating images in their native resolutions and aspect ratios, better
+    pre-trained backbones, and allowing for sub-image splitting.
+  size: 8B parameters
+  training_emissions: unknown
+  training_hardware: unknown
+  training_time: unknown
+  type: model
+  url: https://huggingface.co/blog/idefics2
+- access: open
+  analysis: none
+  created_date: 2024-04-15
+  datasheet: https://huggingface.co/datasets/HuggingFaceM4/the_cauldron
+  dependencies:
+    explanation: These are the datasets with the most tokens included; the full list
+      of all 50 datasets can be found at https://huggingface.co/datasets/HuggingFaceM4/the_cauldron
+    value:
+    - LNarratives
+    - Rendered Text
+    - WebSight
+    - DaTikz
   description: The Cauldron is an open compilation of 50 manually-curated datasets
     formatted for multi-turn conversations.
-  created_date: 2024-04-15
-  url: https://huggingface.co/blog/idefics2
-  datasheet: https://huggingface.co/datasets/HuggingFaceM4/the_cauldron
-  modality: image, text
-  size: 50 vision-language datasets
-  sample: []
-  analysis: none
-  dependencies:
-    explanation: These are the datasets with the most tokens included; the full
-      list of all 50 datasets can be found at https://huggingface.co/datasets/HuggingFaceM4/the_cauldron
-    value: [LNarratives, Rendered Text, WebSight, DaTikz]
-  included: ''
   excluded: ''
-  quality_control: unknown
-  access: open
-  license: CC BY 4.0
-  intended_uses: ''
-  prohibited_uses: ''
-  monitoring: unknown
   feedback: https://huggingface.co/datasets/HuggingFaceM4/the_cauldron/discussions
+  included: ''
+  intended_uses: ''
+  license: CC BY 4.0
+  modality: image, text
+  monitoring: unknown
+  name: The Cauldron
+  nationality: unknown
+  organization: Hugging Face
+  prohibited_uses: ''
+  quality_control: unknown
+  sample: []
+  size: 50 vision-language datasets
+  type: dataset
+  url: https://huggingface.co/blog/idefics2

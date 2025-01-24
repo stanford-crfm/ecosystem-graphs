@@ -1,25 +1,29 @@
----
-- type: model
-  name: Taiyi Diffusion XL
-  organization: International Digital Economy Academy, South China University of
-    Technology, University of Science and Technology of China
-  description: Taiyi Diffusion XL is a new Chinese and English bilingual text-to-image
-    model which is developed by extending the capabilities of CLIP and Stable-DiffusionXL.
-  created_date: 2024-01-26
-  url: https://arxiv.org/pdf/2401.14688.pdf
-  model_card: https://huggingface.co/IDEA-CCNL/Taiyi-Stable-Diffusion-XL-3.5B
-  modality: text; image
+- access: open
   analysis: Evaluated on human and machine benchmarks in comparison to established
     image models as a baseline.
-  size: 3.5B parameters (dense)
-  dependencies: [CLIP, LAION-400M, Wukong, Stable Diffusion XL]
-  training_emissions: unknown
-  training_time: unknown
-  training_hardware: unknown
-  quality_control: unknown
-  access: open
-  license: Apache 2.0
-  intended_uses: ''
-  prohibited_uses: ''
-  monitoring: unknown
+  created_date: 2024-01-26
+  dependencies:
+  - CLIP
+  - LAION-400M
+  - Wukong
+  - Stable Diffusion XL
+  description: Taiyi Diffusion XL is a new Chinese and English bilingual text-to-image
+    model which is developed by extending the capabilities of CLIP and Stable-DiffusionXL.
   feedback: https://huggingface.co/IDEA-CCNL/Taiyi-Stable-Diffusion-XL-3.5B/discussions
+  intended_uses: ''
+  license: Apache 2.0
+  modality: text; image
+  model_card: https://huggingface.co/IDEA-CCNL/Taiyi-Stable-Diffusion-XL-3.5B
+  monitoring: unknown
+  name: Taiyi Diffusion XL
+  nationality: unknown
+  organization: International Digital Economy Academy, South China University of Technology,
+    University of Science and Technology of China
+  prohibited_uses: ''
+  quality_control: unknown
+  size: 3.5B parameters (dense)
+  training_emissions: unknown
+  training_hardware: unknown
+  training_time: unknown
+  type: model
+  url: https://arxiv.org/pdf/2401.14688.pdf

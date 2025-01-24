@@ -1,21 +1,21 @@
----
-- type: application
-  name: Character
-  organization: Character AI
-  description: Character allows users to converse with various chatbot personas.
-  created_date: 2022-09-16
-  url: https://beta.character.ai/
-  dependencies: []
+- access: limited
   adaptation: ''
-  output_space: AI-generated chat conversations
-  quality_control: ''
-  access: limited
-  license: unknown
-  terms_of_service: https://beta.character.ai/tos
-  intended_uses: ''
-  prohibited_uses: ''
-  monitoring: ''
-  feedback: ''
-  monthly_active_users: unknown
-  user_distribution: unknown
+  created_date: 2022-09-16
+  dependencies: []
+  description: Character allows users to converse with various chatbot personas.
   failures: unknown
+  feedback: ''
+  intended_uses: ''
+  license: unknown
+  monitoring: ''
+  monthly_active_users: unknown
+  name: Character
+  nationality: USA
+  organization: Character AI
+  output_space: AI-generated chat conversations
+  prohibited_uses: ''
+  quality_control: ''
+  terms_of_service: https://beta.character.ai/tos
+  type: application
+  url: https://beta.character.ai/
+  user_distribution: unknown

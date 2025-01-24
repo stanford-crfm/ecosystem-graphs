@@ -1,169 +1,187 @@
----
-- type: dataset
-  name: Wu Dao dataset
-  organization: Beijing Academy of Artificial Intelligence
-  description: ''
+- access: closed
+  analysis: ''
   created_date:
-    explanation: "The date that BAAI made a public announcement [[News Link]](https://mp.weixin.qq.com/s/BUQWZ5EdR19i40GuFofpBg).\n"
+    explanation: 'The date that BAAI made a public announcement [[News Link]](https://mp.weixin.qq.com/s/BUQWZ5EdR19i40GuFofpBg).
+
+      '
     value: 2021-01-12
-  url: https://www.tsinghua.edu.cn/en/info/1420/10473.htm
   datasheet: ''
-  modality: image, text
-  size: unknown
-  sample: []
-  analysis: ''
   dependencies: []
-  included: ''
-  excluded: ''
-  quality_control: ''
-  access: closed
-  license: unknown
-  intended_uses: ''
-  prohibited_uses: ''
-  monitoring: ''
-  feedback: ''
-- type: model
-  name: Wu Dao 2.0
-  organization: Beijing Academy of Artificial Intelligence
   description: ''
-  created_date:
-    explanation: "The date that BAAI made a public announcement [[News Link]](https://mp.weixin.qq.com/s/BUQWZ5EdR19i40GuFofpBg).\n"
-    value: 2021-01-12
-  url: https://www.tsinghua.edu.cn/en/info/1420/10473.htm
-  model_card: ''
-  modality: image, text
-  analysis: ''
-  size: 1.75T parameters (dense)
-  dependencies: [Wu Dao dataset]
-  training_emissions: ''
-  training_time: ''
-  training_hardware: ''
-  quality_control: ''
-  access: closed
-  license: unknown
-  intended_uses: ''
-  prohibited_uses: ''
-  monitoring: ''
+  excluded: ''
   feedback: ''
-- type: model
-  name: JudgeLM
+  included: ''
+  intended_uses: ''
+  license: unknown
+  modality: image, text
+  monitoring: ''
+  name: Wu Dao dataset
+  nationality: China
   organization: Beijing Academy of Artificial Intelligence
+  prohibited_uses: ''
+  quality_control: ''
+  sample: []
+  size: unknown
+  type: dataset
+  url: https://www.tsinghua.edu.cn/en/info/1420/10473.htm
+- access: closed
+  analysis: ''
+  created_date:
+    explanation: 'The date that BAAI made a public announcement [[News Link]](https://mp.weixin.qq.com/s/BUQWZ5EdR19i40GuFofpBg).
+
+      '
+    value: 2021-01-12
+  dependencies:
+  - Wu Dao dataset
+  description: ''
+  feedback: ''
+  intended_uses: ''
+  license: unknown
+  modality: image, text
+  model_card: ''
+  monitoring: ''
+  name: Wu Dao 2.0
+  nationality: China
+  organization: Beijing Academy of Artificial Intelligence
+  prohibited_uses: ''
+  quality_control: ''
+  size: 1.75T parameters (dense)
+  training_emissions: ''
+  training_hardware: ''
+  training_time: ''
+  type: model
+  url: https://www.tsinghua.edu.cn/en/info/1420/10473.htm
+- access: open
+  analysis: Evaluated on objective and reliability metrics.
+  created_date: 2023-10-26
+  dependencies:
+  - Vicuna
+  - JudgeLM Dataset
   description: JudgeLM is a fine-tuned to be a scalable judge to evaluate LLMs efficiently
     and effectively in open-ended benchmarks.
-  created_date: 2023-10-26
-  url: https://arxiv.org/pdf/2310.17631.pdf
-  model_card: https://huggingface.co/BAAI/JudgeLM-13B-v1.0
-  modality: text; text
-  analysis: Evaluated on objective and reliability metrics.
-  size: 13B parameters (dense)
-  dependencies: [Vicuna, JudgeLM Dataset]
-  training_emissions: unknown
-  training_time: unknown
-  training_hardware: 8 A100 40GB NVIDIA GPUs
-  quality_control: ''
-  access: open
-  license: Apache 2.0
-  intended_uses: Research on evaluating the performance of large language models
-    and chatbots.
-  prohibited_uses: none
-  monitoring: none
   feedback: https://huggingface.co/BAAI/JudgeLM-13B-v1.0/discussions
-- type: dataset
-  name: JudgeLM Dataset
+  intended_uses: Research on evaluating the performance of large language models and
+    chatbots.
+  license: Apache 2.0
+  modality: text; text
+  model_card: https://huggingface.co/BAAI/JudgeLM-13B-v1.0
+  monitoring: none
+  name: JudgeLM
+  nationality: China
   organization: Beijing Academy of Artificial Intelligence
-  description: JudgeLM Dataset is a novel dataset replete with a rich variety of
-    seed tasks, comprehensive answers from modern LLMs, answers’ grades from the
-    teacher judge, and detailed reasons for judgments.
-  created_date: 2023-10-26
-  url: https://huggingface.co/datasets/BAAI/JudgeLM-100K
-  datasheet: ''
-  modality: text, text
-  size: 105k judge samples
-  sample: []
-  analysis: none
-  dependencies: [Alpaca, GPT-4, Dolly, ShareGPT, LLaMA, Vicuna]
-  included: ''
-  excluded: ''
+  prohibited_uses: none
   quality_control: ''
-  access: open
-  license: CC BY NC 4.0
+  size: 13B parameters (dense)
+  training_emissions: unknown
+  training_hardware: 8 A100 40GB NVIDIA GPUs
+  training_time: unknown
+  type: model
+  url: https://arxiv.org/pdf/2310.17631.pdf
+- access: open
+  analysis: none
+  created_date: 2023-10-26
+  datasheet: ''
+  dependencies:
+  - Alpaca
+  - GPT-4
+  - Dolly
+  - ShareGPT
+  - LLaMA
+  - Vicuna
+  description: "JudgeLM Dataset is a novel dataset replete with a rich variety of\
+    \ seed tasks, comprehensive answers from modern LLMs, answers\u2019 grades from\
+    \ the teacher judge, and detailed reasons for judgments."
+  excluded: ''
+  feedback: https://huggingface.co/datasets/BAAI/JudgeLM-100K/discussions
+  included: ''
   intended_uses: To be used to conduct instruction-tuning for language models and
     make the language model able to judge open-ended answer pairs.
-  prohibited_uses: none
+  license: CC BY NC 4.0
+  modality: text, text
   monitoring: none
-  feedback: https://huggingface.co/datasets/BAAI/JudgeLM-100K/discussions
-
-- type: model
+  name: JudgeLM Dataset
+  nationality: China
+  organization: Beijing Academy of Artificial Intelligence
+  prohibited_uses: none
+  quality_control: ''
+  sample: []
+  size: 105k judge samples
+  type: dataset
+  url: https://huggingface.co/datasets/BAAI/JudgeLM-100K
+- access: open
+  analysis: Compared to other segmentation models across different modalities on BraTS2023
+    dataset.
+  created_date: 2024-01-25
+  dependencies: []
+  description: SegMamba is a novel 3D medical image Segmentation Mamba model, designed
+    to effectively capture long-range dependencies within whole volume features at
+    every scale.
+  feedback: none
+  intended_uses: ''
+  license: Apache 2.0
+  modality: image; text
+  model_card: none
+  monitoring: unknown
   name: SegMamba
+  nationality: unknown
   organization: Hong Kong University of Science and Technology (Guangzhou + original),
     Beijing Academy of Artificial Intelligence
-  description: SegMamba is a novel 3D medical image Segmentation Mamba model, designed
-    to effectively capture long-range dependencies within whole volume features
-    at every scale.
-  created_date: 2024-01-25
-  url: https://arxiv.org/pdf/2401.13560v2.pdf
-  model_card: none
-  modality: image; text
-  analysis: Compared to other segmentation models across different modalities on
-    BraTS2023 dataset.
-  size: unknown
-  dependencies: []
-  training_emissions: unknown
-  training_time: 1000 epochs
-  training_hardware: 4 NVIDIA A100 GPUs
-  quality_control: unknown
-  access: open
-  license: Apache 2.0
-  intended_uses: ''
   prohibited_uses: ''
-  monitoring: unknown
-  feedback: none
-
-- type: model
-  name: BGE M3 Embedding
-  organization: Beijing Academy of Artificial Intelligence, University of Science
-    and Technology of China
+  quality_control: unknown
+  size: unknown
+  training_emissions: unknown
+  training_hardware: 4 NVIDIA A100 GPUs
+  training_time: 1000 epochs
+  type: model
+  url: https://arxiv.org/pdf/2401.13560v2.pdf
+- access: open
+  analysis: Evaluated on standard datasets in multilingual, cross-lingual, long document
+    retrieval, and Q&A domains.
+  created_date: 2024-02-05
+  dependencies: []
   description: BGE M3 Embedding is a new embedding model that can support more than
     100 working languages, leading to new state-of-the-art performances on multi-lingual
     and cross-lingual retrieval tasks.
-  created_date: 2024-02-05
-  url: https://arxiv.org/pdf/2402.03216.pdf
-  model_card: https://huggingface.co/BAAI/bge-m3
-  modality: text; text
-  analysis: Evaluated on standard datasets in multilingual, cross-lingual, long
-    document retrieval, and Q&A domains.
-  size: unknown
-  dependencies: []
-  training_emissions: unknown
-  training_time: 20,000 steps
-  training_hardware: 32 A100 40GB GPUs
-  quality_control: unknown
-  access: open
-  license: MIT
-  intended_uses: ''
-  prohibited_uses: ''
-  monitoring: unknown
   feedback: https://huggingface.co/BAAI/bge-m3/discussions
-- type: model
-  name: EVA-CLIP
-  organization: Beijing Academy of Artificial Intelligence, Tsinghua University
-  description: As of release, EVA-CLIP is the largest and most powerful open-source
-    CLIP model to date, with 18 billion parameters.
-  created_date: 2024-02-06
-  url: https://arxiv.org/pdf/2402.04252.pdf
-  model_card: https://huggingface.co/BAAI/EVA-CLIP-8B-448
-  modality: image, text; text
+  intended_uses: ''
+  license: MIT
+  modality: text; text
+  model_card: https://huggingface.co/BAAI/bge-m3
+  monitoring: unknown
+  name: BGE M3 Embedding
+  nationality: unknown
+  organization: Beijing Academy of Artificial Intelligence, University of Science
+    and Technology of China
+  prohibited_uses: ''
+  quality_control: unknown
+  size: unknown
+  training_emissions: unknown
+  training_hardware: 32 A100 40GB GPUs
+  training_time: 20,000 steps
+  type: model
+  url: https://arxiv.org/pdf/2402.03216.pdf
+- access: open
   analysis: Evaluated on zero-shot classification performance across multiple image
     classification benchmarks.
-  size: 18B parameters (dense)
-  dependencies: [CLIP]
-  training_emissions: unknown
-  training_time: unknown
-  training_hardware: 384 A100 40GB GPUs
-  quality_control: ''
-  access: open
-  license: MIT
-  intended_uses: ''
-  prohibited_uses: ''
-  monitoring: unknown
+  created_date: 2024-02-06
+  dependencies:
+  - CLIP
+  description: As of release, EVA-CLIP is the largest and most powerful open-source
+    CLIP model to date, with 18 billion parameters.
   feedback: https://huggingface.co/BAAI/EVA-CLIP-8B-448/discussions
+  intended_uses: ''
+  license: MIT
+  modality: image, text; text
+  model_card: https://huggingface.co/BAAI/EVA-CLIP-8B-448
+  monitoring: unknown
+  name: EVA-CLIP
+  nationality: unknown
+  organization: Beijing Academy of Artificial Intelligence, Tsinghua University
+  prohibited_uses: ''
+  quality_control: ''
+  size: 18B parameters (dense)
+  training_emissions: unknown
+  training_hardware: 384 A100 40GB GPUs
+  training_time: unknown
+  type: model
+  url: https://arxiv.org/pdf/2402.04252.pdf

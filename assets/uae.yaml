@@ -1,79 +1,83 @@
----
-- type: model
-  name: Falcon-40B
-  organization: UAE Technology Innovation Institute
-  description: Falcon-40B is a 40B parameters causal decoder-only model built by
-    TII and trained on 1,000B tokens of RefinedWeb enhanced with curated corpora.
-  created_date: 2023-06-14
-  url: https://arxiv.org/pdf/2311.16867.pdf
-  model_card: https://huggingface.co/tiiuae/falcon-40b
-  modality: text; text
+- access: open
   analysis: Evaluated in 1-shot against the PaLM models, with the tasks of the paper
-    "Language models are few-shot learners" (Brown et al., 2020); (2) on a small
-    set of few-shot tasks reported by the GPT-4 paper; (3) against state-of-the-art
-    models across common sense, question answering, and code tasks; (4) against
-    models which also report results from the EAI Harness, for which we are able
-    to compare with identical prompts and metrics.
-  size: 40B parameters (dense)
-  dependencies: [RefinedWeb]
-  training_emissions: unknown
-  training_time: 2 months
-  training_hardware: 384 A100 40GB GPUs
-  quality_control: ''
-  access: open
+    "Language models are few-shot learners" (Brown et al., 2020); (2) on a small set
+    of few-shot tasks reported by the GPT-4 paper; (3) against state-of-the-art models
+    across common sense, question answering, and code tasks; (4) against models which
+    also report results from the EAI Harness, for which we are able to compare with
+    identical prompts and metrics.
+  created_date: 2023-06-14
+  dependencies:
+  - RefinedWeb
+  description: "Falcon-40B is a 40B parameters causal decoder-only model built by\
+    \ TII and trained on 1,000B tokens of\_RefinedWeb enhanced with curated corpora."
+  feedback: https://huggingface.co/tiiuae/falcon-40b/discussions
+  intended_uses: Research on large language models; as a foundation for further specialization
+    for specific use cases.
   license: Apache 2.0
-  intended_uses: Research on large language models; as a foundation for further
-    specialization for specific use cases.
+  modality: text; text
+  model_card: https://huggingface.co/tiiuae/falcon-40b
+  monitoring: None
+  name: Falcon-40B
+  nationality: UAE
+  organization: UAE Technology Innovation Institute
   prohibited_uses: irresponsible or harmful use or production use without adequate
     assessment of risks and mitigation.
-  monitoring: None
-  feedback: https://huggingface.co/tiiuae/falcon-40b/discussions
-- type: dataset
-  name: RefinedWeb
-  organization: UAE Technology Innovation Institute
+  quality_control: ''
+  size: 40B parameters (dense)
+  training_emissions: unknown
+  training_hardware: 384 A100 40GB GPUs
+  training_time: 2 months
+  type: model
+  url: https://arxiv.org/pdf/2311.16867.pdf
+- access: open
+  analysis: ''
+  created_date: 2023-06-01
+  datasheet: https://huggingface.co/datasets/tiiuae/falcon-refinedweb
+  dependencies: []
   description: RefinedWeb is a high-quality five trillion tokens web-only English
     pretraining dataset.
-  created_date: 2023-06-01
-  url: https://arxiv.org/pdf/2306.01116.pdf
-  datasheet: https://huggingface.co/datasets/tiiuae/falcon-refinedweb
-  modality: text
-  size: 600B tokens
-  sample: []
-  analysis: ''
-  dependencies: []
-  included: ''
   excluded: ''
-  quality_control: ''
-  access: open
+  feedback: ''
+  included: ''
+  intended_uses: ''
   license:
     explanation: License can be found at https://huggingface.co/datasets/tiiuae/falcon-refinedweb
     value: custom
-  intended_uses: ''
-  prohibited_uses: ''
+  modality: text
   monitoring: ''
-  feedback: ''
-- type: model
-  name: Falcon-180B
+  name: RefinedWeb
+  nationality: UAE
   organization: UAE Technology Innovation Institute
-  description: Falcon-180B is a 180B parameters causal decoder-only model built
-    by TII and trained on 3,500B tokens of RefinedWeb enhanced with curated corpora.
-  created_date: 2023-09-06
-  url: https://arxiv.org/pdf/2311.16867.pdf
-  model_card: https://huggingface.co/tiiuae/falcon-180B
-  modality: text; text
+  prohibited_uses: ''
+  quality_control: ''
+  sample: []
+  size: 600B tokens
+  type: dataset
+  url: https://arxiv.org/pdf/2306.01116.pdf
+- access: open
   analysis: Falcon-180B outperforms LLaMA-2, StableLM, RedPajama, MPT on the Open
     LLM Leaderboard at https://huggingface.co/spaces/HuggingFaceH4/open_llm_leaderboard.
-  size: 180B parameters (dense)
-  dependencies: [RefinedWeb]
-  training_emissions: ''
-  training_time: 9 months
-  training_hardware: 4096 A100 40GB GPUs
-  quality_control: ''
-  access: open
+  created_date: 2023-09-06
+  dependencies:
+  - RefinedWeb
+  description: Falcon-180B is a 180B parameters causal decoder-only model built by
+    TII and trained on 3,500B tokens of RefinedWeb enhanced with curated corpora.
+  feedback: https://huggingface.co/tiiuae/falcon-180b/discussions
+  intended_uses: Research on large language models; as a foundation for further specialization
+    for specific use cases.
   license: unknown
-  intended_uses: Research on large language models; as a foundation for further
-    specialization for specific use cases.
+  modality: text; text
+  model_card: https://huggingface.co/tiiuae/falcon-180B
+  monitoring: None
+  name: Falcon-180B
+  nationality: UAE
+  organization: UAE Technology Innovation Institute
   prohibited_uses: Production use without adequate assessment of risks and mitigation;
     any use cases which may be considered irresponsible or harmful.
-  monitoring: None
-  feedback: https://huggingface.co/tiiuae/falcon-180b/discussions
+  quality_control: ''
+  size: 180B parameters (dense)
+  training_emissions: ''
+  training_hardware: 4096 A100 40GB GPUs
+  training_time: 9 months
+  type: model
+  url: https://arxiv.org/pdf/2311.16867.pdf
