@@ -1,941 +1,1045 @@
----
-- type: model
-  name: ESM-2
-  organization: Meta
-  description: ESM-2 is a series of protein language models trained on protein sequences
+- access:
+    explanation: Models are available for download from [[GitHub repository]](https://github.com/facebookresearch/esm#available-models)
+    value: open
+  analysis: ''
   created_date:
     explanation: The date the [[model paper]](https://www.biorxiv.org/content/10.1101/2022.07.20.500902v2.full.pdf+html)
       was released
     value: 2022-10-31
-  url: https://www.biorxiv.org/content/10.1101/2022.07.20.500902v2.full.pdf+html
-  model_card: none
-  modality: text; protein sequence
-  analysis: ''
-  size: 15B parameters (dense)
-  dependencies: [UniRef50, UniRef90]
-  training_emissions: ''
-  training_time: ''
-  training_hardware: ''
-  quality_control: ''
-  access:
-    explanation: Models are available for download from [[GitHub repository]](https://github.com/facebookresearch/esm#available-models)
-    value: open
-  license:
-    explanation: "The license is provided in the [[Github repository]](https://github.com/facebookresearch/esm#available-models)\n"
-    value: MIT
-  intended_uses: ''
-  prohibited_uses: ''
-  monitoring: ''
+  dependencies:
+  - UniRef50
+  - UniRef90
+  description: ESM-2 is a series of protein language models trained on protein sequences
   feedback: ''
-- type: dataset
-  name: PMD
+  intended_uses: ''
+  license:
+    explanation: 'The license is provided in the [[Github repository]](https://github.com/facebookresearch/esm#available-models)
+
+      '
+    value: MIT
+  modality: text; protein sequence
+  model_card: none
+  monitoring: ''
+  name: ESM-2
+  nationality: USA
   organization: Meta
+  prohibited_uses: ''
+  quality_control: ''
+  size: 15B parameters (dense)
+  training_emissions: ''
+  training_hardware: ''
+  training_time: ''
+  type: model
+  url: https://www.biorxiv.org/content/10.1101/2022.07.20.500902v2.full.pdf+html
+- access: closed
+  analysis: none
+  created_date:
+    explanation: The date the model paper was released
+    value: 2021-12-08
+  datasheet: none
+  dependencies:
+  - COCO
+  - YFCC100M
+  - SBU Captions
+  - Localized Narratives
+  - Visual Genome
+  - Wikipedia
+  - Conceptual Captions
+  - Red Caps
   description: PMD (Public Multimodal Datasets) is a collection of image-text datasets
     introduced in the FLAVA work.
-  created_date:
-    explanation: The date the model paper was released
-    value: 2021-12-08
-  url: https://arxiv.org/abs/2112.04482
-  datasheet: none
-  modality: image, text
-  size: 70M
-  sample: []
-  analysis: none
-  dependencies:
-    - COCO
-    - YFCC100M
-    - SBU Captions
-    - Localized Narratives
-    - Visual Genome
-    - Wikipedia
-    - Conceptual Captions
-    - Red Caps
-  included: none
   excluded: YFCC100M is filtered for non-English captions and very short (< 2 word)
     captions.
-  quality_control: Beyond filtering mentioned in excluded, nothing further is done.
-  access: closed
-  license: unknown
-  intended_uses: unknown
-  prohibited_uses: unknown
-  monitoring: none
   feedback: none
-- type: model
-  name: FLAVA
+  included: none
+  intended_uses: unknown
+  license: unknown
+  modality: image, text
+  monitoring: none
+  name: PMD
+  nationality: USA
   organization: Meta
-  description: FLAVA is a multimodal model composed of an image encoder, text encoder,
-    and multimodal encoder.
+  prohibited_uses: unknown
+  quality_control: Beyond filtering mentioned in excluded, nothing further is done.
+  sample: []
+  size: 70M
+  type: dataset
+  url: https://arxiv.org/abs/2112.04482
+- access:
+    explanation: 'Model checkpoints are available for download from the [[HuggingFace
+      repository]](https://huggingface.co/facebook/flava-full)
+
+      '
+    value: open
+  analysis: FLAVA is benchmarked on a range of vision-only (e.g. CIFAR-10), language-only
+    (e.g. GLUE), and multimodal (e.g. Hateful Memes) standard evaluations.
   created_date:
     explanation: The date the model paper was released
     value: 2021-12-08
-  url: https://arxiv.org/abs/2112.04482
-  model_card: https://huggingface.co/facebook/flava-full
+  dependencies:
+  - PMD
+  description: FLAVA is a multimodal model composed of an image encoder, text encoder,
+    and multimodal encoder.
+  feedback: https://huggingface.co/facebook/flava-full/discussions
+  intended_uses: 'Per the [[HuggingFace repository]](https://huggingface.co/facebook/flava-full),
+    "The model is intended to serve as a reproducible research artifact for research
+    communities in the light of models whose exact reproduction details are never
+    released such as CLIP and SimVLM."
+
+    '
+  license:
+    explanation: 'The license is provided in the [[HuggingFace repository]](https://huggingface.co/facebook/flava-full)
+
+      '
+    value: BSD-3-Clause
   modality: image, text
-  analysis: FLAVA is benchmarked on a range of vision-only (e.g. CIFAR-10), language-only
-    (e.g. GLUE), and multimodal (e.g. Hateful Memes) standard evaluations.
-  size:
-    value: 306M
-    explanation: >
-      110M (Language encoder) + 86M (Vision encoder) + 110M (mul encoder)
-  dependencies: [PMD]
-  training_emissions: unknown
-  training_time: unknown
-  training_hardware: unknown
+  model_card: https://huggingface.co/facebook/flava-full
+  monitoring: none
+  name: FLAVA
+  nationality: USA
+  organization: Meta
+  prohibited_uses: 'Per the [[HuggingFace repository]](https://huggingface.co/facebook/flava-full),
+    "Any deployed use case of the model - whether commercial or not" - is currently
+    out of scope.
+
+    '
   quality_control: FLAVA introduces a variety of new modeling techniques, specifically
     with an interest in improved text-image alignment through contrastive objectives.
-  access:
-    explanation: "Model checkpoints are available for download from the [[HuggingFace\
-      \ repository]](https://huggingface.co/facebook/flava-full)\n"
-    value: open
-  license:
-    explanation: "The license is provided in the [[HuggingFace repository]](https://huggingface.co/facebook/flava-full)\n"
-    value: BSD-3-Clause
-  intended_uses: "Per the [[HuggingFace repository]](https://huggingface.co/facebook/flava-full),\
-    \ \"The model is intended to serve as a reproducible research artifact for research\
-    \ communities in the light of models whose exact reproduction details are never\
-    \ released such as CLIP and SimVLM.\"\n"
-  prohibited_uses: "Per the [[HuggingFace repository]](https://huggingface.co/facebook/flava-full),\
-    \ \"Any deployed use case of the model - whether commercial or not\" - is currently\
-    \ out of scope.\n"
-  monitoring: none
-  feedback: https://huggingface.co/facebook/flava-full/discussions
-- type: dataset
-  name: The Galactica Corpus
-  organization: Meta
+  size:
+    explanation: '110M (Language encoder) + 86M (Vision encoder) + 110M (mul encoder)
+
+      '
+    value: 306M
+  training_emissions: unknown
+  training_hardware: unknown
+  training_time: unknown
+  type: model
+  url: https://arxiv.org/abs/2112.04482
+- access: closed
+  analysis: none
+  created_date:
+    explanation: 'The date the Galactica paper was released
+
+      '
+    value: 2022-11-15
+  datasheet: none
+  dependencies:
+  - CommonCrawl
+  - Wikipedia
+  - arXiv
   description: The Galactica Corpus is a collection of scientific datasets introduced
     in the Galactica work.
-  created_date:
-    explanation: "The date the Galactica paper was released\n"
-    value: 2022-11-15
-  url: https://galactica.org/static/paper.pdf
-  datasheet: none
-  modality: text
-  size: 106B tokens
-  sample: []
-  analysis: none
-  dependencies: [CommonCrawl, Wikipedia, arXiv]
+  excluded: ''
+  feedback: none
   included: Prompts and reasoning data is explicitly included to improve model capabilities
     derived from this data.
-  excluded: ''
-  quality_control: ''
-  access: closed
-  license: unknown
   intended_uses: unknown
-  prohibited_uses: unknown
+  license: unknown
+  modality: text
   monitoring: none
-  feedback: none
-- type: model
-  name: Galactica
+  name: The Galactica Corpus
+  nationality: USA
   organization: Meta
-  description: Galactica is a family of autoregressive language models.
-  created_date:
-    explanation: "The date the Galactica paper was released\n"
-    value: 2022-11-15
-  url: https://galactica.org/static/paper.pdf
-  model_card: https://huggingface.co/facebook/galactica-6.7b
-  modality: code, text; code, text
-  analysis: ''
-  size: 120B parameters (dense)
-  dependencies: [The Galactica Corpus]
-  training_emissions: unknown
-  training_time: unknown
-  training_hardware: Meta AI Cluster. Trained on 1024 80GB A100 GPUs (128 8xA100
-    80GB nodes)
+  prohibited_uses: unknown
   quality_control: ''
-  access:
+  sample: []
+  size: 106B tokens
+  type: dataset
+  url: https://galactica.org/static/paper.pdf
+- access:
     explanation: Model checkpoints freely available at https://github.com/paperswithcode/galai
     value: open
+  analysis: ''
+  created_date:
+    explanation: 'The date the Galactica paper was released
+
+      '
+    value: 2022-11-15
+  dependencies:
+  - The Galactica Corpus
+  description: Galactica is a family of autoregressive language models.
+  feedback: ''
+  intended_uses: ''
   license:
     explanation: https://github.com/paperswithcode/galai/blob/main/LICENSE-MODEL.md
     value: CC BY-NC 4.0
-  intended_uses: ''
-  prohibited_uses: ''
+  modality: code, text; code, text
+  model_card: https://huggingface.co/facebook/galactica-6.7b
   monitoring: ''
-  feedback: ''
-- type: model
-  name: InCoder
-  organization: Meta, CMU, TTI-Chicago, UC Berkeley, University of Washington
-  description: InCoder is a language model trained on code with a causal masking
-    objective
+  name: Galactica
+  nationality: USA
+  organization: Meta
+  prohibited_uses: ''
+  quality_control: ''
+  size: 120B parameters (dense)
+  training_emissions: unknown
+  training_hardware: Meta AI Cluster. Trained on 1024 80GB A100 GPUs (128 8xA100 80GB
+    nodes)
+  training_time: unknown
+  type: model
+  url: https://galactica.org/static/paper.pdf
+- access:
+    explanation: Model weights are available via the [[HuggingFace repository]](https://huggingface.co/facebook/incoder-6B)
+    value: open
+  analysis: none
   created_date:
     explanation: The date the model paper was released
     value: 2022-04-12
-  url: https://arxiv.org/abs/2204.05999
-  model_card: none
-  modality: text; code
-  analysis: none
-  size: 6B parameters (dense)
   dependencies: []
-  training_emissions: Unknown
-  training_time: 24 days, according to [[the paper]](https://arxiv.org/pdf/2204.05999.pdf)
-  training_hardware: 248 V100 GPUs, according to [[the paper]](https://arxiv.org/pdf/2204.05999.pdf)
-  quality_control: unknown
-  access:
-    explanation: Model weights are available via the [[HuggingFace repository]](https://huggingface.co/facebook/incoder-6B)
-    value: open
+  description: InCoder is a language model trained on code with a causal masking objective
+  feedback: ''
+  intended_uses: ''
   license:
     explanation: The license is provided in the [[HuggingFace repository]](https://huggingface.co/facebook/incoder-6B?text=My+name+is+Lewis+and+I+like+to)
     value: CC BY-NC 4.0
-  intended_uses: ''
-  prohibited_uses: ''
+  modality: text; code
+  model_card: none
   monitoring: ''
-  feedback: ''
-- type: model
-  name: OPT
-  organization: Meta
-  description: OPT is a family of autoregressive language models.
-  created_date:
-    explanation: "The date the OPT paper was submitted to Arxiv\n"
-    value: 2022-05-01
-  url: https://arxiv.org/abs/2205.01068
-  model_card: https://arxiv.org/pdf/2205.01068.pdf
-  modality: text; text
-  analysis: ''
-  size: 175B parameters (dense)
-  dependencies: [RoBERTa dataset, The Pile, PushShift.io Reddit]
-  training_emissions:
-    explanation: "Estimate by authors for the OPT-175B model only. Not including\
-      \ ablations and baselines.\n"
-    value: 75 tCO2e
-  training_time: ''
-  training_hardware: Meta AI cluster. Trained on 992 80GB A100 GPUs
-  quality_control: ''
-  access:
+  name: InCoder
+  nationality: unknown
+  organization: Meta, CMU, TTI-Chicago, UC Berkeley, University of Washington
+  prohibited_uses: ''
+  quality_control: unknown
+  size: 6B parameters (dense)
+  training_emissions: Unknown
+  training_hardware: 248 V100 GPUs, according to [[the paper]](https://arxiv.org/pdf/2204.05999.pdf)
+  training_time: 24 days, according to [[the paper]](https://arxiv.org/pdf/2204.05999.pdf)
+  type: model
+  url: https://arxiv.org/abs/2204.05999
+- access:
     explanation: The 175B model requires manual approval from Meta to access. Other
       models are available through HuggingFace.
     value: limited
-  license:
-    explanation: "All released with the [[OPT-175B License]](https://github.com/facebookresearch/metaseq/blob/main/projects/OPT/MODEL_LICENSE.md),\
-      \ except 66B (TBD) and 17B (requires manual approval)\n"
-    value: OPT-175B License
-  intended_uses: ''
-  prohibited_uses: ''
-  monitoring: ''
-  feedback: ''
-- type: dataset
-  name: Make-A-Video dataset
-  organization: Meta
-  description: "The Make-A-Video dataset is the dataset used to train Make-A-Video,\
-    \ which includes both image-text and video-only datasets with specific and significant\
-    \ filtering.\n"
-  created_date:
-    explanation: "The date that Make-A-Video was posted to arXiv [[arXiv]] (https://arxiv.org/abs/2209.14792).\n"
-    value: 2022-09-29
-  url: https://arxiv.org/pdf/2209.14792.pdf
-  datasheet: none
-  modality: image, text, video
-  size: 20M video clips, 2.3B image-text pairs
-  sample: []
   analysis: ''
-  dependencies: [LAION-5B, WebVid-10M, HD-VILA-100M]
-  included:
-    explanation: "Data from the three underlying datasets is filtered, but nothing\
-      \ is included beyond this.\n"
-    value: none
-  excluded: "The LAION-5B dataset is filtered to 2.3B by removing NSFW images using\
-    \ [https://github.com/GantMan/nsfw](https://github.com/GantMan/nsfw), toxic\
-    \ words in text, and images with watermark probability > 0.5. The HD-VILA-100M\
-    \ is randomly subsampled to 10M video clips.\n"
-  quality_control: "The authors exclude NSFW, toxic, and likely watermarked data\
-    \ from LAION-5B.\n"
-  access:
-    explanation: "The datasets involved are public, but the full dataset is not\
-      \ directly available, nor are filtering scripts.\n"
-    value: limited
-  license:
-    explanation: "No license was found, though the underlying datasets are public\
-      \ and have licenses.\n"
-    value: none
-  intended_uses: unknown
-  prohibited_uses: unknown
-  monitoring:
-    explanation: "There is no information on how Meta is internally monitoring the\
-      \ use of the dataset.\n"
-    value: unknown
-  feedback:
-    explanation: "No feedback mechanism is mentioned by the authors.\n"
-    value: none
-- type: model
-  name: Make-A-Video
-  organization: Meta
-  description: "Make-A-Video is a model for Text-to-Video Generation without Text-Video\
-    \ Data.\n"
   created_date:
-    explanation: "The date that Make-A-Video was posted to arXiv [[arXiv]] (https://arxiv.org/abs/2209.14792).\n"
-    value: 2022-09-29
-  url: https://arxiv.org/pdf/2209.14792.pdf
-  model_card: none
-  modality: text; video
-  analysis: "Model performance was evaluated using automated (Frechet Video Distance;\
-    \ Frechet Inception Distance) and human evaluation on two datasets (UCF-101,\
-    \ MSR-VTT) in the zero-shot setting.\n"
-  size: unknown
-  dependencies: [Make-A-Video dataset]
-  training_emissions: unknown
-  training_time: unknown
-  training_hardware: unknown
-  quality_control:
-    explanation: "Authors do not report specific quality control steps taken in\
-      \ modeling, though filtering is done in producing the Make-A-Video dataset.\n"
-    value: none
-  access:
-    explanation: "The model has not been released; a form existed to potentially\
-      \ acquire access but is now closed as of 2022-12-07 [[Access Form]](https://docs.google.com/forms/u/0/d/e/1FAIpQLSfMjC57wcXWUDV0UbS2Tn6VhjLEiCXaHvWZuWgWRa-Zx8-Few/closedform).\n"
-    value: closed
-  license: none
-  intended_uses: unknown
-  prohibited_uses: unknown
-  monitoring: unknown
-  feedback: none
-- type: model
-  name: LLaMA
-  organization: Meta
-  description: LLaMA is a collection of foundation language models ranging from
-    7B to 65B parameters trained our on trillions of tokens. The LLaMA models show
-    that it is possible to train state-of-the-art models using publicly available
-    datasets exclusively, without resorting to proprietary and inaccessible datasets.
-  created_date: 2023-02-24
-  url: https://arxiv.org/abs/2302.13971
-  model_card: ''
-  modality: text; text
-  analysis: ''
-  size: 65B parameters (dense)
+    explanation: 'The date the OPT paper was submitted to Arxiv
+
+      '
+    value: 2022-05-01
   dependencies:
-    - CommonCrawl
-    - C4
-    - Github
-    - Wikipedia
-    - BooksCorpus
-    - arXiv
-    - StackExchange
-  training_emissions: ''
-  training_time: ''
-  training_hardware: ''
-  quality_control: ''
-  access: open
-  license: LLaMa License (model weights), GPLv3 (code)
-  intended_uses: ''
-  prohibited_uses: ''
-  monitoring: ''
+  - RoBERTa dataset
+  - The Pile
+  - PushShift.io Reddit
+  description: OPT is a family of autoregressive language models.
   feedback: ''
-- type: model
-  name: Llama 2
+  intended_uses: ''
+  license:
+    explanation: 'All released with the [[OPT-175B License]](https://github.com/facebookresearch/metaseq/blob/main/projects/OPT/MODEL_LICENSE.md),
+      except 66B (TBD) and 17B (requires manual approval)
+
+      '
+    value: OPT-175B License
+  modality: text; text
+  model_card: https://arxiv.org/pdf/2205.01068.pdf
+  monitoring: ''
+  name: OPT
+  nationality: USA
   organization: Meta
+  prohibited_uses: ''
+  quality_control: ''
+  size: 175B parameters (dense)
+  training_emissions:
+    explanation: 'Estimate by authors for the OPT-175B model only. Not including ablations
+      and baselines.
+
+      '
+    value: 75 tCO2e
+  training_hardware: Meta AI cluster. Trained on 992 80GB A100 GPUs
+  training_time: ''
+  type: model
+  url: https://arxiv.org/abs/2205.01068
+- access:
+    explanation: 'The datasets involved are public, but the full dataset is not directly
+      available, nor are filtering scripts.
+
+      '
+    value: limited
+  analysis: ''
+  created_date:
+    explanation: 'The date that Make-A-Video was posted to arXiv [[arXiv]] (https://arxiv.org/abs/2209.14792).
+
+      '
+    value: 2022-09-29
+  datasheet: none
+  dependencies:
+  - LAION-5B
+  - WebVid-10M
+  - HD-VILA-100M
+  description: 'The Make-A-Video dataset is the dataset used to train Make-A-Video,
+    which includes both image-text and video-only datasets with specific and significant
+    filtering.
+
+    '
+  excluded: 'The LAION-5B dataset is filtered to 2.3B by removing NSFW images using
+    [https://github.com/GantMan/nsfw](https://github.com/GantMan/nsfw), toxic words
+    in text, and images with watermark probability > 0.5. The HD-VILA-100M is randomly
+    subsampled to 10M video clips.
+
+    '
+  feedback:
+    explanation: 'No feedback mechanism is mentioned by the authors.
+
+      '
+    value: none
+  included:
+    explanation: 'Data from the three underlying datasets is filtered, but nothing
+      is included beyond this.
+
+      '
+    value: none
+  intended_uses: unknown
+  license:
+    explanation: 'No license was found, though the underlying datasets are public
+      and have licenses.
+
+      '
+    value: none
+  modality: image, text, video
+  monitoring:
+    explanation: 'There is no information on how Meta is internally monitoring the
+      use of the dataset.
+
+      '
+    value: unknown
+  name: Make-A-Video dataset
+  nationality: USA
+  organization: Meta
+  prohibited_uses: unknown
+  quality_control: 'The authors exclude NSFW, toxic, and likely watermarked data from
+    LAION-5B.
+
+    '
+  sample: []
+  size: 20M video clips, 2.3B image-text pairs
+  type: dataset
+  url: https://arxiv.org/pdf/2209.14792.pdf
+- access:
+    explanation: 'The model has not been released; a form existed to potentially acquire
+      access but is now closed as of 2022-12-07 [[Access Form]](https://docs.google.com/forms/u/0/d/e/1FAIpQLSfMjC57wcXWUDV0UbS2Tn6VhjLEiCXaHvWZuWgWRa-Zx8-Few/closedform).
+
+      '
+    value: closed
+  analysis: 'Model performance was evaluated using automated (Frechet Video Distance;
+    Frechet Inception Distance) and human evaluation on two datasets (UCF-101, MSR-VTT)
+    in the zero-shot setting.
+
+    '
+  created_date:
+    explanation: 'The date that Make-A-Video was posted to arXiv [[arXiv]] (https://arxiv.org/abs/2209.14792).
+
+      '
+    value: 2022-09-29
+  dependencies:
+  - Make-A-Video dataset
+  description: 'Make-A-Video is a model for Text-to-Video Generation without Text-Video
+    Data.
+
+    '
+  feedback: none
+  intended_uses: unknown
+  license: none
+  modality: text; video
+  model_card: none
+  monitoring: unknown
+  name: Make-A-Video
+  nationality: USA
+  organization: Meta
+  prohibited_uses: unknown
+  quality_control:
+    explanation: 'Authors do not report specific quality control steps taken in modeling,
+      though filtering is done in producing the Make-A-Video dataset.
+
+      '
+    value: none
+  size: unknown
+  training_emissions: unknown
+  training_hardware: unknown
+  training_time: unknown
+  type: model
+  url: https://arxiv.org/pdf/2209.14792.pdf
+- access: open
+  analysis: ''
+  created_date: 2023-02-24
+  dependencies:
+  - CommonCrawl
+  - C4
+  - Github
+  - Wikipedia
+  - BooksCorpus
+  - arXiv
+  - StackExchange
+  description: LLaMA is a collection of foundation language models ranging from 7B
+    to 65B parameters trained our on trillions of tokens. The LLaMA models show that
+    it is possible to train state-of-the-art models using publicly available datasets
+    exclusively, without resorting to proprietary and inaccessible datasets.
+  feedback: ''
+  intended_uses: ''
+  license: LLaMa License (model weights), GPLv3 (code)
+  modality: text; text
+  model_card: ''
+  monitoring: ''
+  name: LLaMA
+  nationality: USA
+  organization: Meta
+  prohibited_uses: ''
+  quality_control: ''
+  size: 65B parameters (dense)
+  training_emissions: ''
+  training_hardware: ''
+  training_time: ''
+  type: model
+  url: https://arxiv.org/abs/2302.13971
+- access: open
+  analysis: Evaluated on standard academic benchmarks and internal Meta libraries.
+  created_date: 2023-07-18
+  dependencies: []
   description: Llama 2 is an updated version of LLaMA trained on a new mix of publicly
     available data.
-  created_date: 2023-07-18
-  url: https://ai.meta.com/resources/models-and-libraries/llama/
-  model_card: Can be found at appendix of paper at https://ai.meta.com/research/publications/llama-2-open-foundation-and-fine-tuned-chat-models/
-  modality: text; text
-  analysis: Evaluated on standard academic benchmarks and internal Meta libraries.
-  size: 70B parameters (dense)
-  dependencies: []
-  training_emissions: 539 tCO2eq
-  training_time: ''
-  training_hardware: NVIDIA A100-80GB GPUs (TDP of 350-400W)
-  quality_control: ''
-  access: open
+  feedback: ''
+  intended_uses: Llama 2 is intended for commercial and research use in English. Tuned
+    models are intended for assistant-like chat, whereas pretrained models can be
+    adapted for a variety of natural language generation tasks.
   license:
     explanation: The license can be found at https://ai.meta.com/resources/models-and-libraries/llama-downloads/
     value: custom
-  intended_uses: Llama 2 is intended for commercial and research use in English.
-    Tuned models are intended for assistant-like chat, whereas pretrained models
-    can be adapted for a variety of natural language generation tasks.
-  prohibited_uses: Use in any manner that violates applicable laws or regulations
-    (including trade compliance laws). Use in languages other than English. Use
-    in any other way that is prohibited by the Acceptable Use Policy and Licensing
-    Agreement for Llama 2.
-  monitoring: ''
-  feedback: ''
-- type: model
-  name: OPT-IML
-  organization: Meta
-  description: ''
-  created_date: 2022-12-22
-  url: https://arxiv.org/abs/2212.12017
-  model_card: ''
   modality: text; text
-  analysis: ''
-  size: 175B parameters (dense)
-  dependencies: [OPT, OPT-IML Bench]
-  training_emissions: ''
-  training_time: ''
-  training_hardware: ''
-  quality_control: ''
-  access: open
-  license: OPT-IML 175B License
-  intended_uses: ''
-  prohibited_uses: ''
+  model_card: Can be found at appendix of paper at https://ai.meta.com/research/publications/llama-2-open-foundation-and-fine-tuned-chat-models/
   monitoring: ''
-  feedback: ''
-- type: dataset
-  name: SA-1B
+  name: Llama 2
+  nationality: USA
   organization: Meta
-  description: "SA-1B (Segment Anything 1 Billion) is a dataset designed for training\
-    \ general-purpose object segmentation models from open world images. It consists\
-    \ of 11M diverse, high-resolution, privacy protecting images and 1.1B high-quality\
-    \ segmentation masks.\n"
+  prohibited_uses: Use in any manner that violates applicable laws or regulations
+    (including trade compliance laws). Use in languages other than English. Use in
+    any other way that is prohibited by the Acceptable Use Policy and Licensing Agreement
+    for Llama 2.
+  quality_control: ''
+  size: 70B parameters (dense)
+  training_emissions: 539 tCO2eq
+  training_hardware: NVIDIA A100-80GB GPUs (TDP of 350-400W)
+  training_time: ''
+  type: model
+  url: https://ai.meta.com/resources/models-and-libraries/llama/
+- access: open
+  analysis: ''
+  created_date: 2022-12-22
+  dependencies:
+  - OPT
+  - OPT-IML Bench
+  description: ''
+  feedback: ''
+  intended_uses: ''
+  license: OPT-IML 175B License
+  modality: text; text
+  model_card: ''
+  monitoring: ''
+  name: OPT-IML
+  nationality: USA
+  organization: Meta
+  prohibited_uses: ''
+  quality_control: ''
+  size: 175B parameters (dense)
+  training_emissions: ''
+  training_hardware: ''
+  training_time: ''
+  type: model
+  url: https://arxiv.org/abs/2212.12017
+- access:
+    explanation: 'The full dataset can be downloaded at [[SA-1B Download]](https://ai.facebook.com/datasets/segment-anything-downloads/).
+      A 50k image preview of the full dataset is available [[here]](https://segment-anything.com/dataset/index.html).
+
+      '
+    value: open
+  analysis: ''
   created_date:
     explanation: The date the [[Meta blog post]](https://ai.facebook.com/blog/segment-anything-foundation-model-image-segmentation/)
       was released.
     value: 2023-04-05
-  url: https://ai.facebook.com/datasets/segment-anything/
   datasheet:
     explanation: Datasheet can be found in the Appendix section of the Segment Anything
       paper.
     value: https://arxiv.org/pdf/2304.02643.pdf#page=25
-  modality: image
-  size: 11M images, 1.1B mask annotations
-  sample: []
-  analysis: ''
   dependencies: []
+  description: 'SA-1B (Segment Anything 1 Billion) is a dataset designed for training
+    general-purpose object segmentation models from open world images. It consists
+    of 11M diverse, high-resolution, privacy protecting images and 1.1B high-quality
+    segmentation masks.
+
+    '
+  excluded:
+    explanation: See [[Datasheet]](https://arxiv.org/pdf/2304.02643.pdf#page=25)
+    value: '"We withheld ~2k randomly selected images for testing purposes."  "Each
+      image is accompanied by a short caption that describes the content and place
+      of the photo in a free form text. Per our agreement with the photo provider
+      we are not allowed to release these captions."
+
+      '
+  feedback: Feedback can be given via the feedback form on their website [segment-anything.com](https://segment-anything.com/)
+    or by emailing at segment-anything at meta.com.
   included:
     explanation: According to section [[Segment Anything Dataset]](https://arxiv.org/pdf/2304.02643.pdf#section.5)
       of the paper and [[SA-1B website]](https://ai.facebook.com/datasets/segment-anything/).
-    value: "SA-1B consists of 11M diverse, high-resolution (averaging 1500×2250\
+    value: "SA-1B consists of 11M diverse, high-resolution (averaging 1500\xD72250\
       \ pixels), and privacy protecting images collected and licensed from a third\
-      \ party photo company. The images are photos taken from a camera, i.e. not\
-      \ artwork. The images vary in subject matter. Common themes of the images\
-      \ include: locations, objects, scenes. The dataset includes 1.1B high-quality\
-      \ segmentation masks collected with the Segment Anything Data Engine. SA-1B\
-      \ only includes automatically generated masks (99.1%), as the authors conclude\
-      \ after experiments that the automatic masks are high quality and effective\
-      \ for training models. The masks range from large scale objects such as buildings\
-      \ to fine grained details such as door handles. Masks are provided in the\
-      \ COCO run-length encoding (RLE) annotation format.\n"
-  excluded:
-    explanation: See [[Datasheet]](https://arxiv.org/pdf/2304.02643.pdf#page=25)
-    value: "\"We withheld ~2k randomly selected images for testing purposes.\" \
-      \ \"Each image is accompanied by a short caption that describes the content\
-      \ and place of the photo in a free form text. Per our agreement with the photo\
-      \ provider we are not allowed to release these captions.\"\n"
-  quality_control:
-    explanation: According to sections [[Segment Anything Dataset]](https://arxiv.org/pdf/2304.02643.pdf#section.5)
-      and [[Datasheet]](https://arxiv.org/pdf/2304.02643.pdf#page=25) of the paper.
-    value: "- Dataset quality:\n  Due to potential accessibility and storage challenges,\
-      \ the original high-resolution images (averaging 3300×4950 pixels) were downsampled\
-      \ to an average resolution of 1500×2250 pixels. Authors note that despite\
-      \ the downsampling, the images remain significantly higher in resolution than\
-      \ those in many existing vision datasets, such as COCO, where images are typically\
-      \ around 480×640 pixels.\n  The images were processed to blur faces and license\
-      \ plates to protect the identities of those in the image.\n  To estimate the\
-      \ quality of the masks in the images, a random sample of 500 images (∼50k\
-      \ masks) was taken and professional annotators were asked to improve the quality\
-      \ of all masks in those images.\n- Safety measures:\n  Authors implemented\
-      \ two safety measures to prevent objectionable content:\n    (1) Photos are\
-      \ licensed from a photo provider and had to meet the terms of service of the\
-      \ photo provider. Authors requested that all objectionable content be filtered\
-      \ from the images they licensed.\n    (2) Users who observe objectionable\
-      \ images in the dataset are invited to report them for removal at segment-anything@meta.com.\n\
-      \  Despite these measures, they observed that a small portion of images contain\
-      \ scenes of protests or other gatherings that focus on a diverse spectrum\
-      \ of religious beliefs or political opinions that may be considered offensive.\
-      \ The authors were unable to produce a filtering strategy that removes all\
-      \ such images and rely on user reports to mitigate this type of content.\n"
-  access:
-    explanation: "The full dataset can be downloaded at [[SA-1B Download]](https://ai.facebook.com/datasets/segment-anything-downloads/).\
-      \ A 50k image preview of the full dataset is available [[here]](https://segment-anything.com/dataset/index.html).\n"
-    value: open
+      \ party photo company. The images are photos taken from a camera, i.e. not artwork.\
+      \ The images vary in subject matter. Common themes of the images include: locations,\
+      \ objects, scenes. The dataset includes 1.1B high-quality segmentation masks\
+      \ collected with the Segment Anything Data Engine. SA-1B only includes automatically\
+      \ generated masks (99.1%), as the authors conclude after experiments that the\
+      \ automatic masks are high quality and effective for training models. The masks\
+      \ range from large scale objects such as buildings to fine grained details such\
+      \ as door handles. Masks are provided in the COCO run-length encoding (RLE)\
+      \ annotation format.\n"
+  intended_uses:
+    explanation: See [[SA-1B website]](https://ai.facebook.com/datasets/segment-anything/)
+    value: SA-1B is intended to be used for research purposes only. It allows access
+      to a privacy protecting and copyright friendly large-scale image dataset. Researchers
+      can use it to train and evaluate generic object segmentation models.
   license:
     explanation: SA-1B is released under a favorable license agreement for certain
       research uses and with protections for researchers. See [[SA-1B Dataset Research
       License]](https://ai.facebook.com/datasets/segment-anything-downloads/).
     value: SA-1B Dataset Research License
-  intended_uses:
-    explanation: See [[SA-1B website]](https://ai.facebook.com/datasets/segment-anything/)
-    value: SA-1B is intended to be used for research purposes only. It allows access
-      to a privacy protecting and copyright friendly large-scale image dataset.
-      Researchers can use it to train and evaluate generic object segmentation models.
-  prohibited_uses:
-    explanation: See [[Datasheet]](https://arxiv.org/pdf/2304.02643.pdf#page=25)
-    value: "Authors note the following limitations of the dataset:\n  The masks\
-      \ are generated by a segmentation model, so there may be errors\nor inconsistencies\
-      \ in the masks.\n  While no two images are the same, there are instances of\
-      \ images of the same\nsubject taken close together in time.\n  The dataset\
-      \ contains scenes of protests, or other gatherings that may suggest\nreligious\
-      \ beliefs, political opinions or union memberships that may be offensive.\n"
+  modality: image
   monitoring:
     explanation: See [[Datasheet]](https://arxiv.org/pdf/2304.02643.pdf#page=25)
-    value: "The dataset will be hosted at https://ai.facebook.com/datasets/segment-anything\
-      \ and maintained by Meta AI. \"If a user observes objectionable image(s) in\
-      \ the dataset, we invite them to report the image(s) at segment-anything at\
-      \ meta.com for removal\" \"To aid reproducibility of research using SA-1B,\
-      \ the only updates (to the dataset) will be to remove reported images.\" \"\
-      We encourage users to gather further annotations for SA-1B. Any users who\
-      \ generate annotations will be liable for hosting and distributing their annotations.\"\
-      \n"
-  feedback: Feedback can be given via the feedback form on their website [segment-anything.com](https://segment-anything.com/)
-    or by emailing at segment-anything at meta.com.
-- type: model
-  name: SAM
+    value: 'The dataset will be hosted at https://ai.facebook.com/datasets/segment-anything
+      and maintained by Meta AI. "If a user observes objectionable image(s) in the
+      dataset, we invite them to report the image(s) at segment-anything at meta.com
+      for removal" "To aid reproducibility of research using SA-1B, the only updates
+      (to the dataset) will be to remove reported images." "We encourage users to
+      gather further annotations for SA-1B. Any users who generate annotations will
+      be liable for hosting and distributing their annotations."
+
+      '
+  name: SA-1B
+  nationality: USA
   organization: Meta
-  description: SAM (Segment Anything Model) is a foundation model for image segmentation.
-    The model is designed and trained to be promptable, and supports flexible prompts
-    (point, box, mask and free-form text) to compute masks in real-time to allow
-    interactive use.
+  prohibited_uses:
+    explanation: See [[Datasheet]](https://arxiv.org/pdf/2304.02643.pdf#page=25)
+    value: "Authors note the following limitations of the dataset:\n  The masks are\
+      \ generated by a segmentation model, so there may be errors\nor inconsistencies\
+      \ in the masks.\n  While no two images are the same, there are instances of\
+      \ images of the same\nsubject taken close together in time.\n  The dataset contains\
+      \ scenes of protests, or other gatherings that may suggest\nreligious beliefs,\
+      \ political opinions or union memberships that may be offensive.\n"
+  quality_control:
+    explanation: According to sections [[Segment Anything Dataset]](https://arxiv.org/pdf/2304.02643.pdf#section.5)
+      and [[Datasheet]](https://arxiv.org/pdf/2304.02643.pdf#page=25) of the paper.
+    value: "- Dataset quality:\n  Due to potential accessibility and storage challenges,\
+      \ the original high-resolution images (averaging 3300\xD74950 pixels) were downsampled\
+      \ to an average resolution of 1500\xD72250 pixels. Authors note that despite\
+      \ the downsampling, the images remain significantly higher in resolution than\
+      \ those in many existing vision datasets, such as COCO, where images are typically\
+      \ around 480\xD7640 pixels.\n  The images were processed to blur faces and license\
+      \ plates to protect the identities of those in the image.\n  To estimate the\
+      \ quality of the masks in the images, a random sample of 500 images (\u223C\
+      50k masks) was taken and professional annotators were asked to improve the quality\
+      \ of all masks in those images.\n- Safety measures:\n  Authors implemented two\
+      \ safety measures to prevent objectionable content:\n    (1) Photos are licensed\
+      \ from a photo provider and had to meet the terms of service of the photo provider.\
+      \ Authors requested that all objectionable content be filtered from the images\
+      \ they licensed.\n    (2) Users who observe objectionable images in the dataset\
+      \ are invited to report them for removal at segment-anything@meta.com.\n  Despite\
+      \ these measures, they observed that a small portion of images contain scenes\
+      \ of protests or other gatherings that focus on a diverse spectrum of religious\
+      \ beliefs or political opinions that may be considered offensive. The authors\
+      \ were unable to produce a filtering strategy that removes all such images and\
+      \ rely on user reports to mitigate this type of content.\n"
+  sample: []
+  size: 11M images, 1.1B mask annotations
+  type: dataset
+  url: https://ai.facebook.com/datasets/segment-anything/
+- access:
+    explanation: 'Inference code and model checkpoints are available on the model''s
+      [[GitHub repository]](https://github.com/facebookresearch/segment-anything).
+      Its training dataset SA-1B can be used for research purposes and is available
+      for download [here](https://ai.facebook.com/datasets/segment-anything-downloads/).
+
+      '
+    value: open
+  analysis:
+    explanation: See [[Zero-Shot Transfer Experiments]](https://arxiv.org/pdf/2304.02643.pdf#section.7)
+      for more details.
+    value: '"We extensively evaluate SAM. First, using a diverse new suite of 23 segmentation
+      datasets, we find that SAM produces high-quality masks from a single foreground
+      point, often only slightly below that of the manually annotated ground truth.
+      Second, we find consistently strong quantitative and qualitative results on
+      a variety of downstream tasks under a zero-shot transfer protocol using prompt
+      engineering, including edge detection, object proposal generation, instance
+      segmentation, and a preliminary exploration of text-to-mask prediction."
+
+      '
   created_date:
     explanation: The date the [[Meta blog post]](https://ai.facebook.com/blog/segment-anything-foundation-model-image-segmentation/)
       was released.
     value: 2023-04-05
-  url: https://arxiv.org/pdf/2304.02643.pdf
-  model_card:
-    explanation: Model card can be found in the Appendix section of the paper.
-    value: https://arxiv.org/pdf/2304.02643.pdf#page=28
-  modality: image, text; image
-  analysis:
-    explanation: See [[Zero-Shot Transfer Experiments]](https://arxiv.org/pdf/2304.02643.pdf#section.7)
-      for more details.
-    value: "\"We extensively evaluate SAM. First, using a diverse new suite of 23\
-      \ segmentation datasets, we find that SAM produces high-quality masks from\
-      \ a single foreground point, often only slightly below that of the manually\
-      \ annotated ground truth. Second, we find consistently strong quantitative\
-      \ and qualitative results on a variety of downstream tasks under a zero-shot\
-      \ transfer protocol using prompt engineering, including edge detection, object\
-      \ proposal generation, instance segmentation, and a preliminary exploration\
-      \ of text-to-mask prediction.\"\n"
-  size: unknown
-  dependencies: [SA-1B]
-  training_emissions:
+  dependencies:
+  - SA-1B
+  description: SAM (Segment Anything Model) is a foundation model for image segmentation.
+    The model is designed and trained to be promptable, and supports flexible prompts
+    (point, box, mask and free-form text) to compute masks in real-time to allow interactive
+    use.
+  feedback: Feedback can be given via the feedback form on their website [segment-anything.com](https://segment-anything.com/)
+    or by emailing at segment-anything at meta.com.
+  intended_uses:
     explanation: See [[Model card]](https://arxiv.org/pdf/2304.02643.pdf#page=28)
-    value: 2.8 metric tons of carbon dioxide
-  training_time:
-    explanation: See [[Model card]](https://arxiv.org/pdf/2304.02643.pdf#page=28)
-    value: 68 hours
-  training_hardware:
-    explanation: See [[Model card]](https://arxiv.org/pdf/2304.02643.pdf#page=28)
-    value: 256 A100 GPUs
-  quality_control:
-    explanation: See [[Segment Anything RAI Analysis]](https://arxiv.org/pdf/2304.02643.pdf#section.6)
-      for more details.
-    value: "\"We perform a Responsible AI (RAI) analysis of our work by investigating\
-      \ potential fairness concerns and biases when using SA-1B and SAM. We focus\
-      \ on the geographic and income distribution of SA-1B and fairness of SAM across\
-      \ protected attributes of people.\"\n"
-  access:
-    explanation: "Inference code and model checkpoints are available on the model's\
-      \ [[GitHub repository]](https://github.com/facebookresearch/segment-anything).\
-      \ Its training dataset SA-1B can be used for research purposes and is available\
-      \ for download [here](https://ai.facebook.com/datasets/segment-anything-downloads/).\n"
-    value: open
+    value: '"SAM is intended to be used for any prompt-based segmentation task. We
+      explored its use in segmenting objects from a point, edge detection, segmenting
+      all objects, and segmenting detected objects. We explored how SAM can integrate
+      with other vision models to segment objects from text."
+
+      '
   license:
     explanation: See [[LICENSE]](https://github.com/facebookresearch/segment-anything/blob/main/LICENSE)
     value: Apache 2.0
-  intended_uses:
-    explanation: See [[Model card]](https://arxiv.org/pdf/2304.02643.pdf#page=28)
-    value: "\"SAM is intended to be used for any prompt-based segmentation task.\
-      \ We explored its use in segmenting objects from a point, edge detection,\
-      \ segmenting all objects, and segmenting detected objects. We explored how\
-      \ SAM can integrate with other vision models to segment objects from text.\"\
-      \n"
+  modality: image, text; image
+  model_card:
+    explanation: Model card can be found in the Appendix section of the paper.
+    value: https://arxiv.org/pdf/2304.02643.pdf#page=28
+  monitoring: ''
+  name: SAM
+  nationality: USA
+  organization: Meta
   prohibited_uses:
     explanation: See [[Discussion]](https://arxiv.org/pdf/2304.02643.pdf#section.8)
     value: "For out-of-scope use cases see terms of use in [[LICENSE]](https://github.com/facebookresearch/segment-anything/blob/main/LICENSE).\
-      \ Authors also discuss the following limitations of the model: \"While SAM\
-      \ performs well in general, it is not perfect. It can miss fine structures,\
-      \ hallucinates small disconnected components at times, and does not produce\
-      \ boundaries as crisply as more computationally intensive methods that “zoom-in”,\
-      \ e.g. [18]. In general, we expect dedicated interactive segmentation methods\
-      \ to outperform SAM when many points are provided, e.g. [67]. Unlike these\
-      \ methods, SAM is designed for generality and breadth of use rather than high\
-      \ IoU interactive segmentation. Moreover, SAM can process prompts in real-time,\
-      \ but nevertheless SAM's overall performance is not real-time when using a\
-      \ heavy image encoder. Our foray into the text-to-mask task is exploratory\
-      \ and not entirely robust, although we believe it can be improved with more\
-      \ effort. While SAM can perform many tasks, it is unclear how to design simple\
-      \ prompts that implement semantic and panoptic segmentation. Finally, there\
-      \ are domain-specific tools, such as [7], that we expect to outperform SAM\
-      \ in their respective domains.\"\n"
-  monitoring: ''
-  feedback: Feedback can be given via the feedback form on their website [segment-anything.com](https://segment-anything.com/)
-    or by emailing at segment-anything at meta.com.
-- type: model
-  name: Voicebox
-  organization: Meta
-  description: Voicebox is the first generative AI model for speech to generalize
-    across tasks with state-of-the-art performance.
-  created_date: 2023-06-16
-  url: https://research.facebook.com/publications/voicebox-text-guided-multilingual-universal-speech-generation-at-scale/
-  model_card: ''
-  modality: audio; text
+      \ Authors also discuss the following limitations of the model: \"While SAM performs\
+      \ well in general, it is not perfect. It can miss fine structures, hallucinates\
+      \ small disconnected components at times, and does not produce boundaries as\
+      \ crisply as more computationally intensive methods that \u201Czoom-in\u201D\
+      , e.g. [18]. In general, we expect dedicated interactive segmentation methods\
+      \ to outperform SAM when many points are provided, e.g. [67]. Unlike these methods,\
+      \ SAM is designed for generality and breadth of use rather than high IoU interactive\
+      \ segmentation. Moreover, SAM can process prompts in real-time, but nevertheless\
+      \ SAM's overall performance is not real-time when using a heavy image encoder.\
+      \ Our foray into the text-to-mask task is exploratory and not entirely robust,\
+      \ although we believe it can be improved with more effort. While SAM can perform\
+      \ many tasks, it is unclear how to design simple prompts that implement semantic\
+      \ and panoptic segmentation. Finally, there are domain-specific tools, such\
+      \ as [7], that we expect to outperform SAM in their respective domains.\"\n"
+  quality_control:
+    explanation: See [[Segment Anything RAI Analysis]](https://arxiv.org/pdf/2304.02643.pdf#section.6)
+      for more details.
+    value: '"We perform a Responsible AI (RAI) analysis of our work by investigating
+      potential fairness concerns and biases when using SA-1B and SAM. We focus on
+      the geographic and income distribution of SA-1B and fairness of SAM across protected
+      attributes of people."
+
+      '
+  size: unknown
+  training_emissions:
+    explanation: See [[Model card]](https://arxiv.org/pdf/2304.02643.pdf#page=28)
+    value: 2.8 metric tons of carbon dioxide
+  training_hardware:
+    explanation: See [[Model card]](https://arxiv.org/pdf/2304.02643.pdf#page=28)
+    value: 256 A100 GPUs
+  training_time:
+    explanation: See [[Model card]](https://arxiv.org/pdf/2304.02643.pdf#page=28)
+    value: 68 hours
+  type: model
+  url: https://arxiv.org/pdf/2304.02643.pdf
+- access: closed
   analysis: Evaluated on zero-shot text-to-speech benchmarks, with Voicebox outperforming
     the current state-of-the-art English model VALL-E.
-  size: 330M parameters (dense)
+  created_date: 2023-06-16
   dependencies: []
-  training_emissions: unknown
-  training_time: 750,000 iterations
-  training_hardware: 32 GPUs of unspecified type
-  quality_control: ''
-  access: closed
-  license: ''
-  intended_uses: ''
-  prohibited_uses: ''
-  monitoring: ''
+  description: Voicebox is the first generative AI model for speech to generalize
+    across tasks with state-of-the-art performance.
   feedback: ''
-- type: model
-  name: PEER
-  organization: Meta
-  description: PEER is a collaborative language model that is trained to imitate
-    the entire writing process itself. PEER can write drafts, add suggestions, propose
-    edits and provide explanations for its actions.
-  created_date: 2022-08-24
-  url: https://arxiv.org/pdf/2208.11663.pdf
+  intended_uses: ''
+  license: ''
+  modality: audio; text
   model_card: ''
-  modality: text; text
+  monitoring: ''
+  name: Voicebox
+  nationality: USA
+  organization: Meta
+  prohibited_uses: ''
+  quality_control: ''
+  size: 330M parameters (dense)
+  training_emissions: unknown
+  training_hardware: 32 GPUs of unspecified type
+  training_time: 750,000 iterations
+  type: model
+  url: https://research.facebook.com/publications/voicebox-text-guided-multilingual-universal-speech-generation-at-scale/
+- access: open
   analysis: PEER is evaluated on core research questions intended to gauge language
-    understanding, proper use of citations, instruction following, and iterative
-    use.
-  size: 3B parameters (dense)
+    understanding, proper use of citations, instruction following, and iterative use.
+  created_date: 2022-08-24
   dependencies: []
-  training_emissions: ''
-  training_time: ''
-  training_hardware: 64 GPUs
+  description: PEER is a collaborative language model that is trained to imitate the
+    entire writing process itself. PEER can write drafts, add suggestions, propose
+    edits and provide explanations for its actions.
+  feedback: ''
+  intended_uses: adapting LLMs to work with collaborative writing and updating.
+  license: ''
+  modality: text; text
+  model_card: ''
+  monitoring: ''
+  name: PEER
+  nationality: USA
+  organization: Meta
+  prohibited_uses: ''
   quality_control: Heuristics and edit filtering was used on data set, which consisted
     mostly of Wikipedia pages.
-  access: open
-  license: ''
-  intended_uses: adapting LLMs to work with collaborative writing and updating.
-  prohibited_uses: ''
-  monitoring: ''
-  feedback: ''
-- type: model
-  name: MusicGen
-  organization: Meta
-  description: MusicGen is a simple and controllable model for music generation
-    that doesn't require self-supervised semantic representation
+  size: 3B parameters (dense)
+  training_emissions: ''
+  training_hardware: 64 GPUs
+  training_time: ''
+  type: model
+  url: https://arxiv.org/pdf/2208.11663.pdf
+- access: open
+  analysis: MusicGen was evaluated on standard music benchmarks of Frechet Audio Distance,
+    Kullback-Leibler Divergence, and its CLAP score.
   created_date: 2023-08-02
-  url: https://huggingface.co/spaces/facebook/MusicGen/tree/main
-  model_card: https://github.com/facebookresearch/audiocraft/blob/main/model_cards/MUSICGEN_MODEL_CARD.md
+  dependencies:
+  - Meta Music Initative Sound Collection
+  - Shutterstock music collection
+  - Pond5 music collection
+  description: MusicGen is a simple and controllable model for music generation that
+    doesn't require self-supervised semantic representation
+  feedback: https://huggingface.co/spaces/facebook/MusicGen/discussions
+  intended_uses: The primary use of MusicGen is research on AI-based music generation
+  license: MIT
   modality:
     explanation: text; audio
     value: audio, text; audio, text
-  analysis: MusicGen was evaluated on standard music benchmarks of Frechet Audio
-    Distance, Kullback-Leibler Divergence, and its CLAP score.
-  size: 3.3B parameters (dense)
-  dependencies:
-    - Meta Music Initative Sound Collection
-    - Shutterstock music collection
-    - Pond5 music collection
-  training_emissions: ''
-  training_time: ''
-  training_hardware: ''
-  quality_control: ''
-  access: open
-  license: MIT
-  intended_uses: The primary use of MusicGen is research on AI-based music generation
+  model_card: https://github.com/facebookresearch/audiocraft/blob/main/model_cards/MUSICGEN_MODEL_CARD.md
+  monitoring: ''
+  name: MusicGen
+  nationality: USA
+  organization: Meta
   prohibited_uses: The model should not be used on downstream applications without
     further risk evaluation and mitigation. The model should not be used to intentionally
     create or disseminate music pieces that create hostile or alienating environments
     for people. This includes generating music that people would foreseeably find
-    disturbing, distressing, or offensive; or content that propagates historical
-    or current stereotypes.
-  monitoring: ''
-  feedback: https://huggingface.co/spaces/facebook/MusicGen/discussions
-- type: model
-  name: AudioGen
-  organization: Meta
+    disturbing, distressing, or offensive; or content that propagates historical or
+    current stereotypes.
+  quality_control: ''
+  size: 3.3B parameters (dense)
+  training_emissions: ''
+  training_hardware: ''
+  training_time: ''
+  type: model
+  url: https://huggingface.co/spaces/facebook/MusicGen/tree/main
+- access: open
+  analysis: Evaluated on Frechet Audio Distance and Kullback-Leibler Divergence as
+    well as qualitative studies with human participants.
+  created_date: 2023-08-02
+  dependencies:
+  - AudioSet
+  - BBC sound effects
+  - AudioCaps
+  - Clotho v2
+  - VGG-Sound
+  - FSD50K
+  - Free To Use Sounds
+  - Sonniss Game Effects
+  - WeSoundEffects
+  - Paramount Motion - Odeon Cinematic Sound Effects
   description: AudioGen is an auto-regressive generative model that generates audio
     samples conditioned on text inputs
-  created_date: 2023-08-02
-  url: https://felixkreuk.github.io/audiogen/paper.pdf
-  model_card: https://github.com/facebookresearch/audiocraft/blob/main/model_cards/AUDIOGEN_MODEL_CARD.md
+  feedback: https://huggingface.co/facebook/audiogen-medium/discussions
+  intended_uses: The primary use of AudioGen is research on AI-based audio generation.
+  license: MIT
   modality:
     explanation: text; audio
     value: audio, text; audio, text
-  analysis: Evaluated on Frechet Audio Distance and Kullback-Leibler Divergence
-    as well as qualitative studies with human participants.
-  size: 1.5B parameters (dense)
-  dependencies:
-    - AudioSet
-    - BBC sound effects
-    - AudioCaps
-    - Clotho v2
-    - VGG-Sound
-    - FSD50K
-    - Free To Use Sounds
-    - Sonniss Game Effects
-    - WeSoundEffects
-    - Paramount Motion - Odeon Cinematic Sound Effects
-  training_emissions: ''
-  training_time: ''
-  training_hardware: ''
-  quality_control: ''
-  access: open
-  license: MIT
-  intended_uses: The primary use of AudioGen is research on AI-based audio generation.
+  model_card: https://github.com/facebookresearch/audiocraft/blob/main/model_cards/AUDIOGEN_MODEL_CARD.md
+  monitoring: ''
+  name: AudioGen
+  nationality: USA
+  organization: Meta
   prohibited_uses: The model should not be used on downstream applications without
     further risk evaluation and mitigation. The model should not be used to intentionally
     create or disseminate audio pieces that create hostile or alienating environments
     for people. This includes generating audio that people would foreseeably find
-    disturbing, distressing, or offensive; or content that propagates historical
-    or current stereotypes.
-  monitoring: ''
-  feedback: https://huggingface.co/facebook/audiogen-medium/discussions
-- type: model
-  name: Emu
-  organization: Meta
+    disturbing, distressing, or offensive; or content that propagates historical or
+    current stereotypes.
+  quality_control: ''
+  size: 1.5B parameters (dense)
+  training_emissions: ''
+  training_hardware: ''
+  training_time: ''
+  type: model
+  url: https://felixkreuk.github.io/audiogen/paper.pdf
+- access: closed
+  analysis: Emu significantly outperforms a publicly available state-of-the-art model
+    SDXLv1.0 on visual appeal when compared on standard benchmarks.
+  created_date: 2023-09-27
+  dependencies:
+  - CLIP
+  - T5
   description: Emu is a pre-trained latent diffusion model on 1.1 billion image-text
     pairs and fine-tuned with only a few thousand carefully selected high-quality
     images.
-  created_date: 2023-09-27
-  url: https://ai.meta.com/research/publications/emu-enhancing-image-generation-models-using-photogenic-needles-in-a-haystack/
-  model_card: none
-  modality: text; image
-  analysis: Emu significantly outperforms a publicly available state-of-the-art
-    model SDXLv1.0 on visual appeal when compared on standard benchmarks.
-  size: 1.5B parameters (dense)
-  dependencies: [CLIP, T5]
-  training_emissions: ''
-  training_time: ''
-  training_hardware: ''
-  quality_control: ''
-  access: closed
-  license: unknown
-  intended_uses: ''
-  prohibited_uses: ''
-  monitoring: ''
   feedback: ''
-
-- type: model
-  name: Code LLaMA
+  intended_uses: ''
+  license: unknown
+  modality: text; image
+  model_card: none
+  monitoring: ''
+  name: Emu
+  nationality: USA
   organization: Meta
+  prohibited_uses: ''
+  quality_control: ''
+  size: 1.5B parameters (dense)
+  training_emissions: ''
+  training_hardware: ''
+  training_time: ''
+  type: model
+  url: https://ai.meta.com/research/publications/emu-enhancing-image-generation-models-using-photogenic-needles-in-a-haystack/
+- access: open
+  analysis: Evaluated on several code benchmarks like HumanEval and MBPP.
+  created_date: 2023-08-24
+  dependencies:
+  - Llama 2
   description: Code Llama is a collection of pretrained and fine-tuned generative
     text models ranging in scale from 7 billion to 34 billion parameters.
-  created_date: 2023-08-24
-  url: https://ai.meta.com/research/publications/code-llama-open-foundation-models-for-code/
-  model_card: https://huggingface.co/codellama/CodeLlama-34b-hf
-  modality: text; code, text
-  analysis: Evaluated on several code benchmarks like HumanEval and MBPP.
-  size: 34B parameters (dense)
-  dependencies: [Llama 2]
-  training_emissions: 65.3 tCO2eq
-  training_time: 400K GPU hours
-  training_hardware: A100-80GB GPUs
-  quality_control: ''
-  access: open
-  license: Llama 2
+  feedback: https://huggingface.co/allenai/codetulu-2-13b/discussions
   intended_uses: Code Llama and its variants is intended for commercial and research
     use in English and relevant programming languages.
-  prohibited_uses: Use in any manner that violates applicable laws or regulations
-    (including trade compliance laws). Use in languages other than English. Use
-    in any other way that is prohibited by the Acceptable Use Policy and Licensing
-    Agreement for Code Llama and its variants.
+  license: Llama 2
+  modality: text; code, text
+  model_card: https://huggingface.co/codellama/CodeLlama-34b-hf
   monitoring: ''
-  feedback: https://huggingface.co/allenai/codetulu-2-13b/discussions
-
-- type: model
-  name: Emu Video
+  name: Code LLaMA
+  nationality: USA
   organization: Meta
-  description: Emu Video is a text-to-video generation model that factorizes the
-    generation into two steps, first generating an image conditioned on the text,
-    and then generating a video conditioned on the text and the generated image.
-  created_date: 2023-11-16
-  url: https://emu-video.metademolab.com/
-  model_card: none
-  modality: text; video
+  prohibited_uses: Use in any manner that violates applicable laws or regulations
+    (including trade compliance laws). Use in languages other than English. Use in
+    any other way that is prohibited by the Acceptable Use Policy and Licensing Agreement
+    for Code Llama and its variants.
+  quality_control: ''
+  size: 34B parameters (dense)
+  training_emissions: 65.3 tCO2eq
+  training_hardware: A100-80GB GPUs
+  training_time: 400K GPU hours
+  type: model
+  url: https://ai.meta.com/research/publications/code-llama-open-foundation-models-for-code/
+- access: closed
   analysis: Analyzed against nearest neighbor model baseline and by extending the
     video length.
-  size: 6B parameters (dense)
-  dependencies: [Emu, CLIP, T5]
-  training_emissions: unknown
-  training_time: unknown
-  training_hardware: unknown
-  quality_control: ''
-  access: closed
-  license: unknown
-  intended_uses: ''
-  prohibited_uses: ''
-  monitoring: ''
+  created_date: 2023-11-16
+  dependencies:
+  - Emu
+  - CLIP
+  - T5
+  description: Emu Video is a text-to-video generation model that factorizes the generation
+    into two steps, first generating an image conditioned on the text, and then generating
+    a video conditioned on the text and the generated image.
   feedback: none
-
-- type: model
-  name: Emu Edit
+  intended_uses: ''
+  license: unknown
+  modality: text; video
+  model_card: none
+  monitoring: ''
+  name: Emu Video
+  nationality: USA
   organization: Meta
+  prohibited_uses: ''
+  quality_control: ''
+  size: 6B parameters (dense)
+  training_emissions: unknown
+  training_hardware: unknown
+  training_time: unknown
+  type: model
+  url: https://emu-video.metademolab.com/
+- access: closed
+  analysis: Evaluated on test set of actions in comparison to SoTA image editing models.
+  created_date: 2023-11-16
+  dependencies:
+  - Emu
+  - CLIP
+  - T5
   description: Emu Edit is a multi-task image editing model which sets state-of-the-art
     results in instruction-based image editing.
-  created_date: 2023-11-16
-  url: https://emu-edit.metademolab.com/
-  model_card: none
-  modality: text; image
-  analysis: Evaluated on test set of actions in comparison to SoTA image editing
-    models.
-  size: unknown
-  dependencies: [Emu, CLIP, T5]
-  training_emissions: unknown
-  training_time: unknown
-  training_hardware: unknown
-  quality_control: ''
-  access: closed
-  license: unknown
-  intended_uses: ''
-  prohibited_uses: ''
-  monitoring: ''
   feedback: none
-
-- type: model
-  name: MetaCLIP
+  intended_uses: ''
+  license: unknown
+  modality: text; image
+  model_card: none
+  monitoring: ''
+  name: Emu Edit
+  nationality: USA
   organization: Meta
+  prohibited_uses: ''
+  quality_control: ''
+  size: unknown
+  training_emissions: unknown
+  training_hardware: unknown
+  training_time: unknown
+  type: model
+  url: https://emu-edit.metademolab.com/
+- access: open
+  analysis: Evaluated in comparison to CLIP.
+  created_date: 2023-10-02
+  dependencies:
+  - Common Crawl
   description: MetaCLIP is a more transparent rendition of CLIP that aims to reveal
     CLIP's training data curation methods.
-  created_date: 2023-10-02
-  url: https://arxiv.org/pdf/2103.00020.pdf
-  model_card: https://huggingface.co/facebook/metaclip-b32-400m
-  modality: text; text
-  analysis: Evaluated in comparison to CLIP.
-  size: unknown
-  dependencies: [Common Crawl]
-  training_emissions: unknown
-  training_time: unknown
-  training_hardware: unknown
-  quality_control: ''
-  access: open
-  license: CC-BY-NC-4.0
-  intended_uses: ''
-  prohibited_uses: ''
-  monitoring: none
   feedback: none
-
-- type: model
-  name: Llama 3
-  organization: Meta
-  description: Llama 3 is the third generation of Meta AI's open-source large language
-    model. It comes with pretrained and instruction-fine-tuned language models with
-    8B and 70B parameters that can support a broad range of use cases.
-  created_date: 2024-04-18
-  url: https://llama.meta.com/llama3/
-  model_card: https://github.com/meta-llama/llama3/blob/main/MODEL_CARD.md
+  intended_uses: ''
+  license: CC-BY-NC-4.0
   modality: text; text
+  model_card: https://huggingface.co/facebook/metaclip-b32-400m
+  monitoring: none
+  name: MetaCLIP
+  nationality: USA
+  organization: Meta
+  prohibited_uses: ''
+  quality_control: ''
+  size: unknown
+  training_emissions: unknown
+  training_hardware: unknown
+  training_time: unknown
+  type: model
+  url: https://arxiv.org/pdf/2103.00020.pdf
+- access: open
   analysis: The models were evaluated based on their performance on standard benchmarks
     and real-world scenarios. These evaluations were performed using a high-quality
     human evaluation set containing 1,800 prompts covering multiple use cases. The
     models also went through red-teaming for safety, where human experts and automated
     methods were used to generate adversarial prompts to test for problematic responses.
-  size: 70B parameters
+  created_date: 2024-04-18
   dependencies: []
-  training_emissions: unknown
-  training_time: unknown
-  training_hardware: 2 custom-built Meta 24K GPU clusters
-  quality_control: Extensive internal and external testing for safety, and design
-    of new trust and safety tools.
-  access: open
+  description: Llama 3 is the third generation of Meta AI's open-source large language
+    model. It comes with pretrained and instruction-fine-tuned language models with
+    8B and 70B parameters that can support a broad range of use cases.
+  feedback: Feedback is encouraged from users to improve the model, but the feedback
+    mechanism is not explicitly described.
+  intended_uses: Llama 3 is intended for a broad range of use cases, including AI
+    assistance, content creation, learning, and analysis.
   license:
     explanation: Can be found at https://github.com/meta-llama/llama3/blob/main/LICENSE
     value: Llama 3
-  intended_uses: Llama 3 is intended for a broad range of use cases, including AI
-    assistance, content creation, learning, and analysis.
-  prohibited_uses: unknown
+  modality: text; text
+  model_card: https://github.com/meta-llama/llama3/blob/main/MODEL_CARD.md
   monitoring: Extensive internal and external performance evaluation and red-teaming
     approach for safety testing.
-  feedback: Feedback is encouraged from users to improve the model, but the feedback
-    mechanism is not explicitly described.
-- type: model
-  name: Chameleon
-  organization: Meta FAIR
-  description: Chameleon is a family of early-fusion token-based mixed-modal models
-    capable of understanding and generating images and text in any arbitrary sequence.
-  created_date: 2024-05-17
-  url: https://arxiv.org/pdf/2405.09818
-  model_card: none
-  modality: image, text; image, text
+  name: Llama 3
+  nationality: USA
+  organization: Meta
+  prohibited_uses: unknown
+  quality_control: Extensive internal and external testing for safety, and design
+    of new trust and safety tools.
+  size: 70B parameters
+  training_emissions: unknown
+  training_hardware: 2 custom-built Meta 24K GPU clusters
+  training_time: unknown
+  type: model
+  url: https://llama.meta.com/llama3/
+- access: open
   analysis: Evaluated on a comprehensive range of tasks, including visual question
     answering, image captioning, text generation, image generation, and long-form
     mixed modal generation. Chameleon demonstrates broad and general capabilities,
     including state-of-the-art performance in image captioning tasks, outperforms
     Llama-2 in text-only tasks while being competitive with models such as Mixtral
     8x7B and Gemini-Pro.
-  size: 34B parameters
+  created_date: 2024-05-17
   dependencies: []
-  training_emissions: unknown
-  training_time: unknown
-  training_hardware: Meta's Research Super Cluster (powered by NVIDIA A100 80GB
-    GPUs)
-  quality_control: ''
-  access: open
-  license: unknown
-  intended_uses: ''
-  prohibited_uses: ''
-  monitoring: ''
+  description: Chameleon is a family of early-fusion token-based mixed-modal models
+    capable of understanding and generating images and text in any arbitrary sequence.
   feedback: none
-- type: model
-  name: Llama 3.1 405B
-  organization: Meta AI
-  description: Llama 3.1 405B is the first openly available model that rivals the
-    top AI models when it comes to state-of-the-art capabilities in general knowledge,
-    steerability, math, tool use, and multilingual translation. With the release
-    of the 405B model, the Llama versions support advanced use cases, such as long-form
-    text summarization, multilingual conversational agents, and coding assistants.
-    It is the largest and most capable openly available foundation model.
-  created_date: 2024-07-23
-  url: https://ai.meta.com/blog/meta-llama-3-1/
-  model_card: https://github.com/meta-llama/llama-models/blob/main/models/llama3_1/MODEL_CARD.md
-  modality: text; text
+  intended_uses: ''
+  license: unknown
+  modality: image, text; image, text
+  model_card: none
+  monitoring: ''
+  name: Chameleon
+  nationality: USA
+  organization: Meta FAIR
+  prohibited_uses: ''
+  quality_control: ''
+  size: 34B parameters
+  training_emissions: unknown
+  training_hardware: Meta's Research Super Cluster (powered by NVIDIA A100 80GB GPUs)
+  training_time: unknown
+  type: model
+  url: https://arxiv.org/pdf/2405.09818
+- access: open
   analysis: The model was evaluated on over 150 benchmark datasets that span a wide
     range of languages. An experimental evaluation suggests that the model is competitive
-    with leading foundation models across a range of tasks. Also, smaller models
-    of Llama 3.1 405B are competitive with closed and open models that have a similar
+    with leading foundation models across a range of tasks. Also, smaller models of
+    Llama 3.1 405B are competitive with closed and open models that have a similar
     number of parameters.
-  size: 405B parameters (dense)
-  dependencies: [Unknown]
-  training_emissions: Unknown
-  training_time: Unknown
-  training_hardware: Over 16 thousand H100 GPUs
-  quality_control: The development process was focused on keeping the model scalable
-    and straightforward. It adopted an iterative post-training procedure, where
-    each round uses supervised fine-tuning and direct preference optimization. The
-    model also underwent quality assurance and filtering for pre-and post-training
-    data.
-  access: open
-  license: Unknown
+  created_date: 2024-07-23
+  dependencies:
+  - Unknown
+  description: Llama 3.1 405B is the first openly available model that rivals the
+    top AI models when it comes to state-of-the-art capabilities in general knowledge,
+    steerability, math, tool use, and multilingual translation. With the release of
+    the 405B model, the Llama versions support advanced use cases, such as long-form
+    text summarization, multilingual conversational agents, and coding assistants.
+    It is the largest and most capable openly available foundation model.
+  feedback: Unknown
   intended_uses: For advanced use cases, such as long-form text summarization, multilingual
     conversational agents, and coding assistants. May also be useful in the development
     of custom offerings and systems by developers.
-  prohibited_uses: Unknown
+  license: Unknown
+  modality: text; text
+  model_card: https://github.com/meta-llama/llama-models/blob/main/models/llama3_1/MODEL_CARD.md
   monitoring: Unknown
-  feedback: Unknown
-- type: model
-  name: Llama 3.3
-  organization: Meta
-  description: The Meta Llama 3.3 multilingual large language model (LLM) is an
-    instruction tuned generative model in 70B (text in/text out).
+  name: Llama 3.1 405B
+  nationality: USA
+  organization: Meta AI
+  prohibited_uses: Unknown
+  quality_control: The development process was focused on keeping the model scalable
+    and straightforward. It adopted an iterative post-training procedure, where each
+    round uses supervised fine-tuning and direct preference optimization. The model
+    also underwent quality assurance and filtering for pre-and post-training data.
+  size: 405B parameters (dense)
+  training_emissions: Unknown
+  training_hardware: Over 16 thousand H100 GPUs
+  training_time: Unknown
+  type: model
+  url: https://ai.meta.com/blog/meta-llama-3-1/
+- access:
+    explanation: Future versions of the tuned models will be released as we improve
+      model safety with community feedback.
+    value: open
+  analysis: Unknown
   created_date: 2024-12-06
-  url: https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct
-  model_card: https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct
+  dependencies: []
+  description: The Meta Llama 3.3 multilingual large language model (LLM) is an instruction
+    tuned generative model in 70B (text in/text out).
+  feedback: Instructions on how to provide feedback or comments on the model can be
+    found in the model README.
+  intended_uses: Intended for commercial and research use in multiple languages. Instruction
+    tuned text only models are intended for assistant-like chat.
+  license:
+    explanation: A custom commercial license, the Llama 3.3 Community License Agreement
+    value: Llama 3.3 Community License Agreement
   modality:
     explanation: The Llama 3.3 instruction tuned text only model is optimized for
       multilingual dialogue use cases.
     value: text; text
-  analysis: Unknown
+  model_card: https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct
+  monitoring: Unknown
+  name: Llama 3.3
+  nationality: USA
+  organization: Meta
+  prohibited_uses: Use in any manner that violates applicable laws or regulations
+    (including trade compliance laws). Use in any other way that is prohibited by
+    the Acceptable Use Policy and Llama 3.3 Community License.
+  quality_control: Used "supervised fine-tuning (SFT) and reinforcement learning with
+    human feedback (RLHF) to align with human preferences for helpfulness and safety."
   size:
     explanation: The Meta Llama 3.3 multilingual large language model (LLM) is an
       instruction tuned generative model in 70B (text in/text out).
     value: 70B parameters
-  dependencies: []
   training_emissions:
     explanation: Training Greenhouse Gas Emissions Estimated total location-based
       greenhouse gas emissions were 11,390 tons CO2eq for training.
     value: 11,390 tons CO2eq
-  training_time:
-    explanation: Training utilized a cumulative of 39.3M GPU hours of computation
-      on H100-80GB (TDP of 700W) type hardware.
-    value: 39.3M GPU hours
   training_hardware:
     explanation: Training utilized a cumulative of 39.3M GPU hours of computation
       on H100-80GB (TDP of 700W) type hardware.
     value: H100-80GB (TDP of 700W) type hardware
-  quality_control: Used "supervised fine-tuning (SFT) and reinforcement learning
-    with human feedback (RLHF) to align with human preferences for helpfulness and
-    safety."
-  access:
-    explanation: Future versions of the tuned models will be released as we improve
-      model safety with community feedback.
-    value: open
-  license:
-    explanation: A custom commercial license, the Llama 3.3 Community License Agreement
-    value: Llama 3.3 Community License Agreement
-  intended_uses: Intended for commercial and research use in multiple languages.
-    Instruction tuned text only models are intended for assistant-like chat.
-  prohibited_uses: Use in any manner that violates applicable laws or regulations
-    (including trade compliance laws). Use in any other way that is prohibited by
-    the Acceptable Use Policy and Llama 3.3 Community License.
-  monitoring: Unknown
-  feedback: Instructions on how to provide feedback or comments on the model can
-    be found in the model README.
+  training_time:
+    explanation: Training utilized a cumulative of 39.3M GPU hours of computation
+      on H100-80GB (TDP of 700W) type hardware.
+    value: 39.3M GPU hours
+  type: model
+  url: https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct

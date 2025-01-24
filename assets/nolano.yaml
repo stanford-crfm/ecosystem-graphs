@@ -1,52 +1,59 @@
----
-- type: application
-  name: Cformers
-  organization: Nolano
+- access: limited
+  adaptation: ''
+  created_date: 2023-03-19
+  dependencies: []
   description: Cformers is a set of transformers that act as an API for AI inference
     in code.
-  created_date: 2023-03-19
-  url: https://www.nolano.org/services/Cformers/
-  dependencies: []
-  adaptation: ''
-  output_space: ''
-  quality_control: ''
-  access: limited
-  license: MIT
-  terms_of_service: ''
-  intended_uses: ''
-  prohibited_uses: ''
-  monitoring: ''
-  feedback: ''
-  monthly_active_users: ''
-  user_distribution: ''
   failures: ''
-- type: model
-  name: Llama 3.1 Tulu 3
-  organization: Allen Institute for AI
-  description: "Tülu3 is a leading instruction following model family, offering fully open-source data, code, and recipes designed to serve as a comprehensive guide for modern post-training techniques."
-  created_date: 2024-11-21
-  url: https://huggingface.co/allenai/Llama-3.1-Tulu-3-8B
-  model_card: https://huggingface.co/allenai/Llama-3.1-Tulu-3-8B
-  modality:
-    explanation: "Language(s) (NLP): Primarily English"
-    value: text; text
-  analysis: "The model can produce problematic outputs (especially when prompted to do so)."
-  size:
-    explanation: "Final Models (RLVR) allenai/Llama-3.1-Tulu-3-8B allenai/Llama-3.1-Tulu-3-70B"
-    value: 70B parameters
-  dependencies: [Llama 3.1]
-  training_emissions: unknown
-  training_time: unknown
-  training_hardware: unknown
-  quality_control: "The Tülu3 models have limited safety training, but are not deployed automatically with in-the-loop filtering of responses like ChatGPT."
-  access:
-    explanation: "Tülu3 is intended for research and educational use."
+  feedback: ''
+  intended_uses: ''
+  license: MIT
+  monitoring: ''
+  monthly_active_users: ''
+  name: Cformers
+  nationality: USA
+  organization: Nolano
+  output_space: ''
+  prohibited_uses: ''
+  quality_control: ''
+  terms_of_service: ''
+  type: application
+  url: https://www.nolano.org/services/Cformers/
+  user_distribution: ''
+- access:
+    explanation: "T\xFClu3 is intended for research and educational use."
     value: limited
-  license:
-    explanation: "All Llama 3.1 Tülu3 models are released under Meta's Llama 3.1 Community License Agreement."
-    value: Llama 3.1 Community License Agreement
-  intended_uses: "Tülu3 is intended for research and educational use."
-  prohibited_uses: "The model can produce problematic outputs (especially when prompted to do so)."
-  monitoring: unknown
+  analysis: The model can produce problematic outputs (especially when prompted to
+    do so).
+  created_date: 2024-11-21
+  dependencies:
+  - Llama 3.1
+  description: "T\xFClu3 is a leading instruction following model family, offering\
+    \ fully open-source data, code, and recipes designed to serve as a comprehensive\
+    \ guide for modern post-training techniques."
   feedback: unknown
-
+  intended_uses: "T\xFClu3 is intended for research and educational use."
+  license:
+    explanation: "All Llama 3.1 T\xFClu3 models are released under Meta's Llama 3.1\
+      \ Community License Agreement."
+    value: Llama 3.1 Community License Agreement
+  modality:
+    explanation: 'Language(s) (NLP): Primarily English'
+    value: text; text
+  model_card: https://huggingface.co/allenai/Llama-3.1-Tulu-3-8B
+  monitoring: unknown
+  name: Llama 3.1 Tulu 3
+  nationality: USA
+  organization: Allen Institute for AI
+  prohibited_uses: The model can produce problematic outputs (especially when prompted
+    to do so).
+  quality_control: "The T\xFClu3 models have limited safety training, but are not\
+    \ deployed automatically with in-the-loop filtering of responses like ChatGPT."
+  size:
+    explanation: Final Models (RLVR) allenai/Llama-3.1-Tulu-3-8B allenai/Llama-3.1-Tulu-3-70B
+    value: 70B parameters
+  training_emissions: unknown
+  training_hardware: unknown
+  training_time: unknown
+  type: model
+  url: https://huggingface.co/allenai/Llama-3.1-Tulu-3-8B

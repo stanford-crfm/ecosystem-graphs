@@ -1,24 +1,25 @@
----
-- type: model
-  name: Vulture
-  organization: Virtual Interactive
-  description: Vulture is a further fine-tuned causal Decoder-only LLM built by
-    Virtual Interactive (VILM) on top of Falcon.
-  created_date: 2023-10-02
-  url: https://huggingface.co/vilm/vulture-180b
-  model_card: https://huggingface.co/vilm/vulture-180b
-  modality: text; text
+- access: open
   analysis: none
-  size: 180B parameters (dense)
-  dependencies: [Falcon-180B]
-  training_emissions: unknown
-  training_time: 3000 A100 hours
-  training_hardware: unknown
-  quality_control: ''
-  access: open
-  license: Apache 2.0
+  created_date: 2023-10-02
+  dependencies:
+  - Falcon-180B
+  description: Vulture is a further fine-tuned causal Decoder-only LLM built by Virtual
+    Interactive (VILM) on top of Falcon.
+  feedback: https://huggingface.co/vilm/vulture-180b/discussions
   intended_uses: ''
+  license: Apache 2.0
+  modality: text; text
+  model_card: https://huggingface.co/vilm/vulture-180b
+  monitoring: unknown
+  name: Vulture
+  nationality: USA
+  organization: Virtual Interactive
   prohibited_uses: Production use without adequate assessment of risks and mitigation;
     any use cases which may be considered irresponsible or harmful.
-  monitoring: unknown
-  feedback: https://huggingface.co/vilm/vulture-180b/discussions
+  quality_control: ''
+  size: 180B parameters (dense)
+  training_emissions: unknown
+  training_hardware: unknown
+  training_time: 3000 A100 hours
+  type: model
+  url: https://huggingface.co/vilm/vulture-180b

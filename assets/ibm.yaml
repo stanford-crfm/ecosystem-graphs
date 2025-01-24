@@ -1,119 +1,124 @@
----
-- type: model
-  name: Prithvi
-  organization: IBM
+- access: open
+  analysis: ''
+  created_date:
+    explanation: The date the model was announced in the [[Adept blog post]](https://www.adept.ai/blog/act-1).
+    value: 2023-08-03
+  dependencies:
+  - NASA HLS data
   description: Prithvi is a first-of-its-kind temporal Vision transformer pre-trained
     by the IBM and NASA team on contiguous US Harmonised Landsat Sentinel 2 (HLS)
     data. The model adopts a self-supervised encoder developed with a ViT architecture
     and Masked AutoEncoder (MAE) learning strategy, with an MSE loss function.
-  created_date:
-    explanation: The date the model was announced in the [[Adept blog post]](https://www.adept.ai/blog/act-1).
-    value: 2023-08-03
-  url: https://github.com/NASA-IMPACT/hls-foundation-os
-  model_card: https://huggingface.co/ibm-nasa-geospatial/Prithvi-100M
+  feedback: https://huggingface.co/ibm-nasa-geospatial/Prithvi-100M/discussions
+  intended_uses: ''
+  license: Apache 2.0
   modality:
     explanation: video; text
     value: text, video; text, video
-  analysis: ''
-  size: 100M parameters (dense)
-  dependencies: [NASA HLS data]
-  training_emissions: ''
-  training_time: ''
-  training_hardware: ''
-  quality_control: ''
-  access: open
-  license: Apache 2.0
-  intended_uses: ''
-  prohibited_uses: ''
+  model_card: https://huggingface.co/ibm-nasa-geospatial/Prithvi-100M
   monitoring: ''
-  feedback: https://huggingface.co/ibm-nasa-geospatial/Prithvi-100M/discussions
-- type: application
-  name: Watsonx.ai
+  name: Prithvi
+  nationality: USA
   organization: IBM
-  description: Watsonx.ai is part of the IBM watsonx platform that brings together
-    new generative AI capabilities, powered by foundation models and traditional
-    machine learning into a powerful studio spanning the AI lifecycle.
-  created_date: 2023-09-07
-  url: https://www.ibm.com/products/watsonx-ai
-  dependencies: [Granite]
-  adaptation: ''
-  output_space: deployed AI models
+  prohibited_uses: ''
   quality_control: ''
-  access: limited
+  size: 100M parameters (dense)
+  training_emissions: ''
+  training_hardware: ''
+  training_time: ''
+  type: model
+  url: https://github.com/NASA-IMPACT/hls-foundation-os
+- access: limited
+  adaptation: ''
+  created_date: 2023-09-07
+  dependencies:
+  - Granite
+  description: Watsonx.ai is part of the IBM watsonx platform that brings together
+    new generative AI capabilities, powered by foundation models and traditional machine
+    learning into a powerful studio spanning the AI lifecycle.
+  failures: ''
+  feedback: ''
+  intended_uses: ''
   license:
     explanation: License information can be found at https://www.ibm.com/docs/en/watsonxdata/1.0.x?topic=planning-licenses-entitlements
     value: custom
-  terms_of_service: https://www.ibm.com/docs/en/watsonx-as-a-service?topic=models-terms-use
-  intended_uses: ''
-  prohibited_uses: ''
   monitoring: ''
-  feedback: ''
   monthly_active_users: ''
-  user_distribution: ''
-  failures: ''
-- type: model
-  name: Granite
+  name: Watsonx.ai
+  nationality: USA
   organization: IBM
+  output_space: deployed AI models
+  prohibited_uses: ''
+  quality_control: ''
+  terms_of_service: https://www.ibm.com/docs/en/watsonx-as-a-service?topic=models-terms-use
+  type: application
+  url: https://www.ibm.com/products/watsonx-ai
+  user_distribution: ''
+- access: limited
+  analysis: unknown
+  created_date: 2023-09-28
+  dependencies: []
   description: Granite is a set of multi-size foundation models that apply generative
     AI to both language and code.
-  created_date: 2023-09-28
-  url: https://www.ibm.com/blog/building-ai-for-business-ibms-granite-foundation-models/
-  model_card: none
-  modality: text; code, text
-  analysis: unknown
-  size: 13B parameters (dense)
-  dependencies: []
-  training_emissions: unknown
-  training_time: unknown
-  training_hardware: unknown
-  quality_control: Training data passed through IBM HAP detector, language model
-    designed to remove harmful content. Data also deduplicated and filtered for
-    document quality.
-  access: limited
-  license: ''
-  intended_uses: ''
-  prohibited_uses: ''
-  monitoring: ''
   feedback: ''
-- type: model
-  name: IBM Granite 3.0
+  intended_uses: ''
+  license: ''
+  modality: text; code, text
+  model_card: none
+  monitoring: ''
+  name: Granite
+  nationality: USA
   organization: IBM
+  prohibited_uses: ''
+  quality_control: Training data passed through IBM HAP detector, language model designed
+    to remove harmful content. Data also deduplicated and filtered for document quality.
+  size: 13B parameters (dense)
+  training_emissions: unknown
+  training_hardware: unknown
+  training_time: unknown
+  type: model
+  url: https://www.ibm.com/blog/building-ai-for-business-ibms-granite-foundation-models/
+- access:
+    explanation: "In keeping with IBM\u2019s strong historical commitment to open\
+      \ source , all Granite models are released under the permissive Apache 2.0 license"
+    value: open
+  analysis: Granite 3.0 8B Instruct matches leading similarly-sized open models on
+    academic benchmarks while outperforming those peers on benchmarks for enterprise
+    tasks and safety.
+  created_date: 2024-10-21
+  dependencies:
+  - "Hugging Face\u2019s OpenLLM Leaderboard v2"
   description: IBM Granite 3.0 models deliver state-of-the-art performance relative
     to model size while maximizing safety, speed and cost-efficiency for enterprise
     use cases.
-  created_date: 2024-10-21
-  url: https://www.ibm.com/new/ibm-granite-3-0-open-state-of-the-art-enterprise-models
-  model_card: unknown
+  feedback: unknown
+  intended_uses: classic natural language use cases including text generation, classification,
+    summarization, entity extraction and customer service chatbots, programming language
+    use cases such as code generation, code explanation and code editing, and for
+    agentic use cases requiring tool calling
+  license:
+    explanation: "In keeping with IBM\u2019s strong historical commitment to open\
+      \ source , all Granite models are released under the permissive Apache 2.0 license"
+    value: Apache 2.0
   modality:
-    explanation: IBM Granite 3.0 8B Instruct model for classic natural language
-      use cases including text generation, classification, summarization, entity
-      extraction and customer service chatbots
+    explanation: IBM Granite 3.0 8B Instruct model for classic natural language use
+      cases including text generation, classification, summarization, entity extraction
+      and customer service chatbots
     value: text; text
-  analysis: Granite 3.0 8B Instruct matches leading similarly-sized open models
-    on academic benchmarks while outperforming those peers on benchmarks for enterprise
-    tasks and safety.
+  model_card: unknown
+  monitoring: ''
+  name: IBM Granite 3.0
+  nationality: USA
+  organization: IBM
+  prohibited_uses: unknown
+  quality_control: The entire Granite family of models are trained on carefully curated
+    enterprise datasets, filtered for objectionable content with critical concerns
+    like governance, risk, privacy and bias mitigation in mind
   size:
     explanation: 'Dense, general purpose LLMs: Granite-3.0-8B-Instruct'
     value: 8B parameters
-  dependencies: [Hugging Face’s OpenLLM Leaderboard v2]
   training_emissions: unknown
-  training_time: unknown
   training_hardware: unknown
-  quality_control: The entire Granite family of models are trained on carefully
-    curated enterprise datasets, filtered for objectionable content with critical
-    concerns like governance, risk, privacy and bias mitigation in mind
-  access:
-    explanation: In keeping with IBM’s strong historical commitment to open source
-      , all Granite models are released under the permissive Apache 2.0 license
-    value: open
-  license:
-    explanation: In keeping with IBM’s strong historical commitment to open source
-      , all Granite models are released under the permissive Apache 2.0 license
-    value: Apache 2.0
-  intended_uses: classic natural language use cases including text generation, classification,
-    summarization, entity extraction and customer service chatbots, programming
-    language use cases such as code generation, code explanation and code editing,
-    and for agentic use cases requiring tool calling
-  prohibited_uses: unknown
-  monitoring: ''
-  feedback: unknown
+  training_time: unknown
+  type: model
+  url: https://www.ibm.com/new/ibm-granite-3-0-open-state-of-the-art-enterprise-models

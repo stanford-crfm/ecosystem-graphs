@@ -1,27 +1,27 @@
----
-- type: model
-  name: VARCO-LLM
-  organization: NCSOFT
-  description: VARCO-LLM is NCSOFT’s large language model and is trained on English
-    and Korean.
-  created_date: 2023-08-16
-  url: https://github.com/ncsoft/ncresearch
-  model_card: none
-  modality: text; text
+- access: closed
   analysis: Boasts the highest performance among the Korean LLMs of similar sizes
     that have been released to date, according to internal evaluations.
-  size: 13B parameters
+  created_date: 2023-08-16
   dependencies: []
-  training_emissions: unknown
-  training_time: unknown
-  training_hardware: unknown
-  quality_control: ''
-  access: closed
+  description: "VARCO-LLM is NCSOFT\u2019s large language model and is trained on\
+    \ English and Korean."
+  feedback: none
+  intended_uses: Developing various NLP-based AI services such as Q&A, chatbot, summarization,
+    information extraction
   license:
     explanation: Can be found at https://github.com/ncsoft/ncresearch/blob/main/LICENSE.txt
     value: custom
-  intended_uses: Developing various NLP-based AI services such as Q&A, chatbot,
-    summarization, information extraction
-  prohibited_uses: ''
+  modality: text; text
+  model_card: none
   monitoring: ''
-  feedback: none
+  name: VARCO-LLM
+  nationality: South Korea
+  organization: NCSOFT
+  prohibited_uses: ''
+  quality_control: ''
+  size: 13B parameters
+  training_emissions: unknown
+  training_hardware: unknown
+  training_time: unknown
+  type: model
+  url: https://github.com/ncsoft/ncresearch

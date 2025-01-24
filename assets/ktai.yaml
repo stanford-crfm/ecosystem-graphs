@@ -1,27 +1,27 @@
----
-- type: model
-  name: Midm
-  organization: KT Corporation
-  description: Midm is a pre-trained Korean-English language model developed by
-    KT. It takes text as input and creates text. The model is based on Transformer
-    architecture for an auto-regressive language model.
-  created_date: 2023-10-31
-  url: https://huggingface.co/KT-AI/midm-bitext-S-7B-inst-v1
-  model_card: https://huggingface.co/KT-AI/midm-bitext-S-7B-inst-v1
-  modality: text; text
+- access: open
   analysis: unknown
-  size: 7B parameters
+  created_date: 2023-10-31
   dependencies:
-    - AI-HUB dataset
-    - National Institute of Korean Language dataset
-  training_emissions: unknown
-  training_time: unknown
-  training_hardware: unknown
+  - AI-HUB dataset
+  - National Institute of Korean Language dataset
+  description: Midm is a pre-trained Korean-English language model developed by KT.
+    It takes text as input and creates text. The model is based on Transformer architecture
+    for an auto-regressive language model.
+  feedback: https://huggingface.co/KT-AI/midm-bitext-S-7B-inst-v1/discussions
+  intended_uses: It is expected to be used for various research purposes.
+  license: CC-BY-NC 4.0
+  modality: text; text
+  model_card: https://huggingface.co/KT-AI/midm-bitext-S-7B-inst-v1
+  monitoring: unknown
+  name: Midm
+  nationality: South Korea
+  organization: KT Corporation
+  prohibited_uses: It cannot be used for commercial purposes.
   quality_control: KT tried to remove unethical expressions such as profanity, slang,
     prejudice, and discrimination from training data.
-  access: open
-  license: CC-BY-NC 4.0
-  intended_uses: It is expected to be used for various research purposes.
-  prohibited_uses: It cannot be used for commercial purposes.
-  monitoring: unknown
-  feedback: https://huggingface.co/KT-AI/midm-bitext-S-7B-inst-v1/discussions
+  size: 7B parameters
+  training_emissions: unknown
+  training_hardware: unknown
+  training_time: unknown
+  type: model
+  url: https://huggingface.co/KT-AI/midm-bitext-S-7B-inst-v1

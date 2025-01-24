@@ -1,83 +1,93 @@
----
-- type: model
-  name: MM1
-  organization: Apple
-  description: MM1 is a family of multimodal models, including both dense variants
-    up to 30B and mixture-of-experts (MoE) variants up to 64B.
-  created_date: 2024-03-16
-  url: https://arxiv.org/pdf/2403.09611.pdf
-  model_card: none
-  modality: image, text; text
+- access: closed
   analysis: Evaluated on image captioning and visual question answering across many
     benchmarks.
-  size: 30B parameters (dense)
+  created_date: 2024-03-16
   dependencies: []
-  training_emissions: unknown
-  training_time: unknown
-  training_hardware: unknown
-  quality_control: ''
-  access: closed
-  license: unknown
-  intended_uses: ''
-  prohibited_uses: ''
-  monitoring: ''
+  description: MM1 is a family of multimodal models, including both dense variants
+    up to 30B and mixture-of-experts (MoE) variants up to 64B.
   feedback: none
-- type: model
-  name: OpenELM
+  intended_uses: ''
+  license: unknown
+  modality: image, text; text
+  model_card: none
+  monitoring: ''
+  name: MM1
+  nationality: USA
   organization: Apple
-  description: OpenELM is a family of Open-source Efficient Language Models. It
-    uses a layer-wise scaling strategy to efficiently allocate parameters within
-    each layer of the transformer model, leading to enhanced accuracy.
-  created_date: 2024-04-24
-  url: https://machinelearning.apple.com/research/openelm
-  model_card: https://huggingface.co/apple/OpenELM-3B-Instruct
-  modality: text; text
-  analysis: The models were evaluated in terms of zero-shot, LLM360, and OpenLLM
-    leaderboard results.
-  size: 3B parameters
-  dependencies:
-    - RefinedWeb
-    - The Pile
-    - RedPajama-Data
-    - Dolma
-    - CoreNet library
+  prohibited_uses: ''
+  quality_control: ''
+  size: 30B parameters (dense)
   training_emissions: unknown
-  training_time: unknown
   training_hardware: unknown
-  quality_control: unknown
-  access: open
+  training_time: unknown
+  type: model
+  url: https://arxiv.org/pdf/2403.09611.pdf
+- access: open
+  analysis: The models were evaluated in terms of zero-shot, LLM360, and OpenLLM leaderboard
+    results.
+  created_date: 2024-04-24
+  dependencies:
+  - RefinedWeb
+  - The Pile
+  - RedPajama-Data
+  - Dolma
+  - CoreNet library
+  description: OpenELM is a family of Open-source Efficient Language Models. It uses
+    a layer-wise scaling strategy to efficiently allocate parameters within each layer
+    of the transformer model, leading to enhanced accuracy.
+  feedback: https://huggingface.co/apple/OpenELM-3B-Instruct/discussions
+  intended_uses: To empower and enrich the open research community by providing access
+    to state-of-the-art language models.
   license: Apple
-  intended_uses: To empower and enrich the open research community by providing
-    access to state-of-the-art language models.
+  modality: text; text
+  model_card: https://huggingface.co/apple/OpenELM-3B-Instruct
+  monitoring: none
+  name: OpenELM
+  nationality: USA
+  organization: Apple
   prohibited_uses: No explicit prohibited uses stated, though it is noted that users
     should undertake thorough safety testing.
-  monitoring: none
-  feedback: https://huggingface.co/apple/OpenELM-3B-Instruct/discussions
-- type: model
-  name: Depth Pro
-  organization: Apple
-  description: "We present a foundation model for zero-shot metric monocular depth estimation. Our model, Depth Pro, synthesizes high-resolution depth maps with unparalleled sharpness and high-frequency details... The model is fast, producing a 2.25-megapixel depth map in 0.3 seconds on a standard GPU."
-  created_date: 2024-10-10
-  url: https://arxiv.org/pdf/2410.02073
-  model_card: unknown
-  modality:
-    explanation: "We present a foundation model for zero-shot metric monocular depth estimation."
-    value: text; depth maps
-  analysis: "Extensive experiments analyze specific design choices and demonstrate that Depth Pro outperforms prior work along multiple dimensions."
-  size: unknown
-  dependencies: []
+  quality_control: unknown
+  size: 3B parameters
   training_emissions: unknown
+  training_hardware: unknown
   training_time: unknown
-  training_hardware:
-    explanation: "2.25-megapixel depth maps with a native output resolution of 1536 × 1536 in 0.3 seconds on a V100 GPU."
-    value: V100 GPU
-  quality_control: "dedicated evaluation metrics for boundary accuracy in estimated depth maps, and state-of-the-art focal length estimation from a single image."
-  access:
-    explanation: "We release code & weights at https://github.com/apple/ml-depth-pro"
+  type: model
+  url: https://machinelearning.apple.com/research/openelm
+- access:
+    explanation: We release code & weights at https://github.com/apple/ml-depth-pro
     value: open
-  license: unknown
-  intended_uses: "Zero-shot monocular depth estimation underpins a growing variety of applications, such as advanced image editing, view synthesis, and conditional image generation."
-  prohibited_uses: unknown
-  monitoring: unknown
+  analysis: Extensive experiments analyze specific design choices and demonstrate
+    that Depth Pro outperforms prior work along multiple dimensions.
+  created_date: 2024-10-10
+  dependencies: []
+  description: We present a foundation model for zero-shot metric monocular depth
+    estimation. Our model, Depth Pro, synthesizes high-resolution depth maps with
+    unparalleled sharpness and high-frequency details... The model is fast, producing
+    a 2.25-megapixel depth map in 0.3 seconds on a standard GPU.
   feedback: unknown
-
+  intended_uses: Zero-shot monocular depth estimation underpins a growing variety
+    of applications, such as advanced image editing, view synthesis, and conditional
+    image generation.
+  license: unknown
+  modality:
+    explanation: We present a foundation model for zero-shot metric monocular depth
+      estimation.
+    value: text; depth maps
+  model_card: unknown
+  monitoring: unknown
+  name: Depth Pro
+  nationality: USA
+  organization: Apple
+  prohibited_uses: unknown
+  quality_control: dedicated evaluation metrics for boundary accuracy in estimated
+    depth maps, and state-of-the-art focal length estimation from a single image.
+  size: unknown
+  training_emissions: unknown
+  training_hardware:
+    explanation: "2.25-megapixel depth maps with a native output resolution of 1536\
+      \ \xD7 1536 in 0.3 seconds on a V100 GPU."
+    value: V100 GPU
+  training_time: unknown
+  type: model
+  url: https://arxiv.org/pdf/2410.02073

@@ -1,65 +1,68 @@
----
-- type: dataset
-  name: You dataset
-  organization: You
-  description: ''
+- access: closed
+  analysis: ''
   created_date: unknown
-  url: https://you.com/
   datasheet: ''
-  modality: text
-  size: unknown
-  sample: []
-  analysis: ''
   dependencies: []
-  included: ''
-  excluded: ''
-  quality_control: ''
-  access: closed
-  license: unknown
-  intended_uses: ''
-  prohibited_uses: ''
-  monitoring: ''
-  feedback: ''
-- type: model
-  name: You model
-  organization: You
   description: ''
-  created_date: unknown
-  url: https://you.com/
-  model_card: ''
-  modality: text; text
-  analysis: ''
-  size: unknkown
-  dependencies: [You dataset]
-  training_emissions: ''
-  training_time: ''
-  training_hardware: ''
-  quality_control: ''
-  access: closed
-  license: unknown
-  intended_uses: ''
-  prohibited_uses: ''
-  monitoring: ''
+  excluded: ''
   feedback: ''
-- type: application
-  name: You Search
+  included: ''
+  intended_uses: ''
+  license: unknown
+  modality: text
+  monitoring: ''
+  name: You dataset
+  nationality: USA
   organization: You
-  description: You.com is a search engine built on artificial intelligence that
-    provides users with a customized search experience while keeping their data
-    100% private.
-  created_date: unknown
-  url: https://you.com/
-  dependencies: [You model]
-  adaptation: ''
-  output_space: ''
-  quality_control: ''
-  access: open
-  license: unknown
-  terms_of_service: ''
-  intended_uses: ''
   prohibited_uses: ''
-  monitoring: ''
+  quality_control: ''
+  sample: []
+  size: unknown
+  type: dataset
+  url: https://you.com/
+- access: closed
+  analysis: ''
+  created_date: unknown
+  dependencies:
+  - You dataset
+  description: ''
   feedback: ''
-  monthly_active_users: ''
-  user_distribution: ''
+  intended_uses: ''
+  license: unknown
+  modality: text; text
+  model_card: ''
+  monitoring: ''
+  name: You model
+  nationality: USA
+  organization: You
+  prohibited_uses: ''
+  quality_control: ''
+  size: unknkown
+  training_emissions: ''
+  training_hardware: ''
+  training_time: ''
+  type: model
+  url: https://you.com/
+- access: open
+  adaptation: ''
+  created_date: unknown
+  dependencies:
+  - You model
+  description: You.com is a search engine built on artificial intelligence that provides
+    users with a customized search experience while keeping their data 100% private.
   failures: ''
+  feedback: ''
+  intended_uses: ''
+  license: unknown
+  monitoring: ''
+  monthly_active_users: ''
+  name: You Search
+  nationality: USA
+  organization: You
+  output_space: ''
+  prohibited_uses: ''
+  quality_control: ''
+  terms_of_service: ''
+  type: application
+  url: https://you.com/
+  user_distribution: ''

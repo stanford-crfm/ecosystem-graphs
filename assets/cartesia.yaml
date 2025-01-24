@@ -1,30 +1,31 @@
----
-- type: model
-  name: Sonic
-  organization: Cartesia
-  description: Sonic is a low-latency voice model that generates lifelike speech.
-    Developed by Cartesia, it was designed to be an efficient real-time AI capable
-    of processing any-sized contexts and running on any device.
-  created_date: 2024-05-29
-  url: https://cartesia.ai/blog/sonic
-  model_card: none
-  modality: text; audio
+- access: limited
   analysis: Extensive testing on Multilingual Librispeech dataset resulted in 20%
     lower validation perplexity. In downstream evaluations, this leads to a 2x lower
     word error rate and a 1 point higher quality score. Sonic also displays impressive
     performance metrics at inference, achieving lower latency (1.5x lower time-to-first-audio),
     faster inference speed (2x lower real-time factor), and higher throughput (4x).
-  size: 2024-05-29
-  dependencies: [Multilingual Librispeech dataset]
-  training_emissions: unknown
-  training_time: unknown
-  training_hardware: unknown
-  quality_control: ''
-  access: limited
-  license: unknown
+  created_date: 2024-05-29
+  dependencies:
+  - Multilingual Librispeech dataset
+  description: Sonic is a low-latency voice model that generates lifelike speech.
+    Developed by Cartesia, it was designed to be an efficient real-time AI capable
+    of processing any-sized contexts and running on any device.
+  feedback: Contact through the provided form or via email at join@cartesia.ai.
   intended_uses: Sonic has potential applications across customer support, entertainment,
     and content creation and is a part of Cartesias broader mission to bring real-time
     multimodal intelligence to every device.
-  prohibited_uses: unknown
+  license: unknown
+  modality: text; audio
+  model_card: none
   monitoring: unknown
-  feedback: Contact through the provided form or via email at join@cartesia.ai.
+  name: Sonic
+  nationality: USA
+  organization: Cartesia
+  prohibited_uses: unknown
+  quality_control: ''
+  size: 2024-05-29
+  training_emissions: unknown
+  training_hardware: unknown
+  training_time: unknown
+  type: model
+  url: https://cartesia.ai/blog/sonic

@@ -1,20 +1,15 @@
----
-- type: dataset
-  name: Common Corpus
-  organization: Pleias
-  description: Common Corpus is the largest public domain dataset released for training
-    Large Language Models (LLMs). This dataset includes 500 billion words from a
-    diverse range of cultural heritage initiatives and is the largest corpus in
-    English, French, Dutch, Spanish, German and Italian. It supports efforts to
-    train fully open LLMs on sources without copyright concerns.
-  created_date: 2024-03-20
-  url: https://huggingface.co/blog/Pclanglais/common-corpus
-  datasheet: ''
-  modality: text
-  size: 500 billion words
-  sample: []
+- access: open
   analysis: unknown
+  created_date: 2024-03-20
+  datasheet: ''
   dependencies: []
+  description: Common Corpus is the largest public domain dataset released for training
+    Large Language Models (LLMs). This dataset includes 500 billion words from a diverse
+    range of cultural heritage initiatives and is the largest corpus in English, French,
+    Dutch, Spanish, German and Italian. It supports efforts to train fully open LLMs
+    on sources without copyright concerns.
+  excluded: The data excluded are those that have copyright issues.
+  feedback: unknown
   included: The dataset includes 500 billion words from a wide diversity of cultural
     heritage initiatives. It also has the largest English-speaking dataset to date
     with 180 billion words, including a major US collection of 21 million digitized
@@ -22,14 +17,19 @@
     Majstorovic. It also contains a huge volume of data in French (110 billion words),
     German (30 billion words), Spanish, Dutch and Italian, as well as data in low-resource
     languages that are currently underrepresented.
-  excluded: The data excluded are those that have copyright issues.
+  intended_uses: The dataset is intended to support open and reproducible AI research,
+    enhancing accessibility, diversity, and democracy in AI by enabling everyone to
+    explore large models.
+  license: none
+  modality: text
+  monitoring: unknown
+  name: Common Corpus
+  nationality: USA
+  organization: Pleias
+  prohibited_uses: It should not be used for tasks that infringe on copyright laws.
   quality_control: All data included in the corpus are from fully open and auditable
     sources, ensuring they are copyright-free.
-  access: open
-  license: none
-  intended_uses: The dataset is intended to support open and reproducible AI research,
-    enhancing accessibility, diversity, and democracy in AI by enabling everyone
-    to explore large models.
-  prohibited_uses: It should not be used for tasks that infringe on copyright laws.
-  monitoring: unknown
-  feedback: unknown
+  sample: []
+  size: 500 billion words
+  type: dataset
+  url: https://huggingface.co/blog/Pclanglais/common-corpus

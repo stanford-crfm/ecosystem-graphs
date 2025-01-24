@@ -1,59 +1,60 @@
----
-- type: model
-  name: Lemur
-  organization: OpenLemur
+- access: open
+  analysis: Evaluated on text and code benchmarks in comparison to other models.
+  created_date: 2023-10-10
+  dependencies:
+  - LLaMA 2
+  - The Stack
+  - RefinedWeb
+  - RedPajama
+  - Common Crawl
+  - Wikipedia
+  - ArXiv
   description: Lemur is an openly accessible language model optimized for both natural
     language and coding capabilities to serve as the backbone of versatile language
     agents.
-  created_date: 2023-10-10
-  url: https://arxiv.org/pdf/2310.06830.pdf
-  model_card: https://huggingface.co/OpenLemur/lemur-70b-v1
-  modality: code, text; code, text
-  analysis: Evaluated on text and code benchmarks in comparison to other models.
-  size: 70B parameters (dense)
-  dependencies:
-    - LLaMA 2
-    - The Stack
-    - RefinedWeb
-    - RedPajama
-    - Common Crawl
-    - Wikipedia
-    - ArXiv
-  training_emissions: unknown
-  training_time: unknown
-  training_hardware: TPUv4-512 pod
-  quality_control: ''
-  access: open
-  license: LLaMA2
-  intended_uses: ''
-  prohibited_uses: ''
-  monitoring: ''
   feedback: https://huggingface.co/OpenLemur/lemur-70b-v1/discussions
-- type: model
-  name: Lemur-Chat
+  intended_uses: ''
+  license: LLaMA2
+  modality: code, text; code, text
+  model_card: https://huggingface.co/OpenLemur/lemur-70b-v1
+  monitoring: ''
+  name: Lemur
+  nationality: USA
   organization: OpenLemur
+  prohibited_uses: ''
+  quality_control: ''
+  size: 70B parameters (dense)
+  training_emissions: unknown
+  training_hardware: TPUv4-512 pod
+  training_time: unknown
+  type: model
+  url: https://arxiv.org/pdf/2310.06830.pdf
+- access: open
+  analysis: Evaluated on text and code benchmarks in comparison to other models.
+  created_date: 2023-10-10
+  dependencies:
+  - Lemur
+  - OpenAssistant 1
+  - OpenOrca
+  - ShareGPT & ChatLogs
+  - Evol-CodeAlpaca data
   description: Lemur-Chat is an openly accessible language model optimized for both
     natural language and coding capabilities to serve as the backbone of versatile
     language agents.
-  created_date: 2023-10-10
-  url: https://arxiv.org/pdf/2310.06830.pdf
-  model_card: https://huggingface.co/OpenLemur/lemur-70b-chat-v1
-  modality: text; text
-  analysis: Evaluated on text and code benchmarks in comparison to other models.
-  size: 70B parameters (dense)
-  dependencies:
-    - Lemur
-    - OpenAssistant 1
-    - OpenOrca
-    - ShareGPT & ChatLogs
-    - Evol-CodeAlpaca data
-  training_emissions: unknown
-  training_time: unknown
-  training_hardware: unknown
-  quality_control: ''
-  access: open
-  license: CC-BY-NC-4.0
-  intended_uses: ''
-  prohibited_uses: ''
-  monitoring: ''
   feedback: https://huggingface.co/OpenLemur/lemur-70b-chat-v1/discussions
+  intended_uses: ''
+  license: CC-BY-NC-4.0
+  modality: text; text
+  model_card: https://huggingface.co/OpenLemur/lemur-70b-chat-v1
+  monitoring: ''
+  name: Lemur-Chat
+  nationality: USA
+  organization: OpenLemur
+  prohibited_uses: ''
+  quality_control: ''
+  size: 70B parameters (dense)
+  training_emissions: unknown
+  training_hardware: unknown
+  training_time: unknown
+  type: model
+  url: https://arxiv.org/pdf/2310.06830.pdf

@@ -1,26 +1,26 @@
----
-- type: model
-  name: XVERSE
-  organization: Xverse
-  description: XVERSE is a multilingual large language model for over 40 languages.
-  created_date: 2023-11-06
-  url: https://github.com/xverse-ai/XVERSE-65B
-  model_card: https://huggingface.co/xverse/XVERSE-65B
-  modality: text; text
+- access: open
   analysis: Evaluated across a range of standard datasets regarding multiple model
     capabilities like language comprehension and logical reasoning.
-  size: 65B parameters (dense)
+  created_date: 2023-11-06
   dependencies: []
-  training_emissions: unknown
-  training_time: unknown
-  training_hardware: unknown
-  quality_control: ''
-  access: open
+  description: XVERSE is a multilingual large language model for over 40 languages.
+  feedback: https://huggingface.co/xverse/XVERSE-65B/discussions
+  intended_uses: ''
   license:
     explanation: can be found at https://github.com/xverse-ai/XVERSE-65B/blob/main/MODEL_LICENSE.pdf.
       Code license is under Apache 2.0
     value: custom
-  intended_uses: ''
-  prohibited_uses: ''
+  modality: text; text
+  model_card: https://huggingface.co/xverse/XVERSE-65B
   monitoring: unknown
-  feedback: https://huggingface.co/xverse/XVERSE-65B/discussions
+  name: XVERSE
+  nationality: USA
+  organization: Xverse
+  prohibited_uses: ''
+  quality_control: ''
+  size: 65B parameters (dense)
+  training_emissions: unknown
+  training_hardware: unknown
+  training_time: unknown
+  type: model
+  url: https://github.com/xverse-ai/XVERSE-65B

@@ -1,260 +1,292 @@
----
-- type: model
-  name: GPT-JT
-  organization: Together
-  description: ''
+- access: open
+  analysis: ''
   created_date: 2022-11-29
+  dependencies:
+  - GPT-J
+  - P3
+  - NaturalInstructions-v2
+  description: ''
+  feedback: ''
+  intended_uses: ''
+  license: Apache 2.0
+  modality: text; text
+  model_card: ''
+  monitoring: ''
+  name: GPT-JT
+  nationality: USA
+  organization: Together
+  prohibited_uses: ''
+  quality_control: ''
+  size: 6B parameters (dense)
+  training_emissions: ''
+  training_hardware: ''
+  training_time: ''
+  type: model
   url: https://www.together.xyz/blog/releasing-v1-of-gpt-jt-powered-by-open-source-ai
-  model_card: ''
-  modality: text; text
+- access: open
   analysis: ''
-  size: 6B parameters (dense)
-  dependencies: [GPT-J, P3, NaturalInstructions-v2]
-  training_emissions: ''
-  training_time: ''
-  training_hardware: ''
-  quality_control: ''
-  access: open
-  license: Apache 2.0
-  intended_uses: ''
-  prohibited_uses: ''
-  monitoring: ''
+  created_date: 2023-03-10
+  dependencies:
+  - GPT-NeoX
+  - OIG-43M
+  description: ''
   feedback: ''
-- type: model
+  intended_uses: ''
+  license: Apache 2.0
+  modality: text; text
+  model_card: ''
+  monitoring: ''
   name: GPT-NeoXT-Chat-Base
+  nationality: USA
   organization: Together
-  description: ''
-  created_date: 2023-03-10
-  url: https://www.together.xyz/blog/openchatkit
-  model_card: ''
-  modality: text; text
-  analysis: ''
+  prohibited_uses: ''
+  quality_control: ''
   size: 20B parameters (dense)
-  dependencies: [GPT-NeoX, OIG-43M]
   training_emissions: ''
-  training_time: ''
   training_hardware: ''
-  quality_control: ''
-  access: open
-  license: Apache 2.0
-  intended_uses: ''
-  prohibited_uses: ''
-  monitoring: ''
-  feedback: ''
-- type: model
-  name: OpenChatKit moderation model
-  organization: Together
-  description: ''
-  created_date: 2023-03-10
+  training_time: ''
+  type: model
   url: https://www.together.xyz/blog/openchatkit
-  model_card: ''
+- access: open
+  analysis: ''
+  created_date: 2023-03-10
+  dependencies:
+  - GPT-JT
+  - OIG-moderation
+  description: ''
+  feedback: ''
+  intended_uses: ''
+  license: Apache 2.0
   modality: text; text
-  analysis: ''
-  size: 6B parameters (dense)
-  dependencies: [GPT-JT, OIG-moderation]
-  training_emissions: ''
-  training_time: ''
-  training_hardware: ''
-  quality_control: ''
-  access: open
-  license: Apache 2.0
-  intended_uses: ''
-  prohibited_uses: ''
+  model_card: ''
   monitoring: ''
-  feedback: ''
-- type: dataset
-  name: OIG-43M
-  organization: Together, LAION, Ontocord
-  description: ''
-  created_date: 2023-03-10
-  url: https://laion.ai/blog/oig-dataset/
-  datasheet: ''
-  modality: text
-  size: 43M instructions
-  sample: []
-  analysis: ''
-  dependencies: [P3, NaturalInstructions-v2, FLAN dataset]
-  included: ''
-  excluded: ''
-  quality_control: ''
-  access: open
-  license: Apache 2.0
-  intended_uses: ''
-  prohibited_uses: ''
-  monitoring: ''
-  feedback: ''
-- type: dataset
-  name: OIG-moderation
-  organization: Together, LAION, Ontocord
-  description: ''
-  created_date: 2023-03-10
-  url: https://laion.ai/blog/oig-dataset/
-  datasheet: ''
-  modality: text
-  size: unknown
-  sample: []
-  analysis: ''
-  dependencies: []
-  included: ''
-  excluded: ''
-  quality_control: ''
-  access: open
-  license: Apache 2.0
-  intended_uses: ''
-  prohibited_uses: ''
-  monitoring: ''
-  feedback: ''
-- type: dataset
-  name: RedPajama-Data
+  name: OpenChatKit moderation model
+  nationality: USA
   organization: Together
+  prohibited_uses: ''
+  quality_control: ''
+  size: 6B parameters (dense)
+  training_emissions: ''
+  training_hardware: ''
+  training_time: ''
+  type: model
+  url: https://www.together.xyz/blog/openchatkit
+- access: open
+  analysis: ''
+  created_date: 2023-03-10
+  datasheet: ''
+  dependencies:
+  - P3
+  - NaturalInstructions-v2
+  - FLAN dataset
+  description: ''
+  excluded: ''
+  feedback: ''
+  included: ''
+  intended_uses: ''
+  license: Apache 2.0
+  modality: text
+  monitoring: ''
+  name: OIG-43M
+  nationality: International
+  organization: Together, LAION, Ontocord
+  prohibited_uses: ''
+  quality_control: ''
+  sample: []
+  size: 43M instructions
+  type: dataset
+  url: https://laion.ai/blog/oig-dataset/
+- access: open
+  analysis: ''
+  created_date: 2023-03-10
+  datasheet: ''
+  dependencies: []
+  description: ''
+  excluded: ''
+  feedback: ''
+  included: ''
+  intended_uses: ''
+  license: Apache 2.0
+  modality: text
+  monitoring: ''
+  name: OIG-moderation
+  nationality: International
+  organization: Together, LAION, Ontocord
+  prohibited_uses: ''
+  quality_control: ''
+  sample: []
+  size: unknown
+  type: dataset
+  url: https://laion.ai/blog/oig-dataset/
+- access: open
+  analysis: ''
+  created_date: 2022-04-17
+  datasheet: https://huggingface.co/datasets/togethercomputer/RedPajama-Data-1T
+  dependencies:
+  - GitHub
+  - Wikipedia
   description: The RedPajama base dataset is a 1.2 trillion token fully-open dataset
     created by following the recipe described in the LLaMA paper
-  created_date: 2022-04-17
-  url: https://www.together.xyz/blog/redpajama
-  datasheet: https://huggingface.co/datasets/togethercomputer/RedPajama-Data-1T
-  modality: text
-  size: 1.2 trillion tokens
-  sample: []
-  analysis: ''
-  dependencies: [GitHub, Wikipedia]
-  included: ''
   excluded: ''
-  quality_control: ''
-  access: open
-  license: Apache 2.0
-  intended_uses: ''
-  prohibited_uses: ''
-  monitoring: ''
   feedback: ''
-- type: model
-  name: Llama-2-7B-32K-Instruct
+  included: ''
+  intended_uses: ''
+  license: Apache 2.0
+  modality: text
+  monitoring: ''
+  name: RedPajama-Data
+  nationality: USA
   organization: Together
+  prohibited_uses: ''
+  quality_control: ''
+  sample: []
+  size: 1.2 trillion tokens
+  type: dataset
+  url: https://www.together.xyz/blog/redpajama
+- access: open
+  analysis: Model evaluated over AlpacaEval, Rouge score over BookSum, and accuracy
+    over MQA.
+  created_date: 2023-08-18
+  dependencies:
+  - BookSum dataset
+  - MQA dataset
+  - Together API
+  - LLaMA 2
   description: Llama-2-7B-32K-Instruct is an open-source, long-context chat model
     finetuned from Llama-2-7B-32K, over high-quality instruction and chat data.
-  created_date: 2023-08-18
-  url: https://together.ai/blog/llama-2-7b-32k-instruct
-  model_card: https://huggingface.co/togethercomputer/Llama-2-7B-32K-Instruct
+  feedback: https://huggingface.co/togethercomputer/Llama-2-7B-32K-Instruct/discussions
+  intended_uses: ''
+  license: LLaMA 2
   modality:
     explanation: text; text
     value: text; text
-  analysis: Model evaluated over AlpacaEval, Rouge score over BookSum, and accuracy
-    over MQA.
-  size: 7B parameters (dense)
-  dependencies: [BookSum dataset, MQA dataset, Together API, LLaMA 2]
-  training_emissions: ''
-  training_time: ''
-  training_hardware: ''
-  quality_control: ''
-  access: open
-  license: LLaMA 2
-  intended_uses: ''
-  prohibited_uses: ''
+  model_card: https://huggingface.co/togethercomputer/Llama-2-7B-32K-Instruct
   monitoring: ''
-  feedback: https://huggingface.co/togethercomputer/Llama-2-7B-32K-Instruct/discussions
-- type: dataset
-  name: RedPajama-Data-v2
+  name: Llama-2-7B-32K-Instruct
+  nationality: USA
   organization: Together
-  description: RedPajama-Data-v2 is a new version of the RedPajama dataset, with
-    30 trillion filtered and deduplicated tokens (100+ trillions raw) from 84 CommonCrawl
+  prohibited_uses: ''
+  quality_control: ''
+  size: 7B parameters (dense)
+  training_emissions: ''
+  training_hardware: ''
+  training_time: ''
+  type: model
+  url: https://together.ai/blog/llama-2-7b-32k-instruct
+- access: open
+  analysis: none
+  created_date: 2023-10-30
+  datasheet: ''
+  dependencies:
+  - Common Crawl
+  description: RedPajama-Data-v2 is a new version of the RedPajama dataset, with 30
+    trillion filtered and deduplicated tokens (100+ trillions raw) from 84 CommonCrawl
     dumps covering 5 languages, along with 40+ pre-computed data quality annotations
     that can be used for further filtering and weighting.
-  created_date: 2023-10-30
-  url: https://together.ai/blog/redpajama-data-v2
-  datasheet: ''
-  modality: text
-  size: 30 trillion tokens
-  sample: []
-  analysis: none
-  dependencies: [Common Crawl]
-  included: documents in English, German, French, Spanish, and Italian.
   excluded: ''
-  quality_control: tokens filtered and deduplicated
-  access: open
-  license: Apache 2.0
+  feedback: Feedback can be sent to Together via https://www.together.ai/contact
+  included: documents in English, German, French, Spanish, and Italian.
   intended_uses: To be used as the start of a larger, community-driven development
     of large-scale datasets for LLMs.
-  prohibited_uses: ''
+  license: Apache 2.0
+  modality: text
   monitoring: ''
-  feedback: Feedback can be sent to Together via https://www.together.ai/contact
-- type: model
-  name: StripedHyena
+  name: RedPajama-Data-v2
+  nationality: USA
   organization: Together
+  prohibited_uses: ''
+  quality_control: tokens filtered and deduplicated
+  sample: []
+  size: 30 trillion tokens
+  type: dataset
+  url: https://together.ai/blog/redpajama-data-v2
+- access: open
+  analysis: Model evaluated on a suite of short-context task benchmarks.
+  created_date: 2023-12-08
+  dependencies:
+  - Hyena
+  - RedPajama-Data
   description: StripedHyena is an LLM and the first alternative model competitive
     with the best open-source Transformers in short and long-context evaluations,
     according to Together.
-  created_date: 2023-12-08
-  url: https://www.together.ai/blog/stripedhyena-7b
-  model_card: https://huggingface.co/togethercomputer/StripedHyena-Hessian-7B
-  modality: text; text
-  analysis: Model evaluated on a suite of short-context task benchmarks.
-  size: 7B parameters (dense)
-  dependencies: [Hyena, RedPajama-Data]
-  training_emissions: unknown
-  training_time: unknown
-  training_hardware: unknown
-  quality_control: ''
-  access: open
-  license: Apache 2.0
-  intended_uses: ''
-  prohibited_uses: ''
-  monitoring: ''
   feedback: https://huggingface.co/togethercomputer/StripedHyena-Hessian-7B/discussions
-- type: model
-  name: StripedHyena Nous
+  intended_uses: ''
+  license: Apache 2.0
+  modality: text; text
+  model_card: https://huggingface.co/togethercomputer/StripedHyena-Hessian-7B
+  monitoring: ''
+  name: StripedHyena
+  nationality: USA
   organization: Together
+  prohibited_uses: ''
+  quality_control: ''
+  size: 7B parameters (dense)
+  training_emissions: unknown
+  training_hardware: unknown
+  training_time: unknown
+  type: model
+  url: https://www.together.ai/blog/stripedhyena-7b
+- access: open
+  analysis: Model evaluated on a suite of short-context task benchmarks.
+  created_date: 2023-12-08
+  dependencies:
+  - Hyena
+  - RedPajama-Data
   description: StripedHyena Nous is an LLM and chatbot, along with the first alternative
     model competitive with the best open-source Transformers in short and long-context
     evaluations, according to Together.
-  created_date: 2023-12-08
-  url: https://www.together.ai/blog/stripedhyena-7b
-  model_card: https://huggingface.co/togethercomputer/StripedHyena-Nous-7B
-  modality: text; text
-  analysis: Model evaluated on a suite of short-context task benchmarks.
-  size: 7B parameters (dense)
-  dependencies: [Hyena, RedPajama-Data]
-  training_emissions: unknown
-  training_time: unknown
-  training_hardware: unknown
-  quality_control: ''
-  access: open
-  license: Apache 2.0
-  intended_uses: ''
-  prohibited_uses: ''
-  monitoring: ''
   feedback: https://huggingface.co/togethercomputer/StripedHyena-Nous-7B/discussions
-- type: model
-  name: Dragonfly
+  intended_uses: ''
+  license: Apache 2.0
+  modality: text; text
+  model_card: https://huggingface.co/togethercomputer/StripedHyena-Nous-7B
+  monitoring: ''
+  name: StripedHyena Nous
+  nationality: USA
   organization: Together
+  prohibited_uses: ''
+  quality_control: ''
+  size: 7B parameters (dense)
+  training_emissions: unknown
+  training_hardware: unknown
+  training_time: unknown
+  type: model
+  url: https://www.together.ai/blog/stripedhyena-7b
+- access: open
+  analysis: The model was evaluated using five popular vision-language benchmarks
+    that require strong commonsense reasoning and detailed image understanding, AI2D,
+    ScienceQA, MMMU, MMVet, and POPE. It demonstrated competitive performance in these
+    evaluations compared to other vision-language models.
+  created_date: 2024-06-06
+  dependencies:
+  - LLaMA
   description: A large vision-language model with multi-resolution zoom that enhances
     fine-grained visual understanding and reasoning about image regions. The Dragonfly
     model comes in two variants, the general-domain model ("Llama-3-8b-Dragonfly-v1")
     trained on 5.5 million image-instruction pairs, and the biomedical variant ("Llama-3-8b-Dragonfly-Med-v1")
-    fine-tuned on an additional 1.4 million biomedical image-instruction pairs.
-    Dragonfly demonstrates promising performance on vision-language benchmarks like
-    commonsense visual QA and image captioning.
-  created_date: 2024-06-06
-  url: https://www.together.ai/blog/dragonfly-v1
-  model_card: unknown
-  modality: image, text; text
-  analysis: The model was evaluated using five popular vision-language benchmarks
-    that require strong commonsense reasoning and detailed image understanding,
-    AI2D, ScienceQA, MMMU, MMVet, and POPE. It demonstrated competitive performance
-    in these evaluations compared to other vision-language models.
-  size: 8B parameters
-  dependencies: [LLaMA]
-  training_emissions: unknown
-  training_time: unknown
-  training_hardware: unknown
-  quality_control: The model employs two key strategies (multi-resolution visual
-    encoding and zoom-in patch selection) that enable it to efficiently focus on
-    fine-grained details in image regions and provide better commonsense reasoning.
-    Its performance was evaluated on several benchmark tasks for quality assurance.
-  access: open
-  license: unknown
+    fine-tuned on an additional 1.4 million biomedical image-instruction pairs. Dragonfly
+    demonstrates promising performance on vision-language benchmarks like commonsense
+    visual QA and image captioning.
+  feedback: Unknown
   intended_uses: Dragonfly is designed for image-text tasks, including commonsense
     visual question answering and image captioning. It is further focused on tasks
     that require fine-grained understanding of high-resolution image regions, such
     as in medical imaging.
-  prohibited_uses: Unknown
+  license: unknown
+  modality: image, text; text
+  model_card: unknown
   monitoring: Unknown
-  feedback: Unknown
+  name: Dragonfly
+  nationality: USA
+  organization: Together
+  prohibited_uses: Unknown
+  quality_control: The model employs two key strategies (multi-resolution visual encoding
+    and zoom-in patch selection) that enable it to efficiently focus on fine-grained
+    details in image regions and provide better commonsense reasoning. Its performance
+    was evaluated on several benchmark tasks for quality assurance.
+  size: 8B parameters
+  training_emissions: unknown
+  training_hardware: unknown
+  training_time: unknown
+  type: model
+  url: https://www.together.ai/blog/dragonfly-v1

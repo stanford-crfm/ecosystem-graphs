@@ -1,73 +1,92 @@
----
-- type: model
-  name: SALMONN
-  organization: ByteDance, Tsinghua University
+- access: open
+  analysis: Evaluated on benchmarks pertaining to speech, music, and other audio recognition.
+  created_date: 2023-10-20
+  dependencies:
+  - Whisper
+  - BEATs
+  - Vicuna
   description: SALMONN is a large language model (LLM) enabling speech, audio event,
     and music inputs.
-  created_date: 2023-10-20
-  url: https://github.com/bytedance/SALMONN
-  model_card: https://huggingface.co/MSIIP/SALMONN
-  modality: audio, text; text
-  analysis: Evaluated on benchmarks pertaining to speech, music, and other audio
-    recognition.
-  size: unknown
-  dependencies: [Whisper, BEATs, Vicuna]
-  training_emissions: unknown
-  training_time: unknown
-  training_hardware: unknown
-  quality_control: ''
-  access: open
-  license: Apache 2.0
-  intended_uses: ''
-  prohibited_uses: ''
-  monitoring: none
   feedback: https://huggingface.co/MSIIP/SALMONN/discussions
-- type: model
-  name: SDXL-Lightning
-  organization: ByteDance
+  intended_uses: ''
+  license: Apache 2.0
+  modality: audio, text; text
+  model_card: https://huggingface.co/MSIIP/SALMONN
+  monitoring: none
+  name: SALMONN
+  nationality: unknown
+  organization: ByteDance, Tsinghua University
+  prohibited_uses: ''
+  quality_control: ''
+  size: unknown
+  training_emissions: unknown
+  training_hardware: unknown
+  training_time: unknown
+  type: model
+  url: https://github.com/bytedance/SALMONN
+- access: open
+  analysis: Evaluated via qualitative comparison relative to other SoTA image generation
+    models.
+  created_date: 2024-02-21
+  dependencies:
+  - Stable Diffusion XL
   description: SDXL-Lightning is a lightning-fast text-to-image generation model.
     It can generate high-quality 1024px images in a few steps. The models are distilled
     from stabilityai/stable-diffusion-xl-base-1.0. This repository contains checkpoints
     for 1-step, 2-step, 4-step, and 8-step distilled models.
-  created_date: 2024-02-21
-  url: https://arxiv.org/pdf/2402.13929.pdf
-  model_card: https://huggingface.co/ByteDance/SDXL-Lightning
-  modality: text; image
-  analysis: Evaluated via qualitative comparison relative to other SoTA image generation
-    models.
-  size: unknown
-  dependencies: [Stable Diffusion XL]
-  training_emissions: unknown
-  training_time: unknown
-  training_hardware: 64 A100 80G GPUs
-  quality_control: unknown
-  access: open
-  license: OpenRail++
+  feedback: https://huggingface.co/ByteDance/SDXL-Lightning/discussions
   intended_uses: The model can be used for fast, high-quality text-to-image generation.
     It supports 1-step, 2-step, 4-step, and 8-step distilled models which provide
     varying generation quality.
+  license: OpenRail++
+  modality: text; image
+  model_card: https://huggingface.co/ByteDance/SDXL-Lightning
+  monitoring: unknown
+  name: SDXL-Lightning
+  nationality: China
+  organization: ByteDance
   prohibited_uses: unknown
-  monitoring: unknown
-  feedback: https://huggingface.co/ByteDance/SDXL-Lightning/discussions
-- type: model
-  name: LLaVA-Critic
-  organization: ByteDance and University of Maryland, College Park
-  description: LLaVA-Critic is an open-source large multimodal model (LMM) designed as a generalist evaluator. It assesses performance across a variety of multimodal tasks by following a high-quality critic instruction dataset, incorporating diverse evaluation criteria. The model is effective in areas like LMM-as-a-Judge, providing reliable evaluation scores comparable to GPT models, and Preference Learning, offering reward signals for preference learning to enhance model alignment capabilities.
-  created_date: 2024-10-06
-  url: https://arxiv.org/pdf/2410.02712
-  model_card: unknown
-  modality: image, text; text
-  analysis: LLaVA-Critic was tested in scenarios such as LMM-as-a-Judge and Preference Learning, showing a high correlation with commercial GPT models in evaluation scores. It served as an alternative to expensive human feedback in resource-constrained settings and demonstrated better performance in providing AI-generated feedback for model alignment compared to human-reliant reward models.
+  quality_control: unknown
   size: unknown
-  dependencies: []
   training_emissions: unknown
+  training_hardware: 64 A100 80G GPUs
   training_time: unknown
-  training_hardware: unknown
-  quality_control: The model ensures quality by utilizing a high-quality dataset for critic instructions, providing both quantitative judgments and reasoning, with transparency in assessments.
-  access: open
-  license: Apache 2.0
-  intended_uses: The model can be used for evaluating multimodal tasks, generating reward signals for preference learning, and serving as a reliable alternate judge for model assessments.
-  prohibited_uses: The model should not be used in scenarios requiring authorization from proprietary models, nor relied upon for critical applications without human oversight due to potential biases in dataset.
-  monitoring: unknown
+  type: model
+  url: https://arxiv.org/pdf/2402.13929.pdf
+- access: open
+  analysis: LLaVA-Critic was tested in scenarios such as LMM-as-a-Judge and Preference
+    Learning, showing a high correlation with commercial GPT models in evaluation
+    scores. It served as an alternative to expensive human feedback in resource-constrained
+    settings and demonstrated better performance in providing AI-generated feedback
+    for model alignment compared to human-reliant reward models.
+  created_date: 2024-10-06
+  dependencies: []
+  description: LLaVA-Critic is an open-source large multimodal model (LMM) designed
+    as a generalist evaluator. It assesses performance across a variety of multimodal
+    tasks by following a high-quality critic instruction dataset, incorporating diverse
+    evaluation criteria. The model is effective in areas like LMM-as-a-Judge, providing
+    reliable evaluation scores comparable to GPT models, and Preference Learning,
+    offering reward signals for preference learning to enhance model alignment capabilities.
   feedback: unknown
-
+  intended_uses: The model can be used for evaluating multimodal tasks, generating
+    reward signals for preference learning, and serving as a reliable alternate judge
+    for model assessments.
+  license: Apache 2.0
+  modality: image, text; text
+  model_card: unknown
+  monitoring: unknown
+  name: LLaVA-Critic
+  nationality: unknown
+  organization: ByteDance and University of Maryland, College Park
+  prohibited_uses: The model should not be used in scenarios requiring authorization
+    from proprietary models, nor relied upon for critical applications without human
+    oversight due to potential biases in dataset.
+  quality_control: The model ensures quality by utilizing a high-quality dataset for
+    critic instructions, providing both quantitative judgments and reasoning, with
+    transparency in assessments.
+  size: unknown
+  training_emissions: unknown
+  training_hardware: unknown
+  training_time: unknown
+  type: model
+  url: https://arxiv.org/pdf/2410.02712

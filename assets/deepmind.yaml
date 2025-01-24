@@ -1,787 +1,1001 @@
----
-- type: dataset
-  name: MassiveText
-  organization: Google Deepmind
-  description: "The MassiveText dataset was used to train the Gopher model.\n"
+- access:
+    explanation: 'The dataset access is limited to DeepMind researchers [[Model Card]](https://arxiv.org/pdf/2112.11446.pdf#appendix.C).
+
+      '
+    value: closed
+  analysis: 'MassiveText data was analyzed for toxicity, language distribution, URL
+    breakdown, and tokenizer compression rates on the subsets [[Section A.2]](https://arxiv.org/pdf/2112.11446.pdf#subsection.A.2).
+
+    '
   created_date:
-    explanation: "The date that Gopher was announced [[DeepMind Blog Post]] (https://www.deepmind.com/blog/language-modelling-at-scale-gopher-ethical-considerations-and-retrieval).\n"
+    explanation: 'The date that Gopher was announced [[DeepMind Blog Post]] (https://www.deepmind.com/blog/language-modelling-at-scale-gopher-ethical-considerations-and-retrieval).
+
+      '
     value: 2021-12-08
-  url: https://arxiv.org/pdf/2112.11446.pdf
   datasheet: https://arxiv.org/pdf/2112.11446.pdf#subsection.A.5
+  dependencies: []
+  description: 'The MassiveText dataset was used to train the Gopher model.
+
+    '
+  excluded: 'Documents that are not in English are excluded.
+
+    '
+  feedback:
+    explanation: 'The internal feedback mechanisms for WebText are unknown [[Model
+      Card]](https://arxiv.org/pdf/2112.11446.pdf#appendix.C).
+
+      '
+    value: unknown
+  included: 'MassiveText data come from 6 sources: MassiveWeb (48%), Books (27%),
+    C4 (10%), News (10%), GitHub (3%), and Wikipedia (2%). MassiveWeb is a web text
+    corpus curated for MassiveText.
+
+    '
+  intended_uses: 'Pre-training of language models by DeepMind researchers [[Model
+    Card]](https://arxiv.org/pdf/2112.11446.pdf#appendix.C).
+
+    '
+  license:
+    explanation: 'The model likely has a license specifically for DeepMind''s use,
+      based on the information provided in the datasheet [[Model Card]](https://arxiv.org/pdf/2112.11446.pdf#subsection.A.5).
+
+      '
+    value: unknown
   modality: code, text
+  monitoring:
+    explanation: 'There is no information on how DeepMind is internally monitoring
+      the use of the dataset.
+
+      '
+    value: unknown
+  name: MassiveText
+  nationality: UK
+  organization: Google Deepmind
+  prohibited_uses:
+    explanation: 'There are no known prohibited uses of the dataset, but the authors
+      state that it should not be used for training models with multilingual capabilities
+      as it only contains the English language [[Model Card]](https://arxiv.org/pdf/2112.11446.pdf#appendix.C).
+
+      '
+    value: unknown
+  quality_control: "The authors use simple heuristics for filtering low quality documents\
+    \ as opposed to relying on a classifier based on a \"gold\" set such as the English\
+    \ Wikipedia, which could \"inadvertently bias towards a certain demographic or\
+    \ erase certain dialects or sociolects from representation.\" MassiveWeb subset\
+    \ was filtered using Google\u2019s SafeSearch filter, preferring it over to word\
+    \ filters that \"disproportinately filter out inoffensive content associated with\
+    \ minority groups. MassiveWeb was filtered further for word or phrase repetitions.\
+    \ All the subsets were filtered for document deduplication and test set contamination\"\
+    \ [[Appendix A]](https://arxiv.org/pdf/2112.11446.pdf#appendix.A).\n"
+  sample: []
   size: 10.5 TB
-  sample: []
-  analysis: "MassiveText data was analyzed for toxicity, language distribution,\
-    \ URL breakdown, and tokenizer compression rates on the subsets [[Section A.2]](https://arxiv.org/pdf/2112.11446.pdf#subsection.A.2).\n"
-  dependencies: []
-  included: "MassiveText data come from 6 sources: MassiveWeb (48%), Books (27%),\
-    \ C4 (10%), News (10%), GitHub (3%), and Wikipedia (2%). MassiveWeb is a web\
-    \ text corpus curated for MassiveText.\n"
-  excluded: "Documents that are not in English are excluded.\n"
-  quality_control: "The authors use simple heuristics for filtering low quality\
-    \ documents as opposed to relying on a classifier based on a \"gold\" set such\
-    \ as the English Wikipedia, which could \"inadvertently bias towards a certain\
-    \ demographic or erase certain dialects or sociolects from representation.\"\
-    \ MassiveWeb subset was filtered using Google’s SafeSearch filter, preferring\
-    \ it over to word filters that \"disproportinately filter out inoffensive content\
-    \ associated with minority groups. MassiveWeb was filtered further for word\
-    \ or phrase repetitions. All the subsets were filtered for document deduplication\
-    \ and test set contamination\" [[Appendix A]](https://arxiv.org/pdf/2112.11446.pdf#appendix.A).\n"
-  access:
-    explanation: "The dataset access is limited to DeepMind researchers [[Model\
-      \ Card]](https://arxiv.org/pdf/2112.11446.pdf#appendix.C).\n"
+  type: dataset
+  url: https://arxiv.org/pdf/2112.11446.pdf
+- access:
+    explanation: 'The dataset access is limited to DeepMind researchers [[Datasheet]](https://arxiv.org/pdf/2204.14198.pdf#appendix.F).
+
+      '
     value: closed
-  license:
-    explanation: "The model likely has a license specifically for DeepMind's use,\
-      \ based on the information provided in the datasheet [[Model Card]](https://arxiv.org/pdf/2112.11446.pdf#subsection.A.5).\n"
-    value: unknown
-  intended_uses: "Pre-training of language models by DeepMind researchers [[Model\
-    \ Card]](https://arxiv.org/pdf/2112.11446.pdf#appendix.C).\n"
-  prohibited_uses:
-    explanation: "There are no known prohibited uses of the dataset, but the authors\
-      \ state that it should not be used for training models with multilingual capabilities\
-      \ as it only contains the English language [[Model Card]](https://arxiv.org/pdf/2112.11446.pdf#appendix.C).\n"
-    value: unknown
-  monitoring:
-    explanation: "There is no information on how DeepMind is internally monitoring\
-      \ the use of the dataset.\n"
-    value: unknown
-  feedback:
-    explanation: "The internal feedback mechanisms for WebText are unknown [[Model\
-      \ Card]](https://arxiv.org/pdf/2112.11446.pdf#appendix.C).\n"
-    value: unknown
-- type: dataset
-  name: M3W
-  organization: Google Deepmind
-  description: "M3W (MassiveWeb) is dataset used to train Flamingo, and other vision-language\
-    \ models and was created by researchers and engineers.\n"
-  created_date:
-    explanation: "The date that Flamingo was posted to arXiv [[arXiv]] (https://arxiv.org/pdf/2204.14198.pdf).\n"
-    value: 2022-04-29
-  url: https://arxiv.org/pdf/2204.14198.pdf
-  datasheet: https://arxiv.org/pdf/2204.14198.pdf#appendix.F
-  modality: code, text
-  size: 182GB Text, 185M Images
-  sample: []
   analysis: ''
-  dependencies: []
-  included: "M3W has interleaved images (185M) and text (182GB) from the web.\n"
-  excluded: unknown
-  quality_control: "The authors provide a basic description of data processing and\
-    \ cleaning.\n"
-  access:
-    explanation: "The dataset access is limited to DeepMind researchers [[Datasheet]](https://arxiv.org/pdf/2204.14198.pdf#appendix.F).\n"
-    value: closed
-  license:
-    explanation: "The model likely has a license specifically for DeepMind's use,\
-      \ based on the information provided in the datasheet [[Datasheet]](https://arxiv.org/pdf/2204.14198.pdf#appendix.F).\n"
-    value: unknown
-  intended_uses: "Pre-training of vision and language models by DeepMind researchers\
-    \ [[Datasheet]](https://arxiv.org/pdf/2204.14198.pdf#appendix.F).\n"
-  prohibited_uses:
-    explanation: "There are no known prohibited uses of the dataset [[Datasheet]](https://arxiv.org/pdf/2204.14198.pdf#appendix.F).\n"
-    value: unknown
-  monitoring:
-    explanation: "There is no information on how DeepMind is internally monitoring\
-      \ the use of the dataset.\n"
-    value: unknown
-  feedback:
-    explanation: "No feedback mechanism is mentioned in the datasheet [[Datasheet]](https://arxiv.org/pdf/2204.14198.pdf#appendix.F).\n"
-    value: none
-- type: dataset
-  name: Gato dataset
-  organization: Google Deepmind
-  description: "The Gato datasets are a collection of data used to train the Gato\
-    \ model.\n"
   created_date:
-    explanation: "The date that Gato was announced [[DeepMind Blog Post]] (https://www.deepmind.com/blog/a-generalist-agent).\n"
+    explanation: 'The date that Flamingo was posted to arXiv [[arXiv]] (https://arxiv.org/pdf/2204.14198.pdf).
+
+      '
+    value: 2022-04-29
+  datasheet: https://arxiv.org/pdf/2204.14198.pdf#appendix.F
+  dependencies: []
+  description: 'M3W (MassiveWeb) is dataset used to train Flamingo, and other vision-language
+    models and was created by researchers and engineers.
+
+    '
+  excluded: unknown
+  feedback:
+    explanation: 'No feedback mechanism is mentioned in the datasheet [[Datasheet]](https://arxiv.org/pdf/2204.14198.pdf#appendix.F).
+
+      '
+    value: none
+  included: 'M3W has interleaved images (185M) and text (182GB) from the web.
+
+    '
+  intended_uses: 'Pre-training of vision and language models by DeepMind researchers
+    [[Datasheet]](https://arxiv.org/pdf/2204.14198.pdf#appendix.F).
+
+    '
+  license:
+    explanation: 'The model likely has a license specifically for DeepMind''s use,
+      based on the information provided in the datasheet [[Datasheet]](https://arxiv.org/pdf/2204.14198.pdf#appendix.F).
+
+      '
+    value: unknown
+  modality: code, text
+  monitoring:
+    explanation: 'There is no information on how DeepMind is internally monitoring
+      the use of the dataset.
+
+      '
+    value: unknown
+  name: M3W
+  nationality: UK
+  organization: Google Deepmind
+  prohibited_uses:
+    explanation: 'There are no known prohibited uses of the dataset [[Datasheet]](https://arxiv.org/pdf/2204.14198.pdf#appendix.F).
+
+      '
+    value: unknown
+  quality_control: 'The authors provide a basic description of data processing and
+    cleaning.
+
+    '
+  sample: []
+  size: 182GB Text, 185M Images
+  type: dataset
+  url: https://arxiv.org/pdf/2204.14198.pdf
+- access:
+    explanation: 'The full dataset is not directly provided by the authors, though
+      some underlying data is public whereas others (e.g. MassiveText) is not.
+
+      '
+    value: closed
+  analysis: 'The Gato dataset compiles many datasets introduced in prior works, with
+    associated analyses.
+
+    '
+  created_date:
+    explanation: 'The date that Gato was announced [[DeepMind Blog Post]] (https://www.deepmind.com/blog/a-generalist-agent).
+
+      '
     value: 2022-05-12
-  url: https://www.deepmind.com/blog/a-generalist-agent
   datasheet: none
+  dependencies:
+  - MassiveText
+  description: 'The Gato datasets are a collection of data used to train the Gato
+    model.
+
+    '
+  excluded:
+    explanation: 'No specific filtering is mentioned in the Gato paper.
+
+      '
+    value: none
+  feedback:
+    explanation: 'There is no mention on feedback mechanisms either internally or
+      externally.
+
+      '
+    value: none
+  included: 'The full composition of the dataset across individual sources can be
+    found in the paper.
+
+    '
+  intended_uses:
+    explanation: 'There are no known intended uses of the dataset stated by authors
+      beyond training Gato.
+
+      '
+    value: unknown
+  license:
+    explanation: 'The datasets have individual licenses, but no overall license is
+      mentioned by the authors.
+
+      '
+    value: unknown
   modality: image, text, robotics trajectories, simulated control tasks
+  monitoring:
+    explanation: 'There is no mention on how DeepMind is internally monitoring the
+      use of the dataset.
+
+      '
+    value: none
+  name: Gato dataset
+  nationality: UK
+  organization: Google Deepmind
+  prohibited_uses:
+    explanation: 'There are no known prohibited uses of the dataset stated by authors.
+
+      '
+    value: unknown
+  quality_control: unknown
+  sample: []
   size: 10.5 TB Text, 2.2B Text-Image pairs, 1.5T tokens of simulated control, 500k
     robotics trajectories
-  sample: []
-  analysis: "The Gato dataset compiles many datasets introduced in prior works,\
-    \ with associated analyses.\n"
-  dependencies: [MassiveText]
-  included: "The full composition of the dataset across individual sources can be\
-    \ found in the paper.\n"
-  excluded:
-    explanation: "No specific filtering is mentioned in the Gato paper.\n"
-    value: none
-  quality_control: unknown
-  access:
-    explanation: "The full dataset is not directly provided by the authors, though\
-      \ some underlying data is public whereas others (e.g. MassiveText) is not.\n"
-    value: closed
-  license:
-    explanation: "The datasets have individual licenses, but no overall license\
-      \ is mentioned by the authors.\n"
-    value: unknown
-  intended_uses:
-    explanation: "There are no known intended uses of the dataset stated by authors\
-      \ beyond training Gato.\n"
-    value: unknown
-  prohibited_uses:
-    explanation: "There are no known prohibited uses of the dataset stated by authors.\n"
-    value: unknown
-  monitoring:
-    explanation: "There is no mention on how DeepMind is internally monitoring the\
-      \ use of the dataset.\n"
-    value: none
-  feedback:
-    explanation: "There is no mention on feedback mechanisms either internally or\
-      \ externally.\n"
-    value: none
-- type: model
-  name: AlphaFold2
-  organization: Google Deepmind
-  description: AlphaFold2 is a protein language model trained on protein sequences
+  type: dataset
+  url: https://www.deepmind.com/blog/a-generalist-agent
+- access:
+    explanation: Models are available for download from the [[Github repository]](https://github.com/deepmind/alphafold)
+    value: open
+  analysis: ''
   created_date:
     explanation: The date the model paper was released
     value: 2021-07-15
-  url: https://www.nature.com/articles/s41586-021-03819-2
-  model_card: none
+  dependencies:
+  - Protein Data Bank
+  description: AlphaFold2 is a protein language model trained on protein sequences
+  feedback: ''
+  intended_uses: ''
+  license:
+    explanation: The license is provided in the [[Github repository]](https://github.com/deepmind/alphafold)
+    value: Apache 2.0
   modality: amino acid sequence; protein structure
-  analysis: ''
+  model_card: none
+  monitoring: ''
+  name: AlphaFold2
+  nationality: UK
+  organization: Google Deepmind
+  prohibited_uses: ''
+  quality_control: ''
   size: 93M parameters (dense)
-  dependencies: [Protein Data Bank]
   training_emissions: ''
+  training_hardware:
+    explanation: Described in paper
+    value: 128 TPUv3 cores
   training_time:
     explanation: Training takes "approximately 1 week" and finetuning takes "approximately
       4 days"
     value: 11 days
-  training_hardware:
-    explanation: Described in paper
-    value: 128 TPUv3 cores
-  quality_control: ''
-  access:
-    explanation: Models are available for download from the [[Github repository]](https://github.com/deepmind/alphafold)
-    value: open
-  license:
-    explanation: The license is provided in the [[Github repository]](https://github.com/deepmind/alphafold)
-    value: Apache 2.0
-  intended_uses: ''
-  prohibited_uses: ''
-  monitoring: ''
-  feedback: ''
-- type: model
-  name: Flamingo
-  organization: Google Deepmind
-  description: "Flamingo is a Visual Language Model using the Transformer architecture\
-    \ that is intended for few-shot learning.\n"
-  created_date:
-    explanation: "The date that Flamingo was posted to arXiv [[arXiv]] (https://arxiv.org/abs/2204.14198).\n"
-    value: 2022-04-29
-  url: https://arxiv.org/pdf/2204.14198.pdf
-  model_card: https://arxiv.org/pdf/2204.14198.pdf#appendix.E
-  modality: image, text; text
-  analysis: "Model performance was evaluated on image and video datasets primarily,\
-    \ including dialogue.\n"
-  size: 80B parameters (dense)
-  dependencies: [M3W, ALIGN, LTIP, VTP, Chinchilla]
-  training_emissions:
-    explanation: "Authors do not report the training emissions.\n"
-    value: unknown
-  training_time:
-    explanation: "Reported in the paper checklist [[Checklist]](https://arxiv.org/pdf/2204.14198.pdf).\n"
-    value: 15 days on 1536 TPUs
-  training_hardware:
-    explanation: "Reported in the paper checklist [[Checklist]](https://arxiv.org/pdf/2204.14198.pdf).\n"
-    value: TPU
-  quality_control:
-    explanation: "Reported in the mitigations in the model card [[Model Card]](https://openreview.net/pdf?id=1ikK0kHjvj#appendix.A).\n"
-    value: none
-  access:
-    explanation: "The model has not been released and no discussion of release is\
-      \ stated in the model card [[Model Card]](https://arxiv.org/pdf/2204.14198.pdf#appendix.E).\n"
+  type: model
+  url: https://www.nature.com/articles/s41586-021-03819-2
+- access:
+    explanation: 'The model has not been released and no discussion of release is
+      stated in the model card [[Model Card]](https://arxiv.org/pdf/2204.14198.pdf#appendix.E).
+
+      '
     value: closed
-  license:
-    explanation: "No license is provided in the model card [[Model Card]](https://arxiv.org/pdf/2204.14198.pdf#appendix.E).\n"
-    value: unknown
-  intended_uses: "The intended uses are stated in the model card: \"The primary\
-    \ use is research on visual language models (VLM), including: research on VLM\
-    \ applications like classification, captioning or visual question answering,\
-    \ understanding how strong VLMs can contribute to AGI, advancing fairness and\
-    \ safety research in the area of multimodal research, and understanding limitations\
-    \ of current large VLMs.\" [[Model Card]](https://arxiv.org/pdf/2204.14198.pdf#appendix.E).\n"
-  prohibited_uses: "The model card lists the following as out of scope uses of the\
-    \ model: \"Uses of the model for visually conditioned language generation in\
-    \ harmful or deceitful settings. Broadly speaking, the model should not be used\
-    \ for downstream applications without further safety and fairness mitigations\
-    \ specific to each application.\" [[Model Card]](https://arxiv.org/pdf/2204.14198.pdf#appendix.E).\n"
-  monitoring:
-    explanation: "There is no information on how DeepMind is internally monitoring\
-      \ the use of the model.\n"
-    value: unknown
+  analysis: 'Model performance was evaluated on image and video datasets primarily,
+    including dialogue.
+
+    '
+  created_date:
+    explanation: 'The date that Flamingo was posted to arXiv [[arXiv]] (https://arxiv.org/abs/2204.14198).
+
+      '
+    value: 2022-04-29
+  dependencies:
+  - M3W
+  - ALIGN
+  - LTIP
+  - VTP
+  - Chinchilla
+  description: 'Flamingo is a Visual Language Model using the Transformer architecture
+    that is intended for few-shot learning.
+
+    '
   feedback:
-    explanation: "No contact information is provided for feedback in the model card\
-      \ [[Model Card]](https://arxiv.org/pdf/2204.14198.pdf#appendix.E).\n"
+    explanation: 'No contact information is provided for feedback in the model card
+      [[Model Card]](https://arxiv.org/pdf/2204.14198.pdf#appendix.E).
+
+      '
     value: none
-- type: model
-  name: AlphaCode
+  intended_uses: 'The intended uses are stated in the model card: "The primary use
+    is research on visual language models (VLM), including: research on VLM applications
+    like classification, captioning or visual question answering, understanding how
+    strong VLMs can contribute to AGI, advancing fairness and safety research in the
+    area of multimodal research, and understanding limitations of current large VLMs."
+    [[Model Card]](https://arxiv.org/pdf/2204.14198.pdf#appendix.E).
+
+    '
+  license:
+    explanation: 'No license is provided in the model card [[Model Card]](https://arxiv.org/pdf/2204.14198.pdf#appendix.E).
+
+      '
+    value: unknown
+  modality: image, text; text
+  model_card: https://arxiv.org/pdf/2204.14198.pdf#appendix.E
+  monitoring:
+    explanation: 'There is no information on how DeepMind is internally monitoring
+      the use of the model.
+
+      '
+    value: unknown
+  name: Flamingo
+  nationality: UK
   organization: Google Deepmind
-  description: AlphaCode is an autoregressive language model trained on code
+  prohibited_uses: 'The model card lists the following as out of scope uses of the
+    model: "Uses of the model for visually conditioned language generation in harmful
+    or deceitful settings. Broadly speaking, the model should not be used for downstream
+    applications without further safety and fairness mitigations specific to each
+    application." [[Model Card]](https://arxiv.org/pdf/2204.14198.pdf#appendix.E).
+
+    '
+  quality_control:
+    explanation: 'Reported in the mitigations in the model card [[Model Card]](https://openreview.net/pdf?id=1ikK0kHjvj#appendix.A).
+
+      '
+    value: none
+  size: 80B parameters (dense)
+  training_emissions:
+    explanation: 'Authors do not report the training emissions.
+
+      '
+    value: unknown
+  training_hardware:
+    explanation: 'Reported in the paper checklist [[Checklist]](https://arxiv.org/pdf/2204.14198.pdf).
+
+      '
+    value: TPU
+  training_time:
+    explanation: 'Reported in the paper checklist [[Checklist]](https://arxiv.org/pdf/2204.14198.pdf).
+
+      '
+    value: 15 days on 1536 TPUs
+  type: model
+  url: https://arxiv.org/pdf/2204.14198.pdf
+- access:
+    explanation: DeepMind does not provide access to AlphaCode to external researchers
+    value: closed
+  analysis: ''
   created_date:
     explanation: The date the model paper was released
     value: 2022-02-02
-  url: https://arxiv.org/abs/2203.07814
-  model_card: ''
-  modality: text; code
-  analysis: ''
-  size: 41B parameters (dense)
   dependencies: []
-  training_emissions: ''
-  training_time: ''
-  training_hardware: ''
-  quality_control: ''
-  access:
-    explanation: DeepMind does not provide access to AlphaCode to external researchers
-    value: closed
+  description: AlphaCode is an autoregressive language model trained on code
+  feedback: ''
+  intended_uses: ''
   license:
     explanation: ''
     value: unknown
-  intended_uses: ''
-  prohibited_uses: ''
+  modality: text; code
+  model_card: ''
   monitoring: ''
-  feedback: ''
-- type: model
-  name: Gopher
+  name: AlphaCode
+  nationality: UK
   organization: Google Deepmind
-  description: "Gopher is an autoregressive language model based on the Transformer\
-    \ architecture with two modifications: using RMSNorm instead of LayerNorm and\
-    \ using relative positional encoding scheme instead of absolute positional encodings\
-    \ [[Section 3]](https://arxiv.org/pdf/2112.11446.pdf#subsection.3.1).\n"
+  prohibited_uses: ''
+  quality_control: ''
+  size: 41B parameters (dense)
+  training_emissions: ''
+  training_hardware: ''
+  training_time: ''
+  type: model
+  url: https://arxiv.org/abs/2203.07814
+- access:
+    explanation: 'The model access is limited to DeepMind researchers. The model won''t
+      be released to the public [[Model Card]](https://arxiv.org/pdf/2112.11446.pdf#appendix.B).
+
+      '
+    value: closed
+  analysis: 'Model performance was evaluated and analyzed on 152 NLP tasks including:
+    Language Modelling (20), Reading Comprehension (3), Fact Checking (3), Question
+    Answering (3), Common Sense (4), MMLU (57), BIG-bench (62) [[Section 4]](https://arxiv.org/pdf/2112.11446.pdf#section.4);
+    on toxicity and bias datasets [[Section 5]](https://arxiv.org/pdf/2112.11446.pdf#section.5);
+    and on dialogue tasks [[Section 6]](https://arxiv.org/pdf/2112.11446.pdf#section.6).
+
+    '
   created_date:
-    explanation: "The date that Gopher was announced [[DeepMind Blog Post]] (https://www.deepmind.com/blog/language-modelling-at-scale-gopher-ethical-considerations-and-retrieval).\n"
+    explanation: 'The date that Gopher was announced [[DeepMind Blog Post]] (https://www.deepmind.com/blog/language-modelling-at-scale-gopher-ethical-considerations-and-retrieval).
+
+      '
     value: 2021-12-08
-  url: https://arxiv.org/pdf/2112.11446.pdf
-  model_card: https://arxiv.org/pdf/2112.11446.pdf#appendix.B
-  modality: text; code
-  analysis: "Model performance was evaluated and analyzed on 152 NLP tasks including:\
-    \ Language Modelling (20), Reading Comprehension (3), Fact Checking (3), Question\
-    \ Answering (3), Common Sense (4), MMLU (57), BIG-bench (62) [[Section 4]](https://arxiv.org/pdf/2112.11446.pdf#section.4);\
-    \ on toxicity and bias datasets [[Section 5]](https://arxiv.org/pdf/2112.11446.pdf#section.5);\
-    \ and on dialogue tasks [[Section 6]](https://arxiv.org/pdf/2112.11446.pdf#section.6).\n"
-  size: 280B parameters (dense)
-  dependencies: [MassiveText]
-  training_emissions:
-    explanation: "The training emission estimate from the paper [[Section F]](https://arxiv.org/pdf/2112.11446.pdf#appendix.F)\n"
-    value: 380 tCO2e
-  training_time:
-    explanation: "The authors reported the training petaflops for all of the 4 different\
-      \ sizes of the model. For the 280B parameter model, the petaflops was reported\
-      \ as 6.31E+08. We compute the Gopher's training time in petaflop/s-day as\
-      \ 6.31E+08 / (60*60*24) = 7303.24 petaflop/s-day.\n"
-    value: 7303.24 petaflop/s-day
-  training_hardware:
-    explanation: "Reported in the paper [[Section F]](https://arxiv.org/pdf/2112.11446.pdf#appendix.F).\n"
-    value: TPUv3 pods
-  quality_control: none
-  access:
-    explanation: "The model access is limited to DeepMind researchers. The model\
-      \ won't be released to the public [[Model Card]](https://arxiv.org/pdf/2112.11446.pdf#appendix.B).\n"
-    value: closed
-  license:
-    explanation: "The model likely has a license specifically for DeepMind's use,\
-      \ based on the information provided in the model card [[Model Card]](https://arxiv.org/pdf/2112.11446.pdf#appendix.B).\n"
-    value: unknown
-  intended_uses: "The intended uses are stated in the Gopher model card: \"The primary\
-    \ use is research on language models, including: research on NLP applications\
-    \ like machine translation and question answering, understanding how strong\
-    \ language models can contribute to AGI, advancing fairness and safety research,\
-    \ and understanding limitations of current LLMs\" [[Model Card]](https://arxiv.org/pdf/2112.11446.pdf#appendix.B).\n"
-  prohibited_uses: "The model card lists the following as out of scope uses of the\
-    \ model: \"for language generation in harmful or deceitful settings. More generally,\
-    \ the model should not be used for downstream applications without further safety\
-    \ and fairness mitigations\" [[Model Card]](https://arxiv.org/pdf/2112.11446.pdf#appendix.B).\n"
-  monitoring:
-    explanation: "There is no information on how DeepMind is internally monitoring\
-      \ the use of the model.\n"
-    value: unknown
-  feedback: "The feedback for the model can be provided at the email linked in the\
-    \ model card, geoffreyi at google.com [[Model Card]](https://arxiv.org/pdf/2112.11446.pdf#appendix.B).\n"
-- type: model
-  name: Chinchilla
-  organization: Google Deepmind
-  description: "Chinchilla is an autoregressive language model based on the Transformer\
-    \ architecture with improved scaling laws.\n"
-  created_date:
-    explanation: "The date that Chinchilla was posted on arXiv [[arXiv]] (https://arxiv.org/abs/2203.15556).\n"
-    value: 2022-03-29
-  url: https://arxiv.org/pdf/2203.15556.pdf
-  model_card: https://arxiv.org/pdf/2203.15556.pdf
-  modality: text; code
-  analysis: "Model performance was evaluated and analyzed on many NLP tasks including\
-    \ language modeling, reading comprehension, question answering, commonsense-intensive\
-    \ tasks, and the BIG-Bench and MMLU meta-benchmarks.\n"
-  size: 70B parameters (dense)
-  dependencies: [MassiveText]
-  training_emissions:
-    explanation: "Authors do not report the training emissions.\n"
-    value: Unknown
-  training_time:
-    explanation: "The authors reported the training petaflops for all models, including\
-      \ hypothetical larger models. For the 70B parameter model, the petaflops was\
-      \ reported as 5.76E+08. We compute the Gopher's training time in petaflop/s-day\
-      \ as 5.76E+08 / (60*60*24) = 6666.66 petaflop/s-day.\n"
-    value: 7303.24 petaflop/s-day
-  training_hardware:
-    explanation: "Reported in the paper [[Section 4]](https://arxiv.org/pdf/2203.15556.pdf).\n"
-    value: TPUv3/TPUv4 pods
-  quality_control: none
-  access:
-    explanation: "The model access is limited to DeepMind researchers. The model\
-      \ won't be released to the public [[Model Card]](https://arxiv.org/pdf/2112.11446.pdf#appendix.B).\n"
-    value: closed
-  license:
-    explanation: "The model likely has a license specifically for DeepMind's use,\
-      \ based on the information provided in the model card [[Model Card]](https://arxiv.org/pdf/2203.15556.pdf#appendix.I).\n"
-    value: unknown
-  intended_uses: "The intended uses are stated in the Chinchilla model card: \"\
-    The primary use is research on language models, including: research on the scaling\
-    \ behaviour of language models along with those listed in Gopher paper\" [[Model\
-    \ Card]](https://arxiv.org/pdf/2203.15556.pdf#appendix.I).\n"
-  prohibited_uses: "The model card lists the following as out of scope uses of the\
-    \ model: \"for language generation in harmful or deceitful settings. More generally,\
-    \ the model should not be used for downstream applications without further safety\
-    \ and fairness mitigations\" [[Model Card]](https://arxiv.org/pdf/2203.15556.pdf#appendix.I).\n"
-  monitoring:
-    explanation: "There is no information on how DeepMind is internally monitoring\
-      \ the use of the model.\n"
-    value: Unknown
-  feedback: "The feedback for the model can be provided at the email linked in the\
-    \ model card, {jordanhoffmann, sborgeaud, amensch,sifre} at deepmind.com [[Model\
-    \ Card]](https://arxiv.org/pdf/2203.15556.pdf#appendix.I).\n"
-- type: model
-  name: Gato
-  organization: Google Deepmind
-  description: "Gato is a generalist agent based on sequence modeling using the\
-    \ Transformer architecture to implement multi-modal, multi-task, multi-embodiment\
-    \ generalist policy.\n"
-  created_date:
-    explanation: "The date that Gato was announced [[DeepMind Blog Post]] (https://www.deepmind.com/blog/a-generalist-agent).\n"
-    value: 2022-05-12
-  url: https://www.deepmind.com/blog/a-generalist-agent
-  model_card: https://openreview.net/pdf?id=1ikK0kHjvj#appendix.B
-  modality: image, text; image, text, robotics trajectories
-  analysis: "Model performance was evaluated on simulated and robotics task primarily,\
-    \ including out-of-distribution and skill generalization.\n"
-  size: 1.2B parameters (dense)
-  dependencies: [Gato dataset]
-  training_emissions:
-    explanation: "Authors do not report the training emissions.\n"
-    value: unknown
-  training_time:
-    explanation: "Reported in the paper [[Section 2.3]](https://openreview.net/pdf?id=1ikK0kHjvj).\n"
-    value: 4 days on a 16x16 TPU v3 slice
-  training_hardware:
-    explanation: "Reported in the paper [[Section 2.3]](https://openreview.net/pdf?id=1ikK0kHjvj).\n"
-    value: 16x16 TPU v3 slice
-  quality_control:
-    explanation: "Reported in the mitigations in the model card [[Model Card]](https://openreview.net/pdf?id=1ikK0kHjvj#appendix.A).\n"
-    value: none
-  access:
-    explanation: "The model access is limited to DeepMind researchers. The model\
-      \ won't be released to the public [[Model Card]](https://openreview.net/pdf?id=1ikK0kHjvj#appendix.A).\n"
-    value: closed
-  license: unknown
-  intended_uses: "The intended uses are stated in the Gopher model card: \"Learn\
-    \ to accomplish a wide variety of tasks from expert demonstrations, such as\
-    \ playing video games, controlling simulated embodiments, and real world block\
-    \ stacking.\" [[Model Card]](https://openreview.net/pdf?id=1ikK0kHjvj#appendix.A).\n"
-  prohibited_uses: "The model card lists the following as out of scope uses of the\
-    \ model: \"Not intended for commercial or production use. Military uses are\
-    \ strictly prohibited.\" [[Model Card]](https://openreview.net/pdf?id=1ikK0kHjvj#appendix.A).\n"
-  monitoring:
-    explanation: "There is no information on how DeepMind is internally monitoring\
-      \ the use of the model.\n"
-    value: unknown
-  feedback: "The feedback for the model can be provided at the email linked in the\
-    \ model card, reedscot at google.com [[Model Card]](https://openreview.net/pdf?id=1ikK0kHjvj#appendix.A).\n"
-- type: model
-  name: Sparrow
-  organization: Google Deepmind
-  description: ''
-  created_date: 2022-09-28
-  url: https://arxiv.org/abs/2209.14375
-  model_card: ''
-  modality: text; text
-  analysis: ''
-  size: 70B parameters (dense)
   dependencies:
-    - Chinchilla
-    - Google Search
-    - Sparrow Rule reward model
-    - Sparrow Preference reward model
-  training_emissions: ''
-  training_time: ''
-  training_hardware: ''
-  quality_control: ''
-  access: closed
+  - MassiveText
+  description: 'Gopher is an autoregressive language model based on the Transformer
+    architecture with two modifications: using RMSNorm instead of LayerNorm and using
+    relative positional encoding scheme instead of absolute positional encodings [[Section
+    3]](https://arxiv.org/pdf/2112.11446.pdf#subsection.3.1).
+
+    '
+  feedback: 'The feedback for the model can be provided at the email linked in the
+    model card, geoffreyi at google.com [[Model Card]](https://arxiv.org/pdf/2112.11446.pdf#appendix.B).
+
+    '
+  intended_uses: 'The intended uses are stated in the Gopher model card: "The primary
+    use is research on language models, including: research on NLP applications like
+    machine translation and question answering, understanding how strong language
+    models can contribute to AGI, advancing fairness and safety research, and understanding
+    limitations of current LLMs" [[Model Card]](https://arxiv.org/pdf/2112.11446.pdf#appendix.B).
+
+    '
   license:
-    explanation: "The asset isn't released, and hence the license is unknown.\n'"
+    explanation: 'The model likely has a license specifically for DeepMind''s use,
+      based on the information provided in the model card [[Model Card]](https://arxiv.org/pdf/2112.11446.pdf#appendix.B).
+
+      '
     value: unknown
-  intended_uses: ''
-  prohibited_uses: ''
-  monitoring: ''
-  feedback: ''
-- type: model
-  name: RETRO
+  modality: text; code
+  model_card: https://arxiv.org/pdf/2112.11446.pdf#appendix.B
+  monitoring:
+    explanation: 'There is no information on how DeepMind is internally monitoring
+      the use of the model.
+
+      '
+    value: unknown
+  name: Gopher
+  nationality: UK
   organization: Google Deepmind
-  description: ''
-  created_date: 2021-12-08
-  url: https://arxiv.org/abs/2112.04426
-  model_card: ''
-  modality: text; text
-  analysis: ''
-  size: 7.5B parameters (dense)
-  dependencies: [MassiveText]
-  training_emissions: ''
-  training_time: ''
-  training_hardware: ''
-  quality_control: ''
-  access: closed
-  license: unknown
-  intended_uses: ''
-  prohibited_uses: ''
-  monitoring: ''
-  feedback: ''
-- type: model
-  name: Sparrow Rule reward model
-  organization: Google Deepmind
-  description: ''
-  created_date: 2022-09-28
-  url: https://arxiv.org/abs/2209.14375
-  model_card: ''
-  modality: text; text
-  analysis: ''
-  size: 70B parameters (dense)
-  dependencies: [Chinchilla, Sparrow adversarial probing dataset]
-  training_emissions: ''
-  training_time: ''
-  training_hardware: ''
-  quality_control: ''
-  access: closed
-  license: unknown
-  intended_uses: ''
-  prohibited_uses: ''
-  monitoring: ''
-  feedback: ''
-- type: model
-  name: Sparrow Preference reward model
-  organization: Google Deepmind
-  description: ''
-  created_date: 2022-09-28
-  url: https://arxiv.org/abs/2209.14375
-  model_card: ''
-  modality: text; text
-  analysis: ''
-  size: 70B parameters (dense)
-  dependencies: [Chinchilla, Sparrow response preference dataset]
-  training_emissions: ''
-  training_time: ''
-  training_hardware: ''
-  quality_control: ''
-  access: closed
-  license: unknown
-  intended_uses: ''
-  prohibited_uses: ''
-  monitoring: ''
-  feedback: ''
-- type: dataset
-  name: Sparrow adversarial probing dataset
-  organization: Google Deepmind
-  description: ''
-  created_date: 2022-09-28
-  url: https://arxiv.org/abs/2209.14375
-  datasheet: ''
-  modality: text
-  size: 27k ratings
-  sample: []
-  analysis: ''
-  dependencies: [Chinchilla]
-  included: ''
-  excluded: ''
-  quality_control: ''
-  access: closed
-  license: unknown
-  intended_uses: ''
-  prohibited_uses: ''
-  monitoring: ''
-  feedback: ''
-- type: dataset
-  name: Sparrow response preference dataset
-  organization: Google Deepmind
-  description: ''
-  created_date: 2022-09-28
-  url: https://arxiv.org/abs/2209.14375
-  datasheet: ''
-  modality: text
-  size: 72k comparisons
-  sample: []
-  analysis: ''
-  dependencies: [Chinchilla]
-  included: ''
-  excluded: ''
-  quality_control: ''
-  access: closed
-  license: unknown
-  intended_uses: ''
-  prohibited_uses: ''
-  monitoring: ''
-  feedback: ''
-- type: model
-  name: GopherCite
-  organization: Google Deepmind
-  description: ''
-  created_date: 2022-03-16
-  url: https://storage.googleapis.com/deepmind-media/Teaching%20language%20models%20to%20support%20answers%20with%20verified%20quotes/Teaching%20language%20models%20to%20support%20answers%20with%20verified%20quotes.pdf
-  model_card: ''
-  modality: text; text
-  analysis: ''
+  prohibited_uses: 'The model card lists the following as out of scope uses of the
+    model: "for language generation in harmful or deceitful settings. More generally,
+    the model should not be used for downstream applications without further safety
+    and fairness mitigations" [[Model Card]](https://arxiv.org/pdf/2112.11446.pdf#appendix.B).
+
+    '
+  quality_control: none
   size: 280B parameters (dense)
-  dependencies: [Gopher, Google Search, GopherCite reward model]
-  training_emissions: ''
-  training_time: ''
-  training_hardware: ''
-  quality_control: ''
-  access: closed
-  license: unknown
-  intended_uses: ''
-  prohibited_uses: ''
-  monitoring: ''
-  feedback: ''
-- type: model
-  name: GopherCite reward model
+  training_emissions:
+    explanation: 'The training emission estimate from the paper [[Section F]](https://arxiv.org/pdf/2112.11446.pdf#appendix.F)
+
+      '
+    value: 380 tCO2e
+  training_hardware:
+    explanation: 'Reported in the paper [[Section F]](https://arxiv.org/pdf/2112.11446.pdf#appendix.F).
+
+      '
+    value: TPUv3 pods
+  training_time:
+    explanation: 'The authors reported the training petaflops for all of the 4 different
+      sizes of the model. For the 280B parameter model, the petaflops was reported
+      as 6.31E+08. We compute the Gopher''s training time in petaflop/s-day as 6.31E+08
+      / (60*60*24) = 7303.24 petaflop/s-day.
+
+      '
+    value: 7303.24 petaflop/s-day
+  type: model
+  url: https://arxiv.org/pdf/2112.11446.pdf
+- access:
+    explanation: 'The model access is limited to DeepMind researchers. The model won''t
+      be released to the public [[Model Card]](https://arxiv.org/pdf/2112.11446.pdf#appendix.B).
+
+      '
+    value: closed
+  analysis: 'Model performance was evaluated and analyzed on many NLP tasks including
+    language modeling, reading comprehension, question answering, commonsense-intensive
+    tasks, and the BIG-Bench and MMLU meta-benchmarks.
+
+    '
+  created_date:
+    explanation: 'The date that Chinchilla was posted on arXiv [[arXiv]] (https://arxiv.org/abs/2203.15556).
+
+      '
+    value: 2022-03-29
+  dependencies:
+  - MassiveText
+  description: 'Chinchilla is an autoregressive language model based on the Transformer
+    architecture with improved scaling laws.
+
+    '
+  feedback: 'The feedback for the model can be provided at the email linked in the
+    model card, {jordanhoffmann, sborgeaud, amensch,sifre} at deepmind.com [[Model
+    Card]](https://arxiv.org/pdf/2203.15556.pdf#appendix.I).
+
+    '
+  intended_uses: 'The intended uses are stated in the Chinchilla model card: "The
+    primary use is research on language models, including: research on the scaling
+    behaviour of language models along with those listed in Gopher paper" [[Model
+    Card]](https://arxiv.org/pdf/2203.15556.pdf#appendix.I).
+
+    '
+  license:
+    explanation: 'The model likely has a license specifically for DeepMind''s use,
+      based on the information provided in the model card [[Model Card]](https://arxiv.org/pdf/2203.15556.pdf#appendix.I).
+
+      '
+    value: unknown
+  modality: text; code
+  model_card: https://arxiv.org/pdf/2203.15556.pdf
+  monitoring:
+    explanation: 'There is no information on how DeepMind is internally monitoring
+      the use of the model.
+
+      '
+    value: Unknown
+  name: Chinchilla
+  nationality: UK
   organization: Google Deepmind
-  description: ''
-  created_date: 2022-03-16
-  url: https://storage.googleapis.com/deepmind-media/Teaching%20language%20models%20to%20support%20answers%20with%20verified%20quotes/Teaching%20language%20models%20to%20support%20answers%20with%20verified%20quotes.pdf
-  model_card: ''
-  modality: text; text
-  analysis: ''
-  size: 7B parameters (dense)
-  dependencies: [Gopher, GopherCite Preference dataset]
-  training_emissions: ''
-  training_time: ''
-  training_hardware: ''
-  quality_control: ''
-  access: closed
-  license: unknown
-  intended_uses: ''
-  prohibited_uses: ''
-  monitoring: ''
-  feedback: ''
-- type: dataset
-  name: GopherCite Preference dataset
-  organization: Google Deepmind
-  description: ''
-  created_date: 2022-03-16
-  url: https://storage.googleapis.com/deepmind-media/Teaching%20language%20models%20to%20support%20answers%20with%20verified%20quotes/Teaching%20language%20models%20to%20support%20answers%20with%20verified%20quotes.pdf
-  datasheet: ''
-  modality: text
-  size: 33k response pairs
-  sample: []
-  analysis: ''
-  dependencies: [Gopher, Google Search]
-  included: ''
-  excluded: ''
-  quality_control: ''
-  access: closed
-  license: unknown
-  intended_uses: ''
-  prohibited_uses: ''
-  monitoring: ''
-  feedback: ''
-- type: model
-  name: Dramatron
-  organization: Google Deepmind
-  description: ''
-  created_date: 2022-09-29
-  url: https://arxiv.org/abs/2209.14958
-  model_card: ''
-  modality: text; text
-  analysis: ''
+  prohibited_uses: 'The model card lists the following as out of scope uses of the
+    model: "for language generation in harmful or deceitful settings. More generally,
+    the model should not be used for downstream applications without further safety
+    and fairness mitigations" [[Model Card]](https://arxiv.org/pdf/2203.15556.pdf#appendix.I).
+
+    '
+  quality_control: none
   size: 70B parameters (dense)
-  dependencies: [Chinchilla]
-  training_emissions: ''
-  training_time: ''
-  training_hardware: ''
-  quality_control: ''
-  access: closed
+  training_emissions:
+    explanation: 'Authors do not report the training emissions.
+
+      '
+    value: Unknown
+  training_hardware:
+    explanation: 'Reported in the paper [[Section 4]](https://arxiv.org/pdf/2203.15556.pdf).
+
+      '
+    value: TPUv3/TPUv4 pods
+  training_time:
+    explanation: 'The authors reported the training petaflops for all models, including
+      hypothetical larger models. For the 70B parameter model, the petaflops was reported
+      as 5.76E+08. We compute the Gopher''s training time in petaflop/s-day as 5.76E+08
+      / (60*60*24) = 6666.66 petaflop/s-day.
+
+      '
+    value: 7303.24 petaflop/s-day
+  type: model
+  url: https://arxiv.org/pdf/2203.15556.pdf
+- access:
+    explanation: 'The model access is limited to DeepMind researchers. The model won''t
+      be released to the public [[Model Card]](https://openreview.net/pdf?id=1ikK0kHjvj#appendix.A).
+
+      '
+    value: closed
+  analysis: 'Model performance was evaluated on simulated and robotics task primarily,
+    including out-of-distribution and skill generalization.
+
+    '
+  created_date:
+    explanation: 'The date that Gato was announced [[DeepMind Blog Post]] (https://www.deepmind.com/blog/a-generalist-agent).
+
+      '
+    value: 2022-05-12
+  dependencies:
+  - Gato dataset
+  description: 'Gato is a generalist agent based on sequence modeling using the Transformer
+    architecture to implement multi-modal, multi-task, multi-embodiment generalist
+    policy.
+
+    '
+  feedback: 'The feedback for the model can be provided at the email linked in the
+    model card, reedscot at google.com [[Model Card]](https://openreview.net/pdf?id=1ikK0kHjvj#appendix.A).
+
+    '
+  intended_uses: 'The intended uses are stated in the Gopher model card: "Learn to
+    accomplish a wide variety of tasks from expert demonstrations, such as playing
+    video games, controlling simulated embodiments, and real world block stacking."
+    [[Model Card]](https://openreview.net/pdf?id=1ikK0kHjvj#appendix.A).
+
+    '
   license: unknown
-  intended_uses: ''
-  prohibited_uses: ''
-  monitoring: ''
-  feedback: ''
-- type: model
-  name: RT-2
+  modality: image, text; image, text, robotics trajectories
+  model_card: https://openreview.net/pdf?id=1ikK0kHjvj#appendix.B
+  monitoring:
+    explanation: 'There is no information on how DeepMind is internally monitoring
+      the use of the model.
+
+      '
+    value: unknown
+  name: Gato
+  nationality: UK
   organization: Google Deepmind
-  description: RT-2 is a vision-language-action model for robotic actions that incorporates
-    chain of thought reasoning.
-  created_date: 2023-07-28
-  url: https://arxiv.org/pdf/2307.15818.pdf
+  prohibited_uses: 'The model card lists the following as out of scope uses of the
+    model: "Not intended for commercial or production use. Military uses are strictly
+    prohibited." [[Model Card]](https://openreview.net/pdf?id=1ikK0kHjvj#appendix.A).
+
+    '
+  quality_control:
+    explanation: 'Reported in the mitigations in the model card [[Model Card]](https://openreview.net/pdf?id=1ikK0kHjvj#appendix.A).
+
+      '
+    value: none
+  size: 1.2B parameters (dense)
+  training_emissions:
+    explanation: 'Authors do not report the training emissions.
+
+      '
+    value: unknown
+  training_hardware:
+    explanation: 'Reported in the paper [[Section 2.3]](https://openreview.net/pdf?id=1ikK0kHjvj).
+
+      '
+    value: 16x16 TPU v3 slice
+  training_time:
+    explanation: 'Reported in the paper [[Section 2.3]](https://openreview.net/pdf?id=1ikK0kHjvj).
+
+      '
+    value: 4 days on a 16x16 TPU v3 slice
+  type: model
+  url: https://www.deepmind.com/blog/a-generalist-agent
+- access: closed
+  analysis: ''
+  created_date: 2022-09-28
+  dependencies:
+  - Chinchilla
+  - Google Search
+  - Sparrow Rule reward model
+  - Sparrow Preference reward model
+  description: ''
+  feedback: ''
+  intended_uses: ''
+  license:
+    explanation: 'The asset isn''t released, and hence the license is unknown.
+
+      '''
+    value: unknown
+  modality: text; text
   model_card: ''
-  modality: text, video; text, robotics trajectories
+  monitoring: ''
+  name: Sparrow
+  nationality: UK
+  organization: Google Deepmind
+  prohibited_uses: ''
+  quality_control: ''
+  size: 70B parameters (dense)
+  training_emissions: ''
+  training_hardware: ''
+  training_time: ''
+  type: model
+  url: https://arxiv.org/abs/2209.14375
+- access: closed
+  analysis: ''
+  created_date: 2021-12-08
+  dependencies:
+  - MassiveText
+  description: ''
+  feedback: ''
+  intended_uses: ''
+  license: unknown
+  modality: text; text
+  model_card: ''
+  monitoring: ''
+  name: RETRO
+  nationality: UK
+  organization: Google Deepmind
+  prohibited_uses: ''
+  quality_control: ''
+  size: 7.5B parameters (dense)
+  training_emissions: ''
+  training_hardware: ''
+  training_time: ''
+  type: model
+  url: https://arxiv.org/abs/2112.04426
+- access: closed
+  analysis: ''
+  created_date: 2022-09-28
+  dependencies:
+  - Chinchilla
+  - Sparrow adversarial probing dataset
+  description: ''
+  feedback: ''
+  intended_uses: ''
+  license: unknown
+  modality: text; text
+  model_card: ''
+  monitoring: ''
+  name: Sparrow Rule reward model
+  nationality: UK
+  organization: Google Deepmind
+  prohibited_uses: ''
+  quality_control: ''
+  size: 70B parameters (dense)
+  training_emissions: ''
+  training_hardware: ''
+  training_time: ''
+  type: model
+  url: https://arxiv.org/abs/2209.14375
+- access: closed
+  analysis: ''
+  created_date: 2022-09-28
+  dependencies:
+  - Chinchilla
+  - Sparrow response preference dataset
+  description: ''
+  feedback: ''
+  intended_uses: ''
+  license: unknown
+  modality: text; text
+  model_card: ''
+  monitoring: ''
+  name: Sparrow Preference reward model
+  nationality: UK
+  organization: Google Deepmind
+  prohibited_uses: ''
+  quality_control: ''
+  size: 70B parameters (dense)
+  training_emissions: ''
+  training_hardware: ''
+  training_time: ''
+  type: model
+  url: https://arxiv.org/abs/2209.14375
+- access: closed
+  analysis: ''
+  created_date: 2022-09-28
+  datasheet: ''
+  dependencies:
+  - Chinchilla
+  description: ''
+  excluded: ''
+  feedback: ''
+  included: ''
+  intended_uses: ''
+  license: unknown
+  modality: text
+  monitoring: ''
+  name: Sparrow adversarial probing dataset
+  nationality: UK
+  organization: Google Deepmind
+  prohibited_uses: ''
+  quality_control: ''
+  sample: []
+  size: 27k ratings
+  type: dataset
+  url: https://arxiv.org/abs/2209.14375
+- access: closed
+  analysis: ''
+  created_date: 2022-09-28
+  datasheet: ''
+  dependencies:
+  - Chinchilla
+  description: ''
+  excluded: ''
+  feedback: ''
+  included: ''
+  intended_uses: ''
+  license: unknown
+  modality: text
+  monitoring: ''
+  name: Sparrow response preference dataset
+  nationality: UK
+  organization: Google Deepmind
+  prohibited_uses: ''
+  quality_control: ''
+  sample: []
+  size: 72k comparisons
+  type: dataset
+  url: https://arxiv.org/abs/2209.14375
+- access: closed
+  analysis: ''
+  created_date: 2022-03-16
+  dependencies:
+  - Gopher
+  - Google Search
+  - GopherCite reward model
+  description: ''
+  feedback: ''
+  intended_uses: ''
+  license: unknown
+  modality: text; text
+  model_card: ''
+  monitoring: ''
+  name: GopherCite
+  nationality: UK
+  organization: Google Deepmind
+  prohibited_uses: ''
+  quality_control: ''
+  size: 280B parameters (dense)
+  training_emissions: ''
+  training_hardware: ''
+  training_time: ''
+  type: model
+  url: https://storage.googleapis.com/deepmind-media/Teaching%20language%20models%20to%20support%20answers%20with%20verified%20quotes/Teaching%20language%20models%20to%20support%20answers%20with%20verified%20quotes.pdf
+- access: closed
+  analysis: ''
+  created_date: 2022-03-16
+  dependencies:
+  - Gopher
+  - GopherCite Preference dataset
+  description: ''
+  feedback: ''
+  intended_uses: ''
+  license: unknown
+  modality: text; text
+  model_card: ''
+  monitoring: ''
+  name: GopherCite reward model
+  nationality: UK
+  organization: Google Deepmind
+  prohibited_uses: ''
+  quality_control: ''
+  size: 7B parameters (dense)
+  training_emissions: ''
+  training_hardware: ''
+  training_time: ''
+  type: model
+  url: https://storage.googleapis.com/deepmind-media/Teaching%20language%20models%20to%20support%20answers%20with%20verified%20quotes/Teaching%20language%20models%20to%20support%20answers%20with%20verified%20quotes.pdf
+- access: closed
+  analysis: ''
+  created_date: 2022-03-16
+  datasheet: ''
+  dependencies:
+  - Gopher
+  - Google Search
+  description: ''
+  excluded: ''
+  feedback: ''
+  included: ''
+  intended_uses: ''
+  license: unknown
+  modality: text
+  monitoring: ''
+  name: GopherCite Preference dataset
+  nationality: UK
+  organization: Google Deepmind
+  prohibited_uses: ''
+  quality_control: ''
+  sample: []
+  size: 33k response pairs
+  type: dataset
+  url: https://storage.googleapis.com/deepmind-media/Teaching%20language%20models%20to%20support%20answers%20with%20verified%20quotes/Teaching%20language%20models%20to%20support%20answers%20with%20verified%20quotes.pdf
+- access: closed
+  analysis: ''
+  created_date: 2022-09-29
+  dependencies:
+  - Chinchilla
+  description: ''
+  feedback: ''
+  intended_uses: ''
+  license: unknown
+  modality: text; text
+  model_card: ''
+  monitoring: ''
+  name: Dramatron
+  nationality: UK
+  organization: Google Deepmind
+  prohibited_uses: ''
+  quality_control: ''
+  size: 70B parameters (dense)
+  training_emissions: ''
+  training_hardware: ''
+  training_time: ''
+  type: model
+  url: https://arxiv.org/abs/2209.14958
+- access: open
   analysis: Evaluated on evaluation trajectories and SoTA baselines using robotic
     data.
-  size: 55B parameters (dense)
-  dependencies: [PaLI-X, PaLM-E, RT-2 action tokens]
-  training_emissions: ''
-  training_time: ''
-  training_hardware: ''
-  quality_control: ''
-  access: open
-  license: unknown
-  intended_uses: ''
-  prohibited_uses: ''
-  monitoring: ''
+  created_date: 2023-07-28
+  dependencies:
+  - PaLI-X
+  - PaLM-E
+  - RT-2 action tokens
+  description: RT-2 is a vision-language-action model for robotic actions that incorporates
+    chain of thought reasoning.
   feedback: ''
-- type: model
-  name: Lyria
+  intended_uses: ''
+  license: unknown
+  modality: text, video; text, robotics trajectories
+  model_card: ''
+  monitoring: ''
+  name: RT-2
+  nationality: UK
   organization: Google Deepmind
-  description: Lyria is DeepMind's most advanced AI music generation model to date.
-  created_date: 2023-11-16
-  url: https://deepmind.google/discover/blog/transforming-the-future-of-music-creation/
-  model_card: none
-  modality: text; music
-  analysis: unknown
-  size: unknown
-  dependencies: []
-  training_emissions: unknown
-  training_time: unknown
-  training_hardware: unknown
-  quality_control: worked with artists and music industry to ensure utility
-  access: closed
-  license: unknown
-  intended_uses: ''
   prohibited_uses: ''
-  monitoring: ''
+  quality_control: ''
+  size: 55B parameters (dense)
+  training_emissions: ''
+  training_hardware: ''
+  training_time: ''
+  type: model
+  url: https://arxiv.org/pdf/2307.15818.pdf
+- access: closed
+  analysis: unknown
+  created_date: 2023-11-16
+  dependencies: []
+  description: Lyria is DeepMind's most advanced AI music generation model to date.
   feedback: ''
-- type: model
-  name: Genie
-  organization: Google DeepMind
-  description: Gene is a foundation world model trained from Internet videos that
-    can generate an endless variety of playable (action-controllable) worlds from
-    synthetic images, photographs, and even sketches.
-  created_date: 2024-02-23
-  url: https://sites.google.com/view/genie-2024
+  intended_uses: ''
+  license: unknown
+  modality: text; music
   model_card: none
-  modality: image; video
+  monitoring: ''
+  name: Lyria
+  nationality: UK
+  organization: Google Deepmind
+  prohibited_uses: ''
+  quality_control: worked with artists and music industry to ensure utility
+  size: unknown
+  training_emissions: unknown
+  training_hardware: unknown
+  training_time: unknown
+  type: model
+  url: https://deepmind.google/discover/blog/transforming-the-future-of-music-creation/
+- access: closed
   analysis: Evaluated using only out-of-distribution image prompts for qualitative
     results.
-  size: 11B parameters (dense)
+  created_date: 2024-02-23
   dependencies: []
-  training_emissions: unknown
-  training_time: unknown
-  training_hardware: unknown
-  quality_control: ''
-  access: closed
-  license: unknown
-  intended_uses: ''
-  prohibited_uses: ''
-  monitoring: ''
+  description: "Gene is a foundation world model\_trained from Internet videos\_that\
+    \ can generate an endless variety of playable (action-controllable) worlds from\
+    \ synthetic images, photographs, and even sketches."
   feedback: none
-- type: model
-  name: Imagen 3
-  organization: Google DeepMind
-  description: Imagen 3 is a high-quality text-to-image model, capable of generating
-    images with better detail, richer lighting, and fewer distracting artifacts
-    compared to previous models. Improved understanding of prompts allows for a
-    wide range of visual styles and captures small details from longer prompts.
-    It also understands prompts written in natural, everyday language, making it
-    easier to use. Imagen 3 is available in multiple versions, optimized for different
-    types of tasks, from generating quick sketches to high-resolution images.
-  created_date: 2024-05-14
-  url: https://deepmind.google/technologies/imagen-3/
+  intended_uses: ''
+  license: unknown
+  modality: image; video
   model_card: none
-  modality: text; image
-  analysis: The model was tested and evaluated on various prompts to assess its
-    understanding of natural language, its ability to generate high-quality images
-    in various formats and styles and generate fine details and complex textures.
-    Red teaming and evaluations were conducted on topics including fairness, bias,
-    and content safety.
-  size: unknown
-  dependencies: []
+  monitoring: ''
+  name: Genie
+  nationality: unknown
+  organization: Google DeepMind
+  prohibited_uses: ''
+  quality_control: ''
+  size: 11B parameters (dense)
   training_emissions: unknown
-  training_time: unknown
   training_hardware: unknown
+  training_time: unknown
+  type: model
+  url: https://sites.google.com/view/genie-2024
+- access: limited
+  analysis: The model was tested and evaluated on various prompts to assess its understanding
+    of natural language, its ability to generate high-quality images in various formats
+    and styles and generate fine details and complex textures. Red teaming and evaluations
+    were conducted on topics including fairness, bias, and content safety.
+  created_date: 2024-05-14
+  dependencies: []
+  description: Imagen 3 is a high-quality text-to-image model, capable of generating
+    images with better detail, richer lighting, and fewer distracting artifacts compared
+    to previous models. Improved understanding of prompts allows for a wide range
+    of visual styles and captures small details from longer prompts. It also understands
+    prompts written in natural, everyday language, making it easier to use. Imagen
+    3 is available in multiple versions, optimized for different types of tasks, from
+    generating quick sketches to high-resolution images.
+  feedback: unknown
+  intended_uses: Generate high-quality images for various purposes, from photorealistic
+    landscapes to textured oil paintings or whimsical claymation scenes. It is useful
+    in situations where detailed visual representation is required based on the textual
+    description.
+  license: unknown
+  modality: text; image
+  model_card: none
+  monitoring: Through digital watermarking tool SynthID embedded in pixels for detection
+    and identification.
+  name: Imagen 3
+  nationality: unknown
+  organization: Google DeepMind
+  prohibited_uses: unknown
   quality_control: Extensive filtering and data labeling were used to minimize harmful
     content in datasets and reduce the likelihood of harmful outputs. Privacy, safety,
     and security technologies were leveraged in deploying the model, including watermarking
     tool SynthID.
-  access: limited
-  license: unknown
-  intended_uses: Generate high-quality images for various purposes, from photorealistic
-    landscapes to textured oil paintings or whimsical claymation scenes. It is useful
-    in situations where detailed visual representation is required based on the
-    textual description.
-  prohibited_uses: unknown
-  monitoring: Through digital watermarking tool SynthID embedded in pixels for detection
-    and identification.
-  feedback: unknown
-- type: model
-  name: Veo
-  organization: Google DeepMind
+  size: unknown
+  training_emissions: unknown
+  training_hardware: unknown
+  training_time: unknown
+  type: model
+  url: https://deepmind.google/technologies/imagen-3/
+- access: closed
+  analysis: unknown
+  created_date: 2024-05-14
+  dependencies: []
   description: Veo is Google DeepMind's most capable video generation model to date.
     It generates high-quality, 1080p resolution videos that can go beyond a minute,
     in a wide range of cinematic and visual styles. It accurately captures the nuance
     and tone of a prompt, and provides an unprecedented level of creative control.
-    The model is also capable of maintaining visual consistency in video frames,
-    and supports masked editing.
-  created_date: 2024-05-14
-  url: https://deepmind.google/technologies/veo/
-  model_card: none
+    The model is also capable of maintaining visual consistency in video frames, and
+    supports masked editing.
+  feedback: Feedback from leading creators and filmmakers is incorporated to improve
+    Veo's generative video technologies.
+  intended_uses: Veo is intended to help create tools that make video production accessible
+    to everyone. It can be used by filmmakers, creators, or educators for storytelling,
+    education and more. Some of its features will be also brought to products like
+    YouTube Shorts.
+  license: unknown
   modality: text; video
-  analysis: unknown
-  size: unknown
-  dependencies: []
-  training_emissions: unknown
-  training_time: unknown
-  training_hardware: unknown
+  model_card: none
+  monitoring: unknown
+  name: Veo
+  nationality: unknown
+  organization: Google DeepMind
+  prohibited_uses: unknown
   quality_control: Videos created by Veo are watermarked using SynthID, DeepMinds
     tool for watermarking and identifying AI-generated content, and passed through
     safety filters and memorization checking processes to mitigate privacy, copyright
     and bias risks.
-  access: closed
-  license: unknown
-  intended_uses: Veo is intended to help create tools that make video production
-    accessible to everyone. It can be used by filmmakers, creators, or educators
-    for storytelling, education and more. Some of its features will be also brought
-    to products like YouTube Shorts.
-  prohibited_uses: unknown
-  monitoring: unknown
-  feedback: Feedback from leading creators and filmmakers is incorporated to improve
-    Veo's generative video technologies.
-- type: model
-  name: Gemini 1.5 Flash
-  organization: Google DeepMind
+  size: unknown
+  training_emissions: unknown
+  training_hardware: unknown
+  training_time: unknown
+  type: model
+  url: https://deepmind.google/technologies/veo/
+- access: limited
+  analysis: The model was evaluated on various benchmarks like General MMLU, Code
+    Natural2Code, MATH, GPQA, Big-Bench, WMT23, MMMU, and MathVista providing performance
+    across various domains like multilingual translation, image processing, and code
+    generation.
+  created_date: 2024-05-30
+  dependencies: []
   description: Gemini Flash is a lightweight model, optimized for speed and efficiency.
     It features multimodal reasoning and a breakthrough long context window of up
     to one million tokens. It's designed to serve at scale and is efficient on cost,
     providing quality results at a fraction of the cost of larger models.
-  created_date: 2024-05-30
-  url: https://deepmind.google/technologies/gemini/flash/
-  model_card: none
+  feedback: none
+  intended_uses: The model is intended for developer and enterprise use cases. It
+    can process hours of video and audio, and hundreds of thousands of words or lines
+    of code, making it beneficial for a wide range of tasks.
+  license: Googles Terms and Conditions
   modality: audio, image, text, video; text
-  analysis: The model was evaluated on various benchmarks like General MMLU, Code
-    Natural2Code, MATH, GPQA, Big-Bench, WMT23, MMMU, and MathVista providing performance
-    across various domains like multilingual translation, image processing, and
-    code generation.
-  size: unknown
-  dependencies: []
-  training_emissions: unknown
-  training_time: unknown
-  training_hardware: unknown
+  model_card: none
+  monitoring: unknown
+  name: Gemini 1.5 Flash
+  nationality: unknown
+  organization: Google DeepMind
+  prohibited_uses: ''
   quality_control: The research team is continually exploring new ideas at the frontier
     of AI and building innovative products for consistent progress.
-  access: limited
-  license: Googles Terms and Conditions
-  intended_uses: The model is intended for developer and enterprise use cases. It
-    can process hours of video and audio, and hundreds of thousands of words or
-    lines of code, making it beneficial for a wide range of tasks.
-  prohibited_uses: ''
-  monitoring: unknown
-  feedback: none
+  size: unknown
+  training_emissions: unknown
+  training_hardware: unknown
+  training_time: unknown
+  type: model
+  url: https://deepmind.google/technologies/gemini/flash/

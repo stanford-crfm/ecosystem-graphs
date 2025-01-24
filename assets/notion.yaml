@@ -1,23 +1,24 @@
----
-- type: application
-  name: Notion AI
-  organization: Notion
-  description: Notion AI is a connected assistant that helps you think bigger, work
-    faster, and augments your creativity, right inside the functional workspace
-    you’re already familiar with.
-  created_date: 2023-02-22
-  url: https://www.notion.so/help/guides/notion-ai-for-docs
-  dependencies: [Anthropic API]
+- access: limited
   adaptation: ''
-  output_space: ''
-  quality_control: ''
-  access: limited
-  license: ''
-  terms_of_service: ''
-  intended_uses: ''
-  prohibited_uses: ''
-  monitoring: ''
-  feedback: ''
-  monthly_active_users: ''
-  user_distribution: ''
+  created_date: 2023-02-22
+  dependencies:
+  - Anthropic API
+  description: "Notion AI is a connected assistant that helps you think bigger, work\
+    \ faster, and augments your creativity, right inside the functional workspace\
+    \ you\u2019re already familiar with."
   failures: ''
+  feedback: ''
+  intended_uses: ''
+  license: ''
+  monitoring: ''
+  monthly_active_users: ''
+  name: Notion AI
+  nationality: USA
+  organization: Notion
+  output_space: ''
+  prohibited_uses: ''
+  quality_control: ''
+  terms_of_service: ''
+  type: application
+  url: https://www.notion.so/help/guides/notion-ai-for-docs
+  user_distribution: ''

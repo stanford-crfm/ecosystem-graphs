@@ -1,30 +1,30 @@
----
-- type: model
-  name: Qwen2-Math
-  organization: Qwen Team
-  description: Qwen2-Math is a series of specialized math language models built
-    upon the Qwen2 large language models, with a focus on enhancing the reasoning
-    and mathematical capabilities. Their intended use is for solving complex mathematical
-    problems. They significantly outperform both open-source and closed-source models
-    in terms of mathematical capabilities.
-  created_date: 2024-08-08
-  url: https://qwenlm.github.io/blog/qwen2-math/
-  model_card: https://huggingface.co/Qwen/Qwen2-Math-72B
-  modality: text; text
+- access: open
   analysis: Models have been evaluated on a series of math benchmarks, demonstrating
     outperformance of the state-of-the-art models in both the English and Chinese
     language.
-  size: 72B parameters
+  created_date: 2024-08-08
   dependencies: []
-  training_emissions: Unknown
-  training_time: Unknown
-  training_hardware: Unknown
-  quality_control: The models were tested with few-shot chain-of-thought prompting
-    and evaluated across mathematical benchmarks in both English and Chinese.
-  access: open
-  license: Tongyi Qianwen
-  intended_uses: These models are intended for solving complex mathematical problems.
-  prohibited_uses: Uses that go against the ethical usage policies of Qwen Team.
-  monitoring: Unknown
+  description: Qwen2-Math is a series of specialized math language models built upon
+    the Qwen2 large language models, with a focus on enhancing the reasoning and mathematical
+    capabilities. Their intended use is for solving complex mathematical problems.
+    They significantly outperform both open-source and closed-source models in terms
+    of mathematical capabilities.
   feedback: Problems with the model should be reported to the Qwen Team via their
     official channels.
+  intended_uses: These models are intended for solving complex mathematical problems.
+  license: Tongyi Qianwen
+  modality: text; text
+  model_card: https://huggingface.co/Qwen/Qwen2-Math-72B
+  monitoring: Unknown
+  name: Qwen2-Math
+  nationality: China
+  organization: Qwen Team
+  prohibited_uses: Uses that go against the ethical usage policies of Qwen Team.
+  quality_control: The models were tested with few-shot chain-of-thought prompting
+    and evaluated across mathematical benchmarks in both English and Chinese.
+  size: 72B parameters
+  training_emissions: Unknown
+  training_hardware: Unknown
+  training_time: Unknown
+  type: model
+  url: https://qwenlm.github.io/blog/qwen2-math/

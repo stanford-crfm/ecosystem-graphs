@@ -1,43 +1,47 @@
----
-- type: model
-  name: Mochi 1
-  organization: Genmo
+- access:
+    explanation: open state-of-the-art video generation model... The weights and architecture
+      for Mochi 1 are open
+    value: open
+  analysis: Mochi 1 sets a new best-in-class standard for open-source video generation.
+    It also performs very competitively with the leading closed models... We benchmark
+    prompt adherence with an automated metric using a vision language model as a judge
+    following the protocol in OpenAI DALL-E 3. We evaluate generated videos using
+    Gemini-1.5-Pro-002.
+  created_date: 2025-01-14
+  dependencies:
+  - DDPM
+  - DreamFusion
+  - Emu Video
+  - T5-XXL
   description: Mochi 1 is an open-source video generation model designed to produce
     high-fidelity motion and strong prompt adherence in generated videos, setting
     a new standard for open video generation systems.
-  created_date: 2025-01-14
-  url: https://www.genmo.ai/blog
-  model_card: unknown
+  feedback: unknown
+  intended_uses: Advance the field of video generation and explore new methodologies.
+    Build innovative applications in entertainment, advertising, education, and more.
+    Empower artists and creators to bring their visions to life with AI-generated
+    videos. Generate synthetic data for training AI models in robotics, autonomous
+    vehicles and virtual environments.
+  license:
+    explanation: We're releasing the model under a permissive Apache 2.0 license.
+    value: Apache 2.0
   modality:
     explanation: Mochi 1 generates smooth videos... Measures how accurately generated
       videos follow the provided textual instructions
     value: text; video
-  analysis: Mochi 1 sets a new best-in-class standard for open-source video generation.
-    It also performs very competitively with the leading closed models... We benchmark
-    prompt adherence with an automated metric using a vision language model as a
-    judge following the protocol in OpenAI DALL-E 3. We evaluate generated videos
-    using Gemini-1.5-Pro-002.
+  model_card: unknown
+  monitoring: unknown
+  name: Mochi 1
+  nationality: USA
+  organization: Genmo
+  prohibited_uses: unknown
+  quality_control: robust safety moderation protocols in the playground to ensure
+    that all video generations remain safe and aligned with ethical guidelines.
   size:
     explanation: featuring a 10 billion parameter diffusion model
     value: 10B parameters
-  dependencies: [DDPM, DreamFusion, Emu Video, T5-XXL]
   training_emissions: unknown
-  training_time: unknown
   training_hardware: unknown
-  quality_control: robust safety moderation protocols in the playground to ensure
-    that all video generations remain safe and aligned with ethical guidelines.
-  access:
-    explanation: open state-of-the-art video generation model... The weights and
-      architecture for Mochi 1 are open
-    value: open
-  license:
-    explanation: We're releasing the model under a permissive Apache 2.0 license.
-    value: Apache 2.0
-  intended_uses: Advance the field of video generation and explore new methodologies.
-    Build innovative applications in entertainment, advertising, education, and
-    more. Empower artists and creators to bring their visions to life with AI-generated
-    videos. Generate synthetic data for training AI models in robotics, autonomous
-    vehicles and virtual environments.
-  prohibited_uses: unknown
-  monitoring: unknown
-  feedback: unknown
+  training_time: unknown
+  type: model
+  url: https://www.genmo.ai/blog

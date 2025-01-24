@@ -1,30 +1,30 @@
----
-- type: model
-  name: TigerBot
-  organization: TigerResearch
-  description: TigerBot is an open source multilingual multitask LLM.
+- access: open
+  analysis: Evaluated across a range of domain tasks across standard benchmarks in
+    comparison to predecessor Llama 2.
   created_date: 2023-10-19
-  url: https://arxiv.org/pdf/2312.08688.pdf
-  model_card: https://huggingface.co/TigerResearch/tigerbot-180b-base-v2
-  modality: text; text
-  analysis: Evaluated across a range of domain tasks across standard benchmarks
-    in comparison to predecessor Llama 2.
-  size: 180B parameters (dense)
   dependencies:
-    explanation: 7, 13, and 70B sizes trained on LLaMA 2. 180B model trained on
-      BLOOM.
-    value: [Llama 2, BLOOM]
-  training_emissions: unknown
-  training_time: unknown
-  training_hardware: 32 A100-40G GPUs
-  quality_control: Safety filtering performed to mitigate risk and remove toxic
-    content.
-  access: open
-  license:
-    explanation: Should also consult with BLOOM and Llama 2 open-source licenses
-      due to pre-training.
-    value: Apache 2.0
-  intended_uses: ''
-  prohibited_uses: ''
-  monitoring: unknown
+    explanation: 7, 13, and 70B sizes trained on LLaMA 2. 180B model trained on BLOOM.
+    value:
+    - Llama 2
+    - BLOOM
+  description: TigerBot is an open source multilingual multitask LLM.
   feedback: https://huggingface.co/TigerResearch/tigerbot-180b-base-v2/discussions
+  intended_uses: ''
+  license:
+    explanation: Should also consult with BLOOM and Llama 2 open-source licenses due
+      to pre-training.
+    value: Apache 2.0
+  modality: text; text
+  model_card: https://huggingface.co/TigerResearch/tigerbot-180b-base-v2
+  monitoring: unknown
+  name: TigerBot
+  nationality: International
+  organization: TigerResearch
+  prohibited_uses: ''
+  quality_control: Safety filtering performed to mitigate risk and remove toxic content.
+  size: 180B parameters (dense)
+  training_emissions: unknown
+  training_hardware: 32 A100-40G GPUs
+  training_time: unknown
+  type: model
+  url: https://arxiv.org/pdf/2312.08688.pdf

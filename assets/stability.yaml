@@ -1,294 +1,304 @@
----
-- type: model
-  name: DeepFloyd IF
-  organization: Stability AI
+- access: open
+  analysis: Evaluated on the COCO dataset.
+  created_date: 2023-04-28
+  dependencies:
+  - LAION-5B
   description: A text-to-image cascaded pixel diffusion model released in conjunction
     with AI research lab DeepFloyd.
-  created_date: 2023-04-28
-  url: https://stability.ai/blog/deepfloyd-if-text-to-image-model
-  model_card: https://huggingface.co/DeepFloyd/IF-I-XL-v1.0
-  modality: text; image
-  analysis: Evaluated on the COCO dataset.
-  size: 4.3B parameters (dense)
-  dependencies: [LAION-5B]
-  training_emissions: ''
-  training_time: ''
-  training_hardware: ''
-  quality_control: ''
-  access: open
+  feedback: https://huggingface.co/DeepFloyd/IF-I-XL-v1.0/discussions
+  intended_uses: ''
   license:
     explanation: License agreement can be found on model card https://huggingface.co/DeepFloyd/IF-I-XL-v1.0
     value: custom
-  intended_uses: ''
-  prohibited_uses: ''
+  modality: text; image
+  model_card: https://huggingface.co/DeepFloyd/IF-I-XL-v1.0
   monitoring: ''
-  feedback: https://huggingface.co/DeepFloyd/IF-I-XL-v1.0/discussions
-- type: model
-  name: StableLM
+  name: DeepFloyd IF
+  nationality: UK
   organization: Stability AI
-  description: Large language models trained on up to 1.5 trillion tokens.
-  created_date: 2023-04-20
-  url: https://github.com/Stability-AI/StableLM
-  model_card: ''
-  modality: text; text
-  analysis: ''
-  size: 7B parameters (dense)
-  dependencies:
-    - StableLM-Alpha dataset
-    - Alpaca dataset
-    - gpt4all dataset
-    - ShareGPT52K dataset
-    - Dolly dataset
-    - HH dataset
-  training_emissions: ''
-  training_time: ''
-  training_hardware: ''
+  prohibited_uses: ''
   quality_control: ''
-  access: open
-  license: Apache 2.0
-  intended_uses: ''
-  prohibited_uses: ''
-  monitoring: ''
+  size: 4.3B parameters (dense)
+  training_emissions: ''
+  training_hardware: ''
+  training_time: ''
+  type: model
+  url: https://stability.ai/blog/deepfloyd-if-text-to-image-model
+- access: open
+  analysis: ''
+  created_date: 2023-04-20
+  dependencies:
+  - StableLM-Alpha dataset
+  - Alpaca dataset
+  - gpt4all dataset
+  - ShareGPT52K dataset
+  - Dolly dataset
+  - HH dataset
+  description: Large language models trained on up to 1.5 trillion tokens.
   feedback: ''
-- type: application
-  name: Stable Diffusion
+  intended_uses: ''
+  license: Apache 2.0
+  modality: text; text
+  model_card: ''
+  monitoring: ''
+  name: StableLM
+  nationality: UK
   organization: Stability AI
+  prohibited_uses: ''
+  quality_control: ''
+  size: 7B parameters (dense)
+  training_emissions: ''
+  training_hardware: ''
+  training_time: ''
+  type: model
+  url: https://github.com/Stability-AI/StableLM
+- access: open
+  adaptation: ''
+  created_date: 2022-08-22
+  dependencies: []
   description: Stable Diffusion is a generative software that creates images from
     text prompts.
-  created_date: 2022-08-22
-  url: https://stability.ai/blog/stable-diffusion-public-release
-  dependencies: []
-  adaptation: ''
-  output_space: image
-  quality_control: ''
-  access: open
+  failures: ''
+  feedback: https://huggingface.co/CompVis/stable-diffusion/discussions
+  intended_uses: ''
   license:
     explanation: License agreement can be found on https://github.com/CompVis/stable-diffusion/blob/main/LICENSE
     value: custom
-  terms_of_service: ''
-  intended_uses: ''
-  prohibited_uses: ''
   monitoring: ''
-  feedback: https://huggingface.co/CompVis/stable-diffusion/discussions
   monthly_active_users: ''
-  user_distribution: ''
-  failures: ''
-- type: application
-  name: Stable Diffusion XL
+  name: Stable Diffusion
+  nationality: UK
   organization: Stability AI
+  output_space: image
+  prohibited_uses: ''
+  quality_control: ''
+  terms_of_service: ''
+  type: application
+  url: https://stability.ai/blog/stable-diffusion-public-release
+  user_distribution: ''
+- access: open
+  adaptation: ''
+  created_date: 2023-07-26
+  dependencies: []
   description: Stable Diffusion XL is an updated version of Stable Diffusion, and
     creates descriptive images with shorter prompts and generate words within images.
-  created_date: 2023-07-26
-  url: https://stability.ai/stablediffusion
-  dependencies: []
-  adaptation: ''
-  output_space: image
-  quality_control: ''
-  access: open
+  failures: ''
+  feedback: ''
+  intended_uses: ''
   license:
     explanation: License can be found at https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0/blob/main/LICENSE.md
     value: Open Rail++
-  terms_of_service: ''
-  intended_uses: ''
-  prohibited_uses: ''
   monitoring: ''
-  feedback: ''
   monthly_active_users: ''
-  user_distribution: ''
-  failures: ''
-
-- type: model
-  name: Stable Video Diffusion
+  name: Stable Diffusion XL
+  nationality: UK
   organization: Stability AI
-  description: Stable Video Diffusion is a latent diffusion model trained to generate
-    short video clips from an image conditioning.
-  created_date: 2023-11-21
-  url: https://static1.squarespace.com/static/6213c340453c3f502425776e/t/655ce779b9d47d342a93c890/1700587395994/stable_video_diffusion.pdf
-  model_card: https://huggingface.co/stabilityai/stable-video-diffusion-img2vid-xt
-  modality: text; video
+  output_space: image
+  prohibited_uses: ''
+  quality_control: ''
+  terms_of_service: ''
+  type: application
+  url: https://stability.ai/stablediffusion
+  user_distribution: ''
+- access: limited
   analysis: Evaluated via a user study comparing preferences between Stable Video
     Diffusion and competing text-to-video models.
-  size: unknown
-  dependencies: [Large Video Dataset]
-  training_emissions: unknown
-  training_time: unknown
-  training_hardware: unknown
-  quality_control: ''
-  access: limited
+  created_date: 2023-11-21
+  dependencies:
+  - Large Video Dataset
+  description: Stable Video Diffusion is a latent diffusion model trained to generate
+    short video clips from an image conditioning.
+  feedback: https://huggingface.co/stabilityai/stable-video-diffusion-img2vid-xt/discussions
+  intended_uses: Intended for research purposes only.
   license:
     explanation: License can be found at https://huggingface.co/stabilityai/stable-video-diffusion-img2vid-xt/blob/main/LICENSE
     value: custom
-  intended_uses: Intended for research purposes only.
+  modality: text; video
+  model_card: https://huggingface.co/stabilityai/stable-video-diffusion-img2vid-xt
+  monitoring: ''
+  name: Stable Video Diffusion
+  nationality: UK
+  organization: Stability AI
   prohibited_uses: Using the model to generate representations of real-world people
     or events.
-  monitoring: ''
-  feedback: https://huggingface.co/stabilityai/stable-video-diffusion-img2vid-xt/discussions
-
-- type: dataset
-  name: Large Video Dataset
-  organization: Stability AI
+  quality_control: ''
+  size: unknown
+  training_emissions: unknown
+  training_hardware: unknown
+  training_time: unknown
+  type: model
+  url: https://static1.squarespace.com/static/6213c340453c3f502425776e/t/655ce779b9d47d342a93c890/1700587395994/stable_video_diffusion.pdf
+- access: closed
+  analysis: Large Video Dataset compared to publicly available research datasets on
+    general statistics before and after filtering.
+  created_date: 2023-11-21
+  datasheet: ''
+  dependencies:
+  - WebVid-10M
+  - CoCa
+  - V-BLIP
   description: Large Video Dataset is the dataset that trained Stable Video Diffusion,
     consisting of over 212 years of content.
-  created_date: 2023-11-21
-  url: https://static1.squarespace.com/static/6213c340453c3f502425776e/t/655ce779b9d47d342a93c890/1700587395994/stable_video_diffusion.pdf
-  datasheet: ''
-  modality: video with caption
-  size: 580M annotated video clip pairs
-  sample: []
-  analysis: Large Video Dataset compared to publicly available research datasets
-    on general statistics before and after filtering.
-  dependencies: [WebVid-10M, CoCa, V-BLIP]
-  included: ''
   excluded: ''
+  feedback: none
+  included: ''
+  intended_uses: ''
+  license: unknown
+  modality: video with caption
+  monitoring: ''
+  name: Large Video Dataset
+  nationality: UK
+  organization: Stability AI
+  prohibited_uses: ''
   quality_control: Dataset annotated with dense optical flow, and low optical flow
     videos are removed.
-  access: closed
-  license: unknown
-  intended_uses: ''
-  prohibited_uses: ''
-  monitoring: ''
-  feedback: none
-
-- type: application
-  name: Sky Replacer
-  organization: Stability AI
-  description: Sky Replacer is an exciting new tool that allows users to replace
-    the color and aesthetic of the sky in their original photos with a selection
-    of nine alternatives to improve the overall look and feel of the image.
-  created_date: 2023-11-01
-  url: https://clipdrop.co/real-estate/sky-replacer
-  dependencies: []
+  sample: []
+  size: 580M annotated video clip pairs
+  type: dataset
+  url: https://static1.squarespace.com/static/6213c340453c3f502425776e/t/655ce779b9d47d342a93c890/1700587395994/stable_video_diffusion.pdf
+- access: open
   adaptation: ''
-  output_space: image
-  quality_control: ''
-  access: open
-  license: unknown
-  terms_of_service: https://stability.ai/terms-of-use
-  intended_uses: ''
-  prohibited_uses: ''
-  monitoring: ''
-  feedback: ''
-  monthly_active_users: ''
-  user_distribution: ''
+  created_date: 2023-11-01
+  dependencies: []
+  description: Sky Replacer is an exciting new tool that allows users to replace the
+    color and aesthetic of the sky in their original photos with a selection of nine
+    alternatives to improve the overall look and feel of the image.
   failures: ''
-
-- type: model
-  name: StableLM 2
+  feedback: ''
+  intended_uses: ''
+  license: unknown
+  monitoring: ''
+  monthly_active_users: ''
+  name: Sky Replacer
+  nationality: UK
   organization: Stability AI
+  output_space: image
+  prohibited_uses: ''
+  quality_control: ''
+  terms_of_service: https://stability.ai/terms-of-use
+  type: application
+  url: https://clipdrop.co/real-estate/sky-replacer
+  user_distribution: ''
+- access: open
+  analysis: Evaluated on standard LLM benchmarks and in multilingual tasks compared
+    to similarly sized open-source models.
+  created_date: 2024-01-19
+  dependencies:
+  - RedPajama-Data
+  - The Pile
+  - RefinedWeb
+  - The Stack
+  - OpenWebText
+  - OpenWebMath
   description: StableLM 2 is a state-of-the-art 1.6 billion parameter small language
     model trained on multilingual data in English, Spanish, German, Italian, French,
     Portuguese, and Dutch.
-  created_date: 2024-01-19
-  url: https://stability.ai/news/introducing-stable-lm-2
-  model_card: https://huggingface.co/stabilityai/stablelm-2-1_6b
-  modality: text; text
-  analysis: Evaluated on standard LLM benchmarks and in multilingual tasks compared
-    to similarly sized open-source models.
-  size: 1.6B parameters (dense)
-  dependencies:
-    - RedPajama-Data
-    - The Pile
-    - RefinedWeb
-    - The Stack
-    - OpenWebText
-    - OpenWebMath
-  training_emissions: 11 tCO2eq
-  training_time: 92k GPU hours
-  training_hardware: 512 NVIDIA A100 40GB GPUs
-  quality_control: ''
-  access: open
+  feedback: https://huggingface.co/stabilityai/stablelm-2-1_6b/discussions
+  intended_uses: The model is intended to be used as a foundational base model for
+    application-specific fine-tuning. Developers must evaluate and fine-tune the model
+    for safe performance in downstream applications.
   license:
     explanation: License agreement can be found on https://huggingface.co/stabilityai/stablelm-2-1_6b/blob/main/LICENSE
     value: custom
-  intended_uses: The model is intended to be used as a foundational base model for
-    application-specific fine-tuning. Developers must evaluate and fine-tune the
-    model for safe performance in downstream applications.
-  prohibited_uses: ''
+  modality: text; text
+  model_card: https://huggingface.co/stabilityai/stablelm-2-1_6b
   monitoring: unknown
-  feedback: https://huggingface.co/stabilityai/stablelm-2-1_6b/discussions
-
-- type: model
-  name: Stable Cascade
+  name: StableLM 2
+  nationality: UK
   organization: Stability AI
-  description: Stable Cascade is built upon the Würstchen architecture and its main
-    difference to other models, like Stable Diffusion, is that it is working at
-    a much smaller latent space.
-  created_date: 2024-01-16
-  url: https://huggingface.co/stabilityai/stable-cascade
-  model_card: https://huggingface.co/stabilityai/stable-cascade
-  modality: text; image
-  analysis: Evaluated on image generation benchmarks in comparison to equal and
-    smaller-sized models.
-  size: unknown
-  dependencies: []
-  training_emissions: 2,276 kgCO2eq
-  training_time: 24,602 A100 GPU hours
-  training_hardware: Some number of A100 GPUs
+  prohibited_uses: ''
   quality_control: ''
-  access: open
+  size: 1.6B parameters (dense)
+  training_emissions: 11 tCO2eq
+  training_hardware: 512 NVIDIA A100 40GB GPUs
+  training_time: 92k GPU hours
+  type: model
+  url: https://stability.ai/news/introducing-stable-lm-2
+- access: open
+  analysis: Evaluated on image generation benchmarks in comparison to equal and smaller-sized
+    models.
+  created_date: 2024-01-16
+  dependencies: []
+  description: "Stable Cascade is built upon the W\xFCrstchen architecture and its\
+    \ main difference to other models, like Stable Diffusion, is that it is working\
+    \ at a much smaller latent space."
+  feedback: https://huggingface.co/stabilityai/stable-cascade/discussions
+  intended_uses: The model is intended for research purposes for now.
   license:
     explanation: License agreement can be found on https://github.com/Stability-AI/StableCascade/blob/master/WEIGHTS_LICENSE
     value: custom
-  intended_uses: The model is intended for research purposes for now.
-  prohibited_uses: The model was not trained to be factual or true representations
-    of people or events, and therefore using the model to generate such content
-    is out-of-scope for the abilities of this model. The model should not be used
-    in any way that violates Stability AI's Acceptable Use Policy.
+  modality: text; image
+  model_card: https://huggingface.co/stabilityai/stable-cascade
   monitoring: unknown
-  feedback: https://huggingface.co/stabilityai/stable-cascade/discussions
-
-- type: model
-  name: Stable Video 3D
+  name: Stable Cascade
+  nationality: UK
   organization: Stability AI
-  description: Stable Video 3D (SV3D) is a generative model based on Stable Video
-    Diffusion that takes in a still image of an object as a conditioning frame,
-    and generates an orbital video of that object.
-  created_date: 2024-03-18
-  url: https://stability.ai/news/introducing-stable-video-3d
-  model_card: https://huggingface.co/stabilityai/sv3d
-  modality: image; video
-  analysis: unknown
+  prohibited_uses: The model was not trained to be factual or true representations
+    of people or events, and therefore using the model to generate such content is
+    out-of-scope for the abilities of this model. The model should not be used in
+    any way that violates Stability AI's Acceptable Use Policy.
+  quality_control: ''
   size: unknown
-  dependencies: [Objaverse]
-  training_emissions: unknown
-  training_time: unknown
-  training_hardware: unknown
-  quality_control: unknown
-  access: open
+  training_emissions: 2,276 kgCO2eq
+  training_hardware: Some number of A100 GPUs
+  training_time: 24,602 A100 GPU hours
+  type: model
+  url: https://huggingface.co/stabilityai/stable-cascade
+- access: open
+  analysis: unknown
+  created_date: 2024-03-18
+  dependencies:
+  - Objaverse
+  description: Stable Video 3D (SV3D) is a generative model based on Stable Video
+    Diffusion that takes in a still image of an object as a conditioning frame, and
+    generates an orbital video of that object.
+  feedback: https://huggingface.co/stabilityai/sv3d/discussions
+  intended_uses: This model is intended to be used for generating orbital videos of
+    objects from still images.
   license: StabilityAI Non-Commercial Research Community License
-  intended_uses: This model is intended to be used for generating orbital videos
-    of objects from still images.
+  modality: image; video
+  model_card: https://huggingface.co/stabilityai/sv3d
+  monitoring: unknown
+  name: Stable Video 3D
+  nationality: UK
+  organization: Stability AI
   prohibited_uses: The model should not be used for generating factual or true representations
     of people or events, or in any way that violates Stability AIs Acceptable Use
     Policy.
-  monitoring: unknown
-  feedback: https://huggingface.co/stabilityai/sv3d/discussions
-
-- type: model
-  name: Stable Audio 2.0
-  organization: Stability AI
+  quality_control: unknown
+  size: unknown
+  training_emissions: unknown
+  training_hardware: unknown
+  training_time: unknown
+  type: model
+  url: https://stability.ai/news/introducing-stable-video-3d
+- access: open
+  analysis: none
+  created_date: 2024-04-03
+  dependencies:
+  - AudioSparx
   description: Stable Audio 2.0 sets a new standard in AI-generated audio, producing
     high-quality, full tracks with coherent musical structure up to three minutes
     in length at 44.1kHz stereo.
-  created_date: 2024-04-03
-  url: https://stability-ai.squarespace.com/news/stable-audio-2-0
-  model_card: none
+  feedback: none
+  intended_uses: It can be used to generate melodies, backing tracks, stems, and sound
+    effects.
+  license: unknown
   modality: audio, text; audio
-  analysis: none
-  size: unknown
-  dependencies: [AudioSparx]
-  training_emissions: unknown
-  training_time: unknown
-  training_hardware: unknown
+  model_card: none
+  monitoring: Advanced content recognition is used to maintain compliance and prevent
+    copyright infringement.
+  name: Stable Audio 2.0
+  nationality: UK
+  organization: Stability AI
+  prohibited_uses: Uploading copyrighted material for transformation.
   quality_control: To protect creator copyrights, for audio uploads, Stability AI
     partners with Audible Magic to use their content recognition (ACR) technology
     to power real-time content matching and prevent copyright infringement. Opt-out
     requests were honored during the training phase.
-  access: open
-  license: unknown
-  intended_uses: It can be used to generate melodies, backing tracks, stems, and
-    sound effects.
-  prohibited_uses: Uploading copyrighted material for transformation.
-  monitoring: Advanced content recognition is used to maintain compliance and prevent
-    copyright infringement.
-  feedback: none
+  size: unknown
+  training_emissions: unknown
+  training_hardware: unknown
+  training_time: unknown
+  type: model
+  url: https://stability-ai.squarespace.com/news/stable-audio-2-0

@@ -1,137 +1,147 @@
----
-- type: dataset
-  name: Luminous dataset
-  organization: Aleph Alpha
-  description: The dataset used to train the Luminous models.
-  created_date:
-    explanation: Date the models were announced by the Aleph Alpha twitter account
-    value: 2022-04-14
-  url: none
-  datasheet: none
-  modality: text
-  size: unknown
-  sample: []
+- access: closed
   analysis: unknown
-  dependencies: []
-  included: unknown
-  excluded: unknown
-  quality_control: unknown
-  access: closed
-  license: unknown
-  intended_uses: unknown
-  prohibited_uses: unknown
-  monitoring: none
-  feedback: none
-- type: model
-  name: Luminous
-  organization: Aleph Alpha
-  description: Luminous is a family of multilingual language models
   created_date:
     explanation: Date the models were announced by the Aleph Alpha twitter account
     value: 2022-04-14
-  url: https://twitter.com/Aleph__Alpha/status/1514576711492542477
-  model_card: ''
-  modality: text; text
-  analysis: ''
-  size: 200B parameters (dense)
-  dependencies: [Luminous dataset]
-  training_emissions: unknown
-  training_time: unknown
-  training_hardware: unknown
-  quality_control: ''
-  access:
+  datasheet: none
+  dependencies: []
+  description: The dataset used to train the Luminous models.
+  excluded: unknown
+  feedback: none
+  included: unknown
+  intended_uses: unknown
+  license: unknown
+  modality: text
+  monitoring: none
+  name: Luminous dataset
+  nationality: Germany
+  organization: Aleph Alpha
+  prohibited_uses: unknown
+  quality_control: unknown
+  sample: []
+  size: unknown
+  type: dataset
+  url: none
+- access:
     explanation: Paid API product
     value: limited
-  license: none
-  intended_uses: ''
-  prohibited_uses: ''
-  monitoring: ''
-  feedback: ''
-- type: application
-  name: Aleph Alpha API
-  organization: Aleph Alpha
-  description: The Aleph Alpha API serves a family of text-only language models
-    (Luminous) and multimodal text-and-image models (Magma).
+  analysis: ''
   created_date:
-    explanation: "Date the Aleph Alpha Python API client was first available based\
-      \ on to the [PyPi package history](https://pypi.org/project/aleph-alpha-client/1.0.0/)\n"
-    value: 2021-09-30
-  url: https://www.aleph-alpha.com/
-  dependencies: [Luminous]
-  adaptation: ''
-  output_space: The text models provide text outputs given text inputs. The multimodal
-    models provide text completions given text and image inputs.
+    explanation: Date the models were announced by the Aleph Alpha twitter account
+    value: 2022-04-14
+  dependencies:
+  - Luminous dataset
+  description: Luminous is a family of multilingual language models
+  feedback: ''
+  intended_uses: ''
+  license: none
+  modality: text; text
+  model_card: ''
+  monitoring: ''
+  name: Luminous
+  nationality: Germany
+  organization: Aleph Alpha
+  prohibited_uses: ''
   quality_control: ''
-  access:
+  size: 200B parameters (dense)
+  training_emissions: unknown
+  training_hardware: unknown
+  training_time: unknown
+  type: model
+  url: https://twitter.com/Aleph__Alpha/status/1514576711492542477
+- access:
     explanation: The API is a paid product. Refer to the [[API documentation]](https://docs.aleph-alpha.com/docs/introduction/luminous/)
       for further details.
     value: limited
+  adaptation: ''
+  created_date:
+    explanation: 'Date the Aleph Alpha Python API client was first available based
+      on to the [PyPi package history](https://pypi.org/project/aleph-alpha-client/1.0.0/)
+
+      '
+    value: 2021-09-30
+  dependencies:
+  - Luminous
+  description: The Aleph Alpha API serves a family of text-only language models (Luminous)
+    and multimodal text-and-image models (Magma).
+  failures: unknown
+  feedback: unknown
+  intended_uses: unknown
   license:
     explanation: No license was found.
     value: none
-  terms_of_service: https://www.aleph-alpha.com/terms-conditions
-  intended_uses: unknown
-  prohibited_uses: unknown
   monitoring: unknown
-  feedback: unknown
   monthly_active_users: unknown
-  user_distribution: unknown
-  failures: unknown
-- type: model
-  name: MAGMA
+  name: Aleph Alpha API
+  nationality: Germany
   organization: Aleph Alpha
-  description: An autoregressive VL model that is able to generate text from an
-    arbitrary combination of visual and textual input
-  created_date: 2022-10-24
-  url: https://arxiv.org/pdf/2112.05253.pdf
-  model_card: ''
-  modality: image, text; text
-  analysis: Evaluated on the OKVQA benchmark as a fully open-ended generative task.
-  size: 6B parameters (dense)
-  dependencies: [GPT-J, CLIP]
-  training_emissions: ''
-  training_time: ''
-  training_hardware: 32 A100 GPUs
+  output_space: The text models provide text outputs given text inputs. The multimodal
+    models provide text completions given text and image inputs.
+  prohibited_uses: unknown
   quality_control: ''
-  access: open
-  license: MIT
-  intended_uses: ''
-  prohibited_uses: ''
-  monitoring: ''
+  terms_of_service: https://www.aleph-alpha.com/terms-conditions
+  type: application
+  url: https://www.aleph-alpha.com/
+  user_distribution: unknown
+- access: open
+  analysis: Evaluated on the OKVQA benchmark as a fully open-ended generative task.
+  created_date: 2022-10-24
+  dependencies:
+  - GPT-J
+  - CLIP
+  description: An autoregressive VL model that is able to generate text from an arbitrary
+    combination of visual and textual input
   feedback: ''
-- type: model
-  name: Pharia-1-LLM-7B
+  intended_uses: ''
+  license: MIT
+  modality: image, text; text
+  model_card: ''
+  monitoring: ''
+  name: MAGMA
+  nationality: Germany
   organization: Aleph Alpha
-  description: Pharia-1-LLM-7B is a model that falls within the Pharia-1-LLM model
-    family. It is designed to deliver short, controlled responses that match the
-    performance of leading open-source models around 7-8 billion parameters. The
-    model is culturally and linguistically tuned for German, French, and Spanish
-    languages. It is trained on carefully curated data in line with relevant EU
-    and national regulations. The model shows improved token efficiency and is particularly
-    effective in domain-specific applications, especially in the automotive and
-    engineering industries. It can also be aligned to user preferences, making it
-    appropriate for critical applications without the risk of shut-down behaviour.
+  prohibited_uses: ''
+  quality_control: ''
+  size: 6B parameters (dense)
+  training_emissions: ''
+  training_hardware: 32 A100 GPUs
+  training_time: ''
+  type: model
+  url: https://arxiv.org/pdf/2112.05253.pdf
+- access: open
+  analysis: Extensive evaluations were done with ablation experiments performed on
+    pre-training benchmarks such as lambada, triviaqa, hellaswag, winogrande, webqs,
+    arc, and boolq. Direct comparisons were also performed with applications like
+    GPT and Llama 2.
   created_date: 2024-09-08
-  url: https://aleph-alpha.com/introducing-pharia-1-llm-transparent-and-compliant/#:~:text=Pharia%2D1%2DLLM%2D7B
-  model_card: unknown
-  modality: text; text
-  analysis: Extensive evaluations were done with ablation experiments performed
-    on pre-training benchmarks such as lambada, triviaqa, hellaswag, winogrande,
-    webqs, arc, and boolq. Direct comparisons were also performed with applications
-    like GPT and Llama 2.
-  size: 7B parameters
   dependencies: []
-  training_emissions: Unknown
-  training_time: Unknown
-  training_hardware: Unknown
+  description: Pharia-1-LLM-7B is a model that falls within the Pharia-1-LLM model
+    family. It is designed to deliver short, controlled responses that match the performance
+    of leading open-source models around 7-8 billion parameters. The model is culturally
+    and linguistically tuned for German, French, and Spanish languages. It is trained
+    on carefully curated data in line with relevant EU and national regulations. The
+    model shows improved token efficiency and is particularly effective in domain-specific
+    applications, especially in the automotive and engineering industries. It can
+    also be aligned to user preferences, making it appropriate for critical applications
+    without the risk of shut-down behaviour.
+  feedback: Feedback can be sent to support@aleph-alpha.com.
+  intended_uses: The model is intended for use in domain-specific applications, particularly
+    in the automotive and engineering industries. It can also be tailored to user
+    preferences.
+  license: Aleph Open
+  modality: text; text
+  model_card: unknown
+  monitoring: Unknown
+  name: Pharia-1-LLM-7B
+  nationality: Germany
+  organization: Aleph Alpha
+  prohibited_uses: Unknown
   quality_control: The model comes with additional safety guardrails via alignment
     methods to ensure safe usage. Training data is carefully curated to ensure compliance
     with EU and national regulations.
-  access: open
-  license: Aleph Open
-  intended_uses: The model is intended for use in domain-specific applications,
-    particularly in the automotive and engineering industries. It can also be tailored
-    to user preferences.
-  prohibited_uses: Unknown
-  monitoring: Unknown
-  feedback: Feedback can be sent to support@aleph-alpha.com.
+  size: 7B parameters
+  training_emissions: Unknown
+  training_hardware: Unknown
+  training_time: Unknown
+  type: model
+  url: https://aleph-alpha.com/introducing-pharia-1-llm-transparent-and-compliant/#:~:text=Pharia%2D1%2DLLM%2D7B

@@ -1,25 +1,26 @@
----
-- type: dataset
-  name: OpenWebMath
-  organization: University of Toronto
+- access: open
+  analysis: Compared models trained on OpenWebMath for 1 epoch to models trained on
+    The Pile and ProofPile on mathematics benchmarks.
+  created_date: 2023-10-10
+  datasheet: Can be found at section E of https://arxiv.org/pdf/2310.06786.pdf
+  dependencies:
+  - Common Crawl
   description: OpenWebMath is an open dataset containing 14.7B tokens of mathematical
     webpages from Common Crawl, inspired by Minerva.
-  created_date: 2023-10-10
-  url: https://arxiv.org/pdf/2310.06786.pdf
-  datasheet: Can be found at section E of https://arxiv.org/pdf/2310.06786.pdf
-  modality: text, mathematical tokens
-  size: 14.7B documents
-  sample: []
-  analysis: Compared models trained on OpenWebMath for 1 epoch to models trained
-    on The Pile and ProofPile on mathematics benchmarks.
-  dependencies: [Common Crawl]
-  included: ''
   excluded: ''
+  feedback: https://huggingface.co/datasets/open-web-math/open-web-math/discussions
+  included: ''
+  intended_uses: Language model pretraining, finetuning, and evaluation.
+  license: ODC-By 1.0
+  modality: text, mathematical tokens
+  monitoring: none
+  name: OpenWebMath
+  nationality: Canada
+  organization: University of Toronto
+  prohibited_uses: Any tasks which may considered irresponsible or harmful.
   quality_control: Documents are filtered, processed for mathematical value, deduplicated,
     and then the largest documents are manually inspected for quality.
-  access: open
-  license: ODC-By 1.0
-  intended_uses: Language model pretraining, finetuning, and evaluation.
-  prohibited_uses: Any tasks which may considered irresponsible or harmful.
-  monitoring: none
-  feedback: https://huggingface.co/datasets/open-web-math/open-web-math/discussions
+  sample: []
+  size: 14.7B documents
+  type: dataset
+  url: https://arxiv.org/pdf/2310.06786.pdf

@@ -1,24 +1,24 @@
----
-- type: model
-  name: InternLM
-  organization: InternLM
+- access: open
+  analysis: Evaluated on the dimensions proposed by OpenCompass in comparison to other
+    LLMs.
+  created_date: 2023-09-20
+  dependencies: []
   description: InternLM is an LLM pre-trained on over 2.3T Tokens containing high-quality
     English, Chinese, and code data.
-  created_date: 2023-09-20
-  url: https://github.com/InternLM/InternLM
-  model_card: https://huggingface.co/internlm/internlm-20b
-  modality: text; text
-  analysis: Evaluated on the dimensions proposed by OpenCompass in comparison to
-    other LLMs.
-  size: 7B parameters (dense)
-  dependencies: []
-  training_emissions: unknown
-  training_time: unknown
-  training_hardware: unknown
-  quality_control: ''
-  access: open
-  license: Apache 2.0
-  intended_uses: ''
-  prohibited_uses: ''
-  monitoring: unknown
   feedback: https://huggingface.co/internlm/internlm-20b/discussions
+  intended_uses: ''
+  license: Apache 2.0
+  modality: text; text
+  model_card: https://huggingface.co/internlm/internlm-20b
+  monitoring: unknown
+  name: InternLM
+  nationality: China
+  organization: InternLM
+  prohibited_uses: ''
+  quality_control: ''
+  size: 7B parameters (dense)
+  training_emissions: unknown
+  training_hardware: unknown
+  training_time: unknown
+  type: model
+  url: https://github.com/InternLM/InternLM

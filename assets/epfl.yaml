@@ -1,23 +1,23 @@
----
-- type: model
-  name: MediTron
-  organization: EPFL, Idiap Research Institute, OpenAssistant, Yale
-  description: Meditron is a large-scale medical LLM that remains open-source.
-  created_date: 2023-11-27
-  url: https://arxiv.org/pdf/2311.16079.pdf
-  model_card: https://huggingface.co/epfl-llm/meditron-70b
-  modality: text; text
+- access: open
   analysis: Evaluated on TruthfulQA as main evaluation benchmark.
-  size: 70B parameters (dense)
+  created_date: 2023-11-27
   dependencies: []
-  training_emissions: unknown
-  training_time: unknown
-  training_hardware: unknown
-  quality_control: ''
-  access: open
-  license: LLaMA 2
+  description: Meditron is a large-scale medical LLM that remains open-source.
+  feedback: https://huggingface.co/epfl-llm/meditron-7b/discussions
   intended_uses: Medical exam question answering, supporting differential diagnosis,
     disease information.
-  prohibited_uses: ''
+  license: LLaMA 2
+  modality: text; text
+  model_card: https://huggingface.co/epfl-llm/meditron-70b
   monitoring: none
-  feedback: https://huggingface.co/epfl-llm/meditron-7b/discussions
+  name: MediTron
+  nationality: unknown
+  organization: EPFL, Idiap Research Institute, OpenAssistant, Yale
+  prohibited_uses: ''
+  quality_control: ''
+  size: 70B parameters (dense)
+  training_emissions: unknown
+  training_hardware: unknown
+  training_time: unknown
+  type: model
+  url: https://arxiv.org/pdf/2311.16079.pdf

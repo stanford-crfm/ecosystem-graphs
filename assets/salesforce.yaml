@@ -1,177 +1,185 @@
----
-- type: model
-  name: CodeGen
-  organization: Salesforce
-  description: CodeGen is a language model for code
-  created_date:
-    explanation: Date model paper was released
-    value: 2022-03-25
-  url: https://arxiv.org/abs/2203.13474
-  model_card: ''
-  modality: code, text; code, text
-  analysis: ''
-  size: 16B parameters (dense)
-  dependencies: []
-  training_emissions: ''
-  training_time: ''
-  training_hardware: Unspecified Salesforce Compute (TPU-V4s)
-  quality_control: ''
-  access:
+- access:
     explanation: Model weights are available for download with links in the [[GitHub
       repo]](https://github.com/salesforce/CodeGen)
     value: open
+  analysis: ''
+  created_date:
+    explanation: Date model paper was released
+    value: 2022-03-25
+  dependencies: []
+  description: CodeGen is a language model for code
+  feedback: ''
+  intended_uses: ''
   license: none (model weights), BSD-3-Clause (code)
-  intended_uses: ''
-  prohibited_uses: ''
-  monitoring: ''
-  feedback: ''
-- type: model
-  name: BLIP
-  organization: Salesforce
-  description: ''
-  created_date: 2022-01-28
-  url: https://arxiv.org/abs/2201.12086
+  modality: code, text; code, text
   model_card: ''
-  modality: text; image
-  analysis: ''
-  size: unknown
-  dependencies:
-    - ViT-B
-    - BERT
-    - COCO
-    - Visual Genome
-    - Conceptual Captions
-    - Conceptual 12M
-    - SBU Captions
-    - LAION-115M
+  monitoring: ''
+  name: CodeGen
+  nationality: USA
+  organization: Salesforce
+  prohibited_uses: ''
+  quality_control: ''
+  size: 16B parameters (dense)
   training_emissions: ''
+  training_hardware: Unspecified Salesforce Compute (TPU-V4s)
   training_time: ''
-  training_hardware: ''
-  quality_control: ''
-  access: open
-  license: BSD-3-Clause
-  intended_uses: ''
-  prohibited_uses: ''
-  monitoring: ''
-  feedback: ''
-- type: dataset
-  name: LAION-115M
-  organization: Salesforce
-  description: ''
-  created_date: 2022-01-28
-  url: https://arxiv.org/abs/2201.12086
-  datasheet: ''
-  modality: image, text
-  size: 115M image-text pairs
-  sample: []
+  type: model
+  url: https://arxiv.org/abs/2203.13474
+- access: open
   analysis: ''
-  dependencies: [LAION-400M]
-  included: ''
-  excluded: ''
-  quality_control: ''
-  access: open
+  created_date: 2022-01-28
+  dependencies:
+  - ViT-B
+  - BERT
+  - COCO
+  - Visual Genome
+  - Conceptual Captions
+  - Conceptual 12M
+  - SBU Captions
+  - LAION-115M
+  description: ''
+  feedback: ''
+  intended_uses: ''
   license: BSD-3-Clause
-  intended_uses: ''
-  prohibited_uses: ''
+  modality: text; image
+  model_card: ''
   monitoring: ''
-  feedback: ''
-- type: application
-  name: EinsteinGPT
+  name: BLIP
+  nationality: USA
   organization: Salesforce
-  description: EinsteinGPT is generative AI for customer relationship management
-    (CRFM).
-  created_date: 2023-03-07
-  url: https://www.salesforce.com/products/einstein/overview/?d=cta-body-promo-8
-  dependencies: [ChatGPT API]
-  adaptation: ''
-  output_space: ''
+  prohibited_uses: ''
   quality_control: ''
-  access: limited
-  license: unknown
-  terms_of_service: ''
-  intended_uses: ''
-  prohibited_uses: ''
-  monitoring: ''
+  size: unknown
+  training_emissions: ''
+  training_hardware: ''
+  training_time: ''
+  type: model
+  url: https://arxiv.org/abs/2201.12086
+- access: open
+  analysis: ''
+  created_date: 2022-01-28
+  datasheet: ''
+  dependencies:
+  - LAION-400M
+  description: ''
+  excluded: ''
   feedback: ''
-  monthly_active_users: ''
-  user_distribution: ''
-  failures: ''
-- type: model
-  name: BLIP-2
+  included: ''
+  intended_uses: ''
+  license: BSD-3-Clause
+  modality: image, text
+  monitoring: ''
+  name: LAION-115M
+  nationality: USA
   organization: Salesforce
+  prohibited_uses: ''
+  quality_control: ''
+  sample: []
+  size: 115M image-text pairs
+  type: dataset
+  url: https://arxiv.org/abs/2201.12086
+- access: limited
+  adaptation: ''
+  created_date: 2023-03-07
+  dependencies:
+  - ChatGPT API
+  description: EinsteinGPT is generative AI for customer relationship management (CRFM).
+  failures: ''
+  feedback: ''
+  intended_uses: ''
+  license: unknown
+  monitoring: ''
+  monthly_active_users: ''
+  name: EinsteinGPT
+  nationality: USA
+  organization: Salesforce
+  output_space: ''
+  prohibited_uses: ''
+  quality_control: ''
+  terms_of_service: ''
+  type: application
+  url: https://www.salesforce.com/products/einstein/overview/?d=cta-body-promo-8
+  user_distribution: ''
+- access: open
+  analysis: BLIP-2 achieves state-of-the-art performance on various vision-language
+    tasks, despite having significantly fewer trainable parameters than existing methods
+  created_date: 2023-01-30
+  dependencies:
+  - OPT
   description: BLIP-2 is a model that employs a generic and efficient pretraining
     strategy that bootstraps vision-language pre-training from off-the-shelf frozen
     pre-trained image encoders and frozen large language models.
-  created_date: 2023-01-30
-  url: https://arxiv.org/pdf/2301.12597.pdf
-  model_card: https://huggingface.co/Salesforce/blip2-opt-2.7b
-  modality: text; image
-  analysis: BLIP-2 achieves state-of-the-art performance on various vision-language
-    tasks, despite having significantly fewer trainable parameters than existing
-    methods
-  size: 2.7B parameters (dense)
-  dependencies: [OPT]
-  training_emissions: unknown
-  training_time: less than 9 days
-  training_hardware: unknown
-  quality_control: ''
-  access: open
-  license: MIT
-  intended_uses: ''
-  prohibited_uses: ''
-  monitoring: ''
   feedback: https://huggingface.co/Salesforce/blip2-opt-2.7b/discussions
-- type: model
-  name: Moirai
+  intended_uses: ''
+  license: MIT
+  modality: text; image
+  model_card: https://huggingface.co/Salesforce/blip2-opt-2.7b
+  monitoring: ''
+  name: BLIP-2
+  nationality: USA
   organization: Salesforce
-  description: Moirai is a cutting-edge time series foundation model, offering universal
-    forecasting capabilities. It stands out as a versatile time series forecasting
-    model capable of addressing diverse forecasting tasks across multiple domains,
-    frequencies, and variables in a zero-shot manner.
-  created_date: 2024-03-19
-  url: https://blog.salesforceairesearch.com/moirai/
-  model_card: https://huggingface.co/Salesforce/moirai-1.0-R-large
-  modality: time-series; time-series
+  prohibited_uses: ''
+  quality_control: ''
+  size: 2.7B parameters (dense)
+  training_emissions: unknown
+  training_hardware: unknown
+  training_time: less than 9 days
+  type: model
+  url: https://arxiv.org/pdf/2301.12597.pdf
+- access: open
   analysis: Moirai has undergone a comprehensive evaluation in both in-distribution
     and out-of-distribution settings. It demonstrated its capabilities as a zero-shot
     forecaster and delivered competitive or superior performance compared to full-shot
     models.
-  size: 311M parameters
-  dependencies: [LOTSA]
-  training_emissions: unknown
-  training_time: unknown
-  training_hardware: NVIDIA A100 40G GPUs
+  created_date: 2024-03-19
+  dependencies:
+  - LOTSA
+  description: Moirai is a cutting-edge time series foundation model, offering universal
+    forecasting capabilities. It stands out as a versatile time series forecasting
+    model capable of addressing diverse forecasting tasks across multiple domains,
+    frequencies, and variables in a zero-shot manner.
+  feedback: https://huggingface.co/Salesforce/moirai-1.0-R-large/discussions
+  intended_uses: Moirai can be used for time series forecasting in multiple domains.
+    It offers robust zero-shot forecasting capabilities and eliminates the need for
+    additional data, extensive computational resources, and expert input for achieving
+    accurate forecasts.
+  license: Apache 2.0
+  modality: time-series; time-series
+  model_card: https://huggingface.co/Salesforce/moirai-1.0-R-large
+  monitoring: unknown
+  name: Moirai
+  nationality: USA
+  organization: Salesforce
+  prohibited_uses: unknown
   quality_control: The performance of Moirai was evaluated through in-distribution
     and out-of-distribution settings.
-  access: open
-  license: Apache 2.0
-  intended_uses: Moirai can be used for time series forecasting in multiple domains.
-    It offers robust zero-shot forecasting capabilities and eliminates the need
-    for additional data, extensive computational resources, and expert input for
-    achieving accurate forecasts.
-  prohibited_uses: unknown
-  monitoring: unknown
-  feedback: https://huggingface.co/Salesforce/moirai-1.0-R-large/discussions
-- type: dataset
-  name: LOTSA
-  organization: Salesforce
-  description: LOTSA is the largest collection of open time series datasets with
-    27B observations across nine domains.
-  created_date: 2024-03-19
-  url: https://arxiv.org/pdf/2402.02592.pdf
-  datasheet: https://huggingface.co/datasets/Salesforce/lotsa_data
-  modality: time-series
-  size: 27B observations
-  sample: []
+  size: 311M parameters
+  training_emissions: unknown
+  training_hardware: NVIDIA A100 40G GPUs
+  training_time: unknown
+  type: model
+  url: https://blog.salesforceairesearch.com/moirai/
+- access: open
   analysis: ''
+  created_date: 2024-03-19
+  datasheet: https://huggingface.co/datasets/Salesforce/lotsa_data
   dependencies: []
+  description: LOTSA is the largest collection of open time series datasets with 27B
+    observations across nine domains.
+  excluded: ''
+  feedback: https://huggingface.co/datasets/Salesforce/lotsa_data/discussions
   included: domain observations in energy, transport, climate, cloudops, web, sales,
     nature, econ/finance, and healthcare
-  excluded: ''
-  quality_control: ''
-  access: open
-  license: Apache 2.0
   intended_uses: pre-training Large Time Series Models
-  prohibited_uses: ''
+  license: Apache 2.0
+  modality: time-series
   monitoring: ''
-  feedback: https://huggingface.co/datasets/Salesforce/lotsa_data/discussions
+  name: LOTSA
+  nationality: USA
+  organization: Salesforce
+  prohibited_uses: ''
+  quality_control: ''
+  sample: []
+  size: 27B observations
+  type: dataset
+  url: https://arxiv.org/pdf/2402.02592.pdf

@@ -1,302 +1,323 @@
----
-- type: dataset
-  name: NaturalInstructions-v2
-  organization: AI2
-  description: ''
-  created_date: 2022-04-16
-  url: https://arxiv.org/abs/2204.07705
-  datasheet: ''
-  modality: NLP tasks
-  size: 1600 tasks
-  sample: []
+- access: open
   analysis: ''
-  dependencies: []
-  included: ''
-  excluded: ''
-  quality_control: ''
-  access: open
-  license: Apache 2.0
-  intended_uses: ''
-  prohibited_uses: ''
-  monitoring: ''
-  feedback: ''
-- type: dataset
-  name: SODA
-  organization: AI2
-  description: SODA is the first publicly available, million-scale, high-quality
-    dialogue dataset covering a wide range of social interactions.
-  created_date: 2023-05-24
-  url: https://arxiv.org/pdf/2212.10465.pdf
-  datasheet: https://huggingface.co/datasets/allenai/soda
-  modality: text
-  size: 1.5M dialogues
-  sample: []
-  analysis: Randomly sampled dialogues from dataset are evaluated according to six
-    established criteria of natural flow, context dependence, topic consistency,
-    speaker consistency, specificity, and overall.
-  dependencies: []
-  included: ''
-  excluded: ''
-  quality_control: ''
-  access: open
-  license: CC BY 4.0
-  intended_uses: ''
-  prohibited_uses: ''
-  monitoring: ''
-  feedback: ''
-- type: dataset
-  name: Multimodal C4
-  organization: AI2
-  description: An augmentation of C4 with images added and made openly available.
-  created_date: 2023-06-09
-  url: https://arxiv.org/pdf/2304.06939.pdf
+  created_date: 2022-04-16
   datasheet: ''
-  modality: image, text
-  size: 43B English tokens with 101.2M documents and 571M images
+  dependencies: []
+  description: ''
+  excluded: ''
+  feedback: ''
+  included: ''
+  intended_uses: ''
+  license: Apache 2.0
+  modality: NLP tasks
+  monitoring: ''
+  name: NaturalInstructions-v2
+  nationality: USA
+  organization: AI2
+  prohibited_uses: ''
+  quality_control: ''
   sample: []
+  size: 1600 tasks
+  type: dataset
+  url: https://arxiv.org/abs/2204.07705
+- access: open
+  analysis: Randomly sampled dialogues from dataset are evaluated according to six
+    established criteria of natural flow, context dependence, topic consistency, speaker
+    consistency, specificity, and overall.
+  created_date: 2023-05-24
+  datasheet: https://huggingface.co/datasets/allenai/soda
+  dependencies: []
+  description: SODA is the first publicly available, million-scale, high-quality dialogue
+    dataset covering a wide range of social interactions.
+  excluded: ''
+  feedback: ''
+  included: ''
+  intended_uses: ''
+  license: CC BY 4.0
+  modality: text
+  monitoring: ''
+  name: SODA
+  nationality: USA
+  organization: AI2
+  prohibited_uses: ''
+  quality_control: ''
+  sample: []
+  size: 1.5M dialogues
+  type: dataset
+  url: https://arxiv.org/pdf/2212.10465.pdf
+- access: open
   analysis: Conducted experiments on models trained with Multimodal C4 in comparison
     to models trained on single image/caption datasets
-  dependencies: [C4]
-  included: ''
+  created_date: 2023-06-09
+  datasheet: ''
+  dependencies:
+  - C4
+  description: An augmentation of C4 with images added and made openly available.
   excluded: ''
-  quality_control: ''
-  access: open
+  feedback: ''
+  included: ''
+  intended_uses: ''
   license:
     explanation: Data license is under ODC-By. Code license is under MIT
     value: ODC-By
-  intended_uses: ''
-  prohibited_uses: ''
+  modality: image, text
   monitoring: ''
-  feedback: ''
-- type: model
-  name: COSMO
+  name: Multimodal C4
+  nationality: USA
   organization: AI2
-  description: COSMO is a conversation agent with greater generalizability on both
-    in- and out-of-domain chitchat datasets
-  created_date: 2023-05-24
-  url: https://arxiv.org/pdf/2212.10465.pdf
-  model_card: https://huggingface.co/allenai/cosmo-xl
-  modality: text; text
+  prohibited_uses: ''
+  quality_control: ''
+  sample: []
+  size: 43B English tokens with 101.2M documents and 571M images
+  type: dataset
+  url: https://arxiv.org/pdf/2304.06939.pdf
+- access: open
   analysis: Evaluated by human testers on generalization capabilities and responses
     compared to other chatbots.
-  size: 11B parameters (dense)
-  dependencies: [SODA, ProsocialDialog, T5]
-  training_emissions: unknown
-  training_time: unknown
-  training_hardware: v3-128 TPU accelerators with batch size 256
-  quality_control: ''
-  access: open
-  license: ''
-  intended_uses: ''
-  prohibited_uses: ''
-  monitoring: ''
+  created_date: 2023-05-24
+  dependencies:
+  - SODA
+  - ProsocialDialog
+  - T5
+  description: COSMO is a conversation agent with greater generalizability on both
+    in- and out-of-domain chitchat datasets
   feedback: https://huggingface.co/allenai/cosmo-xl/discussions
-- type: dataset
-  name: Dolma
+  intended_uses: ''
+  license: ''
+  modality: text; text
+  model_card: https://huggingface.co/allenai/cosmo-xl
+  monitoring: ''
+  name: COSMO
+  nationality: USA
   organization: AI2
-  description: Dolma is a dataset of 3 trillion tokens from a diverse mix of web
-    content, academic publications, code, books, and encyclopedic materials
-  created_date: 2023-08-18
-  url: https://blog.allenai.org/dolma-3-trillion-tokens-open-llm-corpus-9a0ff4b8da64
-  datasheet: https://drive.google.com/file/d/12gOf5I5RytsD159nSP7iim_5zN31FCXq/view
-  modality: text
-  size: 3T tokens
-  sample: []
-  analysis: Compared with other open and closed datasets in regards to size and
-    quality control.
-  dependencies: []
-  included: ''
-  excluded: ''
+  prohibited_uses: ''
   quality_control: ''
-  access: open
+  size: 11B parameters (dense)
+  training_emissions: unknown
+  training_hardware: v3-128 TPU accelerators with batch size 256
+  training_time: unknown
+  type: model
+  url: https://arxiv.org/pdf/2212.10465.pdf
+- access: open
+  analysis: Compared with other open and closed datasets in regards to size and quality
+    control.
+  created_date: 2023-08-18
+  datasheet: https://drive.google.com/file/d/12gOf5I5RytsD159nSP7iim_5zN31FCXq/view
+  dependencies: []
+  description: Dolma is a dataset of 3 trillion tokens from a diverse mix of web content,
+    academic publications, code, books, and encyclopedic materials
+  excluded: ''
+  feedback: ''
+  included: ''
+  intended_uses: ''
   license:
     explanation: license can be found at https://allenai.org/impact-license
     value: AI2 ImpACT
-  intended_uses: ''
-  prohibited_uses: ''
+  modality: text
   monitoring: Quality filtration, deduplication, and risk mitigation via logistic
     qualifiers and regular expressions used.
-  feedback: ''
-
-- type: dataset
-  name: Tulu-V2-mix
+  name: Dolma
+  nationality: USA
   organization: AI2
-  description: Tulu-V2-mix is a dataset composed of many high-quality instruction
-    datasets that results in stronger performance across a variety of reasoning
-    and knowledge-probing tasks.
+  prohibited_uses: ''
+  quality_control: ''
+  sample: []
+  size: 3T tokens
+  type: dataset
+  url: https://blog.allenai.org/dolma-3-trillion-tokens-open-llm-corpus-9a0ff4b8da64
+- access: open
+  analysis: Models trained with dataset evaluated on downstream performance.
   created_date: 2023-11-20
-  url: https://arxiv.org/pdf/2311.10702.pdf
   datasheet: https://huggingface.co/datasets/allenai/tulu-v2-sft-mixture
+  dependencies:
+  - FLAN Collection
+  - Open Assistant 1
+  - ShareGPT
+  - Alpaca dataset
+  - Code Alpaca
+  - LIMA
+  - WizardLM
+  - OpenOrca
+  description: Tulu-V2-mix is a dataset composed of many high-quality instruction
+    datasets that results in stronger performance across a variety of reasoning and
+    knowledge-probing tasks.
+  excluded: ''
+  feedback: https://huggingface.co/datasets/allenai/tulu-v2-sft-mixture/discussions
+  included: ''
+  intended_uses: ''
+  license: ODC-BY
   modality: text
+  monitoring: ''
+  name: Tulu-V2-mix
+  nationality: USA
+  organization: AI2
+  prohibited_uses: ''
+  quality_control: ''
+  sample: []
   size:
-    value: unknown
     explanation: Magnitude of size is around 100M tokens, given the length distribution
       of dataset provided in model card.
-  sample: []
-  analysis: Models trained with dataset evaluated on downstream performance.
-  dependencies:
-    - FLAN Collection
-    - Open Assistant 1
-    - ShareGPT
-    - Alpaca dataset
-    - Code Alpaca
-    - LIMA
-    - WizardLM
-    - OpenOrca
-  included: ''
-  excluded: ''
-  quality_control: ''
-  access: open
-  license: ODC-BY
-  intended_uses: ''
-  prohibited_uses: ''
-  monitoring: ''
-  feedback: https://huggingface.co/datasets/allenai/tulu-v2-sft-mixture/discussions
-
-- type: model
-  name: Tulu 2
-  organization: AI2
-  description: Tulu 2 is a language model trained on the new Tulu-v2-mix dataset
-    and fine-tuned on more state of the art language models.
-  created_date: 2023-11-20
+    value: unknown
+  type: dataset
   url: https://arxiv.org/pdf/2311.10702.pdf
-  model_card: https://huggingface.co/allenai/tulu-2-70b
-  modality: text; text
+- access: open
   analysis: Evaluated on MT-Bench and AlpacaEval. compared to other chatbots.
-  size: 70B parameters (dense)
-  dependencies: [LLaMA 2, Tulu-V2-mix]
-  training_emissions: unknown
-  training_time: unknown
-  training_hardware: unknown
-  quality_control: ''
-  access: open
+  created_date: 2023-11-20
+  dependencies:
+  - LLaMA 2
+  - Tulu-V2-mix
+  description: Tulu 2 is a language model trained on the new Tulu-v2-mix dataset and
+    fine-tuned on more state of the art language models.
+  feedback: https://huggingface.co/allenai/tulu-2-70b/discussions
+  intended_uses: ''
   license:
     explanation: license can be found at https://allenai.org/impact-license
     value: AI2 ImpACT
-  intended_uses: ''
-  prohibited_uses: ''
+  modality: text; text
+  model_card: https://huggingface.co/allenai/tulu-2-70b
   monitoring: ''
-  feedback: https://huggingface.co/allenai/tulu-2-70b/discussions
-
-- type: model
-  name: Tulu 2 DPO
+  name: Tulu 2
+  nationality: USA
   organization: AI2
+  prohibited_uses: ''
+  quality_control: ''
+  size: 70B parameters (dense)
+  training_emissions: unknown
+  training_hardware: unknown
+  training_time: unknown
+  type: model
+  url: https://arxiv.org/pdf/2311.10702.pdf
+- access: open
+  analysis: Evaluated on MT-Bench and AlpacaEval. compared to other chatbots.
+  created_date: 2023-11-20
+  dependencies:
+  - LLaMA 2
+  - Tulu-V2-mix
   description: Tulu 2 DPO is created in a similar manner to Tulu 2, but with Direct
     Preference Optimization (DPO).
-  created_date: 2023-11-20
-  url: https://arxiv.org/pdf/2311.10702.pdf
-  model_card: https://huggingface.co/allenai/tulu-2-dpo-70b
-  modality: text; text
-  analysis: Evaluated on MT-Bench and AlpacaEval. compared to other chatbots.
-  size: 70B parameters (dense)
-  dependencies: [LLaMA 2, Tulu-V2-mix]
-  training_emissions: unknown
-  training_time: unknown
-  training_hardware: unknown
-  quality_control: ''
-  access: open
+  feedback: https://huggingface.co/allenai/tulu-2-dpo-70b/discussions
+  intended_uses: ''
   license:
     explanation: license can be found at https://allenai.org/impact-license
     value: AI2 ImpACT
-  intended_uses: ''
-  prohibited_uses: ''
+  modality: text; text
+  model_card: https://huggingface.co/allenai/tulu-2-dpo-70b
   monitoring: ''
-  feedback: https://huggingface.co/allenai/tulu-2-dpo-70b/discussions
-
-- type: model
-  name: Code Tulu 2
+  name: Tulu 2 DPO
+  nationality: USA
   organization: AI2
+  prohibited_uses: ''
+  quality_control: ''
+  size: 70B parameters (dense)
+  training_emissions: unknown
+  training_hardware: unknown
+  training_time: unknown
+  type: model
+  url: https://arxiv.org/pdf/2311.10702.pdf
+- access: open
+  analysis: Evaluated on MT-Bench and AlpacaEval. compared to other chatbots.
+  created_date: 2023-11-20
+  dependencies:
+  - Code LLaMA
+  - Tulu-V2-mix
   description: Code Tulu 2 is a fine-tuned version of Code LLaMA that was trained
     on a mix of publicly available, synthetic and human datasets.
-  created_date: 2023-11-20
-  url: https://arxiv.org/pdf/2311.10702.pdf
-  model_card: https://huggingface.co/allenai/codetulu-2-13b
-  modality: text; code, text
-  analysis: Evaluated on MT-Bench and AlpacaEval. compared to other chatbots.
-  size: 13B parameters (dense)
-  dependencies: [Code LLaMA, Tulu-V2-mix]
-  training_emissions: unknown
-  training_time: unknown
-  training_hardware: unknown
-  quality_control: ''
-  access: open
+  feedback: https://huggingface.co/allenai/codetulu-2-13b/discussions
+  intended_uses: ''
   license:
     explanation: license can be found at https://allenai.org/impact-license
     value: AI2 ImpACT
-  intended_uses: ''
-  prohibited_uses: ''
+  modality: text; code, text
+  model_card: https://huggingface.co/allenai/codetulu-2-13b
   monitoring: ''
-  feedback: https://huggingface.co/allenai/codetulu-2-13b/discussions
-
-- type: model
-  name: OLMo
+  name: Code Tulu 2
+  nationality: USA
   organization: AI2
-  description: Open Language Model (OLMo) is designed to provide access to data,
-    training code, models, and evaluation code necessary to advance AI through open
-    research to empower academics and researchers to study the science of language
-    models collectively.
-  created_date: 2024-02-01
-  url: https://allenai.org/olmo/olmo-paper.pdf
-  model_card: https://huggingface.co/allenai/OLMo-7B
-  modality: text; text
+  prohibited_uses: ''
+  quality_control: ''
+  size: 13B parameters (dense)
+  training_emissions: unknown
+  training_hardware: unknown
+  training_time: unknown
+  type: model
+  url: https://arxiv.org/pdf/2311.10702.pdf
+- access: open
   analysis: Evaluated on standard LLM tasks and benchmarks in comparison to LLaMA,
     Falcon, and MPT, in addition to other same-sized models.
-  size: 7B parameters (dense)
-  dependencies: [Dolma]
-  training_emissions: 75.05 tCo2eq
-  training_time: unknown
-  training_hardware: 27 nodes, with each node containing 8x NVIDIA A100-40GB GPUs
-    provided by MosaicML
+  created_date: 2024-02-01
+  dependencies:
+  - Dolma
+  description: Open Language Model (OLMo) is designed to provide access to data, training
+    code, models, and evaluation code necessary to advance AI through open research
+    to empower academics and researchers to study the science of language models collectively.
+  feedback: https://huggingface.co/allenai/OLMo-7B/discussions
+  intended_uses: ''
+  license: Apache 2.0
+  modality: text; text
+  model_card: https://huggingface.co/allenai/OLMo-7B
+  monitoring: unknown
+  name: OLMo
+  nationality: USA
+  organization: AI2
+  prohibited_uses: ''
   quality_control: training data from Dolma filtered and deduplicated before being
     trained on.
-  access: open
-  license: Apache 2.0
-  intended_uses: ''
-  prohibited_uses: ''
-  monitoring: unknown
-  feedback: https://huggingface.co/allenai/OLMo-7B/discussions
-
-- type: dataset
-  name: MADLAD-400
-  organization: AI2
+  size: 7B parameters (dense)
+  training_emissions: 75.05 tCo2eq
+  training_hardware: 27 nodes, with each node containing 8x NVIDIA A100-40GB GPUs
+    provided by MosaicML
+  training_time: unknown
+  type: model
+  url: https://allenai.org/olmo/olmo-paper.pdf
+- access: open
+  analysis: none
+  created_date: 2023-09-09
+  datasheet: https://huggingface.co/datasets/allenai/MADLAD-400
+  dependencies:
+  - Common Crawl
   description: MADLAD-400 is a document-level multilingual dataset based on Common
     Crawl, covering 419 languages in total.
-  created_date: 2023-09-09
-  url: https://arxiv.org/abs/2309.04662
-  datasheet: https://huggingface.co/datasets/allenai/MADLAD-400
-  modality: text
-  size: 3 trillion tokens
-  sample: []
-  analysis: none
-  dependencies: [Common Crawl]
-  included: ''
   excluded: ''
-  quality_control: ''
-  access: open
-  license: CC BY 4.0
-  intended_uses: ''
-  prohibited_uses: ''
-  monitoring: unknown
   feedback: https://huggingface.co/datasets/allenai/MADLAD-400/discussions
-- type: model
-  name: Evo
-  organization: Liquid AI
-  description: Evo is a foundation model based on StripedHyena, which is a deep signal processing architecture. It is capable of generalizing across DNA, RNA, and proteins and is used for generative design of new CRISPR systems.
-  created_date: 2024-09-30
-  url: https://www.liquid.ai/research/liquid-neural-networks-research
-  model_card: unknown
-  modality: text; text
-  analysis: Extensive scaling laws analysis has been performed on Evo considering beyond-transformer architectures.
-  size: unknown
-  dependencies: ["StripedHyena"]
-  training_emissions: unknown
-  training_time: unknown
-  training_hardware: unknown
-  quality_control: The model performance has been extensively evaluated with scaling laws analysis.
-  access: closed
-  license: unknown
-  intended_uses: The Evo model is intended for generative design of new CRISPR systems, and it generalizes across DNA, RNA, and proteins.
-  prohibited_uses: unknown
+  included: ''
+  intended_uses: ''
+  license: CC BY 4.0
+  modality: text
   monitoring: unknown
+  name: MADLAD-400
+  nationality: USA
+  organization: AI2
+  prohibited_uses: ''
+  quality_control: ''
+  sample: []
+  size: 3 trillion tokens
+  type: dataset
+  url: https://arxiv.org/abs/2309.04662
+- access: closed
+  analysis: Extensive scaling laws analysis has been performed on Evo considering
+    beyond-transformer architectures.
+  created_date: 2024-09-30
+  dependencies:
+  - StripedHyena
+  description: Evo is a foundation model based on StripedHyena, which is a deep signal
+    processing architecture. It is capable of generalizing across DNA, RNA, and proteins
+    and is used for generative design of new CRISPR systems.
   feedback: Feedback or inquiries can be addressed to the Liquid AI team.
-
+  intended_uses: The Evo model is intended for generative design of new CRISPR systems,
+    and it generalizes across DNA, RNA, and proteins.
+  license: unknown
+  modality: text; text
+  model_card: unknown
+  monitoring: unknown
+  name: Evo
+  nationality: USA
+  organization: Liquid AI
+  prohibited_uses: unknown
+  quality_control: The model performance has been extensively evaluated with scaling
+    laws analysis.
+  size: unknown
+  training_emissions: unknown
+  training_hardware: unknown
+  training_time: unknown
+  type: model
+  url: https://www.liquid.ai/research/liquid-neural-networks-research

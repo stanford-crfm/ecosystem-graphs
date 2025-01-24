@@ -1,23 +1,23 @@
----
-- type: model
-  name: OpenBA
-  organization: Soochow University
+- access: open
+  analysis: Evaluated across different text benchmarks in English and Chinese.
+  created_date: 2023-10-01
+  dependencies: []
   description: OpenBA is an open-sourced 15B bilingual (English + Chinese) asymmetric
     seq2seq model.
-  created_date: 2023-10-01
-  url: https://arxiv.org/pdf/2309.10706.pdf
-  model_card: https://huggingface.co/OpenBA/OpenBA-LM
-  modality: text; text
-  analysis: Evaluated across different text benchmarks in English and Chinese.
-  size: 15B parameters (dense)
-  dependencies: []
-  training_emissions: 6.5 tCO2eq
-  training_time: 38k GPU hours
-  training_hardware: 8 NVIDIA A100-80GB GPUs
-  quality_control: ''
-  access: open
-  license: Apache 2.0
-  intended_uses: ''
-  prohibited_uses: ''
-  monitoring: none
   feedback: https://huggingface.co/OpenBA/OpenBA-LM/discussions
+  intended_uses: ''
+  license: Apache 2.0
+  modality: text; text
+  model_card: https://huggingface.co/OpenBA/OpenBA-LM
+  monitoring: none
+  name: OpenBA
+  nationality: China
+  organization: Soochow University
+  prohibited_uses: ''
+  quality_control: ''
+  size: 15B parameters (dense)
+  training_emissions: 6.5 tCO2eq
+  training_hardware: 8 NVIDIA A100-80GB GPUs
+  training_time: 38k GPU hours
+  type: model
+  url: https://arxiv.org/pdf/2309.10706.pdf

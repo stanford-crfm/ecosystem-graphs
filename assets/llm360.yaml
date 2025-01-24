@@ -1,86 +1,86 @@
----
-- type: model
-  name: Amber
-  organization: LLM360
-  description: Amber is the first model in the LLM360 family, an initiative for
-    comprehensive and fully open-sourced LLMs, where all training details, model
-    checkpoints, intermediate results, and additional analyses are made available
-    to the community.
-  created_date: 2023-12-12
-  url: https://www.llm360.ai/
-  model_card: https://huggingface.co/LLM360/Amber
-  modality: text; text
+- access: open
   analysis: Evaluated on several benchmark LLM tasks
-  size: 7B parameters (dense)
+  created_date: 2023-12-12
   dependencies:
-    - Arxiv
-    - Books
-    - C4
-    - RefinedWeb
-    - StarCoder
-    - StackExchange
-    - Wikipedia
-  training_emissions: unknown
-  training_time: unknown
-  training_hardware: 56 DGX A100 nodes, each equipped with 4 80GB A100 GPUs
-  quality_control: ''
-  access: open
-  license: Apache 2.0
+  - Arxiv
+  - Books
+  - C4
+  - RefinedWeb
+  - StarCoder
+  - StackExchange
+  - Wikipedia
+  description: Amber is the first model in the LLM360 family, an initiative for comprehensive
+    and fully open-sourced LLMs, where all training details, model checkpoints, intermediate
+    results, and additional analyses are made available to the community.
+  feedback: https://huggingface.co/LLM360/Amber/discussions
   intended_uses: to support open and collaborative AI research by making the full
     LLM training process transparent.
-  prohibited_uses: ''
+  license: Apache 2.0
+  modality: text; text
+  model_card: https://huggingface.co/LLM360/Amber
   monitoring: unknown
-  feedback: https://huggingface.co/LLM360/Amber/discussions
-
-- type: model
-  name: CrystalCoder
+  name: Amber
+  nationality: International
   organization: LLM360
-  description: CrystalCoder is a language model with a balance of code and text
-    data that follows the initiative under LLM360 of its training process being
-    fully transparent.
-  created_date: 2023-12-12
+  prohibited_uses: ''
+  quality_control: ''
+  size: 7B parameters (dense)
+  training_emissions: unknown
+  training_hardware: 56 DGX A100 nodes, each equipped with 4 80GB A100 GPUs
+  training_time: unknown
+  type: model
   url: https://www.llm360.ai/
-  model_card: https://huggingface.co/LLM360/CrystalCoder
-  modality: text; code, text
+- access: open
   analysis: Evaluated on English and coding tasks and benchmarks, and outperforms
     LLaMA 2 in some.
-  size: 7B parameters (dense)
-  dependencies: [SlimPajama, StarCoder]
-  training_emissions: unknown
-  training_time: unknown
-  training_hardware: Trained on the Cerebras Condor Galaxy 1 (CG-1), a 4 exaFLOPS,
-    54 million core, 64-node cloud AI supercomputer.
-  quality_control: ''
-  access: open
-  license: Apache 2.0
+  created_date: 2023-12-12
+  dependencies:
+  - SlimPajama
+  - StarCoder
+  description: CrystalCoder is a language model with a balance of code and text data
+    that follows the initiative under LLM360 of its training process being fully transparent.
+  feedback: https://huggingface.co/LLM360/CrystalCoder/discussions
   intended_uses: to support open and collaborative AI research by making the full
     LLM training process transparent.
-  prohibited_uses: ''
+  license: Apache 2.0
+  modality: text; code, text
+  model_card: https://huggingface.co/LLM360/CrystalCoder
   monitoring: unknown
-  feedback: https://huggingface.co/LLM360/CrystalCoder/discussions
-- type: model
-  name: K2
+  name: CrystalCoder
+  nationality: International
   organization: LLM360
-  description: K2 is a 65 billion parameter large language model inspired by the
-    Llama 2 65B model. The model is also supported with a suite of research tools,
-    tutorials and step-by-step guides for learning pre-training and fine-tuning
-    techniques.
-  created_date: 2024-05-29
-  url: https://www.llm360.ai/paper2.pdf
-  model_card: https://huggingface.co/LLM360/K2
-  modality: text; text
+  prohibited_uses: ''
+  quality_control: ''
+  size: 7B parameters (dense)
+  training_emissions: unknown
+  training_hardware: Trained on the Cerebras Condor Galaxy 1 (CG-1), a 4 exaFLOPS,
+    54 million core, 64-node cloud AI supercomputer.
+  training_time: unknown
+  type: model
+  url: https://www.llm360.ai/
+- access: open
   analysis: Evaluated on the LLM360 Performance and Evaluation Collection that checks
     standard best practice benchmarks, medical, math, and coding knowledge.
-  size: 65B parameters
+  created_date: 2024-05-29
   dependencies: []
-  training_emissions: unknown
-  training_time: unknown
-  training_hardware: unknown
-  quality_control: unknown
-  access: open
-  license: Apache 2.0
+  description: K2 is a 65 billion parameter large language model inspired by the Llama
+    2 65B model. The model is also supported with a suite of research tools, tutorials
+    and step-by-step guides for learning pre-training and fine-tuning techniques.
+  feedback: https://huggingface.co/LLM360/K2/discussions
   intended_uses: The model is intended for learning pre-training techniques or enhancing
     research capabilities in large language models.
-  prohibited_uses: unknown
+  license: Apache 2.0
+  modality: text; text
+  model_card: https://huggingface.co/LLM360/K2
   monitoring: unknown
-  feedback: https://huggingface.co/LLM360/K2/discussions
+  name: K2
+  nationality: International
+  organization: LLM360
+  prohibited_uses: unknown
+  quality_control: unknown
+  size: 65B parameters
+  training_emissions: unknown
+  training_hardware: unknown
+  training_time: unknown
+  type: model
+  url: https://www.llm360.ai/paper2.pdf

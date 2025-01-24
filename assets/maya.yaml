@@ -1,48 +1,54 @@
----
-- type: model
-  name: GodziLLa 2
-  organization: Maya Philippines
-  description: GodziLLa 2 is an experimental combination of various proprietary
-    LoRAs from Maya Philippines and Guanaco LLaMA 2 1K dataset, with LLaMA 2.
+- access: open
+  analysis: Evaluated on the OpenLLM leaderboard, releasing at rank number 4 on the
+    leaderboard.
   created_date: 2023-08-11
-  url: https://huggingface.co/MayaPH/GodziLLa2-70B
-  model_card: https://huggingface.co/MayaPH/GodziLLa2-70B
-  modality: text; text
-  analysis: Evaluated on the OpenLLM leaderboard, releasing at rank number 4 on
-    the leaderboard.
-  size: 70B parameters (dense)
-  dependencies: [LLaMA 2, Guanaco LLaMA dataset]
-  training_emissions: unknown
-  training_time: unknown
-  training_hardware: unknown
-  quality_control: ''
-  access: open
-  license: LLaMA 2
-  intended_uses: ''
-  prohibited_uses: ''
-  monitoring: unknown
+  dependencies:
+  - LLaMA 2
+  - Guanaco LLaMA dataset
+  description: GodziLLa 2 is an experimental combination of various proprietary LoRAs
+    from Maya Philippines and Guanaco LLaMA 2 1K dataset, with LLaMA 2.
   feedback: none
-- type: model
-  name: voyage-code-3
-  organization: Voyage AI
-  description: "Introducing voyage-code-3, our next-generation embedding model optimized for code retrieval."
-  created_date: 2024-12-04
-  url: https://blog.voyageai.com/2024/12/04/voyage-code-3/
-  model_card: unknown
-  modality: unknown
-  analysis: "We evaluated voyage-code-3 using an enhanced suite of evaluation datasets designed to address the shortcomings of existing benchmarks and deliver practical, robust results."
-  size: unknown
-  dependencies: []
-  training_emissions: unknown
-  training_time: unknown
-  training_hardware: unknown
-  quality_control: unknown
-  access:
-    explanation: "The first 200 million tokens are free."
-    value: limited
-  license: unknown
-  intended_uses: "optimized for code retrieval"
-  prohibited_uses: unknown
+  intended_uses: ''
+  license: LLaMA 2
+  modality: text; text
+  model_card: https://huggingface.co/MayaPH/GodziLLa2-70B
   monitoring: unknown
-  feedback: "If you’re also interested in fine-tuned embedding models, we’d love to hear from you—please email us at contact@voyageai.com."
-
+  name: GodziLLa 2
+  nationality: Philippines
+  organization: Maya Philippines
+  prohibited_uses: ''
+  quality_control: ''
+  size: 70B parameters (dense)
+  training_emissions: unknown
+  training_hardware: unknown
+  training_time: unknown
+  type: model
+  url: https://huggingface.co/MayaPH/GodziLLa2-70B
+- access:
+    explanation: The first 200 million tokens are free.
+    value: limited
+  analysis: We evaluated voyage-code-3 using an enhanced suite of evaluation datasets
+    designed to address the shortcomings of existing benchmarks and deliver practical,
+    robust results.
+  created_date: 2024-12-04
+  dependencies: []
+  description: Introducing voyage-code-3, our next-generation embedding model optimized
+    for code retrieval.
+  feedback: "If you\u2019re also interested in fine-tuned embedding models, we\u2019\
+    d love to hear from you\u2014please email us at contact@voyageai.com."
+  intended_uses: optimized for code retrieval
+  license: unknown
+  modality: unknown
+  model_card: unknown
+  monitoring: unknown
+  name: voyage-code-3
+  nationality: USA
+  organization: Voyage AI
+  prohibited_uses: unknown
+  quality_control: unknown
+  size: unknown
+  training_emissions: unknown
+  training_hardware: unknown
+  training_time: unknown
+  type: model
+  url: https://blog.voyageai.com/2024/12/04/voyage-code-3/

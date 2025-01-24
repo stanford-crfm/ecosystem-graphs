@@ -1,123 +1,128 @@
----
-- type: model
-  name: Firefly Image 2
-  organization: Adobe
+- access: closed
+  analysis: ''
+  created_date: 2023-10-10
+  dependencies: []
   description: Firefly Image 2 is the next generation of generative AI for imaging,
-    bringing significant advancements to creative control and quality, including
-    new Text to Image capabilities now available in the popular Firefly web app
-    where 90% of users are new to Adobe products.
-  created_date: 2023-10-10
-  url: https://firefly.adobe.com/
-  model_card: none
+    bringing significant advancements to creative control and quality, including new
+    Text to Image capabilities now available in the popular Firefly web app where
+    90% of users are new to Adobe products.
+  feedback: ''
+  intended_uses: creative generation of digital art and images
+  license: unknown
   modality: text; image
-  analysis: ''
-  size: unknown
-  dependencies: []
-  training_emissions: unknown
-  training_time: unknown
-  training_hardware: unknown
-  quality_control: ''
-  access: closed
-  license: unknown
-  intended_uses: creative generation of digital art and images
-  prohibited_uses: AI/ML training, attempting to create abusive, illegal, or confidential
-    content.
-  monitoring: ''
-  feedback: ''
-
-- type: model
-  name: Firefly Vector
-  organization: Adobe
-  description: Firefly Vector is the world’s first generative AI focused on producing
-    vector graphics, bringing Adobe's vector graphic and generative AI expertise
-    directly into Adobe Illustrator workflows with Text to Vector Graphic.
-  created_date: 2023-10-10
-  url: https://firefly.adobe.com/
   model_card: none
-  modality: text; vector graphic
-  analysis: ''
-  size: unknown
-  dependencies: []
-  training_emissions: unknown
-  training_time: unknown
-  training_hardware: unknown
-  quality_control: ''
-  access: closed
-  license: unknown
-  intended_uses: creative generation of digital art and images
+  monitoring: ''
+  name: Firefly Image 2
+  nationality: USA
+  organization: Adobe
   prohibited_uses: AI/ML training, attempting to create abusive, illegal, or confidential
     content.
-  monitoring: ''
+  quality_control: ''
+  size: unknown
+  training_emissions: unknown
+  training_hardware: unknown
+  training_time: unknown
+  type: model
+  url: https://firefly.adobe.com/
+- access: closed
+  analysis: ''
+  created_date: 2023-10-10
+  dependencies: []
+  description: "Firefly Vector is the world\u2019s first generative AI focused on\
+    \ producing vector graphics, bringing Adobe's vector graphic and generative AI\
+    \ expertise directly into Adobe Illustrator workflows with Text to Vector Graphic."
   feedback: ''
-
-- type: model
-  name: Firefly Design
+  intended_uses: creative generation of digital art and images
+  license: unknown
+  modality: text; vector graphic
+  model_card: none
+  monitoring: ''
+  name: Firefly Vector
+  nationality: USA
   organization: Adobe
+  prohibited_uses: AI/ML training, attempting to create abusive, illegal, or confidential
+    content.
+  quality_control: ''
+  size: unknown
+  training_emissions: unknown
+  training_hardware: unknown
+  training_time: unknown
+  type: model
+  url: https://firefly.adobe.com/
+- access: closed
+  analysis: ''
+  created_date: 2023-10-10
+  dependencies: []
   description: Firefly Design powers instant generation of amazing quality template
     designs in Adobe Express with the new Text to Template capability.
-  created_date: 2023-10-10
-  url: https://firefly.adobe.com/
-  model_card: none
+  feedback: ''
+  intended_uses: creative generation of digital art and images
+  license: unknown
   modality: text; template design
-  analysis: ''
-  size: unknown
-  dependencies: []
-  training_emissions: unknown
-  training_time: unknown
-  training_hardware: unknown
-  quality_control: ''
-  access: closed
-  license: unknown
-  intended_uses: creative generation of digital art and images
-  prohibited_uses: AI/ML training, attempting to create abusive, illegal, or confidential
-    content.
+  model_card: none
   monitoring: ''
-  feedback: ''
-
-- type: application
-  name: Firefly
+  name: Firefly Design
+  nationality: USA
   organization: Adobe
-  description: Adobe Firefly is a standalone web application. It offers new ways
-    to ideate, create, and communicate while significantly improving creative workflows
-    using generative AI.
-  created_date: 2023-03-21
-  url: https://firefly.adobe.com/
-  dependencies: [Firefly Image 2, Firefly Vector, Firefly Design]
-  adaptation: ''
-  output_space: AI-generated creations
-  quality_control: ''
-  access: limited
-  license: unknown
-  terms_of_service: https://www.adobe.com/legal/licenses-terms/adobe-gen-ai-user-guidelines.html
-  intended_uses: creative generation of digital art and images
   prohibited_uses: AI/ML training, attempting to create abusive, illegal, or confidential
     content.
-  monitoring: ''
-  feedback: ''
-  monthly_active_users: unknown
-  user_distribution: unknown
+  quality_control: ''
+  size: unknown
+  training_emissions: unknown
+  training_hardware: unknown
+  training_time: unknown
+  type: model
+  url: https://firefly.adobe.com/
+- access: limited
+  adaptation: ''
+  created_date: 2023-03-21
+  dependencies:
+  - Firefly Image 2
+  - Firefly Vector
+  - Firefly Design
+  description: Adobe Firefly is a standalone web application. It offers new ways to
+    ideate, create, and communicate while significantly improving creative workflows
+    using generative AI.
   failures: unknown
-
-- type: dataset
-  name: CulturaX
-  organization: University of Oregon, Adobe
-  description: CulturaX is a substantial multilingual dataset with 6.3 trillion
-    tokens in 167 languages, tailored for LLM development.
-  created_date: 2023-09-17
-  url: https://arxiv.org/pdf/2309.09400
-  datasheet: https://huggingface.co/datasets/uonlp/CulturaX
-  modality: text
-  size: 6.3 trillion tokens
-  sample: []
+  feedback: ''
+  intended_uses: creative generation of digital art and images
+  license: unknown
+  monitoring: ''
+  monthly_active_users: unknown
+  name: Firefly
+  nationality: USA
+  organization: Adobe
+  output_space: AI-generated creations
+  prohibited_uses: AI/ML training, attempting to create abusive, illegal, or confidential
+    content.
+  quality_control: ''
+  terms_of_service: https://www.adobe.com/legal/licenses-terms/adobe-gen-ai-user-guidelines.html
+  type: application
+  url: https://firefly.adobe.com/
+  user_distribution: unknown
+- access: open
   analysis: none
-  dependencies: [mC4, OSCAR]
-  included: unknown
+  created_date: 2023-09-17
+  datasheet: https://huggingface.co/datasets/uonlp/CulturaX
+  dependencies:
+  - mC4
+  - OSCAR
+  description: CulturaX is a substantial multilingual dataset with 6.3 trillion tokens
+    in 167 languages, tailored for LLM development.
   excluded: unknown
-  quality_control: unknown
-  access: open
-  license: mC4, OSCAR
+  feedback: https://huggingface.co/datasets/uonlp/CulturaX/discussions
+  included: unknown
   intended_uses: ''
+  license: mC4, OSCAR
+  modality: text
+  monitoring: unknown
+  name: CulturaX
+  nationality: unknown
+  organization: University of Oregon, Adobe
   prohibited_uses: The data must not be utilized for malicious or harmful purposes
     towards humanity.
-  monitoring: unknown
-  feedback: https://huggingface.co/datasets/uonlp/CulturaX/discussions
+  quality_control: unknown
+  sample: []
+  size: 6.3 trillion tokens
+  type: dataset
+  url: https://arxiv.org/pdf/2309.09400

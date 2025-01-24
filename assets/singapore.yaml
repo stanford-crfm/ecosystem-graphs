@@ -1,49 +1,53 @@
----
-- type: model
-  name: GOAT
-  organization: National University of Singapore
-  description: GOAT is a fine-tuned LLaMA model which uses the tokenization of numbers
-    to significantly outperform benchmark standards on a range of arithmetic tasks.
-  created_date: 2023-05-23
-  url: https://arxiv.org/pdf/2305.14201.pdf
-  model_card: none
-  modality: text; text
+- access: open
   analysis: Performance assessed on BIG-bench arithmetic sub-task, and various elementary
     arithmetic tasks.
-  size: 7B parameters (dense)
-  dependencies: [LLaMA, GOAT dataset]
-  training_emissions: unknown
-  training_time: unknown
-  training_hardware: 24 GB VRAM GPU
-  quality_control: Number data is randomly generated from log space to reduce likelihood
-    of redundancy and range of magnitudes.
-  access: open
-  license: Apache 2.0
+  created_date: 2023-05-23
+  dependencies:
+  - LLaMA
+  - GOAT dataset
+  description: GOAT is a fine-tuned LLaMA model which uses the tokenization of numbers
+    to significantly outperform benchmark standards on a range of arithmetic tasks.
+  feedback: ''
   intended_uses: Integration into other instruction-tuned LLMs to further enhance
     arithmetic reasoning abilities in solving math word problems.
-  prohibited_uses: ''
+  license: Apache 2.0
+  modality: text; text
+  model_card: none
   monitoring: ''
-  feedback: ''
-
-- type: model
-  name: OpenMoE
-  organization: National University of Singapore, University of Edinburgh, ETH Zurich
+  name: GOAT
+  nationality: Singapore
+  organization: National University of Singapore
+  prohibited_uses: ''
+  quality_control: Number data is randomly generated from log space to reduce likelihood
+    of redundancy and range of magnitudes.
+  size: 7B parameters (dense)
+  training_emissions: unknown
+  training_hardware: 24 GB VRAM GPU
+  training_time: unknown
+  type: model
+  url: https://arxiv.org/pdf/2305.14201.pdf
+- access: open
+  analysis: Evaluated on relatively simple established benchmarks.
+  created_date: 2024-01-12
+  dependencies:
+  - RedPajama
+  - The Stack
   description: OpenMoE is a series of fully open-sourced and reproducible decoder-only
     MoE LLMs.
-  created_date: 2024-01-12
-  url: https://github.com/XueFuzhao/OpenMoE
-  model_card: https://huggingface.co/OrionZheng/openmoe-base
-  modality: text; text
-  analysis: Evaluated on relatively simple established benchmarks.
-  size: 34B parameters (dense)
-  dependencies: [RedPajama, The Stack]
-  training_emissions: unknown
-  training_time: unknown
-  training_hardware: unknown
-  quality_control: unknown
-  access: open
-  license: Apache 2.0
-  intended_uses: ''
-  prohibited_uses: ''
-  monitoring: unknown
   feedback: https://huggingface.co/OrionZheng/openmoe-base/discussions
+  intended_uses: ''
+  license: Apache 2.0
+  modality: text; text
+  model_card: https://huggingface.co/OrionZheng/openmoe-base
+  monitoring: unknown
+  name: OpenMoE
+  nationality: unknown
+  organization: National University of Singapore, University of Edinburgh, ETH Zurich
+  prohibited_uses: ''
+  quality_control: unknown
+  size: 34B parameters (dense)
+  training_emissions: unknown
+  training_hardware: unknown
+  training_time: unknown
+  type: model
+  url: https://github.com/XueFuzhao/OpenMoE

@@ -1,51 +1,55 @@
----
-- type: model
-  name: BigTrans
-  organization: Institute of Automation Chinese Academy of Sciences
-  description: BigTrans is a model which adapts LLaMA that covers only 20 languages
-    and enhances it with multilingual translation capability on more than 100 languages
-  created_date: 2023-05-29
-  url: https://arxiv.org/pdf/2305.18098v1.pdf
-  model_card: https://huggingface.co/James-WYang/BigTrans
-  modality: text; text
+- access: open
   analysis: Reports results on standard translation benchmarks across 102 languages
     in comparison with Google Translate and ChatGPT
-  size: 13B parameters (dense)
-  dependencies: [LLaMA, CLUE, BigTrans parallel dataset]
-  training_emissions: unknown
-  training_time: unknown
-  training_hardware: 16 A100 GPUs with 80 GB of RAM
-  quality_control: ''
-  access: open
-  license: Apache 2.0
-  intended_uses: Advancing future research in multilingual LLMs
-  prohibited_uses: ''
-  monitoring: ''
+  created_date: 2023-05-29
+  dependencies:
+  - LLaMA
+  - CLUE
+  - BigTrans parallel dataset
+  description: BigTrans is a model which adapts LLaMA that covers only 20 languages
+    and enhances it with multilingual translation capability on more than 100 languages
   feedback: https://huggingface.co/James-WYang/BigTrans/discussions
-- type: model
-  name: YAYI 2
-  organization: Institute of Automation Chinese Academy of Sciences
-  description: YAYI 2 is an open source large language model trained in both English
-    and Chinese.
-  created_date: 2023-12-22
-  url: https://arxiv.org/pdf/2312.14862.pdf
-  model_card: https://huggingface.co/wenge-research/yayi2-30b
+  intended_uses: Advancing future research in multilingual LLMs
+  license: Apache 2.0
   modality: text; text
+  model_card: https://huggingface.co/James-WYang/BigTrans
+  monitoring: ''
+  name: BigTrans
+  nationality: China
+  organization: Institute of Automation Chinese Academy of Sciences
+  prohibited_uses: ''
+  quality_control: ''
+  size: 13B parameters (dense)
+  training_emissions: unknown
+  training_hardware: 16 A100 GPUs with 80 GB of RAM
+  training_time: unknown
+  type: model
+  url: https://arxiv.org/pdf/2305.18098v1.pdf
+- access: open
   analysis: Evaluated on standard benchmarks for knowledge and language understanding,
     mathematical reasoning, and programming ability in comparison to similarly sized
     open-source models.
-  size: 30B parameters (dense)
+  created_date: 2023-12-22
   dependencies: []
-  training_emissions: unknown
-  training_time: unknown
-  training_hardware: over 1000 A800 GPUs
-  quality_control: data is deduplicated, normalized, cleaned, and filtered for toxicity
-  access: open
+  description: YAYI 2 is an open source large language model trained in both English
+    and Chinese.
+  feedback: https://huggingface.co/wenge-research/yayi2-30b/discussions
+  intended_uses: ''
   license:
     explanation: Model is under a custom [license](https://github.com/wenge-research/YAYI2/blob/main/COMMUNITY_LICENSE),
       while code is Apache 2.0
     value: custom
-  intended_uses: ''
-  prohibited_uses: ''
+  modality: text; text
+  model_card: https://huggingface.co/wenge-research/yayi2-30b
   monitoring: ''
-  feedback: https://huggingface.co/wenge-research/yayi2-30b/discussions
+  name: YAYI 2
+  nationality: China
+  organization: Institute of Automation Chinese Academy of Sciences
+  prohibited_uses: ''
+  quality_control: data is deduplicated, normalized, cleaned, and filtered for toxicity
+  size: 30B parameters (dense)
+  training_emissions: unknown
+  training_hardware: over 1000 A800 GPUs
+  training_time: unknown
+  type: model
+  url: https://arxiv.org/pdf/2312.14862.pdf

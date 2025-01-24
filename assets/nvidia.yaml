@@ -1,114 +1,126 @@
----
-- type: model
-  name: Megatron-LM
-  organization: NVIDIA
-  description: Megatron-LM is an autoregressive language model
+- access:
+    explanation: 'Neither the 8.3B parameter model trained to convergence nor the
+      1 trillion paramter model is available for download
+
+      '
+    value: closed
+  analysis: ''
   created_date:
     explanation: The date the paper for the 1 trillion parameter model was published
     value: 2021-04-09
-  url: https://arxiv.org/abs/2104.04473
-  model_card: none
-  modality: text; text
-  analysis: ''
-  size: 1T parameters (dense)
   dependencies: []
-  training_emissions: unknown
-  training_time: 84 days
-  training_hardware: 3072 A100 GPUs
-  quality_control: unknown
-  access:
-    explanation: "Neither the 8.3B parameter model trained to convergence nor the\
-      \ 1 trillion paramter model is available for download\n"
-    value: closed
-  license: unknown
-  intended_uses: none
-  prohibited_uses: none
-  monitoring: none
+  description: Megatron-LM is an autoregressive language model
   feedback: none
-- type: dataset
-  name: MineDojo
-  organization: NVIDIA
-  description: ''
-  created_date: 2022-06-17
-  url: https://arxiv.org/abs/2206.08853
-  datasheet: ''
-  modality: text, video
-  size: 730k videos, 6k Wikipedia pages, 340k reddit posts
-  sample: []
-  analysis: ''
-  dependencies: [YouTube, Wikipedia, Reddit]
-  included: ''
-  excluded: ''
-  quality_control: ''
-  access: open
-  license: MIT
-  intended_uses: ''
-  prohibited_uses: ''
-  monitoring: ''
-  feedback: ''
-- type: dataset
-  name: VIMA dataset
-  organization: NVIDIA, Stanford
-  description: ''
-  created_date: 2022-10-06
-  url: https://vimalabs.github.io/
-  datasheet: ''
-  modality: image, text
-  size: 200M parameters (dense model)
-  sample: []
-  analysis: ''
-  dependencies: [T5, Mask R-CNN, VIMA dataset]
-  included: ''
-  excluded: ''
-  quality_control: ''
-  access: open
-  license: MIT
-  intended_uses: ''
-  prohibited_uses: ''
-  monitoring: ''
-  feedback: ''
-- type: model
-  name: VIMA
-  organization: NVIDIA, Stanford
-  description: ''
-  created_date: 2022-10-06
-  url: https://vimalabs.github.io/
-  model_card: ''
-  modality: image, text; robotics trajectories
-  analysis: ''
-  size: 200M parameters (dense)
-  dependencies: []
-  training_emissions: ''
-  training_time: ''
-  training_hardware: ''
-  quality_control: ''
-  access: open
-  license: MIT
-  intended_uses: ''
-  prohibited_uses: ''
-  monitoring: ''
-  feedback: ''
-- type: model
-  name: Nemotron 4
-  organization: Nvidia
-  description: Nemotron 4 is a 15-billion-parameter large multilingual language
-    model trained on 8 trillion text tokens.
-  created_date: 2024-02-27
-  url: https://arxiv.org/pdf/2402.16819.pdf
+  intended_uses: none
+  license: unknown
+  modality: text; text
   model_card: none
-  modality: text; code, text
+  monitoring: none
+  name: Megatron-LM
+  nationality: USA
+  organization: NVIDIA
+  prohibited_uses: none
+  quality_control: unknown
+  size: 1T parameters (dense)
+  training_emissions: unknown
+  training_hardware: 3072 A100 GPUs
+  training_time: 84 days
+  type: model
+  url: https://arxiv.org/abs/2104.04473
+- access: open
+  analysis: ''
+  created_date: 2022-06-17
+  datasheet: ''
+  dependencies:
+  - YouTube
+  - Wikipedia
+  - Reddit
+  description: ''
+  excluded: ''
+  feedback: ''
+  included: ''
+  intended_uses: ''
+  license: MIT
+  modality: text, video
+  monitoring: ''
+  name: MineDojo
+  nationality: USA
+  organization: NVIDIA
+  prohibited_uses: ''
+  quality_control: ''
+  sample: []
+  size: 730k videos, 6k Wikipedia pages, 340k reddit posts
+  type: dataset
+  url: https://arxiv.org/abs/2206.08853
+- access: open
+  analysis: ''
+  created_date: 2022-10-06
+  datasheet: ''
+  dependencies:
+  - T5
+  - Mask R-CNN
+  - VIMA dataset
+  description: ''
+  excluded: ''
+  feedback: ''
+  included: ''
+  intended_uses: ''
+  license: MIT
+  modality: image, text
+  monitoring: ''
+  name: VIMA dataset
+  nationality: unknown
+  organization: NVIDIA, Stanford
+  prohibited_uses: ''
+  quality_control: ''
+  sample: []
+  size: 200M parameters (dense model)
+  type: dataset
+  url: https://vimalabs.github.io/
+- access: open
+  analysis: ''
+  created_date: 2022-10-06
+  dependencies: []
+  description: ''
+  feedback: ''
+  intended_uses: ''
+  license: MIT
+  modality: image, text; robotics trajectories
+  model_card: ''
+  monitoring: ''
+  name: VIMA
+  nationality: unknown
+  organization: NVIDIA, Stanford
+  prohibited_uses: ''
+  quality_control: ''
+  size: 200M parameters (dense)
+  training_emissions: ''
+  training_hardware: ''
+  training_time: ''
+  type: model
+  url: https://vimalabs.github.io/
+- access: open
   analysis: Evaluated on standard LLM benchmarks across a range of fields like reasoning,
     code generation, and mathematical skills.
-  size: 15B parameters (dense)
+  created_date: 2024-02-27
   dependencies: []
-  training_emissions: unknown
-  training_time: 13 days
-  training_hardware: 3072 H100 80GB SXM5 GPUs across 384 DGX H100 nodes
-  quality_control: Deduplication and quality filtering techniques are applied to
-    the training dataset.
-  access: open
-  license: unknown
-  intended_uses: ''
-  prohibited_uses: ''
-  monitoring: unknown
+  description: Nemotron 4 is a 15-billion-parameter large multilingual language model
+    trained on 8 trillion text tokens.
   feedback: none
+  intended_uses: ''
+  license: unknown
+  modality: text; code, text
+  model_card: none
+  monitoring: unknown
+  name: Nemotron 4
+  nationality: USA
+  organization: Nvidia
+  prohibited_uses: ''
+  quality_control: Deduplication and quality filtering techniques are applied to the
+    training dataset.
+  size: 15B parameters (dense)
+  training_emissions: unknown
+  training_hardware: 3072 H100 80GB SXM5 GPUs across 384 DGX H100 nodes
+  training_time: 13 days
+  type: model
+  url: https://arxiv.org/pdf/2402.16819.pdf

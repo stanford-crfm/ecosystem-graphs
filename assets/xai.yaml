@@ -1,90 +1,91 @@
----
-- type: model
-  name: Grok-1
-  organization: xAI
-  description: Grok is an AI modeled after the Hitchhiker’s Guide to the Galaxy,
+- access: open
+  analysis: Grok-1 was evaluated on a range of reasoning benchmark tasks and on curated
+    foreign mathematic examination questions.
   created_date: 2023-11-04
-  url: https://grok.x.ai/
-  model_card: https://x.ai/model-card/
-  modality: text; text
-  analysis: Grok-1 was evaluated on a range of reasoning benchmark tasks and on
-    curated foreign mathematic examination questions.
-  size: 314B parameters (dense)
   dependencies: []
-  training_emissions: unknown
-  training_time: unknown
-  training_hardware: unknown
-  quality_control: none
-  access: open
-  license: Apache 2.0
+  description: "Grok is an AI modeled after the Hitchhiker\u2019s Guide to the Galaxy,"
+  feedback: none
   intended_uses: Grok-1 is intended to be used as the engine behind Grok for natural
     language processing tasks including question answering, information retrieval,
     creative writing and coding assistance.
-  prohibited_uses: none
+  license: Apache 2.0
+  modality: text; text
+  model_card: https://x.ai/model-card/
   monitoring: unknown
-  feedback: none
-- type: model
-  name: Grok-1.5V
+  name: Grok-1
+  nationality: USA
   organization: xAI
-  description: Grok-1.5V is a first-generation multimodal model which can process
-    a wide variety of visual information, including documents, diagrams, charts,
-    screenshots, and photographs.
-  created_date: 2024-04-12
-  url: https://x.ai/blog/grok-1.5v
-  model_card: none
-  modality: image, text; text
+  prohibited_uses: none
+  quality_control: none
+  size: 314B parameters (dense)
+  training_emissions: unknown
+  training_hardware: unknown
+  training_time: unknown
+  type: model
+  url: https://grok.x.ai/
+- access: limited
   analysis: The model is evaluated in a zero-shot setting without chain-of-thought
     prompting. The evaluation domains include multi-disciplinary reasoning, understanding
-    documents, science diagrams, charts, screenshots, photographs and real-world
-    spatial understanding. The model shows competitive performance with existing
-    frontier multimodal models.
-  size: unknown
+    documents, science diagrams, charts, screenshots, photographs and real-world spatial
+    understanding. The model shows competitive performance with existing frontier
+    multimodal models.
+  created_date: 2024-04-12
   dependencies: []
-  training_emissions: unknown
-  training_time: unknown
-  training_hardware: unknown
-  quality_control: ''
-  access: limited
-  license: unknown
-  intended_uses: Grok-1.5V can be used for understanding documents, science diagrams,
-    charts, screenshots, photographs. It can also translate diagrams into Python
-    code.
-  prohibited_uses: unknown
-  monitoring: unknown
+  description: Grok-1.5V is a first-generation multimodal model which can process
+    a wide variety of visual information, including documents, diagrams, charts, screenshots,
+    and photographs.
   feedback: none
-- type: model
-  name: Grok-2
+  intended_uses: Grok-1.5V can be used for understanding documents, science diagrams,
+    charts, screenshots, photographs. It can also translate diagrams into Python code.
+  license: unknown
+  modality: image, text; text
+  model_card: none
+  monitoring: unknown
+  name: Grok-1.5V
+  nationality: USA
   organization: xAI
+  prohibited_uses: unknown
+  quality_control: ''
+  size: unknown
+  training_emissions: unknown
+  training_hardware: unknown
+  training_time: unknown
+  type: model
+  url: https://x.ai/blog/grok-1.5v
+- access: limited
+  analysis: The Grok-2 models were evaluated across a series of academic benchmarks
+    that included reasoning, reading comprehension, math, science, and coding. They
+    showed significant improvements over the earlier model Grok-1.5 and achieved performance
+    levels competitive to other frontier models in areas such as graduate-level science
+    knowledge (GPQA), general knowledge (MMLU, MMLU-Pro), and math competition problems
+    (MATH).
+  created_date: 2024-08-13
+  dependencies: []
   description: Grok-2 is a state-of-the-art language model with advanced capabilities
     in both text and vision understanding. It demonstrates significant improvements
     in reasoning with retrieved content and tool use capabilities over its previous
     Grok-1.5 model. It also excels in vision-based tasks and delivers high performance
-    in document-based question answering and visual math reasoning (MathVista).
-    Grok-2 mini, a smaller version of Grok-2, is also introduced, offering a balance
-    between speed and answer quality.
-  created_date: 2024-08-13
-  url: https://x.ai/blog/grok-2
-  model_card: unknown
-  modality: text; text, vision
-  analysis: The Grok-2 models were evaluated across a series of academic benchmarks
-    that included reasoning, reading comprehension, math, science, and coding. They
-    showed significant improvements over the earlier model Grok-1.5 and achieved
-    performance levels competitive to other frontier models in areas such as graduate-level
-    science knowledge (GPQA), general knowledge (MMLU, MMLU-Pro), and math competition
-    problems (MATH).
-  size: unknown
-  dependencies: []
-  training_emissions: Unknown
-  training_time: Unknown
-  training_hardware: Unknown
-  quality_control: Grok-2 models were tested in real-world scenarios using AI tutors
-    that engaged with the models across a variety of tasks and selected the superior
-    response based on specific criteria outlined in the guidelines.
-  access: limited
-  license: Unknown
+    in document-based question answering and visual math reasoning (MathVista). Grok-2
+    mini, a smaller version of Grok-2, is also introduced, offering a balance between
+    speed and answer quality.
+  feedback: Issues with the model should be reported to xAI.
   intended_uses: The model is intended to be used for understanding text and vision,
     answering questions, collaborating on writing, solving coding tasks, and enhancing
     search capabilities.
-  prohibited_uses: Unknown
+  license: Unknown
+  modality: text; text, vision
+  model_card: unknown
   monitoring: Unknown
-  feedback: Issues with the model should be reported to xAI.
+  name: Grok-2
+  nationality: USA
+  organization: xAI
+  prohibited_uses: Unknown
+  quality_control: Grok-2 models were tested in real-world scenarios using AI tutors
+    that engaged with the models across a variety of tasks and selected the superior
+    response based on specific criteria outlined in the guidelines.
+  size: unknown
+  training_emissions: Unknown
+  training_hardware: Unknown
+  training_time: Unknown
+  type: model
+  url: https://x.ai/blog/grok-2

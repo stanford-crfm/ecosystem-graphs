@@ -1,207 +1,222 @@
----
-- type: model
-  name: CodeGeeX
-  organization: Tsinghua University
-  description: CodeGeeX is an autoregressive language model trained on code
-  created_date: 2022-09-20
-  url: https://github.com/THUDM/CodeGeeX
-  model_card: none
-  modality: text; code
-  analysis: none
-  size: 13B parameters (dense)
-  dependencies: []
-  training_emissions: unknown
-  training_time: unknown
-  training_hardware: THUDM 1536 Ascend 910 (32GB) Cluster
-  quality_control: none
-  access:
+- access:
     explanation: Model weights are available but gated via an [[application form]](https://models.aminer.cn/codegeex/download/request)
     value: limited
+  analysis: none
+  created_date: 2022-09-20
+  dependencies: []
+  description: CodeGeeX is an autoregressive language model trained on code
+  feedback: none
+  intended_uses: none
   license:
     explanation: The license is provided in the [[Github repository]](https://github.com/THUDM/CodeGeeX)
     value: Apache 2.0
-  intended_uses: none
-  prohibited_uses: none
+  modality: text; code
+  model_card: none
   monitoring: none
-  feedback: none
-- type: model
-  name: CogView
+  name: CodeGeeX
+  nationality: China
   organization: Tsinghua University
-  description: CogView is a transformer model for text-to-image generation
+  prohibited_uses: none
+  quality_control: none
+  size: 13B parameters (dense)
+  training_emissions: unknown
+  training_hardware: THUDM 1536 Ascend 910 (32GB) Cluster
+  training_time: unknown
+  type: model
+  url: https://github.com/THUDM/CodeGeeX
+- access:
+    explanation: Model checkpoints available from [[Wudao-Wenhui]](https://resource.wudaoai.cn/home?ind=2&name=WuDao%20WenHui&id=1399364355975327744)
+    value: open
+  analysis: ''
   created_date:
     explanation: The date the model paper was released
     value: 2021-05-26
-  url: https://arxiv.org/abs/2105.13290
-  model_card: none
-  modality: text; image
-  analysis: ''
-  size: 4B parameters (dense)
   dependencies: []
-  training_emissions: ''
-  training_time: ''
-  training_hardware: ''
-  quality_control: ''
-  access:
-    explanation: Model checkpoints available from [[Wudao-Wenhui]](https://resource.wudaoai.cn/home?ind=2&name=WuDao%20WenHui&id=1399364355975327744)
-    value: open
-  license:
-    explanation: "The license is provided in the [[Github repository]](https://github.com/THUDM/CogView)\n"
-    value: Apache 2.0
-  intended_uses: ''
-  prohibited_uses: ''
-  monitoring: ''
+  description: CogView is a transformer model for text-to-image generation
   feedback: ''
-- type: model
-  name: CogView 2
+  intended_uses: ''
+  license:
+    explanation: 'The license is provided in the [[Github repository]](https://github.com/THUDM/CogView)
+
+      '
+    value: Apache 2.0
+  modality: text; image
+  model_card: none
+  monitoring: ''
+  name: CogView
+  nationality: China
   organization: Tsinghua University
-  description: CogView 2 is a hierarchical transformer for text-to-image generation
+  prohibited_uses: ''
+  quality_control: ''
+  size: 4B parameters (dense)
+  training_emissions: ''
+  training_hardware: ''
+  training_time: ''
+  type: model
+  url: https://arxiv.org/abs/2105.13290
+- access:
+    explanation: The model checkpoints are available for download from [[BAAI]](https://model.baai.ac.cn/model-detail/100041)
+    value: open
+  analysis: ''
   created_date:
     explanation: The date the model paper was released
     value: 2022-04-28
-  url: https://arxiv.org/abs/2204.14217
-  model_card: none
-  modality: text; image
-  analysis: ''
-  size: 6B parameters (dense)
   dependencies: []
-  training_emissions: ''
-  training_time: ''
-  training_hardware: ''
-  quality_control: ''
-  access:
-    explanation: The model checkpoints are available for download from [[BAAI]](https://model.baai.ac.cn/model-detail/100041)
-    value: open
-  license:
-    explanation: "The license is provided in the [[Github repository]](https://github.com/THUDM/CogView2)\n"
-    value: Apache 2.0
-  intended_uses: ''
-  prohibited_uses: ''
-  monitoring: ''
+  description: CogView 2 is a hierarchical transformer for text-to-image generation
   feedback: ''
-- type: model
-  name: CogVideo
+  intended_uses: ''
+  license:
+    explanation: 'The license is provided in the [[Github repository]](https://github.com/THUDM/CogView2)
+
+      '
+    value: Apache 2.0
+  modality: text; image
+  model_card: none
+  monitoring: ''
+  name: CogView 2
+  nationality: China
   organization: Tsinghua University
-  description: CogVideo is a transformer model for text-to-video generation
+  prohibited_uses: ''
+  quality_control: ''
+  size: 6B parameters (dense)
+  training_emissions: ''
+  training_hardware: ''
+  training_time: ''
+  type: model
+  url: https://arxiv.org/abs/2204.14217
+- access:
+    explanation: Model checkpoints are available for download from https://github.com/THUDM/CogVideo
+    value: open
+  analysis: ''
   created_date:
     explanation: The date the model paper was released
     value: 2022-05-29
-  url: https://arxiv.org/abs/2205.15868
-  model_card: none
-  modality: text; video
-  analysis: ''
-  size: unknown
   dependencies: []
-  training_emissions: ''
-  training_time: ''
-  training_hardware: ''
-  quality_control: ''
-  access:
-    explanation: Model checkpoints are available for download from https://github.com/THUDM/CogVideo
-    value: open
-  license:
-    explanation: "The license is provided in the [[Github repository]](https://github.com/THUDM/CogVideo)\n"
-    value: Apache 2.0
-  intended_uses: ''
-  prohibited_uses: ''
-  monitoring: ''
+  description: CogVideo is a transformer model for text-to-video generation
   feedback: ''
-- type: model
-  name: GLM-130B
+  intended_uses: ''
+  license:
+    explanation: 'The license is provided in the [[Github repository]](https://github.com/THUDM/CogVideo)
+
+      '
+    value: Apache 2.0
+  modality: text; video
+  model_card: none
+  monitoring: ''
+  name: CogVideo
+  nationality: China
   organization: Tsinghua University
-  description: GLM-130B is a bidirectional language model trained on English and
-    Chinese
+  prohibited_uses: ''
+  quality_control: ''
+  size: unknown
+  training_emissions: ''
+  training_hardware: ''
+  training_time: ''
+  type: model
+  url: https://arxiv.org/abs/2205.15868
+- access:
+    explanation: Model checkpoints are available from the [[GitHub repository]](https://github.com/THUDM/GLM-130B/blob/main/MODEL_LICENSE)
+    value: open
+  analysis: ''
   created_date:
     explanation: The date the model website was made public
     value: 2022-08-04
-  url: https://keg.cs.tsinghua.edu.cn/glm-130b/
-  model_card: none
-  modality: text; text
-  analysis: ''
-  size: 130B parameters (dense)
   dependencies:
-    - The Pile
-    - GLM-130B Chinese corpora
-    - P3
-    - DeepStruct finetuning dataset
-  training_emissions: ''
-  training_time: ''
-  training_hardware: THUDM 96 DGX-A100 (40G) cluster
-  quality_control: ''
-  access:
-    explanation: Model checkpoints are available from the [[GitHub repository]](https://github.com/THUDM/GLM-130B/blob/main/MODEL_LICENSE)
-    value: open
+  - The Pile
+  - GLM-130B Chinese corpora
+  - P3
+  - DeepStruct finetuning dataset
+  description: GLM-130B is a bidirectional language model trained on English and Chinese
+  feedback: ''
+  intended_uses: ''
   license:
     explanation: Unique model license. See the [[GitHub repository]](https://github.com/THUDM/GLM-130B/blob/main/MODEL_LICENSE)
     value: GLM-130B License
-  intended_uses: ''
-  prohibited_uses: ''
-  monitoring: ''
-  feedback: ''
-- type: model
-  name: CogVLM
-  organization: Zhipu AI, Tsinghua University
-  description: CogVLM is a powerful open-source visual language foundation model
-  created_date: 2023-11-06
-  url: https://arxiv.org/pdf/2311.03079.pdf
+  modality: text; text
   model_card: none
-  modality: image, text; text
+  monitoring: ''
+  name: GLM-130B
+  nationality: China
+  organization: Tsinghua University
+  prohibited_uses: ''
+  quality_control: ''
+  size: 130B parameters (dense)
+  training_emissions: ''
+  training_hardware: THUDM 96 DGX-A100 (40G) cluster
+  training_time: ''
+  type: model
+  url: https://keg.cs.tsinghua.edu.cn/glm-130b/
+- access: open
   analysis: Evaluated on image captioning and visual question answering benchmarks.
-  size: 17B parameters (dense)
-  dependencies: [Vicuna, CLIP]
-  training_emissions: unknown
-  training_time: 4096 A100 days
-  training_hardware: unknown
-  quality_control: none
-  access: open
+  created_date: 2023-11-06
+  dependencies:
+  - Vicuna
+  - CLIP
+  description: CogVLM is a powerful open-source visual language foundation model
+  feedback: none
+  intended_uses: Future multimodal research
   license:
     explanation: Model license can be found at https://github.com/THUDM/CogVLM/blob/main/MODEL_LICENSE.
       Code license is under Apache 2.0
     value: custom
-  intended_uses: Future multimodal research
-  prohibited_uses: none
+  modality: image, text; text
+  model_card: none
   monitoring: none
-  feedback: none
-- type: model
-  name: UltraLM
-  organization: Tsinghua University
-  description: UltraLM is a series of chat language models trained on UltraChat.
-  created_date: 2023-06-27
-  url: https://github.com/thunlp/UltraChat#UltraLM
-  model_card: https://huggingface.co/openbmb/UltraLM-13b
-  modality: text; text
-  analysis: Evaluated on AlpacaEval Leaderboard benchmarks.
-  size: 13B parameters (dense)
-  dependencies: [UltraChat]
+  name: CogVLM
+  nationality: unknown
+  organization: Zhipu AI, Tsinghua University
+  prohibited_uses: none
+  quality_control: none
+  size: 17B parameters (dense)
   training_emissions: unknown
-  training_time: unknown
   training_hardware: unknown
-  quality_control: ''
-  access: open
-  license: LLaMA 2
-  intended_uses: ''
-  prohibited_uses: ''
-  monitoring: unknown
+  training_time: 4096 A100 days
+  type: model
+  url: https://arxiv.org/pdf/2311.03079.pdf
+- access: open
+  analysis: Evaluated on AlpacaEval Leaderboard benchmarks.
+  created_date: 2023-06-27
+  dependencies:
+  - UltraChat
+  description: UltraLM is a series of chat language models trained on UltraChat.
   feedback: https://huggingface.co/openbmb/UltraLM-13b/discussions
-- type: dataset
-  name: UltraChat
+  intended_uses: ''
+  license: LLaMA 2
+  modality: text; text
+  model_card: https://huggingface.co/openbmb/UltraLM-13b
+  monitoring: unknown
+  name: UltraLM
+  nationality: China
   organization: Tsinghua University
+  prohibited_uses: ''
+  quality_control: ''
+  size: 13B parameters (dense)
+  training_emissions: unknown
+  training_hardware: unknown
+  training_time: unknown
+  type: model
+  url: https://github.com/thunlp/UltraChat#UltraLM
+- access: open
+  analysis: UltraLM evaluated off of UltraChat is evaluated on standard LLM benchmarks.
+  created_date: 2023-04-20
+  datasheet: https://huggingface.co/datasets/stingning/ultrachat
+  dependencies: []
   description: UltraChat is an open-source, large-scale, and multi-round dialogue
     data powered by Turbo APIs.
-  created_date: 2023-04-20
-  url: https://github.com/thunlp/UltraChat
-  datasheet: https://huggingface.co/datasets/stingning/ultrachat
-  modality: text
-  size: unknown
-  sample: []
-  analysis: UltraLM evaluated off of UltraChat is evaluated on standard LLM benchmarks.
-  dependencies: []
+  excluded: ''
+  feedback: https://huggingface.co/datasets/stingning/ultrachat/discussions
   included: Dialogue data of questions about the world, writing and creation tasks,
     and questions on existing materials.
-  excluded: ''
-  quality_control: ''
-  access: open
-  license: MIT
   intended_uses: ''
-  prohibited_uses: ''
+  license: MIT
+  modality: text
   monitoring: unknown
-  feedback: https://huggingface.co/datasets/stingning/ultrachat/discussions
+  name: UltraChat
+  nationality: China
+  organization: Tsinghua University
+  prohibited_uses: ''
+  quality_control: ''
+  sample: []
+  size: unknown
+  type: dataset
+  url: https://github.com/thunlp/UltraChat

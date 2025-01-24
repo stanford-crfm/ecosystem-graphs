@@ -1,25 +1,25 @@
----
-- type: model
-  name: DeciLM
-  organization: Deci
+- access: open
+  analysis: Evaluated on the OpenLLM benchmarks and, on release, outperforms all other
+    7B models on the OpenLLM Leaderboard.
+  created_date: 2023-12-12
+  dependencies: []
   description: DeciLM is a LLM that on release ranks as the fastest and most accurate
     model of its size.
-  created_date: 2023-12-12
-  url: https://deci.ai/blog/introducing-decilm-7b-the-fastest-and-most-accurate-7b-large-language-model-to-date
-  model_card: https://deci.ai/model-zoo/decilm-7b/
-  modality: text; text
-  analysis: Evaluated on the OpenLLM benchmarks and, on release, outperforms all
-    other 7B models on the OpenLLM Leaderboard.
-  size: 7B parameters (dense)
-  dependencies: []
-  training_emissions: unknown
-  training_time: unknown
-  training_hardware: NVIDIA A10 GPUs
-  quality_control: ''
-  access: open
-  license: Apache 2.0
+  feedback: none
   intended_uses: This model is intended for commercial and research use in English
     and can be fine-tuned for use in other languages.
-  prohibited_uses: ''
+  license: Apache 2.0
+  modality: text; text
+  model_card: https://deci.ai/model-zoo/decilm-7b/
   monitoring: unknown
-  feedback: none
+  name: DeciLM
+  nationality: Israel
+  organization: Deci
+  prohibited_uses: ''
+  quality_control: ''
+  size: 7B parameters (dense)
+  training_emissions: unknown
+  training_hardware: NVIDIA A10 GPUs
+  training_time: unknown
+  type: model
+  url: https://deci.ai/blog/introducing-decilm-7b-the-fastest-and-most-accurate-7b-large-language-model-to-date

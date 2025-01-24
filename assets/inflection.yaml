@@ -1,121 +1,125 @@
----
-- type: model
-  name: Inflection-1
-  organization: Inflection AI
-  description: Inflection AI's first version of its in-house LLM. via Inflection
-    AI's conversational API.
-  created_date: 2023-06-22
-  url: https://inflection.ai/inflection-1
-  model_card: ''
-  modality: text; text
+- access: limited
   analysis: Evaluated on wide range of language benchmarks like MMLU 5-shot, GSM-8K,
     and HellaSwag 10-shot among others.
-  size:
-    value: unknown
-    explanation: Designed to be roughly around Chat-GPT's size (175B parameters).
+  created_date: 2023-06-22
   dependencies: []
-  training_emissions: ''
-  training_time: ''
-  training_hardware: unknown
-  quality_control: ''
-  access: limited
-  license: unknown
+  description: Inflection AI's first version of its in-house LLM. via Inflection AI's
+    conversational API.
+  feedback: ''
   intended_uses: ''
-  prohibited_uses: ''
-  monitoring: ''
-  feedback: ''
-- type: application
-  name: Pi
-  organization: Inflection AI
-  description: Personal AI chatbot designed to be conversational and specialized
-    in emotional intelligence.
-  created_date: 2023-05-02
-  url: https://inflection.ai/press
-  dependencies: [Inflection-2.5]
-  adaptation: ''
-  output_space: natural language text responses
-  quality_control: ''
-  access: limited
   license: unknown
-  terms_of_service: ''
-  intended_uses: to be used as a personal assistant chatbot for everyday activities
-  prohibited_uses: ''
-  monitoring: ''
-  feedback: ''
-  monthly_active_users: ''
-  user_distribution: ''
-  failures: ''
-
-- type: model
-  name: Inflection-2
-  organization: Inflection AI
-  description: Inflection-2 is the best model in the world for its compute class
-    and the second most capable LLM in the world, according to benchmark evaluation,
-    as of its release.
-  created_date: 2023-11-22
-  url: https://inflection.ai/inflection-2
-  model_card: none
   modality: text; text
+  model_card: ''
+  monitoring: ''
+  name: Inflection-1
+  nationality: USA
+  organization: Inflection AI
+  prohibited_uses: ''
+  quality_control: ''
+  size:
+    explanation: Designed to be roughly around Chat-GPT's size (175B parameters).
+    value: unknown
+  training_emissions: ''
+  training_hardware: unknown
+  training_time: ''
+  type: model
+  url: https://inflection.ai/inflection-1
+- access: limited
+  adaptation: ''
+  created_date: 2023-05-02
+  dependencies:
+  - Inflection-2.5
+  description: Personal AI chatbot designed to be conversational and specialized in
+    emotional intelligence.
+  failures: ''
+  feedback: ''
+  intended_uses: to be used as a personal assistant chatbot for everyday activities
+  license: unknown
+  monitoring: ''
+  monthly_active_users: ''
+  name: Pi
+  nationality: USA
+  organization: Inflection AI
+  output_space: natural language text responses
+  prohibited_uses: ''
+  quality_control: ''
+  terms_of_service: ''
+  type: application
+  url: https://inflection.ai/press
+  user_distribution: ''
+- access: closed
   analysis: Evaluated against state of the art models on benchmarks, and found to
     be most performant model outside of GPT-4.
-  size: unknown
+  created_date: 2023-11-22
   dependencies: []
-  training_emissions: unknown
-  training_time: unknown
-  training_hardware: 5000 NVIDIA H100 GPUs
-  quality_control: ''
-  access: closed
-  license: unknown
-  intended_uses: ''
-  prohibited_uses: ''
-  monitoring: ''
+  description: Inflection-2 is the best model in the world for its compute class and
+    the second most capable LLM in the world, according to benchmark evaluation, as
+    of its release.
   feedback: none
-- type: model
-  name: Inflection-2.5
-  organization: Inflection AI
-  description: Inflection-2.5 is an upgraded in-house model that is competitive
-    with all the world's leading LLMs, as of release, like GPT-4 and Gemini.
-  created_date: 2024-03-07
-  url: https://inflection.ai/inflection-2-5
-  model_card: none
+  intended_uses: ''
+  license: unknown
   modality: text; text
-  analysis: Evaluated on standard LLM and technical benchmarks in comparison to
-    Inflection-1 and GPT-4, along with advanced STEM examinations.
-  size: unknown
-  dependencies: []
-  training_emissions: unknown
-  training_time: unknown
-  training_hardware: unknown
-  quality_control: ''
-  access: limited
-  license: unknown
-  intended_uses: ''
-  prohibited_uses: ''
+  model_card: none
   monitoring: ''
-  feedback: none
-- type: model
-  name: Inflection 3.0
+  name: Inflection-2
+  nationality: USA
   organization: Inflection AI
+  prohibited_uses: ''
+  quality_control: ''
+  size: unknown
+  training_emissions: unknown
+  training_hardware: 5000 NVIDIA H100 GPUs
+  training_time: unknown
+  type: model
+  url: https://inflection.ai/inflection-2
+- access: limited
+  analysis: Evaluated on standard LLM and technical benchmarks in comparison to Inflection-1
+    and GPT-4, along with advanced STEM examinations.
+  created_date: 2024-03-07
+  dependencies: []
+  description: Inflection-2.5 is an upgraded in-house model that is competitive with
+    all the world's leading LLMs, as of release, like GPT-4 and Gemini.
+  feedback: none
+  intended_uses: ''
+  license: unknown
+  modality: text; text
+  model_card: none
+  monitoring: ''
+  name: Inflection-2.5
+  nationality: USA
+  organization: Inflection AI
+  prohibited_uses: ''
+  quality_control: ''
+  size: unknown
+  training_emissions: unknown
+  training_hardware: unknown
+  training_time: unknown
+  type: model
+  url: https://inflection.ai/inflection-2-5
+- access:
+    explanation: "Developers can now access Inflection AI\u2019s Large Language Model\
+      \ through its new commercial API."
+    value: open
+  analysis: unknown
+  created_date: 2024-10-07
+  dependencies: []
   description: Inflection for Enterprise, powered by our industry-first, enterprise-grade
     AI system, Inflection 3.0.
-  created_date: 2024-10-07
-  url: https://inflection.ai/blog/enterprise
-  model_card: unknown
-  modality: unknown
-  analysis: unknown
-  size: unknown
-  dependencies: []
-  training_emissions: unknown
-  training_time: unknown
-  training_hardware: unknown
-  quality_control: unknown
-  access:
-    explanation: Developers can now access Inflection AI’s Large Language Model
-      through its new commercial API.
-    value: open
-  license: unknown
-  intended_uses: unknown
-  prohibited_uses: unknown
-  monitoring: unknown
   feedback: So please drop us a line. We want to keep hearing from enterprises about
     how we can help solve their challenges and make AI a reality for their business.
+  intended_uses: unknown
+  license: unknown
+  modality: unknown
+  model_card: unknown
+  monitoring: unknown
+  name: Inflection 3.0
+  nationality: USA
+  organization: Inflection AI
+  prohibited_uses: unknown
+  quality_control: unknown
+  size: unknown
+  training_emissions: unknown
+  training_hardware: unknown
+  training_time: unknown
+  type: model
+  url: https://inflection.ai/blog/enterprise

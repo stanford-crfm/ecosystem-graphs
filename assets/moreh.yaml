@@ -1,22 +1,24 @@
----
-- type: model
-  name: MoMo
-  organization: Moreh
-  description: MoMo is a large language model fine-tuned from Qwen.
-  created_date: 2024-01-16
-  url: https://huggingface.co/moreh/MoMo-72B-lora-1.8.7-DPO
-  model_card: https://huggingface.co/moreh/MoMo-72B-lora-1.8.7-DPO
-  modality: text; text
+- access: open
   analysis: unknown
-  size: 72B parameters (dense)
-  dependencies: [Qwen, OpenOrca]
-  training_emissions: unknown
-  training_time: unknown
-  training_hardware: AMD’s MI250 GPU
-  quality_control: unknown
-  access: open
-  license: MIT
-  intended_uses: ''
-  prohibited_uses: ''
-  monitoring: unknown
+  created_date: 2024-01-16
+  dependencies:
+  - Qwen
+  - OpenOrca
+  description: MoMo is a large language model fine-tuned from Qwen.
   feedback: https://huggingface.co/moreh/MoMo-72B-lora-1.8.7-DPO/discussions
+  intended_uses: ''
+  license: MIT
+  modality: text; text
+  model_card: https://huggingface.co/moreh/MoMo-72B-lora-1.8.7-DPO
+  monitoring: unknown
+  name: MoMo
+  nationality: USA
+  organization: Moreh
+  prohibited_uses: ''
+  quality_control: unknown
+  size: 72B parameters (dense)
+  training_emissions: unknown
+  training_hardware: "AMD\u2019s MI250 GPU"
+  training_time: unknown
+  type: model
+  url: https://huggingface.co/moreh/MoMo-72B-lora-1.8.7-DPO

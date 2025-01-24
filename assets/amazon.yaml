@@ -1,161 +1,165 @@
----
-- type: application
-  name: Bedrock
-  organization: Amazon
+- access: limited
+  adaptation: ''
+  created_date: 2023-04-13
+  dependencies:
+  - Jurassic-2
+  - Claude
+  - Stable Diffusion
+  - Amazon Titan
+  - Claude 2
+  - Cohere Command
   description: Bedrock is a new service that makes FMs from AI21 Labs, Anthropic,
     Stability AI, and Amazon accessible via an API. Bedrock is intended for customers
-    to build and scale generative AI-based applications using FMs, democratizing
-    access for all builders. using an API.
-  created_date: 2023-04-13
-  url: https://aws.amazon.com/bedrock/
-  dependencies:
-    - Jurassic-2
-    - Claude
-    - Stable Diffusion
-    - Amazon Titan
-    - Claude 2
-    - Cohere Command
-  adaptation: ''
-  output_space: foundation models made accessible via an API
-  quality_control: ''
-  access: limited
-  license: unknown
-  terms_of_service: https://aws.amazon.com/service-terms/
+    to build and scale generative AI-based applications using FMs, democratizing access
+    for all builders. using an API.
+  failures: ''
+  feedback: ''
   intended_uses: allowing companies to incorporate generative AI into their business
     models
-  prohibited_uses: ''
+  license: unknown
   monitoring: ''
-  feedback: ''
   monthly_active_users: ''
-  user_distribution: ''
-  failures: ''
-- type: model
-  name: FalconLite2
+  name: Bedrock
+  nationality: USA
   organization: Amazon
-  description: FalconLite2 is a fine-tuned and quantized Falcon language model,
-    capable of processing long (up to 24K tokens) input sequences.
-  created_date: 2023-08-08
-  url: https://huggingface.co/amazon/FalconLite2
-  model_card: https://huggingface.co/amazon/FalconLite2
-  modality: text; text
+  output_space: foundation models made accessible via an API
+  prohibited_uses: ''
+  quality_control: ''
+  terms_of_service: https://aws.amazon.com/service-terms/
+  type: application
+  url: https://aws.amazon.com/bedrock/
+  user_distribution: ''
+- access: open
   analysis: Evaluated against benchmarks that are specifically designed to assess
     the capabilities of LLMs in handling longer contexts.
-  size: 40B parameters (dense)
-  dependencies: [Falcon-40B]
-  training_emissions: unknown
-  training_time: unknown
-  training_hardware: unknown
-  quality_control: ''
-  access: open
-  license: Apache 2.0
-  intended_uses: ''
-  prohibited_uses: ''
-  monitoring: ''
+  created_date: 2023-08-08
+  dependencies:
+  - Falcon-40B
+  description: FalconLite2 is a fine-tuned and quantized Falcon language model, capable
+    of processing long (up to 24K tokens) input sequences.
   feedback: https://huggingface.co/amazon/FalconLite2/discussions
-- type: model
-  name: Chronos
+  intended_uses: ''
+  license: Apache 2.0
+  modality: text; text
+  model_card: https://huggingface.co/amazon/FalconLite2
+  monitoring: ''
+  name: FalconLite2
+  nationality: USA
   organization: Amazon
-  description: Chronos is a family of pretrained time series forecasting models
-    based on language model architectures. A time series is transformed into a sequence
-    of tokens via scaling and quantization, and a language model is trained on these
-    tokens using the cross-entropy loss. Once trained, probabilistic forecasts are
-    obtained by sampling multiple future trajectories given the historical context.
-  created_date: 2024-03-13
-  url: https://github.com/amazon-science/chronos-forecasting
-  model_card: https://huggingface.co/amazon/chronos-t5-large
-  modality: time-series; time-series
+  prohibited_uses: ''
+  quality_control: ''
+  size: 40B parameters (dense)
+  training_emissions: unknown
+  training_hardware: unknown
+  training_time: unknown
+  type: model
+  url: https://huggingface.co/amazon/FalconLite2
+- access: open
   analysis: Chronos has been evaluated comprehensively on 42 datasets both in the
     in-domain (15 datasets) and zero-shot settings (27 datasets). Chronos outperforms
     task specific baselines in the in-domain setting and is competitive or better
     than trained models in the zero-shot setting.
-  size: 710M parameters (dense)
-  dependencies: [T5]
-  training_emissions: ''
-  training_time: 63 hours on p4d.24xlarge EC2 instance
-  training_hardware: 8 NVIDIA A100 40G GPUs
-  quality_control: Chronos was evaluated rigorously on 42 datasets, including 27
-    in the zero-shot setting against a variety of statistical and deep learning
-    baselines.
-  access: open
-  license: Apache 2.0
+  created_date: 2024-03-13
+  dependencies:
+  - T5
+  description: Chronos is a family of pretrained time series forecasting models based
+    on language model architectures. A time series is transformed into a sequence
+    of tokens via scaling and quantization, and a language model is trained on these
+    tokens using the cross-entropy loss. Once trained, probabilistic forecasts are
+    obtained by sampling multiple future trajectories given the historical context.
+  feedback: https://github.com/amazon-science/chronos-forecasting/discussions
   intended_uses: Chronos can be used for zero-shot time series forecasting on univariate
     time series from arbitrary domains and with arbitrary horizons. Chronos models
     can also be fine-tuned for improved performance of specific datasets. Embeddings
-    from Chronos encoder may also be useful for other time series analysis tasks
-    such as classification, clustering, and anomaly detection.
-  prohibited_uses: ''
+    from Chronos encoder may also be useful for other time series analysis tasks such
+    as classification, clustering, and anomaly detection.
+  license: Apache 2.0
+  modality: time-series; time-series
+  model_card: https://huggingface.co/amazon/chronos-t5-large
   monitoring: ''
-  feedback: https://github.com/amazon-science/chronos-forecasting/discussions
-- type: model
-  name: Amazon Nova (Understanding)
-  organization: Amazon Web Services (AWS)
-  description: A new generation of state-of-the-art foundation models (FMs) that
-    deliver frontier intelligence and industry leading price performance, available
-    exclusively in Amazon Bedrock. Amazon Nova understanding models excel in Retrieval-Augmented
-    Generation (RAG), function calling, and agentic applications.
+  name: Chronos
+  nationality: USA
+  organization: Amazon
+  prohibited_uses: ''
+  quality_control: Chronos was evaluated rigorously on 42 datasets, including 27 in
+    the zero-shot setting against a variety of statistical and deep learning baselines.
+  size: 710M parameters (dense)
+  training_emissions: ''
+  training_hardware: 8 NVIDIA A100 40G GPUs
+  training_time: 63 hours on p4d.24xlarge EC2 instance
+  type: model
+  url: https://github.com/amazon-science/chronos-forecasting
+- access:
+    explanation: available exclusively in Amazon Bedrock
+    value: limited
+  analysis: Amazon Nova Pro is capable of processing up to 300K input tokens and sets
+    new standards in multimodal intelligence and agentic workflows that require calling
+    APIs and tools to complete complex workflows. It achieves state-of-the-art performance
+    on key benchmarks including visual question answering ( TextVQA ) and video understanding
+    ( VATEX ).
   created_date: 2024-12-03
-  url: https://aws.amazon.com/blogs/aws/introducing-amazon-nova-frontier-intelligence-and-industry-leading-price-performance/
-  model_card: unknown
+  dependencies: []
+  description: A new generation of state-of-the-art foundation models (FMs) that deliver
+    frontier intelligence and industry leading price performance, available exclusively
+    in Amazon Bedrock. Amazon Nova understanding models excel in Retrieval-Augmented
+    Generation (RAG), function calling, and agentic applications.
+  feedback: unknown
+  intended_uses: You can build on Amazon Nova to analyze complex documents and videos,
+    understand charts and diagrams, generate engaging video content, and build sophisticated
+    AI agents, from across a range of intelligence classes optimized for enterprise
+    workloads.
+  license: unknown
   modality:
     explanation: Amazon Nova understanding models accept text, image, or video inputs
       to generate text output.
     value: text, image, video; text
-  analysis: Amazon Nova Pro is capable of processing up to 300K input tokens and
-    sets new standards in multimodal intelligence and agentic workflows that require
-    calling APIs and tools to complete complex workflows. It achieves state-of-the-art
-    performance on key benchmarks including visual question answering ( TextVQA
-    ) and video understanding ( VATEX ).
-  size: unknown
-  dependencies: []
-  training_emissions: unknown
-  training_time: unknown
-  training_hardware: unknown
-  quality_control: All Amazon Nova models include built-in safety controls and creative
-    content generation models include watermarking capabilities to promote responsible
-    AI use.
-  access:
-    explanation: available exclusively in Amazon Bedrock
-    value: limited
-  license: unknown
-  intended_uses: You can build on Amazon Nova to analyze complex documents and videos,
-    understand charts and diagrams, generate engaging video content, and build sophisticated
-    AI agents, from across a range of intelligence classes optimized for enterprise
-    workloads.
-  prohibited_uses: unknown
-  monitoring: unknown
-  feedback: unknown
-- type: model
-  name: Amazon Nova (Creative Content Generation)
-  organization: Amazon Web Services (AWS)
-  description: A new generation of state-of-the-art foundation models (FMs) that
-    deliver frontier intelligence and industry leading price performance, available
-    exclusively in Amazon Bedrock.
-  created_date: 2024-12-03
-  url: https://aws.amazon.com/blogs/aws/introducing-amazon-nova-frontier-intelligence-and-industry-leading-price-performance/
   model_card: unknown
-  modality:
-    explanation: Amazon creative content generation models accept text and image
-      inputs to generate image or video output.
-    value: text, image;image, video
-  analysis: Amazon Nova Canvas excels on human evaluations and key benchmarks such
-    as text-to-image faithfulness evaluation with question answering (TIFA) and
-    ImageReward.
-  size: unknown
-  dependencies: []
-  training_emissions: unknown
-  training_time: unknown
-  training_hardware: unknown
+  monitoring: unknown
+  name: Amazon Nova (Understanding)
+  nationality: USA
+  organization: Amazon Web Services (AWS)
+  prohibited_uses: unknown
   quality_control: All Amazon Nova models include built-in safety controls and creative
     content generation models include watermarking capabilities to promote responsible
     AI use.
-  access:
+  size: unknown
+  training_emissions: unknown
+  training_hardware: unknown
+  training_time: unknown
+  type: model
+  url: https://aws.amazon.com/blogs/aws/introducing-amazon-nova-frontier-intelligence-and-industry-leading-price-performance/
+- access:
     explanation: available exclusively in Amazon Bedrock
     value: limited
-  license: unknown
+  analysis: Amazon Nova Canvas excels on human evaluations and key benchmarks such
+    as text-to-image faithfulness evaluation with question answering (TIFA) and ImageReward.
+  created_date: 2024-12-03
+  dependencies: []
+  description: A new generation of state-of-the-art foundation models (FMs) that deliver
+    frontier intelligence and industry leading price performance, available exclusively
+    in Amazon Bedrock.
+  feedback: unknown
   intended_uses: You can build on Amazon Nova to analyze complex documents and videos,
     understand charts and diagrams, generate engaging video content, and build sophisticated
     AI agents, from across a range of intelligence classes optimized for enterprise
     workloads.
-  prohibited_uses: unknown
+  license: unknown
+  modality:
+    explanation: Amazon creative content generation models accept text and image inputs
+      to generate image or video output.
+    value: text, image;image, video
+  model_card: unknown
   monitoring: unknown
-  feedback: unknown
+  name: Amazon Nova (Creative Content Generation)
+  nationality: USA
+  organization: Amazon Web Services (AWS)
+  prohibited_uses: unknown
+  quality_control: All Amazon Nova models include built-in safety controls and creative
+    content generation models include watermarking capabilities to promote responsible
+    AI use.
+  size: unknown
+  training_emissions: unknown
+  training_hardware: unknown
+  training_time: unknown
+  type: model
+  url: https://aws.amazon.com/blogs/aws/introducing-amazon-nova-frontier-intelligence-and-industry-leading-price-performance/

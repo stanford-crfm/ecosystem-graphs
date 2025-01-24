@@ -1,47 +1,51 @@
----
-- type: model
-  name: Platypus
-  organization: Boston University
+- access: open
+  analysis: "Platypus achieves the strongest performance and currently stands at first\
+    \ place in HuggingFace\u2019s Open LLM Leaderboard as of its release date."
+  created_date: 2023-08-14
+  dependencies:
+  - LLaMA 2
+  - Platypus curated dataset
   description: Platypus is a family of fine-tuned and merged Large Language Models
     (LLMs).
-  created_date: 2023-08-14
-  url: https://arxiv.org/pdf/2308.07317.pdf
-  model_card: https://huggingface.co/garage-bAInd/Platypus2-13B
-  modality: text; text
-  analysis: Platypus achieves the strongest performance and currently stands at
-    first place in HuggingFace’s Open LLM Leaderboard as of its release date.
-  size: 13B parameters (dense)
-  dependencies: [LLaMA 2, Platypus curated dataset]
-  training_emissions: ''
-  training_time: 5 hours
-  training_hardware: 1 A100 GPU
-  quality_control: ''
-  access: open
-  license: CC by-NC-SA 4.0
-  intended_uses: ''
-  prohibited_uses: ''
-  monitoring: ''
   feedback: https://huggingface.co/garage-bAInd/Platypus2-13B/discussions
-- type: model
-  name: UFOGen
+  intended_uses: ''
+  license: CC by-NC-SA 4.0
+  modality: text; text
+  model_card: https://huggingface.co/garage-bAInd/Platypus2-13B
+  monitoring: ''
+  name: Platypus
+  nationality: USA
   organization: Boston University
-  description: UFOGen is a novel generative model designed for ultra-fast, one-step
-    text-to-image synthesis.
-  created_date: 2023-11-14
-  url: https://arxiv.org/pdf/2311.09257.pdf
-  model_card: none
-  modality: text; image
+  prohibited_uses: ''
+  quality_control: ''
+  size: 13B parameters (dense)
+  training_emissions: ''
+  training_hardware: 1 A100 GPU
+  training_time: 5 hours
+  type: model
+  url: https://arxiv.org/pdf/2308.07317.pdf
+- access: open
   analysis: UFOGen is evaluated on standard image benchmarks against other models
     fine-tuned with Stable Diffusion.
-  size: 900M parameters (dense)
-  dependencies: [Stable Diffusion]
-  training_emissions: unknown
-  training_time: unknown
-  training_hardware: unknown
-  quality_control: ''
-  access: open
-  license: unknown
-  intended_uses: ''
-  prohibited_uses: ''
-  monitoring: ''
+  created_date: 2023-11-14
+  dependencies:
+  - Stable Diffusion
+  description: UFOGen is a novel generative model designed for ultra-fast, one-step
+    text-to-image synthesis.
   feedback: none
+  intended_uses: ''
+  license: unknown
+  modality: text; image
+  model_card: none
+  monitoring: ''
+  name: UFOGen
+  nationality: USA
+  organization: Boston University
+  prohibited_uses: ''
+  quality_control: ''
+  size: 900M parameters (dense)
+  training_emissions: unknown
+  training_hardware: unknown
+  training_time: unknown
+  type: model
+  url: https://arxiv.org/pdf/2311.09257.pdf
